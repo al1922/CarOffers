@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "models": [
+    {
+      "key": "toyota-corolla-e210",
+      "name": "Toyota Corolla E210",
+      "description": "Sedan i kombi (Touring Sports)",
+      "requirements": "corolla",
+      "file": "offers/toyota-corolla-e210.json"
+    }
+  ]
+}

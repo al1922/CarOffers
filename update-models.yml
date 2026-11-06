@@ -1,0 +1,34 @@
+name: Aktualizuj indeks modeli
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'offers/**'
+      - 'scripts/generate-models.py'
+      - '.github/workflows/update-models.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  update-index:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Generuj models.json
+        run: python scripts/generate-models.py
+      - name: Zapisz zmiany w repozytorium
+        run: |
+          if git diff --quiet -- models.json; then
+            echo "Indeks bez zmian"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add models.json
+          git commit -m "Automatyczna aktualizacja listy modeli"
+          git push
