@@ -1,0 +1,122 @@
+/* Poprawki układu mobilnego */
+html {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+body {
+  min-width: 0;
+  overflow-x: clip;
+}
+
+main,
+.audit,
+.audit-row,
+.car-card,
+.details-grid,
+.details-grid section {
+  min-width: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+a,
+td,
+th,
+b,
+strong {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+/* Szeroką tabelę można przewijać niezależnie od całej strony. */
+.audit table {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-collapse: collapse;
+}
+
+.audit table th,
+.audit table td {
+  min-width: 150px;
+}
+
+/* Przyciski i wyszukiwarka nie mogą wymuszać szerokości ekranu. */
+.searchrow,
+.filterbuttons {
+  min-width: 0;
+}
+
+.searchrow input {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.searchrow button,
+.filterbuttons button {
+  max-width: 100%;
+}
+
+/* Karty i siatki dopasowują się do wąskiego ekranu. */
+.car-card {
+  padding: 15px;
+}
+
+.spec-grid,
+.details-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.card-bottom {
+  min-width: 0;
+}
+
+.card-bottom a {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 480px) {
+  main {
+    padding-right: 11px;
+    padding-left: 11px;
+  }
+
+  .hero {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .stat {
+    flex: 1 1 125px;
+    min-width: 0;
+  }
+
+  .searchrow input {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  .spec-grid {
+    gap: 6px;
+  }
+
+  .spec-grid div {
+    min-width: 0;
+    padding: 8px;
+  }
+
+  .card-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .price-wrap {
+    min-width: 0;
+  }
+}
