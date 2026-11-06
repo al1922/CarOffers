@@ -7,6 +7,7 @@ html {
 
 body {
   min-width: 0;
+  width: 100%;
   overflow-x: clip;
 }
 
@@ -16,6 +17,7 @@ main,
 .car-card,
 .details-grid,
 .details-grid section,
+.section-head,
 .section-head > div {
   min-width: 0;
 }
@@ -107,6 +109,11 @@ a:focus-visible {
   .filterbuttons button {
     flex: 0 0 auto;
     white-space: nowrap;
+  }
+
+  .searchrow {
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .searchrow input {
