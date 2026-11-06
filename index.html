@@ -5,333 +5,149 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Toyota Corolla E210 — zestawienie ofert</title>
   <style>
-    :root {
-      --ink:#182433; --muted:#627083; --line:#dbe2ea; --paper:#f3f6fa; --white:#fff;
-      --navy:#14283f; --blue:#235a91; --green:#23734d; --amber:#93641b; --red:#9b3d36;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 Inter,Segoe UI,Arial,sans-serif}
-    a{color:#155d9a;text-decoration:none}
-    a:hover{text-decoration:underline}
-    .hero{background:linear-gradient(135deg,#14283f,#244665);color:#fff;padding:36px max(22px,calc((100vw - 1160px)/2 + 22px)) 28px}
-    .hero h1{font-size:clamp(26px,4vw,42px);line-height:1.12;margin:0 0 12px}
-    .hero p{max-width:900px;color:#d9e4ef;margin:8px 0 0}
-    main{max-width:1160px;margin:22px auto;padding:0 18px 60px}
-    .notice {background:#fff;border:1px solid #d4dee9;border-radius:10px;padding:16px 18px;margin:18px 0 22px}
-    .notice strong{display:block;margin-bottom:6px}
-    .criteria{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:8px;margin:12px 0 20px}
-    .criterion{background:#f1f5f9;border-radius:8px;padding:9px 11px;font-size:13px}
-    .criterion b{display:block;margin-bottom:2px}
-    .toolbar{position:sticky;top:0;z-index:5;background:rgba(243,246,250,.96);backdrop-filter:blur(8px);padding:10px 0 12px;border-bottom:1px solid var(--line)}
-    .searchrow{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 10px}
-    input{flex:1 1 230px;min-width:0;padding:12px 14px;border:1px solid #c9d3df;border-radius:8px;font-size:15px;background:#fff}
-    button{padding:10px 13px;border:1px solid #c9d3df;border-radius:8px;background:#fff;cursor:pointer;color:var(--ink)}
-    button.active{background:#1f4e78;border-color:#1f4e78;color:#fff}
-    .filterbuttons{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}
-    .section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:15px;flex-wrap:wrap;margin:28px 0 12px}
-    .section-head h2{margin:0;font-size:23px}
-    .section-head p{margin:3px 0 0;color:var(--muted);font-size:13px}
-    #shown{margin:0;color:var(--muted);font-size:13px}
-    #cards{display:grid;gap:14px}
-    .car-card{background:var(--white);border:1px solid var(--line);border-radius:13px;padding:19px;margin:0 0 14px;box-shadow:0 2px 8px rgba(23,43,65,.04)}
-    .car-card[hidden]{display:none}
-    .car-top{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
-    .eyebrow{text-transform:uppercase;letter-spacing:.07em;font-size:11px;color:var(--muted);font-weight:700}
-    .car-top h3{font-size:20px;line-height:1.25;margin:5px 0 0}
-    .seller{font-size:12px;color:var(--muted)}
-    .price-wrap{display:flex;align-items:center;gap:10px;min-width:140px;justify-content:flex-end}
-    .price{font-size:25px;font-weight:800;white-space:nowrap;color:#173e62}
-    .price-over{font-size:25px;font-weight:800;white-space:nowrap;color:var(--red)}
-    .priority{font-size:11px;color:var(--muted);margin-top:3px}
-    .spec-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:17px 0}
-    .spec-grid div{background:#f1f5f9;border-radius:8px;padding:9px 10px}
-    .spec-grid span{display:block;font-size:11px;color:var(--muted)}
-    .spec-grid b{font-size:13px}
-    .details-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-    .details-grid h4{font-size:13px;margin:9px 0 3px;color:#344b63}
-    .details-grid p{margin:0;font-size:13px;color:#354253}
-    .card-bottom{border-top:1px solid #e5ebf1;margin-top:14px;padding-top:12px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
-    .bucket-tag{font-size:11px;font-weight:700;border-radius:20px;padding:4px 9px;background:#e6f2eb;color:var(--green)}
-    .bucket-tag.review{background:#fbe9e7;color:var(--red)}
-    .link-list{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
-    .source-button{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:10px 16px;border:1px solid #1f4e78;border-radius:8px;background:#1f4e78;color:#fff;font-size:14px;font-weight:700;line-height:1.35;text-decoration:none;text-align:center}
-    .source-button:hover{text-decoration:none;background:#14283f}
-    .empty{display:none;padding:24px;color:var(--muted);text-align:center}
-    .empty.visible{display:block}
-    @media (max-width:700px){
-      .toolbar{padding-top:8px}
-      .filterbuttons{overflow-x:auto;flex-wrap:nowrap;padding-bottom:6px}
-      .filterbuttons button{white-space:nowrap;flex:0 0 auto}
-      .searchrow{display:flex;flex-wrap:wrap}
-      .searchrow input{flex:1 1 100%;width:100%}
-      .car-top{display:block}
-      .price-wrap{justify-content:flex-start;margin-top:10px}
-      .spec-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-      .details-grid{grid-template-columns:1fr}
-      .link-list{justify-content:flex-start}
-    }
-    @media (max-width:480px){
-      main{padding:0 11px 48px}
-      .hero{padding-right:16px;padding-left:16px}
-      .spec-grid{gap:6px}
-      .spec-grid div{padding:8px}
-      .card-bottom{align-items:flex-start;flex-direction:column}
-      .link-list{width:100%}
-      .source-button{width:100%}
-    }
+    :root{--ink:#182433;--muted:#627083;--line:#dbe2ea;--paper:#f3f6fa;--white:#fff;--navy:#14283f;--blue:#235a91;--green:#23734d;--amber:#93641b;--red:#9b3d36}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 Inter,Segoe UI,Arial,sans-serif}a{color:#155d9a;text-decoration:none}a:hover{text-decoration:underline}
+    .hero{background:linear-gradient(125deg,#14283f,#244665);color:white;padding:36px max(22px,calc((100vw - 1160px)/2)) 30px}.hero h1{font-size:clamp(26px,4vw,40px);line-height:1.12;margin:0 0 12px}.hero p{max-width:900px;color:#d9e4ef;margin:8px 0}
+    main{max-width:1160px;margin:22px auto;padding:0 18px 60px}.criteria{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:8px;margin:12px 0 20px}.criterion{background:#e9eef4;border-radius:8px;padding:9px 11px;font-size:13px}
+    .toolbar{position:sticky;top:0;z-index:5;background:rgba(243,246,250,.96);backdrop-filter:blur(8px);padding:10px 0 12px;border-bottom:1px solid var(--line)}.searchrow{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:9px}
+    input{flex:1;min-width:0;padding:12px 14px;border:1px solid #c9d3df;border-radius:8px;font-size:15px;background:#fff}button{padding:10px 13px;border:1px solid #c9d3df;background:#fff;border-radius:8px;cursor:pointer;color:var(--ink);font:inherit}button.active{background:#1f4e78;border-color:#1f4e78;color:#fff}
+    .filterbuttons{display:flex;gap:7px;flex-wrap:wrap}.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:15px;flex-wrap:wrap;margin:28px 0 12px}.section-head h2{margin:0;font-size:23px}.section-head p{margin:3px 0 0;color:var(--muted);font-size:13px}#shown{margin:0;color:var(--muted);font-size:13px}
+    #cards{display:grid;gap:14px}.car-card{background:#fff;border:1px solid var(--line);border-radius:13px;padding:19px;margin:0 0 14px;box-shadow:0 2px 8px rgba(23,43,65,.04)}.car-card[hidden]{display:none!important}.car-top{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}.eyebrow{text-transform:uppercase;letter-spacing:.07em;font-size:11px;color:var(--muted);font-weight:700}h3{font-size:20px;line-height:1.25;margin:5px 0}.seller{font-size:12px;color:var(--muted)}
+    .price-wrap{text-align:right;min-width:140px}.price,.price-over{font-size:25px;font-weight:800;white-space:nowrap;color:#173e62}.price-over{color:var(--red)}.priority{font-size:11px;color:var(--muted)}.spec-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:17px 0}.spec-grid div{background:#f1f5f9;border-radius:8px;padding:9px 10px}.spec-grid span{display:block;font-size:11px;color:var(--muted)}.spec-grid b{font-size:13px}
+    .details-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.details-grid h4{font-size:13px;margin:9px 0 3px;color:#344b63}.details-grid p{margin:0;font-size:13px;color:#354253}.card-bottom{border-top:1px solid #e5ebf1;margin-top:14px;padding-top:12px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+    .bucket-tag{font-size:11px;font-weight:700;border-radius:20px;padding:4px 9px;background:#e6f2eb;color:var(--green)}.bucket-tag.conditional{background:#fff3df;color:var(--amber)}.bucket-tag.review{background:#fbe9e7;color:var(--red)}.listing-links{display:flex;gap:8px;flex-wrap:wrap}.listing-button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 16px;border:1px solid #1f4e78;border-radius:8px;background:#1f4e78;color:white;font-size:14px;font-weight:700;line-height:1.35;text-align:center;text-decoration:none}.listing-button:hover{background:#14283f;text-decoration:none}.empty{display:none;padding:24px;color:var(--muted);text-align:center}.empty.visible{display:block}
+    .load-error{background:#fff;border-left:4px solid var(--red);padding:16px;border-radius:8px;color:var(--ink)}
+    button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid #78a9d6;outline-offset:2px}
+    @media(max-width:700px){.hero{padding:27px 18px}.toolbar{top:0}.filterbuttons{display:flex;flex-wrap:nowrap;overflow-x:auto;padding:2px 2px 8px}.filterbuttons button{white-space:nowrap;flex:0 0 auto}.searchrow input{flex:1 1 100%;width:100%}.car-top{display:block}.price-wrap{text-align:left;margin-top:10px}.spec-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.details-grid{grid-template-columns:1fr}}
+    @media(max-width:480px){main{padding:0 11px 48px}.hero{padding-right:16px;padding-left:16px}.card-bottom{align-items:flex-start;flex-direction:column}.listing-links{width:100%}.listing-button{width:100%}}
   </style>
   <link rel="stylesheet" href="mobile-fix.css" />
 </head>
 <body>
-  <header class="hero">
-    <h1>Toyota Corolla E210 — zestawienie ofert</h1>
-    <p>Lista sprawdzonych ofert w założonych parametrach: sedan i kombi, silniki zgodne z konfiguracją, roczniki 2020–2026, bez oczywistych wad i z jasnym podziałem na oferty zgodne oraz warunkowe.</p>
-  </header>
-
-  <main>
-    <div class="notice">
-      <strong>Zasady weryfikacji</strong>
-      Oferty są oceniane pod kątem zgodności z parametrami, ceny i jakości danych. Nie wykorzystywane są stare raporty iteracyjne ani rozproszone kategorie z poprzednich analiz.
-    </div>
-
-    <div class="criteria">
-      <div class="criterion"><b>Nadwozie:</b> wyłącznie sedan i kombi/Touring Sports</div>
-      <div class="criterion"><b>Silniki:</b> wyłącznie wersje zgodne z konfiguracją</div>
-      <div class="criterion"><b>Rocznik:</b> 2020–2026</div>
-      <div class="criterion"><b>Przebieg:</b> bez wyraźnych outlierów i nieuzasadnionych wyjątków</div>
-    </div>
-
-    <div class="toolbar">
-      <div class="searchrow">
-        <input id="q" type="search" placeholder="Szukaj: 1.8 Hybrid, sedan, 2022, Poznań, ASO…" />
-        <button id="reset" type="button">Wyczyść</button>
-      </div>
-      <div class="filterbuttons">
-        <button class="active" type="button" data-filter="all">Wszystkie</button>
-        <button type="button" data-filter="main">Zgodne</button>
-        <button type="button" data-filter="conditional">Warunkowe</button>
-        <button type="button" data-filter="review">Niepewne</button>
-      </div>
-    </div>
-
-    <div class="section-head">
-      <div>
-        <h2>Spis ofert</h2>
-      </div>
-      <p id="shown">Wyświetlono: 0 ofert</p>
-    </div>
-
-    <div id="cards">
-      <article class="car-card" data-bucket="main" data-search="2021 sedan 1.5 vvt-i 125 km arval autoselect 79 857 km auto 2021 sedan 1.5 vvt-i 125 km 2021 1.5 vvt-i sedan 2021 1.5 vvt-i">
-        <div class="car-top">
-          <div>
-            <div class="eyebrow">2021 · Sedan · 1.5 VVT-i</div>
-            <h3>1.5 VVT-i Sedan — Arval AutoSelect</h3>
-            <div class="seller">Arval Service Lease Polska · flota / poleasingowe · strona aktywna</div>
-          </div>
-          <div class="price-wrap">
-            <div class="price">53 900 zł</div>
-            <div class="priority">Priorytet 1</div>
-          </div>
-        </div>
-
-        <div class="spec-grid">
-          <div><span>Rocznik</span><b>2021</b></div>
-          <div><span>Nadwozie</span><b>Sedan</b></div>
-          <div><span>Silnik</span><b>1.5 VVT-i · 125 KM</b></div>
-          <div><span>Skrzynia</span><b>Manualna</b></div>
-          <div><span>Przebieg</span><b>79 857 km</b></div>
-          <div><span>Cena</span><b>53 900 zł</b></div>
-        </div>
-
-        <div class="details-grid">
-          <section>
-            <h4>Historia i pochodzenie</h4>
-            <p>Flota / leasing; występuje jako auto z serwisu Arval. Warto zwrócić uwagę na przebieg i dokumentację oraz status serwisowy.</p>
-          </section>
-          <section>
-            <h4>Uwagi</h4>
-            <p>Auto wpisuje się w wymagania, ale warto potwierdzić stan techniczny i historię związane z flotyzacją.</p>
-          </section>
-        </div>
-
-        <div class="card-bottom">
-          <span class="bucket-tag main">Zgodna z parametrami</span>
-          <div class="link-list">
-            <a class="source-button" href="https://www.otomoto.pl/osobowe/oferta/toyota-corolla-1-5-vvt-i-sedan-2021-ID6IkogO.html" target="_blank" rel="noopener noreferrer">OtoMoto</a>
-            <a class="source-button" href="https://autoselect.arval.pl/" target="_blank" rel="noopener noreferrer">Arval</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="car-card" data-bucket="main" data-search="2022 sedan 1.5 vvt-i 125 km automat allegro 102 777 km auto 2022 sedan 1.5 vvt-i 125 km 2022 1.5 vvt-i sedan 2022 1.5 vvt-i">
-        <div class="car-top">
-          <div>
-            <div class="eyebrow">2022 · Sedan · 1.5 VVT-i</div>
-            <h3>1.5 VVT-i Sedan — Allegro</h3>
-            <div class="seller">A.A.A Auto · dealer Allegro · aktywna oferta</div>
-          </div>
-          <div class="price-wrap">
-            <div class="price">57 000 zł</div>
-            <div class="priority">Priorytet 1</div>
-          </div>
-        </div>
-
-        <div class="spec-grid">
-          <div><span>Rocznik</span><b>2022</b></div>
-          <div><span>Nadwozie</span><b>Sedan</b></div>
-          <div><span>Silnik</span><b>1.5 VVT-i · 125 KM</b></div>
-          <div><span>Skrzynia</span><b>Automat</b></div>
-          <div><span>Przebieg</span><b>102 777 km</b></div>
-          <div><span>Cena</span><b>57 000 zł</b></div>
-        </div>
-
-        <div class="details-grid">
-          <section>
-            <h4>Historia i pochodzenie</h4>
-            <p>Dealer Allegro, oferta z pełną dokumentacją i oznaczeniem serwisu, lecz przebieg jest wyższy niż idealny.</p>
-          </section>
-          <section>
-            <h4>Uwagi</h4>
-            <p>Auto spełnia wymagania główne, ale trzeba zweryfikować przebieg i stan techniczny przed zakupem.</p>
-          </section>
-        </div>
-
-        <div class="card-bottom">
-          <span class="bucket-tag main">Zgodna z parametrami</span>
-          <div class="link-list">
-            <a class="source-button" href="https://allegro.pl/oferta/toyota-corolla-1-5-vvt-i-sedan-2022-123456" target="_blank" rel="noopener noreferrer">Allegro</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="car-card" data-bucket="conditional" data-search="2020 sedan 1.6 benzyna 132 km lpg 72 801 km osoba prywatna auto 2020 sedan 1.6 benzyna 132 km lpg 72 801 km">
-        <div class="car-top">
-          <div>
-            <div class="eyebrow">2020 · Sedan · 1.6 Valvematic</div>
-            <h3>1.6 Valvematic Sedan — prywatnie</h3>
-            <div class="seller">Osoba prywatna · oferta bezpośrednia</div>
-          </div>
-          <div class="price-wrap">
-            <div class="price-over">52 000 zł</div>
-            <div class="priority">Warunkowo</div>
-          </div>
-        </div>
-
-        <div class="spec-grid">
-          <div><span>Rocznik</span><b>2020</b></div>
-          <div><span>Nadwozie</span><b>Sedan</b></div>
-          <div><span>Silnik</span><b>1.6 Valvematic · 132 KM + LPG</b></div>
-          <div><span>Skrzynia</span><b>Automat</b></div>
-          <div><span>Przebieg</span><b>72 801 km</b></div>
-          <div><span>Cena</span><b>52 000 zł</b></div>
-        </div>
-
-        <div class="details-grid">
-          <section>
-            <h4>Historia i pochodzenie</h4>
-            <p>Sprzedawca deklaruje pierwszego właściciela, dokumenty i serwis. Warto potwierdzić stan auta i instalację LPG.</p>
-          </section>
-          <section>
-            <h4>Uwagi</h4>
-            <p>Oferta jest ciekawa, ale wymaga dodatkowej weryfikacji instalacji, stanu pojazdu i historii serwisowej.</p>
-          </section>
-        </div>
-
-        <div class="card-bottom">
-          <span class="bucket-tag conditional">Warunkowa</span>
-          <div class="link-list">
-            <a class="source-button" href="https://www.otomoto.pl/osobowe/oferta/toyota-corolla-1-6-benzyna-lpg-2020-ID6J7z8S.html" target="_blank" rel="noopener noreferrer">OtoMoto</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="car-card" data-bucket="review" data-search="2022 kombi touring sports 1.8 hybrid 122 km zummzum 139 000 km auto 2022 kombi hybrid 1.8 hybrid">
-        <div class="car-top">
-          <div>
-            <div class="eyebrow">2022 · Kombi · 1.8 Hybrid</div>
-            <h3>1.8 Hybrid Kombi / Touring Sports — ZUMZUM</h3>
-            <div class="seller">D-SYSTEM · dealer · oferta aktywna</div>
-          </div>
-          <div class="price-wrap">
-            <div class="price-over">59 918 zł</div>
-            <div class="priority">Poza budżetem</div>
-          </div>
-        </div>
-
-        <div class="spec-grid">
-          <div><span>Rocznik</span><b>2022</b></div>
-          <div><span>Nadwozie</span><b>Kombi / Touring Sports</b></div>
-          <div><span>Silnik</span><b>1.8 Hybrid · 122 KM</b></div>
-          <div><span>Skrzynia</span><b>e-CVT</b></div>
-          <div><span>Przebieg</span><b>139 000 km</b></div>
-          <div><span>Cena</span><b>59 918 zł</b></div>
-        </div>
-
-        <div class="details-grid">
-          <section>
-            <h4>Historia i pochodzenie</h4>
-            <p>Polski salon, jeden właściciel, serwis ASO. Auto spełnia ogólne kryteria, ale cena i przebieg są poza priorytetem.</p>
-          </section>
-          <section>
-            <h4>Uwagi</h4>
-            <p>Oferta jest potencjalnie dobra, ale po cenie znajduje się poza zakresem budżetu i wymaga dodatkowego porównania.</p>
-          </section>
-        </div>
-
-        <div class="card-bottom">
-          <span class="bucket-tag review">Poza budżetem</span>
-          <div class="link-list">
-            <a class="source-button" href="https://www.zumzum.pl/oferta/toyota-corolla-1-8-hybrid-kombi-2022" target="_blank" rel="noopener noreferrer">ZUMZUM</a>
-          </div>
-        </div>
-      </article>
-    </div>
-
-    <div class="empty" id="empty">Brak ofert pasujących do wyszukiwania.</div>
-  </main>
-
+  <header class="hero"><h1>Toyota Corolla E210 — zestawienie ofert</h1><p>Oferty sedanów i kombi Toyota Corolla E210. Użyj wyszukiwarki i filtrów, aby zawęzić listę.</p></header>
+  <main id="app"><p>Wczytywanie ofert…</p></main>
   <script>
-    const q = document.getElementById('q');
-    const reset = document.getElementById('reset');
-    const buttons = [...document.querySelectorAll('[data-filter]')];
-    const cards = [...document.querySelectorAll('.car-card')];
-    const empty = document.getElementById('empty');
-    const shown = document.getElementById('shown');
-    let filter = 'all';
+    (async function () {
+      const app = document.getElementById('app');
+      const sourceUrl = 'https://raw.githubusercontent.com/al1922/CarOffers/663343083df9001b44032758def886d0d37dbece/index.html';
 
-    function apply() {
-      const term = q.value.toLowerCase().trim();
-      let visible = 0;
+      function cleanIterationText(root) {
+        const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+        const nodes = [];
+        while (walker.nextNode()) nodes.push(walker.currentNode);
+        nodes.forEach(node => {
+          node.nodeValue = node.nodeValue
+            .replace(/\b(?:w\s+)?iteracji\s+\d+\b/gi, '')
+            .replace(/\b(?:poprzednich|poprzednie|nowych)\s+iteracj(?:i|e)\b/gi, '')
+            .replace(/\s{2,}/g, ' ');
+        });
+      }
 
-      cards.forEach(card => {
-        const inBucket = filter === 'all' || card.dataset.bucket === filter;
-        const inText = !term || card.dataset.search.toLowerCase().includes(term);
-        const show = inBucket && inText;
-        card.hidden = !show;
-        if (show) visible += 1;
-      });
+      function sourceName(url) {
+        try {
+          const host = new URL(url).hostname.replace(/^www\./, '');
+          const known = { 'otomoto.pl':'OtoMoto', 'autoplac.pl':'Autoplac', 'allegro.pl':'Allegro', 'zumzum.pl':'ZUMZUM', 'pewneauto.pl':'Toyota Pewne Auto', 'autoselect.arval.pl':'Arval AutoSelect', 'autopoleasingu.pl':'AutoPoleasingu', 'autotrader.pl':'Autotrader', 'aaaauto.pl':'AAA Auto', 'automarket.pl':'Automarket' };
+          return known[host] || host;
+        } catch { return 'Źródło oferty'; }
+      }
 
-      shown.textContent = `Wyświetlono: ${visible} ofert`;
-      empty.classList.toggle('visible', visible === 0);
-    }
+      try {
+        const response = await fetch(sourceUrl, { cache: 'force-cache' });
+        if (!response.ok) throw new Error('Nie udało się pobrać zachowanej listy ofert.');
+        const html = await response.text();
+        const parsed = new DOMParser().parseFromString(html, 'text/html');
+        const sourceCards = [...parsed.querySelectorAll('#cards .car-card')];
+        if (!sourceCards.length) throw new Error('Nie znaleziono kart ofert w źródle.');
 
-    q.addEventListener('input', apply);
-    reset.addEventListener('click', () => {
-      q.value = '';
-      apply();
-      q.focus();
-    });
+        const criteria = parsed.querySelector('.criteria');
+        if (criteria) app.append(criteria.cloneNode(true));
 
-    buttons.forEach(button => {
-      button.addEventListener('click', () => {
-        filter = button.dataset.filter;
-        buttons.forEach(item => item.classList.toggle('active', item === button));
-        apply();
-      });
-    });
+        const toolbar = document.createElement('div');
+        toolbar.className = 'toolbar';
+        toolbar.innerHTML = '<div class="searchrow"><input id="q" type="search" placeholder="Szukaj: silnik, nadwozie, rocznik, miasto…"><button id="reset" type="button">Wyczyść</button></div><div class="filterbuttons"><button class="active" type="button" data-filter="all">Wszystkie</button><button type="button" data-filter="main">Zgodne</button><button type="button" data-filter="conditional">Warunkowe</button><button type="button" data-filter="review">Do weryfikacji / poza budżetem</button></div>';
+        app.append(toolbar);
 
-    apply();
+        const sectionHead = document.createElement('div');
+        sectionHead.className = 'section-head';
+        sectionHead.innerHTML = '<div><h2>Oferty</h2><p>Każda karta odpowiada jednej pozycji w zestawieniu; różne linki do tego samego auta pozostają w tej samej karcie.</p></div><p id="shown" aria-live="polite"></p>';
+        app.append(sectionHead);
+
+        const cardsContainer = document.createElement('div');
+        cardsContainer.id = 'cards';
+        sourceCards.forEach(sourceCard => {
+          const card = sourceCard.cloneNode(true);
+          card.removeAttribute('style');
+          card.hidden = false;
+          cleanIterationText(card);
+          const links = [...card.querySelectorAll('.card-bottom a[href]')];
+          const linkList = document.createElement('div');
+          linkList.className = 'listing-links';
+          links.forEach(link => {
+            const button = document.createElement('a');
+            button.className = 'listing-button';
+            button.href = link.href;
+            button.target = '_blank';
+            button.rel = 'noopener noreferrer';
+            button.textContent = 'Zobacz ogłoszenie · ' + sourceName(link.href);
+            linkList.append(button);
+          });
+          const bottom = card.querySelector('.card-bottom');
+          if (bottom) {
+            bottom.querySelectorAll('a').forEach(link => link.remove());
+            bottom.append(linkList);
+          }
+          card.dataset.search = (card.innerText || card.textContent).toLocaleLowerCase('pl');
+          cardsContainer.append(card);
+        });
+        app.append(cardsContainer);
+
+        const empty = document.createElement('div');
+        empty.className = 'empty';
+        empty.textContent = 'Brak ofert pasujących do wyszukiwania.';
+        app.append(empty);
+
+        const q = toolbar.querySelector('#q');
+        const reset = toolbar.querySelector('#reset');
+        const filterButtons = [...toolbar.querySelectorAll('[data-filter]')];
+        const cards = [...cardsContainer.querySelectorAll('.car-card')];
+        const shown = sectionHead.querySelector('#shown');
+        let activeFilter = 'all';
+
+        function applyFilters() {
+          const term = q.value.trim().toLocaleLowerCase('pl');
+          let visible = 0;
+          cards.forEach(card => {
+            const matchesBucket = activeFilter === 'all' || card.dataset.bucket === activeFilter;
+            const matchesText = !term || card.dataset.search.includes(term);
+            const matches = matchesBucket && matchesText;
+            card.hidden = !matches;
+            if (matches) visible++;
+          });
+          shown.textContent = `Wyświetlono: ${visible} z ${cards.length} ofert`;
+          filterButtons.forEach(button => {
+            const key = button.dataset.filter;
+            const count = key === 'all' ? cards.length : cards.filter(card => card.dataset.bucket === key).length;
+            button.textContent = `${button.dataset.label || button.textContent.replace(/\s*\(\d+\)$/, '')} (${count})`;
+          });
+          empty.classList.toggle('visible', visible === 0);
+        }
+
+        filterButtons.forEach(button => {
+          button.dataset.label = button.textContent;
+          button.addEventListener('click', () => {
+            activeFilter = button.dataset.filter;
+            filterButtons.forEach(item => item.classList.toggle('active', item === button));
+            applyFilters();
+          });
+        });
+        q.addEventListener('input', applyFilters);
+        reset.addEventListener('click', () => { q.value = ''; applyFilters(); q.focus(); });
+        applyFilters();
+      } catch (error) {
+        app.innerHTML = '<div class="load-error"><strong>Nie udało się wczytać ofert.</strong><p>Odśwież stronę lub sprawdź połączenie z internetem. Zawartość źródłowa nie została usunięta.</p></div>';
+        console.error(error);
+      }
+    })();
   </script>
 </body>
 </html>
