@@ -1,49 +1,60 @@
-# Oferty samochodów — osobne JSON dla modeli
+# Oferty samochodów — GitHub Pages
 
-## Struktura
+Strona statyczna bez GitHub API i bez ocen/statusów użytkownika. Modele w osobnych plikach `offers/*.json`; indeks `models.json` generuje GitHub Actions po dodaniu modelu.
 
-- `index.html`, `app.js` — strona GitHub Pages, bez logowania, synchronizacji i oznaczania ofert.
-- `offers/toyota-corolla-e210.json` — 44 istniejące oferty Corolli z ostatniego pliku.
-- `offers/<model>.json` — kolejny model i jego oferty.
-- `models.json` — indeks zakładek, generowany automatycznie przez GitHub Actions.
-- `.github/workflows/update-models.yml` — aktualizacja indeksu po dodaniu/zmianie plików w `offers/`.
+## Publikacja
 
-## Pierwsze wdrożenie
+Skopiuj zawartość tego katalogu do **katalogu głównego repozytorium** (nie przesyłaj samego ZIP). W GitHub → Settings → Pages ustaw publikację z gałęzi `main` i `/ (root)`. Zachowaj `.github/workflows/update-models.yml` i `scripts/generate-models.py`. W Settings → Actions → General włącz uprawnienie zapisu dla workflow, jeżeli automatyczne aktualizowanie indeksu ma działać.
 
-1. Wgraj **całą zawartość** ZIP do głównego katalogu repozytorium na gałęzi `main`, zachowując katalogi (również ukryty `.github`).
-2. Usuń stary główny `offers.json` (nie jest już używany).
-3. W **Settings → Pages** wybierz `Deploy from a branch`, `main`, `/ (root)`.
-4. W **Settings → Actions → General → Workflow permissions** ustaw `Read and write permissions`, jeżeli repozytorium pozwala na zmianę tej opcji. Workflow potrzebuje uprawnienia do zapisu `models.json`.
-5. Sprawdź **Actions → Aktualizuj indeks modeli**. Jeżeli pierwszy push nie uruchomił akcji, użyj `Run workflow`.
+## Dodanie modelu
 
-Uwaga: ochrona gałęzi `main` może blokować automatyczny commit. Wtedy trzeba dopuścić zapis przez Actions albo generować `models.json` lokalnie i commitować razem z ofertami.
-
-## Dodanie nowej zakładki
-
-Dodaj plik `offers/toyota-auris.json` z zawartością:
+Dodaj plik `offers/skoda-octavia.json` zawierający:
 
 ```json
 {
-  "version": 1,
+  "version": 2,
   "updatedAt": "2026-11-06",
-  "model": {
-    "key": "toyota-auris",
-    "name": "Toyota Auris",
-    "description": "Hatchback / Touring Sports",
-    "requirements": null
-  },
+  "model": {"key": "skoda-octavia", "name": "Skoda Octavia", "description": "Liftback / kombi", "requirements": null},
   "offers": []
 }
 ```
 
-Do `offers` dopisuj oferty w dotychczasowym formacie (`id`, `vin`, `listingIds`, `urls`, `title`, `verdict`, `html`).
+Po udanym przebiegu GitHub Actions indeks `models.json` zaktualizuje się automatycznie. Można również uruchomić lokalnie `python scripts/generate-models.py` i zatwierdzić wygenerowany plik.
 
-Po `git push` workflow wykryje plik i dopisze model do `models.json`. Po zakończeniu akcji i publikacji GitHub Pages odśwież stronę. Nowa zakładka pojawi się automatycznie. Zmiana istniejącego pliku ofert nie wymaga edycji `models.json`.
+## Format oferty (v2)
 
-**Ważne:** Samo wrzucenie pliku nie wystarczy, dopóki GitHub Actions nie wygeneruje indeksu i GitHub Pages nie opublikuje zmiany. Zwykle następuje to po krótkim czasie, niekoniecznie natychmiast.
+```json
+{
+  "id": "listing:portal:123456",
+  "vin": null,
+  "listingIds": ["portal:123456"],
+  "urls": [{"url":"https://example.com/ogloszenie/123456", "normalized":"https://example.com/ogloszenie/123456", "label":"Zobacz ogłoszenie"}],
+  "title": "Skoda Octavia 1.5 TSI",
+  "year": 2021,
+  "price": 59000,
+  "priceLabel": "59 000 zł",
+  "mileage": 98000,
+  "mileageLabel": "98 000 km",
+  "engine": "1.5 TSI · 150 KM",
+  "body": "Kombi",
+  "transmission": "Manualna",
+  "seller": "Sprzedawca / lokalizacja",
+  "subtitle": "2021 · Kombi · 1.5 TSI",
+  "priority": "Priorytet 2",
+  "verdict": "check",
+  "verdictTitle": "Wymaga weryfikacji",
+  "verdictNote": "Potwierdzić historię serwisową",
+  "specs": {"Rocznik":"2021"},
+  "details": {"Historia i pochodzenie":"...", "Wyposażenie":"...", "Problemy / niepewności":"...", "Ocena":"..."}
+}
+```
 
-## Aktualizacja ofert
+Pola `price`, `mileage`, `year` są **liczbami**, nie tekstem. `verdict`: `match`, `check` lub `fail`. Wersja 2 nie potrzebuje pola `html`; istniejące 44 oferty Corolli zostały przekonwertowane.
 
-Zastąp wyłącznie odpowiedni plik w `offers/`. Nie zmieniaj innych modeli. Możesz użyć `python scripts/generate-models.py` lokalnie, aby odtworzyć indeks bez GitHub Actions.
+## Nowe oferty i duplikaty
 
-Specyfikacja na stronie jest obecnie skonfigurowana tylko dla Corolli (`requirements: "corolla"`). Inne modele mają `requirements: null`, czyli bez tego panelu. Kolorowe oceny `verdict` pozostają częścią opisu ogłoszeń.
+„Nowe” oznacza identyfikatory, których nie było podczas poprzedniego otwarcia danego modelu w tej przeglądarce. Pierwsze uruchomienie ustanawia stan początkowy. Informacja jest lokalna i nie synchronizuje się między urządzeniami. Duplikaty są łączone na podstawie identycznego VIN, ID ogłoszenia lub znormalizowanego URL; dwa ogłoszenia bez wspólnych identyfikatorów nie będą automatycznie scalane. Dane ofert pochodzą z przekazanego zestawienia — strona nie sprawdza ich bieżącej dostępności.
+
+## Uruchamianie lokalne
+
+Przez `file://` przeglądarka może blokować `fetch`. Użyj `python -m http.server 8000`, a następnie `http://localhost:8000`.

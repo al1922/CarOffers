@@ -1,0 +1,358 @@
+{
+  "version": 2,
+  "updatedAt": "2026-11-07",
+  "model": {
+    "key": "skoda-octavia-iii-combi",
+    "name": "Škoda Octavia III Combi",
+    "description": "Kombi",
+    "requirements": "1.4 TSI 150 KM (EA211); 2017–2019"
+  },
+  "offers": [
+    {
+      "id": "listing:otomoto:ID6Ii8aR",
+      "modelKey": "skoda-octavia-iii-combi",
+      "vin": null,
+      "listingIds": [
+        "otomoto:ID6Ii8aR"
+      ],
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6Ii8aR.html",
+          "normalized": "https://otomoto.pl/osobowe/oferta/skoda-octavia-ID6Ii8aR.html",
+          "label": "Zobacz ogłoszenie — Otomoto"
+        }
+      ],
+      "title": "1.4 TSI EA211 150 KM Kombi — Polska (lokalizacja w ogłoszeniu)  123 605 km",
+      "year": 2018,
+      "price": 49500,
+      "priceLabel": "49 500 zł",
+      "mileage": 123605,
+      "mileageLabel": "123 605 km",
+      "engine": "1.4 TSI EA211 · 150 KM",
+      "body": "Kombi",
+      "transmission": "manualna",
+      "seller": "sprzedawca Otomoto · karta Otomoto otwarta w ramach weryfikacji 06.11.2026",
+      "subtitle": "2018 · Kombi · 1.4 TSI EA211 · 150 KM",
+      "priority": "Priorytet 1",
+      "verdict": "match",
+      "verdictTitle": "Zgodne podstawowe parametry",
+      "verdictNote": "Dostępna karta ogłoszenia; status u sprzedawcy, bezwypadkowość i historia wymagają niezależnego potwierdzenia.",
+      "specs": {
+        "rocznik": "2018",
+        "nadwozie": "Kombi",
+        "silnik": "1.4 TSI EA211 · 150 KM",
+        "skrzynia": "manualna",
+        "przebieg": "123 605 km",
+        "cena zakupu": "49 500 zł — cena ogłoszenia; kwotę końcową potwierdzić"
+      },
+      "details": {
+        "Historia i pochodzenie": "Silnik 1.4 TSI 150 KM, kombi i manual zgodne z ogłoszeniem.",
+        "Wyposażenie": "VIN nieujawniony w zweryfikowanym fragmencie karty; uzyskać od sprzedawcy.",
+        "Problemy / niepewności": "Uzyskać VIN oraz książkę serwisową; sprawdzić historię powypadkową.",
+        "Ocena": "Rocznik, nadwozie, pojemność/moc oraz cena podstawowa mieszczą się w kryteriach. Weryfikacja dostępności sprzedawcy i stanu technicznego pozostaje do wykonania."
+      }
+    },
+    {
+      "id": "vin:TMBJC7NE0J0191378",
+      "modelKey": "skoda-octavia-iii-combi",
+      "vin": "TMBJC7NE0J0191378",
+      "listingIds": [],
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6Ic8JQ.html",
+          "normalized": "https://otomoto.pl/osobowe/oferta/skoda-octavia-ID6Ic8JQ.html",
+          "label": "Zobacz ogłoszenie — Otomoto"
+        }
+      ],
+      "title": "1.4 TSI EA211 150 KM Kombi — Polska (lokalizacja w ogłoszeniu)  79 677 km",
+      "year": 2017,
+      "price": 52900,
+      "priceLabel": "52 900 zł",
+      "mileage": 79677,
+      "mileageLabel": "79 677 km",
+      "engine": "1.4 TSI EA211 · 150 KM",
+      "body": "Kombi",
+      "transmission": "DSG",
+      "seller": "Pehamot Auto Salon · karta Otomoto otwarta w ramach weryfikacji 06.11.2026",
+      "subtitle": "2017 · Kombi · 1.4 TSI EA211 · 150 KM",
+      "priority": "Priorytet 1",
+      "verdict": "check",
+      "verdictTitle": "Parametry zgodne — wymaga weryfikacji historii lub rozbieżności",
+      "verdictNote": "Dostępna karta ogłoszenia; status u sprzedawcy, bezwypadkowość i historia wymagają niezależnego potwierdzenia.",
+      "specs": {
+        "rocznik": "2017",
+        "nadwozie": "Kombi",
+        "silnik": "1.4 TSI EA211 · 150 KM",
+        "skrzynia": "DSG",
+        "przebieg": "79 677 km",
+        "cena zakupu": "52 900 zł — cena ogłoszenia; kwotę końcową potwierdzić"
+      },
+      "details": {
+        "Historia i pochodzenie": "Niski deklarowany przebieg, publiczny VIN.",
+        "Wyposażenie": "VIN: TMBJC7NE0J0191378",
+        "Problemy / niepewności": "Auto ma 9 lat i przebieg poniżej 80 tys. km — potwierdzić historię odczytów; pełna diagnostyka DSG.",
+        "Ocena": "Rocznik, nadwozie, pojemność/moc oraz cena podstawowa mieszczą się w kryteriach. Weryfikacja dostępności sprzedawcy i stanu technicznego pozostaje do wykonania."
+      }
+    },
+    {
+      "id": "vin:TMBJC7NE1J0371159",
+      "modelKey": "skoda-octavia-iii-combi",
+      "vin": "TMBJC7NE1J0371159",
+      "listingIds": [],
+      "urls": [
+        {
+          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-tsi-7924-5099-SJ",
+          "normalized": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-tsi-7924-5099-SJ",
+          "label": "Zobacz ogłoszenie — Autoplac"
+        }
+      ],
+      "title": "1.4 TSI EA211 150 KM Kombi — Rokietnica  165 000 km",
+      "year": 2018,
+      "price": 50900,
+      "priceLabel": "50 900 zł",
+      "mileage": 165000,
+      "mileageLabel": "165 000 km",
+      "engine": "1.4 TSI EA211 · 150 KM",
+      "body": "Kombi",
+      "transmission": "manualna",
+      "seller": "sprzedawca Autoplac · karta Autoplac otwarta w ramach weryfikacji 06.11.2026",
+      "subtitle": "2018 · Kombi · 1.4 TSI EA211 · 150 KM",
+      "priority": "Priorytet 2",
+      "verdict": "match",
+      "verdictTitle": "Zgodne podstawowe parametry",
+      "verdictNote": "Dostępna karta ogłoszenia; status u sprzedawcy, bezwypadkowość i historia wymagają niezależnego potwierdzenia. Cena z bezpośredniej karty w kolejnej iteracji: 50 900 zł (poprzednio 53 000 zł).",
+      "specs": {
+        "rocznik": "2018",
+        "nadwozie": "Kombi",
+        "silnik": "1.4 TSI EA211 · 150 KM",
+        "skrzynia": "manualna",
+        "przebieg": "165 000 km",
+        "cena zakupu": "50 900 zł"
+      },
+      "details": {
+        "Historia i pochodzenie": "Polski rynek, jawny VIN i przebieg korespondujący z CEPiK.",
+        "Wyposażenie": "VIN: TMBJC7NE1J0371159",
+        "Problemy / niepewności": "Wymagane potwierdzenie rozrządu, układu chłodzenia i dokumentów serwisu.",
+        "Ocena": "Rocznik, nadwozie, pojemność/moc oraz cena podstawowa mieszczą się w kryteriach. Weryfikacja dostępności sprzedawcy i stanu technicznego pozostaje do wykonania."
+      }
+    },
+    {
+      "id": "listing:autoplac:7027-2878-UP",
+      "modelKey": "skoda-octavia-iii-combi",
+      "vin": null,
+      "listingIds": [
+        "autoplac:7027-2878-UP"
+      ],
+      "urls": [
+        {
+          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-klimatronic-2-stref-dsg-podgrz-fotele-pdc-2x-navi-pl-salon-7027-2878-UP",
+          "normalized": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-klimatronic-2-stref-dsg-podgrz-fotele-pdc-2x-navi-pl-salon-7027-2878-UP",
+          "label": "Zobacz ogłoszenie — Autoplac"
+        }
+      ],
+      "title": "1.4 TSI EA211 150 KM Kombi — Cieszyn  151 427 km",
+      "year": 2018,
+      "price": 57500,
+      "priceLabel": "57 500 zł",
+      "mileage": 151427,
+      "mileageLabel": "151 427 km",
+      "engine": "1.4 TSI EA211 · 150 KM",
+      "body": "Kombi",
+      "transmission": "DSG",
+      "seller": "Wilcars · karta Autoplac otwarta w ramach weryfikacji 06.11.2026",
+      "subtitle": "2018 · Kombi · 1.4 TSI EA211 · 150 KM",
+      "priority": "Priorytet 2",
+      "verdict": "check",
+      "verdictTitle": "Parametry zgodne — wymaga weryfikacji historii lub rozbieżności",
+      "verdictNote": "Dostępna karta ogłoszenia; status u sprzedawcy, bezwypadkowość i historia wymagają niezależnego potwierdzenia.",
+      "specs": {
+        "rocznik": "2018",
+        "nadwozie": "Kombi",
+        "silnik": "1.4 TSI EA211 · 150 KM",
+        "skrzynia": "DSG",
+        "przebieg": "151 427 km",
+        "cena zakupu": "57 500 zł — cena ogłoszenia; kwotę końcową potwierdzić"
+      },
+      "details": {
+        "Historia i pochodzenie": "Polski salon; nawigacja, dwustrefowa klimatyzacja, czujniki i podgrzewane fotele.",
+        "Wyposażenie": "VIN nieujawniony w zweryfikowanym fragmencie karty; uzyskać od sprzedawcy.",
+        "Problemy / niepewności": "Przekładnia DSG DQ200 — test sprzęgieł i mechatroniki; potwierdzić serwisy i zakres napraw blacharskich.",
+        "Ocena": "Rocznik, nadwozie, pojemność/moc oraz cena podstawowa mieszczą się w kryteriach. Weryfikacja dostępności sprzedawcy i stanu technicznego pozostaje do wykonania."
+      }
+    },
+    {
+      "id": "vin:TMBJC7NE3J0363399",
+      "modelKey": "skoda-octavia-iii-combi",
+      "vin": "TMBJC7NE3J0363399",
+      "listingIds": [],
+      "urls": [
+        {
+          "url": "https://www.olx.pl/d/oferta/skoda-octavia-skoda-octavia-1-4-tsi-150-km-salon-pl-fv-23-serwis-aso-CID5-ID1cWumu.html",
+          "normalized": "https://olx.pl/d/oferta/skoda-octavia-skoda-octavia-1-4-tsi-150-km-salon-pl-fv-23-serwis-aso-CID5-ID1cWumu.html",
+          "label": "Zobacz ogłoszenie — OLX"
+        }
+      ],
+      "title": "1.4 TSI EA211 150 KM Kombi — Kraków – Bronowice  262 707 km",
+      "year": 2018,
+      "price": 30000,
+      "priceLabel": "30 000 zł",
+      "mileage": 262707,
+      "mileageLabel": "262 707 km",
+      "engine": "1.4 TSI EA211 · 150 KM",
+      "body": "Kombi",
+      "transmission": "manualna",
+      "seller": "sprzedawca firmowy · karta OLX otwarta w ramach weryfikacji 06.11.2026",
+      "subtitle": "2018 · Kombi · 1.4 TSI EA211 · 150 KM",
+      "priority": "Priorytet 3",
+      "verdict": "check",
+      "verdictTitle": "Parametry zgodne — wymaga weryfikacji historii lub rozbieżności",
+      "verdictNote": "Dostępna karta ogłoszenia; status u sprzedawcy, bezwypadkowość i historia wymagają niezależnego potwierdzenia.",
+      "specs": {
+        "rocznik": "2018",
+        "nadwozie": "Kombi",
+        "silnik": "1.4 TSI EA211 · 150 KM",
+        "skrzynia": "manualna",
+        "przebieg": "262 707 km",
+        "cena zakupu": "30 000 zł — cena ogłoszenia; kwotę końcową potwierdzić"
+      },
+      "details": {
+        "Historia i pochodzenie": "Polski salon, jedna firma, faktura VAT 23%; serwis ASO według opisu, ostatni czerwiec 2026.",
+        "Wyposażenie": "VIN: TMBJC7NE3J0363399",
+        "Problemy / niepewności": "Wyjątkowo wysoki przebieg, 262 707 km. Przed zakupem wymaga inspekcji silnika, historii przeglądów, weryfikacji szkód i sprawdzenia, czy dotychczasowe użytkowanie flotowe nie spowodowało nadmiernego zużycia.",
+        "Ocena": "Rocznik, nadwozie, pojemność/moc oraz cena podstawowa mieszczą się w kryteriach. Weryfikacja dostępności sprzedawcy i stanu technicznego pozostaje do wykonania."
+      }
+    },
+    {
+      "id": "listing:otomoto:ID6IfkZG",
+      "modelKey": "skoda-octavia-iii-combi",
+      "vin": null,
+      "listingIds": [
+        "otomoto:ID6IfkZG"
+      ],
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6IfkZG.html",
+          "normalized": "https://otomoto.pl/osobowe/oferta/skoda-octavia-ID6IfkZG.html",
+          "label": "Zobacz ogłoszenie"
+        }
+      ],
+      "title": "Škoda Octavia III Combi — 1.4 TSI EA211 · 150 KM, 167 185 km",
+      "year": 2017,
+      "price": 44900,
+      "priceLabel": "44 900 zł",
+      "mileage": 167185,
+      "mileageLabel": "167 185 km",
+      "engine": "1.4 TSI EA211 · 150 KM",
+      "body": "Kombi / Combi",
+      "transmission": "Manualna",
+      "seller": "Sprzedawca · Tarnów",
+      "subtitle": "2017 · Kombi / Combi · 1.4 TSI EA211 · 150 KM",
+      "priority": "Priorytet 2",
+      "verdict": "check",
+      "verdictTitle": "Weryfikacja przed zakupem",
+      "verdictNote": "Parametry podstawowe zgodne; stan i historia pojazdu wymagają niezależnej kontroli. Karta otwierała się podczas przeglądu 07.11.2026; dostępność nie została potwierdzona telefonicznie.",
+      "specs": {
+        "rocznik": "2017",
+        "nadwozie": "Kombi / Combi",
+        "silnik": "1.4 TSI EA211 · 150 KM",
+        "skrzynia": "Manualna",
+        "przebieg": "167 185 km",
+        "cena zakupu": "44 900 zł"
+      },
+      "details": {
+        "Historia i pochodzenie": "Samochód importowany, zarejestrowany w Polsce. W opisie brak pełnej listy przeglądów i udokumentowanej historii napraw.",
+        "Wyposażenie": "Hak holowniczy; szczegóły kamery i czujników niepotwierdzone.",
+        "Problemy / niepewności": "Brak VIN w otwartym opisie; moc opisana 149/150 KM, dane techniczne podają 150 KM i 1395 cm³. Sprawdzić kod EA211 po VIN, dokumenty rozrządu i ewentualne szkody.",
+        "Ocena": "Pojemne kombi z manualem w sensownej cenie; do dalszej selekcji dopiero po historii serwisowej."
+      }
+    },
+    {
+      "id": "vin:TMBJC7NE5J0240977",
+      "modelKey": "skoda-octavia-iii-combi",
+      "vin": "TMBJC7NE5J0240977",
+      "listingIds": [
+        "olx:ID1cn3Pv"
+      ],
+      "urls": [
+        {
+          "url": "https://www.olx.pl/d/oferta/sprzedam-skoda-octavia-ambition-iii-2017-rok-kombi-1-4tsi-150km-CID5-ID1cn3Pv.html",
+          "normalized": "https://olx.pl/d/oferta/sprzedam-skoda-octavia-ambition-iii-2017-rok-kombi-1-4tsi-150km-CID5-ID1cn3Pv.html",
+          "label": "Zobacz ogłoszenie"
+        }
+      ],
+      "title": "Škoda Octavia III Combi — 1.4 TSI EA211 · 150 KM  179 512 km",
+      "year": 2017,
+      "price": 36500,
+      "priceLabel": "36 500 zł",
+      "mileage": 179512,
+      "mileageLabel": "179 512 km",
+      "engine": "1.4 TSI EA211 · 150 KM",
+      "body": "Kombi / Combi",
+      "transmission": "Manualna",
+      "seller": "Osoba prywatna · Gliwice",
+      "subtitle": "2017 · Kombi / Combi · 1.4 TSI EA211 · 150 KM",
+      "priority": "Priorytet 2",
+      "verdict": "check",
+      "verdictTitle": "Weryfikacja przed zakupem",
+      "verdictNote": "Zgodny silnik i cena; dokumentacja, historia szkód i dostępność wymagają potwierdzenia.",
+      "specs": {
+        "rocznik": "2017",
+        "nadwozie": "Kombi / Combi",
+        "silnik": "1.4 TSI EA211 · 150 KM",
+        "skrzynia": "Manualna",
+        "przebieg": "179 512 km",
+        "cena zakupu": "36 500 zł"
+      },
+      "details": {
+        "Historia i pochodzenie": "Salon Polska. Sprzedawca posiada auto od 2022 r., deklaruje regularny serwis; data pierwszej rejestracji 26.03.2018.",
+        "Wyposażenie": "Wersja Ambition, wyposażenie szczegółowe do ustalenia.",
+        "Problemy / niepewności": "Brak kompletu jawnych faktur i informacji o stanie rozrządu. 179 tys. km; konieczna weryfikacja układu chłodzenia i historii napraw.",
+        "Ocena": "Atrakcyjna cena i trwały EA211 z manualem, pozostawia dużą rezerwę na przegląd."
+      }
+    },
+    {
+      "id": "vin:TMBJC9NE9J0024495",
+      "modelKey": "skoda-octavia-iii-combi",
+      "vin": "TMBJC9NE9J0024495",
+      "listingIds": [
+        "olx:ID1cnVKW"
+      ],
+      "urls": [
+        {
+          "url": "https://www.olx.pl/d/oferta/skoda-octavia-1-4-tsi-150-km-warta-uwagi-CID5-ID1cnVKW.html",
+          "normalized": "https://olx.pl/d/oferta/skoda-octavia-1-4-tsi-150-km-warta-uwagi-CID5-ID1cnVKW.html",
+          "label": "Zobacz ogłoszenie"
+        }
+      ],
+      "title": "Škoda Octavia III Combi — 1.4 TSI EA211 · 150 KM  106 000 km",
+      "year": 2017,
+      "price": 49999,
+      "priceLabel": "49 999 zł",
+      "mileage": 106000,
+      "mileageLabel": "106 000 km",
+      "engine": "1.4 TSI EA211 · 150 KM",
+      "body": "Kombi / Combi",
+      "transmission": "DSG 7-biegowa",
+      "seller": "Sprzedawca prywatny · Warszawa Ursus",
+      "subtitle": "2017 · Kombi / Combi · 1.4 TSI EA211 · 150 KM",
+      "priority": "Priorytet 3",
+      "verdict": "check",
+      "verdictTitle": "Weryfikacja przed zakupem",
+      "verdictNote": "Zgodny silnik i cena; dokumentacja, historia szkód i dostępność wymagają potwierdzenia.",
+      "specs": {
+        "rocznik": "2017",
+        "nadwozie": "Kombi / Combi",
+        "silnik": "1.4 TSI EA211 · 150 KM",
+        "skrzynia": "DSG 7-biegowa",
+        "przebieg": "106 000 km",
+        "cena zakupu": "49 999 zł"
+      },
+      "details": {
+        "Historia i pochodzenie": "Import z Danii, zarejestrowana w Polsce. Dokumentacja serwisowa nie została przedstawiona w otwartym opisie.",
+        "Wyposażenie": "Wersja bogato wyposażona; zakres wyposażenia wymaga sprawdzenia.",
+        "Problemy / niepewności": "Skrzynia DSG DQ200 z suchymi sprzęgłami; sprawdzić historię napraw/mechatroniki, płynność ruszania i pracę na zimno.",
+        "Ocena": "Mały przebieg, ale bez dokumentacji DSG nie polecam wyjazdu specjalnie po ten egzemplarz."
+      }
+    }
+  ]
+}
