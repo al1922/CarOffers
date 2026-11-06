@@ -2,11 +2,74 @@
   "version": 1,
   "models": [
     {
+      "key": "hyundai-i30-iii-wagon",
+      "name": "Hyundai i30 III Wagon",
+      "description": "Kombi (Wagon)",
+      "requirements": "1.4 MPI 100 KM lub 1.5 DPi 110 KM; 2018–2022",
+      "file": "offers/hyundai-i30-iii-wagon.json"
+    },
+    {
+      "key": "kia-ceed-iii-sw",
+      "name": "Kia Ceed III Sportswagon",
+      "description": "Kombi (SW)",
+      "requirements": "1.4 MPI 100 KM lub 1.4 T-GDI 140 KM; 2018–2022",
+      "file": "offers/kia-ceed-iii-sw.json"
+    },
+    {
+      "key": "renault-megane-iv-grandtour",
+      "name": "Renault Mégane IV Grandtour",
+      "description": "Kombi",
+      "requirements": "1.3 TCe 140 KM; 2019–2022",
+      "file": "offers/renault-megane-iv-grandtour.json"
+    },
+    {
+      "key": "seat-leon-iii-st",
+      "name": "SEAT Leon III ST",
+      "description": "Kombi (ST)",
+      "requirements": "1.4 TSI 125/150 KM (EA211); 2017–2020",
+      "file": "offers/seat-leon-iii-st.json"
+    },
+    {
+      "key": "skoda-octavia-iii-combi",
+      "name": "Škoda Octavia III Combi",
+      "description": "Kombi",
+      "requirements": "1.4 TSI 150 KM (EA211); 2017–2019",
+      "file": "offers/skoda-octavia-iii-combi.json"
+    },
+    {
+      "key": "suzuki-sx4-s-cross",
+      "name": "Suzuki SX4 S-Cross",
+      "description": "Crossover",
+      "requirements": "1.4 BoosterJet 140 KM; 2017–2020",
+      "file": "offers/suzuki-sx4-s-cross.json"
+    },
+    {
+      "key": "suzuki-vitara-ii",
+      "name": "Suzuki Vitara II",
+      "description": "SUV",
+      "requirements": "1.6 VVT 120 KM lub 1.4 BoosterJet 140 KM; 2017–2020",
+      "file": "offers/suzuki-vitara-ii.json"
+    },
+    {
+      "key": "toyota-auris-touring-sports",
+      "name": "Toyota Auris II Touring Sports",
+      "description": "Kombi (Touring Sports)",
+      "requirements": "1.8 Hybrid 136 KM; 2017–2018",
+      "file": "offers/toyota-auris-touring-sports.json"
+    },
+    {
       "key": "toyota-corolla-e210",
-      "name": "Toyota Corolla E210",
+      "name": "Toyota Corolla XII (E210)",
       "description": "Sedan i kombi (Touring Sports)",
-      "requirements": "corolla",
+      "requirements": "1.5 VVT-i 125 KM, 1.6 Valvematic 132 KM lub 1.8 Hybrid 122 KM; 2019–2022; do 60 000 zł",
       "file": "offers/toyota-corolla-e210.json"
+    },
+    {
+      "key": "volkswagen-golf-vii-variant",
+      "name": "Volkswagen Golf VII Variant",
+      "description": "Kombi (Variant)",
+      "requirements": "1.4 TSI 125/150 KM (EA211); 2017–2020",
+      "file": "offers/volkswagen-golf-vii-variant.json"
     }
   ]
 }
