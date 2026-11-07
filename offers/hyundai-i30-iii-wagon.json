@@ -5,9 +5,343 @@
     "key": "hyundai-i30-iii-wagon",
     "name": "Hyundai i30 III Wagon",
     "description": "Kombi (Wagon)",
-    "requirements": "1.4 MPI 100 KM lub 1.5 DPi 110 KM; 2018–2022"
+    "requirements": "Hyundai i30 III Wagon/Kombi; wyłącznie benzyna 1.5 DPi 110 KM lub 1.4 T-GDI 140 KM; rocznik od 2018; cena zakupu maks. 55 000 zł brutto bez warunku finansowania; kamera cofania fabryczna lub możliwa dołożona; bez poważnych szkód konstrukcyjnych; udokumentowany serwis preferowany; przebieg oceniany wraz ze stanem technicznym."
   },
   "offers": [
+    {
+      "id": "vin:TMAH281CANJ118698",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "vin": "TMAH281CANJ118698",
+      "listingIds": [
+        "otomoto:ID6IiMLq",
+        "olx:ID1d1NKr"
+      ],
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiMLq.html",
+          "normalized": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiMLq.html",
+          "label": "Zobacz ogłoszenie — Otomoto"
+        },
+        {
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-tylko-63tys-km-bezwypadkowy-salon-pl-1-5-110km-pl-CID5-ID1d1NKr.html",
+          "normalized": "https://www.olx.pl/d/oferta/hyundai-i30-tylko-63tys-km-bezwypadkowy-salon-pl-1-5-110km-pl-CID5-ID1d1NKr.html",
+          "label": "Zobacz ogłoszenie — OLX"
+        }
+      ],
+      "title": "1.5 DPi · 110 KM Kombi — Iwkowa (Małopolskie) · 63 000 km",
+      "year": 2022,
+      "price": 47999,
+      "priceLabel": "47 999 zł",
+      "mileage": 63000,
+      "mileageLabel": "63 000 km",
+      "engine": "1.5 DPi · 110 KM",
+      "body": "Kombi / Wagon",
+      "transmission": "manualna",
+      "seller": "HANDEX · Iwkowa",
+      "subtitle": "2022 · Kombi / Wagon · 1.5 DPi · 110 KM",
+      "priority": "Priorytet 1",
+      "verdict": "check",
+      "verdictTitle": "Parametry bazowe zgodne — potwierdź historię i dostępność",
+      "verdictNote": "Karta konkretnego ogłoszenia dostępna; deklaracje sprzedawcy nie są niezależnym potwierdzeniem braku szkód, przebiegu lub dostępności.",
+      "specs": {
+        "rocznik": "2022",
+        "nadwozie": "Kombi / Wagon",
+        "silnik": "1.5 DPi · 110 KM",
+        "skrzynia": "manualna",
+        "przebieg": "63 000 km",
+        "cena zakupu": "47 999 zł — cena standardowa z dostępnej karty (bez warunku kredytu)"
+      },
+      "details": {
+        "Historia i pochodzenie": "Polska, pierwszy właściciel i bezwypadkowość deklarowane przez sprzedawcę.",
+        "Wyposażenie": "Kamera cofania: Niepotwierdzona; w ogłoszeniu tylne czujniki parkowania. Dołożenie możliwe po sprawdzeniu multimediów.",
+        "Kamera cofania": "Niepotwierdzona; w ogłoszeniu tylne czujniki parkowania. Dołożenie możliwe po sprawdzeniu multimediów.",
+        "Problemy / niepewności": "Bardzo atrakcyjny niski przebieg i cena; bez faktur serwisowych nie jest niezależnie potwierdzony. Uzyskać VIN (ujawniony), dokumenty i sprawdzić kamerę.",
+        "Ocena": "Jeden z najlepszych stosunków rocznika i przebiegu do ceny; oglądać w pierwszej kolejności.",
+        "Weryfikacja internetowa": "07.11.2026: udało się otworzyć kartę konkretnej oferty. Dostępność fizyczna nie została potwierdzona u sprzedawcy; konieczny kontakt przed wyjazdem."
+      }
+    },
+    {
+      "id": "listing:aaaauto:34935780",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "vin": null,
+      "listingIds": [
+        "aaaauto:34935780"
+      ],
+      "urls": [
+        {
+          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34935780",
+          "normalized": "https://www.aaaauto.pl/detail/hyundai/i30/34935780",
+          "label": "Zobacz ogłoszenie — AAA Auto"
+        }
+      ],
+      "title": "1.5 DPi · 110 KM Kombi — Polska / sieć AAA AUTO · 108 068 km",
+      "year": 2022,
+      "price": 47500,
+      "priceLabel": "47 500 zł",
+      "mileage": 108068,
+      "mileageLabel": "108 068 km",
+      "engine": "1.5 DPi · 110 KM",
+      "body": "Kombi / Wagon",
+      "transmission": "manualna",
+      "seller": "AAA AUTO · lokalizacja do potwierdzenia",
+      "subtitle": "2022 · Kombi / Wagon · 1.5 DPi · 110 KM",
+      "priority": "Priorytet 1",
+      "verdict": "check",
+      "verdictTitle": "Parametry bazowe zgodne — potwierdź historię i dostępność",
+      "verdictNote": "Karta konkretnego ogłoszenia dostępna; deklaracje sprzedawcy nie są niezależnym potwierdzeniem braku szkód, przebiegu lub dostępności.",
+      "specs": {
+        "rocznik": "2022",
+        "nadwozie": "Kombi / Wagon",
+        "silnik": "1.5 DPi · 110 KM",
+        "skrzynia": "manualna",
+        "przebieg": "108 068 km",
+        "cena zakupu": "47 500 zł — cena standardowa z dostępnej karty (bez warunku kredytu)"
+      },
+      "details": {
+        "Historia i pochodzenie": "Polski salon, serwis ASO, VAT 23% deklarowane przez sieć AAA Auto. Ostatni przegląd 08.2026 przy 101 707 km według karty.",
+        "Wyposażenie": "Kamera cofania: Niepotwierdzona; deklarowane czujniki parkowania.",
+        "Kamera cofania": "Niepotwierdzona; deklarowane czujniki parkowania.",
+        "Problemy / niepewności": "47 500 zł to cena standardowa; 44 500 zł obowiązuje wyłącznie przy kredycie. Sprawdzić dokumenty, kamerę i konkretną placówkę.",
+        "Ocena": "Dobry rocznik i umiarkowany przebieg z deklarowaną historią ASO.",
+        "Weryfikacja internetowa": "07.11.2026: udało się otworzyć kartę konkretnej oferty. Dostępność fizyczna nie została potwierdzona u sprzedawcy; konieczny kontakt przed wyjazdem."
+      }
+    },
+    {
+      "id": "vin:TMAH251CANJ114334",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "vin": "TMAH251CANJ114334",
+      "listingIds": [
+        "autoplac:1722-7171-LE",
+        "olx:ID1cN3bI"
+      ],
+      "urls": [
+        {
+          "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-5-2022r-hyundai-i30-dpi-classic-1722-7171-LE",
+          "normalized": "https://autoplac.pl/oferta/hyundai/i30/iii-1-5-2022r-hyundai-i30-dpi-classic-1722-7171-LE",
+          "label": "Zobacz ogłoszenie — Autoplac"
+        },
+        {
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-2022-1-5-dpi-pl-salon-lane-assist-android-auto-carplay-oryg-lakier-CID5-ID1cN3bI.html",
+          "normalized": "https://www.olx.pl/d/oferta/hyundai-i30-2022-1-5-dpi-pl-salon-lane-assist-android-auto-carplay-oryg-lakier-CID5-ID1cN3bI.html",
+          "label": "Zobacz ogłoszenie — OLX"
+        }
+      ],
+      "title": "Hyundai i30 III Wagon — 1.5 DPi · 110 KM, 121 245 km",
+      "year": 2022,
+      "price": 50700,
+      "priceLabel": "50 700 zł",
+      "mileage": 121245,
+      "mileageLabel": "121 245 km",
+      "engine": "1.5 DPi · 110 KM",
+      "body": "Kombi / Wagon",
+      "transmission": "Manualna",
+      "seller": "LUKAR · Kraków",
+      "subtitle": "2022 · Kombi / Wagon · 1.5 DPi · 110 KM",
+      "priority": "Priorytet 1",
+      "verdict": "check",
+      "verdictTitle": "Parametry bazowe zgodne; konieczne dodatkowe potwierdzenia",
+      "verdictNote": "Strona ogłoszenia otwiera się, jednak dostępność u sprzedawcy, historia pojazdu i stan techniczny nie są niezależnie potwierdzone.",
+      "specs": {
+        "rocznik": "2022",
+        "nadwozie": "Kombi / Wagon",
+        "silnik": "1.5 DPi · 110 KM",
+        "skrzynia": "Manualna",
+        "przebieg": "121 245 km",
+        "cena zakupu": "50 700 zł — cena standardowa z dostępnej karty (bez warunku kredytu)"
+      },
+      "details": {
+        "Historia i pochodzenie": "LUKAR Kraków; salon Polska, serwis udokumentowany fakturami według sprzedawcy; olej 08.2026 przy 116 791 km; deklarowany oryginalny lakier.",
+        "Wyposażenie": "Classic+, czujniki parkowania z tyłu (według opisu); kamera do potwierdzenia.",
+        "Problemy / niepewności": "Poprzedni adres Autoplac 8511-7282-LC zwraca 404; zastąpiono aktualnym 1722-7171-LE i dodano ogłoszenie OLX z VIN. 12-miesięczna gwarancja wymaga sprawdzenia warunków.",
+        "Ocena": "Jeden z najciekawszych młodych egzemplarzy ze stosunkowo niedużym przebiegiem.",
+        "Kamera cofania": "Niepotwierdzona: w tekście wymienione tylne czujniki, CarPlay; brak jednoznacznego potwierdzenia kamery.",
+        "Weryfikacja internetowa": "07.11.2026: dostępna karta konkretnego ogłoszenia, z odczytywalnymi parametrami. Nie przeprowadzono kontaktu ze sprzedawcą, oględzin ani niezależnej kontroli VIN; brak gwarancji dostępności fizycznej."
+      }
+    },
+    {
+      "id": "listing:otomoto:ID6IjeFS",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "vin": null,
+      "listingIds": [
+        "otomoto:ID6IjeFS"
+      ],
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IjeFS.html",
+          "normalized": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IjeFS.html",
+          "label": "Zobacz ogłoszenie — Otomoto"
+        }
+      ],
+      "title": "1.4 T-GDI · 140 KM Kombi — Nowy Sącz · 67 000 km",
+      "year": 2019,
+      "price": 45900,
+      "priceLabel": "45 900 zł",
+      "mileage": 67000,
+      "mileageLabel": "67 000 km",
+      "engine": "1.4 T-GDI · 140 KM",
+      "body": "Kombi / Wagon",
+      "transmission": "manualna",
+      "seller": "DUO KOMIS · Nowy Sącz",
+      "subtitle": "2019 · Kombi / Wagon · 1.4 T-GDI · 140 KM",
+      "priority": "Priorytet 1",
+      "verdict": "check",
+      "verdictTitle": "Parametry bazowe zgodne — potwierdź historię i dostępność",
+      "verdictNote": "Karta konkretnego ogłoszenia dostępna; deklaracje sprzedawcy nie są niezależnym potwierdzeniem braku szkód, przebiegu lub dostępności.",
+      "specs": {
+        "rocznik": "2019",
+        "nadwozie": "Kombi / Wagon",
+        "silnik": "1.4 T-GDI · 140 KM",
+        "skrzynia": "manualna",
+        "przebieg": "67 000 km",
+        "cena zakupu": "45 900 zł — cena standardowa z dostępnej karty (bez warunku kredytu)"
+      },
+      "details": {
+        "Historia i pochodzenie": "Komis podaje dobry stan techniczny i możliwość gwarancji mechanicznej.",
+        "Wyposażenie": "Kamera cofania: Niepotwierdzona; w opisie nie ma jednoznacznego potwierdzenia kamery.",
+        "Kamera cofania": "Niepotwierdzona; w opisie nie ma jednoznacznego potwierdzenia kamery.",
+        "Problemy / niepewności": "Bardzo niski przebieg względem ceny; żądać udokumentowanej historii ASO i raportu VIN, sprawdzić szkody oraz wyposażenie kamerą.",
+        "Ocena": "Ciekawy niski przebieg, ale mniej zweryfikowanej historii niż w innych ofertach.",
+        "Weryfikacja internetowa": "07.11.2026: udało się otworzyć kartę konkretnej oferty. Dostępność fizyczna nie została potwierdzona u sprzedawcy; konieczny kontakt przed wyjazdem."
+      }
+    },
+    {
+      "id": "listing:otomoto:ID6Iiq7J",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "vin": null,
+      "listingIds": [
+        "otomoto:ID6Iiq7J"
+      ],
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6Iiq7J.html",
+          "normalized": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6Iiq7J.html",
+          "label": "Zobacz ogłoszenie — Otomoto"
+        }
+      ],
+      "title": "1.4 T-GDI · 140 KM Kombi — Radom · 73 000 km",
+      "year": 2019,
+      "price": 48900,
+      "priceLabel": "48 900 zł",
+      "mileage": 73000,
+      "mileageLabel": "73 000 km",
+      "engine": "1.4 T-GDI · 140 KM",
+      "body": "Kombi / Wagon",
+      "transmission": "manualna",
+      "seller": "KMS Auto Komis · Radom",
+      "subtitle": "2019 · Kombi / Wagon · 1.4 T-GDI · 140 KM",
+      "priority": "Priorytet 1",
+      "verdict": "match",
+      "verdictTitle": "Parametry zgodne, kamera deklarowana; historia do potwierdzenia",
+      "verdictNote": "Karta konkretnego ogłoszenia dostępna; deklaracje sprzedawcy nie są niezależnym potwierdzeniem braku szkód, przebiegu lub dostępności.",
+      "specs": {
+        "rocznik": "2019",
+        "nadwozie": "Kombi / Wagon",
+        "silnik": "1.4 T-GDI · 140 KM",
+        "skrzynia": "manualna",
+        "przebieg": "73 000 km",
+        "cena zakupu": "48 900 zł — cena standardowa z dostępnej karty (bez warunku kredytu)"
+      },
+      "details": {
+        "Historia i pochodzenie": "Świeży import z Niemiec, pierwszy właściciel i ASO deklarowane, stan bezwypadkowy deklarowany przez komis.",
+        "Wyposażenie": "Kamera cofania: Potwierdzona według opisu; ponadto nawigacja i bogata wersja.",
+        "Kamera cofania": "Potwierdzona według opisu; ponadto nawigacja i bogata wersja.",
+        "Problemy / niepewności": "Auto sprowadzane, wymaga historii zagranicznej VIN, faktur, zakresu opłat i sprawdzenia ewentualnych napraw lakierniczych.",
+        "Ocena": "Mały przebieg i dobry silnik; atrakcyjna oferta do weryfikacji historii.",
+        "Weryfikacja internetowa": "07.11.2026: udało się otworzyć kartę konkretnej oferty. Dostępność fizyczna nie została potwierdzona u sprzedawcy; konieczny kontakt przed wyjazdem."
+      }
+    },
+    {
+      "id": "listing:otomoto:ID6IiUPp",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "vin": null,
+      "listingIds": [
+        "otomoto:ID6IiUPp"
+      ],
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiUPp.html",
+          "normalized": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiUPp.html",
+          "label": "Zobacz ogłoszenie — Otomoto"
+        }
+      ],
+      "title": "1.4 T-GDI · 140 KM Kombi — Złotniki (koło Poznania) · 87 837 km",
+      "year": 2019,
+      "price": 49800,
+      "priceLabel": "49 800 zł",
+      "mileage": 87837,
+      "mileageLabel": "87 837 km",
+      "engine": "1.4 T-GDI · 140 KM",
+      "body": "Kombi / Wagon",
+      "transmission": "manualna",
+      "seller": "Bartłomiej · osoba prywatna",
+      "subtitle": "2019 · Kombi / Wagon · 1.4 T-GDI · 140 KM",
+      "priority": "Priorytet 1",
+      "verdict": "match",
+      "verdictTitle": "Parametry zgodne, kamera deklarowana; historia do potwierdzenia",
+      "verdictNote": "Karta konkretnego ogłoszenia dostępna; deklaracje sprzedawcy nie są niezależnym potwierdzeniem braku szkód, przebiegu lub dostępności.",
+      "specs": {
+        "rocznik": "2019",
+        "nadwozie": "Kombi / Wagon",
+        "silnik": "1.4 T-GDI · 140 KM",
+        "skrzynia": "manualna",
+        "przebieg": "87 837 km",
+        "cena zakupu": "49 800 zł — cena standardowa z dostępnej karty (bez warunku kredytu)"
+      },
+      "details": {
+        "Historia i pochodzenie": "Samochód krajowy zakupiony w 2020, deklarowany serwis co rok w ASO Hyundai.",
+        "Wyposażenie": "Kamera cofania: Potwierdzona według opisu, ponadto przednie i tylne czujniki parkowania.",
+        "Kamera cofania": "Potwierdzona według opisu, ponadto przednie i tylne czujniki parkowania.",
+        "Problemy / niepewności": "WAŻNE: sprzedawca przyznaje wymianę prawych tylnych drzwi i przedniego zderzaka po drobnych zdarzeniach parkingowych; koniecznie dokumentacja szkód, pomiar grubości lakieru oraz oględziny słupków/progów.",
+        "Ocena": "Bardzo ciekawa oferta; prace blacharskie nie muszą wykluczać, ale sprawdzić zakres szkód.",
+        "Weryfikacja internetowa": "07.11.2026: udało się otworzyć kartę konkretnej oferty. Dostępność fizyczna nie została potwierdzona u sprzedawcy; konieczny kontakt przed wyjazdem."
+      }
+    },
+    {
+      "id": "listing:otomoto:ID6IhpXr",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "vin": null,
+      "listingIds": [
+        "otomoto:ID6IhpXr"
+      ],
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IhpXr.html",
+          "normalized": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IhpXr.html",
+          "label": "Zobacz ogłoszenie — Otomoto"
+        }
+      ],
+      "title": "1.4 T-GDI · 140 KM Kombi — Pszów · 108 000 km",
+      "year": 2019,
+      "price": 46999,
+      "priceLabel": "46 999 zł",
+      "mileage": 108000,
+      "mileageLabel": "108 000 km",
+      "engine": "1.4 T-GDI · 140 KM",
+      "body": "Kombi / Wagon",
+      "transmission": "manualna",
+      "seller": "Marcin · osoba prywatna",
+      "subtitle": "2019 · Kombi / Wagon · 1.4 T-GDI · 140 KM",
+      "priority": "Priorytet 1",
+      "verdict": "match",
+      "verdictTitle": "Parametry zgodne, kamera deklarowana; historia do potwierdzenia",
+      "verdictNote": "Karta konkretnego ogłoszenia dostępna; deklaracje sprzedawcy nie są niezależnym potwierdzeniem braku szkód, przebiegu lub dostępności.",
+      "specs": {
+        "rocznik": "2019",
+        "nadwozie": "Kombi / Wagon",
+        "silnik": "1.4 T-GDI · 140 KM",
+        "skrzynia": "manualna",
+        "przebieg": "108 000 km",
+        "cena zakupu": "46 999 zł — cena standardowa z dostępnej karty (bez warunku kredytu)"
+      },
+      "details": {
+        "Historia i pochodzenie": "Sprzedawca deklaruje pierwszego właściciela i pełną historię ASO od nowości.",
+        "Wyposażenie": "Kamera cofania: Potwierdzona według listy wyposażenia; wymienione także przednie czujniki parkowania.",
+        "Kamera cofania": "Potwierdzona według listy wyposażenia; wymienione także przednie czujniki parkowania.",
+        "Problemy / niepewności": "W ogłoszeniu podana bogata wersja Premium/Passion Plus; dokładne elementy sprawdzić w aucie. Potwierdzić historię szkód i serwisu.",
+        "Ocena": "Bardzo dobry zestaw silnika, manualu, kamery i wyposażenia.",
+        "Weryfikacja internetowa": "07.11.2026: udało się otworzyć kartę konkretnej oferty. Dostępność fizyczna nie została potwierdzona u sprzedawcy; konieczny kontakt przed wyjazdem."
+      }
+    },
     {
       "id": "listing:autoplac:0240-6320-YN",
       "modelKey": "hyundai-i30-iii-wagon",
@@ -32,244 +366,26 @@
       "body": "Kombi",
       "transmission": "manualna",
       "seller": "LUKAR · karta Autoplac otwarta w ramach weryfikacji 06.11.2026",
-      "subtitle": "2021 · Kombi · 1.5 DPi · 110 KM",
-      "priority": "Priorytet 1",
+      "subtitle": "2021 · Kombi / Wagon · 1.5 DPi · 110 KM",
+      "priority": "Priorytet 2",
       "verdict": "check",
-      "verdictTitle": "Parametry zgodne — wymaga weryfikacji historii lub rozbieżności",
-      "verdictNote": "Dostępna karta ogłoszenia; status u sprzedawcy, bezwypadkowość i historia wymagają niezależnego potwierdzenia.",
+      "verdictTitle": "Parametry bazowe zgodne; konieczne dodatkowe potwierdzenia",
+      "verdictNote": "Strona ogłoszenia otwiera się, jednak dostępność u sprzedawcy, historia pojazdu i stan techniczny nie są niezależnie potwierdzone.",
       "specs": {
         "rocznik": "2021",
         "nadwozie": "Kombi",
         "silnik": "1.5 DPi · 110 KM",
         "skrzynia": "manualna",
         "przebieg": "100 000 km",
-        "cena zakupu": "53 700 zł — cena ogłoszenia; kwotę końcową potwierdzić"
+        "cena zakupu": "53 700 zł — cena standardowa z dostępnej karty (bez warunku kredytu)"
       },
       "details": {
         "Historia i pochodzenie": "Polski salon wg sprzedawcy, faktury serwisowe i deklarowany fabryczny lakier.",
         "Wyposażenie": "VIN nieujawniony w zweryfikowanym fragmencie karty; uzyskać od sprzedawcy.",
-        "Problemy / niepewności": "Niespójna informacja o typie faktury: etykieta VAT-marża, w opisie FV23; potwierdzić dokument sprzedaży i przebieg.",
-        "Ocena": "Rocznik, nadwozie, pojemność/moc oraz cena podstawowa mieszczą się w kryteriach. Weryfikacja dostępności sprzedawcy i stanu technicznego pozostaje do wykonania."
-      }
-    },
-    {
-      "id": "listing:otomoto:ID6IiY7i",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "vin": null,
-      "listingIds": [
-        "otomoto:ID6IiY7i"
-      ],
-      "urls": [
-        {
-          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiY7i.html",
-          "normalized": "https://otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiY7i.html",
-          "label": "Zobacz ogłoszenie — Otomoto"
-        }
-      ],
-      "title": "1.4 MPI 100 KM Kombi — Polska (lokalizacja w ogłoszeniu)  121 223 km",
-      "year": 2019,
-      "price": 41900,
-      "priceLabel": "41 900 zł",
-      "mileage": 121223,
-      "mileageLabel": "121 223 km",
-      "engine": "1.4 MPI · 100 KM",
-      "body": "Kombi",
-      "transmission": "manualna",
-      "seller": "sprzedawca Otomoto · karta Otomoto otwarta w ramach weryfikacji 06.11.2026",
-      "subtitle": "2019 · Kombi · 1.4 MPI · 100 KM",
-      "priority": "Priorytet 2",
-      "verdict": "match",
-      "verdictTitle": "Zgodne podstawowe parametry",
-      "verdictNote": "Dostępna karta ogłoszenia; status u sprzedawcy, bezwypadkowość i historia wymagają niezależnego potwierdzenia.",
-      "specs": {
-        "rocznik": "2019",
-        "nadwozie": "Kombi",
-        "silnik": "1.4 MPI · 100 KM",
-        "skrzynia": "manualna",
-        "przebieg": "121 223 km",
-        "cena zakupu": "41 900 zł — cena ogłoszenia; kwotę końcową potwierdzić"
-      },
-      "details": {
-        "Historia i pochodzenie": "Deklarowany pierwszy właściciel i historia krajowa.",
-        "Wyposażenie": "VIN nieujawniony w zweryfikowanym fragmencie karty; uzyskać od sprzedawcy.",
-        "Problemy / niepewności": "100 KM wystarcza do spokojnej jazdy, ale przy pełnym obciążeniu dynamika ograniczona; kamerę sprawdzić.",
-        "Ocena": "Rocznik, nadwozie, pojemność/moc oraz cena podstawowa mieszczą się w kryteriach. Weryfikacja dostępności sprzedawcy i stanu technicznego pozostaje do wykonania."
-      }
-    },
-    {
-      "id": "listing:otomoto:ID6IhGRc",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "vin": null,
-      "listingIds": [
-        "otomoto:ID6IhGRc"
-      ],
-      "urls": [
-        {
-          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IhGRc.html",
-          "normalized": "https://otomoto.pl/osobowe/oferta/hyundai-i30-ID6IhGRc.html",
-          "label": "Zobacz ogłoszenie — Otomoto"
-        }
-      ],
-      "title": "1.5 DPi 110 KM Kombi — Rzeszów  156 000 km",
-      "year": 2021,
-      "price": 42900,
-      "priceLabel": "42 900 zł",
-      "mileage": 156000,
-      "mileageLabel": "156 000 km",
-      "engine": "1.5 DPi · 110 KM",
-      "body": "Kombi",
-      "transmission": "manualna",
-      "seller": "sprzedawca Otomoto · karta Otomoto otwarta w ramach weryfikacji 06.11.2026",
-      "subtitle": "2021 · Kombi · 1.5 DPi · 110 KM",
-      "priority": "Priorytet 2",
-      "verdict": "match",
-      "verdictTitle": "Zgodne podstawowe parametry",
-      "verdictNote": "Dostępna karta ogłoszenia; status u sprzedawcy, bezwypadkowość i historia wymagają niezależnego potwierdzenia.",
-      "specs": {
-        "rocznik": "2021",
-        "nadwozie": "Kombi",
-        "silnik": "1.5 DPi · 110 KM",
-        "skrzynia": "manualna",
-        "przebieg": "156 000 km",
-        "cena zakupu": "42 900 zł — cena ogłoszenia; kwotę końcową potwierdzić"
-      },
-      "details": {
-        "Historia i pochodzenie": "Polskie pochodzenie i wyposażenie kamera/CarPlay wg ogłoszenia.",
-        "Wyposażenie": "VIN nieujawniony w zweryfikowanym fragmencie karty; uzyskać od sprzedawcy.",
-        "Problemy / niepewności": "Historia i status własności do udokumentowania; duży przebieg jak na 2021 r.",
-        "Ocena": "Rocznik, nadwozie, pojemność/moc oraz cena podstawowa mieszczą się w kryteriach. Weryfikacja dostępności sprzedawcy i stanu technicznego pozostaje do wykonania."
-      }
-    },
-    {
-      "id": "listing:autoplac:1492-6499-YL",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "vin": null,
-      "listingIds": [
-        "autoplac:1492-6499-YL"
-      ],
-      "urls": [
-        {
-          "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-5-2021r-dpi-nawigacja-1492-6499-YL",
-          "normalized": "https://autoplac.pl/oferta/hyundai/i30/iii-1-5-2021r-dpi-nawigacja-1492-6499-YL",
-          "label": "Zobacz ogłoszenie — Autoplac"
-        }
-      ],
-      "title": "1.5 DPi 110 KM Kombi — Dąbrowa Górnicza  123 000 km",
-      "year": 2021,
-      "price": 45900,
-      "priceLabel": "45 900 zł",
-      "mileage": 123000,
-      "mileageLabel": "123 000 km",
-      "engine": "1.5 DPi · 110 KM",
-      "body": "Kombi",
-      "transmission": "manualna",
-      "seller": "sprzedawca Autoplac · karta Autoplac otwarta w ramach weryfikacji 06.11.2026",
-      "subtitle": "2021 · Kombi · 1.5 DPi · 110 KM",
-      "priority": "Priorytet 2",
-      "verdict": "check",
-      "verdictTitle": "Parametry zgodne — wymaga weryfikacji historii lub rozbieżności",
-      "verdictNote": "Dostępna karta ogłoszenia; status u sprzedawcy, bezwypadkowość i historia wymagają niezależnego potwierdzenia.",
-      "specs": {
-        "rocznik": "2021",
-        "nadwozie": "Kombi",
-        "silnik": "1.5 DPi · 110 KM",
-        "skrzynia": "manualna",
-        "przebieg": "123 000 km",
-        "cena zakupu": "45 900 zł — cena ogłoszenia; kwotę końcową potwierdzić"
-      },
-      "details": {
-        "Historia i pochodzenie": "Ogłoszenie podaje 1.5 DPi i nawigację.",
-        "Wyposażenie": "VIN nieujawniony w zweryfikowanym fragmencie karty; uzyskać od sprzedawcy.",
-        "Problemy / niepewności": "Nie ma dowodów kompletnej historii serwisowej w publicznej karcie; poprosić o VIN i faktury.",
-        "Ocena": "Rocznik, nadwozie, pojemność/moc oraz cena podstawowa mieszczą się w kryteriach. Weryfikacja dostępności sprzedawcy i stanu technicznego pozostaje do wykonania."
-      }
-    },
-    {
-      "id": "listing:otomoto:ID6IfgO0",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "vin": null,
-      "listingIds": [
-        "otomoto:ID6IfgO0"
-      ],
-      "urls": [
-        {
-          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IfgO0.html",
-          "normalized": "https://otomoto.pl/osobowe/oferta/hyundai-i30-ID6IfgO0.html",
-          "label": "Zobacz ogłoszenie — Otomoto"
-        }
-      ],
-      "title": "1.5 DPi 110 KM Kombi — Polska (lokalizacja w ogłoszeniu)  169 000 km",
-      "year": 2022,
-      "price": 39800,
-      "priceLabel": "39 800 zł",
-      "mileage": 169000,
-      "mileageLabel": "169 000 km",
-      "engine": "1.5 DPi · 110 KM",
-      "body": "Kombi",
-      "transmission": "manualna",
-      "seller": "sprzedawca Otomoto · karta Otomoto otwarta w ramach weryfikacji 06.11.2026",
-      "subtitle": "2022 · Kombi · 1.5 DPi · 110 KM",
-      "priority": "Priorytet 3",
-      "verdict": "check",
-      "verdictTitle": "Parametry zgodne — wymaga weryfikacji historii lub rozbieżności",
-      "verdictNote": "Dostępna karta ogłoszenia; status u sprzedawcy, bezwypadkowość i historia wymagają niezależnego potwierdzenia.",
-      "specs": {
-        "rocznik": "2022",
-        "nadwozie": "Kombi",
-        "silnik": "1.5 DPi · 110 KM",
-        "skrzynia": "manualna",
-        "przebieg": "169 000 km",
-        "cena zakupu": "39 800 zł — cena ogłoszenia; kwotę końcową potwierdzić"
-      },
-      "details": {
-        "Historia i pochodzenie": "Polski rynek, pierwszy właściciel wg karty.",
-        "Wyposażenie": "VIN nieujawniony w zweryfikowanym fragmencie karty; uzyskać od sprzedawcy.",
-        "Problemy / niepewności": "169 tys. km w czteroletnim aucie; sprawdzić intensywne wykorzystanie flotowe i faktury z serwisów.",
-        "Ocena": "Rocznik, nadwozie, pojemność/moc oraz cena podstawowa mieszczą się w kryteriach. Weryfikacja dostępności sprzedawcy i stanu technicznego pozostaje do wykonania."
-      }
-    },
-    {
-      "id": "listing:otomoto:ID6IiExw",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "vin": null,
-      "listingIds": [
-        "otomoto:ID6IiExw"
-      ],
-      "urls": [
-        {
-          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiExw.html",
-          "normalized": "https://otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiExw.html",
-          "label": "Zobacz ogłoszenie — Otomoto"
-        }
-      ],
-      "title": "1.5 DPi 110 KM Kombi — Polska (lokalizacja w ogłoszeniu)  165 119 km",
-      "year": 2021,
-      "price": 43000,
-      "priceLabel": "43 000 zł",
-      "mileage": 165119,
-      "mileageLabel": "165 119 km",
-      "engine": "1.5 DPi · 110 KM",
-      "body": "Kombi",
-      "transmission": "manualna",
-      "seller": "sprzedawca Otomoto · karta Otomoto otwarta w ramach weryfikacji 06.11.2026",
-      "subtitle": "2021 · Kombi · 1.5 DPi · 110 KM",
-      "priority": "Priorytet 3",
-      "verdict": "check",
-      "verdictTitle": "Parametry zgodne — wymaga weryfikacji historii lub rozbieżności",
-      "verdictNote": "Dostępna karta ogłoszenia; status u sprzedawcy, bezwypadkowość i historia wymagają niezależnego potwierdzenia.",
-      "specs": {
-        "rocznik": "2021",
-        "nadwozie": "Kombi",
-        "silnik": "1.5 DPi · 110 KM",
-        "skrzynia": "manualna",
-        "przebieg": "165 119 km",
-        "cena zakupu": "43 000 zł — cena ogłoszenia; kwotę końcową potwierdzić"
-      },
-      "details": {
-        "Historia i pochodzenie": "Dane nadwozia kombi i jednostki 1.5 DPi zgodne z kartą.",
-        "Wyposażenie": "VIN nieujawniony w zweryfikowanym fragmencie karty; uzyskać od sprzedawcy.",
-        "Problemy / niepewności": "Przy tej cenie/przebiegu konieczne dokumenty serwisowe i kontrola stanu nadwozia.",
-        "Ocena": "Rocznik, nadwozie, pojemność/moc oraz cena podstawowa mieszczą się w kryteriach. Weryfikacja dostępności sprzedawcy i stanu technicznego pozostaje do wykonania."
+        "Problemy / niepewności": "W karcie deklarowane polskie pochodzenie, fabryczny lakier i serwis; zażądać VIN/faktur. W opisie pojawia się niejednoznaczność typu faktury VAT-marża/FV23, wyjaśnić przed zakupem.",
+        "Ocena": "Rocznik, nadwozie, pojemność/moc oraz cena podstawowa mieszczą się w kryteriach. Weryfikacja dostępności sprzedawcy i stanu technicznego pozostaje do wykonania.",
+        "Kamera cofania": "Niepotwierdzona (wersja Classic); spytać o dołożenie.",
+        "Weryfikacja internetowa": "07.11.2026: dostępna karta konkretnego ogłoszenia, z odczytywalnymi parametrami. Nie przeprowadzono kontaktu ze sprzedawcą, oględzin ani niezależnej kontroli VIN; brak gwarancji dostępności fizycznej."
       }
     },
     {
@@ -288,8 +404,8 @@
       ],
       "title": "Hyundai i30 III Wagon — 1.5 DPi · 110 KM, 105 650 km",
       "year": 2021,
-      "price": 51700,
-      "priceLabel": "51 700 zł",
+      "price": 49999,
+      "priceLabel": "49 999 zł",
       "mileage": 105650,
       "mileageLabel": "105 650 km",
       "engine": "1.5 DPi · 110 KM",
@@ -299,65 +415,69 @@
       "subtitle": "2021 · Kombi / Wagon · 1.5 DPi · 110 KM",
       "priority": "Priorytet 2",
       "verdict": "check",
-      "verdictTitle": "Weryfikacja przed zakupem",
-      "verdictNote": "Rozbieżność mocy w opisie (110/120 KM), cena potwierdzona w karcie 51 700 zł brutto. Karta otwierała się podczas przeglądu 07.11.2026; dostępność nie została potwierdzona telefonicznie.",
+      "verdictTitle": "Parametry bazowe zgodne; konieczne dodatkowe potwierdzenia",
+      "verdictNote": "Strona ogłoszenia otwiera się, jednak dostępność u sprzedawcy, historia pojazdu i stan techniczny nie są niezależnie potwierdzone.",
       "specs": {
         "rocznik": "2021",
         "nadwozie": "Kombi / Wagon",
         "silnik": "1.5 DPi · 110 KM",
         "skrzynia": "Manualna, 6 biegów",
         "przebieg": "105 650 km",
-        "cena zakupu": "51 700 zł"
+        "cena zakupu": "49 999 zł — cena standardowa z dostępnej karty (bez warunku kredytu)"
       },
       "details": {
-        "Historia i pochodzenie": "Polski salon, ASO i bezwypadkowość deklarowane; faktura VAT 23%. Pierwsza rejestracja 01.2022.",
+        "Historia i pochodzenie": "Łódź, MotoKompas; polski salon, ASO i bezwypadkowość deklarowane przez sprzedawcę.",
         "Wyposażenie": "Classic Plus; wyposażenie do sprawdzenia w pełnej karcie i po VIN.",
-        "Problemy / niepewności": "UWAGA: tabela parametrów podaje 110 KM, tekst sprzedawcy „1.5 120 KM”. Do potwierdzenia kod silnika i dane z dowodu/VIN. Cena brutto 51 700 zł (nie 49 999 ze starszego wyniku wyszukiwarki).",
-        "Ocena": "Nowy rocznik i prostszy silnik; przed kontaktem poprosić o wyjaśnienie mocy."
+        "Problemy / niepewności": "ROZBIEŻNOŚĆ SILNIKA: w danych technicznych 1.5 DPi 110 KM / 1498 cm³, w opisie sprzedawcy „1.5 120 KM”. Potwierdzić kod silnika i dowód rejestracyjny. Cena zmieniła się z 51 700 zł na 49 999 zł.",
+        "Ocena": "Nowy rocznik i prostszy silnik; przed kontaktem poprosić o wyjaśnienie mocy.",
+        "Kamera cofania": "Niepotwierdzona; konfigurację potwierdzić według VIN.",
+        "Weryfikacja internetowa": "07.11.2026: dostępna karta konkretnego ogłoszenia, z odczytywalnymi parametrami. Nie przeprowadzono kontaktu ze sprzedawcą, oględzin ani niezależnej kontroli VIN; brak gwarancji dostępności fizycznej."
       }
     },
     {
-      "id": "listing:autoplac:8511-7282-LC",
+      "id": "vin:TMAH281CANJ114421",
       "modelKey": "hyundai-i30-iii-wagon",
-      "vin": null,
+      "vin": "TMAH281CANJ114421",
       "listingIds": [
-        "autoplac:8511-7282-LC"
+        "olx:ID1bW3HH"
       ],
       "urls": [
         {
-          "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-5-2022r-hyundai-i30-dpi-classic-8511-7282-LC",
-          "normalized": "https://autoplac.pl/oferta/hyundai/i30/iii-1-5-2022r-hyundai-i30-dpi-classic-8511-7282-LC",
-          "label": "Zobacz ogłoszenie"
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-5-dpi-classic-plus-salon-polska-1-wlasciciel-vat-23-klima-CID5-ID1bW3HH.html",
+          "normalized": "https://www.olx.pl/d/oferta/hyundai-i30-1-5-dpi-classic-plus-salon-polska-1-wlasciciel-vat-23-klima-CID5-ID1bW3HH.html",
+          "label": "Zobacz ogłoszenie — OLX"
         }
       ],
-      "title": "Hyundai i30 III Wagon — 1.5 DPi · 110 KM, 121 245 km",
+      "title": "1.5 DPi · 110 KM Kombi — Poznań · 112 009 km",
       "year": 2022,
-      "price": 50700,
-      "priceLabel": "50 700 zł",
-      "mileage": 121245,
-      "mileageLabel": "121 245 km",
+      "price": 46000,
+      "priceLabel": "46 000 zł",
+      "mileage": 112009,
+      "mileageLabel": "112 009 km",
       "engine": "1.5 DPi · 110 KM",
       "body": "Kombi / Wagon",
-      "transmission": "Manualna",
-      "seller": "LUKAR · Kraków",
+      "transmission": "manualna",
+      "seller": "Sprzedawca firmowy · Poznań",
       "subtitle": "2022 · Kombi / Wagon · 1.5 DPi · 110 KM",
-      "priority": "Priorytet 1",
+      "priority": "Priorytet 2",
       "verdict": "check",
-      "verdictTitle": "Weryfikacja przed zakupem",
-      "verdictNote": "Parametry podstawowe zgodne; stan i historia pojazdu wymagają niezależnej kontroli. Karta otwierała się podczas przeglądu 07.11.2026; dostępność nie została potwierdzona telefonicznie.",
+      "verdictTitle": "Parametry bazowe zgodne — potwierdź historię i dostępność",
+      "verdictNote": "Karta konkretnego ogłoszenia dostępna; deklaracje sprzedawcy nie są niezależnym potwierdzeniem braku szkód, przebiegu lub dostępności.",
       "specs": {
         "rocznik": "2022",
         "nadwozie": "Kombi / Wagon",
         "silnik": "1.5 DPi · 110 KM",
-        "skrzynia": "Manualna",
-        "przebieg": "121 245 km",
-        "cena zakupu": "50 700 zł"
+        "skrzynia": "manualna",
+        "przebieg": "112 009 km",
+        "cena zakupu": "46 000 zł — cena standardowa z dostępnej karty (bez warunku kredytu)"
       },
       "details": {
-        "Historia i pochodzenie": "Salon Polska, oryginalny lakier i serwis podane przez sprzedawcę. Faktury przeglądów dostępne do wglądu; ostatni olej 08.2026 przy 116 791 km. W opisie 12 miesięcy gwarancji.",
-        "Wyposażenie": "Classic+, czujniki parkowania z tyłu (według opisu); kamera do potwierdzenia.",
-        "Problemy / niepewności": "Brak niezależnego raportu ASO i oględzin karoserii. Sprawdzić warunki gwarancji i zakres ochrony.",
-        "Ocena": "Jeden z najciekawszych młodych egzemplarzy ze stosunkowo niedużym przebiegiem."
+        "Historia i pochodzenie": "Krajowy samochód po jednym właścicielu, FV23; sprzedawca deklaruje dostępność od ręki.",
+        "Wyposażenie": "Kamera cofania: Niepotwierdzona; wymieniono asystenta parkowania, lecz nie kamerę.",
+        "Kamera cofania": "Niepotwierdzona; wymieniono asystenta parkowania, lecz nie kamerę.",
+        "Problemy / niepewności": "Serwis opisany ogólnikowo; konieczne faktury, VIN i potwierdzenie kamery.",
+        "Ocena": "Dobry stosunek ceny do rocznika i przebiegu, jeśli dokumenty potwierdzą stan.",
+        "Weryfikacja internetowa": "07.11.2026: udało się otworzyć kartę konkretnej oferty. Dostępność fizyczna nie została potwierdzona u sprzedawcy; konieczny kontakt przed wyjazdem."
       }
     },
     {
@@ -365,13 +485,19 @@
       "modelKey": "hyundai-i30-iii-wagon",
       "vin": null,
       "listingIds": [
-        "autoplac:7145-2764-EG"
+        "autoplac:7145-2764-EG",
+        "otomoto:ID6Ijf8c"
       ],
       "urls": [
         {
           "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-5-2022r-hyundai-i30-dpi-classic-7145-2764-EG",
           "normalized": "https://autoplac.pl/oferta/hyundai/i30/iii-1-5-2022r-hyundai-i30-dpi-classic-7145-2764-EG",
-          "label": "Zobacz ogłoszenie"
+          "label": "Zobacz ogłoszenie — Autoplac"
+        },
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6Ijf8c.html",
+          "normalized": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6Ijf8c.html",
+          "label": "Zobacz ogłoszenie — Otomoto"
         }
       ],
       "title": "Hyundai i30 III Wagon — 1.5 DPi · 110 KM, 129 383 km",
@@ -387,21 +513,23 @@
       "subtitle": "2022 · Kombi / Wagon · 1.5 DPi · 110 KM",
       "priority": "Priorytet 2",
       "verdict": "check",
-      "verdictTitle": "Weryfikacja przed zakupem",
-      "verdictNote": "Parametry podstawowe zgodne; stan i historia pojazdu wymagają niezależnej kontroli. Karta otwierała się podczas przeglądu 07.11.2026; dostępność nie została potwierdzona telefonicznie.",
+      "verdictTitle": "Parametry bazowe zgodne; konieczne dodatkowe potwierdzenia",
+      "verdictNote": "Strona ogłoszenia otwiera się, jednak dostępność u sprzedawcy, historia pojazdu i stan techniczny nie są niezależnie potwierdzone.",
       "specs": {
         "rocznik": "2022",
         "nadwozie": "Kombi / Wagon",
         "silnik": "1.5 DPi · 110 KM",
         "skrzynia": "Manualna",
         "przebieg": "129 383 km",
-        "cena zakupu": "48 700 zł"
+        "cena zakupu": "48 700 zł — cena standardowa z dostępnej karty (bez warunku kredytu)"
       },
       "details": {
-        "Historia i pochodzenie": "Osobna oferta tego samego sprzedawcy, przebieg 129 383 km. Serwis olejowy w lipcu 2026 r. przy 123 774 km według opisu.",
+        "Historia i pochodzenie": "LUKAR Kraków; deklarowany serwis olejowy w lipcu 2026 przy 123 774 km.",
         "Wyposażenie": "Wersja Classic+; kamera cofania do potwierdzenia.",
-        "Problemy / niepewności": "Potwierdzić VIN, historię serwisową i stan blacharski. Nie mylić z innym egzemplarzem LUKAR 2022 z 121 245 km.",
-        "Ocena": "Tańsza alternatywa dla drugiej oferty tego dealera; porównać protokoły oględzin obu pojazdów."
+        "Problemy / niepewności": "Występuje w dwóch serwisach; scalono. Potwierdzić numer VIN, pełne faktury i stan blacharski; inny egzemplarz niż auto 121 245 km.",
+        "Ocena": "Tańsza alternatywa dla drugiej oferty tego dealera; porównać protokoły oględzin obu pojazdów.",
+        "Kamera cofania": "Niepotwierdzona; opisuje się raczej czujniki niż kamerę.",
+        "Weryfikacja internetowa": "07.11.2026: dostępna karta konkretnego ogłoszenia, z odczytywalnymi parametrami. Nie przeprowadzono kontaktu ze sprzedawcą, oględzin ani niezależnej kontroli VIN; brak gwarancji dostępności fizycznej."
       }
     },
     {
@@ -429,23 +557,307 @@
       "transmission": "Manualna",
       "seller": "Auto Centrum Golemo · Nowy Targ",
       "subtitle": "2022 · Kombi / Wagon · 1.5 DPi · 110 KM",
-      "priority": "Priorytet 1",
+      "priority": "Priorytet 2",
       "verdict": "check",
-      "verdictTitle": "Weryfikacja przed zakupem",
-      "verdictNote": "Zgodny silnik i cena; dokumentacja, historia szkód i dostępność wymagają potwierdzenia.",
+      "verdictTitle": "Parametry bazowe zgodne; konieczne dodatkowe potwierdzenia",
+      "verdictNote": "Strona ogłoszenia otwiera się, jednak dostępność u sprzedawcy, historia pojazdu i stan techniczny nie są niezależnie potwierdzone.",
       "specs": {
         "rocznik": "2022",
         "nadwozie": "Kombi / Wagon",
         "silnik": "1.5 DPi · 110 KM",
         "skrzynia": "Manualna",
         "przebieg": "151 456 km",
-        "cena zakupu": "49 900 zł"
+        "cena zakupu": "49 900 zł — cena standardowa z dostępnej karty (bez warunku kredytu)"
       },
       "details": {
-        "Historia i pochodzenie": "Oferta autoryzowanego dealera. Sprzedawca deklaruje kontrolę techniczną pojazdu. Poprosić o wydruk przeglądów i potwierdzenie właścicieli.",
+        "Historia i pochodzenie": "Auto Centrum Golemo, Nowy Targ; dealer, deklaracja sprawdzenia technicznego, dokumenty ASO do uzyskania.",
         "Wyposażenie": "Wersja Comfort; zakres kamery i czujników do potwierdzenia.",
-        "Problemy / niepewności": "Dealer nie zastępuje niezależnej diagnostyki. Sprawdzić historię olejową i ewentualne zużycie oleju silnika.",
-        "Ocena": "Nowy rocznik, wolnossący silnik i manual, rozsądny stosunek ceny do wieku."
+        "Problemy / niepewności": "151 456 km; dealer nie gwarantuje braku szkód. Zweryfikować VIN, rozrząd, pobór oleju, historię.",
+        "Ocena": "Nowy rocznik, wolnossący silnik i manual, rozsądny stosunek ceny do wieku.",
+        "Kamera cofania": "Potwierdzona według listy wyposażenia Otomoto; zweryfikować działanie.",
+        "Weryfikacja internetowa": "07.11.2026: dostępna karta konkretnego ogłoszenia, z odczytywalnymi parametrami. Nie przeprowadzono kontaktu ze sprzedawcą, oględzin ani niezależnej kontroli VIN; brak gwarancji dostępności fizycznej."
+      }
+    },
+    {
+      "id": "listing:otomoto:ID6IhGRc",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "vin": null,
+      "listingIds": [
+        "otomoto:ID6IhGRc"
+      ],
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IhGRc.html",
+          "normalized": "https://otomoto.pl/osobowe/oferta/hyundai-i30-ID6IhGRc.html",
+          "label": "Zobacz ogłoszenie — Otomoto"
+        }
+      ],
+      "title": "1.5 DPi 110 KM Kombi — Rzeszów  156 000 km",
+      "year": 2021,
+      "price": 42900,
+      "priceLabel": "42 900 zł",
+      "mileage": 156000,
+      "mileageLabel": "156 000 km",
+      "engine": "1.5 DPi · 110 KM",
+      "body": "Kombi",
+      "transmission": "manualna",
+      "seller": "sprzedawca Otomoto · karta Otomoto otwarta w ramach weryfikacji 06.11.2026",
+      "subtitle": "2021 · Kombi / Wagon · 1.5 DPi · 110 KM",
+      "priority": "Priorytet 2",
+      "verdict": "check",
+      "verdictTitle": "Parametry bazowe zgodne; konieczne dodatkowe potwierdzenia",
+      "verdictNote": "Strona ogłoszenia otwiera się, jednak dostępność u sprzedawcy, historia pojazdu i stan techniczny nie są niezależnie potwierdzone.",
+      "specs": {
+        "rocznik": "2021",
+        "nadwozie": "Kombi",
+        "silnik": "1.5 DPi · 110 KM",
+        "skrzynia": "manualna",
+        "przebieg": "156 000 km",
+        "cena zakupu": "42 900 zł — cena standardowa z dostępnej karty (bez warunku kredytu)"
+      },
+      "details": {
+        "Historia i pochodzenie": "Krajowy egzemplarz deklarowany przez sprzedawcę; historię serwisową i liczbę właścicieli potwierdzić dokumentami.",
+        "Wyposażenie": "VIN nieujawniony w zweryfikowanym fragmencie karty; uzyskać od sprzedawcy.",
+        "Problemy / niepewności": "156 tys. km; brak niezależnego raportu historii szkód i serwisu; potwierdzić VIN i zakres napraw.",
+        "Ocena": "Rocznik, nadwozie, pojemność/moc oraz cena podstawowa mieszczą się w kryteriach. Weryfikacja dostępności sprzedawcy i stanu technicznego pozostaje do wykonania.",
+        "Kamera cofania": "Potwierdzona według opisu: kamera cofania i CarPlay.",
+        "Weryfikacja internetowa": "07.11.2026: dostępna karta konkretnego ogłoszenia, z odczytywalnymi parametrami. Nie przeprowadzono kontaktu ze sprzedawcą, oględzin ani niezależnej kontroli VIN; brak gwarancji dostępności fizycznej."
+      }
+    },
+    {
+      "id": "listing:otomoto:ID6IegxD",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "vin": null,
+      "listingIds": [
+        "otomoto:ID6IegxD"
+      ],
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IegxD.html",
+          "normalized": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IegxD.html",
+          "label": "Zobacz ogłoszenie — Otomoto"
+        }
+      ],
+      "title": "1.4 T-GDI · 140 KM Kombi — Niwy (Świętokrzyskie) · 99 000 km",
+      "year": 2019,
+      "price": 48999,
+      "priceLabel": "48 999 zł",
+      "mileage": 99000,
+      "mileageLabel": "99 000 km",
+      "engine": "1.4 T-GDI · 140 KM",
+      "body": "Kombi / Wagon",
+      "transmission": "manualna",
+      "seller": "SEBA · sprzedawca prywatny / ogłoszenie",
+      "subtitle": "2019 · Kombi / Wagon · 1.4 T-GDI · 140 KM",
+      "priority": "Priorytet 2",
+      "verdict": "match",
+      "verdictTitle": "Parametry zgodne, kamera deklarowana; historia do potwierdzenia",
+      "verdictNote": "Karta konkretnego ogłoszenia dostępna; deklaracje sprzedawcy nie są niezależnym potwierdzeniem braku szkód, przebiegu lub dostępności.",
+      "specs": {
+        "rocznik": "2019",
+        "nadwozie": "Kombi / Wagon",
+        "silnik": "1.4 T-GDI · 140 KM",
+        "skrzynia": "manualna",
+        "przebieg": "99 000 km",
+        "cena zakupu": "48 999 zł — cena standardowa z dostępnej karty (bez warunku kredytu)"
+      },
+      "details": {
+        "Historia i pochodzenie": "Import z Niemiec, oryginalny lakier i udokumentowany przebieg deklarowane przez sprzedawcę.",
+        "Wyposażenie": "Kamera cofania: Potwierdzona według opisu i wyposażenia.",
+        "Kamera cofania": "Potwierdzona według opisu i wyposażenia.",
+        "Problemy / niepewności": "NIEZGODNOŚĆ ROCZNIKA: pole rocznik 2019, opis mówi „data produkcji 2018 / model 2019”. Potwierdzić produkcję i dokumenty. Import — sprawdzić historię szkód.",
+        "Ocena": "Dobra cena i przebieg przy pozytywnej weryfikacji pochodzenia.",
+        "Weryfikacja internetowa": "07.11.2026: udało się otworzyć kartę konkretnej oferty. Dostępność fizyczna nie została potwierdzona u sprzedawcy; konieczny kontakt przed wyjazdem."
+      }
+    },
+    {
+      "id": "listing:otomoto:ID6IhRf0",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "vin": null,
+      "listingIds": [
+        "otomoto:ID6IhRf0"
+      ],
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IhRf0.html",
+          "normalized": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IhRf0.html",
+          "label": "Zobacz ogłoszenie — Otomoto"
+        }
+      ],
+      "title": "1.4 T-GDI · 140 KM Kombi — Kurów (Lubelskie) · 137 189 km",
+      "year": 2019,
+      "price": 44900,
+      "priceLabel": "44 900 zł",
+      "mileage": 137189,
+      "mileageLabel": "137 189 km",
+      "engine": "1.4 T-GDI · 140 KM",
+      "body": "Kombi / Wagon",
+      "transmission": "manualna",
+      "seller": "PHU TOM-MAR · Kurów",
+      "subtitle": "2019 · Kombi / Wagon · 1.4 T-GDI · 140 KM",
+      "priority": "Priorytet 2",
+      "verdict": "match",
+      "verdictTitle": "Parametry zgodne, kamera deklarowana; historia do potwierdzenia",
+      "verdictNote": "Karta konkretnego ogłoszenia dostępna; deklaracje sprzedawcy nie są niezależnym potwierdzeniem braku szkód, przebiegu lub dostępności.",
+      "specs": {
+        "rocznik": "2019",
+        "nadwozie": "Kombi / Wagon",
+        "silnik": "1.4 T-GDI · 140 KM",
+        "skrzynia": "manualna",
+        "przebieg": "137 189 km",
+        "cena zakupu": "44 900 zł — cena standardowa z dostępnej karty (bez warunku kredytu)"
+      },
+      "details": {
+        "Historia i pochodzenie": "Przedsiębiorca; historia do potwierdzenia fakturami, VIN i dowodem rejestracyjnym.",
+        "Wyposażenie": "Kamera cofania: Potwierdzona według listy wyposażenia.",
+        "Kamera cofania": "Potwierdzona według listy wyposażenia.",
+        "Problemy / niepewności": "137 tys. km; konieczna kontrola układu turbo, zużycia oleju i nagaru GDI oraz pomiar lakieru.",
+        "Ocena": "Dobry cenowo egzemplarz z kamerą; umiarkowany przebieg.",
+        "Weryfikacja internetowa": "07.11.2026: udało się otworzyć kartę konkretnej oferty. Dostępność fizyczna nie została potwierdzona u sprzedawcy; konieczny kontakt przed wyjazdem."
+      }
+    },
+    {
+      "id": "listing:autoplac:1492-6499-YL",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "vin": null,
+      "listingIds": [
+        "autoplac:1492-6499-YL"
+      ],
+      "urls": [
+        {
+          "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-5-2021r-dpi-nawigacja-1492-6499-YL",
+          "normalized": "https://autoplac.pl/oferta/hyundai/i30/iii-1-5-2021r-dpi-nawigacja-1492-6499-YL",
+          "label": "Zobacz ogłoszenie — Autoplac"
+        }
+      ],
+      "title": "1.5 DPi 110 KM Kombi — Dąbrowa Górnicza  123 000 km",
+      "year": 2021,
+      "price": 45900,
+      "priceLabel": "45 900 zł",
+      "mileage": 123000,
+      "mileageLabel": "123 000 km",
+      "engine": "1.5 DPi · 110 KM",
+      "body": "Kombi",
+      "transmission": "manualna",
+      "seller": "sprzedawca Autoplac · karta Autoplac otwarta w ramach weryfikacji 06.11.2026",
+      "subtitle": "2021 · Kombi / Wagon · 1.5 DPi · 110 KM",
+      "priority": "Priorytet 3",
+      "verdict": "check",
+      "verdictTitle": "Parametry bazowe zgodne; konieczne dodatkowe potwierdzenia",
+      "verdictNote": "Strona ogłoszenia otwiera się, jednak dostępność u sprzedawcy, historia pojazdu i stan techniczny nie są niezależnie potwierdzone.",
+      "specs": {
+        "rocznik": "2021",
+        "nadwozie": "Kombi",
+        "silnik": "1.5 DPi · 110 KM",
+        "skrzynia": "manualna",
+        "przebieg": "123 000 km",
+        "cena zakupu": "45 900 zł — cena standardowa z dostępnej karty (bez warunku kredytu)"
+      },
+      "details": {
+        "Historia i pochodzenie": "Ogłoszenie podaje 1.5 DPi i nawigację.",
+        "Wyposażenie": "VIN nieujawniony w zweryfikowanym fragmencie karty; uzyskać od sprzedawcy.",
+        "Problemy / niepewności": "Opis bardzo ogólnikowy, brak dokumentów serwisu i VIN. Potwierdzić historię i przebieg.",
+        "Ocena": "Rocznik, nadwozie, pojemność/moc oraz cena podstawowa mieszczą się w kryteriach. Weryfikacja dostępności sprzedawcy i stanu technicznego pozostaje do wykonania.",
+        "Kamera cofania": "Niepotwierdzona (opisana nawigacja); prośba o zdjęcie ekranu z obrazem kamery.",
+        "Weryfikacja internetowa": "07.11.2026: dostępna karta konkretnego ogłoszenia, z odczytywalnymi parametrami. Nie przeprowadzono kontaktu ze sprzedawcą, oględzin ani niezależnej kontroli VIN; brak gwarancji dostępności fizycznej."
+      }
+    },
+    {
+      "id": "listing:autoplac:0060-7009-GM",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "vin": null,
+      "listingIds": [
+        "autoplac:0060-7009-GM"
+      ],
+      "urls": [
+        {
+          "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-5-2022r-15dpi-110km-modern-gwarancja-salon-polska-2022-vat23-0060-7009-GM",
+          "normalized": "https://autoplac.pl/oferta/hyundai/i30/iii-1-5-2022r-15dpi-110km-modern-gwarancja-salon-polska-2022-vat23-0060-7009-GM",
+          "label": "Zobacz ogłoszenie — Autoplac"
+        }
+      ],
+      "title": "1.5 DPi · 110 KM Kombi — Łódź · 150 764 km",
+      "year": 2022,
+      "price": 47900,
+      "priceLabel": "47 900 zł",
+      "mileage": 150764,
+      "mileageLabel": "150 764 km",
+      "engine": "1.5 DPi · 110 KM",
+      "body": "Kombi / Wagon",
+      "transmission": "manualna",
+      "seller": "MK Centrum · Łódź",
+      "subtitle": "2022 · Kombi / Wagon · 1.5 DPi · 110 KM",
+      "priority": "Priorytet 3",
+      "verdict": "check",
+      "verdictTitle": "Parametry bazowe zgodne — potwierdź historię i dostępność",
+      "verdictNote": "Karta konkretnego ogłoszenia dostępna; deklaracje sprzedawcy nie są niezależnym potwierdzeniem braku szkód, przebiegu lub dostępności.",
+      "specs": {
+        "rocznik": "2022",
+        "nadwozie": "Kombi / Wagon",
+        "silnik": "1.5 DPi · 110 KM",
+        "skrzynia": "manualna",
+        "przebieg": "150 764 km",
+        "cena zakupu": "47 900 zł — cena standardowa z dostępnej karty (bez warunku kredytu)"
+      },
+      "details": {
+        "Historia i pochodzenie": "Sprzedawca deklaruje salon Polska, wersję Modern, fakturę VAT 23% i możliwość gwarancji.",
+        "Wyposażenie": "Kamera cofania: Niepotwierdzona.",
+        "Kamera cofania": "Niepotwierdzona.",
+        "Problemy / niepewności": "W tekście ogłoszenia możliwa wzmianka o roku 2021 mimo parametrów 2022; zweryfikować dowód i datę pierwszej rejestracji. Przebieg ponad 150 tys. km.",
+        "Ocena": "Rezerwowy kandydat; są tańsze i mniej zużyte egzemplarze.",
+        "Weryfikacja internetowa": "07.11.2026: udało się otworzyć kartę konkretnej oferty. Dostępność fizyczna nie została potwierdzona u sprzedawcy; konieczny kontakt przed wyjazdem."
+      }
+    },
+    {
+      "id": "listing:otomoto:ID6IiExw",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "vin": null,
+      "listingIds": [
+        "otomoto:ID6IiExw",
+        "aaaauto:34923513"
+      ],
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiExw.html",
+          "normalized": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiExw.html",
+          "label": "Zobacz ogłoszenie — Otomoto"
+        },
+        {
+          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34923513?campaign=online-sale",
+          "normalized": "https://www.aaaauto.pl/detail/hyundai/i30/34923513?campaign=online-sale",
+          "label": "Zobacz ogłoszenie — AAA Auto"
+        }
+      ],
+      "title": "1.5 DPi 110 KM Kombi — Polska (lokalizacja w ogłoszeniu)  165 119 km",
+      "year": 2021,
+      "price": 43000,
+      "priceLabel": "43 000 zł",
+      "mileage": 165119,
+      "mileageLabel": "165 119 km",
+      "engine": "1.5 DPi · 110 KM",
+      "body": "Kombi",
+      "transmission": "manualna",
+      "seller": "AAA AUTO · Zabrze",
+      "subtitle": "2021 · Kombi / Wagon · 1.5 DPi · 110 KM",
+      "priority": "Priorytet 3",
+      "verdict": "check",
+      "verdictTitle": "Parametry bazowe zgodne; konieczne dodatkowe potwierdzenia",
+      "verdictNote": "Strona ogłoszenia otwiera się, jednak dostępność u sprzedawcy, historia pojazdu i stan techniczny nie są niezależnie potwierdzone.",
+      "specs": {
+        "rocznik": "2021",
+        "nadwozie": "Kombi",
+        "silnik": "1.5 DPi · 110 KM",
+        "skrzynia": "manualna",
+        "przebieg": "165 119 km",
+        "cena zakupu": "43 000 zł — cena standardowa z dostępnej karty (bez warunku kredytu)"
+      },
+      "details": {
+        "Historia i pochodzenie": "Oferta AAA AUTO; historię serwisową trzeba zweryfikować dokumentami i odczytem z ASO.",
+        "Wyposażenie": "VIN nieujawniony w zweryfikowanym fragmencie karty; uzyskać od sprzedawcy.",
+        "Problemy / niepewności": "165 119 km. Cena 43 000 zł przy zwykłym zakupie; możliwe reklamy promocyjnego finansowania. Kamera niepotwierdzona.",
+        "Ocena": "Rocznik, nadwozie, pojemność/moc oraz cena podstawowa mieszczą się w kryteriach. Weryfikacja dostępności sprzedawcy i stanu technicznego pozostaje do wykonania.",
+        "Kamera cofania": "Niepotwierdzona: wykazane tylne czujniki parkowania, nie kamera.",
+        "Weryfikacja internetowa": "07.11.2026: dostępna karta konkretnego ogłoszenia, z odczytywalnymi parametrami. Nie przeprowadzono kontaktu ze sprzedawcą, oględzin ani niezależnej kontroli VIN; brak gwarancji dostępności fizycznej."
       }
     },
     {
@@ -473,23 +885,215 @@
       "transmission": "Manualna",
       "seller": "MK Centrum · Łódź",
       "subtitle": "2022 · Kombi / Wagon · 1.5 DPi · 110 KM",
-      "priority": "Priorytet 2",
+      "priority": "Priorytet 3",
       "verdict": "check",
-      "verdictTitle": "Weryfikacja przed zakupem",
-      "verdictNote": "Zgodny silnik i cena; dokumentacja, historia szkód i dostępność wymagają potwierdzenia.",
+      "verdictTitle": "Parametry bazowe zgodne; konieczne dodatkowe potwierdzenia",
+      "verdictNote": "Strona ogłoszenia otwiera się, jednak dostępność u sprzedawcy, historia pojazdu i stan techniczny nie są niezależnie potwierdzone.",
       "specs": {
         "rocznik": "2022",
         "nadwozie": "Kombi / Wagon",
         "silnik": "1.5 DPi · 110 KM",
         "skrzynia": "Manualna",
         "przebieg": "188 800 km",
-        "cena zakupu": "45 900 zł"
+        "cena zakupu": "45 900 zł — cena standardowa z dostępnej karty (bez warunku kredytu)"
       },
       "details": {
-        "Historia i pochodzenie": "Salon Polska, VIN jawny, FV VAT 23%; sprzedawca deklaruje bezwypadkowość. Ostatni serwis wg opisu w lutym 2026 przy 179 743 km.",
+        "Historia i pochodzenie": "MK Centrum Łódź; krajowy, FV23 i ostatni przegląd w 02.2026 przy 179 743 km zadeklarowane przez sprzedawcę.",
         "Wyposażenie": "Wersja Modern, wyposażenie multimedialne, klimatyzacja; szczegóły kamery/czujników do weryfikacji.",
-        "Problemy / niepewności": "188 800 km; potwierdzić cenę 45 900 zł przy zakupie bez finansowania i ewentualne dodatkowe opłaty. Sprawdzić zgodność serwisowania.",
-        "Ocena": "Młody rocznik i duży przebieg flotowy; dobra opcja, jeśli dokumentacja jest kompletna."
+        "Problemy / niepewności": "Wysoki przebieg 188 800 km, weryfikować historię flotową i serwis. Potwierdzić cenę bez finansowania oraz dostępność.",
+        "Ocena": "Młody rocznik i duży przebieg flotowy; dobra opcja, jeśli dokumentacja jest kompletna.",
+        "Kamera cofania": "Niepotwierdzona; wersja Modern — poprosić o zdjęcie pracy kamery.",
+        "Weryfikacja internetowa": "07.11.2026: dostępna karta konkretnego ogłoszenia, z odczytywalnymi parametrami. Nie przeprowadzono kontaktu ze sprzedawcą, oględzin ani niezależnej kontroli VIN; brak gwarancji dostępności fizycznej."
+      }
+    },
+    {
+      "id": "vin:TMAH3813GLJ064598",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "vin": "TMAH3813GLJ064598",
+      "listingIds": [
+        "olx:ID1bPr3c"
+      ],
+      "urls": [
+        {
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-kombi-1-4-t-gdi-140-km-automat-salon-polska-kamera-bezwypadkowy-CID5-ID1bPr3c.html",
+          "normalized": "https://www.olx.pl/d/oferta/hyundai-i30-kombi-1-4-t-gdi-140-km-automat-salon-polska-kamera-bezwypadkowy-CID5-ID1bPr3c.html",
+          "label": "Zobacz ogłoszenie — OLX"
+        }
+      ],
+      "title": "1.4 T-GDI · 140 KM Kombi — Ząbki · 112 100 km",
+      "year": 2019,
+      "price": 49999,
+      "priceLabel": "49 999 zł",
+      "mileage": 112100,
+      "mileageLabel": "112 100 km",
+      "engine": "1.4 T-GDI · 140 KM",
+      "body": "Kombi / Wagon",
+      "transmission": "Automatyczna 7DCT",
+      "seller": "Kamil · osoba prywatna",
+      "subtitle": "2019 · Kombi / Wagon · 1.4 T-GDI · 140 KM",
+      "priority": "Priorytet 3",
+      "verdict": "match",
+      "verdictTitle": "Parametry zgodne, kamera deklarowana; historia do potwierdzenia",
+      "verdictNote": "Karta konkretnego ogłoszenia dostępna; deklaracje sprzedawcy nie są niezależnym potwierdzeniem braku szkód, przebiegu lub dostępności.",
+      "specs": {
+        "rocznik": "2019",
+        "nadwozie": "Kombi / Wagon",
+        "silnik": "1.4 T-GDI · 140 KM",
+        "skrzynia": "Automatyczna 7DCT",
+        "przebieg": "112 100 km",
+        "cena zakupu": "49 999 zł — cena standardowa z dostępnej karty (bez warunku kredytu)"
+      },
+      "details": {
+        "Historia i pochodzenie": "Salon Polska, książka serwisowa i użytkowanie flotowe przed obecnym właścicielem deklarowane.",
+        "Wyposażenie": "Kamera cofania: Potwierdzona według opisu; kamera cofania.",
+        "Kamera cofania": "Potwierdzona według opisu; kamera cofania.",
+        "Problemy / niepewności": "W starszym ogłoszeniu 111 366 km, teraz około 112 100 km: prawdopodobny wzrost z używania; potwierdzić odczyt licznika. 7DCT — test pełzania, sprzęgieł i aktuatorów.",
+        "Ocena": "Automat tylko po badaniu skrzyni w warsztacie Hyundai/Kia.",
+        "Weryfikacja internetowa": "07.11.2026: udało się otworzyć kartę konkretnej oferty. Dostępność fizyczna nie została potwierdzona u sprzedawcy; konieczny kontakt przed wyjazdem."
+      }
+    },
+    {
+      "id": "listing:aaaauto:34811098",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "vin": null,
+      "listingIds": [
+        "aaaauto:34811098"
+      ],
+      "urls": [
+        {
+          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34811098",
+          "normalized": "https://www.aaaauto.pl/detail/hyundai/i30/34811098",
+          "label": "Zobacz ogłoszenie — AAA Auto"
+        }
+      ],
+      "title": "1.4 T-GDI · 140 KM Kombi — Polska / AAA AUTO · 117 517 km",
+      "year": 2019,
+      "price": 47000,
+      "priceLabel": "47 000 zł",
+      "mileage": 117517,
+      "mileageLabel": "117 517 km",
+      "engine": "1.4 T-GDI · 140 KM",
+      "body": "Kombi / Wagon",
+      "transmission": "Automatyczna 7DCT",
+      "seller": "AAA AUTO · sieć salonów",
+      "subtitle": "2019 · Kombi / Wagon · 1.4 T-GDI · 140 KM",
+      "priority": "Priorytet 3",
+      "verdict": "check",
+      "verdictTitle": "Parametry bazowe zgodne — potwierdź historię i dostępność",
+      "verdictNote": "Karta konkretnego ogłoszenia dostępna; deklaracje sprzedawcy nie są niezależnym potwierdzeniem braku szkód, przebiegu lub dostępności.",
+      "specs": {
+        "rocznik": "2019",
+        "nadwozie": "Kombi / Wagon",
+        "silnik": "1.4 T-GDI · 140 KM",
+        "skrzynia": "Automatyczna 7DCT",
+        "przebieg": "117 517 km",
+        "cena zakupu": "47 000 zł — cena standardowa z dostępnej karty (bez warunku kredytu)"
+      },
+      "details": {
+        "Historia i pochodzenie": "Auto krajowe, książka serwisowa; ostatni widoczny serwis w sierpniu 2025 przy ok. 115 tys. km.",
+        "Wyposażenie": "Kamera cofania: Niepotwierdzona (czujniki parkowania w opisie).",
+        "Kamera cofania": "Niepotwierdzona (czujniki parkowania w opisie).",
+        "Problemy / niepewności": "47 000 zł to cena gotówkowa, 44 000 zł jest ceną warunkową na kredyt. Ryzyko kosztów 7DCT, konieczna diagnostyka i sprawdzenie lokalizacji.",
+        "Ocena": "Rezerwowy automat; preferowane manuale.",
+        "Weryfikacja internetowa": "07.11.2026: udało się otworzyć kartę konkretnej oferty. Dostępność fizyczna nie została potwierdzona u sprzedawcy; konieczny kontakt przed wyjazdem."
+      }
+    },
+    {
+      "id": "listing:aaaauto:34905225",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "vin": null,
+      "listingIds": [
+        "aaaauto:34905225",
+        "otomoto:ID6IhJS4"
+      ],
+      "urls": [
+        {
+          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34905225",
+          "normalized": "https://www.aaaauto.pl/detail/hyundai/i30/34905225",
+          "label": "Zobacz ogłoszenie — AAA Auto"
+        },
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IhJS4.html",
+          "normalized": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IhJS4.html",
+          "label": "Zobacz ogłoszenie — Otomoto"
+        }
+      ],
+      "title": "1.4 T-GDI · 140 KM Kombi — Polska / AAA AUTO · 144 517 km",
+      "year": 2018,
+      "price": 44000,
+      "priceLabel": "44 000 zł",
+      "mileage": 144517,
+      "mileageLabel": "144 517 km",
+      "engine": "1.4 T-GDI · 140 KM",
+      "body": "Kombi / Wagon",
+      "transmission": "Automatyczna 7DCT",
+      "seller": "AAA AUTO · sieć salonów",
+      "subtitle": "2018 · Kombi / Wagon · 1.4 T-GDI · 140 KM",
+      "priority": "Priorytet 3",
+      "verdict": "match",
+      "verdictTitle": "Parametry zgodne, kamera deklarowana; historia do potwierdzenia",
+      "verdictNote": "Karta konkretnego ogłoszenia dostępna; deklaracje sprzedawcy nie są niezależnym potwierdzeniem braku szkód, przebiegu lub dostępności.",
+      "specs": {
+        "rocznik": "2018",
+        "nadwozie": "Kombi / Wagon",
+        "silnik": "1.4 T-GDI · 140 KM",
+        "skrzynia": "Automatyczna 7DCT",
+        "przebieg": "144 517 km",
+        "cena zakupu": "44 000 zł — cena standardowa z dostępnej karty (bez warunku kredytu)"
+      },
+      "details": {
+        "Historia i pochodzenie": "Historia ASO i pochodzenie do potwierdzenia; portal wskazuje cenę standardową 44 000 zł.",
+        "Wyposażenie": "Kamera cofania: Potwierdzona według wtórnego ogłoszenia Otomoto, do sprawdzenia w egzemplarzu.",
+        "Kamera cofania": "Potwierdzona według wtórnego ogłoszenia Otomoto, do sprawdzenia w egzemplarzu.",
+        "Problemy / niepewności": "144 517 km i automatyczna 7DCT; wymagana diagnostyka skrzyni, próby manewrowania na ciepło oraz weryfikacja kamery.",
+        "Ocena": "Automat wymagający dokładniejszej diagnostyki.",
+        "Weryfikacja internetowa": "07.11.2026: udało się otworzyć kartę konkretnej oferty. Dostępność fizyczna nie została potwierdzona u sprzedawcy; konieczny kontakt przed wyjazdem."
+      }
+    },
+    {
+      "id": "listing:otomoto:ID6IgIXq",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "vin": null,
+      "listingIds": [
+        "otomoto:ID6IgIXq"
+      ],
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IgIXq.html",
+          "normalized": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IgIXq.html",
+          "label": "Zobacz ogłoszenie — Otomoto"
+        }
+      ],
+      "title": "1.4 T-GDI · 140 KM Kombi — Jastrzębie-Zdrój · 160 000 km",
+      "year": 2018,
+      "price": 39900,
+      "priceLabel": "39 900 zł",
+      "mileage": 160000,
+      "mileageLabel": "160 000 km",
+      "engine": "1.4 T-GDI · 140 KM",
+      "body": "Kombi / Wagon",
+      "transmission": "manualna",
+      "seller": "SIMAXSA · Jastrzębie-Zdrój",
+      "subtitle": "2018 · Kombi / Wagon · 1.4 T-GDI · 140 KM",
+      "priority": "Priorytet 3",
+      "verdict": "match",
+      "verdictTitle": "Parametry zgodne, kamera deklarowana; historia do potwierdzenia",
+      "verdictNote": "Karta konkretnego ogłoszenia dostępna; deklaracje sprzedawcy nie są niezależnym potwierdzeniem braku szkód, przebiegu lub dostępności.",
+      "specs": {
+        "rocznik": "2018",
+        "nadwozie": "Kombi / Wagon",
+        "silnik": "1.4 T-GDI · 140 KM",
+        "skrzynia": "manualna",
+        "przebieg": "160 000 km",
+        "cena zakupu": "39 900 zł — cena standardowa z dostępnej karty (bez warunku kredytu)"
+      },
+      "details": {
+        "Historia i pochodzenie": "Sprzedawca deklaruje pierwszy właściciel, bezwypadkowość i ASO; FV-marża.",
+        "Wyposażenie": "Kamera cofania: Potwierdzona w opisie i tabeli wyposażenia.",
+        "Kamera cofania": "Potwierdzona w opisie i tabeli wyposażenia.",
+        "Problemy / niepewności": "160 tys. km, deklaracja ASO wymaga dokumentów; nadmierne zużycie turbosprężarki, sprzęgła oraz stan blacharski do diagnostyki.",
+        "Ocena": "Tańsza alternatywa po dokładnej kontroli stanu.",
+        "Weryfikacja internetowa": "07.11.2026: udało się otworzyć kartę konkretnej oferty. Dostępność fizyczna nie została potwierdzona u sprzedawcy; konieczny kontakt przed wyjazdem."
       }
     }
   ]
