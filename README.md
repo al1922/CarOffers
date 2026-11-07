@@ -58,3 +58,16 @@ Pola `price`, `mileage`, `year` są **liczbami**, nie tekstem. `verdict`: `match
 ## Uruchamianie lokalne
 
 Przez `file://` przeglądarka może blokować `fetch`. Użyj `python -m http.server 8000`, a następnie `http://localhost:8000`.
+
+### Poprawki v2.1
+Cena na kartach i w tabeli jest wyświetlana jako kwota w osobnym wierszu, a informacje typu „brutto (FV 23%)” mniejszą czcionką poniżej. Poprawiono szerokości kolumn oraz układ mobilny.
+
+
+## Wersja 2.2
+- Przebudowany układ wyłącznie kart ofert: cena w osobnym bloku, parametry w siatce, stabilne przyciski. Widok tabeli pozostaje bez zmian.
+- Przełącznik trybu jasnego i ciemnego w nagłówku. Preferencja zapisywana pod kluczem `carOffersTheme` w localStorage. Przy pierwszym otwarciu respektuje ustawienie systemowe.
+- Nie zmieniono struktury JSON ani mechanizmu modeli.
+
+## v2.3 — tabela na telefonach
+
+Na ekranach do 760 px tabela automatycznie przechodzi w pionowe, zwarte wiersze z ceną pod nazwą, parametrami w dwóch kolumnach oraz przyciskami Szczegóły / Ogłoszenie. Na komputerze pozostaje tabela siedmiokolumnowa. Motyw i JSON nie uległy zmianie. Aby zaktualizować istniejącą stronę, podmień `index.html` i `app.js`.

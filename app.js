@@ -30,13 +30,26 @@ function details(offer){
  if(offer.vin)d.append(node('h4','','VIN'),node('p','',offer.vin));
  d.append(offerLinks(offer));return d;
 }
+function priceBlock(offer){
+ const wrap=node('div','price-block');
+ const numeric=Number.isFinite(offer.price)?fmt(offer.price)+' zł':null;
+ const raw=safe(offer.priceLabel);
+ const amount=numeric||raw||'Brak ceny';
+ wrap.append(node('strong','price-main',amount));
+ if(numeric && raw){
+  const clean=raw.replace(/\*\*/g,'').replace(/\s+/g,' ').trim();
+  const rest=clean.replace(/^\s*[\d\s\u00a0.,]+\s*(?:zł|PLN)\s*/i,'').replace(/^[\s,;:()\-]+|[\s,;:()\-]+$/g,'').trim();
+  if(rest)wrap.append(node('span','price-note',rest));
+ }
+ return wrap;
+}
 function card(offer){
  const c=node('article','car-card');
- const top=node('div','offer-summary'), left=node('div'), right=node('div','offer-price',offer.priceLabel||(Number.isFinite(offer.price)?fmt(offer.price)+' zł':'Brak ceny'));
+ const top=node('div','offer-summary'), left=node('div'), right=node('div','offer-price');
  left.append(node('div','offer-meta',offer.subtitle||''),node('h3','',offer.title||'Oferta samochodu'));
  const badges=node('div');badges.append(node('span','verdict-chip '+(offer.verdict||''),verdictName(offer.verdict)));
  if(offer.isNew)badges.append(node('span','new-chip','Nowa'));
- left.append(badges);top.append(left,right);c.append(top);
+ left.append(badges);right.append(priceBlock(offer));top.append(left,right);c.append(top);
  const meta=node('div','offer-tags');
  for(const val of [offer.year&&offer.year+' r.',offer.mileage!=null&&fmt(offer.mileage)+' km',offer.engine,offer.body,offer.transmission])if(val)meta.append(node('span','',val));
  c.append(meta);
@@ -47,15 +60,15 @@ function card(offer){
 }
 function table(offers){
  const wrap=node('div','offer-table-wrap'), t=node('table','offer-table'), head=node('thead'), hr=node('tr');
- for(const title of ['Samochód','Rok','Silnik','Przebieg','Cena','Ocena','Ogłoszenie'])hr.append(node('th','',title));head.append(hr);t.append(head);
+ for(const title of ['Samochód','Rok','Silnik','Przebieg','Cena','Ocena','Ogłoszenie']){const th=node('th','',title);th.scope='col';hr.append(th);}head.append(hr);t.append(head);
  const body=node('tbody');
  for(const o of offers){
-  const tr=node('tr');const name=node('td');name.append(node('strong','',o.title||'Oferta'));if(o.isNew)name.append(node('span','new-chip','Nowa'));tr.append(name);
-  for(const v of [o.year||'—',o.engine||'—',o.mileage!=null?fmt(o.mileage)+' km':'—'])tr.append(node('td','',v));
-  tr.append(node('td','offer-price',o.priceLabel||(fmt(o.price)+' zł')));
-  const verdict=node('td');verdict.append(node('span','verdict-chip '+(o.verdict||''),verdictName(o.verdict)));tr.append(verdict);
-  const act=node('td'), detailRow=node('tr','detail-row'), detailCell=node('td');detailCell.colSpan=7;detailCell.append(details(o));detailRow.append(detailCell);detailRow.hidden=true;
-  const toggle=button('Szczegóły',()=>{detailRow.hidden=!detailRow.hidden;toggle.textContent=detailRow.hidden?'Szczegóły':'Zwiń';});act.append(toggle);tr.append(act);body.append(tr,detailRow);
+  const tr=node('tr','offer-data-row');const name=node('td','mobile-name');name.dataset.label='Samochód';name.append(node('strong','',o.title||'Oferta'));if(o.isNew)name.append(node('span','new-chip','Nowa'));tr.append(name);
+  for(const [label,v] of [['Rok',o.year||'—'],['Silnik',o.engine||'—'],['Przebieg',o.mileage!=null?fmt(o.mileage)+' km':'—']]){const cell=node('td');cell.dataset.label=label;cell.append(node('span','mobile-cell-value',v));tr.append(cell);}
+  const priceCell=node('td','offer-price');priceCell.dataset.label='Cena';priceCell.append(priceBlock(o));tr.append(priceCell);
+  const verdict=node('td','mobile-verdict');verdict.dataset.label='Ocena';verdict.append(node('span','verdict-chip '+(o.verdict||''),verdictName(o.verdict)));tr.append(verdict);
+  const act=node('td','mobile-actions'), detailRow=node('tr','detail-row'), detailCell=node('td');act.dataset.label='Ogłoszenie';detailCell.colSpan=7;detailCell.append(details(o));detailRow.append(detailCell);detailRow.hidden=true;
+  const toggle=button('Szczegóły',()=>{detailRow.hidden=!detailRow.hidden;toggle.textContent=detailRow.hidden?'Szczegóły':'Zwiń';toggle.setAttribute('aria-expanded',String(!detailRow.hidden));});toggle.setAttribute('aria-expanded','false');act.append(toggle);const first=(o.urls||[]).find(x=>/^https:\/\//i.test(x.url||''));if(first){const link=node('a','link-button mobile-table-link','Ogłoszenie');link.href=first.url;link.target='_blank';link.rel='noopener noreferrer';act.append(link);}tr.append(act);body.append(tr,detailRow);
  }
  t.append(body);wrap.append(t);return wrap;
 }
@@ -125,3 +138,11 @@ function setView(v){view=v;$('#viewCards').classList.toggle('active',v==='cards'
 $('#viewCards').addEventListener('click',()=>setView('cards'));$('#viewTable').addEventListener('click',()=>setView('table'));
 window.addEventListener('hashchange',()=>{const key=decodeURIComponent(location.hash.slice(1));if(key!==selectedModel && models.some(m=>m.key===key))selectModel(key);});
 (async()=>{try{const response=await fetch('./models.json',{cache:'no-store'});if(!response.ok)throw Error('Nie udało się pobrać models.json');const data=await response.json();models=(data.models||[]).filter(validModel);if(!models.length)throw Error('Brak poprawnie zdefiniowanych modeli.');const key=decodeURIComponent(location.hash.slice(1));await selectModel(models.some(m=>m.key===key)?key:models[0].key);}catch(e){empty.hidden=false;empty.textContent=e.message;console.error(e);}})();
+
+// Motyw zapisywany lokalnie; brak synchronizacji z serwerem.
+(function initTheme(){
+ const btn=document.getElementById('themeToggle');if(!btn)return;
+ const update=()=>{const dark=document.documentElement.dataset.theme==='dark';btn.textContent=dark?'Tryb jasny':'Tryb ciemny';btn.setAttribute('aria-pressed',String(dark));btn.setAttribute('aria-label',dark?'Włącz tryb jasny':'Włącz tryb ciemny');};
+ btn.addEventListener('click',()=>{const next=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=next;try{localStorage.setItem('carOffersTheme',next);}catch{}update();});
+ update();
+})();
