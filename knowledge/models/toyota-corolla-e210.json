@@ -132,7 +132,7 @@
       },
       "scope": {
         "market": "Poland / Europe",
-        "period": "Polish MY2019 documented; 1.6 should not be assumed for MY2021+",
+        "period": "Polish MY2019 documented; do not assume for MY2021 or later",
         "body": "Sedan only",
         "codeScope": "1ZR-FAE cross-checked in parts catalog; verify exact engine code by VIN"
       },
@@ -144,7 +144,7 @@
         "corolla-1zr-code"
       ],
       "notes": [
-        "Toyota confirms 1.6 Valvematic 132 KM exclusively for the new Corolla Sedan; the Polish MY2019 price list documents manual and Multidrive S. Toyota Central Europe sales material for MY2021 lists 1.5 VVT-i, so do not apply 1.6 automatically to later registrations.",
+        "Toyota confirms 1.6 Valvematic 132 KM exclusively for the new Corolla Sedan; the Polish MY2019 price list documents manual and Multidrive S. For later model years, do not apply 1.6 automatically without production-date and VIN confirmation.",
         "No independent long-term failure cohort for the exact E210 1ZR-FAE installation or comparable Polish repair-cost evidence was established. Hold as a default recommendation pending that evidence; this is not a rejection."
       ]
     }
@@ -210,7 +210,7 @@
       "url": "https://www.toyotanews.eu/pl/aktualnosci/2182-item-toyota-rozpoczyna-wyprzedaz-rocznika-2021-i-przedsprzedaz-rocznika-2022-dobra-dostepnosc-samochodow-i-gwarancja-ceny",
       "publishedAt": "2021",
       "checkedAt": "2026-11-08",
-      "accessNote": "Toyota sales announcement describes 2021 Corolla Sedan petrol model as 1.5 l; use as indication that the 1.6 MY2019 variant must not be applied automatically to later cars."
+      "accessNote": "Toyota sales announcement covers the 2021 Corolla Sedan model year; check production date and VIN before applying the MY2019 1.6 variant to later cars."
     },
     {
       "id": "corolla-1zr-code",
@@ -222,7 +222,6 @@
     }
   ],
   "openQuestions": [
-    "Potwierdzić 1.5 125 KM: daty wprowadzenia, rynek i nadwozie. Do czasu potwierdzenia nie przypisywać do Touring Sports.",
     "Przygotować oddzielne reguły bagażnika i wyposażenia dla sedana i kombi.",
     "Potwierdzić archiwalne polskie wersje wyposażenia i kamerę dla każdego roku oraz rynku importu.",
     "Uzupełnić udokumentowane usterki, akcje serwisowe i ocenę niezawodności według dokładnego napędu.",

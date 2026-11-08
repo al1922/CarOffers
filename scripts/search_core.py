@@ -115,8 +115,6 @@ def assess(offer, requirements, model):
             unknown.append("price_exception_requires_user_confirmation")
         else:
             fail.append("price_over_limit")
-    if offer.get("priceBasis") in (None, "unknown", "net"):
-        unknown.append("gross_price_basis")
     year = offer.get("year")
     if type(year) is not int:
         unknown.append("production_year")

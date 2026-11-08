@@ -4,7 +4,7 @@ export const statuses = {considering:'Do rozważenia',contact:'Kontakt ze sprzed
 export const bodyNames = {wagon:'Kombi',sedan:'Sedan',suv:'SUV',crossover:'Crossover',hatchback:'Hatchback',minivan:'Minivan'};
 export const reasons = {
  purchase_price:'Brak ceny zakupu',price_over_limit:'Cena ponad budżetem',price_exception_requires_user_confirmation:'Cena ponad budżetem — potrzebna Twoja decyzja',
- gross_price_and_purchase_conditions:'Potwierdzić pełną cenę brutto i brak obowiązkowego finansowania',production_year:'Potwierdzić rok produkcji',year_outside_selection:'Rocznik poza zakresem',
+ production_year:'Potwierdzić rok produkcji',year_outside_selection:'Rocznik poza zakresem',
  body:'Potwierdzić nadwozie',body_outside_selection:'Nadwozie poza zakresem',exact_engine_variant:'Potwierdzić dokładny wariant silnika',engine_outside_selection:'Silnik poza listą',engine_review_requires_verification:'Wariant silnika wymaga dodatkowej weryfikacji',
  transmission:'Potwierdzić skrzynię',transmission_outside_selection:'Skrzynia poza zakresem',camera_unavailable:'Brak możliwości instalacji kamery',camera_retrofit_not_allowed:'Montaż kamery poza wymaganiami',camera_or_compatible_retrofit:'Potwierdzić kamerę lub zgodność montażu',
  structural_damage:'Potwierdzone szkody konstrukcyjne',structural_history:'Brak niezależnej kontroli historii konstrukcyjnej',mileage:'Brak przebiegu',mileage_over_hard_limit:'Przebieg ponad limitem',mileage_above_preference:'Przebieg powyżej preferencji',stroller_and_family_fit:'Potwierdzić miejsce na wózek i bagaże',auction_not_allowed:'Aukcja jest wykluczona',purchase_not_auction:'Potwierdzić sprzedaż poza aukcją'

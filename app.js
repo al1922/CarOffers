@@ -1,7 +1,7 @@
-import {defaultFilters,sanitizeFilters,encodeFilters,decodeFilters,dedupe,filterOffers,sortOffers,bodyNames,statuses,fmt,dateLabel,distance,availability,verdictNames} from './assets/core.mjs?v=11';
+import {defaultFilters,sanitizeFilters,encodeFilters,decodeFilters,dedupe,filterOffers,sortOffers,bodyNames,statuses,fmt,dateLabel,distance,availability,verdictNames} from './assets/core.mjs?v=12';
 import {createStore} from './assets/storage.mjs?v=11';
 import {loadData,loadKnowledge} from './assets/data.mjs?v=11';
-import {el,button,badge,empty,link,offerCard,offerTable,offerDetails,comparison,knowledgeCard,knowledgeDetails,updates} from './assets/views.mjs?v=11';
+import {el,button,badge,empty,link,offerCard,offerTable,offerDetails,comparison,knowledgeCard,knowledgeDetails,updates} from './assets/views.mjs?v=13';
 
 const $=selector=>document.querySelector(selector);
 let data=null,filters=defaultFilters(),comparisonKeys=new Set(),grouped=[],loadToken=0;
@@ -98,6 +98,7 @@ $('#filter-toggle').addEventListener('click',()=>{const panel=$('#filters');pane
 $('#reset-filters').addEventListener('click',()=>{if(!data)return;filters={...defaultFilters(),section:filters.section,view:filters.view};persist();render();});
 $('#viewCards').addEventListener('click',()=>data&&updateFilter('view','cards'));$('#viewTable').addEventListener('click',()=>data&&updateFilter('view','table'));
 $('#close-offer').addEventListener('click',()=>{$('#offer-dialog').close();knowledgeToken++;});$('#close-settings').addEventListener('click',()=>$('#settings-dialog').close());$('#close-search').addEventListener('click',()=>$('#search-dialog').close());
+$('#offer-dialog').addEventListener('click',event=>{const dialog=event.currentTarget,rect=dialog.getBoundingClientRect();if(event.target===dialog&&(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom))dialog.close();});
 $('#settings-dialog').addEventListener('close',()=>{if(data)render();});
 $('#offer-dialog').addEventListener('close',()=>knowledgeToken++);
 $('#backup-open').addEventListener('click',showSettings);$('#mobile-settings').addEventListener('click',showSettings);

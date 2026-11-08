@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T23:26:55.620687+00:00",
+  "generatedAt": "2026-11-08T23:44:49.292556+00:00",
   "configuration": {
     "requirements": {
       "version": 1,
@@ -509,7 +509,7 @@
                 "corolla-toyota-pl-2021"
               ],
               "notes": [
-                "Wariant sedanowy: Toyota potwierdza wyłącznie Sedan, a polski cennik PY2019 podaje 1.6/132 KM. Materiały sprzedażowe MY2021 wskazują już 1.5 VVT-i; gdy dostępny jest tylko rok pierwszej rejestracji, sprawdzić datę produkcji i VIN."
+                "Wariant sedanowy: Toyota potwierdza wyłącznie Sedan, a polski cennik PY2019 podaje 1.6/132 KM. Nie przypisywać go późniejszym rocznikom bez potwierdzenia daty produkcji i VIN."
               ]
             }
           ],
@@ -2044,7 +2044,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -2071,7 +2070,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -2101,7 +2099,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -2128,7 +2125,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -2158,7 +2154,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -2188,7 +2183,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -2218,7 +2212,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -2248,7 +2241,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -2278,7 +2270,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -2308,7 +2299,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -2335,7 +2325,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -2365,7 +2354,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -2395,7 +2383,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -2425,7 +2412,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -2455,7 +2441,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -2485,7 +2470,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -2515,7 +2499,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -2545,7 +2528,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -2575,7 +2557,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -2602,7 +2583,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -2632,7 +2612,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -2662,7 +2641,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -2692,7 +2670,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -2720,7 +2697,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -2747,7 +2723,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -2774,7 +2749,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -2802,7 +2776,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -2830,7 +2803,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -2857,7 +2829,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -2883,7 +2854,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -2935,7 +2905,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -2962,7 +2931,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -2993,7 +2961,6 @@
       "failures": [],
       "unknowns": [
         "price_exception_requires_user_confirmation",
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -3018,74 +2985,11 @@
       }
     },
     {
-      "id": "vin:U5YH5814ALL073852",
-      "modelKey": "kia-ceed-iii-sw",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "price_exception_requires_user_confirmation",
-        "gross_price_basis",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 58000,
-        "priceBasis": null,
-        "year": 2020,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 51160,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:otomoto:ID6IiHsy",
-      "modelKey": "kia-ceed-iii-sw",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "price_exception_requires_user_confirmation",
-        "gross_price_basis",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 57900,
-        "priceBasis": null,
-        "year": 2020,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 134000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
       "id": "listing:otomoto:ID6IitBU",
       "modelKey": "kia-ceed-iii-sw",
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -3116,7 +3020,6 @@
       "failures": [],
       "unknowns": [
         "price_exception_requires_user_confirmation",
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -3141,43 +3044,11 @@
       }
     },
     {
-      "id": "listing:autoplac:8631-7171-SC",
-      "modelKey": "kia-ceed-iii-sw",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "price_exception_requires_user_confirmation",
-        "gross_price_basis",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 59900,
-        "priceBasis": null,
-        "year": 2019,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 128000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
       "id": "vin:U5YH5814GLL068044",
       "modelKey": "kia-ceed-iii-sw",
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -3204,7 +3075,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -3235,7 +3105,6 @@
       "failures": [],
       "unknowns": [
         "price_exception_requires_user_confirmation",
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -3265,7 +3134,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -3295,7 +3163,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -3322,7 +3189,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -3349,7 +3215,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -3379,7 +3244,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -3409,7 +3273,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -3435,7 +3298,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -3462,7 +3324,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -3489,7 +3350,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -3516,7 +3376,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -3543,7 +3402,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -3569,43 +3427,11 @@
       }
     },
     {
-      "id": "listing:autoplac:5074-2505-XZ",
-      "modelKey": "seat-leon-iii-st",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "price_exception_requires_user_confirmation",
-        "gross_price_basis",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 57700,
-        "priceBasis": null,
-        "year": 2018,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 142000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
       "id": "vin:VSSZZZ5FZJR038225",
       "modelKey": "seat-leon-iii-st",
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -3636,7 +3462,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -3663,7 +3488,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -3692,7 +3516,6 @@
         "year_outside_selection"
       ],
       "unknowns": [
-        "gross_price_basis",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -3721,7 +3544,6 @@
         "year_outside_selection"
       ],
       "unknowns": [
-        "gross_price_basis",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -3748,7 +3570,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -3778,7 +3599,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -3803,44 +3623,11 @@
       }
     },
     {
-      "id": "listing:autoplac:7027-2878-UP",
-      "modelKey": "skoda-octavia-iii-combi",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "price_exception_requires_user_confirmation",
-        "gross_price_basis",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit",
-        "purchase_not_auction"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 57500,
-        "priceBasis": null,
-        "year": 2018,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 151427,
-        "familyFitConfirmed": null,
-        "saleType": null,
-        "lpgInstalled": null
-      }
-    },
-    {
       "id": "listing:otomoto:ID6I9d1t",
       "modelKey": "skoda-octavia-iii-combi",
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -3870,7 +3657,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -3902,7 +3688,6 @@
         "year_outside_selection"
       ],
       "unknowns": [
-        "gross_price_basis",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -3932,7 +3717,6 @@
         "year_outside_selection"
       ],
       "unknowns": [
-        "gross_price_basis",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -3960,7 +3744,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -3990,7 +3773,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -4015,44 +3797,12 @@
       }
     },
     {
-      "id": "listing:autoplac:8485-7342-XR",
-      "modelKey": "suzuki-sx4-s-cross",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "price_exception_requires_user_confirmation",
-        "gross_price_basis",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 58800,
-        "priceBasis": null,
-        "year": 2018,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 141295,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
       "id": "listing:otomoto:ID6IhQge",
       "modelKey": "suzuki-sx4-s-cross",
       "verdict": "check",
       "failures": [],
       "unknowns": [
         "price_exception_requires_user_confirmation",
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -4082,7 +3832,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -4108,7 +3857,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -4135,7 +3883,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -4165,7 +3912,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -4196,7 +3942,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -4226,7 +3971,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -4256,7 +4000,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -4281,75 +4024,12 @@
       }
     },
     {
-      "id": "listing:autoplac:4006-9483-SN",
-      "modelKey": "suzuki-vitara-ii",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "price_exception_requires_user_confirmation",
-        "gross_price_basis",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 58000,
-        "priceBasis": null,
-        "year": 2018,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 156000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:autoplac:7234-2110-XB",
-      "modelKey": "suzuki-vitara-ii",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "price_exception_requires_user_confirmation",
-        "gross_price_basis",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 59999,
-        "priceBasis": null,
-        "year": 2018,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 141247,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
       "id": "listing:otomoto:ID6IgRmX",
       "modelKey": "suzuki-vitara-ii",
       "verdict": "check",
       "failures": [],
       "unknowns": [
         "price_exception_requires_user_confirmation",
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -4379,7 +4059,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -4435,7 +4114,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -4461,7 +4139,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -4487,7 +4164,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -4514,7 +4190,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -4540,7 +4215,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -4567,7 +4241,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -4582,37 +4255,6 @@
         "cameraStatus": "installed_confirmed",
         "structuralDamageStatus": "unknown",
         "mileage": 162000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:otomoto:ID6IcJxG",
-      "modelKey": "toyota-auris-touring-sports",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "price_exception_requires_user_confirmation",
-        "gross_price_basis",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 59500,
-        "priceBasis": null,
-        "year": 2018,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 138397,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null
@@ -4651,7 +4293,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -4674,105 +4315,12 @@
       }
     },
     {
-      "id": "vin:SB1Z93BEX0E327777",
-      "modelKey": "toyota-corolla-e210",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "price_exception_requires_user_confirmation",
-        "gross_price_basis",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 59000,
-        "priceBasis": null,
-        "year": 2022,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 97351,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "vin:NMTBA3BE40R021431",
-      "modelKey": "toyota-corolla-e210",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 53900,
-        "priceBasis": "gross_unconditional_total",
-        "year": 2021,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 79857,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:allegro:19026311057",
-      "modelKey": "toyota-corolla-e210",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "price_exception_requires_user_confirmation",
-        "gross_price_basis",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit",
-        "purchase_not_auction"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 57000,
-        "priceBasis": null,
-        "year": 2022,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 102777,
-        "familyFitConfirmed": null,
-        "saleType": null,
-        "lpgInstalled": null
-      }
-    },
-    {
       "id": "vin:NMTBE3BE90R086070",
       "modelKey": "toyota-corolla-e210",
       "verdict": "check",
       "failures": [],
       "unknowns": [
         "price_exception_requires_user_confirmation",
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -4797,223 +4345,11 @@
       }
     },
     {
-      "id": "listing:id6iilq1",
-      "modelKey": "toyota-corolla-e210",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "price_exception_requires_user_confirmation",
-        "gross_price_basis",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 60000,
-        "priceBasis": null,
-        "year": 2022,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 72662,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "url:https://aaaauto.pl/detail/toyota/corolla/34884013",
-      "modelKey": "toyota-corolla-e210",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "price_exception_requires_user_confirmation",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 56000,
-        "priceBasis": "gross_unconditional_total",
-        "year": 2022,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": "installed_confirmed",
-        "structuralDamageStatus": null,
-        "mileage": 106976,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "url:https://aaaauto.pl/detail/toyota/corolla/29008484",
-      "modelKey": "toyota-corolla-e210",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "price_exception_requires_user_confirmation",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 58000,
-        "priceBasis": "gross_unconditional_total",
-        "year": 2022,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": "installed_confirmed",
-        "structuralDamageStatus": null,
-        "mileage": 94814,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "url:https://autoplac.pl/oferta/toyota/corolla/xii-1-5-2022r-wd2244r15-comfort-kcofania-2-stref-klima-salon-pl-vat-23-9077-4444-DT",
-      "modelKey": "toyota-corolla-e210",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "price_exception_requires_user_confirmation",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 63800,
-        "priceBasis": "gross_unconditional_total",
-        "year": 2022,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 64686,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "url:https://autoplac.pl/oferta/toyota/corolla/xii-1-5-2022r-toyota-corolla-4068-3542-PX",
-      "modelKey": "toyota-corolla-e210",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "price_exception_requires_user_confirmation",
-        "gross_price_basis",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 59900,
-        "priceBasis": null,
-        "year": 2022,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 120000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "url:https://autoplac.pl/oferta/toyota/corolla/xii-1-5-2022r-5365-7638-JB",
-      "modelKey": "toyota-corolla-e210",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_price_basis",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 54900,
-        "priceBasis": null,
-        "year": 2022,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 158400,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "vin:NMTBA3BE00R063904",
-      "modelKey": "toyota-corolla-e210",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "price_exception_requires_user_confirmation",
-        "gross_price_basis",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 55999,
-        "priceBasis": null,
-        "year": 2022,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 135195,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
       "id": "vin:NMTBE3BE00R023715",
       "modelKey": "toyota-corolla-e210",
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -5036,45 +4372,12 @@
       }
     },
     {
-      "id": "vin:NMTBE3BE60R074975",
-      "modelKey": "toyota-corolla-e210",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "price_exception_requires_user_confirmation",
-        "gross_price_basis",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit",
-        "purchase_not_auction"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 58000,
-        "priceBasis": null,
-        "year": 2020,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 137044,
-        "familyFitConfirmed": null,
-        "saleType": null,
-        "lpgInstalled": null
-      }
-    },
-    {
       "id": "vin:NMTBE3BE40R088485",
       "modelKey": "toyota-corolla-e210",
       "verdict": "check",
       "failures": [],
       "unknowns": [
         "price_exception_requires_user_confirmation",
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -5106,7 +4409,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "camera_or_compatible_retrofit",
@@ -5136,7 +4438,6 @@
       "failures": [],
       "unknowns": [
         "price_exception_requires_user_confirmation",
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -5166,7 +4467,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -5196,7 +4496,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -5226,7 +4525,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -5253,7 +4551,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -5280,7 +4577,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -5308,7 +4604,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -5336,7 +4631,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -5363,7 +4657,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -5391,7 +4684,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -5419,7 +4711,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -5447,7 +4738,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -5475,7 +4765,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -5503,7 +4792,6 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_price_basis",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"

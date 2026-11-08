@@ -18,7 +18,7 @@ Każde ustalenie (`claims`) ma własne źródła (`sourceIds`), zakres (`scope`)
 
 Warto poprawnie rozdzielić zakres lat modelu i okres konkretnego silnika. Archiwum Volkswagena podaje końcowy rok 2018 dla Golfa VII Variant 1.4 TSI; istniejący filtr modelu do 2020 nie może zastąpić identyfikacji jednostki i roku produkcji. [Volkswagen — dane archiwalne](https://www.volkswagen-newsroom.com/en/vehicle-data-golf-7-variant-profile-20042).
 
-Corolla wymaga osobnych reguł dla sedana i Touring Sports. Materiał premierowy Toyoty przypisuje benzynę 1.6 132 KM sedanowi, więc nie wolno przenosić jej automatycznie do kombi. Dane 1.5 125 KM wymagają dodatkowej weryfikacji. [Toyota — gama premierowa 2019](https://newsroom.toyota.eu/2019-the-toyota-corolla/).
+Corolla wymaga osobnych reguł dla sedana i Touring Sports. Materiał premierowy Toyoty przypisuje benzynę 1.6 132 KM sedanowi, więc nie wolno przenosić jej automatycznie do kombi. Przy późniejszych rocznikach potwierdź dokładny wariant po dacie produkcji i VIN. [Toyota — gama premierowa 2019](https://newsroom.toyota.eu/2019-the-toyota-corolla/).
 
 W specyfikacji Leona ST ekstrakcja tabeli bagażnika daje niejednoznaczny kontekst kolumn. Karta zapisuje konflikt zamiast utrwalać jedną liczbę dla wszystkich konfiguracji. [SEAT — specyfikacja ST](https://www.seat-cupra-mediacenter.com/content/dam/seat-media-center/Documents/2016/Technical-Specifications-New-SEAT-Leon-ST2016EN.pdf).
 

@@ -377,32 +377,6 @@
         "geocodingNote": "Punkt miejscowości GeoNames; nie adres auta."
       }
     },
-    "vin:U5YH5814ALL073852": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Oława",
-        "voivodeship": "dolnośląskie",
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null,
-        "latitude": 50.9466,
-        "longitude": 17.2926,
-        "geoSource": "https://www.geonames.org/3090205/"
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2020r-kombi-t-gdi-140-km-salon-pl-i-wlasciciel-6908-1976-MP",
-        "checkedAt": null,
-        "historicalTitle": "1.4 T-GDI 140 KM Kombi — Oława  51 160 km",
-        "sourceFile": "offers/kia-ceed-iii-sw.json",
-        "sourceFileSha256": "792b5568a3a1411d2f78712f749411001eb0f168c8b677f2cc9c63cb26b81453",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": "2026-11-08T13:10:11.792219+00:00",
-        "geocodingNote": "Punkt miejscowości GeoNames; nie adres auta."
-      }
-    },
     "vin:VF1RFB00062608355": {
       "location": {
         "status": "available",
@@ -579,29 +553,6 @@
         "geocodingNote": "Nazwa wieloznaczna lub brak zgodnego punktu — nie wybrano współrzędnych."
       }
     },
-    "listing:autoplac:7027-2878-UP": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Cieszyn",
-        "voivodeship": null,
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-klimatronic-2-stref-dsg-podgrz-fotele-pdc-2x-navi-pl-salon-7027-2878-UP",
-        "checkedAt": null,
-        "historicalTitle": "1.4 TSI EA211 150 KM Kombi — Cieszyn  151 427 km",
-        "sourceFile": "offers/skoda-octavia-iii-combi.json",
-        "sourceFileSha256": "b2664906555097ac2d0f1ed637297f7199db0fd9f505073ae27b29a54614f29e",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": null,
-        "geocodingNote": "Nazwa wieloznaczna lub brak zgodnego punktu — nie wybrano współrzędnych."
-      }
-    },
     "vin:TSMJYAA2S00585117": {
       "location": {
         "status": "available",
@@ -640,29 +591,6 @@
         "sourceUrl": "https://autoplac.pl/oferta/suzuki/sx4-s-cross/1-4-2018r-boosterjet-allgrip-comfort-bogata-wersja-4006-3607-VB",
         "checkedAt": null,
         "historicalTitle": "1.4 BoosterJet 140 KM Crossover — Luboń  98 000 km",
-        "sourceFile": "offers/suzuki-sx4-s-cross.json",
-        "sourceFileSha256": "f8c816657ceca25113cdccdb2d0d9c2e295ab8e292503261b8c96629d094f9f8",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": null,
-        "geocodingNote": "Nazwa wieloznaczna lub brak zgodnego punktu — nie wybrano współrzędnych."
-      }
-    },
-    "listing:autoplac:8485-7342-XR": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Hipolitów",
-        "voivodeship": "mazowieckie",
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://autoplac.pl/oferta/suzuki/sx4-s-cross/1-4-2018r-wersja-premium-1-wszy-wlasciciel-bogata-opcja-pelna-historia-8485-7342-XR",
-        "checkedAt": null,
-        "historicalTitle": "1.4 BoosterJet 140 KM Crossover — Hipolitów  Mazowieckie  141 295 km",
         "sourceFile": "offers/suzuki-sx4-s-cross.json",
         "sourceFileSha256": "f8c816657ceca25113cdccdb2d0d9c2e295ab8e292503261b8c96629d094f9f8",
         "historicalFileUpdatedAt": "2026-11-07",
@@ -769,84 +697,6 @@
         "geocodingNote": "Punkt miejscowości GeoNames; nie adres auta."
       }
     },
-    "listing:autoplac:4006-9483-SN": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Rumia",
-        "voivodeship": "pomorskie",
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null,
-        "latitude": 54.57092,
-        "longitude": 18.38802,
-        "geoSource": "https://www.geonames.org/3086706/"
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://autoplac.pl/oferta/suzuki/vitara/ii-1-4-2018r-gwarancja244x4fullautnavikameraalcantaraszyberdachled-4006-9483-SN",
-        "checkedAt": null,
-        "historicalTitle": "1.4 BoosterJet 140 KM SUV — Rumia  156 000 km",
-        "sourceFile": "offers/suzuki-vitara-ii.json",
-        "sourceFileSha256": "0b618f3e5c5216f57045ae9cbef511a4ba5a1d34b26bdaa86b37a0f0c8476d50",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": "2026-11-08T13:10:11.792219+00:00",
-        "geocodingNote": "Punkt miejscowości GeoNames; nie adres auta."
-      }
-    },
-    "listing:autoplac:7234-2110-XB": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Modlnica",
-        "voivodeship": "małopolskie",
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null,
-        "latitude": 50.12958,
-        "longitude": 19.86461,
-        "geoSource": "https://www.geonames.org/3091548/"
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://autoplac.pl/oferta/suzuki/vitara/ii-1-4-2018r-140ps-navi-kamera-alu-led-100-bezwypadkowy-oryginal-7234-2110-XB",
-        "checkedAt": null,
-        "historicalTitle": "1.4 BoosterJet 140 KM SUV — Modlnica  141 247 km",
-        "sourceFile": "offers/suzuki-vitara-ii.json",
-        "sourceFileSha256": "0b618f3e5c5216f57045ae9cbef511a4ba5a1d34b26bdaa86b37a0f0c8476d50",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": "2026-11-08T13:10:11.792219+00:00",
-        "geocodingNote": "Punkt miejscowości GeoNames; nie adres auta."
-      }
-    },
-    "vin:SB1Z93BEX0E327777": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Wrocław",
-        "voivodeship": "dolnośląskie",
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null,
-        "latitude": 51.10286,
-        "longitude": 17.03006,
-        "geoSource": "https://www.geonames.org/3081368/"
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://autoplac.pl/oferta/toyota/corolla/xii-1-8-2022r-raty-prywatnie-kombi-hybryda-automat-nawigacja-czujniki-3767-2759-BS",
-        "checkedAt": null,
-        "historicalTitle": "1.8 Hybrid 122 KM Kombi — Wrocław  97 351 km",
-        "sourceFile": "offers/toyota-corolla-e210.json",
-        "sourceFileSha256": "13c06812fade93f00c8b5fa05696a42fe81bdf2a6182476bd58c7e15a8164b39",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": "2026-11-08T13:10:11.792219+00:00",
-        "geocodingNote": "Punkt miejscowości GeoNames; nie adres auta."
-      }
-    },
     "vin:NMTBE3BE90R086070": {
       "location": {
         "status": "available",
@@ -865,81 +715,6 @@
         "sourceUrl": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2020r-1szy-wlasc-serw-aso-salon-pl-stan-idealny-comforttech-9562-3889-PX",
         "checkedAt": null,
         "historicalTitle": "1.6 Valvematic Sedan — Warszawa",
-        "sourceFile": "offers/toyota-corolla-e210.json",
-        "sourceFileSha256": "13c06812fade93f00c8b5fa05696a42fe81bdf2a6182476bd58c7e15a8164b39",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": "2026-11-08T13:10:11.792219+00:00",
-        "geocodingNote": "Punkt miejscowości GeoNames; nie adres auta."
-      }
-    },
-    "url:https://autoplac.pl/oferta/toyota/corolla/xii-1-5-2022r-wd2244r15-comfort-kcofania-2-stref-klima-salon-pl-vat-23-9077-4444-DT": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Pępowo",
-        "voivodeship": "pomorskie",
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null,
-        "latitude": 54.37176,
-        "longitude": 18.38699,
-        "geoSource": "https://www.geonames.org/3089275/"
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://autoplac.pl/oferta/toyota/corolla/xii-1-5-2022r-wd2244r15-comfort-kcofania-2-stref-klima-salon-pl-vat-23-9077-4444-DT",
-        "checkedAt": null,
-        "historicalTitle": "1.5 VVT-i / Dynamic Force Sedan — Pępowo (Pomorskie)",
-        "sourceFile": "offers/toyota-corolla-e210.json",
-        "sourceFileSha256": "13c06812fade93f00c8b5fa05696a42fe81bdf2a6182476bd58c7e15a8164b39",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": "2026-11-08T13:10:11.792219+00:00",
-        "geocodingNote": "Punkt miejscowości GeoNames; nie adres auta."
-      }
-    },
-    "url:https://autoplac.pl/oferta/toyota/corolla/xii-1-5-2022r-toyota-corolla-4068-3542-PX": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Rybnik",
-        "voivodeship": null,
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://autoplac.pl/oferta/toyota/corolla/xii-1-5-2022r-toyota-corolla-4068-3542-PX",
-        "checkedAt": null,
-        "historicalTitle": "1.5 VVT-i / Dynamic Force Sedan — Rybnik",
-        "sourceFile": "offers/toyota-corolla-e210.json",
-        "sourceFileSha256": "13c06812fade93f00c8b5fa05696a42fe81bdf2a6182476bd58c7e15a8164b39",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": null,
-        "geocodingNote": "Nazwa wieloznaczna lub brak zgodnego punktu — nie wybrano współrzędnych."
-      }
-    },
-    "vin:NMTBA3BE00R063904": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Gdańsk",
-        "voivodeship": "pomorskie",
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null,
-        "latitude": 54.35227,
-        "longitude": 18.64912,
-        "geoSource": "https://www.geonames.org/3099434/"
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://autoplac.pl/oferta/toyota/corolla/xii-1-5-2022r-9926-7098-RY",
-        "checkedAt": null,
-        "historicalTitle": "1.5 VVT-i / Dynamic Force Sedan — Gdańsk",
         "sourceFile": "offers/toyota-corolla-e210.json",
         "sourceFileSha256": "13c06812fade93f00c8b5fa05696a42fe81bdf2a6182476bd58c7e15a8164b39",
         "historicalFileUpdatedAt": "2026-11-07",
@@ -972,29 +747,6 @@
         "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
         "geocodedAt": "2026-11-08T13:10:11.792219+00:00",
         "geocodingNote": "Punkt miejscowości GeoNames; nie adres auta."
-      }
-    },
-    "vin:NMTBE3BE60R074975": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Piaseczno",
-        "voivodeship": null,
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://www.olx.pl/d/oferta/toyota-corolla-1-6-valvematic-salon-polska-serwis-aso-automat-klimatronic-CID5-ID1d37MT.html",
-        "checkedAt": null,
-        "historicalTitle": "1.6 Valvematic Sedan automat — Piaseczno, 137 044 km",
-        "sourceFile": "offers/toyota-corolla-e210.json",
-        "sourceFileSha256": "13c06812fade93f00c8b5fa05696a42fe81bdf2a6182476bd58c7e15a8164b39",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": null,
-        "geocodingNote": "Nazwa wieloznaczna lub brak zgodnego punktu — nie wybrano współrzędnych."
       }
     },
     "vin:NMTBE3BE40R088485": {

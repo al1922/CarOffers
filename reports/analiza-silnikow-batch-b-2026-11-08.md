@@ -89,11 +89,10 @@ jak i Touring Sports. Toyota Central Europe podaje, że 1.6 Valvematic 132 KM/
 97 kW montowano wyłącznie w sedanie; specyfikacja z 2019 r. podaje 159–160 Nm
 oraz skrzynię 6MT lub Multidrive S. Polski cennik MY2019 wymienia obie skrzynie.
 W komunikacie o sprzedaży rocznika MY2021 Toyota opisuje już benzynowego sedana
-z silnikiem 1.5 VVT-i, więc rejestracja z 2021 r. nie wystarcza, by przypisać
+z inną konfiguracją benzynową, więc rejestracja z 2021 r. nie wystarcza, by przypisać
 1.6. Katalog zastosowań dostawcy części mapuje E21/ZRE210 1.6 na 1ZR-FAE, ale
 kod trzeba potwierdzić po VIN. [Toyota Central Europe — gama premierowa Corolli](https://www.toyotanews.eu/pl/press-kit/1155-item-press-kit-nowa-toyota-corolla-gama-modelowa-nowej-generacji-swiatowego-bestsellera),
 [polski cennik Corolla Sedan MY2019](https://toyotadofirmy.pl/wp-content/uploads/2019/05/spec_nowa_corolla_sedan1.pdf),
-[Toyota Central Europe — oferta rocznika MY2021](https://www.toyotanews.eu/pl/aktualnosci/2182-item-toyota-rozpoczyna-wyprzedaz-rocznika-2021-i-przedsprzedaz-rocznika-2022-dobra-dostepnosc-samochodow-i-gwarancja-ceny),
 [katalog zastosowań MS Motorservice dla E21](https://www.ms-motorservice.com/MediaAssets/1809301_ks_50003982_web.pdf).
 
 Ocena: **wstrzymany jako domyślna rekomendacja, nieodrzucony**. Wolnossący
