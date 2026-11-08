@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "observations": [
+    {
+      "offerId": "vin:TMAH281CANJ118698",
+      "city": "Iwkowa",
+      "voivodeship": "małopolskie",
+      "sourceUrl": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiMLq.html",
+      "checkedAt": "2026-11-08T13:05:59Z",
+      "quote": "Iwkowa 698 - 32-800 Iwkowa, brzeski, Małopolskie (Polska)",
+      "note": "Odczytano opis auta i miejsce na karcie; nie potwierdzano dostępności u sprzedawcy."
+    },
+    {
+      "offerId": "listing:autoplac:0240-6320-YN",
+      "city": "Kraków",
+      "voivodeship": "małopolskie",
+      "sourceUrl": "https://autoplac.pl/oferta/hyundai/i30/iii-1-5-2021r-hyundai-i30-dpi-classic-0240-6320-YN",
+      "checkedAt": "2026-11-08T13:05:59Z",
+      "quote": "Snycerska 7 , Kraków, 30-817",
+      "note": "Odczytano sekcję Lokalizacja pojazdu; współrzędne będą dotyczyć miejscowości, nie ulicy."
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CarOffers sources v1",
+  "type": "object",
+  "required": [
+    "version",
+    "sources"
+  ],
+  "properties": {
+    "version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "url",
+          "searchUrl",
+          "category",
+          "sellerTypes",
+          "origins",
+          "brands",
+          "enabled",
+          "priority",
+          "effort",
+          "filters",
+          "method",
+          "accessStatus",
+          "lastAttemptAt",
+          "lastSuccessfulSearchAt",
+          "verification",
+          "purchaseConditions",
+          "notes"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "searchUrl": {
+            "type": "string",
+            "format": "uri"
+          },
+          "category": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sellerTypes": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "origins": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "brands": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "enabled": {
+            "type": "boolean"
+          },
+          "priority": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "effort": {
+            "type": "number",
+            "minimum": 0
+          },
+          "filters": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "method": {
+            "type": "string",
+            "minLength": 1
+          },
+          "accessStatus": {
+            "type": "string",
+            "minLength": 1
+          },
+          "lastAttemptAt": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "lastSuccessfulSearchAt": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "verification": {
+            "type": "object",
+            "required": [
+              "checkedAt",
+              "evidenceUrls",
+              "note"
+            ],
+            "properties": {
+              "checkedAt": {
+                "type": "string",
+                "format": "date"
+              },
+              "evidenceUrls": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "format": "uri"
+                }
+              },
+              "note": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": {}
+          },
+          "purchaseConditions": {
+            "type": "object"
+          },
+          "notes": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "additionalProperties": {}
+      }
+    }
+  },
+  "additionalProperties": {}
+}

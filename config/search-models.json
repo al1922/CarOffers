@@ -1,0 +1,793 @@
+{
+  "version": 1,
+  "models": [
+    {
+      "key": "hyundai-i30-iii-wagon",
+      "name": "Hyundai i30 III Wagon",
+      "description": "Kombi (Wagon)",
+      "brand": "Hyundai",
+      "model": "i30",
+      "generation": "III",
+      "bodies": [
+        "wagon"
+      ],
+      "searchYears": {
+        "min": 2018,
+        "max": 2023
+      },
+      "allowedEngineVariants": [
+        "1.4-mpi-100",
+        "1.4-tgdi-140",
+        "1.5-dpi-110"
+      ],
+      "active": true,
+      "priority": 2,
+      "offersFile": "offers/hyundai-i30-iii-wagon.json",
+      "knowledgeFile": "knowledge/models/hyundai-i30-iii-wagon.json",
+      "legacyEngineSelection": "1.4 MPI 100 KM; 1.4 T-GDI 140 KM; 1.5 DPi 110 KM",
+      "selectionStatus": "i30_engine_pilot_reviewed_conditional",
+      "productionYears": null,
+      "notes": [
+        "Zakres lat dotyczy wyszukiwania modelu; dostępność silnika i nadwozia trzeba sprawdzić w karcie wiedzy.",
+        "Warianty ocenione pilotażowo; żaden nie osiąga pełnego progu statusu polecanego. Szczegóły i warunki w engineReview.",
+        "Lista aktywnych silników pozostaje bez zmian; ocena trwałości nie usuwa wariantu automatycznie."
+      ],
+      "engineReview": {
+        "method": "docs/metoda-oceny-silnikow.md",
+        "report": "reports/analiza-hyundai-i30-silnikow-2026-11-08.md",
+        "reviewedAt": "2026-11-08",
+        "variants": {
+          "1.5-dpi-110": {
+            "status": "conditional_recommendation",
+            "reason": "Dopasowanie do profilu i korzystny sygnał STK; młodsza flota, brak niezależnych danych awaryjności silnika i kosztów napraw."
+          },
+          "1.4-tgdi-140": {
+            "status": "conditional_recommendation",
+            "reason": "Dobry zapas mocy i korzystny sygnał STK; dane kosztowe dla turbo i wtrysku bezpośredniego niepełne; 7DCT oceniać osobno."
+          },
+          "1.4-mpi-100": {
+            "status": "hold_as_default_not_rejected",
+            "reason": "Prostszy silnik wolnossący, lecz mniejsza próba G4LC i skromniejsza dynamika obciążonego kombi; wymaga jazdy próbnej i dalszych danych."
+          }
+        },
+        "fullRecommendedThresholdMet": false
+      },
+      "variantConstraints": []
+    },
+    {
+      "key": "kia-ceed-iii-sw",
+      "name": "Kia Ceed III Sportswagon",
+      "description": "Kombi (SW)",
+      "brand": "Kia",
+      "model": "Ceed",
+      "generation": "III",
+      "bodies": [
+        "wagon"
+      ],
+      "searchYears": {
+        "min": 2019,
+        "max": 2021
+      },
+      "allowedEngineVariants": [
+        "1.4-mpi-100",
+        "1.4-tgdi-140"
+      ],
+      "active": true,
+      "priority": 2,
+      "offersFile": "offers/kia-ceed-iii-sw.json",
+      "knowledgeFile": "knowledge/models/kia-ceed-iii-sw.json",
+      "legacyEngineSelection": "1.4 MPI 100 KM; 1.4 T-GDI 140 KM",
+      "selectionStatus": "engine_reviewed_with_conditions",
+      "productionYears": null,
+      "notes": [
+        "Zakres lat dotyczy wyszukiwania modelu; dostępność silnika i nadwozia trzeba sprawdzić w karcie wiedzy.",
+        "Lista silników i roczniki odzwierciedlają aktualne założenia użytkownika; nie oznaczają rekomendacji trwałości."
+      ],
+      "variantConstraints": [],
+      "engineReview": {
+        "method": "docs/metoda-oceny-silnikow.md",
+        "report": "reports/analiza-silnikow-batch-a-2026-11-08.md",
+        "reviewedAt": "2026-11-08",
+        "variants": {
+          "1.4-mpi-100": {
+            "status": "conditional_recommendation",
+            "reason": "Prosty, wolnossący wariant; kod G4LC potwierdzać po VIN, osiągi i LPG wymagają oceny konkretnego auta."
+          },
+          "1.4-tgdi-140": {
+            "status": "conditional_recommendation",
+            "reason": "Lepszy zapas mocy; turbo, DI i skrzynię 7DCT oceniać osobno; kampanię sprawdzić po VIN."
+          }
+        },
+        "fullRecommendedThresholdMet": false
+      }
+    },
+    {
+      "key": "renault-megane-iv-grandtour",
+      "name": "Renault Mégane IV Grandtour",
+      "description": "Kombi",
+      "brand": "Renault",
+      "model": "Megane",
+      "generation": "IV",
+      "bodies": [
+        "wagon"
+      ],
+      "searchYears": {
+        "min": 2019,
+        "max": 2022
+      },
+      "allowedEngineVariants": [
+        "1.3-tce-140"
+      ],
+      "active": true,
+      "priority": 2,
+      "offersFile": "offers/renault-megane-iv-grandtour.json",
+      "knowledgeFile": "knowledge/models/renault-megane-iv-grandtour.json",
+      "legacyEngineSelection": "1.3 TCe 140 KM",
+      "selectionStatus": "engine_reviewed_with_conditions",
+      "productionYears": null,
+      "notes": [
+        "Zakres lat dotyczy wyszukiwania modelu; dostępność silnika i nadwozia trzeba sprawdzić w karcie wiedzy.",
+        "Lista silników i roczniki odzwierciedlają aktualne założenia użytkownika; nie oznaczają rekomendacji trwałości."
+      ],
+      "variantConstraints": [],
+      "engineReview": {
+        "method": "docs/metoda-oceny-silnikow.md",
+        "report": "reports/analiza-silnikow-batch-a-2026-11-08.md",
+        "reviewedAt": "2026-11-08",
+        "variants": {
+          "1.3-tce-140": {
+            "status": "conditional_recommendation",
+            "reason": "Dobre dopasowanie mocy do Grandtour; dokładny sufiks H5H, LPG i koszty napraw niepotwierdzone dla polskiej wersji."
+          }
+        },
+        "fullRecommendedThresholdMet": false
+      }
+    },
+    {
+      "key": "seat-leon-iii-st",
+      "name": "SEAT Leon III ST",
+      "description": "Kombi (ST)",
+      "brand": "SEAT",
+      "model": "Leon",
+      "generation": "III",
+      "bodies": [
+        "wagon"
+      ],
+      "searchYears": {
+        "min": 2017,
+        "max": 2018
+      },
+      "allowedEngineVariants": [
+        "1.4-tsi-ea211-125",
+        "1.4-tsi-ea211-150"
+      ],
+      "active": true,
+      "priority": 2,
+      "offersFile": "offers/seat-leon-iii-st.json",
+      "knowledgeFile": "knowledge/models/seat-leon-iii-st.json",
+      "legacyEngineSelection": "1.4 TSI EA211 125 KM; 1.4 TSI EA211 150 KM",
+      "selectionStatus": "engine_reviewed_with_conditions",
+      "productionYears": null,
+      "notes": [
+        "Zakres lat dotyczy wyszukiwania modelu; dostępność silnika i nadwozia trzeba sprawdzić w karcie wiedzy.",
+        "Lista silników i roczniki odzwierciedlają aktualne założenia użytkownika; nie oznaczają rekomendacji trwałości."
+      ],
+      "variantConstraints": [],
+      "engineReview": {
+        "method": "docs/metoda-oceny-silnikow.md",
+        "report": "reports/analiza-silnikow-batch-a-2026-11-08.md",
+        "reviewedAt": "2026-11-08",
+        "variants": {
+          "1.4-tsi-ea211-125": {
+            "status": "conditional_recommendation",
+            "reason": "EA211 125 KM; kod i serwis rozrządu/chłodzenia potwierdzić po VIN; wykonać próbę pod obciążeniem."
+          },
+          "1.4-tsi-ea211-150": {
+            "status": "conditional_recommendation",
+            "reason": "Większy zapas mocy dla ST; kod/ACT i DSG potwierdzić osobno; dane awaryjności nie izolują silnika."
+          }
+        },
+        "fullRecommendedThresholdMet": false
+      }
+    },
+    {
+      "key": "skoda-octavia-iii-combi",
+      "name": "Škoda Octavia III Combi",
+      "description": "Kombi",
+      "brand": "Skoda",
+      "model": "Octavia",
+      "generation": "III",
+      "bodies": [
+        "wagon"
+      ],
+      "searchYears": {
+        "min": 2017,
+        "max": 2018
+      },
+      "allowedEngineVariants": [
+        "1.4-tsi-ea211-150"
+      ],
+      "active": true,
+      "priority": 2,
+      "offersFile": "offers/skoda-octavia-iii-combi.json",
+      "knowledgeFile": "knowledge/models/skoda-octavia-iii-combi.json",
+      "legacyEngineSelection": "1.4 TSI EA211 150 KM",
+      "selectionStatus": "engine_reviewed_with_conditions",
+      "productionYears": null,
+      "notes": [
+        "Zakres lat dotyczy wyszukiwania modelu; dostępność silnika i nadwozia trzeba sprawdzić w karcie wiedzy.",
+        "Lista silników i roczniki odzwierciedlają aktualne założenia użytkownika; nie oznaczają rekomendacji trwałości."
+      ],
+      "variantConstraints": [],
+      "engineReview": {
+        "method": "docs/metoda-oceny-silnikow.md",
+        "report": "reports/analiza-silnikow-batch-a-2026-11-08.md",
+        "reviewedAt": "2026-11-08",
+        "variants": {
+          "1.4-tsi-ea211-150": {
+            "status": "hold_fitment_by_production_date",
+            "reason": "Od sierpnia 2017 w wybranych wersjach Ambition/Style 1.4 zastąpił 1.5 TSI; dla aut rejestrowanych 2017–2018 wymagane VIN, data produkcji i wersja wyposażenia."
+          }
+        },
+        "fullRecommendedThresholdMet": false
+      }
+    },
+    {
+      "key": "suzuki-sx4-s-cross",
+      "name": "Suzuki SX4 S-Cross",
+      "description": "Crossover",
+      "brand": "Suzuki",
+      "model": "SX4 S-Cross",
+      "generation": null,
+      "bodies": [
+        "crossover"
+      ],
+      "searchYears": {
+        "min": 2017,
+        "max": 2020
+      },
+      "allowedEngineVariants": [
+        "1.4-boosterjet-140"
+      ],
+      "active": true,
+      "priority": 2,
+      "offersFile": "offers/suzuki-sx4-s-cross.json",
+      "knowledgeFile": "knowledge/models/suzuki-sx4-s-cross.json",
+      "legacyEngineSelection": "1.4 BoosterJet 140 KM",
+      "selectionStatus": "engine_reviewed_with_conditions",
+      "productionYears": null,
+      "notes": [
+        "Zakres lat dotyczy wyszukiwania modelu; dostępność silnika i nadwozia trzeba sprawdzić w karcie wiedzy.",
+        "Lista silników i roczniki odzwierciedlają aktualne założenia użytkownika; nie oznaczają rekomendacji trwałości."
+      ],
+      "variantConstraints": [],
+      "engineReview": {
+        "method": "docs/metoda-oceny-silnikow.md",
+        "report": "reports/analiza-silnikow-batch-b-2026-11-08.md",
+        "reviewedAt": "2026-11-08",
+        "variants": {
+          "1.4-boosterjet-140": {
+            "status": "conditional_recommendation",
+            "reason": "K14C dobrze potwierdzony; producent w przejrzanym katalogu odradza LPG dla S-Cross. Brak niezależnych danych awarii silnika i polskich kosztów."
+          }
+        },
+        "fullRecommendedThresholdMet": false
+      }
+    },
+    {
+      "key": "suzuki-vitara-ii",
+      "name": "Suzuki Vitara II",
+      "description": "SUV",
+      "brand": "Suzuki",
+      "model": "Vitara",
+      "generation": "II",
+      "bodies": [
+        "suv"
+      ],
+      "searchYears": {
+        "min": 2017,
+        "max": 2020
+      },
+      "allowedEngineVariants": [
+        "1.6-vvt-120",
+        "1.4-boosterjet-140"
+      ],
+      "active": true,
+      "priority": 2,
+      "offersFile": "offers/suzuki-vitara-ii.json",
+      "knowledgeFile": "knowledge/models/suzuki-vitara-ii.json",
+      "legacyEngineSelection": "1.6 VVT 120 KM; 1.4 BoosterJet 140 KM",
+      "selectionStatus": "engine_reviewed_with_conditions",
+      "productionYears": null,
+      "notes": [
+        "Zakres lat dotyczy wyszukiwania modelu; dostępność silnika i nadwozia trzeba sprawdzić w karcie wiedzy.",
+        "Lista silników i roczniki odzwierciedlają aktualne założenia użytkownika; nie oznaczają rekomendacji trwałości."
+      ],
+      "variantConstraints": [],
+      "engineReview": {
+        "method": "docs/metoda-oceny-silnikow.md",
+        "report": "reports/analiza-silnikow-batch-b-2026-11-08.md",
+        "reviewedAt": "2026-11-08",
+        "variants": {
+          "1.6-vvt-120": {
+            "status": "conditional_recommendation",
+            "reason": "M16A prosty wolnossący silnik; korzystny sygnał STK dotyczy całych aut, osiągi sprawdzić pod obciążeniem."
+          },
+          "1.4-boosterjet-140": {
+            "status": "conditional_recommendation",
+            "reason": "K14C ma większy moment i korzystny sygnał STK dla całego auta; turbo/DI i LPG wymagają kontroli konkretnej wersji."
+          }
+        },
+        "fullRecommendedThresholdMet": false
+      }
+    },
+    {
+      "key": "toyota-auris-touring-sports",
+      "name": "Toyota Auris II Touring Sports",
+      "description": "Kombi (Touring Sports)",
+      "brand": "Toyota",
+      "model": "Auris",
+      "generation": "II",
+      "bodies": [
+        "wagon"
+      ],
+      "searchYears": {
+        "min": 2017,
+        "max": 2018
+      },
+      "allowedEngineVariants": [
+        "1.8-hybrid-136",
+        "1.6-valvematic-132"
+      ],
+      "active": true,
+      "priority": 2,
+      "offersFile": "offers/toyota-auris-touring-sports.json",
+      "knowledgeFile": "knowledge/models/toyota-auris-touring-sports.json",
+      "legacyEngineSelection": "1.8 Hybrid 136 KM; 1.6 Valvematic 132 KM",
+      "selectionStatus": "engine_reviewed_with_conditions",
+      "productionYears": null,
+      "notes": [
+        "Zakres lat dotyczy wyszukiwania modelu; dostępność silnika i nadwozia trzeba sprawdzić w karcie wiedzy.",
+        "Lista silników i roczniki odzwierciedlają aktualne założenia użytkownika; nie oznaczają rekomendacji trwałości."
+      ],
+      "variantConstraints": [],
+      "engineReview": {
+        "method": "docs/metoda-oceny-silnikow.md",
+        "report": "reports/analiza-silnikow-batch-b-2026-11-08.md",
+        "reviewedAt": "2026-11-08",
+        "variants": {
+          "1.8-hybrid-136": {
+            "status": "conditional_recommendation",
+            "reason": "Dobre dopasowanie do jazdy miejskiej i korzystne dane modelowe; obowiązkowy test baterii i układu hybrydowego."
+          },
+          "1.6-valvematic-132": {
+            "status": "hold_as_default_not_rejected",
+            "reason": "Wariant potwierdzony, ale Valvematic i brak danych o częstości/kosztach wymagają dodatkowej weryfikacji."
+          }
+        },
+        "fullRecommendedThresholdMet": false
+      }
+    },
+    {
+      "key": "toyota-corolla-e210",
+      "name": "Toyota Corolla XII (E210)",
+      "description": "Sedan i kombi (Touring Sports)",
+      "brand": "Toyota",
+      "model": "Corolla",
+      "generation": "E210",
+      "bodies": [
+        "sedan",
+        "wagon"
+      ],
+      "searchYears": {
+        "min": 2019,
+        "max": 2023
+      },
+      "allowedEngineVariants": [
+        "1.6-valvematic-132",
+        "1.8-hybrid-122",
+        "1.8-hybrid-140"
+      ],
+      "active": true,
+      "priority": 2,
+      "offersFile": "offers/toyota-corolla-e210.json",
+      "knowledgeFile": "knowledge/models/toyota-corolla-e210.json",
+      "legacyEngineSelection": "1.6 Valvematic 132 KM Sedan (potwierdzić rocznik/VIN); 1.8 Hybrid 122 KM; 1.8 Hybrid 140 KM",
+      "selectionStatus": "engine_reviewed_with_conditions",
+      "productionYears": null,
+      "notes": [
+        "Zakres lat dotyczy wyszukiwania modelu; dostępność silnika i nadwozia trzeba sprawdzić w karcie wiedzy.",
+        "Lista silników i roczniki odzwierciedlają aktualne założenia użytkownika; nie oznaczają rekomendacji trwałości.",
+        "1.8 Hybrid 140 KM od 2023 r.: potwierdzić dokładny rynek i moc systemową dla konkretnego egzemplarza.",
+        "Dodano 1.6 Valvematic 132 KM jako wariant wyłącznie sedanowy: oficjalne dane Toyoty dla Europy oraz polski cennik 2019 go potwierdzają. Dostępność w Polsce potwierdzona dla MY2019; poza latami 2019–2020 i dla rejestracji 2021 sprawdzić datę produkcji oraz VIN."
+      ],
+      "variantConstraints": [
+        {
+          "id": "corolla-16-sedan-window",
+          "engines": [
+            "1.6-valvematic-132"
+          ],
+          "yearMin": 2019,
+          "yearMax": 2020,
+          "bodies": [
+            "sedan"
+          ],
+          "sourceIds": [
+            "corolla-toyota-pl-launch",
+            "corolla-pl-price-2019",
+            "corolla-toyota-pl-2021"
+          ],
+          "notes": [
+            "Wariant sedanowy: Toyota potwierdza wyłącznie Sedan, a polski cennik PY2019 podaje 1.6/132 KM. Materiały sprzedażowe MY2021 wskazują już 1.5 VVT-i; gdy dostępny jest tylko rok pierwszej rejestracji, sprawdzić datę produkcji i VIN."
+          ]
+        }
+      ],
+      "engineReview": {
+        "method": "docs/metoda-oceny-silnikow.md",
+        "report": "reports/analiza-silnikow-batch-b-2026-11-08.md",
+        "reviewedAt": "2026-11-08",
+        "variants": {
+          "1.8-hybrid-122": {
+            "status": "conditional_recommendation",
+            "reason": "Wariant 4. generacji potwierdzony; dobra zgodność z profilem, nadal brak niezależnych danych awaryjności napędu."
+          },
+          "1.8-hybrid-140": {
+            "status": "hold_for_long_term_data",
+            "reason": "Nowa generacja z 2023 r.; krótka historia flotowa. Rynek, model year i moc ustalać po VIN."
+          },
+          "1.6-valvematic-132": {
+            "status": "hold_pending_engine_specific_reliability_evidence",
+            "reason": "1ZR-FAE 132 KM i sedan są potwierdzone; przydatność mocy jest dobra, ale brakuje niezależnych długoterminowych danych awaryjności dokładnego silnika oraz polskich kosztów napraw. Weryfikować Valvematic, skrzynię i rok produkcji po VIN. Dopuszczalność LPG wymaga osobnego potwierdzenia dla zestawu, kodu i VIN."
+          }
+        },
+        "fullRecommendedThresholdMet": false
+      }
+    },
+    {
+      "key": "volkswagen-golf-vii-variant",
+      "name": "Volkswagen Golf VII Variant",
+      "description": "Kombi (Variant)",
+      "brand": "Volkswagen",
+      "model": "Golf",
+      "generation": "VII",
+      "bodies": [
+        "wagon"
+      ],
+      "searchYears": {
+        "min": 2017,
+        "max": 2018
+      },
+      "allowedEngineVariants": [
+        "1.4-tsi-ea211-125",
+        "1.4-tsi-ea211-150"
+      ],
+      "active": true,
+      "priority": 2,
+      "offersFile": "offers/volkswagen-golf-vii-variant.json",
+      "knowledgeFile": "knowledge/models/volkswagen-golf-vii-variant.json",
+      "legacyEngineSelection": "1.4 TSI EA211 125 KM; 1.4 TSI EA211 150 KM",
+      "selectionStatus": "engine_reviewed_with_conditions",
+      "productionYears": null,
+      "notes": [
+        "Zakres lat dotyczy wyszukiwania modelu; dostępność silnika i nadwozia trzeba sprawdzić w karcie wiedzy.",
+        "Lista silników i roczniki odzwierciedlają aktualne założenia użytkownika; nie oznaczają rekomendacji trwałości.",
+        "Konflikt: aktywny zakres lat 2017–2018 nie potwierdza 1.4 TSI 150 KM; archiwum VW wskazuje 1.4/150 do 2016, a 1.5/150 później. Wariant 1.4/150 wstrzymany do sprawdzenia daty produkcji i VIN."
+      ],
+      "variantConstraints": [
+        {
+          "id": "14-tsi-production-window",
+          "engines": [
+            "1.4-tsi-ea211-125",
+            "1.4-tsi-ea211-150"
+          ],
+          "yearMax": 2018,
+          "sourceIds": [
+            "golf-vii-profile"
+          ],
+          "notes": [
+            "Konflikt wymaga ustalenia daty produkcji i rynku; nie mylić z pierwszą rejestracją."
+          ]
+        }
+      ],
+      "engineReview": {
+        "method": "docs/metoda-oceny-silnikow.md",
+        "report": "reports/analiza-silnikow-batch-c-2026-11-08.md",
+        "reviewedAt": "2026-11-08",
+        "variants": {
+          "1.4-tsi-ea211-125": {
+            "status": "conditional_recommendation",
+            "reason": "Wariant potwierdzony dla lat 2017–2018; kod CZCA i obsługę paska/chłodzenia potwierdzić po VIN."
+          },
+          "1.4-tsi-ea211-150": {
+            "status": "hold_fitment_conflict",
+            "reason": "Archiwum VW przypisuje 1.4/150 do lat 2014–2016, a w 2017–2018 występuje 1.5/150. Nie zatwierdzać bez dokumentacji produkcji/homologacji/VIN."
+          }
+        },
+        "fullRecommendedThresholdMet": false
+      }
+    },
+    {
+      "key": "skoda-scala",
+      "name": "Škoda Scala",
+      "description": "Hatchback / minivan",
+      "brand": "Skoda",
+      "model": "Scala",
+      "generation": "III",
+      "bodies": [
+        "hatchback"
+      ],
+      "searchYears": {
+        "min": 2020,
+        "max": 2023
+      },
+      "allowedEngineVariants": [
+        "1.0-tsi-115",
+        "1.0-tsi-110"
+      ],
+      "active": true,
+      "priority": 2,
+      "offersFile": "offers/skoda-scala.json",
+      "knowledgeFile": "knowledge/models/skoda-scala.json",
+      "legacyEngineSelection": "1.0 TSI 115 KM; 1.0 TSI 110 KM",
+      "selectionStatus": "engine_reviewed_with_conditions",
+      "productionYears": null,
+      "notes": [
+        "Lista silników i roczniki odzwierciedlają aktualne założenia użytkownika; nie oznaczają rekomendacji trwałości.",
+        "Wariant 1.0 TSI 110 KM (81 kW) jest potwierdzony w danych producenta i odrębny od 115 KM (85 kW); pozostaje wstrzymany z powodu sygnału STK dotyczącego całego auta. Szczegóły w karcie wiedzy."
+      ],
+      "variantConstraints": [],
+      "engineReview": {
+        "method": "docs/metoda-oceny-silnikow.md",
+        "report": "reports/analiza-silnikow-batch-a-2026-11-08.md",
+        "reviewedAt": "2026-11-08",
+        "variants": {
+          "1.0-tsi-115": {
+            "status": "conditional_recommendation",
+            "reason": "Wariant potwierdzony; umiarkowany zapas mocy pod pełnym obciążeniem, brak dokładnych danych awaryjności silnika i kosztów."
+          },
+          "1.0-tsi-110": {
+            "status": "hold_for_inspection_signal",
+            "reason": "Wariant 81 kW potwierdza producent; czeskie STK wykazuje podwyższony wskaźnik usterek całych aut, nie silnika. Nie odrzucać bez wyjaśnienia źródła sygnału."
+          }
+        },
+        "fullRecommendedThresholdMet": false
+      }
+    },
+    {
+      "key": "skoda-superb-iii-combi",
+      "name": "Škoda Superb III Combi",
+      "description": "Kombi",
+      "brand": "Skoda",
+      "model": "Superb",
+      "generation": "III",
+      "bodies": [
+        "wagon"
+      ],
+      "searchYears": {
+        "min": 2017,
+        "max": 2018
+      },
+      "allowedEngineVariants": [
+        "1.4-tsi-ea211-150"
+      ],
+      "active": true,
+      "priority": 2,
+      "offersFile": "offers/skoda-superb-iii-combi.json",
+      "knowledgeFile": "knowledge/models/skoda-superb-iii-combi.json",
+      "legacyEngineSelection": "1.4 TSI EA211 150 KM",
+      "selectionStatus": "engine_reviewed_with_conditions",
+      "productionYears": null,
+      "notes": [
+        "Lista silników i roczniki odzwierciedlają aktualne założenia użytkownika; nie oznaczają rekomendacji trwałości."
+      ],
+      "variantConstraints": [],
+      "engineReview": {
+        "method": "docs/metoda-oceny-silnikow.md",
+        "report": "reports/analiza-silnikow-batch-c-2026-11-08.md",
+        "reviewedAt": "2026-11-08",
+        "variants": {
+          "1.4-tsi-ea211-150": {
+            "status": "conditional_recommendation",
+            "reason": "Dobry zapas mocy; czeskie STK dla całego auta nie dowodzi awaryjności silnika; kod CZEA potwierdzić po VIN."
+          }
+        },
+        "fullRecommendedThresholdMet": false
+      }
+    },
+    {
+      "key": "toyota-avensis-iii-wagon",
+      "name": "Toyota Avensis III Kombi",
+      "description": "Kombi",
+      "brand": "Toyota",
+      "model": "Avensis",
+      "generation": "III",
+      "bodies": [
+        "wagon"
+      ],
+      "searchYears": {
+        "min": 2017,
+        "max": 2018
+      },
+      "allowedEngineVariants": [
+        "1.8-valvematic-147"
+      ],
+      "active": true,
+      "priority": 2,
+      "offersFile": "offers/toyota-avensis-iii-wagon.json",
+      "knowledgeFile": "knowledge/models/toyota-avensis-iii-wagon.json",
+      "legacyEngineSelection": "1.8 Valvematic 147 KM",
+      "selectionStatus": "engine_reviewed_with_conditions",
+      "productionYears": null,
+      "notes": [
+        "Lista silników i roczniki odzwierciedlają aktualne założenia użytkownika; nie oznaczają rekomendacji trwałości.",
+        "2.0 Valvematic 152 KM usunięto z aktywnego filtra: źródła nie potwierdzają jego zastosowania w docelowym polskim kombi z lat 2017–2018. Nie przywracać bez dowodu dla rynku, nadwozia i daty produkcji."
+      ],
+      "variantConstraints": [],
+      "engineReview": {
+        "method": "docs/metoda-oceny-silnikow.md",
+        "report": "reports/analiza-silnikow-batch-b-2026-11-08.md",
+        "reviewedAt": "2026-11-08",
+        "variants": {
+          "1.8-valvematic-147": {
+            "status": "conditional_recommendation",
+            "reason": "2ZR-FAE potwierdzać po VIN; sprawdzić Valvematic i serwis CVT, jeśli występuje. Brak dokładnej kohorty awarii silnika."
+          },
+          "2.0-valvematic-152": {
+            "status": "excluded_from_active_filter_fitment_unconfirmed",
+            "reason": "Źródła potwierdzają rodzinę silnika, ale nie docelowy rynek, nadwozie i lata 2017–2018. Usunięto z aktywnego filtra; wymaga nowego dowodu przed przywróceniem."
+          }
+        },
+        "fullRecommendedThresholdMet": false
+      }
+    },
+    {
+      "key": "volkswagen-golf-sportsvan",
+      "name": "Volkswagen Golf Sportsvan",
+      "description": "Hatchback / minivan",
+      "brand": "Volkswagen",
+      "model": "Golf Sportsvan",
+      "generation": null,
+      "bodies": [
+        "minivan"
+      ],
+      "searchYears": {
+        "min": 2017,
+        "max": 2018
+      },
+      "allowedEngineVariants": [
+        "1.4-tsi-ea211-125",
+        "1.4-tsi-ea211-150"
+      ],
+      "active": true,
+      "priority": 2,
+      "offersFile": "offers/volkswagen-golf-sportsvan.json",
+      "knowledgeFile": "knowledge/models/volkswagen-golf-sportsvan.json",
+      "legacyEngineSelection": "1.4 TSI EA211 125 KM; 1.4 TSI EA211 150 KM",
+      "selectionStatus": "engine_reviewed_with_conditions",
+      "productionYears": null,
+      "notes": [
+        "Compact MPV/minivan body. VW archive shows 1.5 TSI after 2017 update; 1.4 fitment must be confirmed by production date/VIN.",
+        "Lista silników i roczniki odzwierciedlają aktualne założenia użytkownika; nie oznaczają rekomendacji trwałości."
+      ],
+      "variantConstraints": [],
+      "engineReview": {
+        "method": "docs/metoda-oceny-silnikow.md",
+        "report": "reports/analiza-silnikow-batch-c-2026-11-08.md",
+        "reviewedAt": "2026-11-08",
+        "variants": {
+          "1.4-tsi-ea211-125": {
+            "status": "conditional_recommendation",
+            "reason": "Wariant potwierdzony; przy autach po modernizacji 2017 ustalić datę produkcji i VIN."
+          },
+          "1.4-tsi-ea211-150": {
+            "status": "conditional_recommendation",
+            "reason": "Zapas mocy korzystny; przejście na 1.5 TSI przy modernizacji wymaga potwierdzenia daty produkcji/VIN; DSG osobno."
+          }
+        },
+        "fullRecommendedThresholdMet": false
+      }
+    },
+    {
+      "key": "volkswagen-passat-b8-variant",
+      "name": "Volkswagen Passat B8 Variant",
+      "description": "Kombi",
+      "brand": "Volkswagen",
+      "model": "Passat",
+      "generation": "B8",
+      "bodies": [
+        "wagon"
+      ],
+      "searchYears": {
+        "min": 2017,
+        "max": 2018
+      },
+      "allowedEngineVariants": [
+        "1.4-tsi-ea211-act-150"
+      ],
+      "active": true,
+      "priority": 2,
+      "offersFile": "offers/volkswagen-passat-b8-variant.json",
+      "knowledgeFile": "knowledge/models/volkswagen-passat-b8-variant.json",
+      "legacyEngineSelection": "1.4 TSI EA211 ACT 150 KM",
+      "selectionStatus": "engine_reviewed_with_conditions",
+      "productionYears": null,
+      "notes": [
+        "Lista silników i roczniki odzwierciedlają aktualne założenia użytkownika; nie oznaczają rekomendacji trwałości."
+      ],
+      "variantConstraints": [
+        {
+          "id": "14-act-before-2019",
+          "engines": [
+            "1.4-tsi-ea211-act-150"
+          ],
+          "yearMax": 2018,
+          "sourceIds": [
+            "passatpl"
+          ],
+          "notes": [
+            "VW Polska archive gives before 2019."
+          ]
+        }
+      ],
+      "engineReview": {
+        "method": "docs/metoda-oceny-silnikow.md",
+        "report": "reports/analiza-silnikow-batch-c-2026-11-08.md",
+        "reviewedAt": "2026-11-08",
+        "variants": {
+          "1.4-tsi-ea211-act-150": {
+            "status": "conditional_recommendation",
+            "reason": "Dobry zapas mocy dla Variant; kod CZEA prawdopodobny, lecz potwierdzić po VIN; DSG oceniać osobno."
+          }
+        },
+        "fullRecommendedThresholdMet": false
+      }
+    },
+    {
+      "key": "mazda-6-iii-wagon",
+      "name": "Mazda 6 III Wagon",
+      "description": "Kombi (Wagon)",
+      "brand": "Mazda",
+      "model": "6",
+      "generation": "III",
+      "bodies": [
+        "wagon"
+      ],
+      "searchYears": {
+        "min": 2017,
+        "max": 2020
+      },
+      "allowedEngineVariants": [
+        "2.0-skyactiv-g-145",
+        "2.0-skyactiv-g-165"
+      ],
+      "active": true,
+      "priority": 2,
+      "offersFile": "offers/mazda-6-iii-wagon.json",
+      "knowledgeFile": "knowledge/models/mazda-6-iii-wagon.json",
+      "legacyEngineSelection": "2.0 Skyactiv-G 145 KM; 2.0 Skyactiv-G 165 KM",
+      "selectionStatus": "engine_reviewed_with_conditions",
+      "productionYears": null,
+      "notes": [
+        "Roczniki 2017–2020; preferowane 2017–2018. Warianty są wyborem użytkownika, nie werdyktem o trwałości.",
+        "Lista silników i roczniki odzwierciedlają aktualne założenia użytkownika; nie oznaczają rekomendacji trwałości."
+      ],
+      "variantConstraints": [],
+      "engineReview": {
+        "method": "docs/metoda-oceny-silnikow.md",
+        "report": "reports/analiza-silnikow-batch-c-2026-11-08.md",
+        "reviewedAt": "2026-11-08",
+        "variants": {
+          "2.0-skyactiv-g-145": {
+            "status": "conditional_recommendation",
+            "reason": "Wolnossący wariant z ograniczonym zapasem mocy w obciążonym kombi; brak danych awarii dokładnego kodu i kosztów."
+          },
+          "2.0-skyactiv-g-165": {
+            "status": "conditional_recommendation",
+            "reason": "Większy zapas mocy, bez dowodu na wyższą trwałość; potwierdzić rynek, kod i skrzynię po VIN."
+          }
+        },
+        "fullRecommendedThresholdMet": false
+      }
+    }
+  ]
+}

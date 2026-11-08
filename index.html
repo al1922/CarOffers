@@ -1,238 +1,31 @@
 <!doctype html>
-<html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Oferty samochodów</title><style>
-:root{--ink:#182433;--muted:#627083;--line:#dbe2ea;--paper:#f3f6fa;--white:#fff;--navy:#14283f;--blue:#235a91;--green:#23734d;--amber:#93641b;--red:#9b3d36}
-*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 Inter,Segoe UI,Arial,sans-serif}a{color:#155d9a;text-decoration:none}a:hover{text-decoration:underline}.hero{background:linear-gradient(125deg,#14283f,#244665);color:white;padding:36px max(22px,calc((100vw - 1160px)/2)) 30px}.hero h1{font-size:clamp(26px,4vw,40px);line-height:1.12;margin:0 0 12px}.hero p{max-width:900px;color:#d9e4ef;margin:8px 0}.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.stat{border:1px solid #65809d;border-radius:10px;padding:9px 13px;min-width:130px}.stat b{font-size:23px;display:block}.stat span{font-size:12px;color:#d4e0ed}main{max-width:1160px;margin:22px auto;padding:0 18px 60px}.notice{background:#fff;border:1px solid #d4dee9;border-left:4px solid #c38b2d;border-radius:9px;padding:16px 18px;margin:18px 0 22px}.notice strong{display:block;margin-bottom:4px}.criteria{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:8px;margin:12px 0 20px}.criterion{background:#e9eef4;border-radius:8px;padding:9px 11px;font-size:13px}.toolbar{position:sticky;top:0;z-index:5;background:rgba(243,246,250,.96);backdrop-filter:blur(8px);padding:10px 0 12px;border-bottom:1px solid var(--line)}.searchrow{display:flex;gap:10px;flex-wrap:wrap}input{flex:1;min-width:230px;padding:12px 14px;border:1px solid #c9d3df;border-radius:8px;font-size:15px;background:white}button{padding:10px 13px;border:1px solid #c9d3df;background:white;border-radius:8px;cursor:pointer;color:var(--ink)}button.active{background:#1f4e78;border-color:#1f4e78;color:#fff}.filterbuttons{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}.section-head{margin:28px 0 12px;display:flex;justify-content:space-between;align-items:end;gap:15px;flex-wrap:wrap}.section-head h2{margin:0;font-size:23px}.section-head p{margin:3px 0 0;color:var(--muted);font-size:13px}.car-card{background:var(--white);border:1px solid var(--line);border-radius:13px;padding:19px;margin:0 0 14px;box-shadow:0 2px 8px rgba(23,43,65,.04)}.card-top{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}.eyebrow{text-transform:uppercase;letter-spacing:.07em;font-size:11px;color:var(--muted);font-weight:700}h3{font-size:20px;line-height:1.25;margin:5px 0}.seller{font-size:12px;color:var(--muted)}.price-wrap{text-align:right;min-width:140px}.price{font-size:25px;font-weight:800;white-space:nowrap;color:#173e62}.price-over{font-size:25px;font-weight:800;white-space:nowrap;color:var(--red)}.priority{font-size:11px;margin-top:3px;color:var(--muted)}.spec-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:17px 0}.spec-grid div{background:#f1f5f9;border-radius:8px;padding:9px 10px}.spec-grid span{display:block;font-size:11px;color:var(--muted);margin-bottom:2px}.spec-grid b{font-size:13px}.details-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.details-grid h4{font-size:13px;margin:9px 0 3px;color:#344b63}.details-grid p{font-size:13px;margin:0;color:#354253}.card-bottom{border-top:1px solid #e5ebf1;margin-top:14px;padding-top:12px;display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap;font-size:13px}.bucket-tag{font-size:11px;font-weight:700;border-radius:20px;padding:4px 9px;background:#e6f2eb;color:var(--green)}.bucket-tag.conditional{background:#fff3df;color:var(--amber)}.bucket-tag.review{background:#fbe9e7;color:var(--red)}.audit{background:white;border:1px solid var(--line);border-radius:12px;padding:18px;margin-top:28px}.audit h2{margin:0 0 10px}.audit-row{padding:11px 0;border-top:1px solid #e7edf3}.audit-row p{margin:4px 0;color:#4a5868;font-size:13px}.audit-row a{font-size:12px}.foot{color:var(--muted);font-size:12px;margin-top:22px}.empty{display:none;padding:24px;color:var(--muted);text-align:center}@media(max-width:700px){main{padding:0 11px 40px}.hero{padding:27px 18px}.details-grid{grid-template-columns:1fr;gap:7px}.spec-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.card-top{display:block}.price-wrap{display:flex;align-items:center;gap:10px;text-align:left;margin-top:10px}.price,.price-over{font-size:23px}.car-card{padding:15px}}
-
-.archived-head{border-top:2px solid var(--line);padding-top:18px;margin-top:26px}.audit>p{font-size:13px;color:var(--muted)}
-
-/* Układ mobilny i ochrona przed poziomym przewijaniem */
-html,body{width:100%;max-width:100%;overflow-x:clip}
-body{overflow-wrap:anywhere}
-main,.hero,.car-card,.notice,.audit,.toolbar,.section-head,.card-top,.card-bottom,.details-grid,.spec-grid,.spec-grid>div,.searchrow,.criteria,.criterion{min-width:0;max-width:100%}
-main{width:100%}
-.hero{padding-left:max(18px,calc((100% - 1160px)/2));padding-right:max(18px,calc((100% - 1160px)/2))}
-.card-top>*,.details-grid>*,.card-bottom>*,.searchrow>*{min-width:0}
-.spec-grid b,.details-grid p,.seller,.audit-row,.notice{overflow-wrap:anywhere;word-break:normal}
-.card-bottom{justify-content:flex-start;align-items:center}
-.card-bottom .bucket-tag{margin-right:auto;max-width:100%;white-space:normal}
-a.link-button{display:inline-flex;align-items:center;justify-content:center;max-width:100%;min-height:40px;padding:9px 13px;border-radius:9px;border:1px solid #235a91;background:#235a91;color:#fff;font-size:13px;font-weight:650;line-height:1.3;text-decoration:none;text-align:center;overflow-wrap:anywhere;white-space:normal;transition:background .15s ease,box-shadow .15s ease}
-a.link-button:hover{background:#173e62;border-color:#173e62;text-decoration:none;box-shadow:0 2px 8px #14283f22}
-a.link-button:focus-visible{outline:3px solid #e2a637;outline-offset:2px}
-.audit-row a.link-button{font-size:12px}
-@media(max-width:700px){
- .hero{padding:25px 15px}.hero h1{font-size:clamp(23px,7vw,32px)}
- main{margin:14px auto;padding:0 10px 35px}
- .stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.stat{min-width:0;padding:9px}
- .criteria{grid-template-columns:1fr}
- .searchrow{display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
- .searchrow input{width:100%;min-width:0;max-width:100%;font-size:16px}
- .searchrow button{width:100%}
- .filterbuttons{gap:6px}.filterbuttons button{flex:1 1 auto;min-width:0}
- .section-head h2{font-size:20px}
- .car-card{padding:13px}.card-top{display:block}
- .price-wrap{min-width:0;max-width:100%;flex-wrap:wrap}
- .spec-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
- .spec-grid div{padding:8px}.spec-grid b{font-size:12px}
- .card-bottom{display:flex;flex-direction:column;align-items:stretch;gap:8px}
- .card-bottom .bucket-tag{align-self:flex-start;margin-right:0}
- .card-bottom a.link-button{width:100%}
- .audit{padding:13px}.notice{padding:13px}
-}
-@media(max-width:360px){.stats,.spec-grid{grid-template-columns:1fr}.price,.price-over{white-space:normal;font-size:21px}}
-
-.verification-section{margin-top:28px;padding-top:18px;border-top:2px solid #cbd5e1}
-.verification-section .car-card{margin:14px 0;opacity:.82}
-.verification-reason{font-weight:700;color:#9a3412;overflow-wrap:anywhere}
-.verification-section p{overflow-wrap:anywhere}
-
-/* Responsywność oraz zabezpieczenie przed poziomym przewijaniem */
-html,body{width:100%;max-width:100%;overflow-x:clip}
-main,.hero,#cards,.car-card,.toolbar,.searchrow,.card-top,.card-bottom,.details-grid,.spec-grid{min-width:0;max-width:100%}
-.car-card,.card-top,.card-bottom,.spec-grid,.details-grid{overflow-wrap:anywhere}
-.car-card a{overflow-wrap:anywhere}
-[hidden]{display:none!important}
-@media(max-width:700px){.searchrow{display:grid;grid-template-columns:minmax(0,1fr);gap:9px}.searchrow input{width:100%;min-width:0}.searchrow button{width:100%}.card-top>*{min-width:0}.price-wrap{min-width:0;flex-wrap:wrap}.card-bottom{min-width:0}.card-bottom a{max-width:100%}.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.stat{min-width:0}}
-@media(max-width:390px){.spec-grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr}}
-
-/* Układ strony i ocena zgodności */
-.requirements{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;margin:0 0 28px;box-shadow:0 2px 8px rgba(23,43,65,.04)}
-.requirements>h2{font-size:23px;margin:0 0 18px}
-.requirements-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
-.requirements-group{min-width:0;background:#f3f6fa;border:1px solid #e3eaf1;border-radius:12px;padding:16px}
-.requirements-group:first-child{grid-row:span 2}
-.requirements-group h3{font-size:16px;margin:0 0 12px;color:#173e62}
-.requirements-group dl{margin:0;display:grid;grid-template-columns:minmax(115px,33%) minmax(0,1fr);gap:10px 12px;font-size:13px}
-.requirements-group dt{font-weight:750;color:#31465b}
-.requirements-group dd{margin:0;color:#364759;overflow-wrap:anywhere}
-.offer-verdict{display:flex;align-items:flex-start;gap:12px;flex-wrap:wrap;border:1px solid;border-radius:10px;padding:11px 13px;margin:0 0 14px}
-.offer-verdict strong{font-size:13px;line-height:1.45;flex:0 0 auto}
-.offer-verdict p{font-size:12px;line-height:1.5;margin:0;flex:1 1 260px;overflow-wrap:anywhere}
-.verdict-match{background:#e9f6ee;border-color:#9acdaf;color:#165b38}
-.verdict-check{background:#fff5df;border-color:#e9c477;color:#755016}
-.verdict-fail{background:#fcebea;border-color:#e2a7a1;color:#8a2b25}
-@media(max-width:760px){.requirements{padding:15px}.requirements-grid{grid-template-columns:minmax(0,1fr)}.requirements-group:first-child{grid-row:auto}.requirements-group{padding:13px}.requirements-group dl{grid-template-columns:minmax(0,1fr);gap:2px}.requirements-group dd{margin-bottom:9px}.offer-verdict{display:block}.offer-verdict p{margin-top:5px}}
-@media(max-width:420px){.requirements>h2{font-size:20px}.requirements-group h3{font-size:15px}}
-
-
-/* Zakładki modeli */
-.hero{padding-block:28px}.hero h1{margin:0;font-size:clamp(24px,4vw,36px)}
-.model-tabs{display:flex;gap:9px;overflow-x:auto;max-width:100%;padding:5px 1px 12px;scrollbar-width:thin}
-.model-tab{flex:0 0 auto;border:1px solid #c6d3e1;border-radius:11px;padding:11px 16px;background:#fff;font-weight:700;font-size:14px;white-space:nowrap}
-.model-tab[aria-selected="true"]{background:#173e62;border-color:#173e62;color:#fff}
-.model-tab:focus-visible{outline:3px solid #dba63b;outline-offset:2px}
-.model-header{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin:10px 0 17px}
-.model-header h2{margin:0;font-size:22px}.model-header .count{color:var(--muted);font-size:13px}
-.requirements{margin-bottom:22px}.requirements[hidden],.empty[hidden]{display:none!important}
-.empty{display:block;background:#fff;border:1px solid var(--line);border-radius:12px}
-#cards{min-width:0;max-width:100%}.car-card{min-width:0;max-width:100%}
-@media(max-width:700px){.model-tab{padding:10px 13px}.model-header h2{font-size:19px}.hero{padding:24px 15px}}
-
-/* Interfejs porównywania ofert */
-.controls{background:white;border:1px solid var(--line);border-radius:14px;padding:16px;margin:16px 0 18px}
-.control-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:10px}
-.control-grid label{font-size:12px;color:var(--muted);font-weight:650;display:flex;flex-direction:column;gap:5px}
-.control-grid input,.control-grid select{width:100%;min-width:0;border:1px solid #c9d3df;background:white;border-radius:8px;padding:10px;font:inherit;font-size:14px;color:var(--ink)}
-.control-bottom{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-top:13px}.control-bottom .toggle{display:flex;align-items:center;gap:6px;font-size:13px}.toggle input{width:auto;min-width:0;flex:none}.view-switch{margin-left:auto;display:flex;gap:5px}.hint{font-size:12px;color:var(--muted);margin:9px 0 0}
-.offer-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:12px}.offer-list .car-card{margin:0}
-.offer-summary{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.offer-summary h3{font-size:17px;margin:3px 0}.offer-price{font-size:21px;font-weight:800;white-space:nowrap;color:#173e62}.offer-meta{font-size:12px;color:var(--muted)}
-.offer-tags{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}.offer-tags span{background:#f0f4f8;padding:4px 7px;border-radius:6px;font-size:12px}.offer-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.offer-actions a,.offer-actions button{font-size:13px;padding:8px 10px}
-.verdict-chip{display:inline-flex;padding:3px 8px;border-radius:20px;font-size:11px;font-weight:700;background:#fff1dc;color:#815600}.verdict-chip.match{background:#e5f3ea;color:#216c3f}.verdict-chip.fail{background:#fde9e7;color:#9b3329}.new-chip{display:inline-block;background:#e6f0ff;color:#174d91;padding:3px 8px;border-radius:20px;font-size:11px;font-weight:700;margin-left:5px}
-.offer-details{border-top:1px solid var(--line);margin-top:13px;padding-top:10px}.offer-details h4{margin:10px 0 3px;font-size:13px}.offer-details p{margin:0;font-size:13px;color:#354253;white-space:pre-wrap;overflow-wrap:anywhere}
-.offer-table-wrap{overflow-x:auto;background:white;border:1px solid var(--line);border-radius:12px}.offer-table{border-collapse:collapse;width:100%;min-width:850px;font-size:13px}.offer-table th,.offer-table td{padding:12px 10px;text-align:left;border-bottom:1px solid #e6edf3;vertical-align:top}.offer-table th{background:#edf2f7;white-space:nowrap}.offer-table tr:hover td{background:#f7faff}.offer-table td:first-child{max-width:280px}.offer-table button{font-size:12px;padding:6px 9px}.offer-table .offer-price{font-size:15px}.offer-table .detail-row td{background:#f7faff}.offer-table .detail-row:hover td{background:#f7faff}
-@media(max-width:700px){.controls{padding:12px}.control-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.offer-summary{flex-wrap:wrap}.view-switch{margin-left:0}.offer-list{grid-template-columns:1fr}}
-
-/* v2.1: ceny w dwóch wierszach i stabilne kolumny */
-.offer-summary{display:grid;grid-template-columns:minmax(0,1fr) minmax(130px,auto);align-items:start;gap:12px}
-.offer-summary>div{min-width:0}
-.offer-summary h3{overflow-wrap:anywhere;line-height:1.3}
-.offer-price{min-width:0;text-align:right;font-size:inherit;white-space:normal}
-.price-block{display:flex;flex-direction:column;align-items:flex-end;gap:3px;max-width:100%;min-width:0}
-.price-main{font-size:clamp(17px,1.8vw,22px);line-height:1.2;font-weight:800;white-space:nowrap;font-variant-numeric:tabular-nums;color:#173e62}
-.price-note{font-size:11px;line-height:1.3;font-weight:500;color:#64748b;max-width:220px;overflow-wrap:anywhere;text-align:right}
-.offer-table{table-layout:fixed;min-width:850px}
-.offer-table th:nth-child(1){width:23%}.offer-table th:nth-child(2){width:7%}.offer-table th:nth-child(3){width:16%}.offer-table th:nth-child(4){width:12%}.offer-table th:nth-child(5){width:17%}.offer-table th:nth-child(6){width:14%}.offer-table th:nth-child(7){width:11%}
-.offer-table td{overflow-wrap:anywhere}
-.offer-table .price-main{font-size:15px}.offer-table .price-note{font-size:11px;max-width:100%}
-.offer-table .price-block{align-items:flex-start}.offer-table .offer-price{text-align:left}
-@media(max-width:700px){.offer-summary{grid-template-columns:minmax(0,1fr)}.offer-price{text-align:left}.price-block{align-items:flex-start}.price-note{text-align:left;max-width:100%}.price-main{font-size:21px}}
-@media(max-width:380px){.price-main{font-size:19px;white-space:normal}}
-
-/* v2.2: uporządkowana karta i dostępny tryb ciemny */
-:root{color-scheme:light;--paper:#f3f6fa;--ink:#172b40;--muted:#5d6c7e;--line:#d5dfea;--white:#fff;--surface:#fff;--surface-soft:#f1f5f9;--input:#fff;--link:#155d9a;--price:#173e62;--detail:#354253;--table-head:#edf2f7;--table-hover:#f7faff;--hero-start:#14283f;--hero-end:#244665}
-html[data-theme="dark"]{color-scheme:dark;--paper:#101720;--ink:#e6edf6;--muted:#abbad0;--line:#354355;--white:#1b2634;--surface:#1b2634;--surface-soft:#263344;--input:#202d3d;--link:#9acaff;--price:#f2f7ff;--detail:#d3deec;--table-head:#263648;--table-hover:#27374a;--hero-start:#111d2c;--hero-end:#1c344d}
-html[data-theme="dark"] body{background:var(--paper);color:var(--ink)}
-html[data-theme="dark"] a{color:var(--link)}
-html[data-theme="dark"] .hero{background:linear-gradient(125deg,var(--hero-start),var(--hero-end))}
-html[data-theme="dark"] .toolbar{background:rgba(16,23,32,.96)}
-html[data-theme="dark"] .controls,html[data-theme="dark"] .car-card,html[data-theme="dark"] .offer-table-wrap,html[data-theme="dark"] .notice,html[data-theme="dark"] .audit,html[data-theme="dark"] .empty,html[data-theme="dark"] .model-tab,html[data-theme="dark"] .requirements,html[data-theme="dark"] .requirements-group{background:var(--surface);color:var(--ink);border-color:var(--line)}
-html[data-theme="dark"] .criterion,html[data-theme="dark"] .spec-grid div,html[data-theme="dark"] .offer-tags span{background:var(--surface-soft);color:var(--ink)}
-html[data-theme="dark"] input,html[data-theme="dark"] select,html[data-theme="dark"] button{background:var(--input);color:var(--ink);border-color:var(--line)}
-html[data-theme="dark"] .model-tab[aria-selected="true"],html[data-theme="dark"] button.active{background:#365d86;color:#fff;border-color:#6089b5}
-html[data-theme="dark"] .offer-table th{background:var(--table-head)}
-html[data-theme="dark"] .offer-table td{border-color:var(--line)}
-html[data-theme="dark"] .offer-table tr:hover td,html[data-theme="dark"] .offer-table .detail-row td{background:var(--table-hover)}
-html[data-theme="dark"] .offer-details p,html[data-theme="dark"] .details-grid p,html[data-theme="dark"] .audit-row p{color:var(--detail)}
-html[data-theme="dark"] .price-main,html[data-theme="dark"] .offer-price{color:var(--price)}
-html[data-theme="dark"] .price-note{color:var(--muted)}
-html[data-theme="dark"] .verdict-chip.match,html[data-theme="dark"] .bucket-tag{background:#173c2d;color:#a9e6bd}
-html[data-theme="dark"] .verdict-chip,html[data-theme="dark"] .verdict-chip.check{background:#4c3920;color:#ffe1a0}
-html[data-theme="dark"] .verdict-chip.fail{background:#4c292b;color:#ffb9b6}
-html[data-theme="dark"] .new-chip{background:#233f65;color:#b8d9ff}
-html[data-theme="dark"] .verdict-match{background:#173c2d;color:#b8ebc8;border-color:#3d7a59}
-html[data-theme="dark"] .verdict-check{background:#4c3920;color:#ffe1a0;border-color:#886a3b}
-html[data-theme="dark"] .verdict-fail{background:#4c292b;color:#ffb9b6;border-color:#965459}
-html[data-theme="dark"] .offer-verdict{border-color:var(--line)}
-html[data-theme="dark"] .requirements-group dt,html[data-theme="dark"] .requirements-group dd{color:var(--ink)}
-html[data-theme="dark"] .card-bottom,html[data-theme="dark"] .offer-details{border-color:var(--line)}
-html[data-theme="dark"] .offer-table .detail-row:hover td{background:var(--table-hover)}
-html[data-theme="dark"] .link-button{color:#b9d9ff}
-.theme-toggle{margin-left:auto;border-radius:10px;font-size:13px;font-weight:700;min-width:126px;min-height:40px}
-.hero-heading{display:flex;align-items:center;gap:16px;justify-content:space-between;flex-wrap:wrap}
-.hero .theme-toggle{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.45);color:#fff}
-.hero .theme-toggle:hover{background:rgba(255,255,255,.22)}
-.offer-list{grid-template-columns:repeat(auto-fit,minmax(min(100%,365px),1fr));align-items:start;gap:14px}
-.offer-list .car-card{display:flex;flex-direction:column;gap:13px;padding:18px;border-radius:15px;box-shadow:0 3px 12px rgba(15,35,60,.06)}
-.offer-list .offer-summary{display:flex;flex-direction:column;gap:9px}
-.offer-list .offer-summary h3{font-size:18px;line-height:1.3;margin:4px 0 7px;overflow-wrap:break-word}
-.offer-list .offer-summary .offer-price{width:100%;text-align:left;padding:11px 12px;background:var(--surface-soft);border-radius:10px}
-.offer-list .price-block{align-items:flex-start;gap:3px}
-.offer-list .price-main{color:var(--price);font-size:clamp(21px,2vw,25px)}
-.offer-list .price-note{text-align:left;color:var(--muted);max-width:100%}
-.offer-list .offer-tags{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin:0}
-.offer-list .offer-tags span{min-width:0;padding:9px 10px;background:var(--surface-soft);border-radius:8px;font-size:12px;line-height:1.35;overflow-wrap:break-word}
-.offer-list .offer-tags span:first-child,.offer-list .offer-tags span:nth-child(2){font-weight:750;font-size:13px}
-.offer-list .offer-meta{margin:0;line-height:1.4;overflow-wrap:anywhere}
-.offer-list .offer-actions{margin-top:auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
-.offer-list .offer-actions>*{min-width:0;display:flex;justify-content:center;align-items:center;text-align:center;min-height:40px;white-space:normal}
-.offer-list .offer-details{margin-top:0}
-.offer-list .verdict-chip{margin-right:5px}
-@media(max-width:430px){.offer-list .car-card{padding:14px}.offer-list .offer-tags{grid-template-columns:repeat(2,minmax(0,1fr))}.offer-list .offer-summary h3{font-size:17px}.theme-toggle{margin-left:0}}
-
-/* v2.3: mobilny widok tabeli bez przewijania poziomego */
-.offer-table-wrap{max-width:100%}
-.offer-table .mobile-table-link{display:none}
-@media (max-width:760px){
-  .offer-table-wrap{overflow:visible;background:transparent;border:0;border-radius:0}
-  .offer-table{display:block;width:100%;min-width:0;table-layout:auto;border:0;background:transparent}
-  .offer-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;clip-path:inset(50%)}
-  .offer-table tbody{display:flex;flex-direction:column;gap:12px;width:100%}
-  .offer-table tr.offer-data-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 12px;background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:13px;box-shadow:0 2px 8px rgba(0,0,0,.06);min-width:0}
-  .offer-table tr.offer-data-row>td{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;min-width:0;padding:9px 0;border:0;background:transparent!important;overflow-wrap:anywhere}
-  .offer-table tr.offer-data-row>td::before{content:attr(data-label);display:block;color:var(--muted);font-size:11px;font-weight:600;line-height:1.3;margin-bottom:4px}
-  .offer-table tr.offer-data-row>td.mobile-name{grid-column:1/-1;border-bottom:1px solid var(--line);padding:2px 0 12px}
-  .offer-table tr.offer-data-row>td.mobile-name::before{display:none}
-  .offer-table .mobile-name strong{font-size:15px;line-height:1.4;display:block;overflow-wrap:anywhere}
-  .offer-table .mobile-name .new-chip{margin-top:5px}
-  .offer-table tr.offer-data-row>td.offer-price{grid-column:1/-1;grid-row:2;padding:12px 0;border-bottom:1px solid var(--line)}
-  .offer-table tr.offer-data-row>td.offer-price::before{display:none}
-  .offer-table .offer-price .price-block{width:100%;gap:2px}
-  .offer-table .offer-price .price-main{font-size:23px;line-height:1.2;white-space:normal}
-  .offer-table .offer-price .price-note{font-size:11px;max-width:100%}
-  .offer-table tr.offer-data-row>td.mobile-verdict{grid-column:1/-1;border-top:1px solid var(--line);padding-top:12px}
-  .offer-table tr.offer-data-row>td.mobile-actions{grid-column:1/-1;flex-direction:row;align-items:stretch;gap:8px;padding:6px 0 0}
-  .offer-table tr.offer-data-row>td.mobile-actions::before{display:none}
-  .offer-table .mobile-actions button,.offer-table .mobile-actions .mobile-table-link{display:inline-flex;align-items:center;justify-content:center;flex:1 1 0;min-width:0;min-height:42px;padding:9px 10px;font-size:13px;line-height:1.3;text-align:center}
-  .offer-table tr.detail-row{display:block;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px;margin-top:-5px;min-width:0}
-  .offer-table tr.detail-row[hidden]{display:none!important}
-  .offer-table tr.detail-row td{display:block;width:100%;padding:0;border:0;background:transparent!important;min-width:0}
-  .offer-table .detail-row .offer-details{margin:0;padding:0;border:0}
-  .offer-table tr:hover td{background:transparent}
-  .control-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .control-grid input,.control-grid select{min-width:0;width:100%;font-size:16px}
-  .control-bottom .toggle{flex:0 1 auto;min-width:135px;white-space:normal}
-  .control-bottom .toggle input{width:16px;height:16px;flex:0 0 16px}
-  .control-bottom{align-items:stretch}
-}
-@media (max-width:430px){
-  .offer-table tr.offer-data-row{padding:12px;gap:0 10px}
-  .offer-table .offer-price .price-main{font-size:21px}
-  .control-grid{grid-template-columns:minmax(0,1fr)}
-  .view-switch{width:100%;display:flex}
-  .view-switch button{flex:1}
-}
-</style><script>try{const t=localStorage.getItem("carOffersTheme");document.documentElement.dataset.theme=(t==="dark"||t==="light")?t:(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}catch{document.documentElement.dataset.theme="light"}</script></head>
-<body><header class="hero"><div class="hero-heading"><h1>Oferty samochodów</h1><button type="button" id="themeToggle" class="theme-toggle" aria-label="Zmień motyw kolorystyczny">Tryb ciemny</button></div></header>
-<main>
-<nav class="model-tabs" id="modelTabs" role="tablist" aria-label="Modele samochodów"></nav>
-<div class="model-header"><h2 id="modelTitle">Oferty</h2><span class="count" id="count"></span></div>
-<div id="modelRequirements"><section aria-labelledby="requirements-title" class="requirements"><h2 id="requirements-title">Specyfikacja i kryteria wyboru</h2><div class="requirements-grid"><div class="requirements-group"><h3>Samochód i napęd</h3><dl><dt>Nadwozie</dt><dd>Kombi (Touring Sports) lub sedan</dd><dt>Rocznik</dt><dd>2019–2026; przedziały 2019–2020, 2021–2022, 2023–2024, 2025–2026</dd><dt>Silniki hybrydowe</dt><dd>1.8 Hybrid 122 KM (2019–2022); 1.8 Hybrid 140 KM (2023+); 2.0 Hybrid 180 KM (2019–2022); 2.0 Hybrid 196 KM (2023–2024); 2.0 Hybrid 178 KM (2025+)</dd><dt>Silniki benzynowe</dt><dd>1.6 Valvematic 132 KM (sedan 2019–2020); 1.5 VVT-i / Dynamic Force 125 KM (sedan od 2020/2021)</dd><dt>Skrzynia biegów</dt><dd>Dowolna</dd></dl></div><div class="requirements-group"><h3>Cena, przebieg i wyposażenie</h3><dl><dt>Cena maksymalna</dt><dd>60 000 zł — cena zakupu</dd><dt>Przebieg</dt><dd>Bez sztywnego limitu; preferowany jak najniższy, z uwzględnieniem stanu technicznego</dd><dt>Wyposażenie</dt><dd>Dowolna wersja; ważniejsze konkretne elementy wyposażenia</dd></dl></div><div class="requirements-group"><h3>Historia i stan techniczny</h3><dl><dt>Historia serwisowa</dt><dd>Udokumentowana</dd><dt>Pochodzenie</dt><dd>Akceptowane auta poleasingowe, flotowe i importowane</dd><dt>Preferencje</dt><dd>Jeden właściciel i zakup w salonie</dd><dt>Szkody</dt><dd>Bez poważnych kolizji, szkód konstrukcyjnych i poważnych napraw blacharskich; dopuszczalne drobne naprawy lakiernicze</dd><dt>Usterki i przebieg</dt><dd>Drobne usterki przy odpowiednio niższej cenie; większy przebieg po pozytywnej diagnostyce</dd></dl></div></div></section></div>
-<section class="controls" aria-label="Filtrowanie ofert">
-  <div class="control-grid">
-    <label>Wyszukaj<input id="search" type="search" placeholder="VIN, miasto, silnik, sprzedawca…"></label>
-    <label>Cena do (zł)<input id="maxPrice" type="number" min="0" step="1000" placeholder="Bez limitu"></label>
-    <label>Przebieg do (km)<input id="maxMileage" type="number" min="0" step="10000" placeholder="Bez limitu"></label>
-    <label>Rocznik od<input id="minYear" type="number" min="1900" max="2100" placeholder="Dowolny"></label>
-    <label>Silnik<select id="engineFilter"><option value="">Wszystkie</option></select></label>
-    <label>Nadwozie<select id="bodyFilter"><option value="">Wszystkie</option></select></label>
-    <label>Skrzynia<select id="transmissionFilter"><option value="">Wszystkie</option></select></label>
-    <label>Ocena<select id="verdictFilter"><option value="">Wszystkie</option><option value="match">Zgodne</option><option value="check">Do weryfikacji</option><option value="fail">Poza wymaganiami</option></select></label>
-    <label>Sortuj<select id="sort"><option value="priority">Ocena / priorytet</option><option value="priceAsc">Cena rosnąco</option><option value="priceDesc">Cena malejąco</option><option value="yearDesc">Rocznik malejąco</option><option value="mileageAsc">Przebieg rosnąco</option><option value="newest">Najnowsze w zestawieniu</option></select></label>
-  </div>
-  <div class="control-bottom"><label class="toggle"><input type="checkbox" id="onlyNew"> Tylko nowe</label><label class="toggle"><input type="checkbox" id="hideDuplicates" checked> Ukryj duplikaty</label><button id="resetFilters" type="button">Wyczyść filtry</button><div class="view-switch" role="group" aria-label="Widok ofert"><button id="viewCards" type="button" class="active" aria-pressed="true">Karty</button><button id="viewTable" type="button" aria-pressed="false">Tabela</button></div></div>
-  <p class="hint">„Nowe” oznacza oferty dodane od poprzedniej wizyty w tej przeglądarce. Przy pierwszej wizycie wszystkie oferty są traktowane jako bazowe.</p>
-</section>
-<div id="cards" role="tabpanel" aria-label="Oferty wybranego modelu"></div>
-<p id="empty" class="empty" hidden>Brak ofert tego modelu.</p>
-<p class="foot">Przed wyjazdem potwierdź dostępność i warunki zakupu bezpośrednio u sprzedawcy.</p>
-</main><script src="app.js" defer></script></body></html>
+<html lang="pl"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Osobisty przegląd ofert samochodów. Porównuj auta, sprawdzaj źródła i zapisuj własne decyzje."><meta name="color-scheme" content="light dark"><title>Oferty samochodów — CarOffers</title>
+<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="./assets/styles.css?v=20">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('carOffersTheme')||'light'}catch{}</script></head>
+<body><a class="skip-link" href="#main">Przejdź do ofert</a>
+<aside class="sidebar"><a class="brand" href="#"><img class="brand-logo" src="./assets/favicon.svg" width="42" height="42" alt=""><span>caroffers</span></a><p class="nav-label">GARAŻ</p>
+<div class="quick-tools"><button id="quick-settings" class="icon-button" aria-label="Ustawienia i kopia danych">⚙</button><button id="quick-theme" class="icon-button" aria-label="Włącz tryb ciemny">◐</button></div>
+<nav id="navigation" aria-label="Nawigacja główna">
+<button data-section="offers"><span aria-hidden="true">▦</span>Wszystkie oferty<b id="nav-total">—</b></button><button data-section="saved"><span aria-hidden="true">♡</span>Zapisane<b id="nav-saved">0</b></button><button data-section="compare"><span aria-hidden="true">⇄</span>Porównanie<b id="nav-compare">0</b></button><button data-section="knowledge"><span aria-hidden="true">▤</span>Modele i wiedza</button><button data-section="updates"><span aria-hidden="true">↻</span>Aktualizacje</button></nav>
+<div class="sidebar-bottom"><div class="local-label"><i></i>Dane lokalne</div><p>Notatki i zapisane auta są przechowywane w tej przeglądarce.</p><button id="backup-open" class="text-button">Kopia danych i ustawienia ↗</button><button id="themeToggle" class="text-button">Włącz tryb ciemny</button></div></aside>
+<main id="main" tabindex="-1"><header class="page-header"><div><h1 id="page-title">Oferty samochodów</h1></div><button id="reload-data" class="button secondary" aria-label="Wczytaj dane ponownie">↻ Wczytaj dane ponownie</button></header>
+<div id="notice" class="notice" role="status" hidden></div><section id="overview" class="overview" aria-label="Podsumowanie ofert"></section>
+<details class="requirements-strip" id="requirements"><summary><span>Twój punkt wyjścia</span><span id="criteria-pills" class="pills"></span><span class="muted">Szczegóły ↓</span></summary><div id="requirements-detail"></div></details>
+<section id="origin-bar" class="origin-bar" aria-label="Punkt startowy do odległości"><label for="origin-city">Odległość od miasta<select id="origin-city"><option value="">Wybierz miasto…</option></select></label><p id="distance-summary" class="hint">Wybierz miasto, aby obliczać odległości.</p><button id="origin-custom" class="text-button">Własny punkt ↗</button></section>
+<section id="browser-tools" class="browser-tools" aria-label="Wyszukiwanie i filtry"><div class="search-row"><label class="search-box"><svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m16 16 5 5"></path></svg><span class="sr-only">Wyszukaj oferty</span><input id="search" type="search" placeholder="Model, silnik, miasto, VIN…" autocomplete="off"></label><button id="filter-toggle" class="button secondary" aria-controls="filters" aria-expanded="false">Filtry <span id="filter-count"></span> ≡</button><button id="save-search" class="button secondary">Zapisz wyszukiwanie</button></div>
+<div id="filters" class="filter-panel" hidden><fieldset class="model-field"><legend>Modele <span class="muted">— brak zaznaczenia oznacza wszystkie</span></legend><input id="model-search" type="search" aria-label="Znajdź model na liście" placeholder="Znajdź model…"><div id="model-options" class="model-options"></div><button id="clear-models" class="text-button">Wszystkie modele</button></fieldset>
+<div class="filter-grid">
+<label>Cena do (zł)<input id="maxPrice" data-filter="maxPrice" type="number" min="0" step="1000" placeholder="Bez limitu"></label><label>Przebieg do (km)<input id="maxMileage" data-filter="maxMileage" type="number" min="0" step="10000" placeholder="Bez limitu"></label><label>Rok produkcji od<input id="minYear" data-filter="minYear" type="number" min="1886" max="2100" placeholder="Dowolny"></label><label>Rok produkcji do<input id="maxYear" data-filter="maxYear" type="number" min="1886" max="2100" placeholder="Dowolny"></label>
+<label>Skrzynia<select id="transmission" data-filter="transmission"><option value="">Wszystkie</option><option value="manual">Manualna</option><option value="automatic">Automatyczna</option><option value="unknown">Nie ustalono</option></select></label><label>Nadwozie<select id="body" data-filter="body"></select></label><label>Silnik<select id="engine" data-filter="engine"></select></label><label>Źródło ogłoszenia<select id="source" data-filter="source"></select></label>
+<label>Kamera<select id="camera" data-filter="camera"><option value="">Wszystkie</option><option value="installed_confirmed">Zainstalowana — potwierdzona</option><option value="retrofit_confirmed">Potwierdzony montaż</option><option value="not_installable">Brak możliwości montażu</option><option value="unknown">Nie ustalono</option></select></label><label>LPG<select id="lpg" data-filter="lpg"><option value="">Wszystkie</option><option value="yes">Instalacja obecna</option><option value="no">Brak instalacji</option><option value="unknown">Nie ustalono</option></select></label><label>Zgodność z wymaganiami<select id="verdict" data-filter="verdict"><option value="">Wszystkie</option><option value="match">Zgodne</option><option value="check">Do weryfikacji</option><option value="fail">Poza wymaganiami</option></select></label>
+<label>Dostępność<select id="availability" data-filter="availability"><option value="">Wszystkie</option><option value="available">Dostępne przy ostatnim odczycie</option><option value="closed">Zakończone</option><option value="access_error">Błąd ostatniego odczytu</option><option value="unknown">Nieustalona</option></select></label><label>Ostatni udany odczyt<select id="freshness" data-filter="freshness"><option value="">Dowolny</option><option value="recent">W ostatnich 7 dniach</option><option value="old">Starszy niż 7 dni</option><option value="unknown">Brak daty</option></select></label><label>Mój status<select id="status" data-filter="status"></select></label><label>Odległość do (km)<input id="radius" data-filter="radius" type="number" min="0" placeholder="Ustaw punkt startowy"></label></div>
+<div class="filter-checks"><label><input id="includeUnknown" data-filter="includeUnknown" type="checkbox" checked>Uwzględnij brak ceny, rocznika lub przebiegu w filtrach liczbowych</label><label><input id="onlyNew" data-filter="onlyNew" type="checkbox">Tylko nowe od poprzedniej wizyty</label><label><input id="hideDuplicates" data-filter="hideDuplicates" type="checkbox" checked>Łącz ogłoszenia tego samego auta</label></div><p class="hint">Filtry zmieniają widok. Nie zmieniają wymagań kupującego ani oceny auta. Brak daty lub odległości nie jest wartością zero.</p><button id="reset-filters" class="text-button">Wyczyść filtry</button></div><div id="active-filters" class="active-filters"></div><div id="saved-searches" class="saved-searches"></div></section>
+<section id="offers-section"><div class="results-toolbar"><div><h2 id="result-title">Oferty do przejrzenia</h2><p id="result-count" class="muted" role="status">Ładowanie danych…</p></div><div class="view-controls"><label class="sort-label"><span class="sr-only">Sortowanie</span><select id="sort" data-filter="sort"><option value="priority">Zgodność, potem cena</option><option value="priceAsc">Cena rosnąco</option><option value="priceDesc">Cena malejąco</option><option value="mileageAsc">Najmniejszy przebieg</option><option value="yearDesc">Najmłodszy rocznik</option><option value="newest">Data pierwszego znalezienia</option><option value="checked">Data ostatniego odczytu</option><option value="distance">Najbliżej punktu startowego</option></select></label><div class="segmented" role="group" aria-label="Widok ofert"><button id="viewCards" aria-label="Karty" aria-pressed="true">▦</button><button id="viewTable" aria-label="Tabela" aria-pressed="false">☷</button></div></div></div><p id="sort-hint" class="hint" hidden></p><div id="results" class="offer-grid"></div></section>
+<section id="compare-section" hidden></section><section id="knowledge-section" hidden></section><section id="updates-section" hidden></section>
+<footer><small>Przed wyjazdem potwierdź dostępność i pełne warunki zakupu u sprzedawcy.</small><div class="sidebar-bottom-mobile" hidden><button id="mobile-settings" class="text-button">Kopia danych i punkt startowy</button><button id="mobile-theme" class="text-button">Włącz tryb ciemny</button></div></footer></main>
+<div id="compare-tray" class="compare-tray" hidden></div>
+<dialog id="offer-dialog" class="offer-dialog"><div class="dialog-bar"><span>SZCZEGÓŁY OFERTY</span><button id="close-offer" class="icon-button" aria-label="Zamknij szczegóły">×</button></div><div id="offer-detail"></div></dialog>
+<dialog id="settings-dialog"><div class="dialog-bar"><h2>Twoje dane</h2><button id="close-settings" class="icon-button" aria-label="Zamknij ustawienia">×</button></div><p>Ulubione, notatki i statusy są lokalne. Nie synchronizują się między urządzeniami. Zmiana adresu strony lub przeglądarki tworzy osobny zapis.</p><div class="button-row"><button id="export-data" class="button primary">Eksportuj kopię JSON</button><label class="button secondary file-label">Wczytaj kopię<input id="import-data" type="file" accept="application/json,.json"></label></div><p class="hint">Import scala dane. Nie zmienia ofert ani wymagań; zachowuje lokalne nowsze statusy i łączy różne notatki.</p><hr><h3>Punkt startowy do odległości</h3><p>Własny punkt zostaje wyłącznie w przeglądarce i eksportowanej kopii.</p><form id="origin-form"><div class="filter-grid"><label>Szerokość geograficzna<input id="origin-lat" type="number" min="-90" max="90" step="any" required placeholder="np. 52.23"></label><label>Długość geograficzna<input id="origin-lon" type="number" min="-180" max="180" step="any" required placeholder="np. 21.01"></label></div><div class="button-row"><button class="button primary">Zapisz punkt</button><button id="clear-origin" type="button" class="button secondary">Usuń punkt</button></div></form><p id="origin-state" class="hint"></p></dialog>
+<dialog id="search-dialog"><div class="dialog-bar"><h2>Zapisz wyszukiwanie</h2><button id="close-search" class="icon-button" aria-label="Zamknij zapis wyszukiwania">×</button></div><form id="save-search-form"><label>Nazwa<input id="search-name" maxlength="100" required placeholder="np. Kombi do 55 tys."></label><button class="button primary">Zapisz</button></form></dialog>
+<noscript>Ta strona wymaga JavaScript do odczytu ofert i działania filtrów.</noscript><script type="module" src="./app.js?v=20"></script></body></html>

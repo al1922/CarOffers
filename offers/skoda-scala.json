@@ -1,0 +1,2575 @@
+{
+  "version": 2,
+  "updatedAt": "2026-11-08",
+  "model": {
+    "key": "skoda-scala",
+    "name": "Škoda Scala",
+    "description": "Hatchback / minivan",
+    "requirements": "Škoda Scala; 1.0 TSI 115 KM; 1.0 TSI 110 KM; rocznik od 2020 do 2023; maks. 55 000 zł brutto na sam zakup bez obowiązkowego finansowania; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 150 000 km preferowany; kamera obecna lub potwierdzona możliwość montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji."
+  },
+  "offers": [
+    {
+      "id": "listing:otomoto:6151517602",
+      "modelKey": "skoda-scala",
+      "listingIds": [
+        "otomoto:6151517602"
+      ],
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6Ij8JQ.html",
+          "normalized": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6Ij8JQ.html",
+          "label": "Otomoto — Skoda Scala 1.0 TSI 115 KM"
+        }
+      ],
+      "title": "Škoda Scala 1.0 TSI 115 KM — Gdańsk",
+      "year": 2020,
+      "price": 37999,
+      "priceLabel": "37 999 zł",
+      "mileage": 115556,
+      "mileageLabel": "115 556 km",
+      "engine": "1.0 TSI · 115 KM · 999 cm³",
+      "body": "Hatchback",
+      "transmission": "manualna",
+      "seller": "AAA AUTO — firma",
+      "priceBasis": "unknown",
+      "bodyCode": "hatchback",
+      "engineVariant": "1.0-tsi-115",
+      "transmissionCode": "manual",
+      "cameraStatus": "unknown",
+      "structuralDamageStatus": "unknown",
+      "saleType": "fixed_price",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "voivodeship": "pomorskie",
+        "city": "Gdańsk",
+        "postalCode": "80-236",
+        "latitude": null,
+        "longitude": null,
+        "precision": "postal_code",
+        "source": "listing",
+        "geoSource": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6Ij8JQ.html",
+        "checkedAt": "2026-11-08"
+      },
+      "specs": {
+        "rocznik produkcji": "2020",
+        "nadwozie": "Hatchback",
+        "silnik": "1.0 TSI · 115 KM · 999 cm³",
+        "skrzynia": "manualna 6-biegowa",
+        "przebieg": "115 556 km",
+        "cena": "37 999 zł; warunki zakupu bez finansowania do potwierdzenia",
+        "kamera": "nieustalona; brak w wykazie wyposażenia",
+        "LPG": "nieustalone"
+      },
+      "details": {
+        "Historia i pochodzenie": "Sprzedawca podaje samochód krajowy, po pierwszym właścicielu i z książką serwisową; karta oznacza serwis ASO.",
+        "Problemy / niepewności": "VIN nieujawniony w dostępnej treści. Cena jest reklamowana razem z finansowaniem kredytem/leasingiem, dlatego należy potwierdzić cenę za zakup bez obowiązkowego finansowania. Kamera i LPG nie są rozstrzygnięte. Status uszkodzeń konstrukcyjnych nieustalony.",
+        "Ocena wstępna": "Rocznik, nadwozie, wariant silnika, przebieg i cena ogłoszeniowa mieszczą się w głównych filtrach. Kwestie ceny bez finansowania, kamery, LPG i historii szkód wymagają weryfikacji."
+      },
+      "offerType": "company",
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-08T18:00:16Z",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6Ij8JQ.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-08T23:04:35+01:00",
+          "lastCheckedAt": "2026-11-08T23:04:35+01:00",
+          "lastVerifiedAt": "2026-11-08T23:04:35+01:00",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6Ij8JQ.html",
+            "checkedAt": "2026-11-08T23:04:35+01:00",
+            "availability": "available",
+            "note": "Karta dostępna; sprzedawca oznacza auto jako dostępne od ręki. Otomoto pokazuje cenę 37 999 zł w nagłówku, a opis sprzedawcy 38 000 zł. Opis wymienia finansowanie leasingiem lub kredytem, lecz nie potwierdza wprost, że cena obowiązuje bez finansowania; nie aktualizuję pola price ani priceBasis. Karta podaje rocznik 2020, przebieg 115 556 km i silnik 1.0 TSI 115 KM. LPG nieustalone.",
+            "evidence": []
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-08T23:04:35+01:00",
+      "lastVerifiedAt": "2026-11-08T23:04:35+01:00",
+      "lastAttemptAt": "2026-11-08T23:04:35+01:00",
+      "history": [
+        {
+          "eventId": "dd484f3fa35ddab508750dffa256a3ef3d3bc46cc500deedc10ff44c595e0551",
+          "runId": "search-20261108",
+          "checkedAt": "2026-11-08T18:00:16Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6Ij8JQ.html",
+          "availability": "available",
+          "note": "Karta Otomoto dostępna przy sprawdzeniu; ogłoszenie AAA AUTO z 04.11.2026 deklaruje dostępność od ręki. Cena 37 999 PLN, rocznik 2020, hatchback, benzynowy 1.0 TSI 115 KM, manualna skrzynia 6-biegowa, przebieg 115 556 km. Sprzedawca wymienia finansowanie kredytem/leasingiem, ale nie potwierdza osobno ceny bez finansowania, więc podstawa ceny pozostaje nieustalona. Karta nie wymienia kamery ani LPG; brak wpisu nie rozstrzyga, czy elementy te są obecne.",
+          "evidence": [
+            {
+              "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6Ij8JQ.html",
+              "checkedAt": "2026-11-08T18:00:16Z",
+              "kind": "seller",
+              "fields": [
+                "year",
+                "price",
+                "priceBasis",
+                "mileage",
+                "engineVariant",
+                "bodyCode",
+                "transmissionCode",
+                "cameraStatus",
+                "structuralDamageStatus",
+                "location",
+                "saleType",
+                "lpgInstalled",
+                "offerType"
+              ],
+              "note": "Otomoto: cena 37 999 PLN, 2020 r., 1.0 TSI 115 KM, manual 6-biegowy, 115 556 km; opis podaje hatchback, dostępność od ręki, pojazd krajowy, pierwszego właściciela i książkę serwisową. Sprzedawcą jest firma AAA AUTO. Lista wyposażenia nie wymienia kamery, a paliwo benzyna nie rozstrzyga obecności LPG. Karta pokazuje punkt salonu w Gdańsku 80-236 i informuje, że lokalizacja auta jest aktualna na dzień wystawienia."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:otomoto:6151517602",
+            "modelKey": "skoda-scala",
+            "vin": null,
+            "listingIds": [
+              "otomoto:6151517602"
+            ],
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6Ij8JQ.html",
+                "normalized": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6Ij8JQ.html",
+                "label": "Otomoto — Skoda Scala 1.0 TSI 115 KM"
+              }
+            ],
+            "title": "Škoda Scala 1.0 TSI 115 KM — Gdańsk",
+            "year": 2020,
+            "price": 37999,
+            "priceLabel": "37 999 zł",
+            "mileage": 115556,
+            "mileageLabel": "115 556 km",
+            "engine": "1.0 TSI · 115 KM · 999 cm³",
+            "body": "Hatchback",
+            "transmission": "manualna",
+            "seller": "AAA AUTO — firma",
+            "priceBasis": "unknown",
+            "bodyCode": "hatchback",
+            "engineVariant": "1.0-tsi-115",
+            "transmissionCode": "manual",
+            "cameraStatus": "unknown",
+            "structuralDamageStatus": "unknown",
+            "familyFitConfirmed": null,
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "voivodeship": "pomorskie",
+              "city": "Gdańsk",
+              "postalCode": "80-236",
+              "latitude": null,
+              "longitude": null,
+              "precision": "postal_code",
+              "source": "listing",
+              "geoSource": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6Ij8JQ.html",
+              "checkedAt": "2026-11-08"
+            },
+            "specs": {
+              "rocznik produkcji": "2020",
+              "nadwozie": "Hatchback",
+              "silnik": "1.0 TSI · 115 KM · 999 cm³",
+              "skrzynia": "manualna 6-biegowa",
+              "przebieg": "115 556 km",
+              "cena": "37 999 zł; warunki zakupu bez finansowania do potwierdzenia",
+              "kamera": "nieustalona; brak w wykazie wyposażenia",
+              "LPG": "nieustalone"
+            },
+            "details": {
+              "Historia i pochodzenie": "Sprzedawca podaje samochód krajowy, po pierwszym właścicielu i z książką serwisową; karta oznacza serwis ASO.",
+              "Problemy / niepewności": "VIN nieujawniony w dostępnej treści. Cena jest reklamowana razem z finansowaniem kredytem/leasingiem, dlatego należy potwierdzić cenę za zakup bez obowiązkowego finansowania. Kamera i LPG nie są rozstrzygnięte. Status uszkodzeń konstrukcyjnych nieustalony.",
+              "Ocena wstępna": "Rocznik, nadwozie, wariant silnika, przebieg i cena ogłoszeniowa mieszczą się w głównych filtrach. Kwestie ceny bez finansowania, kamery, LPG i historii szkód wymagają weryfikacji."
+            },
+            "offerType": "company"
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:otomoto:6151517602"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "skoda-scala"
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "otomoto:6151517602"
+              ]
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6Ij8JQ.html",
+                  "normalized": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6Ij8JQ.html",
+                  "label": "Otomoto — Skoda Scala 1.0 TSI 115 KM"
+                }
+              ]
+            },
+            "title": {
+              "before": null,
+              "after": "Škoda Scala 1.0 TSI 115 KM — Gdańsk"
+            },
+            "year": {
+              "before": null,
+              "after": 2020
+            },
+            "price": {
+              "before": null,
+              "after": 37999
+            },
+            "priceLabel": {
+              "before": null,
+              "after": "37 999 zł"
+            },
+            "mileage": {
+              "before": null,
+              "after": 115556
+            },
+            "mileageLabel": {
+              "before": null,
+              "after": "115 556 km"
+            },
+            "engine": {
+              "before": null,
+              "after": "1.0 TSI · 115 KM · 999 cm³"
+            },
+            "body": {
+              "before": null,
+              "after": "Hatchback"
+            },
+            "transmission": {
+              "before": null,
+              "after": "manualna"
+            },
+            "seller": {
+              "before": null,
+              "after": "AAA AUTO — firma"
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "unknown"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "hatchback"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.0-tsi-115"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "voivodeship": "pomorskie",
+                "city": "Gdańsk",
+                "postalCode": "80-236",
+                "latitude": null,
+                "longitude": null,
+                "precision": "postal_code",
+                "source": "listing",
+                "geoSource": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6Ij8JQ.html",
+                "checkedAt": "2026-11-08"
+              }
+            },
+            "specs": {
+              "before": null,
+              "after": {
+                "rocznik produkcji": "2020",
+                "nadwozie": "Hatchback",
+                "silnik": "1.0 TSI · 115 KM · 999 cm³",
+                "skrzynia": "manualna 6-biegowa",
+                "przebieg": "115 556 km",
+                "cena": "37 999 zł; warunki zakupu bez finansowania do potwierdzenia",
+                "kamera": "nieustalona; brak w wykazie wyposażenia",
+                "LPG": "nieustalone"
+              }
+            },
+            "details": {
+              "before": null,
+              "after": {
+                "Historia i pochodzenie": "Sprzedawca podaje samochód krajowy, po pierwszym właścicielu i z książką serwisową; karta oznacza serwis ASO.",
+                "Problemy / niepewności": "VIN nieujawniony w dostępnej treści. Cena jest reklamowana razem z finansowaniem kredytem/leasingiem, dlatego należy potwierdzić cenę za zakup bez obowiązkowego finansowania. Kamera i LPG nie są rozstrzygnięte. Status uszkodzeń konstrukcyjnych nieustalony.",
+                "Ocena wstępna": "Rocznik, nadwozie, wariant silnika, przebieg i cena ogłoszeniowa mieszczą się w głównych filtrach. Kwestie ceny bez finansowania, kamery, LPG i historii szkód wymagają weryfikacji."
+              }
+            },
+            "offerType": {
+              "before": null,
+              "after": "company"
+            }
+          }
+        },
+        {
+          "eventId": "0b941a8cc83b13a7254f9466bcf0abffa06570fe3091290a10776f79b8b7740a",
+          "runId": "refresh-20261108-03",
+          "checkedAt": "2026-11-08T23:04:35+01:00",
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6Ij8JQ.html",
+          "availability": "available",
+          "note": "Karta dostępna; sprzedawca oznacza auto jako dostępne od ręki. Otomoto pokazuje cenę 37 999 zł w nagłówku, a opis sprzedawcy 38 000 zł. Opis wymienia finansowanie leasingiem lub kredytem, lecz nie potwierdza wprost, że cena obowiązuje bez finansowania; nie aktualizuję pola price ani priceBasis. Karta podaje rocznik 2020, przebieg 115 556 km i silnik 1.0 TSI 115 KM. LPG nieustalone.",
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:6151517602",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjF4MjB3MjI2a3oyNy1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.EtitXx8ENUe_DrxaNsdFlpfLQTNxqOUl6sySTdeaaYk/image%3Bs%3D5120x0%3Bq%3D100"
+            ]
+          },
+          "changes": {
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjF4MjB3MjI2a3oyNy1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.EtitXx8ENUe_DrxaNsdFlpfLQTNxqOUl6sySTdeaaYk/image%3Bs%3D5120x0%3Bq%3D100"
+              ]
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "listing:otomoto:6151517602",
+        "modelKey": "skoda-scala",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_price_and_purchase_conditions",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_price_and_purchase_conditions; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjF4MjB3MjI2a3oyNy1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.EtitXx8ENUe_DrxaNsdFlpfLQTNxqOUl6sySTdeaaYk/image%3Bs%3D5120x0%3Bq%3D100"
+      ]
+    },
+    {
+      "id": "listing:olx:1095446746",
+      "modelKey": "skoda-scala",
+      "title": "Škoda Scala 1.0 TSI 110 KM — 2021, manual",
+      "urls": [
+        {
+          "url": "https://www.olx.pl/d/oferta/skoda-scala-1-0-tsi-salon-polska-1-wlasciciel-vat-23-klimatronic-CID5-ID1c8nJU.html"
+        }
+      ],
+      "listingIds": [
+        "olx:1095446746"
+      ],
+      "vin": "TMBER6NW0M3159908",
+      "year": 2021,
+      "price": 44998,
+      "mileage": 149327,
+      "engine": "1.0 TSI, 110 KM, benzyna",
+      "engineVariant": "1.0-tsi-110",
+      "body": "Hatchback",
+      "bodyCode": "hatchback",
+      "transmission": "Manualna",
+      "transmissionCode": "manual",
+      "saleType": "fixed_price",
+      "location": {
+        "status": "not_provided"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-08T19:25:39+01:00",
+      "listingStates": [
+        {
+          "url": "https://www.olx.pl/d/oferta/skoda-scala-1-0-tsi-salon-polska-1-wlasciciel-vat-23-klimatronic-CID5-ID1c8nJU.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-08T23:42:48+01:00",
+          "lastCheckedAt": "2026-11-08T23:42:48+01:00",
+          "lastVerifiedAt": "2026-11-08T23:42:48+01:00",
+          "lastObservation": {
+            "url": "https://www.olx.pl/d/oferta/skoda-scala-1-0-tsi-salon-polska-1-wlasciciel-vat-23-klimatronic-CID5-ID1c8nJU.html",
+            "checkedAt": "2026-11-08T23:42:48+01:00",
+            "availability": "available",
+            "note": "Karta OLX odczytana. Kliknięte miniatury galerii ujawniły osiem bezpośrednich HTTPS URL-i zdjęć, zapisanych w photos. Atrybut ceny pokazuje 44 998 zł, opis handlowy podaje 45 000 zł; notuję rozbieżność i nie ujednolicam wartości. Widoczne są opcje leasingu/kredytu bez warunku finansowania ceny. LPG niepotwierdzone.",
+            "photoCheck": {
+              "status": "found",
+              "note": "Osiem bezpośrednich HTTPS adresów zdjęć z galerii zapisano w photos."
+            }
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-08T23:42:48+01:00",
+      "lastVerifiedAt": "2026-11-08T23:42:48+01:00",
+      "lastAttemptAt": "2026-11-08T23:42:48+01:00",
+      "history": [
+        {
+          "eventId": "114a05db020e1a8f2740cf7bc328e5f61449e2c0e8179b61cb5aaa95d56487b3",
+          "runId": "search-20261108",
+          "checkedAt": "2026-11-08T19:25:39+01:00",
+          "url": "https://www.olx.pl/d/oferta/skoda-scala-1-0-tsi-salon-polska-1-wlasciciel-vat-23-klimatronic-CID5-ID1c8nJU.html",
+          "availability": "available",
+          "note": "Karta OLX jest dostępna i podaje, że auto jest dostępne od ręki; firma zachęca do kontaktu. Potwierdza Skodę Scalę, hatchback, rocznik 2021, 1.0 TSI 110 KM, manual, przebieg 149 327 km i cenę 44 998 zł. Karta wymienia Piaseczno w nagłówku. Kamera nie jest wymieniona w wyposażeniu; jej obecność lub zgodność montażu niepotwierdzona. LPG nieustalone.",
+          "evidence": [
+            {
+              "fields": [
+                "vin",
+                "year",
+                "mileage",
+                "engineVariant",
+                "transmissionCode",
+                "bodyCode",
+                "price",
+                "saleType",
+                "location",
+                "availability"
+              ],
+              "url": "https://www.olx.pl/d/oferta/skoda-scala-1-0-tsi-salon-polska-1-wlasciciel-vat-23-klimatronic-CID5-ID1c8nJU.html",
+              "checkedAt": "2026-11-08T19:25:39+01:00",
+              "kind": "seller",
+              "note": "Karta podaje VIN TMBER6NW0M3159908, Scala, 2021, hatchback, benzyna 1.0 TSI 110 KM, manual, 149 327 km, cena 44 998 zł. W opisie: dostępny od ręki, Piaseczno, firma; opcjonalne finansowanie. Kamera nie występuje na liście wyposażenia."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:olx:1095446746",
+            "modelKey": "skoda-scala",
+            "title": "Skoda Scala 1.0 TSI 110 KM — 2021, manual",
+            "urls": [
+              {
+                "url": "https://www.olx.pl/d/oferta/skoda-scala-1-0-tsi-salon-polska-1-wlasciciel-vat-23-klimatronic-CID5-ID1c8nJU.html"
+              }
+            ],
+            "listingIds": [
+              "olx:1095446746"
+            ],
+            "vin": "TMBER6NW0M3159908",
+            "year": 2021,
+            "price": 44998,
+            "mileage": 149327,
+            "engine": "1.0 TSI, 110 KM, benzyna",
+            "engineVariant": "1.0-tsi-110",
+            "body": "Hatchback",
+            "bodyCode": "hatchback",
+            "transmission": "Manualna",
+            "transmissionCode": "manual",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "location": {
+              "status": "not_provided"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:olx:1095446746"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "skoda-scala"
+            },
+            "title": {
+              "before": null,
+              "after": "Skoda Scala 1.0 TSI 110 KM — 2021, manual"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.olx.pl/d/oferta/skoda-scala-1-0-tsi-salon-polska-1-wlasciciel-vat-23-klimatronic-CID5-ID1c8nJU.html"
+                }
+              ]
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "olx:1095446746"
+              ]
+            },
+            "vin": {
+              "before": null,
+              "after": "TMBER6NW0M3159908"
+            },
+            "year": {
+              "before": null,
+              "after": 2021
+            },
+            "price": {
+              "before": null,
+              "after": 44998
+            },
+            "mileage": {
+              "before": null,
+              "after": 149327
+            },
+            "engine": {
+              "before": null,
+              "after": "1.0 TSI, 110 KM, benzyna"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.0-tsi-110"
+            },
+            "body": {
+              "before": null,
+              "after": "Hatchback"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "hatchback"
+            },
+            "transmission": {
+              "before": null,
+              "after": "Manualna"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            }
+          }
+        },
+        {
+          "eventId": "cd0357c823f08a0cd89f926c6c642ea0bda2caee95224e161029cb5cbc9804b2",
+          "runId": "refresh-20261108-03",
+          "checkedAt": "2026-11-08T23:02:42+01:00",
+          "url": "https://www.olx.pl/d/oferta/skoda-scala-1-0-tsi-salon-polska-1-wlasciciel-vat-23-klimatronic-CID5-ID1c8nJU.html",
+          "availability": "available",
+          "note": "Karta OLX dostępna. Rozbieżność ceny: treść podaje 45 000 PLN, nagłówek 44 998 zł; nie aktualizuję pola price. Podano 2021, Skoda Scala 1.0 TSI 110 KM, manual 6-biegowy, hatchback, 149 327 km i VIN. Oferta firmowa. Paliwo benzyna; brak informacji o LPG.",
+          "evidence": [
+            {
+              "fields": [
+                "vin",
+                "year",
+                "mileage",
+                "bodyCode",
+                "engineVariant",
+                "transmissionCode",
+                "saleType",
+                "saleType"
+              ],
+              "url": "https://www.olx.pl/d/oferta/skoda-scala-1-0-tsi-salon-polska-1-wlasciciel-vat-23-klimatronic-CID5-ID1c8nJU.html",
+              "checkedAt": "2026-11-08T23:02:42+01:00",
+              "kind": "seller",
+              "note": "Dane i warunki cenowe odczytane z karty OLX; informacje o stanie i wyposażeniu pozostają deklaracjami sprzedawcy."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:olx:1095446746",
+            "title": "Škoda Scala 1.0 TSI 110 KM — 2021, manual",
+            "vin": "TMBER6NW0M3159908",
+            "year": 2021,
+            "mileage": 149327,
+            "bodyCode": "hatchback",
+            "engineVariant": "1.0-tsi-110",
+            "transmissionCode": "manual",
+            "urls": [
+              {
+                "url": "https://www.olx.pl/d/oferta/skoda-scala-1-0-tsi-salon-polska-1-wlasciciel-vat-23-klimatronic-CID5-ID1c8nJU.html"
+              }
+            ],
+            "saleType": "fixed_price",
+            "lpgInstalled": null
+          },
+          "changes": {
+            "title": {
+              "before": "Skoda Scala 1.0 TSI 110 KM — 2021, manual",
+              "after": "Škoda Scala 1.0 TSI 110 KM — 2021, manual"
+            }
+          }
+        },
+        {
+          "eventId": "fc89c0e23bf4e07c85ff1e042f22837177a8c139ea835dada77684e1ad3c90af",
+          "runId": "photos-20261108-01",
+          "checkedAt": "2026-11-08T23:42:48+01:00",
+          "url": "https://www.olx.pl/d/oferta/skoda-scala-1-0-tsi-salon-polska-1-wlasciciel-vat-23-klimatronic-CID5-ID1c8nJU.html",
+          "availability": "available",
+          "note": "Karta OLX odczytana. Kliknięte miniatury galerii ujawniły osiem bezpośrednich HTTPS URL-i zdjęć, zapisanych w photos. Atrybut ceny pokazuje 44 998 zł, opis handlowy podaje 45 000 zł; notuję rozbieżność i nie ujednolicam wartości. Widoczne są opcje leasingu/kredytu bez warunku finansowania ceny. LPG niepotwierdzone.",
+          "photoCheck": {
+            "status": "found",
+            "note": "Osiem bezpośrednich HTTPS adresów zdjęć z galerii zapisano w photos."
+          },
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1095446746",
+            "title": "Škoda Scala 1.0 TSI 110 KM — 2021, manual",
+            "urls": [
+              {
+                "url": "https://www.olx.pl/d/oferta/skoda-scala-1-0-tsi-salon-polska-1-wlasciciel-vat-23-klimatronic-CID5-ID1c8nJU.html"
+              }
+            ],
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/62hhcajr6bfg1-PL/image%3Bs%3D800x600",
+              "https://ireland.apollo.olxcdn.com/v1/files/u3gnep630fwg-PL/image%3Bs%3D1667x1250",
+              "https://ireland.apollo.olxcdn.com/v1/files/re1x7xylm00d1-PL/image%3Bs%3D1667x1250",
+              "https://ireland.apollo.olxcdn.com/v1/files/u911x2488hky-PL/image%3Bs%3D800x600",
+              "https://ireland.apollo.olxcdn.com/v1/files/lxefrgofdy4c3-PL/image%3Bs%3D1667x1250",
+              "https://ireland.apollo.olxcdn.com/v1/files/n3evv655qfmu-PL/image%3Bs%3D1667x1250",
+              "https://ireland.apollo.olxcdn.com/v1/files/65qwiwpawrj93-PL/image%3Bs%3D1667x1250",
+              "https://ireland.apollo.olxcdn.com/v1/files/fwls5nwpua2v1-PL/image%3Bs%3D1667x1250"
+            ]
+          },
+          "changes": {
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/62hhcajr6bfg1-PL/image%3Bs%3D800x600",
+                "https://ireland.apollo.olxcdn.com/v1/files/u3gnep630fwg-PL/image%3Bs%3D1667x1250",
+                "https://ireland.apollo.olxcdn.com/v1/files/re1x7xylm00d1-PL/image%3Bs%3D1667x1250",
+                "https://ireland.apollo.olxcdn.com/v1/files/u911x2488hky-PL/image%3Bs%3D800x600",
+                "https://ireland.apollo.olxcdn.com/v1/files/lxefrgofdy4c3-PL/image%3Bs%3D1667x1250",
+                "https://ireland.apollo.olxcdn.com/v1/files/n3evv655qfmu-PL/image%3Bs%3D1667x1250",
+                "https://ireland.apollo.olxcdn.com/v1/files/65qwiwpawrj93-PL/image%3Bs%3D1667x1250",
+                "https://ireland.apollo.olxcdn.com/v1/files/fwls5nwpua2v1-PL/image%3Bs%3D1667x1250"
+              ]
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "listing:olx:1095446746",
+        "modelKey": "skoda-scala",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_price_and_purchase_conditions",
+          "engine_review_requires_verification",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_price_and_purchase_conditions; engine_review_requires_verification; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/62hhcajr6bfg1-PL/image%3Bs%3D800x600",
+        "https://ireland.apollo.olxcdn.com/v1/files/u3gnep630fwg-PL/image%3Bs%3D1667x1250",
+        "https://ireland.apollo.olxcdn.com/v1/files/re1x7xylm00d1-PL/image%3Bs%3D1667x1250",
+        "https://ireland.apollo.olxcdn.com/v1/files/u911x2488hky-PL/image%3Bs%3D800x600",
+        "https://ireland.apollo.olxcdn.com/v1/files/lxefrgofdy4c3-PL/image%3Bs%3D1667x1250",
+        "https://ireland.apollo.olxcdn.com/v1/files/n3evv655qfmu-PL/image%3Bs%3D1667x1250",
+        "https://ireland.apollo.olxcdn.com/v1/files/65qwiwpawrj93-PL/image%3Bs%3D1667x1250",
+        "https://ireland.apollo.olxcdn.com/v1/files/fwls5nwpua2v1-PL/image%3Bs%3D1667x1250"
+      ]
+    },
+    {
+      "id": "listing:olx:1087332559",
+      "modelKey": "skoda-scala",
+      "title": "Škoda Scala 1.0 TSI 110 KM — 2023, manual",
+      "urls": [
+        {
+          "url": "https://www.olx.pl/d/oferta/skoda-scala-skoda-scala-rok-2023-1-0-tsi-110km-lakier-oryginal-i-rej-11-2023-CID5-ID1bAkRW.html"
+        }
+      ],
+      "listingIds": [
+        "olx:1087332559"
+      ],
+      "vin": "TMBER6NW1P3120877",
+      "year": 2023,
+      "price": 55000,
+      "mileage": 116248,
+      "engine": "1.0 TSI, 110 KM, benzyna",
+      "engineVariant": "1.0-tsi-110",
+      "body": "Hatchback",
+      "bodyCode": "hatchback",
+      "transmission": "Manualna",
+      "transmissionCode": "manual",
+      "saleType": "fixed_price",
+      "location": {
+        "status": "not_provided"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-08T19:25:39+01:00",
+      "listingStates": [
+        {
+          "url": "https://www.olx.pl/d/oferta/skoda-scala-skoda-scala-rok-2023-1-0-tsi-110km-lakier-oryginal-i-rej-11-2023-CID5-ID1bAkRW.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-08T23:42:48+01:00",
+          "lastCheckedAt": "2026-11-08T23:42:48+01:00",
+          "lastVerifiedAt": "2026-11-08T23:42:48+01:00",
+          "lastObservation": {
+            "url": "https://www.olx.pl/d/oferta/skoda-scala-skoda-scala-rok-2023-1-0-tsi-110km-lakier-oryginal-i-rej-11-2023-CID5-ID1bAkRW.html",
+            "checkedAt": "2026-11-08T23:42:48+01:00",
+            "availability": "available",
+            "note": "Karta OLX odczytana. Kliknięte miniatury galerii ujawniły osiem bezpośrednich HTTPS URL-i zdjęć, zapisanych w photos. Cena brutto 55 000 zł jest oznaczona jako końcowa; 46 341 zł netto dotyczy eksportu lub leasingu i nie jest bezwarunkową ceną zakupu. Karta podaje benzynę, LPG niepotwierdzone.",
+            "photoCheck": {
+              "status": "found",
+              "note": "Osiem bezpośrednich HTTPS adresów zdjęć z galerii zapisano w photos."
+            }
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-08T23:42:48+01:00",
+      "lastVerifiedAt": "2026-11-08T23:42:48+01:00",
+      "lastAttemptAt": "2026-11-08T23:42:48+01:00",
+      "history": [
+        {
+          "eventId": "097157451b6ca05fc8341a4c3c20268e59a16998295dc5197810eb1f6250cf24",
+          "runId": "search-20261108",
+          "checkedAt": "2026-11-08T19:25:39+01:00",
+          "url": "https://www.olx.pl/d/oferta/skoda-scala-skoda-scala-rok-2023-1-0-tsi-110km-lakier-oryginal-i-rej-11-2023-CID5-ID1bAkRW.html",
+          "availability": "available",
+          "note": "Dostępna karta OLX podaje stałą cenę końcową brutto 55 000 zł, Scala hatchback, 2023, 1.0 TSI 110 KM, manual, 116 248 km i lokalizację Gmina Chełm. Sprzedawca zaprasza na oględziny i sprawdzenie auta; wymienia czujniki parkowania, ale nie kamerę cofania. Opis deklaruje samochód bezwypadkowy; brak niezależnej kontroli szkód. LPG nieustalone.",
+          "evidence": [
+            {
+              "fields": [
+                "vin",
+                "year",
+                "mileage",
+                "engineVariant",
+                "transmissionCode",
+                "bodyCode",
+                "price",
+                "saleType",
+                "location",
+                "availability"
+              ],
+              "url": "https://www.olx.pl/d/oferta/skoda-scala-skoda-scala-rok-2023-1-0-tsi-110km-lakier-oryginal-i-rej-11-2023-CID5-ID1bAkRW.html",
+              "checkedAt": "2026-11-08T19:25:39+01:00",
+              "kind": "seller",
+              "note": "Karta podaje VIN TMBER6NW1P3120877, rok 2023, 1.0 TSI/110 KM, hatchback, manual, 116 248 km, lokalizację Gmina Chełm i końcową cenę brutto 55 000 zł. Stała cena, rejestracja i OC aktualne, zaproszenie do kontaktu i oględzin."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:olx:1087332559",
+            "modelKey": "skoda-scala",
+            "title": "Skoda Scala 1.0 TSI 110 KM — 2023, manual",
+            "urls": [
+              {
+                "url": "https://www.olx.pl/d/oferta/skoda-scala-skoda-scala-rok-2023-1-0-tsi-110km-lakier-oryginal-i-rej-11-2023-CID5-ID1bAkRW.html"
+              }
+            ],
+            "listingIds": [
+              "olx:1087332559"
+            ],
+            "vin": "TMBER6NW1P3120877",
+            "year": 2023,
+            "price": 55000,
+            "mileage": 116248,
+            "engine": "1.0 TSI, 110 KM, benzyna",
+            "engineVariant": "1.0-tsi-110",
+            "body": "Hatchback",
+            "bodyCode": "hatchback",
+            "transmission": "Manualna",
+            "transmissionCode": "manual",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "location": {
+              "status": "not_provided"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:olx:1087332559"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "skoda-scala"
+            },
+            "title": {
+              "before": null,
+              "after": "Skoda Scala 1.0 TSI 110 KM — 2023, manual"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.olx.pl/d/oferta/skoda-scala-skoda-scala-rok-2023-1-0-tsi-110km-lakier-oryginal-i-rej-11-2023-CID5-ID1bAkRW.html"
+                }
+              ]
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "olx:1087332559"
+              ]
+            },
+            "vin": {
+              "before": null,
+              "after": "TMBER6NW1P3120877"
+            },
+            "year": {
+              "before": null,
+              "after": 2023
+            },
+            "price": {
+              "before": null,
+              "after": 55000
+            },
+            "mileage": {
+              "before": null,
+              "after": 116248
+            },
+            "engine": {
+              "before": null,
+              "after": "1.0 TSI, 110 KM, benzyna"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.0-tsi-110"
+            },
+            "body": {
+              "before": null,
+              "after": "Hatchback"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "hatchback"
+            },
+            "transmission": {
+              "before": null,
+              "after": "Manualna"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            }
+          }
+        },
+        {
+          "eventId": "6cb95959694abd11db874c9d792bcfd947649e669db161c170dcca3c6990da18",
+          "runId": "refresh-20261108-03",
+          "checkedAt": "2026-11-08T23:02:42+01:00",
+          "url": "https://www.olx.pl/d/oferta/skoda-scala-skoda-scala-rok-2023-1-0-tsi-110km-lakier-oryginal-i-rej-11-2023-CID5-ID1bAkRW.html",
+          "availability": "available",
+          "note": "Karta OLX dostępna. Cena brutto 55 000 zł, sprzedawca określa ją jako cenę końcową; podaje też 46 341 zł netto na eksport lub leasing z fakturą VAT 23%. Podano produkcję 2023, pierwszą rejestrację 25.04.2023, 1.0 TSI 110 KM, manual, hatchback, 116 248 km i VIN. Lokalizacja Gmina Chełm. Paliwo benzyna; brak informacji o LPG.",
+          "evidence": [
+            {
+              "fields": [
+                "vin",
+                "year",
+                "mileage",
+                "price",
+                "bodyCode",
+                "engineVariant",
+                "transmissionCode",
+                "saleType",
+                "saleType"
+              ],
+              "url": "https://www.olx.pl/d/oferta/skoda-scala-skoda-scala-rok-2023-1-0-tsi-110km-lakier-oryginal-i-rej-11-2023-CID5-ID1bAkRW.html",
+              "checkedAt": "2026-11-08T23:02:42+01:00",
+              "kind": "seller",
+              "note": "Dane i warunki cenowe odczytane z karty OLX; informacje o stanie i wyposażeniu pozostają deklaracjami sprzedawcy."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:olx:1087332559",
+            "title": "Škoda Scala 1.0 TSI 110 KM — 2023, manual",
+            "vin": "TMBER6NW1P3120877",
+            "year": 2023,
+            "mileage": 116248,
+            "price": 55000,
+            "bodyCode": "hatchback",
+            "engineVariant": "1.0-tsi-110",
+            "transmissionCode": "manual",
+            "urls": [
+              {
+                "url": "https://www.olx.pl/d/oferta/skoda-scala-skoda-scala-rok-2023-1-0-tsi-110km-lakier-oryginal-i-rej-11-2023-CID5-ID1bAkRW.html"
+              }
+            ],
+            "saleType": "fixed_price",
+            "lpgInstalled": null
+          },
+          "changes": {
+            "title": {
+              "before": "Skoda Scala 1.0 TSI 110 KM — 2023, manual",
+              "after": "Škoda Scala 1.0 TSI 110 KM — 2023, manual"
+            }
+          }
+        },
+        {
+          "eventId": "f7f67c1bbbbc7c56f0b2bdb445580963a9bfe5fd6a3e22381f6cb51761d4f8d6",
+          "runId": "photos-20261108-01",
+          "checkedAt": "2026-11-08T23:42:48+01:00",
+          "url": "https://www.olx.pl/d/oferta/skoda-scala-skoda-scala-rok-2023-1-0-tsi-110km-lakier-oryginal-i-rej-11-2023-CID5-ID1bAkRW.html",
+          "availability": "available",
+          "note": "Karta OLX odczytana. Kliknięte miniatury galerii ujawniły osiem bezpośrednich HTTPS URL-i zdjęć, zapisanych w photos. Cena brutto 55 000 zł jest oznaczona jako końcowa; 46 341 zł netto dotyczy eksportu lub leasingu i nie jest bezwarunkową ceną zakupu. Karta podaje benzynę, LPG niepotwierdzone.",
+          "photoCheck": {
+            "status": "found",
+            "note": "Osiem bezpośrednich HTTPS adresów zdjęć z galerii zapisano w photos."
+          },
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1087332559",
+            "title": "Škoda Scala 1.0 TSI 110 KM — 2023, manual",
+            "urls": [
+              {
+                "url": "https://www.olx.pl/d/oferta/skoda-scala-skoda-scala-rok-2023-1-0-tsi-110km-lakier-oryginal-i-rej-11-2023-CID5-ID1bAkRW.html"
+              }
+            ],
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/82k14uz2mp483-PL/image%3Bs%3D1813x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/xx4n0z8k3tt51-PL/image%3Bs%3D1813x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/sonf71lnzcma3-PL/image%3Bs%3D1813x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/szk1muiu1w1s1-PL/image%3Bs%3D1813x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/m3hfpv5mfkbj1-PL/image%3Bs%3D1813x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/1ztv94vyauf51-PL/image%3Bs%3D1813x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/eo5kl9nrlr4q-PL/image%3Bs%3D1813x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/fa44d95xku0n-PL/image%3Bs%3D1813x1360"
+            ]
+          },
+          "changes": {
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/82k14uz2mp483-PL/image%3Bs%3D1813x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/xx4n0z8k3tt51-PL/image%3Bs%3D1813x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/sonf71lnzcma3-PL/image%3Bs%3D1813x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/szk1muiu1w1s1-PL/image%3Bs%3D1813x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/m3hfpv5mfkbj1-PL/image%3Bs%3D1813x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/1ztv94vyauf51-PL/image%3Bs%3D1813x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/eo5kl9nrlr4q-PL/image%3Bs%3D1813x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/fa44d95xku0n-PL/image%3Bs%3D1813x1360"
+              ]
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "listing:olx:1087332559",
+        "modelKey": "skoda-scala",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_price_and_purchase_conditions",
+          "engine_review_requires_verification",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_price_and_purchase_conditions; engine_review_requires_verification; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/82k14uz2mp483-PL/image%3Bs%3D1813x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/xx4n0z8k3tt51-PL/image%3Bs%3D1813x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/sonf71lnzcma3-PL/image%3Bs%3D1813x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/szk1muiu1w1s1-PL/image%3Bs%3D1813x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/m3hfpv5mfkbj1-PL/image%3Bs%3D1813x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/1ztv94vyauf51-PL/image%3Bs%3D1813x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/eo5kl9nrlr4q-PL/image%3Bs%3D1813x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/fa44d95xku0n-PL/image%3Bs%3D1813x1360"
+      ]
+    },
+    {
+      "id": "listing:autoplac:5071-8406-EN",
+      "modelKey": "skoda-scala",
+      "title": "Skoda Scala 1.0 TSi 115 KM M6 salon PL, bezwypadkowy, serwisowany",
+      "urls": [
+        {
+          "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2020r-tsi-115-km-m6-salon-pl-bezwypadkowy-serwisowany-5071-8406-EN"
+        }
+      ],
+      "listingIds": [
+        "autoplac:5071-8406-EN"
+      ],
+      "year": 2020,
+      "price": 49900,
+      "mileage": 92000,
+      "engine": "Benzyna, 999 cm³, 115 KM; karta określa jako 1.0 TSI.",
+      "engineVariant": "1.0-tsi-115",
+      "body": "Hatchback",
+      "bodyCode": "hatchback",
+      "transmission": "Manualna",
+      "transmissionCode": "manual",
+      "saleType": "fixed_price",
+      "offerType": "unknown",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "voivodeship": "Kujawsko-Pomorskie",
+        "city": "Grudziądz"
+      },
+      "cameraStatus": "unknown",
+      "structuralDamageStatus": "unknown",
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-08T18:45:24+00:00",
+      "listingStates": [
+        {
+          "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2020r-tsi-115-km-m6-salon-pl-bezwypadkowy-serwisowany-5071-8406-EN",
+          "status": "available",
+          "lastAttemptAt": "2026-11-08T22:39:04+00:00",
+          "lastCheckedAt": "2026-11-08T18:45:24+00:00",
+          "lastVerifiedAt": "2026-11-08T18:45:24+00:00",
+          "lastObservation": {
+            "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2020r-tsi-115-km-m6-salon-pl-bezwypadkowy-serwisowany-5071-8406-EN",
+            "checkedAt": "2026-11-08T22:39:04+00:00",
+            "availability": "access_error",
+            "note": "Dokładny URL ogłoszenia zwrócił błąd Cache miss zarówno przy otwarciu, jak i odnośnik z wyszukiwarki; nie udało się odczytać aktualnej karty ani zdjęć.",
+            "photoCheck": {
+              "status": "access_error",
+              "note": "Nie udało się otworzyć karty; nie można potwierdzić ani odczytać bezpośrednich HTTPS URL-i zdjęć."
+            }
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-08T18:45:24+00:00",
+      "lastVerifiedAt": "2026-11-08T18:45:24+00:00",
+      "lastAttemptAt": "2026-11-08T22:39:04+00:00",
+      "history": [
+        {
+          "eventId": "7c7f4e21d7b3b8e4124fb815e2dc7adeaae0dc011998dca60d938ec24e37bf8f",
+          "runId": "search-20261108",
+          "checkedAt": "2026-11-08T18:45:24+00:00",
+          "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2020r-tsi-115-km-m6-salon-pl-bezwypadkowy-serwisowany-5071-8406-EN",
+          "availability": "available",
+          "note": "Widoczna karta ogłoszenia Autoplac z bieżącą aktualizacją i aktywnym wezwaniem do kontaktu. Tytuł potwierdza Scala 1.0 TSI, 115 KM i manualną skrzynię M6; katalog źródła oznacza nadwozie jako hatchback. Lista wyników podaje 2020, benzynę, 92 000 km, 49 900 zł i Grudziądz (Kujawsko-Pomorskie), a także sprzedawcę regularnego. Kamera niewymieniona w dostępnej treści; LPG nieustalone. Opis sprzedawcy deklaruje serwisowanie, zakup w salonie PL i bezwypadkowość; szkody konstrukcyjne nie są niezależnie zweryfikowane.",
+          "evidence": [
+            {
+              "fields": [
+                "availability",
+                "price",
+                "year",
+                "mileage",
+                "engineVariant",
+                "transmissionCode",
+                "bodyCode",
+                "saleType",
+                "location",
+                "cameraStatus",
+                "structuralDamageStatus"
+              ],
+              "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2020r-tsi-115-km-m6-salon-pl-bezwypadkowy-serwisowany-5071-8406-EN",
+              "checkedAt": "2026-11-08T18:45:24+00:00",
+              "kind": "seller",
+              "note": "Karta/listing bezpośrednio identyfikuje 1.0 TSI 115 KM M6, nadwozie hatchback oraz bieżącą aktualizację. Widoczny wynik dla tej karty podaje cenę 49 900 zł, rocznik 2020, 92 000 km, benzynę, manualną skrzynię i Grudziądz (Kujawsko-Pomorskie). Kamera i instalacja LPG niepotwierdzone."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:autoplac:5071-8406-EN",
+            "modelKey": "skoda-scala",
+            "title": "Skoda Scala 1.0 TSi 115 KM M6 salon PL, bezwypadkowy, serwisowany",
+            "urls": [
+              {
+                "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2020r-tsi-115-km-m6-salon-pl-bezwypadkowy-serwisowany-5071-8406-EN"
+              }
+            ],
+            "listingIds": [
+              "autoplac:5071-8406-EN"
+            ],
+            "year": 2020,
+            "price": 49900,
+            "mileage": 92000,
+            "engine": "Benzyna, 999 cm³, 115 KM; karta określa jako 1.0 TSI.",
+            "engineVariant": "1.0-tsi-115",
+            "body": "Hatchback",
+            "bodyCode": "hatchback",
+            "transmission": "Manualna",
+            "transmissionCode": "manual",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "offerType": "unknown",
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "voivodeship": "Kujawsko-Pomorskie",
+              "city": "Grudziądz"
+            },
+            "cameraStatus": "unknown",
+            "structuralDamageStatus": "unknown"
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:autoplac:5071-8406-EN"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "skoda-scala"
+            },
+            "title": {
+              "before": null,
+              "after": "Skoda Scala 1.0 TSi 115 KM M6 salon PL, bezwypadkowy, serwisowany"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2020r-tsi-115-km-m6-salon-pl-bezwypadkowy-serwisowany-5071-8406-EN"
+                }
+              ]
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "autoplac:5071-8406-EN"
+              ]
+            },
+            "year": {
+              "before": null,
+              "after": 2020
+            },
+            "price": {
+              "before": null,
+              "after": 49900
+            },
+            "mileage": {
+              "before": null,
+              "after": 92000
+            },
+            "engine": {
+              "before": null,
+              "after": "Benzyna, 999 cm³, 115 KM; karta określa jako 1.0 TSI."
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.0-tsi-115"
+            },
+            "body": {
+              "before": null,
+              "after": "Hatchback"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "hatchback"
+            },
+            "transmission": {
+              "before": null,
+              "after": "Manualna"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "offerType": {
+              "before": null,
+              "after": "unknown"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "voivodeship": "Kujawsko-Pomorskie",
+                "city": "Grudziądz"
+              }
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            }
+          }
+        },
+        {
+          "eventId": "56fea85f4da9e7bb90962b218c66495a7afa404576268a0e77dd9be24a419fb6",
+          "runId": "refresh-20261108-03",
+          "checkedAt": "2026-11-08T22:05:01+00:00",
+          "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2020r-tsi-115-km-m6-salon-pl-bezwypadkowy-serwisowany-5071-8406-EN",
+          "availability": "access_error",
+          "note": "Bezpośrednie otwarcie dokładnego URL zakończyło się błędem Cache miss. Wyszukiwarka wskazuje kartę crawlowaną w zeszłym tygodniu z tekstem „Ostatnia aktualizacja: dziś” oraz danymi: Grudziądz, 2020, 92 000 km, 49 900 zł, benzyna 1.0 TSI 115 KM, manual. To wyłącznie podgląd indeksu, nie potwierdzenie bieżącej dostępności ani ceny; nie zapisuję tych danych jako aktualnych. Błąd dostępu nie oznacza sprzedaży.",
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:5071-8406-EN"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "ac2d0dd1dfd706403af7912eef64f2894a64f41a51ea3c8d8ebf49045164e30f",
+          "runId": "photos-20261108-01",
+          "checkedAt": "2026-11-08T22:39:04+00:00",
+          "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2020r-tsi-115-km-m6-salon-pl-bezwypadkowy-serwisowany-5071-8406-EN",
+          "availability": "access_error",
+          "note": "Dokładny URL ogłoszenia zwrócił błąd Cache miss zarówno przy otwarciu, jak i odnośnik z wyszukiwarki; nie udało się odczytać aktualnej karty ani zdjęć.",
+          "photoCheck": {
+            "status": "access_error",
+            "note": "Nie udało się otworzyć karty; nie można potwierdzić ani odczytać bezpośrednich HTTPS URL-i zdjęć."
+          },
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:5071-8406-EN"
+          },
+          "changes": {}
+        }
+      ],
+      "assessment": {
+        "id": "listing:autoplac:5071-8406-EN",
+        "modelKey": "skoda-scala",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_price_and_purchase_conditions",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_price_and_purchase_conditions; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
+    },
+    {
+      "id": "listing:autoplac:3607-8813-VK",
+      "modelKey": "skoda-scala",
+      "title": "Skoda Scala 1.0 Ambition FV23% SalonPL 110KM LED Klimatronik Android/Apple",
+      "urls": [
+        {
+          "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2021r-ambition-fv23-salonpl-110km-led-klimatronik-android-apple-3607-8813-VK"
+        }
+      ],
+      "listingIds": [
+        "autoplac:3607-8813-VK"
+      ],
+      "year": 2021,
+      "price": 45900,
+      "mileage": 118000,
+      "engine": "Benzyna, 999 cm³, 81 kW / 110 KM; karta podaje 1.0 TSI.",
+      "engineVariant": "1.0-tsi-110",
+      "body": "Hatchback",
+      "bodyCode": "hatchback",
+      "transmission": "Manualna",
+      "transmissionCode": "manual",
+      "saleType": "fixed_price",
+      "offerType": "company",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "voivodeship": "Mazowieckie",
+        "city": "Pęcice"
+      },
+      "cameraStatus": "unknown",
+      "structuralDamageStatus": "unknown",
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-08T18:45:24+00:00",
+      "listingStates": [
+        {
+          "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2021r-ambition-fv23-salonpl-110km-led-klimatronik-android-apple-3607-8813-VK",
+          "status": "available",
+          "lastAttemptAt": "2026-11-08T22:39:04+00:00",
+          "lastCheckedAt": "2026-11-08T22:39:04+00:00",
+          "lastVerifiedAt": "2026-11-08T22:39:04+00:00",
+          "lastObservation": {
+            "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2021r-ambition-fv23-salonpl-110km-led-klimatronik-android-apple-3607-8813-VK",
+            "checkedAt": "2026-11-08T22:39:04+00:00",
+            "availability": "available",
+            "note": "Karta Autoplac dostępna; aktualizacja tydzień temu, galeria 1/27. Widoczna cena brutto 45 900 zł i płatność gotówką lub przelewem; paliwo benzyna, karta nie potwierdza instalacji LPG.",
+            "photoCheck": {
+              "status": "found",
+              "note": "Odczytano bezpośredni HTTPS URL zdjęcia głównego z CDN Autoplac; widok pokazuje galerię 1/27."
+            }
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-08T22:39:04+00:00",
+      "lastVerifiedAt": "2026-11-08T22:39:04+00:00",
+      "lastAttemptAt": "2026-11-08T22:39:04+00:00",
+      "history": [
+        {
+          "eventId": "6ae754c7ece50033ca68c3baa365bcaaa2d9ae2899e4d23d64ba84bfb4d16826",
+          "runId": "search-20261108",
+          "checkedAt": "2026-11-08T18:45:24+00:00",
+          "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2021r-ambition-fv23-salonpl-110km-led-klimatronik-android-apple-3607-8813-VK",
+          "availability": "available",
+          "note": "Odczytana karta Autoplac była aktywna i zaktualizowana tydzień wcześniej. Podaje 45 900 zł brutto, rok produkcji 2021, 118 000 km, benzynę, 999 cm³, 110 KM, manualną skrzynię i lokalizację Pęcice (Mazowieckie). Opis potwierdza 1.0 TSI 110 KM oraz 81 kW. Portal wskazuje aktywną firmę i sprzedaż z fakturą VAT 23%; płatność gotówką przy odbiorze lub przelewem. Karta oznacza bezwypadkowy: tak i uszkodzony: nie jako deklaracje sprzedawcy; szkody konstrukcyjne niezależnie niezweryfikowane. Lista wyposażenia nie wymienia kamery. LPG nieustalone.",
+          "evidence": [
+            {
+              "fields": [
+                "availability",
+                "price",
+                "year",
+                "mileage",
+                "engineVariant",
+                "transmissionCode",
+                "bodyCode",
+                "saleType",
+                "location",
+                "offerType",
+                "cameraStatus",
+                "structuralDamageStatus"
+              ],
+              "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2021r-ambition-fv23-salonpl-110km-led-klimatronik-android-apple-3607-8813-VK",
+              "checkedAt": "2026-11-08T18:45:24+00:00",
+              "kind": "seller",
+              "note": "Karta podaje rocznik produkcji 2021, cenę 45 900 zł brutto, 118 000 km (w opisie przebieg udokumentowany 117 953 km w 07.2026), 1.0 TSI 110 KM / 81 kW / 999 cm³, manualną skrzynię, lokalizację Pęcice (Mazowieckie) oraz hatchback. Sprzedawca figuruje jako aktywna firma. Płatność gotówką przy odbiorze lub przelewem. Kamera nie jest wymieniona w odczytanej treści; instalacja LPG niepotwierdzona."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:autoplac:3607-8813-VK",
+            "modelKey": "skoda-scala",
+            "title": "Skoda Scala 1.0 Ambition FV23% SalonPL 110KM LED Klimatronik Android/Apple",
+            "urls": [
+              {
+                "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2021r-ambition-fv23-salonpl-110km-led-klimatronik-android-apple-3607-8813-VK"
+              }
+            ],
+            "listingIds": [
+              "autoplac:3607-8813-VK"
+            ],
+            "year": 2021,
+            "price": 45900,
+            "mileage": 118000,
+            "engine": "Benzyna, 999 cm³, 81 kW / 110 KM; karta podaje 1.0 TSI.",
+            "engineVariant": "1.0-tsi-110",
+            "body": "Hatchback",
+            "bodyCode": "hatchback",
+            "transmission": "Manualna",
+            "transmissionCode": "manual",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "offerType": "company",
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "voivodeship": "Mazowieckie",
+              "city": "Pęcice"
+            },
+            "cameraStatus": "unknown",
+            "structuralDamageStatus": "unknown"
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:autoplac:3607-8813-VK"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "skoda-scala"
+            },
+            "title": {
+              "before": null,
+              "after": "Skoda Scala 1.0 Ambition FV23% SalonPL 110KM LED Klimatronik Android/Apple"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2021r-ambition-fv23-salonpl-110km-led-klimatronik-android-apple-3607-8813-VK"
+                }
+              ]
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "autoplac:3607-8813-VK"
+              ]
+            },
+            "year": {
+              "before": null,
+              "after": 2021
+            },
+            "price": {
+              "before": null,
+              "after": 45900
+            },
+            "mileage": {
+              "before": null,
+              "after": 118000
+            },
+            "engine": {
+              "before": null,
+              "after": "Benzyna, 999 cm³, 81 kW / 110 KM; karta podaje 1.0 TSI."
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.0-tsi-110"
+            },
+            "body": {
+              "before": null,
+              "after": "Hatchback"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "hatchback"
+            },
+            "transmission": {
+              "before": null,
+              "after": "Manualna"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "offerType": {
+              "before": null,
+              "after": "company"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "voivodeship": "Mazowieckie",
+                "city": "Pęcice"
+              }
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            }
+          }
+        },
+        {
+          "eventId": "e80b7dfde9101f38a21361d89703285c417f829fd82c20af68d9432a4610398d",
+          "runId": "refresh-20261108-03",
+          "checkedAt": "2026-11-08T22:05:01+00:00",
+          "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2021r-ambition-fv23-salonpl-110km-led-klimatronik-android-apple-3607-8813-VK",
+          "availability": "available",
+          "note": "Karta widoczna; ostatnia aktualizacja tydzień temu. Cena 45 900 zł brutto (37 317 zł netto), rok produkcji 2021, 118 000 km, benzyna 1.0 TSI 110 KM, manual. Opis podaje pierwszą rejestrację 05.07.2021 i serwis do końca; odczyt 117 953 km z 07.2026. Sprzedawca deklaruje polski salon, pierwszego właściciela i bezwypadkowość; pola stanu: bezwypadkowy tak, uszkodzony nie, krajowy. W opisie jest płatność gotówką przy odbiorze lub przelewem, kredyt/leasing opcjonalne. Kamera niepotwierdzona, LPG nieustalone.",
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:3607-8813-VK",
+            "saleType": "fixed_price",
+            "lpgInstalled": null
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "33a826847ceba438d7c0570b08df58bcf170497fd7f0783b133f718b91dba7cc",
+          "runId": "photos-20261108-01",
+          "checkedAt": "2026-11-08T22:39:04+00:00",
+          "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2021r-ambition-fv23-salonpl-110km-led-klimatronik-android-apple-3607-8813-VK",
+          "availability": "available",
+          "note": "Karta Autoplac dostępna; aktualizacja tydzień temu, galeria 1/27. Widoczna cena brutto 45 900 zł i płatność gotówką lub przelewem; paliwo benzyna, karta nie potwierdza instalacji LPG.",
+          "photoCheck": {
+            "status": "found",
+            "note": "Odczytano bezpośredni HTTPS URL zdjęcia głównego z CDN Autoplac; widok pokazuje galerię 1/27."
+          },
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:3607-8813-VK",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "photos": [
+              "https://euw2-cdn.autoplac.pl/v1/p/2f132bfc-65f1-4e0d-a78e-4bd08b66262e?f=1920%3Awebp"
+            ]
+          },
+          "changes": {
+            "photos": {
+              "before": null,
+              "after": [
+                "https://euw2-cdn.autoplac.pl/v1/p/2f132bfc-65f1-4e0d-a78e-4bd08b66262e?f=1920%3Awebp"
+              ]
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "listing:autoplac:3607-8813-VK",
+        "modelKey": "skoda-scala",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_price_and_purchase_conditions",
+          "engine_review_requires_verification",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_price_and_purchase_conditions; engine_review_requires_verification; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "photos": [
+        "https://euw2-cdn.autoplac.pl/v1/p/2f132bfc-65f1-4e0d-a78e-4bd08b66262e?f=1920%3Awebp"
+      ]
+    },
+    {
+      "id": "vin:TMBER6NW1N3065943",
+      "modelKey": "skoda-scala",
+      "title": "Škoda Scala 1.0 TSI 110 KM, manual",
+      "urls": [
+        {
+          "url": "https://automarket.pl/oferta/skoda/scala/T198069/zakup"
+        }
+      ],
+      "listingIds": [
+        "automarket:T198069"
+      ],
+      "vin": "TMBER6NW1N3065943",
+      "year": 2022,
+      "price": 48000,
+      "mileage": 142412,
+      "engine": "1.0 TSI, 110 KM, benzyna",
+      "engineVariant": "1.0-tsi-110",
+      "body": "Hatchback",
+      "bodyCode": "hatchback",
+      "transmission": "Manualna, 6-biegowa",
+      "transmissionCode": "manual",
+      "saleType": "fixed_price",
+      "offerType": "company",
+      "cameraStatus": "unknown",
+      "structuralDamageStatus": "unknown",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "city": "Kraków",
+        "voivodeship": "małopolskie"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-08T20:06:50+01:00",
+      "listingStates": [
+        {
+          "url": "https://automarket.pl/oferta/skoda/scala/T198069/zakup",
+          "status": "available",
+          "lastAttemptAt": "2026-11-08T23:44:01+01:00",
+          "lastCheckedAt": "2026-11-08T23:44:01+01:00",
+          "lastVerifiedAt": "2026-11-08T23:44:01+01:00",
+          "lastObservation": {
+            "url": "https://automarket.pl/oferta/skoda/scala/T198069/zakup",
+            "checkedAt": "2026-11-08T23:44:01+01:00",
+            "availability": "available",
+            "note": "Karta T198069 dostępna w Automarket. Cena zakupu brutto 48 000 zł; udostępniono osobne tryby gotówka, leasing i pożyczka. Galeria zawiera 10 zdjęć; bezpośrednie adresy HTTPS zapisano w photos. Paliwo PB/benzyna, LPG niepotwierdzone.",
+            "photoCheck": {
+              "status": "found",
+              "note": "Zapisano 10 bezpośrednich HTTPS adresów z galerii."
+            }
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-08T23:44:01+01:00",
+      "lastVerifiedAt": "2026-11-08T23:44:01+01:00",
+      "lastAttemptAt": "2026-11-08T23:44:01+01:00",
+      "history": [
+        {
+          "eventId": "3fc5cf091267f3cc62d8f5a684ceb8e2ebd58285a20ec3a6542fd5ff24df2d8c",
+          "runId": "search-20261108",
+          "checkedAt": "2026-11-08T20:06:50+01:00",
+          "url": "https://automarket.pl/oferta/skoda/scala/T198069/zakup",
+          "availability": "available",
+          "note": "Indeksowana karta zakupu za gotówkę pokazuje 48 000 zł brutto, VIN TMBER6NW1N3065943, produkcję 2022, 142 412 km, silnik 1.0 TSI 999 cm3/110 KM, manual 6-biegowy i hatchback. Sprzedawca AAA AUTO oznacza pojazd jako dostępny od ręki i zaprasza do kontaktu; lokalizacja Pasternik 69, Kraków, małopolskie. Karta nie potwierdza kamery ani LPG. Bezpośrednie otwarcie w narzędziu zwróciło cache miss; pełna treść karty była dostępna w indeksie Automarket.",
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TMBER6NW1N3065943",
+            "modelKey": "skoda-scala",
+            "title": "Škoda Scala 1.0 TSI 110 KM, manual",
+            "urls": [
+              {
+                "url": "https://automarket.pl/oferta/skoda/scala/T198069/zakup"
+              }
+            ],
+            "listingIds": [
+              "automarket:T198069"
+            ],
+            "vin": "TMBER6NW1N3065943",
+            "year": 2022,
+            "price": 48000,
+            "mileage": 142412,
+            "engine": "1.0 TSI, 999 cm3, 110 KM, benzyna",
+            "engineVariant": "1.0-tsi-110",
+            "body": "Hatchback",
+            "bodyCode": "hatchback",
+            "transmission": "Manualna, 6-biegowa",
+            "transmissionCode": "manual",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "offerType": "company",
+            "cameraStatus": "unknown",
+            "structuralDamageStatus": "unknown",
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "city": "Kraków",
+              "voivodeship": "małopolskie"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "vin:TMBER6NW1N3065943"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "skoda-scala"
+            },
+            "title": {
+              "before": null,
+              "after": "Škoda Scala 1.0 TSI 110 KM, manual"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://automarket.pl/oferta/skoda/scala/T198069/zakup"
+                }
+              ]
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "automarket:T198069"
+              ]
+            },
+            "vin": {
+              "before": null,
+              "after": "TMBER6NW1N3065943"
+            },
+            "year": {
+              "before": null,
+              "after": 2022
+            },
+            "price": {
+              "before": null,
+              "after": 48000
+            },
+            "mileage": {
+              "before": null,
+              "after": 142412
+            },
+            "engine": {
+              "before": null,
+              "after": "1.0 TSI, 999 cm3, 110 KM, benzyna"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.0-tsi-110"
+            },
+            "body": {
+              "before": null,
+              "after": "Hatchback"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "hatchback"
+            },
+            "transmission": {
+              "before": null,
+              "after": "Manualna, 6-biegowa"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "offerType": {
+              "before": null,
+              "after": "company"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "city": "Kraków",
+                "voivodeship": "małopolskie"
+              }
+            }
+          }
+        },
+        {
+          "eventId": "c2e1ed95722afdd23c7deffbc79c5dd2a0efce632e4a804cca42313359667a9f",
+          "runId": "refresh-20261108-03",
+          "checkedAt": "2026-11-08T21:52:46+00:00",
+          "url": "https://automarket.pl/oferta/skoda/scala/T198069/zakup",
+          "availability": "available",
+          "note": "Otwarta karta Automarket T198069 podaje 48 000 zł brutto za gotówkę, rok 2022, przebieg 142 412 km, benzynową Škodę Scala 1.0 TSI 110 KM z manualną skrzynią 6-biegową. Strona pokazuje kontakt do sprzedawcy firmowego i status dostępny od ręki. Nadwozie w karcie: hatchback. LPG nieustalone.",
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TMBER6NW1N3065943",
+            "price": 48000,
+            "year": 2022,
+            "mileage": 142412,
+            "engine": "1.0 TSI, 110 KM, benzyna",
+            "transmission": "Manualna, 6-biegowa",
+            "saleType": "fixed_price",
+            "lpgInstalled": null
+          },
+          "changes": {
+            "engine": {
+              "before": "1.0 TSI, 999 cm3, 110 KM, benzyna",
+              "after": "1.0 TSI, 110 KM, benzyna"
+            }
+          }
+        },
+        {
+          "eventId": "e20df077fd50784772b3d8ad4198fc41b3b96b28591dd84779bece28e233079c",
+          "runId": "photos-20261108-01",
+          "checkedAt": "2026-11-08T23:44:01+01:00",
+          "url": "https://automarket.pl/oferta/skoda/scala/T198069/zakup",
+          "availability": "available",
+          "note": "Karta T198069 dostępna w Automarket. Cena zakupu brutto 48 000 zł; udostępniono osobne tryby gotówka, leasing i pożyczka. Galeria zawiera 10 zdjęć; bezpośrednie adresy HTTPS zapisano w photos. Paliwo PB/benzyna, LPG niepotwierdzone.",
+          "photoCheck": {
+            "status": "found",
+            "note": "Zapisano 10 bezpośrednich HTTPS adresów z galerii."
+          },
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TMBER6NW1N3065943",
+            "title": "Škoda Scala 1.0 TSI 110 KM, manual",
+            "urls": [
+              {
+                "url": "https://automarket.pl/oferta/skoda/scala/T198069/zakup"
+              }
+            ],
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "photos": [
+              "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE5NTgxNl8x/NjAweDEyMDB4OTVf/OS5qcGc.webp",
+              "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE5NTgxNl8x/XzE2MDB4MTIwMHg5/NV85LmpwZw.webp",
+              "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE5NTgxNl8y/XzE2MDB4MTIwMHg5/NV85LmpwZw.webp",
+              "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE5NTgxNl8z/XzE2MDB4MTIwMHg5/NV85LmpwZw.webp",
+              "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE5NTgxNl80/XzE2MDB4MTIwMHg5/NV85LmpwZw.webp",
+              "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE5NTgxNl81/XzE2MDB4MTIwMHg5/NV85LmpwZw.webp",
+              "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE5NTgxNl82/XzE2MDB4MTIwMHg5/NV85LmpwZw.webp",
+              "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE5NTgxNl83/XzE2MDB4MTIwMHg5/NV85LmpwZw.webp",
+              "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE5NTgxNl84/XzE2MDB4MTIwMHg5/NV85LmpwZw.webp",
+              "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE5NTgxNl85/XzE2MDB4MTIwMHg5/NV85LmpwZw.webp"
+            ]
+          },
+          "changes": {
+            "photos": {
+              "before": null,
+              "after": [
+                "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE5NTgxNl8x/NjAweDEyMDB4OTVf/OS5qcGc.webp",
+                "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE5NTgxNl8x/XzE2MDB4MTIwMHg5/NV85LmpwZw.webp",
+                "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE5NTgxNl8y/XzE2MDB4MTIwMHg5/NV85LmpwZw.webp",
+                "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE5NTgxNl8z/XzE2MDB4MTIwMHg5/NV85LmpwZw.webp",
+                "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE5NTgxNl80/XzE2MDB4MTIwMHg5/NV85LmpwZw.webp",
+                "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE5NTgxNl81/XzE2MDB4MTIwMHg5/NV85LmpwZw.webp",
+                "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE5NTgxNl82/XzE2MDB4MTIwMHg5/NV85LmpwZw.webp",
+                "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE5NTgxNl83/XzE2MDB4MTIwMHg5/NV85LmpwZw.webp",
+                "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE5NTgxNl84/XzE2MDB4MTIwMHg5/NV85LmpwZw.webp",
+                "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE5NTgxNl85/XzE2MDB4MTIwMHg5/NV85LmpwZw.webp"
+              ]
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "vin:TMBER6NW1N3065943",
+        "modelKey": "skoda-scala",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_price_and_purchase_conditions",
+          "engine_review_requires_verification",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_price_and_purchase_conditions; engine_review_requires_verification; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "photos": [
+        "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE5NTgxNl8x/NjAweDEyMDB4OTVf/OS5qcGc.webp",
+        "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE5NTgxNl8x/XzE2MDB4MTIwMHg5/NV85LmpwZw.webp",
+        "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE5NTgxNl8y/XzE2MDB4MTIwMHg5/NV85LmpwZw.webp",
+        "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE5NTgxNl8z/XzE2MDB4MTIwMHg5/NV85LmpwZw.webp",
+        "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE5NTgxNl80/XzE2MDB4MTIwMHg5/NV85LmpwZw.webp",
+        "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE5NTgxNl81/XzE2MDB4MTIwMHg5/NV85LmpwZw.webp",
+        "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE5NTgxNl82/XzE2MDB4MTIwMHg5/NV85LmpwZw.webp",
+        "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE5NTgxNl83/XzE2MDB4MTIwMHg5/NV85LmpwZw.webp",
+        "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE5NTgxNl84/XzE2MDB4MTIwMHg5/NV85LmpwZw.webp",
+        "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE5NTgxNl85/XzE2MDB4MTIwMHg5/NV85LmpwZw.webp"
+      ]
+    },
+    {
+      "id": "vin:TMBER6NW9M3160605",
+      "modelKey": "skoda-scala",
+      "title": "Škoda Scala Ambition 1.0 TSI 110 KM, manual",
+      "urls": [
+        {
+          "url": "https://automarket.pl/oferta/skoda/scala/T141602/zakup"
+        }
+      ],
+      "listingIds": [
+        "automarket:T141602"
+      ],
+      "vin": "TMBER6NW9M3160605",
+      "year": 2021,
+      "price": 47900,
+      "mileage": 109243,
+      "engine": "1.0 TSI, 999 cm3, 110 KM, benzyna",
+      "engineVariant": "1.0-tsi-110",
+      "body": "Hatchback",
+      "bodyCode": "hatchback",
+      "transmission": "Manualna, 6-biegowa",
+      "transmissionCode": "manual",
+      "saleType": "fixed_price",
+      "offerType": "company",
+      "cameraStatus": "unknown",
+      "structuralDamageStatus": "unknown",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "city": "Toruń",
+        "voivodeship": "kujawsko-pomorskie"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-08T20:06:50+01:00",
+      "listingStates": [
+        {
+          "url": "https://automarket.pl/oferta/skoda/scala/T141602/zakup",
+          "status": "available",
+          "lastAttemptAt": "2026-11-08T23:44:01+01:00",
+          "lastCheckedAt": "2026-11-08T20:06:50+01:00",
+          "lastVerifiedAt": "2026-11-08T20:06:50+01:00",
+          "lastObservation": {
+            "url": "https://automarket.pl/oferta/skoda/scala/T141602/zakup",
+            "checkedAt": "2026-11-08T23:44:01+01:00",
+            "availability": "access_error",
+            "note": "Dokładny adres zwrócił HTTP 404 Not Found. Nie odczytano bieżącej karty ani galerii; sam błąd nie potwierdza sprzedaży ani usunięcia ogłoszenia.",
+            "photoCheck": {
+              "status": "access_error",
+              "note": "URL zwrócił 404; bez odczytu karty nie można pobrać bezpośrednich zdjęć."
+            }
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-08T20:06:50+01:00",
+      "lastVerifiedAt": "2026-11-08T20:06:50+01:00",
+      "lastAttemptAt": "2026-11-08T23:44:01+01:00",
+      "history": [
+        {
+          "eventId": "b3c2f436821bdb6bfa60e8d0cde2d3d90e3af6b705754786506edd6adcfc0a87",
+          "runId": "search-20261108",
+          "checkedAt": "2026-11-08T20:06:50+01:00",
+          "url": "https://automarket.pl/oferta/skoda/scala/T141602/zakup",
+          "availability": "available",
+          "note": "Indeksowana karta zakupu za gotówkę potwierdza cenę 47 900 zł brutto (faktura VAT 23%), VIN TMBER6NW9M3160605, produkcję 2021, pierwszą rejestrację 2021-07-19, 109 243 km, 1.0 TSI 999 cm3/110 KM, manual 6-biegowy i hatchback. Dealer Plichta wskazuje pojazd w salonie VW Plichta Toruń przy ul. Wschodniej 38; karta ma kontakt i możliwość jazdy próbnej. W wykazie są przednie/tylne czujniki parkowania, kamera niepotwierdzona. LPG nieustalone. Stan bezwypadkowy to deklaracja sprzedawcy, nie niezależna kontrola strukturalna. Bezpośrednie otwarcie zwróciło cache miss; użyto pełnej indeksowanej treści karty.",
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TMBER6NW9M3160605",
+            "modelKey": "skoda-scala",
+            "title": "Škoda Scala Ambition 1.0 TSI 110 KM, manual",
+            "urls": [
+              {
+                "url": "https://automarket.pl/oferta/skoda/scala/T141602/zakup"
+              }
+            ],
+            "listingIds": [
+              "automarket:T141602"
+            ],
+            "vin": "TMBER6NW9M3160605",
+            "year": 2021,
+            "price": 47900,
+            "mileage": 109243,
+            "engine": "1.0 TSI, 999 cm3, 110 KM, benzyna",
+            "engineVariant": "1.0-tsi-110",
+            "body": "Hatchback",
+            "bodyCode": "hatchback",
+            "transmission": "Manualna, 6-biegowa",
+            "transmissionCode": "manual",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "offerType": "company",
+            "cameraStatus": "unknown",
+            "structuralDamageStatus": "unknown",
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "city": "Toruń",
+              "voivodeship": "kujawsko-pomorskie"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "vin:TMBER6NW9M3160605"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "skoda-scala"
+            },
+            "title": {
+              "before": null,
+              "after": "Škoda Scala Ambition 1.0 TSI 110 KM, manual"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://automarket.pl/oferta/skoda/scala/T141602/zakup"
+                }
+              ]
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "automarket:T141602"
+              ]
+            },
+            "vin": {
+              "before": null,
+              "after": "TMBER6NW9M3160605"
+            },
+            "year": {
+              "before": null,
+              "after": 2021
+            },
+            "price": {
+              "before": null,
+              "after": 47900
+            },
+            "mileage": {
+              "before": null,
+              "after": 109243
+            },
+            "engine": {
+              "before": null,
+              "after": "1.0 TSI, 999 cm3, 110 KM, benzyna"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.0-tsi-110"
+            },
+            "body": {
+              "before": null,
+              "after": "Hatchback"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "hatchback"
+            },
+            "transmission": {
+              "before": null,
+              "after": "Manualna, 6-biegowa"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "offerType": {
+              "before": null,
+              "after": "company"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "city": "Toruń",
+                "voivodeship": "kujawsko-pomorskie"
+              }
+            }
+          }
+        },
+        {
+          "eventId": "7febb48552019904859991e8539848b386f20093f287b98bd04453f0a79d84b9",
+          "runId": "refresh-20261108-03",
+          "checkedAt": "2026-11-08T21:52:46+00:00",
+          "url": "https://automarket.pl/oferta/skoda/scala/T141602/zakup",
+          "availability": "access_error",
+          "note": "Bezpośrednie otwarcie URL zwróciło 404 w narzędziu. Nie potwierdzono statusu; błąd otwarcia nie jest dowodem sprzedaży.",
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TMBER6NW9M3160605"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "bd4e0d5e6bff65d5ed33a1bcd5eda99abe66b01f51904bfc2146eeb111e7b0ea",
+          "runId": "photos-20261108-01",
+          "checkedAt": "2026-11-08T23:44:01+01:00",
+          "url": "https://automarket.pl/oferta/skoda/scala/T141602/zakup",
+          "availability": "access_error",
+          "note": "Dokładny adres zwrócił HTTP 404 Not Found. Nie odczytano bieżącej karty ani galerii; sam błąd nie potwierdza sprzedaży ani usunięcia ogłoszenia.",
+          "photoCheck": {
+            "status": "access_error",
+            "note": "URL zwrócił 404; bez odczytu karty nie można pobrać bezpośrednich zdjęć."
+          },
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TMBER6NW9M3160605",
+            "title": "Škoda Scala Ambition 1.0 TSI 110 KM, manual",
+            "urls": [
+              {
+                "url": "https://automarket.pl/oferta/skoda/scala/T141602/zakup"
+              }
+            ]
+          },
+          "changes": {}
+        }
+      ],
+      "assessment": {
+        "id": "vin:TMBER6NW9M3160605",
+        "modelKey": "skoda-scala",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_price_and_purchase_conditions",
+          "engine_review_requires_verification",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_price_and_purchase_conditions; engine_review_requires_verification; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
+    },
+    {
+      "id": "vin:TMBER6NW5N3041760",
+      "modelKey": "skoda-scala",
+      "title": "Škoda Scala 1.0 TSI 110 KM, manual",
+      "urls": [
+        {
+          "url": "https://automarket.pl/oferta/skoda/scala/T180154/zakup"
+        }
+      ],
+      "listingIds": [
+        "automarket:T180154"
+      ],
+      "vin": "TMBER6NW5N3041760",
+      "year": 2021,
+      "price": 42500,
+      "mileage": 166876,
+      "engine": "1.0 TSI, 999 cm3, 110 KM, benzyna",
+      "engineVariant": "1.0-tsi-110",
+      "body": "Hatchback",
+      "bodyCode": "hatchback",
+      "transmission": "Manualna, 6-biegowa",
+      "transmissionCode": "manual",
+      "saleType": "fixed_price",
+      "offerType": "company",
+      "cameraStatus": "unknown",
+      "structuralDamageStatus": "unknown",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "city": "Bielany Wrocławskie",
+        "voivodeship": "dolnośląskie"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-08T20:06:50+01:00",
+      "listingStates": [
+        {
+          "url": "https://automarket.pl/oferta/skoda/scala/T180154/zakup",
+          "status": "available",
+          "lastAttemptAt": "2026-11-08T23:44:01+01:00",
+          "lastCheckedAt": "2026-11-08T20:06:50+01:00",
+          "lastVerifiedAt": "2026-11-08T20:06:50+01:00",
+          "lastObservation": {
+            "url": "https://automarket.pl/oferta/skoda/scala/T180154/zakup",
+            "checkedAt": "2026-11-08T23:44:01+01:00",
+            "availability": "access_error",
+            "note": "Dokładny adres nieosiągalny przez narzędzie przeglądania w dwóch próbach. Nie odczytano aktualnej karty ani galerii; nie wnioskuję o sprzedaży lub usunięciu.",
+            "photoCheck": {
+              "status": "access_error",
+              "note": "Nie udało się otworzyć karty, więc bezpośrednie URL-e zdjęć nie są dostępne do odczytu."
+            }
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-08T20:06:50+01:00",
+      "lastVerifiedAt": "2026-11-08T20:06:50+01:00",
+      "lastAttemptAt": "2026-11-08T23:44:01+01:00",
+      "history": [
+        {
+          "eventId": "5e5ab56251c5b84d68cb3a11b7bbd5f570f226cbb4c8c6edc591152bb1cb76c7",
+          "runId": "search-20261108",
+          "checkedAt": "2026-11-08T20:06:50+01:00",
+          "url": "https://automarket.pl/oferta/skoda/scala/T180154/zakup",
+          "availability": "available",
+          "note": "Indeksowana karta Automarket ma cenę 34 553 zł netto na fakturze VAT 23%; opis sprzedawcy podaje pełną cenę 42 500 PLN brutto. Karta/tekst opisują 2021, 166 876 km, 999 cm3/110 KM, 1.0 TSI, manual 6-biegowy, hatchback, VIN TMBER6NW5N3041760 i polskie pochodzenie. Opis AAA AUTO deklaruje dostępność od ręki, książkę serwisową i pierwszego właściciela; lokalizacja Tyniecka, Bielany Wrocławskie, dolnośląskie. Kamera nie jest wymieniona; LPG nieustalone. Przebieg poniżej twardego limitu 170 000 km, choć ponad preferowany lokalny próg 150 000 km. Bezpośrednie otwarcie zwróciło cache miss; pełna treść karty była dostępna w indeksie Automarket.",
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TMBER6NW5N3041760",
+            "modelKey": "skoda-scala",
+            "title": "Škoda Scala 1.0 TSI 110 KM, manual",
+            "urls": [
+              {
+                "url": "https://automarket.pl/oferta/skoda/scala/T180154/zakup"
+              }
+            ],
+            "listingIds": [
+              "automarket:T180154"
+            ],
+            "vin": "TMBER6NW5N3041760",
+            "year": 2021,
+            "price": 42500,
+            "mileage": 166876,
+            "engine": "1.0 TSI, 999 cm3, 110 KM, benzyna",
+            "engineVariant": "1.0-tsi-110",
+            "body": "Hatchback",
+            "bodyCode": "hatchback",
+            "transmission": "Manualna, 6-biegowa",
+            "transmissionCode": "manual",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "offerType": "company",
+            "cameraStatus": "unknown",
+            "structuralDamageStatus": "unknown",
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "city": "Bielany Wrocławskie",
+              "voivodeship": "dolnośląskie"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "vin:TMBER6NW5N3041760"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "skoda-scala"
+            },
+            "title": {
+              "before": null,
+              "after": "Škoda Scala 1.0 TSI 110 KM, manual"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://automarket.pl/oferta/skoda/scala/T180154/zakup"
+                }
+              ]
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "automarket:T180154"
+              ]
+            },
+            "vin": {
+              "before": null,
+              "after": "TMBER6NW5N3041760"
+            },
+            "year": {
+              "before": null,
+              "after": 2021
+            },
+            "price": {
+              "before": null,
+              "after": 42500
+            },
+            "mileage": {
+              "before": null,
+              "after": 166876
+            },
+            "engine": {
+              "before": null,
+              "after": "1.0 TSI, 999 cm3, 110 KM, benzyna"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.0-tsi-110"
+            },
+            "body": {
+              "before": null,
+              "after": "Hatchback"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "hatchback"
+            },
+            "transmission": {
+              "before": null,
+              "after": "Manualna, 6-biegowa"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "offerType": {
+              "before": null,
+              "after": "company"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "city": "Bielany Wrocławskie",
+                "voivodeship": "dolnośląskie"
+              }
+            }
+          }
+        },
+        {
+          "eventId": "c1ff750c6dbfaf2ff33c8ab27a087d27639b5ec8bf55eb5d0ad9e21b2ec6b0e0",
+          "runId": "refresh-20261108-03",
+          "checkedAt": "2026-11-08T21:52:46+00:00",
+          "url": "https://automarket.pl/oferta/skoda/scala/T180154/zakup",
+          "availability": "access_error",
+          "note": "URL nie był dostępny dla narzędzia odczytu. Nie potwierdzono statusu; błąd dostępu nie jest dowodem sprzedaży.",
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TMBER6NW5N3041760"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "0487e42a619c3fba38241b24b03d430fec8727900f639ddd8b09910199160768",
+          "runId": "photos-20261108-01",
+          "checkedAt": "2026-11-08T23:44:01+01:00",
+          "url": "https://automarket.pl/oferta/skoda/scala/T180154/zakup",
+          "availability": "access_error",
+          "note": "Dokładny adres nieosiągalny przez narzędzie przeglądania w dwóch próbach. Nie odczytano aktualnej karty ani galerii; nie wnioskuję o sprzedaży lub usunięciu.",
+          "photoCheck": {
+            "status": "access_error",
+            "note": "Nie udało się otworzyć karty, więc bezpośrednie URL-e zdjęć nie są dostępne do odczytu."
+          },
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TMBER6NW5N3041760",
+            "title": "Škoda Scala 1.0 TSI 110 KM, manual",
+            "urls": [
+              {
+                "url": "https://automarket.pl/oferta/skoda/scala/T180154/zakup"
+              }
+            ]
+          },
+          "changes": {}
+        }
+      ],
+      "assessment": {
+        "id": "vin:TMBER6NW5N3041760",
+        "modelKey": "skoda-scala",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_price_and_purchase_conditions",
+          "engine_review_requires_verification",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_price_and_purchase_conditions; engine_review_requires_verification; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
+    },
+    {
+      "id": "listing:autopunkt:AAU06403IE",
+      "modelKey": "skoda-scala",
+      "title": "Skoda Scala Ambition Salon PL — 2022, 1.0 benzyna 110 KM, manual",
+      "urls": [
+        {
+          "url": "https://autopunkt.pl/samochod/warszawa/kompakt/skoda/scala/id/111798"
+        }
+      ],
+      "listingIds": [
+        "autopunkt:AAU06403IE",
+        "autopunkt:111798"
+      ],
+      "year": 2022,
+      "price": 54900,
+      "mileage": 103050,
+      "engine": "Benzynowy, 999 cm3, 110 KM",
+      "engineVariant": "1.0-tsi-110",
+      "body": "Kompakt (Scala; nadwozie hatchback nie jest osobno nazwane na karcie)",
+      "bodyCode": "hatchback",
+      "transmission": "Manualna",
+      "transmissionCode": "manual",
+      "saleType": "fixed_price",
+      "offerType": "company",
+      "cameraStatus": "unknown",
+      "structuralDamageStatus": "unknown",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "city": "Warszawa",
+        "voivodeship": "Mazowieckie"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-08T20:53:40+01:00",
+      "listingStates": [
+        {
+          "url": "https://autopunkt.pl/samochod/warszawa/kompakt/skoda/scala/id/111798",
+          "status": "available",
+          "lastAttemptAt": "2026-11-08T23:40:18+01:00",
+          "lastCheckedAt": "2026-11-08T23:40:18+01:00",
+          "lastVerifiedAt": "2026-11-08T23:40:18+01:00",
+          "lastObservation": {
+            "url": "https://autopunkt.pl/samochod/warszawa/kompakt/skoda/scala/id/111798",
+            "checkedAt": "2026-11-08T23:40:18+01:00",
+            "availability": "available",
+            "note": "Karta oferty AAU06403IE jest dostępna. Autopunkt podaje cenę brutto 54 900 zł, oddzielnie ratę kredytu 866 zł/mies. oraz możliwość finansowania, więc cena nie jest opisana jako warunkowa. LPG nie wskazano.",
+            "photoCheck": {
+              "status": "found",
+              "note": "Karta ujawnia bezpośredni adres HTTPS obrazu JPEG; ten sam link jest widoczny dwa razy, zapisano jeden unikalny URL."
+            }
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-08T23:40:18+01:00",
+      "lastVerifiedAt": "2026-11-08T23:40:18+01:00",
+      "lastAttemptAt": "2026-11-08T23:40:18+01:00",
+      "history": [
+        {
+          "eventId": "3987e19aa2bebeb36e29d101a497956b07ba1b6f76f208f9400167e523ceb506",
+          "runId": "search-20261108",
+          "checkedAt": "2026-11-08T20:53:40+01:00",
+          "url": "https://autopunkt.pl/samochod/warszawa/kompakt/skoda/scala/id/111798",
+          "availability": "available",
+          "note": "Karta Autopunkt AAU06403IE podaje cenę brutto 54 900 zł, rocznik produkcji 2022, pierwszą rejestrację 2022-07-11, przebieg 103 050 km, benzynę 999 cm3/110 KM, napęd przedni i skrzynię manualną. Samochód jest wystawiony w bieżącym katalogu Skody; kopia ogłoszenia na Autoplac wskazuje aktualizację dziś i tę samą cenę oraz dane. Karta Autopunkt opisuje nadwozie jako kompakt; Scala jest wyszukiwana w skonfigurowanym nadwoziu hatchback, ale karta nie nazywa typu nadwozia wprost. Kamera cofania nie występuje w odczytanej liście wyposażenia, więc jej obecność pozostaje niepotwierdzona. Wariant 110 KM pasuje do skonfigurowanego 1.0 TSI 110, lecz karta nie podaje kodu silnika; jego polski rynek/rocznik wymaga potwierdzenia po VIN. LPG nieustalone.",
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autopunkt:AAU06403IE",
+            "modelKey": "skoda-scala",
+            "title": "Skoda Scala Ambition Salon PL — 2022, 1.0 benzyna 110 KM, manual",
+            "urls": [
+              {
+                "url": "https://autopunkt.pl/samochod/warszawa/kompakt/skoda/scala/id/111798"
+              }
+            ],
+            "listingIds": [
+              "autopunkt:AAU06403IE",
+              "autopunkt:111798"
+            ],
+            "year": 2022,
+            "price": 54900,
+            "mileage": 103050,
+            "engine": "Benzynowy, 999 cm3, 110 KM",
+            "engineVariant": "1.0-tsi-110",
+            "body": "Kompakt (Scala; nadwozie hatchback nie jest osobno nazwane na karcie)",
+            "bodyCode": "hatchback",
+            "transmission": "Manualna",
+            "transmissionCode": "manual",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "offerType": "company",
+            "cameraStatus": "unknown",
+            "structuralDamageStatus": "unknown",
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "city": "Warszawa",
+              "voivodeship": "Mazowieckie"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:autopunkt:AAU06403IE"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "skoda-scala"
+            },
+            "title": {
+              "before": null,
+              "after": "Skoda Scala Ambition Salon PL — 2022, 1.0 benzyna 110 KM, manual"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://autopunkt.pl/samochod/warszawa/kompakt/skoda/scala/id/111798"
+                }
+              ]
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "autopunkt:AAU06403IE",
+                "autopunkt:111798"
+              ]
+            },
+            "year": {
+              "before": null,
+              "after": 2022
+            },
+            "price": {
+              "before": null,
+              "after": 54900
+            },
+            "mileage": {
+              "before": null,
+              "after": 103050
+            },
+            "engine": {
+              "before": null,
+              "after": "Benzynowy, 999 cm3, 110 KM"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.0-tsi-110"
+            },
+            "body": {
+              "before": null,
+              "after": "Kompakt (Scala; nadwozie hatchback nie jest osobno nazwane na karcie)"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "hatchback"
+            },
+            "transmission": {
+              "before": null,
+              "after": "Manualna"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "offerType": {
+              "before": null,
+              "after": "company"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "city": "Warszawa",
+                "voivodeship": "Mazowieckie"
+              }
+            }
+          }
+        },
+        {
+          "eventId": "c733ba430d5f0d3404a669e5030216d9580da8933214cf35b0004d3aefc6c44e",
+          "runId": "refresh-20261108-03",
+          "checkedAt": "2026-11-08T21:52:46+00:00",
+          "url": "https://autopunkt.pl/samochod/warszawa/kompakt/skoda/scala/id/111798",
+          "availability": "access_error",
+          "note": "Odczyt strony przez narzędzie zwrócił kopię crawlowaną dwa tygodnie temu. Nie można potwierdzić dzisiejszej dostępności ani aktualnej ceny. Widok wskazywał 54 900 zł, rok 2022 i 103 050 km; nie przenoszę tych danych jako aktualnych. Stary widok nie jest dowodem sprzedaży.",
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autopunkt:AAU06403IE"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "c996c2e431a1784c8f12f1ed93c2ff61ee03ecb1baf9da50227e124aa6d13a29",
+          "runId": "photos-20261108-01",
+          "checkedAt": "2026-11-08T23:40:18+01:00",
+          "url": "https://autopunkt.pl/samochod/warszawa/kompakt/skoda/scala/id/111798",
+          "availability": "available",
+          "note": "Karta oferty AAU06403IE jest dostępna. Autopunkt podaje cenę brutto 54 900 zł, oddzielnie ratę kredytu 866 zł/mies. oraz możliwość finansowania, więc cena nie jest opisana jako warunkowa. LPG nie wskazano.",
+          "photoCheck": {
+            "status": "found",
+            "note": "Karta ujawnia bezpośredni adres HTTPS obrazu JPEG; ten sam link jest widoczny dwa razy, zapisano jeden unikalny URL."
+          },
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autopunkt:AAU06403IE",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "photos": [
+              "https://api.autopunkt.pl/cache/site_single_car/uploads_pewne/cars/used/111798/1-ed1b0022-b1de-4364-a29e-56effcbf3087-final-image-19102026100401696.jpg"
+            ]
+          },
+          "changes": {
+            "photos": {
+              "before": null,
+              "after": [
+                "https://api.autopunkt.pl/cache/site_single_car/uploads_pewne/cars/used/111798/1-ed1b0022-b1de-4364-a29e-56effcbf3087-final-image-19102026100401696.jpg"
+              ]
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "listing:autopunkt:AAU06403IE",
+        "modelKey": "skoda-scala",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_price_and_purchase_conditions",
+          "engine_review_requires_verification",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_price_and_purchase_conditions; engine_review_requires_verification; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "photos": [
+        "https://api.autopunkt.pl/cache/site_single_car/uploads_pewne/cars/used/111798/1-ed1b0022-b1de-4364-a29e-56effcbf3087-final-image-19102026100401696.jpg"
+      ]
+    }
+  ]
+}

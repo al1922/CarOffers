@@ -1,0 +1,241 @@
+{
+  "version": 1,
+  "modelKey": "toyota-corolla-e210",
+  "status": "partial",
+  "reviewedAt": "2026-11-08",
+  "claims": [
+    {
+      "id": "engine-review-2026",
+      "topic": "engine_assessment",
+      "value": {
+        "variants": {
+          "1.8-hybrid-122": {
+            "status": "conditional_recommendation",
+            "code": "2ZR-FXE",
+            "reason": "Producent potwierdza układ 4. generacji w sedanie i kombi; pasuje do jazdy mieszanej, ale brak niezależnych danych trwałości wariantu i polskich kosztów napraw."
+          },
+          "1.8-hybrid-140": {
+            "status": "hold_pending_long_term_evidence",
+            "code": "2ZR-FXE, układ hybrydowy 5. generacji",
+            "reason": "Toyota potwierdza odświeżenie i 140 KM od 2023 r.; krótka historia floty wymaga ostrożności i potwierdzenia VIN/roku modelowego."
+          }
+        },
+        "fullRecommendedThresholdMet": false,
+        "lpg": "Nie potwierdzono instalacji LPG dla dokładnej hybrydy; nie wywodzić zgodności z samej benzynowej części napędu."
+      },
+      "scope": {
+        "market": "Europe",
+        "period": "2019–2023",
+        "body": "sedan/Touring Sports"
+      },
+      "confidence": "medium",
+      "sourceIds": [
+        "corolla-2019",
+        "corolla-2023",
+        "corolla-adac"
+      ],
+      "notes": [
+        "Dane ADAC są dla modelu, nie dla konkretnego silnika."
+      ]
+    },
+    {
+      "id": "engine-review-140",
+      "topic": "engine",
+      "value": {
+        "label": "1.8 Hybrid 140",
+        "code": "2ZR-FXE",
+        "systemPowerPS": 140,
+        "systemPowerKw": 103,
+        "transmission": "E-CVT",
+        "generation": "fifth-generation hybrid"
+      },
+      "scope": {
+        "market": "Europe",
+        "body": "sedan and Touring Sports",
+        "period": "from 2023; national market dates vary"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "corolla-2023",
+        "corolla-2023-spec"
+      ],
+      "notes": [
+        "Nie identyfikować 140 KM wyłącznie na podstawie daty pierwszej rejestracji."
+      ]
+    },
+    {
+      "id": "engine-body",
+      "topic": "engine",
+      "value": {
+        "touringSportsLaunchVariants": [
+          "1.8 Hybrid 122 PS",
+          "2.0 Hybrid",
+          "1.2 turbo petrol"
+        ],
+        "sedanLaunchVariants": [
+          "1.8 Hybrid 122 PS",
+          "1.6 petrol 132 PS"
+        ]
+      },
+      "scope": {
+        "market": "Europe",
+        "period": "2019 launch"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "corolla-eu-2019"
+      ],
+      "notes": [
+        "Nie przydzielać 1.6 132 KM do kombi na podstawie wspólnej karty modelu.",
+        "2.0 Hybrid i 1.2 turbo są informacją o gamie; nie rozszerzają automatycznie dozwolonych napędów użytkownika."
+      ]
+    },
+    {
+      "id": "engine-18",
+      "topic": "engine",
+      "value": {
+        "label": "1.8 Hybrid",
+        "systemPowerPS": 122
+      },
+      "scope": {
+        "market": "Europe",
+        "period": "2019 launch",
+        "bodies": [
+          "sedan",
+          "touring-sports"
+        ]
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "corolla-eu-2019"
+      ],
+      "notes": [
+        "Nie przenosić mocy na późniejszą modernizację."
+      ]
+    },
+    {
+      "id": "engine-16-valvematic-sedan-2019-2020",
+      "topic": "engine",
+      "value": {
+        "label": "1.6 Valvematic Dual VVT-i",
+        "powerPS": 132,
+        "powerKw": 97,
+        "torqueNm": 160,
+        "likelyEngineCode": "1ZR-FAE",
+        "displacementCc": 1598,
+        "aspiration": "naturally aspirated",
+        "transmissions": [
+          "6MT",
+          "Multidrive S"
+        ],
+        "assessmentStatus": "hold_pending_engine_specific_reliability_evidence"
+      },
+      "scope": {
+        "market": "Poland / Europe",
+        "period": "Polish MY2019 documented; 1.6 should not be assumed for MY2021+",
+        "body": "Sedan only",
+        "codeScope": "1ZR-FAE cross-checked in parts catalog; verify exact engine code by VIN"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "corolla-toyota-pl-launch",
+        "corolla-pl-price-2019",
+        "corolla-toyota-pl-2021",
+        "corolla-1zr-code"
+      ],
+      "notes": [
+        "Toyota confirms 1.6 Valvematic 132 KM exclusively for the new Corolla Sedan; the Polish MY2019 price list documents manual and Multidrive S. Toyota Central Europe sales material for MY2021 lists 1.5 VVT-i, so do not apply 1.6 automatically to later registrations.",
+        "No independent long-term failure cohort for the exact E210 1ZR-FAE installation or comparable Polish repair-cost evidence was established. Hold as a default recommendation pending that evidence; this is not a rejection."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "corolla-2019",
+      "title": "Toyota Europe — 2019 Corolla launch",
+      "url": "https://newsroom.toyota.eu/2019-the-toyota-corolla/",
+      "publishedAt": "2019",
+      "checkedAt": "2026-11-08",
+      "accessNote": "Potwierdza 1.8 Hybrid 122 KM i odrębny zakres silników dla sedana oraz Touring Sports."
+    },
+    {
+      "id": "corolla-2023",
+      "title": "Toyota Europe — new 2023 Corolla hybrid update",
+      "url": "https://newsroom.toyota.eu/toyota-announces-the-new-2023-corolla/",
+      "publishedAt": "2022-12",
+      "checkedAt": "2026-11-08",
+      "accessNote": "Producent potwierdza 140 DIN hp, zmieniony PCU/silnik trakcyjny i mniejszą/lżejszą baterię; start sprzedaży w Europie Q1 2023, terminy zależą od kraju."
+    },
+    {
+      "id": "corolla-2023-spec",
+      "title": "Toyota UK — Corolla 2023 technical specifications",
+      "url": "https://media.toyota.co.uk/wp-content/uploads/sites/5/pdf/220905-Corolla.pdf",
+      "publishedAt": "2022-09",
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "corolla-adac",
+      "title": "ADAC — Corolla Touring Sports 1.8 Hybrid 140 specs and roadside data",
+      "url": "https://www.adac.de/rund-ums-fahrzeug/autokatalog/marken-modelle/toyota/corolla/e21-facelift/325908/",
+      "publishedAt": "2026",
+      "checkedAt": "2026-11-08",
+      "accessNote": "Awaryjność modelu; odnotowane problemy dotyczą głównie akumulatora 12V/elektryki, nie trwałości silnika hybrydowego."
+    },
+    {
+      "id": "corolla-eu-2019",
+      "title": "Toyota Europe — 2019 The Toyota Corolla",
+      "url": "https://newsroom.toyota.eu/2019-the-toyota-corolla/",
+      "publishedAt": null,
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "corolla-toyota-pl-launch",
+      "title": "Toyota Central Europe — Nowa Corolla, gama modelowa 2019",
+      "url": "https://www.toyotanews.eu/pl/press-kit/1155-item-press-kit-nowa-toyota-corolla-gama-modelowa-nowej-generacji-swiatowego-bestsellera",
+      "publishedAt": "2019",
+      "checkedAt": "2026-11-08",
+      "accessNote": "Toyota states the 1.6 Valvematic 132 KM/97 kW is fitted only in Sedan; lists 160 Nm and transmission/performance data."
+    },
+    {
+      "id": "corolla-pl-price-2019",
+      "title": "Toyota Polska — Corolla Sedan cennik MY2019 (kopia dokumentu cennikowego)",
+      "url": "https://toyotadofirmy.pl/wp-content/uploads/2019/05/spec_nowa_corolla_sedan1.pdf",
+      "publishedAt": "2019-09-02",
+      "checkedAt": "2026-11-08",
+      "accessNote": "Polish Sedan MY2019 price table lists 1.6 Valvematic 132 KM with 6MT and Multidrive S. Hosted by a dealer/fleet site, not Toyota domain."
+    },
+    {
+      "id": "corolla-toyota-pl-2021",
+      "title": "Toyota Central Europe — wyprzedaż rocznika 2021 i przedsprzedaż 2022",
+      "url": "https://www.toyotanews.eu/pl/aktualnosci/2182-item-toyota-rozpoczyna-wyprzedaz-rocznika-2021-i-przedsprzedaz-rocznika-2022-dobra-dostepnosc-samochodow-i-gwarancja-ceny",
+      "publishedAt": "2021",
+      "checkedAt": "2026-11-08",
+      "accessNote": "Toyota sales announcement describes 2021 Corolla Sedan petrol model as 1.5 l; use as indication that the 1.6 MY2019 variant must not be applied automatically to later cars."
+    },
+    {
+      "id": "corolla-1zr-code",
+      "title": "MS Motorservice — catalogue engine application Corolla Saloon E21",
+      "url": "https://www.ms-motorservice.com/MediaAssets/1809301_ks_50003982_web.pdf",
+      "publishedAt": null,
+      "checkedAt": "2026-11-08",
+      "accessNote": "Parts supplier catalogue maps E21/ZRE210 1.6 VVTi to 1ZR-FAE from 2019; manufacturer VIN/engine label remains authoritative."
+    }
+  ],
+  "openQuestions": [
+    "Potwierdzić 1.5 125 KM: daty wprowadzenia, rynek i nadwozie. Do czasu potwierdzenia nie przypisywać do Touring Sports.",
+    "Przygotować oddzielne reguły bagażnika i wyposażenia dla sedana i kombi.",
+    "Potwierdzić archiwalne polskie wersje wyposażenia i kamerę dla każdego roku oraz rynku importu.",
+    "Uzupełnić udokumentowane usterki, akcje serwisowe i ocenę niezawodności według dokładnego napędu.",
+    "Ustalić aktualne lokalne koszty serwisu i montażu kamery dla konkretnego radia; nie przyjmować uniwersalnej kwoty.",
+    "Sprawdzić wymiary wózka i praktyczne pakowanie; pojemność w litrach nie rozstrzyga dopasowania.",
+    "Ocenić 1.6 Valvematic 1ZR-FAE w Corolli E210 Sedan jako osobny wariant: długoterminowe dane awaryjności, polskie koszty napraw i dokładny zakres produkcji 2019–2020."
+  ],
+  "inspectionChecklist": [
+    "Porównać VIN, datę produkcji, pierwszą rejestrację, nadwozie i rynek pochodzenia z dokumentami.",
+    "Potwierdzić silnik, moc i skrzynię; nie opierać identyfikacji wyłącznie na tytule ogłoszenia.",
+    "Poprosić o zdjęcie działającej kamery po włączeniu biegu wstecznego i zdjęcie radia; bez dowodu oznaczyć do sprawdzenia.",
+    "Sprawdzić faktury serwisowe, historię szkód i akcje serwisowe po VIN; oględziny w niezależnym warsztacie.",
+    "Przymierzyć wózek i fotelik; sprawdzić mocowania oraz zakres regulacji przednich foteli.",
+    "Dla Corolla Sedan 1.6 Valvematic potwierdzić 1ZR-FAE, datę produkcji, rynek i skrzynię po VIN; skontrolować Valvematic oraz wykonać jazdę próbną z obciążeniem."
+  ]
+}

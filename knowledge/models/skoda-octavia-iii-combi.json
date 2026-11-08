@@ -1,0 +1,132 @@
+{
+  "version": 1,
+  "modelKey": "skoda-octavia-iii-combi",
+  "status": "partial",
+  "reviewedAt": "2026-11-08",
+  "claims": [
+    {
+      "id": "engine-review-2026",
+      "topic": "engine-assessment",
+      "value": {
+        "variant": "1.4-tsi-ea211-150",
+        "likelyCodes": ["CZDA", "CHPB"],
+        "status": "hold_fitment_scope_then_conditional",
+        "reason": "Engine family is plausible and 150 PS/250 Nm suits the loaded Combi, but the configured 2017–2018 registration range crosses the manufacturer transition to 1.5 TSI in August 2017; a 2018 car may not match the selected 1.4 variant.",
+        "fullRecommendedThresholdMet": false,
+        "transmission": "Confirm 6MT/DSG and exact variant by VIN; DSG evaluated separately"
+      },
+      "scope": {"market": "Europe/Poland", "body": "Octavia III Combi 5E", "searchRegistrationYears": "2017–2018", "reviewDate": "2026-11-08"},
+      "confidence": "high",
+      "sourceIds": ["octavia-2017", "octavia-1.5-transition", "octavia-adac-14tsi", "octavia-engine-codes"],
+      "notes": ["Do not treat first registration year as engine production window. The selected 1.4 TSI filter needs a production-date or VIN constraint before it can be considered correctly scoped.", "No independent exact-code engine failure cohort or comparable Polish repair-cost data found; once fitment is corrected, status can be reconsidered as conditional rather than fully recommended."]
+    },
+    {
+      "id": "luggage",
+      "topic": "practical",
+      "value": {
+        "bootLitresSeatsUp": 610,
+        "bootLitresSeatsDown": 1740
+      },
+      "scope": {
+        "market": "Europe",
+        "period": "2017 facelift",
+        "body": "combi"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "octavia-2017"
+      ],
+      "notes": [
+        "Nie zastępować wartością 590 l dotyczącą liftbacka."
+      ]
+    },
+    {
+      "id": "engine",
+      "topic": "engine",
+      "value": {
+        "label": "1.4 TSI",
+        "powerPS": 150,
+        "powerKw": 110
+      },
+      "scope": {
+        "market": "Europe",
+        "period": "2017 facelift launch"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "octavia-2017"
+      ],
+      "notes": [
+        "To potwierdzenie oferty napędu, nie ranking niezawodności."
+      ]
+    },
+    {
+      "id": "facelift",
+      "topic": "years",
+      "value": {
+        "faceliftPresentedBy": "2017-02-06"
+      },
+      "scope": {
+        "market": "Europe",
+        "generation": "III"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "octavia-2017"
+      ],
+      "notes": [
+        "Sam rok pierwszej rejestracji 2017 nie rozstrzyga, czy egzemplarz jest po modernizacji."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "octavia-2017",
+      "title": "Škoda — zmodernizowana Octavia, materiał prasowy 6 lutego 2017",
+      "url": "https://www.skoda-storyboard.com/cs/tiskove-mapy/skoda-octavia-vyrazne-prepracovany-bestseller-opet-ve-vrcholne-forme/",
+      "publishedAt": "2017-02-06",
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "octavia-1.5-transition",
+      "title": "Škoda Polska — Octavia 1.5 TSI introduced to replace equal-power 1.4 TSI",
+      "url": "https://prportal.skoda.pl/informacje-prasowe/skoda-octavia-z-nowoczesnym-i-oszczednym-silnikiem-1-5-tsi-juz-od-84-500-zl-2532",
+      "publishedAt": "2017-08-03",
+      "checkedAt": "2026-11-08",
+      "accessNote": "Manufacturer says 1.5 TSI 150 PS is added to Octavia/Combi and replaces the same-power 1.4 TSI; production date and market still determine the individual configuration."
+    },
+    {
+      "id": "octavia-adac-14tsi",
+      "title": "ADAC — Škoda Octavia Combi 1.4 TSI facelift specifications",
+      "url": "https://www.adac.de/rund-ums-fahrzeug/autokatalog/marken-modelle/skoda/octavia/3generation-facelift/266370/",
+      "publishedAt": null,
+      "checkedAt": "2026-11-08",
+      "accessNote": "Confirms model variant, power, torque and performance; generation-level reliability statistics do not isolate engine code."
+    },
+    {
+      "id": "octavia-engine-codes",
+      "title": "Schaeffler LuK — Octavia III Combi transmission application catalogue",
+      "url": "https://www.schaeffler.com/remotemedien/media/_shared_media/08_media_library/01_publications/automotiveaftermarket/catalogs/download_5/schaeffler-aftermarket-catalog-luk-transmission-systems-2018-2019.pdf",
+      "publishedAt": "2018",
+      "checkedAt": "2026-11-08",
+      "accessNote": "Parts-fitment catalogue lists Octavia III Combi 1.4 TSI 110 kW as CHPB/CZDA; code/ACT and fitment on a particular car still require VIN confirmation."
+    }
+  ],
+  "openQuestions": [
+    "Zawęzić filtr 1.4 TSI według daty produkcji, wersji wyposażenia i VIN wobec przejścia na 1.5 TSI w sierpniu 2017 r.",
+    "Po potwierdzeniu wariantu pozyskać niezależne dane awarii dokładnego kodu silnika i aktualne polskie koszty napraw; skrzynię oceniać oddzielnie.",
+    "Potwierdzić końcowe daty 1.4 TSI i przejście na 1.5 TSI dla Polski; nie zakładać całego zakresu do 2019.",
+    "Potwierdzić archiwalne polskie wersje wyposażenia i kamerę dla każdego roku oraz rynku importu.",
+    "Uzupełnić udokumentowane usterki, akcje serwisowe i ocenę niezawodności według dokładnego napędu.",
+    "Ustalić aktualne lokalne koszty serwisu i montażu kamery dla konkretnego radia; nie przyjmować uniwersalnej kwoty.",
+    "Sprawdzić wymiary wózka i praktyczne pakowanie; pojemność w litrach nie rozstrzyga dopasowania."
+  ],
+  "inspectionChecklist": [
+    "Porównać VIN, datę produkcji, pierwszą rejestrację, nadwozie i rynek pochodzenia z dokumentami.",
+    "Potwierdzić silnik, moc i skrzynię; nie opierać identyfikacji wyłącznie na tytule ogłoszenia.",
+    "Poprosić o zdjęcie działającej kamery po włączeniu biegu wstecznego i zdjęcie radia; bez dowodu oznaczyć do sprawdzenia.",
+    "Sprawdzić faktury serwisowe, historię szkód i akcje serwisowe po VIN; oględziny w niezależnym warsztacie.",
+    "Przymierzyć wózek i fotelik; sprawdzić mocowania oraz zakres regulacji przednich foteli."
+  ]
+}
+

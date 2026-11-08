@@ -1,0 +1,182 @@
+# Obsługa konfiguracji i zadań
+
+## Gdzie zmieniać ustawienia
+
+- `config/requirements.json`: `purchase.maxPriceGrossPln` to limit ceny zakupu;
+  `mileage.preferredMaxKm` to preferencja, `hardMaxKm: null` oznacza brak twardego limitu.
+- `config/search-models.json`: aktywność, nadwozia, silniki, priorytet i lata każdego modelu.
+  Identyfikatory silników są lokalnymi etykietami wyszukiwania, nie kodami producenta.
+- `config/sources.json`: aktywność i priorytety portali. `brands: []` oznacza brak ograniczenia marki.
+- `knowledge/models/`: fakty techniczne z odnośnikami i jawnymi lukami.
+
+Potwierdzone: rocznie 12–15 tys. km, typowa jazda miejska około 30 minut,
+LPG dopuszczone i oznaczane, zakup aukcyjny wykluczony. Czasu nie przeliczamy na
+niepodaną odległość. Pozostałe pola `openQuestions` czekają na uzupełnienie. Zakres silników
+jest przeniesiony z dotychczasowego projektu i wymaga przeglądu na podstawie kart.
+
+## Polecenia z katalogu projektu
+
+```powershell
+python -B scripts/car-search.py validate
+python -B scripts/car-search.py sync
+python -B scripts/validate-offers.py
+python -B scripts/car-search.py assess
+```
+
+`sync` aktualizuje wyłącznie teksty wymagań przy modelach w plikach ofert oraz
+indeks strony. Nie przepisuje danych ani historycznych ocen samochodów.
+`assess` zapisuje `reports/current-assessment.json` według bieżącej konfiguracji.
+Brak nowych pól dowodowych w historycznej ofercie skutkuje `check`, a nie
+domniemanym spełnieniem warunków. Raport nie sprawdza aktualności ogłoszeń w sieci.
+Warianty mają dodatkowe reguły powiązane ze źródłami, np. rozbieżność daty produkcji
+Golfa 1.4 TSI lub nadwozia Corolli 1.6 wymaga wyjaśnienia. LPG trafia do uwag oceny;
+oferta aukcyjna jest odrzucana. Dla nowych wyników zapisuj `saleType: fixed_price|auction`
+i `lpgInstalled: true|false`, a dla nieustalonej instalacji `null`.
+Zmiana budżetu wymaga ponownego `sync` i `assess`; strona nie wykonuje tych operacji sama.
+
+## Przygotowanie przebiegu
+
+```powershell
+python -B scripts/car-search.py plan --run nowe-oferty-2026-11-08 --agents 3
+python -B scripts/car-search.py claim --run nowe-oferty-2026-11-08 --worker agent-1
+```
+
+`plan` tworzy kolejkę portal × model z gotowym profilem wyszukiwania w każdym
+zadaniu (adres, dostępne i ręcznie sprawdzane filtry, rocznik, silniki, cena,
+przebieg, nadwozie, lokalizacja i wykluczenie aukcji), kopię konfiguracji i kart
+wiedzy oraz ich skrót SHA-256. Profil zawiera też `queryPlan`: portalowe filtry,
+zapytanie bazowe i zapytania dla wariantów silnika wraz z aliasami. Najpierw
+stosuj dostępne filtry portalu, a potem wykonuj przygotowane zapytania.
+Profil zawiera też `candidateScreening`: twarde
+granice rocznika produkcji, ceny, przebiegu, nadwozia, wariantu silnika i typu
+sprzedaży dla danej pary portal–model. Używaj ich do odsiewania listy wyników
+przed otwieraniem kart. Odrzucaj tylko widoczne, jednoznaczne naruszenia; brak
+albo niejasność pola oznacza sprawdzenie karty, jeśli pozostałe dane pasują.
+Źródło markowe dostaje zadanie tylko dla pasującej marki; wyłączone i aukcyjne
+źródła nie trafiają do kolejki. Nie przeszukuje
+sieci ani nie uruchamia agentów. Kolejny przebieg
+wymaga nowego ID, co chroni poprzednie wyniki. Wybór marek źródła ogranicza kolejkę.
+Pole `--agents` oznacza planowaną liczbę subagentów; koordynator nie jest wliczany.
+
+Domyślny przebieg obejmuje wszystkie aktywne modele oraz wszystkie aktywne,
+nieaukcyjne portale, których zakres marki pasuje do modelu. Zadania pozostają
+osobne dla par portal × model. Dla krótszego przebiegu koordynator przydziela
+każdemu wykonawcy stały portal lub małą grupę portali przez `claim --source`;
+ten sam wykonawca pobiera następny model z tego zakresu po zapisaniu i kontroli
+poprzedniego wyniku. Przydziały i zakończenia kolejki wykonuj szeregowo, a strony
+w ramach jednego zadania przeglądaj w jednym ciągłym przebiegu. Ogranicza to
+przełączanie kontekstu i reaktywowanie bezczynnych wykonawców. Każdy wykonawca
+może mieć najwyżej jedno aktywne zadanie. `--agents` nie uruchamia subagentów ani
+nie zwiększa limitów sesji; liczbę aktywnych wykonawców dopasuj do dostępnych
+miejsc w sesji.
+
+Wyszukiwanie dodaje tylko nowe dostępne oferty. Aktywny duplikat jest pomijany
+— jego odświeżanie należy do osobnego przepływu. Dostępna oferta pasująca do auta
+w archiwum może przywrócić je do aktywnej bazy. Nieznane pola pozostają jawnie
+nieznane, a ocena nowej oferty może mieć status `check`.
+
+Przy zadaniu wyszukiwania `claim` dołącza `sharedResultsCache` ze stronami wyników,
+snippetami widocznych ofert i URL-ami kart sprawdzonymi wcześniej w tym samym
+przebiegu i portalu. Użyj go do pominięcia ponownego otwierania tych samych stron
+i kart. Migawka listy nie zastępuje otwarcia karty ani dowodów i nie potwierdza,
+że oferta nadal jest dostępna. Każdą sprawdzoną stronę wyników zapisz jako
+`coverage.searchResults`, wraz z widocznymi listingami i ich URL-ami. Każdą próbę
+otwarcia karty zapisz w `coverage.listingUrlsChecked`, także gdy wystąpił błąd.
+
+Po zapisaniu wyniku zgodnego z formatem w `AGENTS.md`:
+
+```powershell
+python -B scripts/car-search.py finish --run proba-i30 --task otomoto--hyundai-i30-iii-wagon --result partial --note "Sprawdzono pierwszą stronę"
+```
+
+`finish` waliduje cały plik wyniku i obserwacje przed zmianą stanu zadania.
+Jeśli walidacja się nie powiedzie, zadanie pozostaje `running`, a odrzucona wersja
+wyniku trafia do `runs/<run-id>/results/rejected/`. Popraw wynik, zachowując
+odrzuconą kopię, i ponów `finish`.
+
+Przy długim wyszukiwaniu kończ partię zadań, a przed kolejnymi przydziałami
+uruchamiaj checkpoint importu:
+
+```powershell
+python -B scripts/car-search.py import-preview --run nowe-oferty-2026-11-08
+python -B scripts/car-search.py import-apply --run nowe-oferty-2026-11-08
+python -B scripts/car-search.py assess
+python -B scripts/validate-offers.py
+```
+
+`import-preview` uwzględnia zakończone zadania, a pomija oczekujące i działające.
+Po zastosowaniu podglądu można kontynuować ten sam przebieg i powtórzyć
+checkpoint; rejestr importu pomija wyniki już zastosowane. Stosuj tylko podgląd
+bez konfliktów. Nie uruchamiaj checkpointu podczas zapisu wyniku przez wykonawcę.
+Jeśli pojawi się konflikt, zatrzymaj import, zachowaj wynik i rozwiąż konflikt
+przed zastosowaniem zmian.
+
+Stan `complete` dotyczy zadania, nie zakupu auta ani publikacji. Koordynator
+sprawdza `import-preview`; jeśli nie ma konfliktów ani błędów walidacji, stosuje
+nowe wpisy lokalnie przez `import-apply`, a potem uruchamia `assess` i walidację.
+Użytkownik dostaje wyłącznie listę nowych albo przywróconych ofert, bez końcowego
+raportu pokrycia. Publiczna strona GitHub Pages wymaga osobnej akceptacji publikacji.
+Pełny kontrakt: [import ofert](import-ofert.md).
+
+## Weryfikacja wszystkich zapisanych ogłoszeń
+
+`refresh-plan` bez dodatkowych filtrów tworzy zadania dla wszystkich URL-i ofert
+z aktywnej bazy. Oferta z archiwum nie jest odświeżana. Można zawęzić przebieg do
+modeli/portali, wybrać konkretne ID-y albo ograniczyć go do ofert starszych niż
+podany wiek. Przykłady:
+
+```powershell
+python -B scripts/car-search.py refresh-plan --run weryfikacja-2026-11-08 --agents 3
+python -B scripts/car-search.py refresh-plan --run audyt-zdjec --photo-audit --offer listing:otomoto:ID6IjeFS
+python -B scripts/car-search.py refresh-plan --run stare-oferty --older-than-days 7 --model hyundai-i30-iii-wagon
+python -B scripts/car-search.py refresh-plan --run odswiez-wybrane --offer listing:otomoto:ID6IjeFS
+python -B scripts/car-search.py claim --run weryfikacja-2026-11-08 --worker agent-1 --source otomoto
+```
+
+Plan próbuje przypisać każdy URL do portalu na podstawie hosta; nierozpoznane,
+wyłączone lub niejednoznaczne źródła zapisuje w `unmappedTargets` i pokazuje
+w podglądzie jako pominięte. Taki przebieg nie jest pełną weryfikacją. Dla
+rozpoznanych stron plan
+uwzględnia także rekordy, które wcześniej miały status `sold` lub `removed`, aby
+potwierdzić zamknięcie i przenieść je do archiwum. Filtr wieku opiera się na dacie
+ostatniego udanego odczytu konkretnego URL-a; brak historii oznacza, że oferta
+kwalifikuje się do sprawdzenia. Każde zadanie zawiera listę
+`refreshTargets` z ID oferty, adresem i poprzednią ceną. Samo przygotowanie planu
+nie odwiedza stron.
+
+`--photo-audit` wymaga dla każdego targetu jawnego `observation.photoCheck`.
+Status `found` wymaga co najmniej jednego bezpośredniego URL-a HTTPS w `photos`;
+`no_direct_https` oznacza, że karta nie udostępnia takiego adresu, a
+`access_error` jest wymagany przy błędzie odczytu. Dzięki temu pominięcie pola
+`photos` nie ukrywa już faktu, że zdjęć nie sprawdzono.
+
+Subagent sprawdza wyłącznie wskazane karty i zapisuje obserwację dla każdego
+targetu w zwykłym `results/<task-id>.json`. `complete` wymaga odczytu każdego
+URL-a oraz wyniku obserwacji dla każdego targetu. Błąd dostępu nie jest
+potwierdzeniem sprzedaży i nie aktualizuje daty ostatniej weryfikacji. Zadanie
+odświeżania nie używa `no_matches`, bo znane ogłoszenia już istnieją.
+Także wynik `partial` lub `blocked` zapisuje jedną obserwację dla każdego
+targetu, z `availability: access_error` dla kart, których nie udało się otworzyć.
+`finish` sprawdza zakres, kompletność i duplikaty obserwacji przed zamknięciem.
+
+Po imporcie `lastVerifiedAt` aktualizuje się tylko po udanym ustaleniu statusu.
+Jeśli każde ogłoszenie powiązane z autem zostało potwierdzone jako sprzedane lub
+usunięte, cały rekord trafia z `offers` do `archivedOffers`; historia i dowody
+zostają zachowane. Jeśli choć jeden portal ma status dostępny albo nieustalony,
+rekord pozostaje aktywny. Oferta nadal dostępna, ale niezgodna z kryteriami,
+pozostaje aktywna z wynikiem `fail` — nie jest mylona ze sprzedażą. Nowa
+obserwacja `available` dla zarchiwizowanego auta
+przywraca je do `offers`. Koordynator używa `import-preview`, przegląda zmiany,
+a potem `import-apply` oraz walidację.
+
+## Walidacja i publikacja
+
+```powershell
+python -B -m unittest discover -s tests -v
+node --test tests/test_app.cjs
+```
+
+Nowe schematy są sprawdzane tym samym ograniczonym silnikiem JSON Schema co
+dotychczasowe oferty. Walidacja sprawdza typy i odwołania, nie prawdziwość źródeł.
+Nie publikowano zmian. Przed publikacją potrzebna jest walidacja ofert oraz
+akceptacja użytkownika zgodnie z założeniami projektu.

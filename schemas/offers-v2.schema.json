@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CarOffers — plik ofert v2",
+  "description": "Kontrakt zgodny z obecnym frontendem. Brak opcjonalnego parametru lub null oznacza brak wiedzy, nie zero. Reguły między plikami opisano w docs/data-contract-v2.md.",
+  "type": "object",
+  "required": ["version", "updatedAt", "model", "offers"],
+  "properties": {
+    "version": {"type": "integer", "const": 2},
+    "updatedAt": {"type": "string", "format": "date"},
+    "model": {"$ref": "#/$defs/model"},
+    "offers": {"type": "array", "items": {"$ref": "#/$defs/offer"}},
+    "archivedOffers": {"type": "array", "items": {"$ref": "#/$defs/offer"}}
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "key": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "text": {"type": ["string", "null"]},
+    "url": {"type": "string", "format": "uri", "pattern": "^https?://"},
+    "vin": {"type": ["string", "null"], "pattern": "^[A-HJ-NPR-Za-hj-npr-z0-9]{17}$"},
+    "model": {
+      "type": "object",
+      "required": ["key", "name"],
+      "properties": {
+        "key": {"$ref": "#/$defs/key"},
+        "name": {"type": "string", "minLength": 1, "pattern": "\\S"},
+        "description": {"type": "string"},
+        "requirements": {"type": ["string", "null"]}
+      },
+      "additionalProperties": true
+    },
+    "link": {
+      "type": "object",
+      "required": ["url"],
+      "properties": {
+        "url": {"$ref": "#/$defs/url"},
+        "normalized": {"$ref": "#/$defs/url"},
+        "label": {"type": "string"}
+      },
+      "additionalProperties": true
+    },
+    "offer": {
+      "type": "object",
+      "required": ["id", "title", "urls"],
+      "properties": {
+        "id": {"type": "string", "pattern": "^(?:listing:[A-Za-z0-9]+(?:[._:-][A-Za-z0-9]+)*|vin:[A-HJ-NPR-Za-hj-npr-z0-9]{17}|url:https?://[^\\s]+)$"},
+        "modelKey": {"$ref": "#/$defs/key"},
+        "vin": {"$ref": "#/$defs/vin"},
+        "listingIds": {"type": "array", "items": {"type": "string", "minLength": 1, "pattern": "^[A-Za-z0-9]+(?:[._:-][A-Za-z0-9]+)*$"}},
+        "urls": {"type": "array", "items": {"$ref": "#/$defs/link"}},
+        "photos": {"type": "array", "items": {"type": "string", "format": "uri", "pattern": "^https://"}},
+        "title": {"type": "string", "minLength": 1, "pattern": "\\S"},
+        "year": {"type": ["integer", "null"], "minimum": 1886, "maximum": 2100},
+        "price": {"type": ["number", "null"], "minimum": 0, "maximum": 9007199254740991},
+        "priceLabel": {"$ref": "#/$defs/text"},
+        "mileage": {"type": ["integer", "null"], "minimum": 0, "maximum": 9007199254740991},
+        "mileageLabel": {"$ref": "#/$defs/text"},
+        "engine": {"$ref": "#/$defs/text"},
+        "body": {"$ref": "#/$defs/text"},
+        "transmission": {"$ref": "#/$defs/text"},
+        "seller": {"$ref": "#/$defs/text"},
+        "priceBasis": {"type": ["string", "null"], "enum": ["gross_unconditional_total", "net", "financing_conditional", "unknown", null]},
+        "bodyCode": {"$ref": "#/$defs/text"},
+        "engineVariant": {"$ref": "#/$defs/text"},
+        "transmissionCode": {"type": ["string", "null"], "enum": ["manual", "automatic", null]},
+        "cameraStatus": {"type": ["string", "null"], "enum": ["installed_confirmed", "retrofit_confirmed", "not_installable", "unknown", null]},
+        "structuralDamageStatus": {"type": ["string", "null"], "enum": ["confirmed", "independently_checked_clear", "unknown", null]},
+        "familyFitConfirmed": {"type": ["boolean", "null"]},
+        "saleType": {"type": ["string", "null"], "enum": ["fixed_price", "auction", null]},
+        "lpgInstalled": {"type": ["boolean", "null"]},
+        "firstSeenAt": {"type": "string"},
+        "lastCheckedAt": {"type": "string"},
+        "lastVerifiedAt": {"type": "string"},
+        "lastAttemptAt": {"type": "string"},
+        "archive": {"type": "object", "required": ["status", "reason", "archivedAt"],
+          "properties": {"status": {"type": "string", "enum": ["closed"]},
+            "reason": {"type": "string"}, "archivedAt": {"type": "string"}},
+          "additionalProperties": true},
+        "assessment": {"type": "object"},
+        "history": {"type": "array", "items": {"type": "object"}},
+        "listingStates": {"type": "array", "items": {"type": "object"}},
+        "location": {"$ref": "#/$defs/location"},
+        "subtitle": {"$ref": "#/$defs/text"},
+        "priority": {"$ref": "#/$defs/text"},
+        "verdict": {"type": "string", "enum": ["match", "check", "fail", "review"]},
+        "verdictTitle": {"$ref": "#/$defs/text"},
+        "verdictNote": {"$ref": "#/$defs/text"},
+        "specs": {"type": "object", "additionalProperties": {"type": ["string", "null"]}},
+        "details": {"type": "object", "additionalProperties": {"type": ["string", "null"]}}
+      },
+      "additionalProperties": true
+    },
+    "location": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": {"type": "string", "enum": ["available", "not_provided"]},
+        "countryCode": {"type": ["string", "null"], "pattern": "^[A-Z]{2}$"},
+        "voivodeship": {"$ref": "#/$defs/text"},
+        "city": {"$ref": "#/$defs/text"},
+        "postalCode": {"$ref": "#/$defs/text"},
+        "latitude": {"type": ["number", "null"], "minimum": -90, "maximum": 90},
+        "longitude": {"type": ["number", "null"], "minimum": -180, "maximum": 180},
+        "precision": {"type": "string", "enum": ["city", "postal_code", "address", "unknown"]},
+        "source": {"type": "string", "enum": ["listing", "seller_confirmed", "geocoded", "unknown"]},
+        "geoSource": {"$ref": "#/$defs/text"},
+        "checkedAt": {"type": ["string", "null"], "format": "date"}
+      },
+      "additionalProperties": false
+    }
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "modelKey": "mazda-6-iii-wagon",
+  "status": "partial",
+  "reviewedAt": "2026-11-08",
+  "claims": [
+    {
+      "id": "skyactiv-g-europe-2018",
+      "topic": "engine",
+      "value": {
+        "variants": [
+          {
+            "name": "2.0 SKYACTIV-G",
+            "powerPS": 145
+          },
+          {
+            "name": "2.0 SKYACTIV-G",
+            "powerPS": 165
+          }
+        ],
+        "fuel": "petrol",
+        "transmissions": [
+          "manual",
+          "automatic"
+        ]
+      },
+      "scope": {
+        "market": "Europe",
+        "modelYear": 2018,
+        "body": "Wagon",
+        "sourceDocument": "Mazda6 European press material"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "mazda6-eu-2018"
+      ],
+      "notes": [
+        "Potwierdza katalogową obecność mocy, nie niezawodność, częstość usterek ani dopasowanie do polskiej wersji każdego rocznika."
+      ]
+    },
+    {
+      "id": "skyactiv-g-wagon-my2020",
+      "topic": "engine",
+      "value": {"variants": [{"powerPS": 145, "powerKw": 107, "transmission": "6MT"}, {"powerPS": 165, "powerKw": 121, "transmissions": ["6MT", "6AT"]}], "torqueNm": 213},
+      "scope": {"market": "Slovakia, Mazda6 Wagon model year 2020", "body": "Wagon"},
+      "confidence": "medium",
+      "sourceIds": ["mazda6-sk-my2020"],
+      "notes": ["Officially branded MY2020 technical/price document is mirrored by a Mazda retailer. It supports the selected years through MY2020 for this regional market; verify Polish-market equipment and exact VIN configuration."]
+    },
+    {
+      "id": "mazda6-engine-assessment",
+      "topic": "engine-recommendation",
+      "value": {"2.0-skyactiv-g-145": {"status": "conditional_recommendation", "reason": "Wolnossąca benzyna bez turbo, pasuje do umiarkowanego przebiegu; ADAC ocenia osiągi jako akceptowalne, ale skromne. Dane o awariach są dla całego modelu, nie kodu silnika."}, "2.0-skyactiv-g-165": {"status": "conditional_recommendation", "reason": "Większy zapas mocy przy takim samym katalogowym momencie 213 Nm; brak silnikowo-specyficznych danych o częstości awarii i kosztach."}, "fullRecommendedThresholdMet": false},
+      "scope": {"market": "Europe/Poland", "body": "Mazda 6 III Wagon", "reviewedAt": "2026-11-08"},
+      "confidence": "medium",
+      "sourceIds": ["mazda6-adac-used-guide", "mazda6-whatcar-survey", "mazda6-sk-2019-list", "mazda6-recall-check"],
+      "notes": ["Both are naturally aspirated 2.0 petrol versions; check exact generation/code, production date, transmission and equipment by VIN. ADAC and What Car are independent model-level evidence streams, not power/code-specific engine cohorts; no Polish repair-cost sample was established. LPG is not automatically endorsed for direct-injection Skyactiv-G: require written code-specific installer compatibility, petrol-share and homologation details."]
+    },
+    {
+      "id": "mazda6-owner-reliability-data",
+      "topic": "reliability",
+      "value": {"adac": {"assessment": "approximately_average_breakdown_rate", "registrationYearBreakdownsPer1000": {"2017": 7.2, "2018": 5.1, "2019": 3.8}}, "whatCarSurvey": {"modelScorePercent": 92.4, "modelYears": "2013–2022", "respondentsAcrossSurvey": 29967}},
+      "scope": {"market": "Germany/UK", "model": "Mazda 6 generation III; neither source isolates 2.0 145 vs 165 or exact engine code"},
+      "confidence": "medium",
+      "sourceIds": ["mazda6-adac-used-guide", "mazda6-whatcar-survey"],
+      "notes": ["ADAC's breakdown rate is model-level, age/year adjusted and indicates a middle-of-the-pack rate; What Car is a broad owner-survey sample of newer vehicles. These signals support conditional consideration, not a definitive engine reliability ranking."]
+    },
+    {
+      "id": "mazda6-campaign-scope",
+      "topic": "recall",
+      "value": {"action": "Check campaigns by VIN", "notableReportedCampaignPeriods": ["2018-04", "2018-10"], "engineCodeApplicability": "not established from summary source"},
+      "scope": {"market": "Europe/Germany", "model": "Mazda 6 III; applicability may depend on VIN, build date and equipment"},
+      "confidence": "medium",
+      "sourceIds": ["mazda6-adac-used-guide", "mazda6-recall-check"],
+      "notes": ["ADAC summarizes campaigns involving injector fastener/electrical control and vacuum-pump concerns, but the source summary does not resolve applicability to each selected 2.0 petrol code. Mazda Europe provides a VIN recall/SSP lookup. Never treat a model-wide campaign description as proof that this engine is affected."]
+    }
+  ],
+  "sources": [
+    {
+      "id": "mazda6-eu-2018",
+      "title": "Mazda Motor Europe — Mazda6 model year 2018 technical data",
+      "url": "https://de.mazda-press.com/news/2018/mazda6-mehr-eleganz-fur-den-neuen-modelljahrgang/",
+      "publishedAt": "2018",
+      "checkedAt": "2026-11-08",
+      "accessNote": "Europejska gama po modernizacji wymienia 2.0 SKYACTIV-G 145 i 165 PS; potwierdzić dokładny rynek, nadwozie, skrzynię i kod silnika egzemplarza."
+    },
+    {
+      "id": "mazda6-sk-2019-list",
+      "title": "Mazda Slovakia — 2019 Mazda6 Wagon price list and technical data",
+      "url": "https://sk.cdn.mazda.media/b0603ef4ed3b400fa82eaaae70701e20/d27faf03cfb6435ebe7d51139444a657.pdf?4a53ec=",
+      "publishedAt": "2019",
+      "checkedAt": "2026-11-08",
+      "accessNote": "Manufacturer price-list table includes Wagon 2.0 SKYACTIV-G 145 with 6MT and 165 with 6MT/6AT, both 213 Nm; Slovak market and specific trim availability, not Polish homologation."
+    },
+    {
+      "id": "mazda6-adac-used-guide",
+      "title": "ADAC — Gebrauchtwageninformation Mazda 6 (ab 2013)",
+      "url": "https://assets.adac.de/image/upload/Autodatenbank/GWInfo/gw0511-mazda-6-ab-2013-bericht.pdf",
+      "publishedAt": "2025",
+      "checkedAt": "2026-11-08",
+      "accessNote": "ADAC describes 2.0 SKYACTIV-G 145/165, says the 145 is only acceptably brisk and the 165 is stronger, reports model/year breakdown rates and average TÜV outcomes. It lists 2018 campaigns but does not isolate these petrol engine codes."
+    },
+    {
+      "id": "mazda6-whatcar-survey",
+      "title": "What Car? — Mazda model reliability survey",
+      "url": "https://www.whatcar.com/news/are-mazda-cars-reliable-most-and-least-reliable-models-revealed/n27588",
+      "publishedAt": "2025",
+      "checkedAt": "2026-11-08",
+      "accessNote": "2013–2022 Mazda 6 model score 92.4% in owner survey; 29,967 respondents across the survey, but the result does not separate engine, power output or transmission."
+    },
+    {
+      "id": "mazda6-recall-check",
+      "title": "Mazda Europe — Recall and Special Service Program VIN lookup",
+      "url": "https://www.mazda.eu/en/recall-information/",
+      "publishedAt": null,
+      "checkedAt": "2026-11-08",
+      "accessNote": "Mazda directs owners to check applicability of recalls and non-safety service programs using the individual VIN; model/year alone does not establish completion."
+    },
+    {
+      "id": "mazda6-sk-my2020",
+      "title": "Mazda Slovakia — Mazda6 MY2020 technical/price list (retailer mirror)",
+      "url": "https://www.mazdaihned.sk/resources/pdf/mazda6_cennik_my20_akcni_sk.pdf",
+      "publishedAt": "2020",
+      "checkedAt": "2026-11-08",
+      "accessNote": "Branded Mazda MY2020 document mirrored by a Slovak Mazda retailer. Wagon table shows G145 6MT and G165 6MT/6AT, 213 Nm. Confirms market/model-year presence, not Polish homologation."
+    }
+  ],
+  "openQuestions": [
+    "Potwierdzić polskie cenniki dla Wagon 2017–2020 i dokładny okres obu mocy.",
+    "Brak porównania niezawodności, częstości usterek i kosztów napraw tych wariantów.",
+    "Ustalić kody silników, skrzynie i ewentualne różnice rynku po VIN.",
+    "Zweryfikować polskie wersje wyposażenia z kamerą oraz możliwość montażu zależnie od instalacji.",
+    "Sprawdzić korozję podwozia i historię serwisową konkretnego egzemplarza."
+  ],
+  "inspectionChecklist": [
+    "Potwierdzić datę produkcji, rynek, nadwozie, silnik i skrzynię po VIN/dokumentach.",
+    "Sprawdzić dokumentację serwisową i wykonać niezależne oględziny podwozia.",
+    "Potwierdzić działanie kamery albo zgodność i pełny koszt montażu.",
+    "Przymierzyć wózek dziecięcy i sprawdzić bagażnik w praktyce."
+  ]
+}

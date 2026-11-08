@@ -1,0 +1,155 @@
+{
+  "version": 1,
+  "modelKey": "kia-ceed-iii-sw",
+  "status": "partial",
+  "reviewedAt": "2026-11-08",
+  "claims": [
+    {
+      "id": "engine-review-2026",
+      "topic": "engine-assessment",
+      "value": {
+        "reviewedVariants": [
+          {"variant": "1.4-mpi-100", "likelyCode": "G4LC", "status": "conditional_recommendation", "caveat": "Skromniejsza dynamika obciążonego kombi; LPG dla dokładnej konfiguracji wymaga potwierdzenia."},
+          {"variant": "1.4-tgdi-140", "likelyCode": "G4LD", "status": "conditional_recommendation", "caveat": "Lepsza dynamika, ale turbo i wtrysk bezpośredni zwiększają złożoność; 7DCT oceniana osobno."}
+        ],
+        "fullRecommendedThresholdMet": false,
+        "reliabilityEvidence": "No independent engine-specific long-term failure and Polish repair-cost cohort found"
+      },
+      "scope": {"market": "Europe/Poland", "period": "Ceed CD Sportswagon, selected variants", "reviewDate": "2026-11-08"},
+      "confidence": "medium",
+      "sourceIds": ["ceed-pl-2018", "ceed-engine-data-2018", "ceed-uokik-vacuum-pump", "ceed-adac-14tgdi", "ceed-g4lc-mapping"],
+      "notes": ["Czeskie agregatory STK i TÜV oraz ADAC dotyczą głównie całego pojazdu, nie są niezależnym pomiarem trwałości tych dwóch silników.", "Ocena nie pozwala nazwać żadnego wariantu w pełni polecanym; koszt typowych napraw oraz zgodność LPG dla konkretnego kodu pozostają nieustalone."]
+    },
+    {
+      "id": "vacuum-pump-campaign",
+      "topic": "recall",
+      "value": {"productionFrom": "2018-10-29", "productionThrough": "2020-09-28", "risk": "vacuum pump mesh filter may block oil supply, reducing brake assist", "engineCodesSpecified": false},
+      "scope": {"market": "Poland", "body": "Ceed SW / Sportswagon CD"},
+      "confidence": "high",
+      "sourceIds": ["ceed-uokik-vacuum-pump"],
+      "notes": ["Dotyczy wybranych egzemplarzy; sprawdzać wykonanie kampanii po VIN, nie przypisywać usterki wszystkim silnikom."]
+    },
+    {
+      "id": "launch",
+      "topic": "years",
+      "value": {
+        "europeanSalesFrom": "Q4-2018"
+      },
+      "scope": {
+        "market": "Europe",
+        "generation": "III",
+        "body": "sportswagon"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "ceed-pl-2018"
+      ],
+      "notes": []
+    },
+    {
+      "id": "luggage",
+      "topic": "practical",
+      "value": {
+        "bootLitresSeatsUp": 600
+      },
+      "scope": {
+        "market": "Europe",
+        "period": "2018 launch",
+        "body": "sportswagon"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "ceed-pl-2018"
+      ],
+      "notes": [
+        "Nie stosować bez sprawdzenia do późniejszej hybrydy plug-in."
+      ]
+    },
+    {
+      "id": "engines",
+      "topic": "engine",
+      "value": {
+        "variants": [
+          {
+            "label": "1.4 T-GDi",
+            "powerPS": 140
+          },
+          {
+            "label": "1.4 MPi",
+            "powerPS": 100
+          }
+        ]
+      },
+      "scope": {
+        "market": "Europe",
+        "period": "2018 launch",
+        "body": "sportswagon"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "ceed-pl-2018"
+      ],
+      "notes": [
+        "Nie dowodzi dostępności tych silników przez cały zapisany w filtrach okres 2018–2022."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "ceed-pl-2018",
+      "title": "Kia Polska — Nowa Kia Ceed kombi: przestronna i praktyczna",
+      "url": "https://press.kia.com/pl/pl/home/press-kits/2018/nowa-kia-ceed-kombi--przestronna-i-praktyczna.html",
+      "publishedAt": null,
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "ceed-engine-data-2018",
+      "title": "Kia Europe — 2018 Ceed technical specifications",
+      "url": "https://press.kia.com/content/dam/kiapress/IE/pressreleases/Ceed-Launch-September-2018/Ceed-press-release.pdf",
+      "publishedAt": "2018-09",
+      "checkedAt": "2026-11-08",
+      "accessNote": "Official launch tech sheet documents 1.4 MPI 100 PS with 6MT and 1.4 T-GDI 140 PS with 6MT/7DCT; specifications mostly describe hatchback, while wagon fitment is cross-checked against Kia SW launch materials."
+    },
+    {
+      "id": "ceed-uokik-vacuum-pump",
+      "title": "UOKiK — Kia Ceed SW vacuum-pump campaign",
+      "url": "https://uokik.gov.pl/bip/samochody-marki-kia-modele-stonic-optima-ceed-xceed-proceed-ceed-sw-sportage",
+      "publishedAt": "2023-08-17",
+      "checkedAt": "2026-11-08",
+      "accessNote": "Production range for Ceed SW 2018-10-29–2020-09-28 and brake-assistance risk; no exact petrol engine code in the notice."
+    },
+    {
+      "id": "ceed-adac-14tgdi",
+      "title": "ADAC — Kia Ceed CD 1.4 T-GDI G4LD specifications",
+      "url": "https://www.adac.de/rund-ums-fahrzeug/autokatalog/marken-modelle/kia/ceed/cd/291871/",
+      "publishedAt": null,
+      "checkedAt": "2026-11-08",
+      "accessNote": "Identifies the selected 1.4 T-GDI as G4LD; breakdown statistics are vehicle-level and not a controlled engine-only failure cohort."
+    },
+    {
+      "id": "ceed-g4lc-mapping",
+      "title": "Wessel Parts — Kia Ceed CD 1.4 petrol engine mapping",
+      "url": "https://www.b-parts.co.uk/auto-parts/engine-transmission/engine-kia-ceed-cd-14-g4lc-jz187722-z227103z00-2018-20503381",
+      "publishedAt": null,
+      "checkedAt": "2026-11-08",
+      "accessNote": "Parts listing maps a 2018 Ceed CD 1.4 MPI to G4LC; use only as likely code identification, never in place of VIN/engine plate."
+    }
+  ],
+  "openQuestions": [
+    "Pozyskać niezależne, długoterminowe dane awarii dla kodów G4LC/G4LD oraz aktualne polskie koszty napraw.",
+    "Potwierdzić homologowane zestawy LPG osobno dla G4LC i G4LD; nie wyciągać zgody z samego typu wtrysku.",
+    "Ustalić datę zastąpienia 1.4 T-GDi przez 1.5 T-GDi; oddzielić filtr lat modelu od okresu silnika.",
+    "Potwierdzić archiwalne polskie wersje wyposażenia i kamerę dla każdego roku oraz rynku importu.",
+    "Uzupełnić udokumentowane usterki, akcje serwisowe i ocenę niezawodności według dokładnego napędu.",
+    "Ustalić aktualne lokalne koszty serwisu i montażu kamery dla konkretnego radia; nie przyjmować uniwersalnej kwoty.",
+    "Sprawdzić wymiary wózka i praktyczne pakowanie; pojemność w litrach nie rozstrzyga dopasowania."
+  ],
+  "inspectionChecklist": [
+    "Porównać VIN, datę produkcji, pierwszą rejestrację, nadwozie i rynek pochodzenia z dokumentami.",
+    "Potwierdzić silnik, moc i skrzynię; nie opierać identyfikacji wyłącznie na tytule ogłoszenia.",
+    "Poprosić o zdjęcie działającej kamery po włączeniu biegu wstecznego i zdjęcie radia; bez dowodu oznaczyć do sprawdzenia.",
+    "Sprawdzić faktury serwisowe, historię szkód i akcje serwisowe po VIN; oględziny w niezależnym warsztacie.",
+    "Przymierzyć wózek i fotelik; sprawdzić mocowania oraz zakres regulacji przednich foteli."
+  ]
+}
+

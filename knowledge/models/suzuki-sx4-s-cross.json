@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "modelKey": "suzuki-sx4-s-cross",
+  "status": "partial",
+  "reviewedAt": "2026-11-08",
+  "claims": [
+    {
+      "id": "engine-review-2026",
+      "topic": "engine_assessment",
+      "value": {
+        "variants": {"1.4-boosterjet-140": {"status": "conditional_recommendation", "code": "K14C", "reason": "Dokumentacja Suzuki potwierdza dokładny wariant przedhybrydowy; nie znaleziono niezależnej kohorty awarii silnika ani polskich kosztów napraw."}},
+        "fullRecommendedThresholdMet": false,
+        "lpg": "Suzuki Netherlands stwierdza, że silniki S-Cross nie nadają się do LPG. Nie uznawać konwersji bez pisemnej zgodności dla VIN."
+      },
+      "scope": {"market": "Europe", "period": "2017–2020, przed mild hybrid", "body": "S-Cross"},
+      "confidence": "medium",
+      "sourceIds": ["scross-suzuki-2018", "scross-adac"],
+      "notes": ["Nie utożsamiać K14C 140 KM z K14D 129 KM mild hybrid od 2020 r."]
+    },
+    {
+      "id": "engine",
+      "topic": "engine",
+      "value": {
+        "label": "1.4 Boosterjet",
+        "engineCodeInDocument": "K14C-DITC",
+        "displacementCc": 1373,
+        "powerPS": 140,
+        "torqueNm": 220,
+        "transmissions": [
+          "6MT",
+          "6AT"
+        ]
+      },
+      "scope": {
+        "market": "Netherlands",
+        "document": "2016-09"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "scross-nl-2016"
+      ],
+      "notes": []
+    },
+    {
+      "id": "variant",
+      "topic": "identity",
+      "value": {
+        "driveVariants": [
+          "2WD",
+          "AllGrip"
+        ]
+      },
+      "scope": {
+        "market": "Netherlands",
+        "document": "2016-09",
+        "engine": "1.4 Boosterjet"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "scross-nl-2016"
+      ],
+      "notes": [
+        "Napęd i skrzynia wymagają potwierdzenia w egzemplarzu. Nie utożsamiać z późniejszym mild hybrid."
+      ]
+    }
+  ],
+  "sources": [
+    {"id": "scross-suzuki-2018", "title": "Suzuki Netherlands — S-Cross technical specifications, October 2018", "url": "https://media.prd.suzuki.nl/media/documents/Suzuki_SCross_specificatieprijslijst_16apr2018_bijgewerktokt2018.pdf", "publishedAt": "2018-10", "checkedAt": "2026-11-08", "accessNote": "Dokument producenta: K14C-DITC, 1373 cm³, wtrysk bezpośredni, 103 kW/140 KM, 220 Nm, 6MT/6AT; stwierdza też, że silniki S-Cross nie nadają się do LPG."},
+    {"id": "scross-adac", "title": "ADAC — Gebrauchtwageninformation Suzuki SX4 S-Cross", "url": "https://assets.adac.de/image/upload/Autodatenbank/GWInfo/gw0255-suzuki-sx4-s-cross-ab-2013-bericht.pdf", "publishedAt": "2025", "checkedAt": "2026-11-08", "accessNote": "Oddziela K14C 140 KM do marca 2020 od K14D; raport modelowy, nie statystyka awarii silnika."},
+    {
+      "id": "scross-nl-2016",
+      "title": "Suzuki Nederland — S-Cross specyfikacja i cennik wrzesień 2016",
+      "url": "https://media.prd.suzuki.nl/media/documents/Suzuki_S-Cross-specificatieprijslijst_sept2016.pdf",
+      "publishedAt": "2016-09-01",
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "openQuestions": [
+    "Ustalić granicę przejścia K14C 140 KM na K14D mild hybrid i różnice skrzyń.",
+    "Potwierdzić kamerę i bagażnik dla polskich wersji z badanego okresu.",
+    "Potwierdzić archiwalne polskie wersje wyposażenia i kamerę dla każdego roku oraz rynku importu.",
+    "Uzupełnić udokumentowane usterki, akcje serwisowe i ocenę niezawodności według dokładnego napędu.",
+    "Ustalić aktualne lokalne koszty serwisu i montażu kamery dla konkretnego radia; nie przyjmować uniwersalnej kwoty.",
+    "Sprawdzić wymiary wózka i praktyczne pakowanie; pojemność w litrach nie rozstrzyga dopasowania."
+  ],
+  "inspectionChecklist": [
+    "Porównać VIN, datę produkcji, pierwszą rejestrację, nadwozie i rynek pochodzenia z dokumentami.",
+    "Potwierdzić silnik, moc i skrzynię; nie opierać identyfikacji wyłącznie na tytule ogłoszenia.",
+    "Poprosić o zdjęcie działającej kamery po włączeniu biegu wstecznego i zdjęcie radia; bez dowodu oznaczyć do sprawdzenia.",
+    "Sprawdzić faktury serwisowe, historię szkód i akcje serwisowe po VIN; oględziny w niezależnym warsztacie.",
+    "Przymierzyć wózek i fotelik; sprawdzić mocowania oraz zakres regulacji przednich foteli."
+  ]
+}
+

@@ -1,0 +1,166 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CarOffers search models v1",
+  "type": "object",
+  "required": [
+    "version",
+    "models"
+  ],
+  "properties": {
+    "version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "models": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "key",
+          "name",
+          "brand",
+          "active",
+          "priority",
+          "bodies",
+          "searchYears",
+          "allowedEngineVariants",
+          "legacyEngineSelection",
+          "offersFile",
+          "knowledgeFile"
+        ],
+        "properties": {
+          "key": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "brand": {
+            "type": "string",
+            "minLength": 1
+          },
+          "active": {
+            "type": "boolean"
+          },
+          "priority": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "bodies": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "enum": [
+                "wagon",
+                "sedan",
+                "suv",
+                "crossover",
+                "hatchback",
+                "minivan"
+              ]
+            }
+          },
+          "searchYears": {
+            "type": "object",
+            "required": [
+              "min",
+              "max"
+            ],
+            "properties": {
+              "min": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "max": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 1
+              }
+            },
+            "additionalProperties": {}
+          },
+          "allowedEngineVariants": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "legacyEngineSelection": {
+            "type": "string",
+            "minLength": 1
+          },
+          "offersFile": {
+            "type": "string",
+            "pattern": "^offers/[a-z0-9-]+\\.json$"
+          },
+          "knowledgeFile": {
+            "type": "string",
+            "pattern": "^knowledge/models/[a-z0-9-]+\\.json$"
+          },
+          "variantConstraints": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "engines",
+                "sourceIds"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "engines": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "sourceIds": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "yearMin": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "minimum": 1886
+                },
+                "yearMax": {
+                  "type": [
+                    "integer",
+                    "null"
+                  ],
+                  "minimum": 1886
+                },
+                "bodies": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "additionalProperties": {}
+            }
+          }
+        },
+        "additionalProperties": {}
+      }
+    }
+  },
+  "additionalProperties": {}
+}

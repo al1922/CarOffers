@@ -5,71 +5,113 @@
       "key": "hyundai-i30-iii-wagon",
       "name": "Hyundai i30 III Wagon",
       "description": "Kombi (Wagon)",
-      "requirements": "Hyundai i30 III Wagon/Kombi; wyłącznie benzyna 1.5 DPi 110 KM lub 1.4 T-GDI 140 KM; rocznik od 2018; cena zakupu maks. 55 000 zł brutto bez warunku finansowania; kamera cofania fabryczna lub możliwa dołożona; bez poważnych szkód konstrukcyjnych; udokumentowany serwis preferowany; przebieg oceniany wraz ze stanem technicznym.",
+      "requirements": "Hyundai i30 III Wagon; 1.4 MPI 100 KM; 1.4 T-GDI 140 KM; 1.5 DPi 110 KM; rocznik od 2018 do 2023; maks. 55 000 zł brutto na sam zakup bez obowiązkowego finansowania; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 150 000 km preferowany; kamera obecna lub potwierdzona możliwość montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji.",
       "file": "offers/hyundai-i30-iii-wagon.json"
     },
     {
       "key": "kia-ceed-iii-sw",
       "name": "Kia Ceed III Sportswagon",
       "description": "Kombi (SW)",
-      "requirements": "1.4 MPI 100 KM lub 1.4 T-GDI 140 KM; 2018–2022",
+      "requirements": "Kia Ceed III Sportswagon; 1.4 MPI 100 KM; 1.4 T-GDI 140 KM; rocznik od 2019 do 2021; maks. 55 000 zł brutto na sam zakup bez obowiązkowego finansowania; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 150 000 km preferowany; kamera obecna lub potwierdzona możliwość montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji.",
       "file": "offers/kia-ceed-iii-sw.json"
+    },
+    {
+      "key": "mazda-6-iii-wagon",
+      "name": "Mazda 6 III Wagon",
+      "description": "Kombi (Wagon)",
+      "requirements": "Mazda 6 III Wagon; 2.0 Skyactiv-G 145 KM; 2.0 Skyactiv-G 165 KM; rocznik od 2017 do 2020; maks. 55 000 zł brutto na sam zakup bez obowiązkowego finansowania; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 150 000 km preferowany; kamera obecna lub potwierdzona możliwość montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji.",
+      "file": "offers/mazda-6-iii-wagon.json"
     },
     {
       "key": "renault-megane-iv-grandtour",
       "name": "Renault Mégane IV Grandtour",
       "description": "Kombi",
-      "requirements": "1.3 TCe 140 KM; 2019–2022",
+      "requirements": "Renault Mégane IV Grandtour; 1.3 TCe 140 KM; rocznik od 2019 do 2022; maks. 55 000 zł brutto na sam zakup bez obowiązkowego finansowania; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 150 000 km preferowany; kamera obecna lub potwierdzona możliwość montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji.",
       "file": "offers/renault-megane-iv-grandtour.json"
     },
     {
       "key": "seat-leon-iii-st",
       "name": "SEAT Leon III ST",
       "description": "Kombi (ST)",
-      "requirements": "1.4 TSI 125/150 KM (EA211); 2017–2020",
+      "requirements": "SEAT Leon III ST; 1.4 TSI EA211 125 KM; 1.4 TSI EA211 150 KM; rocznik od 2017 do 2018; maks. 55 000 zł brutto na sam zakup bez obowiązkowego finansowania; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 150 000 km preferowany; kamera obecna lub potwierdzona możliwość montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji.",
       "file": "offers/seat-leon-iii-st.json"
     },
     {
       "key": "skoda-octavia-iii-combi",
       "name": "Škoda Octavia III Combi",
       "description": "Kombi",
-      "requirements": "1.4 TSI 150 KM (EA211); 2017–2019",
+      "requirements": "Škoda Octavia III Combi; 1.4 TSI EA211 150 KM; rocznik od 2017 do 2018; maks. 55 000 zł brutto na sam zakup bez obowiązkowego finansowania; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 150 000 km preferowany; kamera obecna lub potwierdzona możliwość montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji.",
       "file": "offers/skoda-octavia-iii-combi.json"
+    },
+    {
+      "key": "skoda-scala",
+      "name": "Škoda Scala",
+      "description": "Hatchback / minivan",
+      "requirements": "Škoda Scala; 1.0 TSI 115 KM; 1.0 TSI 110 KM; rocznik od 2020 do 2023; maks. 55 000 zł brutto na sam zakup bez obowiązkowego finansowania; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 150 000 km preferowany; kamera obecna lub potwierdzona możliwość montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji.",
+      "file": "offers/skoda-scala.json"
+    },
+    {
+      "key": "skoda-superb-iii-combi",
+      "name": "Škoda Superb III Combi",
+      "description": "Kombi",
+      "requirements": "Škoda Superb III Combi; 1.4 TSI EA211 150 KM; rocznik od 2017 do 2018; maks. 55 000 zł brutto na sam zakup bez obowiązkowego finansowania; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 150 000 km preferowany; kamera obecna lub potwierdzona możliwość montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji.",
+      "file": "offers/skoda-superb-iii-combi.json"
     },
     {
       "key": "suzuki-sx4-s-cross",
       "name": "Suzuki SX4 S-Cross",
       "description": "Crossover",
-      "requirements": "1.4 BoosterJet 140 KM; 2017–2020",
+      "requirements": "Suzuki SX4 S-Cross; 1.4 BoosterJet 140 KM; rocznik od 2017 do 2020; maks. 55 000 zł brutto na sam zakup bez obowiązkowego finansowania; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 150 000 km preferowany; kamera obecna lub potwierdzona możliwość montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji.",
       "file": "offers/suzuki-sx4-s-cross.json"
     },
     {
       "key": "suzuki-vitara-ii",
       "name": "Suzuki Vitara II",
       "description": "SUV",
-      "requirements": "1.6 VVT 120 KM lub 1.4 BoosterJet 140 KM; 2017–2020",
+      "requirements": "Suzuki Vitara II; 1.6 VVT 120 KM; 1.4 BoosterJet 140 KM; rocznik od 2017 do 2020; maks. 55 000 zł brutto na sam zakup bez obowiązkowego finansowania; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 150 000 km preferowany; kamera obecna lub potwierdzona możliwość montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji.",
       "file": "offers/suzuki-vitara-ii.json"
     },
     {
       "key": "toyota-auris-touring-sports",
       "name": "Toyota Auris II Touring Sports",
       "description": "Kombi (Touring Sports)",
-      "requirements": "1.8 Hybrid 136 KM; 2017–2018",
+      "requirements": "Toyota Auris II Touring Sports; 1.8 Hybrid 136 KM; 1.6 Valvematic 132 KM; rocznik od 2017 do 2018; maks. 55 000 zł brutto na sam zakup bez obowiązkowego finansowania; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 150 000 km preferowany; kamera obecna lub potwierdzona możliwość montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji.",
       "file": "offers/toyota-auris-touring-sports.json"
+    },
+    {
+      "key": "toyota-avensis-iii-wagon",
+      "name": "Toyota Avensis III Kombi",
+      "description": "Kombi",
+      "requirements": "Toyota Avensis III Kombi; 1.8 Valvematic 147 KM; rocznik od 2017 do 2018; maks. 55 000 zł brutto na sam zakup bez obowiązkowego finansowania; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 150 000 km preferowany; kamera obecna lub potwierdzona możliwość montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji.",
+      "file": "offers/toyota-avensis-iii-wagon.json"
     },
     {
       "key": "toyota-corolla-e210",
       "name": "Toyota Corolla XII (E210)",
       "description": "Sedan i kombi (Touring Sports)",
-      "requirements": "1.5 VVT-i 125 KM, 1.6 Valvematic 132 KM lub 1.8 Hybrid 122 KM; 2019–2022; do 60 000 zł",
+      "requirements": "Toyota Corolla XII (E210); 1.6 Valvematic 132 KM Sedan (potwierdzić rocznik/VIN); 1.8 Hybrid 122 KM; 1.8 Hybrid 140 KM; rocznik od 2019 do 2023; maks. 55 000 zł brutto na sam zakup bez obowiązkowego finansowania; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 150 000 km preferowany; kamera obecna lub potwierdzona możliwość montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji.",
       "file": "offers/toyota-corolla-e210.json"
+    },
+    {
+      "key": "volkswagen-golf-sportsvan",
+      "name": "Volkswagen Golf Sportsvan",
+      "description": "Hatchback / minivan",
+      "requirements": "Volkswagen Golf Sportsvan; 1.4 TSI EA211 125 KM; 1.4 TSI EA211 150 KM; rocznik od 2017 do 2018; maks. 55 000 zł brutto na sam zakup bez obowiązkowego finansowania; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 150 000 km preferowany; kamera obecna lub potwierdzona możliwość montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji.",
+      "file": "offers/volkswagen-golf-sportsvan.json"
     },
     {
       "key": "volkswagen-golf-vii-variant",
       "name": "Volkswagen Golf VII Variant",
       "description": "Kombi (Variant)",
-      "requirements": "1.4 TSI 125/150 KM (EA211); 2017–2020",
+      "requirements": "Volkswagen Golf VII Variant; 1.4 TSI EA211 125 KM; 1.4 TSI EA211 150 KM; rocznik od 2017 do 2018; maks. 55 000 zł brutto na sam zakup bez obowiązkowego finansowania; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 150 000 km preferowany; kamera obecna lub potwierdzona możliwość montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji.",
       "file": "offers/volkswagen-golf-vii-variant.json"
+    },
+    {
+      "key": "volkswagen-passat-b8-variant",
+      "name": "Volkswagen Passat B8 Variant",
+      "description": "Kombi",
+      "requirements": "Volkswagen Passat B8 Variant; 1.4 TSI EA211 ACT 150 KM; rocznik od 2017 do 2018; maks. 55 000 zł brutto na sam zakup bez obowiązkowego finansowania; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 150 000 km preferowany; kamera obecna lub potwierdzona możliwość montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji.",
+      "file": "offers/volkswagen-passat-b8-variant.json"
     }
   ]
 }

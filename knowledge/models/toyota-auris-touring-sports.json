@@ -1,0 +1,123 @@
+{
+  "version": 1,
+  "modelKey": "toyota-auris-touring-sports",
+  "status": "partial",
+  "reviewedAt": "2026-11-08",
+  "claims": [
+    {
+      "id": "engine-review-2026",
+      "topic": "engine_assessment",
+      "value": {
+        "variants": {
+          "1.8-hybrid-136": {"status": "conditional_recommendation", "code": "2ZR-FXE", "reason": "ADAC opisuje hybrydę jako oszczędną i długowieczną, pasującą do miasta; brak niezależnej kohorty awarii silnika i polskich kosztów napraw baterii/układu."},
+          "1.6-valvematic-132": {"status": "hold_as_default_not_rejected", "code": "1ZR-FAE", "reason": "Udokumentowano wariant Touring Sports, ale biuletyny wskazują kontrole Valvematic/wtryskiwaczy; brak niezależnej kohorty awarii i polskich wycen."}
+        },
+        "fullRecommendedThresholdMet": false,
+        "lpg": "Brak potwierdzonego zestawu LPG dla dokładnego kodu; konieczna pisemna zgodność instalatora."
+      },
+      "scope": {"market": "Europe", "period": "MY2017–2018", "body": "Touring Sports"},
+      "confidence": "medium",
+      "sourceIds": ["auris-adac", "auris-workshop-bulletins", "toyota-battery-care"],
+      "notes": ["ADAC ocenia model, nie awarie poszczególnych silników."]
+    },
+    {
+      "id": "engine-review-16-valvematic",
+      "topic": "engine",
+      "value": {"code": "1ZR-FAE", "label": "1.6 Valvematic", "displacementCc": 1598, "powerKw": 97, "powerPS": 132, "aspiration": "naturally aspirated", "injection": "multipoint", "inspection": "cold start after long stop; Valvematic fault codes; rear silencer noise"},
+      "scope": {"market": "Europe; Touring Sports MY2017–2018; confirm gearbox/body by VIN"},
+      "confidence": "medium",
+      "sourceIds": ["auris-workshop-bulletins", "auris-1-6-official"],
+      "notes": ["Biuletyn dotyczący partii wtryskiwaczy ograniczono do produkcji do 03.2016; nie jest to częstość awarii."]
+    },
+    {
+      "id": "engine",
+      "topic": "engine",
+      "value": {
+        "label": "1.8 Hybrid",
+        "displacementCc": 1798,
+        "systemPowerPS": 136,
+        "systemPowerKw": 100,
+        "transmission": "E-CVT"
+      },
+      "scope": {
+        "market": "Italy",
+        "modelYear": 2017,
+        "body": "touring-sports"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "auris-it-my17"
+      ],
+      "notes": [
+        "136 KM to moc systemowa; 99 KM to moc samego silnika spalinowego w tej tabeli."
+      ]
+    },
+    {
+      "id": "luggage",
+      "topic": "practical",
+      "value": {
+        "bootLitresSeatsUp": 530,
+        "bootLitresSeatsDown": 1658
+      },
+      "scope": {
+        "market": "Italy",
+        "modelYear": 2017,
+        "body": "touring-sports"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "auris-it-my17"
+      ],
+      "notes": [
+        "Nie mylić z 360 l hatchbacka."
+      ]
+    },
+    {
+      "id": "battery",
+      "topic": "engine",
+      "value": {
+        "tractionBatteryChemistry": "NiMH"
+      },
+      "scope": {
+        "market": "Italy",
+        "modelYear": 2017,
+        "engine": "1.8 Hybrid"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "auris-it-my17"
+      ],
+      "notes": []
+    }
+  ],
+  "sources": [
+    {"id": "auris-1-6-official", "title": "Toyota Media Site — Auris Touring Sports technical specifications", "url": "https://media.toyota.co.uk/wp-content/uploads/sites/5/pdf/150113M-Auris-Touring-Sports-full-release.pdf", "publishedAt": "2013-01", "checkedAt": "2026-11-08", "accessNote": "Official technical sheet confirms 1.6 Valvematic code 1ZR-FAE, 1598 cc, 97 kW, 132 DIN hp and 160 Nm in Touring Sports. Historical document; Polish MY2017 availability to VIN."},
+    {"id": "auris-spec-2017", "title": "Toyota Italia — Auris/Auris Touring Sports MY17 technical sheet", "url": "https://newsroom.toyota.it/download/344621/schedatecnicaauriseauristsmy17.pdf", "publishedAt": "2017", "checkedAt": "2026-11-08", "accessNote": "Potwierdza Touring Sports 1.8 Hybrid 136 KM systemowo, E-CVT i baterię NiMH. 1.6 Valvematic 132 KM pochodzi z archiwum regionalnego; polski wariant potwierdzić po VIN."},
+    {"id": "auris-adac", "title": "ADAC — Toyota Auris used-car review 2013–2019", "url": "https://assets.adac.de/Autodatenbank/GWInfo/gw0232-toyota-auris-2013-2019-bericht.pdf", "publishedAt": "2025", "checkedAt": "2026-11-08", "accessNote": "Dane modelowe: Auris w górnej części środka stawki, częste awarie akumulatora 12V; ADAC nazywa hybrydę 136 KM długowieczną rekomendacją."},
+    {"id": "auris-workshop-bulletins", "title": "Motorwise — Auris 1.6 Valvematic workshop bulletin summaries", "url": "https://motorwise.io/articles/common-faults/toyota/auris/1-6-valvematic-2012-2018/", "publishedAt": "2026", "checkedAt": "2026-11-08", "accessNote": "Wtórny przegląd biuletynów: hałas tłumika dla 1ZR-FAE i ograniczona czasowo partia wtryskiwaczy; nie podaje częstości."},
+    {"id": "toyota-battery-care", "title": "Toyota Europe — Battery Care Programme", "url": "https://www.toyota-europe.com/electrification/batteries", "publishedAt": "2026", "checkedAt": "2026-11-08", "accessNote": "Program może obejmować baterie HEV do 10 lat/1 mln km po corocznym teście i zgodnie z warunkami kraju; kwalifikację w Polsce potwierdzić dla konkretnego auta."},
+    {
+      "id": "auris-it-my17",
+      "title": "Toyota Italia — Auris e Auris Touring Sports MY17, scheda tecnica",
+      "url": "https://newsroom.toyota.it/download/344621/schedatecnicaauriseauristsmy17.pdf",
+      "publishedAt": null,
+      "checkedAt": "2026-11-08"
+    }
+  ],
+  "openQuestions": [
+    "Sprawdzić kamerę w polskich wersjach MY2017–2018 i zakres testu układu hybrydowego.",
+    "Potwierdzić stan baterii badaniem konkretnego auta; katalog nie dowodzi kondycji.",
+    "Potwierdzić archiwalne polskie wersje wyposażenia i kamerę dla każdego roku oraz rynku importu.",
+    "Uzupełnić udokumentowane usterki, akcje serwisowe i ocenę niezawodności według dokładnego napędu.",
+    "Ustalić aktualne lokalne koszty serwisu i montażu kamery dla konkretnego radia; nie przyjmować uniwersalnej kwoty.",
+    "Sprawdzić wymiary wózka i praktyczne pakowanie; pojemność w litrach nie rozstrzyga dopasowania."
+  ],
+  "inspectionChecklist": [
+    "Porównać VIN, datę produkcji, pierwszą rejestrację, nadwozie i rynek pochodzenia z dokumentami.",
+    "Potwierdzić silnik, moc i skrzynię; nie opierać identyfikacji wyłącznie na tytule ogłoszenia.",
+    "Poprosić o zdjęcie działającej kamery po włączeniu biegu wstecznego i zdjęcie radia; bez dowodu oznaczyć do sprawdzenia.",
+    "Sprawdzić faktury serwisowe, historię szkód i akcje serwisowe po VIN; oględziny w niezależnym warsztacie.",
+    "Przymierzyć wózek i fotelik; sprawdzić mocowania oraz zakres regulacji przednich foteli."
+  ]
+}
+

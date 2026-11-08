@@ -1,0 +1,201 @@
+{
+  "version": 1,
+  "modelKey": "volkswagen-golf-vii-variant",
+  "status": "partial",
+  "reviewedAt": "2026-11-08",
+  "claims": [
+    {
+      "id": "engine-period",
+      "topic": "years",
+      "value": {
+        "variant": "Golf Variant 1.4 TSI BMT",
+        "productionYears": {
+          "from": 2013,
+          "to": 2018
+        }
+      },
+      "scope": {
+        "market": "Volkswagen archive",
+        "body": "variant",
+        "generation": "VII"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "golf-vii-profile"
+      ],
+      "notes": [
+        "Dotychczasowy filtr modelu 2017–2020 nie dowodzi produkcji 1.4 TSI w 2019–2020. Wymagać roku produkcji, nie tylko rejestracji."
+      ]
+    },
+    {
+      "id": "engine-15-period",
+      "topic": "years",
+      "value": {
+        "variant": "Golf Variant 1.5 TSI ACT",
+        "productionYears": {
+          "from": 2017,
+          "to": 2020
+        }
+      },
+      "scope": {
+        "market": "Volkswagen archive",
+        "body": "variant",
+        "generation": "VII"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "golf-vii-profile"
+      ],
+      "notes": [
+        "Nie dopuszcza automatycznie 1.5 TSI do wyszukiwania."
+      ]
+    },
+    {
+      "id": "luggage",
+      "topic": "practical",
+      "value": {
+        "bootLitresSeatsUp": 605,
+        "bootLitresSeatsDown": 1620
+      },
+      "scope": {
+        "market": "Europe",
+        "body": "variant",
+        "generation": "VII"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "golf-vii-history"
+      ],
+      "notes": []
+    },
+    {
+      "id": "dimensions",
+      "topic": "practical",
+      "value": {
+        "lengthMm": 4567,
+        "widthMm": 1789,
+        "heightMm": 1515
+      },
+      "scope": {
+        "market": "Volkswagen archive",
+        "body": "standard Variant from 2017"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "golf-vii-profile"
+      ],
+      "notes": [
+        "Nie dotyczy automatycznie R Variant ani Alltrack."
+      ]
+    },
+    {
+      "id": "engine-125-fitment-and-code",
+      "topic": "engine",
+      "value": {"variant": "1.4 TSI EA211 125 PS", "powerKw": 92, "likelyCode": "CZCA", "turbo": true, "directInjection": true},
+      "scope": {"market": "Europe", "body": "Golf VII Variant", "productionYears": "manufacturer archive lists this output in 2017–2018"},
+      "confidence": "medium",
+      "sourceIds": ["golf-variant-engine-archive", "vag-14-engine-codes"],
+      "notes": ["VW archive confirms Variant output and years; CZCA mapping comes from aftermarket technical catalog, so confirm code from VIN/vehicle data sticker."]
+    },
+    {
+      "id": "engine-150-fitment-conflict",
+      "topic": "engine",
+      "value": {"variant": "1.4 TSI EA211 150 PS", "configuredSearchYears": "2017–2018", "manufacturerArchivePeriod": "2014–2016", "status": "hold_for_scope_mismatch"},
+      "scope": {"market": "Volkswagen archive", "body": "Golf VII Variant"},
+      "confidence": "high",
+      "sourceIds": ["golf-variant-engine-archive"],
+      "notes": ["The profile assigns 110 kW/150 PS to 2014–2016, while the Variant 2017–2018 entry is 92 kW/125 PS; do not auto-match a purported 2017–2018 1.4/150 without production-date, VIN and homologation proof. The 2017–2020 150 PS option in the archive is 1.5 TSI, outside the configured engine list."]
+    },
+    {
+      "id": "golf-vii-engine-reliability-signal",
+      "topic": "reliability",
+      "value": {"assessment": "conditional_support_for_1.4_tsi_125_only", "adacModelLevel": "above-average breakdown and inspection performance; ADAC calls 1.4/1.5 TSI 130–150 PS a clear recommendation"},
+      "scope": {"market": "Germany", "model": "Golf VII petrol range, includes but does not isolate Variant or exact codes"},
+      "confidence": "medium",
+      "sourceIds": ["golf-adac-used-guide"],
+      "notes": ["This is whole-model evidence, not a CZCA-specific failure rate. One reliability stream is insufficient for full Polecany status; exact-code repair frequency and Polish costs remain unknown."]
+    },
+    {
+      "id": "steering-recall-2026",
+      "topic": "recall",
+      "value": {"campaign": "KBA 17016R / Volkswagen 48VS", "productionPeriod": "2013-09-24 through 2024-07-01", "defect": "steering rack fastening bolt may corrode and fracture", "engineSpecific": false, "vinCheckRequired": true},
+      "scope": {"market": "Europe/Germany recall details", "models": ["Golf", "Golf Variant", "Tiguan", "Touran", "Caddy"], "productionPeriod": "2013-09-24–2024-07-01"},
+      "confidence": "high",
+      "sourceIds": ["golf-steering-recall-2026"],
+      "notes": ["Target-year Golf Variant production is within the campaign's model range, but inclusion is VIN-specific. Verify completion with Volkswagen; this safety recall does not identify a 1.4 TSI engine issue or affect engine verdict."]
+    },
+    {
+      "id": "engine-assessment",
+      "topic": "engine-recommendation",
+      "value": {"1.4-tsi-ea211-125": {"status": "conditional_recommendation", "reason": "Manufacturer confirms fitment in 2017–2018 Variant and ADAC model-level data are favorable; no independent exact-code failure/cost dataset."}, "1.4-tsi-ea211-150": {"status": "hold_for_scope_mismatch", "reason": "VW Variant archive places the 1.4/150 period before the configured years; likely 1.5 TSI in later years must not be substituted."}, "fullRecommendedThresholdMet": false},
+      "scope": {"market": "Europe/Poland", "model": "Golf VII Variant", "reviewedAt": "2026-11-08"},
+      "confidence": "medium",
+      "sourceIds": ["golf-variant-engine-archive", "golf-adac-used-guide"],
+      "notes": ["Check manual/DSG gearbox as an independent component. 1.4 TSI is turbocharged direct injection; assess belt/cooling-system service history by VIN-specific schedule. LPG conversion compatibility is not established for the exact car/kit."]
+    }
+  ],
+  "sources": [
+    {
+      "id": "golf-vii-profile",
+      "title": "Volkswagen Newsroom — Vehicle data Golf VII Variant profile",
+      "url": "https://www.volkswagen-newsroom.com/en/vehicle-data-golf-7-variant-profile-20042",
+      "publishedAt": null,
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "golf-vii-history",
+      "title": "Volkswagen Newsroom — Golf VII Variant 2013–2020",
+      "url": "https://www.volkswagen-newsroom.com/en/golf-7-variant-20132020-20041",
+      "publishedAt": null,
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "golf-variant-engine-archive",
+      "title": "Volkswagen Newsroom — Golf VII Variant engine versions",
+      "url": "https://www.volkswagen-newsroom.com/en/engine-versions-golf-7-variant-profile-20043",
+      "publishedAt": null,
+      "checkedAt": "2026-11-08",
+      "accessNote": "Manufacturer archive lists 1.4 TSI 125 PS for 2017–2018, 1.4 TSI 150 PS for 2014–2016, and 1.5 TSI 150 PS from 2017; the 1.5 is not an approved substitute for the selected 1.4."
+    },
+    {
+      "id": "vag-14-engine-codes",
+      "title": "Motorservice — VAG engine codes and applications technical catalog",
+      "url": "https://www.ms-motorservice.com/MediaAssets/2368354_pg_50003573_web.pdf",
+      "publishedAt": null,
+      "checkedAt": "2026-11-08",
+      "accessNote": "Catalog associates CZCA with 1.4 TSI 92 kW and CZDA/CZEA with 110 kW applications; secondary parts reference, use only as a likely mapping and verify by VIN."
+    },
+    {
+      "id": "golf-adac-used-guide",
+      "title": "ADAC — Gebrauchtwageninformation VW Golf VII petrol",
+      "url": "https://assets.adac.de/image/upload/Autodatenbank/GWInfo/gw0259-vw-golf-vii-2012-2020-benziner-bericht.pdf",
+      "publishedAt": "2025",
+      "checkedAt": "2026-11-08",
+      "accessNote": "ADAC reports above-average model-level TÜV/breakdown results and recommends 1.4/1.5 TSI 130–150 PS as a compromise; it does not provide code-specific engine failure or Polish repair-cost rates."
+    },
+    {
+      "id": "golf-steering-recall-2026",
+      "title": "ADAC — VW/Škoda steering fastening bolt recall, October 2026",
+      "url": "https://www.adac.de/news/auto-rueckruf-vw-audi-lenkung/",
+      "publishedAt": "2026-10-02",
+      "checkedAt": "2026-11-08",
+      "accessNote": "Reports VW campaign KBA 17016R / manufacturer 48VS for Golf and Golf Variant built 2013-09-24 through 2024-07-01 due to potential steering fastening corrosion; confirm by VIN."
+    }
+  ],
+  "openQuestions": [
+    "Potwierdzić kody 1.4 TSI 125/150 KM i skrzyń oraz polskie wersje kamery Rear Assist.",
+    "Potwierdzić archiwalne polskie wersje wyposażenia i kamerę dla każdego roku oraz rynku importu.",
+    "Zweryfikować po VIN, czy 1.4 TSI 150 PS w ogłoszeniu rzeczywiście mieści się w rocznikach produkcji 2017–2018; profil VW wskazuje dla Variant 150 PS z 1.4 tylko do 2016 r.",
+    "Uzupełnić niezależne dane o awariach exact-code, akcjach serwisowych i polskich kosztach napraw.",
+    "Ustalić aktualne lokalne koszty serwisu i montażu kamery dla konkretnego radia; nie przyjmować uniwersalnej kwoty.",
+    "Sprawdzić wymiary wózka i praktyczne pakowanie; pojemność w litrach nie rozstrzyga dopasowania."
+  ],
+  "inspectionChecklist": [
+    "Porównać VIN, datę produkcji, pierwszą rejestrację, nadwozie i rynek pochodzenia z dokumentami.",
+    "Potwierdzić silnik, moc i skrzynię; nie opierać identyfikacji wyłącznie na tytule ogłoszenia.",
+    "Poprosić o zdjęcie działającej kamery po włączeniu biegu wstecznego i zdjęcie radia; bez dowodu oznaczyć do sprawdzenia.",
+    "Sprawdzić faktury serwisowe, historię szkód i akcje serwisowe po VIN; oględziny w niezależnym warsztacie.",
+    "Przymierzyć wózek i fotelik; sprawdzić mocowania oraz zakres regulacji przednich foteli."
+  ]
+}
+

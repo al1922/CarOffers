@@ -1,0 +1,1208 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-08",
+  "statusDefinitions": {
+    "landing_verified": "Odczytano stronę informacyjną, bez potwierdzonej listy ofert.",
+    "results_read": "Odczytano listę ofert; kart i pełnych filtrów niekoniecznie sprawdzono.",
+    "listing_read": "Odczytano co najmniej jedną przykładową kartę; nie jest to pełne wyszukanie ani niezależna kontrola auta.",
+    "partial": "Strona/program istnieje, ale katalog lub próbna karta były niepełne/niedostępne."
+  },
+  "sources": [
+    {
+      "id": "allegro-lokalnie",
+      "name": "Allegro Lokalnie",
+      "url": "https://allegrolokalnie.pl/oferty/samochody/osobowe-4029",
+      "searchUrl": "https://allegrolokalnie.pl/oferty/q/samochody%20osobowe",
+      "category": "general",
+      "sellerTypes": [
+        "private",
+        "business"
+      ],
+      "origins": [
+        "mixed"
+      ],
+      "brands": [],
+      "enabled": true,
+      "priority": 2,
+      "effort": 2,
+      "filters": [
+        "make",
+        "model",
+        "price",
+        "year",
+        "mileage",
+        "location",
+        "seller_type"
+      ],
+      "method": "Przeszukaj kategorię samochodów osobowych; sprawdź każdą kartę, cenę i sprzedawcę. Promowane wyniki mogą mieszać się z organicznymi.",
+      "accessStatus": "results_read",
+      "lastAttemptAt": "2026-11-08",
+      "lastSuccessfulSearchAt": null,
+      "verification": {
+        "checkedAt": "2026-11-08",
+        "evidenceUrls": [
+          "https://allegrolokalnie.pl/oferty/q/samochody%20osobowe"
+        ],
+        "note": "Odczytano aktywne wyniki aut osobowych z cenami, parametrami i sprzedawcami prywatnymi.",
+        "fullSearchCompleted": false
+      },
+      "purchaseConditions": {
+        "retailBuyerAllowed": true,
+        "auction": false,
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Potwierdzić pełną cenę brutto i warunki zakupu."
+      },
+      "notes": []
+    },
+    {
+      "id": "autotrader-pl",
+      "name": "Autotrader.pl",
+      "url": "https://www.autotrader.pl/",
+      "searchUrl": "https://www.autotrader.pl/osobowe/mazowieckie",
+      "category": "general",
+      "sellerTypes": [
+        "private",
+        "dealer",
+        "business"
+      ],
+      "origins": [
+        "mixed"
+      ],
+      "brands": [],
+      "enabled": true,
+      "priority": 2,
+      "effort": 2,
+      "filters": [
+        "make",
+        "model",
+        "price",
+        "year",
+        "mileage",
+        "fuel",
+        "body",
+        "location"
+      ],
+      "method": "Cała Polska: powtarzaj wyszukiwanie w poszczególnych województwach, kontroluj paginację oraz karty. Link testowy wskazuje Mazowieckie; nie ograniczaj wyszukiwania wyłącznie do tego regionu.",
+      "accessStatus": "results_read",
+      "lastAttemptAt": "2026-11-08",
+      "lastSuccessfulSearchAt": null,
+      "verification": {
+        "checkedAt": "2026-11-08",
+        "evidenceUrls": [
+          "https://www.autotrader.pl/osobowe/mazowieckie",
+          "https://www.autotrader.pl/osobowe/mazowieckie/warszawa/str-9"
+        ],
+        "note": "Odczytano aktualne listy samochodów osobowych i paginację regionalną; nie wykonano pełnego wyszukiwania.",
+        "fullSearchCompleted": false
+      },
+      "purchaseConditions": {
+        "retailBuyerAllowed": true,
+        "auction": false,
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Potwierdzić pełną cenę brutto i warunki zakupu."
+      },
+      "notes": [
+        "searchUrl jest przykładem dla Mazowieckiego. Aby pokryć całą Polskę, agent ma iterować regiony i zapisywać je w coverage."
+      ],
+      "coverageMode": "regional_fanout"
+    },
+    {
+      "id": "intermoto",
+      "name": "Intermoto",
+      "url": "https://intermoto.pl/",
+      "searchUrl": "https://intermoto.pl/osobowe",
+      "category": "general",
+      "sellerTypes": [
+        "private",
+        "dealer",
+        "business"
+      ],
+      "origins": [
+        "mixed"
+      ],
+      "brands": [],
+      "enabled": true,
+      "priority": 3,
+      "effort": 3,
+      "filters": [
+        "body",
+        "fuel",
+        "location",
+        "price_range"
+      ],
+      "method": "Przeglądaj kategorię osobową. Portal zawiera także aukcje i licytacje: pomijaj je, dopuszczaj wyłącznie oferty ze stałą ceną i sprawdzaj kartę.",
+      "accessStatus": "landing_verified",
+      "lastAttemptAt": "2026-11-08",
+      "lastSuccessfulSearchAt": null,
+      "verification": {
+        "checkedAt": "2026-11-08",
+        "evidenceUrls": [
+          "https://intermoto.pl/"
+        ],
+        "note": "Strona potwierdza kategorię aut osobowych i sprzedawców prywatnych/dealerów; nie sprawdzono skali ani kompletności aktywnych ofert.",
+        "fullSearchCompleted": false
+      },
+      "purchaseConditions": {
+        "retailBuyerAllowed": true,
+        "auction": false,
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Odrzucić licytacje; potwierdzić pełną cenę zakupu."
+      },
+      "notes": [
+        "Oddzielać ogłoszenia ze stałą ceną od aukcji, które użytkownik wykluczył."
+      ],
+      "auctionListingRisk": "high",
+      "reviewRequiredBeforeImport": true
+    },
+    {
+      "id": "ford-uzywane",
+      "name": "Ford Używane — oferty osobowe",
+      "url": "https://www.ford.pl/kupuj-z-fordem/ford-uzywane",
+      "searchUrl": "https://secure.ford.pl/oferta/znajdz/uzywane",
+      "category": "manufacturer_program",
+      "sellerTypes": [
+        "dealer"
+      ],
+      "origins": [
+        "mixed"
+      ],
+      "brands": [
+        "Ford"
+      ],
+      "enabled": false,
+      "priority": 2,
+      "effort": 2,
+      "filters": [
+        "location",
+        "radius"
+      ],
+      "method": "Użyj oficjalnej wyszukiwarki Ford Używane, ustaw lokalizację i sprawdź dostępność pojazdu u dealera.",
+      "accessStatus": "results_read",
+      "lastAttemptAt": "2026-11-08",
+      "lastSuccessfulSearchAt": null,
+      "verification": {
+        "checkedAt": "2026-11-08",
+        "evidenceUrls": [
+          "https://secure.ford.pl/oferta/znajdz/uzywane",
+          "https://www.ford.pl/kupuj-z-fordem/ford-uzywane"
+        ],
+        "note": "Potwierdzono oficjalną wyszukiwarkę ofert osobowych oraz program certyfikacji; nie odczytano pełnego katalogu ofert.",
+        "fullSearchCompleted": false
+      },
+      "purchaseConditions": {
+        "retailBuyerAllowed": true,
+        "auction": false,
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Sprawdzić cenę i warunki u dealera."
+      },
+      "notes": [
+        "Wyłączone w kolejce: żadna aktywna marka/model CarOffers nie pasuje do zakresu źródła; włącz po dodaniu tej marki."
+      ]
+    },
+    {
+      "id": "nissan-intelligent-choice",
+      "name": "Nissan Intelligent Choice",
+      "url": "https://www.nissan.pl/pojazdy/oferty/intelligent-choice.html",
+      "searchUrl": "https://www.nissan.pl/pojazdy/oferty/intelligent-choice.html",
+      "category": "manufacturer_program",
+      "sellerTypes": [
+        "dealer"
+      ],
+      "origins": [
+        "mixed"
+      ],
+      "brands": [
+        "Nissan"
+      ],
+      "enabled": false,
+      "priority": 2,
+      "effort": 2,
+      "filters": [
+        "dealer",
+        "model",
+        "year",
+        "mileage"
+      ],
+      "method": "Sprawdź stronę programu i dostępność konkretnych pojazdów u dealerów uczestniczących; strona opisuje także zasady programu.",
+      "accessStatus": "landing_verified",
+      "lastAttemptAt": "2026-11-08",
+      "lastSuccessfulSearchAt": null,
+      "verification": {
+        "checkedAt": "2026-11-08",
+        "evidenceUrls": [
+          "https://www.nissan.pl/pojazdy/oferty/intelligent-choice.html"
+        ],
+        "note": "Potwierdzono oficjalny program aut używanych; nie potwierdzono centralnego katalogu wyników z pełnymi filtrami.",
+        "fullSearchCompleted": false
+      },
+      "purchaseConditions": {
+        "retailBuyerAllowed": true,
+        "auction": false,
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Potwierdzić cenę i warunki zakupu u dealera."
+      },
+      "notes": [
+        "Wyłączone w kolejce: żadna aktywna marka/model CarOffers nie pasuje do zakresu źródła; włącz po dodaniu tej marki."
+      ]
+    },
+    {
+      "id": "bmw-premium-selection",
+      "name": "BMW Premium Selection / rynek aut używanych BMW",
+      "url": "https://www.bmw.pl/pl/topics/offers-and-services/used-automobiles/at-a-glance.html",
+      "searchUrl": "https://najlepszeoferty.bmw.pl/uzywane/wyszukaj",
+      "category": "manufacturer_program",
+      "sellerTypes": [
+        "dealer"
+      ],
+      "origins": [
+        "mixed"
+      ],
+      "brands": [
+        "BMW"
+      ],
+      "enabled": false,
+      "priority": 2,
+      "effort": 2,
+      "filters": [
+        "dealer",
+        "model",
+        "program"
+      ],
+      "method": "Przeszukaj oficjalny rynek używanych BMW i odczytaj warunki programu oraz kartę auta.",
+      "accessStatus": "results_read",
+      "lastAttemptAt": "2026-11-08",
+      "lastSuccessfulSearchAt": null,
+      "verification": {
+        "checkedAt": "2026-11-08",
+        "evidenceUrls": [
+          "https://najlepszeoferty.bmw.pl/uzywane/wyszukaj",
+          "https://www.bmw.pl/pl/topics/offers-and-services/used-automobiles/at-a-glance.html"
+        ],
+        "note": "Odczytano rynek używanych BMW i warunki programu. Marka nie występuje w bieżącym katalogu modeli CarOffers.",
+        "fullSearchCompleted": false
+      },
+      "purchaseConditions": {
+        "retailBuyerAllowed": true,
+        "auction": false,
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Potwierdzić cenę brutto i warunki oferty u dealera."
+      },
+      "notes": [
+        "Źródło na przyszłość: obecna lista modeli nie zawiera BMW.",
+        "Wyłączone w kolejce: żadna aktywna marka/model CarOffers nie pasuje do zakresu źródła; włącz po dodaniu tej marki."
+      ]
+    },
+    {
+      "id": "mercedes-certified",
+      "name": "Mercedes-Benz Certified — wyszukiwarka",
+      "url": "https://certified.mercedes-benz.pl/vehiclesearch?scroll=1",
+      "searchUrl": "https://certified.mercedes-benz.pl/vehiclesearch?scroll=1",
+      "category": "manufacturer_program",
+      "sellerTypes": [
+        "dealer"
+      ],
+      "origins": [
+        "mixed"
+      ],
+      "brands": [
+        "Mercedes-Benz"
+      ],
+      "enabled": false,
+      "priority": 2,
+      "effort": 2,
+      "filters": [
+        "body",
+        "make",
+        "model",
+        "fuel",
+        "price",
+        "mileage",
+        "model_year",
+        "location"
+      ],
+      "method": "Wyszukaj pojazdy w oficjalnym katalogu Certified. Katalog działa dynamicznie; jeśli odczyt tekstowy jest niepełny, sprawdź w przeglądarce.",
+      "accessStatus": "results_read",
+      "lastAttemptAt": "2026-11-08",
+      "lastSuccessfulSearchAt": null,
+      "verification": {
+        "checkedAt": "2026-11-08",
+        "evidenceUrls": [
+          "https://certified.mercedes-benz.pl/vehiclesearch?scroll=1"
+        ],
+        "note": "Odczytano aktywną wyszukiwarkę, typy nadwozia, filtry i listę dealerów; widok jest dynamiczny.",
+        "fullSearchCompleted": false
+      },
+      "purchaseConditions": {
+        "retailBuyerAllowed": true,
+        "auction": false,
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Potwierdzić cenę brutto i warunki zakupu u dealera."
+      },
+      "notes": [
+        "Źródło na przyszłość: obecna lista modeli nie zawiera Mercedes-Benz.",
+        "Wyłączone w kolejce: żadna aktywna marka/model CarOffers nie pasuje do zakresu źródła; włącz po dodaniu tej marki."
+      ]
+    },
+    {
+      "id": "otomoto",
+      "name": "Otomoto",
+      "url": "https://www.otomoto.pl/osobowe",
+      "searchUrl": "https://www.otomoto.pl/osobowe",
+      "category": "general",
+      "sellerTypes": [
+        "private",
+        "dealer",
+        "business"
+      ],
+      "origins": [
+        "mixed"
+      ],
+      "brands": [],
+      "enabled": true,
+      "priority": 1,
+      "effort": 2,
+      "filters": [
+        "make",
+        "model",
+        "generation",
+        "body",
+        "price",
+        "year",
+        "fuel",
+        "transmission",
+        "mileage",
+        "seller_type"
+      ],
+      "method": "Odczytaj wyszukiwarkę i ogłoszenie narzędziem web; przy niepełnej treści użyj przeglądarki. Wynik wyszukiwarki jest wskazówką, nie potwierdzeniem aktualności. Nie omijaj logowania ani zabezpieczeń.",
+      "accessStatus": "listing_read",
+      "lastAttemptAt": "2026-11-08",
+      "lastSuccessfulSearchAt": null,
+      "verification": {
+        "checkedAt": "2026-11-08",
+        "evidenceUrls": [
+          "https://www.otomoto.pl/osobowe",
+          "https://www.otomoto.pl/osobowe/oferta/hyundai-i10-ID6IgJ5r.html"
+        ],
+        "note": "Odczytano listę i przykładową kartę Hyundai i10. Nie wykonano pełnego wyszukania według wymagań.",
+        "fullSearchCompleted": false
+      },
+      "purchaseConditions": {
+        "retailBuyerAllowed": null,
+        "auction": false,
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+      },
+      "notes": [
+        "Portale w tej samej grupie właścicielskiej; część ogłoszeń może być cross-postowana. Deduplikuj po VIN/ID/URL."
+      ],
+      "overlapGroup": "otomoto-olx"
+    },
+    {
+      "id": "olx",
+      "name": "OLX",
+      "url": "https://www.olx.pl/motoryzacja/samochody/",
+      "searchUrl": "https://www.olx.pl/motoryzacja/samochody/",
+      "category": "general",
+      "sellerTypes": [
+        "private",
+        "business"
+      ],
+      "origins": [
+        "mixed"
+      ],
+      "brands": [],
+      "enabled": true,
+      "priority": 1,
+      "effort": 2,
+      "filters": [
+        "make",
+        "price",
+        "year",
+        "engine_capacity",
+        "mileage",
+        "power",
+        "fuel",
+        "transmission",
+        "body",
+        "seller_type"
+      ],
+      "method": "Odczytaj wyszukiwarkę i ogłoszenie narzędziem web; przy niepełnej treści użyj przeglądarki. Wynik wyszukiwarki jest wskazówką, nie potwierdzeniem aktualności. Nie omijaj logowania ani zabezpieczeń.",
+      "accessStatus": "results_read",
+      "lastAttemptAt": "2026-11-08",
+      "lastSuccessfulSearchAt": null,
+      "verification": {
+        "checkedAt": "2026-11-08",
+        "evidenceUrls": [
+          "https://www.olx.pl/motoryzacja/samochody/"
+        ],
+        "note": "Odczytano kategorię, listę i filtry. Karty oferty nie otwierano.",
+        "fullSearchCompleted": false
+      },
+      "purchaseConditions": {
+        "retailBuyerAllowed": null,
+        "auction": false,
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+      },
+      "notes": [
+        "Portale w tej samej grupie właścicielskiej; część ogłoszeń może być cross-postowana. Deduplikuj po VIN/ID/URL."
+      ],
+      "overlapGroup": "otomoto-olx"
+    },
+    {
+      "id": "autoplac",
+      "name": "Autoplac",
+      "url": "https://autoplac.pl/",
+      "searchUrl": "https://autoplac.pl/",
+      "category": "general",
+      "sellerTypes": [
+        "private",
+        "dealer",
+        "business"
+      ],
+      "origins": [
+        "mixed"
+      ],
+      "brands": [],
+      "enabled": true,
+      "priority": 1,
+      "effort": 3,
+      "filters": [
+        "make",
+        "model",
+        "price",
+        "year",
+        "fuel"
+      ],
+      "method": "Odczytaj wyszukiwarkę i ogłoszenie narzędziem web; przy niepełnej treści użyj przeglądarki. Wynik wyszukiwarki jest wskazówką, nie potwierdzeniem aktualności. Nie omijaj logowania ani zabezpieczeń.",
+      "accessStatus": "partial",
+      "lastAttemptAt": "2026-11-08",
+      "lastSuccessfulSearchAt": null,
+      "verification": {
+        "checkedAt": "2026-11-08",
+        "evidenceUrls": [
+          "https://autoplac.pl/",
+          "https://autoplac.pl/oferta/ford/s-max/s-max-ii-2-0-2017r-4907-2210-VJ"
+        ],
+        "note": "Strona pokazuje listę ofert. Próba otwarcia przykładowej karty Ford S-MAX zakończona błędem cache miss; nie oznacza sprzedaży.",
+        "fullSearchCompleted": false
+      },
+      "purchaseConditions": {
+        "retailBuyerAllowed": null,
+        "auction": false,
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+      },
+      "notes": [
+        "Nie uznawaj niepełnego dostępu za brak ofert."
+      ]
+    },
+    {
+      "id": "motogratka",
+      "name": "Motogratka / Gratka",
+      "url": "https://motogratka.pl/motoryzacja/osobowe",
+      "searchUrl": "https://motogratka.pl/motoryzacja/osobowe",
+      "category": "general",
+      "sellerTypes": [
+        "private",
+        "dealer",
+        "business"
+      ],
+      "origins": [
+        "mixed"
+      ],
+      "brands": [],
+      "enabled": true,
+      "priority": 2,
+      "effort": 2,
+      "filters": [
+        "category"
+      ],
+      "method": "Przeszukaj kategorię samochodów osobowych. Filtry szczegółowe nie zostały potwierdzone; stosuj wyszukiwanie tekstowe i sprawdzaj każdą kartę.",
+      "accessStatus": "results_read",
+      "lastAttemptAt": "2026-11-08",
+      "lastSuccessfulSearchAt": null,
+      "verification": {
+        "checkedAt": "2026-11-08",
+        "evidenceUrls": [
+          "https://motogratka.pl/motoryzacja/osobowe",
+          "https://gratka.pl/motoryzacja/osobowe"
+        ],
+        "note": "Adres Gratka przekierował na Motogratka; odczytano listę ofert. Szczegółowych filtrów nie zweryfikowano.",
+        "fullSearchCompleted": false
+      },
+      "purchaseConditions": {
+        "retailBuyerAllowed": null,
+        "auction": false,
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+      },
+      "notes": [
+        "Pusta lista filtrów oznaczała brak rozpoznania; minimum potwierdzone to kategoria samochodów osobowych.",
+        "Traktuj jako osobne źródła; cross-post nie jest gwarantowany i rozpoznaje się go po VIN/URL."
+      ]
+    },
+    {
+      "id": "sprzedajemy",
+      "name": "Sprzedajemy",
+      "url": "https://sprzedajemy.pl/motoryzacja/samochody-osobowe",
+      "searchUrl": "https://sprzedajemy.pl/motoryzacja/samochody-osobowe",
+      "category": "general",
+      "sellerTypes": [
+        "private",
+        "business"
+      ],
+      "origins": [
+        "mixed"
+      ],
+      "brands": [],
+      "enabled": true,
+      "priority": 2,
+      "effort": 2,
+      "filters": [
+        "make"
+      ],
+      "method": "Odczytaj wyszukiwarkę i ogłoszenie narzędziem web; przy niepełnej treści użyj przeglądarki. Wynik wyszukiwarki jest wskazówką, nie potwierdzeniem aktualności. Nie omijaj logowania ani zabezpieczeń.",
+      "accessStatus": "results_read",
+      "lastAttemptAt": "2026-11-08",
+      "lastSuccessfulSearchAt": null,
+      "verification": {
+        "checkedAt": "2026-11-08",
+        "evidenceUrls": [
+          "https://sprzedajemy.pl/motoryzacja/samochody-osobowe"
+        ],
+        "note": "Odczytano kategorię i oferty. Nie zweryfikowano kompletności filtrów ani karty auta.",
+        "fullSearchCompleted": false
+      },
+      "purchaseConditions": {
+        "retailBuyerAllowed": null,
+        "auction": false,
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+      },
+      "notes": [
+        "Traktuj jako osobne źródła; cross-post nie jest gwarantowany i rozpoznaje się go po VIN/URL."
+      ]
+    },
+    {
+      "id": "automarket",
+      "name": "Automarket / Masterlease (Grupa PKO BP)",
+      "url": "https://www.automarket.pl/samochody-poleasingowe",
+      "searchUrl": "https://www.automarket.pl/samochody-poleasingowe",
+      "category": "fleet",
+      "sellerTypes": [
+        "leasing_company",
+        "dealer",
+        "business"
+      ],
+      "origins": [
+        "leasing",
+        "rental",
+        "fleet"
+      ],
+      "brands": [],
+      "enabled": true,
+      "priority": 1,
+      "effort": 2,
+      "filters": [],
+      "method": "Odczytaj wyszukiwarkę i ogłoszenie narzędziem web; przy niepełnej treści użyj przeglądarki. Wynik wyszukiwarki jest wskazówką, nie potwierdzeniem aktualności. Nie omijaj logowania ani zabezpieczeń.",
+      "accessStatus": "listing_read",
+      "lastAttemptAt": "2026-11-08",
+      "lastSuccessfulSearchAt": null,
+      "verification": {
+        "checkedAt": "2026-11-08",
+        "evidenceUrls": [
+          "https://www.automarket.pl/samochody-poleasingowe",
+          "https://masterlease.pl/samochody-poleasingowe/",
+          "https://www.automarket.pl/oferta/opel/astra/327514/leasing?f=IjM2LDEwLDMwMDAwLDEi&is_company=0"
+        ],
+        "note": "Odczytano listę z osobnymi cenami zakupu brutto i finansowania oraz przykładową kartę Opla. Masterlease odsyła do Automarket — nie tworzyć osobnego zadania dla tej samej puli.",
+        "fullSearchCompleted": false
+      },
+      "purchaseConditions": {
+        "retailBuyerAllowed": true,
+        "auction": false,
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+      },
+      "notes": [],
+      "priceReview": "Sprawdź: zakup detaliczny bez finansowania, VAT brutto, opłaty i czy cena wymaga konkretnej formy finansowania."
+    },
+    {
+      "id": "arval-autoselect",
+      "name": "Arval AutoSelect",
+      "url": "https://www.arval.pl/oferta/auta-poleasingowe/zakup-aut-uzywanych",
+      "searchUrl": "https://autoselect.arval.pl/",
+      "category": "fleet",
+      "sellerTypes": [
+        "fleet_company"
+      ],
+      "origins": [
+        "leasing",
+        "rental",
+        "fleet"
+      ],
+      "brands": [],
+      "enabled": true,
+      "priority": 1,
+      "effort": 3,
+      "filters": [],
+      "method": "Odczytaj wyszukiwarkę i ogłoszenie narzędziem web; przy niepełnej treści użyj przeglądarki. Wynik wyszukiwarki jest wskazówką, nie potwierdzeniem aktualności. Nie omijaj logowania ani zabezpieczeń.",
+      "accessStatus": "partial",
+      "lastAttemptAt": "2026-11-08",
+      "lastSuccessfulSearchAt": null,
+      "verification": {
+        "checkedAt": "2026-11-08",
+        "evidenceUrls": [
+          "https://www.arval.pl/oferta/auta-poleasingowe/zakup-aut-uzywanych",
+          "https://autoselect.arval.pl/uzywane-samochody/hyundai"
+        ],
+        "note": "Oficjalna strona potwierdza sprzedaż firmom i osobom prywatnym. Katalog Hyundai zwrócił mało treści; nie zweryfikowano pojedynczej oferty.",
+        "fullSearchCompleted": false
+      },
+      "purchaseConditions": {
+        "retailBuyerAllowed": true,
+        "auction": false,
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+      },
+      "notes": [
+        "Nie uznawaj niepełnego dostępu za brak ofert."
+      ],
+      "priceReview": "Sprawdź, czy dostęp do konkretnej oferty i zakup dotyczą klienta indywidualnego, nie wyłącznie podmiotu profesjonalnego."
+    },
+    {
+      "id": "ayvens-usedcars",
+      "name": "Ayvens — sprzedaż detaliczna",
+      "url": "https://usedcars.ayvens.com/pl-pl/samochody",
+      "searchUrl": "https://usedcars.ayvens.com/pl-pl/samochody",
+      "category": "fleet",
+      "sellerTypes": [
+        "fleet_company"
+      ],
+      "origins": [
+        "leasing",
+        "rental",
+        "fleet"
+      ],
+      "brands": [],
+      "enabled": true,
+      "priority": 1,
+      "effort": 2,
+      "filters": [
+        "model",
+        "availability",
+        "location",
+        "drive",
+        "doors",
+        "seats"
+      ],
+      "method": "Odczytaj wyszukiwarkę i ogłoszenie narzędziem web; przy niepełnej treści użyj przeglądarki. Wynik wyszukiwarki jest wskazówką, nie potwierdzeniem aktualności. Nie omijaj logowania ani zabezpieczeń.",
+      "accessStatus": "results_read",
+      "lastAttemptAt": "2026-11-08",
+      "lastSuccessfulSearchAt": null,
+      "verification": {
+        "checkedAt": "2026-11-08",
+        "evidenceUrls": [
+          "https://usedcars.ayvens.com/pl-pl/samochody",
+          "https://usedcars.ayvens.com/pl-pl/ourservices.html"
+        ],
+        "note": "Odczytano listę aut i filtry; statusy obejmują też sprzedane, zarezerwowane i wkrótce dostępne. Detalicznej strony nie utożsamiać z B2B Carmarket.",
+        "fullSearchCompleted": false
+      },
+      "purchaseConditions": {
+        "retailBuyerAllowed": true,
+        "auction": false,
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+      },
+      "notes": [],
+      "priceReview": "Sprawdź, czy dostęp do konkretnej oferty i zakup dotyczą klienta indywidualnego, nie wyłącznie podmiotu profesjonalnego."
+    },
+    {
+      "id": "toyota-pewne-auto",
+      "name": "Toyota Pewne Auto",
+      "url": "https://www.toyota.pl/oferty-specjalne/auta-uzywane",
+      "searchUrl": "https://www.toyota.pl/oferty-specjalne/auta-uzywane",
+      "category": "manufacturer_program",
+      "sellerTypes": [
+        "dealer"
+      ],
+      "origins": [
+        "mixed"
+      ],
+      "brands": [
+        "Toyota"
+      ],
+      "enabled": true,
+      "priority": 2,
+      "effort": 3,
+      "filters": [],
+      "method": "Odczytaj wyszukiwarkę i ogłoszenie narzędziem web; przy niepełnej treści użyj przeglądarki. Wynik wyszukiwarki jest wskazówką, nie potwierdzeniem aktualności. Nie omijaj logowania ani zabezpieczeń.",
+      "accessStatus": "partial",
+      "lastAttemptAt": "2026-11-08",
+      "lastSuccessfulSearchAt": null,
+      "verification": {
+        "checkedAt": "2026-11-08",
+        "evidenceUrls": [
+          "https://www.toyota.pl/oferty-specjalne/auta-uzywane",
+          "https://www.pewneauto.pl/"
+        ],
+        "note": "Potwierdzono stronę programu. Przycisk oferty pozostał na tej samej stronie w odczycie tekstowym, a bezpośredni pewneauto.pl był niedostępny; katalog wymaga sprawdzenia w przeglądarce.",
+        "fullSearchCompleted": false
+      },
+      "purchaseConditions": {
+        "retailBuyerAllowed": null,
+        "auction": false,
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+      },
+      "notes": [
+        "Nie uznawaj niepełnego dostępu za brak ofert.",
+        "Warunki programu i certyfikat dotyczą konkretnego egzemplarza, nie każdego auta dealera."
+      ]
+    },
+    {
+      "id": "kia-uzywane",
+      "name": "Kia Używane",
+      "url": "https://uzywane.kia.pl/",
+      "searchUrl": "https://kiauzywane.pl/",
+      "category": "manufacturer_program",
+      "sellerTypes": [
+        "dealer"
+      ],
+      "origins": [
+        "mixed"
+      ],
+      "brands": [
+        "Kia"
+      ],
+      "enabled": true,
+      "priority": 2,
+      "effort": 3,
+      "filters": [],
+      "method": "Odczytaj wyszukiwarkę i ogłoszenie narzędziem web; przy niepełnej treści użyj przeglądarki. Wynik wyszukiwarki jest wskazówką, nie potwierdzeniem aktualności. Nie omijaj logowania ani zabezpieczeń.",
+      "accessStatus": "partial",
+      "lastAttemptAt": "2026-11-08",
+      "lastSuccessfulSearchAt": null,
+      "verification": {
+        "checkedAt": "2026-11-08",
+        "evidenceUrls": [
+          "https://uzywane.kia.pl/",
+          "https://kiauzywane.pl/"
+        ],
+        "note": "Strona programu działa i odsyła do kiauzywane.pl; katalog zwrócił 502. Program obejmuje wariant Kia oraz wariant różnych marek.",
+        "fullSearchCompleted": false
+      },
+      "purchaseConditions": {
+        "retailBuyerAllowed": null,
+        "auction": false,
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+      },
+      "notes": [
+        "Nie uznawaj niepełnego dostępu za brak ofert.",
+        "Warunki programu i certyfikat dotyczą konkretnego egzemplarza, nie każdego auta dealera.",
+        "Ograniczyć zadania do modeli Kia; katalog programu nie rozszerza wyszukiwania na pozostałe marki."
+      ]
+    },
+    {
+      "id": "renault-renew",
+      "name": "Renault renew",
+      "url": "https://www.uzywane.renault.pl/",
+      "searchUrl": "https://www.uzywane.renault.pl/wyszukiwarkauzywane?CurrentSearchModel.SearchAction=clearall",
+      "category": "manufacturer_program",
+      "sellerTypes": [
+        "dealer"
+      ],
+      "origins": [
+        "mixed"
+      ],
+      "brands": [
+        "Renault"
+      ],
+      "enabled": true,
+      "priority": 1,
+      "effort": 2,
+      "filters": [
+        "make",
+        "model",
+        "body",
+        "price",
+        "year",
+        "mileage",
+        "fuel",
+        "transmission",
+        "equipment",
+        "location"
+      ],
+      "method": "Odczytaj wyszukiwarkę i ogłoszenie narzędziem web; przy niepełnej treści użyj przeglądarki. Wynik wyszukiwarki jest wskazówką, nie potwierdzeniem aktualności. Nie omijaj logowania ani zabezpieczeń.",
+      "accessStatus": "results_read",
+      "lastAttemptAt": "2026-11-08",
+      "lastSuccessfulSearchAt": null,
+      "verification": {
+        "checkedAt": "2026-11-08",
+        "evidenceUrls": [
+          "https://www.uzywane.renault.pl/",
+          "https://www.uzywane.renault.pl/wyszukiwarkauzywane?CurrentSearchModel.SearchAction=clearall"
+        ],
+        "note": "Odczytano stronę i katalog wielu marek, w tym filtr kamery. Nie otwierano karty auta; treść katalogu może pochodzić z cache.",
+        "fullSearchCompleted": false
+      },
+      "purchaseConditions": {
+        "retailBuyerAllowed": null,
+        "auction": false,
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+      },
+      "notes": [
+        "Warunki programu i certyfikat dotyczą konkretnego egzemplarza, nie każdego auta dealera.",
+        "Ograniczyć zadania do modeli Renault."
+      ]
+    },
+    {
+      "id": "skoda-plus",
+      "name": "Škoda Plus / samochody używane",
+      "url": "https://www.skoda.pl/samochody-uzywane/skoda-plus-certyfikowane-uzywane",
+      "searchUrl": "https://www.skoda.pl/apps/stock/carSearch?CarType=U&Sort=DATE_OFFER&SortDirection=DESC",
+      "category": "manufacturer_program",
+      "sellerTypes": [
+        "dealer"
+      ],
+      "origins": [
+        "mixed"
+      ],
+      "brands": [
+        "Skoda"
+      ],
+      "enabled": true,
+      "priority": 2,
+      "effort": 3,
+      "filters": [],
+      "method": "Odczytaj wyszukiwarkę i ogłoszenie narzędziem web; przy niepełnej treści użyj przeglądarki. Wynik wyszukiwarki jest wskazówką, nie potwierdzeniem aktualności. Nie omijaj logowania ani zabezpieczeń.",
+      "accessStatus": "partial",
+      "lastAttemptAt": "2026-11-08",
+      "lastSuccessfulSearchAt": null,
+      "verification": {
+        "checkedAt": "2026-11-08",
+        "evidenceUrls": [
+          "https://www.skoda.pl/samochody-uzywane/skoda-plus-certyfikowane-uzywane",
+          "https://www.skoda.pl/apps/stock/carSearch?CarType=U&Sort=DATE_OFFER&SortDirection=DESC"
+        ],
+        "note": "Potwierdzono program i adres katalogu. Wynik wyszukiwarki zawierał auta; bezpośredni odczyt katalogu pokazał głównie ramę strony. Wymaga przeglądarki.",
+        "fullSearchCompleted": false
+      },
+      "purchaseConditions": {
+        "retailBuyerAllowed": null,
+        "auction": false,
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+      },
+      "notes": [
+        "Nie uznawaj niepełnego dostępu za brak ofert.",
+        "Warunki programu i certyfikat dotyczą konkretnego egzemplarza, nie każdego auta dealera."
+      ]
+    },
+    {
+      "id": "volkswagen-certyfikowane",
+      "name": "Volkswagen Certyfikowane używane",
+      "url": "https://www.volkswagen.pl/pl/osobowe/volkswagen-certyfikowane-uzywane.html",
+      "searchUrl": "https://www.volkswagen.pl/pl/oferty-i-promocje/gsl-results.html/__app/search/cars.app?priceMode-app=price&sort-app=DATE_OFFER&sortdirection-app=ASC&t_cartype-app=U&t_gwfc-app=1&viewMode-app=tile",
+      "category": "manufacturer_program",
+      "sellerTypes": [
+        "dealer"
+      ],
+      "origins": [
+        "mixed"
+      ],
+      "brands": [
+        "Volkswagen"
+      ],
+      "enabled": true,
+      "priority": 2,
+      "effort": 3,
+      "filters": [],
+      "method": "Odczytaj wyszukiwarkę i ogłoszenie narzędziem web; przy niepełnej treści użyj przeglądarki. Wynik wyszukiwarki jest wskazówką, nie potwierdzeniem aktualności. Nie omijaj logowania ani zabezpieczeń.",
+      "accessStatus": "partial",
+      "lastAttemptAt": "2026-11-08",
+      "lastSuccessfulSearchAt": null,
+      "verification": {
+        "checkedAt": "2026-11-08",
+        "evidenceUrls": [
+          "https://www.volkswagen.pl/pl/osobowe/volkswagen-certyfikowane-uzywane.html",
+          "https://www.volkswagen.pl/pl/oferty-i-promocje/gsl-results.html/__app/search/cars.app?priceMode-app=price&sort-app=DATE_OFFER&sortdirection-app=ASC&t_cartype-app=U&t_gwfc-app=1&viewMode-app=tile"
+        ],
+        "note": "Potwierdzono program i przejście do katalogu aut używanych; katalog w odczycie tekstowym nie pokazał ofert. Wymaga przeglądarki.",
+        "fullSearchCompleted": false
+      },
+      "purchaseConditions": {
+        "retailBuyerAllowed": null,
+        "auction": false,
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+      },
+      "notes": [
+        "Nie uznawaj niepełnego dostępu za brak ofert.",
+        "Warunki programu i certyfikat dotyczą konkretnego egzemplarza, nie każdego auta dealera."
+      ]
+    },
+    {
+      "id": "seat-certyfikowane",
+      "name": "SEAT Certyfikowane używane",
+      "url": "https://www.seat.pl/oferta/certyfikowane-uzywane",
+      "searchUrl": "https://www.seat.pl/oferta/auta-od-reki?t_cartype=used",
+      "category": "manufacturer_program",
+      "sellerTypes": [
+        "dealer"
+      ],
+      "origins": [
+        "mixed"
+      ],
+      "brands": [
+        "Seat"
+      ],
+      "enabled": true,
+      "priority": 2,
+      "effort": 3,
+      "filters": [],
+      "method": "Odczytaj wyszukiwarkę i ogłoszenie narzędziem web; przy niepełnej treści użyj przeglądarki. Wynik wyszukiwarki jest wskazówką, nie potwierdzeniem aktualności. Nie omijaj logowania ani zabezpieczeń.",
+      "accessStatus": "partial",
+      "lastAttemptAt": "2026-11-08",
+      "lastSuccessfulSearchAt": null,
+      "verification": {
+        "checkedAt": "2026-11-08",
+        "evidenceUrls": [
+          "https://www.seat.pl/oferta/certyfikowane-uzywane",
+          "https://www.seat.pl/oferta/auta-od-reki?t_cartype=used"
+        ],
+        "note": "Potwierdzono program i odnośnik do katalogu z parametrem used. Odczyt tekstowy nie pokazał ofert. Nie pomylić z najmem używanych.",
+        "fullSearchCompleted": false
+      },
+      "purchaseConditions": {
+        "retailBuyerAllowed": null,
+        "auction": false,
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+      },
+      "notes": [
+        "Nie uznawaj niepełnego dostępu za brak ofert.",
+        "Warunki programu i certyfikat dotyczą konkretnego egzemplarza, nie każdego auta dealera."
+      ]
+    },
+    {
+      "id": "suzuki-uzywane",
+      "name": "Suzuki — samochody używane dealerów",
+      "url": "https://suzuki.pl/auto/samochody-uzywane",
+      "searchUrl": "https://suzuki.pl/auto/samochody-uzywane",
+      "category": "manufacturer_program",
+      "sellerTypes": [
+        "dealer"
+      ],
+      "origins": [
+        "mixed"
+      ],
+      "brands": [
+        "Suzuki"
+      ],
+      "enabled": true,
+      "priority": 2,
+      "effort": 2,
+      "filters": [
+        "price"
+      ],
+      "method": "Odczytaj wyszukiwarkę i ogłoszenie narzędziem web; przy niepełnej treści użyj przeglądarki. Wynik wyszukiwarki jest wskazówką, nie potwierdzeniem aktualności. Nie omijaj logowania ani zabezpieczeń.",
+      "accessStatus": "results_read",
+      "lastAttemptAt": "2026-11-08",
+      "lastSuccessfulSearchAt": null,
+      "verification": {
+        "checkedAt": "2026-11-08",
+        "evidenceUrls": [
+          "https://suzuki.pl/auto/samochody-uzywane"
+        ],
+        "note": "Odczytano listę dealerów, aut, cen brutto, lat i przebiegów. Kliknięcie szczegółów w odczycie tekstowym pozostało na liście.",
+        "fullSearchCompleted": false
+      },
+      "purchaseConditions": {
+        "retailBuyerAllowed": null,
+        "auction": false,
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+      },
+      "notes": [
+        "Warunki programu i certyfikat dotyczą konkretnego egzemplarza, nie każdego auta dealera."
+      ]
+    },
+    {
+      "id": "hyundai-korea-motors",
+      "name": "Hyundai Korea Motors — używane / Promise",
+      "url": "https://hyundai.koreamotors.pl/p/program-hyundai-promise",
+      "searchUrl": "https://hyundai.koreamotors.pl/p/program-hyundai-promise",
+      "category": "dealer",
+      "sellerTypes": [
+        "dealer"
+      ],
+      "origins": [
+        "mixed"
+      ],
+      "brands": [
+        "Hyundai"
+      ],
+      "enabled": true,
+      "priority": 2,
+      "effort": 2,
+      "filters": [],
+      "method": "Odczytaj wyszukiwarkę i ogłoszenie narzędziem web; przy niepełnej treści użyj przeglądarki. Wynik wyszukiwarki jest wskazówką, nie potwierdzeniem aktualności. Nie omijaj logowania ani zabezpieczeń.",
+      "accessStatus": "results_read",
+      "lastAttemptAt": "2026-11-08",
+      "lastSuccessfulSearchAt": null,
+      "verification": {
+        "checkedAt": "2026-11-08",
+        "evidenceUrls": [
+          "https://hyundai.koreamotors.pl/p/program-hyundai-promise",
+          "https://www.hyundai.koreamotors.pl/p/auta-dostepne-od-reki?status%5B%5D=used"
+        ],
+        "note": "Odczytano stronę autoryzowanego dealera, oferty i przejście do aut używanych. To konkretna sieć dealerów, nie pełny ogólnopolski katalog Hyundai.",
+        "fullSearchCompleted": false
+      },
+      "purchaseConditions": {
+        "retailBuyerAllowed": null,
+        "auction": false,
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+      },
+      "notes": []
+    },
+    {
+      "id": "spoticar",
+      "name": "SPOTICAR Polska",
+      "url": "https://www.spoticar.pl/",
+      "searchUrl": "https://www.spoticar.pl/",
+      "category": "manufacturer_program",
+      "sellerTypes": [
+        "dealer"
+      ],
+      "origins": [
+        "mixed"
+      ],
+      "brands": [],
+      "enabled": true,
+      "priority": 2,
+      "effort": 2,
+      "filters": [
+        "make",
+        "model",
+        "price",
+        "mileage",
+        "location",
+        "fuel",
+        "transmission"
+      ],
+      "method": "Odczytaj wyszukiwarkę i ogłoszenie narzędziem web; przy niepełnej treści użyj przeglądarki. Wynik wyszukiwarki jest wskazówką, nie potwierdzeniem aktualności. Nie omijaj logowania ani zabezpieczeń.",
+      "accessStatus": "results_read",
+      "lastAttemptAt": "2026-11-08",
+      "lastSuccessfulSearchAt": null,
+      "verification": {
+        "checkedAt": "2026-11-08",
+        "evidenceUrls": [
+          "https://www.spoticar.pl/"
+        ],
+        "note": "Odczytano katalog wielu marek, m.in. Hyundai, Kia, Renault, Suzuki, Toyota i Volkswagen; nie ograniczać wyłącznie do marek Stellantis. Kart auta nie otwierano.",
+        "fullSearchCompleted": false
+      },
+      "purchaseConditions": {
+        "retailBuyerAllowed": null,
+        "auction": false,
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+      },
+      "notes": [
+        "Warunki programu i certyfikat dotyczą konkretnego egzemplarza, nie każdego auta dealera."
+      ]
+    },
+    {
+      "id": "aaaauto",
+      "name": "AAA AUTO Polska",
+      "url": "https://www.aaaauto.pl/",
+      "searchUrl": "https://www.aaaauto.pl/",
+      "category": "dealer",
+      "sellerTypes": [
+        "dealer"
+      ],
+      "origins": [
+        "mixed"
+      ],
+      "brands": [],
+      "enabled": true,
+      "priority": 2,
+      "effort": 2,
+      "filters": [],
+      "method": "Odczytaj wyszukiwarkę i ogłoszenie narzędziem web; przy niepełnej treści użyj przeglądarki. Wynik wyszukiwarki jest wskazówką, nie potwierdzeniem aktualności. Nie omijaj logowania ani zabezpieczeń.",
+      "accessStatus": "landing_verified",
+      "lastAttemptAt": "2026-11-08",
+      "lastSuccessfulSearchAt": null,
+      "verification": {
+        "checkedAt": "2026-11-08",
+        "evidenceUrls": [
+          "https://www.aaaauto.pl/"
+        ],
+        "note": "Odczytano stronę główną sprzedawcy. Nie przeprowadzono jeszcze wyszukania ani kontroli indywidualnej ceny za gotówkę.",
+        "fullSearchCompleted": false
+      },
+      "purchaseConditions": {
+        "retailBuyerAllowed": null,
+        "auction": false,
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+      },
+      "notes": []
+    },
+    {
+      "id": "autopunkt",
+      "name": "Autopunkt",
+      "url": "https://autopunkt.pl/znajdz-auto",
+      "searchUrl": "https://autopunkt.pl/znajdz-auto",
+      "category": "dealer",
+      "sellerTypes": [
+        "dealer"
+      ],
+      "origins": [
+        "mixed"
+      ],
+      "brands": [],
+      "enabled": true,
+      "priority": 1,
+      "effort": 2,
+      "filters": [
+        "make",
+        "model",
+        "body",
+        "fuel",
+        "transmission",
+        "price",
+        "mileage",
+        "power",
+        "location"
+      ],
+      "method": "Odczytaj wyszukiwarkę i ogłoszenie narzędziem web; przy niepełnej treści użyj przeglądarki. Wynik wyszukiwarki jest wskazówką, nie potwierdzeniem aktualności. Nie omijaj logowania ani zabezpieczeń.",
+      "accessStatus": "listing_read",
+      "lastAttemptAt": "2026-11-08",
+      "lastSuccessfulSearchAt": null,
+      "verification": {
+        "checkedAt": "2026-11-08",
+        "evidenceUrls": [
+          "https://autopunkt.pl/znajdz-auto",
+          "https://autopunkt.pl/samochod/krakow/sedan/hyundai/i30/id/112002"
+        ],
+        "note": "Odczytano katalog i kartę Hyundai i30. Przykładowa karta ma ścieżkę sedan; nadwozie trzeba potwierdzać w opisie i zdjęciach, nie po samym URL.",
+        "fullSearchCompleted": false
+      },
+      "purchaseConditions": {
+        "retailBuyerAllowed": null,
+        "auction": false,
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+      },
+      "notes": []
+    }
+  ]
+}

@@ -1,0 +1,330 @@
+{
+  "version": 2,
+  "updatedAt": "2026-11-08",
+  "model": {
+    "key": "volkswagen-passat-b8-variant",
+    "name": "Volkswagen Passat B8 Variant",
+    "description": "Kombi",
+    "requirements": "Volkswagen Passat B8 Variant; 1.4 TSI EA211 ACT 150 KM; rocznik od 2017 do 2018; maks. 55 000 zł brutto na sam zakup bez obowiązkowego finansowania; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 150 000 km preferowany; kamera obecna lub potwierdzona możliwość montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji."
+  },
+  "offers": [
+    {
+      "id": "listing:olx:1103025800",
+      "modelKey": "volkswagen-passat-b8-variant",
+      "title": "Volkswagen Passat Variant 1.4 benzyna, 150 KM — 2018, manual",
+      "urls": [
+        {
+          "url": "https://www.olx.pl/d/oferta/volkswagen-passat-volkswagen-passat-1-4-benzyna-z-2018-roku-zarejestrowany-CID5-ID1cEboI.html"
+        }
+      ],
+      "listingIds": [
+        "olx:1103025800"
+      ],
+      "vin": "WVWZZZ3CZJE162434",
+      "year": 2018,
+      "price": 42800,
+      "mileage": 143520,
+      "engine": "1.4 TSI, 1 395 cm³, 150 KM, benzyna (ACT do potwierdzenia po VIN)",
+      "engineVariant": "1.4-tsi-ea211-act-150",
+      "body": "Kombi / Variant",
+      "bodyCode": "wagon",
+      "transmission": "Manualna",
+      "transmissionCode": "manual",
+      "saleType": "fixed_price",
+      "offerType": "company",
+      "location": {
+        "status": "not_provided"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-08T19:30:29+01:00",
+      "listingStates": [
+        {
+          "url": "https://www.olx.pl/d/oferta/volkswagen-passat-volkswagen-passat-1-4-benzyna-z-2018-roku-zarejestrowany-CID5-ID1cEboI.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-08T23:52:28+01:00",
+          "lastCheckedAt": "2026-11-08T23:52:28+01:00",
+          "lastVerifiedAt": "2026-11-08T23:52:28+01:00",
+          "lastObservation": {
+            "url": "https://www.olx.pl/d/oferta/volkswagen-passat-volkswagen-passat-1-4-benzyna-z-2018-roku-zarejestrowany-CID5-ID1cEboI.html",
+            "checkedAt": "2026-11-08T23:52:28+01:00",
+            "availability": "available",
+            "note": "Karta OLX odczytana; ID 1103025800. Wyświetla cenę 42 800 zł do negocjacji, rok produkcji 2018, benzynę, nadwozie kombi, pojemność 1 395 cm³, moc 150 KM i manualną skrzynię. LPG niepotwierdzone. Osiem miniatur galerii ujawniło bezpośrednie adresy HTTPS zdjęć zapisane w photos.",
+            "photoCheck": {
+              "status": "found",
+              "note": "Zapisano osiem bezpośrednich HTTPS adresów zdjęć ujawnionych przez miniatury galerii."
+            }
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-08T23:52:28+01:00",
+      "lastVerifiedAt": "2026-11-08T23:52:28+01:00",
+      "lastAttemptAt": "2026-11-08T23:52:28+01:00",
+      "history": [
+        {
+          "eventId": "28e1536b975103c9e4ef50cf157b58b7c28aa584cd49a69a394836741eaac490",
+          "runId": "search-20261108",
+          "checkedAt": "2026-11-08T19:30:29+01:00",
+          "url": "https://www.olx.pl/d/oferta/volkswagen-passat-volkswagen-passat-1-4-benzyna-z-2018-roku-zarejestrowany-CID5-ID1cEboI.html",
+          "availability": "available",
+          "note": "Karta OLX dostępna; podaje VIN WVWZZZ3CZJE162434, Passat Variant/kombi, 2018, benzynę 1.4 TSI 1 395 cm³/150 KM, manual, 143 520 km i cenę 42 800 zł do negocjacji. Lokalizacja w nagłówku: Żarowo. Karta zaprasza do oględzin i jazdy próbnej; brak oznaczeń aukcji, więc cena jest traktowana jako stała. Volkswagen podaje dla Passata B8/Variant 1.4 TSI ACT 110 kW/150 KM przed 2019 r.; zgodność wariantu tego egzemplarza i kod silnika do potwierdzenia dokumentami/VIN. Kamera nie jest wymieniona w wyposażeniu. Karta podaje benzynę, nie potwierdza ani nie wyklucza montażu LPG.",
+          "evidence": [
+            {
+              "fields": [
+                "vin",
+                "year",
+                "mileage",
+                "engineVariant",
+                "transmissionCode",
+                "bodyCode",
+                "price",
+                "saleType",
+                "location",
+                "availability"
+              ],
+              "url": "https://www.olx.pl/d/oferta/volkswagen-passat-volkswagen-passat-1-4-benzyna-z-2018-roku-zarejestrowany-CID5-ID1cEboI.html",
+              "checkedAt": "2026-11-08T19:30:29+01:00",
+              "kind": "seller",
+              "note": "Karta OLX wymienia VIN WVWZZZ3CZJE162434, rok 2018, Passat Variant, benzynę 1.4 o mocy 150 KM i pojemności 1 395 cm³, manual, 143 520 km i cenę 42 800 zł. Dostępna karta zaprasza na oględziny i jazdę próbną."
+            },
+            {
+              "fields": [
+                "engineVariant"
+              ],
+              "url": "https://www.volkswagen.pl/pl/serwis-akcesoria-i-aktualizacje/informacje-o-twoim-samochodzie/starsze-modele-volkswagena/sedany/passat-b8.html",
+              "checkedAt": "2026-11-08T19:30:29+01:00",
+              "kind": "technical",
+              "note": "Volkswagen opisuje w gamie Passata B8/Variant przed 2019 r. silnik 1.4 l TSI ACT o mocy 110 kW/150 KM. Dane oferty (rok, pojemność i moc) odpowiadają tej wersji; kod silnika konkretnego egzemplarza pozostaje do potwierdzenia po VIN/dokumentach."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:olx:1103025800",
+            "modelKey": "volkswagen-passat-b8-variant",
+            "title": "Volkswagen Passat Variant 1.4 benzyna, 150 KM — 2018, manual",
+            "urls": [
+              {
+                "url": "https://www.olx.pl/d/oferta/volkswagen-passat-volkswagen-passat-1-4-benzyna-z-2018-roku-zarejestrowany-CID5-ID1cEboI.html"
+              }
+            ],
+            "listingIds": [
+              "olx:1103025800"
+            ],
+            "vin": "WVWZZZ3CZJE162434",
+            "year": 2018,
+            "price": 42800,
+            "mileage": 143520,
+            "engine": "1.4 TSI, 1 395 cm³, 150 KM, benzyna (ACT do potwierdzenia po VIN)",
+            "engineVariant": "1.4-tsi-ea211-act-150",
+            "body": "Kombi / Variant",
+            "bodyCode": "wagon",
+            "transmission": "Manualna",
+            "transmissionCode": "manual",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "offerType": "company",
+            "location": {
+              "status": "not_provided"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:olx:1103025800"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "volkswagen-passat-b8-variant"
+            },
+            "title": {
+              "before": null,
+              "after": "Volkswagen Passat Variant 1.4 benzyna, 150 KM — 2018, manual"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.olx.pl/d/oferta/volkswagen-passat-volkswagen-passat-1-4-benzyna-z-2018-roku-zarejestrowany-CID5-ID1cEboI.html"
+                }
+              ]
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "olx:1103025800"
+              ]
+            },
+            "vin": {
+              "before": null,
+              "after": "WVWZZZ3CZJE162434"
+            },
+            "year": {
+              "before": null,
+              "after": 2018
+            },
+            "price": {
+              "before": null,
+              "after": 42800
+            },
+            "mileage": {
+              "before": null,
+              "after": 143520
+            },
+            "engine": {
+              "before": null,
+              "after": "1.4 TSI, 1 395 cm³, 150 KM, benzyna (ACT do potwierdzenia po VIN)"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.4-tsi-ea211-act-150"
+            },
+            "body": {
+              "before": null,
+              "after": "Kombi / Variant"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmission": {
+              "before": null,
+              "after": "Manualna"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "offerType": {
+              "before": null,
+              "after": "company"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            }
+          }
+        },
+        {
+          "eventId": "32768b234cbdddacae31cb0706970cf5d16126574bbcc2eb7bae0d4f6e191db8",
+          "runId": "refresh-20261108-03",
+          "checkedAt": "2026-11-08T23:09:11+01:00",
+          "url": "https://www.olx.pl/d/oferta/volkswagen-passat-volkswagen-passat-1-4-benzyna-z-2018-roku-zarejestrowany-CID5-ID1cEboI.html",
+          "availability": "available",
+          "note": "Karta OLX dostępna, ID 1103025800. Atrybuty podają VIN WVWZZZ3CZJE162434, rok produkcji 2018, kombi, 1 395 cm³, 150 KM, manual i 143 520 km; opis sprzedawcy również określa auto jako 1.4 benzyna 150 KM. Cena 42 800 zł do negocjacji, bez wskazanego warunku finansowania. Nie wnioskuję z samej karty o dokładnym kodzie silnika ani nie waliduję VIN niezależnym dekoderem. LPG niepotwierdzone (null).",
+          "evidence": [
+            {
+              "fields": [
+                "vin",
+                "year",
+                "mileage",
+                "price",
+                "transmissionCode",
+                "saleType"
+              ],
+              "url": "https://www.olx.pl/d/oferta/volkswagen-passat-volkswagen-passat-1-4-benzyna-z-2018-roku-zarejestrowany-CID5-ID1cEboI.html",
+              "checkedAt": "2026-11-08T23:09:11+01:00",
+              "kind": "seller",
+              "note": "Atrybuty i opis karty podają rok produkcji (nie tylko pierwszą rejestrację), VIN, silnik deklarowany jako 1.4 benzyna 150 KM, przebieg, manual i cenę 42 800 zł. Kod wariantu niezweryfikowany niezależnie; LPG niepotwierdzone."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:olx:1103025800",
+            "title": "Volkswagen Passat Variant 1.4 benzyna, 150 KM — 2018, manual",
+            "urls": [
+              {
+                "url": "https://www.olx.pl/d/oferta/volkswagen-passat-volkswagen-passat-1-4-benzyna-z-2018-roku-zarejestrowany-CID5-ID1cEboI.html"
+              }
+            ],
+            "vin": "WVWZZZ3CZJE162434",
+            "year": 2018,
+            "mileage": 143520,
+            "price": 42800,
+            "transmissionCode": "manual",
+            "saleType": "fixed_price",
+            "lpgInstalled": null
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "4a7b932dbe4604cb9b364a70e9c0c644616383d6cbca1fd88d6c5c4da4fa4b97",
+          "runId": "photos-20261108-01",
+          "checkedAt": "2026-11-08T23:52:28+01:00",
+          "url": "https://www.olx.pl/d/oferta/volkswagen-passat-volkswagen-passat-1-4-benzyna-z-2018-roku-zarejestrowany-CID5-ID1cEboI.html",
+          "availability": "available",
+          "note": "Karta OLX odczytana; ID 1103025800. Wyświetla cenę 42 800 zł do negocjacji, rok produkcji 2018, benzynę, nadwozie kombi, pojemność 1 395 cm³, moc 150 KM i manualną skrzynię. LPG niepotwierdzone. Osiem miniatur galerii ujawniło bezpośrednie adresy HTTPS zdjęć zapisane w photos.",
+          "photoCheck": {
+            "status": "found",
+            "note": "Zapisano osiem bezpośrednich HTTPS adresów zdjęć ujawnionych przez miniatury galerii."
+          },
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1103025800",
+            "title": "Volkswagen Passat Variant 1.4 benzyna, 150 KM — 2018, manual",
+            "urls": [
+              {
+                "url": "https://www.olx.pl/d/oferta/volkswagen-passat-volkswagen-passat-1-4-benzyna-z-2018-roku-zarejestrowany-CID5-ID1cEboI.html"
+              }
+            ],
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/z62l5lv4e9gd1-PL/image%3Bs%3D2036x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/u5028i5m741h-PL/image%3Bs%3D2036x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/spdx7gc1unyn-PL/image%3Bs%3D2036x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/5tzi5j052i661-PL/image%3Bs%3D2036x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/59pqfhkouoj12-PL/image%3Bs%3D2036x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/w02tuw0lo9ka2-PL/image%3Bs%3D2036x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/2sfve1njwyua2-PL/image%3Bs%3D2036x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/d1kg1k38iekk-PL/image%3Bs%3D2036x1360"
+            ]
+          },
+          "changes": {
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/z62l5lv4e9gd1-PL/image%3Bs%3D2036x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/u5028i5m741h-PL/image%3Bs%3D2036x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/spdx7gc1unyn-PL/image%3Bs%3D2036x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/5tzi5j052i661-PL/image%3Bs%3D2036x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/59pqfhkouoj12-PL/image%3Bs%3D2036x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/w02tuw0lo9ka2-PL/image%3Bs%3D2036x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/2sfve1njwyua2-PL/image%3Bs%3D2036x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/d1kg1k38iekk-PL/image%3Bs%3D2036x1360"
+              ]
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "listing:olx:1103025800",
+        "modelKey": "volkswagen-passat-b8-variant",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_price_and_purchase_conditions",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_price_and_purchase_conditions; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/z62l5lv4e9gd1-PL/image%3Bs%3D2036x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/u5028i5m741h-PL/image%3Bs%3D2036x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/spdx7gc1unyn-PL/image%3Bs%3D2036x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/5tzi5j052i661-PL/image%3Bs%3D2036x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/59pqfhkouoj12-PL/image%3Bs%3D2036x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/w02tuw0lo9ka2-PL/image%3Bs%3D2036x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/2sfve1njwyua2-PL/image%3Bs%3D2036x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/d1kg1k38iekk-PL/image%3Bs%3D2036x1360"
+      ]
+    }
+  ]
+}

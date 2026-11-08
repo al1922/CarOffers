@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "modelKey": "toyota-avensis-iii-wagon",
+  "status": "partial",
+  "reviewedAt": "2026-11-08",
+  "claims": [
+    {
+      "id": "engine-review-2026",
+      "topic": "engine_assessment",
+      "value": {
+        "variants": {"1.8-valvematic-147": {"status": "conditional_recommendation", "code": "2ZR-FAE", "reason": "Toyota regional specifications confirm 1.8 Valvematic 147 KM in Touring Sports; STK and workshop bulletin sources are screening evidence only. Check Valvematic and transmission service; no exact-engine cohort or Polish repair quotes found."}},
+        "fullRecommendedThresholdMet": false,
+        "lpg": "Brak potwierdzenia zatwierdzonego zestawu LPG dla kodu i VIN; wymagać pisemnej zgodności warsztatu i dokumentów."
+      },
+      "scope": {"market": "Europe/Polish Touring Sports", "period": "target 2017–2018", "body": "wagon"},
+      "confidence": "medium",
+      "sourceIds": ["avensis17", "avensis-toyota-spec", "avensis-stk-2026", "avensis-bulletins"],
+      "notes": ["Nie przywracać niepotwierdzonego wariantu 2.0."]
+    },
+    {
+      "id": "engine-review-2zr-fae",
+      "topic": "engine",
+      "value": {"code": "2ZR-FAE", "label": "1.8 Valvematic", "displacementCc": 1798, "powerKw": 108, "powerPS": 147, "aspiration": "naturally aspirated", "transmissions": ["6MT", "Multidrive S CVT"], "vehicleCode": "ZRT271", "inspection": "check Valvematic codes, cold start, and CVT service history"},
+      "scope": {"market": "Toyota regional 2017 specification; verify Polish VIN"},
+      "confidence": "high",
+      "sourceIds": ["avensis17", "avensis-toyota-spec"],
+      "notes": ["Kod 2ZR-FAE potwierdzony w dokumentacji, lecz zgodność konkretnego rynku i wersji wymaga VIN."]
+    },
+    {
+      "id": "18-valvematic",
+      "topic": "engine",
+      "value": {
+        "name": "1.8 Valvematic",
+        "powerKw": 108,
+        "powerPS": 147
+      },
+      "scope": {
+        "market": "Toyota Spain",
+        "modelYear": 2017,
+        "body": "Touring Sports"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "avensis17",
+        "avensis-engine"
+      ],
+      "notes": [
+        "Confirmed in the 2017 Touring Sports range."
+      ]
+    },
+    {
+      "id": "20-valvematic-caveat",
+      "topic": "selection_correction",
+      "value": {
+        "name": "2.0 Valvematic",
+        "powerPS": 152,
+        "status": "not established for target Polish Touring Sports years"
+      },
+      "scope": {
+        "market": "scope varies"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "avensis-engine"
+      ],
+      "notes": [
+        "Removed from active filter; source confirms engine family but not target fitment."
+      ]
+    }
+  ],
+  "sources": [
+    {"id": "avensis-toyota-spec", "title": "Toyota Greece — Avensis 2017 technical data", "url": "https://local.toyota.gr/one/dynamic/v10/views/brochure/pdf/AVENSIS_01_2017.pdf", "publishedAt": "2017", "checkedAt": "2026-11-08", "accessNote": "Oficjalna specyfikacja regionalna potwierdza 1.8 Valvematic 147 DIN hp/108 kW i rozróżnia Touring Sports; rynek polski sprawdzić po VIN."},
+    {"id": "avensis-adac", "title": "ADAC — Toyota Avensis used-car review 2009–2018", "url": "https://assets.adac.de/image/upload/Autodatenbank/GWInfo/gw0343-toyota-avensis-2009-2018-bericht.pdf", "publishedAt": "2025", "checkedAt": "2026-11-08", "accessNote": "Dane niezawodności dotyczą całego modelu, nie exact-code silnika; ADAC opisuje benzynowe wersje jako wolnossące i daje lepszy kompromis mocy 1.8/147 KM."},
+    {"id": "avensis-stk-2026", "title": "Karambol.cz — Toyota Avensis inspections by engine family", "url": "https://www.karambol.cz/auta/toyota/avensis/", "publishedAt": "2026", "checkedAt": "2026-11-08", "accessNote": "Zestawienie 2ZR 108 kW obejmuje ok. 100 badań; nieidealna normalizacja kodów i badania całego pojazdu czynią z tego słaby sygnał przesiewowy."},
+    {"id": "avensis-bulletins", "title": "Motorwise — Avensis 1.8 Valvematic workshop bulletins", "url": "https://motorwise.io/articles/common-faults/toyota/avensis/1-8-valvematic-2009-2018/", "publishedAt": "2026", "checkedAt": "2026-11-08", "accessNote": "Wtórny skrót biuletynów warsztatowych; bez częstości usterek i polskich kosztów napraw."},
+    {
+      "id": "avensis17",
+      "title": "Toyota España Avensis 2017 range",
+      "url": "https://prensa.toyota.es/toyota-espaa-lanza-avensis-2017/",
+      "publishedAt": null,
+      "checkedAt": "2026-11-08",
+      "accessNote": "Toyota says Touring Sports MY2017 and one petrol variant 1.8 108 kW/147 CV; this range does not support the proposed 2.0 petrol."
+    },
+    {
+      "id": "avensis-engine",
+      "title": "Toyota Europe Avensis engine specifications",
+      "url": "https://newsroom.toyota.eu/2019-new-avensis-prestige-and-efficiency/",
+      "publishedAt": null,
+      "checkedAt": "2026-11-08",
+      "accessNote": "1.8 147 hp and 2.0 152 hp engine family data, but does not establish 2.0 fitment for every market/year/body."
+    }
+  ],
+  "openQuestions": [
+    "Reliability/common failure rate and repair cost for exact engine code are not established by the manufacturer specification sources.",
+    "Verify Polish-market engine/transmission codes by VIN and production date.",
+    "Verify LPG suitability and installation paperwork for the exact engine."
+  ],
+  "inspectionChecklist": [
+    "Potwierdzić kod silnika i datę produkcji z dokumentów/VIN; nie opierać się wyłącznie na mocy i pojemności."
+  ]
+}

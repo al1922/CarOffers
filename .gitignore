@@ -1,0 +1,14 @@
+.cache/
+
+# Lokalne przebiegi wyszukiwania i ich migawki/rezultaty
+/runs/
+
+# Cache Pythona
+__pycache__/
+*.py[cod]
+
+# Pliki generowane przez lokalną ocenę i dashboard
+/reports/dashboard.json
+/reports/validation-v2-*.json
+/reports/validation-v2-*.md
+/reports/location-evidence/

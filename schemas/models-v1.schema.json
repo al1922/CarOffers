@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CarOffers — indeks modeli v1",
+  "type": "object",
+  "required": ["version", "models"],
+  "properties": {
+    "version": {"type": "integer", "const": 1},
+    "models": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["key", "name", "file"],
+        "properties": {
+          "key": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+          "name": {"type": "string", "minLength": 1, "pattern": "\\S"},
+          "description": {"type": "string"},
+          "requirements": {"type": ["string", "null"]},
+          "file": {"type": "string", "pattern": "^offers/[a-z0-9-]+\\.json$"}
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

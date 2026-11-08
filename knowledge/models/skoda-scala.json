@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "modelKey": "skoda-scala",
+  "status": "partial",
+  "reviewedAt": "2026-11-08",
+  "claims": [
+    {
+      "id": "engine-10-115",
+      "topic": "engine",
+      "value": {
+        "name": "1.0 TSI",
+        "powerKw": 85,
+        "powerPS": 115,
+        "transmissions": [
+          "6MT",
+          "7DSG"
+        ]
+      },
+      "scope": {
+        "market": "Europe, cited technical specification",
+        "period": "2019 launch",
+        "body": "hatchback"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "scala19",
+        "scala-engines"
+      ],
+      "notes": [
+        "Occurrence/specification, not reliability verdict."
+      ]
+    },
+    {
+      "id": "110-confirmed-correction",
+      "topic": "selection_correction",
+      "value": {
+        "engine": "1.0 TSI 81 kW (110 KM), distinct from 1.0 TSI 85 kW (115 PS)",
+        "status": "manufacturer-confirmed for later Scala technical range"
+      },
+      "scope": {
+        "market": "Slovakia/Europe",
+        "body": "Scala NW",
+        "period": "later technical data; exact introduction date and Polish year range still to verify"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "scala-engines",
+        "scala-evo2",
+        "scala-110-spec"
+      ],
+      "notes": [
+        "The earlier claim that 110 KM was unsubstantiated is corrected: Škoda technical data list an 81 kW/110 KM Scala variant. Keep 110 and 115 distinct; confirm exact code, date and market by VIN."
+      ]
+    },
+    {
+      "id": "engine-review-2026",
+      "topic": "engine-assessment",
+      "value": {
+        "variants": [
+          {"variant": "1.0-tsi-115", "likelyCode": "DKRF for 2019 85 kW launch calibration; verify VIN", "status": "conditional_recommendation", "reason": "Manufacturer-confirmed 115 PS/200 Nm turbo-direct-injection engine with 6MT or 7DSG; adequate for ordinary use, but modest reserve under full family load and exact-code longevity/repair-cost evidence is incomplete."},
+          {"variant": "1.0-tsi-110", "likelyCode": "not confirmed from primary source", "status": "hold_pending_adverse_inspection_signal_review", "reason": "The 81 kW output is real, but Czech inspection data for the Scala 1.0 TSI 81 kW group show significantly more serious whole-vehicle defects than same-age/same-fuel cars (O/E 1.56; 5,281 inspections; 95% CI 1.31–1.83). This does not prove engine unreliability; the signal needs component-level explanation and independent replication before recommendation."}
+        ],
+        "fullRecommendedThresholdMet": false,
+        "architecture": "EA211 three-cylinder turbocharged petrol, direct injection"
+      },
+      "scope": {"market": "Europe", "body": "Scala NW hatchback", "searchYears": "2020–2023", "reviewDate": "2026-11-08"},
+      "confidence": "medium",
+      "sourceIds": ["scala19", "scala-110-spec", "scala-adac", "scala-stk"],
+      "notes": ["The 115 and 110 labels are not interchangeable: official documents show 85 kW/115 PS at launch and 81 kW/110 KM in later specifications.", "Czech STK data contain an adverse total-vehicle defect signal for the 81 kW variant, but do not show which faults are engine-related. Keep it on hold rather than treating it as either proven bad or recommended.", "No sufficiently strong Polish exact-code LPG approval or repair-cost series was found; document any conversion separately."]
+    }
+  ],
+  "sources": [
+    {
+      "id": "scala19",
+      "title": "Škoda Scala technical data 2019",
+      "url": "https://cdn.skoda-storyboard.com/2019/03/Skoda_Scala_technickeudaje.pdf",
+      "publishedAt": null,
+      "checkedAt": "2026-11-08",
+      "accessNote": "1.0 TSI 85 kW/115 PS, 6MT or 7DSG; market specification is Czech/European."
+    },
+    {
+      "id": "scala-engines",
+      "title": "Škoda Scala overview of engines",
+      "url": "https://cdn.skoda-storyboard.com/2019/03/SCALA_Overview_of_engines.pdf",
+      "publishedAt": null,
+      "checkedAt": "2026-11-08",
+      "accessNote": "Launch range lists 1.0 TSI 95/115 PS and 1.5 TSI 150 PS; does not substantiate 110 PS."
+    },
+    {
+      "id": "scala-evo2",
+      "title": "Škoda Scala/Kamiq EA211 evo2 update",
+      "url": "https://www.skoda-storyboard.com/en/press-kits/skoda-scala-and-skoda-kamiq-media-launch-press-kit/powertrains-even-more-efficient-tsi-petrol-engines-from-the-latest-evo2-generation/",
+      "publishedAt": null,
+      "checkedAt": "2026-11-08",
+      "accessNote": "Later 1.0 TSI evo2 is 115 PS, 4 kW above predecessor; it does not support the 110 PS label."
+    },
+    {
+      "id": "scala-110-spec",
+      "title": "Škoda Slovakia — Scala technical data, 1.0 TSI 81 kW (110 KM)",
+      "url": "https://webapps.skoda-auto.sk/Cenniky-a-katalogy/techdata/Skoda_Scala_technickeudaje.pdf",
+      "publishedAt": null,
+      "checkedAt": "2026-11-08",
+      "accessNote": "Official Slovak market technical table lists 1.0 TSI 81 kW/110 KM with 6-speed manual and 7-speed automatic. Paired with other official documents, this corrects the old claim that 110 KM was unsupported; Polish market year availability and engine code require VIN confirmation."
+    },
+    {
+      "id": "scala-adac",
+      "title": "ADAC — Škoda Scala specifications and model-level breakdown statistics",
+      "url": "https://www.adac.de/rund-ums-fahrzeug/autokatalog/marken-modelle/skoda/scala/1generation/309760/",
+      "publishedAt": null,
+      "checkedAt": "2026-11-08",
+      "accessNote": "Scala-level breakdown data and recall information; the opened variant page is the 70 kW 95 PS model, not engine-specific evidence for 81/85 kW."
+    },
+    {
+      "id": "scala-stk",
+      "title": "Poruchovost.cz — Škoda Scala inspection data by powertrain grouping",
+      "url": "https://poruchovost.cz/skoda/scala/",
+      "publishedAt": null,
+      "checkedAt": "2026-11-08",
+      "accessNote": "Czech official STK-derived vehicle inspections report separate 81 kW and 85 kW groups; outcomes are whole-vehicle defects, not engine failure rates, and this is not independent of other Czech STK aggregators."
+    }
+  ],
+  "openQuestions": [
+    "Wyjaśnić komponenty stojące za podwyższonym O/E w STK dla 1.0 TSI 81 kW i potwierdzić wynik niezależnym źródłem; nie utożsamiać go z awariami silnika.",
+    "Potwierdzić kody i dokładne daty/rynki wariantów 1.0 TSI 81 kW/110 KM oraz 85 kW/115 PS po VIN.",
+    "Pozyskać niezależne dane długoterminowe o awariach silników 81/85 kW, polskie koszty napraw i potwierdzenie LPG dla dokładnego kodu.",
+    "Reliability/common failure rate and repair cost for exact engine code are not established by the manufacturer specification sources.",
+    "Verify Polish-market engine/transmission codes by VIN and production date.",
+    "Verify LPG suitability and installation paperwork for the exact engine."
+  ],
+  "inspectionChecklist": [
+    "Potwierdzić kod silnika i datę produkcji z dokumentów/VIN; nie opierać się wyłącznie na mocy i pojemności."
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CarOffers knowledge v1",
+  "type": "object",
+  "required": [
+    "version",
+    "modelKey",
+    "status",
+    "reviewedAt",
+    "claims",
+    "sources",
+    "openQuestions",
+    "inspectionChecklist"
+  ],
+  "properties": {
+    "version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "modelKey": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "partial",
+        "verified"
+      ]
+    },
+    "reviewedAt": {
+      "type": "string",
+      "format": "date"
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "topic",
+          "value",
+          "scope",
+          "confidence",
+          "sourceIds",
+          "notes"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "topic": {
+            "type": "string",
+            "minLength": 1
+          },
+          "value": {},
+          "scope": {
+            "type": "object"
+          },
+          "confidence": {
+            "type": "string",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          "sourceIds": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "notes": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "additionalProperties": {}
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "url",
+          "publishedAt",
+          "checkedAt"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "publishedAt": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "checkedAt": {
+            "type": "string",
+            "format": "date"
+          }
+        },
+        "additionalProperties": {}
+      }
+    },
+    "openQuestions": {
+      "type": "array",
+      "items": {}
+    },
+    "inspectionChecklist": {
+      "type": "array",
+      "items": {}
+    }
+  },
+  "additionalProperties": {}
+}

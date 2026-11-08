@@ -1,0 +1,597 @@
+{
+  "version": 1,
+  "modelKey": "hyundai-i30-iii-wagon",
+  "status": "partial",
+  "reviewedAt": "2026-11-08",
+  "claims": [
+    {
+      "id": "launch",
+      "topic": "years",
+      "value": {
+        "europeanSalesFrom": "summer-2017"
+      },
+      "scope": {
+        "market": "Europe",
+        "body": "wagon",
+        "generation": "III"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "i30-launch"
+      ],
+      "notes": [
+        "Minimalny rok wyszukiwania 2018 jest wyborem projektu, nie początkiem produkcji."
+      ]
+    },
+    {
+      "id": "engine-14",
+      "topic": "engine",
+      "value": {
+        "label": "1.4 T-GDi",
+        "powerPS": 140,
+        "fuel": "petrol",
+        "cylinders": 4,
+        "turbo": true
+      },
+      "scope": {
+        "market": "Europe",
+        "period": "launch range before 2020 update",
+        "body": "wagon"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "i30-launch"
+      ],
+      "notes": [
+        "Dokładny kod i okres stosowania dla Polski wymagają identyfikacji po dokumentach."
+      ]
+    },
+    {
+      "id": "engine-15",
+      "topic": "engine",
+      "value": {
+        "label": "1.5 DPi",
+        "displacementCc": 1498,
+        "powerPS": 110,
+        "transmission": "6MT",
+        "turbo": false
+      },
+      "scope": {
+        "market": "Slovakia / Europe",
+        "period": "2020 update",
+        "body": "wagon"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "i30-sk-2020",
+        "i30-2020-preliminary"
+      ],
+      "notes": [
+        "Dokument europejski z lutego 2020 był wstępny; słowacki katalog potwierdza późniejszą ofertę. Nie przenosić mocy na wszystkie późniejsze roczniki."
+      ]
+    },
+    {
+      "id": "luggage",
+      "topic": "practical",
+      "value": {
+        "bootLitresSeatsUp": 602,
+        "bootLitresSeatsDown": 1650,
+        "measurement": "VDA 211/212",
+        "lengthMm": 4585,
+        "widthMm": 1795,
+        "wheelbaseMm": 2650
+      },
+      "scope": {
+        "market": "Slovakia",
+        "document": "2020-10",
+        "body": "wagon"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "i30-sk-2020"
+      ],
+      "notes": [
+        "Wymiary nie potwierdzają, że konkretny wózek zmieści się z bagażami."
+      ]
+    },
+    {
+      "id": "camera-available",
+      "topic": "equipment",
+      "value": {
+        "rearCamera": "available with described 5-inch audio system"
+      },
+      "scope": {
+        "market": "Europe",
+        "period": "launch specification",
+        "body": "wagon"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "i30-launch"
+      ],
+      "notes": [
+        "Nie oznacza standardu we wszystkich wersjach ani obecności kamery w konkretnej ofercie."
+      ]
+    },
+    {
+      "id": "pl-hatchback-camera-context",
+      "topic": "equipment",
+      "value": {
+        "rearCameraStandard": [
+          "Comfort",
+          "N Line",
+          "Premium"
+        ],
+        "rearCameraClassicPlus": "not listed",
+        "frontSensorsStandard": [
+          "N Line",
+          "Premium"
+        ]
+      },
+      "scope": {
+        "market": "Poland",
+        "body": "hatchback",
+        "productionYear": 2020,
+        "document": "includes price validity 2020-06-01 and promotion 2021-04-01"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "i30-pl-hatchback-py2020"
+      ],
+      "notes": [
+        "Źródło dotyczy hatchbacka. Wskazówka do dalszego badania, NIE reguła wyposażenia Wagon."
+      ]
+    },
+    {
+      "id": "service-reference",
+      "topic": "service",
+      "value": {
+        "petrolServiceIntervalKm": 15000,
+        "petrolServiceIntervalMonths": 12,
+        "whicheverFirst": true
+      },
+      "scope": {
+        "market": "Slovakia",
+        "document": "2020-10"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "i30-sk-2020"
+      ],
+      "notes": [
+        "Dla konkretnego auta obowiązuje jego książka serwisowa i warunki użytkowania; nie zastępuje procedury dla VIN."
+      ]
+    },
+    {
+      "id": "pl-wagon-2021-15-trims",
+      "topic": "engine",
+      "value": {
+        "label": "1.5 DPi",
+        "powerPS": 110,
+        "transmission": "6MT",
+        "availableTrims": [
+          "Classic Plus",
+          "Comfort"
+        ],
+        "notListedTrims": [
+          "N Line",
+          "Premium"
+        ]
+      },
+      "scope": {
+        "market": "Poland",
+        "body": "wagon",
+        "productionYear": 2021,
+        "document": "PY2021, base price list 2021-01-12 / promotion 2021-03-01"
+      },
+      "confidence": "medium",
+      "sourceIds": [
+        "i30-pl-wagon-py2021"
+      ],
+      "notes": [
+        "Nie przypisywać 1.5 DPi do każdej wersji wyposażenia tylko dlatego, że ogólna tabela pokazuje tę wersję. Odczyt archiwalny; potwierdzić dokumentem konkretnego auta."
+      ]
+    },
+    {
+      "id": "pl-wagon-2021-camera",
+      "topic": "equipment",
+      "value": {
+        "rearCameraStandard": [
+          "Comfort",
+          "N Line",
+          "Premium"
+        ],
+        "rearCameraNotListed": [
+          "Classic Plus"
+        ],
+        "frontSensorsStandard": [
+          "Premium"
+        ],
+        "frontSensorsNotListed": [
+          "Classic Plus",
+          "Comfort",
+          "N Line"
+        ],
+        "rearSensorsStandard": [
+          "Comfort",
+          "N Line",
+          "Premium"
+        ],
+        "rearSensorsClassicPlus": "Drive package"
+      },
+      "scope": {
+        "market": "Poland",
+        "body": "wagon",
+        "productionYear": 2021,
+        "document": "PY2021"
+      },
+      "confidence": "medium",
+      "sourceIds": [
+        "i30-pl-wagon-py2021"
+      ],
+      "notes": [
+        "Dla wybranego 1.5 DPi w tej tabeli pasują tylko Classic Plus i Comfort. Comfort jest dobrym punktem filtrowania kamery, lecz wymaga dowodu w egzemplarzu.",
+        "Wagon N Line ma w tej tabeli inne przednie czujniki niż wcześniej odnaleziony hatchback — nie przenosić tabel między nadwoziami."
+      ]
+    },
+    {
+      "id": "pl-wagon-2018-14-trims",
+      "topic": "engine",
+      "value": {
+        "label": "1.4 T-GDi",
+        "powerPS": 140,
+        "transmissions": [
+          "6MT",
+          "7DCT"
+        ],
+        "availableTrims": [
+          "go! PLUS",
+          "Premium"
+        ]
+      },
+      "scope": {
+        "market": "Poland",
+        "body": "wagon",
+        "productionYear": 2018,
+        "priceListValidFrom": "2018-02-02",
+        "specialEdition": "go!/go! PLUS"
+      },
+      "confidence": "medium",
+      "sourceIds": [
+        "i30-pl-wagon-2018-go"
+      ],
+      "notes": [
+        "Dotyczy wyłącznie tej edycji cennika; nie wyklucza innych wersji sprzedawanych w pozostałej części roku."
+      ]
+    },
+    {
+      "id": "pl-wagon-2018-camera",
+      "topic": "equipment",
+      "value": {
+        "rearCameraStandardWith5InchTouchscreen": [
+          "go!"
+        ],
+        "rearCameraStandardWith8InchNavigation": [
+          "go! PLUS",
+          "Premium"
+        ],
+        "rearCameraNotListed": [
+          "Classic Plus"
+        ],
+        "frontAndRearSensorsStandard": [
+          "Premium"
+        ],
+        "rearOnlySensorsStandard": [
+          "go! PLUS"
+        ]
+      },
+      "scope": {
+        "market": "Poland",
+        "body": "wagon",
+        "productionYear": 2018,
+        "priceListValidFrom": "2018-02-02",
+        "specialEdition": "go!/go! PLUS"
+      },
+      "confidence": "medium",
+      "sourceIds": [
+        "i30-pl-wagon-2018-go"
+      ],
+      "notes": [
+        "Nie przenosić na zwykłe Comfort/Style z innego cennika. Dostępność kamery w innych edycjach 2018 pozostaje osobnym pytaniem."
+      ]
+    },
+    {
+      "id": "pl-wagon-2021-child-mounts",
+      "topic": "safety",
+      "value": {
+        "childSeatMountingsStandard": [
+          "Classic Plus",
+          "Comfort",
+          "N Line",
+          "Premium"
+        ],
+        "isofixLocationNotEstablishedByThisDocument": true
+      },
+      "scope": {
+        "market": "Poland",
+        "body": "wagon",
+        "productionYear": 2021,
+        "document": "PY2021"
+      },
+      "confidence": "medium",
+      "sourceIds": [
+        "i30-pl-wagon-py2021"
+      ],
+      "notes": [
+        "Cennik mówi o mocowaniu fotelików; nie określa w tej pozycji dokładnych lokalizacji ISOFIX."
+      ]
+    },
+    {
+      "id": "isofix-tested-hatchback-context",
+      "topic": "safety",
+      "value": {
+        "isofixStandard": "second-row outboard",
+        "isofixNotAvailable": [
+          "front passenger",
+          "second-row center"
+        ],
+        "ratingStatus": "expired 2024-01-01"
+      },
+      "scope": {
+        "market": "Euro NCAP assessment",
+        "testYear": 2017,
+        "testedBody": "hatchback",
+        "testedModel": "i30 1.6 CRDi GLS Comfort LHD"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "i30-euroncap-2017"
+      ],
+      "notes": [
+        "To tabela testowanego hatchbacka, nie samodzielne potwierdzenie wszystkich Wagon. Nie przedstawiać starej oceny jako aktualnego testu według norm 2026."
+      ]
+    },
+    {
+      "id": "retrofit-aftermarket-route",
+      "topic": "camera-retrofit",
+      "value": {
+        "supplier": "Autoradex",
+        "product": "GMS 7785TQ Navix",
+        "claimedVehicleYears": [
+          2018,
+          2023
+        ],
+        "requiresFactoryRadioWithoutNavigation": true,
+        "cameraCanBeAddedAccordingToSupplier": true,
+        "factoryNavigationCompatibility": "not established",
+        "premiumFactoryAmplifier": "not compatible per supplier"
+      },
+      "scope": {
+        "market": "Poland",
+        "body": "i30 — supplier does not distinguish all body configurations",
+        "evidenceType": "installer / retailer own product applicability"
+      },
+      "confidence": "medium",
+      "sourceIds": [
+        "i30-autoradex-retrofit"
+      ],
+      "notes": [
+        "Droga montażu przez wymianę radia; nie dowodzi możliwości dodania kamery do dowolnego fabrycznego ekranu.",
+        "Trzeba potwierdzić po zdjęciu radia/instalacji i VIN oraz uzyskać pełną wycenę. Deklaracja sprzedawcy produktu, nie gwarancja dopasowania do auta."
+      ]
+    },
+    {
+      "id": "retrofit-cost-example",
+      "topic": "camera-retrofit",
+      "value": {
+        "supplier": "Audio Car Kielce",
+        "cameraAndInstallationGrossPLN": 650,
+        "cameraType": "AHD 1080p",
+        "compatibleDisplayRequired": true,
+        "displayOrModuleCostIncluded": false,
+        "factoryDisplayInterfacePrice": "individual quote after vehicle/radio check",
+        "quoteDate": "2026-10-28",
+        "vehicleSpecificTotalGrossPLN": null
+      },
+      "scope": {
+        "market": "Poland",
+        "evidenceType": "installer price example",
+        "applicability": "general offer, not a confirmed i30 total quote"
+      },
+      "confidence": "medium",
+      "sourceIds": [
+        "audio-car-camera-pricing"
+      ],
+      "notes": [
+        "To koszt kamery z montażem do zgodnej stacji/modułu, NIE całkowity koszt doposażenia każdego i30. Cena stacji, modułu lub interfejsu może dojść osobno.",
+        "Nie łączyć ofert dwóch różnych wykonawców w fikcyjną potwierdzoną wycenę konkretnego auta."
+      ]
+    },
+    {
+      "id": "engine-14-mpi-spec",
+      "topic": "engine",
+      "value": {"label": "1.4 MPI", "displacementCc": 1368, "powerKw": 73, "powerPS": 100, "torqueNm": 134, "fuelInjection": "multi-point", "turbo": false, "timingDrive": "chain", "transmission": "6MT", "zeroTo100KphSeconds": 12.7, "likelyEngineCode": "G4LC"},
+      "scope": {"market": "Europe", "period": "i30 III launch range", "body": "Wagon", "codeScope": "G4LC mapping corroborated by inspection registry; verify VIN"},
+      "confidence": "high",
+      "sourceIds": ["i30-2017-technical", "i30-launch", "i30-stk-2026"],
+      "notes": ["Manufacturer data confirms the technical variant; engine code should still be checked on the vehicle documents/VIN."]
+    },
+    {
+      "id": "engine-14-tgdi-code-and-spec",
+      "topic": "engine",
+      "value": {"label": "1.4 T-GDi", "displacementCc": 1353, "powerKw": 103, "powerPS": 140, "torqueNm": 242, "fuelInjection": "direct", "turbo": true, "timingDrive": "chain", "transmissions": ["6MT", "7DCT"], "likelyEngineCode": "G4LD"},
+      "scope": {"market": "Europe", "period": "2017–2020 before facelift powertrain change", "body": "Wagon", "codeScope": "G4LD mapping corroborated by inspection registry; verify VIN"},
+      "confidence": "high",
+      "sourceIds": ["i30-2017-technical", "i30-launch", "i30-stk-2026"],
+      "notes": ["7DCT is a separate transmission decision; do not transfer its wear risk to the engine rating."]
+    },
+    {
+      "id": "engine-15-dpi-code-and-spec",
+      "topic": "engine",
+      "value": {"label": "1.5 DPi", "displacementCc": 1498, "powerKw": 80.9, "powerPS": 110, "torqueNm": 144.2, "fuelInjection": "DPi, naturally aspirated", "turbo": false, "transmission": "6MT", "likelyEngineCode": "G4LG"},
+      "scope": {"market": "Europe; Polish Wagon cennik corroborates 2021 presence", "period": "from 2020 facelift", "body": "Wagon", "codeScope": "G4LG mapping corroborated by inspection registry and Polish LPG technical source; verify VIN"},
+      "confidence": "high",
+      "sourceIds": ["i30-2020-preliminary", "i30-pl-wagon-py2021", "i30-stk-2026"],
+      "notes": ["February 2020 European data were preliminary; confirm the exact vehicle using VIN and its Polish documents."]
+    },
+    {
+      "id": "engine-stk-comparison-2026",
+      "topic": "reliability-evidence",
+      "value": {"source": "Czech periodic technical inspections, i30 III by engine code", "checkedAt": "2026-11-08", "observations": [{"engineCode": "G4LG", "powerKw": 81, "inspections": 3443, "partiallyRoadworthyPct": 1.8, "differenceVsSameAgePercentagePoints": -0.9, "unroadworthyPct": 0.06, "meanMileageKm": 58925}, {"engineCode": "G4LD", "powerKw": 103, "inspections": 2930, "partiallyRoadworthyPct": 3.8, "differenceVsSameAgePercentagePoints": 0.1, "unroadworthyPct": 0.07, "meanMileageKm": 97311}, {"engineCode": "G4LC", "powerKw": 73, "inspections": 707, "partiallyRoadworthyPct": 4.2, "differenceVsSameAgePercentagePoints": 0.8, "unroadworthyPct": 0.14, "meanMileageKm": 78239}]},
+      "scope": {"market": "Czech Republic", "inspectionYear": 2026, "body": "i30 III, not isolated to Wagon", "outcome": "whole-vehicle inspection outcome, not engine-failure rate"},
+      "confidence": "medium",
+      "sourceIds": ["i30-stk-2026"],
+      "notes": ["Different mileage and sample sizes prevent a direct reliability ranking. STK outcomes include chassis, brakes, lights and other vehicle components.", "Do not count Poruchovost.cz as independent confirmation: it uses the same Czech official STK data stream."]
+    },
+    {
+      "id": "i30-engine-recommendation-status",
+      "topic": "selection_review",
+      "value": {"recommendationStatus": "conditional_only", "engineStatus": {"1.5-dpi-110": "conditional_recommendation_profile_fit; long_term_engine_failure_and_repair_cost_data_incomplete", "1.4-tgdi-140": "conditional_recommendation; positive_inspection_signal_but_turbo_direct_injection_and_cost_data_incomplete; assess_7dct_separately", "1.4-mpi-100": "hold_as_default; not_rejected; modest_loaded_wagon_performance_and_smaller_exact_code_sample"}, "fullRecommendationThresholdMet": false},
+      "scope": {"profile": "12–15k km/year, mixed city/road, family wagon, LPG allowed", "decisionDate": "2026-11-08"},
+      "confidence": "medium",
+      "sourceIds": ["i30-2017-technical", "i30-2020-preliminary", "i30-stk-2026", "i30-gazeo-lpg"],
+      "notes": ["Preliminary selection assessment, not a guarantee. None meets the full Recommended evidence threshold in docs/metoda-oceny-silnikow.md."]
+    },
+    {
+      "id": "i30-uokik-engine-scope",
+      "topic": "recall",
+      "value": {"productionPeriod": {"from": "2018-10-25", "to": "2020-07-15"}, "issue": "possible blockage of vacuum pump oil-channel mesh filter; increased brake-pedal effort", "engineVariantScope": "not specified in this UOKiK notice", "requiredAction": "verify campaign completion by VIN"},
+      "scope": {"market": "Poland", "body": "Hyundai i30 produced in Czech Republic"},
+      "confidence": "high",
+      "sourceIds": ["i30-uokik-2023"],
+      "notes": ["Do not attribute this campaign to every selected petrol engine without VIN-level applicability. It is a safety action and must be checked for affected production dates."]
+    },
+    {
+      "id": "i30-g4lg-lpg",
+      "topic": "lpg",
+      "value": {"engineCode": "G4LG", "vehicleExample": "i30 2022, 1.5 DPi 110 KM", "conversionDocumented": true, "systemExample": "Landirenzo Omegas3", "perVehicleCompatibilityStillRequired": true},
+      "scope": {"market": "Poland", "body": "i30; the source's worked example does not establish every trim/VIN"},
+      "confidence": "medium",
+      "sourceIds": ["i30-gazeo-lpg"],
+      "notes": ["An aftermarket conversion example is not manufacturer approval or proof that a particular installed system is compliant; inspect its installation and tank documents."]
+    }
+  ],
+  "sources": [
+    {
+      "id": "i30-launch",
+      "title": "Hyundai — New Generation i30 Wagon: elegance meets versatility",
+      "url": "https://www.hyundai.news/uk/articles/press-releases/new-generation-hyundai-i30-wagon-elegance-meets-versatility.html",
+      "publishedAt": null,
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "i30-2020-preliminary",
+      "title": "Hyundai Motor Europe — i30 technical specifications, February 2020 (preliminary)",
+      "url": "https://www.hyundai.news/newsroom/dam/eu/press-kits/20200226_i30/20200226_i30_Technical_Data_preliminary_Update.pdf",
+      "publishedAt": null,
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "i30-sk-2020",
+      "title": "Hyundai Slovakia — katalog i30, październik 2020",
+      "url": "https://www.hyundai.sk/files/download/model/i30-2020/katalog-hyundai-i30-new-2020-10.pdf",
+      "publishedAt": null,
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "i30-pl-hatchback-py2020",
+      "title": "Hyundai Polska — i30 Hatchback PY2020, cennik i wyposażenie",
+      "url": "https://s7g10.scene7.com/is/content/hyundaiautoever/Cennik_Nowy_i30_Hatchback_PY2020pdf",
+      "publishedAt": null,
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "i30-pl-wagon-py2021",
+      "title": "Hyundai Polska — Nowy i30 Wagon PY2021, cennik i wyposażenie (kopia u dealera Auto-Mobil)",
+      "url": "https://www.auto-mobil.pl/wp-content/uploads/2021/05/Cennik_Nowy_i30_Wagon_PY2021pdf.pdf",
+      "publishedAt": null,
+      "checkedAt": "2026-11-08",
+      "accessNote": "Odczytano zindeksowaną treść PDF. Próba pobrania obrazu strony zwróciła 404; dostępność aktualnego pliku niepotwierdzona. Dokument zawiera cennik podstawowy od 2021-01-12 i promocję od 2021-03-01."
+    },
+    {
+      "id": "i30-pl-wagon-2018-go",
+      "title": "Hyundai Polska — i30 Wagon rocznik 2018, go!/go! PLUS (archiwalna kopia)",
+      "url": "https://serwer1455298.home.pl/wp-content/uploads/2018/03/Cennik_i30_wagon_2018_GO.pdf",
+      "publishedAt": "2018-02-02",
+      "checkedAt": "2026-11-08",
+      "accessNote": "Odczytano zindeksowaną treść dokumentu producenta na hostingu zewnętrznym. Nie ustalono właściciela kopii, render PDF niedostępny. Ograniczona pewność pochodzenia i układu tabel."
+    },
+    {
+      "id": "i30-autoradex-retrofit",
+      "title": "Autoradex — GMS 7785TQ Navix, i30 2018–2023 i warunki kompatybilności",
+      "url": "https://autoradex.pl/stacje-multimedialne-dedykowane/2385-stacja-multimedialna-hyundai-i30-2018-2023-gms-7785tq-navix-5902738800134.html",
+      "publishedAt": null,
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "audio-car-camera-pricing",
+      "title": "Audio Car Kielce — koszt kamery z montażem, aktualizacja 28 października 2026",
+      "url": "https://audio-car.pl/poradnik/ile-kosztuje-kamera-cofania/",
+      "publishedAt": "2026-10-28",
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "i30-euroncap-2017",
+      "title": "Euro NCAP — Hyundai i30, ocena 2017 i tabela mocowań dziecięcych",
+      "url": "https://www.euroncap.com/assessments/hyundai/i30/0674/",
+      "publishedAt": "2017-07-05",
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "i30-2017-technical",
+      "title": "Hyundai Motor Deutschland — i30 technical data, May 2017",
+      "url": "https://www.hyundai.news/newsroom/dam/de/Pressemappen/i30/i30-2017-3-technische-daten.pdf",
+      "publishedAt": "2017-05",
+      "checkedAt": "2026-11-08",
+      "accessNote": "Manufacturer data: 1.4 MPI 100 PS, 1.4 T-GDI 140 PS, injection, timing drive, torque, transmission and performance. Wagon availability is cross-checked against the European Wagon launch specification."
+    },
+    {
+      "id": "i30-stk-2026",
+      "title": "Karambol.cz — Czech i30 roadworthiness inspections by engine code",
+      "url": "https://www.karambol.cz/auta/hyundai/i30/",
+      "publishedAt": "2026",
+      "checkedAt": "2026-11-08",
+      "accessNote": "2026 data through 11 October. Separates G4LC, G4LD and G4LG within i30 III, but outcomes are whole-vehicle inspections rather than engine-failure rates."
+    },
+    {
+      "id": "i30-poruchovost-stk-2026",
+      "title": "Poruchovost.cz — Czech roadworthiness inspection methodology and i30 engine groups",
+      "url": "https://poruchovost.cz/hyundai/i30/",
+      "publishedAt": "2026-09-20",
+      "checkedAt": "2026-11-08",
+      "accessNote": "Transparent analysis of Czech official STK records. Uses the same underlying inspection-data stream as other Czech aggregators, so it is not counted as independent replication."
+    },
+    {
+      "id": "i30-uokik-2023",
+      "title": "UOKiK — Hyundai Tucson/i30 vacuum-pump oil-channel mesh-filter campaign",
+      "url": "https://uokik.gov.pl/bip/samochody-marki-hyundai-modele-tucson-oraz-i30",
+      "publishedAt": "2023-06-02",
+      "checkedAt": "2026-11-08",
+      "accessNote": "Specifies i30 Czech production dates 2018-10-25 through 2020-07-15 and a possible brake-assist symptom; notice does not identify the selected petrol engine codes. Check applicability/completion by VIN."
+    },
+    {
+      "id": "i30-gazeo-lpg",
+      "title": "Gazeo.pl — Hyundai i30 2022 1.5 DPi/G4LG LPG conversion example",
+      "url": "https://gazeo.pl/lpg/jaka-instalacje-gazowa-wybrac-lpg-problemy/hyundai-i30-2022,o,11641.html",
+      "publishedAt": "2026-05-19",
+      "checkedAt": "2026-11-08",
+      "accessNote": "Polish technical editor describes a LandiRenzo Omegas3 conversion for a 2022 i30 G4LG; aftermarket example, not blanket approval of all cars or installations."
+    }
+  ],
+  "openQuestions": [
+    "Uzupełnić brakujące polskie cenniki Wagon 2019–2020 i 2022 oraz niezależnie potwierdzić odczytane archiwalne tabele 2018 i 2021.",
+    "Potwierdzić dokładne kody i okres stosowania 1.4 T-GDi; skrzynie 6MT/7DCT potwierdza archiwalny cennik 2018.",
+    "Brak podstaw do ogłoszenia jednego najtrwalszego silnika lub rocznika; potrzebne dodatkowe dowody.",
+    "Potwierdzić archiwalne polskie wersje wyposażenia i kamerę dla każdego roku oraz rynku importu.",
+    "Uzupełnić udokumentowane usterki, akcje serwisowe i ocenę niezawodności według dokładnego napędu.",
+    "Ustalić aktualne lokalne koszty serwisu i montażu kamery dla konkretnego radia; nie przyjmować uniwersalnej kwoty.",
+    "Sprawdzić wymiary wózka i praktyczne pakowanie; pojemność w litrach nie rozstrzyga dopasowania."
+  ],
+  "inspectionChecklist": [
+    "Porównać VIN, datę produkcji, pierwszą rejestrację, nadwozie i rynek pochodzenia z dokumentami.",
+    "Potwierdzić silnik, moc i skrzynię; nie opierać identyfikacji wyłącznie na tytule ogłoszenia.",
+    "Poprosić o zdjęcie działającej kamery po włączeniu biegu wstecznego i zdjęcie radia; bez dowodu oznaczyć do sprawdzenia.",
+    "Sprawdzić faktury serwisowe, historię szkód i akcje serwisowe po VIN; oględziny w niezależnym warsztacie.",
+    "Przymierzyć wózek i fotelik; sprawdzić mocowania oraz zakres regulacji przednich foteli."
+  ]
+}

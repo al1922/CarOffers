@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "modelKey": "skoda-superb-iii-combi",
+  "status": "partial",
+  "reviewedAt": "2026-11-08",
+  "claims": [
+    {
+      "id": "14-act-150",
+      "topic": "engine",
+      "value": {
+        "name": "1.4 TSI ACT",
+        "powerKw": 110,
+        "powerPS": 150,
+        "displacementCc": 1395
+      },
+      "scope": {
+        "market": "Europe",
+        "period": "2017 specification",
+        "body": "Combi"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "superb17"
+      ],
+      "notes": [
+        "Manufacturer confirms specification; reliability is not established by this document."
+      ]
+    },
+    {
+      "id": "14-act-code-and-construction",
+      "topic": "engine",
+      "value": {"variant": "1.4 TSI ACT", "powerKw": 110, "powerPS": 150, "displacementCc": 1395, "likelyCode": "CZEA", "turbo": true, "directInjection": true, "timingDrive": "toothed belt"},
+      "scope": {"market": "Europe", "body": "Superb III Combi", "period": "2017 specification; verify production code by VIN"},
+      "confidence": "medium",
+      "sourceIds": ["superb17", "superb-engine-code-catalog", "superb-service-data"],
+      "notes": ["Škoda technical data confirms output/displacement and manual/automatic offering; code mapping is corroborated by service/catalog sources but the exact engine code must be taken from the car's data label/VIN."]
+    },
+    {
+      "id": "14-act-stk-evidence",
+      "topic": "reliability",
+      "value": {"sourceDataset": "Czech official periodic inspections", "engineGroup": "1.4 TSI 110 kW", "inspections": 2747, "observedVsExpectedSeriousDefects": 0.86, "confidenceInterval95": [0.67, 1.08]},
+      "scope": {"market": "Czech Republic", "model": "Superb III, engine grouped by 1.4 TSI/power and not engine code", "dataThrough": "2026-09-20"},
+      "confidence": "medium",
+      "sourceIds": ["superb-stk-poruchovost"],
+      "notes": ["This measures serious whole-vehicle roadworthiness inspection outcomes, not internal engine failures. Confidence interval crosses 1.0; sample is useful screening evidence but not definitive. Do not count other aggregators of the same Czech inspection database as independent confirmation."]
+    },
+    {
+      "id": "steering-recall-2026",
+      "topic": "recall",
+      "value": {"campaign": "KBA 17091R / Škoda 48LS", "productionPeriod": "2015-11 through 2026-08", "defect": "steering fastening bolt may corrode and fracture", "engineSpecific": false, "vinCheckRequired": true},
+      "scope": {"market": "Europe/Germany recall details", "models": ["Kodiaq", "Karoq", "Octavia", "Superb"], "productionPeriod": "November 2015–August 2026"},
+      "confidence": "high",
+      "sourceIds": ["superb-steering-recall-2026"],
+      "notes": ["ADAC reports the 2026 campaign and says applicability is determined by vehicle, not engine. Target-year cars may fall within the production period; verify by VIN and confirm completion. This is not an engine defect and does not change engine status."]
+    },
+    {
+      "id": "engine-assessment",
+      "topic": "engine-recommendation",
+      "value": {"1.4-tsi-ea211-150": {"status": "conditional_recommendation", "reason": "Exact 2017 Combi fitment and ample family-load performance; 1.4 TSI inspection group has 2747 Czech tests but the interval includes average and tests are whole-vehicle. Exact-code repair/cost evidence is incomplete."}, "fullRecommendedThresholdMet": false},
+      "scope": {"market": "Europe/Poland", "model": "Superb III Combi", "reviewedAt": "2026-11-08"},
+      "confidence": "medium",
+      "sourceIds": ["superb17", "superb-stk-poruchovost"],
+      "notes": ["1.4 TSI has turbo and direct injection; inspect cooling module/leaks and belt service using VIN-specific instructions. Transmission assessed separately (manual/DSG). LPG compatibility requires written confirmation for the exact code/kit and installation; no reliable Polish repair-cost dataset located."]
+    }
+  ],
+  "sources": [
+    {
+      "id": "superb17",
+      "title": "Škoda Superb Combi technical data 2017",
+      "url": "https://cdn.skoda-storyboard.com/2017/07/TD-SUPERB-COMBI-en.pdf.pdf",
+      "publishedAt": null,
+      "checkedAt": "2026-11-08",
+      "accessNote": "Manufacturer technical table confirms 1.4 TSI 110 kW ACT in Combi, manual and automatic options; occurrence only, not reliability recommendation."
+    },
+    {
+      "id": "superb-engine-code-catalog",
+      "title": "Motorservice — VAG engine codes and applications technical catalog",
+      "url": "https://www.ms-motorservice.com/MediaAssets/1809298_pg_50003573_web.pdf",
+      "publishedAt": null,
+      "checkedAt": "2026-11-08",
+      "accessNote": "Secondary parts catalog maps CZDA/CZEA to VAG 1.4 TSI 110 kW variants; VIN/data label remains definitive."
+    },
+    {
+      "id": "superb-service-data",
+      "title": "Volkswagen technical workshop manual — 1.4 TSI EA211 service data",
+      "url": "https://passatworld.ru/othr/b8/engines/engine-cpta-czca-czea-ea211-eng.pdf",
+      "publishedAt": "2018-11",
+      "checkedAt": "2026-11-08",
+      "accessNote": "Workshop technical document covers EA211 1.4 direct-injection turbo engines including CZEA; use only as engine-family construction context, not evidence of failure frequency."
+    },
+    {
+      "id": "superb-stk-poruchovost",
+      "title": "Poruchovost.cz — Škoda Superb III, Czech inspection statistics by engine group and model year",
+      "url": "https://poruchovost.cz/skoda/superb/superb-iii/",
+      "publishedAt": "2026-10-13",
+      "checkedAt": "2026-11-08",
+      "accessNote": "Uses Czech Ministry of Transport official periodic inspection records; 1.4 TSI 110 kW group has 2747 inspections, O/E 0.86 with 95% CI 0.67–1.08. Group does not isolate CZEA/CZDA or engine-only failures."
+    },
+    {
+      "id": "superb-steering-recall-2026",
+      "title": "ADAC — VW/Škoda steering fastening bolt recall, October 2026",
+      "url": "https://www.adac.de/news/auto-rueckruf-vw-audi-lenkung/",
+      "publishedAt": "2026-10-02",
+      "checkedAt": "2026-11-08",
+      "accessNote": "Reports Škoda campaign KBA 17091R / manufacturer 48LS for Kodiaq/Karoq/Octavia/Superb built Nov 2015–Aug 2026 due to possible steering fastener corrosion. VIN-specific, not engine-related."
+    }
+  ],
+  "openQuestions": [
+    "Reliability/common failure rate and repair cost for exact engine code are not established by the manufacturer specification sources.",
+    "Verify Polish-market engine/transmission codes by VIN and production date.",
+    "Verify LPG suitability and installation paperwork for the exact engine."
+  ],
+  "inspectionChecklist": [
+    "Potwierdzić kod silnika i datę produkcji z dokumentów/VIN; nie opierać się wyłącznie na mocy i pojemności."
+  ]
+}

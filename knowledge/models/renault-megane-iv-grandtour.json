@@ -1,0 +1,140 @@
+{
+  "version": 1,
+  "modelKey": "renault-megane-iv-grandtour",
+  "status": "partial",
+  "reviewedAt": "2026-11-08",
+  "claims": [
+    {
+      "id": "engine-review-2026",
+      "topic": "engine-assessment",
+      "value": {
+        "variant": "1.3-tce-140",
+        "likelyEngineType": "H5H/H5Ht family; exact suffix and calibration depend on market/VIN",
+        "status": "conditional_recommendation",
+        "reason": "Good power reserve for a loaded Grandtour and no strong exact-variant disqualifying signal found; remaining lifecycle and repair-cost evidence is incomplete.",
+        "fullRecommendedThresholdMet": false,
+        "transmissions": "Assess 6MT and EDC separately"
+      },
+      "scope": {"market": "Europe", "body": "Mégane IV Grandtour/Estate", "period": "selected 2019–2022 search years", "reviewDate": "2026-11-08"},
+      "confidence": "medium",
+      "sourceIds": ["megane-nl-2019", "megane-renault-manual-h5h", "megane-slovenia-140", "megane-adac-140"],
+      "notes": ["The ADAC data are for the Mégane generation rather than a controlled H5H engine cohort; they cannot establish engine failure rates.", "No current Polish repair-cost series or independent H5H failure-frequency dataset found; LPG approval for the exact installation remains unverified."]
+    },
+    {
+      "id": "early-edc-recall-outside-search-period",
+      "topic": "recall",
+      "value": {"productionThrough": "2017-01-23", "transmission": "DW5/EDC", "risk": "clutch-system pressure under hard acceleration may overheat clutch and cause limp mode"},
+      "scope": {"market": "Poland", "body": "Mégane IV", "selectedSearchYears": "2019–2022"},
+      "confidence": "high",
+      "sourceIds": ["megane-uokik-dw5-2017"],
+      "notes": ["The cited campaign predates the configured search period; it is not evidence against the selected 1.3 TCe 140, but illustrates why VIN/gearbox campaign status must be checked."]
+    },
+    {
+      "id": "engine",
+      "topic": "engine",
+      "value": {
+        "variants": [
+          "TCe 140 GPF",
+          "TCe 140 EDC GPF"
+        ],
+        "bodyAliases": [
+          "Estate",
+          "Grandtour"
+        ]
+      },
+      "scope": {
+        "market": "Netherlands",
+        "document": "2019-07",
+        "body": "estate"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "megane-nl-2019"
+      ],
+      "notes": [
+        "EDC jest odrębną konfiguracją skrzyni. Polskie nazwy wyposażenia i dokładny kod silnika wymagają osobnego źródła."
+      ]
+    },
+    {
+      "id": "body-identification",
+      "topic": "identity",
+      "value": {
+        "seats": 5,
+        "bodiesInDocument": [
+          "hatchback",
+          "estate"
+        ]
+      },
+      "scope": {
+        "market": "Netherlands",
+        "document": "2019-07"
+      },
+      "confidence": "high",
+      "sourceIds": [
+        "megane-nl-2019"
+      ],
+      "notes": [
+        "Z tabel wspólnych nie przenosić pojemności bagażnika hatchbacka do kombi."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "megane-nl-2019",
+      "title": "Renault Nederland — Mégane Hatchback en Estate, cennik lipiec 2019",
+      "url": "https://cdn.group.renault.com/ren/nl/brochures-en-prijslijsten/prijzenarchief/megane/megane-prijslijst-07-2019.pdf",
+      "publishedAt": null,
+      "checkedAt": "2026-11-08"
+    },
+    {
+      "id": "megane-renault-manual-h5h",
+      "title": "Renault — Mégane IV phase 2 owner manual, engine identifiers",
+      "url": "https://www.user-manual.renault.com/en/section-6-technical-specifications/engine-specifications-12",
+      "publishedAt": null,
+      "checkedAt": "2026-11-08",
+      "accessNote": "Manufacturer manual identifies H5H turbo engine and 1,333 cm³ for Mégane IV phase 2; does not by itself establish the 140 PS Grandtour calibration."
+    },
+    {
+      "id": "megane-slovenia-140",
+      "title": "Renault Slovenia — Mégane hatchback and Grandtour price list / technical table",
+      "url": "https://cdn.group.renault.com/ren/si/home-page/ceniki/cenik_novi_megane.pdf.asset.pdf/c6e0e57b41.pdf",
+      "publishedAt": "2020",
+      "checkedAt": "2026-11-08",
+      "accessNote": "Official Renault market PDF documents TCe 140 FAP and EDC FAP, displacement 1,333 cm³ and torque/transmission columns; market and trim may differ from Poland."
+    },
+    {
+      "id": "megane-adac-140",
+      "title": "ADAC — Renault Mégane TCe 140 GPF data and generation-level breakdown statistics",
+      "url": "https://www.adac.de/rund-ums-fahrzeug/autokatalog/marken-modelle/renault/megane/iv/293798/",
+      "publishedAt": null,
+      "checkedAt": "2026-11-08",
+      "accessNote": "Vehicle-level Mégane IV observations; not an engine-only reliability cohort."
+    },
+    {
+      "id": "megane-uokik-dw5-2017",
+      "title": "UOKiK — Renault Mégane IV DW5 clutch campaign",
+      "url": "https://archiwum.uokik.gov.pl/powiadomienia.php?news_id=13165",
+      "publishedAt": null,
+      "checkedAt": "2026-11-08",
+      "accessNote": "Early-production vehicles through 2017-01-23; not in the selected 2019–2022 interval."
+    }
+  ],
+  "openQuestions": [
+    "Potwierdzić dokładny sufiks kodu H5H/H5Ht i kalibrację 140 KM według VIN oraz rynku.",
+    "Pozyskać niezależne dane trwałości H5H i polskie koszty napraw; osobno sprawdzić instalację LPG i skrzynię EDC.",
+    "Uzupełnić polski katalog Grandtour 1.3 TCe 140, dokładną pojemność, kod jednostki i daty modernizacji.",
+    "Oddzielić dane 1.3 TCe od 1.2 TCe; podobna nazwa TCe nie identyfikuje silnika.",
+    "Potwierdzić archiwalne polskie wersje wyposażenia i kamerę dla każdego roku oraz rynku importu.",
+    "Uzupełnić udokumentowane usterki, akcje serwisowe i ocenę niezawodności według dokładnego napędu.",
+    "Ustalić aktualne lokalne koszty serwisu i montażu kamery dla konkretnego radia; nie przyjmować uniwersalnej kwoty.",
+    "Sprawdzić wymiary wózka i praktyczne pakowanie; pojemność w litrach nie rozstrzyga dopasowania."
+  ],
+  "inspectionChecklist": [
+    "Porównać VIN, datę produkcji, pierwszą rejestrację, nadwozie i rynek pochodzenia z dokumentami.",
+    "Potwierdzić silnik, moc i skrzynię; nie opierać identyfikacji wyłącznie na tytule ogłoszenia.",
+    "Poprosić o zdjęcie działającej kamery po włączeniu biegu wstecznego i zdjęcie radia; bez dowodu oznaczyć do sprawdzenia.",
+    "Sprawdzić faktury serwisowe, historię szkód i akcje serwisowe po VIN; oględziny w niezależnym warsztacie.",
+    "Przymierzyć wózek i fotelik; sprawdzić mocowania oraz zakres regulacji przednich foteli."
+  ]
+}
+

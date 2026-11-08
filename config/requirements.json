@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "purchase": {
+    "maxPriceGrossPln": 55000,
+    "scope": "purchase_only",
+    "mandatoryFinancingAllowed": false,
+    "priceExceptions": [
+      {
+        "rule": "slightly_above_limit_only_for_exceptional_offer",
+        "amountPln": null,
+        "userMustConfirm": true
+      }
+    ],
+    "auctionsAllowed": false
+  },
+  "listingEvidence": {
+    "requiredFields": [],
+    "preferredFields": ["vin", "firstRegistrationDate"],
+    "missingPreferredFieldHandling": "mark_missing_and_consider_as_information_gap; do_not_automatically_exclude",
+    "registrationNumber": "record_presence_only; may be visible in listing photos; do not spend effort extracting from images or use as a strong ranking factor",
+    "independentInspectionRefusal": "exclude_only_if_listing_explicitly_states_inspection_is_not_allowed"
+  },
+  "sellerTypes": "any_non_auction_seller_if_price_conditions_fit",
+  "sellerClassification": {
+    "field": "offerType",
+    "values": ["private", "company", "leasing_return", "unknown"],
+    "unknownHandling": "mark_unknown; do_not_infer_from_platform_or_ad_style"
+  },
+  "priceAssessment": {
+    "baseLimitGrossPln": 55000,
+    "slightExceptionalOverageAllowed": true,
+    "import": "include material mandatory import costs; minor costs may be noted but ignored in initial screening"
+  },
+  "familyEquipment": {
+    "isofix": "important; if not stated, verify whether standard for exact model/year/market/trim; otherwise mark unknown"
+  },
+  "yearMin": 2018,
+  "mileage": {
+    "preferredMaxKm": 170000,
+    "hardMaxKm": 170000,
+    "assessment": "hard_maximum; exclude offers above 170000 km"
+  },
+  "transmissions": [
+    "manual",
+    "automatic"
+  ],
+  "camera": {
+    "required": true,
+    "preferred": true,
+    "requiredAtDelivery": false,
+    "mustMarkIfAbsent": true,
+    "retrofitAllowed": true,
+    "retrofitCompatibilityMustBeConfirmed": true
+  },
+  "frontParkingSensors": "preferred",
+  "structuralDamageAllowed": false,
+  "cosmeticRepairsAllowed": true,
+  "location": "PL",
+  "origins": [
+    "domestic",
+    "import"
+  ],
+  "bodyScope": [
+    "wagon",
+    "sedan",
+    "suv",
+    "crossover",
+    "hatchback",
+    "minivan"
+  ],
+  "modelScope": "active_models_in_search-models.json_only",
+  "engineScope": "listed_variants_only",
+  "fuelScope": "all_fuels; LPG allowed and must be marked with installation documents checked",
+  "transmissionPreference": "none; manual and automatic are equally acceptable",
+  "use": {
+    "adults": 2,
+    "children": 1,
+    "cityShare": 0.5,
+    "strollerAndLuggageRequired": true,
+    "annualMileageKm": {
+      "min": 12000,
+      "max": 15000
+    },
+    "typicalCityTripMinutes": 30
+  },
+  "rankingPriorities": [
+    "technical_condition",
+    "documented_service",
+    "engine_durability",
+    "equipment",
+    "value"
+  ],
+  "unknownHardRequirement": "check",
+  "openQuestions": {
+    "typicalCityTripKm": null,
+    "strollerDimensionsCm": null,
+    "cameraRequiredAtDelivery": null,
+    "fuelScopeBeyondSelectedEngines": "all fuels confirmed; engine variants remain restricted to configured list"
+  },
+  "confirmedByUser": [
+    "engineScope",
+    "lpg",
+    "modelScope",
+    "purchase.auctionsAllowed",
+    "purchase.maxPriceGrossPln",
+    "purchase.scope",
+    "transmissionPreference",
+    "use.annualMileageKm",
+    "use.typicalCityTripMinutes"
+  ],
+  "notes": [
+    "Wybrane silniki przeniesiono z dotychczasowych danych; nie oznacza to zakazu innych paliw ustalonego przez użytkownika.",
+    "Użytkownik podał czas jazdy miejskiej około 30 minut, nie odległość. Nie przeliczać automatycznie na kilometry.",
+    "Skrzynia manualna i automatyczna są równie akceptowalne; przed zakupem skrzynię ocenić dla konkretnego wariantu.",
+    "Katalog modeli i silników obejmuje wyłącznie aktualną listę użytkownika. Status wyboru nie jest rekomendacją niezawodności."
+  ],
+  "lpg": {
+    "allowed": true,
+    "mustBeMarked": true,
+    "installationDocumentsMustBeChecked": true
+  }
+}

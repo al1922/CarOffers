@@ -1,148 +1,120 @@
-'use strict';
-// Statyczna aplikacja: modele z models.json, oferty z offers/*.json, bez GitHub API.
-const $ = s => document.querySelector(s);
-const tabs = $('#modelTabs'), panel = $('#cards'), count = $('#count'), empty = $('#empty');
-const requirements = $('#modelRequirements'), corollaRequirements = requirements.innerHTML;
-const controls = ['search','maxPrice','maxMileage','minYear','engineFilter','bodyFilter','transmissionFilter','verdictFilter','sort','onlyNew','hideDuplicates'];
-const cache = new Map();
-let models = [], selectedModel = '', offers = [], latestToken = 0, view = 'cards';
-const fmt = n => Number.isFinite(n) ? new Intl.NumberFormat('pl-PL').format(n) : '—';
-const safe = v => String(v ?? '').trim();
-const verdictName = v => ({match:'Zgodne',check:'Do weryfikacji',review:'Do weryfikacji',fail:'Poza wymaganiami'})[v] || 'Do sprawdzenia';
-const verdictRank = v => ({match:0,check:1,review:1,fail:2})[v] ?? 1;
-const validModel = m => m && /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(m.key||'') && typeof m.name === 'string' && /^offers\/[a-z0-9-]+\.json$/.test(m.file||'');
-function node(tag, cls, value) { const el=document.createElement(tag); if(cls) el.className=cls; if(value!==undefined) el.textContent=safe(value); return el; }
-function button(text, click){const b=node('button','',text);b.type='button';b.addEventListener('click',click);return b;}
-function offerLinks(offer){
- const wrap=node('div','offer-actions');
- for(const link of (Array.isArray(offer.urls)?offer.urls:[])){
-  if(!/^https:\/\//i.test(link.url||'')) continue;
-  const a=node('a','link-button',link.label||'Ogłoszenie');a.href=link.url;a.target='_blank';a.rel='noopener noreferrer';wrap.append(a);
- }
- return wrap;
-}
-function details(offer){
- const d=node('div','offer-details');
- if(offer.verdictNote){d.append(node('h4','','Ocena zgodności'),node('p','',offer.verdictNote));}
- for(const [key,val] of Object.entries(offer.details||{})){
-  if(!val)continue;d.append(node('h4','',key),node('p','',val));
- }
- if(offer.vin)d.append(node('h4','','VIN'),node('p','',offer.vin));
- d.append(offerLinks(offer));return d;
-}
-function priceBlock(offer){
- const wrap=node('div','price-block');
- const numeric=Number.isFinite(offer.price)?fmt(offer.price)+' zł':null;
- const raw=safe(offer.priceLabel);
- const amount=numeric||raw||'Brak ceny';
- wrap.append(node('strong','price-main',amount));
- if(numeric && raw){
-  const clean=raw.replace(/\*\*/g,'').replace(/\s+/g,' ').trim();
-  const rest=clean.replace(/^\s*[\d\s\u00a0.,]+\s*(?:zł|PLN)\s*/i,'').replace(/^[\s,;:()\-]+|[\s,;:()\-]+$/g,'').trim();
-  if(rest)wrap.append(node('span','price-note',rest));
- }
- return wrap;
-}
-function card(offer){
- const c=node('article','car-card');
- const top=node('div','offer-summary'), left=node('div'), right=node('div','offer-price');
- left.append(node('div','offer-meta',offer.subtitle||''),node('h3','',offer.title||'Oferta samochodu'));
- const badges=node('div');badges.append(node('span','verdict-chip '+(offer.verdict||''),verdictName(offer.verdict)));
- if(offer.isNew)badges.append(node('span','new-chip','Nowa'));
- left.append(badges);right.append(priceBlock(offer));top.append(left,right);c.append(top);
- const meta=node('div','offer-tags');
- for(const val of [offer.year&&offer.year+' r.',offer.mileage!=null&&fmt(offer.mileage)+' km',offer.engine,offer.body,offer.transmission])if(val)meta.append(node('span','',val));
- c.append(meta);
- if(offer.seller)c.append(node('p','offer-meta',offer.seller));
- const actions=node('div','offer-actions');let opened=false;const toggle=button('Szczegóły',()=>{opened=!opened; extra.hidden=!opened;toggle.textContent=opened?'Zwiń szczegóły':'Szczegóły';toggle.setAttribute('aria-expanded',String(opened));});toggle.setAttribute('aria-expanded','false');
- actions.append(toggle);const first=(offer.urls||[]).find(x=>/^https:\/\//i.test(x.url||''));if(first){const a=node('a','link-button','Otwórz ogłoszenie');a.href=first.url;a.target='_blank';a.rel='noopener noreferrer';actions.append(a);}
- c.append(actions);const extra=details(offer);extra.hidden=true;c.append(extra);return c;
-}
-function table(offers){
- const wrap=node('div','offer-table-wrap'), t=node('table','offer-table'), head=node('thead'), hr=node('tr');
- for(const title of ['Samochód','Rok','Silnik','Przebieg','Cena','Ocena','Ogłoszenie']){const th=node('th','',title);th.scope='col';hr.append(th);}head.append(hr);t.append(head);
- const body=node('tbody');
- for(const o of offers){
-  const tr=node('tr','offer-data-row');const name=node('td','mobile-name');name.dataset.label='Samochód';name.append(node('strong','',o.title||'Oferta'));if(o.isNew)name.append(node('span','new-chip','Nowa'));tr.append(name);
-  for(const [label,v] of [['Rok',o.year||'—'],['Silnik',o.engine||'—'],['Przebieg',o.mileage!=null?fmt(o.mileage)+' km':'—']]){const cell=node('td');cell.dataset.label=label;cell.append(node('span','mobile-cell-value',v));tr.append(cell);}
-  const priceCell=node('td','offer-price');priceCell.dataset.label='Cena';priceCell.append(priceBlock(o));tr.append(priceCell);
-  const verdict=node('td','mobile-verdict');verdict.dataset.label='Ocena';verdict.append(node('span','verdict-chip '+(o.verdict||''),verdictName(o.verdict)));tr.append(verdict);
-  const act=node('td','mobile-actions'), detailRow=node('tr','detail-row'), detailCell=node('td');act.dataset.label='Ogłoszenie';detailCell.colSpan=7;detailCell.append(details(o));detailRow.append(detailCell);detailRow.hidden=true;
-  const toggle=button('Szczegóły',()=>{detailRow.hidden=!detailRow.hidden;toggle.textContent=detailRow.hidden?'Szczegóły':'Zwiń';toggle.setAttribute('aria-expanded',String(!detailRow.hidden));});toggle.setAttribute('aria-expanded','false');act.append(toggle);const first=(o.urls||[]).find(x=>/^https:\/\//i.test(x.url||''));if(first){const link=node('a','link-button mobile-table-link','Ogłoszenie');link.href=first.url;link.target='_blank';link.rel='noopener noreferrer';act.append(link);}tr.append(act);body.append(tr,detailRow);
- }
- t.append(body);wrap.append(t);return wrap;
-}
-function identityKeys(o){
- const keys=[];if(o.vin && /^[A-HJ-NPR-Z0-9]{17}$/i.test(o.vin))keys.push('vin:'+o.vin.toUpperCase());
- for(const id of o.listingIds||[])if(id)keys.push('listing:'+String(id).toLowerCase());
- for(const item of o.urls||[]){const url=item.normalized||item.url;if(url){try{const u=new URL(url);keys.push('url:'+u.hostname.replace(/^www\./,'').toLowerCase()+u.pathname.replace(/\/$/,''));}catch{}}}
- if(o.id)keys.push('id:'+o.id.toLowerCase());return [...new Set(keys)];
-}
-// Łączy oferty współdzielące VIN, ID ogłoszenia lub adres URL; nie zgaduje po samym tytule.
-function dedupe(list){
- const parents=list.map((_,i)=>i);const find=i=>parents[i]===i?i:(parents[i]=find(parents[i]));
- const seen=new Map();list.forEach((o,i)=>{for(const k of identityKeys(o)){if(seen.has(k))parents[find(i)]=find(seen.get(k));else seen.set(k,i);}});
- const groups=new Map();list.forEach((o,i)=>{const root=find(i);if(!groups.has(root))groups.set(root,[]);groups.get(root).push(o);});
- return [...groups.values()].map(group=>{
-  const winner=group.find(x=>x.vin)||group[0];
-  return {...winner,urls:[...new Map(group.flatMap(x=>x.urls||[]).map(x=>[x.normalized||x.url,x])).values()],isNew:group.some(x=>x.isNew),duplicateCount:group.length};
- });
-}
-function valuesFor(key){return [...new Set(offers.map(o=>safe(o[key])).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'pl'));}
-function updateSelect(id,vals){const el=$('#'+id);el.replaceChildren(new Option('Wszystkie',''));for(const v of vals)el.add(new Option(v,v));}
-function render(){
- const text=$('#search').value.trim().toLocaleLowerCase('pl');const price=Number($('#maxPrice').value)||Infinity, mileage=Number($('#maxMileage').value)||Infinity, year=Number($('#minYear').value)||0;
- let list=offers.filter(o=>{
-  if(o.price!=null && o.price>price || o.mileage!=null && o.mileage>mileage || o.year!=null && o.year<year)return false;
-  if($('#engineFilter').value && o.engine!==$('#engineFilter').value)return false;
-  if($('#bodyFilter').value && o.body!==$('#bodyFilter').value)return false;
-  if($('#transmissionFilter').value && o.transmission!==$('#transmissionFilter').value)return false;
-  if($('#verdictFilter').value && (o.verdict==='review'?'check':o.verdict)!==$('#verdictFilter').value)return false;
-  if($('#onlyNew').checked && !o.isNew)return false;
-  return !text || [o.title,o.seller,o.vin,o.engine,o.body,o.transmission,...Object.values(o.details||{})].join(' ').toLocaleLowerCase('pl').includes(text);
- });
- if($('#hideDuplicates').checked)list=dedupe(list);
- const sort=$('#sort').value;
- list.sort((a,b)=>{
-  const n=(v,def)=>Number.isFinite(v)?v:def;
-  if(sort==='priceAsc')return n(a.price,Infinity)-n(b.price,Infinity);
-  if(sort==='priceDesc')return n(b.price,-1)-n(a.price,-1);
-  if(sort==='yearDesc')return n(b.year,0)-n(a.year,0);
-  if(sort==='mileageAsc')return n(a.mileage,Infinity)-n(b.mileage,Infinity);
-  if(sort==='newest')return Number(b.isNew)-Number(a.isNew);
-  return verdictRank(a.verdict)-verdictRank(b.verdict)||n(a.price,Infinity)-n(b.price,Infinity);
- });
- panel.replaceChildren();panel.className=view==='cards'?'offer-list':'';
- if(view==='cards'){const frag=document.createDocumentFragment();for(const o of list)frag.append(card(o));panel.append(frag);}else panel.append(table(list));
- count.textContent=`${list.length} z ${offers.length} ofert`;
- empty.hidden=list.length!==0;empty.textContent='Brak ofert spełniających wybrane filtry.';
-}
-function renderTabs(){tabs.replaceChildren();for(const m of models){const b=button(m.name,()=>{location.hash=encodeURIComponent(m.key);selectModel(m.key);});b.className='model-tab';b.setAttribute('role','tab');b.setAttribute('aria-selected',String(m.key===selectedModel));tabs.append(b);}}
-async function loadOffers(m){const response=await fetch('./'+m.file,{cache:'no-store'});if(!response.ok)throw Error('Nie udało się pobrać ofert: '+m.file+' (HTTP '+response.status+')');const data=await response.json();if(!Array.isArray(data.offers))throw Error('Brak tablicy offers w '+m.file);return data.offers;}
-function markNew(list,key){
- // Snapshot zapisujemy dopiero po odczytaniu poprzedniego; zmiana ID nowej oferty może spowodować ponowne oznaczenie.
- const storageKey='car-offer-seen-v2:'+key;
- try{const previous=JSON.parse(localStorage.getItem(storageKey)||'null');const prior=new Set(Array.isArray(previous)?previous:[]);
-  for(const o of list)o.isNew=Array.isArray(previous)&&!identityKeys(o).some(k=>prior.has(k));
-  const all=[...new Set(list.flatMap(identityKeys))];localStorage.setItem(storageKey,JSON.stringify([...new Set([...prior,...all])]));
- }catch{for(const o of list)o.isNew=false;}
-}
-async function selectModel(key){const m=models.find(x=>x.key===key);if(!m)return;const token=++latestToken;selectedModel=key;renderTabs();$('#modelTitle').textContent=m.name;document.title=m.name+' — oferty samochodów';requirements.innerHTML=m.requirements==='corolla'?corollaRequirements:'';panel.replaceChildren();count.textContent='Ładowanie…';empty.hidden=true;
- try{const list=await loadOffers(m);if(token!==latestToken)return;offers=list;markNew(offers,key);for(const [id,field] of [['engineFilter','engine'],['bodyFilter','body'],['transmissionFilter','transmission']])updateSelect(id,valuesFor(field));
-  for(const id of ['search','maxPrice','maxMileage','minYear','verdictFilter'])$('#'+id).value='';$('#onlyNew').checked=false;render();
- }catch(e){if(token!==latestToken)return;count.textContent='';empty.hidden=false;empty.textContent=e.message;console.error(e);}
-}
-for(const id of controls)$('#'+id).addEventListener(['onlyNew','hideDuplicates','engineFilter','bodyFilter','transmissionFilter','verdictFilter','sort'].includes(id)?'change':'input',render);
-$('#resetFilters').addEventListener('click',()=>{for(const id of ['search','maxPrice','maxMileage','minYear','engineFilter','bodyFilter','transmissionFilter','verdictFilter'])$('#'+id).value='';$('#sort').value='priority';$('#onlyNew').checked=false;$('#hideDuplicates').checked=true;render();});
-function setView(v){view=v;$('#viewCards').classList.toggle('active',v==='cards');$('#viewTable').classList.toggle('active',v==='table');$('#viewCards').setAttribute('aria-pressed',String(v==='cards'));$('#viewTable').setAttribute('aria-pressed',String(v==='table'));render();}
-$('#viewCards').addEventListener('click',()=>setView('cards'));$('#viewTable').addEventListener('click',()=>setView('table'));
-window.addEventListener('hashchange',()=>{const key=decodeURIComponent(location.hash.slice(1));if(key!==selectedModel && models.some(m=>m.key===key))selectModel(key);});
-(async()=>{try{const response=await fetch('./models.json',{cache:'no-store'});if(!response.ok)throw Error('Nie udało się pobrać models.json');const data=await response.json();models=(data.models||[]).filter(validModel);if(!models.length)throw Error('Brak poprawnie zdefiniowanych modeli.');const key=decodeURIComponent(location.hash.slice(1));await selectModel(models.some(m=>m.key===key)?key:models[0].key);}catch(e){empty.hidden=false;empty.textContent=e.message;console.error(e);}})();
+import {defaultFilters,sanitizeFilters,encodeFilters,decodeFilters,dedupe,filterOffers,sortOffers,bodyNames,statuses,fmt,dateLabel,distance,availability,verdictNames} from './assets/core.mjs?v=11';
+import {createStore} from './assets/storage.mjs?v=11';
+import {loadData,loadKnowledge} from './assets/data.mjs?v=11';
+import {el,button,badge,empty,link,offerCard,offerTable,offerDetails,comparison,knowledgeCard,knowledgeDetails,updates} from './assets/views.mjs?v=11';
 
-// Motyw zapisywany lokalnie; brak synchronizacji z serwerem.
-(function initTheme(){
- const btn=document.getElementById('themeToggle');if(!btn)return;
- const update=()=>{const dark=document.documentElement.dataset.theme==='dark';btn.textContent=dark?'Tryb jasny':'Tryb ciemny';btn.setAttribute('aria-pressed',String(dark));btn.setAttribute('aria-label',dark?'Włącz tryb jasny':'Włącz tryb ciemny');};
- btn.addEventListener('click',()=>{const next=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=next;try{localStorage.setItem('carOffersTheme',next);}catch{}update();});
- update();
-})();
+const $=selector=>document.querySelector(selector);
+let data=null,filters=defaultFilters(),comparisonKeys=new Set(),grouped=[],loadToken=0;
+const messages=new Set();
+function notify(message){messages.add(message);const notice=$('#notice');notice.hidden=false;notice.replaceChildren(el('span','',[...messages].join(' ')),button('×',()=>{messages.clear();notice.hidden=true;},'notice-close'));notice.lastChild.setAttribute('aria-label','Zamknij komunikat');}
+let browserStorage;
+try{browserStorage=window.localStorage;}catch{browserStorage={getItem(){return null;},setItem(){throw Error('Storage unavailable');}};notify('Zapis lokalny jest niedostępny. Możesz korzystać ze strony i eksportować własne dane.');}
+const store=createStore(browserStorage,notify);
+const geoCredit=el('p','hint');geoCredit.append(link('Punkty miejscowości: GeoNames','https://www.geonames.org/',''),el('span','',' · '),link('CC BY 4.0','https://creativecommons.org/licenses/by/4.0/',''));document.querySelector('footer').append(geoCredit);
+comparisonKeys=new Set(store.comparison);
+for(const [id,label] of [['offer-dialog','Szczegóły oferty lub modelu'],['settings-dialog','Twoje dane i ustawienia'],['search-dialog','Zapisz wyszukiwanie']])$('#'+id).setAttribute('aria-label',label);
+const keys=()=>data.models.map(m=>m.key);
+const compared=o=>o.storageKeys.some(k=>comparisonKeys.has(k));
+function selectedComparison(){return grouped.filter(compared).slice(0,4);}
+const context=()=>({budget:data.requirements.purchase.maxPriceGrossPln,meta:store.meta,origin:store.origin,compared,
+ favorite(o){const status=store.meta(o);store.update(o,{favorite:!status.favorite});render();const target=[...document.querySelectorAll('[data-favorite-key]')].find(b=>b.dataset.favoriteKey===o.key);target?.focus();},
+ compare(o,checked){if(checked){if(selectedComparison().length>=4&&!compared(o)){notify('Porównanie mieści maksymalnie cztery auta. Usuń jedno, aby dodać kolejne.');render();return;}comparisonKeys.add(o.storageKeys[0]);}else{o.storageKeys.forEach(k=>comparisonKeys.delete(k));}store.comparison=[...comparisonKeys];render();[...document.querySelectorAll('[data-compare-key]')].find(input=>input.dataset.compareKey===o.key)?.focus({preventScroll:true});},
+ open:openOffer,
+ save(o,patch){const success=store.update(o,patch);render();return success;}
+});
+function persist(push=false){store.filters=filters;const hash=encodeFilters(filters);const url=location.pathname+location.search+(hash?'#'+hash:'');if(location.pathname+location.search+location.hash!==url)history[push?'pushState':'replaceState'](null,'',url);}
+function updateFilter(key,value){filters={...filters,[key]:value};persist();render();}
+function navigate(section){filters={...filters,section};persist(true);render();$('#page-title').focus({preventScroll:true});}
+function options(id,entries){const select=$('#'+id);select.replaceChildren();for(const [value,label] of entries){const option=el('option','',label);option.value=value;select.append(option);}}
+function initOptions(){
+ options('body',[['','Wszystkie'],...Object.entries(bodyNames),['unknown','Nie ustalono']]);
+ const engines=new Map();for(const o of data.offers){const key=o.engineVariant||o.engine||'unknown';engines.set(key,o.engine||o.engineVariant||'Nie ustalono');}
+ options('engine',[['','Wszystkie'],...[...engines].sort((a,b)=>a[1].localeCompare(b[1],'pl'))]);
+ const hosts=[...new Set(data.offers.flatMap(o=>(o.urls||[]).flatMap(x=>{try{return [new URL(x.url).hostname.replace(/^www\./,'')];}catch{return [];}})))].sort();
+ options('source',[['','Wszystkie'],...hosts.map(h=>[h,h])]);options('status',[['','Wszystkie'],...Object.entries(statuses)]);
+ options('origin-city',[['','Wybierz miasto…'],...data.cities.map(city=>[city.id,city.name]),['custom','Własny punkt — ustawienia']]);
+}
+function overview(){
+ const matches=grouped.filter(o=>o.verdict==='match').length,located=grouped.filter(o=>o.location?.status==='available').length,geocoded=grouped.filter(o=>distance(o,{lat:0,lon:0})!==null).length;
+ const rows=[[grouped.length,'Samochodów w bazie',data.offers.length+' zapisanych ogłoszeń'],[matches,'Zgodnych z warunkami','Według zapisanych dowodów'],[located,'Z miejscowością',geocoded+' z punktem do odległości'],[data.models.length,'Modeli do wyboru','Zamknięta lista wyszukiwania']];
+ $('#overview').replaceChildren(...rows.map(([value,label,note])=>{const metric=el('div','metric');metric.append(el('p','metric-label',label),el('strong','',fmt(value)),el('small','',note));return metric;}));
+ const req=data.requirements;
+ $('#criteria-pills').replaceChildren(...[fmt(req.purchase.maxPriceGrossPln)+' zł brutto','Od '+req.yearMin,'Kamera lub zgodny montaż','LPG dopuszczone'].map(x=>el('span','pill',x)));
+ const mileageRule=req.mileage.hardMaxKm!==null?`Twardy limit przebiegu: ${fmt(req.mileage.hardMaxKm)} km.`:`Przebieg do ${fmt(req.mileage.preferredMaxKm)} km jest preferencją, nie automatycznym odrzuceniem.`;
+ const detail=$('#requirements-detail');detail.replaceChildren(el('p','',`Budżet zakupu: ${fmt(req.purchase.maxPriceGrossPln)} zł brutto bez obowiązkowego finansowania. Przekroczenie tylko po Twojej osobnej decyzji. ${mileageRule}`),el('p','',`Dwie osoby dorosłe i dziecko, miejsce na wózek i bagaże. Kamera obecna lub potwierdzony montaż. Bez poważnych szkód konstrukcyjnych i aukcji. LPG wymaga oznaczenia i dokumentów. Roczniki, nadwozia i silniki są dodatkowo ograniczone dla danego modelu.`));
+ if(filters.models.length)for(const key of filters.models){const model=data.models.find(m=>m.key===key);if(model?.requirements)detail.append(el('p','hint',model.requirements));}
+}
+function renderModels(){const focused=document.activeElement?.dataset.modelKey,search=$('#model-search').value.toLocaleLowerCase('pl'),container=$('#model-options');container.replaceChildren();for(const model of data.models){if(!model.name.toLocaleLowerCase('pl').includes(search))continue;const label=el('label'),input=el('input');input.type='checkbox';input.dataset.modelKey=model.key;input.checked=filters.models.includes(model.key);input.addEventListener('change',()=>updateFilter('models',input.checked?[...filters.models,model.key]:filters.models.filter(k=>k!==model.key)));label.append(input,el('span','',model.name),el('small','',model.loadError?'Błąd':model.count));container.append(label);if(model.key===focused)input.focus({preventScroll:true});}}
+const filterNames={models:'Modele',q:'Szukaj',maxPrice:'Cena do',maxMileage:'Przebieg do',minYear:'Rok od',maxYear:'Rok do',transmission:'Skrzynia',body:'Nadwozie',engine:'Silnik',camera:'Kamera',lpg:'LPG',source:'Źródło',verdict:'Ocena',availability:'Dostępność',freshness:'Odczyt',status:'Mój status',radius:'Odległość',onlyNew:'Tylko nowe',hideDuplicates:'Bez łączenia duplikatów',includeUnknown:'Pomiń brakujące liczby'};
+function activeFilters(){const container=$('#active-filters');container.replaceChildren();const defaults=defaultFilters();let count=0;for(const [key,label] of Object.entries(filterNames)){if(JSON.stringify(filters[key])===JSON.stringify(defaults[key]))continue;count++;let value=filters[key];if(key==='models')value=value.map(k=>data.models.find(m=>m.key===k)?.name||k).join(', ');else if(typeof value==='boolean')value='';else if($('#'+key)?.tagName==='SELECT')value=$('#'+key).selectedOptions[0]?.textContent||value;const text=label+(value?': '+value:'');const b=button(text+' ×',()=>updateFilter(key,defaults[key]),'chip-button');b.setAttribute('aria-label','Usuń filtr: '+text);container.append(b);}$('#filter-count').textContent=count?'('+count+')':'';
+ const searches=$('#saved-searches');searches.replaceChildren();if(store.searches.length)searches.append(el('span','','Zapisane:'));store.searches.forEach((search,i)=>{const row=el('span');row.append(button(search.name,()=>{filters=decodeFilters(search.query,keys());persist();render();},'chip-button'),button('×',()=>{store.deleteSearch(i);activeFilters();},'chip-button'));row.lastChild.setAttribute('aria-label','Usuń zapisane wyszukiwanie: '+search.name);searches.append(row);});}
+function renderTray(){const list=selectedComparison(),tray=$('#compare-tray');tray.hidden=!list.length||filters.section==='compare';tray.replaceChildren(el('span','',`${list.length} / 4 auta do porównania`),button('Porównaj →',()=>navigate('compare'),'button primary'),button('×',()=>{comparisonKeys.clear();store.comparison=[];render();},''));tray.lastChild.setAttribute('aria-label','Wyczyść porównanie');}
+function render(){
+ if(!data)return;
+ grouped=dedupe(data.offers);
+ $('#nav-total').textContent=grouped.length;$('#nav-saved').textContent=grouped.filter(o=>store.meta(o).favorite).length;$('#nav-compare').textContent=selectedComparison().length;
+ document.querySelectorAll('[data-section]').forEach(b=>{const active=b.dataset.section===filters.section;b.classList.toggle('active',active);if(active)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
+ const titles={offers:'Oferty samochodów',saved:'Zapisane',compare:'Porównanie',knowledge:'Modele i wiedza',updates:'Aktualizacje'};
+ $('#page-title').textContent=titles[filters.section];$('#page-title').tabIndex=-1;document.title=titles[filters.section]+' — CarOffers';
+ const browsing=['offers','saved'].includes(filters.section);
+ $('#browser-tools').hidden=!browsing;$('#offers-section').hidden=!browsing;$('#requirements').hidden=!browsing;
+ for(const section of ['compare','knowledge','updates'])$('#'+section+'-section').hidden=filters.section!==section;
+ overview();
+ for(const input of document.querySelectorAll('[data-filter]')){const value=filters[input.dataset.filter];if(input.type==='checkbox')input.checked=value;else input.value=value;}
+ if(document.activeElement!==$('#search'))$('#search').value=filters.q;
+ $('#radius').disabled=!store.origin;
+ $('#origin-bar').hidden=!browsing&&filters.section!=='compare';
+ $('#origin-city').value=store.origin?(store.origin.cityId||'custom'):'';
+ const withPoints=data.offers.filter(o=>distance(o,store.origin)!==null).length;
+ $('#distance-summary').textContent=store.origin?`Punkt: ${store.origin.name||'własne współrzędne'} · odległości dla ${withPoints} ofert. Linia prosta, do punktu miejscowości — nie trasa do sprzedawcy.`:'Wybierz miasto. Odległości liczymy lokalnie; Twój punkt nie jest wysyłany do serwisów mapowych.';
+ renderModels();activeFilters();renderTray();
+ $('#viewCards').setAttribute('aria-pressed',String(filters.view==='cards'));$('#viewTable').setAttribute('aria-pressed',String(filters.view==='table'));
+ if(browsing){
+  const base=filters.hideDuplicates?grouped:data.offers.map(o=>{const conflict=grouped.find(g=>g.identityConflict&&g.key===o.key);return conflict||o;});
+  const scoped=filters.section==='saved'?base.filter(o=>store.meta(o).favorite):base;
+  const list=sortOffers(filterOffers(scoped,filters,{meta:store.meta,origin:store.origin}),filters.sort,store.origin);
+  $('#result-title').textContent=filters.section==='saved'?'Twoja krótka lista':'Oferty do przejrzenia';
+  $('#result-count').textContent=`${list.length} z ${scoped.length} ${filters.hideDuplicates?'samochodów':'ogłoszeń'}${data.warnings.length?' · część plików niedostępna':''}`;
+  const hint=$('#sort-hint');hint.hidden=!['newest','checked','distance'].includes(filters.sort);hint.textContent=filters.sort==='newest'?'Sortowanie według daty pierwszego znalezienia. Oferty bez daty są na końcu.':filters.sort==='checked'?'Sortowanie według ostatniego udanego odczytu. Brak daty nie oznacza świeżej oferty.':store.origin?'Dostępne odległości pokazano przy lokalizacji auta. Brak danych pomijamy.':'Ustaw punkt startowy w „Kopia danych i ustawienia”. Bez niego odległość jest nieznana.';
+  const results=$('#results');results.className=filters.view==='cards'?'offer-grid':'';results.replaceChildren();
+  if(!list.length){const message=filters.section==='saved'?'Zapisz auta przyciskiem serca. Jeżeli masz zapisane auta, sprawdź aktywne filtry.':'Zmień filtry. Pusta lista nie dowodzi braku ofert na rynku — pokrycie portali sprawdzisz w Aktualizacjach.';results.append(empty('Nie ma tu jeszcze wyników',message));}
+  else if(filters.view==='table')results.append(offerTable(list,context()));else results.append(...list.map(o=>offerCard(o,context())));
+ }
+ if(filters.section==='compare')$('#compare-section').replaceChildren(comparison(selectedComparison(),context()));
+ if(filters.section==='knowledge'){const container=$('#knowledge-section'),grid=el('div','knowledge-grid');grid.append(...data.catalog.models.filter(m=>m.active).map(m=>knowledgeCard(m,data.models.find(e=>e.key===m.key),openKnowledge)));container.replaceChildren(el('p','section-intro','Karty są częściowe. Luki w źródłach i warianty wstrzymane pozostają widoczne. Sama obecność silnika w katalogu nie oznacza rekomendacji trwałości.'),grid);}
+ if(filters.section==='updates')$('#updates-section').replaceChildren(updates(data));
+}
+function openOffer(o){knowledgeToken++;$('#offer-detail').replaceChildren(offerDetails(o,context()));$('#offer-dialog').showModal();$('#offer-dialog').scrollTop=0;}
+let knowledgeToken=0;
+async function openKnowledge(model){const token=++knowledgeToken;$('#offer-detail').replaceChildren(el('p','','Wczytywanie karty wiedzy…'));$('#offer-dialog').showModal();try{const card=await loadKnowledge(model);if(token!==knowledgeToken)return;$('#offer-detail').replaceChildren(knowledgeDetails(model,card));}catch{$('#offer-detail').replaceChildren(empty('Nie udało się wczytać karty','Spróbuj ponownie. Brak dostępu nie oznacza braku wiedzy.'));}}
+function showSettings(){const origin=store.origin;$('#origin-lat').value=origin?.lat??'';$('#origin-lon').value=origin?.lon??'';$('#origin-state').textContent=origin?`Zapisany punkt: ${origin.lat}, ${origin.lon}. Odległość tylko dla aut z udokumentowanymi współrzędnymi.`:'Nie zapisano punktu startowego.';$('#settings-dialog').showModal();}
+async function boot(reload=false){const token=++loadToken;$('#reload-data').disabled=true;try{const loaded=await loadData();if(token!==loadToken)return;data=loaded;if(!store.origin){const defaultCity=data.cities.find(city=>city.name==='Zielona Góra');if(defaultCity)store.origin={lat:defaultCity.lat,lon:defaultCity.lon,name:defaultCity.name,cityId:defaultCity.id,sourceUrl:defaultCity.sourceUrl};}store.markNew(data.offers);if(!reload)filters=location.hash&&location.hash!=='#main'?decodeFilters(location.hash,keys()):sanitizeFilters(store.filters||{},keys());else filters=sanitizeFilters(filters,keys());initOptions();for(const warning of data.warnings)notify(warning);if(!data.reportValid)notify('Raport oceny jest niedostępny lub nie odpowiada bieżącej konfiguracji. Oferty wymagają ponownej oceny.');persist();render();if(reload)notify('Wczytano aktualnie zapisane pliki. Nie sprawdzano ogłoszeń na portalach.');}catch(error){notify('Nie udało się wczytać danych: '+error.message);$('#result-count').textContent='Dane niedostępne';$('#results').replaceChildren(empty('Nie udało się otworzyć bazy','Sprawdź połączenie i użyj „Wczytaj dane ponownie”.'));}finally{$('#reload-data').disabled=false;}}
+
+document.querySelectorAll('[data-section]').forEach(b=>b.addEventListener('click',()=>data&&navigate(b.dataset.section)));
+document.querySelectorAll('[data-filter]').forEach(input=>input.addEventListener(input.tagName==='SELECT'||input.type==='checkbox'?'change':'input',()=>{if(!data)return;updateFilter(input.dataset.filter,input.type==='checkbox'?input.checked:input.value);}));
+$('#search').addEventListener('input',event=>{if(data)updateFilter('q',event.target.value);});
+$('#model-search').addEventListener('input',()=>data&&renderModels());$('#clear-models').addEventListener('click',()=>data&&updateFilter('models',[]));
+$('#filter-toggle').addEventListener('click',()=>{const panel=$('#filters');panel.hidden=!panel.hidden;$('#filter-toggle').setAttribute('aria-expanded',String(!panel.hidden));});
+$('#reset-filters').addEventListener('click',()=>{if(!data)return;filters={...defaultFilters(),section:filters.section,view:filters.view};persist();render();});
+$('#viewCards').addEventListener('click',()=>data&&updateFilter('view','cards'));$('#viewTable').addEventListener('click',()=>data&&updateFilter('view','table'));
+$('#close-offer').addEventListener('click',()=>{$('#offer-dialog').close();knowledgeToken++;});$('#close-settings').addEventListener('click',()=>$('#settings-dialog').close());$('#close-search').addEventListener('click',()=>$('#search-dialog').close());
+$('#settings-dialog').addEventListener('close',()=>{if(data)render();});
+$('#offer-dialog').addEventListener('close',()=>knowledgeToken++);
+$('#backup-open').addEventListener('click',showSettings);$('#mobile-settings').addEventListener('click',showSettings);
+$('#quick-settings').addEventListener('click',showSettings);
+$('#origin-custom').addEventListener('click',showSettings);
+$('#origin-city').addEventListener('change',event=>{if(event.target.value==='custom'){showSettings();return;}const city=data.cities.find(city=>city.id===event.target.value);store.origin=city?{lat:city.lat,lon:city.lon,name:city.name,cityId:city.id,sourceUrl:city.sourceUrl}:null;if(!city)filters.radius='';persist();render();});
+function syncThemeControls(){const dark=document.documentElement.dataset.theme==='dark',label=dark?'Włącz tryb jasny':'Włącz tryb ciemny';for(const id of ['themeToggle','mobile-theme'])$('#'+id).textContent=label;$('#quick-theme').setAttribute('aria-label',label);$('#quick-theme').setAttribute('aria-pressed',String(dark));}
+function theme(){const next=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=next;try{browserStorage.setItem('carOffersTheme',next);}catch{notify('Nie udało się zapamiętać motywu.');}syncThemeControls();}
+try{document.documentElement.dataset.theme=browserStorage.getItem('carOffersTheme')==='dark'?'dark':'light';}catch{}syncThemeControls();
+$('#themeToggle').addEventListener('click',theme);$('#mobile-theme').addEventListener('click',theme);
+$('#quick-theme').addEventListener('click',theme);
+$('#reload-data').addEventListener('click',()=>boot(true));
+$('#export-data').addEventListener('click',()=>{const url=URL.createObjectURL(new Blob([store.export()],{type:'application/json'})),a=el('a');a.href=url;a.download='caroffers-moje-dane-'+new Date().toISOString().slice(0,10)+'.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);});
+$('#import-data').addEventListener('change',async event=>{const file=event.target.files?.[0];if(!file)return;try{if(file.size>5e6)throw Error('Plik może mieć maksymalnie 5 MB.');const saved=store.import(JSON.parse(await file.text()));comparisonKeys=new Set(store.comparison);filters=sanitizeFilters(store.filters||filters,keys());persist();render();notify(saved?'Scalono kopię i przywrócono zapisane ustawienia widoku. Dane ofert pozostały bez zmian.':'Kopia została odczytana do pamięci, lecz zapis w przeglądarce jest niedostępny. Wykonaj eksport przed zamknięciem strony.');$('#settings-dialog').close();}catch(error){notify('Nie wczytano kopii: '+error.message);}event.target.value='';});
+$('#origin-form').addEventListener('submit',event=>{event.preventDefault();const lat=Number($('#origin-lat').value),lon=Number($('#origin-lon').value);if(!Number.isFinite(lat)||!Number.isFinite(lon)||Math.abs(lat)>90||Math.abs(lon)>180)return;store.origin={lat,lon,name:'Własny punkt'};$('#origin-state').textContent='Zapisano punkt. Zapisano punkt startowy.';render();});
+$('#clear-origin').addEventListener('click',()=>{store.origin=null;filters.radius='';persist();$('#origin-lat').value='';$('#origin-lon').value='';$('#origin-state').textContent='Nie zapisano punktu startowego.';render();});
+$('#save-search').addEventListener('click',()=>{if(data)$('#search-dialog').showModal();});$('#save-search-form').addEventListener('submit',event=>{event.preventDefault();const name=$('#search-name').value.trim();if(!name)return;store.saveSearch(name,encodeFilters({...filters,section:'offers'}));$('#search-dialog').close();render();});
+function restoreURL(){if(data&&location.hash!=='#main'){filters=decodeFilters(location.hash,keys());store.filters=filters;render();}}
+window.addEventListener('hashchange',restoreURL);window.addEventListener('popstate',restoreURL);
+boot();

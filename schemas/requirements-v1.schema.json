@@ -1,0 +1,147 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CarOffers requirements v1",
+  "type": "object",
+  "required": [
+    "version",
+    "purchase",
+    "yearMin",
+    "mileage",
+    "transmissions",
+    "camera",
+    "structuralDamageAllowed",
+    "unknownHardRequirement",
+    "lpg"
+  ],
+  "properties": {
+    "version": {
+      "const": 1,
+      "type": "integer"
+    },
+    "purchase": {
+      "type": "object",
+      "required": [
+        "maxPriceGrossPln",
+        "scope",
+        "mandatoryFinancingAllowed",
+        "priceExceptions",
+        "auctionsAllowed"
+      ],
+      "properties": {
+        "maxPriceGrossPln": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "scope": {
+          "const": "purchase_only",
+          "type": "string"
+        },
+        "mandatoryFinancingAllowed": {
+          "const": false,
+          "type": "boolean"
+        },
+        "priceExceptions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["rule", "amountPln", "userMustConfirm"],
+            "properties": {
+              "rule": {"const": "slightly_above_limit_only_for_exceptional_offer", "type": "string"},
+              "amountPln": {"type": ["integer", "null"], "minimum": 1},
+              "userMustConfirm": {"const": true, "type": "boolean"}
+            }
+          }
+        },
+        "auctionsAllowed": {
+          "type": "boolean",
+          "const": false
+        }
+      },
+      "additionalProperties": {}
+    },
+    "yearMin": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "mileage": {
+      "type": "object",
+      "required": [
+        "preferredMaxKm",
+        "hardMaxKm"
+      ],
+      "properties": {
+        "preferredMaxKm": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "hardMaxKm": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1
+        }
+      },
+      "additionalProperties": {}
+    },
+    "transmissions": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "manual",
+          "automatic"
+        ],
+        "type": "string"
+      }
+    },
+    "camera": {
+      "type": "object",
+      "required": [
+        "required",
+        "retrofitAllowed",
+        "retrofitCompatibilityMustBeConfirmed"
+      ],
+      "properties": {
+        "required": {
+          "const": true,
+          "type": "boolean"
+        },
+        "retrofitAllowed": {
+          "type": "boolean"
+        },
+        "retrofitCompatibilityMustBeConfirmed": {
+          "const": true,
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": {}
+    },
+    "structuralDamageAllowed": {
+      "const": false,
+      "type": "boolean"
+    },
+    "unknownHardRequirement": {
+      "const": "check",
+      "type": "string"
+    },
+    "lpg": {
+      "type": "object",
+      "required": [
+        "allowed",
+        "mustBeMarked"
+      ],
+      "properties": {
+        "allowed": {
+          "type": "boolean",
+          "const": true
+        },
+        "mustBeMarked": {
+          "type": "boolean",
+          "const": true
+        }
+      },
+      "additionalProperties": {}
+    }
+  },
+  "additionalProperties": {}
+}
