@@ -3,7 +3,7 @@
   "purchase": {
     "maxPriceGrossPln": 55000,
     "scope": "purchase_only",
-    "mandatoryFinancingAllowed": false,
+    "mandatoryFinancingAllowed": true,
     "priceExceptions": [
       {
         "rule": "slightly_above_limit_only_for_exceptional_offer",

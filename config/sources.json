@@ -49,8 +49,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": true,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Potwierdzić pełną cenę brutto i warunki zakupu."
+        "cashPurchaseMustBeConfirmed": false,
+        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
       },
       "notes": []
     },
@@ -98,8 +98,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": true,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Potwierdzić pełną cenę brutto i warunki zakupu."
+        "cashPurchaseMustBeConfirmed": false,
+        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
       },
       "notes": [
         "searchUrl jest przykładem dla Mazowieckiego. Aby pokryć całą Polskę, agent ma iterować regiony i zapisywać je w coverage."
@@ -145,8 +145,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": true,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Odrzucić licytacje; potwierdzić pełną cenę zakupu."
+        "cashPurchaseMustBeConfirmed": false,
+        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
       },
       "notes": [
         "Oddzielać ogłoszenia ze stałą ceną od aukcji, które użytkownik wykluczył."
@@ -192,8 +192,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": true,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Sprawdzić cenę i warunki u dealera."
+        "cashPurchaseMustBeConfirmed": false,
+        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
       },
       "notes": [
         "Wyłączone w kolejce: żadna aktywna marka/model CarOffers nie pasuje do zakresu źródła; włącz po dodaniu tej marki."
@@ -238,8 +238,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": true,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Potwierdzić cenę i warunki zakupu u dealera."
+        "cashPurchaseMustBeConfirmed": false,
+        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
       },
       "notes": [
         "Wyłączone w kolejce: żadna aktywna marka/model CarOffers nie pasuje do zakresu źródła; włącz po dodaniu tej marki."
@@ -284,8 +284,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": true,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Potwierdzić cenę brutto i warunki oferty u dealera."
+        "cashPurchaseMustBeConfirmed": false,
+        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
       },
       "notes": [
         "Źródło na przyszłość: obecna lista modeli nie zawiera BMW.",
@@ -335,8 +335,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": true,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Potwierdzić cenę brutto i warunki zakupu u dealera."
+        "cashPurchaseMustBeConfirmed": false,
+        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
       },
       "notes": [
         "Źródło na przyszłość: obecna lista modeli nie zawiera Mercedes-Benz.",
@@ -389,8 +389,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+        "cashPurchaseMustBeConfirmed": false,
+        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
       },
       "notes": [
         "Portale w tej samej grupie właścicielskiej; część ogłoszeń może być cross-postowana. Deduplikuj po VIN/ID/URL."
@@ -441,8 +441,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+        "cashPurchaseMustBeConfirmed": false,
+        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
       },
       "notes": [
         "Portale w tej samej grupie właścicielskiej; część ogłoszeń może być cross-postowana. Deduplikuj po VIN/ID/URL."
@@ -490,8 +490,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+        "cashPurchaseMustBeConfirmed": false,
+        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
       },
       "notes": [
         "Nie uznawaj niepełnego dostępu za brak ofert."
@@ -534,8 +534,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+        "cashPurchaseMustBeConfirmed": false,
+        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
       },
       "notes": [
         "Pusta lista filtrów oznaczała brak rozpoznania; minimum potwierdzone to kategoria samochodów osobowych.",
@@ -577,8 +577,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+        "cashPurchaseMustBeConfirmed": false,
+        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
       },
       "notes": [
         "Traktuj jako osobne źródła; cross-post nie jest gwarantowany i rozpoznaje się go po VIN/URL."
@@ -622,11 +622,11 @@
       "purchaseConditions": {
         "retailBuyerAllowed": true,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+        "cashPurchaseMustBeConfirmed": false,
+        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
       },
       "notes": [],
-      "priceReview": "Sprawdź: zakup detaliczny bez finansowania, VAT brutto, opłaty i czy cena wymaga konkretnej formy finansowania."
+      "priceReview": "Sprawdź, czy cena podana w ogłoszeniu jest brutto; forma finansowania nie wpływa na ocenę."
     },
     {
       "id": "arval-autoselect",
@@ -663,13 +663,13 @@
       "purchaseConditions": {
         "retailBuyerAllowed": true,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+        "cashPurchaseMustBeConfirmed": false,
+        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
       },
       "notes": [
         "Nie uznawaj niepełnego dostępu za brak ofert."
       ],
-      "priceReview": "Sprawdź, czy dostęp do konkretnej oferty i zakup dotyczą klienta indywidualnego, nie wyłącznie podmiotu profesjonalnego."
+      "priceReview": "Sprawdź, czy cena podana w ogłoszeniu jest brutto; forma finansowania nie wpływa na ocenę."
     },
     {
       "id": "ayvens-usedcars",
@@ -713,11 +713,11 @@
       "purchaseConditions": {
         "retailBuyerAllowed": true,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+        "cashPurchaseMustBeConfirmed": false,
+        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
       },
       "notes": [],
-      "priceReview": "Sprawdź, czy dostęp do konkretnej oferty i zakup dotyczą klienta indywidualnego, nie wyłącznie podmiotu profesjonalnego."
+      "priceReview": "Sprawdź, czy cena podana w ogłoszeniu jest brutto; forma finansowania nie wpływa na ocenę."
     },
     {
       "id": "toyota-pewne-auto",
@@ -754,8 +754,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+        "cashPurchaseMustBeConfirmed": false,
+        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
       },
       "notes": [
         "Nie uznawaj niepełnego dostępu za brak ofert.",
@@ -797,67 +797,13 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+        "cashPurchaseMustBeConfirmed": false,
+        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
       },
       "notes": [
         "Nie uznawaj niepełnego dostępu za brak ofert.",
         "Warunki programu i certyfikat dotyczą konkretnego egzemplarza, nie każdego auta dealera.",
         "Ograniczyć zadania do modeli Kia; katalog programu nie rozszerza wyszukiwania na pozostałe marki."
-      ]
-    },
-    {
-      "id": "renault-renew",
-      "name": "Renault renew",
-      "url": "https://www.uzywane.renault.pl/",
-      "searchUrl": "https://www.uzywane.renault.pl/wyszukiwarkauzywane?CurrentSearchModel.SearchAction=clearall",
-      "category": "manufacturer_program",
-      "sellerTypes": [
-        "dealer"
-      ],
-      "origins": [
-        "mixed"
-      ],
-      "brands": [
-        "Renault"
-      ],
-      "enabled": true,
-      "priority": 1,
-      "effort": 2,
-      "filters": [
-        "make",
-        "model",
-        "body",
-        "price",
-        "year",
-        "mileage",
-        "fuel",
-        "transmission",
-        "equipment",
-        "location"
-      ],
-      "method": "Odczytaj wyszukiwarkę i ogłoszenie narzędziem web; przy niepełnej treści użyj przeglądarki. Wynik wyszukiwarki jest wskazówką, nie potwierdzeniem aktualności. Nie omijaj logowania ani zabezpieczeń.",
-      "accessStatus": "results_read",
-      "lastAttemptAt": "2026-11-08",
-      "lastSuccessfulSearchAt": null,
-      "verification": {
-        "checkedAt": "2026-11-08",
-        "evidenceUrls": [
-          "https://www.uzywane.renault.pl/",
-          "https://www.uzywane.renault.pl/wyszukiwarkauzywane?CurrentSearchModel.SearchAction=clearall"
-        ],
-        "note": "Odczytano stronę i katalog wielu marek, w tym filtr kamery. Nie otwierano karty auta; treść katalogu może pochodzić z cache.",
-        "fullSearchCompleted": false
-      },
-      "purchaseConditions": {
-        "retailBuyerAllowed": null,
-        "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
-      },
-      "notes": [
-        "Warunki programu i certyfikat dotyczą konkretnego egzemplarza, nie każdego auta dealera.",
-        "Ograniczyć zadania do modeli Renault."
       ]
     },
     {
@@ -895,8 +841,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+        "cashPurchaseMustBeConfirmed": false,
+        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
       },
       "notes": [
         "Nie uznawaj niepełnego dostępu za brak ofert.",
@@ -938,8 +884,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+        "cashPurchaseMustBeConfirmed": false,
+        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
       },
       "notes": [
         "Nie uznawaj niepełnego dostępu za brak ofert.",
@@ -981,8 +927,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+        "cashPurchaseMustBeConfirmed": false,
+        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
       },
       "notes": [
         "Nie uznawaj niepełnego dostępu za brak ofert.",
@@ -1025,8 +971,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+        "cashPurchaseMustBeConfirmed": false,
+        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
       },
       "notes": [
         "Warunki programu i certyfikat dotyczą konkretnego egzemplarza, nie każdego auta dealera."
@@ -1067,8 +1013,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+        "cashPurchaseMustBeConfirmed": false,
+        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
       },
       "notes": []
     },
@@ -1106,14 +1052,14 @@
         "evidenceUrls": [
           "https://www.spoticar.pl/"
         ],
-        "note": "Odczytano katalog wielu marek, m.in. Hyundai, Kia, Renault, Suzuki, Toyota i Volkswagen; nie ograniczać wyłącznie do marek Stellantis. Kart auta nie otwierano.",
+        "note": "Odczytano katalog wielu marek, m.in. Hyundai, Kia, Suzuki, Toyota i Volkswagen; nie ograniczać wyłącznie do marek Stellantis. Kart auta nie otwierano.",
         "fullSearchCompleted": false
       },
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+        "cashPurchaseMustBeConfirmed": false,
+        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
       },
       "notes": [
         "Warunki programu i certyfikat dotyczą konkretnego egzemplarza, nie każdego auta dealera."
@@ -1151,8 +1097,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+        "cashPurchaseMustBeConfirmed": false,
+        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
       },
       "notes": []
     },
@@ -1199,8 +1145,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Sprawdź pełną cenę zakupu brutto bez obowiązkowego finansowania i z obowiązkowymi opłatami; brak potwierdzenia = wymaga wyjaśnienia."
+        "cashPurchaseMustBeConfirmed": false,
+        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
       },
       "notes": []
     }

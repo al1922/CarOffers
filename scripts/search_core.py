@@ -94,7 +94,7 @@ def description(requirements, model):
     if years["max"] is not None:
         age += f" do {years['max']}"
     camera = "kamera obecna lub potwierdzona możliwość montażu" if requirements["camera"]["retrofitAllowed"] else "kamera obecna"
-    price_text = f"maks. {p['maxPriceGrossPln']:,} zł brutto na sam zakup bez obowiązkowego finansowania"
+    price_text = f"maks. {p['maxPriceGrossPln']:,} zł brutto według ceny podanej w ogłoszeniu"
     if p["priceExceptions"]:
         price_text += "; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika"
     return (f"{model['name']}; {model['legacyEngineSelection']}; rocznik {age}; "
@@ -115,8 +115,8 @@ def assess(offer, requirements, model):
             unknown.append("price_exception_requires_user_confirmation")
         else:
             fail.append("price_over_limit")
-    if offer.get("priceBasis") != "gross_unconditional_total":
-        unknown.append("gross_price_and_purchase_conditions")
+    if offer.get("priceBasis") in (None, "unknown", "net"):
+        unknown.append("gross_price_basis")
     year = offer.get("year")
     if type(year) is not int:
         unknown.append("production_year")

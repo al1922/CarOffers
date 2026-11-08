@@ -29,7 +29,6 @@ Poziomy dostępu:
 | [Ayvens — sprzedaż detaliczna](https://usedcars.ayvens.com/pl-pl/samochody) | fleet | results_read |
 | [Toyota Pewne Auto](https://www.toyota.pl/oferty-specjalne/auta-uzywane) | manufacturer_program | partial |
 | [Kia Używane](https://uzywane.kia.pl/) | manufacturer_program | partial |
-| [Renault renew](https://www.uzywane.renault.pl/) | manufacturer_program | results_read |
 | [Škoda Plus / samochody używane](https://www.skoda.pl/samochody-uzywane/skoda-plus-certyfikowane-uzywane) | manufacturer_program | partial |
 | [Volkswagen Certyfikowane używane](https://www.volkswagen.pl/pl/osobowe/volkswagen-certyfikowane-uzywane.html) | manufacturer_program | partial |
 | [SEAT Certyfikowane używane](https://www.seat.pl/oferta/certyfikowane-uzywane) | manufacturer_program | partial |

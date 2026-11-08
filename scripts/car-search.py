@@ -77,7 +77,7 @@ def build_query_plan(source, model, requirements, knowledge):
         "manualFilters": {key: value for key, value in filter_values.items() if key not in native_filters},
         "textQueries": queries, "engineAliases": engine_queries,
         "bodyAliases": body_terms,
-        "cardChecks": ["production_year", "listing_availability", "gross_unconditional_purchase_price",
+        "cardChecks": ["production_year", "listing_availability", "listed_gross_price",
                        "exact_engine_variant", "sale_type", "lpg_installed", "camera", "structural_damage"]
     }
 

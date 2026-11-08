@@ -41,7 +41,7 @@ w `config/search-models.json`; dowody, ograniczenia i kontrole egzemplarza są w
 kartach wiedzy. Zestawienia zbiorcze:
 
 - `reports/analiza-hyundai-i30-silnikow-2026-11-08.md` — pilotaż i30,
-- `reports/analiza-silnikow-batch-a-2026-11-08.md` — Kia, Renault, SEAT i Škoda,
+- `reports/analiza-silnikow-batch-a-2026-11-08.md` — Kia, SEAT i Škoda,
 - `reports/analiza-silnikow-batch-b-2026-11-08.md` — Suzuki i Toyota,
 - `reports/analiza-silnikow-batch-c-2026-11-08.md` — Volkswagen, Škoda Superb i Mazda.
 

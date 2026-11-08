@@ -93,7 +93,6 @@ Punktem wyjścia jest 10 istniejących modeli. Zachowujemy ich obecne klucze i p
 
 1. Hyundai i30 III Wagon.
 2. Kia Ceed III Sportswagon.
-3. Renault Mégane IV Grandtour.
 4. SEAT Leon III ST.
 5. Škoda Octavia III Combi.
 6. Suzuki SX4 S-Cross.
