@@ -8,6 +8,7 @@ from pathlib import Path
 import re
 from urllib.parse import urlsplit
 from search_core import ASSESSMENT_FIELDS, ROOT, assess, audit, brand_key, contained, description, read, write
+from recommendation_flow import WEIGHTS as RECOMMENDATION_WEIGHTS, build as build_recommendations, finalize as finalize_recommendations, select_models as select_recommendation_models, validate_result as validate_recommendation_result
 
 
 BODY_TERMS = {
@@ -131,7 +132,7 @@ def build_shared_search_cache(root, run, queue, source_id):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("command", choices=["validate", "sync", "plan", "refresh-plan", "claim", "finish", "assess", "import-preview", "import-apply"])
+    p.add_argument("command", choices=["validate", "sync", "plan", "refresh-plan", "recommend-plan", "recommend-select", "recommend-finalize", "claim", "finish", "assess", "import-preview", "import-apply"])
     p.add_argument("--root", type=Path, default=ROOT)
     p.add_argument("--run")
     p.add_argument("--worker")
@@ -173,7 +174,7 @@ def main():
         except (OSError, ValueError, KeyError, TypeError) as exc:
             p.error(str(exc))
         return 0
-    if args.command in ("claim", "finish"):
+    if args.command in ("claim", "finish", "recommend-select", "recommend-finalize"):
         if not args.run or not re.fullmatch(r"[a-zA-Z0-9][a-zA-Z0-9_-]*", args.run):
             p.error("--run requires a simple alphanumeric ID")
         snapshot = read(root / "runs" / args.run / "snapshot.json")
@@ -217,7 +218,29 @@ def main():
         if not args.run or not re.fullmatch(r"[a-zA-Z0-9][a-zA-Z0-9_-]*", args.run):
             p.error("--run requires a simple alphanumeric ID")
         run = root / "runs" / args.run
-        if args.command == "plan":
+        if args.command == "recommend-plan":
+            if args.agents < 1:
+                p.error("--agents must be positive")
+            config, cards, tasks = build_recommendations(root)
+            if len(tasks) < 5:
+                p.error(f"Recommendation flow needs at least five models with eligible listing URLs; found {len(tasks)}")
+            run.mkdir(parents=True, exist_ok=False)
+            (run / "results").mkdir()
+            snapshot = {"config": config, "knowledge": cards}
+            digest = hashlib.sha256(json.dumps(snapshot, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
+            write(run / "snapshot.json", {"createdAt": datetime.now(timezone.utc).isoformat(), "sha256": digest, **snapshot})
+            write(run / "tasks.json", {"version": 1, "kind": "recommendation", "agents": args.agents,
+                  "workerAssignments": {}, "weights": RECOMMENDATION_WEIGHTS, "tasks": tasks})
+            write(run / "recommendation-preview.json", {"status": "awaiting_model_reviews", "weights": RECOMMENDATION_WEIGHTS,
+                  "models": [{"rank": t["rank"], "modelKey": t["modelKey"], "modelName": t["modelName"],
+                              "signals": t["modelSignals"], "candidateCount": len(t["candidates"])} for t in tasks]})
+            print(f"Prepared {len(tasks)} model-analysis tasks; use standard claim/finish, then recommend-select for phase 2. No offers changed")
+        elif args.command == "recommend-select":
+            listing_tasks = select_recommendation_models(root, args.run)
+            print(f"Coordinator selected five models from completed evidence; prepared {len(listing_tasks)} detailed listing tasks")
+        elif args.command == "recommend-finalize":
+            finalize_recommendations(root, args.run)
+        elif args.command == "plan":
             if args.agents < 1:
                 p.error("--agents must be positive")
             selected_m = [m for m in models if m["active"] and (not args.models or m["key"] in args.models)]
@@ -465,6 +488,18 @@ def main():
 
                 if not isinstance(result, dict):
                     reject_result("Result file must contain a JSON object")
+                if task.get("kind") in ("recommendation_model", "recommendation_listing"):
+                    allowed = ("complete", "partial") if task.get("kind") == "recommendation_model" else ("complete",)
+                    if args.result not in allowed or result.get("outcome") != args.result:
+                        reject_result("Model review uses --result complete or partial; listing review requires complete, matching result.outcome")
+                    try:
+                        validate_recommendation_result(task, result)
+                    except (ValueError, KeyError, TypeError) as exc:
+                        reject_result(exc)
+                    task.update(state=args.result, note=args.note or "recommendation evidence reviewed")
+                    write(run / "tasks.json", queue)
+                    print("Recommendation result recorded; offers unchanged")
+                    return 0
                 if result.get("taskId") != task["id"] or result.get("outcome") != args.result:
                     reject_result("Result file taskId/outcome mismatch")
                 if not isinstance(result.get("offers"), list) or not isinstance(result.get("coverage"), dict):

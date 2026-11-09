@@ -91,7 +91,7 @@ export function sanitizeFilters(input={},validModels=[]){
  for(const key of filterKeys){if(key==='models')continue;if(typeof input[key]===typeof output[key])output[key]=input[key];}
  output.models=Array.isArray(input.models)?[...new Set(input.models.filter(k=>validModels.includes(k)))]:[];
  for(const key of ['maxPrice','maxMileage','minYear','maxYear','radius'])if(output[key]!==''&&(!Number.isFinite(+output[key])||+output[key]<0))output[key]='';
- if(!['offers','saved','compare','knowledge','updates'].includes(output.section))output.section='offers';
+ if(!['offers','saved','compare','recommended','knowledge','updates'].includes(output.section))output.section='offers';
  if(!['cards','table'].includes(output.view))output.view='cards';
  if(!['priority','priceAsc','priceDesc','mileageAsc','yearDesc','newest','checked','distance'].includes(output.sort))output.sort='priority';
  return output;

@@ -19,6 +19,38 @@ bezpośrednich adresów, zdjęcie jest niedostępne albo link nie jest HTTPS, po
 
 ## Praca równoległa
 
+Gdy użytkownik w czacie prosi o analizę „top modeli”, „polecane modele” lub
+podobny ranking, uruchom agentowy, dwuetapowy przebieg rekomendacji. Nie wymagaj
+od użytkownika ręcznego uruchamiania poleceń CLI.
+
+1. Koordynator uruchamia `python -B scripts/car-search.py recommend-plan --run
+   <run-id> --agents <liczba>` i rozdziela zadania `recommendation_model` między
+   dostępnych subagentów. Etap obejmuje wszystkie aktywne modele z przynajmniej
+   jednym kwalifikującym się ogłoszeniem HTTPS. Każdy agent ocenia jeden model
+   na podstawie jego karty wiedzy, ofert i źródeł internetowych. Nie otwiera
+   jeszcze wszystkich kart ogłoszeń. Wnioski muszą cytować źródła i jawnie
+   oznaczać niepewność.
+2. Koordynator nadzoruje wyniki, zapisuje je przez standardowe `finish`, a po
+   zakończeniu etapu uruchamia `recommend-select`. Wagi: bezpieczeństwo rodzinne
+   30, niezawodność 25, bagażnik 20, moc i użytkowanie miasto/trasa 20, kamera 5.
+   Status `confirmed` otrzymuje pełne punkty, `partial` połowę, `unknown` zero.
+   Twarde wymagania z `requirements.json` nie mogą być skompensowane punktacją.
+3. Dla pięciu najwyżej ocenionych modeli koordynator rozdziela po jednym zadaniu
+   `recommendation_listing` na model. Agent sprawdza kandydatów po kolei; przy
+   zakończonej lub niedostępnej karcie przechodzi do następnej oferty tego samego
+   modelu. Weryfikuje bieżącą dostępność, warunki ceny, dokładny wariant auta,
+   wyposażenie i pozostałe pola po karcie oraz dokładne specyfikacje po źródłach.
+   Nie analizuje zdjęć.
+4. Po `finish` wszystkich pięciu zadań koordynator uruchamia
+   `recommend-finalize`. Wynik trafia do `reports/recommendations.json`, skąd
+   zakładka „Polecane modele” ładuje ranking. Nie importuj rekomendacji do
+   `offers/*.json` i niczego nie publikuj.
+
+Koordynator sam wykonuje `recommend-plan`, `claim`, `finish`, `recommend-select`
+i `recommend-finalize`; agenci nie zmieniają kolejki. Utrzymuj najwyżej jedno
+aktywne zadanie na subagenta. Zachowuj wyniki fazy modelowej i listingowej w
+`runs/<run-id>/results/`; nie nadpisuj dowodów bez zachowania kopii.
+
 Gdy użytkownik prosi o szukanie nowych ofert, uruchom oddzielny przebieg `plan`
 bez ograniczeń `--model` i `--source`: obejmuje wszystkie aktywne modele oraz
 wszystkie aktywne, nieaukcyjne portale, które mają zgodny zakres marki. Nie
