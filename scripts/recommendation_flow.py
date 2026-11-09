@@ -132,7 +132,7 @@ def select_models(root, run_id):
                 "This is phase 2 for a model selected by the coordinator after comparing every model review.",
                 "Open candidate listing URLs in order. If one is sold, removed, inaccessible or otherwise not current, record the attempt and try the next listing for this same model.",
                 "For the first currently available candidate, inspect the listing carefully and verify year of production, exact engine/power, body, transmission, gross unconditional price, mileage, sale type, LPG, camera, location and seller statements. Preserve unknowns and cite the listing URL.",
-                "Use the research sources from phase 1 and add exact-market/exact-version sources where necessary. Do not analyze photos or infer condition/equipment from them.",
+                "Use the research sources from phase 1 and add exact-market/exact-version sources where necessary. Write user-facing titles, facts and research notes in Polish. Do not analyze photos or infer condition/equipment from them. If the listing card exposes direct HTTPS photo URLs, save up to 12 in selectedOffer.photos; otherwise omit photos.",
                 "Save only runs/<run-id>/results/<task-id>.json. Never edit offers/*.json."
             ], "state": "pending", "worker": None, "attempts": 0})
     queue["tasks"].extend(listing_tasks)
@@ -188,6 +188,10 @@ def validate_listing_result(task, result):
             raise ValueError("The selected listing URL must be included in triedUrls")
         if not isinstance(chosen.get("facts"), dict):
             raise ValueError("selectedOffer.facts must contain the fields read from the listing")
+        photos = chosen.get("photos")
+        if photos is not None and (not isinstance(photos, list) or len(photos) > 12 or
+                                   any(not isinstance(url, str) or not url.startswith("https://") for url in photos)):
+            raise ValueError("selectedOffer.photos must be an optional array of up to 12 HTTPS URLs")
         validate_research(result)
     elif len(set(tried)) < len(candidates):
         raise ValueError("When no candidate is available, every saved listing URL must be tried")

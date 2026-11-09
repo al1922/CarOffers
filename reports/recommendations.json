@@ -1,7 +1,7 @@
 {
   "version": 1,
   "status": "complete",
-  "generatedAt": "2026-11-09T01:58:52.412204+00:00",
+  "generatedAt": "2026-11-09T02:07:32+00:00",
   "sourceRun": "top-modele-2026-11-09",
   "weights": {
     "safety": 30,
@@ -49,68 +49,70 @@
         "knowledgeReviewedAt": "2026-11-08"
       },
       "listing": {
-        "offerId": "listing:olx:1100952300",
-        "url": "https://www.olx.pl/d/oferta/skoda-octavia-1-4-tsi-style-salon-polska-serwis-aso-gaz-klimatronic-tempomat-CID5-ID1cwtZa.html",
-        "title": "Skoda Octavia 1.4 TSI Style, Salon Polska, Serwis ASO, GAZ, Klimatronic, Tempomat, Katowice Bogucice",
+        "offerId": "listing:otomoto:6151277105",
+        "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6Ii8aR.html",
+        "title": "Škoda Octavia Combi 1.4 TSI 150 KM, 2018 — AAA AUTO",
+        "photos": [
+          "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImIxYTNubW4wbDhqei1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.eBjU3XmO_XIaeU7_06CWsbs9yN4idQlh1h-1OszTTFo/image%3Bs=5120x0;q=100"
+        ],
         "facts": {
-          "availability": "Seller page is currently live and says 'DOSTĘPNY OD RĘKI'; confirm by phone before travel because seller requests a prior availability check.",
+          "availability": "Karta ogłoszenia widoczna podczas ponownego sprawdzenia 9 listopada 2026; opis podaje „dostępny od ręki”. Przed wyjazdem sprzedawca prosi o telefoniczne potwierdzenie dostępności.",
           "productionYear": 2018,
-          "firstRegistrationDate": "2018-07-30",
-          "vin": "TMBJC7NE1J0263379",
-          "priceGrossPln": 49000,
-          "priceBasis": "The same vehicle is advertised at 49,000 PLN gross on Otomoto and Automarket; financing is shown as available, not mandatory. Automarket says cash purchase requires contacting the seller.",
+          "firstRegistrationDate": "Nie podano",
+          "vin": "Nieujawniony w karcie",
+          "priceGrossPln": 49500,
+          "priceBasis": "Cena 49 500 zł do negocjacji; finansowanie jest dostępne, ale ogłoszenie nie wskazuje obowiązkowego finansowania.",
           "mandatoryFinancing": false,
-          "mileageKm": 131312,
+          "mileageKm": 123605,
           "engine": {
-            "sellerDeclared": "1.4 TSI, 1,395 cm3, 150 KM (149 KM in description), petrol + LPG",
-            "variantAssessment": "Matches the configured 1.4 TSI EA211 150 KM variant on the seller data. CZDA is a plausible code for the 110 kW 1.4 TSI and appears in a Landi Renzo compatibility listing for Octavia 2018, but the actual engine code has not been decoded independently from this VIN; request confirmation from the vehicle data sticker/Škoda service record.",
-            "hardRequirement": "Provisional pass; production date and engine code should be checked against VIN because the 1.4/150 to 1.5/150 transition makes first-registration year insufficient by itself. The displayed displacement 1,395 cm3 supports 1.4 rather than 1.5 TSI."
+            "sellerDeclared": "1.4 TSI, 1 395 cm³, 150 KM",
+            "variantAssessment": "Wariant zgodny z zakresem katalogowym; kod silnika nie został potwierdzony po VIN."
           },
-          "transmission": "Manual, seller-declared 6-speed; configured manual transmission allowed.",
-          "body": "Combi / estate, seller-declared; five seats.",
-          "saleType": "Retail dealer sale, not an auction; seller identified as company AAA AUTO.",
+          "transmission": "Manualna, 6-biegowa — dane ogłoszenia.",
+          "body": "Kombi, 5 miejsc — dane ogłoszenia.",
+          "saleType": "fixed_price",
           "offerType": "company",
-          "lpgInstalled": true,
-          "lpgDocuments": "Unknown. Listing confirms petrol + LPG but does not identify installer/system, installation documents, tank approval/expiry, or LPG service history. This is a material information gap and must be checked before purchase. Landi Renzo lists an Octavia 2018 1.4 TSI 150 CZDA application, but that does not prove this vehicle has that code or a compliant installation.",
-          "camera": "Unknown/not listed. The equipment list names front and rear parking sensors but not a reversing camera; do not infer a camera from sensors. Camera is a minus until checked, with retrofit compatibility also unverified.",
-          "parkingSensors": "Front and rear sensors seller-declared.",
-          "isofix": "Seller-declared in listing.",
+          "lpgInstalled": "unknown",
+          "lpgDocuments": "Karta podaje benzynę, ale nie potwierdza jednoznacznie braku instalacji LPG. Nie podano dokumentów instalacji ani zbiornika.",
+          "camera": "unknown",
+          "parkingSensors": "Przednie i tylne czujniki parkowania — dane karty; kamera nie jest wymieniona.",
+          "isofix": "Wymieniony w wyposażeniu karty.",
           "location": {
             "status": "available",
-            "country": "Poland",
+            "country": "Polska",
             "voivodeship": "Śląskie",
-            "city": "Katowice",
-            "sellerAddress": "Aleja Roździeńskiego 91, 40-203 Katowice (Otomoto seller location)"
+            "city": "Zabrze",
+            "sourceUrl": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6Ii8aR.html"
           },
           "sellerStatements": {
-            "service": "Seller says service book/electronic service book and serviced at ASO; not independently checked.",
-            "condition": "Seller marks technically undamaged/non-damaged and accident-free; this is a seller statement, not an independent structural inspection.",
-            "inspection": "No refusal of independent inspection was stated in the listing."
+            "service": "Karta oznacza serwisowanie w ASO; dokumentów nie sprawdzono.",
+            "condition": "Brak niezależnej kontroli stanu konstrukcji.",
+            "inspection": "Nie ustalono."
           },
           "knownGaps": [
-            "Confirm production date and exact engine code from VIN/Škoda records.",
-            "Obtain LPG installation documents, tank approval/expiry data and service evidence.",
-            "Verify whether a camera is installed and working; if absent, verify a compatible retrofit.",
-            "Independently inspect structural condition and service records; seller claims are not independent evidence.",
-            "Test-fit the user's stroller and luggage."
+            "Potwierdzić dostępność telefonicznie.",
+            "Sprawdzić VIN, kod silnika i historię serwisową.",
+            "Ustalić, czy auto ma instalację LPG; jeśli tak, sprawdzić dokumenty i termin ważności zbiornika.",
+            "Sprawdzić kamerę cofania i stan konstrukcji.",
+            "Przymierzyć wózek i bagaż."
           ]
         },
         "displayFacts": {
           "Rocznik produkcji": 2018,
-          "Przebieg": "131 312 km",
-          "Cena zakupu": "49 000 zł",
-          "Silnik": "Nieustalone",
-          "Nadwozie": "Combi / estate, seller-declared; five seats.",
-          "Skrzynia": "Manual, seller-declared 6-speed; configured manual transmission allowed.",
-          "Typ sprzedaży": "Cena stała",
-          "Sprzedawca": "company",
-          "LPG": "Tak",
-          "Kamera": "Unknown/not listed. The equipment list names front and rear parking sensors but not a reversing camera; do not infer a camera from sensors. Camera is a minus until checked, with retrofit compatibility also unverified.",
-          "Lokalizacja": "Katowice",
-          "Warunki ceny": "The same vehicle is advertised at 49,000 PLN gross on Otomoto and Automarket; financing is shown as available, not mandatory. Automarket says cash purchase requires contacting the seller."
+          "Przebieg": "123 605 km",
+          "Cena zakupu": "49 500 zł",
+          "Silnik": "1.4 TSI, 150 KM (kod silnika do potwierdzenia po VIN)",
+          "Nadwozie": "Kombi, 5 miejsc (dane ogłoszenia)",
+          "Skrzynia": "Manualna, 6-biegowa",
+          "Typ sprzedaży": "Cena do negocjacji",
+          "Sprzedawca": "Firma — AAA AUTO",
+          "LPG": "Nieustalone — karta podaje benzynę, nie potwierdza braku LPG",
+          "Kamera": "Nieustalone — kamera nie jest wymieniona w wyposażeniu",
+          "Lokalizacja": "Zabrze",
+          "Warunki ceny": "49 500 zł do negocjacji; finansowanie dostępne, bez informacji o obowiązku."
         }
       },
-      "checkedAt": "2026-11-09T00:46:09Z",
+      "checkedAt": "2026-11-09T02:07:32Z",
       "points": {
         "safety": 30,
         "reliability": 12,
@@ -122,7 +124,7 @@
       "research": {
         "safety": {
           "status": "confirmed",
-          "note": "The model research reports five Euro NCAP stars for the 2013 Octavia test, with 93% adult and 86% child protection under that period's protocol. The selected listing separately declares airbags, ESP and ISOFIX; these are card claims, not an independent check of the equipment or condition of this VIN. The dealer describes the car as undamaged/accident-free, but no independent structural check is present. Use the older crash-test result as model-level evidence and verify actual safety equipment and history on the car.",
+          "note": "Test Euro NCAP Octavii z 2013 r. zakończył się pięcioma gwiazdkami (93% ochrony dorosłych i 86% dzieci) według ówczesnego protokołu. Karta tego egzemplarza wymienia poduszki, ESP i ISOFIX, ale nie jest to niezależna kontrola wyposażenia ani stanu auta. Wykonaj oględziny i sprawdź historię VIN.",
           "evidence": [
             {
               "title": "Euro NCAP — Skoda Octavia 2013 results",
@@ -135,15 +137,15 @@
               "checkedAt": "2026-11-09T01:39:25+01:00"
             },
             {
-              "title": "OLX — selected AAA AUTO listing, safety equipment and seller condition claims",
-              "url": "https://www.olx.pl/d/oferta/skoda-octavia-1-4-tsi-style-salon-polska-serwis-aso-gaz-klimatronic-tempomat-CID5-ID1cwtZa.html",
-              "checkedAt": "2026-11-09T00:46:09Z"
+              "title": "Karta ogłoszenia — Otomoto",
+              "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6Ii8aR.html",
+              "checkedAt": "2026-11-09T02:07:32Z"
             }
           ]
         },
         "reliability": {
           "status": "partial",
-          "note": "ADAC rates Octavia III breakdown performance favorably at model level and reports an above-average inspection picture, while noting occasional broken suspension springs; it does not provide an independent failure rate for this exact engine code or vehicle. The listing's electronic service-book/ASO statements are seller claims and have not been inspected. Manual transmission avoids a DSG-specific issue, but this does not establish engine condition. LPG is fitted, yet installation and tank records are absent from the card; this lowers confidence until documented. Have the engine, LPG system and vehicle history checked independently.",
+          "note": "ADAC ocenia wyniki awaryjności Octavii III korzystnie na poziomie modelu, odnotowując m.in. sporadyczne pękanie sprężyn zawieszenia. Nie podaje niezależnego wskaźnika awarii tego egzemplarza ani dokładnego kodu silnika. Karta oznacza serwisowanie w ASO, lecz dokumentów nie sprawdzono. Kod silnika, historię i stan auta trzeba potwierdzić; ewentualną instalację LPG oraz jej zbiornik sprawdzić w dokumentach.",
           "evidence": [
             {
               "title": "ADAC — Gebrauchtwageninformation: Skoda Octavia 2013–2020 petrol",
@@ -151,20 +153,20 @@
               "checkedAt": "2026-11-09T01:39:25+01:00"
             },
             {
-              "title": "OLX — selected listing, seller service and LPG statements",
-              "url": "https://www.olx.pl/d/oferta/skoda-octavia-1-4-tsi-style-salon-polska-serwis-aso-gaz-klimatronic-tempomat-CID5-ID1cwtZa.html",
-              "checkedAt": "2026-11-09T00:46:09Z"
-            },
-            {
               "title": "Škoda Polska — LPG systems are dedicated to a specific engine and body",
               "url": "https://www.skoda.pl/oferta/lpg",
               "checkedAt": "2026-11-09T00:46:09Z"
+            },
+            {
+              "title": "Karta ogłoszenia — Otomoto",
+              "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6Ii8aR.html",
+              "checkedAt": "2026-11-09T02:07:32Z"
             }
           ]
         },
         "luggage": {
           "status": "partial",
-          "note": "The selected car is described as Octavia Combi, and the model research supports 610 l with seats up and 1,740 l folded for the facelift Combi. This is a strong fit for a family with luggage. The actual stroller dimensions and loading fit are unknown and should be tested; the listing does not provide a useful loadspace measurement.",
+          "note": "Dane modelowe Octavii III Combi po liftingu podają 610 l bagażnika przy rozłożonych siedzeniach i 1740 l po ich złożeniu. To mocny argument dla rodziny 2+1. Nie wiadomo jednak, czy zmieści się konkretny wózek — sprawdź to przed zakupem.",
           "evidence": [
             {
               "title": "Škoda Storyboard — facelift Octavia Combi press kit",
@@ -172,21 +174,16 @@
               "checkedAt": "2026-11-09T01:39:25+01:00"
             },
             {
-              "title": "OLX — selected listing, Combi body and five seats",
-              "url": "https://www.olx.pl/d/oferta/skoda-octavia-1-4-tsi-style-salon-polska-serwis-aso-gaz-klimatronic-tempomat-CID5-ID1cwtZa.html",
-              "checkedAt": "2026-11-09T00:46:09Z"
+              "title": "Karta ogłoszenia — Otomoto",
+              "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6Ii8aR.html",
+              "checkedAt": "2026-11-09T02:07:32Z"
             }
           ]
         },
         "power_and_use": {
           "status": "partial",
-          "note": "The listing says 1.4 TSI, 1,395 cm3, 150 KM, front-wheel drive and six-speed manual. Škoda's 2017 Octavia Combi press kit documents the 1.4 TSI 110 kW version and 0–100 km/h in 8.2 s for the manual, which is a good reserve for a loaded family car and should not be sluggish on routes. ADAC describes the 1.4/1.5 TSI 150 as a good performance/economy compromise. The actual engine code and production date remain to be matched to VIN; verify because 1.5 TSI replaced 1.4 TSI in selected versions. For the declared LPG, Landi Renzo lists a 2018 Octavia 1.4 TSI 150 CZDA application and Škoda Polska describes dedicated direct-injection LPG systems, but neither proves this car's conversion documents or tank status.",
+          "note": "Karta podaje 1.4 TSI, 150 KM i manualną skrzynię 6-biegową. Dane producenta dla tej odmiany wskazują 0–100 km/h w 8,2 s, więc powinna zapewniać dobry zapas mocy z rodziną i bagażem. Kod silnika oraz zgodność wariantu trzeba potwierdzić po VIN.",
           "evidence": [
-            {
-              "title": "OLX — selected listing, declared engine, output, transmission and fuel",
-              "url": "https://www.olx.pl/d/oferta/skoda-octavia-1-4-tsi-style-salon-polska-serwis-aso-gaz-klimatronic-tempomat-CID5-ID1cwtZa.html",
-              "checkedAt": "2026-11-09T00:46:09Z"
-            },
             {
               "title": "ŠKODA OCTAVIA COMBI 2017 press kit — 1.4 TSI 110 kW technical data",
               "url": "https://cdn.skoda-storyboard.com/2017/03/170307-Geneva-2017-Press-Kit.pdf",
@@ -206,28 +203,34 @@
               "title": "Landi Renzo Polska — supported direct-injection LPG applications, including Octavia 2018 1.4 TSI 150 CZDA",
               "url": "https://landi.pl/instalacja-gazowa-direct.html",
               "checkedAt": "2026-11-09T00:46:09Z"
+            },
+            {
+              "title": "Karta ogłoszenia — Otomoto",
+              "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6Ii8aR.html",
+              "checkedAt": "2026-11-09T02:07:32Z"
             }
           ]
         },
         "camera": {
           "status": "unknown",
-          "note": "The listing equipment list mentions front and rear parking sensors but does not list a reversing camera. Treat camera as absent/not confirmed and deduct for the missing preference; confirm physically. Retrofit compatibility is also unverified. This does not fail the configured delivery requirement by itself because camera need not be fitted at delivery if a compatible retrofit is confirmed.",
+          "note": "Karta wymienia przednie i tylne czujniki parkowania, ale nie kamerę cofania. Nie ma potwierdzenia jej montażu ani zgodności ewentualnego doposażenia; brak kamery obniża ocenę.",
           "evidence": [
-            {
-              "title": "OLX — selected listing equipment list",
-              "url": "https://www.olx.pl/d/oferta/skoda-octavia-1-4-tsi-style-salon-polska-serwis-aso-gaz-klimatronic-tempomat-CID5-ID1cwtZa.html",
-              "checkedAt": "2026-11-09T00:46:09Z"
-            },
             {
               "title": "Otomoto — selected vehicle details and equipment",
               "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6Igg9P.html",
               "checkedAt": "2026-11-09T00:46:09Z"
+            },
+            {
+              "title": "Karta ogłoszenia — Otomoto",
+              "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6Ii8aR.html",
+              "checkedAt": "2026-11-09T02:07:32Z"
             }
           ]
         }
       },
       "triedUrls": [
-        "https://www.olx.pl/d/oferta/skoda-octavia-1-4-tsi-style-salon-polska-serwis-aso-gaz-klimatronic-tempomat-CID5-ID1cwtZa.html"
+        "https://www.olx.pl/d/oferta/skoda-octavia-1-4-tsi-style-salon-polska-serwis-aso-gaz-klimatronic-tempomat-CID5-ID1cwtZa.html",
+        "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6Ii8aR.html"
       ],
       "rank": 1
     },
@@ -333,12 +336,15 @@
           "Nadwozie": "SUV / crossover, 5 drzwi, 5 miejsc (dane karty)",
           "Skrzynia": "automatyczna; karta nie podaje liczby przełożeń",
           "Typ sprzedaży": "Nieustalone",
-          "Sprzedawca": "private",
-          "LPG": "Nieustalone",
-          "Kamera": "seller_claimed_installed",
+          "Sprzedawca": "Osoba prywatna",
+          "LPG": "Nieustalone — brak informacji w karcie",
+          "Kamera": "Sprzedawca deklaruje kamerę cofania; działanie do sprawdzenia.",
           "Lokalizacja": "Kielce",
-          "Warunki ceny": "Ogłoszenie podaje 42 500 zł i fakturę VAT-marża; nie wymienia obowiązkowego finansowania ani dodatkowych warunków ceny."
-        }
+          "Warunki ceny": "42 500 zł; faktura VAT-marża. Nie podano obowiązkowego finansowania."
+        },
+        "photos": [
+          "https://ireland.apollo.olxcdn.com/v1/files/qn9l7fx8qlc53-PL/image;s=1813x1360"
+        ]
       },
       "checkedAt": "2026-11-09T01:44:26+01:00",
       "points": {
@@ -539,15 +545,18 @@
           "Przebieg": "140 000 km",
           "Cena zakupu": "46 900 zł",
           "Silnik": "1.4 TSI 125 KM CZCA (dokładny wariant podany w treści ogłoszenia; VIN nieujawniony w widoku)",
-          "Nadwozie": "Kombi / ST, 5 drzwi, 5 miejsc",
-          "Skrzynia": "manualna, 6-biegowa",
+          "Nadwozie": "Kombi ST, 5 drzwi, 5 miejsc",
+          "Skrzynia": "Manualna, 6-biegowa",
           "Typ sprzedaży": "Cena stała",
-          "Sprzedawca": "private",
-          "LPG": "Nieustalone",
-          "Kamera": "Nieustalone",
+          "Sprzedawca": "Osoba prywatna",
+          "LPG": "Nieustalone — brak informacji w karcie",
+          "Kamera": "Nieustalone — nie wymieniono kamery w wyposażeniu",
           "Lokalizacja": "Komorniki",
           "Warunki ceny": "Cena karty to 46 900 zł; widoczna oferta rat jest opcjonalna i nie wskazano obowiązkowego finansowania. Opis sprzedawcy podaje fakturę VAT 23%."
-        }
+        },
+        "photos": [
+          "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpibWk2YWRzNDM4NjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.sjODOXfvBioYgUmBUBK9ZRhpfIvrC6U5fjn2eUG2fkA/image;s=5120x0;q=80"
+        ]
       },
       "checkedAt": "2026-11-09T01:46:18+01:00",
       "points": {
@@ -681,7 +690,7 @@
       "listing": {
         "offerId": "listing:aaaauto:34811098",
         "url": "https://www.aaaauto.pl/detail/hyundai/i30/34811098",
-        "title": "Hyundai i30 Combi, 2019",
+        "title": "Hyundai i30 Kombi 1.4 T-GDi, 140 KM — 2019",
         "facts": {
           "availability": {
             "value": "available",
@@ -784,16 +793,19 @@
           "Rocznik produkcji": 2019,
           "Przebieg": "117 517 km",
           "Cena zakupu": "47 000 zł",
-          "Silnik": "1.4 T-GDi 140",
-          "Nadwozie": "wagon",
-          "Skrzynia": "7-speed dual-clutch transmission (7DCT)",
+          "Silnik": "1.4 T-GDi, 140 KM",
+          "Nadwozie": "Kombi",
+          "Skrzynia": "Automatyczna, dwusprzęgłowa 7DCT",
           "Typ sprzedaży": "Cena stała",
-          "Sprzedawca": "company",
-          "LPG": "Nieustalone",
-          "Kamera": "Nieustalone",
-          "Lokalizacja": "The page lets the buyer choose a showroom for an appointment or delivery but does not disclose this vehicle's current physical town or branch. Distance cannot be calculated.",
+          "Sprzedawca": "Firma",
+          "LPG": "Nieustalone — brak informacji w karcie",
+          "Kamera": "Nieustalone — karta nie wymienia kamery",
+          "Lokalizacja": "Nie podano miasta salonu dla tego egzemplarza; nie można obliczyć odległości.",
           "Warunki ceny": "Nieustalone"
-        }
+        },
+        "photos": [
+          "https://aaaautoeuimg.vshcdn.net/thumb/300196862_1290x968x95.jpg"
+        ]
       },
       "checkedAt": "2026-11-09T01:55:10Z",
       "points": {
@@ -807,7 +819,7 @@
       "research": {
         "safety": {
           "status": "partial",
-          "note": "Euro NCAP's 2017 i30 test awarded five stars and 84% child-occupant protection, but the rating is expired and the tested body was the five-door hatchback rather than this Wagon. The seller card lists ISOFIX, ESP and an automatic-stop system but this is not an independent check of equipment or operation in the car. Since this is a 2019 production-year car, check applicability and completion by VIN of the UOKiK vacuum-pump campaign for i30s produced 2018-10-25 to 2020-07-15; the notice describes possible increased brake-pedal effort and does not imply every car is affected.",
+          "note": "Test Euro NCAP i30 z 2017 r. otrzymał pięć gwiazdek i 84% w ochronie dzieci; ocena jest wygasła i dotyczy hatchbacka, nie nadwozia kombi. Karta wymienia ISOFIX i ESP, ale nie potwierdza niezależnie wyposażenia ani działania systemów. Po VIN sprawdź, czy auto podlegało kampanii pompy podciśnienia dotyczącej części i30 wyprodukowanych między 25.10.2018 a 15.07.2020.",
           "evidence": [
             {
               "title": "Euro NCAP — Hyundai i30, rating 2017 and child-seat fitment",
@@ -828,7 +840,7 @@
         },
         "reliability": {
           "status": "partial",
-          "note": "The dealer lists an ASO service book and a last service on 2025-08-26 at 115,000 km; documents were not checked, and this listed service is over a year before this review. ADAC's i30 statistics are model-level and identify the 12 V starter battery as a common breakdown issue. Czech STK figures for engine code G4LD are whole-vehicle inspection results, not engine-failure rates; they cannot establish this exact car or engine's reliability. Confirm the code by VIN and inspect the 7DCT separately, along with service history and the UOKiK campaign.",
+          "note": "Dealer podaje książkę serwisową ASO i ostatni serwis 26.08.2025 przy 115 000 km; dokumentów nie sprawdzono. Statystyki ADAC dotyczą modelu i wskazują akumulator 12 V jako częsty powód awarii. Dane czeskich przeglądów dla G4LD opisują cały samochód, a nie awarie samego silnika. Potwierdź kod po VIN, historię, stan skrzyni 7DCT i wykonanie kampanii.",
           "evidence": [
             {
               "title": "AAA AUTO — Hyundai i30 Combi 2019, service and mileage statements",
@@ -849,7 +861,7 @@
         },
         "luggage": {
           "status": "partial",
-          "note": "Hyundai gives the i30 Wagon a 602 l VDA boot with rear seats up and 1,650 l with them folded. That is a strong capacity for family luggage; no source proves that a particular stroller fits, so test it physically. The advertised vehicle is described as a Combi, but the exact VIN/body registration was not available to cross-check.",
+          "note": "Hyundai podaje dla i30 Wagon bagażnik 602 l przy rozłożonych siedzeniach i 1650 l po ich złożeniu. To duża przestrzeń dla rodziny, ale nie ma potwierdzenia, że zmieści się konkretny wózek — sprawdź to fizycznie. Nadwozie podano w ogłoszeniu; nie zweryfikowano go po VIN.",
           "evidence": [
             {
               "title": "Hyundai — New Generation i30 Wagon: elegance meets versatility",
@@ -865,7 +877,7 @@
         },
         "power_and_use": {
           "status": "partial",
-          "note": "The listing specifies 1.4 T-GDi, 140 KM, automatic 7DCT; Hyundai's Wagon launch information confirms the 140 PS 1.4 T-GDi for this body style, and the manufacturer's i30 technical table lists 242 Nm. This is the stronger, less sluggish choice in the saved i30 engine range and should offer a useful reserve for road driving. Actual acceleration, fuel use in 30-minute urban trips and loaded-family response were not tested in this individual car. The 7DCT needs a separate road test and service/diagnostic check.",
+          "note": "Ogłoszenie wskazuje silnik 1.4 T-GDi o mocy 140 KM i skrzynię 7DCT. Producent potwierdza tę odmianę w kombi, z momentem 242 Nm. Powinna dawać przydatny zapas mocy w trasie. Nie testowano tego egzemplarza z obciążeniem ani zużycia paliwa w mieście; skrzynię należy sprawdzić podczas jazdy i diagnostyki.",
           "evidence": [
             {
               "title": "AAA AUTO — Hyundai i30 Combi 2019, 1.4 T-GDI and 7-speed automatic",
@@ -886,7 +898,7 @@
         },
         "camera": {
           "status": "unknown",
-          "note": "The listing names rear parking sensors but does not name a reversing camera. Do not infer a camera from the model or trim; confirm it from the vehicle and its equipment record. The camera remains unverified for this offer and receives no recommendation points.",
+          "note": "Karta wymienia tylne czujniki parkowania, ale nie kamerę cofania. Nie należy wnioskować o jej obecności na podstawie wersji modelu. Wyposażenie sprawdź w aucie i dokumentacji; kamera pozostaje nieustalona.",
           "evidence": [
             {
               "title": "AAA AUTO — Hyundai i30 Combi 2019 equipment list",
@@ -941,7 +953,7 @@
       "listing": {
         "offerId": "listing:autoplac:3607-8813-VK",
         "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2021r-ambition-fv23-salonpl-110km-led-klimatronik-android-apple-3607-8813-VK",
-        "title": "Skoda Scala 1.0 Ambition FV23% SalonPL 110KM LED Klimatronik Android/Apple",
+        "title": "Škoda Scala 1.0 TSI Ambition, 110 KM — 2021",
         "facts": {
           "availability": {
             "status": "available",
@@ -1047,16 +1059,19 @@
           "Rocznik produkcji": 2021,
           "Przebieg": "118 000 km",
           "Cena zakupu": "45 900 zł",
-          "Silnik": "1.0 TSI 81 kW / 110 PS",
-          "Nadwozie": "hatchback",
-          "Skrzynia": "manual",
+          "Silnik": "1.0 TSI, 81 kW / 110 KM",
+          "Nadwozie": "Nadwozie typu hatchback",
+          "Skrzynia": "Manualna",
           "Typ sprzedaży": "Cena stała",
-          "Sprzedawca": "company",
-          "LPG": "Nieustalone",
-          "Kamera": "Nieustalone",
-          "Lokalizacja": "Nieustalone",
-          "Warunki ceny": "Nieustalone"
-        }
+          "Sprzedawca": "Firma",
+          "LPG": "Nieustalone — karta podaje benzynę, nie potwierdza braku LPG",
+          "Kamera": "Nieustalone — karta wymienia tylny czujnik, nie kamerę",
+          "Lokalizacja": "Pęcice",
+          "Warunki ceny": "45 900 zł; faktura VAT 23%. Finansowanie dostępne, nie wskazano obowiązkowego."
+        },
+        "photos": [
+          "https://euw2-cdn.autoplac.pl/v1/p/2f132bfc-65f1-4e0d-a78e-4bd08b66262e?f=1920%3Awebp"
+        ]
       },
       "checkedAt": "2026-11-09T00:46:19Z",
       "points": {
@@ -1155,5 +1170,5 @@
       "rank": 5
     }
   ],
-  "note": "Wynik dotyczy pięciu wybranych modeli i jednej potwierdzonej aktualnej oferty na model. Braki informacji otrzymują zero punktów."
+  "note": "Ranking obejmuje pięć wybranych modeli i po jednej sprawdzonej ofercie każdego modelu. Brakujące informacje obniżają ocenę."
 }

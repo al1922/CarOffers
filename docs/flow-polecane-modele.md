@@ -60,7 +60,10 @@ odczytać, próbują następną ofertę tego modelu. Dla pierwszej dostępnej ka
 potwierdzają dokładny wariant, moc, rocznik produkcji, cenę brutto i jej warunki,
 przebieg, skrzynię, nadwozie, wyposażenie, LPG, lokalizację oraz dostępne
 informacje o sprzedawcy. Źródła specyfikacji i ustalenia rankingowe zapisują z
-tytułem, adresem HTTPS i czasem sprawdzenia. Nie analizują zdjęć.
+tytułem, adresem HTTPS i czasem sprawdzenia. Teksty widoczne w rankingu piszą po
+polsku. Nie analizują zdjęć ani nie wyciągają z nich faktów; jeśli karta udostępnia
+bezpośrednie adresy HTTPS zdjęć tego auta, zapisują maksymalnie 12 w `photos`.
+Jeśli adresy nie są widoczne, pomijają pole `photos`.
 
 Wynik fazy ogłoszenia ma `taskId`, `outcome: complete`, `checkedAt`, `triedUrls`,
 `availability`, `selectedOffer` (z `offerId`, `url`, `title`, `facts`) i te same

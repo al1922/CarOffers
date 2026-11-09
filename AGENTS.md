@@ -40,7 +40,9 @@ od użytkownika ręcznego uruchamiania poleceń CLI.
    zakończonej lub niedostępnej karcie przechodzi do następnej oferty tego samego
    modelu. Weryfikuje bieżącą dostępność, warunki ceny, dokładny wariant auta,
    wyposażenie i pozostałe pola po karcie oraz dokładne specyfikacje po źródłach.
-   Nie analizuje zdjęć.
+   Nie analizuje zdjęć ani nie wyciąga z nich faktów. Jeśli karta pokazuje
+   bezpośrednie adresy HTTPS zdjęć danego auta, zapisuje do 12 w `photos`;
+   w przeciwnym razie pomija pole. Teksty widoczne w rankingu pisze po polsku.
 4. Po `finish` wszystkich pięciu zadań koordynator uruchamia
    `recommend-finalize`. Wynik trafia do `reports/recommendations.json`, skąd
    zakładka „Polecane modele” ładuje ranking. Nie importuj rekomendacji do
