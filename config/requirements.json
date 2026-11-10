@@ -3,7 +3,7 @@
   "purchase": {
     "maxPriceGrossPln": 55000,
     "scope": "purchase_only",
-    "mandatoryFinancingAllowed": true,
+    "mandatoryFinancingAllowed": false,
     "priceExceptions": [
       {
         "rule": "slightly_above_limit_only_for_exceptional_offer",
@@ -15,7 +15,10 @@
   },
   "listingEvidence": {
     "requiredFields": [],
-    "preferredFields": ["vin", "firstRegistrationDate"],
+    "preferredFields": [
+      "vin",
+      "firstRegistrationDate"
+    ],
     "missingPreferredFieldHandling": "mark_missing_and_consider_as_information_gap; do_not_automatically_exclude",
     "registrationNumber": "record_presence_only; may be visible in listing photos; do not spend effort extracting from images or use as a strong ranking factor",
     "independentInspectionRefusal": "exclude_only_if_listing_explicitly_states_inspection_is_not_allowed"
@@ -23,7 +26,12 @@
   "sellerTypes": "any_non_auction_seller_if_price_conditions_fit",
   "sellerClassification": {
     "field": "offerType",
-    "values": ["private", "company", "leasing_return", "unknown"],
+    "values": [
+      "private",
+      "company",
+      "leasing_return",
+      "unknown"
+    ],
     "unknownHandling": "mark_unknown; do_not_infer_from_platform_or_ad_style"
   },
   "priceAssessment": {

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "note": "Selectors verified from public rendered DOM on 2026-11-09. Missing entries use the existing-result capture only; no speculative form clicks.",
+  "adapters": {
+    "allegro-lokalnie": { "queryInput": "input[placeholder*='czego szukasz' i]", "submit": "enter" },
+    "autotrader-pl": { "makeInput": "input[placeholder*='Dowolna marka' i]", "modelInput": "input[placeholder*='Dowolny model' i]", "submit": "enter" },
+    "intermoto": { "queryInput": "input[name='phrase']", "submitSelector": "button[name='search_submit']" },
+    "olx": { "queryInput": "input[placeholder*='Znajdź coś dla siebie' i]", "submitSelector": "button[name='searchBtn']" },
+    "autoplac": { "queryInput": "input[name='search']", "submit": "enter" },
+    "sprzedajemy": { "queryInput": "input[placeholder*='Szukaj wśród milionów ofert' i]", "submit": "enter" },
+    "arval-autoselect": { "queryInput": "input[name='search']", "submitSelector": "button:has-text('SZUKAJ')" },
+    "ayvens-usedcars": { "queryInput": "input[name='q']", "submit": "enter" },
+    "autopunkt": { "queryInput": "input[type='search']", "submit": "enter" }
+  }
+}

@@ -1,0 +1,615 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-09T21:59:33.751Z",
+  "note": "Read-only one-query pilot. Visible field counts are parsing diagnostics, not listing facts or availability evidence. No task queue or offer database was changed.",
+  "sourcesChecked": 21,
+  "results": [
+    {
+      "sourceId": "allegro-lokalnie",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "status": "partial",
+      "pagesChecked": 1,
+      "candidates": 60,
+      "fieldCoverage": {
+        "withTitleAndUrl": 60,
+        "withDisplayedPriceText": 60,
+        "withMileageKm": 54,
+        "withExplicitProductionYear": 60,
+        "withYearMentionOnly": 60
+      },
+      "diagnostics": {
+        "navigationMs": 1463,
+        "renderWaitMs": 185,
+        "queryActionMs": 101,
+        "extractionMs": 98,
+        "candidates": 60,
+        "elapsedMs": 1847,
+        "assetBlocking": "disabled_unless_measured_for_source"
+      },
+      "querySubmitted": false,
+      "queryNote": "Użyto już widocznych wyników strony; pominięto ponowne zapytanie.",
+      "cardPilot": null,
+      "errors": [],
+      "notes": "Kandydaci pochodzą wyłącznie z widocznych kart wyników. Karty ogłoszeń nie były otwierane; dostępność, cena brutto i wyposażenie nie są potwierdzone. Jeśli struktura portalu nie ujawniła kart, zakres pozostaje nieprzeszukany. model-body: Użyto już widocznych wyników strony; pominięto ponowne zapytanie. model-body: zatrzymano po limicie 1; pozostał kolejny URL https://allegrolokalnie.pl/oferty/q/samochody%20osobowe?page=2&zrodlo=lokalnie&zrodlo=allegro"
+    },
+    {
+      "sourceId": "autotrader-pl",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "status": "partial",
+      "pagesChecked": 1,
+      "candidates": 30,
+      "fieldCoverage": {
+        "withTitleAndUrl": 30,
+        "withDisplayedPriceText": 30,
+        "withMileageKm": 26,
+        "withExplicitProductionYear": 0,
+        "withYearMentionOnly": 30
+      },
+      "diagnostics": {
+        "navigationMs": 746,
+        "renderWaitMs": 60,
+        "queryActionMs": 23,
+        "extractionMs": 25,
+        "candidates": 30,
+        "elapsedMs": 854,
+        "assetBlocking": "disabled_unless_measured_for_source"
+      },
+      "querySubmitted": false,
+      "queryNote": "Użyto już widocznych wyników strony; pominięto ponowne zapytanie.",
+      "cardPilot": null,
+      "errors": [],
+      "notes": "Kandydaci pochodzą wyłącznie z widocznych kart wyników. Karty ogłoszeń nie były otwierane; dostępność, cena brutto i wyposażenie nie są potwierdzone. Jeśli struktura portalu nie ujawniła kart, zakres pozostaje nieprzeszukany. model-body: Użyto już widocznych wyników strony; pominięto ponowne zapytanie."
+    },
+    {
+      "sourceId": "intermoto",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "status": "partial",
+      "pagesChecked": 1,
+      "candidates": 33,
+      "fieldCoverage": {
+        "withTitleAndUrl": 33,
+        "withDisplayedPriceText": 33,
+        "withMileageKm": 33,
+        "withExplicitProductionYear": 0,
+        "withYearMentionOnly": 33
+      },
+      "diagnostics": {
+        "navigationMs": 2846,
+        "renderWaitMs": 171,
+        "queryActionMs": 36,
+        "extractionMs": 27,
+        "candidates": 33,
+        "elapsedMs": 3080,
+        "assetBlocking": "disabled_unless_measured_for_source"
+      },
+      "querySubmitted": false,
+      "queryNote": "Użyto już widocznych wyników strony; pominięto ponowne zapytanie.",
+      "cardPilot": null,
+      "errors": [],
+      "notes": "Kandydaci pochodzą wyłącznie z widocznych kart wyników. Karty ogłoszeń nie były otwierane; dostępność, cena brutto i wyposażenie nie są potwierdzone. Jeśli struktura portalu nie ujawniła kart, zakres pozostaje nieprzeszukany. model-body: Użyto już widocznych wyników strony; pominięto ponowne zapytanie."
+    },
+    {
+      "sourceId": "otomoto",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "status": "blocked",
+      "pagesChecked": 0,
+      "candidates": 0,
+      "fieldCoverage": {
+        "withTitleAndUrl": 0,
+        "withDisplayedPriceText": 0,
+        "withMileageKm": 0,
+        "withExplicitProductionYear": 0,
+        "withYearMentionOnly": 0
+      },
+      "diagnostics": {
+        "navigationMs": 207,
+        "renderWaitMs": 1224,
+        "queryActionMs": 0,
+        "extractionMs": 0,
+        "candidates": 0,
+        "elapsedMs": 1431,
+        "assetBlocking": "disabled_unless_measured_for_source"
+      },
+      "querySubmitted": false,
+      "queryNote": null,
+      "cardPilot": null,
+      "errors": [
+        {
+          "url": "https://www.otomoto.pl/osobowe",
+          "error": "Portal returned HTTP 403; no retry or bypass attempted."
+        }
+      ],
+      "notes": "Kandydaci pochodzą wyłącznie z widocznych kart wyników. Karty ogłoszeń nie były otwierane; dostępność, cena brutto i wyposażenie nie są potwierdzone. Jeśli struktura portalu nie ujawniła kart, zakres pozostaje nieprzeszukany."
+    },
+    {
+      "sourceId": "olx",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "status": "partial",
+      "pagesChecked": 1,
+      "candidates": 120,
+      "fieldCoverage": {
+        "withTitleAndUrl": 120,
+        "withDisplayedPriceText": 39,
+        "withMileageKm": 35,
+        "withExplicitProductionYear": 0,
+        "withYearMentionOnly": 35
+      },
+      "diagnostics": {
+        "navigationMs": 1923,
+        "renderWaitMs": 91,
+        "queryActionMs": 54,
+        "extractionMs": 50,
+        "candidates": 120,
+        "elapsedMs": 2118,
+        "assetBlocking": "disabled_unless_measured_for_source"
+      },
+      "querySubmitted": false,
+      "queryNote": "Użyto już widocznych wyników strony; pominięto ponowne zapytanie.",
+      "cardPilot": null,
+      "errors": [],
+      "notes": "Kandydaci pochodzą wyłącznie z widocznych kart wyników. Karty ogłoszeń nie były otwierane; dostępność, cena brutto i wyposażenie nie są potwierdzone. Jeśli struktura portalu nie ujawniła kart, zakres pozostaje nieprzeszukany. model-body: Użyto już widocznych wyników strony; pominięto ponowne zapytanie. model-body: zatrzymano po limicie 1; pozostał kolejny URL https://www.olx.pl/motoryzacja/samochody/?page=2"
+    },
+    {
+      "sourceId": "autoplac",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "status": "partial",
+      "pagesChecked": 1,
+      "candidates": 23,
+      "fieldCoverage": {
+        "withTitleAndUrl": 23,
+        "withDisplayedPriceText": 21,
+        "withMileageKm": 7,
+        "withExplicitProductionYear": 0,
+        "withYearMentionOnly": 21
+      },
+      "diagnostics": {
+        "navigationMs": 1154,
+        "renderWaitMs": 137,
+        "queryActionMs": 16,
+        "extractionMs": 19,
+        "candidates": 23,
+        "elapsedMs": 1326,
+        "assetBlocking": "disabled_unless_measured_for_source"
+      },
+      "querySubmitted": false,
+      "queryNote": "Użyto już widocznych wyników strony; pominięto ponowne zapytanie.",
+      "cardPilot": null,
+      "errors": [],
+      "notes": "Kandydaci pochodzą wyłącznie z widocznych kart wyników. Karty ogłoszeń nie były otwierane; dostępność, cena brutto i wyposażenie nie są potwierdzone. Jeśli struktura portalu nie ujawniła kart, zakres pozostaje nieprzeszukany. model-body: Użyto już widocznych wyników strony; pominięto ponowne zapytanie."
+    },
+    {
+      "sourceId": "motogratka",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "status": "partial",
+      "pagesChecked": 1,
+      "candidates": 4,
+      "fieldCoverage": {
+        "withTitleAndUrl": 4,
+        "withDisplayedPriceText": 4,
+        "withMileageKm": 0,
+        "withExplicitProductionYear": 0,
+        "withYearMentionOnly": 4
+      },
+      "diagnostics": {
+        "navigationMs": 1033,
+        "renderWaitMs": 281,
+        "queryActionMs": 56,
+        "extractionMs": 59,
+        "candidates": 4,
+        "elapsedMs": 1429,
+        "assetBlocking": "disabled_unless_measured_for_source"
+      },
+      "querySubmitted": false,
+      "queryNote": "Użyto już widocznych wyników strony; pominięto ponowne zapytanie.",
+      "cardPilot": null,
+      "errors": [],
+      "notes": "Kandydaci pochodzą wyłącznie z widocznych kart wyników. Karty ogłoszeń nie były otwierane; dostępność, cena brutto i wyposażenie nie są potwierdzone. Jeśli struktura portalu nie ujawniła kart, zakres pozostaje nieprzeszukany. model-body: Użyto już widocznych wyników strony; pominięto ponowne zapytanie. model-body: zatrzymano po limicie 1; pozostał kolejny URL https://motogratka.pl/motoryzacja/osobowe?page=2"
+    },
+    {
+      "sourceId": "sprzedajemy",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "status": "partial",
+      "pagesChecked": 1,
+      "candidates": 47,
+      "fieldCoverage": {
+        "withTitleAndUrl": 47,
+        "withDisplayedPriceText": 45,
+        "withMileageKm": 1,
+        "withExplicitProductionYear": 0,
+        "withYearMentionOnly": 10
+      },
+      "diagnostics": {
+        "navigationMs": 1176,
+        "renderWaitMs": 210,
+        "queryActionMs": 100,
+        "extractionMs": 101,
+        "candidates": 47,
+        "elapsedMs": 1587,
+        "assetBlocking": "disabled_unless_measured_for_source"
+      },
+      "querySubmitted": false,
+      "queryNote": "Użyto już widocznych wyników strony; pominięto ponowne zapytanie.",
+      "cardPilot": null,
+      "errors": [],
+      "notes": "Kandydaci pochodzą wyłącznie z widocznych kart wyników. Karty ogłoszeń nie były otwierane; dostępność, cena brutto i wyposażenie nie są potwierdzone. Jeśli struktura portalu nie ujawniła kart, zakres pozostaje nieprzeszukany. model-body: Użyto już widocznych wyników strony; pominięto ponowne zapytanie. model-body: zatrzymano po limicie 1; pozostał kolejny URL https://sprzedajemy.pl/motoryzacja/samochody-osobowe?offset=30"
+    },
+    {
+      "sourceId": "automarket",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "status": "partial",
+      "pagesChecked": 1,
+      "candidates": 93,
+      "fieldCoverage": {
+        "withTitleAndUrl": 93,
+        "withDisplayedPriceText": 57,
+        "withMileageKm": 57,
+        "withExplicitProductionYear": 0,
+        "withYearMentionOnly": 59
+      },
+      "diagnostics": {
+        "navigationMs": 2018,
+        "renderWaitMs": 52,
+        "queryActionMs": 17,
+        "extractionMs": 20,
+        "candidates": 93,
+        "elapsedMs": 2107,
+        "assetBlocking": "disabled_unless_measured_for_source"
+      },
+      "querySubmitted": false,
+      "queryNote": "Użyto już widocznych wyników strony; pominięto ponowne zapytanie.",
+      "cardPilot": null,
+      "errors": [],
+      "notes": "Kandydaci pochodzą wyłącznie z widocznych kart wyników. Karty ogłoszeń nie były otwierane; dostępność, cena brutto i wyposażenie nie są potwierdzone. Jeśli struktura portalu nie ujawniła kart, zakres pozostaje nieprzeszukany. model-body: Użyto już widocznych wyników strony; pominięto ponowne zapytanie."
+    },
+    {
+      "sourceId": "arval-autoselect",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "status": "partial",
+      "pagesChecked": 1,
+      "candidates": 9,
+      "fieldCoverage": {
+        "withTitleAndUrl": 9,
+        "withDisplayedPriceText": 9,
+        "withMileageKm": 9,
+        "withExplicitProductionYear": 0,
+        "withYearMentionOnly": 9
+      },
+      "diagnostics": {
+        "navigationMs": 559,
+        "renderWaitMs": 1249,
+        "queryActionMs": 3389,
+        "extractionMs": 13,
+        "candidates": 9,
+        "elapsedMs": 5210,
+        "assetBlocking": "disabled_unless_measured_for_source"
+      },
+      "querySubmitted": false,
+      "queryNote": "locator.click: Timeout 2500ms exceeded.",
+      "cardPilot": null,
+      "errors": [],
+      "notes": "Kandydaci pochodzą wyłącznie z widocznych kart wyników. Karty ogłoszeń nie były otwierane; dostępność, cena brutto i wyposażenie nie są potwierdzone. Jeśli struktura portalu nie ujawniła kart, zakres pozostaje nieprzeszukany. model-body: locator.click: Timeout 2500ms exceeded."
+    },
+    {
+      "sourceId": "ayvens-usedcars",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "status": "partial",
+      "pagesChecked": 1,
+      "candidates": 21,
+      "fieldCoverage": {
+        "withTitleAndUrl": 21,
+        "withDisplayedPriceText": 0,
+        "withMileageKm": 21,
+        "withExplicitProductionYear": 0,
+        "withYearMentionOnly": 21
+      },
+      "diagnostics": {
+        "navigationMs": 1241,
+        "renderWaitMs": 318,
+        "queryActionMs": 84,
+        "extractionMs": 40,
+        "candidates": 21,
+        "elapsedMs": 1683,
+        "assetBlocking": "disabled_unless_measured_for_source"
+      },
+      "querySubmitted": false,
+      "queryNote": "Użyto już widocznych wyników strony; pominięto ponowne zapytanie.",
+      "cardPilot": null,
+      "errors": [],
+      "notes": "Kandydaci pochodzą wyłącznie z widocznych kart wyników. Karty ogłoszeń nie były otwierane; dostępność, cena brutto i wyposażenie nie są potwierdzone. Jeśli struktura portalu nie ujawniła kart, zakres pozostaje nieprzeszukany. model-body: Użyto już widocznych wyników strony; pominięto ponowne zapytanie."
+    },
+    {
+      "sourceId": "toyota-pewne-auto",
+      "modelKey": "toyota-auris-touring-sports",
+      "status": "partial",
+      "pagesChecked": 1,
+      "candidates": 15,
+      "fieldCoverage": {
+        "withTitleAndUrl": 15,
+        "withDisplayedPriceText": 11,
+        "withMileageKm": 11,
+        "withExplicitProductionYear": 0,
+        "withYearMentionOnly": 11
+      },
+      "diagnostics": {
+        "navigationMs": 501,
+        "renderWaitMs": 72,
+        "queryActionMs": 8,
+        "extractionMs": 8,
+        "candidates": 15,
+        "elapsedMs": 589,
+        "assetBlocking": "disabled_unless_measured_for_source"
+      },
+      "querySubmitted": false,
+      "queryNote": "Użyto już widocznych wyników strony; pominięto ponowne zapytanie.",
+      "cardPilot": null,
+      "errors": [],
+      "notes": "Kandydaci pochodzą wyłącznie z widocznych kart wyników. Karty ogłoszeń nie były otwierane; dostępność, cena brutto i wyposażenie nie są potwierdzone. Jeśli struktura portalu nie ujawniła kart, zakres pozostaje nieprzeszukany. model-body: Użyto już widocznych wyników strony; pominięto ponowne zapytanie."
+    },
+    {
+      "sourceId": "kia-uzywane",
+      "modelKey": "kia-ceed-iii-sw",
+      "status": "partial",
+      "pagesChecked": 1,
+      "candidates": 0,
+      "fieldCoverage": {
+        "withTitleAndUrl": 0,
+        "withDisplayedPriceText": 0,
+        "withMileageKm": 0,
+        "withExplicitProductionYear": 0,
+        "withYearMentionOnly": 0
+      },
+      "diagnostics": {
+        "navigationMs": 188,
+        "renderWaitMs": 1223,
+        "queryActionMs": 2,
+        "extractionMs": 1,
+        "candidates": 0,
+        "elapsedMs": 1414,
+        "assetBlocking": "disabled_unless_measured_for_source"
+      },
+      "querySubmitted": false,
+      "queryNote": "Brak zweryfikowanego selektora wyszukiwania dla tego portalu.",
+      "cardPilot": null,
+      "errors": [],
+      "notes": "Kandydaci pochodzą wyłącznie z widocznych kart wyników. Karty ogłoszeń nie były otwierane; dostępność, cena brutto i wyposażenie nie są potwierdzone. Jeśli struktura portalu nie ujawniła kart, zakres pozostaje nieprzeszukany. model-body: Brak zweryfikowanego selektora wyszukiwania dla tego portalu."
+    },
+    {
+      "sourceId": "skoda-plus",
+      "modelKey": "skoda-octavia-iii-combi",
+      "status": "partial",
+      "pagesChecked": 1,
+      "candidates": 0,
+      "fieldCoverage": {
+        "withTitleAndUrl": 0,
+        "withDisplayedPriceText": 0,
+        "withMileageKm": 0,
+        "withExplicitProductionYear": 0,
+        "withYearMentionOnly": 0
+      },
+      "diagnostics": {
+        "navigationMs": 676,
+        "renderWaitMs": 1235,
+        "queryActionMs": 24,
+        "extractionMs": 143,
+        "candidates": 0,
+        "elapsedMs": 2078,
+        "assetBlocking": "disabled_unless_measured_for_source"
+      },
+      "querySubmitted": false,
+      "queryNote": "Brak zweryfikowanego selektora wyszukiwania dla tego portalu.",
+      "cardPilot": null,
+      "errors": [],
+      "notes": "Kandydaci pochodzą wyłącznie z widocznych kart wyników. Karty ogłoszeń nie były otwierane; dostępność, cena brutto i wyposażenie nie są potwierdzone. Jeśli struktura portalu nie ujawniła kart, zakres pozostaje nieprzeszukany. model-body: Brak zweryfikowanego selektora wyszukiwania dla tego portalu."
+    },
+    {
+      "sourceId": "volkswagen-certyfikowane",
+      "modelKey": "volkswagen-golf-vii-variant",
+      "status": "partial",
+      "pagesChecked": 1,
+      "candidates": 12,
+      "fieldCoverage": {
+        "withTitleAndUrl": 12,
+        "withDisplayedPriceText": 12,
+        "withMileageKm": 0,
+        "withExplicitProductionYear": 0,
+        "withYearMentionOnly": 12
+      },
+      "diagnostics": {
+        "navigationMs": 764,
+        "renderWaitMs": 2261,
+        "queryActionMs": 47,
+        "extractionMs": 51,
+        "candidates": 12,
+        "elapsedMs": 3123,
+        "assetBlocking": "disabled_unless_measured_for_source"
+      },
+      "querySubmitted": false,
+      "queryNote": "Użyto już widocznych wyników strony; pominięto ponowne zapytanie.",
+      "cardPilot": null,
+      "errors": [],
+      "notes": "Kandydaci pochodzą wyłącznie z widocznych kart wyników. Karty ogłoszeń nie były otwierane; dostępność, cena brutto i wyposażenie nie są potwierdzone. Jeśli struktura portalu nie ujawniła kart, zakres pozostaje nieprzeszukany. model-body: Użyto już widocznych wyników strony; pominięto ponowne zapytanie."
+    },
+    {
+      "sourceId": "seat-certyfikowane",
+      "modelKey": "seat-leon-iii-st",
+      "status": "partial",
+      "pagesChecked": 1,
+      "candidates": 0,
+      "fieldCoverage": {
+        "withTitleAndUrl": 0,
+        "withDisplayedPriceText": 0,
+        "withMileageKm": 0,
+        "withExplicitProductionYear": 0,
+        "withYearMentionOnly": 0
+      },
+      "diagnostics": {
+        "navigationMs": 859,
+        "renderWaitMs": 2169,
+        "queryActionMs": 9,
+        "extractionMs": 7,
+        "candidates": 0,
+        "elapsedMs": 3044,
+        "assetBlocking": "disabled_unless_measured_for_source"
+      },
+      "querySubmitted": false,
+      "queryNote": "Brak zweryfikowanego selektora wyszukiwania dla tego portalu.",
+      "cardPilot": null,
+      "errors": [],
+      "notes": "Kandydaci pochodzą wyłącznie z widocznych kart wyników. Karty ogłoszeń nie były otwierane; dostępność, cena brutto i wyposażenie nie są potwierdzone. Jeśli struktura portalu nie ujawniła kart, zakres pozostaje nieprzeszukany. model-body: Brak zweryfikowanego selektora wyszukiwania dla tego portalu."
+    },
+    {
+      "sourceId": "suzuki-uzywane",
+      "modelKey": "suzuki-sx4-s-cross",
+      "status": "partial",
+      "pagesChecked": 1,
+      "candidates": 20,
+      "fieldCoverage": {
+        "withTitleAndUrl": 20,
+        "withDisplayedPriceText": 1,
+        "withMileageKm": 18,
+        "withExplicitProductionYear": 0,
+        "withYearMentionOnly": 20
+      },
+      "diagnostics": {
+        "navigationMs": 1101,
+        "renderWaitMs": 68,
+        "queryActionMs": 17,
+        "extractionMs": 57,
+        "candidates": 20,
+        "elapsedMs": 1243,
+        "assetBlocking": "disabled_unless_measured_for_source"
+      },
+      "querySubmitted": false,
+      "queryNote": "Użyto już widocznych wyników strony; pominięto ponowne zapytanie.",
+      "cardPilot": null,
+      "errors": [],
+      "notes": "Kandydaci pochodzą wyłącznie z widocznych kart wyników. Karty ogłoszeń nie były otwierane; dostępność, cena brutto i wyposażenie nie są potwierdzone. Jeśli struktura portalu nie ujawniła kart, zakres pozostaje nieprzeszukany. model-body: Użyto już widocznych wyników strony; pominięto ponowne zapytanie."
+    },
+    {
+      "sourceId": "hyundai-korea-motors",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "status": "partial",
+      "pagesChecked": 1,
+      "candidates": 0,
+      "fieldCoverage": {
+        "withTitleAndUrl": 0,
+        "withDisplayedPriceText": 0,
+        "withMileageKm": 0,
+        "withExplicitProductionYear": 0,
+        "withYearMentionOnly": 0
+      },
+      "diagnostics": {
+        "navigationMs": 653,
+        "renderWaitMs": 1608,
+        "queryActionMs": 9,
+        "extractionMs": 7,
+        "candidates": 0,
+        "elapsedMs": 2277,
+        "assetBlocking": "disabled_unless_measured_for_source"
+      },
+      "querySubmitted": false,
+      "queryNote": "Brak zweryfikowanego selektora wyszukiwania dla tego portalu.",
+      "cardPilot": null,
+      "errors": [],
+      "notes": "Kandydaci pochodzą wyłącznie z widocznych kart wyników. Karty ogłoszeń nie były otwierane; dostępność, cena brutto i wyposażenie nie są potwierdzone. Jeśli struktura portalu nie ujawniła kart, zakres pozostaje nieprzeszukany. model-body: Brak zweryfikowanego selektora wyszukiwania dla tego portalu."
+    },
+    {
+      "sourceId": "spoticar",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "status": "blocked",
+      "pagesChecked": 0,
+      "candidates": 0,
+      "fieldCoverage": {
+        "withTitleAndUrl": 0,
+        "withDisplayedPriceText": 0,
+        "withMileageKm": 0,
+        "withExplicitProductionYear": 0,
+        "withYearMentionOnly": 0
+      },
+      "diagnostics": {
+        "navigationMs": 234,
+        "renderWaitMs": 1233,
+        "queryActionMs": 0,
+        "extractionMs": 0,
+        "candidates": 0,
+        "elapsedMs": 1467,
+        "assetBlocking": "disabled_unless_measured_for_source"
+      },
+      "querySubmitted": false,
+      "queryNote": null,
+      "cardPilot": null,
+      "errors": [
+        {
+          "url": "https://www.spoticar.pl/",
+          "error": "Portal rendered an access challenge; no retry or bypass attempted."
+        },
+        {
+          "url": "https://www.spoticar.pl/",
+          "error": "Portal returned HTTP 403; no retry or bypass attempted."
+        }
+      ],
+      "notes": "Kandydaci pochodzą wyłącznie z widocznych kart wyników. Karty ogłoszeń nie były otwierane; dostępność, cena brutto i wyposażenie nie są potwierdzone. Jeśli struktura portalu nie ujawniła kart, zakres pozostaje nieprzeszukany."
+    },
+    {
+      "sourceId": "aaaauto",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "status": "blocked",
+      "pagesChecked": 0,
+      "candidates": 0,
+      "fieldCoverage": {
+        "withTitleAndUrl": 0,
+        "withDisplayedPriceText": 0,
+        "withMileageKm": 0,
+        "withExplicitProductionYear": 0,
+        "withYearMentionOnly": 0
+      },
+      "diagnostics": {
+        "navigationMs": 199,
+        "renderWaitMs": 1226,
+        "queryActionMs": 0,
+        "extractionMs": 0,
+        "candidates": 0,
+        "elapsedMs": 1425,
+        "assetBlocking": "disabled_unless_measured_for_source"
+      },
+      "querySubmitted": false,
+      "queryNote": null,
+      "cardPilot": null,
+      "errors": [
+        {
+          "url": "https://www.aaaauto.pl/",
+          "error": "Portal rendered an access challenge; no retry or bypass attempted."
+        }
+      ],
+      "notes": "Kandydaci pochodzą wyłącznie z widocznych kart wyników. Karty ogłoszeń nie były otwierane; dostępność, cena brutto i wyposażenie nie są potwierdzone. Jeśli struktura portalu nie ujawniła kart, zakres pozostaje nieprzeszukany."
+    },
+    {
+      "sourceId": "autopunkt",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "status": "partial",
+      "pagesChecked": 1,
+      "candidates": 13,
+      "fieldCoverage": {
+        "withTitleAndUrl": 13,
+        "withDisplayedPriceText": 13,
+        "withMileageKm": 13,
+        "withExplicitProductionYear": 0,
+        "withYearMentionOnly": 13
+      },
+      "diagnostics": {
+        "navigationMs": 1044,
+        "renderWaitMs": 59,
+        "queryActionMs": 6,
+        "extractionMs": 8,
+        "candidates": 13,
+        "elapsedMs": 1117,
+        "assetBlocking": "disabled_unless_measured_for_source"
+      },
+      "querySubmitted": false,
+      "queryNote": "Użyto już widocznych wyników strony; pominięto ponowne zapytanie.",
+      "cardPilot": null,
+      "errors": [],
+      "notes": "Kandydaci pochodzą wyłącznie z widocznych kart wyników. Karty ogłoszeń nie były otwierane; dostępność, cena brutto i wyposażenie nie są potwierdzone. Jeśli struktura portalu nie ujawniła kart, zakres pozostaje nieprzeszukany. model-body: Użyto już widocznych wyników strony; pominięto ponowne zapytanie."
+    }
+  ]
+}

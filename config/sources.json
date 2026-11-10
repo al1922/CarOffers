@@ -49,8 +49,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": true,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": false,
-        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
       },
       "notes": []
     },
@@ -58,7 +58,7 @@
       "id": "autotrader-pl",
       "name": "Autotrader.pl",
       "url": "https://www.autotrader.pl/",
-      "searchUrl": "https://www.autotrader.pl/osobowe/mazowieckie",
+      "searchUrl": "https://www.autotrader.pl/osobowe",
       "category": "general",
       "sellerTypes": [
         "private",
@@ -84,22 +84,21 @@
       ],
       "method": "Cała Polska: powtarzaj wyszukiwanie w poszczególnych województwach, kontroluj paginację oraz karty. Link testowy wskazuje Mazowieckie; nie ograniczaj wyszukiwania wyłącznie do tego regionu.",
       "accessStatus": "results_read",
-      "lastAttemptAt": "2026-11-08",
+      "lastAttemptAt": "2026-11-09",
       "lastSuccessfulSearchAt": null,
       "verification": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "evidenceUrls": [
-          "https://www.autotrader.pl/osobowe/mazowieckie",
-          "https://www.autotrader.pl/osobowe/mazowieckie/warszawa/str-9"
+          "https://www.autotrader.pl/osobowe"
         ],
-        "note": "Odczytano aktualne listy samochodów osobowych i paginację regionalną; nie wykonano pełnego wyszukiwania.",
+        "note": "Playwright: strona wyników dla samochodów osobowych zwraca HTTP 200 i renderuje karty. Usunięto ograniczenie URL do województwa mazowieckiego; pełnego przebiegu wyszukiwania modelu jeszcze nie wykonano.",
         "fullSearchCompleted": false
       },
       "purchaseConditions": {
         "retailBuyerAllowed": true,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": false,
-        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
       },
       "notes": [
         "searchUrl jest przykładem dla Mazowieckiego. Aby pokryć całą Polskę, agent ma iterować regiony i zapisywać je w coverage."
@@ -145,8 +144,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": true,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": false,
-        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
       },
       "notes": [
         "Oddzielać ogłoszenia ze stałą ceną od aukcji, które użytkownik wykluczył."
@@ -192,8 +191,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": true,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": false,
-        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
       },
       "notes": [
         "Wyłączone w kolejce: żadna aktywna marka/model CarOffers nie pasuje do zakresu źródła; włącz po dodaniu tej marki."
@@ -238,8 +237,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": true,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": false,
-        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
       },
       "notes": [
         "Wyłączone w kolejce: żadna aktywna marka/model CarOffers nie pasuje do zakresu źródła; włącz po dodaniu tej marki."
@@ -284,8 +283,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": true,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": false,
-        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
       },
       "notes": [
         "Źródło na przyszłość: obecna lista modeli nie zawiera BMW.",
@@ -335,8 +334,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": true,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": false,
-        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
       },
       "notes": [
         "Źródło na przyszłość: obecna lista modeli nie zawiera Mercedes-Benz.",
@@ -374,23 +373,22 @@
         "seller_type"
       ],
       "method": "Odczytaj wyszukiwarkę i ogłoszenie narzędziem web; przy niepełnej treści użyj przeglądarki. Wynik wyszukiwarki jest wskazówką, nie potwierdzeniem aktualności. Nie omijaj logowania ani zabezpieczeń.",
-      "accessStatus": "listing_read",
-      "lastAttemptAt": "2026-11-08",
+      "accessStatus": "partial",
+      "lastAttemptAt": "2026-11-09",
       "lastSuccessfulSearchAt": null,
       "verification": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "evidenceUrls": [
-          "https://www.otomoto.pl/osobowe",
-          "https://www.otomoto.pl/osobowe/oferta/hyundai-i10-ID6IgJ5r.html"
+          "https://www.otomoto.pl/osobowe"
         ],
-        "note": "Odczytano listę i przykładową kartę Hyundai i10. Nie wykonano pełnego wyszukania według wymagań.",
+        "note": "Playwright headless otrzymał HTTP 403 dla strony wyników. Publiczny odczyt strony jest dostępny inną ścieżką, ale adapter nie może traktować odmowy z tej sesji jako braku ofert ani omijać blokady.",
         "fullSearchCompleted": false
       },
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": false,
-        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
       },
       "notes": [
         "Portale w tej samej grupie właścicielskiej; część ogłoszeń może być cross-postowana. Deduplikuj po VIN/ID/URL."
@@ -441,8 +439,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": false,
-        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
       },
       "notes": [
         "Portale w tej samej grupie właścicielskiej; część ogłoszeń może być cross-postowana. Deduplikuj po VIN/ID/URL."
@@ -490,8 +488,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": false,
-        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
       },
       "notes": [
         "Nie uznawaj niepełnego dostępu za brak ofert."
@@ -534,8 +532,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": false,
-        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
       },
       "notes": [
         "Pusta lista filtrów oznaczała brak rozpoznania; minimum potwierdzone to kategoria samochodów osobowych.",
@@ -577,8 +575,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": false,
-        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
       },
       "notes": [
         "Traktuj jako osobne źródła; cross-post nie jest gwarantowany i rozpoznaje się go po VIN/URL."
@@ -622,8 +620,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": true,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": false,
-        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
       },
       "notes": [],
       "priceReview": "Sprawdź, czy cena podana w ogłoszeniu jest brutto; forma finansowania nie wpływa na ocenę."
@@ -663,8 +661,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": true,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": false,
-        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
       },
       "notes": [
         "Nie uznawaj niepełnego dostępu za brak ofert."
@@ -713,8 +711,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": true,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": false,
-        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
       },
       "notes": [],
       "priceReview": "Sprawdź, czy cena podana w ogłoszeniu jest brutto; forma finansowania nie wpływa na ocenę."
@@ -723,7 +721,7 @@
       "id": "toyota-pewne-auto",
       "name": "Toyota Pewne Auto",
       "url": "https://www.toyota.pl/oferty-specjalne/auta-uzywane",
-      "searchUrl": "https://www.toyota.pl/oferty-specjalne/auta-uzywane",
+      "searchUrl": "https://pewneauto.pl/",
       "category": "manufacturer_program",
       "sellerTypes": [
         "dealer"
@@ -739,23 +737,24 @@
       "effort": 3,
       "filters": [],
       "method": "Odczytaj wyszukiwarkę i ogłoszenie narzędziem web; przy niepełnej treści użyj przeglądarki. Wynik wyszukiwarki jest wskazówką, nie potwierdzeniem aktualności. Nie omijaj logowania ani zabezpieczeń.",
-      "accessStatus": "partial",
-      "lastAttemptAt": "2026-11-08",
+      "accessStatus": "results_read",
+      "lastAttemptAt": "2026-11-09",
       "lastSuccessfulSearchAt": null,
       "verification": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "evidenceUrls": [
           "https://www.toyota.pl/oferty-specjalne/auta-uzywane",
-          "https://www.pewneauto.pl/"
+          "https://www.pewneauto.pl/",
+          "https://pewneauto.pl/"
         ],
-        "note": "Potwierdzono stronę programu. Przycisk oferty pozostał na tej samej stronie w odczycie tekstowym, a bezpośredni pewneauto.pl był niedostępny; katalog wymaga sprawdzenia w przeglądarce.",
+        "note": "Oficjalna strona Toyota Pewne Auto prowadzi bezpośrednio do katalogu pewneauto.pl. Katalog udostępnia filtry marki/modelu i widoczne oferty; należy filtrować model, nie tylko Toyotę, bo katalog obejmuje też inne marki od dealerów Toyoty.",
         "fullSearchCompleted": false
       },
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": false,
-        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
       },
       "notes": [
         "Nie uznawaj niepełnego dostępu za brak ofert.",
@@ -766,7 +765,7 @@
       "id": "kia-uzywane",
       "name": "Kia Używane",
       "url": "https://uzywane.kia.pl/",
-      "searchUrl": "https://kiauzywane.pl/",
+      "searchUrl": "https://uzywane.kia.pl/",
       "category": "manufacturer_program",
       "sellerTypes": [
         "dealer"
@@ -783,22 +782,22 @@
       "filters": [],
       "method": "Odczytaj wyszukiwarkę i ogłoszenie narzędziem web; przy niepełnej treści użyj przeglądarki. Wynik wyszukiwarki jest wskazówką, nie potwierdzeniem aktualności. Nie omijaj logowania ani zabezpieczeń.",
       "accessStatus": "partial",
-      "lastAttemptAt": "2026-11-08",
+      "lastAttemptAt": "2026-11-09",
       "lastSuccessfulSearchAt": null,
       "verification": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "evidenceUrls": [
           "https://uzywane.kia.pl/",
           "https://kiauzywane.pl/"
         ],
-        "note": "Strona programu działa i odsyła do kiauzywane.pl; katalog zwrócił 502. Program obejmuje wariant Kia oraz wariant różnych marek.",
+        "note": "Playwright: strona KIA Używane zwraca HTTP 200, ale nie ujawniła formularza ani listy aut. Oficjalny katalog pod osobną domeną wcześniej zwracał błąd TLS; nie omijano go.",
         "fullSearchCompleted": false
       },
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": false,
-        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
       },
       "notes": [
         "Nie uznawaj niepełnego dostępu za brak ofert.",
@@ -827,22 +826,22 @@
       "filters": [],
       "method": "Odczytaj wyszukiwarkę i ogłoszenie narzędziem web; przy niepełnej treści użyj przeglądarki. Wynik wyszukiwarki jest wskazówką, nie potwierdzeniem aktualności. Nie omijaj logowania ani zabezpieczeń.",
       "accessStatus": "partial",
-      "lastAttemptAt": "2026-11-08",
+      "lastAttemptAt": "2026-11-09",
       "lastSuccessfulSearchAt": null,
       "verification": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "evidenceUrls": [
           "https://www.skoda.pl/samochody-uzywane/skoda-plus-certyfikowane-uzywane",
           "https://www.skoda.pl/apps/stock/carSearch?CarType=U&Sort=DATE_OFFER&SortDirection=DESC"
         ],
-        "note": "Potwierdzono program i adres katalogu. Wynik wyszukiwarki zawierał auta; bezpośredni odczyt katalogu pokazał głównie ramę strony. Wymaga przeglądarki.",
+        "note": "Playwright: adres katalogu ŠKODA zwraca HTTP 200, ale publiczna sesja nie ujawnia formularza ani kart wyników. Zaobserwowane odpowiedzi JSON dotyczyły konfiguracji/telemetrii, bez listy ofert. Wymaga odrębnej nawigacji katalogu; brak wyników nie oznacza braku ofert.",
         "fullSearchCompleted": false
       },
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": false,
-        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
       },
       "notes": [
         "Nie uznawaj niepełnego dostępu za brak ofert.",
@@ -884,8 +883,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": false,
-        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
       },
       "notes": [
         "Nie uznawaj niepełnego dostępu za brak ofert.",
@@ -896,7 +895,7 @@
       "id": "seat-certyfikowane",
       "name": "SEAT Certyfikowane używane",
       "url": "https://www.seat.pl/oferta/certyfikowane-uzywane",
-      "searchUrl": "https://www.seat.pl/oferta/auta-od-reki?t_cartype=used",
+      "searchUrl": "https://www.seat.pl/oferta/certyfikowane-uzywane",
       "category": "manufacturer_program",
       "sellerTypes": [
         "dealer"
@@ -913,22 +912,22 @@
       "filters": [],
       "method": "Odczytaj wyszukiwarkę i ogłoszenie narzędziem web; przy niepełnej treści użyj przeglądarki. Wynik wyszukiwarki jest wskazówką, nie potwierdzeniem aktualności. Nie omijaj logowania ani zabezpieczeń.",
       "accessStatus": "partial",
-      "lastAttemptAt": "2026-11-08",
+      "lastAttemptAt": "2026-11-09",
       "lastSuccessfulSearchAt": null,
       "verification": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "evidenceUrls": [
           "https://www.seat.pl/oferta/certyfikowane-uzywane",
           "https://www.seat.pl/oferta/auta-od-reki?t_cartype=used"
         ],
-        "note": "Potwierdzono program i odnośnik do katalogu z parametrem used. Odczyt tekstowy nie pokazał ofert. Nie pomylić z najmem używanych.",
+        "note": "Strona programu SEAT Certyfikowane używane opisuje program dealerski, ale nie zawiera publicznej listy kart. Link „Poznaj ofertę” prowadzi do katalogu nowych aut od ręki; parametr t_cartype=used nie zmienia strony w wyszukiwarkę aut używanych. Nie traktowano strony nowych aut jako katalogu używanych.",
         "fullSearchCompleted": false
       },
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": false,
-        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
       },
       "notes": [
         "Nie uznawaj niepełnego dostępu za brak ofert.",
@@ -971,8 +970,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": false,
-        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
       },
       "notes": [
         "Warunki programu i certyfikat dotyczą konkretnego egzemplarza, nie każdego auta dealera."
@@ -982,7 +981,7 @@
       "id": "hyundai-korea-motors",
       "name": "Hyundai Korea Motors — używane / Promise",
       "url": "https://hyundai.koreamotors.pl/p/program-hyundai-promise",
-      "searchUrl": "https://hyundai.koreamotors.pl/p/program-hyundai-promise",
+      "searchUrl": "https://www.hyundai.koreamotors.pl/p/auta-dostepne-od-reki?status%5B%5D=used",
       "category": "dealer",
       "sellerTypes": [
         "dealer"
@@ -998,23 +997,23 @@
       "effort": 2,
       "filters": [],
       "method": "Odczytaj wyszukiwarkę i ogłoszenie narzędziem web; przy niepełnej treści użyj przeglądarki. Wynik wyszukiwarki jest wskazówką, nie potwierdzeniem aktualności. Nie omijaj logowania ani zabezpieczeń.",
-      "accessStatus": "results_read",
-      "lastAttemptAt": "2026-11-08",
+      "accessStatus": "partial",
+      "lastAttemptAt": "2026-11-09",
       "lastSuccessfulSearchAt": null,
       "verification": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "evidenceUrls": [
           "https://hyundai.koreamotors.pl/p/program-hyundai-promise",
           "https://www.hyundai.koreamotors.pl/p/auta-dostepne-od-reki?status%5B%5D=used"
         ],
-        "note": "Odczytano stronę autoryzowanego dealera, oferty i przejście do aut używanych. To konkretna sieć dealerów, nie pełny ogólnopolski katalog Hyundai.",
+        "note": "Playwright: bezpośredni katalog aut używanych zwraca HTTP 200, lecz nie ujawnił kart ani paginacji w próbie. Odrzucenie opcjonalnych cookies nie odblokowało listy. To oferta jednej sieci dealerów, nie pełny katalog Hyundai.",
         "fullSearchCompleted": false
       },
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": false,
-        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
       },
       "notes": []
     },
@@ -1044,22 +1043,22 @@
         "transmission"
       ],
       "method": "Odczytaj wyszukiwarkę i ogłoszenie narzędziem web; przy niepełnej treści użyj przeglądarki. Wynik wyszukiwarki jest wskazówką, nie potwierdzeniem aktualności. Nie omijaj logowania ani zabezpieczeń.",
-      "accessStatus": "results_read",
-      "lastAttemptAt": "2026-11-08",
+      "accessStatus": "partial",
+      "lastAttemptAt": "2026-11-09",
       "lastSuccessfulSearchAt": null,
       "verification": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "evidenceUrls": [
           "https://www.spoticar.pl/"
         ],
-        "note": "Odczytano katalog wielu marek, m.in. Hyundai, Kia, Suzuki, Toyota i Volkswagen; nie ograniczać wyłącznie do marek Stellantis. Kart auta nie otwierano.",
+        "note": "Playwright headless otrzymał HTTP 403 Access Denied; publiczny odczyt strony jest dostępny inną ścieżką. Adapter ma oznaczać blokadę, bez retry/bypass i bez no_matches.",
         "fullSearchCompleted": false
       },
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": false,
-        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
       },
       "notes": [
         "Warunki programu i certyfikat dotyczą konkretnego egzemplarza, nie każdego auta dealera."
@@ -1083,22 +1082,22 @@
       "effort": 2,
       "filters": [],
       "method": "Odczytaj wyszukiwarkę i ogłoszenie narzędziem web; przy niepełnej treści użyj przeglądarki. Wynik wyszukiwarki jest wskazówką, nie potwierdzeniem aktualności. Nie omijaj logowania ani zabezpieczeń.",
-      "accessStatus": "landing_verified",
-      "lastAttemptAt": "2026-11-08",
+      "accessStatus": "partial",
+      "lastAttemptAt": "2026-11-09",
       "lastSuccessfulSearchAt": null,
       "verification": {
-        "checkedAt": "2026-11-08",
+        "checkedAt": "2026-11-09",
         "evidenceUrls": [
           "https://www.aaaauto.pl/"
         ],
-        "note": "Odczytano stronę główną sprzedawcy. Nie przeprowadzono jeszcze wyszukania ani kontroli indywidualnej ceny za gotówkę.",
+        "note": "Playwright otrzymał HTTP 200, ale treść strony była wyłącznie komunikatem „Oh noes!” bez wyszukiwarki. Adapter klasyfikuje stronę jako zablokowaną; nie ponawiano ani nie obchodzono blokady.",
         "fullSearchCompleted": false
       },
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": false,
-        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
       },
       "notes": []
     },
@@ -1145,8 +1144,8 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": false,
-        "priceBasis": "Przyjmij cenę brutto podaną w ogłoszeniu; forma finansowania nie wpływa na ocenę ceny."
+        "cashPurchaseMustBeConfirmed": true,
+        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
       },
       "notes": []
     }

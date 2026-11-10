@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-10",
   "model": {
     "key": "suzuki-vitara-ii",
     "name": "Suzuki Vitara II",
@@ -36,7 +36,7 @@
       "priority": "Priorytet 1",
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
-      "verdictNote": "gross_price_and_purchase_conditions; body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction",
+      "verdictNote": "body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction",
       "specs": {
         "rocznik": "2018",
         "nadwozie": "SUV",
@@ -56,20 +56,16 @@
         {
           "url": "https://autoplac.pl/oferta/suzuki/vitara/ii-1-6-2018r-pierwszy-wlasciciel-w-polsce-100oryginal-8822-4153-ST",
           "status": "unknown",
-          "lastAttemptAt": "2026-11-08T22:41:19+00:00",
+          "lastAttemptAt": "2026-11-09T13:14:49+00:00",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/suzuki/vitara/ii-1-6-2018r-pierwszy-wlasciciel-w-polsce-100oryginal-8822-4153-ST",
-            "checkedAt": "2026-11-08T22:41:19+00:00",
+            "checkedAt": "2026-11-09T13:14:49+00:00",
             "availability": "access_error",
-            "note": "Dokładny URL nie był dostępny w narzędziu przeglądania; nie można odczytać karty ani zdjęć. Niedostępność nie potwierdza zamknięcia ogłoszenia.",
-            "photoCheck": {
-              "status": "access_error",
-              "note": "Karta niedostępna, więc nie można potwierdzić ani odczytać HTTPS URL-i zdjęć."
-            }
+            "note": "Nie udało się odczytać karty: narzędzie web zgłosiło, że URL jest niedostępny. Nie wnioskuję o sprzedaży; aktualna cena, dostępność i parametry niezweryfikowane."
           }
         }
       ],
-      "lastAttemptAt": "2026-11-08T22:41:19+00:00",
+      "lastAttemptAt": "2026-11-09T13:14:49+00:00",
       "history": [
         {
           "eventId": "39807db7dd4de812caad3646dc9875dc1ca1270221c6b333f4f2669b12f494ac",
@@ -115,6 +111,20 @@
             "id": "listing:autoplac:8822-4153-ST"
           },
           "changes": {}
+        },
+        {
+          "eventId": "ea6cd99b1b7294e452eaa045dabbcfa948bb06cba2efd8ab93287da4f32bdeab",
+          "runId": "refresh20261109a",
+          "checkedAt": "2026-11-09T13:14:49+00:00",
+          "url": "https://autoplac.pl/oferta/suzuki/vitara/ii-1-6-2018r-pierwszy-wlasciciel-w-polsce-100oryginal-8822-4153-ST",
+          "availability": "access_error",
+          "note": "Nie udało się odczytać karty: narzędzie web zgłosiło, że URL jest niedostępny. Nie wnioskuję o sprzedaży; aktualna cena, dostępność i parametry niezweryfikowane.",
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:8822-4153-ST"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -123,7 +133,6 @@
         "verdict": "check",
         "failures": [],
         "unknowns": [
-          "gross_price_and_purchase_conditions",
           "body",
           "exact_engine_variant",
           "transmission",
@@ -152,10 +161,8 @@
       "title": "1.6 VVT 120 KM SUV — Łódź  168 304 km",
       "year": 2018,
       "price": 49900,
-      "priceLabel": "49 900 zł",
       "mileage": 168304,
-      "mileageLabel": "168 304 km",
-      "engine": "1.6 VVT · 120 KM",
+      "engine": "1.6 VVT, benzyna, 120 KM",
       "body": "SUV",
       "transmission": "manualna",
       "seller": "osoba prywatna · karta Autoplac otwarta w ramach weryfikacji 06.11.2026",
@@ -163,7 +170,7 @@
       "priority": "Priorytet 2",
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
-      "verdictNote": "gross_price_and_purchase_conditions; body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "verdictNote": "body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
       "specs": {
         "rocznik": "2018",
         "nadwozie": "SUV",
@@ -184,24 +191,27 @@
         {
           "url": "https://autoplac.pl/oferta/suzuki/vitara/ii-1-6-2018r-16-salon-pl-bezwypadkowy-0082-6911-ZL",
           "status": "available",
-          "lastAttemptAt": "2026-11-08T22:41:19+00:00",
-          "lastCheckedAt": "2026-11-08T22:41:19+00:00",
-          "lastVerifiedAt": "2026-11-08T22:41:19+00:00",
+          "lastAttemptAt": "2026-11-09T13:14:49+00:00",
+          "lastCheckedAt": "2026-11-09T13:14:49+00:00",
+          "lastVerifiedAt": "2026-11-09T13:14:49+00:00",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/suzuki/vitara/ii-1-6-2018r-16-salon-pl-bezwypadkowy-0082-6911-ZL",
-            "checkedAt": "2026-11-08T22:41:19+00:00",
+            "checkedAt": "2026-11-09T13:14:49+00:00",
             "availability": "available",
-            "note": "Karta otwarta; ostatnia aktualizacja 2 tygodnie temu. Cena 49 900 zł, 2018, 1.6 benzyna 120 KM, manual, 168 304 km; galeria 1/13. LPG niepotwierdzone.",
-            "photoCheck": {
-              "status": "found",
-              "note": "Odczytano bezpośredni HTTPS URL zdjęcia głównego CDN Autoplac; galeria pokazuje 1/13."
-            }
+            "price": 49900,
+            "currency": "PLN",
+            "priceGross": true,
+            "year": 2018,
+            "mileageKm": 168304,
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "note": "Karta zaktualizowana 2 tygodnie temu: Suzuki Vitara II 1.6 benzyna 120 KM, manual, 2018, 168304 km, 49900 zł. VIN na karcie: TSMLYD21S00488412; Łódź (Łódzkie). Opis sprzedawcy: auto z polskiego salonu, bezwypadkowe, od nowości u jednego właściciela. Karta nie wymienia kamery. LPG nieustalone."
           }
         }
       ],
-      "lastCheckedAt": "2026-11-08T22:41:19+00:00",
-      "lastVerifiedAt": "2026-11-08T22:41:19+00:00",
-      "lastAttemptAt": "2026-11-08T22:41:19+00:00",
+      "lastCheckedAt": "2026-11-09T13:14:49+00:00",
+      "lastVerifiedAt": "2026-11-09T13:14:49+00:00",
+      "lastAttemptAt": "2026-11-09T13:14:49+00:00",
       "history": [
         {
           "eventId": "ae9174e5cc5ba03fc30d03c139ad5819ea154c39a7a1c2d829a2272e54e9309b",
@@ -266,6 +276,34 @@
               ]
             }
           }
+        },
+        {
+          "eventId": "51a7af3845a561fde9427e7b5b1a89c9ae6892c841bdeb404d629a11902084b6",
+          "runId": "refresh20261109a",
+          "checkedAt": "2026-11-09T13:14:49+00:00",
+          "url": "https://autoplac.pl/oferta/suzuki/vitara/ii-1-6-2018r-16-salon-pl-bezwypadkowy-0082-6911-ZL",
+          "availability": "available",
+          "note": "Karta zaktualizowana 2 tygodnie temu: Suzuki Vitara II 1.6 benzyna 120 KM, manual, 2018, 168304 km, 49900 zł. VIN na karcie: TSMLYD21S00488412; Łódź (Łódzkie). Opis sprzedawcy: auto z polskiego salonu, bezwypadkowe, od nowości u jednego właściciela. Karta nie wymienia kamery. LPG nieustalone.",
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:0082-6911-ZL",
+            "price": 49900,
+            "year": 2018,
+            "mileage": 168304,
+            "engine": "1.6 VVT, benzyna, 120 KM",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "photos": [
+              "https://euw2-cdn.autoplac.pl/v1/p/3e426417-822e-4193-9c1d-6d38a2c82942?f=1920%3Awebp"
+            ]
+          },
+          "changes": {
+            "engine": {
+              "before": "1.6 VVT · 120 KM",
+              "after": "1.6 VVT, benzyna, 120 KM"
+            }
+          }
         }
       ],
       "assessment": {
@@ -274,7 +312,6 @@
         "verdict": "check",
         "failures": [],
         "unknowns": [
-          "gross_price_and_purchase_conditions",
           "body",
           "exact_engine_variant",
           "transmission",
@@ -303,10 +340,8 @@
       "title": "1.6 VVT 120 KM SUV — Łódź  160 000 km",
       "year": 2018,
       "price": 49999,
-      "priceLabel": "49 999 zł",
       "mileage": 160000,
-      "mileageLabel": "160 000 km",
-      "engine": "1.6 VVT · 120 KM",
+      "engine": "1.6 VVT, benzyna, 120 KM",
       "body": "SUV",
       "transmission": "manualna",
       "seller": "sprzedawca regularny · karta Autoplac otwarta w ramach weryfikacji 06.11.2026",
@@ -314,7 +349,7 @@
       "priority": "Priorytet 2",
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
-      "verdictNote": "gross_price_and_purchase_conditions; body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "verdictNote": "body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
       "specs": {
         "rocznik": "2018",
         "nadwozie": "SUV",
@@ -335,24 +370,27 @@
         {
           "url": "https://autoplac.pl/oferta/suzuki/vitara/ii-1-6-2018r-salonpl-premium-zamiana-fvmarza-6400-2908-NN",
           "status": "available",
-          "lastAttemptAt": "2026-11-08T22:41:19+00:00",
-          "lastCheckedAt": "2026-11-08T22:07:58+00:00",
-          "lastVerifiedAt": "2026-11-08T22:07:58+00:00",
+          "lastAttemptAt": "2026-11-09T13:14:49+00:00",
+          "lastCheckedAt": "2026-11-09T13:14:49+00:00",
+          "lastVerifiedAt": "2026-11-09T13:14:49+00:00",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/suzuki/vitara/ii-1-6-2018r-salonpl-premium-zamiana-fvmarza-6400-2908-NN",
-            "checkedAt": "2026-11-08T22:41:19+00:00",
-            "availability": "access_error",
-            "note": "Dokładny URL zwrócił UnexpectedStatusCode; nie udało się odczytać karty ani jej galerii. Błąd dostępu nie oznacza sprzedaży.",
-            "photoCheck": {
-              "status": "access_error",
-              "note": "Nie udało się otworzyć karty; bezpośrednie HTTPS URL-e zdjęć nie są dostępne do sprawdzenia."
-            }
+            "checkedAt": "2026-11-09T13:14:49+00:00",
+            "availability": "available",
+            "price": 49999,
+            "currency": "PLN",
+            "priceGross": true,
+            "year": 2018,
+            "mileageKm": 160000,
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "note": "Karta zaktualizowana 2 tygodnie temu: Suzuki Vitara II 1.6 benzyna 120 KM, manual, 2018, 160000 km, 49999 zł; Łódź. VIN na karcie: TSMLYD21S00488412 — identyczny jak na innej karcie AutoPlac 0082-6911-ZL, która podaje 168304 km i 49900 zł. Możliwa duplikacja lub niespójność danych; nie rozstrzygam tożsamości. Sprzedawca opisuje krajowy pojazd, pierwszego właściciela i bezwypadkowość. Kamera i LPG niepotwierdzone."
           }
         }
       ],
-      "lastCheckedAt": "2026-11-08T22:07:58+00:00",
-      "lastVerifiedAt": "2026-11-08T22:07:58+00:00",
-      "lastAttemptAt": "2026-11-08T22:41:19+00:00",
+      "lastCheckedAt": "2026-11-09T13:14:49+00:00",
+      "lastVerifiedAt": "2026-11-09T13:14:49+00:00",
+      "lastAttemptAt": "2026-11-09T13:14:49+00:00",
       "history": [
         {
           "eventId": "78547c3e193e441c095f84febb09b391e3cf2fdb0f8407a3a0b42400ffd094e0",
@@ -405,6 +443,40 @@
             "id": "vin:TSMLYD21S00488412"
           },
           "changes": {}
+        },
+        {
+          "eventId": "2e3f1e9518ca751ceb9bd5fe700669d730a92ba4b14faeb48e51765003bbca5d",
+          "runId": "refresh20261109a",
+          "checkedAt": "2026-11-09T13:14:49+00:00",
+          "url": "https://autoplac.pl/oferta/suzuki/vitara/ii-1-6-2018r-salonpl-premium-zamiana-fvmarza-6400-2908-NN",
+          "availability": "available",
+          "note": "Karta zaktualizowana 2 tygodnie temu: Suzuki Vitara II 1.6 benzyna 120 KM, manual, 2018, 160000 km, 49999 zł; Łódź. VIN na karcie: TSMLYD21S00488412 — identyczny jak na innej karcie AutoPlac 0082-6911-ZL, która podaje 168304 km i 49900 zł. Możliwa duplikacja lub niespójność danych; nie rozstrzygam tożsamości. Sprzedawca opisuje krajowy pojazd, pierwszego właściciela i bezwypadkowość. Kamera i LPG niepotwierdzone.",
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TSMLYD21S00488412",
+            "price": 49999,
+            "year": 2018,
+            "mileage": 160000,
+            "engine": "1.6 VVT, benzyna, 120 KM",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "photos": [
+              "https://euw2-cdn.autoplac.pl/v1/p/df647352-e282-47e3-8d7a-6975c2141d86?f=1920%3Awebp"
+            ]
+          },
+          "changes": {
+            "engine": {
+              "before": "1.6 VVT · 120 KM",
+              "after": "1.6 VVT, benzyna, 120 KM"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://euw2-cdn.autoplac.pl/v1/p/df647352-e282-47e3-8d7a-6975c2141d86?f=1920%3Awebp"
+              ]
+            }
+          }
         }
       ],
       "assessment": {
@@ -413,7 +485,6 @@
         "verdict": "check",
         "failures": [],
         "unknowns": [
-          "gross_price_and_purchase_conditions",
           "body",
           "exact_engine_variant",
           "transmission",
@@ -422,7 +493,10 @@
           "stroller_and_family_fit"
         ],
         "preferenceNotes": []
-      }
+      },
+      "photos": [
+        "https://euw2-cdn.autoplac.pl/v1/p/df647352-e282-47e3-8d7a-6975c2141d86?f=1920%3Awebp"
+      ]
     },
     {
       "id": "vin:TSMLYDA1S00442946",
@@ -439,10 +513,8 @@
       "title": "1.4 BoosterJet 140 KM SUV — Milonki  103 250 km",
       "year": 2018,
       "price": 50900,
-      "priceLabel": "50 900 zł",
       "mileage": 103250,
-      "mileageLabel": "103 250 km",
-      "engine": "1.4 BoosterJet · 140 KM",
+      "engine": "1.4 BoosterJet, benzyna, 140 KM",
       "body": "SUV",
       "transmission": "manualna",
       "seller": "sprzedawca Autoplac · karta Autoplac otwarta w ramach weryfikacji 06.11.2026",
@@ -450,7 +522,7 @@
       "priority": "Priorytet 2",
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
-      "verdictNote": "gross_price_and_purchase_conditions; body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "verdictNote": "body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
       "specs": {
         "rocznik": "2018",
         "nadwozie": "SUV",
@@ -471,24 +543,27 @@
         {
           "url": "https://autoplac.pl/oferta/suzuki/vitara/ii-0-0-2018r-s-6482-3327-TU",
           "status": "available",
-          "lastAttemptAt": "2026-11-08T22:41:19+00:00",
-          "lastCheckedAt": "2026-11-08T22:41:19+00:00",
-          "lastVerifiedAt": "2026-11-08T22:41:19+00:00",
+          "lastAttemptAt": "2026-11-09T13:14:49+00:00",
+          "lastCheckedAt": "2026-11-09T13:14:49+00:00",
+          "lastVerifiedAt": "2026-11-09T13:14:49+00:00",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/suzuki/vitara/ii-0-0-2018r-s-6482-3327-TU",
-            "checkedAt": "2026-11-08T22:41:19+00:00",
+            "checkedAt": "2026-11-09T13:14:49+00:00",
             "availability": "available",
-            "note": "Karta otwarta; aktualizacja tydzień temu. Cena 50 900 zł, 2018, 1.4 benzyna 140 KM, manual, 103 250 km; galeria 1/7. Opis wymienia kamerę cofania; LPG niepotwierdzone.",
-            "photoCheck": {
-              "status": "found",
-              "note": "Odczytano bezpośredni HTTPS URL zdjęcia głównego CDN Autoplac; galeria pokazuje 1/7."
-            }
+            "price": 50900,
+            "currency": "PLN",
+            "priceGross": true,
+            "year": 2018,
+            "mileageKm": 103250,
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "note": "Karta zaktualizowana tydzień temu: Suzuki Vitara II 1.4 BoosterJet 140 KM, manual, benzyna, 2018, 103250 km, 50900 zł. VIN TSMJYDA1S00442946; pierwsza rejestracja 19.03.2018; lokalizacja Milonki (Małopolskie). Sprzedawca deklaruje prywatne użytkowanie i serwis; podaje wymianę rozrządu przy 96200 km, oleju oraz nabicie klimatyzacji przy 103000 km. Kamera cofania i czujniki parkowania wymienione w opisie; karta zaznacza bezwypadkowość: brak danych, kraj pochodzenia: sprowadzony. LPG nieustalone."
           }
         }
       ],
-      "lastCheckedAt": "2026-11-08T22:41:19+00:00",
-      "lastVerifiedAt": "2026-11-08T22:41:19+00:00",
-      "lastAttemptAt": "2026-11-08T22:41:19+00:00",
+      "lastCheckedAt": "2026-11-09T13:14:49+00:00",
+      "lastVerifiedAt": "2026-11-09T13:14:49+00:00",
+      "lastAttemptAt": "2026-11-09T13:14:49+00:00",
       "history": [
         {
           "eventId": "faeb57ac1cec47773ad22e1e7c89a5f2a175e650e76575377e798576e89011e9",
@@ -553,6 +628,34 @@
               ]
             }
           }
+        },
+        {
+          "eventId": "4d3139b77a41856bae0fda389e43b19cee016bb99109361e8ede10eabc49c450",
+          "runId": "refresh20261109a",
+          "checkedAt": "2026-11-09T13:14:49+00:00",
+          "url": "https://autoplac.pl/oferta/suzuki/vitara/ii-0-0-2018r-s-6482-3327-TU",
+          "availability": "available",
+          "note": "Karta zaktualizowana tydzień temu: Suzuki Vitara II 1.4 BoosterJet 140 KM, manual, benzyna, 2018, 103250 km, 50900 zł. VIN TSMJYDA1S00442946; pierwsza rejestracja 19.03.2018; lokalizacja Milonki (Małopolskie). Sprzedawca deklaruje prywatne użytkowanie i serwis; podaje wymianę rozrządu przy 96200 km, oleju oraz nabicie klimatyzacji przy 103000 km. Kamera cofania i czujniki parkowania wymienione w opisie; karta zaznacza bezwypadkowość: brak danych, kraj pochodzenia: sprowadzony. LPG nieustalone.",
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TSMLYDA1S00442946",
+            "price": 50900,
+            "year": 2018,
+            "mileage": 103250,
+            "engine": "1.4 BoosterJet, benzyna, 140 KM",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "photos": [
+              "https://euw2-cdn.autoplac.pl/v1/p/c6b4f574-e4ab-42bf-8503-87be221708ea?f=1920%3Awebp"
+            ]
+          },
+          "changes": {
+            "engine": {
+              "before": "1.4 BoosterJet · 140 KM",
+              "after": "1.4 BoosterJet, benzyna, 140 KM"
+            }
+          }
         }
       ],
       "assessment": {
@@ -561,7 +664,6 @@
         "verdict": "check",
         "failures": [],
         "unknowns": [
-          "gross_price_and_purchase_conditions",
           "body",
           "exact_engine_variant",
           "transmission",
@@ -587,9 +689,6 @@
           "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IgRmX.html",
           "normalized": "https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IgRmX.html",
           "label": "Zobacz ogłoszenie"
-        },
-        {
-          "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IgRmX.html"
         }
       ],
       "title": "Suzuki Vitara II — 1.4 BoosterJet · 140 KM  146 902 km",
@@ -606,7 +705,7 @@
       "priority": "Priorytet 2",
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
-      "verdictNote": "price_exception_requires_user_confirmation; gross_price_and_purchase_conditions; body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "verdictNote": "price_exception_requires_user_confirmation; body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
       "specs": {
         "rocznik": "2018",
         "nadwozie": "SUV",
@@ -627,39 +726,38 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IgRmX.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-08T23:09:00+01:00",
-          "lastCheckedAt": "2026-11-08T23:09:00+01:00",
-          "lastVerifiedAt": "2026-11-08T23:09:00+01:00",
+          "lastAttemptAt": "2026-11-09T13:11:29Z",
+          "lastCheckedAt": "2026-11-09T13:11:29Z",
+          "lastVerifiedAt": "2026-11-09T13:11:29Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IgRmX.html",
-            "checkedAt": "2026-11-08T23:09:00+01:00",
+            "checkedAt": "2026-11-09T13:11:29Z",
             "availability": "available",
-            "note": "Karta dostępna; podaje cenę 56 900 zł, rok produkcji 2018, przebieg 146 902 km, wersję 1.4 Boosterjet Premium 2WD, 1 373 cm³/140 KM, benzynę, skrzynię manualną i nadwozie SUV. Sprzedawca to firma Auto Salon Lębork; lokalizacja Lębork, woj. pomorskie. Portal pokazuje oddzielnie możliwość finansowania, lecz karta nie wyjaśnia wprost warunku ceny bez finansowania, więc ceny nie aktualizuję. LPG nieustalone.",
+            "note": "Karta Otomoto dostępna; cena 56 900 zł, 2018, 146 902 km, 1.4 Boosterjet Premium 2WD, benzyna, 140 KM, manual, SUV. Cena przekracza skonfigurowany limit 55 000 zł; brak zgody na wyjątek. Karta wskazuje rejestrację w Polsce, serwis ASO i bezwypadkowość jako oznaczenie; opis sprzedawcy wymienia kamerę i ISOFIX. Sprzedawca prosi o telefon przed przyjazdem w celu potwierdzenia aktualności oferty.",
             "evidence": [
               {
+                "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IgRmX.html",
+                "checkedAt": "2026-11-09T13:11:29Z",
+                "kind": "seller",
                 "fields": [
-                  "availability",
+                  "price",
                   "year",
                   "mileage",
                   "engine",
-                  "fuel",
+                  "body",
                   "transmission",
-                  "bodyCode",
-                  "location",
-                  "saleType"
+                  "cameraStatus",
+                  "familyFitConfirmed"
                 ],
-                "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IgRmX.html",
-                "checkedAt": "2026-11-08T23:09:00+01:00",
-                "kind": "seller",
-                "note": "Publiczna karta Otomoto dostępna; szczegóły techniczne i miejsce oraz status sprzedawcy wskazane w karcie. Cena wyświetlana 56 900 zł, bez jawnego potwierdzenia warunku bez finansowania. LPG niewskazane."
+                "note": "Karta/specyfikacja oraz opis sprzedawcy podają cenę, dane pojazdu i deklarowane wyposażenie kamery oraz ISOFIX."
               }
             ]
           }
         }
       ],
-      "lastCheckedAt": "2026-11-08T23:09:00+01:00",
-      "lastVerifiedAt": "2026-11-08T23:09:00+01:00",
-      "lastAttemptAt": "2026-11-08T23:09:00+01:00",
+      "lastCheckedAt": "2026-11-09T13:11:29Z",
+      "lastVerifiedAt": "2026-11-09T13:11:29Z",
+      "lastAttemptAt": "2026-11-09T13:11:29Z",
       "history": [
         {
           "eventId": "68026b7cdad1c93c151ed57b7961a6500c5d34bebbf24785842ea366d264d5db",
@@ -748,6 +846,53 @@
               ]
             }
           }
+        },
+        {
+          "eventId": "bba37554dd97edddb1dbf7d5142ee06231d16801b95bf809e0b2e497536428fd",
+          "runId": "refresh20261109a",
+          "checkedAt": "2026-11-09T13:11:29Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IgRmX.html",
+          "availability": "available",
+          "note": "Karta Otomoto dostępna; cena 56 900 zł, 2018, 146 902 km, 1.4 Boosterjet Premium 2WD, benzyna, 140 KM, manual, SUV. Cena przekracza skonfigurowany limit 55 000 zł; brak zgody na wyjątek. Karta wskazuje rejestrację w Polsce, serwis ASO i bezwypadkowość jako oznaczenie; opis sprzedawcy wymienia kamerę i ISOFIX. Sprzedawca prosi o telefon przed przyjazdem w celu potwierdzenia aktualności oferty.",
+          "photoCheck": null,
+          "evidence": [
+            {
+              "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IgRmX.html",
+              "checkedAt": "2026-11-09T13:11:29Z",
+              "kind": "seller",
+              "fields": [
+                "price",
+                "year",
+                "mileage",
+                "engine",
+                "body",
+                "transmission",
+                "cameraStatus",
+                "familyFitConfirmed"
+              ],
+              "note": "Karta/specyfikacja oraz opis sprzedawcy podają cenę, dane pojazdu i deklarowane wyposażenie kamery oraz ISOFIX."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IgRmX",
+            "modelKey": "suzuki-vitara-ii",
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNvaGRnbDE0Nmtsbi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.ULMWg8uwzRqR6hFw1CMDeaSn7gWL25DViyQWbVsSL34/image;s=5120x0;q=100"
+            ],
+            "saleType": "fixed_price",
+            "lpgInstalled": null
+          },
+          "changes": {
+            "photos": {
+              "before": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNvaGRnbDE0Nmtsbi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.ULMWg8uwzRqR6hFw1CMDeaSn7gWL25DViyQWbVsSL34/image%3Bs%3D5120x0%3Bq%3D100"
+              ],
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNvaGRnbDE0Nmtsbi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.ULMWg8uwzRqR6hFw1CMDeaSn7gWL25DViyQWbVsSL34/image%3Bs%3D5120x0%3Bq%3D100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNvaGRnbDE0Nmtsbi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.ULMWg8uwzRqR6hFw1CMDeaSn7gWL25DViyQWbVsSL34/image;s=5120x0;q=100"
+              ]
+            }
+          }
         }
       ],
       "assessment": {
@@ -757,7 +902,6 @@
         "failures": [],
         "unknowns": [
           "price_exception_requires_user_confirmation",
-          "gross_price_and_purchase_conditions",
           "body",
           "exact_engine_variant",
           "transmission",
@@ -768,7 +912,8 @@
         "preferenceNotes": []
       },
       "photos": [
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNvaGRnbDE0Nmtsbi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.ULMWg8uwzRqR6hFw1CMDeaSn7gWL25DViyQWbVsSL34/image%3Bs%3D5120x0%3Bq%3D100"
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNvaGRnbDE0Nmtsbi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.ULMWg8uwzRqR6hFw1CMDeaSn7gWL25DViyQWbVsSL34/image%3Bs%3D5120x0%3Bq%3D100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNvaGRnbDE0Nmtsbi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.ULMWg8uwzRqR6hFw1CMDeaSn7gWL25DViyQWbVsSL34/image;s=5120x0;q=100"
       ]
     },
     {
@@ -783,9 +928,6 @@
           "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6If9Ea.html",
           "normalized": "https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6If9Ea.html",
           "label": "Zobacz ogłoszenie"
-        },
-        {
-          "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6If9Ea.html"
         }
       ],
       "title": "Suzuki Vitara II — 1.4 BoosterJet · 140 KM  120 000 km",
@@ -802,7 +944,7 @@
       "priority": "Priorytet 1",
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
-      "verdictNote": "gross_price_and_purchase_conditions; body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "verdictNote": "body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
       "specs": {
         "rocznik": "2019",
         "nadwozie": "SUV 4×4",
@@ -823,39 +965,38 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6If9Ea.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-08T23:09:00+01:00",
-          "lastCheckedAt": "2026-11-08T23:09:00+01:00",
-          "lastVerifiedAt": "2026-11-08T23:09:00+01:00",
+          "lastAttemptAt": "2026-11-09T13:11:29Z",
+          "lastCheckedAt": "2026-11-09T13:11:29Z",
+          "lastVerifiedAt": "2026-11-09T13:11:29Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6If9Ea.html",
-            "checkedAt": "2026-11-08T23:09:00+01:00",
+            "checkedAt": "2026-11-09T13:11:29Z",
             "availability": "available",
-            "note": "Karta dostępna; podaje cenę 54 999 zł (do negocjacji), rok produkcji 2019, przebieg 120 000 km, wersję 1.4 Boosterjet Premium 4WD, 1 373 cm³/140 KM, benzynę, skrzynię manualną i nadwozie SUV. Sprzedawca prywatny; oględziny w Zieleniewie k. Stargardu. Opis oferuje kredyt/leasing, ale nie wskazuje, że finansowanie jest obowiązkowe; cena wyświetlana bez osobnej kwoty promocyjnej, jednak warunek zakupu za gotówkę nie został wyraźnie potwierdzony, więc ceny nie aktualizuję. LPG nieustalone.",
+            "note": "Karta Otomoto dostępna; 54 999 zł, 2019, 120 000 km, 1.4 Boosterjet Premium 4WD, benzyna, 140 KM, manual, SUV. Opis sprzedawcy deklaruje pochodzenie z Niemiec, jednego właściciela, serwisowanie, bezwypadkowość, kamerę cofania i ISOFIX; sprzedawca oferuje możliwość oględzin i sprawdzenia na stacji kontroli.",
             "evidence": [
               {
+                "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6If9Ea.html",
+                "checkedAt": "2026-11-09T13:11:29Z",
+                "kind": "seller",
                 "fields": [
-                  "availability",
+                  "price",
                   "year",
                   "mileage",
                   "engine",
-                  "fuel",
+                  "body",
                   "transmission",
-                  "bodyCode",
-                  "location",
-                  "saleType"
+                  "cameraStatus",
+                  "familyFitConfirmed"
                 ],
-                "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6If9Ea.html",
-                "checkedAt": "2026-11-08T23:09:00+01:00",
-                "kind": "seller",
-                "note": "Karta Otomoto dostępna; dane techniczne z sekcji szczegółów, sprzedawca prywatny. Ogłoszenie podaje cenę 54 999 zł do negocjacji i w opisie wymienia kredyt/leasing jako możliwe opcje. LPG niewskazane."
+                "note": "Karta/specyfikacja i opis sprzedawcy potwierdzają cenę, dane wariantu oraz deklarowaną kamerę cofania i ISOFIX."
               }
             ]
           }
         }
       ],
-      "lastCheckedAt": "2026-11-08T23:09:00+01:00",
-      "lastVerifiedAt": "2026-11-08T23:09:00+01:00",
-      "lastAttemptAt": "2026-11-08T23:09:00+01:00",
+      "lastCheckedAt": "2026-11-09T13:11:29Z",
+      "lastVerifiedAt": "2026-11-09T13:11:29Z",
+      "lastAttemptAt": "2026-11-09T13:11:29Z",
       "history": [
         {
           "eventId": "ba52fc3eb6ecc9378a245bd1c3e027017ef44f2df6dea8a704b71a23bd03a4fc",
@@ -944,6 +1085,53 @@
               ]
             }
           }
+        },
+        {
+          "eventId": "273d1631dcc13b8a151f353ab3ff37c134fa94ca6fe3afa1cbbbd743897813c5",
+          "runId": "refresh20261109a",
+          "checkedAt": "2026-11-09T13:11:29Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6If9Ea.html",
+          "availability": "available",
+          "note": "Karta Otomoto dostępna; 54 999 zł, 2019, 120 000 km, 1.4 Boosterjet Premium 4WD, benzyna, 140 KM, manual, SUV. Opis sprzedawcy deklaruje pochodzenie z Niemiec, jednego właściciela, serwisowanie, bezwypadkowość, kamerę cofania i ISOFIX; sprzedawca oferuje możliwość oględzin i sprawdzenia na stacji kontroli.",
+          "photoCheck": null,
+          "evidence": [
+            {
+              "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6If9Ea.html",
+              "checkedAt": "2026-11-09T13:11:29Z",
+              "kind": "seller",
+              "fields": [
+                "price",
+                "year",
+                "mileage",
+                "engine",
+                "body",
+                "transmission",
+                "cameraStatus",
+                "familyFitConfirmed"
+              ],
+              "note": "Karta/specyfikacja i opis sprzedawcy potwierdzają cenę, dane wariantu oraz deklarowaną kamerę cofania i ISOFIX."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6If9Ea",
+            "modelKey": "suzuki-vitara-ii",
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InR2ODcwaWNiMmtkbi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.zbrh4SOgoAemakpch6sMHC-Eg44AIDJfsu4l-GeE6LU/image;s=5120x0;q=80"
+            ],
+            "saleType": "fixed_price",
+            "lpgInstalled": null
+          },
+          "changes": {
+            "photos": {
+              "before": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InR2ODcwaWNiMmtkbi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.zbrh4SOgoAemakpch6sMHC-Eg44AIDJfsu4l-GeE6LU/image%3Bs%3D5120x0%3Bq%3D80"
+              ],
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InR2ODcwaWNiMmtkbi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.zbrh4SOgoAemakpch6sMHC-Eg44AIDJfsu4l-GeE6LU/image%3Bs%3D5120x0%3Bq%3D80",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InR2ODcwaWNiMmtkbi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.zbrh4SOgoAemakpch6sMHC-Eg44AIDJfsu4l-GeE6LU/image;s=5120x0;q=80"
+              ]
+            }
+          }
         }
       ],
       "assessment": {
@@ -952,7 +1140,6 @@
         "verdict": "check",
         "failures": [],
         "unknowns": [
-          "gross_price_and_purchase_conditions",
           "body",
           "exact_engine_variant",
           "transmission",
@@ -963,7 +1150,8 @@
         "preferenceNotes": []
       },
       "photos": [
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InR2ODcwaWNiMmtkbi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.zbrh4SOgoAemakpch6sMHC-Eg44AIDJfsu4l-GeE6LU/image%3Bs%3D5120x0%3Bq%3D80"
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InR2ODcwaWNiMmtkbi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.zbrh4SOgoAemakpch6sMHC-Eg44AIDJfsu4l-GeE6LU/image%3Bs%3D5120x0%3Bq%3D80",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InR2ODcwaWNiMmtkbi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.zbrh4SOgoAemakpch6sMHC-Eg44AIDJfsu4l-GeE6LU/image;s=5120x0;q=80"
       ]
     },
     {
@@ -1001,40 +1189,37 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6Ii4lC.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-08T23:09:00+01:00",
-          "lastCheckedAt": "2026-11-08T23:09:00+01:00",
-          "lastVerifiedAt": "2026-11-08T23:09:00+01:00",
+          "lastAttemptAt": "2026-11-09T13:11:29Z",
+          "lastCheckedAt": "2026-11-09T13:11:29Z",
+          "lastVerifiedAt": "2026-11-09T13:11:29Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6Ii4lC.html",
-            "checkedAt": "2026-11-08T23:09:00+01:00",
+            "checkedAt": "2026-11-09T13:11:29Z",
             "availability": "available",
-            "note": "Karta dostępna; cena 45 000 zł, rok produkcji 2018, przebieg 133 000 km, benzyna 1.6, 1 586 cm³/120 KM, skrzynia automatyczna, nadwozie SUV; sprzedawca prywatny, lokalizacja Szczecin. Cena 45 000 zł jest widoczna jako cena ogłoszenia, a kredyt pojawia się osobno jako opcja finansowania. LPG nieustalone.",
+            "note": "Karta Otomoto dostępna; 45 000 zł, 2018, 133 000 km, Suzuki Vitara 1.6 benzyna 120 KM, automatyczna skrzynia, SUV. Opis sprzedawcy podaje prywatnego sprzedawcę, polski salon, pierwszego właściciela, regularny serwis i ISOFIX; kamera nie jest wymieniona.",
             "evidence": [
               {
+                "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6Ii4lC.html",
+                "checkedAt": "2026-11-09T13:11:29Z",
+                "kind": "seller",
                 "fields": [
-                  "availability",
                   "price",
                   "year",
                   "mileage",
                   "engine",
-                  "fuel",
+                  "body",
                   "transmission",
-                  "bodyCode",
-                  "location",
-                  "saleType"
+                  "familyFitConfirmed"
                 ],
-                "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6Ii4lC.html",
-                "checkedAt": "2026-11-08T23:09:00+01:00",
-                "kind": "seller",
-                "note": "Karta podaje 45 000 PLN; opis jest ofertą prywatną i zaprasza na oględziny/jazdę próbną. Kredyt opisany oddzielnie w panelu, bez wzmianki o obowiązku. Szczegóły techniczne i lokalizacja Szczecin w karcie. LPG niewskazane."
+                "note": "Karta/specyfikacja i opis sprzedawcy podają cenę, dane wariantu oraz deklarowane ISOFIX."
               }
             ]
           }
         }
       ],
-      "lastCheckedAt": "2026-11-08T23:09:00+01:00",
-      "lastVerifiedAt": "2026-11-08T23:09:00+01:00",
-      "lastAttemptAt": "2026-11-08T23:09:00+01:00",
+      "lastCheckedAt": "2026-11-09T13:11:29Z",
+      "lastVerifiedAt": "2026-11-09T13:11:29Z",
+      "lastAttemptAt": "2026-11-09T13:11:29Z",
       "history": [
         {
           "eventId": "96bed433203a3db8ce8f23c3df01a36c177b5f6792d7001e2ab9c8434188f1e0",
@@ -1224,6 +1409,52 @@
               "after": "gross_unconditional_total"
             }
           }
+        },
+        {
+          "eventId": "305f8247eca2aa33b6bfda1d94266bb1f2ac8b47f43a1e01005d1c5847186299",
+          "runId": "refresh20261109a",
+          "checkedAt": "2026-11-09T13:11:29Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6Ii4lC.html",
+          "availability": "available",
+          "note": "Karta Otomoto dostępna; 45 000 zł, 2018, 133 000 km, Suzuki Vitara 1.6 benzyna 120 KM, automatyczna skrzynia, SUV. Opis sprzedawcy podaje prywatnego sprzedawcę, polski salon, pierwszego właściciela, regularny serwis i ISOFIX; kamera nie jest wymieniona.",
+          "photoCheck": null,
+          "evidence": [
+            {
+              "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6Ii4lC.html",
+              "checkedAt": "2026-11-09T13:11:29Z",
+              "kind": "seller",
+              "fields": [
+                "price",
+                "year",
+                "mileage",
+                "engine",
+                "body",
+                "transmission",
+                "familyFitConfirmed"
+              ],
+              "note": "Karta/specyfikacja i opis sprzedawcy podają cenę, dane wariantu oraz deklarowane ISOFIX."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6Ii4lC",
+            "modelKey": "suzuki-vitara-ii",
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InRtajlvcTNkMDBjYS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.RpaPlpmbePvDMoEoT4PPv4QQDBLtn4NfnUjluiPEftc/image;s=5120x0;q=80"
+            ],
+            "saleType": "fixed_price",
+            "lpgInstalled": null
+          },
+          "changes": {
+            "photos": {
+              "before": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InRtajlvcTNkMDBjYS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.RpaPlpmbePvDMoEoT4PPv4QQDBLtn4NfnUjluiPEftc/image%3Bs%3D5120x0%3Bq%3D80"
+              ],
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InRtajlvcTNkMDBjYS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.RpaPlpmbePvDMoEoT4PPv4QQDBLtn4NfnUjluiPEftc/image%3Bs%3D5120x0%3Bq%3D80",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InRtajlvcTNkMDBjYS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.RpaPlpmbePvDMoEoT4PPv4QQDBLtn4NfnUjluiPEftc/image;s=5120x0;q=80"
+              ]
+            }
+          }
         }
       ],
       "assessment": {
@@ -1242,7 +1473,8 @@
       "verdictTitle": "Do weryfikacji",
       "verdictNote": "camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
       "photos": [
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InRtajlvcTNkMDBjYS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.RpaPlpmbePvDMoEoT4PPv4QQDBLtn4NfnUjluiPEftc/image%3Bs%3D5120x0%3Bq%3D80"
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InRtajlvcTNkMDBjYS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.RpaPlpmbePvDMoEoT4PPv4QQDBLtn4NfnUjluiPEftc/image%3Bs%3D5120x0%3Bq%3D80",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InRtajlvcTNkMDBjYS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.RpaPlpmbePvDMoEoT4PPv4QQDBLtn4NfnUjluiPEftc/image;s=5120x0;q=80"
       ],
       "priceBasis": "gross_unconditional_total"
     },
@@ -1298,24 +1530,20 @@
         {
           "url": "https://www.olx.pl/d/oferta/suzuki-vitara-140ps-led-kamera-led-skora-alu-caly-oryginal-gwarancja-CID5-ID1d3crb.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-08T23:46:40+01:00",
+          "lastAttemptAt": "2026-11-09T13:09:35+00:00",
           "lastCheckedAt": "2026-11-08T23:46:40+01:00",
           "lastVerifiedAt": "2026-11-08T23:46:40+01:00",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/suzuki-vitara-140ps-led-kamera-led-skora-alu-caly-oryginal-gwarancja-CID5-ID1d3crb.html",
-            "checkedAt": "2026-11-08T23:46:40+01:00",
-            "availability": "available",
-            "note": "Karta OLX odczytana. Kliknięte miniatury galerii ujawniły osiem bezpośrednich HTTPS adresów zdjęć, zapisanych w photos. Atrybut paliwa to benzyna; karta nie potwierdza LPG, więc lpgInstalled=null.",
-            "photoCheck": {
-              "status": "found",
-              "note": "Zapisano osiem bezpośrednich HTTPS URL-i galerii."
-            }
+            "checkedAt": "2026-11-09T13:09:35+00:00",
+            "availability": "access_error",
+            "note": "Dostępna była jedynie kopia OLX crawlowana około tydzień wcześniej, więc bieżącego statusu nie potwierdzam. Historyczna karta podawała cenę 54 999 zł, 2018, 1.4 BoosterJet 140 KM, manual, 141 275 km, benzynę i kamerę; oferta zawierała wzmiankę o kredycie/leasingu, bez widocznego warunku zakupu. Nie wnioskuję o sprzedaży/usunięciu i nie zmieniam pól."
           }
         }
       ],
       "lastCheckedAt": "2026-11-08T23:46:40+01:00",
       "lastVerifiedAt": "2026-11-08T23:46:40+01:00",
-      "lastAttemptAt": "2026-11-08T23:46:40+01:00",
+      "lastAttemptAt": "2026-11-09T13:09:35+00:00",
       "history": [
         {
           "eventId": "299ca487157ae236dec42e64dd81e070edc19b24954fe7939315ad61df719f7b",
@@ -1614,6 +1842,21 @@
               ]
             }
           }
+        },
+        {
+          "eventId": "ef4de62bd30f13f4de04eb6f853b2cc78169f0415ded43c213e2b615b3dac035",
+          "runId": "refresh20261109a",
+          "checkedAt": "2026-11-09T13:09:35+00:00",
+          "url": "https://www.olx.pl/d/oferta/suzuki-vitara-140ps-led-kamera-led-skora-alu-caly-oryginal-gwarancja-CID5-ID1d3crb.html",
+          "availability": "access_error",
+          "note": "Dostępna była jedynie kopia OLX crawlowana około tydzień wcześniej, więc bieżącego statusu nie potwierdzam. Historyczna karta podawała cenę 54 999 zł, 2018, 1.4 BoosterJet 140 KM, manual, 141 275 km, benzynę i kamerę; oferta zawierała wzmiankę o kredycie/leasingu, bez widocznego warunku zakupu. Nie wnioskuję o sprzedaży/usunięciu i nie zmieniam pól.",
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1108987997",
+            "changes": {}
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -1622,7 +1865,6 @@
         "verdict": "check",
         "failures": [],
         "unknowns": [
-          "gross_price_and_purchase_conditions",
           "structural_history",
           "stroller_and_family_fit"
         ],
@@ -1630,7 +1872,7 @@
       },
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
-      "verdictNote": "gross_price_and_purchase_conditions; structural_history; stroller_and_family_fit",
+      "verdictNote": "structural_history; stroller_and_family_fit",
       "photos": [
         "https://ireland.apollo.olxcdn.com/v1/files/xjz3n7i499m43-PL/image%3Bs%3D2048x1360",
         "https://ireland.apollo.olxcdn.com/v1/files/h6x7mtz27sb52-PL/image%3Bs%3D2048x1360",
@@ -1695,24 +1937,20 @@
         {
           "url": "https://www.olx.pl/d/oferta/suzuki-vitara-swietny-stan-hak-holowniczy-bogate-wyposazenie-CID5-ID1cbEtj.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-08T23:46:40+01:00",
+          "lastAttemptAt": "2026-11-09T13:09:35+00:00",
           "lastCheckedAt": "2026-11-08T23:46:40+01:00",
           "lastVerifiedAt": "2026-11-08T23:46:40+01:00",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/suzuki-vitara-swietny-stan-hak-holowniczy-bogate-wyposazenie-CID5-ID1cbEtj.html",
-            "checkedAt": "2026-11-08T23:46:40+01:00",
-            "availability": "available",
-            "note": "Karta OLX odczytana. Kliknięte miniatury galerii ujawniły osiem bezpośrednich HTTPS adresów zdjęć, zapisanych w photos. Atrybut paliwa to benzyna; karta nie potwierdza LPG, więc lpgInstalled=null.",
-            "photoCheck": {
-              "status": "found",
-              "note": "Zapisano osiem bezpośrednich HTTPS URL-i galerii."
-            }
+            "checkedAt": "2026-11-09T13:09:35+00:00",
+            "availability": "access_error",
+            "note": "Dostępna była jedynie kopia OLX crawlowana około 2 miesiące wcześniej, więc bieżącego statusu nie potwierdzam. Historyczna karta podawała cenę 50 000 zł do negocjacji, 2018, 1.4 BoosterJet 140 KM, manual, 160 031 km, benzynę i kamerę; faktura VAT-marża. Nie wnioskuję o sprzedaży/usunięciu i nie zmieniam pól."
           }
         }
       ],
       "lastCheckedAt": "2026-11-08T23:46:40+01:00",
       "lastVerifiedAt": "2026-11-08T23:46:40+01:00",
-      "lastAttemptAt": "2026-11-08T23:46:40+01:00",
+      "lastAttemptAt": "2026-11-09T13:09:35+00:00",
       "history": [
         {
           "eventId": "89fcc52763584db87c52847b1100279d0b628f1942616b2b07e2898c7cc6cb5d",
@@ -2017,6 +2255,21 @@
               ]
             }
           }
+        },
+        {
+          "eventId": "3961d53b3a7a39cb83c8cb2b04e2e5e2ddf54ee916fcdc200575e105e45fef60",
+          "runId": "refresh20261109a",
+          "checkedAt": "2026-11-09T13:09:35+00:00",
+          "url": "https://www.olx.pl/d/oferta/suzuki-vitara-swietny-stan-hak-holowniczy-bogate-wyposazenie-CID5-ID1cbEtj.html",
+          "availability": "access_error",
+          "note": "Dostępna była jedynie kopia OLX crawlowana około 2 miesiące wcześniej, więc bieżącego statusu nie potwierdzam. Historyczna karta podawała cenę 50 000 zł do negocjacji, 2018, 1.4 BoosterJet 140 KM, manual, 160 031 km, benzynę i kamerę; faktura VAT-marża. Nie wnioskuję o sprzedaży/usunięciu i nie zmieniam pól.",
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1096226049",
+            "changes": {}
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -2025,7 +2278,6 @@
         "verdict": "check",
         "failures": [],
         "unknowns": [
-          "gross_price_and_purchase_conditions",
           "structural_history",
           "stroller_and_family_fit"
         ],
@@ -2033,7 +2285,7 @@
       },
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
-      "verdictNote": "gross_price_and_purchase_conditions; structural_history; stroller_and_family_fit",
+      "verdictNote": "structural_history; stroller_and_family_fit",
       "photos": [
         "https://ireland.apollo.olxcdn.com/v1/files/5s67ccvnnrb13-PL/image%3Bs%3D1813x1360",
         "https://ireland.apollo.olxcdn.com/v1/files/1xanmge5comq3-PL/image%3Bs%3D1813x1360",
@@ -2098,24 +2350,20 @@
         {
           "url": "https://www.olx.pl/d/oferta/suzuki-vitara-suzuki-vitara-1-6-benzyna-120-km-automat-1-wlasciciel-fv-23-CID5-ID1cSzr8.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-08T23:46:40+01:00",
+          "lastAttemptAt": "2026-11-09T13:09:35+00:00",
           "lastCheckedAt": "2026-11-08T23:46:40+01:00",
           "lastVerifiedAt": "2026-11-08T23:46:40+01:00",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/suzuki-vitara-suzuki-vitara-1-6-benzyna-120-km-automat-1-wlasciciel-fv-23-CID5-ID1cSzr8.html",
-            "checkedAt": "2026-11-08T23:46:40+01:00",
-            "availability": "available",
-            "note": "Karta OLX odczytana. Kliknięte miniatury galerii ujawniły osiem bezpośrednich HTTPS adresów zdjęć, zapisanych w photos. Atrybut paliwa i opis podają benzynę; instalacja LPG nie jest potwierdzona, lpgInstalled=null.",
-            "photoCheck": {
-              "status": "found",
-              "note": "Zapisano osiem bezpośrednich HTTPS URL-i galerii."
-            }
+            "checkedAt": "2026-11-09T13:09:35+00:00",
+            "availability": "access_error",
+            "note": "Dostępna była jedynie kopia OLX crawlowana około 2 tygodnie wcześniej, więc bieżącego statusu nie potwierdzam. Historyczna karta podawała cenę 47 000 zł, 2018, 1.6 benzyna 120 KM, automat, 124 000 km, benzynę i Szczecin; opis wspominał możliwość faktury VAT/VAT-marża oraz firmowego zakupu/leasingu, bez widocznego warunku ceny. Nie wnioskuję o sprzedaży/usunięciu i nie zmieniam pól."
           }
         }
       ],
       "lastCheckedAt": "2026-11-08T23:46:40+01:00",
       "lastVerifiedAt": "2026-11-08T23:46:40+01:00",
-      "lastAttemptAt": "2026-11-08T23:46:40+01:00",
+      "lastAttemptAt": "2026-11-09T13:09:35+00:00",
       "history": [
         {
           "eventId": "9df79077b8ce7d7fd9b59c4db42f3dca635ea0ab5092b834089a80c52abda6ec",
@@ -2419,6 +2667,21 @@
               ]
             }
           }
+        },
+        {
+          "eventId": "7b9e212dc9ccc07ba9b2d61dfdc8802d66118f012b65adcbeeb2921d44b85b1b",
+          "runId": "refresh20261109a",
+          "checkedAt": "2026-11-09T13:09:35+00:00",
+          "url": "https://www.olx.pl/d/oferta/suzuki-vitara-suzuki-vitara-1-6-benzyna-120-km-automat-1-wlasciciel-fv-23-CID5-ID1cSzr8.html",
+          "availability": "access_error",
+          "note": "Dostępna była jedynie kopia OLX crawlowana około 2 tygodnie wcześniej, więc bieżącego statusu nie potwierdzam. Historyczna karta podawała cenę 47 000 zł, 2018, 1.6 benzyna 120 KM, automat, 124 000 km, benzynę i Szczecin; opis wspominał możliwość faktury VAT/VAT-marża oraz firmowego zakupu/leasingu, bez widocznego warunku ceny. Nie wnioskuję o sprzedaży/usunięciu i nie zmieniam pól.",
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1106454798",
+            "changes": {}
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -2427,7 +2690,6 @@
         "verdict": "check",
         "failures": [],
         "unknowns": [
-          "gross_price_and_purchase_conditions",
           "camera_or_compatible_retrofit",
           "structural_history",
           "stroller_and_family_fit"
@@ -2436,7 +2698,7 @@
       },
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
-      "verdictNote": "gross_price_and_purchase_conditions; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "verdictNote": "camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
       "photos": [
         "https://ireland.apollo.olxcdn.com/v1/files/36iahmqwdn322-PL/image%3Bs%3D1600x900",
         "https://ireland.apollo.olxcdn.com/v1/files/595wdn8paupz1-PL/image%3Bs%3D1600x900",
@@ -2502,24 +2764,20 @@
         {
           "url": "https://www.olx.pl/d/oferta/suzuki-vitara-1-4-140km-all-grip-2019r-niski-oraz-udokumentowany-przebieg-CID5-ID1cn3N1.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-08T23:46:40+01:00",
+          "lastAttemptAt": "2026-11-09T13:09:35+00:00",
           "lastCheckedAt": "2026-11-08T23:46:40+01:00",
           "lastVerifiedAt": "2026-11-08T23:46:40+01:00",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/suzuki-vitara-1-4-140km-all-grip-2019r-niski-oraz-udokumentowany-przebieg-CID5-ID1cn3N1.html",
-            "checkedAt": "2026-11-08T23:46:40+01:00",
-            "availability": "available",
-            "note": "Karta OLX odczytana. Kliknięte miniatury galerii ujawniły osiem bezpośrednich HTTPS adresów zdjęć, zapisanych w photos. Atrybut paliwa podaje benzynę, a opis 1.4 benzyna; LPG nie jest potwierdzone, lpgInstalled=null.",
-            "photoCheck": {
-              "status": "found",
-              "note": "Zapisano osiem bezpośrednich HTTPS URL-i galerii."
-            }
+            "checkedAt": "2026-11-09T13:09:35+00:00",
+            "availability": "access_error",
+            "note": "Dostępna była jedynie kopia OLX crawlowana około miesiąc wcześniej, więc bieżącego statusu nie potwierdzam. Historyczna karta podawała 52 900 zł, 2019, 1.4/140 KM, manual, napęd AllGrip, 47 000 km, benzynę i deklarowaną kamerę. Nie wnioskuję o sprzedaży/usunięciu i nie zmieniam pól."
           }
         }
       ],
       "lastCheckedAt": "2026-11-08T23:46:40+01:00",
       "lastVerifiedAt": "2026-11-08T23:46:40+01:00",
-      "lastAttemptAt": "2026-11-08T23:46:40+01:00",
+      "lastAttemptAt": "2026-11-09T13:09:35+00:00",
       "history": [
         {
           "eventId": "f1d532c95dccd76b9fa48115952c5dbb02c7e144fc1c7d3af35eca975052164a",
@@ -2826,6 +3084,21 @@
               ]
             }
           }
+        },
+        {
+          "eventId": "8f48e67a000bb5d8e30f8503654e79e5a732a1d7ce0e6113b2e783ae3e73a555",
+          "runId": "refresh20261109a",
+          "checkedAt": "2026-11-09T13:09:35+00:00",
+          "url": "https://www.olx.pl/d/oferta/suzuki-vitara-1-4-140km-all-grip-2019r-niski-oraz-udokumentowany-przebieg-CID5-ID1cn3N1.html",
+          "availability": "access_error",
+          "note": "Dostępna była jedynie kopia OLX crawlowana około miesiąc wcześniej, więc bieżącego statusu nie potwierdzam. Historyczna karta podawała 52 900 zł, 2019, 1.4/140 KM, manual, napęd AllGrip, 47 000 km, benzynę i deklarowaną kamerę. Nie wnioskuję o sprzedaży/usunięciu i nie zmieniam pól.",
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1098944979",
+            "changes": {}
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -2834,7 +3107,6 @@
         "verdict": "check",
         "failures": [],
         "unknowns": [
-          "gross_price_and_purchase_conditions",
           "structural_history",
           "stroller_and_family_fit"
         ],
@@ -2842,7 +3114,7 @@
       },
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
-      "verdictNote": "gross_price_and_purchase_conditions; structural_history; stroller_and_family_fit",
+      "verdictNote": "structural_history; stroller_and_family_fit",
       "photos": [
         "https://ireland.apollo.olxcdn.com/v1/files/1dlb98vwxf0p3-PL/image%3Bs%3D1813x1360",
         "https://ireland.apollo.olxcdn.com/v1/files/dgchf9gt3b3l2-PL/image%3Bs%3D1813x1360",
@@ -2869,7 +3141,7 @@
       "year": 2018,
       "price": 38900,
       "mileage": 150000,
-      "engine": "Benzyna, 1 586 cm³, 120 KM; karta podaje 1.6B, dokładny kod silnika niepodany.",
+      "engine": "1.6 VVT, benzyna, 120 KM",
       "engineVariant": "1.6-vvt-120",
       "body": "SUV",
       "bodyCode": "suv",
@@ -2889,24 +3161,27 @@
         {
           "url": "https://autoplac.pl/oferta/suzuki/vitara/ii-1-6-2018r-16b-2018-rok-4983-2601-FU",
           "status": "available",
-          "lastAttemptAt": "2026-11-08T22:41:19+00:00",
-          "lastCheckedAt": "2026-11-08T22:41:19+00:00",
-          "lastVerifiedAt": "2026-11-08T22:41:19+00:00",
+          "lastAttemptAt": "2026-11-09T13:14:49+00:00",
+          "lastCheckedAt": "2026-11-09T13:14:49+00:00",
+          "lastVerifiedAt": "2026-11-09T13:14:49+00:00",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/suzuki/vitara/ii-1-6-2018r-16b-2018-rok-4983-2601-FU",
-            "checkedAt": "2026-11-08T22:41:19+00:00",
+            "checkedAt": "2026-11-09T13:14:49+00:00",
             "availability": "available",
-            "note": "Karta otwarta; aktualizacja 3 tygodnie temu. Cena 38 900 zł, 2018, 1.6 benzyna 120 KM, manual, 150 000 km; galeria 1/6. LPG niepotwierdzone.",
-            "photoCheck": {
-              "status": "found",
-              "note": "Odczytano bezpośredni HTTPS URL zdjęcia głównego CDN Autoplac; galeria pokazuje 1/6."
-            }
+            "price": 38900,
+            "currency": "PLN",
+            "priceGross": true,
+            "year": 2018,
+            "mileageKm": 150000,
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "note": "Karta zaktualizowana 3 tygodnie temu: Suzuki Vitara II 1.6 benzyna 120 KM, manual, 2018, 150000 km, 38900 zł. Lokalizacja Nowa Wieś (Podlaskie); karta oznacza bezwypadkowy: tak i uszkodzony: nie, kraj pochodzenia: brak danych. Kamera nie wymieniona w widocznych danych; LPG nieustalone."
           }
         }
       ],
-      "lastCheckedAt": "2026-11-08T22:41:19+00:00",
-      "lastVerifiedAt": "2026-11-08T22:41:19+00:00",
-      "lastAttemptAt": "2026-11-08T22:41:19+00:00",
+      "lastCheckedAt": "2026-11-09T13:14:49+00:00",
+      "lastVerifiedAt": "2026-11-09T13:14:49+00:00",
+      "lastAttemptAt": "2026-11-09T13:14:49+00:00",
       "history": [
         {
           "eventId": "6011817132ddbd6d6387fa407b6b7f2a27e90d5f18715554e7abc8c0dac8b1e6",
@@ -3092,6 +3367,34 @@
               ]
             }
           }
+        },
+        {
+          "eventId": "6e2bc96bd8b3ee0e2642b287b5aeed48ef5890b415493af58e2eef3e6122f807",
+          "runId": "refresh20261109a",
+          "checkedAt": "2026-11-09T13:14:49+00:00",
+          "url": "https://autoplac.pl/oferta/suzuki/vitara/ii-1-6-2018r-16b-2018-rok-4983-2601-FU",
+          "availability": "available",
+          "note": "Karta zaktualizowana 3 tygodnie temu: Suzuki Vitara II 1.6 benzyna 120 KM, manual, 2018, 150000 km, 38900 zł. Lokalizacja Nowa Wieś (Podlaskie); karta oznacza bezwypadkowy: tak i uszkodzony: nie, kraj pochodzenia: brak danych. Kamera nie wymieniona w widocznych danych; LPG nieustalone.",
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:4983-2601-FU",
+            "price": 38900,
+            "year": 2018,
+            "mileage": 150000,
+            "engine": "1.6 VVT, benzyna, 120 KM",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "photos": [
+              "https://euw2-cdn.autoplac.pl/v1/p/26f9d7bd-c6b8-4e83-a4bc-1f23e0d5d660?f=1920%3Awebp"
+            ]
+          },
+          "changes": {
+            "engine": {
+              "before": "Benzyna, 1 586 cm³, 120 KM; karta podaje 1.6B, dokładny kod silnika niepodany.",
+              "after": "1.6 VVT, benzyna, 120 KM"
+            }
+          }
         }
       ],
       "assessment": {
@@ -3100,7 +3403,6 @@
         "verdict": "check",
         "failures": [],
         "unknowns": [
-          "gross_price_and_purchase_conditions",
           "camera_or_compatible_retrofit",
           "structural_history",
           "stroller_and_family_fit"
@@ -3109,7 +3411,7 @@
       },
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
-      "verdictNote": "gross_price_and_purchase_conditions; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "verdictNote": "camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
       "photos": [
         "https://euw2-cdn.autoplac.pl/v1/p/26f9d7bd-c6b8-4e83-a4bc-1f23e0d5d660?f=1920%3Awebp"
       ]
@@ -3151,24 +3453,65 @@
         {
           "url": "https://automarket.pl/oferta/suzuki/vitara/T237054/zakup",
           "status": "available",
-          "lastAttemptAt": "2026-11-08T23:48:14+01:00",
-          "lastCheckedAt": "2026-11-08T23:48:14+01:00",
-          "lastVerifiedAt": "2026-11-08T23:48:14+01:00",
+          "lastAttemptAt": "2026-11-09T13:25:00+01:00",
+          "lastCheckedAt": "2026-11-09T13:25:00+01:00",
+          "lastVerifiedAt": "2026-11-09T13:25:00+01:00",
           "lastObservation": {
             "url": "https://automarket.pl/oferta/suzuki/vitara/T237054/zakup",
-            "checkedAt": "2026-11-08T23:48:14+01:00",
+            "checkedAt": "2026-11-09T13:25:00+01:00",
             "availability": "available",
-            "note": "Karta Automarket T237054 dostępna. Galeria pokazuje 20 zdjęć; otwarto 12 pierwszych bezpośrednich adresów HTTPS CDN i zapisano je w photos. Cena zakupu gotówkowego 51 900 zł brutto, do negocjacji; strona oferuje też odrębny tryb pożyczki. Paliwo PB/benzyna, instalacja LPG niepotwierdzona (null).",
-            "photoCheck": {
-              "status": "found",
-              "note": "Zapisano 12 bezpośrednich HTTPS URL-i pierwszych zdjęć z galerii."
-            }
+            "price": 51900,
+            "currency": "PLN",
+            "priceGross": true,
+            "year": 2019,
+            "firstRegistrationDate": "2019-06-21",
+            "mileageKm": 162000,
+            "vin": "TSMLYDA1S00615062",
+            "fuel": "petrol",
+            "engine": "1.4 BoosterJet 140 KM",
+            "transmission": "automatic",
+            "body": "suv",
+            "location": {
+              "status": "available",
+              "country": "PL",
+              "region": "zachodniopomorskie",
+              "city": "Mierzyn"
+            },
+            "offerType": "company",
+            "cameraStatus": "installed_confirmed",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "note": "Karta Automarket pokazuje aktualne ogłoszenie za 51 900 zł brutto przy zakupie gotówką, rocznik produkcji 2019, 162 000 km, silnik 1.4/140 KM, automat i lokalizację Mierzyn. Opis sprzedawcy wymienia kamerę cofania. Nie znaleziono informacji o LPG. Twierdzenia o stanie/bezwypadkowości są deklaracjami sprzedawcy.",
+            "evidence": [
+              {
+                "url": "https://automarket.pl/oferta/suzuki/vitara/T237054/zakup",
+                "checkedAt": "2026-11-09T13:25:00+01:00",
+                "kind": "seller",
+                "fields": [
+                  "availability",
+                  "price",
+                  "priceGross",
+                  "year",
+                  "firstRegistrationDate",
+                  "mileageKm",
+                  "vin",
+                  "fuel",
+                  "engine",
+                  "transmission",
+                  "body",
+                  "location",
+                  "cameraStatus",
+                  "offerType"
+                ],
+                "note": "Karta Automarket dostępna dzisiaj; podaje cenę brutto gotówką, aktywne zapytanie, techniczne dane i listę wyposażenia z kolorową kamerą cofania."
+              }
+            ]
           }
         }
       ],
-      "lastCheckedAt": "2026-11-08T23:48:14+01:00",
-      "lastVerifiedAt": "2026-11-08T23:48:14+01:00",
-      "lastAttemptAt": "2026-11-08T23:48:14+01:00",
+      "lastCheckedAt": "2026-11-09T13:25:00+01:00",
+      "lastVerifiedAt": "2026-11-09T13:25:00+01:00",
+      "lastAttemptAt": "2026-11-09T13:25:00+01:00",
       "history": [
         {
           "eventId": "47f8b68f50e147b8ba4f90cd2120c8d9c48f5c60cbd75d389042d0398a5bbadf",
@@ -3403,6 +3746,46 @@
               ]
             }
           }
+        },
+        {
+          "eventId": "dbbb69f698a11a29c3c103a6b1b0c59844cbca2f7e0a0abcae61f854fd9b50ec",
+          "runId": "refresh20261109a",
+          "checkedAt": "2026-11-09T13:25:00+01:00",
+          "url": "https://automarket.pl/oferta/suzuki/vitara/T237054/zakup",
+          "availability": "available",
+          "note": "Karta Automarket pokazuje aktualne ogłoszenie za 51 900 zł brutto przy zakupie gotówką, rocznik produkcji 2019, 162 000 km, silnik 1.4/140 KM, automat i lokalizację Mierzyn. Opis sprzedawcy wymienia kamerę cofania. Nie znaleziono informacji o LPG. Twierdzenia o stanie/bezwypadkowości są deklaracjami sprzedawcy.",
+          "photoCheck": null,
+          "evidence": [
+            {
+              "url": "https://automarket.pl/oferta/suzuki/vitara/T237054/zakup",
+              "checkedAt": "2026-11-09T13:25:00+01:00",
+              "kind": "seller",
+              "fields": [
+                "availability",
+                "price",
+                "priceGross",
+                "year",
+                "firstRegistrationDate",
+                "mileageKm",
+                "vin",
+                "fuel",
+                "engine",
+                "transmission",
+                "body",
+                "location",
+                "cameraStatus",
+                "offerType"
+              ],
+              "note": "Karta Automarket dostępna dzisiaj; podaje cenę brutto gotówką, aktywne zapytanie, techniczne dane i listę wyposażenia z kolorową kamerą cofania."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:automarket:T237054",
+            "modelKey": "suzuki-vitara-ii",
+            "saleType": "fixed_price",
+            "lpgInstalled": null
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -3411,7 +3794,6 @@
         "verdict": "check",
         "failures": [],
         "unknowns": [
-          "gross_price_and_purchase_conditions",
           "structural_history",
           "stroller_and_family_fit"
         ],
@@ -3419,7 +3801,7 @@
       },
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
-      "verdictNote": "gross_price_and_purchase_conditions; structural_history; stroller_and_family_fit",
+      "verdictNote": "structural_history; stroller_and_family_fit",
       "photos": [
         "https://cdn.automarket.pl/i/_/rs%3Afit%3A928%3A522%3A1%3A1/bg%3AF3F4F6/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvNi8x/LzYxODk2OTAuanBn.webp",
         "https://cdn.automarket.pl/i/_/rs%3Afit%3A928%3A522%3A1%3A1/bg%3AF3F4F6/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvNi8x/LzYxODk2OTBfejIu/anBn.webp",
@@ -3434,6 +3816,940 @@
         "https://cdn.automarket.pl/i/_/rs%3Afit%3A928%3A522%3A1%3A1/bg%3AF3F4F6/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvNi8x/LzYxODk2OTBfejku/anBn.webp",
         "https://cdn.automarket.pl/i/_/rs%3Afit%3A928%3A522%3A1%3A1/bg%3AF3F4F6/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvNi8x/LzYxODk2OTBfejEy/LmpwZw.webp"
       ]
+    },
+    {
+      "id": "listing:otomoto:ID6IdNp7",
+      "modelKey": "suzuki-vitara-ii",
+      "title": "Suzuki Vitara II 1.4 Boosterjet Comfort 140 KM",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IdNp7.html",
+          "label": "Otomoto"
+        }
+      ],
+      "listingIds": [
+        "otomoto:ID6IdNp7"
+      ],
+      "year": 2018,
+      "price": 52900,
+      "priceBasis": "gross_unconditional_total",
+      "mileage": 134755,
+      "engineVariant": "1.4-boosterjet-140",
+      "bodyCode": "suv",
+      "transmissionCode": "manual",
+      "cameraStatus": "installed_confirmed",
+      "structuralDamageStatus": "unknown",
+      "offerType": "private",
+      "saleType": "fixed_price",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "voivodeship": "Kujawsko-Pomorskie",
+        "city": "Toruń"
+      },
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjF5aHp4bmZvc3UwcDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.RAxLSuDhq8lmumPGfJD9haqsu-vcdoAxSPy5SuURRN4/image%3Bs%3D5120x0%3Bq%3D80",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imp6Mmg2MzR0MHlpMTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.9dfxjWMgBveEewZuB-CrlMkfDXvL95P0i44lmsVFQmw/image%3Bs%3D5120x0%3Bq%3D100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImI2YjlmYnJvcTI1bzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.mvt8D1OVYSVZ_bWMxC4VxT7V8VH-kuPeuGz9DOVHgnQ/image%3Bs%3D5120x0%3Bq%3D100"
+      ],
+      "details": {
+        "Cena i dostępność": "Karta pokazuje 52 900 zł i nadal jest dostępna. Opcjonalna sprzedaż ratalna jest wymieniona; brak obowiązkowego finansowania.",
+        "Wyposażenie": "Karta Otomoto wymienia kamerę cofania oraz ISOFIX. Potwierdzenie to deklaracja sprzedawcy.",
+        "LPG": "Rodzaj paliwa pokazano jako benzyna; status instalacji LPG nieustalony.",
+        "Szkody": "Sprzedawca opisuje dobry stan, brak niezależnego sprawdzenia struktury."
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-09T14:05:00+01:00",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IdNp7.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-09T14:05:00+01:00",
+          "lastCheckedAt": "2026-11-09T14:05:00+01:00",
+          "lastVerifiedAt": "2026-11-09T14:05:00+01:00",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IdNp7.html",
+            "checkedAt": "2026-11-09T14:05:00+01:00",
+            "availability": "available",
+            "note": "Karta Otomoto otwiera się i pokazuje 52 900 zł, 2018, Vitara II, 1.4 Boosterjet 140 KM, SUV, manual oraz 134 755 km. Sprzedawca prywatny; lokalizacja Toruń. Karta wymienia kamerę cofania i ISOFIX. LPG nieustalone; brak niezależnej kontroli szkód.",
+            "evidence": [
+              {
+                "fields": [
+                  "price",
+                  "year",
+                  "mileage",
+                  "engineVariant",
+                  "bodyCode",
+                  "transmissionCode",
+                  "saleType",
+                  "cameraStatus",
+                  "location"
+                ],
+                "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IdNp7.html",
+                "checkedAt": "2026-11-09T14:05:00+01:00",
+                "kind": "seller",
+                "note": "Dane techniczne, cena, kamera cofania, miejsce i status sprzedawcy odczytane z karty Otomoto; stan i wyposażenie pozostają deklaracjami sprzedawcy."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-09T14:05:00+01:00",
+      "lastVerifiedAt": "2026-11-09T14:05:00+01:00",
+      "lastAttemptAt": "2026-11-09T14:05:00+01:00",
+      "history": [
+        {
+          "eventId": "27a36d5c93a1a3fae2c3cb1bbe51aeb513b8184bc90b8abec251c1a75799cb4d",
+          "runId": "search-20261109",
+          "checkedAt": "2026-11-09T14:05:00+01:00",
+          "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IdNp7.html",
+          "availability": "available",
+          "note": "Karta Otomoto otwiera się i pokazuje 52 900 zł, 2018, Vitara II, 1.4 Boosterjet 140 KM, SUV, manual oraz 134 755 km. Sprzedawca prywatny; lokalizacja Toruń. Karta wymienia kamerę cofania i ISOFIX. LPG nieustalone; brak niezależnej kontroli szkód.",
+          "photoCheck": null,
+          "evidence": [
+            {
+              "fields": [
+                "price",
+                "year",
+                "mileage",
+                "engineVariant",
+                "bodyCode",
+                "transmissionCode",
+                "saleType",
+                "cameraStatus",
+                "location"
+              ],
+              "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IdNp7.html",
+              "checkedAt": "2026-11-09T14:05:00+01:00",
+              "kind": "seller",
+              "note": "Dane techniczne, cena, kamera cofania, miejsce i status sprzedawcy odczytane z karty Otomoto; stan i wyposażenie pozostają deklaracjami sprzedawcy."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IdNp7",
+            "modelKey": "suzuki-vitara-ii",
+            "title": "Suzuki Vitara II 1.4 Boosterjet Comfort 140 KM",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IdNp7.html",
+                "label": "Otomoto"
+              }
+            ],
+            "listingIds": [
+              "otomoto:ID6IdNp7"
+            ],
+            "year": 2018,
+            "price": 52900,
+            "priceBasis": "gross_unconditional_total",
+            "mileage": 134755,
+            "engineVariant": "1.4-boosterjet-140",
+            "bodyCode": "suv",
+            "transmissionCode": "manual",
+            "cameraStatus": "installed_confirmed",
+            "structuralDamageStatus": "unknown",
+            "familyFitConfirmed": null,
+            "offerType": "private",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "voivodeship": "Kujawsko-Pomorskie",
+              "city": "Toruń"
+            },
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjF5aHp4bmZvc3UwcDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.RAxLSuDhq8lmumPGfJD9haqsu-vcdoAxSPy5SuURRN4/image%3Bs%3D5120x0%3Bq%3D80",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imp6Mmg2MzR0MHlpMTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.9dfxjWMgBveEewZuB-CrlMkfDXvL95P0i44lmsVFQmw/image%3Bs%3D5120x0%3Bq%3D100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImI2YjlmYnJvcTI1bzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.mvt8D1OVYSVZ_bWMxC4VxT7V8VH-kuPeuGz9DOVHgnQ/image%3Bs%3D5120x0%3Bq%3D100"
+            ],
+            "details": {
+              "Cena i dostępność": "Karta pokazuje 52 900 zł i nadal jest dostępna. Opcjonalna sprzedaż ratalna jest wymieniona; brak obowiązkowego finansowania.",
+              "Wyposażenie": "Karta Otomoto wymienia kamerę cofania oraz ISOFIX. Potwierdzenie to deklaracja sprzedawcy.",
+              "LPG": "Rodzaj paliwa pokazano jako benzyna; status instalacji LPG nieustalony.",
+              "Szkody": "Sprzedawca opisuje dobry stan, brak niezależnego sprawdzenia struktury."
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:otomoto:ID6IdNp7"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "suzuki-vitara-ii"
+            },
+            "title": {
+              "before": null,
+              "after": "Suzuki Vitara II 1.4 Boosterjet Comfort 140 KM"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IdNp7.html",
+                  "label": "Otomoto"
+                }
+              ]
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "otomoto:ID6IdNp7"
+              ]
+            },
+            "year": {
+              "before": null,
+              "after": 2018
+            },
+            "price": {
+              "before": null,
+              "after": 52900
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "gross_unconditional_total"
+            },
+            "mileage": {
+              "before": null,
+              "after": 134755
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.4-boosterjet-140"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "suv"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "installed_confirmed"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "offerType": {
+              "before": null,
+              "after": "private"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "voivodeship": "Kujawsko-Pomorskie",
+                "city": "Toruń"
+              }
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjF5aHp4bmZvc3UwcDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.RAxLSuDhq8lmumPGfJD9haqsu-vcdoAxSPy5SuURRN4/image%3Bs%3D5120x0%3Bq%3D80",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imp6Mmg2MzR0MHlpMTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.9dfxjWMgBveEewZuB-CrlMkfDXvL95P0i44lmsVFQmw/image%3Bs%3D5120x0%3Bq%3D100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImI2YjlmYnJvcTI1bzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.mvt8D1OVYSVZ_bWMxC4VxT7V8VH-kuPeuGz9DOVHgnQ/image%3Bs%3D5120x0%3Bq%3D100"
+              ]
+            },
+            "details": {
+              "before": null,
+              "after": {
+                "Cena i dostępność": "Karta pokazuje 52 900 zł i nadal jest dostępna. Opcjonalna sprzedaż ratalna jest wymieniona; brak obowiązkowego finansowania.",
+                "Wyposażenie": "Karta Otomoto wymienia kamerę cofania oraz ISOFIX. Potwierdzenie to deklaracja sprzedawcy.",
+                "LPG": "Rodzaj paliwa pokazano jako benzyna; status instalacji LPG nieustalony.",
+                "Szkody": "Sprzedawca opisuje dobry stan, brak niezależnego sprawdzenia struktury."
+              }
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "listing:otomoto:ID6IdNp7",
+        "modelKey": "suzuki-vitara-ii",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "structural_history; stroller_and_family_fit"
+    },
+    {
+      "id": "listing:olx:1097096349",
+      "modelKey": "suzuki-vitara-ii",
+      "listingIds": [
+        "olx:1097096349"
+      ],
+      "urls": [
+        {
+          "url": "https://www.olx.pl/d/oferta/suzuki-vitara-1-6-120km-fabryczny-lakier-full-serwis-jeden-wlasciciel-CID5-ID1cfiSp.html",
+          "label": "Ogłoszenie OLX"
+        }
+      ],
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/ubzfts6o4f4g3-PL/image%3Bs%3D1814x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/183uuvgms9qv-PL/image%3Bs%3D1813x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/nh561edxrbcf-PL/image%3Bs%3D1813x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/38x0vrmfaurc-PL/image%3Bs%3D1813x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/zs4vr9tmpsy51-PL/image%3Bs%3D1814x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/pm16n62m7tcq3-PL/image%3Bs%3D1814x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/if5v4a20fy8v1-PL/image%3Bs%3D1813x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/h2gp2mi0out1-PL/image%3Bs%3D1813x1360"
+      ],
+      "title": "Suzuki Vitara 1.6 Premium 120 KM 2WD, 2018, SUV, manualna",
+      "year": 2018,
+      "price": 53999,
+      "priceLabel": "53 999 PLN, do negocjacji; ogłoszenie deklaruje fakturę VAT-marża",
+      "mileage": 163013,
+      "mileageLabel": "163 013 km",
+      "engine": "1.6 benzyna, 1 586 cm³, 120 KM",
+      "body": "SUV",
+      "transmission": "Manualna",
+      "seller": "Firma",
+      "priceBasis": "gross_unconditional_total",
+      "bodyCode": "suv",
+      "engineVariant": "1.6-vvt-120",
+      "transmissionCode": "manual",
+      "cameraStatus": "installed_confirmed",
+      "structuralDamageStatus": "unknown",
+      "saleType": "fixed_price",
+      "offerType": "company",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "voivodeship": "Mazowieckie",
+        "city": "Brańszczyk",
+        "precision": "city",
+        "source": "listing",
+        "checkedAt": "2026-11-09"
+      },
+      "details": {
+        "Wariant silnika": "Karta podaje 1.6 benzyna, 1 586 cm³ i 120 KM; kod fabryczny nie został potwierdzony po pełnym VIN.",
+        "Kamera": "Opis sprzedawcy wymienia kamerę cofania; jej działania nie testowano.",
+        "LPG": "Karta nie podaje informacji o instalacji LPG ani dokumentach instalacji/zbiornika; status pozostaje nieznany.",
+        "Szkody": "Sprzedawca deklaruje bezwypadkowość i bezkolizyjność; niezależnej kontroli konstrukcji nie wykonano.",
+        "Cena": "Karta podaje 53 999 PLN do negocjacji i FV-marża. Wspomina możliwość finansowania jako opcję; brak obowiązkowego finansowania."
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-09T23:31:31Z",
+      "listingStates": [
+        {
+          "url": "https://www.olx.pl/d/oferta/suzuki-vitara-1-6-120km-fabryczny-lakier-full-serwis-jeden-wlasciciel-CID5-ID1cfiSp.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-09T23:31:31Z",
+          "lastCheckedAt": "2026-11-09T23:31:31Z",
+          "lastVerifiedAt": "2026-11-09T23:31:31Z",
+          "lastObservation": {
+            "url": "https://www.olx.pl/d/oferta/suzuki-vitara-1-6-120km-fabryczny-lakier-full-serwis-jeden-wlasciciel-CID5-ID1cfiSp.html",
+            "checkedAt": "2026-11-09T23:31:31Z",
+            "availability": "available",
+            "note": "Publiczna karta OLX była dostępna przy sprawdzeniu i pokazywała cenę 53 999 PLN, elementy kontaktu, Promuj/Odśwież oraz ID 1097096349. Dane techniczne i kamera są deklaracjami sprzedawcy; instalacja LPG nieustalona. Ogłoszenie nie wskazuje warunku obowiązkowego finansowania.",
+            "evidence": [
+              {
+                "url": "https://www.olx.pl/d/oferta/suzuki-vitara-1-6-120km-fabryczny-lakier-full-serwis-jeden-wlasciciel-CID5-ID1cfiSp.html",
+                "checkedAt": "2026-11-09T23:31:31Z",
+                "kind": "seller",
+                "fields": [
+                  "availability",
+                  "year",
+                  "price",
+                  "mileage",
+                  "engine",
+                  "body",
+                  "transmission",
+                  "offerType",
+                  "cameraStatus",
+                  "saleType",
+                  "lpgInstalled",
+                  "structuralDamageStatus"
+                ],
+                "note": "Karta OLX: ID 1097096349, rok produkcji 2018, SUV, benzyna 1 586 cm³/120 KM, manual, 163 013 km, cena 53 999 PLN do negocjacji, sprzedawca firmowy. Opis wymienia kamerę cofania, FV-marża i możliwość zakupu na warunkach finansowych; nie wskazuje finansowania jako warunku. Deklaracja bezwypadkowości pochodzi od sprzedawcy, LPG nie opisano."
+              },
+              {
+                "url": "https://www.olx.pl/d/oferta/suzuki-vitara-1-6-120km-fabryczny-lakier-full-serwis-jeden-wlasciciel-CID5-ID1cfiSp.html",
+                "checkedAt": "2026-11-09T23:31:31Z",
+                "kind": "seller",
+                "fields": [
+                  "location"
+                ],
+                "note": "Metadane wyniku OLX identyfikują lokalizację jako Brańszczyk. Strona urzędu gminy potwierdza, że Brańszczyk leży w województwie mazowieckim: https://samorzad.gov.pl/web/gmina-branszczyk/wojewodztwo-mazowieckie."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-09T23:31:31Z",
+      "lastVerifiedAt": "2026-11-09T23:31:31Z",
+      "lastAttemptAt": "2026-11-09T23:31:31Z",
+      "history": [
+        {
+          "eventId": "b777c9f2aceb1392a9c369c0648d5c867e4f6197cf71fc0e5745190279730f55",
+          "runId": "search-20261109-full",
+          "checkedAt": "2026-11-09T23:31:31Z",
+          "url": "https://www.olx.pl/d/oferta/suzuki-vitara-1-6-120km-fabryczny-lakier-full-serwis-jeden-wlasciciel-CID5-ID1cfiSp.html",
+          "availability": "available",
+          "note": "Publiczna karta OLX była dostępna przy sprawdzeniu i pokazywała cenę 53 999 PLN, elementy kontaktu, Promuj/Odśwież oraz ID 1097096349. Dane techniczne i kamera są deklaracjami sprzedawcy; instalacja LPG nieustalona. Ogłoszenie nie wskazuje warunku obowiązkowego finansowania.",
+          "photoCheck": null,
+          "evidence": [
+            {
+              "url": "https://www.olx.pl/d/oferta/suzuki-vitara-1-6-120km-fabryczny-lakier-full-serwis-jeden-wlasciciel-CID5-ID1cfiSp.html",
+              "checkedAt": "2026-11-09T23:31:31Z",
+              "kind": "seller",
+              "fields": [
+                "availability",
+                "year",
+                "price",
+                "mileage",
+                "engine",
+                "body",
+                "transmission",
+                "offerType",
+                "cameraStatus",
+                "saleType",
+                "lpgInstalled",
+                "structuralDamageStatus"
+              ],
+              "note": "Karta OLX: ID 1097096349, rok produkcji 2018, SUV, benzyna 1 586 cm³/120 KM, manual, 163 013 km, cena 53 999 PLN do negocjacji, sprzedawca firmowy. Opis wymienia kamerę cofania, FV-marża i możliwość zakupu na warunkach finansowych; nie wskazuje finansowania jako warunku. Deklaracja bezwypadkowości pochodzi od sprzedawcy, LPG nie opisano."
+            },
+            {
+              "url": "https://www.olx.pl/d/oferta/suzuki-vitara-1-6-120km-fabryczny-lakier-full-serwis-jeden-wlasciciel-CID5-ID1cfiSp.html",
+              "checkedAt": "2026-11-09T23:31:31Z",
+              "kind": "seller",
+              "fields": [
+                "location"
+              ],
+              "note": "Metadane wyniku OLX identyfikują lokalizację jako Brańszczyk. Strona urzędu gminy potwierdza, że Brańszczyk leży w województwie mazowieckim: https://samorzad.gov.pl/web/gmina-branszczyk/wojewodztwo-mazowieckie."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:olx:1097096349",
+            "modelKey": "suzuki-vitara-ii",
+            "vin": null,
+            "listingIds": [
+              "olx:1097096349"
+            ],
+            "urls": [
+              {
+                "url": "https://www.olx.pl/d/oferta/suzuki-vitara-1-6-120km-fabryczny-lakier-full-serwis-jeden-wlasciciel-CID5-ID1cfiSp.html",
+                "label": "Ogłoszenie OLX"
+              }
+            ],
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/ubzfts6o4f4g3-PL/image%3Bs%3D1814x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/183uuvgms9qv-PL/image%3Bs%3D1813x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/nh561edxrbcf-PL/image%3Bs%3D1813x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/38x0vrmfaurc-PL/image%3Bs%3D1813x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/zs4vr9tmpsy51-PL/image%3Bs%3D1814x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/pm16n62m7tcq3-PL/image%3Bs%3D1814x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/if5v4a20fy8v1-PL/image%3Bs%3D1813x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/h2gp2mi0out1-PL/image%3Bs%3D1813x1360"
+            ],
+            "title": "Suzuki Vitara 1.6 Premium 120 KM 2WD, 2018, SUV, manualna",
+            "year": 2018,
+            "price": 53999,
+            "priceLabel": "53 999 PLN, do negocjacji; ogłoszenie deklaruje fakturę VAT-marża",
+            "mileage": 163013,
+            "mileageLabel": "163 013 km",
+            "engine": "1.6 benzyna, 1 586 cm³, 120 KM",
+            "body": "SUV",
+            "transmission": "Manualna",
+            "seller": "Firma",
+            "priceBasis": "gross_unconditional_total",
+            "bodyCode": "suv",
+            "engineVariant": "1.6-vvt-120",
+            "transmissionCode": "manual",
+            "cameraStatus": "installed_confirmed",
+            "structuralDamageStatus": "unknown",
+            "familyFitConfirmed": null,
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "offerType": "company",
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "voivodeship": "Mazowieckie",
+              "city": "Brańszczyk",
+              "precision": "city",
+              "source": "listing",
+              "checkedAt": "2026-11-09"
+            },
+            "details": {
+              "Wariant silnika": "Karta podaje 1.6 benzyna, 1 586 cm³ i 120 KM; kod fabryczny nie został potwierdzony po pełnym VIN.",
+              "Kamera": "Opis sprzedawcy wymienia kamerę cofania; jej działania nie testowano.",
+              "LPG": "Karta nie podaje informacji o instalacji LPG ani dokumentach instalacji/zbiornika; status pozostaje nieznany.",
+              "Szkody": "Sprzedawca deklaruje bezwypadkowość i bezkolizyjność; niezależnej kontroli konstrukcji nie wykonano.",
+              "Cena": "Karta podaje 53 999 PLN do negocjacji i FV-marża. Wspomina możliwość finansowania jako opcję; brak obowiązkowego finansowania."
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:olx:1097096349"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "suzuki-vitara-ii"
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "olx:1097096349"
+              ]
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.olx.pl/d/oferta/suzuki-vitara-1-6-120km-fabryczny-lakier-full-serwis-jeden-wlasciciel-CID5-ID1cfiSp.html",
+                  "label": "Ogłoszenie OLX"
+                }
+              ]
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/ubzfts6o4f4g3-PL/image%3Bs%3D1814x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/183uuvgms9qv-PL/image%3Bs%3D1813x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/nh561edxrbcf-PL/image%3Bs%3D1813x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/38x0vrmfaurc-PL/image%3Bs%3D1813x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/zs4vr9tmpsy51-PL/image%3Bs%3D1814x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/pm16n62m7tcq3-PL/image%3Bs%3D1814x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/if5v4a20fy8v1-PL/image%3Bs%3D1813x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/h2gp2mi0out1-PL/image%3Bs%3D1813x1360"
+              ]
+            },
+            "title": {
+              "before": null,
+              "after": "Suzuki Vitara 1.6 Premium 120 KM 2WD, 2018, SUV, manualna"
+            },
+            "year": {
+              "before": null,
+              "after": 2018
+            },
+            "price": {
+              "before": null,
+              "after": 53999
+            },
+            "priceLabel": {
+              "before": null,
+              "after": "53 999 PLN, do negocjacji; ogłoszenie deklaruje fakturę VAT-marża"
+            },
+            "mileage": {
+              "before": null,
+              "after": 163013
+            },
+            "mileageLabel": {
+              "before": null,
+              "after": "163 013 km"
+            },
+            "engine": {
+              "before": null,
+              "after": "1.6 benzyna, 1 586 cm³, 120 KM"
+            },
+            "body": {
+              "before": null,
+              "after": "SUV"
+            },
+            "transmission": {
+              "before": null,
+              "after": "Manualna"
+            },
+            "seller": {
+              "before": null,
+              "after": "Firma"
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "gross_unconditional_total"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "suv"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.6-vvt-120"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "installed_confirmed"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "offerType": {
+              "before": null,
+              "after": "company"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "voivodeship": "Mazowieckie",
+                "city": "Brańszczyk",
+                "precision": "city",
+                "source": "listing",
+                "checkedAt": "2026-11-09"
+              }
+            },
+            "details": {
+              "before": null,
+              "after": {
+                "Wariant silnika": "Karta podaje 1.6 benzyna, 1 586 cm³ i 120 KM; kod fabryczny nie został potwierdzony po pełnym VIN.",
+                "Kamera": "Opis sprzedawcy wymienia kamerę cofania; jej działania nie testowano.",
+                "LPG": "Karta nie podaje informacji o instalacji LPG ani dokumentach instalacji/zbiornika; status pozostaje nieznany.",
+                "Szkody": "Sprzedawca deklaruje bezwypadkowość i bezkolizyjność; niezależnej kontroli konstrukcji nie wykonano.",
+                "Cena": "Karta podaje 53 999 PLN do negocjacji i FV-marża. Wspomina możliwość finansowania jako opcję; brak obowiązkowego finansowania."
+              }
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "listing:olx:1097096349",
+        "modelKey": "suzuki-vitara-ii",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "structural_history; stroller_and_family_fit"
+    },
+    {
+      "id": "listing:sprzedajemy:74036683",
+      "modelKey": "suzuki-vitara-ii",
+      "listingIds": [
+        "sprzedajemy:74036683"
+      ],
+      "title": "Suzuki Vitara II SUV 1.6 VVT 120 KM — 2018",
+      "urls": [
+        {
+          "url": "https://sprzedajemy.pl/suzuki-vitara-2018r-salon-pl-kamera-grzane-fotele-1-6-120km-tempomat-bielsko-biala-4-6bea9f-nr74036683",
+          "label": "Sprzedajemy.pl"
+        }
+      ],
+      "photos": [
+        "https://thumbs.img-sprzedajemy.pl/1000x901c/33/2b/b9/suzuki-vitara-2018r-salon-kamera-grzane-fotele-bielsko-biala-607160116.jpg",
+        "https://thumbs.img-sprzedajemy.pl/1000x901c/d2/74/69/suzuki-vitara-2018r-salon-kamera-grzane-fotele-vitara-bielsko-biala-607160117.jpg",
+        "https://thumbs.img-sprzedajemy.pl/1000x901c/be/e9/33/suzuki-vitara-2018r-salon-kamera-grzane-fotele-bielsko-biala-607160118.jpg",
+        "https://thumbs.img-sprzedajemy.pl/1000x901c/da/11/c9/suzuki-vitara-2018r-salon-kamera-grzane-fotele-bielsko-biala-sprzedam-607160119.jpg",
+        "https://thumbs.img-sprzedajemy.pl/1000x901c/92/14/c6/suzuki-vitara-2018r-salon-kamera-grzane-fotele-bielsko-biala-sprzedam-607160120.jpg",
+        "https://thumbs.img-sprzedajemy.pl/1000x901c/c7/98/f1/suzuki-vitara-2018r-salon-kamera-grzane-fotele-vitara-bielsko-biala-607160121.jpg",
+        "https://thumbs.img-sprzedajemy.pl/1000x901c/61/50/dc/suzuki-vitara-2018r-salon-kamera-grzane-fotele-rok-produkcji-2018-bielsko-biala-607160122.jpg",
+        "https://thumbs.img-sprzedajemy.pl/1000x901c/5c/8a/21/suzuki-vitara-2018r-salon-kamera-grzane-fotele-bielsko-biala-607160123.jpg",
+        "https://thumbs.img-sprzedajemy.pl/1000x901c/47/b1/b3/suzuki-vitara-2018r-salon-kamera-grzane-fotele-slaskie-bielsko-biala-607160124.jpg",
+        "https://thumbs.img-sprzedajemy.pl/1000x901c/a0/36/fa/suzuki-vitara-2018r-salon-kamera-grzane-fotele-bielsko-biala-607160125.jpg",
+        "https://thumbs.img-sprzedajemy.pl/1000x901c/e0/ef/7b/suzuki-vitara-2018r-salon-kamera-grzane-fotele-1586cm3-bielsko-biala-607160126.jpg",
+        "https://thumbs.img-sprzedajemy.pl/1000x901c/02/6c/40/suzuki-vitara-2018r-salon-kamera-grzane-fotele-bielsko-biala-607160127.jpg"
+      ],
+      "year": 2018,
+      "price": 54900,
+      "priceBasis": "gross_unconditional_total",
+      "mileage": 126599,
+      "engine": "1.6 VVT · 120 KM · 1586 cm3",
+      "engineVariant": "1.6-vvt-120",
+      "body": "SUV",
+      "bodyCode": "suv",
+      "transmission": "Manualna",
+      "transmissionCode": "manual",
+      "offerType": "company",
+      "saleType": "fixed_price",
+      "cameraStatus": "installed_confirmed",
+      "structuralDamageStatus": "unknown",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "voivodeship": "Śląskie",
+        "city": "Bielsko-Biała",
+        "precision": "city",
+        "source": "listing",
+        "checkedAt": "2026-11-10"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-10T02:53:37Z",
+      "listingStates": [
+        {
+          "url": "https://sprzedajemy.pl/suzuki-vitara-2018r-salon-pl-kamera-grzane-fotele-1-6-120km-tempomat-bielsko-biala-4-6bea9f-nr74036683",
+          "status": "available",
+          "lastAttemptAt": "2026-11-10T02:53:37Z",
+          "lastCheckedAt": "2026-11-10T02:53:37Z",
+          "lastVerifiedAt": "2026-11-10T02:53:37Z",
+          "lastObservation": {
+            "url": "https://sprzedajemy.pl/suzuki-vitara-2018r-salon-pl-kamera-grzane-fotele-1-6-120km-tempomat-bielsko-biala-4-6bea9f-nr74036683",
+            "checkedAt": "2026-11-10T02:53:37Z",
+            "availability": "available",
+            "price": 54900,
+            "currency": "PLN",
+            "priceGross": true,
+            "year": 2018,
+            "mileageKm": 126599,
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "note": "Karta ogłoszenia nr 74036683 wyświetla aktywną ofertę: Suzuki Vitara, rok produkcji 2018, 126 599 km, benzynowy 1.6 VVT 120 KM / 1586 cm3, manualną skrzynię, nadwozie SUV i cenę 54 900 zł. Sprzedawca Autopunkt Pewne Używane; Bielsko-Biała, woj. śląskie. Karta wymienia kamerę cofania tył (deklaracja sprzedawcy). LPG nieopisane, stan strukturalny niezweryfikowany niezależnie; bieżącą dostępność należy potwierdzić u sprzedawcy.",
+            "evidence": [
+              {
+                "url": "https://sprzedajemy.pl/suzuki-vitara-2018r-salon-pl-kamera-grzane-fotele-1-6-120km-tempomat-bielsko-biala-4-6bea9f-nr74036683",
+                "checkedAt": "2026-11-10T02:53:37Z",
+                "kind": "seller",
+                "fields": [
+                  "year",
+                  "price",
+                  "mileage",
+                  "engine",
+                  "body",
+                  "transmission",
+                  "saleType",
+                  "offerType",
+                  "location",
+                  "cameraStatus"
+                ],
+                "note": "Karta ogłoszenia nr 74036683 wyświetla aktywną ofertę: Suzuki Vitara, rok produkcji 2018, 126 599 km, benzynowy 1.6 VVT 120 KM / 1586 cm3, manualną skrzynię, nadwozie SUV i cenę 54 900 zł. Sprzedawca Autopunkt Pewne Używane; Bielsko-Biała, woj. śląskie. Karta wymienia kamerę cofania tył (deklaracja sprzedawcy). LPG nieopisane, stan strukturalny niezweryfikowany niezależnie; bieżącą dostępność należy potwierdzić u sprzedawcy."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-10T02:53:37Z",
+      "lastVerifiedAt": "2026-11-10T02:53:37Z",
+      "lastAttemptAt": "2026-11-10T02:53:37Z",
+      "history": [
+        {
+          "eventId": "44f8e503f9d19f602e2ed48e2fd73dc5a4dbff9b1b13b5a38324f823313edc47",
+          "runId": "search-20261110-full",
+          "checkedAt": "2026-11-10T02:53:37Z",
+          "url": "https://sprzedajemy.pl/suzuki-vitara-2018r-salon-pl-kamera-grzane-fotele-1-6-120km-tempomat-bielsko-biala-4-6bea9f-nr74036683",
+          "availability": "available",
+          "note": "Karta ogłoszenia nr 74036683 wyświetla aktywną ofertę: Suzuki Vitara, rok produkcji 2018, 126 599 km, benzynowy 1.6 VVT 120 KM / 1586 cm3, manualną skrzynię, nadwozie SUV i cenę 54 900 zł. Sprzedawca Autopunkt Pewne Używane; Bielsko-Biała, woj. śląskie. Karta wymienia kamerę cofania tył (deklaracja sprzedawcy). LPG nieopisane, stan strukturalny niezweryfikowany niezależnie; bieżącą dostępność należy potwierdzić u sprzedawcy.",
+          "photoCheck": null,
+          "evidence": [
+            {
+              "url": "https://sprzedajemy.pl/suzuki-vitara-2018r-salon-pl-kamera-grzane-fotele-1-6-120km-tempomat-bielsko-biala-4-6bea9f-nr74036683",
+              "checkedAt": "2026-11-10T02:53:37Z",
+              "kind": "seller",
+              "fields": [
+                "year",
+                "price",
+                "mileage",
+                "engine",
+                "body",
+                "transmission",
+                "saleType",
+                "offerType",
+                "location",
+                "cameraStatus"
+              ],
+              "note": "Karta ogłoszenia nr 74036683 wyświetla aktywną ofertę: Suzuki Vitara, rok produkcji 2018, 126 599 km, benzynowy 1.6 VVT 120 KM / 1586 cm3, manualną skrzynię, nadwozie SUV i cenę 54 900 zł. Sprzedawca Autopunkt Pewne Używane; Bielsko-Biała, woj. śląskie. Karta wymienia kamerę cofania tył (deklaracja sprzedawcy). LPG nieopisane, stan strukturalny niezweryfikowany niezależnie; bieżącą dostępność należy potwierdzić u sprzedawcy."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:sprzedajemy:74036683",
+            "modelKey": "suzuki-vitara-ii",
+            "listingIds": [
+              "sprzedajemy:74036683"
+            ],
+            "title": "Suzuki Vitara II SUV 1.6 VVT 120 KM — 2018",
+            "urls": [
+              {
+                "url": "https://sprzedajemy.pl/suzuki-vitara-2018r-salon-pl-kamera-grzane-fotele-1-6-120km-tempomat-bielsko-biala-4-6bea9f-nr74036683",
+                "label": "Sprzedajemy.pl"
+              }
+            ],
+            "photos": [
+              "https://thumbs.img-sprzedajemy.pl/1000x901c/33/2b/b9/suzuki-vitara-2018r-salon-kamera-grzane-fotele-bielsko-biala-607160116.jpg",
+              "https://thumbs.img-sprzedajemy.pl/1000x901c/d2/74/69/suzuki-vitara-2018r-salon-kamera-grzane-fotele-vitara-bielsko-biala-607160117.jpg",
+              "https://thumbs.img-sprzedajemy.pl/1000x901c/be/e9/33/suzuki-vitara-2018r-salon-kamera-grzane-fotele-bielsko-biala-607160118.jpg",
+              "https://thumbs.img-sprzedajemy.pl/1000x901c/da/11/c9/suzuki-vitara-2018r-salon-kamera-grzane-fotele-bielsko-biala-sprzedam-607160119.jpg",
+              "https://thumbs.img-sprzedajemy.pl/1000x901c/92/14/c6/suzuki-vitara-2018r-salon-kamera-grzane-fotele-bielsko-biala-sprzedam-607160120.jpg",
+              "https://thumbs.img-sprzedajemy.pl/1000x901c/c7/98/f1/suzuki-vitara-2018r-salon-kamera-grzane-fotele-vitara-bielsko-biala-607160121.jpg",
+              "https://thumbs.img-sprzedajemy.pl/1000x901c/61/50/dc/suzuki-vitara-2018r-salon-kamera-grzane-fotele-rok-produkcji-2018-bielsko-biala-607160122.jpg",
+              "https://thumbs.img-sprzedajemy.pl/1000x901c/5c/8a/21/suzuki-vitara-2018r-salon-kamera-grzane-fotele-bielsko-biala-607160123.jpg",
+              "https://thumbs.img-sprzedajemy.pl/1000x901c/47/b1/b3/suzuki-vitara-2018r-salon-kamera-grzane-fotele-slaskie-bielsko-biala-607160124.jpg",
+              "https://thumbs.img-sprzedajemy.pl/1000x901c/a0/36/fa/suzuki-vitara-2018r-salon-kamera-grzane-fotele-bielsko-biala-607160125.jpg",
+              "https://thumbs.img-sprzedajemy.pl/1000x901c/e0/ef/7b/suzuki-vitara-2018r-salon-kamera-grzane-fotele-1586cm3-bielsko-biala-607160126.jpg",
+              "https://thumbs.img-sprzedajemy.pl/1000x901c/02/6c/40/suzuki-vitara-2018r-salon-kamera-grzane-fotele-bielsko-biala-607160127.jpg"
+            ],
+            "year": 2018,
+            "price": 54900,
+            "priceBasis": "gross_unconditional_total",
+            "mileage": 126599,
+            "engine": "1.6 VVT · 120 KM · 1586 cm3",
+            "engineVariant": "1.6-vvt-120",
+            "body": "SUV",
+            "bodyCode": "suv",
+            "transmission": "Manualna",
+            "transmissionCode": "manual",
+            "offerType": "company",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "cameraStatus": "installed_confirmed",
+            "structuralDamageStatus": "unknown",
+            "familyFitConfirmed": null,
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "voivodeship": "Śląskie",
+              "city": "Bielsko-Biała",
+              "precision": "city",
+              "source": "listing",
+              "checkedAt": "2026-11-10"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:sprzedajemy:74036683"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "suzuki-vitara-ii"
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "sprzedajemy:74036683"
+              ]
+            },
+            "title": {
+              "before": null,
+              "after": "Suzuki Vitara II SUV 1.6 VVT 120 KM — 2018"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://sprzedajemy.pl/suzuki-vitara-2018r-salon-pl-kamera-grzane-fotele-1-6-120km-tempomat-bielsko-biala-4-6bea9f-nr74036683",
+                  "label": "Sprzedajemy.pl"
+                }
+              ]
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://thumbs.img-sprzedajemy.pl/1000x901c/33/2b/b9/suzuki-vitara-2018r-salon-kamera-grzane-fotele-bielsko-biala-607160116.jpg",
+                "https://thumbs.img-sprzedajemy.pl/1000x901c/d2/74/69/suzuki-vitara-2018r-salon-kamera-grzane-fotele-vitara-bielsko-biala-607160117.jpg",
+                "https://thumbs.img-sprzedajemy.pl/1000x901c/be/e9/33/suzuki-vitara-2018r-salon-kamera-grzane-fotele-bielsko-biala-607160118.jpg",
+                "https://thumbs.img-sprzedajemy.pl/1000x901c/da/11/c9/suzuki-vitara-2018r-salon-kamera-grzane-fotele-bielsko-biala-sprzedam-607160119.jpg",
+                "https://thumbs.img-sprzedajemy.pl/1000x901c/92/14/c6/suzuki-vitara-2018r-salon-kamera-grzane-fotele-bielsko-biala-sprzedam-607160120.jpg",
+                "https://thumbs.img-sprzedajemy.pl/1000x901c/c7/98/f1/suzuki-vitara-2018r-salon-kamera-grzane-fotele-vitara-bielsko-biala-607160121.jpg",
+                "https://thumbs.img-sprzedajemy.pl/1000x901c/61/50/dc/suzuki-vitara-2018r-salon-kamera-grzane-fotele-rok-produkcji-2018-bielsko-biala-607160122.jpg",
+                "https://thumbs.img-sprzedajemy.pl/1000x901c/5c/8a/21/suzuki-vitara-2018r-salon-kamera-grzane-fotele-bielsko-biala-607160123.jpg",
+                "https://thumbs.img-sprzedajemy.pl/1000x901c/47/b1/b3/suzuki-vitara-2018r-salon-kamera-grzane-fotele-slaskie-bielsko-biala-607160124.jpg",
+                "https://thumbs.img-sprzedajemy.pl/1000x901c/a0/36/fa/suzuki-vitara-2018r-salon-kamera-grzane-fotele-bielsko-biala-607160125.jpg",
+                "https://thumbs.img-sprzedajemy.pl/1000x901c/e0/ef/7b/suzuki-vitara-2018r-salon-kamera-grzane-fotele-1586cm3-bielsko-biala-607160126.jpg",
+                "https://thumbs.img-sprzedajemy.pl/1000x901c/02/6c/40/suzuki-vitara-2018r-salon-kamera-grzane-fotele-bielsko-biala-607160127.jpg"
+              ]
+            },
+            "year": {
+              "before": null,
+              "after": 2018
+            },
+            "price": {
+              "before": null,
+              "after": 54900
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "gross_unconditional_total"
+            },
+            "mileage": {
+              "before": null,
+              "after": 126599
+            },
+            "engine": {
+              "before": null,
+              "after": "1.6 VVT · 120 KM · 1586 cm3"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.6-vvt-120"
+            },
+            "body": {
+              "before": null,
+              "after": "SUV"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "suv"
+            },
+            "transmission": {
+              "before": null,
+              "after": "Manualna"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "offerType": {
+              "before": null,
+              "after": "company"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "installed_confirmed"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "voivodeship": "Śląskie",
+                "city": "Bielsko-Biała",
+                "precision": "city",
+                "source": "listing",
+                "checkedAt": "2026-11-10"
+              }
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "listing:sprzedajemy:74036683",
+        "modelKey": "suzuki-vitara-ii",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "structural_history; stroller_and_family_fit"
     }
   ]
 }

@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-09T21:57:24.823Z",
+  "note": "Read-only card smoke checks using previously recorded sample URLs absent from active/archive offer data. No photos analyzed; no facts or offers imported.",
+  "samplesChecked": 2,
+  "results": [
+    {
+      "sourceId": "automarket",
+      "modelKey": "skoda-octavia-iii-combi",
+      "status": "page_read",
+      "httpStatus": 200,
+      "titleLength": 70,
+      "bodyTextChars": 7233,
+      "elapsedMs": 2459,
+      "signals": {
+        "anyDisplayedPrice": true,
+        "grossPriceWords": true,
+        "productionYearLabel": true,
+        "firstRegistrationLabel": true,
+        "mileageLabel": true,
+        "engineLabel": true,
+        "transmissionLabel": false,
+        "bodyLabel": true,
+        "lpgMention": true,
+        "cameraMention": false,
+        "damageMention": true
+      }
+    },
+    {
+      "sourceId": "olx",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "status": "page_read",
+      "httpStatus": 200,
+      "titleLength": 116,
+      "bodyTextChars": 3592,
+      "elapsedMs": 1591,
+      "signals": {
+        "anyDisplayedPrice": true,
+        "grossPriceWords": true,
+        "productionYearLabel": true,
+        "firstRegistrationLabel": false,
+        "mileageLabel": true,
+        "engineLabel": true,
+        "transmissionLabel": true,
+        "bodyLabel": true,
+        "lpgMention": false,
+        "cameraMention": false,
+        "damageMention": true
+      }
+    }
+  ]
+}

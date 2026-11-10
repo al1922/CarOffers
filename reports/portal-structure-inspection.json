@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-09T22:02:47.205Z",
+  "note": "DOM structure only; no listing data, cards opened, or queue/database changes.",
+  "sourcesChecked": 21,
+  "results": [
+    {
+      "sourceId": "allegro-lokalnie",
+      "httpStatus": null,
+      "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://allegrolokalnie.pl/oferty/q/samochody%20osobowe",
+      "apiResponses": []
+    },
+    {
+      "sourceId": "autotrader-pl",
+      "httpStatus": null,
+      "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.autotrader.pl/osobowe",
+      "apiResponses": []
+    },
+    {
+      "sourceId": "intermoto",
+      "httpStatus": null,
+      "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://intermoto.pl/osobowe",
+      "apiResponses": []
+    },
+    {
+      "sourceId": "otomoto",
+      "httpStatus": null,
+      "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.otomoto.pl/osobowe",
+      "apiResponses": []
+    },
+    {
+      "sourceId": "olx",
+      "httpStatus": null,
+      "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.olx.pl/motoryzacja/samochody/",
+      "apiResponses": []
+    },
+    {
+      "sourceId": "autoplac",
+      "httpStatus": null,
+      "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://autoplac.pl/",
+      "apiResponses": []
+    },
+    {
+      "sourceId": "motogratka",
+      "httpStatus": null,
+      "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://motogratka.pl/motoryzacja/osobowe",
+      "apiResponses": []
+    },
+    {
+      "sourceId": "sprzedajemy",
+      "httpStatus": null,
+      "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://sprzedajemy.pl/motoryzacja/samochody-osobowe",
+      "apiResponses": []
+    },
+    {
+      "sourceId": "automarket",
+      "httpStatus": null,
+      "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.automarket.pl/samochody-poleasingowe",
+      "apiResponses": []
+    },
+    {
+      "sourceId": "arval-autoselect",
+      "httpStatus": null,
+      "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://autoselect.arval.pl/",
+      "apiResponses": []
+    },
+    {
+      "sourceId": "ayvens-usedcars",
+      "httpStatus": null,
+      "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://usedcars.ayvens.com/pl-pl/samochody",
+      "apiResponses": []
+    },
+    {
+      "sourceId": "toyota-pewne-auto",
+      "httpStatus": null,
+      "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://pewneauto.pl/",
+      "apiResponses": []
+    },
+    {
+      "sourceId": "kia-uzywane",
+      "httpStatus": null,
+      "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://uzywane.kia.pl/",
+      "apiResponses": []
+    },
+    {
+      "sourceId": "skoda-plus",
+      "httpStatus": null,
+      "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.skoda.pl/apps/stock/carSearch?CarType=U&Sort=DATE_OFFER&SortDirection=DESC",
+      "apiResponses": []
+    },
+    {
+      "sourceId": "volkswagen-certyfikowane",
+      "httpStatus": null,
+      "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.volkswagen.pl/pl/oferty-i-promocje/gsl-results.html/__app/search/cars.app?priceMode-app=price&sort-app=DATE_OFFER&sortdirection-app=ASC&t_cartype-app=U&t_gwfc-app=1&viewMode-app=tile",
+      "apiResponses": []
+    },
+    {
+      "sourceId": "seat-certyfikowane",
+      "httpStatus": null,
+      "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.seat.pl/oferta/certyfikowane-uzywane",
+      "apiResponses": []
+    },
+    {
+      "sourceId": "suzuki-uzywane",
+      "httpStatus": null,
+      "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://suzuki.pl/auto/samochody-uzywane",
+      "apiResponses": []
+    },
+    {
+      "sourceId": "hyundai-korea-motors",
+      "httpStatus": null,
+      "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.hyundai.koreamotors.pl/p/auta-dostepne-od-reki?status%5B%5D=used",
+      "apiResponses": []
+    },
+    {
+      "sourceId": "spoticar",
+      "httpStatus": null,
+      "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.spoticar.pl/",
+      "apiResponses": []
+    },
+    {
+      "sourceId": "aaaauto",
+      "httpStatus": null,
+      "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.aaaauto.pl/",
+      "apiResponses": []
+    },
+    {
+      "sourceId": "autopunkt",
+      "httpStatus": null,
+      "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://autopunkt.pl/znajdz-auto",
+      "apiResponses": []
+    }
+  ]
+}

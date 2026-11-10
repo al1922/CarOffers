@@ -55,6 +55,19 @@ class ValidationTests(unittest.TestCase):
         r = self.audit()
         self.assertEqual((r["errors"], r["warnings"], r["offers"]), (0, 0, 1))
 
+    def test_seller_classification_and_first_registration_date_are_in_contract(self):
+        offer = self.doc["offers"][0]
+        offer["offerType"] = "company"
+        offer["firstRegistrationDate"] = "2020-04-15"
+        self.assertEqual(self.audit()["errors"], 0)
+
+        offer["offerType"] = "dealer"
+        self.assertCode(self.audit(), "ENUM")
+
+        offer["offerType"] = "company"
+        offer["firstRegistrationDate"] = "15.04.2020"
+        self.assertCode(self.audit(), "DATE")
+
     def test_invalid_prices(self):
         for price in ("50000", -1, True, [], {}):
             with self.subTest(price=price):

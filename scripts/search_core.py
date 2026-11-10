@@ -108,9 +108,12 @@ def assess(offer, requirements, model):
     """Assess structured evidence; never infer facts from arbitrary seller prose."""
     fail, unknown, preferences = [], [], []
     price = offer.get("price")
+    gross_unconditional = offer.get("priceBasis") == "gross_unconditional_total"
+    if not gross_unconditional:
+        unknown.append("gross_unconditional_purchase_price")
     if type(price) not in (int, float) or price <= 0:
         unknown.append("purchase_price")
-    elif price > requirements["purchase"]["maxPriceGrossPln"]:
+    elif gross_unconditional and price > requirements["purchase"]["maxPriceGrossPln"]:
         if requirements["purchase"]["priceExceptions"]:
             unknown.append("price_exception_requires_user_confirmation")
         else:

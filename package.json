@@ -2,5 +2,19 @@
   "name": "caroffers",
   "private": true,
   "type": "module",
-  "scripts": {"test": "node --test tests/test_app.cjs"}
+  "scripts": {
+    "test": "node --test tests/test_app.cjs",
+    "browse:pages": "node scripts/playwright-pages.mjs",
+    "search:sprzedajemy": "node scripts/sprzedajemy-search.mjs",
+    "search:portal": "node scripts/portal-candidates.mjs",
+    "pilot:portals": "node scripts/pilot-portal-adapters.mjs",
+    "pilot:cards": "node scripts/pilot-card-samples.mjs",
+    "compare:portal-pilots": "python -B scripts/compare-portal-pilots.py",
+    "inspect:portals": "node scripts/inspect-portal-structure.mjs",
+    "check:sources": "node scripts/check-sources.mjs",
+    "install:browser": "node scripts/install-playwright-browser.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.55.1"
+  }
 }

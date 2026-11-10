@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-09T22:07:55.497Z",
+  "note": "Read-only one-query pilot. Visible field counts are parsing diagnostics, not listing facts or availability evidence. No task queue or offer database was changed.",
+  "sourcesChecked": 1,
+  "results": [
+    {
+      "sourceId": "toyota-pewne-auto",
+      "modelKey": "toyota-auris-touring-sports",
+      "status": "blocked",
+      "pagesChecked": 0,
+      "candidates": 0,
+      "fieldCoverage": {
+        "withTitleAndUrl": 0,
+        "withDisplayedPriceText": 0,
+        "withMileageKm": 0,
+        "withExplicitProductionYear": 0,
+        "withYearMentionOnly": 0
+      },
+      "diagnostics": {
+        "navigationMs": 0,
+        "renderWaitMs": 0,
+        "queryActionMs": 0,
+        "extractionMs": 0,
+        "candidates": 0,
+        "elapsedMs": 0,
+        "assetBlocking": "disabled_unless_measured_for_source"
+      },
+      "querySubmitted": false,
+      "queryNote": null,
+      "cardPilot": null,
+      "errors": [
+        {
+          "url": "https://pewneauto.pl/",
+          "error": "page.goto: net::ERR_NAME_NOT_RESOLVED at https://pewneauto.pl/"
+        }
+      ],
+      "notes": "Kandydaci pochodzą wyłącznie z widocznych kart wyników. Karty ogłoszeń nie były otwierane; dostępność, cena brutto i wyposażenie nie są potwierdzone. Jeśli struktura portalu nie ujawniła kart, zakres pozostaje nieprzeszukany."
+    }
+  ]
+}

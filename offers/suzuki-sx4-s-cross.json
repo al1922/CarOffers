@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-09",
   "model": {
     "key": "suzuki-sx4-s-cross",
     "name": "Suzuki SX4 S-Cross",
@@ -23,10 +23,8 @@
       "title": "1.4 BoosterJet 140 KM Crossover — Wierzbie  Opolskie  154 000 km",
       "year": 2018,
       "price": 52700,
-      "priceLabel": "52 700 zł",
       "mileage": 154000,
-      "mileageLabel": "154 000 km",
-      "engine": "1.4 BoosterJet · 140 KM",
+      "engine": "1.4 BoosterJet, benzyna, 140 KM",
       "body": "Crossover",
       "transmission": "manualna",
       "seller": "sprzedawca prywatny · karta Autoplac otwarta w ramach weryfikacji 06.11.2026",
@@ -34,7 +32,7 @@
       "priority": "Priorytet 1",
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
-      "verdictNote": "gross_price_and_purchase_conditions; body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "verdictNote": "body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
       "specs": {
         "rocznik": "2018",
         "nadwozie": "Crossover",
@@ -55,24 +53,27 @@
         {
           "url": "https://autoplac.pl/oferta/suzuki/sx4-s-cross/1-4-2018r-salon-pl-premiumplus-0059-7061-XY",
           "status": "available",
-          "lastAttemptAt": "2026-11-08T22:39:59+00:00",
-          "lastCheckedAt": "2026-11-08T22:39:59+00:00",
-          "lastVerifiedAt": "2026-11-08T22:39:59+00:00",
+          "lastAttemptAt": "2026-11-09T13:13:26+00:00",
+          "lastCheckedAt": "2026-11-09T13:13:26+00:00",
+          "lastVerifiedAt": "2026-11-09T13:13:26+00:00",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/suzuki/sx4-s-cross/1-4-2018r-salon-pl-premiumplus-0059-7061-XY",
-            "checkedAt": "2026-11-08T22:39:59+00:00",
+            "checkedAt": "2026-11-09T13:13:26+00:00",
             "availability": "available",
-            "note": "Karta zaktualizowana dziś; cena 52 700 zł, 2018, benzyna 1.4 140 KM, manual, 154 000 km. Galeria 1/17. Opis wymienia kamerę cofania; instalacja LPG niepotwierdzona.",
-            "photoCheck": {
-              "status": "found",
-              "note": "Odczytano bezpośredni HTTPS URL zdjęcia głównego CDN Autoplac; galeria pokazuje 1/17."
-            }
+            "price": 52700,
+            "currency": "PLN",
+            "priceGross": true,
+            "year": 2018,
+            "mileageKm": 154000,
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "note": "Karta zaktualizowana dziś: Suzuki SX4 S-Cross 1.4 benzyna 140 KM, manual, 2018, 154000 km, 52700 zł brutto. VIN TSMJYAA2S00585117; pierwsza rejestracja 07.11.2018; lokalizacja Wierzbie (Opolskie). Sprzedawca prywatny; opis deklaruje polski salon, serwis ASO, udokumentowaną historię i bezwypadkowość. Wymienione ISOFIX, kamera cofania i tylne czujniki parkowania. LPG nieustalone."
           }
         }
       ],
-      "lastCheckedAt": "2026-11-08T22:39:59+00:00",
-      "lastVerifiedAt": "2026-11-08T22:39:59+00:00",
-      "lastAttemptAt": "2026-11-08T22:39:59+00:00",
+      "lastCheckedAt": "2026-11-09T13:13:26+00:00",
+      "lastVerifiedAt": "2026-11-09T13:13:26+00:00",
+      "lastAttemptAt": "2026-11-09T13:13:26+00:00",
       "history": [
         {
           "eventId": "364310270fd518c4e7290fc9231829470441b8aa3a8936fd49562d9cba8552e9",
@@ -137,6 +138,34 @@
               ]
             }
           }
+        },
+        {
+          "eventId": "c7fa01da4df12779ae699c594896335c51804195eb9d5c9d284c2abd9b514fd2",
+          "runId": "refresh20261109a",
+          "checkedAt": "2026-11-09T13:13:26+00:00",
+          "url": "https://autoplac.pl/oferta/suzuki/sx4-s-cross/1-4-2018r-salon-pl-premiumplus-0059-7061-XY",
+          "availability": "available",
+          "note": "Karta zaktualizowana dziś: Suzuki SX4 S-Cross 1.4 benzyna 140 KM, manual, 2018, 154000 km, 52700 zł brutto. VIN TSMJYAA2S00585117; pierwsza rejestracja 07.11.2018; lokalizacja Wierzbie (Opolskie). Sprzedawca prywatny; opis deklaruje polski salon, serwis ASO, udokumentowaną historię i bezwypadkowość. Wymienione ISOFIX, kamera cofania i tylne czujniki parkowania. LPG nieustalone.",
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TSMJYAA2S00585117",
+            "price": 52700,
+            "year": 2018,
+            "mileage": 154000,
+            "engine": "1.4 BoosterJet, benzyna, 140 KM",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "photos": [
+              "https://euw2-cdn.autoplac.pl/v1/p/c0f88758-86c7-4d8b-84a0-80b0d99ee26d?f=1920%3Awebp"
+            ]
+          },
+          "changes": {
+            "engine": {
+              "before": "1.4 BoosterJet · 140 KM",
+              "after": "1.4 BoosterJet, benzyna, 140 KM"
+            }
+          }
         }
       ],
       "assessment": {
@@ -145,7 +174,6 @@
         "verdict": "check",
         "failures": [],
         "unknowns": [
-          "gross_price_and_purchase_conditions",
           "body",
           "exact_engine_variant",
           "transmission",
@@ -174,10 +202,8 @@
       "title": "1.4 BoosterJet 140 KM Crossover — Luboń  98 000 km",
       "year": 2018,
       "price": 52900,
-      "priceLabel": "52 900 zł",
       "mileage": 98000,
-      "mileageLabel": "98 000 km",
-      "engine": "1.4 BoosterJet · 140 KM",
+      "engine": "1.4 BoosterJet, benzyna, 140 KM",
       "body": "Crossover",
       "transmission": "manualna",
       "seller": "sprzedawca Autoplac · karta Autoplac otwarta w ramach weryfikacji 06.11.2026",
@@ -185,7 +211,7 @@
       "priority": "Priorytet 1",
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
-      "verdictNote": "gross_price_and_purchase_conditions; body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "verdictNote": "body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
       "specs": {
         "rocznik": "2018",
         "nadwozie": "Crossover",
@@ -206,24 +232,27 @@
         {
           "url": "https://autoplac.pl/oferta/suzuki/sx4-s-cross/1-4-2018r-boosterjet-allgrip-comfort-bogata-wersja-4006-3607-VB",
           "status": "available",
-          "lastAttemptAt": "2026-11-08T22:39:59+00:00",
-          "lastCheckedAt": "2026-11-08T22:39:59+00:00",
-          "lastVerifiedAt": "2026-11-08T22:39:59+00:00",
+          "lastAttemptAt": "2026-11-09T13:13:26+00:00",
+          "lastCheckedAt": "2026-11-09T13:13:26+00:00",
+          "lastVerifiedAt": "2026-11-09T13:13:26+00:00",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/suzuki/sx4-s-cross/1-4-2018r-boosterjet-allgrip-comfort-bogata-wersja-4006-3607-VB",
-            "checkedAt": "2026-11-08T22:39:59+00:00",
+            "checkedAt": "2026-11-09T13:13:26+00:00",
             "availability": "available",
-            "note": "Karta zaktualizowana dziś; cena 52 900 zł, 2018, benzyna 1.4 140 KM, manual, 98 000 km. Galeria 1/15; opis podaje Allgrip i hak. LPG niepotwierdzone.",
-            "photoCheck": {
-              "status": "found",
-              "note": "Odczytano bezpośredni HTTPS URL zdjęcia głównego CDN Autoplac; galeria pokazuje 1/15."
-            }
+            "price": 52900,
+            "currency": "PLN",
+            "priceGross": true,
+            "year": 2018,
+            "mileageKm": 98000,
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "note": "Karta zaktualizowana dziś: Suzuki SX4 S-Cross 1.4 BoosterJet 140 KM, manual, 2018, 98000 km, 52900 zł brutto. VIN TSMJYBA2S00591656; pierwsza rejestracja 29.08.2018; lokalizacja Luboń (Wielkopolskie). Opis podaje napęd AllGrip 4x4, kraj pochodzenia: sprowadzony. Karta nie określa bezwypadkowości. Kamera i LPG niepotwierdzone."
           }
         }
       ],
-      "lastCheckedAt": "2026-11-08T22:39:59+00:00",
-      "lastVerifiedAt": "2026-11-08T22:39:59+00:00",
-      "lastAttemptAt": "2026-11-08T22:39:59+00:00",
+      "lastCheckedAt": "2026-11-09T13:13:26+00:00",
+      "lastVerifiedAt": "2026-11-09T13:13:26+00:00",
+      "lastAttemptAt": "2026-11-09T13:13:26+00:00",
       "history": [
         {
           "eventId": "c61e6108511716f8fa5301e3fe4d6910d72aa20477f59f2d3f09a079650084e5",
@@ -288,6 +317,34 @@
               ]
             }
           }
+        },
+        {
+          "eventId": "8a6da1c0ed7e2c0ca009b46835bfba1303a86b30e3fa7cd2cc474572f20c737c",
+          "runId": "refresh20261109a",
+          "checkedAt": "2026-11-09T13:13:26+00:00",
+          "url": "https://autoplac.pl/oferta/suzuki/sx4-s-cross/1-4-2018r-boosterjet-allgrip-comfort-bogata-wersja-4006-3607-VB",
+          "availability": "available",
+          "note": "Karta zaktualizowana dziś: Suzuki SX4 S-Cross 1.4 BoosterJet 140 KM, manual, 2018, 98000 km, 52900 zł brutto. VIN TSMJYBA2S00591656; pierwsza rejestracja 29.08.2018; lokalizacja Luboń (Wielkopolskie). Opis podaje napęd AllGrip 4x4, kraj pochodzenia: sprowadzony. Karta nie określa bezwypadkowości. Kamera i LPG niepotwierdzone.",
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TSMJYBA2S00591656",
+            "price": 52900,
+            "year": 2018,
+            "mileage": 98000,
+            "engine": "1.4 BoosterJet, benzyna, 140 KM",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "photos": [
+              "https://euw2-cdn.autoplac.pl/v1/p/fc2b20bb-b82d-4570-9eae-9876ff7593b2?f=1920%3Awebp"
+            ]
+          },
+          "changes": {
+            "engine": {
+              "before": "1.4 BoosterJet · 140 KM",
+              "after": "1.4 BoosterJet, benzyna, 140 KM"
+            }
+          }
         }
       ],
       "assessment": {
@@ -296,7 +353,6 @@
         "verdict": "check",
         "failures": [],
         "unknowns": [
-          "gross_price_and_purchase_conditions",
           "body",
           "exact_engine_variant",
           "transmission",
@@ -322,9 +378,6 @@
           "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-sx4-s-cross-ID6IhQge.html",
           "normalized": "https://otomoto.pl/osobowe/oferta/suzuki-sx4-s-cross-ID6IhQge.html",
           "label": "Zobacz ogłoszenie"
-        },
-        {
-          "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-sx4-s-cross-ID6IhQge.html"
         }
       ],
       "title": "Suzuki SX4 S-Cross — 1.4 BoosterJet · 140 KM  82 000 km",
@@ -341,7 +394,7 @@
       "priority": "Priorytet 1",
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
-      "verdictNote": "price_exception_requires_user_confirmation; gross_price_and_purchase_conditions; body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "verdictNote": "price_exception_requires_user_confirmation; body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
       "specs": {
         "rocznik": "2019",
         "nadwozie": "SUV / crossover",
@@ -362,21 +415,35 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-sx4-s-cross-ID6IhQge.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-08T23:06:01+01:00",
-          "lastCheckedAt": "2026-11-08T23:06:01+01:00",
-          "lastVerifiedAt": "2026-11-08T23:06:01+01:00",
+          "lastAttemptAt": "2026-11-09T13:08:06Z",
+          "lastCheckedAt": "2026-11-09T13:08:06Z",
+          "lastVerifiedAt": "2026-11-09T13:08:06Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-sx4-s-cross-ID6IhQge.html",
-            "checkedAt": "2026-11-08T23:06:01+01:00",
+            "checkedAt": "2026-11-09T13:08:06Z",
             "availability": "available",
-            "note": "Karta dostępna; cena 56 900 zł, rok produkcji 2019, przebieg 82 000 km, 1.4 BoosterJet 140 KM, skrzynia manualna. W opisie brak jawnego warunku ceny dotyczącego finansowania; Otomoto pokazuje osobny panel finansowania. Bezwarunkowa cena nie została potwierdzona, cena bez zmian. Sprzedawca deklaruje m.in. kamerę cofania i serwis w ASO Suzuki. LPG nieustalone.",
-            "evidence": []
+            "note": "Karta Otomoto dostępna; cena 56 900 zł, rok produkcji 2019, 82 000 km, Suzuki SX4 S-Cross 1.4 BoosterJet 140 KM, benzyna, manual. Cena przekracza skonfigurowany limit 55 000 zł; brak zgody na wyjątek. Opis sprzedawcy deklaruje serwisowanie w ASO Suzuki, ostatni serwis przy 79 tys. km, bezwypadkowość i jednego właściciela. Kamera nie jest wymieniona.",
+            "evidence": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-sx4-s-cross-ID6IhQge.html",
+                "checkedAt": "2026-11-09T13:08:06Z",
+                "kind": "seller",
+                "fields": [
+                  "price",
+                  "year",
+                  "mileage",
+                  "engine",
+                  "transmission"
+                ],
+                "note": "Karta Otomoto i opis oferty podają cenę 56 900 zł, rocznik, przebieg, silnik oraz skrzynię."
+              }
+            ]
           }
         }
       ],
-      "lastCheckedAt": "2026-11-08T23:06:01+01:00",
-      "lastVerifiedAt": "2026-11-08T23:06:01+01:00",
-      "lastAttemptAt": "2026-11-08T23:06:01+01:00",
+      "lastCheckedAt": "2026-11-09T13:08:06Z",
+      "lastVerifiedAt": "2026-11-09T13:08:06Z",
+      "lastAttemptAt": "2026-11-09T13:08:06Z",
       "history": [
         {
           "eventId": "4b3fc1cd02d8bf5927d5c98ae8a37a75735e84a4ff26d8e1100751ae5606f80b",
@@ -447,6 +514,50 @@
               ]
             }
           }
+        },
+        {
+          "eventId": "454fa6a968149bcb93946ed990645fd2452277055a2de05694ec36a6c10a322e",
+          "runId": "refresh20261109a",
+          "checkedAt": "2026-11-09T13:08:06Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-sx4-s-cross-ID6IhQge.html",
+          "availability": "available",
+          "note": "Karta Otomoto dostępna; cena 56 900 zł, rok produkcji 2019, 82 000 km, Suzuki SX4 S-Cross 1.4 BoosterJet 140 KM, benzyna, manual. Cena przekracza skonfigurowany limit 55 000 zł; brak zgody na wyjątek. Opis sprzedawcy deklaruje serwisowanie w ASO Suzuki, ostatni serwis przy 79 tys. km, bezwypadkowość i jednego właściciela. Kamera nie jest wymieniona.",
+          "photoCheck": null,
+          "evidence": [
+            {
+              "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-sx4-s-cross-ID6IhQge.html",
+              "checkedAt": "2026-11-09T13:08:06Z",
+              "kind": "seller",
+              "fields": [
+                "price",
+                "year",
+                "mileage",
+                "engine",
+                "transmission"
+              ],
+              "note": "Karta Otomoto i opis oferty podają cenę 56 900 zł, rocznik, przebieg, silnik oraz skrzynię."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IhQge",
+            "modelKey": "suzuki-sx4-s-cross",
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpibXN1MXhhMXcwbzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.1xenFrOOwnWNzr33mvSboOi6juuB-71ZRCAQiMaA7t0/image;s=5120x0;q=80"
+            ],
+            "saleType": "fixed_price",
+            "lpgInstalled": null
+          },
+          "changes": {
+            "photos": {
+              "before": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpibXN1MXhhMXcwbzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.1xenFrOOwnWNzr33mvSboOi6juuB-71ZRCAQiMaA7t0/image%3Bs%3D5120x0%3Bq%3D80"
+              ],
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpibXN1MXhhMXcwbzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.1xenFrOOwnWNzr33mvSboOi6juuB-71ZRCAQiMaA7t0/image%3Bs%3D5120x0%3Bq%3D80",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpibXN1MXhhMXcwbzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.1xenFrOOwnWNzr33mvSboOi6juuB-71ZRCAQiMaA7t0/image;s=5120x0;q=80"
+              ]
+            }
+          }
         }
       ],
       "assessment": {
@@ -456,7 +567,6 @@
         "failures": [],
         "unknowns": [
           "price_exception_requires_user_confirmation",
-          "gross_price_and_purchase_conditions",
           "body",
           "exact_engine_variant",
           "transmission",
@@ -467,7 +577,8 @@
         "preferenceNotes": []
       },
       "photos": [
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpibXN1MXhhMXcwbzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.1xenFrOOwnWNzr33mvSboOi6juuB-71ZRCAQiMaA7t0/image%3Bs%3D5120x0%3Bq%3D80"
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpibXN1MXhhMXcwbzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.1xenFrOOwnWNzr33mvSboOi6juuB-71ZRCAQiMaA7t0/image%3Bs%3D5120x0%3Bq%3D80",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpibXN1MXhhMXcwbzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.1xenFrOOwnWNzr33mvSboOi6juuB-71ZRCAQiMaA7t0/image;s=5120x0;q=80"
       ]
     },
     {
@@ -535,21 +646,38 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-sx4-s-cross-ID6IiOIJ.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-08T23:06:01+01:00",
-          "lastCheckedAt": "2026-11-08T23:06:01+01:00",
-          "lastVerifiedAt": "2026-11-08T23:06:01+01:00",
+          "lastAttemptAt": "2026-11-09T13:08:06Z",
+          "lastCheckedAt": "2026-11-09T13:08:06Z",
+          "lastVerifiedAt": "2026-11-09T13:08:06Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-sx4-s-cross-ID6IiOIJ.html",
-            "checkedAt": "2026-11-08T23:06:01+01:00",
+            "checkedAt": "2026-11-09T13:08:06Z",
             "availability": "available",
-            "note": "Karta dostępna; cena 50 000 zł, rok produkcji 2019, przebieg 145 245 km, 1.4 BoosterJet 140 KM, skrzynia manualna. Opis podaje „Forma finansowania: kredyt”; nie potwierdza ceny zakupu bez obowiązkowego finansowania, dlatego cena bez zmian. LPG nieustalone.",
-            "evidence": []
+            "note": "Karta Otomoto dostępna i oznaczona „DOSTĘPNY OD RĘKI”; 50 000 zł, 2019, 145 245 km, Suzuki SX4 S-Cross 1.4 BoosterJet 140 KM, benzyna, manual, SUV. Opis sprzedawcy wskazuje pochodzenie z Polski, 5 miejsc, ISOFIX i kamerę cofania; działanie kamery niezweryfikowane. Sprzedawca AAA AUTO prosi o kontakt telefoniczny przed przyjazdem w celu potwierdzenia fizycznej dostępności.",
+            "evidence": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-sx4-s-cross-ID6IiOIJ.html",
+                "checkedAt": "2026-11-09T13:08:06Z",
+                "kind": "seller",
+                "fields": [
+                  "price",
+                  "year",
+                  "mileage",
+                  "engine",
+                  "body",
+                  "transmission",
+                  "familyFitConfirmed",
+                  "cameraStatus"
+                ],
+                "note": "Karta i opis sprzedawcy podają bieżącą cenę i specyfikację oraz deklarowane ISOFIX i kamerę."
+              }
+            ]
           }
         }
       ],
-      "lastCheckedAt": "2026-11-08T23:06:01+01:00",
-      "lastVerifiedAt": "2026-11-08T23:06:01+01:00",
-      "lastAttemptAt": "2026-11-08T23:06:01+01:00",
+      "lastCheckedAt": "2026-11-09T13:08:06Z",
+      "lastVerifiedAt": "2026-11-09T13:08:06Z",
+      "lastAttemptAt": "2026-11-09T13:08:06Z",
       "history": [
         {
           "eventId": "67e8edaf2e1b32e3048e17078441071bed2387fd7426ddec3c971f411ebb535a",
@@ -804,6 +932,53 @@
               ]
             }
           }
+        },
+        {
+          "eventId": "47692ad65e2aff7652574608f750b897bb98c6e056696332b6009a33e43786c6",
+          "runId": "refresh20261109a",
+          "checkedAt": "2026-11-09T13:08:06Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-sx4-s-cross-ID6IiOIJ.html",
+          "availability": "available",
+          "note": "Karta Otomoto dostępna i oznaczona „DOSTĘPNY OD RĘKI”; 50 000 zł, 2019, 145 245 km, Suzuki SX4 S-Cross 1.4 BoosterJet 140 KM, benzyna, manual, SUV. Opis sprzedawcy wskazuje pochodzenie z Polski, 5 miejsc, ISOFIX i kamerę cofania; działanie kamery niezweryfikowane. Sprzedawca AAA AUTO prosi o kontakt telefoniczny przed przyjazdem w celu potwierdzenia fizycznej dostępności.",
+          "photoCheck": null,
+          "evidence": [
+            {
+              "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-sx4-s-cross-ID6IiOIJ.html",
+              "checkedAt": "2026-11-09T13:08:06Z",
+              "kind": "seller",
+              "fields": [
+                "price",
+                "year",
+                "mileage",
+                "engine",
+                "body",
+                "transmission",
+                "familyFitConfirmed",
+                "cameraStatus"
+              ],
+              "note": "Karta i opis sprzedawcy podają bieżącą cenę i specyfikację oraz deklarowane ISOFIX i kamerę."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:otomoto:6151440653",
+            "modelKey": "suzuki-sx4-s-cross",
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imx5bXU1ZHpnZ3pxaC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.ET6lgpi_7JRo-AA26Hr4DdrvEpgybYb_ZbCisGH4IIk/image;s=5120x0;q=100"
+            ],
+            "saleType": "fixed_price",
+            "lpgInstalled": null
+          },
+          "changes": {
+            "photos": {
+              "before": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imx5bXU1ZHpnZ3pxaC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.ET6lgpi_7JRo-AA26Hr4DdrvEpgybYb_ZbCisGH4IIk/image%3Bs%3D5120x0%3Bq%3D100"
+              ],
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imx5bXU1ZHpnZ3pxaC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.ET6lgpi_7JRo-AA26Hr4DdrvEpgybYb_ZbCisGH4IIk/image%3Bs%3D5120x0%3Bq%3D100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imx5bXU1ZHpnZ3pxaC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.ET6lgpi_7JRo-AA26Hr4DdrvEpgybYb_ZbCisGH4IIk/image;s=5120x0;q=100"
+              ]
+            }
+          }
         }
       ],
       "assessment": {
@@ -812,7 +987,6 @@
         "verdict": "check",
         "failures": [],
         "unknowns": [
-          "gross_price_and_purchase_conditions",
           "structural_history",
           "stroller_and_family_fit"
         ],
@@ -820,9 +994,10 @@
       },
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
-      "verdictNote": "gross_price_and_purchase_conditions; structural_history; stroller_and_family_fit",
+      "verdictNote": "structural_history; stroller_and_family_fit",
       "photos": [
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imx5bXU1ZHpnZ3pxaC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.ET6lgpi_7JRo-AA26Hr4DdrvEpgybYb_ZbCisGH4IIk/image%3Bs%3D5120x0%3Bq%3D100"
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imx5bXU1ZHpnZ3pxaC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.ET6lgpi_7JRo-AA26Hr4DdrvEpgybYb_ZbCisGH4IIk/image%3Bs%3D5120x0%3Bq%3D100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imx5bXU1ZHpnZ3pxaC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.ET6lgpi_7JRo-AA26Hr4DdrvEpgybYb_ZbCisGH4IIk/image;s=5120x0;q=100"
       ]
     },
     {
@@ -857,24 +1032,37 @@
         {
           "url": "https://www.olx.pl/d/oferta/suzuki-sx4-s-cross-suzuki-sx4-s-cross-1-4-140-km-automat-salon-pl-CID5-ID1d5Vpd.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-08T23:45:26+01:00",
-          "lastCheckedAt": "2026-11-08T23:45:26+01:00",
-          "lastVerifiedAt": "2026-11-08T23:45:26+01:00",
+          "lastAttemptAt": "2026-11-09T13:08:24+00:00",
+          "lastCheckedAt": "2026-11-09T13:08:24+00:00",
+          "lastVerifiedAt": "2026-11-09T13:08:24+00:00",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/suzuki-sx4-s-cross-suzuki-sx4-s-cross-1-4-140-km-automat-salon-pl-CID5-ID1d5Vpd.html",
-            "checkedAt": "2026-11-08T23:45:26+01:00",
+            "checkedAt": "2026-11-09T13:08:24+00:00",
             "availability": "available",
-            "note": "Karta OLX dostępna. Kliknięte miniatury galerii ujawniły osiem bezpośrednich HTTPS URL-i zdjęć, zapisanych w photos. Karta wyświetla 42 500 zł; sprzedawca podaje benzynę i fakturę VAT-marża, bez warunku finansowania. Opis wspomina lekko uszkodzony przedni zderzak. Instalacja LPG nie jest potwierdzona, więc lpgInstalled=null.",
-            "photoCheck": {
-              "status": "found",
-              "note": "Zapisano osiem bezpośrednich HTTPS adresów zdjęć z galerii."
-            }
+            "note": "Pełna karta OLX crawlowana dzisiaj; pokazuje aktywne elementy ogłoszenia, kontakt i cenę. Ogłoszenie dodano 03.11.2026. Atrybuty karty: VIN TSMJYAA2S00585730, 2018, benzyna, SUV, 1 373 cm³, 140 KM, automat, 88 700 km. Cena 42 500 zł; karta podaje fakturę VAT-marża i nie uzależnia ceny od finansowania. Sprzedawca prywatny. Sprzedawca opisuje lekko uszkodzony przedni zderzak; brak podstaw do wnioskowania o szkodzie konstrukcyjnej. Kamera cofania i czujniki wymieniono w opisie. LPG nie jest wymienione, ale nie zakładam jego braku; lpgInstalled pozostaje unknown (null). Dostępność fizyczną warto potwierdzić przed wyjazdem.",
+            "evidence": [
+              {
+                "fields": [
+                  "vin",
+                  "year",
+                  "mileage",
+                  "price",
+                  "bodyCode",
+                  "transmissionCode",
+                  "saleType"
+                ],
+                "url": "https://www.olx.pl/d/oferta/suzuki-sx4-s-cross-suzuki-sx4-s-cross-1-4-140-km-automat-salon-pl-CID5-ID1d5Vpd.html",
+                "checkedAt": "2026-11-09T13:08:24+00:00",
+                "kind": "seller",
+                "note": "Dane z atrybutów karty i opisu sprzedawcy; opis wyposażenia i stanu jest deklaracją sprzedawcy."
+              }
+            ]
           }
         }
       ],
-      "lastCheckedAt": "2026-11-08T23:45:26+01:00",
-      "lastVerifiedAt": "2026-11-08T23:45:26+01:00",
-      "lastAttemptAt": "2026-11-08T23:45:26+01:00",
+      "lastCheckedAt": "2026-11-09T13:08:24+00:00",
+      "lastVerifiedAt": "2026-11-09T13:08:24+00:00",
+      "lastAttemptAt": "2026-11-09T13:08:24+00:00",
       "history": [
         {
           "eventId": "f20f836e4603267ae5bdfc2595e40e89217cc0934dde9234682da119deca160c",
@@ -1099,6 +1287,51 @@
               ]
             }
           }
+        },
+        {
+          "eventId": "620c488191ca151722eca6eb45e74636abe6a7eea60bada6f3c9c8976135ca8a",
+          "runId": "refresh20261109a",
+          "checkedAt": "2026-11-09T13:08:24+00:00",
+          "url": "https://www.olx.pl/d/oferta/suzuki-sx4-s-cross-suzuki-sx4-s-cross-1-4-140-km-automat-salon-pl-CID5-ID1d5Vpd.html",
+          "availability": "available",
+          "note": "Pełna karta OLX crawlowana dzisiaj; pokazuje aktywne elementy ogłoszenia, kontakt i cenę. Ogłoszenie dodano 03.11.2026. Atrybuty karty: VIN TSMJYAA2S00585730, 2018, benzyna, SUV, 1 373 cm³, 140 KM, automat, 88 700 km. Cena 42 500 zł; karta podaje fakturę VAT-marża i nie uzależnia ceny od finansowania. Sprzedawca prywatny. Sprzedawca opisuje lekko uszkodzony przedni zderzak; brak podstaw do wnioskowania o szkodzie konstrukcyjnej. Kamera cofania i czujniki wymieniono w opisie. LPG nie jest wymienione, ale nie zakładam jego braku; lpgInstalled pozostaje unknown (null). Dostępność fizyczną warto potwierdzić przed wyjazdem.",
+          "photoCheck": null,
+          "evidence": [
+            {
+              "fields": [
+                "vin",
+                "year",
+                "mileage",
+                "price",
+                "bodyCode",
+                "transmissionCode",
+                "saleType"
+              ],
+              "url": "https://www.olx.pl/d/oferta/suzuki-sx4-s-cross-suzuki-sx4-s-cross-1-4-140-km-automat-salon-pl-CID5-ID1d5Vpd.html",
+              "checkedAt": "2026-11-09T13:08:24+00:00",
+              "kind": "seller",
+              "note": "Dane z atrybutów karty i opisu sprzedawcy; opis wyposażenia i stanu jest deklaracją sprzedawcy."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:olx:1109641355",
+            "vin": "TSMJYAA2S00585730",
+            "year": 2018,
+            "mileage": 88700,
+            "price": 42500,
+            "bodyCode": "crossover",
+            "engineVariant": "1.4-boosterjet-140",
+            "transmissionCode": "automatic",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "changes": {}
+          },
+          "changes": {
+            "changes": {
+              "before": null,
+              "after": {}
+            }
+          }
         }
       ],
       "assessment": {
@@ -1107,7 +1340,6 @@
         "verdict": "check",
         "failures": [],
         "unknowns": [
-          "gross_price_and_purchase_conditions",
           "camera_or_compatible_retrofit",
           "structural_history",
           "stroller_and_family_fit"
@@ -1116,7 +1348,7 @@
       },
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
-      "verdictNote": "gross_price_and_purchase_conditions; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "verdictNote": "camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
       "photos": [
         "https://ireland.apollo.olxcdn.com/v1/files/qn9l7fx8qlc53-PL/image%3Bs%3D1813x1360",
         "https://ireland.apollo.olxcdn.com/v1/files/8ynzim1hu3kl1-PL/image%3Bs%3D1813x1360",
@@ -1177,24 +1409,20 @@
         {
           "url": "https://autoplac.pl/oferta/suzuki/sx4-s-cross/1-4-2019r-c-cross-140km-automat-7941-1885-JC",
           "status": "available",
-          "lastAttemptAt": "2026-11-08T22:39:59+00:00",
+          "lastAttemptAt": "2026-11-09T13:13:26+00:00",
           "lastCheckedAt": "2026-11-08T19:52:50+01:00",
           "lastVerifiedAt": "2026-11-08T19:52:50+01:00",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/suzuki/sx4-s-cross/1-4-2019r-c-cross-140km-automat-7941-1885-JC",
-            "checkedAt": "2026-11-08T22:39:59+00:00",
+            "checkedAt": "2026-11-09T13:13:26+00:00",
             "availability": "access_error",
-            "note": "Otworzenie dokładnego URL zwróciło HTTP 404; nie można odczytać aktualnego ogłoszenia ani jego galerii. Błąd dostępu nie przesądza o sprzedaży.",
-            "photoCheck": {
-              "status": "access_error",
-              "note": "Karta zwróciła HTTP 404; brak możliwości sprawdzenia bezpośrednich HTTPS URL-i zdjęć."
-            }
+            "note": "Bezpośredni URL zwrócił 404 Not Found. Nie udało się odczytać karty; nie wnioskuję, że pojazd sprzedano ani usunięto. Cena, parametry i obecny status pozostają niezweryfikowane."
           }
         }
       ],
       "lastCheckedAt": "2026-11-08T19:52:50+01:00",
       "lastVerifiedAt": "2026-11-08T19:52:50+01:00",
-      "lastAttemptAt": "2026-11-08T22:39:59+00:00",
+      "lastAttemptAt": "2026-11-09T13:13:26+00:00",
       "history": [
         {
           "eventId": "a90ba532f6ef0ea10ae154e4e6c14a902280fc4d14bbcaf637e040258249b5b4",
@@ -1396,6 +1624,20 @@
             "id": "vin:TSMJYAA2S00717139"
           },
           "changes": {}
+        },
+        {
+          "eventId": "a0510b738a9856f66477855f9cb0d18c297ce2047e7ff961f3b7cf71d27b0247",
+          "runId": "refresh20261109a",
+          "checkedAt": "2026-11-09T13:13:26+00:00",
+          "url": "https://autoplac.pl/oferta/suzuki/sx4-s-cross/1-4-2019r-c-cross-140km-automat-7941-1885-JC",
+          "availability": "access_error",
+          "note": "Bezpośredni URL zwrócił 404 Not Found. Nie udało się odczytać karty; nie wnioskuję, że pojazd sprzedano ani usunięto. Cena, parametry i obecny status pozostają niezweryfikowane.",
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TSMJYAA2S00717139"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -1404,7 +1646,6 @@
         "verdict": "check",
         "failures": [],
         "unknowns": [
-          "gross_price_and_purchase_conditions",
           "body",
           "exact_engine_variant",
           "transmission",
@@ -1416,7 +1657,543 @@
       },
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
-      "verdictNote": "gross_price_and_purchase_conditions; body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
+      "verdictNote": "body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
+    },
+    {
+      "id": "listing:otomoto:6151074992",
+      "title": "Suzuki SX4 S-Cross 1.4 Boosterjet Allgrip Comfort+, 2018, manual",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-sx4-s-cross-ID6IhhAY.html"
+        }
+      ],
+      "year": 2018,
+      "bodyCode": "crossover",
+      "engineVariant": "1.4-boosterjet-140",
+      "transmissionCode": "manual",
+      "price": 52900,
+      "priceBasis": "gross_unconditional_total",
+      "saleType": "fixed_price",
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ino2YTZ5dGIwa3lkaC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.gc_N-kKJeRsQj_was5Q-WnsBvhWL7-eomivftxXm_34/image%3Bs%3D5120x0%3Bq%3D80"
+      ],
+      "offerType": "private",
+      "cameraStatus": "installed_confirmed",
+      "structuralDamageStatus": "unknown",
+      "familyFitConfirmed": false,
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "voivodeship": "wielkopolskie",
+        "city": "Luboń"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-09T13:15:00+01:00",
+      "modelKey": "suzuki-sx4-s-cross",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-sx4-s-cross-ID6IhhAY.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-09T13:15:00+01:00",
+          "lastCheckedAt": "2026-11-09T13:15:00+01:00",
+          "lastVerifiedAt": "2026-11-09T13:15:00+01:00",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-sx4-s-cross-ID6IhhAY.html",
+            "checkedAt": "2026-11-09T13:15:00+01:00",
+            "availability": "available",
+            "note": "Karta dostępna. Rok produkcji 2018, 1.4 benzyna 140 KM, manual, 4x4, 97 058 km, cena 52 900 zł; używany. Opis sprzedawcy określa samochód jako miejski crossover; typ techniczny portalu pokazuje Kompakt. Wyposażenie karty obejmuje kamerę cofania i ISOFIX. Pochodzenie: Francja; zarejestrowany w Polsce. Sprzedawca prywatny. Lokalizacja Luboń, Wielkopolskie. LPG nieustalone, karta podaje benzynę bez jasnej informacji o ewentualnej instalacji. Sprzedawca nie przedstawia niezależnego potwierdzenia stanu strukturalnego.",
+            "evidence": [
+              {
+                "fields": [
+                  "year",
+                  "bodyCode",
+                  "engineVariant",
+                  "transmissionCode",
+                  "price",
+                  "mileageKm",
+                  "saleType",
+                  "lpgInstalled",
+                  "cameraStatus",
+                  "location",
+                  "offerType"
+                ],
+                "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-sx4-s-cross-ID6IhhAY.html",
+                "checkedAt": "2026-11-09T13:15:00+01:00",
+                "kind": "seller",
+                "note": "Karta: przebieg, skrzynia i kompaktowe oznaczenie portalu (122–146); opis crossover/rok/silnik/manual (149–176); rok produkcji i dane (203–260); cena 52 900 zł (291–301, 438–445); kamera i ISOFIX (355–415); lokalizacja (434–436); osoba prywatna (416–424)."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-09T13:15:00+01:00",
+      "lastVerifiedAt": "2026-11-09T13:15:00+01:00",
+      "lastAttemptAt": "2026-11-09T13:15:00+01:00",
+      "history": [
+        {
+          "eventId": "2fb3e8a6891553a1f0548974ae379d9b9de6032a8199dcc768c2f11c4e7d700f",
+          "runId": "search-20261109",
+          "checkedAt": "2026-11-09T13:15:00+01:00",
+          "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-sx4-s-cross-ID6IhhAY.html",
+          "availability": "available",
+          "note": "Karta dostępna. Rok produkcji 2018, 1.4 benzyna 140 KM, manual, 4x4, 97 058 km, cena 52 900 zł; używany. Opis sprzedawcy określa samochód jako miejski crossover; typ techniczny portalu pokazuje Kompakt. Wyposażenie karty obejmuje kamerę cofania i ISOFIX. Pochodzenie: Francja; zarejestrowany w Polsce. Sprzedawca prywatny. Lokalizacja Luboń, Wielkopolskie. LPG nieustalone, karta podaje benzynę bez jasnej informacji o ewentualnej instalacji. Sprzedawca nie przedstawia niezależnego potwierdzenia stanu strukturalnego.",
+          "photoCheck": null,
+          "evidence": [
+            {
+              "fields": [
+                "year",
+                "bodyCode",
+                "engineVariant",
+                "transmissionCode",
+                "price",
+                "mileageKm",
+                "saleType",
+                "lpgInstalled",
+                "cameraStatus",
+                "location",
+                "offerType"
+              ],
+              "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-sx4-s-cross-ID6IhhAY.html",
+              "checkedAt": "2026-11-09T13:15:00+01:00",
+              "kind": "seller",
+              "note": "Karta: przebieg, skrzynia i kompaktowe oznaczenie portalu (122–146); opis crossover/rok/silnik/manual (149–176); rok produkcji i dane (203–260); cena 52 900 zł (291–301, 438–445); kamera i ISOFIX (355–415); lokalizacja (434–436); osoba prywatna (416–424)."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:otomoto:6151074992",
+            "title": "Suzuki SX4 S-Cross 1.4 Boosterjet Allgrip Comfort+, 2018, manual",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-sx4-s-cross-ID6IhhAY.html"
+              }
+            ],
+            "year": 2018,
+            "bodyCode": "crossover",
+            "engineVariant": "1.4-boosterjet-140",
+            "transmissionCode": "manual",
+            "price": 52900,
+            "priceBasis": "gross_unconditional_total",
+            "mileageKm": 97058,
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ino2YTZ5dGIwa3lkaC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.gc_N-kKJeRsQj_was5Q-WnsBvhWL7-eomivftxXm_34/image%3Bs%3D5120x0%3Bq%3D80"
+            ],
+            "offerType": "private",
+            "cameraStatus": "installed_confirmed",
+            "structuralDamageStatus": "unknown",
+            "familyFitConfirmed": false,
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "voivodeship": "wielkopolskie",
+              "city": "Luboń"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:otomoto:6151074992"
+            },
+            "title": {
+              "before": null,
+              "after": "Suzuki SX4 S-Cross 1.4 Boosterjet Allgrip Comfort+, 2018, manual"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-sx4-s-cross-ID6IhhAY.html"
+                }
+              ]
+            },
+            "year": {
+              "before": null,
+              "after": 2018
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "crossover"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.4-boosterjet-140"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "price": {
+              "before": null,
+              "after": 52900
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "gross_unconditional_total"
+            },
+            "mileageKm": {
+              "before": null,
+              "after": 97058
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ino2YTZ5dGIwa3lkaC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.gc_N-kKJeRsQj_was5Q-WnsBvhWL7-eomivftxXm_34/image%3Bs%3D5120x0%3Bq%3D80"
+              ]
+            },
+            "offerType": {
+              "before": null,
+              "after": "private"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "installed_confirmed"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "familyFitConfirmed": {
+              "before": null,
+              "after": false
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "voivodeship": "wielkopolskie",
+                "city": "Luboń"
+              }
+            },
+            "modelKey": {
+              "before": null,
+              "after": "suzuki-sx4-s-cross"
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "listing:otomoto:6151074992",
+        "modelKey": "suzuki-sx4-s-cross",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "structural_history",
+          "mileage",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "structural_history; mileage; stroller_and_family_fit",
+      "mileage": 97058
+    },
+    {
+      "id": "listing:olx:ID1d2dwf",
+      "modelKey": "suzuki-sx4-s-cross",
+      "vin": "TSMJYAA2S00718304",
+      "listingIds": [
+        "olx:ID1d2dwf",
+        "olx:1108753765"
+      ],
+      "urls": [
+        {
+          "url": "https://www.olx.pl/d/oferta/suzuki-sx4-s-cross-1-4-boosterjet-salon-polska-klimatronic-tempomat-CID5-ID1d2dwf.html",
+          "label": "OLX"
+        }
+      ],
+      "title": "Suzuki SX4 S-Cross 1.4 BoosterJet, Salon Polska, Klimatronic, Tempomat",
+      "year": 2019,
+      "price": 50000,
+      "priceLabel": "50 000 PLN; karta wskazuje finansowanie kredytem, brak jednoznacznego potwierdzenia ceny bezwarunkowej",
+      "mileage": 145245,
+      "engine": "1.4 BoosterJet · 140 KM",
+      "engineVariant": "1.4-boosterjet-140",
+      "body": "SUV",
+      "bodyCode": "crossover",
+      "transmission": "manualna",
+      "transmissionCode": "manual",
+      "seller": "AAA AUTO",
+      "offerType": "company",
+      "priceBasis": "unknown",
+      "cameraStatus": "installed_confirmed",
+      "structuralDamageStatus": "unknown",
+      "saleType": "fixed_price",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "voivodeship": "pomorskie",
+        "city": "Gdańsk",
+        "precision": "city",
+        "source": "listing"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-09T23:31:42Z",
+      "listingStates": [
+        {
+          "url": "https://www.olx.pl/d/oferta/suzuki-sx4-s-cross-1-4-boosterjet-salon-polska-klimatronic-tempomat-CID5-ID1d2dwf.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-09T23:31:42Z",
+          "lastCheckedAt": "2026-11-09T23:31:42Z",
+          "lastVerifiedAt": "2026-11-09T23:31:42Z",
+          "lastObservation": {
+            "url": "https://www.olx.pl/d/oferta/suzuki-sx4-s-cross-1-4-boosterjet-salon-polska-klimatronic-tempomat-CID5-ID1d2dwf.html",
+            "checkedAt": "2026-11-09T23:31:42Z",
+            "availability": "available",
+            "note": "Karta OLX była dostępna w publicznym odczycie; strona określa pojazd jako dostępny od ręki i umożliwia kontakt, karta została dodana 30.10.2026. Dane: VIN TSMJYAA2S00718304, rok 2019, benzyna 1.4 BoosterJet 140 KM, nadwozie SUV, manual, 145 245 km, 50 000 PLN, Gdańsk-Strzyża. Sprzedawcą jest AAA AUTO (konto firmowe). Lista wyposażenia wymienia kamerę cofania. Karta wskazuje „Forma finansowania: kredyt”, ale w treści ogólnej mówi też o możliwości finansowania; cena bez obowiązkowego kredytu nie jest potwierdzona. LPG i szkody strukturalne nieustalone. Ośmiu widocznych linków zdjęć nie zapisano, ponieważ wszystkie próby zwróciły HTTP 404.",
+            "evidence": [
+              {
+                "url": "https://www.olx.pl/d/oferta/suzuki-sx4-s-cross-1-4-boosterjet-salon-polska-klimatronic-tempomat-CID5-ID1d2dwf.html",
+                "checkedAt": "2026-11-09T23:31:42Z",
+                "kind": "seller",
+                "fields": [
+                  "vin",
+                  "year",
+                  "price",
+                  "mileage",
+                  "engineVariant",
+                  "bodyCode",
+                  "transmissionCode",
+                  "offerType",
+                  "saleType",
+                  "cameraStatus",
+                  "structuralDamageStatus",
+                  "location",
+                  "lpgInstalled"
+                ],
+                "note": "Karta i opis sprzedawcy podają dane auta, cenę, lokalizację, kamerę oraz formę finansowania kredytem. Brak jednoznacznego potwierdzenia, że kredyt jest opcjonalny dla ceny 50 000 PLN; LPG i strukturalność nieustalone."
+              },
+              {
+                "url": "https://gdansk.stat.gov.pl/publikacje-i-foldery/foldery/wojewodztwo-pomorskie-w-liczbach-2026%2C1%2C15.html",
+                "checkedAt": "2026-11-09T23:31:42Z",
+                "kind": "independent",
+                "fields": [
+                  "location.voivodeship"
+                ],
+                "note": "Urząd Statystyczny w Gdańsku publikuje dane dla województwa pomorskiego i miasta Gdańska; lokalizacja Gdańsk-Strzyża pochodzi z karty OLX."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-09T23:31:42Z",
+      "lastVerifiedAt": "2026-11-09T23:31:42Z",
+      "lastAttemptAt": "2026-11-09T23:31:42Z",
+      "history": [
+        {
+          "eventId": "5162b041b546e47ca367dd873d81a4dfbb616e6884b930dcdaba17784341d733",
+          "runId": "search-20261109-full",
+          "checkedAt": "2026-11-09T23:31:42Z",
+          "url": "https://www.olx.pl/d/oferta/suzuki-sx4-s-cross-1-4-boosterjet-salon-polska-klimatronic-tempomat-CID5-ID1d2dwf.html",
+          "availability": "available",
+          "note": "Karta OLX była dostępna w publicznym odczycie; strona określa pojazd jako dostępny od ręki i umożliwia kontakt, karta została dodana 30.10.2026. Dane: VIN TSMJYAA2S00718304, rok 2019, benzyna 1.4 BoosterJet 140 KM, nadwozie SUV, manual, 145 245 km, 50 000 PLN, Gdańsk-Strzyża. Sprzedawcą jest AAA AUTO (konto firmowe). Lista wyposażenia wymienia kamerę cofania. Karta wskazuje „Forma finansowania: kredyt”, ale w treści ogólnej mówi też o możliwości finansowania; cena bez obowiązkowego kredytu nie jest potwierdzona. LPG i szkody strukturalne nieustalone. Ośmiu widocznych linków zdjęć nie zapisano, ponieważ wszystkie próby zwróciły HTTP 404.",
+          "photoCheck": null,
+          "evidence": [
+            {
+              "url": "https://www.olx.pl/d/oferta/suzuki-sx4-s-cross-1-4-boosterjet-salon-polska-klimatronic-tempomat-CID5-ID1d2dwf.html",
+              "checkedAt": "2026-11-09T23:31:42Z",
+              "kind": "seller",
+              "fields": [
+                "vin",
+                "year",
+                "price",
+                "mileage",
+                "engineVariant",
+                "bodyCode",
+                "transmissionCode",
+                "offerType",
+                "saleType",
+                "cameraStatus",
+                "structuralDamageStatus",
+                "location",
+                "lpgInstalled"
+              ],
+              "note": "Karta i opis sprzedawcy podają dane auta, cenę, lokalizację, kamerę oraz formę finansowania kredytem. Brak jednoznacznego potwierdzenia, że kredyt jest opcjonalny dla ceny 50 000 PLN; LPG i strukturalność nieustalone."
+            },
+            {
+              "url": "https://gdansk.stat.gov.pl/publikacje-i-foldery/foldery/wojewodztwo-pomorskie-w-liczbach-2026%2C1%2C15.html",
+              "checkedAt": "2026-11-09T23:31:42Z",
+              "kind": "independent",
+              "fields": [
+                "location.voivodeship"
+              ],
+              "note": "Urząd Statystyczny w Gdańsku publikuje dane dla województwa pomorskiego i miasta Gdańska; lokalizacja Gdańsk-Strzyża pochodzi z karty OLX."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:olx:ID1d2dwf",
+            "modelKey": "suzuki-sx4-s-cross",
+            "vin": "TSMJYAA2S00718304",
+            "listingIds": [
+              "olx:ID1d2dwf",
+              "olx:1108753765"
+            ],
+            "urls": [
+              {
+                "url": "https://www.olx.pl/d/oferta/suzuki-sx4-s-cross-1-4-boosterjet-salon-polska-klimatronic-tempomat-CID5-ID1d2dwf.html",
+                "label": "OLX"
+              }
+            ],
+            "title": "Suzuki SX4 S-Cross 1.4 BoosterJet, Salon Polska, Klimatronic, Tempomat",
+            "year": 2019,
+            "price": 50000,
+            "priceLabel": "50 000 PLN; karta wskazuje finansowanie kredytem, brak jednoznacznego potwierdzenia ceny bezwarunkowej",
+            "mileage": 145245,
+            "engine": "1.4 BoosterJet · 140 KM",
+            "engineVariant": "1.4-boosterjet-140",
+            "body": "SUV",
+            "bodyCode": "crossover",
+            "transmission": "manualna",
+            "transmissionCode": "manual",
+            "seller": "AAA AUTO",
+            "offerType": "company",
+            "priceBasis": "unknown",
+            "cameraStatus": "installed_confirmed",
+            "structuralDamageStatus": "unknown",
+            "familyFitConfirmed": null,
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "voivodeship": "pomorskie",
+              "city": "Gdańsk",
+              "precision": "city",
+              "source": "listing"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:olx:ID1d2dwf"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "suzuki-sx4-s-cross"
+            },
+            "vin": {
+              "before": null,
+              "after": "TSMJYAA2S00718304"
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "olx:ID1d2dwf",
+                "olx:1108753765"
+              ]
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.olx.pl/d/oferta/suzuki-sx4-s-cross-1-4-boosterjet-salon-polska-klimatronic-tempomat-CID5-ID1d2dwf.html",
+                  "label": "OLX"
+                }
+              ]
+            },
+            "title": {
+              "before": null,
+              "after": "Suzuki SX4 S-Cross 1.4 BoosterJet, Salon Polska, Klimatronic, Tempomat"
+            },
+            "year": {
+              "before": null,
+              "after": 2019
+            },
+            "price": {
+              "before": null,
+              "after": 50000
+            },
+            "priceLabel": {
+              "before": null,
+              "after": "50 000 PLN; karta wskazuje finansowanie kredytem, brak jednoznacznego potwierdzenia ceny bezwarunkowej"
+            },
+            "mileage": {
+              "before": null,
+              "after": 145245
+            },
+            "engine": {
+              "before": null,
+              "after": "1.4 BoosterJet · 140 KM"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.4-boosterjet-140"
+            },
+            "body": {
+              "before": null,
+              "after": "SUV"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "crossover"
+            },
+            "transmission": {
+              "before": null,
+              "after": "manualna"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "seller": {
+              "before": null,
+              "after": "AAA AUTO"
+            },
+            "offerType": {
+              "before": null,
+              "after": "company"
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "unknown"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "installed_confirmed"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "voivodeship": "pomorskie",
+                "city": "Gdańsk",
+                "precision": "city",
+                "source": "listing"
+              }
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "listing:olx:ID1d2dwf",
+        "modelKey": "suzuki-sx4-s-cross",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_unconditional_purchase_price",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_unconditional_purchase_price; structural_history; stroller_and_family_fit"
     }
   ]
 }

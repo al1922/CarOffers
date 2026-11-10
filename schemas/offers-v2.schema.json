@@ -45,6 +45,8 @@
         "id": {"type": "string", "pattern": "^(?:listing:[A-Za-z0-9]+(?:[._:-][A-Za-z0-9]+)*|vin:[A-HJ-NPR-Za-hj-npr-z0-9]{17}|url:https?://[^\\s]+)$"},
         "modelKey": {"$ref": "#/$defs/key"},
         "vin": {"$ref": "#/$defs/vin"},
+        "firstRegistrationDate": {"type": ["string", "null"], "format": "date"},
+        "offerType": {"type": ["string", "null"], "enum": ["private", "company", "leasing_return", "unknown", null]},
         "listingIds": {"type": "array", "items": {"type": "string", "minLength": 1, "pattern": "^[A-Za-z0-9]+(?:[._:-][A-Za-z0-9]+)*$"}},
         "urls": {"type": "array", "items": {"$ref": "#/$defs/link"}},
         "photos": {"type": "array", "items": {"type": "string", "format": "uri", "pattern": "^https://"}},

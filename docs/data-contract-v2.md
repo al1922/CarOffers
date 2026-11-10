@@ -63,6 +63,8 @@ Archiwum nie jest wczytywane do aktywnej listy strony.
 | `verdict` | `match`, `check`, `fail`, historyczny alias `review` |
 | `specs`, `details` | Obiekty z dowolnymi kluczami i wartościami tekstowymi lub `null` |
 | `priceLabel`, `mileageLabel`, `engine`, `body`, `transmission`, `seller`, `subtitle`, `priority`, `verdictTitle`, `verdictNote` | Tekst albo `null` |
+| `firstRegistrationDate` | Data pierwszej rejestracji `YYYY-MM-DD` albo `null`; nie zastępuje roku produkcji. |
+| `offerType` | `private`, `company`, `leasing_return`, `unknown` albo `null`; zapisuj wyłącznie na podstawie źródła. |
 
 ### Lokalizacja oferty i późniejsze wyliczenie odległości
 

@@ -82,6 +82,127 @@ i kart. Migawka listy nie zastępuje otwarcia karty ani dowodów i nie potwierdz
 że oferta nadal jest dostępna. Każdą sprawdzoną stronę wyników zapisz jako
 `coverage.searchResults`, wraz z widocznymi listingami i ich URL-ami. Każdą próbę
 otwarcia karty zapisz w `coverage.listingUrlsChecked`, także gdy wystąpił błąd.
+Jeśli strona pokazuje link do następnej strony, zachowaj jego dokładny adres w
+`nextUrl`, żeby cache mógł wznowić paginację bez konstruowania URL-a.
+
+### Szybszy odczyt w Playwright
+
+Projekt udostępnia narzędzie `scripts/playwright-pages.mjs`, które odwiedza
+podane adresy w jednej przeglądarce i kontekście, bez ponownego uruchamiania
+Chromium dla każdej strony. Zwraca tekst i linki z renderowanej strony oraz
+metadane XHR/Fetch. Przykład:
+
+```powershell
+npm run browse:pages -- --url "https://sprzedajemy.pl/motoryzacja/samochody-osobowe/hyundai/i30" --url "https://sprzedajemy.pl/motoryzacja/samochody-osobowe/hyundai/i30?offset=30"
+```
+
+Gdy portal ma widoczny link do kolejnej strony, można podać jego selektor i
+limit, np. `--next-selector "a.next" --max-pages 5`. Narzędzie przechodzi wtedy
+po `href` linku w tej samej sesji i pomija URL-e już odwiedzone. `--max-pages`
+przyjmuje wartości 1–100; wartość ponad 1 wymaga `--next-selector`. Dla
+paginacji JavaScriptowej lub niestandardowej podaj jawne URL-e albo skorzystaj
+z interfejsu portalu.
+
+Przy stronie ładowanej dynamicznie podaj `--ready-selector "<selektor wyników>"`.
+`--include-api-json` dołącza JSON z odpowiedzi XHR/Fetch, jeśli odpowiedź ma do
+2 MB; domyślnie narzędzie zapisuje tylko ich URL, status i typ treści. Opcje
+`--block-types image,font,media` są dobrowolne i wymagają pomiaru dla źródła.
+Bez opcji paginacji narzędzie odwiedza wyłącznie podane URL-e; z `--next-selector`
+przechodzi też po widocznych linkach `href` do wskazanego limitu stron. Nie klika
+filtrów, nie loguje się, nie ponawia żądań i nie zapisuje ofert do bazy.
+
+### Adapter Sprzedajemy
+
+`scripts/sprzedajemy-search.mjs` jest pierwszym adapterem źródłowym. Na podstawie
+aktywnego `modelKey` odczytuje widoczne linki marki i modelu w kategoriach
+portalu, buduje filtrowany URL bez zgadywania slugów, pobiera widoczne karty z
+listy i przechodzi po linku „Następna”. Przy kilku kluczach modeli współdzieli
+odczyt stron kategorii marek w jednej sesji:
+
+```powershell
+npm run search:sprzedajemy -- --model-key hyundai-i30-iii-wagon --max-pages 2
+```
+
+Można powtórzyć `--model-key` dla kolejnych aktywnych modeli. Wynik jest migawką
+kandydatów w JSON na standardowym wyjściu, a nie plikiem wynikowym zadania:
+adapter nie otwiera kart, nie potwierdza dostępności i nie filtruje rocznika,
+ceny, przebiegu, nadwozia ani silnika. Przekaż kandydatów do zwykłego
+`candidateScreening` i kontroli kart. Nie używaj tej migawki bezpośrednio w
+`finish` ani imporcie. `--max-pages` domyślnie wynosi 1; niewczytane strony są
+jawnie wskazane w polu `remaining`.
+
+W aktywnym przebiegu użyj wejścia z `claim`, żeby adapter korzystał z profilu
+zamrożonego w zadaniu zamiast z bieżącej konfiguracji:
+
+```powershell
+python -B scripts/car-search.py claim --run <run-id> --worker <worker-id> --source sprzedajemy |
+  node scripts/sprzedajemy-search.mjs --claim-stdin --max-pages 2
+```
+
+W tym trybie adapter wymaga zadania `kind: search`, `state: running` i
+`sourceId: sprzedajemy`. Zwraca `taskId` oraz `coverage` (`searchUrls`,
+`pagesChecked`, `searchResults`, `listingUrlsChecked`) do wykorzystania przy
+przygotowaniu standardowego wyniku zadania. Dokładnie pasującą stronę z
+`sharedResultsCache` wykorzystuje zamiast ponownego wejścia; jej `nextUrl` jest
+przenoszony do cache kolejnego zadania, by można było kontynuować paginację bez
+odgadywania adresu. Cache nadal jest tylko migawką wyników. Adapter sam nie
+wywołuje `finish` i nie zapisuje plików w `runs/`.
+
+Wykonawca powinien utrzymywać jedną przeglądarkę i kontekst Playwright przez
+cały przydzielony zakres portalu. Dla stron wyników używaj nawigacji
+`waitUntil: "domcontentloaded"`, a następnie czekaj na selektor wyników lub
+odpowiedź danych, zamiast czekać na `networkidle`. Blokowanie fontów, mediów lub
+obrazów włączaj tylko wtedy, gdy pomiar dla danego portalu potwierdzi krótszy
+czas i zachowanie kompletności wyników. Przy otwieraniu kart odczytaj widoczne
+bezpośrednie URL-e HTTPS zdjęć; nie używaj samych zdjęć jako dowodu. Jeśli
+strona już pobrała XHR/Fetch z listą wyników, przetwarzaj tę odpowiedź z bieżącej
+sesji zamiast powtarzać to samo żądanie.
+
+### Pilotaż czytnika portali
+
+Po zmianie wspólnego czytnika można wykonać jednozapytaniowy, tylko odczytowy
+pilotaż dla wszystkich aktywnych źródeł:
+
+```powershell
+npm run pilot:portals
+```
+
+Pilotaż korzysta z profili z anulowanego przebiegu jako zamrożonych szablonów,
+ale nie zmienia kolejki. Dla każdego portalu otwiera stronę wyników, próbuje
+jedno zapytanie i zapisuje wyłącznie liczbę widocznych kandydatów, stan odczytu
+i błędy do `reports/portal-adapter-pilot.json`. Nie otwiera kart, nie tworzy
+ofert ani nie potwierdza kompletności wyszukiwania. Wyniki służą do wskazania
+portali wymagających osobnego selektora lub adaptera.
+
+Zweryfikowane selektory tekstowego pola wyszukiwania są zapisane w
+`config/portal-adapters.json`. Brak wpisu oznacza, że adapter nie wpisuje
+zapytania w zgadywane pole; najpierw używa już widocznych wyników. Gdy strona
+pokazuje wyłącznie konfigurację lub blokadę, pozostawia zakres niepełny.
+
+Strukturę publicznie widocznych formularzy, selektorów kart i paginacji można
+zebrać poleceniem `npm run inspect:portals`. Raport zapisuje nazwy i liczniki
+elementów DOM oraz metadane odpowiedzi XHR/Fetch; nie zapisuje ofert.
+
+Po pilotażu wyników można sprawdzić niewielką próbkę kart przez
+`npm run pilot:cards`. Polecenie wybiera tylko wcześniejsze próbki spoza aktywnej
+i archiwalnej bazy, odczytuje widoczne etykiety pól i nie wyciąga wniosków ze
+zdjęć. Raport trafia do `reports/portal-card-pilot.json`.
+
+Po kolejnych pilotażach czasy można porównać offline poleceniem
+`npm run compare:portal-pilots`. Czytnik czeka teraz na widoczne karty zamiast
+zawsze odczekiwać stałe 900 ms. Obrazy, fonty i media pozostają włączone, bo
+wcześniejszy pomiar Sprzedajemy nie wykazał zysku z ich blokowania.
+
+W pilotażu na publicznych wynikach Sprzedajemy wykonano siedem naprzemiennych
+prób każdego wariantu. Mediana nawigacji `domcontentloaded` wyniosła około
+1,72 s bez blokowania zasobów i 1,79 s z blokowaniem obrazów/fontów/mediów;
+różnica nie potwierdza korzyści z blokowania. To pomiar jednego portalu i nie
+przewiduje zachowania pozostałych źródeł.
+
+Te zasady ograniczają zbędne oczekiwanie, ale nie zmieniają zakresu wyszukiwania
+ani wymagań dowodowych. Przy CAPTCHA, błędzie certyfikatu, `robots.txt` lub
+odmowie dostępu nie próbuj obchodzić blokady; zapisz błąd i użyj właściwego
+statusu częściowego albo zablokowanego.
 
 Po zapisaniu wyniku zgodnego z formatem w `AGENTS.md`:
 
@@ -171,6 +292,30 @@ a potem `import-apply` oraz walidację.
 
 ## Walidacja i publikacja
 
+### Kontrola dostępności źródeł i Playwright
+
+Po `npm install` pobierz Chromium do lokalnego cache projektu i sprawdź strony
+wszystkich aktywnych portali:
+
+```powershell
+npm run install:browser
+npm run check:sources
+```
+
+Kontrola zwraca status HTTP, adres końcowy, tytuł, widoczność tekstu oraz
+metadane odpowiedzi XHR/Fetch. Nie zapisuje ofert, nie loguje się i nie omija
+blokad. `200` oznacza, że załadowała się strona, a nie że wyniki konkretnego
+modelu zostały przeszukane. `403`, błąd TLS lub strona wyzwania oznacza
+`blocked`; takiego źródła nie oznaczaj jako `no_matches`.
+
+Po udanym `claim` można uruchomić `npm run search:portal -- --claim-stdin` dla
+wspólnego odczytu widocznych kart wyników. Adapter wykonuje zapytania tekstowe
+z zamrożonego `queryPlan`, próbuje widocznej paginacji i zwraca wyłącznie
+`coverage.searchResults`; nie otwiera kart i nie potwierdza dostępności, ceny
+ani wyposażenia. Wynik pozostaje `partial`, dopóki wykonawca nie sprawdzi ofert.
+Dla portalu o innej strukturze dodaj dedykowaną strategię zamiast rozszerzać
+heurystykę tak, by zgadywała pola. Sprzedajemy zachowuje osobny adapter kategorii.
+
 ```powershell
 python -B -m unittest discover -s tests -v
 node --test tests/test_app.cjs
@@ -180,3 +325,9 @@ Nowe schematy są sprawdzane tym samym ograniczonym silnikiem JSON Schema co
 dotychczasowe oferty. Walidacja sprawdza typy i odwołania, nie prawdziwość źródeł.
 Nie publikowano zmian. Przed publikacją potrzebna jest walidacja ofert oraz
 akceptacja użytkownika zgodnie z założeniami projektu.
+
+### Pilotaż adapterów i pomiar czasu
+
+`npm run pilot:portals` wykonuje ograniczony, tylko do odczytu pilotaż dla aktywnych źródeł. Raport zapisuje liczbę widocznych kandydatów, pokrycie pól i czasy, ale nie tworzy zadań ani nie importuje ofert. `npm run inspect:portals` zapisuje strukturę kontrolek i kształt odpowiedzi JSON; sama obecność odpowiedzi API nie oznacza, że zawiera ona oferty. `npm run pilot:cards` sprawdza próbki kart z poprzednich wyników, o ile nie ma ich już w aktywnej bazie ani archiwum. Raport podaje sygnały obecności pól, nie potwierdza faktów o aucie.
+
+`npm run compare:portal-pilots` porównuje bazowy odczyt z adaptacyjnym oczekiwaniem na widoczne wyniki. W pilotażu z 9 listopada 2026 r. liczba kandydatów pozostała taka sama dla wszystkich 21 źródeł; dla 14 źródeł z kandydatami mediana czasu adaptera spadła z 2448 ms do 1635 ms. To pojedynczy pomiar stron wyników, nie gwarancja skrócenia pełnego wyszukiwania. Nie zidentyfikowano jeszcze sprawdzonego API z kompletnymi ofertami, więc adapter pozostaje oparty na widocznej stronie. Zasoby obrazów, fontów i mediów nie są blokowane, bo dotychczasowy test Sprzedajemy nie wykazał zysku z ich blokowania.

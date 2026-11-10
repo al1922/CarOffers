@@ -1,5 +1,6 @@
 """Behavioral tests for configuration changes, evidence gaps and task ownership."""
 import copy
+import importlib.util
 import json
 from pathlib import Path
 import subprocess
@@ -10,6 +11,10 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from search_core import assess, brand_key, load_config, write
+
+car_search_spec = importlib.util.spec_from_file_location("car_search_cli", ROOT / "scripts/car-search.py")
+car_search_cli = importlib.util.module_from_spec(car_search_spec)
+car_search_spec.loader.exec_module(car_search_cli)
 
 
 class SearchTests(unittest.TestCase):
@@ -34,6 +39,14 @@ class SearchTests(unittest.TestCase):
         self.assertEqual(self.evaluate()["verdict"], "fail")
         self.req["purchase"]["maxPriceGrossPln"] = 56000
         self.assertEqual(self.evaluate()["verdict"], "match")
+
+    def test_sources_require_unconditional_gross_price_without_financing(self):
+        self.assertFalse(self.req["purchase"]["mandatoryFinancingAllowed"])
+        self.assertTrue(all(source["purchaseConditions"]["cashPurchaseMustBeConfirmed"]
+                            for source in self.config["sources"]["sources"]))
+        self.offer["priceBasis"] = "financing_conditional"
+        self.assertEqual(self.evaluate()["verdict"], "check")
+        self.assertIn("gross_unconditional_purchase_price", self.evaluate()["unknowns"])
 
     def test_unknown_does_not_pass(self):
         self.req["purchase"]["priceExceptions"] = []
@@ -73,6 +86,7 @@ class SearchTests(unittest.TestCase):
         self.offer["engineVariant"] = "1.4-tgdi-140"
         self.offer["priceBasis"] = "net"
         self.assertEqual(self.evaluate()["verdict"], "check")
+        self.assertIn("gross_unconditional_purchase_price", self.evaluate()["unknowns"])
 
     def test_corolla_has_no_hidden_budget_exception(self):
         self.req["purchase"]["priceExceptions"] = []
@@ -124,13 +138,68 @@ class SearchTests(unittest.TestCase):
             self.assertNotEqual(cli("claim", "--run", "test", "--worker", "a").returncode, 0)
             b = cli("claim", "--run", "test", "--worker", "b")
             self.assertNotEqual(task["id"], json.loads(b.stdout)["id"])
-            result = {"taskId": task["id"], "outcome": "partial", "offers": [], "coverage": {"pagesChecked": 1}}
+            checked_at = "2026-01-01T00:00:00Z"
+            result_url = task["searchProfile"]["searchUrl"]
+            result = {"taskId": task["id"], "outcome": "partial", "checkedAt": checked_at,
+                      "offers": [], "errors": [],
+                      "coverage": {"searchUrls": [result_url], "pagesChecked": 1,
+                                   "remaining": "Search scope not fully checked",
+                                   "searchResults": [{"url": result_url, "checkedAt": checked_at, "listings": []}],
+                                   "listingUrlsChecked": []}}
             write(root / "runs/test/results" / (task["id"] + ".json"), result)
             done = cli("finish", "--run", "test", "--task", task["id"], "--result", "complete")
             self.assertNotEqual(done.returncode, 0)  # Cannot claim full completion for partial evidence.
             done = cli("finish", "--run", "test", "--task", task["id"], "--result", "partial")
             self.assertEqual(done.returncode, 0, done.stderr)
             self.assertEqual(snapshot, (root / "runs/test/snapshot.json").read_bytes())
+
+    def test_shared_search_cache_keeps_latest_page_and_next_url(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            run = Path(tmp) / "run"
+            results = run / "results"
+            results.mkdir(parents=True)
+            page_url = "https://sprzedajemy.pl/motoryzacja/samochody-osobowe/hyundai/i30"
+            listing_url = "https://sprzedajemy.pl/hyundai-i30-test"
+            tasks = []
+            for task_id, checked_at, title, next_url in [
+                ("older", "2026-11-08T10:00:00Z", "Old title", page_url + "?offset=30"),
+                ("newer", "2026-11-09T10:00:00Z", "Current title", page_url + "?offset=30&sort=new"),
+            ]:
+                tasks.append({"id": task_id, "kind": "search", "sourceId": "sprzedajemy",
+                              "modelKey": self.model["key"], "state": "partial"})
+                write(results / (task_id + ".json"), {
+                    "offers": [], "coverage": {"listingUrlsChecked": [], "searchResults": [{
+                        "url": page_url, "checkedAt": checked_at, "nextUrl": next_url,
+                        "listings": [{"title": title, "url": listing_url}],
+                    }]},
+                })
+            cache = car_search_cli.build_shared_search_cache(Path(tmp), run, {"tasks": tasks}, "sprzedajemy")
+            page = cache["checkedSearchPages"][0]
+            listing = cache["visibleListings"][0]
+            self.assertEqual(page["taskId"], "newer")
+            self.assertEqual(page["nextUrl"], page_url + "?offset=30&sort=new")
+            self.assertTrue(page["listingsComplete"])
+            self.assertEqual(listing["title"], "Current title")
+
+    def test_shared_search_cache_never_calls_truncated_listing_page_complete(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            run = Path(tmp) / "run"
+            results = run / "results"
+            results.mkdir(parents=True)
+            page_url = "https://sprzedajemy.pl/motoryzacja/samochody-osobowe/hyundai/i30"
+            listings = [{"title": f"Offer {index}", "url": f"https://sprzedajemy.pl/offer-{index}"}
+                        for index in range(301)]
+            task = {"id": "many", "kind": "search", "sourceId": "sprzedajemy",
+                    "modelKey": self.model["key"], "state": "partial"}
+            write(results / "many.json", {"offers": [], "coverage": {"searchResults": [{
+                "url": page_url, "checkedAt": "2026-11-09T10:00:00Z", "nextUrl": page_url + "?offset=30",
+                "listings": listings,
+            }]}})
+            cache = car_search_cli.build_shared_search_cache(Path(tmp), run, {"tasks": [task]}, "sprzedajemy")
+            page = cache["checkedSearchPages"][0]
+            self.assertEqual(page["listingCount"], 301)
+            self.assertEqual(page["cachedListingCount"], 300)
+            self.assertFalse(page["listingsComplete"])
 
 
 if __name__ == "__main__":

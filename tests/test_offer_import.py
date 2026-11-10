@@ -20,7 +20,7 @@ class ImportTests(unittest.TestCase):
         self.tmp = tempfile.TemporaryDirectory()
         self.addCleanup(self.tmp.cleanup)
         self.root = Path(self.tmp.name)
-        for folder in ("config", "knowledge", "offers"):
+        for folder in ("config", "knowledge", "offers", "schemas"):
             shutil.copytree(ROOT / folder, self.root / folder)
         self.config = load_config(self.root)
         self.model = self.config["models"]["models"][0]
@@ -37,16 +37,29 @@ class ImportTests(unittest.TestCase):
                       "observation": {"url": "https://www.otomoto.pl/test1", "checkedAt": "2026-11-07T10:00:00Z",
                                       "availability": "available", "note": "Odczytano kartę ogłoszenia."}}
 
-    def run_fixture(self, name="test", offer=None):
+    def run_fixture(self, name="test", offer=None, kind="search"):
         run = self.root / "runs" / name
         task_id = "otomoto--" + self.key
-        write(run / "tasks.json", {"tasks": [{"id": task_id, "modelKey": self.key,
-                                             "sourceId": "otomoto", "state": "partial"}]})
+        selected_offer = copy.deepcopy(offer or self.offer)
+        task = {"id": task_id, "kind": kind, "modelKey": self.key,
+                "sourceId": "otomoto", "state": "partial"}
+        if kind == "refresh":
+            task["refreshTargets"] = [{"offerId": selected_offer["id"], "url": selected_offer["observation"]["url"]}]
+            selected_offer["observation"].setdefault("photoCheck", {
+                "status": "access_error" if selected_offer["observation"]["availability"] == "access_error" else "no_direct_https",
+                "note": "Karta nie ujawnia bezpośredniego URL-a HTTPS zdjęcia."})
+        write(run / "tasks.json", {"tasks": [task]})
         content = {"config": self.config, "knowledge": {self.key: read(self.root / self.model["knowledgeFile"])}}
         write(run / "snapshot.json", {**content, "sha256": importer.digest(content)})
         result = {"taskId": task_id, "outcome": "partial", "checkedAt": "2026-11-07T12:00:00Z",
-                  "coverage": {"searchUrls": ["https://www.otomoto.pl/"], "pagesChecked": 1, "remaining": "Dalsze strony"},
-                  "offers": [copy.deepcopy(offer or self.offer)], "errors": []}
+                  "coverage": {"searchUrls": [selected_offer["observation"]["url"] if kind == "refresh" else "https://www.otomoto.pl/"], "pagesChecked": 1,
+                               "remaining": "Dalsze strony",
+                               "searchResults": [{"url": "https://www.otomoto.pl/",
+                                                  "checkedAt": "2026-11-07T11:00:00Z",
+                                                  "listings": [{"title": selected_offer.get("title", "Test i30"),
+                                                                "url": selected_offer["observation"]["url"]}]}],
+                               "listingUrlsChecked": [selected_offer["observation"]["url"]]},
+                  "offers": [selected_offer], "errors": []}
         write(run / "results" / (task_id + ".json"), result)
         return run
 
@@ -71,13 +84,32 @@ class ImportTests(unittest.TestCase):
         self.assertEqual(len(self.preview()["changes"]), 0)
         self.assertEqual(importer.apply(self.root, "test"), "no_changes")
 
+    def test_legacy_mileage_km_is_canonicalized_and_conflicts_are_rejected(self):
+        incoming = copy.deepcopy(self.offer)
+        incoming["mileage"] = None
+        incoming["mileageKm"] = 94500
+        self.run_fixture("legacy-mileage", incoming)
+        self.preview("legacy-mileage")
+        importer.apply(self.root, "legacy-mileage")
+        self.assertEqual(self.stored()["mileage"], 94500)
+        self.assertNotIn("mileageKm", self.stored())
+
+        conflict = copy.deepcopy(self.offer)
+        conflict["mileage"] = 90000
+        conflict["mileageKm"] = 95000
+        self.run_fixture("conflicting-mileage", conflict)
+        with self.assertRaisesRegex(ValueError, "conflicting mileage"):
+            self.preview("conflicting-mileage")
+
     def test_price_history_and_sparse_update_preserves_facts(self):
         self.run_fixture()
         self.preview()
         importer.apply(self.root, "test")
         incoming = {"id": self.offer["id"], "price": 48000, "year": None,
                     "observation": {**self.offer["observation"], "checkedAt": "2026-11-07T11:00:00Z"}}
-        self.run_fixture("update", incoming)
+        incoming.update(title=self.offer["title"], urls=self.offer["urls"], location=self.offer["location"],
+                        saleType=self.offer["saleType"], lpgInstalled=self.offer["lpgInstalled"])
+        self.run_fixture("update", incoming, kind="refresh")
         self.preview("update")
         importer.apply(self.root, "update")
         self.assertEqual(self.stored()["year"], 2020)
@@ -91,7 +123,7 @@ class ImportTests(unittest.TestCase):
         incoming = {"id": self.offer["id"], "price": 1,
                     "observation": {**self.offer["observation"], "checkedAt": "2026-11-07T11:00:00Z",
                                     "availability": "access_error", "note": "HTTP 410; nie ustalono sprzedaży."}}
-        self.run_fixture("error", incoming)
+        self.run_fixture("error", incoming, kind="refresh")
         self.preview("error")
         importer.apply(self.root, "error")
         stored = self.stored()
@@ -169,7 +201,7 @@ class ImportTests(unittest.TestCase):
         self.preview("second")
         importer.apply(self.root, "second")
         self.assertEqual(len(read(self.path)["offers"]), 1)
-        self.assertEqual(len(self.stored()["listingStates"]), 2)
+        self.assertEqual(len(self.stored()["listingStates"]), 1)
 
     def test_duplicate_observation_in_new_run_does_not_duplicate_history(self):
         self.run_fixture()
@@ -206,7 +238,9 @@ class ImportTests(unittest.TestCase):
         self.assertEqual(self.stored()["history"][0]["evidence"][0]["kind"], "independent")
         incoming = {"id": self.offer["id"], "location": {"status": "not_provided"},
                     "observation": {**self.offer["observation"], "checkedAt": "2026-11-07T11:00:00Z"}}
-        self.run_fixture("sparse", incoming)
+        incoming.update(title=self.offer["title"], urls=self.offer["urls"],
+                        saleType=self.offer["saleType"], lpgInstalled=self.offer["lpgInstalled"])
+        self.run_fixture("sparse", incoming, kind="refresh")
         self.preview("sparse")
         importer.apply(self.root, "sparse")
         self.assertEqual(self.stored()["location"]["city"], "Warszawa")

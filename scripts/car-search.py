@@ -65,7 +65,7 @@ def build_query_plan(source, model, requirements, knowledge):
     native_filters = {key: value for key, value in filter_values.items()
                       if key in source["filters"] and value is not None}
     prefix = f"{model['brand']} {model['model']}"
-    queries = [{"id": "model-body", "text": " ".join([prefix, model["generation"], *body_terms])}]
+    queries = [{"id": "model-body", "text": " ".join([prefix, *([model["generation"]] if model.get("generation") else []), *body_terms])}]
     engine_queries = []
     for variant in model["allowedEngineVariants"]:
         aliases = engine_search_aliases(variant, knowledge)
@@ -113,19 +113,36 @@ def build_shared_search_cache(root, run, queue, source_id):
             if not isinstance(page, dict) or not isinstance(page.get("url"), str):
                 continue
             page_key = page["url"]
-            pages.setdefault(page_key, {"url": page_key, "checkedAt": page.get("checkedAt"),
-                                         "queryId": page.get("queryId"), "taskId": prior["id"],
-                                         "modelKey": prior.get("modelKey")})
-            for listing in page.get("listings", []):
+            page_listings = page.get("listings")
+            listing_count = len(page_listings) if isinstance(page_listings, list) else None
+            page_entry = {"url": page_key, "checkedAt": page.get("checkedAt"),
+                          "queryId": page.get("queryId"), "nextUrl": page.get("nextUrl"),
+                          "listingCount": listing_count, "taskId": prior["id"],
+                          "modelKey": prior.get("modelKey")}
+            previous_page = pages.get(page_key)
+            if previous_page is None or (page_entry.get("checkedAt") or "") > (previous_page.get("checkedAt") or ""):
+                pages[page_key] = page_entry
+            for listing in page_listings if isinstance(page_listings, list) else []:
                 if not isinstance(listing, dict) or not isinstance(listing.get("url"), str):
                     continue
                 listing_key = listing["url"]
-                snippets.setdefault(listing_key, {**listing, "pageUrl": page_key,
-                                                   "checkedAt": page.get("checkedAt"),
-                                                   "taskId": prior["id"],
-                                                   "modelKey": prior.get("modelKey")})
+                snippet_entry = {**listing, "pageUrl": page_key,
+                                 "checkedAt": page.get("checkedAt"),
+                                 "taskId": prior["id"],
+                                 "modelKey": prior.get("modelKey")}
+                previous_snippet = snippets.get(listing_key)
+                if previous_snippet is None or (snippet_entry.get("checkedAt") or "") > (previous_snippet.get("checkedAt") or ""):
+                    snippets[listing_key] = snippet_entry
     ordered_pages = sorted(pages.values(), key=lambda item: item.get("checkedAt") or "", reverse=True)[:100]
     ordered_snippets = sorted(snippets.values(), key=lambda item: item.get("checkedAt") or "", reverse=True)[:300]
+    cached_counts = {}
+    for snippet in ordered_snippets:
+        page_url = snippet.get("pageUrl")
+        cached_counts[page_url] = cached_counts.get(page_url, 0) + 1
+    for page in ordered_pages:
+        cached_count = cached_counts.get(page["url"], 0)
+        page["cachedListingCount"] = cached_count
+        page["listingsComplete"] = page.get("listingCount") is not None and cached_count == page["listingCount"]
     return {"checkedSearchPages": ordered_pages, "visibleListings": ordered_snippets,
             "listingUrlsChecked": sorted(checked_urls)[-500:]}
 

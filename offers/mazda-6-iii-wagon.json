@@ -1,11 +1,288 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-10",
   "model": {
     "key": "mazda-6-iii-wagon",
     "name": "Mazda 6 III Wagon",
     "description": "Kombi (Wagon)",
     "requirements": "Mazda 6 III Wagon; 2.0 Skyactiv-G 145 KM; 2.0 Skyactiv-G 165 KM; rocznik od 2018 do 2020; maks. 55 000 zł brutto według ceny podanej w ogłoszeniu; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 170 000 km preferowany; kamera obecna lub potwierdzona możliwość montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji."
   },
-  "offers": []
+  "offers": [
+    {
+      "id": "listing:autoplac:5298-7669-VQ",
+      "title": "Mazda 6 III 2.0 kombi, 2018, manual, 50 000 km",
+      "urls": [
+        {
+          "url": "https://autoplac.pl/oferta/mazda/6/iii-2-0-2018r-uszkodzona-pali-jezdzi-bogate-wyposazenie-krajowa-5298-7669-VQ",
+          "label": "Ogłoszenie Autoplac"
+        }
+      ],
+      "photos": [
+        "https://euw2-cdn.autoplac.pl/v1/p/a85f1336-9128-4d74-b0f9-25de9dbee2f3?f=1920%3Awebp"
+      ],
+      "year": 2018,
+      "price": 55000,
+      "priceLabel": "55 000 zł brutto",
+      "mileage": 50000,
+      "mileageLabel": "50 000 km",
+      "engine": "2.0 benzyna · 1 998 cm³ · moc niepodana",
+      "body": "Kombi",
+      "bodyCode": "wagon",
+      "transmission": "manualna",
+      "transmissionCode": "manual",
+      "seller": "Osoba prywatna",
+      "offerType": "private",
+      "priceBasis": "gross_unconditional_total",
+      "cameraStatus": "unknown",
+      "structuralDamageStatus": "unknown",
+      "saleType": "fixed_price",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "city": "Rybnik",
+        "precision": "city",
+        "source": "listing",
+        "checkedAt": "2026-11-10",
+        "voivodeship": "Mazowieckie"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-10T00:46:48Z",
+      "modelKey": "mazda-6-iii-wagon",
+      "listingStates": [
+        {
+          "url": "https://autoplac.pl/oferta/mazda/6/iii-2-0-2018r-uszkodzona-pali-jezdzi-bogate-wyposazenie-krajowa-5298-7669-VQ",
+          "status": "available",
+          "lastAttemptAt": "2026-11-10T00:46:48Z",
+          "lastCheckedAt": "2026-11-10T00:46:48Z",
+          "lastVerifiedAt": "2026-11-10T00:46:48Z",
+          "lastObservation": {
+            "url": "https://autoplac.pl/oferta/mazda/6/iii-2-0-2018r-uszkodzona-pali-jezdzi-bogate-wyposazenie-krajowa-5298-7669-VQ",
+            "checkedAt": "2026-11-10T00:46:48Z",
+            "availability": "available",
+            "note": "Publiczna karta z widocznymi przyciskami Napisz/Pokaż numer i ceną 55 000 zł brutto; ostatnia aktualizacja 2 tygodnie temu. Podaje 2018, benzyna, 1 998 cm³, manual, 50 000 km, Rybnik oraz Uszkodzony: Tak. Moc i rodzaj szkody niewskazane; kamera i LPG niewskazane. Lokalizacja pokazuje niezgodność województwa i kodu z miastem, zapisano wyłącznie miasto. Bezpośredni HTTPS URL pierwszego zdjęcia galerii został ujawniony na karcie.",
+            "evidence": [
+              {
+                "url": "https://autoplac.pl/oferta/mazda/6/iii-2-0-2018r-uszkodzona-pali-jezdzi-bogate-wyposazenie-krajowa-5298-7669-VQ",
+                "checkedAt": "2026-11-10T00:46:48Z",
+                "kind": "seller",
+                "fields": [
+                  "year",
+                  "price",
+                  "mileage",
+                  "engine",
+                  "bodyCode",
+                  "transmissionCode",
+                  "offerType",
+                  "saleType",
+                  "location",
+                  "cameraStatus",
+                  "lpgInstalled",
+                  "structuralDamageStatus"
+                ],
+                "note": "Dane z karty: 2018, 2.0 benzyna, 1998 cm³, manual, 50 000 km, 55 000 zł brutto, oferta prywatna, Rybnik, Uszkodzony: Tak. Brak mocy i opisu zakresu uszkodzeń; kamera/LPG niepodane. Cena nie jest aukcyjna."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-10T00:46:48Z",
+      "lastVerifiedAt": "2026-11-10T00:46:48Z",
+      "lastAttemptAt": "2026-11-10T00:46:48Z",
+      "history": [
+        {
+          "eventId": "6f9c00239ad788137b38c0529f0fbe209a02b2aa92837970ec0e7726c427fd8a",
+          "runId": "search-20261110-full",
+          "checkedAt": "2026-11-10T00:46:48Z",
+          "url": "https://autoplac.pl/oferta/mazda/6/iii-2-0-2018r-uszkodzona-pali-jezdzi-bogate-wyposazenie-krajowa-5298-7669-VQ",
+          "availability": "available",
+          "note": "Publiczna karta z widocznymi przyciskami Napisz/Pokaż numer i ceną 55 000 zł brutto; ostatnia aktualizacja 2 tygodnie temu. Podaje 2018, benzyna, 1 998 cm³, manual, 50 000 km, Rybnik oraz Uszkodzony: Tak. Moc i rodzaj szkody niewskazane; kamera i LPG niewskazane. Lokalizacja pokazuje niezgodność województwa i kodu z miastem, zapisano wyłącznie miasto. Bezpośredni HTTPS URL pierwszego zdjęcia galerii został ujawniony na karcie.",
+          "photoCheck": null,
+          "evidence": [
+            {
+              "url": "https://autoplac.pl/oferta/mazda/6/iii-2-0-2018r-uszkodzona-pali-jezdzi-bogate-wyposazenie-krajowa-5298-7669-VQ",
+              "checkedAt": "2026-11-10T00:46:48Z",
+              "kind": "seller",
+              "fields": [
+                "year",
+                "price",
+                "mileage",
+                "engine",
+                "bodyCode",
+                "transmissionCode",
+                "offerType",
+                "saleType",
+                "location",
+                "cameraStatus",
+                "lpgInstalled",
+                "structuralDamageStatus"
+              ],
+              "note": "Dane z karty: 2018, 2.0 benzyna, 1998 cm³, manual, 50 000 km, 55 000 zł brutto, oferta prywatna, Rybnik, Uszkodzony: Tak. Brak mocy i opisu zakresu uszkodzeń; kamera/LPG niepodane. Cena nie jest aukcyjna."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:autoplac:5298-7669-VQ",
+            "title": "Mazda 6 III 2.0 kombi, 2018, manual, 50 000 km",
+            "urls": [
+              {
+                "url": "https://autoplac.pl/oferta/mazda/6/iii-2-0-2018r-uszkodzona-pali-jezdzi-bogate-wyposazenie-krajowa-5298-7669-VQ",
+                "label": "Ogłoszenie Autoplac"
+              }
+            ],
+            "photos": [
+              "https://euw2-cdn.autoplac.pl/v1/p/a85f1336-9128-4d74-b0f9-25de9dbee2f3?f=1920%3Awebp"
+            ],
+            "year": 2018,
+            "price": 55000,
+            "priceLabel": "55 000 zł brutto",
+            "mileage": 50000,
+            "mileageLabel": "50 000 km",
+            "engine": "2.0 benzyna · 1 998 cm³ · moc niepodana",
+            "engineVariant": null,
+            "body": "Kombi",
+            "bodyCode": "wagon",
+            "transmission": "manualna",
+            "transmissionCode": "manual",
+            "seller": "Osoba prywatna",
+            "offerType": "private",
+            "priceBasis": "gross_unconditional_total",
+            "cameraStatus": "unknown",
+            "structuralDamageStatus": "unknown",
+            "familyFitConfirmed": null,
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "city": "Rybnik",
+              "precision": "city",
+              "source": "listing",
+              "checkedAt": "2026-11-10",
+              "voivodeship": "Mazowieckie"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:autoplac:5298-7669-VQ"
+            },
+            "title": {
+              "before": null,
+              "after": "Mazda 6 III 2.0 kombi, 2018, manual, 50 000 km"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://autoplac.pl/oferta/mazda/6/iii-2-0-2018r-uszkodzona-pali-jezdzi-bogate-wyposazenie-krajowa-5298-7669-VQ",
+                  "label": "Ogłoszenie Autoplac"
+                }
+              ]
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://euw2-cdn.autoplac.pl/v1/p/a85f1336-9128-4d74-b0f9-25de9dbee2f3?f=1920%3Awebp"
+              ]
+            },
+            "year": {
+              "before": null,
+              "after": 2018
+            },
+            "price": {
+              "before": null,
+              "after": 55000
+            },
+            "priceLabel": {
+              "before": null,
+              "after": "55 000 zł brutto"
+            },
+            "mileage": {
+              "before": null,
+              "after": 50000
+            },
+            "mileageLabel": {
+              "before": null,
+              "after": "50 000 km"
+            },
+            "engine": {
+              "before": null,
+              "after": "2.0 benzyna · 1 998 cm³ · moc niepodana"
+            },
+            "body": {
+              "before": null,
+              "after": "Kombi"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmission": {
+              "before": null,
+              "after": "manualna"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "seller": {
+              "before": null,
+              "after": "Osoba prywatna"
+            },
+            "offerType": {
+              "before": null,
+              "after": "private"
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "gross_unconditional_total"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "city": "Rybnik",
+                "precision": "city",
+                "source": "listing",
+                "checkedAt": "2026-11-10",
+                "voivodeship": "Mazowieckie"
+              }
+            },
+            "modelKey": {
+              "before": null,
+              "after": "mazda-6-iii-wagon"
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "listing:autoplac:5298-7669-VQ",
+        "modelKey": "mazda-6-iii-wagon",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "exact_engine_variant",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
+    }
+  ]
 }

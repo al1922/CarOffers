@@ -193,6 +193,15 @@ def validate_worker_result(result, task, model, root=ROOT, require_search_cache=
     for index, offer in enumerate(result["offers"]):
         if not isinstance(offer, dict):
             raise ValueError(f"Offer {index} must be an object")
+        if "mileageKm" in offer:
+            legacy_mileage = offer.pop("mileageKm")
+            if "mileage" in offer and offer["mileage"] is not None and legacy_mileage is not None and offer["mileage"] != legacy_mileage:
+                raise ValueError(f"Offer {index} has conflicting mileage and mileageKm")
+            if offer.get("mileage") is None:
+                offer["mileage"] = legacy_mileage
+        engine_variant = offer.get("engineVariant")
+        if engine_variant is not None and engine_variant not in model.get("allowedEngineVariants", []):
+            raise ValueError(f"Offer {index} engineVariant is not in the model catalog: {engine_variant}")
         observation = validate_observation(offer, result, model, root)
         if task.get("kind") == "refresh" and task.get("photoAuditRequired"):
             photo_check = observation.get("photoCheck")
@@ -492,7 +501,7 @@ def prepare(root, run_id, config):
                 archived.append(archived_offer)
                 changes.append({"taskId": None, "offerId": offer["id"], "kind": "archived",
                                 "availability": "sold_or_removed", "reason": "all_listings_confirmed_closed",
-                                "verdict": offer.get("verdict")})
+                                "verdict": offer.get("verdict"), "fields": {}})
             else:
                 kept.append(offer)
         if len(kept) != len(active):

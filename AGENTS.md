@@ -141,14 +141,47 @@ Jeśli zadanie ma `kind: search`, przeszukuj pełny zakres portalu/modelu zgodni
 z profilem zadania. Wykorzystuj `searchProfile.queryPlan`: filtry portalu,
 zapytanie bazowe, następnie warianty silnika. Zapisuj faktycznie odwiedzone
 URL-e wyników w `coverage.searchUrls`, a z każdej strony utrwalaj `coverage.searchResults`
-(URL strony, czas, opcjonalne `queryId`, widoczne listings z tytułem, URL-em i
-polami). To migawka listy, nie dowód z karty. `claim` może przekazać
+(URL strony, czas, widoczny `nextUrl` jeśli istnieje, opcjonalne `queryId`,
+widoczne listings z tytułem, URL-em i polami). To migawka listy, nie dowód z karty. `claim` może przekazać
 `sharedResultsCache` z wynikami innych zadań tego samego portalu i przebiegu.
 Wykorzystuj go, aby nie otwierać ponownie identycznych stron i URL-i kart już
 odczytanych. Cache i snippets służą do wskazania kandydatów, nie potwierdzają
 dostępności ani faktów z karty i nie przenoszą kwalifikacji między modelami.
+Po `claim` wspólny czytnik Playwright można uruchomić przez
+`npm run search:portal -- --claim-stdin`; przy źródle Sprzedajemy użyj jego
+dedykowanego adaptera kategorii. Wspólny czytnik zapisuje tylko migawkę
+widocznych wyników i pozostawia `offers` puste, więc wykonawca nadal musi
+otworzyć kandydatów, sprawdzić karty oraz przygotować standardowy wynik.
+Nie uznawaj wyniku `partial` za pełne pokrycie. Blokady i błędy TLS kończ jako
+`blocked` lub `partial`; nie omijaj ich i nie zwracaj `no_matches`.
 Każdy bezpośredni URL karty, której otwarcie próbowano (także z błędem), wpisz
 do `coverage.listingUrlsChecked`.
+
+Przy odczycie przez Playwright utrzymuj jedną instancję przeglądarki i kontekst
+na wykonawcę oraz używaj ich dla kolejnych stron tego portalu. Nawiguj z
+`waitUntil: "domcontentloaded"`, a potem czekaj na element wyników albo konkretne
+żądanie danych; nie czekaj na `networkidle`, bo analityka i reklamy mogą
+utrzymywać połączenia bez końca. Blokowanie obrazów, fontów i mediów włączaj
+tylko po pomiarze potwierdzającym krótsze ładowanie bez utraty danych wyników;
+przed odczytem kart odczytaj widoczne bezpośrednie adresy HTTPS zdjęć. Odczytuj
+odpowiedzi XHR/Fetch z tej samej normalnej sesji portalu zamiast ponownie wysyłać
+już zaobserwowane żądania. Dla seryjnego odczytu znanych URL-i możesz użyć
+`npm run browse:pages -- --url <https-url>`, które współdzieli kontekst i zapisuje
+zrzut renderowanej strony oraz metadane XHR/Fetch; JSON odpowiedzi włączaj tylko
+gdy jest potrzebny przez `--include-api-json`. Zwykłą paginację po widocznym
+linku można przejść przez `--next-selector <css> --max-pages <limit>`; narzędzie
+deduplikuje odwiedzone URL-e.
+Dla portalu `sprzedajemy` możesz użyć `npm run search:sprzedajemy -- --model-key
+<key>` do zbudowania URL-a z widocznych kategorii i zebrania migawki kandydatów.
+To nie jest wynik zadania ani dowód z karty: stosuj screening, otwieraj pasujące
+karty, uzupełnij coverage i zapisz standardowy plik `results/<task-id>.json`.
+W aktywnym przebiegu użyj `--claim-stdin`, aby adapter korzystał z profilu
+zadania z migawki; tryb `--model-key` służy tylko do niezależnego pilotażu.
+Dokładne strony z `sharedResultsCache` adapter ponownie wykorzystuje, a `nextUrl`
+zachowuje w `coverage.searchResults` do dalszej paginacji.
+Nie omijaj logowania, CAPTCHA, blokad, `robots.txt` ani ograniczeń dostępu; przy
+blokadzie zapisz jej status i zakończ próbę dla tego zakresu.
+
 Nie aktualizuj znalezionej aktywnej oferty; zapisz ją jako
 kandydata, a koordynator pominie istniejącą tożsamość podczas importu. Nowe
 oferty muszą mieć potwierdzoną dostępność i dowody z karty. Braki pól nie są
