@@ -498,7 +498,9 @@ def prepare(root, run_id, config):
             merged, fields = merge_offer(old, incoming, observation, model,
                                          requirements_for_model(model, config["requirements"]), event_id, run_id,
                                          availability_only=task.get("kind") == "availability")
-            reactivated = bool(matches and collection == "archivedOffers" and observation["availability"] == "available")
+            manually_excluded = bool(old and (old.get("archive") or {}).get("status") == "excluded")
+            reactivated = bool(matches and collection == "archivedOffers" and
+                               observation["availability"] == "available" and not manually_excluded)
             if matches:
                 if reactivated:
                     documents[model["key"]]["archivedOffers"].pop(index)

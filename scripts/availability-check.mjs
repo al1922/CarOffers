@@ -6,7 +6,7 @@ import { portalNavigationPolicy } from "./portal-robots.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const ERROR_RE = /access denied|verify you are human|captcha|robot check|dostęp został zablokowany|zbyt wiele żądań/i;
-const CLOSED_RE = /(?:ogłoszenie|oferta)\s+nie\s+jest\s+(?:już\s+)?(?:dostępne|dostępna)|(?:ogłoszenie|oferta)\s+(?:jest\s+)?(?:już\s+)?(?:niedostępne|niedostępna|nieaktualne|nieaktualna|zakończone|zakończona|usunięte|usunięta|sprzedane|sprzedana)|(?:ogłoszenie|oferta)\s+(?:został[oa]?\s+(?:zakończon[ae]|usunięt[ae]|sprzedan[ey])|trafił[oa]?\s+do\s+archiwum)|(?:pojazd|samochód|auto)\s+(?:został[oa]?\s+)?sprzedan[ey]|oferta\s+w\s+archiwum|nie\s+znaleźliśmy\s+tej\s+oferty|this\s+(?:listing|ad)\s+is\s+no\s+longer\s+available|listing\s+has\s+ended/i;
+const CLOSED_RE = /(?:ogłoszenie|oferta)\s+nie\s+jest\s+(?:już\s+)?(?:dostępne|dostępna)|(?:ogłoszenie|oferta)\s+(?:jest\s+)?(?:już\s+)?(?:niedostępne|niedostępna|nieaktualne|nieaktualna|zakończone|zakończona|usunięte|usunięta|sprzedane|sprzedana)|(?:ogłoszenie|oferta)\s+(?:został[oa]?\s+(?:zakończon[ae]|usunięt[ae]|sprzedan[ey])|trafił[oa]?\s+do\s+archiwum)|(?:pojazd|samochód|auto)\s+(?:został[oa]?\s+)?sprzedan[ey]|oferta\s+w\s+archiwum|nie\s+znaleźliśmy\s+tej\s+oferty|(?:nie\s+znaleziono|nie\s+ma)\s+(?:takiego\s+)?(?:ogłoszenia|ogloszenia|oferty)|(?:ogłoszenie|oferta)\s+nie\s+istnieje|this\s+(?:listing|ad)\s+is\s+no\s+longer\s+available|listing\s+has\s+ended/i;
 
 function readStdin() {
   return new Promise((resolve, reject) => {
@@ -40,9 +40,19 @@ function readableHtml(html) {
     .replace(/\s+/g, " ").trim();
 }
 
-function matchesKnownTitle(text, title) {
-  const distinctive = String(title ?? "").trim().split(/\s+/).slice(0, 3).join(" ");
-  return distinctive.length >= 8 && text.toLocaleLowerCase("pl-PL").includes(distinctive.toLocaleLowerCase("pl-PL"));
+function titleMatchScore(text, title) {
+  const tokens = String(title ?? "").toLocaleLowerCase("pl-PL").match(/[\p{L}\p{N}]+/gu) ?? [];
+  const meaningful = [...new Set(tokens.filter((token) => token.length >= 2 && !["km", "tys", "zł", "pln"].includes(token)))];
+  const normalizedText = String(text ?? "").toLocaleLowerCase("pl-PL");
+  const matches = meaningful.filter((token) => normalizedText.includes(token));
+  return { matched: meaningful.length >= 3 && matches.length >= Math.max(3, Math.ceil(meaningful.length * 0.6)), matches, expected: meaningful };
+}
+
+function liveCardSignals(text, title) {
+  const identity = titleMatchScore(text, title);
+  const contact = /skontaktuj\s+si[eę]|poka[zż]\s+numer|numer\s+telefonu|wy[sś]lij\s+wiadomo[sś][cć]|napisz|contact\s+(?:seller|the\s+seller)|show\s+(?:phone|number)|send\s+(?:a\s+)?message/i.test(text);
+  const price = /\d[\d\s\u00a0.,]*\s?(?:zł|pln)(?![\p{L}])/iu.test(text);
+  return { identity: identity.matched, contact, price, titleTokensMatched: identity.matches.length };
 }
 
 async function main() {
@@ -97,6 +107,8 @@ async function main() {
       let note = "Nie udało się jednoznacznie ustalić dostępności ogłoszenia.";
       let httpStatus = null;
       let page = null;
+      let proof = null;
+      let closedMessage = null;
       try {
         if (!/^https:\/\//i.test(url) || !belongsToSource(url, source)) {
           throw new Error("URL nie należy do przypisanego portalu lub nie używa HTTPS.");
@@ -108,9 +120,11 @@ async function main() {
         if (!allowed) throw new Error("Nie udało się odczytać robots.txt portalu.");
         if (!allowed(url)) throw new Error("robots.txt nie zezwala na odczyt tej ścieżki.");
 
-        const response = await context.request.get(url, { timeout: 10000, maxRedirects: 5 });
+        page = await context.newPage();
+        page.setDefaultNavigationTimeout(12000);
+        const response = await page.goto(url, { waitUntil: "domcontentloaded", timeout: 12000 });
         httpStatus = response?.status() ?? null;
-        const finalUrl = response?.url() ?? url;
+        const finalUrl = page.url() || url;
         if (new URL(finalUrl).origin !== origin || !allowed(finalUrl)) {
           throw new Error("Przekierowanie poza dozwolony adres portalu.");
         }
@@ -121,47 +135,38 @@ async function main() {
           status = "removed";
           note = "Portal zwrócił HTTP 410 Gone dla adresu ogłoszenia.";
         } else if (httpStatus === 404) {
-          const body = readableHtml(await response.text().catch(() => ""));
+          const body = (await page.locator("body").innerText({ timeout: 1500 }).catch(() => "")) ||
+            readableHtml(await response?.text().catch(() => ""));
           const closed = body.match(CLOSED_RE);
           if (closed) {
             status = /sprzedan/i.test(closed[0]) ? "sold" : "removed";
+            closedMessage = closed[0];
             note = `Portal zwrócił HTTP 404 i jawny komunikat zamknięcia: „${closed[0]}”.`;
           } else note = "Portal zwrócił HTTP 404; sam kod nie potwierdza zamknięcia ogłoszenia.";
         } else {
-          const html = await response.text().catch(() => "");
-          const title = html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1]?.replace(/<[^>]+>/g, " ") ?? "";
-          let visible = readableHtml(`${title} ${html}`);
-          if (visible.length < 80 || !matchesKnownTitle(visible, target.title)) {
-            page = await context.newPage();
-            page.setDefaultNavigationTimeout(18000);
-            const pageResponse = await page.goto(url, { waitUntil: "domcontentloaded", timeout: 12000 });
-            if (pageResponse) httpStatus = pageResponse.status();
-            if (new URL(page.url()).origin !== origin || !allowed(page.url())) {
-              throw new Error("Przekierowanie poza dozwolony adres portalu.");
-            }
-            const renderedTitle = await page.title().catch(() => "");
-            const renderedText = await page.locator("body").innerText({ timeout: 2500 }).catch(() => "");
-            visible = `${renderedTitle} ${renderedText}`.replace(/\s+/g, " ").trim();
-          }
-          if (httpStatus === 410) {
-            status = "removed";
-            note = "Portal zwrócił HTTP 410 Gone dla adresu ogłoszenia.";
-          } else if (httpStatus === 403 || httpStatus === 429 || ERROR_RE.test(visible)) {
+          const renderedTitle = await page.title().catch(() => "");
+          const renderedText = await page.locator("body").innerText({ timeout: 2500 }).catch(() => "");
+          const visible = `${renderedTitle} ${renderedText}`.replace(/\s+/g, " ").trim();
+          if (httpStatus === 403 || httpStatus === 429 || ERROR_RE.test(visible)) {
             blockedCount += 1;
             note = `Portal wyświetlił blokadę lub limit dostępu${httpStatus ? ` (HTTP ${httpStatus})` : ""}.`;
           } else if (httpStatus === 404 && !CLOSED_RE.test(visible)) {
             note = "Portal zwrócił HTTP 404; sam kod nie potwierdza zamknięcia ogłoszenia.";
           } else {
             const closed = visible.match(CLOSED_RE);
-            const identityMatches = matchesKnownTitle(visible, target.title);
             if (closed) {
               status = /sprzedan/i.test(closed[0]) ? "sold" : "removed";
+              closedMessage = closed[0];
               note = `Portal wyświetlił komunikat zamknięcia: „${closed[0]}”.`;
-            } else if (httpStatus >= 200 && httpStatus < 300 && visible.length > 80 && identityMatches) {
-              status = "available";
-              note = "Załadowana karta pasuje tytułem do znanej oferty (HTTP " + httpStatus + "); nie znaleziono komunikatu o zamknięciu.";
             } else {
-              note = `Karta nie potwierdza tożsamości oferty${httpStatus ? ` (HTTP ${httpStatus})` : ""}; status pozostaje nieustalony.`;
+              proof = liveCardSignals(visible, target.title);
+              if (httpStatus >= 200 && httpStatus < 300 && visible.length > 80 &&
+                  proof.identity && proof.contact && proof.price) {
+                status = "available";
+                note = `Karta zawiera dopasowanie ${proof.titleTokensMatched} cech tytułu, cenę i aktywną opcję kontaktu (HTTP ${httpStatus}).`;
+              } else {
+                note = `Brak potwierdzenia aktywnej karty: tytuł=${proof.identity}, cena=${proof.price}, kontakt=${proof.contact}${httpStatus ? ` (HTTP ${httpStatus})` : ""}.`;
+              }
             }
           }
         }
@@ -173,6 +178,8 @@ async function main() {
       }
       const result = { id: target.offerId, observation: {
         url, checkedAt: observationTime, availability: status, note, httpStatus,
+        ...(proof ? { availabilityProof: proof } : {}),
+        ...(closedMessage ? { closedMessage } : {}),
       } };
       process.stderr.write(`${status}\t${httpStatus ?? "-"}\t${url}\n`);
       return result;

@@ -578,7 +578,7 @@ def main():
                                   "photoAuditRequired": args.photo_audit,
                                   "sourceMethod": source["method"], "state": "pending", "worker": None,
                                   "attempts": 0, "note": "",
-                                  **({"workerInstructions": "Availability only: check each assigned URL quickly for a matching live car card, an explicit closed message, or an unreadable page. Save only id, URL, time, status and HTTP code. HTTP 410 is removed; HTTP 403/404, timeout or portal block is access_error (do not bypass it). Do not inspect/update car facts. Run scripts/availability-check.mjs; it checks up to four URLs concurrently. On import, if every URL for a car was checked and none is available, the availability flow archives it as closed when all statuses are sold/removed, otherwise as unverified. A live URL keeps the car active."} if availability_only else {})})
+                                  **({"workerInstructions": "Availability only: use scripts/availability-check.mjs; do not substitute cached snippets or manual notes. A URL is available only when its current rendered page returns HTTP 2xx and the page itself shows a strong title match, price and contact action; all three proof fields are required by finish. HTTP 410 is removed. HTTP 403/404 without explicit closure text, timeouts, CAPTCHA and other access blocks are access_error (do not bypass them). HTTP 404 with an explicit closure message is removed/sold. Check up to four pages concurrently and do not inspect or update vehicle facts. On import, if every URL for a car was checked and none is available, archive as closed when every status is sold/removed; otherwise archive as unverified. Any proven live URL keeps the car active."} if availability_only else {})})
             if not tasks and not unmapped_targets:
                 p.error("No refresh candidates matched the selected models, sources and age/offer filters")
             run.mkdir(parents=True, exist_ok=False)
@@ -692,6 +692,33 @@ def main():
                         pair = (offer.get("id"), observation.get("url")) if isinstance(offer, dict) else (None, None)
                         if pair not in targets:
                             reject_result("Refresh result contains an offer outside its assigned targets")
+                if task.get("kind") == "availability":
+                    targets = {(target["offerId"], target["url"]) for target in task.get("refreshTargets", [])}
+                    observed = set()
+                    for offer in result["offers"]:
+                        observation = offer.get("observation", {}) if isinstance(offer, dict) else {}
+                        pair = (offer.get("id"), observation.get("url")) if isinstance(offer, dict) else (None, None)
+                        if pair not in targets or pair in observed:
+                            reject_result("Availability must contain exactly one observation for each assigned URL")
+                        observed.add(pair)
+                        status = observation.get("availability")
+                        http_status = observation.get("httpStatus")
+                        if status not in ("available", "sold", "removed", "access_error"):
+                            reject_result("Availability observation has an unknown status")
+                        if http_status == 410 and status != "removed":
+                            reject_result("HTTP 410 must be recorded as removed")
+                        if http_status in (403, 404) and status != "access_error" and not observation.get("closedMessage"):
+                            reject_result("HTTP 403/404 requires access_error unless the page contains an explicit closure message")
+                        if status == "available":
+                            proof = observation.get("availabilityProof", {})
+                            if (not isinstance(proof, dict) or type(http_status) is not int or not 200 <= http_status < 300 or
+                                    proof.get("identity") is not True or proof.get("contact") is not True or
+                                    proof.get("price") is not True):
+                                reject_result("Available requires HTTP 2xx plus a matching title, visible price and contact control")
+                        if status in ("sold", "removed") and http_status != 410 and not observation.get("closedMessage"):
+                            reject_result("Sold/removed requires HTTP 410 or an explicit closure message from the page")
+                    if observed != targets:
+                        reject_result("Availability result must cover every assigned listing URL")
                 from offer_import import validate_worker_result
                 model = next((m for m in config["models"]["models"] if m["key"] == task["modelKey"]), None)
                 if model is None:

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-10",
+  "updatedAt": "2026-11-11",
   "model": {
     "key": "toyota-auris-touring-sports",
     "name": "Toyota Auris II Touring Sports",
@@ -8,6 +8,944 @@
     "requirements": "Toyota Auris II Touring Sports; 1.8 Hybrid 136 KM; 1.6 Valvematic 132 KM; rodzina: 2 dorosłych i 1 dziecko; wymagane miejsce na wózek i bagaż; rocznik od 2018 do 2018; maks. 55 000 zł brutto według ceny podanej w ogłoszeniu; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 170 000 km preferowany; kamera wymagana  obecna lub z potwierdzoną możliwością montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji."
   },
   "offers": [
+    {
+      "id": "listing:autoplac:7718-1651-TH",
+      "modelKey": "toyota-auris-touring-sports",
+      "title": "Toyota Auris II 1.6 Valvematic 132 KM kombi — 2018, manual",
+      "urls": [
+        {
+          "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-6-2018r-7718-1651-TH"
+        }
+      ],
+      "listingIds": [
+        "autoplac:7718-1651-TH"
+      ],
+      "vin": "SB1ZE3JE50E122025",
+      "year": 2018,
+      "price": 49900,
+      "mileage": 132177,
+      "engine": "1.6 Valvematic, 132 KM, benzyna",
+      "engineVariant": "1.6-valvematic-132",
+      "body": "Kombi / Touring Sports",
+      "bodyCode": "wagon",
+      "transmission": "Manualna",
+      "transmissionCode": "manual",
+      "saleType": "fixed_price",
+      "offerType": "company",
+      "cameraStatus": "unknown",
+      "structuralDamageStatus": "unknown",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "city": "Wrocław",
+        "voivodeship": "Dolnośląskie"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-08T19:42:05+01:00",
+      "listingStates": [
+        {
+          "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-6-2018r-7718-1651-TH",
+          "status": "available",
+          "lastAttemptAt": "2026-11-11T02:04:20.650Z",
+          "lastCheckedAt": "2026-11-11T02:04:20.650Z",
+          "lastVerifiedAt": "2026-11-11T02:04:20.650Z",
+          "lastObservation": {
+            "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-6-2018r-7718-1651-TH",
+            "checkedAt": "2026-11-11T02:04:20.650Z",
+            "availability": "available",
+            "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+            "httpStatus": 200,
+            "availabilityProof": {
+              "identity": true,
+              "contact": true,
+              "price": true,
+              "titleTokensMatched": 7
+            }
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-11T02:04:20.650Z",
+      "lastVerifiedAt": "2026-11-11T02:04:20.650Z",
+      "lastAttemptAt": "2026-11-11T02:04:20.650Z",
+      "history": [
+        {
+          "eventId": "6dd2305ba8a22a5093bec9ddc7cb3b882b354029ccd5d15491cc6ef9578aa9a8",
+          "runId": "search-20261108",
+          "checkedAt": "2026-11-08T19:42:05+01:00",
+          "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-6-2018r-7718-1651-TH",
+          "availability": "available",
+          "note": "Aktywna karta Autoplac, ostatnia aktualizacja tydzień temu, z przyciskiem kontaktu i zaproszeniem do telefonicznego potwierdzenia dostępności. Dane karty potwierdzają Aurisa II 1.6, benzynę, 132 KM, 1598 cm³, 2018, manual, 132 177 km i cenę 49 900 zł brutto. Kategoria strony określa nadwozie jako KOMBI; lokalizacja Wrocław, Dolnośląskie; aktywny dealer. VIN SB1ZE3JE50E122025, pierwsza rejestracja 03.04.2019, CEPiK: ostatni przebieg 130 368 km. Kamera nie została wymieniona w odczytanym wyposażeniu. LPG nie jest podane ani wykluczone — status pozostaje nieznany. Sprzedawca opisuje przegląd we własnym serwisie; brak niezależnej kontroli konstrukcji.",
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:7718-1651-TH",
+            "modelKey": "toyota-auris-touring-sports",
+            "title": "Toyota Auris II 1.6 Valvematic 132 KM kombi — 2018, manual",
+            "urls": [
+              {
+                "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-6-2018r-7718-1651-TH"
+              }
+            ],
+            "listingIds": [
+              "autoplac:7718-1651-TH"
+            ],
+            "vin": "SB1ZE3JE50E122025",
+            "year": 2018,
+            "price": 49900,
+            "mileage": 132177,
+            "engine": "1.6 Valvematic, 132 KM, benzyna",
+            "engineVariant": "1.6-valvematic-132",
+            "body": "Kombi / Touring Sports",
+            "bodyCode": "wagon",
+            "transmission": "Manualna",
+            "transmissionCode": "manual",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "offerType": "company",
+            "cameraStatus": "unknown",
+            "structuralDamageStatus": "unknown",
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "city": "Wrocław",
+              "voivodeship": "Dolnośląskie"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:autoplac:7718-1651-TH"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "toyota-auris-touring-sports"
+            },
+            "title": {
+              "before": null,
+              "after": "Toyota Auris II 1.6 Valvematic 132 KM kombi — 2018, manual"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-6-2018r-7718-1651-TH"
+                }
+              ]
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "autoplac:7718-1651-TH"
+              ]
+            },
+            "vin": {
+              "before": null,
+              "after": "SB1ZE3JE50E122025"
+            },
+            "year": {
+              "before": null,
+              "after": 2018
+            },
+            "price": {
+              "before": null,
+              "after": 49900
+            },
+            "mileage": {
+              "before": null,
+              "after": 132177
+            },
+            "engine": {
+              "before": null,
+              "after": "1.6 Valvematic, 132 KM, benzyna"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.6-valvematic-132"
+            },
+            "body": {
+              "before": null,
+              "after": "Kombi / Touring Sports"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmission": {
+              "before": null,
+              "after": "Manualna"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "offerType": {
+              "before": null,
+              "after": "company"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "city": "Wrocław",
+                "voivodeship": "Dolnośląskie"
+              }
+            }
+          }
+        },
+        {
+          "eventId": "c54c650ae23123afd9a845078016c56fe38670bb3b4a6c8469e935fb2ee33ce7",
+          "runId": "refresh-20261108-03",
+          "checkedAt": "2026-11-08T22:09:50+00:00",
+          "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-6-2018r-7718-1651-TH",
+          "availability": "available",
+          "note": "Karta widoczna; ostatnia aktualizacja tydzień temu. Podaje cenę 49 900 zł brutto, rok produkcji 2018, 132 177 km, benzynę 1.6 Valvematic 132 KM i manual. VIN SB1ZE3JE50E122025; pierwsza rejestracja 03.04.2019, więc nie utożsamiam jej z rokiem produkcji. Historia CEPiK wskazuje ostatni przebieg 130 368 km oraz ważne badanie do 03.2027. Sprzedawca deklaruje polski salon i fakturę VAT-marża; pola stanu pokazują bezwypadkowy i uszkodzony: brak danych. Sprzedawca prosi o telefon przed przyjazdem w celu potwierdzenia dostępności. Brak wzmianki o LPG, więc lpgInstalled=null.",
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:7718-1651-TH",
+            "saleType": "fixed_price",
+            "lpgInstalled": null
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "a8f4acc26d4ec214a4859a04bdc86f1db603bb181bdb049f171a32097340fae4",
+          "runId": "photos-20261108-01",
+          "checkedAt": "2026-11-08T22:42:33+00:00",
+          "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-6-2018r-7718-1651-TH",
+          "availability": "available",
+          "note": "Karta otwarta; aktualizacja tydzień temu, galeria 1/29. Cena 49 900 zł brutto, 2018, benzyna 1.6 132 KM, manual, 132 177 km. Pierwsza rejestracja podana jako 03.04.2019. Instalacja LPG niepotwierdzona.",
+          "photoCheck": {
+            "status": "found",
+            "note": "Odczytano bezpośredni HTTPS URL zdjęcia głównego z CDN Autoplac; galeria pokazuje 1/29."
+          },
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:7718-1651-TH",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "photos": [
+              "https://euw2-cdn.autoplac.pl/v1/p/23a81a45-b969-4c8e-a327-722edd057db3?f=1920%3Awebp"
+            ]
+          },
+          "changes": {
+            "photos": {
+              "before": null,
+              "after": [
+                "https://euw2-cdn.autoplac.pl/v1/p/23a81a45-b969-4c8e-a327-722edd057db3?f=1920%3Awebp"
+              ]
+            }
+          }
+        },
+        {
+          "eventId": "87a554f79edafba85a821918e9d2f09ceae68fc30ed95c6eba74ce3cfec606bb",
+          "runId": "refresh20261109a",
+          "checkedAt": "2026-11-09T13:15:05Z",
+          "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-6-2018r-7718-1651-TH",
+          "availability": "available",
+          "note": "Karta AutoPlac dostępna; 49 900 zł brutto, rok produkcji 2018, 132 177 km, Toyota Auris 1.6 Active, benzyna, 132 KM, manual, kombi. Karta podaje krajowe pochodzenie, lokalizację Wrocław (Dolnośląskie), VIN zweryfikowany w CEPiK oraz przebieg zgodny z historią przeglądów (ostatni odczyt 130 368 km). Sprzedawca deklaruje ISOFIX; karta prosi o kontakt przed przyjazdem w celu potwierdzenia dostępności. Kamera nie jest wymieniona w widocznym wyposażeniu. Bezpośrednia karta była dostępna przy sprawdzeniu; portal oznacza aktualizację ogłoszenia jako tydzień temu.",
+          "photoCheck": null,
+          "evidence": [
+            {
+              "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-6-2018r-7718-1651-TH",
+              "checkedAt": "2026-11-09T13:15:05Z",
+              "kind": "seller",
+              "fields": [
+                "price",
+                "year",
+                "mileage",
+                "engine",
+                "body",
+                "transmission",
+                "familyFitConfirmed"
+              ],
+              "note": "Karta AutoPlac podaje cenę brutto, parametry pojazdu i wyposażenie ISOFIX; status available wynika z bieżącej dostępności karty."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:autoplac:7718-1651-TH",
+            "modelKey": "toyota-auris-touring-sports",
+            "photos": [
+              "https://euw2-cdn.autoplac.pl/v1/p/23a81a45-b969-4c8e-a327-722edd057db3?f=1920%3Awebp"
+            ],
+            "saleType": "fixed_price",
+            "lpgInstalled": null
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "a35e33eb6b171d95be40492ab2fdbbdb05d358e507009f55a5e5297817453e34",
+          "runId": "dostepnosc-2026-11-10",
+          "checkedAt": "2026-11-10T23:17:56Z",
+          "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-6-2018r-7718-1651-TH",
+          "availability": "available",
+          "note": "Otwarta karta Autoplac pasuje do ID 7718-1651-TH; pokazuje tytuł Toyota Auris II 1.6, cenę 49 900 zł, aktualizację sprzed tygodnia i aktywne opcje kontaktu. Nie ma komunikatu o zamknięciu.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:7718-1651-TH"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "4fad07d6a7fe101c82f7605e13f1c50fe1509949b5754a7f4f987ca28d37e411",
+          "runId": "dostepnosc-2026-11-11-live",
+          "checkedAt": "2026-11-11T02:04:20.650Z",
+          "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-6-2018r-7718-1651-TH",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:7718-1651-TH"
+          },
+          "changes": {}
+        }
+      ],
+      "assessment": {
+        "id": "listing:autoplac:7718-1651-TH",
+        "modelKey": "toyota-auris-touring-sports",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "engine_review_requires_verification",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "engine_review_requires_verification; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "photos": [
+        "https://euw2-cdn.autoplac.pl/v1/p/23a81a45-b969-4c8e-a327-722edd057db3?f=1920%3Awebp"
+      ]
+    }
+  ],
+  "archivedOffers": [
+    {
+      "id": "listing:otomoto:6151070129",
+      "modelKey": "toyota-auris-touring-sports",
+      "listingIds": [
+        "otomoto:6151070129"
+      ],
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6Ihgkx.html",
+          "label": "Otomoto — Toyota Auris II 1.8 Hybrid"
+        }
+      ],
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImNtZmR3YzV5MGVmMjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.4kqMcP_KeR3IZzaZFjAS_gpvazky30EfeuMJtvye1OA/image%3Bs%3D5120x0%3Bq%3D80",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im1mejV1anAwdW9jNjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.07i_2JPFRpeRu-SnmmiT1bmr2FDkbcmKg-uC5yIXBmU/image%3Bs%3D5120x0%3Bq%3D100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImRlanZ1dnJrY251NzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.u7feCmxLUhdWAAXZ5GaMsQjm-2vN05fcha1OSs5fC0Q/image%3Bs%3D5120x0%3Bq%3D100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImR1Y3R5ZG1tNzAxZjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.xKDrmxc7MiZ9zHPDmoFIiame4LJ6md2bp9-f6g7NDxo/image%3Bs%3D5120x0%3Bq%3D100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImJnNGExb290N3Jwei1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.Vztz0p-bIduzlMLMxr5h7F4fMrbMZkFKVcstDCyoE7c/image%3Bs%3D5120x0%3Bq%3D100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijl4d2Fzb2g5Zmd5dy1PVE9NTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.R-LAzpLAeohVz41NVl7c4FWSMMkJRP5CZ8cIe96Yiwg/image%3Bs%3D5120x0%3Bq%3D100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InEwcThrMDQybjh3eDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.yFohnVFSWum5EBrGaT4VAydGG7H-PwdMAEABPeXnEKs/image%3Bs%3D5120x0%3Bq%3D100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imx6bXAwMHozeW1qNTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.AusOQFKcBgIT_rtm98CbXdBkld1hym7D6IHUYNHE2yjs/image%3Bs%3D5120x0%3Bq%3D100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im05Zmg1amY0aWJiMDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.IDUzlt6bhxFBg5uFXeLcwmRbtAX-PFWZAJuH9k2LjAo/image%3Bs%3D5120x0%3Bq%3D100"
+      ],
+      "title": "Toyota Auris II Touring Sports 1.8 Hybrid, 2018",
+      "year": 2018,
+      "price": 52500,
+      "priceLabel": "52 500 zł na karcie; możliwość negocjacji",
+      "mileage": 134000,
+      "engine": "1.8 Hybrid · 136 KM · 1 798 cm³",
+      "engineVariant": "1.8-hybrid-136",
+      "body": "Kombi",
+      "bodyCode": "wagon",
+      "transmission": "automatyczna",
+      "transmissionCode": "automatic",
+      "seller": "osoba prywatna — Otomoto",
+      "offerType": "private",
+      "priceBasis": "gross_total",
+      "cameraStatus": "installed_confirmed",
+      "structuralDamageStatus": "unknown",
+      "saleType": "fixed_price",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "voivodeship": "małopolskie",
+        "city": "Tarnów",
+        "precision": "city",
+        "source": "listing"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-09T22:45:34Z",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6Ihgkx.html",
+          "status": "removed",
+          "lastAttemptAt": "2026-11-10T23:17:49Z",
+          "lastCheckedAt": "2026-11-10T23:17:49Z",
+          "lastVerifiedAt": "2026-11-10T23:17:49Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6Ihgkx.html",
+            "checkedAt": "2026-11-10T23:17:49Z",
+            "availability": "removed",
+            "note": "Bezpośrednie otwarcie URL zwróciło HTTP 410 Gone.",
+            "httpStatus": 410
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-10T23:17:49Z",
+      "lastVerifiedAt": "2026-11-10T23:17:49Z",
+      "lastAttemptAt": "2026-11-10T23:17:49Z",
+      "history": [
+        {
+          "eventId": "5230fb44fb60308f4e8681a3db6ea4fd3201eac89f06d8bf7ceec1efbfacbaf6",
+          "runId": "search-20261109-full",
+          "checkedAt": "2026-11-09T22:45:34Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6Ihgkx.html",
+          "availability": "available",
+          "note": "Karta Otomoto otwarta 9.11.2026. Podaje Toyota Auris II, rok produkcji 2018, 1.8 Hybrid 136 KM, automatyczną skrzynię, kombi, przebieg 134 000 km, cenę 52 500 zł i lokalizację Tarnów, Małopolskie. Prywatny sprzedawca wymienia kamerę cofania, deklaruje komplet dokumentów i możliwość kontroli w ASO lub na stacji diagnostycznej. Opis nie podaje LPG; nie rozstrzyga niezależnie o stanie konstrukcji. Oferta opublikowana 25.10.2026; karta dostępna podczas sprawdzenia.",
+          "photoCheck": null,
+          "evidence": [
+            {
+              "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6Ihgkx.html",
+              "checkedAt": "2026-11-09T22:45:34Z",
+              "kind": "seller",
+              "fields": [
+                "year",
+                "price",
+                "mileage",
+                "engineVariant",
+                "bodyCode",
+                "transmissionCode",
+                "cameraStatus",
+                "saleType",
+                "offerType",
+                "location"
+              ],
+              "note": "Dane z karty i opisu sprzedawcy; oferta prywatna, 52 500 zł do negocjacji, karta wymienia kamerę cofania. Cena bez warunku obowiązkowego finansowania; dodatkowe koszty nie są wskazane."
+            },
+            {
+              "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6Ihgkx.html",
+              "checkedAt": "2026-11-09T22:45:34Z",
+              "kind": "seller",
+              "fields": [
+                "structuralDamageStatus",
+                "lpgInstalled"
+              ],
+              "note": "Karta opisuje auto jako sprawne oraz umożliwia inspekcję w ASO/na SKP, ale brak niezależnej kontroli konstrukcji. LPG nie jest podane; pozostaje unknown/null."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:otomoto:6151070129",
+            "modelKey": "toyota-auris-touring-sports",
+            "vin": null,
+            "listingIds": [
+              "otomoto:6151070129"
+            ],
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6Ihgkx.html",
+                "label": "Otomoto — Toyota Auris II 1.8 Hybrid"
+              }
+            ],
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImNtZmR3YzV5MGVmMjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.4kqMcP_KeR3IZzaZFjAS_gpvazky30EfeuMJtvye1OA/image%3Bs%3D5120x0%3Bq%3D80",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im1mejV1anAwdW9jNjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.07i_2JPFRpeRu-SnmmiT1bmr2FDkbcmKg-uC5yIXBmU/image%3Bs%3D5120x0%3Bq%3D100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImRlanZ1dnJrY251NzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.u7feCmxLUhdWAAXZ5GaMsQjm-2vN05fcha1OSs5fC0Q/image%3Bs%3D5120x0%3Bq%3D100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImR1Y3R5ZG1tNzAxZjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.xKDrmxc7MiZ9zHPDmoFIiame4LJ6md2bp9-f6g7NDxo/image%3Bs%3D5120x0%3Bq%3D100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImJnNGExb290N3Jwei1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.Vztz0p-bIduzlMLMxr5h7F4fMrbMZkFKVcstDCyoE7c/image%3Bs%3D5120x0%3Bq%3D100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijl4d2Fzb2g5Zmd5dy1PVE9NTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.R-LAzpLAeohVz41NVl7c4FWSMMkJRP5CZ8cIe96Yiwg/image%3Bs%3D5120x0%3Bq%3D100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InEwcThrMDQybjh3eDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.yFohnVFSWum5EBrGaT4VAydGG7H-PwdMAEABPeXnEKs/image%3Bs%3D5120x0%3Bq%3D100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imx6bXAwMHozeW1qNTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.AusOQFKcBgIT_rtm98CbXdBkld1hym7D6IHUYNHE2yjs/image%3Bs%3D5120x0%3Bq%3D100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im05Zmg1amY0aWJiMDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.IDUzlt6bhxFBg5uFXeLcwmRbtAX-PFWZAJuH9k2LjAo/image%3Bs%3D5120x0%3Bq%3D100"
+            ],
+            "title": "Toyota Auris II Touring Sports 1.8 Hybrid, 2018",
+            "year": 2018,
+            "price": 52500,
+            "priceLabel": "52 500 zł na karcie; możliwość negocjacji",
+            "mileage": 134000,
+            "engine": "1.8 Hybrid · 136 KM · 1 798 cm³",
+            "engineVariant": "1.8-hybrid-136",
+            "body": "Kombi",
+            "bodyCode": "wagon",
+            "transmission": "automatyczna",
+            "transmissionCode": "automatic",
+            "seller": "osoba prywatna — Otomoto",
+            "offerType": "private",
+            "priceBasis": "gross_unconditional_total",
+            "cameraStatus": "installed_confirmed",
+            "structuralDamageStatus": "unknown",
+            "familyFitConfirmed": null,
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "voivodeship": "małopolskie",
+              "city": "Tarnów",
+              "precision": "city",
+              "source": "listing"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:otomoto:6151070129"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "toyota-auris-touring-sports"
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "otomoto:6151070129"
+              ]
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6Ihgkx.html",
+                  "label": "Otomoto — Toyota Auris II 1.8 Hybrid"
+                }
+              ]
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImNtZmR3YzV5MGVmMjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.4kqMcP_KeR3IZzaZFjAS_gpvazky30EfeuMJtvye1OA/image%3Bs%3D5120x0%3Bq%3D80",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im1mejV1anAwdW9jNjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.07i_2JPFRpeRu-SnmmiT1bmr2FDkbcmKg-uC5yIXBmU/image%3Bs%3D5120x0%3Bq%3D100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImRlanZ1dnJrY251NzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.u7feCmxLUhdWAAXZ5GaMsQjm-2vN05fcha1OSs5fC0Q/image%3Bs%3D5120x0%3Bq%3D100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImR1Y3R5ZG1tNzAxZjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.xKDrmxc7MiZ9zHPDmoFIiame4LJ6md2bp9-f6g7NDxo/image%3Bs%3D5120x0%3Bq%3D100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImJnNGExb290N3Jwei1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.Vztz0p-bIduzlMLMxr5h7F4fMrbMZkFKVcstDCyoE7c/image%3Bs%3D5120x0%3Bq%3D100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijl4d2Fzb2g5Zmd5dy1PVE9NTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.R-LAzpLAeohVz41NVl7c4FWSMMkJRP5CZ8cIe96Yiwg/image%3Bs%3D5120x0%3Bq%3D100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InEwcThrMDQybjh3eDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.yFohnVFSWum5EBrGaT4VAydGG7H-PwdMAEABPeXnEKs/image%3Bs%3D5120x0%3Bq%3D100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imx6bXAwMHozeW1qNTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.AusOQFKcBgIT_rtm98CbXdBkld1hym7D6IHUYNHE2yjs/image%3Bs%3D5120x0%3Bq%3D100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im05Zmg1amY0aWJiMDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.IDUzlt6bhxFBg5uFXeLcwmRbtAX-PFWZAJuH9k2LjAo/image%3Bs%3D5120x0%3Bq%3D100"
+              ]
+            },
+            "title": {
+              "before": null,
+              "after": "Toyota Auris II Touring Sports 1.8 Hybrid, 2018"
+            },
+            "year": {
+              "before": null,
+              "after": 2018
+            },
+            "price": {
+              "before": null,
+              "after": 52500
+            },
+            "priceLabel": {
+              "before": null,
+              "after": "52 500 zł na karcie; możliwość negocjacji"
+            },
+            "mileage": {
+              "before": null,
+              "after": 134000
+            },
+            "engine": {
+              "before": null,
+              "after": "1.8 Hybrid · 136 KM · 1 798 cm³"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.8-hybrid-136"
+            },
+            "body": {
+              "before": null,
+              "after": "Kombi"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmission": {
+              "before": null,
+              "after": "automatyczna"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "automatic"
+            },
+            "seller": {
+              "before": null,
+              "after": "osoba prywatna — Otomoto"
+            },
+            "offerType": {
+              "before": null,
+              "after": "private"
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "gross_unconditional_total"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "installed_confirmed"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "voivodeship": "małopolskie",
+                "city": "Tarnów",
+                "precision": "city",
+                "source": "listing"
+              }
+            }
+          }
+        },
+        {
+          "eventId": "33a4c6991a949e7e18d7e9a86a0e98f597da75279979d8923434881809a6e647",
+          "runId": "dostepnosc-2026-11-10",
+          "checkedAt": "2026-11-10T23:17:49Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6Ihgkx.html",
+          "availability": "removed",
+          "note": "Bezpośrednie otwarcie URL zwróciło HTTP 410 Gone.",
+          "httpStatus": 410,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:6151070129"
+          },
+          "changes": {
+            "priceBasis": {
+              "before": "gross_unconditional_total",
+              "after": "gross_total"
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "listing:otomoto:6151070129",
+        "modelKey": "toyota-auris-touring-sports",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "structural_history; stroller_and_family_fit",
+      "archive": {
+        "status": "closed",
+        "reason": "all_listings_confirmed_closed",
+        "archivedAt": "2026-11-10T23:17:49+00:00"
+      }
+    },
+    {
+      "id": "listing:autoplac:0760-5834-PA",
+      "modelKey": "toyota-auris-touring-sports",
+      "listingIds": [
+        "autoplac:0760-5834-PA"
+      ],
+      "urls": [
+        {
+          "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-8-2018r-0760-5834-PA",
+          "label": "Autoplac"
+        }
+      ],
+      "title": "Toyota Auris II 1.8 Hybrid, 2018, Kombi",
+      "year": 2018,
+      "price": 24200,
+      "priceLabel": "24 200 zł brutto; karta pokazuje kredyt jako oddzielną opcję finansowania",
+      "priceBasis": "gross_total",
+      "mileage": 160000,
+      "engine": "Hybrydowy, 1 798 cm³, 136 KM, automat",
+      "engineVariant": "1.8-hybrid-136",
+      "body": "Kombi",
+      "bodyCode": "wagon",
+      "transmission": "automatyczna",
+      "transmissionCode": "automatic",
+      "seller": "Osoba prywatna",
+      "offerType": "private",
+      "cameraStatus": "unknown",
+      "structuralDamageStatus": "unknown",
+      "saleType": "fixed_price",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "voivodeship": "mazowieckie",
+        "city": "Wszebory",
+        "precision": "city",
+        "source": "listing"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-10T00:30:25Z",
+      "listingStates": [
+        {
+          "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-8-2018r-0760-5834-PA",
+          "status": "available",
+          "lastAttemptAt": "2026-11-10T23:17:56Z",
+          "lastCheckedAt": "2026-11-10T23:17:56Z",
+          "lastVerifiedAt": "2026-11-10T23:17:56Z",
+          "lastObservation": {
+            "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-8-2018r-0760-5834-PA",
+            "checkedAt": "2026-11-10T23:17:56Z",
+            "availability": "available",
+            "note": "Otwarta karta Autoplac pasuje do ID 0760-5834-PA; pokazuje tytuł Toyota Auris II 1.8 hybryda, cenę 24 200 zł, aktualizację sprzed 2 tygodni i aktywne opcje kontaktu. Nie ma komunikatu o zamknięciu.",
+            "httpStatus": null
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-10T23:17:56Z",
+      "lastVerifiedAt": "2026-11-10T23:17:56Z",
+      "lastAttemptAt": "2026-11-10T23:17:56Z",
+      "history": [
+        {
+          "eventId": "6b54b993e55045911ca6ada2ed1bb3fe9bea87dad1203a397802a05bde0a337d",
+          "runId": "search-20261110-full",
+          "checkedAt": "2026-11-10T00:30:25Z",
+          "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-8-2018r-0760-5834-PA",
+          "availability": "available",
+          "note": "Karta publiczna z datą aktualizacji 2 tygodnie temu oraz przyciskami Napisz i Pokaż numer. Podaje 2018 rok produkcji, 160 000 km, hybrydę 1798 cm³/136 KM, automat, 24 200 zł brutto i lokalizację Wszebory (Mazowieckie). Nagłówek karty określa nadwozie jako KOMBI; sekcja stanu ma Brak danych dla bezwypadkowości/uszkodzenia. VIN, kamera i LPG nie są ujawnione.",
+          "photoCheck": null,
+          "evidence": [
+            {
+              "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-8-2018r-0760-5834-PA",
+              "checkedAt": "2026-11-10T00:30:25Z",
+              "kind": "seller",
+              "fields": [
+                "year",
+                "price",
+                "priceBasis",
+                "mileage",
+                "engine",
+                "engineVariant",
+                "bodyCode",
+                "transmissionCode",
+                "offerType",
+                "saleType",
+                "location",
+                "cameraStatus",
+                "lpgInstalled",
+                "structuralDamageStatus"
+              ],
+              "note": "Karta Autoplac: tytuł i nadwozie KOMBI; rok produkcji 2018; hybryda 1798 cm³/136 KM; automat; 160 000 km; 24 200 zł brutto; lokalizacja Wszebory, woj. mazowieckie; sprzedawca osoba prywatna; widoczne przyciski kontaktu i aktualizacja 2 tygodnie temu. Stan uszkodzeń oznaczono Brak danych; kamera i LPG nie są podane. Bezpośredni link zdjęcia widoczny na karcie zwrócił cache miss po próbie otwarcia, dlatego zdjęć nie zapisano."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:autoplac:0760-5834-PA",
+            "modelKey": "toyota-auris-touring-sports",
+            "listingIds": [
+              "autoplac:0760-5834-PA"
+            ],
+            "urls": [
+              {
+                "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-8-2018r-0760-5834-PA",
+                "label": "Autoplac"
+              }
+            ],
+            "title": "Toyota Auris II 1.8 Hybrid, 2018, Kombi",
+            "year": 2018,
+            "price": 24200,
+            "priceLabel": "24 200 zł brutto; karta pokazuje kredyt jako oddzielną opcję finansowania",
+            "priceBasis": "gross_unconditional_total",
+            "mileage": 160000,
+            "engine": "Hybrydowy, 1 798 cm³, 136 KM, automat",
+            "engineVariant": "1.8-hybrid-136",
+            "body": "Kombi",
+            "bodyCode": "wagon",
+            "transmission": "automatyczna",
+            "transmissionCode": "automatic",
+            "seller": "Osoba prywatna",
+            "offerType": "private",
+            "cameraStatus": "unknown",
+            "structuralDamageStatus": "unknown",
+            "familyFitConfirmed": null,
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "voivodeship": "mazowieckie",
+              "city": "Wszebory",
+              "precision": "city",
+              "source": "listing"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:autoplac:0760-5834-PA"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "toyota-auris-touring-sports"
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "autoplac:0760-5834-PA"
+              ]
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-8-2018r-0760-5834-PA",
+                  "label": "Autoplac"
+                }
+              ]
+            },
+            "title": {
+              "before": null,
+              "after": "Toyota Auris II 1.8 Hybrid, 2018, Kombi"
+            },
+            "year": {
+              "before": null,
+              "after": 2018
+            },
+            "price": {
+              "before": null,
+              "after": 24200
+            },
+            "priceLabel": {
+              "before": null,
+              "after": "24 200 zł brutto; karta pokazuje kredyt jako oddzielną opcję finansowania"
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "gross_unconditional_total"
+            },
+            "mileage": {
+              "before": null,
+              "after": 160000
+            },
+            "engine": {
+              "before": null,
+              "after": "Hybrydowy, 1 798 cm³, 136 KM, automat"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.8-hybrid-136"
+            },
+            "body": {
+              "before": null,
+              "after": "Kombi"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmission": {
+              "before": null,
+              "after": "automatyczna"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "automatic"
+            },
+            "seller": {
+              "before": null,
+              "after": "Osoba prywatna"
+            },
+            "offerType": {
+              "before": null,
+              "after": "private"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "voivodeship": "mazowieckie",
+                "city": "Wszebory",
+                "precision": "city",
+                "source": "listing"
+              }
+            }
+          }
+        },
+        {
+          "eventId": "06e4dcb00b209d61734371397ef33ae11dd7e481548f930e08a15926de0218ab",
+          "runId": "dostepnosc-2026-11-10",
+          "checkedAt": "2026-11-10T23:17:56Z",
+          "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-8-2018r-0760-5834-PA",
+          "availability": "available",
+          "note": "Otwarta karta Autoplac pasuje do ID 0760-5834-PA; pokazuje tytuł Toyota Auris II 1.8 hybryda, cenę 24 200 zł, aktualizację sprzed 2 tygodni i aktywne opcje kontaktu. Nie ma komunikatu o zamknięciu.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:0760-5834-PA"
+          },
+          "changes": {
+            "priceBasis": {
+              "before": "gross_unconditional_total",
+              "after": "gross_total"
+            }
+          }
+        },
+        {
+          "eventId": "64763350e0d4e3d95110d0fd001137f5e5c0a16e22bc788512af6cfc83dd48c0",
+          "runId": "manual-corrections-2026-11-11",
+          "checkedAt": "2026-11-11T01:52:35Z",
+          "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-8-2018r-0760-5834-PA",
+          "availability": "user_report",
+          "note": "Użytkownik zgłosił uszkodzenie auta. Model ma structuralDamageAllowed=false; rekord wykluczono z aktywnej listy, bez twierdzenia o zamknięciu ogłoszenia."
+        }
+      ],
+      "assessment": {
+        "id": "listing:autoplac:0760-5834-PA",
+        "modelKey": "toyota-auris-touring-sports",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "archive": {
+        "status": "excluded",
+        "reason": "user_reported_structural_damage",
+        "archivedAt": "2026-11-11T01:52:35Z",
+        "reportedAt": "2026-11-11T01:52:35Z",
+        "reportNote": "Użytkownik zgłosił uszkodzenie auta. Model ma structuralDamageAllowed=false; rekord wykluczono z aktywnej listy, bez twierdzenia o zamknięciu ogłoszenia.",
+        "sourceUrl": "https://autoplac.pl/oferta/toyota/auris/ii-1-8-2018r-0760-5834-PA"
+      }
+    },
     {
       "id": "listing:otomoto:6151062018",
       "modelKey": "toyota-auris-touring-sports",
@@ -72,21 +1010,21 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6IhedI.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-10T23:17:49Z",
+          "lastAttemptAt": "2026-11-11T02:04:20.561Z",
           "lastCheckedAt": "2026-11-10T23:17:49Z",
           "lastVerifiedAt": "2026-11-10T23:17:49Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6IhedI.html",
-            "checkedAt": "2026-11-10T23:17:49Z",
-            "availability": "available",
-            "note": "Bezpośrednia karta Otomoto Toyota Auris 2018 pokazuje cenę 48 000 PLN, treść ogłoszenia oraz dane kontaktowe; brak komunikatu o zamknięciu.",
+            "checkedAt": "2026-11-11T02:04:20.561Z",
+            "availability": "access_error",
+            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-10T23:17:49Z",
       "lastVerifiedAt": "2026-11-10T23:17:49Z",
-      "lastAttemptAt": "2026-11-10T23:17:49Z",
+      "lastAttemptAt": "2026-11-11T02:04:20.561Z",
       "history": [
         {
           "eventId": "34fa0092da6ca50f3a41896d837930b3df8cb2e78f3d0d821e833472f1222bd9",
@@ -434,6 +1372,21 @@
               "after": "gross_total"
             }
           }
+        },
+        {
+          "eventId": "f1870d902f57a3a516082b53022533c229858aa2a63f1f3eb7793471c9d48fcd",
+          "runId": "dostepnosc-2026-11-11-live",
+          "checkedAt": "2026-11-11T02:04:20.561Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6IhedI.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:6151062018"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -455,313 +1408,12 @@
       "photos": [
         "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im04cmFoazVwNXZmazItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.xCnvUaQkZlCr79XPNcBTmnCn0CebHJvHJoko6dQH0Uw/image%3Bs%3D5120x0%3Bq%3D80",
         "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNheXJwNHd4YnIxZy1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.4Ml8KaT1aZN2tuIjieWF7QSnHql07bl1L4aGj_vI9GU/image;s=5120x0;q=80"
-      ]
-    },
-    {
-      "id": "listing:autoplac:7718-1651-TH",
-      "modelKey": "toyota-auris-touring-sports",
-      "title": "Toyota Auris II 1.6 Valvematic 132 KM kombi — 2018, manual",
-      "urls": [
-        {
-          "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-6-2018r-7718-1651-TH"
-        }
       ],
-      "listingIds": [
-        "autoplac:7718-1651-TH"
-      ],
-      "vin": "SB1ZE3JE50E122025",
-      "year": 2018,
-      "price": 49900,
-      "mileage": 132177,
-      "engine": "1.6 Valvematic, 132 KM, benzyna",
-      "engineVariant": "1.6-valvematic-132",
-      "body": "Kombi / Touring Sports",
-      "bodyCode": "wagon",
-      "transmission": "Manualna",
-      "transmissionCode": "manual",
-      "saleType": "fixed_price",
-      "offerType": "company",
-      "cameraStatus": "unknown",
-      "structuralDamageStatus": "unknown",
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Wrocław",
-        "voivodeship": "Dolnośląskie"
-      },
-      "lpgInstalled": null,
-      "firstSeenAt": "2026-11-08T19:42:05+01:00",
-      "listingStates": [
-        {
-          "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-6-2018r-7718-1651-TH",
-          "status": "available",
-          "lastAttemptAt": "2026-11-10T23:17:56Z",
-          "lastCheckedAt": "2026-11-10T23:17:56Z",
-          "lastVerifiedAt": "2026-11-10T23:17:56Z",
-          "lastObservation": {
-            "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-6-2018r-7718-1651-TH",
-            "checkedAt": "2026-11-10T23:17:56Z",
-            "availability": "available",
-            "note": "Otwarta karta Autoplac pasuje do ID 7718-1651-TH; pokazuje tytuł Toyota Auris II 1.6, cenę 49 900 zł, aktualizację sprzed tygodnia i aktywne opcje kontaktu. Nie ma komunikatu o zamknięciu.",
-            "httpStatus": null
-          }
-        }
-      ],
-      "lastCheckedAt": "2026-11-10T23:17:56Z",
-      "lastVerifiedAt": "2026-11-10T23:17:56Z",
-      "lastAttemptAt": "2026-11-10T23:17:56Z",
-      "history": [
-        {
-          "eventId": "6dd2305ba8a22a5093bec9ddc7cb3b882b354029ccd5d15491cc6ef9578aa9a8",
-          "runId": "search-20261108",
-          "checkedAt": "2026-11-08T19:42:05+01:00",
-          "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-6-2018r-7718-1651-TH",
-          "availability": "available",
-          "note": "Aktywna karta Autoplac, ostatnia aktualizacja tydzień temu, z przyciskiem kontaktu i zaproszeniem do telefonicznego potwierdzenia dostępności. Dane karty potwierdzają Aurisa II 1.6, benzynę, 132 KM, 1598 cm³, 2018, manual, 132 177 km i cenę 49 900 zł brutto. Kategoria strony określa nadwozie jako KOMBI; lokalizacja Wrocław, Dolnośląskie; aktywny dealer. VIN SB1ZE3JE50E122025, pierwsza rejestracja 03.04.2019, CEPiK: ostatni przebieg 130 368 km. Kamera nie została wymieniona w odczytanym wyposażeniu. LPG nie jest podane ani wykluczone — status pozostaje nieznany. Sprzedawca opisuje przegląd we własnym serwisie; brak niezależnej kontroli konstrukcji.",
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:autoplac:7718-1651-TH",
-            "modelKey": "toyota-auris-touring-sports",
-            "title": "Toyota Auris II 1.6 Valvematic 132 KM kombi — 2018, manual",
-            "urls": [
-              {
-                "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-6-2018r-7718-1651-TH"
-              }
-            ],
-            "listingIds": [
-              "autoplac:7718-1651-TH"
-            ],
-            "vin": "SB1ZE3JE50E122025",
-            "year": 2018,
-            "price": 49900,
-            "mileage": 132177,
-            "engine": "1.6 Valvematic, 132 KM, benzyna",
-            "engineVariant": "1.6-valvematic-132",
-            "body": "Kombi / Touring Sports",
-            "bodyCode": "wagon",
-            "transmission": "Manualna",
-            "transmissionCode": "manual",
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "offerType": "company",
-            "cameraStatus": "unknown",
-            "structuralDamageStatus": "unknown",
-            "location": {
-              "status": "available",
-              "countryCode": "PL",
-              "city": "Wrocław",
-              "voivodeship": "Dolnośląskie"
-            }
-          },
-          "changes": {
-            "id": {
-              "before": null,
-              "after": "listing:autoplac:7718-1651-TH"
-            },
-            "modelKey": {
-              "before": null,
-              "after": "toyota-auris-touring-sports"
-            },
-            "title": {
-              "before": null,
-              "after": "Toyota Auris II 1.6 Valvematic 132 KM kombi — 2018, manual"
-            },
-            "urls": {
-              "before": null,
-              "after": [
-                {
-                  "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-6-2018r-7718-1651-TH"
-                }
-              ]
-            },
-            "listingIds": {
-              "before": null,
-              "after": [
-                "autoplac:7718-1651-TH"
-              ]
-            },
-            "vin": {
-              "before": null,
-              "after": "SB1ZE3JE50E122025"
-            },
-            "year": {
-              "before": null,
-              "after": 2018
-            },
-            "price": {
-              "before": null,
-              "after": 49900
-            },
-            "mileage": {
-              "before": null,
-              "after": 132177
-            },
-            "engine": {
-              "before": null,
-              "after": "1.6 Valvematic, 132 KM, benzyna"
-            },
-            "engineVariant": {
-              "before": null,
-              "after": "1.6-valvematic-132"
-            },
-            "body": {
-              "before": null,
-              "after": "Kombi / Touring Sports"
-            },
-            "bodyCode": {
-              "before": null,
-              "after": "wagon"
-            },
-            "transmission": {
-              "before": null,
-              "after": "Manualna"
-            },
-            "transmissionCode": {
-              "before": null,
-              "after": "manual"
-            },
-            "saleType": {
-              "before": null,
-              "after": "fixed_price"
-            },
-            "offerType": {
-              "before": null,
-              "after": "company"
-            },
-            "cameraStatus": {
-              "before": null,
-              "after": "unknown"
-            },
-            "structuralDamageStatus": {
-              "before": null,
-              "after": "unknown"
-            },
-            "location": {
-              "before": null,
-              "after": {
-                "status": "available",
-                "countryCode": "PL",
-                "city": "Wrocław",
-                "voivodeship": "Dolnośląskie"
-              }
-            }
-          }
-        },
-        {
-          "eventId": "c54c650ae23123afd9a845078016c56fe38670bb3b4a6c8469e935fb2ee33ce7",
-          "runId": "refresh-20261108-03",
-          "checkedAt": "2026-11-08T22:09:50+00:00",
-          "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-6-2018r-7718-1651-TH",
-          "availability": "available",
-          "note": "Karta widoczna; ostatnia aktualizacja tydzień temu. Podaje cenę 49 900 zł brutto, rok produkcji 2018, 132 177 km, benzynę 1.6 Valvematic 132 KM i manual. VIN SB1ZE3JE50E122025; pierwsza rejestracja 03.04.2019, więc nie utożsamiam jej z rokiem produkcji. Historia CEPiK wskazuje ostatni przebieg 130 368 km oraz ważne badanie do 03.2027. Sprzedawca deklaruje polski salon i fakturę VAT-marża; pola stanu pokazują bezwypadkowy i uszkodzony: brak danych. Sprzedawca prosi o telefon przed przyjazdem w celu potwierdzenia dostępności. Brak wzmianki o LPG, więc lpgInstalled=null.",
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:autoplac:7718-1651-TH",
-            "saleType": "fixed_price",
-            "lpgInstalled": null
-          },
-          "changes": {}
-        },
-        {
-          "eventId": "a8f4acc26d4ec214a4859a04bdc86f1db603bb181bdb049f171a32097340fae4",
-          "runId": "photos-20261108-01",
-          "checkedAt": "2026-11-08T22:42:33+00:00",
-          "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-6-2018r-7718-1651-TH",
-          "availability": "available",
-          "note": "Karta otwarta; aktualizacja tydzień temu, galeria 1/29. Cena 49 900 zł brutto, 2018, benzyna 1.6 132 KM, manual, 132 177 km. Pierwsza rejestracja podana jako 03.04.2019. Instalacja LPG niepotwierdzona.",
-          "photoCheck": {
-            "status": "found",
-            "note": "Odczytano bezpośredni HTTPS URL zdjęcia głównego z CDN Autoplac; galeria pokazuje 1/29."
-          },
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:autoplac:7718-1651-TH",
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "photos": [
-              "https://euw2-cdn.autoplac.pl/v1/p/23a81a45-b969-4c8e-a327-722edd057db3?f=1920%3Awebp"
-            ]
-          },
-          "changes": {
-            "photos": {
-              "before": null,
-              "after": [
-                "https://euw2-cdn.autoplac.pl/v1/p/23a81a45-b969-4c8e-a327-722edd057db3?f=1920%3Awebp"
-              ]
-            }
-          }
-        },
-        {
-          "eventId": "87a554f79edafba85a821918e9d2f09ceae68fc30ed95c6eba74ce3cfec606bb",
-          "runId": "refresh20261109a",
-          "checkedAt": "2026-11-09T13:15:05Z",
-          "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-6-2018r-7718-1651-TH",
-          "availability": "available",
-          "note": "Karta AutoPlac dostępna; 49 900 zł brutto, rok produkcji 2018, 132 177 km, Toyota Auris 1.6 Active, benzyna, 132 KM, manual, kombi. Karta podaje krajowe pochodzenie, lokalizację Wrocław (Dolnośląskie), VIN zweryfikowany w CEPiK oraz przebieg zgodny z historią przeglądów (ostatni odczyt 130 368 km). Sprzedawca deklaruje ISOFIX; karta prosi o kontakt przed przyjazdem w celu potwierdzenia dostępności. Kamera nie jest wymieniona w widocznym wyposażeniu. Bezpośrednia karta była dostępna przy sprawdzeniu; portal oznacza aktualizację ogłoszenia jako tydzień temu.",
-          "photoCheck": null,
-          "evidence": [
-            {
-              "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-6-2018r-7718-1651-TH",
-              "checkedAt": "2026-11-09T13:15:05Z",
-              "kind": "seller",
-              "fields": [
-                "price",
-                "year",
-                "mileage",
-                "engine",
-                "body",
-                "transmission",
-                "familyFitConfirmed"
-              ],
-              "note": "Karta AutoPlac podaje cenę brutto, parametry pojazdu i wyposażenie ISOFIX; status available wynika z bieżącej dostępności karty."
-            }
-          ],
-          "reportedFields": {
-            "id": "listing:autoplac:7718-1651-TH",
-            "modelKey": "toyota-auris-touring-sports",
-            "photos": [
-              "https://euw2-cdn.autoplac.pl/v1/p/23a81a45-b969-4c8e-a327-722edd057db3?f=1920%3Awebp"
-            ],
-            "saleType": "fixed_price",
-            "lpgInstalled": null
-          },
-          "changes": {}
-        },
-        {
-          "eventId": "a35e33eb6b171d95be40492ab2fdbbdb05d358e507009f55a5e5297817453e34",
-          "runId": "dostepnosc-2026-11-10",
-          "checkedAt": "2026-11-10T23:17:56Z",
-          "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-6-2018r-7718-1651-TH",
-          "availability": "available",
-          "note": "Otwarta karta Autoplac pasuje do ID 7718-1651-TH; pokazuje tytuł Toyota Auris II 1.6, cenę 49 900 zł, aktualizację sprzed tygodnia i aktywne opcje kontaktu. Nie ma komunikatu o zamknięciu.",
-          "httpStatus": null,
-          "photoCheck": null,
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:autoplac:7718-1651-TH"
-          },
-          "changes": {}
-        }
-      ],
-      "assessment": {
-        "id": "listing:autoplac:7718-1651-TH",
-        "modelKey": "toyota-auris-touring-sports",
-        "verdict": "check",
-        "failures": [],
-        "unknowns": [
-          "engine_review_requires_verification",
-          "camera_or_compatible_retrofit",
-          "structural_history",
-          "stroller_and_family_fit"
-        ],
-        "preferenceNotes": []
-      },
-      "verdict": "check",
-      "verdictTitle": "Do weryfikacji",
-      "verdictNote": "engine_review_requires_verification; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
-      "photos": [
-        "https://euw2-cdn.autoplac.pl/v1/p/23a81a45-b969-4c8e-a327-722edd057db3?f=1920%3Awebp"
-      ]
+      "archive": {
+        "status": "unverified",
+        "reason": "no_listing_url_confirmed_available; at_least_one_access_error",
+        "archivedAt": "2026-11-11T02:04:20.561000+00:00"
+      }
     },
     {
       "id": "listing:olx:1109826377",
@@ -806,21 +1458,21 @@
         {
           "url": "https://www.olx.pl/d/oferta/toyota-auris-1-6-132-km-salon-pl-stan-perfekcyjny-CID5-ID1d6Ixr.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-10T23:18:09Z",
+          "lastAttemptAt": "2026-11-11T02:04:20.561Z",
           "lastCheckedAt": "2026-11-10T23:18:09Z",
           "lastVerifiedAt": "2026-11-10T23:18:09Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/toyota-auris-1-6-132-km-salon-pl-stan-perfekcyjny-CID5-ID1d6Ixr.html",
-            "checkedAt": "2026-11-10T23:18:09Z",
-            "availability": "available",
-            "note": "Bezpośrednia karta OLX pokazuje Toyota Auris 1.6 132 KM, ID 1109826377, cenę 43 800 zł, kontakt ze sprzedawcą i świeżą datę dodania. Nie znaleziono komunikatu o zamknięciu.",
+            "checkedAt": "2026-11-11T02:04:20.561Z",
+            "availability": "access_error",
+            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-10T23:18:09Z",
       "lastVerifiedAt": "2026-11-10T23:18:09Z",
-      "lastAttemptAt": "2026-11-10T23:18:09Z",
+      "lastAttemptAt": "2026-11-11T02:04:20.561Z",
       "history": [
         {
           "eventId": "2701b8ef3526137e36c6511b0546478928ac39d7e72d9d95d60d6950636ac4e7",
@@ -1015,6 +1667,21 @@
               "after": "gross_total"
             }
           }
+        },
+        {
+          "eventId": "c1b6d0ee52660826add1b97accd2f719ed5ef3fe3de47251aa67c67ae31fb05a",
+          "runId": "dostepnosc-2026-11-11-live",
+          "checkedAt": "2026-11-11T02:04:20.561Z",
+          "url": "https://www.olx.pl/d/oferta/toyota-auris-1-6-132-km-salon-pl-stan-perfekcyjny-CID5-ID1d6Ixr.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1109826377"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -1034,7 +1701,12 @@
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
       "verdictNote": "engine_review_requires_verification; camera_or_compatible_retrofit; structural_history; mileage; stroller_and_family_fit",
-      "mileage": 149850
+      "mileage": 149850,
+      "archive": {
+        "status": "unverified",
+        "reason": "no_listing_url_confirmed_available; at_least_one_access_error",
+        "archivedAt": "2026-11-11T02:04:20.561000+00:00"
+      }
     },
     {
       "id": "listing:olx:ID1cHB64",
@@ -1091,21 +1763,21 @@
         {
           "url": "https://www.olx.pl/d/oferta/toyota-auris-toyota-auris-niski-przebieg-lpg-CID5-ID1cHB64.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-10T23:18:09Z",
+          "lastAttemptAt": "2026-11-11T02:04:20.561Z",
           "lastCheckedAt": "2026-11-10T23:18:09Z",
           "lastVerifiedAt": "2026-11-10T23:18:09Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/toyota-auris-toyota-auris-niski-przebieg-lpg-CID5-ID1cHB64.html",
-            "checkedAt": "2026-11-10T23:18:09Z",
-            "availability": "available",
-            "note": "Bezpośrednia karta OLX pokazuje Toyota Auris, ID 1103839572, cenę 48 000 zł, treść ogłoszenia i kontakt ze sprzedawcą. Data odświeżenia 24.10.2026; nie znaleziono komunikatu o zamknięciu.",
+            "checkedAt": "2026-11-11T02:04:20.561Z",
+            "availability": "access_error",
+            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-10T23:18:09Z",
       "lastVerifiedAt": "2026-11-10T23:18:09Z",
-      "lastAttemptAt": "2026-11-10T23:18:09Z",
+      "lastAttemptAt": "2026-11-11T02:04:20.561Z",
       "history": [
         {
           "eventId": "219fe0af0053e290bebe7e09b1974731a602a3e2276cb01dfd66a2f801fe0b88",
@@ -1340,6 +2012,21 @@
             "id": "listing:olx:ID1cHB64"
           },
           "changes": {}
+        },
+        {
+          "eventId": "87314205ae20979660b396d644ca0f4f581859c6092ab111dee886402c3087c8",
+          "runId": "dostepnosc-2026-11-11-live",
+          "checkedAt": "2026-11-11T02:04:20.561Z",
+          "url": "https://www.olx.pl/d/oferta/toyota-auris-toyota-auris-niski-przebieg-lpg-CID5-ID1cHB64.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:ID1cHB64"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -1359,601 +2046,11 @@
       },
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
-      "verdictNote": "gross_unconditional_purchase_price; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; LPG: potwierdzić dokumenty instalacji, homologację zbiornika i serwis"
-    },
-    {
-      "id": "listing:autoplac:0760-5834-PA",
-      "modelKey": "toyota-auris-touring-sports",
-      "listingIds": [
-        "autoplac:0760-5834-PA"
-      ],
-      "urls": [
-        {
-          "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-8-2018r-0760-5834-PA",
-          "label": "Autoplac"
-        }
-      ],
-      "title": "Toyota Auris II 1.8 Hybrid, 2018, Kombi",
-      "year": 2018,
-      "price": 24200,
-      "priceLabel": "24 200 zł brutto; karta pokazuje kredyt jako oddzielną opcję finansowania",
-      "priceBasis": "gross_total",
-      "mileage": 160000,
-      "engine": "Hybrydowy, 1 798 cm³, 136 KM, automat",
-      "engineVariant": "1.8-hybrid-136",
-      "body": "Kombi",
-      "bodyCode": "wagon",
-      "transmission": "automatyczna",
-      "transmissionCode": "automatic",
-      "seller": "Osoba prywatna",
-      "offerType": "private",
-      "cameraStatus": "unknown",
-      "structuralDamageStatus": "unknown",
-      "saleType": "fixed_price",
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "voivodeship": "mazowieckie",
-        "city": "Wszebory",
-        "precision": "city",
-        "source": "listing"
-      },
-      "lpgInstalled": null,
-      "firstSeenAt": "2026-11-10T00:30:25Z",
-      "listingStates": [
-        {
-          "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-8-2018r-0760-5834-PA",
-          "status": "available",
-          "lastAttemptAt": "2026-11-10T23:17:56Z",
-          "lastCheckedAt": "2026-11-10T23:17:56Z",
-          "lastVerifiedAt": "2026-11-10T23:17:56Z",
-          "lastObservation": {
-            "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-8-2018r-0760-5834-PA",
-            "checkedAt": "2026-11-10T23:17:56Z",
-            "availability": "available",
-            "note": "Otwarta karta Autoplac pasuje do ID 0760-5834-PA; pokazuje tytuł Toyota Auris II 1.8 hybryda, cenę 24 200 zł, aktualizację sprzed 2 tygodni i aktywne opcje kontaktu. Nie ma komunikatu o zamknięciu.",
-            "httpStatus": null
-          }
-        }
-      ],
-      "lastCheckedAt": "2026-11-10T23:17:56Z",
-      "lastVerifiedAt": "2026-11-10T23:17:56Z",
-      "lastAttemptAt": "2026-11-10T23:17:56Z",
-      "history": [
-        {
-          "eventId": "6b54b993e55045911ca6ada2ed1bb3fe9bea87dad1203a397802a05bde0a337d",
-          "runId": "search-20261110-full",
-          "checkedAt": "2026-11-10T00:30:25Z",
-          "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-8-2018r-0760-5834-PA",
-          "availability": "available",
-          "note": "Karta publiczna z datą aktualizacji 2 tygodnie temu oraz przyciskami Napisz i Pokaż numer. Podaje 2018 rok produkcji, 160 000 km, hybrydę 1798 cm³/136 KM, automat, 24 200 zł brutto i lokalizację Wszebory (Mazowieckie). Nagłówek karty określa nadwozie jako KOMBI; sekcja stanu ma Brak danych dla bezwypadkowości/uszkodzenia. VIN, kamera i LPG nie są ujawnione.",
-          "photoCheck": null,
-          "evidence": [
-            {
-              "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-8-2018r-0760-5834-PA",
-              "checkedAt": "2026-11-10T00:30:25Z",
-              "kind": "seller",
-              "fields": [
-                "year",
-                "price",
-                "priceBasis",
-                "mileage",
-                "engine",
-                "engineVariant",
-                "bodyCode",
-                "transmissionCode",
-                "offerType",
-                "saleType",
-                "location",
-                "cameraStatus",
-                "lpgInstalled",
-                "structuralDamageStatus"
-              ],
-              "note": "Karta Autoplac: tytuł i nadwozie KOMBI; rok produkcji 2018; hybryda 1798 cm³/136 KM; automat; 160 000 km; 24 200 zł brutto; lokalizacja Wszebory, woj. mazowieckie; sprzedawca osoba prywatna; widoczne przyciski kontaktu i aktualizacja 2 tygodnie temu. Stan uszkodzeń oznaczono Brak danych; kamera i LPG nie są podane. Bezpośredni link zdjęcia widoczny na karcie zwrócił cache miss po próbie otwarcia, dlatego zdjęć nie zapisano."
-            }
-          ],
-          "reportedFields": {
-            "id": "listing:autoplac:0760-5834-PA",
-            "modelKey": "toyota-auris-touring-sports",
-            "listingIds": [
-              "autoplac:0760-5834-PA"
-            ],
-            "urls": [
-              {
-                "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-8-2018r-0760-5834-PA",
-                "label": "Autoplac"
-              }
-            ],
-            "title": "Toyota Auris II 1.8 Hybrid, 2018, Kombi",
-            "year": 2018,
-            "price": 24200,
-            "priceLabel": "24 200 zł brutto; karta pokazuje kredyt jako oddzielną opcję finansowania",
-            "priceBasis": "gross_unconditional_total",
-            "mileage": 160000,
-            "engine": "Hybrydowy, 1 798 cm³, 136 KM, automat",
-            "engineVariant": "1.8-hybrid-136",
-            "body": "Kombi",
-            "bodyCode": "wagon",
-            "transmission": "automatyczna",
-            "transmissionCode": "automatic",
-            "seller": "Osoba prywatna",
-            "offerType": "private",
-            "cameraStatus": "unknown",
-            "structuralDamageStatus": "unknown",
-            "familyFitConfirmed": null,
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "location": {
-              "status": "available",
-              "countryCode": "PL",
-              "voivodeship": "mazowieckie",
-              "city": "Wszebory",
-              "precision": "city",
-              "source": "listing"
-            }
-          },
-          "changes": {
-            "id": {
-              "before": null,
-              "after": "listing:autoplac:0760-5834-PA"
-            },
-            "modelKey": {
-              "before": null,
-              "after": "toyota-auris-touring-sports"
-            },
-            "listingIds": {
-              "before": null,
-              "after": [
-                "autoplac:0760-5834-PA"
-              ]
-            },
-            "urls": {
-              "before": null,
-              "after": [
-                {
-                  "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-8-2018r-0760-5834-PA",
-                  "label": "Autoplac"
-                }
-              ]
-            },
-            "title": {
-              "before": null,
-              "after": "Toyota Auris II 1.8 Hybrid, 2018, Kombi"
-            },
-            "year": {
-              "before": null,
-              "after": 2018
-            },
-            "price": {
-              "before": null,
-              "after": 24200
-            },
-            "priceLabel": {
-              "before": null,
-              "after": "24 200 zł brutto; karta pokazuje kredyt jako oddzielną opcję finansowania"
-            },
-            "priceBasis": {
-              "before": null,
-              "after": "gross_unconditional_total"
-            },
-            "mileage": {
-              "before": null,
-              "after": 160000
-            },
-            "engine": {
-              "before": null,
-              "after": "Hybrydowy, 1 798 cm³, 136 KM, automat"
-            },
-            "engineVariant": {
-              "before": null,
-              "after": "1.8-hybrid-136"
-            },
-            "body": {
-              "before": null,
-              "after": "Kombi"
-            },
-            "bodyCode": {
-              "before": null,
-              "after": "wagon"
-            },
-            "transmission": {
-              "before": null,
-              "after": "automatyczna"
-            },
-            "transmissionCode": {
-              "before": null,
-              "after": "automatic"
-            },
-            "seller": {
-              "before": null,
-              "after": "Osoba prywatna"
-            },
-            "offerType": {
-              "before": null,
-              "after": "private"
-            },
-            "cameraStatus": {
-              "before": null,
-              "after": "unknown"
-            },
-            "structuralDamageStatus": {
-              "before": null,
-              "after": "unknown"
-            },
-            "saleType": {
-              "before": null,
-              "after": "fixed_price"
-            },
-            "location": {
-              "before": null,
-              "after": {
-                "status": "available",
-                "countryCode": "PL",
-                "voivodeship": "mazowieckie",
-                "city": "Wszebory",
-                "precision": "city",
-                "source": "listing"
-              }
-            }
-          }
-        },
-        {
-          "eventId": "06e4dcb00b209d61734371397ef33ae11dd7e481548f930e08a15926de0218ab",
-          "runId": "dostepnosc-2026-11-10",
-          "checkedAt": "2026-11-10T23:17:56Z",
-          "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-8-2018r-0760-5834-PA",
-          "availability": "available",
-          "note": "Otwarta karta Autoplac pasuje do ID 0760-5834-PA; pokazuje tytuł Toyota Auris II 1.8 hybryda, cenę 24 200 zł, aktualizację sprzed 2 tygodni i aktywne opcje kontaktu. Nie ma komunikatu o zamknięciu.",
-          "httpStatus": null,
-          "photoCheck": null,
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:autoplac:0760-5834-PA"
-          },
-          "changes": {
-            "priceBasis": {
-              "before": "gross_unconditional_total",
-              "after": "gross_total"
-            }
-          }
-        }
-      ],
-      "assessment": {
-        "id": "listing:autoplac:0760-5834-PA",
-        "modelKey": "toyota-auris-touring-sports",
-        "verdict": "check",
-        "failures": [],
-        "unknowns": [
-          "camera_or_compatible_retrofit",
-          "structural_history",
-          "stroller_and_family_fit"
-        ],
-        "preferenceNotes": []
-      },
-      "verdict": "check",
-      "verdictTitle": "Do weryfikacji",
-      "verdictNote": "camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
-    }
-  ],
-  "archivedOffers": [
-    {
-      "id": "listing:otomoto:6151070129",
-      "modelKey": "toyota-auris-touring-sports",
-      "listingIds": [
-        "otomoto:6151070129"
-      ],
-      "urls": [
-        {
-          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6Ihgkx.html",
-          "label": "Otomoto — Toyota Auris II 1.8 Hybrid"
-        }
-      ],
-      "photos": [
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImNtZmR3YzV5MGVmMjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.4kqMcP_KeR3IZzaZFjAS_gpvazky30EfeuMJtvye1OA/image%3Bs%3D5120x0%3Bq%3D80",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im1mejV1anAwdW9jNjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.07i_2JPFRpeRu-SnmmiT1bmr2FDkbcmKg-uC5yIXBmU/image%3Bs%3D5120x0%3Bq%3D100",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImRlanZ1dnJrY251NzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.u7feCmxLUhdWAAXZ5GaMsQjm-2vN05fcha1OSs5fC0Q/image%3Bs%3D5120x0%3Bq%3D100",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImR1Y3R5ZG1tNzAxZjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.xKDrmxc7MiZ9zHPDmoFIiame4LJ6md2bp9-f6g7NDxo/image%3Bs%3D5120x0%3Bq%3D100",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImJnNGExb290N3Jwei1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.Vztz0p-bIduzlMLMxr5h7F4fMrbMZkFKVcstDCyoE7c/image%3Bs%3D5120x0%3Bq%3D100",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijl4d2Fzb2g5Zmd5dy1PVE9NTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.R-LAzpLAeohVz41NVl7c4FWSMMkJRP5CZ8cIe96Yiwg/image%3Bs%3D5120x0%3Bq%3D100",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InEwcThrMDQybjh3eDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.yFohnVFSWum5EBrGaT4VAydGG7H-PwdMAEABPeXnEKs/image%3Bs%3D5120x0%3Bq%3D100",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imx6bXAwMHozeW1qNTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.AusOQFKcBgIT_rtm98CbXdBkld1hym7D6IHUYNHE2yjs/image%3Bs%3D5120x0%3Bq%3D100",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im05Zmg1amY0aWJiMDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.IDUzlt6bhxFBg5uFXeLcwmRbtAX-PFWZAJuH9k2LjAo/image%3Bs%3D5120x0%3Bq%3D100"
-      ],
-      "title": "Toyota Auris II Touring Sports 1.8 Hybrid, 2018",
-      "year": 2018,
-      "price": 52500,
-      "priceLabel": "52 500 zł na karcie; możliwość negocjacji",
-      "mileage": 134000,
-      "engine": "1.8 Hybrid · 136 KM · 1 798 cm³",
-      "engineVariant": "1.8-hybrid-136",
-      "body": "Kombi",
-      "bodyCode": "wagon",
-      "transmission": "automatyczna",
-      "transmissionCode": "automatic",
-      "seller": "osoba prywatna — Otomoto",
-      "offerType": "private",
-      "priceBasis": "gross_total",
-      "cameraStatus": "installed_confirmed",
-      "structuralDamageStatus": "unknown",
-      "saleType": "fixed_price",
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "voivodeship": "małopolskie",
-        "city": "Tarnów",
-        "precision": "city",
-        "source": "listing"
-      },
-      "lpgInstalled": null,
-      "firstSeenAt": "2026-11-09T22:45:34Z",
-      "listingStates": [
-        {
-          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6Ihgkx.html",
-          "status": "removed",
-          "lastAttemptAt": "2026-11-10T23:17:49Z",
-          "lastCheckedAt": "2026-11-10T23:17:49Z",
-          "lastVerifiedAt": "2026-11-10T23:17:49Z",
-          "lastObservation": {
-            "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6Ihgkx.html",
-            "checkedAt": "2026-11-10T23:17:49Z",
-            "availability": "removed",
-            "note": "Bezpośrednie otwarcie URL zwróciło HTTP 410 Gone.",
-            "httpStatus": 410
-          }
-        }
-      ],
-      "lastCheckedAt": "2026-11-10T23:17:49Z",
-      "lastVerifiedAt": "2026-11-10T23:17:49Z",
-      "lastAttemptAt": "2026-11-10T23:17:49Z",
-      "history": [
-        {
-          "eventId": "5230fb44fb60308f4e8681a3db6ea4fd3201eac89f06d8bf7ceec1efbfacbaf6",
-          "runId": "search-20261109-full",
-          "checkedAt": "2026-11-09T22:45:34Z",
-          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6Ihgkx.html",
-          "availability": "available",
-          "note": "Karta Otomoto otwarta 9.11.2026. Podaje Toyota Auris II, rok produkcji 2018, 1.8 Hybrid 136 KM, automatyczną skrzynię, kombi, przebieg 134 000 km, cenę 52 500 zł i lokalizację Tarnów, Małopolskie. Prywatny sprzedawca wymienia kamerę cofania, deklaruje komplet dokumentów i możliwość kontroli w ASO lub na stacji diagnostycznej. Opis nie podaje LPG; nie rozstrzyga niezależnie o stanie konstrukcji. Oferta opublikowana 25.10.2026; karta dostępna podczas sprawdzenia.",
-          "photoCheck": null,
-          "evidence": [
-            {
-              "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6Ihgkx.html",
-              "checkedAt": "2026-11-09T22:45:34Z",
-              "kind": "seller",
-              "fields": [
-                "year",
-                "price",
-                "mileage",
-                "engineVariant",
-                "bodyCode",
-                "transmissionCode",
-                "cameraStatus",
-                "saleType",
-                "offerType",
-                "location"
-              ],
-              "note": "Dane z karty i opisu sprzedawcy; oferta prywatna, 52 500 zł do negocjacji, karta wymienia kamerę cofania. Cena bez warunku obowiązkowego finansowania; dodatkowe koszty nie są wskazane."
-            },
-            {
-              "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6Ihgkx.html",
-              "checkedAt": "2026-11-09T22:45:34Z",
-              "kind": "seller",
-              "fields": [
-                "structuralDamageStatus",
-                "lpgInstalled"
-              ],
-              "note": "Karta opisuje auto jako sprawne oraz umożliwia inspekcję w ASO/na SKP, ale brak niezależnej kontroli konstrukcji. LPG nie jest podane; pozostaje unknown/null."
-            }
-          ],
-          "reportedFields": {
-            "id": "listing:otomoto:6151070129",
-            "modelKey": "toyota-auris-touring-sports",
-            "vin": null,
-            "listingIds": [
-              "otomoto:6151070129"
-            ],
-            "urls": [
-              {
-                "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6Ihgkx.html",
-                "label": "Otomoto — Toyota Auris II 1.8 Hybrid"
-              }
-            ],
-            "photos": [
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImNtZmR3YzV5MGVmMjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.4kqMcP_KeR3IZzaZFjAS_gpvazky30EfeuMJtvye1OA/image%3Bs%3D5120x0%3Bq%3D80",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im1mejV1anAwdW9jNjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.07i_2JPFRpeRu-SnmmiT1bmr2FDkbcmKg-uC5yIXBmU/image%3Bs%3D5120x0%3Bq%3D100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImRlanZ1dnJrY251NzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.u7feCmxLUhdWAAXZ5GaMsQjm-2vN05fcha1OSs5fC0Q/image%3Bs%3D5120x0%3Bq%3D100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImR1Y3R5ZG1tNzAxZjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.xKDrmxc7MiZ9zHPDmoFIiame4LJ6md2bp9-f6g7NDxo/image%3Bs%3D5120x0%3Bq%3D100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImJnNGExb290N3Jwei1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.Vztz0p-bIduzlMLMxr5h7F4fMrbMZkFKVcstDCyoE7c/image%3Bs%3D5120x0%3Bq%3D100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijl4d2Fzb2g5Zmd5dy1PVE9NTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.R-LAzpLAeohVz41NVl7c4FWSMMkJRP5CZ8cIe96Yiwg/image%3Bs%3D5120x0%3Bq%3D100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InEwcThrMDQybjh3eDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.yFohnVFSWum5EBrGaT4VAydGG7H-PwdMAEABPeXnEKs/image%3Bs%3D5120x0%3Bq%3D100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imx6bXAwMHozeW1qNTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.AusOQFKcBgIT_rtm98CbXdBkld1hym7D6IHUYNHE2yjs/image%3Bs%3D5120x0%3Bq%3D100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im05Zmg1amY0aWJiMDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.IDUzlt6bhxFBg5uFXeLcwmRbtAX-PFWZAJuH9k2LjAo/image%3Bs%3D5120x0%3Bq%3D100"
-            ],
-            "title": "Toyota Auris II Touring Sports 1.8 Hybrid, 2018",
-            "year": 2018,
-            "price": 52500,
-            "priceLabel": "52 500 zł na karcie; możliwość negocjacji",
-            "mileage": 134000,
-            "engine": "1.8 Hybrid · 136 KM · 1 798 cm³",
-            "engineVariant": "1.8-hybrid-136",
-            "body": "Kombi",
-            "bodyCode": "wagon",
-            "transmission": "automatyczna",
-            "transmissionCode": "automatic",
-            "seller": "osoba prywatna — Otomoto",
-            "offerType": "private",
-            "priceBasis": "gross_unconditional_total",
-            "cameraStatus": "installed_confirmed",
-            "structuralDamageStatus": "unknown",
-            "familyFitConfirmed": null,
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "location": {
-              "status": "available",
-              "countryCode": "PL",
-              "voivodeship": "małopolskie",
-              "city": "Tarnów",
-              "precision": "city",
-              "source": "listing"
-            }
-          },
-          "changes": {
-            "id": {
-              "before": null,
-              "after": "listing:otomoto:6151070129"
-            },
-            "modelKey": {
-              "before": null,
-              "after": "toyota-auris-touring-sports"
-            },
-            "listingIds": {
-              "before": null,
-              "after": [
-                "otomoto:6151070129"
-              ]
-            },
-            "urls": {
-              "before": null,
-              "after": [
-                {
-                  "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6Ihgkx.html",
-                  "label": "Otomoto — Toyota Auris II 1.8 Hybrid"
-                }
-              ]
-            },
-            "photos": {
-              "before": null,
-              "after": [
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImNtZmR3YzV5MGVmMjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.4kqMcP_KeR3IZzaZFjAS_gpvazky30EfeuMJtvye1OA/image%3Bs%3D5120x0%3Bq%3D80",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im1mejV1anAwdW9jNjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.07i_2JPFRpeRu-SnmmiT1bmr2FDkbcmKg-uC5yIXBmU/image%3Bs%3D5120x0%3Bq%3D100",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImRlanZ1dnJrY251NzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.u7feCmxLUhdWAAXZ5GaMsQjm-2vN05fcha1OSs5fC0Q/image%3Bs%3D5120x0%3Bq%3D100",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImR1Y3R5ZG1tNzAxZjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.xKDrmxc7MiZ9zHPDmoFIiame4LJ6md2bp9-f6g7NDxo/image%3Bs%3D5120x0%3Bq%3D100",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImJnNGExb290N3Jwei1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.Vztz0p-bIduzlMLMxr5h7F4fMrbMZkFKVcstDCyoE7c/image%3Bs%3D5120x0%3Bq%3D100",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijl4d2Fzb2g5Zmd5dy1PVE9NTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.R-LAzpLAeohVz41NVl7c4FWSMMkJRP5CZ8cIe96Yiwg/image%3Bs%3D5120x0%3Bq%3D100",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InEwcThrMDQybjh3eDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.yFohnVFSWum5EBrGaT4VAydGG7H-PwdMAEABPeXnEKs/image%3Bs%3D5120x0%3Bq%3D100",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imx6bXAwMHozeW1qNTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.AusOQFKcBgIT_rtm98CbXdBkld1hym7D6IHUYNHE2yjs/image%3Bs%3D5120x0%3Bq%3D100",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im05Zmg1amY0aWJiMDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.IDUzlt6bhxFBg5uFXeLcwmRbtAX-PFWZAJuH9k2LjAo/image%3Bs%3D5120x0%3Bq%3D100"
-              ]
-            },
-            "title": {
-              "before": null,
-              "after": "Toyota Auris II Touring Sports 1.8 Hybrid, 2018"
-            },
-            "year": {
-              "before": null,
-              "after": 2018
-            },
-            "price": {
-              "before": null,
-              "after": 52500
-            },
-            "priceLabel": {
-              "before": null,
-              "after": "52 500 zł na karcie; możliwość negocjacji"
-            },
-            "mileage": {
-              "before": null,
-              "after": 134000
-            },
-            "engine": {
-              "before": null,
-              "after": "1.8 Hybrid · 136 KM · 1 798 cm³"
-            },
-            "engineVariant": {
-              "before": null,
-              "after": "1.8-hybrid-136"
-            },
-            "body": {
-              "before": null,
-              "after": "Kombi"
-            },
-            "bodyCode": {
-              "before": null,
-              "after": "wagon"
-            },
-            "transmission": {
-              "before": null,
-              "after": "automatyczna"
-            },
-            "transmissionCode": {
-              "before": null,
-              "after": "automatic"
-            },
-            "seller": {
-              "before": null,
-              "after": "osoba prywatna — Otomoto"
-            },
-            "offerType": {
-              "before": null,
-              "after": "private"
-            },
-            "priceBasis": {
-              "before": null,
-              "after": "gross_unconditional_total"
-            },
-            "cameraStatus": {
-              "before": null,
-              "after": "installed_confirmed"
-            },
-            "structuralDamageStatus": {
-              "before": null,
-              "after": "unknown"
-            },
-            "saleType": {
-              "before": null,
-              "after": "fixed_price"
-            },
-            "location": {
-              "before": null,
-              "after": {
-                "status": "available",
-                "countryCode": "PL",
-                "voivodeship": "małopolskie",
-                "city": "Tarnów",
-                "precision": "city",
-                "source": "listing"
-              }
-            }
-          }
-        },
-        {
-          "eventId": "33a4c6991a949e7e18d7e9a86a0e98f597da75279979d8923434881809a6e647",
-          "runId": "dostepnosc-2026-11-10",
-          "checkedAt": "2026-11-10T23:17:49Z",
-          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6Ihgkx.html",
-          "availability": "removed",
-          "note": "Bezpośrednie otwarcie URL zwróciło HTTP 410 Gone.",
-          "httpStatus": 410,
-          "photoCheck": null,
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:otomoto:6151070129"
-          },
-          "changes": {
-            "priceBasis": {
-              "before": "gross_unconditional_total",
-              "after": "gross_total"
-            }
-          }
-        }
-      ],
-      "assessment": {
-        "id": "listing:otomoto:6151070129",
-        "modelKey": "toyota-auris-touring-sports",
-        "verdict": "check",
-        "failures": [],
-        "unknowns": [
-          "structural_history",
-          "stroller_and_family_fit"
-        ],
-        "preferenceNotes": []
-      },
-      "verdict": "check",
-      "verdictTitle": "Do weryfikacji",
-      "verdictNote": "structural_history; stroller_and_family_fit",
+      "verdictNote": "gross_unconditional_purchase_price; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; LPG: potwierdzić dokumenty instalacji, homologację zbiornika i serwis",
       "archive": {
-        "status": "closed",
-        "reason": "all_listings_confirmed_closed",
-        "archivedAt": "2026-11-10T23:17:49+00:00"
+        "status": "unverified",
+        "reason": "no_listing_url_confirmed_available; at_least_one_access_error",
+        "archivedAt": "2026-11-11T02:04:20.561000+00:00"
       }
     }
   ]

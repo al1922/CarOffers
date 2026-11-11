@@ -1,886 +1,13 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-10",
+  "updatedAt": "2026-11-11",
   "model": {
     "key": "toyota-corolla-e210",
     "name": "Toyota Corolla XII (E210)",
     "description": "Sedan i kombi (Touring Sports)",
     "requirements": "Toyota Corolla XII (E210); 1.6 Valvematic 132 KM Sedan (potwierdzić rocznik/VIN); 1.8 Hybrid 122 KM; 1.8 Hybrid 140 KM; rodzina: 2 dorosłych i 1 dziecko; wymagane miejsce na wózek i bagaż; rocznik od 2019 do 2023; maks. 55 000 zł brutto według ceny podanej w ogłoszeniu; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 170 000 km preferowany; kamera wymagana  obecna lub z potwierdzoną możliwością montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji."
   },
-  "offers": [
-    {
-      "id": "vin:NMTBE3BE90R086070",
-      "vin": "NMTBE3BE90R086070",
-      "listingIds": [],
-      "urls": [
-        {
-          "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2020r-1szy-wlasc-serw-aso-salon-pl-stan-idealny-comforttech-9562-3889-PX",
-          "normalized": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2020r-1szy-wlasc-serw-aso-salon-pl-stan-idealny-comforttech-9562-3889-PX",
-          "label": "Zobacz ogłoszenie"
-        }
-      ],
-      "title": "1.6 Valvematic Sedan — Warszawa",
-      "verdict": "check",
-      "modelKey": "toyota-corolla-e210",
-      "year": 2020,
-      "price": 55400,
-      "mileage": 109000,
-      "engine": "1.6 Valvematic · 132 KM",
-      "body": "Sedan",
-      "transmission": "Manualna",
-      "seller": "Sprzedawca prywatny / D-SYSTEM listing · Strona aktywna; aktualizacja 6.11.2026 · ponownie zweryfikowana; cena brutto potwierdzona na stronie",
-      "priority": "Priorytet 1 · do negocjacji o 400 zł",
-      "subtitle": "2020 · Sedan · 1.6 Valvematic",
-      "specs": {
-        "rocznik": "2020",
-        "nadwozie": "Sedan",
-        "silnik": "1.6 Valvematic · 132 KM",
-        "skrzynia": "Manualna",
-        "przebieg": "109 000 km",
-        "cena ogłoszenia": "55 400 zł (stan na 07.11.2026; brutto do potwierdzenia przy płatności)"
-      },
-      "details": {
-        "Historia i pochodzenie": "Sprzedawca deklaruje polski salon, jednego właściciela, serwis ASO, Toyota Relax do 10 lat. VIN: NMTBE3BE90R086070. Pierwsza rejestracja 05.03.2021; CEPiK 109 287 km. Sprzedawca deklaruje brak wypadków i uszkodzeń.",
-        "Wyposażenie": "Comfort/Tech; kamera cofania, Apple CarPlay/Android Auto, ACC, asystent pasa i znaków, LED, dwustrefowa klimatyzacja — wg opisu.",
-        "Problemy / niepewności": "Aktualna karta Autoplac pokazuje 55 400 zł (obniżka względem zapisanych poprzednio 56 800 zł). Brak publicznych skanów serwisu i szkód; cena końcowa do potwierdzenia. Odczyt CEPiK 109 287 km vs zaokrąglone 109 000 km w ogłoszeniu nie dowodzi ingerencji w licznik. Potwierdzić dokumenty ASO i Toyota Relax po VIN.",
-        "Ocena": "Jedna z lepszych opcji 1.6 Valvematic: polskie pochodzenie, identyfikowalny VIN, kamera cofania, deklarowany serwis ASO i atrakcyjna cena po obniżce. W wariancie 55 tys. zł wymagana negocjacja co najmniej 400 zł."
-      },
-      "verdictTitle": "Do weryfikacji",
-      "verdictNote": "price_exception_requires_user_confirmation; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
-      "offerType": "unknown",
-      "saleType": "fixed_price",
-      "listingStates": [
-        {
-          "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2020r-1szy-wlasc-serw-aso-salon-pl-stan-idealny-comforttech-9562-3889-PX",
-          "status": "available",
-          "lastAttemptAt": "2026-11-10T23:18:09Z",
-          "lastCheckedAt": "2026-11-10T23:18:09Z",
-          "lastVerifiedAt": "2026-11-10T23:18:09Z",
-          "lastObservation": {
-            "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2020r-1szy-wlasc-serw-aso-salon-pl-stan-idealny-comforttech-9562-3889-PX",
-            "checkedAt": "2026-11-10T23:18:09Z",
-            "availability": "available",
-            "httpStatus": null,
-            "note": "Bezpośrednia karta Autoplac pokazuje ogłoszenie, cenę i przyciski kontaktu; brak komunikatu o archiwum."
-          }
-        }
-      ],
-      "lastCheckedAt": "2026-11-10T23:18:09Z",
-      "lastVerifiedAt": "2026-11-10T23:18:09Z",
-      "lastAttemptAt": "2026-11-10T23:18:09Z",
-      "history": [
-        {
-          "eventId": "d944d7e7db2cec81bb5674dac911780fd7236bc90323a2cd6fa157a1bbe11eba",
-          "runId": "refresh-20261108-01",
-          "checkedAt": "2026-11-08T17:54:02+00:00",
-          "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2020r-1szy-wlasc-serw-aso-salon-pl-stan-idealny-comforttech-9562-3889-PX",
-          "availability": "available",
-          "note": "Karta ogłoszenia została odczytana; dostępność odnotowana jako available. Szczegóły z odczytu sprzedawcy (niezależnie niepotwierdzone): Karta aktualizowana 3 dni temu. Cena 55 400 zł; benzyna, 1 598 cm³, manual. VIN NMTBE3BE90R086070. Opis deklaruje salon PL, pierwszego właściciela, serwis ASO i pierwszą rejestrację 2021. Kamera cofania wymieniona. LPG niepotwierdzone; informacja, że silnik jest „idealny do gazu”, nie oznacza instalacji.",
-          "evidence": [],
-          "reportedFields": {
-            "id": "vin:NMTBE3BE90R086070",
-            "saleType": "fixed_price",
-            "lpgInstalled": null
-          },
-          "changes": {
-            "saleType": {
-              "before": null,
-              "after": "fixed_price"
-            }
-          }
-        },
-        {
-          "eventId": "02b2a9db290f2db08f96a2581419fea5d68eb2739366d1e145c60f24d9e00ca9",
-          "runId": "refresh-20261108-03",
-          "checkedAt": "2026-11-08T22:12:15+00:00",
-          "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2020r-1szy-wlasc-serw-aso-salon-pl-stan-idealny-comforttech-9562-3889-PX",
-          "availability": "available",
-          "note": "Karta aktualizowana 3 dni temu; podaje cenę 55 400 zł brutto, 2020, 109 000 km, 1.6 Valvematic 132 KM i manual. VIN NMTBE3BE90R086070; opis podaje pierwszą rejestrację w 2021 r., karta dokładnie 05.03.2021. CEPiK pokazuje 109 287 km, ważne badanie do 02.2027. Sprzedawca deklaruje 1 właściciela, polski salon i serwis ASO; pola stanu: bezwypadkowy tak, uszkodzony nie. Zdanie „idealny do gazu” opisuje możliwość/ocenę silnika, nie potwierdza instalacji LPG; lpgInstalled=null.",
-          "evidence": [],
-          "reportedFields": {
-            "id": "vin:NMTBE3BE90R086070",
-            "saleType": "fixed_price",
-            "lpgInstalled": null
-          },
-          "changes": {}
-        },
-        {
-          "eventId": "5015e45300c27a8f9d9e285c7b449057a50ddc94a45e8da6ab1c3fa7756a51fe",
-          "runId": "photos-20261108-01",
-          "checkedAt": "2026-11-08T22:43:22+00:00",
-          "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2020r-1szy-wlasc-serw-aso-salon-pl-stan-idealny-comforttech-9562-3889-PX",
-          "availability": "available",
-          "note": "Karta zaktualizowana 3 dni temu; cena 55 400 zł, 2020, benzyna 1.6 132 KM, manual, 109 000 km. Opis wymienia kamerę cofania i pierwszą rejestrację w 2021 r.; instalacji LPG nie potwierdza. Galeria 1/11.",
-          "photoCheck": {
-            "status": "found",
-            "note": "Odczytano bezpośredni HTTPS URL zdjęcia głównego CDN Autoplac; galeria pokazuje 1/11."
-          },
-          "evidence": [],
-          "reportedFields": {
-            "id": "vin:NMTBE3BE90R086070",
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "photos": [
-              "https://euw2-cdn.autoplac.pl/v1/p/0755ab7b-1ca0-4135-b4f8-cd5611611577?f=1920%3Awebp"
-            ]
-          },
-          "changes": {
-            "photos": {
-              "before": null,
-              "after": [
-                "https://euw2-cdn.autoplac.pl/v1/p/0755ab7b-1ca0-4135-b4f8-cd5611611577?f=1920%3Awebp"
-              ]
-            }
-          }
-        },
-        {
-          "eventId": "d9620343d5dadf23ac8cae75422b6a418a2e6071fbbd8976563bbb4979080bb5",
-          "runId": "refresh20261109a",
-          "checkedAt": "2026-11-09T13:15:42+00:00",
-          "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2020r-1szy-wlasc-serw-aso-salon-pl-stan-idealny-comforttech-9562-3889-PX",
-          "availability": "available",
-          "note": "Pełna karta AutoPlac była crawlowana 2 dni temu; platforma podaje ostatnią aktualizację 3 dni temu i pokazuje aktywne elementy kontaktu/oferty. Cena 55 400 zł, na stronie powtórzona jako 55 400 zł brutto; kredyt 855 zł/mies. jest oddzielną opcją, bez warunku finansowania. Kwota przekracza limit 55 000 zł o 400 zł i nie ma zgody na wyjątek, więc nie należy traktować jej jako zaakceptowanej. Atrybuty: VIN NMTBE3BE90R086070, 2020, Sedan, benzyna, 1598 cm³, 132 KM, manual, 109 000 km. Sprzedawca prywatny. Kamera cofania wymieniona na karcie, ale fizycznego działania nie sprawdzono; cameraStatus pozostaje unknown. Opis mówi, że 1.6 jest „idealny do gazu”, ale nie potwierdza montażu LPG; lpgInstalled i dokumenty instalacji/zbiornika pozostają unknown.",
-          "photoCheck": null,
-          "evidence": [
-            {
-              "fields": [
-                "vin",
-                "year",
-                "mileage",
-                "price",
-                "bodyCode",
-                "transmissionCode",
-                "saleType",
-                "priceBasis"
-              ],
-              "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2020r-1szy-wlasc-serw-aso-salon-pl-stan-idealny-comforttech-9562-3889-PX",
-              "checkedAt": "2026-11-09T13:15:42+00:00",
-              "kind": "seller",
-              "note": "Atrybuty karty, opis sprzedawcy i wyświetlona cena brutto; stan oraz działanie wyposażenia nie zostały niezależnie sprawdzone."
-            }
-          ],
-          "reportedFields": {
-            "id": "vin:NMTBE3BE90R086070",
-            "vin": "NMTBE3BE90R086070",
-            "year": 2020,
-            "mileage": 109000,
-            "price": 55400,
-            "bodyCode": "sedan",
-            "transmissionCode": "manual",
-            "saleType": "fixed_price",
-            "priceBasis": "gross_unconditional_total",
-            "lpgInstalled": null,
-            "cameraStatus": "unknown",
-            "changes": {
-              "bodyCode": "sedan",
-              "transmissionCode": "manual",
-              "priceBasis": "gross_unconditional_total",
-              "lpgInstalled": null,
-              "cameraStatus": "unknown"
-            }
-          },
-          "changes": {
-            "bodyCode": {
-              "before": null,
-              "after": "sedan"
-            },
-            "transmissionCode": {
-              "before": null,
-              "after": "manual"
-            },
-            "priceBasis": {
-              "before": null,
-              "after": "gross_unconditional_total"
-            },
-            "cameraStatus": {
-              "before": null,
-              "after": "unknown"
-            },
-            "changes": {
-              "before": null,
-              "after": {
-                "bodyCode": "sedan",
-                "transmissionCode": "manual",
-                "priceBasis": "gross_unconditional_total",
-                "lpgInstalled": null,
-                "cameraStatus": "unknown"
-              }
-            }
-          }
-        },
-        {
-          "eventId": "9f8559b51b119da5d954a232c2fe4b43073c3e92d018eee3026edadc9bcb05bf",
-          "runId": "dostepnosc-2026-11-10",
-          "checkedAt": "2026-11-10T23:18:09Z",
-          "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2020r-1szy-wlasc-serw-aso-salon-pl-stan-idealny-comforttech-9562-3889-PX",
-          "availability": "available",
-          "note": "Bezpośrednia karta Autoplac pokazuje ogłoszenie, cenę i przyciski kontaktu; brak komunikatu o archiwum.",
-          "httpStatus": null,
-          "photoCheck": null,
-          "evidence": [],
-          "reportedFields": {
-            "id": "vin:NMTBE3BE90R086070"
-          },
-          "changes": {
-            "priceBasis": {
-              "before": "gross_unconditional_total",
-              "after": "gross_total"
-            }
-          }
-        }
-      ],
-      "assessment": {
-        "id": "vin:NMTBE3BE90R086070",
-        "modelKey": "toyota-corolla-e210",
-        "verdict": "check",
-        "failures": [],
-        "unknowns": [
-          "price_exception_requires_user_confirmation",
-          "exact_engine_variant",
-          "camera_or_compatible_retrofit",
-          "structural_history",
-          "stroller_and_family_fit"
-        ],
-        "preferenceNotes": []
-      },
-      "photos": [
-        "https://euw2-cdn.autoplac.pl/v1/p/0755ab7b-1ca0-4135-b4f8-cd5611611577?f=1920%3Awebp"
-      ],
-      "bodyCode": "sedan",
-      "transmissionCode": "manual",
-      "priceBasis": "gross_total",
-      "cameraStatus": "unknown"
-    },
-    {
-      "id": "vin:NMTBE3BE00R023715",
-      "vin": "NMTBE3BE00R023715",
-      "listingIds": [
-        "olx:1106571547"
-      ],
-      "urls": [
-        {
-          "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
-          "normalized": "https://olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
-          "label": "Zobacz ogłoszenie — OLX"
-        }
-      ],
-      "title": "Toyota Corolla E210 Sedan 1.6 Valvematic 132 KM",
-      "verdict": "check",
-      "modelKey": "toyota-corolla-e210",
-      "year": 2019,
-      "price": 45000,
-      "mileage": 139200,
-      "engine": "1.6 Valvematic · 132 KM",
-      "body": "Sedan",
-      "transmission": "Manualna, 6 biegów",
-      "seller": "Sprzedawca prywatny · Katowice · OLX · ogłoszenie aktywne podczas sprawdzania 6.11.2026 (odświeżone 5.11.2026)",
-      "priority": "Priorytet 2 · taniej, do doposażenia",
-      "subtitle": "2019 · Sedan · 1.6 Valvematic · 132 KM",
-      "specs": {
-        "rocznik": "2019",
-        "nadwozie": "Sedan",
-        "silnik": "1.6 Valvematic · 132 KM",
-        "skrzynia": "Manualna, 6 biegów",
-        "przebieg": "139 200 km",
-        "cena zakupu": "45 000 zł · cena w ogłoszeniu (potwierdzić końcową)"
-      },
-      "details": {
-        "Historia i pochodzenie": "VIN NMTBE3BE00R023715. Sprzedający wskazuje, że pojazd został niedawno wykupiony z leasingu i nadal jest codziennie użytkowany; ubezpieczenie do 08.09.2027, badanie techniczne do 02.10.2027 według opisu. Brak dokumentacji napraw i przeglądów w ogłoszeniu.",
-        "Wyposażenie": "Wersja Active; ACC, PCS, asystent pasa, rozpoznawanie znaków, klimatyzacja manualna i Bluetooth. Kamera cofania oraz czujniki nie są potwierdzone.",
-        "Problemy / niepewności": "Brak publicznych faktur serwisowych. Sprzedawca zgłasza drobne zarysowania, ale nie potwierdza historii pomiarów lakieru. Sprawdzić dokumenty wykupu z leasingu, zgodność VIN, ciągłość serwisowania i stan mechanizmu Valvematic.",
-        "Ocena": "Najtańszy z nowo dodanych sedanów o dokładnie wskazanym silniku. Sensowny kandydat do wstępnej rozmowy, pod warunkiem przedstawienia dokumentów i kontroli ASO."
-      },
-      "verdictTitle": "Do weryfikacji",
-      "verdictNote": "engine_review_requires_verification; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
-      "offerType": "unknown",
-      "bodyCode": "sedan",
-      "engineVariant": "1.6-valvematic-132",
-      "transmissionCode": "manual",
-      "saleType": "fixed_price",
-      "listingStates": [
-        {
-          "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
-          "status": "available",
-          "lastAttemptAt": "2026-11-10T23:18:49Z",
-          "lastCheckedAt": "2026-11-10T23:18:49Z",
-          "lastVerifiedAt": "2026-11-10T23:18:49Z",
-          "lastObservation": {
-            "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
-            "checkedAt": "2026-11-10T23:18:49Z",
-            "availability": "available",
-            "httpStatus": null,
-            "note": "Karta OLX pokazuje ofertę Toyota Corolla z ceną 45 000 zł i odświeżeniem 5 listopada; brak komunikatu o zamknięciu."
-          }
-        }
-      ],
-      "lastCheckedAt": "2026-11-10T23:18:49Z",
-      "lastVerifiedAt": "2026-11-10T23:18:49Z",
-      "lastAttemptAt": "2026-11-10T23:18:49Z",
-      "history": [
-        {
-          "eventId": "9b2bc29473967d633b3e7fd706316b704399d963ed59809d97fe930d9faa118f",
-          "runId": "refresh-20261108-01",
-          "checkedAt": "2026-11-08T18:45:15+01:00",
-          "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
-          "availability": "available",
-          "note": "Karta OLX otwarta; odświeżono 5 listopada 2026. Cena 45 000 zł. Podano rok 2019, 1.6 Valvematic 132 KM, manual, sedan, 139 200 km, VIN NMTBE3BE00R023715. Karta wskazuje lokalizację Katowice (Brynów-cz. Wsch.-Osiedle Zgrzebioka); sprzedawca oznaczony jako prywatny. Opis podaje drobne zarysowanie i że auto jest używane codziennie. Kamera niewymieniona, LPG niepotwierdzone.",
-          "evidence": [
-            {
-              "fields": [
-                "price",
-                "year",
-                "mileage",
-                "bodyCode",
-                "engineVariant",
-                "transmissionCode"
-              ],
-              "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
-              "checkedAt": "2026-11-08T18:45:15+01:00",
-              "kind": "seller",
-              "note": "Dane pojazdu i cena odczytane z aktualnie dostępnej karty OLX."
-            }
-          ],
-          "reportedFields": {
-            "id": "vin:NMTBE3BE00R023715",
-            "title": "Toyota Corolla E210 Sedan 1.6 Valvematic 132 KM",
-            "urls": [
-              {
-                "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html"
-              }
-            ],
-            "vin": "NMTBE3BE00R023715",
-            "year": 2019,
-            "mileage": 139200,
-            "price": 45000,
-            "bodyCode": "sedan",
-            "engineVariant": "1.6-valvematic-132",
-            "transmissionCode": "manual",
-            "saleType": "fixed_price",
-            "lpgInstalled": null
-          },
-          "changes": {
-            "urls": {
-              "before": [
-                {
-                  "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
-                  "normalized": "https://olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
-                  "label": "Zobacz ogłoszenie — OLX"
-                }
-              ],
-              "after": [
-                {
-                  "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
-                  "normalized": "https://olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
-                  "label": "Zobacz ogłoszenie — OLX"
-                },
-                {
-                  "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html"
-                }
-              ]
-            },
-            "title": {
-              "before": "1.6 Valvematic Sedan — Katowice, 139 200 km",
-              "after": "Toyota Corolla E210 Sedan 1.6 Valvematic 132 KM"
-            },
-            "bodyCode": {
-              "before": null,
-              "after": "sedan"
-            },
-            "engineVariant": {
-              "before": null,
-              "after": "1.6-valvematic-132"
-            },
-            "transmissionCode": {
-              "before": null,
-              "after": "manual"
-            },
-            "saleType": {
-              "before": null,
-              "after": "fixed_price"
-            }
-          }
-        },
-        {
-          "eventId": "762b4c4ef089c55a894a6290377a036231575059aca2cbb67d5c53648e987632",
-          "runId": "refresh-20261108-03",
-          "checkedAt": "2026-11-08T23:06:51+01:00",
-          "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
-          "availability": "available",
-          "note": "Karta OLX dostępna, ID 1106571547. Cena 45 000 zł. Atrybuty podają rok produkcji 2019, VIN NMTBE3BE00R023715, 139 200 km, manual, 1.6 benzyna 132 KM; opis określa silnik jako 1.6 Valvematic. Rok pierwszej rejestracji nie został podany. Sprzedawca prywatny; cena nie jest uzależniona od finansowania. LPG niepotwierdzone (null).",
-          "evidence": [
-            {
-              "fields": [
-                "vin",
-                "year",
-                "mileage",
-                "price",
-                "transmissionCode",
-                "saleType"
-              ],
-              "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
-              "checkedAt": "2026-11-08T23:06:51+01:00",
-              "kind": "seller",
-              "note": "Atrybuty i opis karty OLX; podano rok produkcji (bez daty pierwszej rejestracji), przebieg, cenę 45 000 zł i dane pojazdu. Brak informacji o instalacji LPG."
-            }
-          ],
-          "reportedFields": {
-            "id": "vin:NMTBE3BE00R023715",
-            "title": "Toyota Corolla E210 Sedan 1.6 Valvematic 132 KM",
-            "urls": [
-              {
-                "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html"
-              }
-            ],
-            "vin": "NMTBE3BE00R023715",
-            "year": 2019,
-            "mileage": 139200,
-            "price": 45000,
-            "transmissionCode": "manual",
-            "saleType": "fixed_price",
-            "lpgInstalled": null
-          },
-          "changes": {}
-        },
-        {
-          "eventId": "9f97a69374c183a3810596259ff8489cb70578df8aa5ce70cf46cddd8d83fb0b",
-          "runId": "photos-20261108-01",
-          "checkedAt": "2026-11-08T23:49:22+01:00",
-          "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
-          "availability": "available",
-          "note": "Karta OLX dostępna. Kliknięte miniatury galerii ujawniły osiem bezpośrednich HTTPS adresów zdjęć, zapisanych w photos. Cena wyświetlana na karcie 45 000 zł; paliwo benzyna, LPG niepotwierdzone (null).",
-          "photoCheck": {
-            "status": "found",
-            "note": "Zapisano osiem bezpośrednich HTTPS URL-i galerii."
-          },
-          "evidence": [],
-          "reportedFields": {
-            "id": "vin:NMTBE3BE00R023715",
-            "title": "Toyota Corolla E210 Sedan 1.6 Valvematic 132 KM",
-            "urls": [
-              {
-                "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html"
-              }
-            ],
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "photos": [
-              "https://ireland.apollo.olxcdn.com/v1/files/t98qchu3r60j3-PL/image%3Bs%3D1020x1360",
-              "https://ireland.apollo.olxcdn.com/v1/files/39fdr5qv4v931-PL/image%3Bs%3D1813x1360",
-              "https://ireland.apollo.olxcdn.com/v1/files/f8d110i6nfad-PL/image%3Bs%3D1020x1360",
-              "https://ireland.apollo.olxcdn.com/v1/files/zvyujv6tjvp53-PL/image%3Bs%3D1020x1360",
-              "https://ireland.apollo.olxcdn.com/v1/files/nkp060nr5po71-PL/image%3Bs%3D1813x1360",
-              "https://ireland.apollo.olxcdn.com/v1/files/pxf7y8l62wv5-PL/image%3Bs%3D1813x1360",
-              "https://ireland.apollo.olxcdn.com/v1/files/5ggj30rxvyk81-PL/image%3Bs%3D1813x1360",
-              "https://ireland.apollo.olxcdn.com/v1/files/97dtoncpl8kq1-PL/image%3Bs%3D1813x1360"
-            ]
-          },
-          "changes": {
-            "photos": {
-              "before": null,
-              "after": [
-                "https://ireland.apollo.olxcdn.com/v1/files/t98qchu3r60j3-PL/image%3Bs%3D1020x1360",
-                "https://ireland.apollo.olxcdn.com/v1/files/39fdr5qv4v931-PL/image%3Bs%3D1813x1360",
-                "https://ireland.apollo.olxcdn.com/v1/files/f8d110i6nfad-PL/image%3Bs%3D1020x1360",
-                "https://ireland.apollo.olxcdn.com/v1/files/zvyujv6tjvp53-PL/image%3Bs%3D1020x1360",
-                "https://ireland.apollo.olxcdn.com/v1/files/nkp060nr5po71-PL/image%3Bs%3D1813x1360",
-                "https://ireland.apollo.olxcdn.com/v1/files/pxf7y8l62wv5-PL/image%3Bs%3D1813x1360",
-                "https://ireland.apollo.olxcdn.com/v1/files/5ggj30rxvyk81-PL/image%3Bs%3D1813x1360",
-                "https://ireland.apollo.olxcdn.com/v1/files/97dtoncpl8kq1-PL/image%3Bs%3D1813x1360"
-              ]
-            }
-          }
-        },
-        {
-          "eventId": "bf8d28aaa510202eb62d3cd778a14525e2f7542a9073500c013695407d19c755",
-          "runId": "refresh20261109a",
-          "checkedAt": "2026-11-09T13:11:29+00:00",
-          "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
-          "availability": "available",
-          "note": "Pełna karta OLX była crawlowana 2 dni temu i pokazywała aktywne elementy ogłoszenia oraz kontakt; OLX podaje ostatnie odświeżenie 05.11.2026. Atrybuty: VIN NMTBE3BE00R023715, rok produkcji 2019, Sedan, 1.6 Valvematic 132 KM, manual, 139 200 km, benzyna. Cena 45 000 zł. Sprzedawca pisze, że auto używane codziennie i opisuje drobne zarysowanie; deklaruje sprzedaż prywatną. Brak informacji o kamerze cofania i LPG; benzyna w polu paliwa nie dowodzi braku instalacji, więc cameraStatus unknown, lpgInstalled unknown (null). Cena nie jest uzależniona od finansowania w widocznej treści.",
-          "photoCheck": null,
-          "evidence": [
-            {
-              "fields": [
-                "vin",
-                "year",
-                "mileage",
-                "price",
-                "bodyCode",
-                "engineVariant",
-                "transmissionCode",
-                "saleType"
-              ],
-              "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
-              "checkedAt": "2026-11-09T13:11:29+00:00",
-              "kind": "seller",
-              "note": "Atrybuty portalu oraz opis sprzedawcy; informacje o stanie auta pozostają deklaracjami sprzedawcy."
-            }
-          ],
-          "reportedFields": {
-            "id": "vin:NMTBE3BE00R023715",
-            "vin": "NMTBE3BE00R023715",
-            "year": 2019,
-            "mileage": 139200,
-            "price": 45000,
-            "bodyCode": "sedan",
-            "engineVariant": "1.6-valvematic-132",
-            "transmissionCode": "manual",
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "cameraStatus": "unknown",
-            "changes": {}
-          },
-          "changes": {
-            "cameraStatus": {
-              "before": null,
-              "after": "unknown"
-            },
-            "changes": {
-              "before": null,
-              "after": {}
-            }
-          }
-        },
-        {
-          "eventId": "f29d3e18303ebd0ea5e7da7ca617f50772e0a64e9afa01f89acb9405e66307ab",
-          "runId": "dostepnosc-2026-11-10",
-          "checkedAt": "2026-11-10T23:18:49Z",
-          "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
-          "availability": "available",
-          "note": "Karta OLX pokazuje ofertę Toyota Corolla z ceną 45 000 zł i odświeżeniem 5 listopada; brak komunikatu o zamknięciu.",
-          "httpStatus": null,
-          "photoCheck": null,
-          "evidence": [],
-          "reportedFields": {
-            "id": "vin:NMTBE3BE00R023715"
-          },
-          "changes": {}
-        }
-      ],
-      "assessment": {
-        "id": "vin:NMTBE3BE00R023715",
-        "modelKey": "toyota-corolla-e210",
-        "verdict": "check",
-        "failures": [],
-        "unknowns": [
-          "engine_review_requires_verification",
-          "camera_or_compatible_retrofit",
-          "structural_history",
-          "stroller_and_family_fit"
-        ],
-        "preferenceNotes": []
-      },
-      "photos": [
-        "https://ireland.apollo.olxcdn.com/v1/files/t98qchu3r60j3-PL/image%3Bs%3D1020x1360",
-        "https://ireland.apollo.olxcdn.com/v1/files/39fdr5qv4v931-PL/image%3Bs%3D1813x1360",
-        "https://ireland.apollo.olxcdn.com/v1/files/f8d110i6nfad-PL/image%3Bs%3D1020x1360",
-        "https://ireland.apollo.olxcdn.com/v1/files/zvyujv6tjvp53-PL/image%3Bs%3D1020x1360",
-        "https://ireland.apollo.olxcdn.com/v1/files/nkp060nr5po71-PL/image%3Bs%3D1813x1360",
-        "https://ireland.apollo.olxcdn.com/v1/files/pxf7y8l62wv5-PL/image%3Bs%3D1813x1360",
-        "https://ireland.apollo.olxcdn.com/v1/files/5ggj30rxvyk81-PL/image%3Bs%3D1813x1360",
-        "https://ireland.apollo.olxcdn.com/v1/files/97dtoncpl8kq1-PL/image%3Bs%3D1813x1360"
-      ],
-      "cameraStatus": "unknown"
-    },
-    {
-      "id": "listing:autoplac:4541-3083-BH",
-      "modelKey": "toyota-corolla-e210",
-      "vin": "NMTBE3BE60R025176",
-      "listingIds": [
-        "autoplac:4541-3083-BH"
-      ],
-      "urls": [
-        {
-          "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2019r-2019-sedan-4541-3083-BH",
-          "label": "Autoplac"
-        }
-      ],
-      "photos": [
-        "https://euw2-cdn.autoplac.pl/v1/p/84e7dd1d-2c08-42f1-b6de-01387e97143a?f=1920%3Awebp"
-      ],
-      "title": "Toyota Corolla XII 1.6 2019 Sedan, automat",
-      "year": 2019,
-      "price": 19800,
-      "priceLabel": "19 800 zł brutto; cena specjalna w treści, finansowanie pokazane jako osobna opcja",
-      "mileage": 138125,
-      "engine": "1.6 · 132 KM · 1 598 cm³ · benzyna",
-      "engineVariant": "1.6-valvematic-132",
-      "body": "Sedan",
-      "bodyCode": "sedan",
-      "transmission": "automatyczna",
-      "transmissionCode": "automatic",
-      "seller": "FENG AUTO (aktywna firma według karty)",
-      "offerType": "company",
-      "priceBasis": "gross_total",
-      "cameraStatus": "unknown",
-      "structuralDamageStatus": "unknown",
-      "saleType": "fixed_price",
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "voivodeship": "wielkopolskie",
-        "city": "Poznań",
-        "postalCode": "61-044",
-        "precision": "postal_code",
-        "source": "listing",
-        "geoSource": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2019r-2019-sedan-4541-3083-BH"
-      },
-      "lpgInstalled": null,
-      "firstSeenAt": "2026-11-10T00:28:07Z",
-      "listingStates": [
-        {
-          "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2019r-2019-sedan-4541-3083-BH",
-          "status": "available",
-          "lastAttemptAt": "2026-11-10T23:18:09Z",
-          "lastCheckedAt": "2026-11-10T23:18:09Z",
-          "lastVerifiedAt": "2026-11-10T23:18:09Z",
-          "lastObservation": {
-            "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2019r-2019-sedan-4541-3083-BH",
-            "checkedAt": "2026-11-10T23:18:09Z",
-            "availability": "available",
-            "httpStatus": null,
-            "note": "Bezpośrednia karta Autoplac pokazuje ogłoszenie, cenę i przyciski kontaktu; brak komunikatu o archiwum."
-          }
-        }
-      ],
-      "lastCheckedAt": "2026-11-10T23:18:09Z",
-      "lastVerifiedAt": "2026-11-10T23:18:09Z",
-      "lastAttemptAt": "2026-11-10T23:18:09Z",
-      "history": [
-        {
-          "eventId": "0a670e40e355edfc39dc85a421e66b7a6d77108bf70d0286eff87d1d2489861e",
-          "runId": "search-20261110-full",
-          "checkedAt": "2026-11-10T00:28:07Z",
-          "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2019r-2019-sedan-4541-3083-BH",
-          "availability": "available",
-          "note": "Otwarta publiczna karta z aktywnymi przyciskami Napisz/Pokaż numer, statusem Aktywna firma, widoczną ceną i danymi ogłoszenia. Karta wskazuje produkcję 2019, przebieg 138 125 km, 1.6/132 KM/1598 cm³, sedan/automat, VIN NMTBE3BE60R025176, Poznań 61-044 i 19 800 zł brutto. Treść indeksu była oznaczona jako crawlowana w zeszłym tygodniu; w karcie względna aktualizacja 'dziś' nie daje się przypisać do bieżącego dnia. Kamera i LPG nie są wymienione. Bezpośredni HTTPS URL zdjęcia widoczny w galerii.",
-          "photoCheck": null,
-          "evidence": [
-            {
-              "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2019r-2019-sedan-4541-3083-BH",
-              "checkedAt": "2026-11-10T00:28:07Z",
-              "kind": "seller",
-              "fields": [
-                "vin",
-                "year",
-                "price",
-                "priceBasis",
-                "mileage",
-                "engine",
-                "bodyCode",
-                "transmissionCode",
-                "offerType",
-                "saleType",
-                "location",
-                "cameraStatus",
-                "lpgInstalled",
-                "structuralDamageStatus"
-              ],
-              "note": "Karta: VIN NMTBE3BE60R025176; 2019-11-12, 1 598 cm³, 132 KM, benzyna, sedan, automat, 138 125 km, 19 800 zł brutto, Poznań 61-044; kontakt Napisz/Pokaż numer; firma aktywna. Opis sprzedawcy deklaruje uszkodzony: Nie i bezwypadkowy: Tak; niezależny stan niezweryfikowany. Kamera/LPG nie występują w widocznym tekście. Data względnej aktualizacji nie jest wiarygodnie aktualna, ponieważ treść była crawlowana w poprzednim tygodniu."
-            }
-          ],
-          "reportedFields": {
-            "id": "listing:autoplac:4541-3083-BH",
-            "modelKey": "toyota-corolla-e210",
-            "vin": "NMTBE3BE60R025176",
-            "listingIds": [
-              "autoplac:4541-3083-BH"
-            ],
-            "urls": [
-              {
-                "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2019r-2019-sedan-4541-3083-BH",
-                "label": "Autoplac"
-              }
-            ],
-            "photos": [
-              "https://euw2-cdn.autoplac.pl/v1/p/84e7dd1d-2c08-42f1-b6de-01387e97143a?f=1920%3Awebp"
-            ],
-            "title": "Toyota Corolla XII 1.6 2019 Sedan, automat",
-            "year": 2019,
-            "price": 19800,
-            "priceLabel": "19 800 zł brutto; cena specjalna w treści, finansowanie pokazane jako osobna opcja",
-            "mileage": 138125,
-            "engine": "1.6 · 132 KM · 1 598 cm³ · benzyna",
-            "engineVariant": "1.6-valvematic-132",
-            "body": "Sedan",
-            "bodyCode": "sedan",
-            "transmission": "automatyczna",
-            "transmissionCode": "automatic",
-            "seller": "FENG AUTO (aktywna firma według karty)",
-            "offerType": "company",
-            "priceBasis": "gross_unconditional_total",
-            "cameraStatus": "unknown",
-            "structuralDamageStatus": "unknown",
-            "familyFitConfirmed": null,
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "location": {
-              "status": "available",
-              "countryCode": "PL",
-              "voivodeship": "wielkopolskie",
-              "city": "Poznań",
-              "postalCode": "61-044",
-              "precision": "postal_code",
-              "source": "listing",
-              "geoSource": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2019r-2019-sedan-4541-3083-BH"
-            }
-          },
-          "changes": {
-            "id": {
-              "before": null,
-              "after": "listing:autoplac:4541-3083-BH"
-            },
-            "modelKey": {
-              "before": null,
-              "after": "toyota-corolla-e210"
-            },
-            "vin": {
-              "before": null,
-              "after": "NMTBE3BE60R025176"
-            },
-            "listingIds": {
-              "before": null,
-              "after": [
-                "autoplac:4541-3083-BH"
-              ]
-            },
-            "urls": {
-              "before": null,
-              "after": [
-                {
-                  "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2019r-2019-sedan-4541-3083-BH",
-                  "label": "Autoplac"
-                }
-              ]
-            },
-            "photos": {
-              "before": null,
-              "after": [
-                "https://euw2-cdn.autoplac.pl/v1/p/84e7dd1d-2c08-42f1-b6de-01387e97143a?f=1920%3Awebp"
-              ]
-            },
-            "title": {
-              "before": null,
-              "after": "Toyota Corolla XII 1.6 2019 Sedan, automat"
-            },
-            "year": {
-              "before": null,
-              "after": 2019
-            },
-            "price": {
-              "before": null,
-              "after": 19800
-            },
-            "priceLabel": {
-              "before": null,
-              "after": "19 800 zł brutto; cena specjalna w treści, finansowanie pokazane jako osobna opcja"
-            },
-            "mileage": {
-              "before": null,
-              "after": 138125
-            },
-            "engine": {
-              "before": null,
-              "after": "1.6 · 132 KM · 1 598 cm³ · benzyna"
-            },
-            "engineVariant": {
-              "before": null,
-              "after": "1.6-valvematic-132"
-            },
-            "body": {
-              "before": null,
-              "after": "Sedan"
-            },
-            "bodyCode": {
-              "before": null,
-              "after": "sedan"
-            },
-            "transmission": {
-              "before": null,
-              "after": "automatyczna"
-            },
-            "transmissionCode": {
-              "before": null,
-              "after": "automatic"
-            },
-            "seller": {
-              "before": null,
-              "after": "FENG AUTO (aktywna firma według karty)"
-            },
-            "offerType": {
-              "before": null,
-              "after": "company"
-            },
-            "priceBasis": {
-              "before": null,
-              "after": "gross_unconditional_total"
-            },
-            "cameraStatus": {
-              "before": null,
-              "after": "unknown"
-            },
-            "structuralDamageStatus": {
-              "before": null,
-              "after": "unknown"
-            },
-            "saleType": {
-              "before": null,
-              "after": "fixed_price"
-            },
-            "location": {
-              "before": null,
-              "after": {
-                "status": "available",
-                "countryCode": "PL",
-                "voivodeship": "wielkopolskie",
-                "city": "Poznań",
-                "postalCode": "61-044",
-                "precision": "postal_code",
-                "source": "listing",
-                "geoSource": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2019r-2019-sedan-4541-3083-BH"
-              }
-            }
-          }
-        },
-        {
-          "eventId": "9023d52596978c575be9217a87f26348aa6f3c54c3ef2c1b8124a73d5f27a780",
-          "runId": "dostepnosc-2026-11-10",
-          "checkedAt": "2026-11-10T23:18:09Z",
-          "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2019r-2019-sedan-4541-3083-BH",
-          "availability": "available",
-          "note": "Bezpośrednia karta Autoplac pokazuje ogłoszenie, cenę i przyciski kontaktu; brak komunikatu o archiwum.",
-          "httpStatus": null,
-          "photoCheck": null,
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:autoplac:4541-3083-BH"
-          },
-          "changes": {
-            "priceBasis": {
-              "before": "gross_unconditional_total",
-              "after": "gross_total"
-            }
-          }
-        }
-      ],
-      "assessment": {
-        "id": "listing:autoplac:4541-3083-BH",
-        "modelKey": "toyota-corolla-e210",
-        "verdict": "check",
-        "failures": [],
-        "unknowns": [
-          "engine_review_requires_verification",
-          "camera_or_compatible_retrofit",
-          "structural_history",
-          "stroller_and_family_fit"
-        ],
-        "preferenceNotes": []
-      },
-      "verdict": "check",
-      "verdictTitle": "Do weryfikacji",
-      "verdictNote": "engine_review_requires_verification; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
-    }
-  ],
+  "offers": [],
   "archivedOffers": [
     {
       "id": "vin:NMTBE3BE40R088485",
@@ -1763,6 +890,940 @@
         "status": "unverified",
         "reason": "no_listing_url_confirmed_available; at_least_one_access_error",
         "archivedAt": "2026-11-10T23:18:09+00:00"
+      }
+    },
+    {
+      "id": "listing:autoplac:4541-3083-BH",
+      "modelKey": "toyota-corolla-e210",
+      "vin": "NMTBE3BE60R025176",
+      "listingIds": [
+        "autoplac:4541-3083-BH"
+      ],
+      "urls": [
+        {
+          "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2019r-2019-sedan-4541-3083-BH",
+          "label": "Autoplac"
+        }
+      ],
+      "photos": [
+        "https://euw2-cdn.autoplac.pl/v1/p/84e7dd1d-2c08-42f1-b6de-01387e97143a?f=1920%3Awebp"
+      ],
+      "title": "Toyota Corolla XII 1.6 2019 Sedan, automat",
+      "year": 2019,
+      "price": 19800,
+      "priceLabel": "19 800 zł brutto; cena specjalna w treści, finansowanie pokazane jako osobna opcja",
+      "mileage": 138125,
+      "engine": "1.6 · 132 KM · 1 598 cm³ · benzyna",
+      "engineVariant": "1.6-valvematic-132",
+      "body": "Sedan",
+      "bodyCode": "sedan",
+      "transmission": "automatyczna",
+      "transmissionCode": "automatic",
+      "seller": "FENG AUTO (aktywna firma według karty)",
+      "offerType": "company",
+      "priceBasis": "gross_total",
+      "cameraStatus": "unknown",
+      "structuralDamageStatus": "unknown",
+      "saleType": "fixed_price",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "voivodeship": "wielkopolskie",
+        "city": "Poznań",
+        "postalCode": "61-044",
+        "precision": "postal_code",
+        "source": "listing",
+        "geoSource": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2019r-2019-sedan-4541-3083-BH"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-10T00:28:07Z",
+      "listingStates": [
+        {
+          "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2019r-2019-sedan-4541-3083-BH",
+          "status": "available",
+          "lastAttemptAt": "2026-11-10T23:18:09Z",
+          "lastCheckedAt": "2026-11-10T23:18:09Z",
+          "lastVerifiedAt": "2026-11-10T23:18:09Z",
+          "lastObservation": {
+            "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2019r-2019-sedan-4541-3083-BH",
+            "checkedAt": "2026-11-10T23:18:09Z",
+            "availability": "available",
+            "httpStatus": null,
+            "note": "Bezpośrednia karta Autoplac pokazuje ogłoszenie, cenę i przyciski kontaktu; brak komunikatu o archiwum."
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-10T23:18:09Z",
+      "lastVerifiedAt": "2026-11-10T23:18:09Z",
+      "lastAttemptAt": "2026-11-10T23:18:09Z",
+      "history": [
+        {
+          "eventId": "0a670e40e355edfc39dc85a421e66b7a6d77108bf70d0286eff87d1d2489861e",
+          "runId": "search-20261110-full",
+          "checkedAt": "2026-11-10T00:28:07Z",
+          "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2019r-2019-sedan-4541-3083-BH",
+          "availability": "available",
+          "note": "Otwarta publiczna karta z aktywnymi przyciskami Napisz/Pokaż numer, statusem Aktywna firma, widoczną ceną i danymi ogłoszenia. Karta wskazuje produkcję 2019, przebieg 138 125 km, 1.6/132 KM/1598 cm³, sedan/automat, VIN NMTBE3BE60R025176, Poznań 61-044 i 19 800 zł brutto. Treść indeksu była oznaczona jako crawlowana w zeszłym tygodniu; w karcie względna aktualizacja 'dziś' nie daje się przypisać do bieżącego dnia. Kamera i LPG nie są wymienione. Bezpośredni HTTPS URL zdjęcia widoczny w galerii.",
+          "photoCheck": null,
+          "evidence": [
+            {
+              "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2019r-2019-sedan-4541-3083-BH",
+              "checkedAt": "2026-11-10T00:28:07Z",
+              "kind": "seller",
+              "fields": [
+                "vin",
+                "year",
+                "price",
+                "priceBasis",
+                "mileage",
+                "engine",
+                "bodyCode",
+                "transmissionCode",
+                "offerType",
+                "saleType",
+                "location",
+                "cameraStatus",
+                "lpgInstalled",
+                "structuralDamageStatus"
+              ],
+              "note": "Karta: VIN NMTBE3BE60R025176; 2019-11-12, 1 598 cm³, 132 KM, benzyna, sedan, automat, 138 125 km, 19 800 zł brutto, Poznań 61-044; kontakt Napisz/Pokaż numer; firma aktywna. Opis sprzedawcy deklaruje uszkodzony: Nie i bezwypadkowy: Tak; niezależny stan niezweryfikowany. Kamera/LPG nie występują w widocznym tekście. Data względnej aktualizacji nie jest wiarygodnie aktualna, ponieważ treść była crawlowana w poprzednim tygodniu."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:autoplac:4541-3083-BH",
+            "modelKey": "toyota-corolla-e210",
+            "vin": "NMTBE3BE60R025176",
+            "listingIds": [
+              "autoplac:4541-3083-BH"
+            ],
+            "urls": [
+              {
+                "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2019r-2019-sedan-4541-3083-BH",
+                "label": "Autoplac"
+              }
+            ],
+            "photos": [
+              "https://euw2-cdn.autoplac.pl/v1/p/84e7dd1d-2c08-42f1-b6de-01387e97143a?f=1920%3Awebp"
+            ],
+            "title": "Toyota Corolla XII 1.6 2019 Sedan, automat",
+            "year": 2019,
+            "price": 19800,
+            "priceLabel": "19 800 zł brutto; cena specjalna w treści, finansowanie pokazane jako osobna opcja",
+            "mileage": 138125,
+            "engine": "1.6 · 132 KM · 1 598 cm³ · benzyna",
+            "engineVariant": "1.6-valvematic-132",
+            "body": "Sedan",
+            "bodyCode": "sedan",
+            "transmission": "automatyczna",
+            "transmissionCode": "automatic",
+            "seller": "FENG AUTO (aktywna firma według karty)",
+            "offerType": "company",
+            "priceBasis": "gross_unconditional_total",
+            "cameraStatus": "unknown",
+            "structuralDamageStatus": "unknown",
+            "familyFitConfirmed": null,
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "voivodeship": "wielkopolskie",
+              "city": "Poznań",
+              "postalCode": "61-044",
+              "precision": "postal_code",
+              "source": "listing",
+              "geoSource": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2019r-2019-sedan-4541-3083-BH"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:autoplac:4541-3083-BH"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "toyota-corolla-e210"
+            },
+            "vin": {
+              "before": null,
+              "after": "NMTBE3BE60R025176"
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "autoplac:4541-3083-BH"
+              ]
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2019r-2019-sedan-4541-3083-BH",
+                  "label": "Autoplac"
+                }
+              ]
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://euw2-cdn.autoplac.pl/v1/p/84e7dd1d-2c08-42f1-b6de-01387e97143a?f=1920%3Awebp"
+              ]
+            },
+            "title": {
+              "before": null,
+              "after": "Toyota Corolla XII 1.6 2019 Sedan, automat"
+            },
+            "year": {
+              "before": null,
+              "after": 2019
+            },
+            "price": {
+              "before": null,
+              "after": 19800
+            },
+            "priceLabel": {
+              "before": null,
+              "after": "19 800 zł brutto; cena specjalna w treści, finansowanie pokazane jako osobna opcja"
+            },
+            "mileage": {
+              "before": null,
+              "after": 138125
+            },
+            "engine": {
+              "before": null,
+              "after": "1.6 · 132 KM · 1 598 cm³ · benzyna"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.6-valvematic-132"
+            },
+            "body": {
+              "before": null,
+              "after": "Sedan"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "sedan"
+            },
+            "transmission": {
+              "before": null,
+              "after": "automatyczna"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "automatic"
+            },
+            "seller": {
+              "before": null,
+              "after": "FENG AUTO (aktywna firma według karty)"
+            },
+            "offerType": {
+              "before": null,
+              "after": "company"
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "gross_unconditional_total"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "voivodeship": "wielkopolskie",
+                "city": "Poznań",
+                "postalCode": "61-044",
+                "precision": "postal_code",
+                "source": "listing",
+                "geoSource": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2019r-2019-sedan-4541-3083-BH"
+              }
+            }
+          }
+        },
+        {
+          "eventId": "9023d52596978c575be9217a87f26348aa6f3c54c3ef2c1b8124a73d5f27a780",
+          "runId": "dostepnosc-2026-11-10",
+          "checkedAt": "2026-11-10T23:18:09Z",
+          "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2019r-2019-sedan-4541-3083-BH",
+          "availability": "available",
+          "note": "Bezpośrednia karta Autoplac pokazuje ogłoszenie, cenę i przyciski kontaktu; brak komunikatu o archiwum.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:4541-3083-BH"
+          },
+          "changes": {
+            "priceBasis": {
+              "before": "gross_unconditional_total",
+              "after": "gross_total"
+            }
+          }
+        },
+        {
+          "eventId": "041c6a8cccc02bf3f7ecb946e68e9a1e07dccbbd2867d5c3a7864557a86cce7c",
+          "runId": "manual-corrections-2026-11-11",
+          "checkedAt": "2026-11-11T01:52:35Z",
+          "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2019r-2019-sedan-4541-3083-BH",
+          "availability": "user_report",
+          "note": "Użytkownik zgłosił, że strona oferty jest niedostępna. Brak niezależnego odczytu, więc nie oznaczam jako sprzedanej."
+        }
+      ],
+      "assessment": {
+        "id": "listing:autoplac:4541-3083-BH",
+        "modelKey": "toyota-corolla-e210",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "engine_review_requires_verification",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "engine_review_requires_verification; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "archive": {
+        "status": "unverified",
+        "reason": "user_reported_unavailable",
+        "archivedAt": "2026-11-11T01:52:35Z",
+        "reportedAt": "2026-11-11T01:52:35Z",
+        "reportNote": "Użytkownik zgłosił, że strona oferty jest niedostępna. Brak niezależnego odczytu, więc nie oznaczam jako sprzedanej.",
+        "sourceUrl": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2019r-2019-sedan-4541-3083-BH"
+      }
+    },
+    {
+      "id": "vin:NMTBE3BE90R086070",
+      "vin": "NMTBE3BE90R086070",
+      "listingIds": [],
+      "urls": [
+        {
+          "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2020r-1szy-wlasc-serw-aso-salon-pl-stan-idealny-comforttech-9562-3889-PX",
+          "normalized": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2020r-1szy-wlasc-serw-aso-salon-pl-stan-idealny-comforttech-9562-3889-PX",
+          "label": "Zobacz ogłoszenie"
+        }
+      ],
+      "title": "1.6 Valvematic Sedan — Warszawa",
+      "verdict": "check",
+      "modelKey": "toyota-corolla-e210",
+      "year": 2020,
+      "price": 55400,
+      "mileage": 109000,
+      "engine": "1.6 Valvematic · 132 KM",
+      "body": "Sedan",
+      "transmission": "Manualna",
+      "seller": "Sprzedawca prywatny / D-SYSTEM listing · Strona aktywna; aktualizacja 6.11.2026 · ponownie zweryfikowana; cena brutto potwierdzona na stronie",
+      "priority": "Priorytet 1 · do negocjacji o 400 zł",
+      "subtitle": "2020 · Sedan · 1.6 Valvematic",
+      "specs": {
+        "rocznik": "2020",
+        "nadwozie": "Sedan",
+        "silnik": "1.6 Valvematic · 132 KM",
+        "skrzynia": "Manualna",
+        "przebieg": "109 000 km",
+        "cena ogłoszenia": "55 400 zł (stan na 07.11.2026; brutto do potwierdzenia przy płatności)"
+      },
+      "details": {
+        "Historia i pochodzenie": "Sprzedawca deklaruje polski salon, jednego właściciela, serwis ASO, Toyota Relax do 10 lat. VIN: NMTBE3BE90R086070. Pierwsza rejestracja 05.03.2021; CEPiK 109 287 km. Sprzedawca deklaruje brak wypadków i uszkodzeń.",
+        "Wyposażenie": "Comfort/Tech; kamera cofania, Apple CarPlay/Android Auto, ACC, asystent pasa i znaków, LED, dwustrefowa klimatyzacja — wg opisu.",
+        "Problemy / niepewności": "Aktualna karta Autoplac pokazuje 55 400 zł (obniżka względem zapisanych poprzednio 56 800 zł). Brak publicznych skanów serwisu i szkód; cena końcowa do potwierdzenia. Odczyt CEPiK 109 287 km vs zaokrąglone 109 000 km w ogłoszeniu nie dowodzi ingerencji w licznik. Potwierdzić dokumenty ASO i Toyota Relax po VIN.",
+        "Ocena": "Jedna z lepszych opcji 1.6 Valvematic: polskie pochodzenie, identyfikowalny VIN, kamera cofania, deklarowany serwis ASO i atrakcyjna cena po obniżce. W wariancie 55 tys. zł wymagana negocjacja co najmniej 400 zł."
+      },
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "price_exception_requires_user_confirmation; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "offerType": "unknown",
+      "saleType": "fixed_price",
+      "listingStates": [
+        {
+          "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2020r-1szy-wlasc-serw-aso-salon-pl-stan-idealny-comforttech-9562-3889-PX",
+          "status": "available",
+          "lastAttemptAt": "2026-11-11T02:04:20.650Z",
+          "lastCheckedAt": "2026-11-10T23:18:09Z",
+          "lastVerifiedAt": "2026-11-10T23:18:09Z",
+          "lastObservation": {
+            "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2020r-1szy-wlasc-serw-aso-salon-pl-stan-idealny-comforttech-9562-3889-PX",
+            "checkedAt": "2026-11-11T02:04:20.650Z",
+            "availability": "access_error",
+            "note": "Brak potwierdzenia aktywnej karty: tytuł=false, cena=true, kontakt=true (HTTP 200).",
+            "httpStatus": 200,
+            "availabilityProof": {
+              "identity": false,
+              "contact": true,
+              "price": true,
+              "titleTokensMatched": 2
+            }
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-10T23:18:09Z",
+      "lastVerifiedAt": "2026-11-10T23:18:09Z",
+      "lastAttemptAt": "2026-11-11T02:04:20.650Z",
+      "history": [
+        {
+          "eventId": "d944d7e7db2cec81bb5674dac911780fd7236bc90323a2cd6fa157a1bbe11eba",
+          "runId": "refresh-20261108-01",
+          "checkedAt": "2026-11-08T17:54:02+00:00",
+          "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2020r-1szy-wlasc-serw-aso-salon-pl-stan-idealny-comforttech-9562-3889-PX",
+          "availability": "available",
+          "note": "Karta ogłoszenia została odczytana; dostępność odnotowana jako available. Szczegóły z odczytu sprzedawcy (niezależnie niepotwierdzone): Karta aktualizowana 3 dni temu. Cena 55 400 zł; benzyna, 1 598 cm³, manual. VIN NMTBE3BE90R086070. Opis deklaruje salon PL, pierwszego właściciela, serwis ASO i pierwszą rejestrację 2021. Kamera cofania wymieniona. LPG niepotwierdzone; informacja, że silnik jest „idealny do gazu”, nie oznacza instalacji.",
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:NMTBE3BE90R086070",
+            "saleType": "fixed_price",
+            "lpgInstalled": null
+          },
+          "changes": {
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            }
+          }
+        },
+        {
+          "eventId": "02b2a9db290f2db08f96a2581419fea5d68eb2739366d1e145c60f24d9e00ca9",
+          "runId": "refresh-20261108-03",
+          "checkedAt": "2026-11-08T22:12:15+00:00",
+          "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2020r-1szy-wlasc-serw-aso-salon-pl-stan-idealny-comforttech-9562-3889-PX",
+          "availability": "available",
+          "note": "Karta aktualizowana 3 dni temu; podaje cenę 55 400 zł brutto, 2020, 109 000 km, 1.6 Valvematic 132 KM i manual. VIN NMTBE3BE90R086070; opis podaje pierwszą rejestrację w 2021 r., karta dokładnie 05.03.2021. CEPiK pokazuje 109 287 km, ważne badanie do 02.2027. Sprzedawca deklaruje 1 właściciela, polski salon i serwis ASO; pola stanu: bezwypadkowy tak, uszkodzony nie. Zdanie „idealny do gazu” opisuje możliwość/ocenę silnika, nie potwierdza instalacji LPG; lpgInstalled=null.",
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:NMTBE3BE90R086070",
+            "saleType": "fixed_price",
+            "lpgInstalled": null
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "5015e45300c27a8f9d9e285c7b449057a50ddc94a45e8da6ab1c3fa7756a51fe",
+          "runId": "photos-20261108-01",
+          "checkedAt": "2026-11-08T22:43:22+00:00",
+          "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2020r-1szy-wlasc-serw-aso-salon-pl-stan-idealny-comforttech-9562-3889-PX",
+          "availability": "available",
+          "note": "Karta zaktualizowana 3 dni temu; cena 55 400 zł, 2020, benzyna 1.6 132 KM, manual, 109 000 km. Opis wymienia kamerę cofania i pierwszą rejestrację w 2021 r.; instalacji LPG nie potwierdza. Galeria 1/11.",
+          "photoCheck": {
+            "status": "found",
+            "note": "Odczytano bezpośredni HTTPS URL zdjęcia głównego CDN Autoplac; galeria pokazuje 1/11."
+          },
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:NMTBE3BE90R086070",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "photos": [
+              "https://euw2-cdn.autoplac.pl/v1/p/0755ab7b-1ca0-4135-b4f8-cd5611611577?f=1920%3Awebp"
+            ]
+          },
+          "changes": {
+            "photos": {
+              "before": null,
+              "after": [
+                "https://euw2-cdn.autoplac.pl/v1/p/0755ab7b-1ca0-4135-b4f8-cd5611611577?f=1920%3Awebp"
+              ]
+            }
+          }
+        },
+        {
+          "eventId": "d9620343d5dadf23ac8cae75422b6a418a2e6071fbbd8976563bbb4979080bb5",
+          "runId": "refresh20261109a",
+          "checkedAt": "2026-11-09T13:15:42+00:00",
+          "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2020r-1szy-wlasc-serw-aso-salon-pl-stan-idealny-comforttech-9562-3889-PX",
+          "availability": "available",
+          "note": "Pełna karta AutoPlac była crawlowana 2 dni temu; platforma podaje ostatnią aktualizację 3 dni temu i pokazuje aktywne elementy kontaktu/oferty. Cena 55 400 zł, na stronie powtórzona jako 55 400 zł brutto; kredyt 855 zł/mies. jest oddzielną opcją, bez warunku finansowania. Kwota przekracza limit 55 000 zł o 400 zł i nie ma zgody na wyjątek, więc nie należy traktować jej jako zaakceptowanej. Atrybuty: VIN NMTBE3BE90R086070, 2020, Sedan, benzyna, 1598 cm³, 132 KM, manual, 109 000 km. Sprzedawca prywatny. Kamera cofania wymieniona na karcie, ale fizycznego działania nie sprawdzono; cameraStatus pozostaje unknown. Opis mówi, że 1.6 jest „idealny do gazu”, ale nie potwierdza montażu LPG; lpgInstalled i dokumenty instalacji/zbiornika pozostają unknown.",
+          "photoCheck": null,
+          "evidence": [
+            {
+              "fields": [
+                "vin",
+                "year",
+                "mileage",
+                "price",
+                "bodyCode",
+                "transmissionCode",
+                "saleType",
+                "priceBasis"
+              ],
+              "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2020r-1szy-wlasc-serw-aso-salon-pl-stan-idealny-comforttech-9562-3889-PX",
+              "checkedAt": "2026-11-09T13:15:42+00:00",
+              "kind": "seller",
+              "note": "Atrybuty karty, opis sprzedawcy i wyświetlona cena brutto; stan oraz działanie wyposażenia nie zostały niezależnie sprawdzone."
+            }
+          ],
+          "reportedFields": {
+            "id": "vin:NMTBE3BE90R086070",
+            "vin": "NMTBE3BE90R086070",
+            "year": 2020,
+            "mileage": 109000,
+            "price": 55400,
+            "bodyCode": "sedan",
+            "transmissionCode": "manual",
+            "saleType": "fixed_price",
+            "priceBasis": "gross_unconditional_total",
+            "lpgInstalled": null,
+            "cameraStatus": "unknown",
+            "changes": {
+              "bodyCode": "sedan",
+              "transmissionCode": "manual",
+              "priceBasis": "gross_unconditional_total",
+              "lpgInstalled": null,
+              "cameraStatus": "unknown"
+            }
+          },
+          "changes": {
+            "bodyCode": {
+              "before": null,
+              "after": "sedan"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "gross_unconditional_total"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "changes": {
+              "before": null,
+              "after": {
+                "bodyCode": "sedan",
+                "transmissionCode": "manual",
+                "priceBasis": "gross_unconditional_total",
+                "lpgInstalled": null,
+                "cameraStatus": "unknown"
+              }
+            }
+          }
+        },
+        {
+          "eventId": "9f8559b51b119da5d954a232c2fe4b43073c3e92d018eee3026edadc9bcb05bf",
+          "runId": "dostepnosc-2026-11-10",
+          "checkedAt": "2026-11-10T23:18:09Z",
+          "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2020r-1szy-wlasc-serw-aso-salon-pl-stan-idealny-comforttech-9562-3889-PX",
+          "availability": "available",
+          "note": "Bezpośrednia karta Autoplac pokazuje ogłoszenie, cenę i przyciski kontaktu; brak komunikatu o archiwum.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:NMTBE3BE90R086070"
+          },
+          "changes": {
+            "priceBasis": {
+              "before": "gross_unconditional_total",
+              "after": "gross_total"
+            }
+          }
+        },
+        {
+          "eventId": "298ab74cabb02f4964a8314d626d0fae65542bc9b2e9ea92afd389e80b05852c",
+          "runId": "dostepnosc-2026-11-11-live",
+          "checkedAt": "2026-11-11T02:04:20.650Z",
+          "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2020r-1szy-wlasc-serw-aso-salon-pl-stan-idealny-comforttech-9562-3889-PX",
+          "availability": "access_error",
+          "note": "Brak potwierdzenia aktywnej karty: tytuł=false, cena=true, kontakt=true (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:NMTBE3BE90R086070"
+          },
+          "changes": {}
+        }
+      ],
+      "assessment": {
+        "id": "vin:NMTBE3BE90R086070",
+        "modelKey": "toyota-corolla-e210",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "price_exception_requires_user_confirmation",
+          "exact_engine_variant",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "photos": [
+        "https://euw2-cdn.autoplac.pl/v1/p/0755ab7b-1ca0-4135-b4f8-cd5611611577?f=1920%3Awebp"
+      ],
+      "bodyCode": "sedan",
+      "transmissionCode": "manual",
+      "priceBasis": "gross_total",
+      "cameraStatus": "unknown",
+      "archive": {
+        "status": "unverified",
+        "reason": "no_listing_url_confirmed_available; at_least_one_access_error",
+        "archivedAt": "2026-11-11T02:04:20.650000+00:00"
+      }
+    },
+    {
+      "id": "vin:NMTBE3BE00R023715",
+      "vin": "NMTBE3BE00R023715",
+      "listingIds": [
+        "olx:1106571547"
+      ],
+      "urls": [
+        {
+          "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
+          "normalized": "https://olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
+          "label": "Zobacz ogłoszenie — OLX"
+        }
+      ],
+      "title": "Toyota Corolla E210 Sedan 1.6 Valvematic 132 KM",
+      "verdict": "check",
+      "modelKey": "toyota-corolla-e210",
+      "year": 2019,
+      "price": 45000,
+      "mileage": 139200,
+      "engine": "1.6 Valvematic · 132 KM",
+      "body": "Sedan",
+      "transmission": "Manualna, 6 biegów",
+      "seller": "Sprzedawca prywatny · Katowice · OLX · ogłoszenie aktywne podczas sprawdzania 6.11.2026 (odświeżone 5.11.2026)",
+      "priority": "Priorytet 2 · taniej, do doposażenia",
+      "subtitle": "2019 · Sedan · 1.6 Valvematic · 132 KM",
+      "specs": {
+        "rocznik": "2019",
+        "nadwozie": "Sedan",
+        "silnik": "1.6 Valvematic · 132 KM",
+        "skrzynia": "Manualna, 6 biegów",
+        "przebieg": "139 200 km",
+        "cena zakupu": "45 000 zł · cena w ogłoszeniu (potwierdzić końcową)"
+      },
+      "details": {
+        "Historia i pochodzenie": "VIN NMTBE3BE00R023715. Sprzedający wskazuje, że pojazd został niedawno wykupiony z leasingu i nadal jest codziennie użytkowany; ubezpieczenie do 08.09.2027, badanie techniczne do 02.10.2027 według opisu. Brak dokumentacji napraw i przeglądów w ogłoszeniu.",
+        "Wyposażenie": "Wersja Active; ACC, PCS, asystent pasa, rozpoznawanie znaków, klimatyzacja manualna i Bluetooth. Kamera cofania oraz czujniki nie są potwierdzone.",
+        "Problemy / niepewności": "Brak publicznych faktur serwisowych. Sprzedawca zgłasza drobne zarysowania, ale nie potwierdza historii pomiarów lakieru. Sprawdzić dokumenty wykupu z leasingu, zgodność VIN, ciągłość serwisowania i stan mechanizmu Valvematic.",
+        "Ocena": "Najtańszy z nowo dodanych sedanów o dokładnie wskazanym silniku. Sensowny kandydat do wstępnej rozmowy, pod warunkiem przedstawienia dokumentów i kontroli ASO."
+      },
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "engine_review_requires_verification; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "offerType": "unknown",
+      "bodyCode": "sedan",
+      "engineVariant": "1.6-valvematic-132",
+      "transmissionCode": "manual",
+      "saleType": "fixed_price",
+      "listingStates": [
+        {
+          "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-11T02:04:24.101Z",
+          "lastCheckedAt": "2026-11-10T23:18:49Z",
+          "lastVerifiedAt": "2026-11-10T23:18:49Z",
+          "lastObservation": {
+            "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
+            "checkedAt": "2026-11-11T02:04:24.101Z",
+            "availability": "access_error",
+            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+            "httpStatus": null
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-10T23:18:49Z",
+      "lastVerifiedAt": "2026-11-10T23:18:49Z",
+      "lastAttemptAt": "2026-11-11T02:04:24.101Z",
+      "history": [
+        {
+          "eventId": "9b2bc29473967d633b3e7fd706316b704399d963ed59809d97fe930d9faa118f",
+          "runId": "refresh-20261108-01",
+          "checkedAt": "2026-11-08T18:45:15+01:00",
+          "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
+          "availability": "available",
+          "note": "Karta OLX otwarta; odświeżono 5 listopada 2026. Cena 45 000 zł. Podano rok 2019, 1.6 Valvematic 132 KM, manual, sedan, 139 200 km, VIN NMTBE3BE00R023715. Karta wskazuje lokalizację Katowice (Brynów-cz. Wsch.-Osiedle Zgrzebioka); sprzedawca oznaczony jako prywatny. Opis podaje drobne zarysowanie i że auto jest używane codziennie. Kamera niewymieniona, LPG niepotwierdzone.",
+          "evidence": [
+            {
+              "fields": [
+                "price",
+                "year",
+                "mileage",
+                "bodyCode",
+                "engineVariant",
+                "transmissionCode"
+              ],
+              "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
+              "checkedAt": "2026-11-08T18:45:15+01:00",
+              "kind": "seller",
+              "note": "Dane pojazdu i cena odczytane z aktualnie dostępnej karty OLX."
+            }
+          ],
+          "reportedFields": {
+            "id": "vin:NMTBE3BE00R023715",
+            "title": "Toyota Corolla E210 Sedan 1.6 Valvematic 132 KM",
+            "urls": [
+              {
+                "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html"
+              }
+            ],
+            "vin": "NMTBE3BE00R023715",
+            "year": 2019,
+            "mileage": 139200,
+            "price": 45000,
+            "bodyCode": "sedan",
+            "engineVariant": "1.6-valvematic-132",
+            "transmissionCode": "manual",
+            "saleType": "fixed_price",
+            "lpgInstalled": null
+          },
+          "changes": {
+            "urls": {
+              "before": [
+                {
+                  "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
+                  "normalized": "https://olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
+                  "label": "Zobacz ogłoszenie — OLX"
+                }
+              ],
+              "after": [
+                {
+                  "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
+                  "normalized": "https://olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
+                  "label": "Zobacz ogłoszenie — OLX"
+                },
+                {
+                  "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html"
+                }
+              ]
+            },
+            "title": {
+              "before": "1.6 Valvematic Sedan — Katowice, 139 200 km",
+              "after": "Toyota Corolla E210 Sedan 1.6 Valvematic 132 KM"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "sedan"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.6-valvematic-132"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            }
+          }
+        },
+        {
+          "eventId": "762b4c4ef089c55a894a6290377a036231575059aca2cbb67d5c53648e987632",
+          "runId": "refresh-20261108-03",
+          "checkedAt": "2026-11-08T23:06:51+01:00",
+          "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
+          "availability": "available",
+          "note": "Karta OLX dostępna, ID 1106571547. Cena 45 000 zł. Atrybuty podają rok produkcji 2019, VIN NMTBE3BE00R023715, 139 200 km, manual, 1.6 benzyna 132 KM; opis określa silnik jako 1.6 Valvematic. Rok pierwszej rejestracji nie został podany. Sprzedawca prywatny; cena nie jest uzależniona od finansowania. LPG niepotwierdzone (null).",
+          "evidence": [
+            {
+              "fields": [
+                "vin",
+                "year",
+                "mileage",
+                "price",
+                "transmissionCode",
+                "saleType"
+              ],
+              "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
+              "checkedAt": "2026-11-08T23:06:51+01:00",
+              "kind": "seller",
+              "note": "Atrybuty i opis karty OLX; podano rok produkcji (bez daty pierwszej rejestracji), przebieg, cenę 45 000 zł i dane pojazdu. Brak informacji o instalacji LPG."
+            }
+          ],
+          "reportedFields": {
+            "id": "vin:NMTBE3BE00R023715",
+            "title": "Toyota Corolla E210 Sedan 1.6 Valvematic 132 KM",
+            "urls": [
+              {
+                "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html"
+              }
+            ],
+            "vin": "NMTBE3BE00R023715",
+            "year": 2019,
+            "mileage": 139200,
+            "price": 45000,
+            "transmissionCode": "manual",
+            "saleType": "fixed_price",
+            "lpgInstalled": null
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "9f97a69374c183a3810596259ff8489cb70578df8aa5ce70cf46cddd8d83fb0b",
+          "runId": "photos-20261108-01",
+          "checkedAt": "2026-11-08T23:49:22+01:00",
+          "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
+          "availability": "available",
+          "note": "Karta OLX dostępna. Kliknięte miniatury galerii ujawniły osiem bezpośrednich HTTPS adresów zdjęć, zapisanych w photos. Cena wyświetlana na karcie 45 000 zł; paliwo benzyna, LPG niepotwierdzone (null).",
+          "photoCheck": {
+            "status": "found",
+            "note": "Zapisano osiem bezpośrednich HTTPS URL-i galerii."
+          },
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:NMTBE3BE00R023715",
+            "title": "Toyota Corolla E210 Sedan 1.6 Valvematic 132 KM",
+            "urls": [
+              {
+                "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html"
+              }
+            ],
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/t98qchu3r60j3-PL/image%3Bs%3D1020x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/39fdr5qv4v931-PL/image%3Bs%3D1813x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/f8d110i6nfad-PL/image%3Bs%3D1020x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/zvyujv6tjvp53-PL/image%3Bs%3D1020x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/nkp060nr5po71-PL/image%3Bs%3D1813x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/pxf7y8l62wv5-PL/image%3Bs%3D1813x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/5ggj30rxvyk81-PL/image%3Bs%3D1813x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/97dtoncpl8kq1-PL/image%3Bs%3D1813x1360"
+            ]
+          },
+          "changes": {
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/t98qchu3r60j3-PL/image%3Bs%3D1020x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/39fdr5qv4v931-PL/image%3Bs%3D1813x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/f8d110i6nfad-PL/image%3Bs%3D1020x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/zvyujv6tjvp53-PL/image%3Bs%3D1020x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/nkp060nr5po71-PL/image%3Bs%3D1813x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/pxf7y8l62wv5-PL/image%3Bs%3D1813x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/5ggj30rxvyk81-PL/image%3Bs%3D1813x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/97dtoncpl8kq1-PL/image%3Bs%3D1813x1360"
+              ]
+            }
+          }
+        },
+        {
+          "eventId": "bf8d28aaa510202eb62d3cd778a14525e2f7542a9073500c013695407d19c755",
+          "runId": "refresh20261109a",
+          "checkedAt": "2026-11-09T13:11:29+00:00",
+          "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
+          "availability": "available",
+          "note": "Pełna karta OLX była crawlowana 2 dni temu i pokazywała aktywne elementy ogłoszenia oraz kontakt; OLX podaje ostatnie odświeżenie 05.11.2026. Atrybuty: VIN NMTBE3BE00R023715, rok produkcji 2019, Sedan, 1.6 Valvematic 132 KM, manual, 139 200 km, benzyna. Cena 45 000 zł. Sprzedawca pisze, że auto używane codziennie i opisuje drobne zarysowanie; deklaruje sprzedaż prywatną. Brak informacji o kamerze cofania i LPG; benzyna w polu paliwa nie dowodzi braku instalacji, więc cameraStatus unknown, lpgInstalled unknown (null). Cena nie jest uzależniona od finansowania w widocznej treści.",
+          "photoCheck": null,
+          "evidence": [
+            {
+              "fields": [
+                "vin",
+                "year",
+                "mileage",
+                "price",
+                "bodyCode",
+                "engineVariant",
+                "transmissionCode",
+                "saleType"
+              ],
+              "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
+              "checkedAt": "2026-11-09T13:11:29+00:00",
+              "kind": "seller",
+              "note": "Atrybuty portalu oraz opis sprzedawcy; informacje o stanie auta pozostają deklaracjami sprzedawcy."
+            }
+          ],
+          "reportedFields": {
+            "id": "vin:NMTBE3BE00R023715",
+            "vin": "NMTBE3BE00R023715",
+            "year": 2019,
+            "mileage": 139200,
+            "price": 45000,
+            "bodyCode": "sedan",
+            "engineVariant": "1.6-valvematic-132",
+            "transmissionCode": "manual",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "cameraStatus": "unknown",
+            "changes": {}
+          },
+          "changes": {
+            "cameraStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "changes": {
+              "before": null,
+              "after": {}
+            }
+          }
+        },
+        {
+          "eventId": "f29d3e18303ebd0ea5e7da7ca617f50772e0a64e9afa01f89acb9405e66307ab",
+          "runId": "dostepnosc-2026-11-10",
+          "checkedAt": "2026-11-10T23:18:49Z",
+          "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
+          "availability": "available",
+          "note": "Karta OLX pokazuje ofertę Toyota Corolla z ceną 45 000 zł i odświeżeniem 5 listopada; brak komunikatu o zamknięciu.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:NMTBE3BE00R023715"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "7dd7256711329acdba4dabdc0fb4812c58ee93f452e17a3517e618f22e0b1370",
+          "runId": "dostepnosc-2026-11-11-live",
+          "checkedAt": "2026-11-11T02:04:24.101Z",
+          "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:NMTBE3BE00R023715"
+          },
+          "changes": {}
+        }
+      ],
+      "assessment": {
+        "id": "vin:NMTBE3BE00R023715",
+        "modelKey": "toyota-corolla-e210",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "engine_review_requires_verification",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/t98qchu3r60j3-PL/image%3Bs%3D1020x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/39fdr5qv4v931-PL/image%3Bs%3D1813x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/f8d110i6nfad-PL/image%3Bs%3D1020x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/zvyujv6tjvp53-PL/image%3Bs%3D1020x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/nkp060nr5po71-PL/image%3Bs%3D1813x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/pxf7y8l62wv5-PL/image%3Bs%3D1813x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/5ggj30rxvyk81-PL/image%3Bs%3D1813x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/97dtoncpl8kq1-PL/image%3Bs%3D1813x1360"
+      ],
+      "cameraStatus": "unknown",
+      "archive": {
+        "status": "unverified",
+        "reason": "no_listing_url_confirmed_available; at_least_one_access_error",
+        "archivedAt": "2026-11-11T02:04:24.101000+00:00"
       }
     }
   ]

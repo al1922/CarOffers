@@ -357,15 +357,19 @@ python -B scripts/car-search.py claim --run dostepnosc-2026-11-10 --worker worke
   node scripts/availability-check.mjs --claim-stdin
 ```
 
-Helper używa jednego kontekstu i sprawdza do 4 kart równolegle. Najpierw szybko
-odczytuje HTML, a do renderowania przechodzi tylko, gdy nie może dopasować oferty.
-Zapisuje wynik w `runs/<run-id>/results/` i nie nadpisuje istniejących dowodów.
+Helper używa jednego kontekstu i sprawdza do 4 kart równolegle. Nawiguje
+bezpośrednio do każdej karty (`domcontentloaded`) i nie wykonuje drugiego żądania
+strony. Zapisuje wynik w `runs/<run-id>/results/` i nie nadpisuje istniejących dowodów.
 Koordynator wykonuje `claim`, `finish`, `import-preview`, `import-apply` i
 walidację; nie uruchamia `assess` dla samego sprawdzenia dostępności.
 
-Pracownik zapisuje tylko `id`, URL, czas i status. Jawny komunikat portalu lub
-HTTP 410 oznacza `removed`/`sold`; karta z treścią auta oznacza `available`.
-HTTP 403/404, timeout, CAPTCHA i inne strony błędów oznaczają `access_error`;
+`available` wymaga HTTP 2xx oraz wyrenderowanej karty z dopasowaniem co najmniej
+4 cech tytułu, widoczną ceną i aktywną kontrolką kontaktu. Helper zapisuje te
+sygnały jako `availabilityProof`; `finish` odrzuca `available` bez wszystkich
+sygnałów i kodu HTTP. Sam tytuł z metadanych/cache ani przycisk ze wspólnego
+szablonu portalu nie wystarczają. Jawny komunikat zamknięcia lub HTTP 410 oznacza
+`removed`/`sold`; HTTP 403/404 bez komunikatu zamknięcia, timeout, CAPTCHA i inne
+strony błędów oznaczają `access_error`;
 nie obchodź blokad ani nie ponawiaj ręcznie każdej karty. Zachowaj ten status w
 historii. Jeśli po sprawdzeniu wszystkich adresów auta nie ma ani jednej karty
 `available`, przebieg dostępności przenosi rekord do archiwum jako `unverified`.

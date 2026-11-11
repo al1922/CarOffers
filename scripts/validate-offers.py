@@ -355,11 +355,11 @@ def audit_repository(root, today=None, schema_dir=SCHEMAS):
                 at = f"/archivedOffers/{i}"
                 archive_meta = offer.get("archive")
                 archive_date = archive_meta.get("archivedAt") if isinstance(archive_meta, dict) else None
-                if (not isinstance(archive_meta, dict) or archive_meta.get("status") not in ("closed", "unverified") or
+                if (not isinstance(archive_meta, dict) or archive_meta.get("status") not in ("closed", "unverified", "excluded") or
                         not archive_meta.get("reason") or not isinstance(archive_date, str) or
                         not valid_date(archive_date[:10])):
                     issue(issues, "error", "ARCHIVE_METADATA", label, at + "/archive",
-                          "Rekord archiwalny wymaga statusu closed/unverified, przyczyny i daty archiwizacji")
+                          "Rekord archiwalny wymaga statusu closed/unverified/excluded, przyczyny i daty archiwizacji")
                 oid = offer.get("id")
                 if isinstance(oid, str):
                     folded = oid.lower()

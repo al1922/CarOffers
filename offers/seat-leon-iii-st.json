@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-10",
+  "updatedAt": "2026-11-11",
   "model": {
     "key": "seat-leon-iii-st",
     "name": "SEAT Leon III ST",
@@ -8,629 +8,6 @@
     "requirements": "SEAT Leon III ST; 1.4 TSI EA211 125 KM; 1.4 TSI EA211 150 KM; rodzina: 2 dorosłych i 1 dziecko; wymagane miejsce na wózek i bagaż; rocznik od 2018 do 2018; maks. 55 000 zł brutto według ceny podanej w ogłoszeniu; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 170 000 km preferowany; kamera wymagana  obecna lub z potwierdzoną możliwością montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji."
   },
   "offers": [
-    {
-      "id": "listing:otomoto:ID6IaKVJ",
-      "modelKey": "seat-leon-iii-st",
-      "title": "SEAT Leon III ST 1.4 TSI 125 KM Xcellence — 2018",
-      "urls": [
-        {
-          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IaKVJ.html"
-        }
-      ],
-      "listingIds": [
-        "otomoto:ID6IaKVJ"
-      ],
-      "year": 2018,
-      "price": 46900,
-      "mileage": 140000,
-      "engine": "1.4 TSI, 125 KM, benzyna; opis podaje kod CZCA",
-      "engineVariant": "1.4-tsi-ea211-125",
-      "body": "Kombi / SEAT Leon ST",
-      "bodyCode": "wagon",
-      "transmission": "Manualna, 6-biegowa",
-      "transmissionCode": "manual",
-      "saleType": "fixed_price",
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "voivodeship": "Wielkopolskie",
-        "city": "Komorniki"
-      },
-      "offerType": "unknown",
-      "lpgInstalled": null,
-      "firstSeenAt": "2026-11-08T18:56:16+01:00",
-      "listingStates": [
-        {
-          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IaKVJ.html",
-          "status": "available",
-          "lastAttemptAt": "2026-11-10T23:11:52Z",
-          "lastCheckedAt": "2026-11-10T23:11:52Z",
-          "lastVerifiedAt": "2026-11-10T23:11:52Z",
-          "lastObservation": {
-            "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IaKVJ.html",
-            "checkedAt": "2026-11-10T23:11:52Z",
-            "availability": "available",
-            "note": "Otomoto pokazuje bezpośrednią kartę „Seat Leon 1.4 TSI Xcellence S&S”, rocznik 2018, za 46 900 PLN; widoczne są dane ogłoszenia i kontakt do sprzedawcy. Brak komunikatu o zamknięciu.",
-            "httpStatus": null
-          }
-        }
-      ],
-      "lastCheckedAt": "2026-11-10T23:11:52Z",
-      "lastVerifiedAt": "2026-11-10T23:11:52Z",
-      "lastAttemptAt": "2026-11-10T23:11:52Z",
-      "history": [
-        {
-          "eventId": "1a39e36ca8f5981d506a5e9bb3071cd30c972be488c77defdedd52306cbbdbdb",
-          "runId": "search-20261108",
-          "checkedAt": "2026-11-08T18:56:16+01:00",
-          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IaKVJ.html",
-          "availability": "available",
-          "note": "Otwarta publiczna karta Otomoto pokazuje używanego SEAT-a Leona ST (kombi), 2018, 1.4 TSI 125 KM, manual, 140 000 km i cenę 46 900 PLN. Opis podaje CZCA, polskie pochodzenie oraz fakturę VAT 23%; portal nie pokazuje warunku finansowania jako warunku tej ceny. Lokalizacja karty: Komorniki, powiat poznański, Wielkopolskie. Kamera cofania nie występuje w odczytanej liście wyposażenia, więc jej obecność niepotwierdzona i wymaga sprawdzenia; LPG nieustalone. Sprzedawca deklaruje bezwypadkowość i pierwszy wpis właściciela; nie jest to niezależna kontrola szkód. Ogłoszenie dostępne na stronie w trakcie odczytu.",
-          "evidence": [
-            {
-              "fields": [
-                "price",
-                "year",
-                "mileage",
-                "engineVariant",
-                "transmissionCode",
-                "bodyCode",
-                "saleType",
-                "location",
-                "availability"
-              ],
-              "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IaKVJ.html",
-              "checkedAt": "2026-11-08T18:56:16+01:00",
-              "kind": "seller",
-              "note": "Karta Otomoto: cena 46 900 PLN, rok 2018, 140 000 km, 1.4 TSI 125 KM, manual, kombi; opis podaje CZCA i fakturę VAT 23%. Strona pokazuje lokalizację Komorniki (powiat poznański, Wielkopolskie), stan używany i kontakt do sprzedawcy. Kamera nie pojawia się w odczytanej liście wyposażenia."
-            }
-          ],
-          "reportedFields": {
-            "id": "listing:otomoto:ID6IaKVJ",
-            "modelKey": "seat-leon-iii-st",
-            "title": "SEAT Leon III ST 1.4 TSI 125 KM Xcellence — 2018",
-            "urls": [
-              {
-                "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IaKVJ.html"
-              }
-            ],
-            "listingIds": [
-              "otomoto:ID6IaKVJ"
-            ],
-            "year": 2018,
-            "price": 46900,
-            "mileage": 140000,
-            "engine": "1.4 TSI, 125 KM, benzyna; opis podaje kod CZCA",
-            "engineVariant": "1.4-tsi-ea211-125",
-            "body": "Kombi / SEAT Leon ST",
-            "bodyCode": "wagon",
-            "transmission": "Manualna, 6-biegowa",
-            "transmissionCode": "manual",
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "location": {
-              "status": "available",
-              "countryCode": "PL",
-              "voivodeship": "Wielkopolskie",
-              "city": "Komorniki"
-            },
-            "offerType": "unknown"
-          },
-          "changes": {
-            "id": {
-              "before": null,
-              "after": "listing:otomoto:ID6IaKVJ"
-            },
-            "modelKey": {
-              "before": null,
-              "after": "seat-leon-iii-st"
-            },
-            "title": {
-              "before": null,
-              "after": "SEAT Leon III ST 1.4 TSI 125 KM Xcellence — 2018"
-            },
-            "urls": {
-              "before": null,
-              "after": [
-                {
-                  "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IaKVJ.html"
-                }
-              ]
-            },
-            "listingIds": {
-              "before": null,
-              "after": [
-                "otomoto:ID6IaKVJ"
-              ]
-            },
-            "year": {
-              "before": null,
-              "after": 2018
-            },
-            "price": {
-              "before": null,
-              "after": 46900
-            },
-            "mileage": {
-              "before": null,
-              "after": 140000
-            },
-            "engine": {
-              "before": null,
-              "after": "1.4 TSI, 125 KM, benzyna; opis podaje kod CZCA"
-            },
-            "engineVariant": {
-              "before": null,
-              "after": "1.4-tsi-ea211-125"
-            },
-            "body": {
-              "before": null,
-              "after": "Kombi / SEAT Leon ST"
-            },
-            "bodyCode": {
-              "before": null,
-              "after": "wagon"
-            },
-            "transmission": {
-              "before": null,
-              "after": "Manualna, 6-biegowa"
-            },
-            "transmissionCode": {
-              "before": null,
-              "after": "manual"
-            },
-            "saleType": {
-              "before": null,
-              "after": "fixed_price"
-            },
-            "location": {
-              "before": null,
-              "after": {
-                "status": "available",
-                "countryCode": "PL",
-                "voivodeship": "Wielkopolskie",
-                "city": "Komorniki"
-              }
-            },
-            "offerType": {
-              "before": null,
-              "after": "unknown"
-            }
-          }
-        },
-        {
-          "eventId": "0551f07330c45c9ff278a8c6ba02a4d2e94b1b7ebca4a86440efc1bdf0b67a02",
-          "runId": "refresh-20261108-03",
-          "checkedAt": "2026-11-08T23:01:40+01:00",
-          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IaKVJ.html",
-          "availability": "available",
-          "note": "Karta dostępna; cena 46 900 zł, rok produkcji 2018, przebieg 140 000 km. Opis sprzedawcy podaje silnik 1.4 TSI 125 KM CZCA, skrzynię manualną i fakturę VAT 23%; finansowanie jest prezentowane osobno. LPG nieustalone.",
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:otomoto:ID6IaKVJ",
-            "price": 46900,
-            "year": 2018,
-            "mileage": 140000,
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "photos": [
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpibWk2YWRzNDM4NjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.sjODOXfvBioYgUmBUBK9ZRhpfIvrC6U5fjn2eUG2fkA/image%3Bs%3D5120x0%3Bq%3D80"
-            ]
-          },
-          "changes": {
-            "photos": {
-              "before": null,
-              "after": [
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpibWk2YWRzNDM4NjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.sjODOXfvBioYgUmBUBK9ZRhpfIvrC6U5fjn2eUG2fkA/image%3Bs%3D5120x0%3Bq%3D80"
-              ]
-            }
-          }
-        },
-        {
-          "eventId": "1f11894028cd293e576184ca7de5a1c527ecdfb95467cfbdcedfec48bef289a1",
-          "runId": "refresh20261109a",
-          "checkedAt": "2026-11-09T13:01:58Z",
-          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IaKVJ.html",
-          "availability": "available",
-          "note": "Karta Otomoto dostępna; cena 46 900 zł, rok produkcji 2018, 140 000 km, SEAT Leon ST 1.4 TSI 125 KM (opis sprzedawcy podaje kod CZCA), benzyna, manualna skrzynia 6-biegowa, kombi. Karta wskazuje sprzedawcę prywatnego, rejestrację w Polsce, 5 miejsc, ISOFIX oraz bezwypadkowość jako deklarację/oznaczenie; kamera nie jest wymieniona. Cena nie wymaga wskazanego finansowania.",
-          "photoCheck": null,
-          "evidence": [
-            {
-              "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IaKVJ.html",
-              "checkedAt": "2026-11-09T13:01:58Z",
-              "kind": "seller",
-              "fields": [
-                "price",
-                "year",
-                "mileage",
-                "engine",
-                "body",
-                "transmission",
-                "familyFitConfirmed"
-              ],
-              "note": "Szczegóły karty, specyfikacja i opis sprzedawcy; opis wymienia ISOFIX i konfigurację silnika/skrzyni."
-            }
-          ],
-          "reportedFields": {
-            "id": "listing:otomoto:ID6IaKVJ",
-            "modelKey": "seat-leon-iii-st",
-            "photos": [
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpibWk2YWRzNDM4NjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.sjODOXfvBioYgUmBUBK9ZRhpfIvrC6U5fjn2eUG2fkA/image;s=5120x0;q=80"
-            ],
-            "saleType": "fixed_price",
-            "lpgInstalled": null
-          },
-          "changes": {
-            "photos": {
-              "before": [
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpibWk2YWRzNDM4NjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.sjODOXfvBioYgUmBUBK9ZRhpfIvrC6U5fjn2eUG2fkA/image%3Bs%3D5120x0%3Bq%3D80"
-              ],
-              "after": [
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpibWk2YWRzNDM4NjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.sjODOXfvBioYgUmBUBK9ZRhpfIvrC6U5fjn2eUG2fkA/image%3Bs%3D5120x0%3Bq%3D80",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpibWk2YWRzNDM4NjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.sjODOXfvBioYgUmBUBK9ZRhpfIvrC6U5fjn2eUG2fkA/image;s=5120x0;q=80"
-              ]
-            }
-          }
-        },
-        {
-          "eventId": "e2002db5dc40eadbe14af6d01e4b32d469273b637611bded3f411ad5636f6661",
-          "runId": "dostepnosc-2026-11-10",
-          "checkedAt": "2026-11-10T23:11:52Z",
-          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IaKVJ.html",
-          "availability": "available",
-          "note": "Otomoto pokazuje bezpośrednią kartę „Seat Leon 1.4 TSI Xcellence S&S”, rocznik 2018, za 46 900 PLN; widoczne są dane ogłoszenia i kontakt do sprzedawcy. Brak komunikatu o zamknięciu.",
-          "httpStatus": null,
-          "photoCheck": null,
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:otomoto:ID6IaKVJ"
-          },
-          "changes": {}
-        }
-      ],
-      "assessment": {
-        "id": "listing:otomoto:ID6IaKVJ",
-        "modelKey": "seat-leon-iii-st",
-        "verdict": "check",
-        "failures": [],
-        "unknowns": [
-          "camera_or_compatible_retrofit",
-          "structural_history",
-          "stroller_and_family_fit"
-        ],
-        "preferenceNotes": []
-      },
-      "verdict": "check",
-      "verdictTitle": "Do weryfikacji",
-      "verdictNote": "camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
-      "photos": [
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpibWk2YWRzNDM4NjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.sjODOXfvBioYgUmBUBK9ZRhpfIvrC6U5fjn2eUG2fkA/image%3Bs%3D5120x0%3Bq%3D80",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpibWk2YWRzNDM4NjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.sjODOXfvBioYgUmBUBK9ZRhpfIvrC6U5fjn2eUG2fkA/image;s=5120x0;q=80"
-      ]
-    },
-    {
-      "id": "listing:olx:1110426795",
-      "modelKey": "seat-leon-iii-st",
-      "title": "SEAT Leon III ST 1.4 TSI 125 KM FR S&S — 2018",
-      "urls": [
-        {
-          "url": "https://www.olx.pl/d/oferta/seat-leon-CID5-ID1d9eJB.html"
-        }
-      ],
-      "listingIds": [
-        "olx:1110426795"
-      ],
-      "vin": "VSSZZZ5FZJR194573",
-      "year": 2018,
-      "price": 50900,
-      "mileage": 114700,
-      "engine": "1.4 TSI, 125 KM, benzyna",
-      "engineVariant": "1.4-tsi-ea211-125",
-      "body": "Kombi / ST",
-      "bodyCode": "wagon",
-      "transmission": "Manualna",
-      "transmissionCode": "manual",
-      "saleType": "fixed_price",
-      "location": {
-        "status": "not_provided"
-      },
-      "lpgInstalled": null,
-      "firstSeenAt": "2026-11-08T19:05:52+01:00",
-      "listingStates": [
-        {
-          "url": "https://www.olx.pl/d/oferta/seat-leon-CID5-ID1d9eJB.html",
-          "status": "available",
-          "lastAttemptAt": "2026-11-10T23:10:57Z",
-          "lastCheckedAt": "2026-11-10T23:10:57Z",
-          "lastVerifiedAt": "2026-11-10T23:10:57Z",
-          "lastObservation": {
-            "url": "https://www.olx.pl/d/oferta/seat-leon-CID5-ID1d9eJB.html",
-            "checkedAt": "2026-11-10T23:10:57Z",
-            "availability": "available",
-            "httpStatus": null,
-            "note": "OLX otworzył kartę Seat Leon z ceną 50 900 zł i bieżącą treścią ogłoszenia; nie pokazuje komunikatu o zakończeniu."
-          }
-        }
-      ],
-      "lastCheckedAt": "2026-11-10T23:10:57Z",
-      "lastVerifiedAt": "2026-11-10T23:10:57Z",
-      "lastAttemptAt": "2026-11-10T23:10:57Z",
-      "history": [
-        {
-          "eventId": "1ac7df09434e31752fea20cbc8807feab148f6f1183ad767b77caaf1b7ccff95",
-          "runId": "search-20261108",
-          "checkedAt": "2026-11-08T19:05:52+01:00",
-          "url": "https://www.olx.pl/d/oferta/seat-leon-CID5-ID1d9eJB.html",
-          "availability": "available",
-          "note": "Dostępna karta OLX zaprasza do kontaktu i pokazuje cenę 50 900 zł. Potwierdza VIN VSSZZZ5FZJR194573, rok 2018, kombi, 1.4 TSI 125 KM, 1 395 cm³, manualną skrzynię i 114 700 km. Opis wymienia kamerę cofania oraz możliwość zakupu gotówką lub przelewem; sprzedawca deklaruje fakturę VAT marża. Sprzedawca deklaruje stan nieuszkodzony, lecz brak niezależnej kontroli konstrukcji. Instalacja LPG nieustalona.",
-          "evidence": [
-            {
-              "fields": [
-                "vin",
-                "year",
-                "mileage",
-                "engineVariant",
-                "transmissionCode",
-                "bodyCode",
-                "price",
-                "saleType",
-                "location",
-                "availability",
-                "camera"
-              ],
-              "url": "https://www.olx.pl/d/oferta/seat-leon-CID5-ID1d9eJB.html",
-              "checkedAt": "2026-11-08T19:05:52+01:00",
-              "kind": "seller",
-              "note": "Karta OLX pokazuje 2018, 114 700 km, 1 395 cm³/125 KM, manual, kombi, 50 900 zł, lokalizację Dulowa; opis określa auto jako Seat Leon 1.4 TSI FR S&S i wymienia kamerę cofania."
-            }
-          ],
-          "reportedFields": {
-            "id": "listing:olx:1110426795",
-            "modelKey": "seat-leon-iii-st",
-            "title": "SEAT Leon III ST 1.4 TSI 125 KM FR S&S — 2018",
-            "urls": [
-              {
-                "url": "https://www.olx.pl/d/oferta/seat-leon-CID5-ID1d9eJB.html"
-              }
-            ],
-            "listingIds": [
-              "olx:1110426795"
-            ],
-            "vin": "VSSZZZ5FZJR194573",
-            "year": 2018,
-            "price": 50900,
-            "mileage": 114700,
-            "engine": "1.4 TSI, 125 KM, benzyna",
-            "engineVariant": "1.4-tsi-ea211-125",
-            "body": "Kombi / ST",
-            "bodyCode": "wagon",
-            "transmission": "Manualna",
-            "transmissionCode": "manual",
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "location": {
-              "status": "not_provided"
-            }
-          },
-          "changes": {
-            "id": {
-              "before": null,
-              "after": "listing:olx:1110426795"
-            },
-            "modelKey": {
-              "before": null,
-              "after": "seat-leon-iii-st"
-            },
-            "title": {
-              "before": null,
-              "after": "SEAT Leon III ST 1.4 TSI 125 KM FR S&S — 2018"
-            },
-            "urls": {
-              "before": null,
-              "after": [
-                {
-                  "url": "https://www.olx.pl/d/oferta/seat-leon-CID5-ID1d9eJB.html"
-                }
-              ]
-            },
-            "listingIds": {
-              "before": null,
-              "after": [
-                "olx:1110426795"
-              ]
-            },
-            "vin": {
-              "before": null,
-              "after": "VSSZZZ5FZJR194573"
-            },
-            "year": {
-              "before": null,
-              "after": 2018
-            },
-            "price": {
-              "before": null,
-              "after": 50900
-            },
-            "mileage": {
-              "before": null,
-              "after": 114700
-            },
-            "engine": {
-              "before": null,
-              "after": "1.4 TSI, 125 KM, benzyna"
-            },
-            "engineVariant": {
-              "before": null,
-              "after": "1.4-tsi-ea211-125"
-            },
-            "body": {
-              "before": null,
-              "after": "Kombi / ST"
-            },
-            "bodyCode": {
-              "before": null,
-              "after": "wagon"
-            },
-            "transmission": {
-              "before": null,
-              "after": "Manualna"
-            },
-            "transmissionCode": {
-              "before": null,
-              "after": "manual"
-            },
-            "saleType": {
-              "before": null,
-              "after": "fixed_price"
-            },
-            "location": {
-              "before": null,
-              "after": {
-                "status": "not_provided"
-              }
-            }
-          }
-        },
-        {
-          "eventId": "4939101444167c3558ea67c9ed295d968d7d0fb148706279431d120fa0624b14",
-          "runId": "refresh-20261108-03",
-          "checkedAt": "2026-11-08T23:00:24+01:00",
-          "url": "https://www.olx.pl/d/oferta/seat-leon-CID5-ID1d9eJB.html",
-          "availability": "access_error",
-          "note": "Bezpośrednie otwarcie karty OLX nie zwróciło jej treści (URL nieosiągalny przez narzędzie), a wyszukiwanie dokładnego adresu/ID nie znalazło karty. Nie potwierdzam bieżącej dostępności, ceny ani innych danych i nie wnioskuję o sprzedaży lub usunięciu.",
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:olx:1110426795",
-            "title": "SEAT Leon III ST 1.4 TSI 125 KM FR S&S — 2018",
-            "urls": [
-              {
-                "url": "https://www.olx.pl/d/oferta/seat-leon-CID5-ID1d9eJB.html"
-              }
-            ]
-          },
-          "changes": {}
-        },
-        {
-          "eventId": "644742a13938ba8982bb3ebf52cae60525eac21f331ce764f7f8d0b717502e07",
-          "runId": "photos-20261108-01",
-          "checkedAt": "2026-11-08T23:40:48+01:00",
-          "url": "https://www.olx.pl/d/oferta/seat-leon-CID5-ID1d9eJB.html",
-          "availability": "access_error",
-          "note": "Dokładny URL był nieosiągalny przez narzędzie przeglądania przy dwóch próbach. Nie udało się odczytać karty ani galerii; nie wnioskuję z tego o sprzedaży ani usunięciu ogłoszenia.",
-          "photoCheck": {
-            "status": "access_error",
-            "note": "Narzędzie nie udostępniło karty, więc galeria bezpośrednich zdjęć pozostaje nieodczytana."
-          },
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:olx:1110426795",
-            "title": "SEAT Leon III ST 1.4 TSI 125 KM FR S&S — 2018",
-            "urls": [
-              {
-                "url": "https://www.olx.pl/d/oferta/seat-leon-CID5-ID1d9eJB.html"
-              }
-            ]
-          },
-          "changes": {}
-        },
-        {
-          "eventId": "75eed68141513c2d75271f167da4ca214bcc504a6f088e0ce04d47dfdb8cdb1e",
-          "runId": "refresh20261109a",
-          "checkedAt": "2026-11-09T13:02:05+00:00",
-          "url": "https://www.olx.pl/d/oferta/seat-leon-CID5-ID1d9eJB.html",
-          "availability": "available",
-          "note": "Pełna karta OLX zawiera aktywne elementy ogłoszenia „Promuj”, „Odśwież”, kontakt i cenę. Kopia została crawlowana wczoraj; OLX podaje datę dodania 7.11.2026. Widoczne atrybuty: VIN VSSZZZ5FZJR194573, 2018, Kombi, benzyna 1.4/1395 cm³, 125 KM, manual, 114 700 km, cena 50 900 zł do negocjacji. Opis sprzedawcy podaje FR S&S, kamerę cofania, czujniki przód/tył, ISOFIX i fakturę VAT-marża; LPG niepodane. Sprzedawca prywatny. Dostępność fizyczną należy potwierdzić przed wyjazdem.",
-          "photoCheck": null,
-          "evidence": [
-            {
-              "fields": [
-                "vin",
-                "year",
-                "mileage",
-                "price",
-                "bodyCode",
-                "engineVariant",
-                "transmissionCode",
-                "saleType"
-              ],
-              "url": "https://www.olx.pl/d/oferta/seat-leon-CID5-ID1d9eJB.html",
-              "checkedAt": "2026-11-09T13:02:05+00:00",
-              "kind": "seller",
-              "note": "Atrybuty karty OLX oraz opis sprzedawcy; stan, wyposażenie i historia szkód są deklaracjami sprzedawcy."
-            }
-          ],
-          "reportedFields": {
-            "id": "listing:olx:1110426795",
-            "vin": "VSSZZZ5FZJR194573",
-            "year": 2018,
-            "mileage": 114700,
-            "price": 50900,
-            "bodyCode": "wagon",
-            "engineVariant": "1.4-tsi-ea211-125",
-            "transmissionCode": "manual",
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "changes": {
-              "vin": "VSSZZZ5FZJR194573",
-              "year": 2018,
-              "mileage": 114700,
-              "price": 50900,
-              "bodyCode": "wagon",
-              "engineVariant": "1.4-tsi-ea211-125",
-              "transmissionCode": "manual",
-              "saleType": "fixed_price",
-              "lpgInstalled": null
-            }
-          },
-          "changes": {
-            "changes": {
-              "before": null,
-              "after": {
-                "vin": "VSSZZZ5FZJR194573",
-                "year": 2018,
-                "mileage": 114700,
-                "price": 50900,
-                "bodyCode": "wagon",
-                "engineVariant": "1.4-tsi-ea211-125",
-                "transmissionCode": "manual",
-                "saleType": "fixed_price",
-                "lpgInstalled": null
-              }
-            }
-          }
-        },
-        {
-          "eventId": "8f1bcefe0af0b747b1f4a0c5bf280763ab82533e29017dae3b68a1671b5864eb",
-          "runId": "dostepnosc-2026-11-10",
-          "checkedAt": "2026-11-10T23:10:57Z",
-          "url": "https://www.olx.pl/d/oferta/seat-leon-CID5-ID1d9eJB.html",
-          "availability": "available",
-          "note": "OLX otworzył kartę Seat Leon z ceną 50 900 zł i bieżącą treścią ogłoszenia; nie pokazuje komunikatu o zakończeniu.",
-          "httpStatus": null,
-          "photoCheck": null,
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:olx:1110426795"
-          },
-          "changes": {}
-        }
-      ],
-      "assessment": {
-        "id": "listing:olx:1110426795",
-        "modelKey": "seat-leon-iii-st",
-        "verdict": "check",
-        "failures": [],
-        "unknowns": [
-          "camera_or_compatible_retrofit",
-          "structural_history",
-          "stroller_and_family_fit"
-        ],
-        "preferenceNotes": []
-      },
-      "verdict": "check",
-      "verdictTitle": "Do weryfikacji",
-      "verdictNote": "camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
-    },
     {
       "id": "listing:autoplac:0658-6373-GX",
       "modelKey": "seat-leon-iii-st",
@@ -669,21 +46,27 @@
         {
           "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2017r-st-fr-tsi-125-km-2017-salonpl-106k-km-0658-6373-GX",
           "status": "available",
-          "lastAttemptAt": "2026-11-10T23:11:51Z",
-          "lastCheckedAt": "2026-11-10T23:11:51Z",
-          "lastVerifiedAt": "2026-11-10T23:11:51Z",
+          "lastAttemptAt": "2026-11-11T02:03:51.815Z",
+          "lastCheckedAt": "2026-11-11T02:03:51.815Z",
+          "lastVerifiedAt": "2026-11-11T02:03:51.815Z",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2017r-st-fr-tsi-125-km-2017-salonpl-106k-km-0658-6373-GX",
-            "checkedAt": "2026-11-10T23:11:51Z",
+            "checkedAt": "2026-11-11T02:03:51.815Z",
             "availability": "available",
-            "httpStatus": null,
-            "note": "Otwarta karta Autoplac pokazuje tytuł ogłoszenia i sekcję danych/opisu; nie wyświetla komunikatu o zamknięciu."
+            "note": "Karta zawiera dopasowanie 9 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+            "httpStatus": 200,
+            "availabilityProof": {
+              "identity": true,
+              "contact": true,
+              "price": true,
+              "titleTokensMatched": 9
+            }
           }
         }
       ],
-      "lastCheckedAt": "2026-11-10T23:11:51Z",
-      "lastVerifiedAt": "2026-11-10T23:11:51Z",
-      "lastAttemptAt": "2026-11-10T23:11:51Z",
+      "lastCheckedAt": "2026-11-11T02:03:51.815Z",
+      "lastVerifiedAt": "2026-11-11T02:03:51.815Z",
+      "lastAttemptAt": "2026-11-11T02:03:51.815Z",
       "history": [
         {
           "eventId": "50574b795f6fa0b2420cdabc1fe1377a42a10230812069ef00a4d2e81c03eac6",
@@ -907,6 +290,21 @@
             "id": "listing:autoplac:0658-6373-GX"
           },
           "changes": {}
+        },
+        {
+          "eventId": "1b3b625bfec274dad144cd0986002e94c8c6a1a7065bb89d7cfa3f55b42411be",
+          "runId": "dostepnosc-2026-11-11-live",
+          "checkedAt": "2026-11-11T02:03:51.815Z",
+          "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2017r-st-fr-tsi-125-km-2017-salonpl-106k-km-0658-6373-GX",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 9 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:0658-6373-GX"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -968,21 +366,27 @@
         {
           "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2017r-film-125km-fr-4152-2962-XH",
           "status": "available",
-          "lastAttemptAt": "2026-11-10T23:11:51Z",
-          "lastCheckedAt": "2026-11-10T23:11:51Z",
-          "lastVerifiedAt": "2026-11-10T23:11:51Z",
+          "lastAttemptAt": "2026-11-11T02:03:51.815Z",
+          "lastCheckedAt": "2026-11-11T02:03:51.815Z",
+          "lastVerifiedAt": "2026-11-11T02:03:51.815Z",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2017r-film-125km-fr-4152-2962-XH",
-            "checkedAt": "2026-11-10T23:11:51Z",
+            "checkedAt": "2026-11-11T02:03:51.815Z",
             "availability": "available",
-            "httpStatus": null,
-            "note": "Otwarta karta Autoplac pokazuje tytuł ogłoszenia i sekcję danych/opisu; nie wyświetla komunikatu o zamknięciu."
+            "note": "Karta zawiera dopasowanie 8 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+            "httpStatus": 200,
+            "availabilityProof": {
+              "identity": true,
+              "contact": true,
+              "price": true,
+              "titleTokensMatched": 8
+            }
           }
         }
       ],
-      "lastCheckedAt": "2026-11-10T23:11:51Z",
-      "lastVerifiedAt": "2026-11-10T23:11:51Z",
-      "lastAttemptAt": "2026-11-10T23:11:51Z",
+      "lastCheckedAt": "2026-11-11T02:03:51.815Z",
+      "lastVerifiedAt": "2026-11-11T02:03:51.815Z",
+      "lastAttemptAt": "2026-11-11T02:03:51.815Z",
       "history": [
         {
           "eventId": "96ce825356cba996558501ffc0908c9c17706615cf63fc69ef3f2c8d02fe8192",
@@ -1206,6 +610,21 @@
             "id": "listing:autoplac:4152-2962-XH"
           },
           "changes": {}
+        },
+        {
+          "eventId": "291ea4696c22a4e61441c0251a3a48ea28d1d36e24ef820df4a342495f7a89b6",
+          "runId": "dostepnosc-2026-11-11-live",
+          "checkedAt": "2026-11-11T02:03:51.815Z",
+          "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2017r-film-125km-fr-4152-2962-XH",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 8 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:4152-2962-XH"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -1228,306 +647,6 @@
       "photos": [
         "https://euw2-cdn.autoplac.pl/v1/p/fefb83b0-6936-42a1-8821-39c0129c7cfa?f=1920%3Awebp"
       ]
-    },
-    {
-      "id": "listing:otomoto:ID6IjmTL",
-      "modelKey": "seat-leon-iii-st",
-      "title": "SEAT Leon III ST 1.4 TSI 125 KM FR — 2018",
-      "urls": [
-        {
-          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IjmTL.html"
-        }
-      ],
-      "listingIds": [
-        "otomoto:ID6IjmTL"
-      ],
-      "year": 2018,
-      "price": 50900,
-      "priceBasis": "gross_total",
-      "engine": "1.4 TSI 125 KM, benzyna",
-      "engineVariant": "1.4-tsi-ea211-125",
-      "body": "Kombi / SEAT Leon ST",
-      "bodyCode": "wagon",
-      "transmission": "Manualna",
-      "transmissionCode": "manual",
-      "saleType": "fixed_price",
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "voivodeship": "Małopolskie",
-        "city": "Dulowa"
-      },
-      "photos": [
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjluZTZ4aGpuNjI0NTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.0eNzshzU0S9V7yVEanjpUCvpLXj9FoOKEqf0RuCfF_4/image%3Bs%3D5120x0%3Bq%3D80",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im1keHRscmd2NzJsci1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.n1CQJo5IEekprWSPjgbZ3J3J-3bjkJm9tSHbZpgl5LE/image%3Bs%3D5120x0%3Bq%3D100",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjA0dzgwMDAycXVreC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.V0azVWtsyVOAD8l_5yqxwAQuJPcsLH03wNBNGBTjceI/image%3Bs%3D5120x0%3Bq%3D100",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9qNG5vc2JtY2swczMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Glyq-3ptJzlv1nOvkKP1R5YsCacvy_--sAe5In76r1A/image%3Bs%3D5120x0%3Bq%3D100",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImZiMmxjZGh0MXU4OTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.YzNT9BH-GCb4Vonh_t4YNAWLEkCA7fvroVcnbuFspmI/image%3Bs%3D5120x0%3Bq%3D100",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Img5bTJwNnZrcW15dC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.ocjhn6qaE-xrtD6XpboHB07aptxs0FGCFOROKTWtvfI/image%3Bs%3D5120x0%3Bq%3D100",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpxM2p1dWg2dGk4NzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.31fFFXPfkSdpcLRZZ0RBKsam7zm6Vz3WRuUzlofIB5A/image%3Bs%3D5120x0%3Bq%3D100",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InZ6NHNveXljNWlpcjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.MaRsvP3Kfh9KipeGwE2RrE8TUxEhWbGsPZl57pFQ4FY/image%3Bs%3D5120x0%3Bq%3D100",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjN0cnBuaXlrNnV2eDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.mxTk5ayco0efCxT6S_JWTcNECxtjn5loF6iYu1B15Ck/image%3Bs%3D5120x0%3Bq%3D100",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJtcGR1NXRlM3JyeDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Np6nJDQ3Bq7JbY98kOdS1LYgA-AZiUBmwUze4PhaB-4/image%3Bs%3D5120x0%3Bq%3D100",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InNqdXo0MGg0bGQ3ai1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.zBfLxebAmxpDwKTC5k1da8q-5TFq7_wBS4tXWeQnwcM/image%3Bs%3D5120x0%3Bq%3D100",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRlZXBtZ2l1djIyNzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.UtCaAonJEho15rwX6Y5GRCMDlW7TOqeDgV42VjOqpGE/image%3Bs%3D5120x0%3Bq%3D100"
-      ],
-      "offerType": "private",
-      "cameraStatus": "installed_confirmed",
-      "structuralDamageStatus": "unknown",
-      "familyFitConfirmed": false,
-      "lpgInstalled": null,
-      "firstSeenAt": "2026-11-09T14:01:56+01:00",
-      "listingStates": [
-        {
-          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IjmTL.html",
-          "status": "available",
-          "lastAttemptAt": "2026-11-10T23:11:52Z",
-          "lastCheckedAt": "2026-11-10T23:11:52Z",
-          "lastVerifiedAt": "2026-11-10T23:11:52Z",
-          "lastObservation": {
-            "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IjmTL.html",
-            "checkedAt": "2026-11-10T23:11:52Z",
-            "availability": "available",
-            "note": "Otomoto pokazuje bezpośrednią kartę „Seat Leon 1.4 TSI FR S&S”, rocznik 2018, za 50 900 PLN; widoczne są szczegóły ogłoszenia i kontakt do sprzedawcy. Brak komunikatu o zamknięciu.",
-            "httpStatus": null
-          }
-        }
-      ],
-      "lastCheckedAt": "2026-11-10T23:11:52Z",
-      "lastVerifiedAt": "2026-11-10T23:11:52Z",
-      "lastAttemptAt": "2026-11-10T23:11:52Z",
-      "history": [
-        {
-          "eventId": "ea301a5fba00368912e34aa99e9774c1aa2edd2a53f9e00316246fa07c2846d6",
-          "runId": "search-20261109",
-          "checkedAt": "2026-11-09T14:01:56+01:00",
-          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IjmTL.html",
-          "availability": "available",
-          "note": "Karta publiczna dostępna: 2018, kombi, benzyna 1.4 TSI 125 KM, manual, 114 700 km, 50 900 zł (do negocjacji); sprzedawca wymienia gotówkę/przelew, faktura VAT marża. Kamera cofania jest wymieniona w opisie i wyposażeniu karty. Osoba prywatna, Dulowa, powiat chrzanowski, Małopolskie. Portal oznacza auto jako bezwypadkowe i serwisowane w ASO; brak niezależnej kontroli strukturalnej. LPG nieustalone, mimo wskazania benzyny. Karta oglądana 2026-11-09; data publikacji 7.11.2026.",
-          "photoCheck": null,
-          "evidence": [
-            {
-              "fields": [
-                "availability",
-                "year",
-                "price",
-                "mileageKm",
-                "engineVariant",
-                "bodyCode",
-                "transmissionCode",
-                "saleType",
-                "location",
-                "offerType",
-                "cameraStatus",
-                "lpgInstalled"
-              ],
-              "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IjmTL.html",
-              "checkedAt": "2026-11-09T14:01:56+01:00",
-              "kind": "seller",
-              "note": "Karta OTOMOTO: rok 2018, Leon III, 1.4 TSI 125 KM, kombi, manual, 114 700 km, cena 50 900 PLN (do negocjacji); opis: zakup gotówką/przelewem, faktura VAT-marża; kamera cofania oraz czujniki przód/tył, ISOFIX; sprzedawca prywatny; lokalizacja Dulowa, Małopolskie. Karta deklaruje bezwypadkowość i serwis ASO."
-            }
-          ],
-          "reportedFields": {
-            "id": "listing:otomoto:ID6IjmTL",
-            "modelKey": "seat-leon-iii-st",
-            "title": "SEAT Leon III ST 1.4 TSI 125 KM FR — 2018",
-            "urls": [
-              {
-                "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IjmTL.html"
-              }
-            ],
-            "listingIds": [
-              "otomoto:ID6IjmTL"
-            ],
-            "year": 2018,
-            "price": 50900,
-            "priceBasis": "gross_unconditional_total",
-            "mileageKm": 114700,
-            "engine": "1.4 TSI 125 KM, benzyna",
-            "engineVariant": "1.4-tsi-ea211-125",
-            "body": "Kombi / SEAT Leon ST",
-            "bodyCode": "wagon",
-            "transmission": "Manualna",
-            "transmissionCode": "manual",
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "location": {
-              "status": "available",
-              "countryCode": "PL",
-              "voivodeship": "Małopolskie",
-              "city": "Dulowa"
-            },
-            "photos": [
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjluZTZ4aGpuNjI0NTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.0eNzshzU0S9V7yVEanjpUCvpLXj9FoOKEqf0RuCfF_4/image%3Bs%3D5120x0%3Bq%3D80",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im1keHRscmd2NzJsci1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.n1CQJo5IEekprWSPjgbZ3J3J-3bjkJm9tSHbZpgl5LE/image%3Bs%3D5120x0%3Bq%3D100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjA0dzgwMDAycXVreC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.V0azVWtsyVOAD8l_5yqxwAQuJPcsLH03wNBNGBTjceI/image%3Bs%3D5120x0%3Bq%3D100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9qNG5vc2JtY2swczMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Glyq-3ptJzlv1nOvkKP1R5YsCacvy_--sAe5In76r1A/image%3Bs%3D5120x0%3Bq%3D100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImZiMmxjZGh0MXU4OTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.YzNT9BH-GCb4Vonh_t4YNAWLEkCA7fvroVcnbuFspmI/image%3Bs%3D5120x0%3Bq%3D100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Img5bTJwNnZrcW15dC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.ocjhn6qaE-xrtD6XpboHB07aptxs0FGCFOROKTWtvfI/image%3Bs%3D5120x0%3Bq%3D100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpxM2p1dWg2dGk4NzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.31fFFXPfkSdpcLRZZ0RBKsam7zm6Vz3WRuUzlofIB5A/image%3Bs%3D5120x0%3Bq%3D100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InZ6NHNveXljNWlpcjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.MaRsvP3Kfh9KipeGwE2RrE8TUxEhWbGsPZl57pFQ4FY/image%3Bs%3D5120x0%3Bq%3D100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjN0cnBuaXlrNnV2eDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.mxTk5ayco0efCxT6S_JWTcNECxtjn5loF6iYu1B15Ck/image%3Bs%3D5120x0%3Bq%3D100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJtcGR1NXRlM3JyeDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Np6nJDQ3Bq7JbY98kOdS1LYgA-AZiUBmwUze4PhaB-4/image%3Bs%3D5120x0%3Bq%3D100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InNqdXo0MGg0bGQ3ai1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.zBfLxebAmxpDwKTC5k1da8q-5TFq7_wBS4tXWeQnwcM/image%3Bs%3D5120x0%3Bq%3D100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRlZXBtZ2l1djIyNzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.UtCaAonJEho15rwX6Y5GRCMDlW7TOqeDgV42VjOqpGE/image%3Bs%3D5120x0%3Bq%3D100"
-            ],
-            "offerType": "private",
-            "cameraStatus": "installed_confirmed",
-            "structuralDamageStatus": "unknown",
-            "familyFitConfirmed": false
-          },
-          "changes": {
-            "id": {
-              "before": null,
-              "after": "listing:otomoto:ID6IjmTL"
-            },
-            "modelKey": {
-              "before": null,
-              "after": "seat-leon-iii-st"
-            },
-            "title": {
-              "before": null,
-              "after": "SEAT Leon III ST 1.4 TSI 125 KM FR — 2018"
-            },
-            "urls": {
-              "before": null,
-              "after": [
-                {
-                  "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IjmTL.html"
-                }
-              ]
-            },
-            "listingIds": {
-              "before": null,
-              "after": [
-                "otomoto:ID6IjmTL"
-              ]
-            },
-            "year": {
-              "before": null,
-              "after": 2018
-            },
-            "price": {
-              "before": null,
-              "after": 50900
-            },
-            "priceBasis": {
-              "before": null,
-              "after": "gross_unconditional_total"
-            },
-            "mileageKm": {
-              "before": null,
-              "after": 114700
-            },
-            "engine": {
-              "before": null,
-              "after": "1.4 TSI 125 KM, benzyna"
-            },
-            "engineVariant": {
-              "before": null,
-              "after": "1.4-tsi-ea211-125"
-            },
-            "body": {
-              "before": null,
-              "after": "Kombi / SEAT Leon ST"
-            },
-            "bodyCode": {
-              "before": null,
-              "after": "wagon"
-            },
-            "transmission": {
-              "before": null,
-              "after": "Manualna"
-            },
-            "transmissionCode": {
-              "before": null,
-              "after": "manual"
-            },
-            "saleType": {
-              "before": null,
-              "after": "fixed_price"
-            },
-            "location": {
-              "before": null,
-              "after": {
-                "status": "available",
-                "countryCode": "PL",
-                "voivodeship": "Małopolskie",
-                "city": "Dulowa"
-              }
-            },
-            "photos": {
-              "before": null,
-              "after": [
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjluZTZ4aGpuNjI0NTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.0eNzshzU0S9V7yVEanjpUCvpLXj9FoOKEqf0RuCfF_4/image%3Bs%3D5120x0%3Bq%3D80",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im1keHRscmd2NzJsci1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.n1CQJo5IEekprWSPjgbZ3J3J-3bjkJm9tSHbZpgl5LE/image%3Bs%3D5120x0%3Bq%3D100",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjA0dzgwMDAycXVreC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.V0azVWtsyVOAD8l_5yqxwAQuJPcsLH03wNBNGBTjceI/image%3Bs%3D5120x0%3Bq%3D100",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9qNG5vc2JtY2swczMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Glyq-3ptJzlv1nOvkKP1R5YsCacvy_--sAe5In76r1A/image%3Bs%3D5120x0%3Bq%3D100",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImZiMmxjZGh0MXU4OTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.YzNT9BH-GCb4Vonh_t4YNAWLEkCA7fvroVcnbuFspmI/image%3Bs%3D5120x0%3Bq%3D100",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Img5bTJwNnZrcW15dC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.ocjhn6qaE-xrtD6XpboHB07aptxs0FGCFOROKTWtvfI/image%3Bs%3D5120x0%3Bq%3D100",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpxM2p1dWg2dGk4NzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.31fFFXPfkSdpcLRZZ0RBKsam7zm6Vz3WRuUzlofIB5A/image%3Bs%3D5120x0%3Bq%3D100",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InZ6NHNveXljNWlpcjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.MaRsvP3Kfh9KipeGwE2RrE8TUxEhWbGsPZl57pFQ4FY/image%3Bs%3D5120x0%3Bq%3D100",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjN0cnBuaXlrNnV2eDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.mxTk5ayco0efCxT6S_JWTcNECxtjn5loF6iYu1B15Ck/image%3Bs%3D5120x0%3Bq%3D100",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJtcGR1NXRlM3JyeDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Np6nJDQ3Bq7JbY98kOdS1LYgA-AZiUBmwUze4PhaB-4/image%3Bs%3D5120x0%3Bq%3D100",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InNqdXo0MGg0bGQ3ai1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.zBfLxebAmxpDwKTC5k1da8q-5TFq7_wBS4tXWeQnwcM/image%3Bs%3D5120x0%3Bq%3D100",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRlZXBtZ2l1djIyNzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.UtCaAonJEho15rwX6Y5GRCMDlW7TOqeDgV42VjOqpGE/image%3Bs%3D5120x0%3Bq%3D100"
-              ]
-            },
-            "offerType": {
-              "before": null,
-              "after": "private"
-            },
-            "cameraStatus": {
-              "before": null,
-              "after": "installed_confirmed"
-            },
-            "structuralDamageStatus": {
-              "before": null,
-              "after": "unknown"
-            },
-            "familyFitConfirmed": {
-              "before": null,
-              "after": false
-            }
-          }
-        },
-        {
-          "eventId": "8151fd42c1758795af3beef3bb5e24dd978d07d1becd1aa1dac636b112989835",
-          "runId": "dostepnosc-2026-11-10",
-          "checkedAt": "2026-11-10T23:11:52Z",
-          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IjmTL.html",
-          "availability": "available",
-          "note": "Otomoto pokazuje bezpośrednią kartę „Seat Leon 1.4 TSI FR S&S”, rocznik 2018, za 50 900 PLN; widoczne są szczegóły ogłoszenia i kontakt do sprzedawcy. Brak komunikatu o zamknięciu.",
-          "httpStatus": null,
-          "photoCheck": null,
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:otomoto:ID6IjmTL"
-          },
-          "changes": {
-            "priceBasis": {
-              "before": "gross_unconditional_total",
-              "after": "gross_total"
-            }
-          }
-        }
-      ],
-      "assessment": {
-        "id": "listing:otomoto:ID6IjmTL",
-        "modelKey": "seat-leon-iii-st",
-        "verdict": "check",
-        "failures": [],
-        "unknowns": [
-          "structural_history",
-          "mileage",
-          "stroller_and_family_fit"
-        ],
-        "preferenceNotes": []
-      },
-      "verdict": "check",
-      "verdictTitle": "Do weryfikacji",
-      "verdictNote": "structural_history; mileage; stroller_and_family_fit",
-      "mileage": 114700
     },
     {
       "id": "listing:autoplac:7840-5141-TW",
@@ -1575,21 +694,27 @@
         {
           "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-fr-panorama-ledy-1-wlascicielka-serwisowany-7840-5141-TW",
           "status": "available",
-          "lastAttemptAt": "2026-11-10T23:11:51Z",
-          "lastCheckedAt": "2026-11-10T23:11:51Z",
-          "lastVerifiedAt": "2026-11-10T23:11:51Z",
+          "lastAttemptAt": "2026-11-11T02:03:51.817Z",
+          "lastCheckedAt": "2026-11-11T02:03:51.817Z",
+          "lastVerifiedAt": "2026-11-11T02:03:51.817Z",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-fr-panorama-ledy-1-wlascicielka-serwisowany-7840-5141-TW",
-            "checkedAt": "2026-11-10T23:11:51Z",
+            "checkedAt": "2026-11-11T02:03:51.817Z",
             "availability": "available",
-            "httpStatus": null,
-            "note": "Otwarta karta Autoplac pokazuje tytuł ogłoszenia i sekcję danych/opisu; nie wyświetla komunikatu o zamknięciu."
+            "note": "Karta zawiera dopasowanie 6 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+            "httpStatus": 200,
+            "availabilityProof": {
+              "identity": true,
+              "contact": true,
+              "price": true,
+              "titleTokensMatched": 6
+            }
           }
         }
       ],
-      "lastCheckedAt": "2026-11-10T23:11:51Z",
-      "lastVerifiedAt": "2026-11-10T23:11:51Z",
-      "lastAttemptAt": "2026-11-10T23:11:51Z",
+      "lastCheckedAt": "2026-11-11T02:03:51.817Z",
+      "lastVerifiedAt": "2026-11-11T02:03:51.817Z",
+      "lastAttemptAt": "2026-11-11T02:03:51.817Z",
       "history": [
         {
           "eventId": "9622be5a74898b1ad29d682be35ccf2d029d46c27a75d4361ba7171413dcba6b",
@@ -1783,6 +908,21 @@
               "after": "gross_total"
             }
           }
+        },
+        {
+          "eventId": "75aba1da06280b24da6fc7ce521887e774a6aa61123debba2412bd1808961a00",
+          "runId": "dostepnosc-2026-11-11-live",
+          "checkedAt": "2026-11-11T02:03:51.817Z",
+          "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-fr-panorama-ledy-1-wlascicielka-serwisowany-7840-5141-TW",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 6 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:7840-5141-TW"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -1800,344 +940,6 @@
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
       "verdictNote": "camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
-    },
-    {
-      "id": "listing:otomoto:ID6IiMlg",
-      "modelKey": "seat-leon-iii-st",
-      "listingIds": [
-        "otomoto:ID6IiMlg"
-      ],
-      "urls": [
-        {
-          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IiMlg.html",
-          "label": "Ogłoszenie Otomoto"
-        }
-      ],
-      "photos": [
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhkejFlbnVvZDB0bTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.o-Iwq8qbe3FHDJu-Mim0FL7s9VAz-7wWQ-HlYqIquxI/image%3Bs%3D5120x0%3Bq%3D80",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InU2dXozMGxlNDRxdS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.bVoo6fhJfup75aPEx5Ql_0ufcLLnTSvS_3ZWhhCY8f8/image%3Bs%3D5120x0%3Bq%3D100",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im52NzViYWVuc2NkMjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.4kAJkNrf2ANoFUWJL0ORKaxGUMg8O7ul0-LTwaZ1cvc/image%3Bs%3D5120x0%3Bq%3D100",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjZvOHpsZzNoaGpwZTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.8DZ0XEPQAWt7Qrn1E7HuoQqWOyA6W8XOD2LF8FTdqKw/image%3Bs%3D5120x0%3Bq%3D100",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjZmYmp1cnh1N3N6ZzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.WodxyBPyAEDAKmHrbyPEzyOkeCwer6f9gnhYMP41wW4/image%3Bs%3D5120x0%3Bq%3D100",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjViOWd3dnpka2x6aTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.vvGJ-1Jv_2tFyVbeQzVxV9j6Hv5NiBX1gR0qlXTfZrE/image%3Bs%3D5120x0%3Bq%3D100",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijc3ODZ3bjl0eDhsZzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.38pib7e9rZOVkuabh-X_8pySkLq7wPQWxcxS--B9GTw/image%3Bs%3D5120x0%3Bq%3D100",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im5oMm00azZnNWtzdTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.KJiWoSZvVVhkJMt4mwu6_AEDd060O3Y3oFIinWs8_Wk/image%3Bs%3D5120x0%3Bq%3D100",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhqOHNwbnZlZjU5czMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.njzy631K1R0_qsIJbviZRk2R88HXJeItxgH_k9fImKs/image%3Bs%3D5120x0%3Bq%3D100"
-      ],
-      "title": "SEAT Leon III ST FR 1.4 TSI 125 KM — kombi, manual, 2018",
-      "year": 2018,
-      "price": 49999,
-      "priceLabel": "49 999 PLN; warunki pełnej ceny do potwierdzenia",
-      "mileage": 130000,
-      "mileageLabel": "130 000 km",
-      "engine": "1.4 TSI, 1 395 cm³, 125 KM",
-      "body": "Kombi (ST)",
-      "transmission": "Manualna",
-      "seller": "Osoba prywatna",
-      "priceBasis": "unknown",
-      "bodyCode": "wagon",
-      "engineVariant": "1.4-tsi-ea211-125",
-      "transmissionCode": "manual",
-      "cameraStatus": "installed_confirmed",
-      "structuralDamageStatus": "unknown",
-      "saleType": "fixed_price",
-      "offerType": "private",
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "voivodeship": "Kujawsko-Pomorskie",
-        "city": "Bydgoszcz",
-        "precision": "city",
-        "source": "listing",
-        "checkedAt": "2026-11-09"
-      },
-      "details": {
-        "Wersja silnika": "Karta podaje 1.4 TSI 125 KM i 1395 cm³; kod silnika nie został potwierdzony po VIN.",
-        "Kamera": "Karta sprzedającego wymienia kamerę cofania; nie wykonano niezależnego testu działania.",
-        "LPG": "Brak informacji w karcie; status instalacji i dokumentów pozostaje nieznany.",
-        "Szkody": "Sprzedający deklaruje bezwypadkowość; nie jest to niezależne potwierdzenie.",
-        "Pochodzenie i serwis": "Opis sprzedającego: świeży import z Niemiec, serwisowany do września; do potwierdzenia dokumentami.",
-        "Cena": "Karta pokazuje 49 999 PLN oraz ofertę finansowania na stronie; nie potwierdza wprost warunków zakupu gotówkowego, dlatego priceBasis pozostaje unknown."
-      },
-      "lpgInstalled": null,
-      "firstSeenAt": "2026-11-09T22:28:32Z",
-      "listingStates": [
-        {
-          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IiMlg.html",
-          "status": "available",
-          "lastAttemptAt": "2026-11-10T23:11:52Z",
-          "lastCheckedAt": "2026-11-10T23:11:52Z",
-          "lastVerifiedAt": "2026-11-10T23:11:52Z",
-          "lastObservation": {
-            "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IiMlg.html",
-            "checkedAt": "2026-11-10T23:11:52Z",
-            "availability": "available",
-            "note": "Otomoto pokazuje bezpośrednią kartę Seat Leon 2018 za 49 999 PLN; widoczne są opis ogłoszenia i kontakt do sprzedawcy. Brak komunikatu o zamknięciu.",
-            "httpStatus": null
-          }
-        }
-      ],
-      "lastCheckedAt": "2026-11-10T23:11:52Z",
-      "lastVerifiedAt": "2026-11-10T23:11:52Z",
-      "lastAttemptAt": "2026-11-10T23:11:52Z",
-      "history": [
-        {
-          "eventId": "bcdb58f4039afe1b2e04bb0060133df6feac01cec2268306c35de0d1295f23db",
-          "runId": "search-20261109-full",
-          "checkedAt": "2026-11-09T22:28:32Z",
-          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IiMlg.html",
-          "availability": "available",
-          "note": "Karta Otomoto była publicznie dostępna przy sprawdzeniu 2026-11-09 i pokazywała aktywną cenę 49 999 PLN z przyciskiem kontaktu. Dane o aucie i kamera cofania są deklaracjami karty/sprzedającego; LPG i bezwarunkowa cena brutto pozostają niepotwierdzone.",
-          "photoCheck": null,
-          "evidence": [
-            {
-              "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IiMlg.html",
-              "checkedAt": "2026-11-09T22:28:32Z",
-              "kind": "seller",
-              "fields": [
-                "availability",
-                "year",
-                "price",
-                "mileage",
-                "engine",
-                "body",
-                "transmission",
-                "offerType",
-                "location",
-                "cameraStatus",
-                "saleType"
-              ],
-              "note": "Otomoto publiczna karta dostępna podczas odczytu. Dane wariantu i wyposażenia pochodzą z deklaracji sprzedającego/karty portalu, nie są niezależnie sprawdzone. Karta pokazuje cenę ofertową 49 999 PLN, stan używany, Bydgoszcz, kamerę cofania w opisie/wyposażeniu. Brak informacji o LPG i bezwarunkowej cenie zakupu."
-            }
-          ],
-          "reportedFields": {
-            "id": "listing:otomoto:ID6IiMlg",
-            "modelKey": "seat-leon-iii-st",
-            "vin": null,
-            "listingIds": [
-              "otomoto:ID6IiMlg"
-            ],
-            "urls": [
-              {
-                "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IiMlg.html",
-                "label": "Ogłoszenie Otomoto"
-              }
-            ],
-            "photos": [
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhkejFlbnVvZDB0bTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.o-Iwq8qbe3FHDJu-Mim0FL7s9VAz-7wWQ-HlYqIquxI/image%3Bs%3D5120x0%3Bq%3D80",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InU2dXozMGxlNDRxdS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.bVoo6fhJfup75aPEx5Ql_0ufcLLnTSvS_3ZWhhCY8f8/image%3Bs%3D5120x0%3Bq%3D100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im52NzViYWVuc2NkMjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.4kAJkNrf2ANoFUWJL0ORKaxGUMg8O7ul0-LTwaZ1cvc/image%3Bs%3D5120x0%3Bq%3D100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjZvOHpsZzNoaGpwZTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.8DZ0XEPQAWt7Qrn1E7HuoQqWOyA6W8XOD2LF8FTdqKw/image%3Bs%3D5120x0%3Bq%3D100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjZmYmp1cnh1N3N6ZzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.WodxyBPyAEDAKmHrbyPEzyOkeCwer6f9gnhYMP41wW4/image%3Bs%3D5120x0%3Bq%3D100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjViOWd3dnpka2x6aTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.vvGJ-1Jv_2tFyVbeQzVxV9j6Hv5NiBX1gR0qlXTfZrE/image%3Bs%3D5120x0%3Bq%3D100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijc3ODZ3bjl0eDhsZzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.38pib7e9rZOVkuabh-X_8pySkLq7wPQWxcxS--B9GTw/image%3Bs%3D5120x0%3Bq%3D100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im5oMm00azZnNWtzdTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.KJiWoSZvVVhkJMt4mwu6_AEDd060O3Y3oFIinWs8_Wk/image%3Bs%3D5120x0%3Bq%3D100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhqOHNwbnZlZjU5czMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.njzy631K1R0_qsIJbviZRk2R88HXJeItxgH_k9fImKs/image%3Bs%3D5120x0%3Bq%3D100"
-            ],
-            "title": "SEAT Leon III ST FR 1.4 TSI 125 KM — kombi, manual, 2018",
-            "year": 2018,
-            "price": 49999,
-            "priceLabel": "49 999 PLN; warunki pełnej ceny do potwierdzenia",
-            "mileage": 130000,
-            "mileageLabel": "130 000 km",
-            "engine": "1.4 TSI, 1 395 cm³, 125 KM",
-            "body": "Kombi (ST)",
-            "transmission": "Manualna",
-            "seller": "Osoba prywatna",
-            "priceBasis": "unknown",
-            "bodyCode": "wagon",
-            "engineVariant": "1.4-tsi-ea211-125",
-            "transmissionCode": "manual",
-            "cameraStatus": "installed_confirmed",
-            "structuralDamageStatus": "unknown",
-            "familyFitConfirmed": null,
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "offerType": "private",
-            "location": {
-              "status": "available",
-              "countryCode": "PL",
-              "voivodeship": "Kujawsko-Pomorskie",
-              "city": "Bydgoszcz",
-              "precision": "city",
-              "source": "listing",
-              "checkedAt": "2026-11-09"
-            },
-            "details": {
-              "Wersja silnika": "Karta podaje 1.4 TSI 125 KM i 1395 cm³; kod silnika nie został potwierdzony po VIN.",
-              "Kamera": "Karta sprzedającego wymienia kamerę cofania; nie wykonano niezależnego testu działania.",
-              "LPG": "Brak informacji w karcie; status instalacji i dokumentów pozostaje nieznany.",
-              "Szkody": "Sprzedający deklaruje bezwypadkowość; nie jest to niezależne potwierdzenie.",
-              "Pochodzenie i serwis": "Opis sprzedającego: świeży import z Niemiec, serwisowany do września; do potwierdzenia dokumentami.",
-              "Cena": "Karta pokazuje 49 999 PLN oraz ofertę finansowania na stronie; nie potwierdza wprost warunków zakupu gotówkowego, dlatego priceBasis pozostaje unknown."
-            }
-          },
-          "changes": {
-            "id": {
-              "before": null,
-              "after": "listing:otomoto:ID6IiMlg"
-            },
-            "modelKey": {
-              "before": null,
-              "after": "seat-leon-iii-st"
-            },
-            "listingIds": {
-              "before": null,
-              "after": [
-                "otomoto:ID6IiMlg"
-              ]
-            },
-            "urls": {
-              "before": null,
-              "after": [
-                {
-                  "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IiMlg.html",
-                  "label": "Ogłoszenie Otomoto"
-                }
-              ]
-            },
-            "photos": {
-              "before": null,
-              "after": [
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhkejFlbnVvZDB0bTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.o-Iwq8qbe3FHDJu-Mim0FL7s9VAz-7wWQ-HlYqIquxI/image%3Bs%3D5120x0%3Bq%3D80",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InU2dXozMGxlNDRxdS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.bVoo6fhJfup75aPEx5Ql_0ufcLLnTSvS_3ZWhhCY8f8/image%3Bs%3D5120x0%3Bq%3D100",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im52NzViYWVuc2NkMjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.4kAJkNrf2ANoFUWJL0ORKaxGUMg8O7ul0-LTwaZ1cvc/image%3Bs%3D5120x0%3Bq%3D100",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjZvOHpsZzNoaGpwZTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.8DZ0XEPQAWt7Qrn1E7HuoQqWOyA6W8XOD2LF8FTdqKw/image%3Bs%3D5120x0%3Bq%3D100",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjZmYmp1cnh1N3N6ZzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.WodxyBPyAEDAKmHrbyPEzyOkeCwer6f9gnhYMP41wW4/image%3Bs%3D5120x0%3Bq%3D100",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjViOWd3dnpka2x6aTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.vvGJ-1Jv_2tFyVbeQzVxV9j6Hv5NiBX1gR0qlXTfZrE/image%3Bs%3D5120x0%3Bq%3D100",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijc3ODZ3bjl0eDhsZzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.38pib7e9rZOVkuabh-X_8pySkLq7wPQWxcxS--B9GTw/image%3Bs%3D5120x0%3Bq%3D100",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im5oMm00azZnNWtzdTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.KJiWoSZvVVhkJMt4mwu6_AEDd060O3Y3oFIinWs8_Wk/image%3Bs%3D5120x0%3Bq%3D100",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhqOHNwbnZlZjU5czMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.njzy631K1R0_qsIJbviZRk2R88HXJeItxgH_k9fImKs/image%3Bs%3D5120x0%3Bq%3D100"
-              ]
-            },
-            "title": {
-              "before": null,
-              "after": "SEAT Leon III ST FR 1.4 TSI 125 KM — kombi, manual, 2018"
-            },
-            "year": {
-              "before": null,
-              "after": 2018
-            },
-            "price": {
-              "before": null,
-              "after": 49999
-            },
-            "priceLabel": {
-              "before": null,
-              "after": "49 999 PLN; warunki pełnej ceny do potwierdzenia"
-            },
-            "mileage": {
-              "before": null,
-              "after": 130000
-            },
-            "mileageLabel": {
-              "before": null,
-              "after": "130 000 km"
-            },
-            "engine": {
-              "before": null,
-              "after": "1.4 TSI, 1 395 cm³, 125 KM"
-            },
-            "body": {
-              "before": null,
-              "after": "Kombi (ST)"
-            },
-            "transmission": {
-              "before": null,
-              "after": "Manualna"
-            },
-            "seller": {
-              "before": null,
-              "after": "Osoba prywatna"
-            },
-            "priceBasis": {
-              "before": null,
-              "after": "unknown"
-            },
-            "bodyCode": {
-              "before": null,
-              "after": "wagon"
-            },
-            "engineVariant": {
-              "before": null,
-              "after": "1.4-tsi-ea211-125"
-            },
-            "transmissionCode": {
-              "before": null,
-              "after": "manual"
-            },
-            "cameraStatus": {
-              "before": null,
-              "after": "installed_confirmed"
-            },
-            "structuralDamageStatus": {
-              "before": null,
-              "after": "unknown"
-            },
-            "saleType": {
-              "before": null,
-              "after": "fixed_price"
-            },
-            "offerType": {
-              "before": null,
-              "after": "private"
-            },
-            "location": {
-              "before": null,
-              "after": {
-                "status": "available",
-                "countryCode": "PL",
-                "voivodeship": "Kujawsko-Pomorskie",
-                "city": "Bydgoszcz",
-                "precision": "city",
-                "source": "listing",
-                "checkedAt": "2026-11-09"
-              }
-            },
-            "details": {
-              "before": null,
-              "after": {
-                "Wersja silnika": "Karta podaje 1.4 TSI 125 KM i 1395 cm³; kod silnika nie został potwierdzony po VIN.",
-                "Kamera": "Karta sprzedającego wymienia kamerę cofania; nie wykonano niezależnego testu działania.",
-                "LPG": "Brak informacji w karcie; status instalacji i dokumentów pozostaje nieznany.",
-                "Szkody": "Sprzedający deklaruje bezwypadkowość; nie jest to niezależne potwierdzenie.",
-                "Pochodzenie i serwis": "Opis sprzedającego: świeży import z Niemiec, serwisowany do września; do potwierdzenia dokumentami.",
-                "Cena": "Karta pokazuje 49 999 PLN oraz ofertę finansowania na stronie; nie potwierdza wprost warunków zakupu gotówkowego, dlatego priceBasis pozostaje unknown."
-              }
-            }
-          }
-        },
-        {
-          "eventId": "8bf9eba2d8d214d50345baf5cc8dd0fbd6ad628f57aff82dcc5c7b9710a5954b",
-          "runId": "dostepnosc-2026-11-10",
-          "checkedAt": "2026-11-10T23:11:52Z",
-          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IiMlg.html",
-          "availability": "available",
-          "note": "Otomoto pokazuje bezpośrednią kartę Seat Leon 2018 za 49 999 PLN; widoczne są opis ogłoszenia i kontakt do sprzedawcy. Brak komunikatu o zamknięciu.",
-          "httpStatus": null,
-          "photoCheck": null,
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:otomoto:ID6IiMlg"
-          },
-          "changes": {}
-        }
-      ],
-      "assessment": {
-        "id": "listing:otomoto:ID6IiMlg",
-        "modelKey": "seat-leon-iii-st",
-        "verdict": "check",
-        "failures": [],
-        "unknowns": [
-          "gross_unconditional_purchase_price",
-          "structural_history",
-          "stroller_and_family_fit"
-        ],
-        "preferenceNotes": []
-      },
-      "verdict": "check",
-      "verdictTitle": "Do weryfikacji",
-      "verdictNote": "gross_unconditional_purchase_price; structural_history; stroller_and_family_fit"
     },
     {
       "id": "listing:automarket:T133658",
@@ -2199,21 +1001,27 @@
         {
           "url": "https://automarket.pl/oferta/seat/leon/T133658/zakup",
           "status": "available",
-          "lastAttemptAt": "2026-11-10T23:12:16Z",
-          "lastCheckedAt": "2026-11-10T23:12:16Z",
-          "lastVerifiedAt": "2026-11-10T23:12:16Z",
+          "lastAttemptAt": "2026-11-11T02:03:56.499Z",
+          "lastCheckedAt": "2026-11-11T02:03:56.499Z",
+          "lastVerifiedAt": "2026-11-11T02:03:56.499Z",
           "lastObservation": {
             "url": "https://automarket.pl/oferta/seat/leon/T133658/zakup",
-            "checkedAt": "2026-11-10T23:12:16Z",
+            "checkedAt": "2026-11-11T02:03:56.499Z",
             "availability": "available",
-            "httpStatus": null,
-            "note": "Karta Automarket ładuje ofertę SEAT Leon nr T133658, cenę 49 999 zł oraz dane i kontakt sprzedawcy; brak komunikatu o zamknięciu."
+            "note": "Karta zawiera dopasowanie 6 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+            "httpStatus": 200,
+            "availabilityProof": {
+              "identity": true,
+              "contact": true,
+              "price": true,
+              "titleTokensMatched": 6
+            }
           }
         }
       ],
-      "lastCheckedAt": "2026-11-10T23:12:16Z",
-      "lastVerifiedAt": "2026-11-10T23:12:16Z",
-      "lastAttemptAt": "2026-11-10T23:12:16Z",
+      "lastCheckedAt": "2026-11-11T02:03:56.499Z",
+      "lastVerifiedAt": "2026-11-11T02:03:56.499Z",
+      "lastAttemptAt": "2026-11-11T02:03:56.499Z",
       "history": [
         {
           "eventId": "f91cc8738c93665f467dc0e66490f535eef2ad745e2e12a73ecd0c87e5bff27f",
@@ -2451,6 +1259,21 @@
               "after": "gross_total"
             }
           }
+        },
+        {
+          "eventId": "220b45b08f5082d7ac3cb9b624fe19c0852e7c48e7f74b402d13ac0884a6021f",
+          "runId": "dostepnosc-2026-11-11-live",
+          "checkedAt": "2026-11-11T02:03:56.499Z",
+          "url": "https://automarket.pl/oferta/seat/leon/T133658/zakup",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 6 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:automarket:T133658"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -3421,6 +2244,1347 @@
         "status": "closed",
         "reason": "all_listings_confirmed_closed",
         "archivedAt": "2026-11-10T23:11:51+00:00"
+      }
+    },
+    {
+      "id": "listing:otomoto:ID6IaKVJ",
+      "modelKey": "seat-leon-iii-st",
+      "title": "SEAT Leon III ST 1.4 TSI 125 KM Xcellence — 2018",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IaKVJ.html"
+        }
+      ],
+      "listingIds": [
+        "otomoto:ID6IaKVJ"
+      ],
+      "year": 2018,
+      "price": 46900,
+      "mileage": 140000,
+      "engine": "1.4 TSI, 125 KM, benzyna; opis podaje kod CZCA",
+      "engineVariant": "1.4-tsi-ea211-125",
+      "body": "Kombi / SEAT Leon ST",
+      "bodyCode": "wagon",
+      "transmission": "Manualna, 6-biegowa",
+      "transmissionCode": "manual",
+      "saleType": "fixed_price",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "voivodeship": "Wielkopolskie",
+        "city": "Komorniki"
+      },
+      "offerType": "unknown",
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-08T18:56:16+01:00",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IaKVJ.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-11T02:03:51.743Z",
+          "lastCheckedAt": "2026-11-10T23:11:52Z",
+          "lastVerifiedAt": "2026-11-10T23:11:52Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IaKVJ.html",
+            "checkedAt": "2026-11-11T02:03:51.743Z",
+            "availability": "access_error",
+            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+            "httpStatus": null
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-10T23:11:52Z",
+      "lastVerifiedAt": "2026-11-10T23:11:52Z",
+      "lastAttemptAt": "2026-11-11T02:03:51.743Z",
+      "history": [
+        {
+          "eventId": "1a39e36ca8f5981d506a5e9bb3071cd30c972be488c77defdedd52306cbbdbdb",
+          "runId": "search-20261108",
+          "checkedAt": "2026-11-08T18:56:16+01:00",
+          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IaKVJ.html",
+          "availability": "available",
+          "note": "Otwarta publiczna karta Otomoto pokazuje używanego SEAT-a Leona ST (kombi), 2018, 1.4 TSI 125 KM, manual, 140 000 km i cenę 46 900 PLN. Opis podaje CZCA, polskie pochodzenie oraz fakturę VAT 23%; portal nie pokazuje warunku finansowania jako warunku tej ceny. Lokalizacja karty: Komorniki, powiat poznański, Wielkopolskie. Kamera cofania nie występuje w odczytanej liście wyposażenia, więc jej obecność niepotwierdzona i wymaga sprawdzenia; LPG nieustalone. Sprzedawca deklaruje bezwypadkowość i pierwszy wpis właściciela; nie jest to niezależna kontrola szkód. Ogłoszenie dostępne na stronie w trakcie odczytu.",
+          "evidence": [
+            {
+              "fields": [
+                "price",
+                "year",
+                "mileage",
+                "engineVariant",
+                "transmissionCode",
+                "bodyCode",
+                "saleType",
+                "location",
+                "availability"
+              ],
+              "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IaKVJ.html",
+              "checkedAt": "2026-11-08T18:56:16+01:00",
+              "kind": "seller",
+              "note": "Karta Otomoto: cena 46 900 PLN, rok 2018, 140 000 km, 1.4 TSI 125 KM, manual, kombi; opis podaje CZCA i fakturę VAT 23%. Strona pokazuje lokalizację Komorniki (powiat poznański, Wielkopolskie), stan używany i kontakt do sprzedawcy. Kamera nie pojawia się w odczytanej liście wyposażenia."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IaKVJ",
+            "modelKey": "seat-leon-iii-st",
+            "title": "SEAT Leon III ST 1.4 TSI 125 KM Xcellence — 2018",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IaKVJ.html"
+              }
+            ],
+            "listingIds": [
+              "otomoto:ID6IaKVJ"
+            ],
+            "year": 2018,
+            "price": 46900,
+            "mileage": 140000,
+            "engine": "1.4 TSI, 125 KM, benzyna; opis podaje kod CZCA",
+            "engineVariant": "1.4-tsi-ea211-125",
+            "body": "Kombi / SEAT Leon ST",
+            "bodyCode": "wagon",
+            "transmission": "Manualna, 6-biegowa",
+            "transmissionCode": "manual",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "voivodeship": "Wielkopolskie",
+              "city": "Komorniki"
+            },
+            "offerType": "unknown"
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:otomoto:ID6IaKVJ"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "seat-leon-iii-st"
+            },
+            "title": {
+              "before": null,
+              "after": "SEAT Leon III ST 1.4 TSI 125 KM Xcellence — 2018"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IaKVJ.html"
+                }
+              ]
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "otomoto:ID6IaKVJ"
+              ]
+            },
+            "year": {
+              "before": null,
+              "after": 2018
+            },
+            "price": {
+              "before": null,
+              "after": 46900
+            },
+            "mileage": {
+              "before": null,
+              "after": 140000
+            },
+            "engine": {
+              "before": null,
+              "after": "1.4 TSI, 125 KM, benzyna; opis podaje kod CZCA"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.4-tsi-ea211-125"
+            },
+            "body": {
+              "before": null,
+              "after": "Kombi / SEAT Leon ST"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmission": {
+              "before": null,
+              "after": "Manualna, 6-biegowa"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "voivodeship": "Wielkopolskie",
+                "city": "Komorniki"
+              }
+            },
+            "offerType": {
+              "before": null,
+              "after": "unknown"
+            }
+          }
+        },
+        {
+          "eventId": "0551f07330c45c9ff278a8c6ba02a4d2e94b1b7ebca4a86440efc1bdf0b67a02",
+          "runId": "refresh-20261108-03",
+          "checkedAt": "2026-11-08T23:01:40+01:00",
+          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IaKVJ.html",
+          "availability": "available",
+          "note": "Karta dostępna; cena 46 900 zł, rok produkcji 2018, przebieg 140 000 km. Opis sprzedawcy podaje silnik 1.4 TSI 125 KM CZCA, skrzynię manualną i fakturę VAT 23%; finansowanie jest prezentowane osobno. LPG nieustalone.",
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IaKVJ",
+            "price": 46900,
+            "year": 2018,
+            "mileage": 140000,
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpibWk2YWRzNDM4NjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.sjODOXfvBioYgUmBUBK9ZRhpfIvrC6U5fjn2eUG2fkA/image%3Bs%3D5120x0%3Bq%3D80"
+            ]
+          },
+          "changes": {
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpibWk2YWRzNDM4NjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.sjODOXfvBioYgUmBUBK9ZRhpfIvrC6U5fjn2eUG2fkA/image%3Bs%3D5120x0%3Bq%3D80"
+              ]
+            }
+          }
+        },
+        {
+          "eventId": "1f11894028cd293e576184ca7de5a1c527ecdfb95467cfbdcedfec48bef289a1",
+          "runId": "refresh20261109a",
+          "checkedAt": "2026-11-09T13:01:58Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IaKVJ.html",
+          "availability": "available",
+          "note": "Karta Otomoto dostępna; cena 46 900 zł, rok produkcji 2018, 140 000 km, SEAT Leon ST 1.4 TSI 125 KM (opis sprzedawcy podaje kod CZCA), benzyna, manualna skrzynia 6-biegowa, kombi. Karta wskazuje sprzedawcę prywatnego, rejestrację w Polsce, 5 miejsc, ISOFIX oraz bezwypadkowość jako deklarację/oznaczenie; kamera nie jest wymieniona. Cena nie wymaga wskazanego finansowania.",
+          "photoCheck": null,
+          "evidence": [
+            {
+              "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IaKVJ.html",
+              "checkedAt": "2026-11-09T13:01:58Z",
+              "kind": "seller",
+              "fields": [
+                "price",
+                "year",
+                "mileage",
+                "engine",
+                "body",
+                "transmission",
+                "familyFitConfirmed"
+              ],
+              "note": "Szczegóły karty, specyfikacja i opis sprzedawcy; opis wymienia ISOFIX i konfigurację silnika/skrzyni."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IaKVJ",
+            "modelKey": "seat-leon-iii-st",
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpibWk2YWRzNDM4NjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.sjODOXfvBioYgUmBUBK9ZRhpfIvrC6U5fjn2eUG2fkA/image;s=5120x0;q=80"
+            ],
+            "saleType": "fixed_price",
+            "lpgInstalled": null
+          },
+          "changes": {
+            "photos": {
+              "before": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpibWk2YWRzNDM4NjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.sjODOXfvBioYgUmBUBK9ZRhpfIvrC6U5fjn2eUG2fkA/image%3Bs%3D5120x0%3Bq%3D80"
+              ],
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpibWk2YWRzNDM4NjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.sjODOXfvBioYgUmBUBK9ZRhpfIvrC6U5fjn2eUG2fkA/image%3Bs%3D5120x0%3Bq%3D80",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpibWk2YWRzNDM4NjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.sjODOXfvBioYgUmBUBK9ZRhpfIvrC6U5fjn2eUG2fkA/image;s=5120x0;q=80"
+              ]
+            }
+          }
+        },
+        {
+          "eventId": "e2002db5dc40eadbe14af6d01e4b32d469273b637611bded3f411ad5636f6661",
+          "runId": "dostepnosc-2026-11-10",
+          "checkedAt": "2026-11-10T23:11:52Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IaKVJ.html",
+          "availability": "available",
+          "note": "Otomoto pokazuje bezpośrednią kartę „Seat Leon 1.4 TSI Xcellence S&S”, rocznik 2018, za 46 900 PLN; widoczne są dane ogłoszenia i kontakt do sprzedawcy. Brak komunikatu o zamknięciu.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IaKVJ"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "2f76672739dbfe6cfa940b425efeb333e3b777ce9fa23ad0edb5760f1f48f2e9",
+          "runId": "dostepnosc-2026-11-11-live",
+          "checkedAt": "2026-11-11T02:03:51.743Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IaKVJ.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IaKVJ"
+          },
+          "changes": {}
+        }
+      ],
+      "assessment": {
+        "id": "listing:otomoto:ID6IaKVJ",
+        "modelKey": "seat-leon-iii-st",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpibWk2YWRzNDM4NjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.sjODOXfvBioYgUmBUBK9ZRhpfIvrC6U5fjn2eUG2fkA/image%3Bs%3D5120x0%3Bq%3D80",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpibWk2YWRzNDM4NjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.sjODOXfvBioYgUmBUBK9ZRhpfIvrC6U5fjn2eUG2fkA/image;s=5120x0;q=80"
+      ],
+      "archive": {
+        "status": "unverified",
+        "reason": "no_listing_url_confirmed_available; at_least_one_access_error",
+        "archivedAt": "2026-11-11T02:03:51.743000+00:00"
+      }
+    },
+    {
+      "id": "listing:olx:1110426795",
+      "modelKey": "seat-leon-iii-st",
+      "title": "SEAT Leon III ST 1.4 TSI 125 KM FR S&S — 2018",
+      "urls": [
+        {
+          "url": "https://www.olx.pl/d/oferta/seat-leon-CID5-ID1d9eJB.html"
+        }
+      ],
+      "listingIds": [
+        "olx:1110426795"
+      ],
+      "vin": "VSSZZZ5FZJR194573",
+      "year": 2018,
+      "price": 50900,
+      "mileage": 114700,
+      "engine": "1.4 TSI, 125 KM, benzyna",
+      "engineVariant": "1.4-tsi-ea211-125",
+      "body": "Kombi / ST",
+      "bodyCode": "wagon",
+      "transmission": "Manualna",
+      "transmissionCode": "manual",
+      "saleType": "fixed_price",
+      "location": {
+        "status": "not_provided"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-08T19:05:52+01:00",
+      "listingStates": [
+        {
+          "url": "https://www.olx.pl/d/oferta/seat-leon-CID5-ID1d9eJB.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-11T02:03:51.743Z",
+          "lastCheckedAt": "2026-11-10T23:10:57Z",
+          "lastVerifiedAt": "2026-11-10T23:10:57Z",
+          "lastObservation": {
+            "url": "https://www.olx.pl/d/oferta/seat-leon-CID5-ID1d9eJB.html",
+            "checkedAt": "2026-11-11T02:03:51.743Z",
+            "availability": "access_error",
+            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+            "httpStatus": null
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-10T23:10:57Z",
+      "lastVerifiedAt": "2026-11-10T23:10:57Z",
+      "lastAttemptAt": "2026-11-11T02:03:51.743Z",
+      "history": [
+        {
+          "eventId": "1ac7df09434e31752fea20cbc8807feab148f6f1183ad767b77caaf1b7ccff95",
+          "runId": "search-20261108",
+          "checkedAt": "2026-11-08T19:05:52+01:00",
+          "url": "https://www.olx.pl/d/oferta/seat-leon-CID5-ID1d9eJB.html",
+          "availability": "available",
+          "note": "Dostępna karta OLX zaprasza do kontaktu i pokazuje cenę 50 900 zł. Potwierdza VIN VSSZZZ5FZJR194573, rok 2018, kombi, 1.4 TSI 125 KM, 1 395 cm³, manualną skrzynię i 114 700 km. Opis wymienia kamerę cofania oraz możliwość zakupu gotówką lub przelewem; sprzedawca deklaruje fakturę VAT marża. Sprzedawca deklaruje stan nieuszkodzony, lecz brak niezależnej kontroli konstrukcji. Instalacja LPG nieustalona.",
+          "evidence": [
+            {
+              "fields": [
+                "vin",
+                "year",
+                "mileage",
+                "engineVariant",
+                "transmissionCode",
+                "bodyCode",
+                "price",
+                "saleType",
+                "location",
+                "availability",
+                "camera"
+              ],
+              "url": "https://www.olx.pl/d/oferta/seat-leon-CID5-ID1d9eJB.html",
+              "checkedAt": "2026-11-08T19:05:52+01:00",
+              "kind": "seller",
+              "note": "Karta OLX pokazuje 2018, 114 700 km, 1 395 cm³/125 KM, manual, kombi, 50 900 zł, lokalizację Dulowa; opis określa auto jako Seat Leon 1.4 TSI FR S&S i wymienia kamerę cofania."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:olx:1110426795",
+            "modelKey": "seat-leon-iii-st",
+            "title": "SEAT Leon III ST 1.4 TSI 125 KM FR S&S — 2018",
+            "urls": [
+              {
+                "url": "https://www.olx.pl/d/oferta/seat-leon-CID5-ID1d9eJB.html"
+              }
+            ],
+            "listingIds": [
+              "olx:1110426795"
+            ],
+            "vin": "VSSZZZ5FZJR194573",
+            "year": 2018,
+            "price": 50900,
+            "mileage": 114700,
+            "engine": "1.4 TSI, 125 KM, benzyna",
+            "engineVariant": "1.4-tsi-ea211-125",
+            "body": "Kombi / ST",
+            "bodyCode": "wagon",
+            "transmission": "Manualna",
+            "transmissionCode": "manual",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "location": {
+              "status": "not_provided"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:olx:1110426795"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "seat-leon-iii-st"
+            },
+            "title": {
+              "before": null,
+              "after": "SEAT Leon III ST 1.4 TSI 125 KM FR S&S — 2018"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.olx.pl/d/oferta/seat-leon-CID5-ID1d9eJB.html"
+                }
+              ]
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "olx:1110426795"
+              ]
+            },
+            "vin": {
+              "before": null,
+              "after": "VSSZZZ5FZJR194573"
+            },
+            "year": {
+              "before": null,
+              "after": 2018
+            },
+            "price": {
+              "before": null,
+              "after": 50900
+            },
+            "mileage": {
+              "before": null,
+              "after": 114700
+            },
+            "engine": {
+              "before": null,
+              "after": "1.4 TSI, 125 KM, benzyna"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.4-tsi-ea211-125"
+            },
+            "body": {
+              "before": null,
+              "after": "Kombi / ST"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmission": {
+              "before": null,
+              "after": "Manualna"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            }
+          }
+        },
+        {
+          "eventId": "4939101444167c3558ea67c9ed295d968d7d0fb148706279431d120fa0624b14",
+          "runId": "refresh-20261108-03",
+          "checkedAt": "2026-11-08T23:00:24+01:00",
+          "url": "https://www.olx.pl/d/oferta/seat-leon-CID5-ID1d9eJB.html",
+          "availability": "access_error",
+          "note": "Bezpośrednie otwarcie karty OLX nie zwróciło jej treści (URL nieosiągalny przez narzędzie), a wyszukiwanie dokładnego adresu/ID nie znalazło karty. Nie potwierdzam bieżącej dostępności, ceny ani innych danych i nie wnioskuję o sprzedaży lub usunięciu.",
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1110426795",
+            "title": "SEAT Leon III ST 1.4 TSI 125 KM FR S&S — 2018",
+            "urls": [
+              {
+                "url": "https://www.olx.pl/d/oferta/seat-leon-CID5-ID1d9eJB.html"
+              }
+            ]
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "644742a13938ba8982bb3ebf52cae60525eac21f331ce764f7f8d0b717502e07",
+          "runId": "photos-20261108-01",
+          "checkedAt": "2026-11-08T23:40:48+01:00",
+          "url": "https://www.olx.pl/d/oferta/seat-leon-CID5-ID1d9eJB.html",
+          "availability": "access_error",
+          "note": "Dokładny URL był nieosiągalny przez narzędzie przeglądania przy dwóch próbach. Nie udało się odczytać karty ani galerii; nie wnioskuję z tego o sprzedaży ani usunięciu ogłoszenia.",
+          "photoCheck": {
+            "status": "access_error",
+            "note": "Narzędzie nie udostępniło karty, więc galeria bezpośrednich zdjęć pozostaje nieodczytana."
+          },
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1110426795",
+            "title": "SEAT Leon III ST 1.4 TSI 125 KM FR S&S — 2018",
+            "urls": [
+              {
+                "url": "https://www.olx.pl/d/oferta/seat-leon-CID5-ID1d9eJB.html"
+              }
+            ]
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "75eed68141513c2d75271f167da4ca214bcc504a6f088e0ce04d47dfdb8cdb1e",
+          "runId": "refresh20261109a",
+          "checkedAt": "2026-11-09T13:02:05+00:00",
+          "url": "https://www.olx.pl/d/oferta/seat-leon-CID5-ID1d9eJB.html",
+          "availability": "available",
+          "note": "Pełna karta OLX zawiera aktywne elementy ogłoszenia „Promuj”, „Odśwież”, kontakt i cenę. Kopia została crawlowana wczoraj; OLX podaje datę dodania 7.11.2026. Widoczne atrybuty: VIN VSSZZZ5FZJR194573, 2018, Kombi, benzyna 1.4/1395 cm³, 125 KM, manual, 114 700 km, cena 50 900 zł do negocjacji. Opis sprzedawcy podaje FR S&S, kamerę cofania, czujniki przód/tył, ISOFIX i fakturę VAT-marża; LPG niepodane. Sprzedawca prywatny. Dostępność fizyczną należy potwierdzić przed wyjazdem.",
+          "photoCheck": null,
+          "evidence": [
+            {
+              "fields": [
+                "vin",
+                "year",
+                "mileage",
+                "price",
+                "bodyCode",
+                "engineVariant",
+                "transmissionCode",
+                "saleType"
+              ],
+              "url": "https://www.olx.pl/d/oferta/seat-leon-CID5-ID1d9eJB.html",
+              "checkedAt": "2026-11-09T13:02:05+00:00",
+              "kind": "seller",
+              "note": "Atrybuty karty OLX oraz opis sprzedawcy; stan, wyposażenie i historia szkód są deklaracjami sprzedawcy."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:olx:1110426795",
+            "vin": "VSSZZZ5FZJR194573",
+            "year": 2018,
+            "mileage": 114700,
+            "price": 50900,
+            "bodyCode": "wagon",
+            "engineVariant": "1.4-tsi-ea211-125",
+            "transmissionCode": "manual",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "changes": {
+              "vin": "VSSZZZ5FZJR194573",
+              "year": 2018,
+              "mileage": 114700,
+              "price": 50900,
+              "bodyCode": "wagon",
+              "engineVariant": "1.4-tsi-ea211-125",
+              "transmissionCode": "manual",
+              "saleType": "fixed_price",
+              "lpgInstalled": null
+            }
+          },
+          "changes": {
+            "changes": {
+              "before": null,
+              "after": {
+                "vin": "VSSZZZ5FZJR194573",
+                "year": 2018,
+                "mileage": 114700,
+                "price": 50900,
+                "bodyCode": "wagon",
+                "engineVariant": "1.4-tsi-ea211-125",
+                "transmissionCode": "manual",
+                "saleType": "fixed_price",
+                "lpgInstalled": null
+              }
+            }
+          }
+        },
+        {
+          "eventId": "8f1bcefe0af0b747b1f4a0c5bf280763ab82533e29017dae3b68a1671b5864eb",
+          "runId": "dostepnosc-2026-11-10",
+          "checkedAt": "2026-11-10T23:10:57Z",
+          "url": "https://www.olx.pl/d/oferta/seat-leon-CID5-ID1d9eJB.html",
+          "availability": "available",
+          "note": "OLX otworzył kartę Seat Leon z ceną 50 900 zł i bieżącą treścią ogłoszenia; nie pokazuje komunikatu o zakończeniu.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1110426795"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "161ba8a120a3ffb254eedcfba9ebcd7fca262b5ccd746bfd6116269f4e2ca03f",
+          "runId": "dostepnosc-2026-11-11-live",
+          "checkedAt": "2026-11-11T02:03:51.743Z",
+          "url": "https://www.olx.pl/d/oferta/seat-leon-CID5-ID1d9eJB.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1110426795"
+          },
+          "changes": {}
+        }
+      ],
+      "assessment": {
+        "id": "listing:olx:1110426795",
+        "modelKey": "seat-leon-iii-st",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "archive": {
+        "status": "unverified",
+        "reason": "no_listing_url_confirmed_available; at_least_one_access_error",
+        "archivedAt": "2026-11-11T02:03:51.743000+00:00"
+      }
+    },
+    {
+      "id": "listing:otomoto:ID6IjmTL",
+      "modelKey": "seat-leon-iii-st",
+      "title": "SEAT Leon III ST 1.4 TSI 125 KM FR — 2018",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IjmTL.html"
+        }
+      ],
+      "listingIds": [
+        "otomoto:ID6IjmTL"
+      ],
+      "year": 2018,
+      "price": 50900,
+      "priceBasis": "gross_total",
+      "engine": "1.4 TSI 125 KM, benzyna",
+      "engineVariant": "1.4-tsi-ea211-125",
+      "body": "Kombi / SEAT Leon ST",
+      "bodyCode": "wagon",
+      "transmission": "Manualna",
+      "transmissionCode": "manual",
+      "saleType": "fixed_price",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "voivodeship": "Małopolskie",
+        "city": "Dulowa"
+      },
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjluZTZ4aGpuNjI0NTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.0eNzshzU0S9V7yVEanjpUCvpLXj9FoOKEqf0RuCfF_4/image%3Bs%3D5120x0%3Bq%3D80",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im1keHRscmd2NzJsci1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.n1CQJo5IEekprWSPjgbZ3J3J-3bjkJm9tSHbZpgl5LE/image%3Bs%3D5120x0%3Bq%3D100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjA0dzgwMDAycXVreC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.V0azVWtsyVOAD8l_5yqxwAQuJPcsLH03wNBNGBTjceI/image%3Bs%3D5120x0%3Bq%3D100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9qNG5vc2JtY2swczMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Glyq-3ptJzlv1nOvkKP1R5YsCacvy_--sAe5In76r1A/image%3Bs%3D5120x0%3Bq%3D100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImZiMmxjZGh0MXU4OTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.YzNT9BH-GCb4Vonh_t4YNAWLEkCA7fvroVcnbuFspmI/image%3Bs%3D5120x0%3Bq%3D100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Img5bTJwNnZrcW15dC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.ocjhn6qaE-xrtD6XpboHB07aptxs0FGCFOROKTWtvfI/image%3Bs%3D5120x0%3Bq%3D100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpxM2p1dWg2dGk4NzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.31fFFXPfkSdpcLRZZ0RBKsam7zm6Vz3WRuUzlofIB5A/image%3Bs%3D5120x0%3Bq%3D100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InZ6NHNveXljNWlpcjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.MaRsvP3Kfh9KipeGwE2RrE8TUxEhWbGsPZl57pFQ4FY/image%3Bs%3D5120x0%3Bq%3D100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjN0cnBuaXlrNnV2eDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.mxTk5ayco0efCxT6S_JWTcNECxtjn5loF6iYu1B15Ck/image%3Bs%3D5120x0%3Bq%3D100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJtcGR1NXRlM3JyeDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Np6nJDQ3Bq7JbY98kOdS1LYgA-AZiUBmwUze4PhaB-4/image%3Bs%3D5120x0%3Bq%3D100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InNqdXo0MGg0bGQ3ai1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.zBfLxebAmxpDwKTC5k1da8q-5TFq7_wBS4tXWeQnwcM/image%3Bs%3D5120x0%3Bq%3D100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRlZXBtZ2l1djIyNzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.UtCaAonJEho15rwX6Y5GRCMDlW7TOqeDgV42VjOqpGE/image%3Bs%3D5120x0%3Bq%3D100"
+      ],
+      "offerType": "private",
+      "cameraStatus": "installed_confirmed",
+      "structuralDamageStatus": "unknown",
+      "familyFitConfirmed": false,
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-09T14:01:56+01:00",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IjmTL.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-11T02:03:51.743Z",
+          "lastCheckedAt": "2026-11-10T23:11:52Z",
+          "lastVerifiedAt": "2026-11-10T23:11:52Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IjmTL.html",
+            "checkedAt": "2026-11-11T02:03:51.743Z",
+            "availability": "access_error",
+            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+            "httpStatus": null
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-10T23:11:52Z",
+      "lastVerifiedAt": "2026-11-10T23:11:52Z",
+      "lastAttemptAt": "2026-11-11T02:03:51.743Z",
+      "history": [
+        {
+          "eventId": "ea301a5fba00368912e34aa99e9774c1aa2edd2a53f9e00316246fa07c2846d6",
+          "runId": "search-20261109",
+          "checkedAt": "2026-11-09T14:01:56+01:00",
+          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IjmTL.html",
+          "availability": "available",
+          "note": "Karta publiczna dostępna: 2018, kombi, benzyna 1.4 TSI 125 KM, manual, 114 700 km, 50 900 zł (do negocjacji); sprzedawca wymienia gotówkę/przelew, faktura VAT marża. Kamera cofania jest wymieniona w opisie i wyposażeniu karty. Osoba prywatna, Dulowa, powiat chrzanowski, Małopolskie. Portal oznacza auto jako bezwypadkowe i serwisowane w ASO; brak niezależnej kontroli strukturalnej. LPG nieustalone, mimo wskazania benzyny. Karta oglądana 2026-11-09; data publikacji 7.11.2026.",
+          "photoCheck": null,
+          "evidence": [
+            {
+              "fields": [
+                "availability",
+                "year",
+                "price",
+                "mileageKm",
+                "engineVariant",
+                "bodyCode",
+                "transmissionCode",
+                "saleType",
+                "location",
+                "offerType",
+                "cameraStatus",
+                "lpgInstalled"
+              ],
+              "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IjmTL.html",
+              "checkedAt": "2026-11-09T14:01:56+01:00",
+              "kind": "seller",
+              "note": "Karta OTOMOTO: rok 2018, Leon III, 1.4 TSI 125 KM, kombi, manual, 114 700 km, cena 50 900 PLN (do negocjacji); opis: zakup gotówką/przelewem, faktura VAT-marża; kamera cofania oraz czujniki przód/tył, ISOFIX; sprzedawca prywatny; lokalizacja Dulowa, Małopolskie. Karta deklaruje bezwypadkowość i serwis ASO."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IjmTL",
+            "modelKey": "seat-leon-iii-st",
+            "title": "SEAT Leon III ST 1.4 TSI 125 KM FR — 2018",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IjmTL.html"
+              }
+            ],
+            "listingIds": [
+              "otomoto:ID6IjmTL"
+            ],
+            "year": 2018,
+            "price": 50900,
+            "priceBasis": "gross_unconditional_total",
+            "mileageKm": 114700,
+            "engine": "1.4 TSI 125 KM, benzyna",
+            "engineVariant": "1.4-tsi-ea211-125",
+            "body": "Kombi / SEAT Leon ST",
+            "bodyCode": "wagon",
+            "transmission": "Manualna",
+            "transmissionCode": "manual",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "voivodeship": "Małopolskie",
+              "city": "Dulowa"
+            },
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjluZTZ4aGpuNjI0NTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.0eNzshzU0S9V7yVEanjpUCvpLXj9FoOKEqf0RuCfF_4/image%3Bs%3D5120x0%3Bq%3D80",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im1keHRscmd2NzJsci1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.n1CQJo5IEekprWSPjgbZ3J3J-3bjkJm9tSHbZpgl5LE/image%3Bs%3D5120x0%3Bq%3D100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjA0dzgwMDAycXVreC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.V0azVWtsyVOAD8l_5yqxwAQuJPcsLH03wNBNGBTjceI/image%3Bs%3D5120x0%3Bq%3D100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9qNG5vc2JtY2swczMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Glyq-3ptJzlv1nOvkKP1R5YsCacvy_--sAe5In76r1A/image%3Bs%3D5120x0%3Bq%3D100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImZiMmxjZGh0MXU4OTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.YzNT9BH-GCb4Vonh_t4YNAWLEkCA7fvroVcnbuFspmI/image%3Bs%3D5120x0%3Bq%3D100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Img5bTJwNnZrcW15dC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.ocjhn6qaE-xrtD6XpboHB07aptxs0FGCFOROKTWtvfI/image%3Bs%3D5120x0%3Bq%3D100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpxM2p1dWg2dGk4NzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.31fFFXPfkSdpcLRZZ0RBKsam7zm6Vz3WRuUzlofIB5A/image%3Bs%3D5120x0%3Bq%3D100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InZ6NHNveXljNWlpcjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.MaRsvP3Kfh9KipeGwE2RrE8TUxEhWbGsPZl57pFQ4FY/image%3Bs%3D5120x0%3Bq%3D100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjN0cnBuaXlrNnV2eDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.mxTk5ayco0efCxT6S_JWTcNECxtjn5loF6iYu1B15Ck/image%3Bs%3D5120x0%3Bq%3D100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJtcGR1NXRlM3JyeDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Np6nJDQ3Bq7JbY98kOdS1LYgA-AZiUBmwUze4PhaB-4/image%3Bs%3D5120x0%3Bq%3D100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InNqdXo0MGg0bGQ3ai1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.zBfLxebAmxpDwKTC5k1da8q-5TFq7_wBS4tXWeQnwcM/image%3Bs%3D5120x0%3Bq%3D100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRlZXBtZ2l1djIyNzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.UtCaAonJEho15rwX6Y5GRCMDlW7TOqeDgV42VjOqpGE/image%3Bs%3D5120x0%3Bq%3D100"
+            ],
+            "offerType": "private",
+            "cameraStatus": "installed_confirmed",
+            "structuralDamageStatus": "unknown",
+            "familyFitConfirmed": false
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:otomoto:ID6IjmTL"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "seat-leon-iii-st"
+            },
+            "title": {
+              "before": null,
+              "after": "SEAT Leon III ST 1.4 TSI 125 KM FR — 2018"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IjmTL.html"
+                }
+              ]
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "otomoto:ID6IjmTL"
+              ]
+            },
+            "year": {
+              "before": null,
+              "after": 2018
+            },
+            "price": {
+              "before": null,
+              "after": 50900
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "gross_unconditional_total"
+            },
+            "mileageKm": {
+              "before": null,
+              "after": 114700
+            },
+            "engine": {
+              "before": null,
+              "after": "1.4 TSI 125 KM, benzyna"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.4-tsi-ea211-125"
+            },
+            "body": {
+              "before": null,
+              "after": "Kombi / SEAT Leon ST"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmission": {
+              "before": null,
+              "after": "Manualna"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "voivodeship": "Małopolskie",
+                "city": "Dulowa"
+              }
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjluZTZ4aGpuNjI0NTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.0eNzshzU0S9V7yVEanjpUCvpLXj9FoOKEqf0RuCfF_4/image%3Bs%3D5120x0%3Bq%3D80",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im1keHRscmd2NzJsci1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.n1CQJo5IEekprWSPjgbZ3J3J-3bjkJm9tSHbZpgl5LE/image%3Bs%3D5120x0%3Bq%3D100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjA0dzgwMDAycXVreC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.V0azVWtsyVOAD8l_5yqxwAQuJPcsLH03wNBNGBTjceI/image%3Bs%3D5120x0%3Bq%3D100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9qNG5vc2JtY2swczMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Glyq-3ptJzlv1nOvkKP1R5YsCacvy_--sAe5In76r1A/image%3Bs%3D5120x0%3Bq%3D100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImZiMmxjZGh0MXU4OTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.YzNT9BH-GCb4Vonh_t4YNAWLEkCA7fvroVcnbuFspmI/image%3Bs%3D5120x0%3Bq%3D100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Img5bTJwNnZrcW15dC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.ocjhn6qaE-xrtD6XpboHB07aptxs0FGCFOROKTWtvfI/image%3Bs%3D5120x0%3Bq%3D100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpxM2p1dWg2dGk4NzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.31fFFXPfkSdpcLRZZ0RBKsam7zm6Vz3WRuUzlofIB5A/image%3Bs%3D5120x0%3Bq%3D100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InZ6NHNveXljNWlpcjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.MaRsvP3Kfh9KipeGwE2RrE8TUxEhWbGsPZl57pFQ4FY/image%3Bs%3D5120x0%3Bq%3D100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjN0cnBuaXlrNnV2eDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.mxTk5ayco0efCxT6S_JWTcNECxtjn5loF6iYu1B15Ck/image%3Bs%3D5120x0%3Bq%3D100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJtcGR1NXRlM3JyeDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Np6nJDQ3Bq7JbY98kOdS1LYgA-AZiUBmwUze4PhaB-4/image%3Bs%3D5120x0%3Bq%3D100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InNqdXo0MGg0bGQ3ai1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.zBfLxebAmxpDwKTC5k1da8q-5TFq7_wBS4tXWeQnwcM/image%3Bs%3D5120x0%3Bq%3D100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRlZXBtZ2l1djIyNzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.UtCaAonJEho15rwX6Y5GRCMDlW7TOqeDgV42VjOqpGE/image%3Bs%3D5120x0%3Bq%3D100"
+              ]
+            },
+            "offerType": {
+              "before": null,
+              "after": "private"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "installed_confirmed"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "familyFitConfirmed": {
+              "before": null,
+              "after": false
+            }
+          }
+        },
+        {
+          "eventId": "8151fd42c1758795af3beef3bb5e24dd978d07d1becd1aa1dac636b112989835",
+          "runId": "dostepnosc-2026-11-10",
+          "checkedAt": "2026-11-10T23:11:52Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IjmTL.html",
+          "availability": "available",
+          "note": "Otomoto pokazuje bezpośrednią kartę „Seat Leon 1.4 TSI FR S&S”, rocznik 2018, za 50 900 PLN; widoczne są szczegóły ogłoszenia i kontakt do sprzedawcy. Brak komunikatu o zamknięciu.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IjmTL"
+          },
+          "changes": {
+            "priceBasis": {
+              "before": "gross_unconditional_total",
+              "after": "gross_total"
+            }
+          }
+        },
+        {
+          "eventId": "7874d30bd28cadc1e2e34bf46afe6eb80a289fc0bebba78f5732c2b6455156c0",
+          "runId": "dostepnosc-2026-11-11-live",
+          "checkedAt": "2026-11-11T02:03:51.743Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IjmTL.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IjmTL"
+          },
+          "changes": {}
+        }
+      ],
+      "assessment": {
+        "id": "listing:otomoto:ID6IjmTL",
+        "modelKey": "seat-leon-iii-st",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "structural_history",
+          "mileage",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "structural_history; mileage; stroller_and_family_fit",
+      "mileage": 114700,
+      "archive": {
+        "status": "unverified",
+        "reason": "no_listing_url_confirmed_available; at_least_one_access_error",
+        "archivedAt": "2026-11-11T02:03:51.743000+00:00"
+      }
+    },
+    {
+      "id": "listing:otomoto:ID6IiMlg",
+      "modelKey": "seat-leon-iii-st",
+      "listingIds": [
+        "otomoto:ID6IiMlg"
+      ],
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IiMlg.html",
+          "label": "Ogłoszenie Otomoto"
+        }
+      ],
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhkejFlbnVvZDB0bTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.o-Iwq8qbe3FHDJu-Mim0FL7s9VAz-7wWQ-HlYqIquxI/image%3Bs%3D5120x0%3Bq%3D80",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InU2dXozMGxlNDRxdS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.bVoo6fhJfup75aPEx5Ql_0ufcLLnTSvS_3ZWhhCY8f8/image%3Bs%3D5120x0%3Bq%3D100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im52NzViYWVuc2NkMjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.4kAJkNrf2ANoFUWJL0ORKaxGUMg8O7ul0-LTwaZ1cvc/image%3Bs%3D5120x0%3Bq%3D100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjZvOHpsZzNoaGpwZTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.8DZ0XEPQAWt7Qrn1E7HuoQqWOyA6W8XOD2LF8FTdqKw/image%3Bs%3D5120x0%3Bq%3D100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjZmYmp1cnh1N3N6ZzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.WodxyBPyAEDAKmHrbyPEzyOkeCwer6f9gnhYMP41wW4/image%3Bs%3D5120x0%3Bq%3D100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjViOWd3dnpka2x6aTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.vvGJ-1Jv_2tFyVbeQzVxV9j6Hv5NiBX1gR0qlXTfZrE/image%3Bs%3D5120x0%3Bq%3D100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijc3ODZ3bjl0eDhsZzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.38pib7e9rZOVkuabh-X_8pySkLq7wPQWxcxS--B9GTw/image%3Bs%3D5120x0%3Bq%3D100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im5oMm00azZnNWtzdTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.KJiWoSZvVVhkJMt4mwu6_AEDd060O3Y3oFIinWs8_Wk/image%3Bs%3D5120x0%3Bq%3D100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhqOHNwbnZlZjU5czMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.njzy631K1R0_qsIJbviZRk2R88HXJeItxgH_k9fImKs/image%3Bs%3D5120x0%3Bq%3D100"
+      ],
+      "title": "SEAT Leon III ST FR 1.4 TSI 125 KM — kombi, manual, 2018",
+      "year": 2018,
+      "price": 49999,
+      "priceLabel": "49 999 PLN; warunki pełnej ceny do potwierdzenia",
+      "mileage": 130000,
+      "mileageLabel": "130 000 km",
+      "engine": "1.4 TSI, 1 395 cm³, 125 KM",
+      "body": "Kombi (ST)",
+      "transmission": "Manualna",
+      "seller": "Osoba prywatna",
+      "priceBasis": "unknown",
+      "bodyCode": "wagon",
+      "engineVariant": "1.4-tsi-ea211-125",
+      "transmissionCode": "manual",
+      "cameraStatus": "installed_confirmed",
+      "structuralDamageStatus": "unknown",
+      "saleType": "fixed_price",
+      "offerType": "private",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "voivodeship": "Kujawsko-Pomorskie",
+        "city": "Bydgoszcz",
+        "precision": "city",
+        "source": "listing",
+        "checkedAt": "2026-11-09"
+      },
+      "details": {
+        "Wersja silnika": "Karta podaje 1.4 TSI 125 KM i 1395 cm³; kod silnika nie został potwierdzony po VIN.",
+        "Kamera": "Karta sprzedającego wymienia kamerę cofania; nie wykonano niezależnego testu działania.",
+        "LPG": "Brak informacji w karcie; status instalacji i dokumentów pozostaje nieznany.",
+        "Szkody": "Sprzedający deklaruje bezwypadkowość; nie jest to niezależne potwierdzenie.",
+        "Pochodzenie i serwis": "Opis sprzedającego: świeży import z Niemiec, serwisowany do września; do potwierdzenia dokumentami.",
+        "Cena": "Karta pokazuje 49 999 PLN oraz ofertę finansowania na stronie; nie potwierdza wprost warunków zakupu gotówkowego, dlatego priceBasis pozostaje unknown."
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-09T22:28:32Z",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IiMlg.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-11T02:03:51.743Z",
+          "lastCheckedAt": "2026-11-10T23:11:52Z",
+          "lastVerifiedAt": "2026-11-10T23:11:52Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IiMlg.html",
+            "checkedAt": "2026-11-11T02:03:51.743Z",
+            "availability": "access_error",
+            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+            "httpStatus": null
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-10T23:11:52Z",
+      "lastVerifiedAt": "2026-11-10T23:11:52Z",
+      "lastAttemptAt": "2026-11-11T02:03:51.743Z",
+      "history": [
+        {
+          "eventId": "bcdb58f4039afe1b2e04bb0060133df6feac01cec2268306c35de0d1295f23db",
+          "runId": "search-20261109-full",
+          "checkedAt": "2026-11-09T22:28:32Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IiMlg.html",
+          "availability": "available",
+          "note": "Karta Otomoto była publicznie dostępna przy sprawdzeniu 2026-11-09 i pokazywała aktywną cenę 49 999 PLN z przyciskiem kontaktu. Dane o aucie i kamera cofania są deklaracjami karty/sprzedającego; LPG i bezwarunkowa cena brutto pozostają niepotwierdzone.",
+          "photoCheck": null,
+          "evidence": [
+            {
+              "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IiMlg.html",
+              "checkedAt": "2026-11-09T22:28:32Z",
+              "kind": "seller",
+              "fields": [
+                "availability",
+                "year",
+                "price",
+                "mileage",
+                "engine",
+                "body",
+                "transmission",
+                "offerType",
+                "location",
+                "cameraStatus",
+                "saleType"
+              ],
+              "note": "Otomoto publiczna karta dostępna podczas odczytu. Dane wariantu i wyposażenia pochodzą z deklaracji sprzedającego/karty portalu, nie są niezależnie sprawdzone. Karta pokazuje cenę ofertową 49 999 PLN, stan używany, Bydgoszcz, kamerę cofania w opisie/wyposażeniu. Brak informacji o LPG i bezwarunkowej cenie zakupu."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IiMlg",
+            "modelKey": "seat-leon-iii-st",
+            "vin": null,
+            "listingIds": [
+              "otomoto:ID6IiMlg"
+            ],
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IiMlg.html",
+                "label": "Ogłoszenie Otomoto"
+              }
+            ],
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhkejFlbnVvZDB0bTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.o-Iwq8qbe3FHDJu-Mim0FL7s9VAz-7wWQ-HlYqIquxI/image%3Bs%3D5120x0%3Bq%3D80",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InU2dXozMGxlNDRxdS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.bVoo6fhJfup75aPEx5Ql_0ufcLLnTSvS_3ZWhhCY8f8/image%3Bs%3D5120x0%3Bq%3D100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im52NzViYWVuc2NkMjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.4kAJkNrf2ANoFUWJL0ORKaxGUMg8O7ul0-LTwaZ1cvc/image%3Bs%3D5120x0%3Bq%3D100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjZvOHpsZzNoaGpwZTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.8DZ0XEPQAWt7Qrn1E7HuoQqWOyA6W8XOD2LF8FTdqKw/image%3Bs%3D5120x0%3Bq%3D100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjZmYmp1cnh1N3N6ZzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.WodxyBPyAEDAKmHrbyPEzyOkeCwer6f9gnhYMP41wW4/image%3Bs%3D5120x0%3Bq%3D100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjViOWd3dnpka2x6aTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.vvGJ-1Jv_2tFyVbeQzVxV9j6Hv5NiBX1gR0qlXTfZrE/image%3Bs%3D5120x0%3Bq%3D100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijc3ODZ3bjl0eDhsZzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.38pib7e9rZOVkuabh-X_8pySkLq7wPQWxcxS--B9GTw/image%3Bs%3D5120x0%3Bq%3D100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im5oMm00azZnNWtzdTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.KJiWoSZvVVhkJMt4mwu6_AEDd060O3Y3oFIinWs8_Wk/image%3Bs%3D5120x0%3Bq%3D100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhqOHNwbnZlZjU5czMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.njzy631K1R0_qsIJbviZRk2R88HXJeItxgH_k9fImKs/image%3Bs%3D5120x0%3Bq%3D100"
+            ],
+            "title": "SEAT Leon III ST FR 1.4 TSI 125 KM — kombi, manual, 2018",
+            "year": 2018,
+            "price": 49999,
+            "priceLabel": "49 999 PLN; warunki pełnej ceny do potwierdzenia",
+            "mileage": 130000,
+            "mileageLabel": "130 000 km",
+            "engine": "1.4 TSI, 1 395 cm³, 125 KM",
+            "body": "Kombi (ST)",
+            "transmission": "Manualna",
+            "seller": "Osoba prywatna",
+            "priceBasis": "unknown",
+            "bodyCode": "wagon",
+            "engineVariant": "1.4-tsi-ea211-125",
+            "transmissionCode": "manual",
+            "cameraStatus": "installed_confirmed",
+            "structuralDamageStatus": "unknown",
+            "familyFitConfirmed": null,
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "offerType": "private",
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "voivodeship": "Kujawsko-Pomorskie",
+              "city": "Bydgoszcz",
+              "precision": "city",
+              "source": "listing",
+              "checkedAt": "2026-11-09"
+            },
+            "details": {
+              "Wersja silnika": "Karta podaje 1.4 TSI 125 KM i 1395 cm³; kod silnika nie został potwierdzony po VIN.",
+              "Kamera": "Karta sprzedającego wymienia kamerę cofania; nie wykonano niezależnego testu działania.",
+              "LPG": "Brak informacji w karcie; status instalacji i dokumentów pozostaje nieznany.",
+              "Szkody": "Sprzedający deklaruje bezwypadkowość; nie jest to niezależne potwierdzenie.",
+              "Pochodzenie i serwis": "Opis sprzedającego: świeży import z Niemiec, serwisowany do września; do potwierdzenia dokumentami.",
+              "Cena": "Karta pokazuje 49 999 PLN oraz ofertę finansowania na stronie; nie potwierdza wprost warunków zakupu gotówkowego, dlatego priceBasis pozostaje unknown."
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:otomoto:ID6IiMlg"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "seat-leon-iii-st"
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "otomoto:ID6IiMlg"
+              ]
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IiMlg.html",
+                  "label": "Ogłoszenie Otomoto"
+                }
+              ]
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhkejFlbnVvZDB0bTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.o-Iwq8qbe3FHDJu-Mim0FL7s9VAz-7wWQ-HlYqIquxI/image%3Bs%3D5120x0%3Bq%3D80",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InU2dXozMGxlNDRxdS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.bVoo6fhJfup75aPEx5Ql_0ufcLLnTSvS_3ZWhhCY8f8/image%3Bs%3D5120x0%3Bq%3D100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im52NzViYWVuc2NkMjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.4kAJkNrf2ANoFUWJL0ORKaxGUMg8O7ul0-LTwaZ1cvc/image%3Bs%3D5120x0%3Bq%3D100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjZvOHpsZzNoaGpwZTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.8DZ0XEPQAWt7Qrn1E7HuoQqWOyA6W8XOD2LF8FTdqKw/image%3Bs%3D5120x0%3Bq%3D100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjZmYmp1cnh1N3N6ZzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.WodxyBPyAEDAKmHrbyPEzyOkeCwer6f9gnhYMP41wW4/image%3Bs%3D5120x0%3Bq%3D100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjViOWd3dnpka2x6aTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.vvGJ-1Jv_2tFyVbeQzVxV9j6Hv5NiBX1gR0qlXTfZrE/image%3Bs%3D5120x0%3Bq%3D100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijc3ODZ3bjl0eDhsZzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.38pib7e9rZOVkuabh-X_8pySkLq7wPQWxcxS--B9GTw/image%3Bs%3D5120x0%3Bq%3D100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im5oMm00azZnNWtzdTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.KJiWoSZvVVhkJMt4mwu6_AEDd060O3Y3oFIinWs8_Wk/image%3Bs%3D5120x0%3Bq%3D100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhqOHNwbnZlZjU5czMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.njzy631K1R0_qsIJbviZRk2R88HXJeItxgH_k9fImKs/image%3Bs%3D5120x0%3Bq%3D100"
+              ]
+            },
+            "title": {
+              "before": null,
+              "after": "SEAT Leon III ST FR 1.4 TSI 125 KM — kombi, manual, 2018"
+            },
+            "year": {
+              "before": null,
+              "after": 2018
+            },
+            "price": {
+              "before": null,
+              "after": 49999
+            },
+            "priceLabel": {
+              "before": null,
+              "after": "49 999 PLN; warunki pełnej ceny do potwierdzenia"
+            },
+            "mileage": {
+              "before": null,
+              "after": 130000
+            },
+            "mileageLabel": {
+              "before": null,
+              "after": "130 000 km"
+            },
+            "engine": {
+              "before": null,
+              "after": "1.4 TSI, 1 395 cm³, 125 KM"
+            },
+            "body": {
+              "before": null,
+              "after": "Kombi (ST)"
+            },
+            "transmission": {
+              "before": null,
+              "after": "Manualna"
+            },
+            "seller": {
+              "before": null,
+              "after": "Osoba prywatna"
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "unknown"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.4-tsi-ea211-125"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "installed_confirmed"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "offerType": {
+              "before": null,
+              "after": "private"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "voivodeship": "Kujawsko-Pomorskie",
+                "city": "Bydgoszcz",
+                "precision": "city",
+                "source": "listing",
+                "checkedAt": "2026-11-09"
+              }
+            },
+            "details": {
+              "before": null,
+              "after": {
+                "Wersja silnika": "Karta podaje 1.4 TSI 125 KM i 1395 cm³; kod silnika nie został potwierdzony po VIN.",
+                "Kamera": "Karta sprzedającego wymienia kamerę cofania; nie wykonano niezależnego testu działania.",
+                "LPG": "Brak informacji w karcie; status instalacji i dokumentów pozostaje nieznany.",
+                "Szkody": "Sprzedający deklaruje bezwypadkowość; nie jest to niezależne potwierdzenie.",
+                "Pochodzenie i serwis": "Opis sprzedającego: świeży import z Niemiec, serwisowany do września; do potwierdzenia dokumentami.",
+                "Cena": "Karta pokazuje 49 999 PLN oraz ofertę finansowania na stronie; nie potwierdza wprost warunków zakupu gotówkowego, dlatego priceBasis pozostaje unknown."
+              }
+            }
+          }
+        },
+        {
+          "eventId": "8bf9eba2d8d214d50345baf5cc8dd0fbd6ad628f57aff82dcc5c7b9710a5954b",
+          "runId": "dostepnosc-2026-11-10",
+          "checkedAt": "2026-11-10T23:11:52Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IiMlg.html",
+          "availability": "available",
+          "note": "Otomoto pokazuje bezpośrednią kartę Seat Leon 2018 za 49 999 PLN; widoczne są opis ogłoszenia i kontakt do sprzedawcy. Brak komunikatu o zamknięciu.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IiMlg"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "0ac4e27dc5c9efa7a3e32dc60f0208731cad6a547aeb0c49cae7ce37fb5cfc74",
+          "runId": "dostepnosc-2026-11-11-live",
+          "checkedAt": "2026-11-11T02:03:51.743Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IiMlg.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IiMlg"
+          },
+          "changes": {}
+        }
+      ],
+      "assessment": {
+        "id": "listing:otomoto:ID6IiMlg",
+        "modelKey": "seat-leon-iii-st",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_unconditional_purchase_price",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_unconditional_purchase_price; structural_history; stroller_and_family_fit",
+      "archive": {
+        "status": "unverified",
+        "reason": "no_listing_url_confirmed_available; at_least_one_access_error",
+        "archivedAt": "2026-11-11T02:03:51.743000+00:00"
       }
     }
   ]

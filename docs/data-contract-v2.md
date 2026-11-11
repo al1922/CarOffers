@@ -44,8 +44,11 @@ Nazwa i tytuł muszą zawierać przynajmniej jeden znak inny niż biały.
 Puste `offers` jest dozwolone. `urls: []` jest dozwolone dla historycznego rekordu
 bez zachowanego adresu, ale powoduje ostrzeżenie. Brak samego pola `urls` jest błędem.
 `archivedOffers` przechowuje rekordy wycofane z aktywnej listy w tym samym formacie oferty,
-z dodatkowym obiektem `archive` zawierającym status (`closed` lub `unverified`), przyczynę i datę archiwizacji.
+z dodatkowym obiektem `archive` zawierającym status (`closed`, `unverified` lub `excluded`), przyczynę i datę archiwizacji.
 Status `unverified` oznacza archiwizację administracyjną bez potwierdzenia zamknięcia oferty.
+Status `excluded` oznacza ręczne wykluczenie z aktywnej listy, np. z powodu potwierdzonego
+uszkodzenia lub jawnej niezgodności z wymaganiami. Automatyczny import nie przywraca
+rekordu `excluded` do aktywnej listy.
 Archiwum nie jest wczytywane do aktywnej listy strony.
 
 ## Parametry opcjonalne

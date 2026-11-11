@@ -72,7 +72,8 @@ szeregowo przez koordynatora.
 Przed otwieraniem kart wykonawca stosuje `searchProfile.candidateScreening` do
 widocznych wyników: pomija tylko auta, których widoczne dane jednoznacznie łamią
 twardy warunek (np. rocznik produkcji, maksymalny przebieg, nadwozie, wariant
-silnika, cena brutto lub aukcyjny typ sprzedaży). Nieznane albo niejednoznaczne
+silnika, cena brutto, aukcyjny typ sprzedaży lub jawna informacja o uszkodzeniu,
+gdy `structuralDamageAllowed` jest `false`). Nieznane albo niejednoznaczne
 pola nie są powodem do odrzucenia, jeśli pozostałe dane pasują — wtedy otwórz
 kartę i sprawdź brakujące fakty. Snippet wyszukiwarki nie potwierdza dostępności,
 ceny całkowitej ani wyposażenia egzemplarza. Warunki finansowania nie wpływają na
@@ -84,8 +85,9 @@ być potraktowana jako zaakceptowana automatycznie.
 
 W przebiegu wyszukiwania dodawaj tylko nowe, dostępne rekordy. Jeśli tożsamość
 pasuje do aktywnej oferty, pomiń ją — jej odświeżanie należy do osobnego flow.
-Jeśli dostępne nowe ogłoszenie pasuje do auta w archiwum, przywróć rekord do
-aktywnej listy. Po podglądzie bez konfliktów zastosuj lokalne zmiany, przelicz
+Jeśli dostępne nowe ogłoszenie pasuje do auta w archiwum ze statusem `closed` lub
+`unverified`, przywróć rekord do aktywnej listy. Rekord `excluded` wymaga jawnej
+decyzji użytkownika i nie może być przywrócony automatycznie. Po podglądzie bez konfliktów zastosuj lokalne zmiany, przelicz
 oceny i zwaliduj dane; nie generuj raportu pokrycia dla użytkownika. Na końcu
 pokaż wyłącznie nowe/przywrócone oferty widoczne w aktywnej bazie. Nie publikuj.
 
@@ -95,7 +97,10 @@ lekki przebieg `availability-plan` dla wszystkich aktywnych URL-i. Nie używaj
 karty sprawdź tylko, czy zawiera ofertę auta, jawny komunikat o zamknięciu, czy
 nie da się jej otworzyć. Użyj `scripts/availability-check.mjs`, które sprawdza
 maksymalnie 4 karty równolegle; nie otwieraj kart ręcznie i nie analizuj ceny,
-przebiegu ani wyposażenia. Koordynator pobiera zadania, a subagenci mogą równolegle
+przebiegu ani wyposażenia. `available` wymaga bieżącego HTTP 2xx i wyrenderowanej
+karty z dopasowaniem tytułu, ceną oraz aktywną kontrolką kontaktu. Sam tytuł,
+cache lub wspólny element strony nie potwierdzają dostępności. `finish` odrzuca
+`available` bez kodu HTTP i wszystkich trzech sygnałów. Koordynator pobiera zadania, a subagenci mogą równolegle
 przetwarzać osobne zadania portal/model. Po zakończeniu wykonaj `import-preview`,
 `import-apply` i walidację ofert; dla samej dostępności nie uruchamiaj `assess`.
 Jeśli użytkownik wyraźnie prosi o pełne odświeżenie danych, użyj zamiast tego
@@ -239,7 +244,8 @@ uruchamiaj importu, gdy inny wykonawca zapisuje plik wyniku.
   archiwizuje rekord auta po potwierdzeniu zamknięcia każdego URL-a; błędy dostępu
   blokują tę archiwizację. W przebiegu `availability` stosuj odrębną regułę
   archiwum `unverified` opisaną powyżej. Archiwizacja zachowuje historię, a nowa
-  obserwacja dostępnego ogłoszenia może przywrócić auto do aktywnej listy.
+  obserwacja dostępnego ogłoszenia może przywrócić auto ze statusem `closed` lub
+  `unverified`. Rekord ze statusem `excluded` pozostaje poza aktywną listą.
 - Zapisuj URL źródła każdej istotnej obserwacji i czas sprawdzenia.
 - `photos` zawiera wyłącznie bezpośrednie adresy HTTPS zdjęć z karty danego auta;
   adres zdjęcia nie zastępuje URL-a ogłoszenia ani źródła dowodów. Nie pobieraj,

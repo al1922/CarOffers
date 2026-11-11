@@ -191,7 +191,9 @@ jeszcze wdrożone.
   To wycofanie z aktywnej listy, nie dowód sprzedaży. Nieznany URL blokuje
   archiwizację; jeśli choć jedna karta jest dostępna, rekord pozostaje aktywny.
   W archiwum zachowaj cały rekord i historię. Ponowna obserwacja `available`
-  dopasowanego auta przywraca je do aktywnej listy `offers`.
+  dopasowanego auta ze statusem `closed` lub `unverified` przywraca je do aktywnej
+  listy `offers`. Ręczne wykluczenie zapisuj jako `excluded`; import nie przywraca
+  takiego rekordu bez jawnej decyzji koordynatora.
 
 ## Strona i ocena
 
