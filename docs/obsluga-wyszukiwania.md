@@ -378,13 +378,37 @@ historii. Jeśli po sprawdzeniu wszystkich adresów auta nie ma ani jednej karty
 To usuwa go z aktywnej listy, ale nie stwierdza, że auto zostało sprzedane.
 Jeden dostępny URL pozostawia auto aktywne.
 Kolejka obejmuje wyłącznie `offers`; rekordy z `archivedOffers` są dostępne
-w zakładce „Archiwum” i nie są ponownie sprawdzane ani przywracane przez flow
-dostępności lub aktualizacji. Mogą wrócić do aktywnej listy po potwierdzeniu
-dostępnego ogłoszenia w osobnym przebiegu wyszukiwania.
+w zakładce „Archiwum” i nie są ponownie sprawdzane przez flow dostępności ani
+aktualizacji aktywnych ofert. Do sprawdzenia archiwum służy osobny
+`archive-availability-plan` poniżej.
 
-Po `finish` wszystkich zadań koordynator wykonuje `import-preview`. Przy braku
-konfliktów stosuje `import-apply` i uruchamia walidację ofert. Historia zapisuje
-każdą próbę; nowa obserwacja `available` może przywrócić ofertę z archiwum.
+## Sprawdzanie dostępności archiwum
+
+Na prośbę o sprawdzenie, czy archiwalne ogłoszenia znów są dostępne, użyj
+`archive-availability-plan`. Obejmuje tylko URL-e ofert z `archivedOffers` o
+statusie `closed` lub `unverified`; ręcznie wykluczone `excluded` są pomijane.
+Sprawdzenie używa tego samego lekkiego czytnika co flow aktywnych ofert: HTTP 2xx
+oraz zgodna karta z ceną i aktywnym kontaktem potwierdzają `available`. Nie
+odświeża danych auta.
+
+Po `import-preview` i `import-apply` potwierdzona dostępna oferta wraca do
+`offers`, znika z `archivedOffers`, a jej historia zostaje zachowana. Statusy
+`sold`, `removed` i `access_error` pozostawiają ją w archiwum. Rekord, który został
+zmieniony na aktywny albo `excluded` już po utworzeniu planu, jest pomijany.
+Flow nie zmienia istniejących aktywnych ofert.
+
+```powershell
+python -B scripts/car-search.py archive-availability-plan --run sprawdz-archiwum-2026-11-11 --agents 4
+python -B scripts/car-search.py claim --run sprawdz-archiwum-2026-11-11 --worker worker-1 |
+  node scripts/availability-check.mjs --claim-stdin
+```
+
+Koordynator rozdziela i kończy zadania standardowo przez `claim` i `finish`.
+Po zakończeniu wszystkich zadań uruchamia `import-preview`; przy braku konfliktów
+stosuje `import-apply`, a następnie walidację ofert. Ocena auta się nie zmienia.
+
+Historia zapisuje każdą próbę; nowa obserwacja `available` przywraca ofertę
+z archiwum.
 
 ## Walidacja i publikacja
 

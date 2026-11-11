@@ -17,7 +17,6 @@ względne, więc aplikacja działa również pod adresem `użytkownik.github.io/
 - Eksportować/importować kopię własnych danych w JSON. Dane nie synchronizują
   się automatycznie między przeglądarkami, urządzeniami ani różnymi adresami strony.
 - Przeglądać wiedzę o modelach i źródła twierdzeń oraz raport pokrycia portali.
-- Wstępnie przejrzeć pięć modeli i — po przebiegu agentowym — zobaczyć ranking sprawdzonych ofert w „Polecane modele”.
 - Obliczyć odległość w linii prostej od jednego z 39 dużych miast lub własnego punktu, wyłącznie dla ofert
   z udokumentowanymi współrzędnymi. Brak danych nie jest odległością zero.
 - Korzystać z jasnego i ciemnego motywu oraz układu mobilnego.

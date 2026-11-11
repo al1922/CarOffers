@@ -9,7 +9,6 @@ import re
 import unicodedata
 from urllib.parse import urlsplit
 from search_core import ASSESSMENT_FIELDS, ROOT, assess, audit, brand_key, contained, description, read, write, requirements_for_model
-from recommendation_flow import WEIGHTS as RECOMMENDATION_WEIGHTS, build as build_recommendations, finalize as finalize_recommendations, select_models as select_recommendation_models, validate_result as validate_recommendation_result
 
 
 BODY_TERMS = {
@@ -225,7 +224,7 @@ def build_shared_search_cache(root, run, queue, source_id, task=None):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("command", choices=["validate", "sync", "plan", "refresh-plan", "availability-plan", "recommend-plan", "recommend-select", "recommend-finalize", "claim", "finish", "assess", "import-preview", "import-apply"])
+    p.add_argument("command", choices=["validate", "sync", "plan", "refresh-plan", "availability-plan", "archive-availability-plan", "claim", "finish", "assess", "import-preview", "import-apply"])
     p.add_argument("--root", type=Path, default=ROOT)
     p.add_argument("--run")
     p.add_argument("--worker")
@@ -267,7 +266,7 @@ def main():
         except (OSError, ValueError, KeyError, TypeError) as exc:
             p.error(str(exc))
         return 0
-    if args.command in ("claim", "finish", "recommend-select", "recommend-finalize"):
+    if args.command in ("claim", "finish"):
         if not args.run or not re.fullmatch(r"[a-zA-Z0-9][a-zA-Z0-9_-]*", args.run):
             p.error("--run requires a simple alphanumeric ID")
         snapshot = read(root / "runs" / args.run / "snapshot.json")
@@ -360,29 +359,7 @@ def main():
         if not args.run or not re.fullmatch(r"[a-zA-Z0-9][a-zA-Z0-9_-]*", args.run):
             p.error("--run requires a simple alphanumeric ID")
         run = root / "runs" / args.run
-        if args.command == "recommend-plan":
-            if args.agents < 1:
-                p.error("--agents must be positive")
-            config, cards, tasks = build_recommendations(root)
-            if len(tasks) < 5:
-                p.error(f"Recommendation flow needs at least five models with eligible listing URLs; found {len(tasks)}")
-            run.mkdir(parents=True, exist_ok=False)
-            (run / "results").mkdir()
-            snapshot = {"config": config, "knowledge": cards}
-            digest = hashlib.sha256(json.dumps(snapshot, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
-            write(run / "snapshot.json", {"createdAt": datetime.now(timezone.utc).isoformat(), "sha256": digest, **snapshot})
-            write(run / "tasks.json", {"version": 1, "kind": "recommendation", "agents": args.agents,
-                  "workerAssignments": {}, "weights": RECOMMENDATION_WEIGHTS, "tasks": tasks})
-            write(run / "recommendation-preview.json", {"status": "awaiting_model_reviews", "weights": RECOMMENDATION_WEIGHTS,
-                  "models": [{"rank": t["rank"], "modelKey": t["modelKey"], "modelName": t["modelName"],
-                              "signals": t["modelSignals"], "candidateCount": len(t["candidates"])} for t in tasks]})
-            print(f"Prepared {len(tasks)} model-analysis tasks; use standard claim/finish, then recommend-select for phase 2. No offers changed")
-        elif args.command == "recommend-select":
-            listing_tasks = select_recommendation_models(root, args.run)
-            print(f"Coordinator selected five models from completed evidence; prepared {len(listing_tasks)} detailed listing tasks")
-        elif args.command == "recommend-finalize":
-            finalize_recommendations(root, args.run)
-        elif args.command == "plan":
+        if args.command == "plan":
             if args.agents < 1:
                 p.error("--agents must be positive")
             selected_m = [m for m in models if m["active"] and (not args.models or m["key"] in args.models)]
@@ -473,10 +450,11 @@ def main():
             print(f"Prepared {len(tasks)} tasks across {len(by_source)} compatible sources; no websites searched")
             if skipped:
                 print("No compatible selected model: " + ", ".join(skipped))
-        elif args.command in ("refresh-plan", "availability-plan"):
+        elif args.command in ("refresh-plan", "availability-plan", "archive-availability-plan"):
             availability_only = args.command == "availability-plan"
-            if availability_only and (args.models or args.sources or args.older_than_days is not None or args.offer_ids or args.photo_audit):
-                p.error("availability-plan always checks every active listing URL; do not pass model, source, age, offer or photo filters")
+            archive_availability_only = args.command == "archive-availability-plan"
+            if (availability_only or archive_availability_only) and (args.models or args.sources or args.older_than_days is not None or args.offer_ids or args.photo_audit):
+                p.error(f"{args.command} always checks every {'archived' if archive_availability_only else 'active'} listing URL; do not pass model, source, age, offer or photo filters")
             if args.agents < 1:
                 p.error("--agents must be positive")
             if args.older_than_days is not None and args.older_than_days < 0:
@@ -522,7 +500,10 @@ def main():
             grouped, found_ids, unmapped_targets = {}, set(), []
             for model in selected_m:
                 document = read(contained(root, model["offersFile"]))
-                for offer in document["offers"]:
+                collection_name = "archivedOffers" if archive_availability_only else "offers"
+                for offer in document.get(collection_name, []):
+                    if archive_availability_only and offer.get("archive", {}).get("status") == "excluded":
+                        continue
                     if requested_ids and offer.get("id") not in requested_ids:
                         continue
                     found_ids.add(offer.get("id"))
@@ -569,16 +550,36 @@ def main():
                 unique_targets = list({(target["offerId"], target["url"]): target for target in targets}.values())
                 target_batches = ([unique_targets[index:index + 5]
                                    for index in range(0, len(unique_targets), 5)]
-                                  if availability_only else [unique_targets])
+                                  if availability_only or archive_availability_only else [unique_targets])
                 for batch_number, target_batch in enumerate(target_batches, start=1):
-                    task_id = (f"availability--{source_id}--{model_key}--{batch_number:02d}"
-                               if availability_only else f"refresh--{source_id}--{model_key}")
-                    tasks.append({"id": task_id, "kind": "availability" if availability_only else "refresh",
-                                  "sourceId": source_id, "modelKey": model_key, "refreshTargets": target_batch,
-                                  "photoAuditRequired": args.photo_audit,
-                                  "sourceMethod": source["method"], "state": "pending", "worker": None,
-                                  "attempts": 0, "note": "",
-                                  **({"workerInstructions": "Availability only: use scripts/availability-check.mjs; do not substitute cached snippets or manual notes. A URL is available only when its current rendered page returns HTTP 2xx and the page itself shows a strong title match, price and contact action; all three proof fields are required by finish. HTTP 410 is removed. HTTP 403/404 without explicit closure text, timeouts, CAPTCHA and other access blocks are access_error (do not bypass them). HTTP 404 with an explicit closure message is removed/sold. Check up to four pages concurrently and do not inspect or update vehicle facts. On import, if every URL for a car was checked and none is available, archive as closed when every status is sold/removed; otherwise archive as unverified. Any proven live URL keeps the car active."} if availability_only else {})})
+                    task_prefix = "archive-availability" if archive_availability_only else ("availability" if availability_only else "refresh")
+                    task_id = (f"{task_prefix}--{source_id}--{model_key}--{batch_number:02d}"
+                               if availability_only or archive_availability_only else f"refresh--{source_id}--{model_key}")
+                    kind = "archive-availability" if archive_availability_only else ("availability" if availability_only else "refresh")
+                    task = {"id": task_id, "kind": kind,
+                            "sourceId": source_id, "modelKey": model_key, "refreshTargets": target_batch,
+                            "photoAuditRequired": args.photo_audit,
+                            "sourceMethod": source["method"], "state": "pending", "worker": None,
+                            "attempts": 0, "note": ""}
+                    if archive_availability_only:
+                        task["workerInstructions"] = (
+                            "Archived availability only: use scripts/availability-check.mjs; check only assigned archived listing URLs, "
+                            "without researching or updating vehicle facts. A URL is available only when its current rendered page "
+                            "returns HTTP 2xx and the page shows a strong title match, price and contact action; all three proof fields "
+                            "are required by finish. HTTP 410 is removed. HTTP 403/404 without explicit closure text, timeouts, CAPTCHA "
+                            "and other access blocks are access_error; do not bypass them. A confirmed available URL restores that archived "
+                            "offer to active offers. Access errors or closed listings stay archived. Never restore status excluded.")
+                    elif availability_only:
+                        task["workerInstructions"] = (
+                            "Availability only: use scripts/availability-check.mjs; do not substitute cached snippets or manual notes. "
+                            "A URL is available only when its current rendered page returns HTTP 2xx and the page itself shows a strong "
+                            "title match, price and contact action; all three proof fields are required by finish. HTTP 410 is removed. "
+                            "HTTP 403/404 without explicit closure text, timeouts, CAPTCHA and other access blocks are access_error "
+                            "(do not bypass them). HTTP 404 with an explicit closure message is removed/sold. Check up to four pages "
+                            "concurrently and do not inspect or update vehicle facts. On import, if every URL for a car was checked and "
+                            "none is available, archive as closed when every status is sold/removed; otherwise archive as unverified. "
+                            "Any proven live URL keeps the car active.")
+                    tasks.append(task)
             if not tasks and not unmapped_targets:
                 p.error("No refresh candidates matched the selected models, sources and age/offer filters")
             run.mkdir(parents=True, exist_ok=False)
@@ -587,13 +588,15 @@ def main():
             snapshot = {"config": config, "knowledge": cards}
             digest = hashlib.sha256(json.dumps(snapshot, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
             write(run / "snapshot.json", {"createdAt": now.isoformat(), "sha256": digest, **snapshot})
-            write(run / "tasks.json", {"version": 1, "kind": "availability" if availability_only else "refresh", "agents": args.agents,
+            run_kind = "archive-availability" if archive_availability_only else ("availability" if availability_only else "refresh")
+            write(run / "tasks.json", {"version": 1, "kind": run_kind, "agents": args.agents,
                   "workerAssignments": {}, "refreshAfterDays": args.older_than_days,
                   "photoAuditRequired": args.photo_audit,
                   "unmappedTargets": unmapped_targets, "tasks": tasks})
             target_count = sum(len(task["refreshTargets"]) for task in tasks)
-            mode = "all active listing URLs (availability only)" if availability_only else (f"not checked within {args.older_than_days} days" if args.older_than_days is not None else "all active offer records")
-            print(f"Prepared {len(tasks)} refresh tasks for {target_count} listing pages ({mode}); "
+            mode = "all archived listing URLs (availability only)" if archive_availability_only else ("all active listing URLs (availability only)" if availability_only else (f"not checked within {args.older_than_days} days" if args.older_than_days is not None else "all active offer records"))
+            task_type = "availability" if availability_only or archive_availability_only else "refresh"
+            print(f"Prepared {len(tasks)} {task_type} tasks for {target_count} listing pages ({mode}); "
                   f"{len(unmapped_targets)} URL(s) need manual source mapping; no websites checked")
         else:
             queue = read(run / "tasks.json")
@@ -643,18 +646,6 @@ def main():
 
                 if not isinstance(result, dict):
                     reject_result("Result file must contain a JSON object")
-                if task.get("kind") in ("recommendation_model", "recommendation_listing"):
-                    allowed = ("complete", "partial") if task.get("kind") == "recommendation_model" else ("complete",)
-                    if args.result not in allowed or result.get("outcome") != args.result:
-                        reject_result("Model review uses --result complete or partial; listing review requires complete, matching result.outcome")
-                    try:
-                        validate_recommendation_result(task, result)
-                    except (ValueError, KeyError, TypeError) as exc:
-                        reject_result(exc)
-                    task.update(state=args.result, note=args.note or "recommendation evidence reviewed")
-                    write(run / "tasks.json", queue)
-                    print("Recommendation result recorded; offers unchanged")
-                    return 0
                 if result.get("taskId") != task["id"] or result.get("outcome") != args.result:
                     reject_result("Result file taskId/outcome mismatch")
                 if not isinstance(result.get("offers"), list) or not isinstance(result.get("coverage"), dict):
@@ -665,11 +656,11 @@ def main():
                     reject_result("Complete coverage requires searchUrls, pagesChecked >= 1 and empty remaining")
                 if args.result == "no_matches" and result["offers"]:
                     reject_result("no_matches cannot contain offers")
-                if args.result == "blocked" and task.get("kind") not in ("refresh", "availability") and result["offers"]:
+                if args.result == "blocked" and task.get("kind") not in ("refresh", "availability", "archive-availability") and result["offers"]:
                     reject_result("blocked cannot contain offers")
-                if task.get("kind") in ("refresh", "availability") and args.result == "no_matches":
+                if task.get("kind") in ("refresh", "availability", "archive-availability") and args.result == "no_matches":
                     reject_result("Refresh/availability tasks have known target listings; use complete, partial or blocked")
-                if task.get("kind") in ("refresh", "availability") and args.result == "complete":
+                if task.get("kind") in ("refresh", "availability", "archive-availability") and args.result == "complete":
                     targets = {(target["offerId"], target["url"]) for target in task.get("refreshTargets", [])}
                     target_urls = {url for _, url in targets}
                     if coverage["pagesChecked"] < len(target_urls) or not target_urls.issubset(set(coverage["searchUrls"])):
@@ -685,14 +676,14 @@ def main():
                         observed.add(pair)
                     if observed != targets:
                         reject_result("Complete refresh requires one observation for every assigned target")
-                if task.get("kind") in ("refresh", "availability") and args.result == "partial":
+                if task.get("kind") in ("refresh", "availability", "archive-availability") and args.result == "partial":
                     targets = {(target["offerId"], target["url"]) for target in task.get("refreshTargets", [])}
                     for offer in result["offers"]:
                         observation = offer.get("observation", {}) if isinstance(offer, dict) else {}
                         pair = (offer.get("id"), observation.get("url")) if isinstance(offer, dict) else (None, None)
                         if pair not in targets:
                             reject_result("Refresh result contains an offer outside its assigned targets")
-                if task.get("kind") == "availability":
+                if task.get("kind") in ("availability", "archive-availability"):
                     targets = {(target["offerId"], target["url"]) for target in task.get("refreshTargets", [])}
                     observed = set()
                     for offer in result["offers"]:

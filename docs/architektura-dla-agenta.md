@@ -30,7 +30,6 @@ korzystają z `requirements` przypisanych do danego modelu w `search-models.json
 | Wyszukiwanie i koordynacja | `scripts/car-search.py` | CLI koordynatora: planowanie, przydziały, zakończenia, ocena i import. Nie otwiera stron portali. |
 | Reguły wspólne | `scripts/search_core.py` | Odczyt konfiguracji, walidacja ustawień, wymagania i ocena oferty. |
 | Import | `scripts/offer_import.py` | Walidacja wyników agentów, podgląd scalenia i lokalne zastosowanie zmian. |
-| Rekomendacje | `scripts/recommendation_flow.py` | Plan, wybór modeli i finalizacja rekomendacji. |
 | Odczyt portali | `scripts/portal-search.mjs`, `scripts/portal-candidates.mjs`, `scripts/sprzedajemy-search.mjs` | Punkty wejścia czytników stron i widocznych wyników. |
 | Przesiew i karta | `scripts/portal-screening.mjs`, `scripts/portal-card-classifier.mjs`, `scripts/sprzedajemy-verify.mjs` | Czysta logika dopasowania, przesiew widocznych wyników oraz klasyfikacja danych karty. |
 | Dostępność i nawigacja | `scripts/availability-check.mjs`, `scripts/portal-robots.mjs`, `scripts/playwright-pages.mjs` | Kontrola URL-i, reguły nawigacji i narzędzia Playwright. |
@@ -49,8 +48,6 @@ czyste reguły do małych modułów, ale utrzymuj dotychczasowe eksporty i polec
   przy braku konfliktów wykonuje `import-apply`, `assess` i walidację ofert.
 - **Odświeżenie / dostępność:** zadanie ogranicza się do URL-i migawki. Nie
   rozszerzaj go na nowe wyszukiwanie; nieczytelny URL nie oznacza sprzedanego auta.
-- **Polecane modele:** osobne etapy rekomendacji modelowej i kart ofertowych;
-  rekomendacje zapisują się do `reports/recommendations.json`, nie do ofert.
 - **Widok strony:** dane pochodzą z istniejących plików JSON. Zmiana strony nie
   aktualizuje wymagań ani nie potwierdza aktualności ogłoszeń.
 

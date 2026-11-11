@@ -3430,6 +3430,289 @@
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
       "verdictNote": "engine_review_requires_verification; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
+    },
+    {
+      "id": "listing:aaaauto:34935780",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "vin": null,
+      "listingIds": [
+        "aaaauto:34935780"
+      ],
+      "urls": [
+        {
+          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34935780",
+          "normalized": "https://www.aaaauto.pl/detail/hyundai/i30/34935780",
+          "label": "Zobacz ogłoszenie — AAA Auto"
+        }
+      ],
+      "title": "1.5 DPi · 110 KM Kombi — Polska / sieć AAA AUTO · 108 068 km",
+      "year": 2022,
+      "price": 47500,
+      "mileage": 108068,
+      "engine": "1.5 DPi, benzyna",
+      "body": "Kombi / Wagon",
+      "transmission": "manualna",
+      "seller": "AAA AUTO · lokalizacja do potwierdzenia",
+      "subtitle": "2022 · Kombi / Wagon · 1.5 DPi · 110 KM",
+      "priority": "Priorytet 1",
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "specs": {
+        "rocznik": "2022",
+        "nadwozie": "Kombi / Wagon",
+        "silnik": "1.5 DPi · 110 KM",
+        "skrzynia": "manualna",
+        "przebieg": "108 068 km",
+        "cena zakupu": "47 500 zł — cena standardowa z dostępnej karty (bez warunku kredytu)"
+      },
+      "details": {
+        "Historia i pochodzenie": "Polski salon, serwis ASO, VAT 23% deklarowane przez sieć AAA Auto. Ostatni przegląd 08.2026 przy 101 707 km według karty.",
+        "Wyposażenie": "Kamera cofania: Niepotwierdzona; deklarowane czujniki parkowania.",
+        "Kamera cofania": "Niepotwierdzona; deklarowane czujniki parkowania.",
+        "Problemy / niepewności": "47 500 zł to cena standardowa; 44 500 zł obowiązuje wyłącznie przy kredycie. Sprawdzić dokumenty, kamerę i konkretną placówkę.",
+        "Ocena": "Dobry rocznik i umiarkowany przebieg z deklarowaną historią ASO.",
+        "Weryfikacja internetowa": "07.11.2026: udało się otworzyć kartę konkretnej oferty. Dostępność fizyczna nie została potwierdzona u sprzedawcy; konieczny kontakt przed wyjazdem."
+      },
+      "offerType": "unknown",
+      "listingStates": [
+        {
+          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34935780",
+          "status": "available",
+          "lastAttemptAt": "2026-11-11T15:38:59Z",
+          "lastObservation": {
+            "url": "https://www.aaaauto.pl/detail/hyundai/i30/34935780",
+            "checkedAt": "2026-11-11T15:38:59Z",
+            "availability": "available",
+            "note": "Bieżąca karta AAA AUTO została odczytana przez web.open: Hyundai i30 Combi 2022, 1.5 DPI, 108 068 km, cena 47 500 zł oraz aktywny formularz umówienia spotkania i opcja kontaktu telefonicznego. Strona zwróciła pełną kartę; czytnik web nie udostępnia surowego kodu HTTP.",
+            "httpStatus": 200,
+            "availabilityProof": {
+              "identity": true,
+              "contact": true,
+              "price": true,
+              "titleTokensMatched": 7
+            }
+          },
+          "lastCheckedAt": "2026-11-11T15:38:59Z",
+          "lastVerifiedAt": "2026-11-11T15:38:59Z"
+        }
+      ],
+      "lastAttemptAt": "2026-11-11T15:38:59Z",
+      "history": [
+        {
+          "eventId": "6836c91afc51c2571cbd6c419adf095a14424135fb30fd92c4334246ee49c7af",
+          "runId": "refresh-20261108-01",
+          "checkedAt": "2026-11-08T18:46:10+01:00",
+          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34935780",
+          "availability": "access_error",
+          "note": "Strona AAA AUTO zwróciła kartę w narzędziu odczytu, ale treść jest cache'owana z 4 dni; brak potwierdzenia aktualności bezpośrednio ze strony bieżącej. Nie uznaję starej kopii ani braku odświeżenia za potwierdzenie dostępności/sprzedaży. Dane bazowe: 1.5 DPi · 110 KM Kombi — Polska / sieć AAA AUTO · 108 068 km; status pozostaje nieustalony.",
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:aaaauto:34935780",
+            "modelKey": "hyundai-i30-iii-wagon",
+            "urls": [
+              {
+                "url": "https://www.aaaauto.pl/detail/hyundai/i30/34935780"
+              }
+            ]
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "c3d3a4c82429710a905cbde3f472aa9b3c0ffd5df084976de01d89c5cb6648b8",
+          "runId": "refresh-20261108-03",
+          "checkedAt": "2026-11-08T21:54:00+00:00",
+          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34935780",
+          "availability": "available",
+          "note": "Karta AAA AUTO podaje Hyundai i30 Combi 2022, silnik 1.5 DPi, przebieg 108 068 km i cenę standardową 47 500 zł. Osobno wyświetla 44 500 zł jako cenę promocyjną przy kredycie; zapisuję standardową cenę, bez obowiązkowego finansowania. LPG nieustalone.",
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:aaaauto:34935780",
+            "price": 47500,
+            "year": 2022,
+            "mileage": 108068,
+            "engine": "1.5 DPi, benzyna",
+            "saleType": "fixed_price",
+            "lpgInstalled": null
+          },
+          "changes": {
+            "engine": {
+              "before": "1.5 DPi · 110 KM",
+              "after": "1.5 DPi, benzyna"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            }
+          }
+        },
+        {
+          "eventId": "46a4d825e0fe03e80f41f42050e0a6daedace4df62e9efa20d47945158fdb3dd",
+          "runId": "photos-20261108-01",
+          "checkedAt": "2026-11-08T23:41:22+01:00",
+          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34935780",
+          "availability": "available",
+          "note": "Karta AAA AUTO dla ID 34935780 odczytana. Galeria zawiera 18 zdjęć auta; zapisano 12 bezpośrednich unikalnych adresów HTTPS, pomijając grafikę promocyjną o finansowaniu. Cena standardowa 47 500 zł, oddzielnie pokazano promocyjną cenę na kredyt 44 500 zł. LPG nieustalone.",
+          "photoCheck": {
+            "status": "found",
+            "note": "Z karty wydobyto 12 bezpośrednich HTTPS URL-i zdjęć samochodu; nie pobierano obrazów."
+          },
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:aaaauto:34935780",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "photos": [
+              "https://aaaautoeuimg.vshcdn.net/thumb/300202876_1290x968x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300202876_9_828x621x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300202876_15_828x621x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300202876_4_828x621x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300202876_6_828x621x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300202876_1_828x621x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300202876_2_828x621x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300202876_3_828x621x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300202876_5_828x621x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300202876_7_828x621x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300202876_11_828x621x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300202876_12_828x621x95.jpg"
+            ]
+          },
+          "changes": {
+            "photos": {
+              "before": null,
+              "after": [
+                "https://aaaautoeuimg.vshcdn.net/thumb/300202876_1290x968x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300202876_9_828x621x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300202876_15_828x621x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300202876_4_828x621x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300202876_6_828x621x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300202876_1_828x621x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300202876_2_828x621x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300202876_3_828x621x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300202876_5_828x621x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300202876_7_828x621x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300202876_11_828x621x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300202876_12_828x621x95.jpg"
+              ]
+            }
+          }
+        },
+        {
+          "eventId": "faacfe56452c9fe78388c5673cf3532bcf22aed633352d5804b1c37013ace2e7",
+          "runId": "refresh20261109a",
+          "checkedAt": "2026-11-09T13:20:00+01:00",
+          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34935780",
+          "availability": "available",
+          "note": "Karta AAA AUTO została odczytana dziś. Wystawia pojazd z ceną regularną i aktywnymi opcjami zakupu/kontaktu; cena promocyjna zależna od kredytu pominięta. Dostępność należy potwierdzić przed wizytą, ponieważ portal wskazuje, że umówienie spotkania nie jest rezerwacją. Kamera i LPG niepotwierdzone.",
+          "photoCheck": null,
+          "evidence": [
+            {
+              "url": "https://www.aaaauto.pl/detail/hyundai/i30/34935780",
+              "checkedAt": "2026-11-09T13:20:00+01:00",
+              "kind": "seller",
+              "fields": [
+                "availability",
+                "price",
+                "priceGross",
+                "year",
+                "mileageKm",
+                "fuel",
+                "engine",
+                "body",
+                "transmission"
+              ],
+              "note": "Bieżąca karta AAA AUTO pokazuje listing pojazdu, cenę regularną, dane rocznika/przebiegu/silnika i przyciski zakupu online lub umówienia spotkania."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:aaaauto:34935780",
+            "modelKey": "hyundai-i30-iii-wagon",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "photos": [
+              "https://aaaautoeuimg.vshcdn.net/thumb/300202876_1290x968x95.jpg"
+            ]
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "a4cfe3414a9543798623d2c983a865c6fa4a9759324f1531b20bf2ec2fd0245f",
+          "runId": "dostepnosc-2026-11-10",
+          "checkedAt": "2026-11-10T23:19:38Z",
+          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34935780",
+          "availability": "available",
+          "note": "Otwarta karta AAA AUTO pasuje do ID 34935780; pokazuje Hyundai i30 Combi 2022, 108 068 km i cenę 47 500 zł, wraz z opcją umówienia spotkania.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:aaaauto:34935780"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "78583340ff4391985f02cd8dd83b95b0e363831143b1cadbe25c5664b11847fa",
+          "runId": "dostepnosc-2026-11-11-live",
+          "checkedAt": "2026-11-11T02:04:24.195Z",
+          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34935780",
+          "availability": "access_error",
+          "note": "Portal wyświetlił blokadę lub limit dostępu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:aaaauto:34935780"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "95e4093979c4a4d22b0789211ac34e8c7a0ce0b473efb418adf523a4163f31e6",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T15:38:59Z",
+          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34935780",
+          "availability": "available",
+          "note": "Bieżąca karta AAA AUTO została odczytana przez web.open: Hyundai i30 Combi 2022, 1.5 DPI, 108 068 km, cena 47 500 zł oraz aktywny formularz umówienia spotkania i opcja kontaktu telefonicznego. Strona zwróciła pełną kartę; czytnik web nie udostępnia surowego kodu HTTP.",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:aaaauto:34935780"
+          },
+          "changes": {}
+        }
+      ],
+      "assessment": {
+        "id": "listing:aaaauto:34935780",
+        "modelKey": "hyundai-i30-iii-wagon",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "body",
+          "exact_engine_variant",
+          "transmission",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "saleType": "fixed_price",
+      "lastCheckedAt": "2026-11-11T15:38:59Z",
+      "lastVerifiedAt": "2026-11-11T15:38:59Z",
+      "photos": [
+        "https://aaaautoeuimg.vshcdn.net/thumb/300202876_1290x968x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300202876_9_828x621x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300202876_15_828x621x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300202876_4_828x621x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300202876_6_828x621x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300202876_1_828x621x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300202876_2_828x621x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300202876_3_828x621x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300202876_5_828x621x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300202876_7_828x621x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300202876_11_828x621x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300202876_12_828x621x95.jpg"
+      ]
     }
   ],
   "archivedOffers": [
@@ -3484,20 +3767,21 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IhpXr.html",
           "status": "removed",
-          "lastAttemptAt": "2026-11-09T12:55:57Z",
+          "lastAttemptAt": "2026-11-11T15:40:57.711Z",
           "lastCheckedAt": "2026-11-09T12:55:57Z",
           "lastVerifiedAt": "2026-11-09T12:55:57Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IhpXr.html",
-            "checkedAt": "2026-11-09T12:55:57Z",
-            "availability": "removed",
-            "note": "Bezpośrednia karta ogłoszenia zwraca HTTP 410 Gone; portal nie udostępnia już tej oferty."
+            "checkedAt": "2026-11-11T15:40:57.711Z",
+            "availability": "access_error",
+            "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+            "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-09T12:55:57Z",
       "lastVerifiedAt": "2026-11-09T12:55:57Z",
-      "lastAttemptAt": "2026-11-09T12:55:57Z",
+      "lastAttemptAt": "2026-11-11T15:40:57.711Z",
       "history": [
         {
           "eventId": "e2e557a4bffff7f4471f569d998878f5388921c3e311cf56f043cb2bb27d20b0",
@@ -3609,6 +3893,21 @@
             "lpgInstalled": null
           },
           "changes": {}
+        },
+        {
+          "eventId": "de2ab8726f981c96fb28c90f697eab44de9eb63f7cec24c8b0c1dd63a18b70ed",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T15:40:57.711Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IhpXr.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IhpXr"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -3683,20 +3982,21 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IhRf0.html",
           "status": "removed",
-          "lastAttemptAt": "2026-11-09T12:55:57Z",
+          "lastAttemptAt": "2026-11-11T15:40:57.711Z",
           "lastCheckedAt": "2026-11-09T12:55:57Z",
           "lastVerifiedAt": "2026-11-09T12:55:57Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IhRf0.html",
-            "checkedAt": "2026-11-09T12:55:57Z",
-            "availability": "removed",
-            "note": "Bezpośrednia karta ogłoszenia zwraca HTTP 410 Gone; portal nie udostępnia już tej oferty."
+            "checkedAt": "2026-11-11T15:40:57.711Z",
+            "availability": "access_error",
+            "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+            "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-09T12:55:57Z",
       "lastVerifiedAt": "2026-11-09T12:55:57Z",
-      "lastAttemptAt": "2026-11-09T12:55:57Z",
+      "lastAttemptAt": "2026-11-11T15:40:57.711Z",
       "history": [
         {
           "eventId": "70708d8966c8fea140981c0bdcb3efa0c65b7f87865fcc4e5725608d1fabf2aa",
@@ -3808,6 +4108,21 @@
             "lpgInstalled": null
           },
           "changes": {}
+        },
+        {
+          "eventId": "702826a3cc987e1956663b3173a8bf60d190af9159cefa9ad46ea8f887186c32",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T15:40:57.711Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IhRf0.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IhRf0"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -3865,20 +4180,21 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiY7i.html",
           "status": "removed",
-          "lastAttemptAt": "2026-11-09T12:55:57Z",
+          "lastAttemptAt": "2026-11-11T15:40:57.712Z",
           "lastCheckedAt": "2026-11-09T12:55:57Z",
           "lastVerifiedAt": "2026-11-09T12:55:57Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiY7i.html",
-            "checkedAt": "2026-11-09T12:55:57Z",
-            "availability": "removed",
-            "note": "Bezpośrednia karta ogłoszenia zwraca HTTP 410 Gone; portal nie udostępnia już tej oferty."
+            "checkedAt": "2026-11-11T15:40:57.712Z",
+            "availability": "access_error",
+            "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+            "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-09T12:55:57Z",
       "lastVerifiedAt": "2026-11-09T12:55:57Z",
-      "lastAttemptAt": "2026-11-09T12:55:57Z",
+      "lastAttemptAt": "2026-11-11T15:40:57.712Z",
       "history": [
         {
           "eventId": "3c75f1050c82a03d74228f1a6bc250918e5717ac52e5dbbfe952c9aedb4d8a7c",
@@ -4056,6 +4372,21 @@
             "modelKey": "hyundai-i30-iii-wagon",
             "saleType": "fixed_price",
             "lpgInstalled": null
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "62c23d3c86d010370a51a3f735df2cd7bd12be6383387908232e21e6e3d8bcab",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T15:40:57.712Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiY7i.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IiY7i"
           },
           "changes": {}
         }
@@ -7426,14 +7757,14 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiMLq.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:37.867Z",
+          "lastAttemptAt": "2026-11-11T15:40:57.712Z",
           "lastCheckedAt": "2026-11-10T23:02:06Z",
           "lastVerifiedAt": "2026-11-10T23:02:06Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiMLq.html",
-            "checkedAt": "2026-11-11T02:03:37.867Z",
+            "checkedAt": "2026-11-11T15:40:57.712Z",
             "availability": "access_error",
-            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+            "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
             "httpStatus": null
           }
         },
@@ -7454,7 +7785,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:02:06Z",
       "lastVerifiedAt": "2026-11-10T23:02:06Z",
-      "lastAttemptAt": "2026-11-11T02:03:37.874Z",
+      "lastAttemptAt": "2026-11-11T15:40:57.712Z",
       "history": [
         {
           "eventId": "6faa416271cb8590a8a25b2509bcc04a962485bc981dcd8caeb7680cf9652350",
@@ -7803,6 +8134,21 @@
             "id": "vin:TMAH281CANJ118698"
           },
           "changes": {}
+        },
+        {
+          "eventId": "26e523acb36c830a4452db242b9490cfe979f7b874d261361576d3faaa82b598",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T15:40:57.712Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiMLq.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TMAH281CANJ118698"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -7828,273 +8174,6 @@
         "status": "unverified",
         "reason": "no_listing_url_confirmed_available; at_least_one_access_error",
         "archivedAt": "2026-11-11T02:03:37.874000+00:00"
-      }
-    },
-    {
-      "id": "listing:aaaauto:34935780",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "vin": null,
-      "listingIds": [
-        "aaaauto:34935780"
-      ],
-      "urls": [
-        {
-          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34935780",
-          "normalized": "https://www.aaaauto.pl/detail/hyundai/i30/34935780",
-          "label": "Zobacz ogłoszenie — AAA Auto"
-        }
-      ],
-      "title": "1.5 DPi · 110 KM Kombi — Polska / sieć AAA AUTO · 108 068 km",
-      "year": 2022,
-      "price": 47500,
-      "mileage": 108068,
-      "engine": "1.5 DPi, benzyna",
-      "body": "Kombi / Wagon",
-      "transmission": "manualna",
-      "seller": "AAA AUTO · lokalizacja do potwierdzenia",
-      "subtitle": "2022 · Kombi / Wagon · 1.5 DPi · 110 KM",
-      "priority": "Priorytet 1",
-      "verdict": "check",
-      "verdictTitle": "Do weryfikacji",
-      "verdictNote": "body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
-      "specs": {
-        "rocznik": "2022",
-        "nadwozie": "Kombi / Wagon",
-        "silnik": "1.5 DPi · 110 KM",
-        "skrzynia": "manualna",
-        "przebieg": "108 068 km",
-        "cena zakupu": "47 500 zł — cena standardowa z dostępnej karty (bez warunku kredytu)"
-      },
-      "details": {
-        "Historia i pochodzenie": "Polski salon, serwis ASO, VAT 23% deklarowane przez sieć AAA Auto. Ostatni przegląd 08.2026 przy 101 707 km według karty.",
-        "Wyposażenie": "Kamera cofania: Niepotwierdzona; deklarowane czujniki parkowania.",
-        "Kamera cofania": "Niepotwierdzona; deklarowane czujniki parkowania.",
-        "Problemy / niepewności": "47 500 zł to cena standardowa; 44 500 zł obowiązuje wyłącznie przy kredycie. Sprawdzić dokumenty, kamerę i konkretną placówkę.",
-        "Ocena": "Dobry rocznik i umiarkowany przebieg z deklarowaną historią ASO.",
-        "Weryfikacja internetowa": "07.11.2026: udało się otworzyć kartę konkretnej oferty. Dostępność fizyczna nie została potwierdzona u sprzedawcy; konieczny kontakt przed wyjazdem."
-      },
-      "offerType": "unknown",
-      "listingStates": [
-        {
-          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34935780",
-          "status": "available",
-          "lastAttemptAt": "2026-11-11T02:04:24.195Z",
-          "lastObservation": {
-            "url": "https://www.aaaauto.pl/detail/hyundai/i30/34935780",
-            "checkedAt": "2026-11-11T02:04:24.195Z",
-            "availability": "access_error",
-            "note": "Portal wyświetlił blokadę lub limit dostępu (HTTP 200).",
-            "httpStatus": 200
-          },
-          "lastCheckedAt": "2026-11-10T23:19:38Z",
-          "lastVerifiedAt": "2026-11-10T23:19:38Z"
-        }
-      ],
-      "lastAttemptAt": "2026-11-11T02:04:24.195Z",
-      "history": [
-        {
-          "eventId": "6836c91afc51c2571cbd6c419adf095a14424135fb30fd92c4334246ee49c7af",
-          "runId": "refresh-20261108-01",
-          "checkedAt": "2026-11-08T18:46:10+01:00",
-          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34935780",
-          "availability": "access_error",
-          "note": "Strona AAA AUTO zwróciła kartę w narzędziu odczytu, ale treść jest cache'owana z 4 dni; brak potwierdzenia aktualności bezpośrednio ze strony bieżącej. Nie uznaję starej kopii ani braku odświeżenia za potwierdzenie dostępności/sprzedaży. Dane bazowe: 1.5 DPi · 110 KM Kombi — Polska / sieć AAA AUTO · 108 068 km; status pozostaje nieustalony.",
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:aaaauto:34935780",
-            "modelKey": "hyundai-i30-iii-wagon",
-            "urls": [
-              {
-                "url": "https://www.aaaauto.pl/detail/hyundai/i30/34935780"
-              }
-            ]
-          },
-          "changes": {}
-        },
-        {
-          "eventId": "c3d3a4c82429710a905cbde3f472aa9b3c0ffd5df084976de01d89c5cb6648b8",
-          "runId": "refresh-20261108-03",
-          "checkedAt": "2026-11-08T21:54:00+00:00",
-          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34935780",
-          "availability": "available",
-          "note": "Karta AAA AUTO podaje Hyundai i30 Combi 2022, silnik 1.5 DPi, przebieg 108 068 km i cenę standardową 47 500 zł. Osobno wyświetla 44 500 zł jako cenę promocyjną przy kredycie; zapisuję standardową cenę, bez obowiązkowego finansowania. LPG nieustalone.",
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:aaaauto:34935780",
-            "price": 47500,
-            "year": 2022,
-            "mileage": 108068,
-            "engine": "1.5 DPi, benzyna",
-            "saleType": "fixed_price",
-            "lpgInstalled": null
-          },
-          "changes": {
-            "engine": {
-              "before": "1.5 DPi · 110 KM",
-              "after": "1.5 DPi, benzyna"
-            },
-            "saleType": {
-              "before": null,
-              "after": "fixed_price"
-            }
-          }
-        },
-        {
-          "eventId": "46a4d825e0fe03e80f41f42050e0a6daedace4df62e9efa20d47945158fdb3dd",
-          "runId": "photos-20261108-01",
-          "checkedAt": "2026-11-08T23:41:22+01:00",
-          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34935780",
-          "availability": "available",
-          "note": "Karta AAA AUTO dla ID 34935780 odczytana. Galeria zawiera 18 zdjęć auta; zapisano 12 bezpośrednich unikalnych adresów HTTPS, pomijając grafikę promocyjną o finansowaniu. Cena standardowa 47 500 zł, oddzielnie pokazano promocyjną cenę na kredyt 44 500 zł. LPG nieustalone.",
-          "photoCheck": {
-            "status": "found",
-            "note": "Z karty wydobyto 12 bezpośrednich HTTPS URL-i zdjęć samochodu; nie pobierano obrazów."
-          },
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:aaaauto:34935780",
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "photos": [
-              "https://aaaautoeuimg.vshcdn.net/thumb/300202876_1290x968x95.jpg",
-              "https://aaaautoeuimg.vshcdn.net/thumb/300202876_9_828x621x95.jpg",
-              "https://aaaautoeuimg.vshcdn.net/thumb/300202876_15_828x621x95.jpg",
-              "https://aaaautoeuimg.vshcdn.net/thumb/300202876_4_828x621x95.jpg",
-              "https://aaaautoeuimg.vshcdn.net/thumb/300202876_6_828x621x95.jpg",
-              "https://aaaautoeuimg.vshcdn.net/thumb/300202876_1_828x621x95.jpg",
-              "https://aaaautoeuimg.vshcdn.net/thumb/300202876_2_828x621x95.jpg",
-              "https://aaaautoeuimg.vshcdn.net/thumb/300202876_3_828x621x95.jpg",
-              "https://aaaautoeuimg.vshcdn.net/thumb/300202876_5_828x621x95.jpg",
-              "https://aaaautoeuimg.vshcdn.net/thumb/300202876_7_828x621x95.jpg",
-              "https://aaaautoeuimg.vshcdn.net/thumb/300202876_11_828x621x95.jpg",
-              "https://aaaautoeuimg.vshcdn.net/thumb/300202876_12_828x621x95.jpg"
-            ]
-          },
-          "changes": {
-            "photos": {
-              "before": null,
-              "after": [
-                "https://aaaautoeuimg.vshcdn.net/thumb/300202876_1290x968x95.jpg",
-                "https://aaaautoeuimg.vshcdn.net/thumb/300202876_9_828x621x95.jpg",
-                "https://aaaautoeuimg.vshcdn.net/thumb/300202876_15_828x621x95.jpg",
-                "https://aaaautoeuimg.vshcdn.net/thumb/300202876_4_828x621x95.jpg",
-                "https://aaaautoeuimg.vshcdn.net/thumb/300202876_6_828x621x95.jpg",
-                "https://aaaautoeuimg.vshcdn.net/thumb/300202876_1_828x621x95.jpg",
-                "https://aaaautoeuimg.vshcdn.net/thumb/300202876_2_828x621x95.jpg",
-                "https://aaaautoeuimg.vshcdn.net/thumb/300202876_3_828x621x95.jpg",
-                "https://aaaautoeuimg.vshcdn.net/thumb/300202876_5_828x621x95.jpg",
-                "https://aaaautoeuimg.vshcdn.net/thumb/300202876_7_828x621x95.jpg",
-                "https://aaaautoeuimg.vshcdn.net/thumb/300202876_11_828x621x95.jpg",
-                "https://aaaautoeuimg.vshcdn.net/thumb/300202876_12_828x621x95.jpg"
-              ]
-            }
-          }
-        },
-        {
-          "eventId": "faacfe56452c9fe78388c5673cf3532bcf22aed633352d5804b1c37013ace2e7",
-          "runId": "refresh20261109a",
-          "checkedAt": "2026-11-09T13:20:00+01:00",
-          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34935780",
-          "availability": "available",
-          "note": "Karta AAA AUTO została odczytana dziś. Wystawia pojazd z ceną regularną i aktywnymi opcjami zakupu/kontaktu; cena promocyjna zależna od kredytu pominięta. Dostępność należy potwierdzić przed wizytą, ponieważ portal wskazuje, że umówienie spotkania nie jest rezerwacją. Kamera i LPG niepotwierdzone.",
-          "photoCheck": null,
-          "evidence": [
-            {
-              "url": "https://www.aaaauto.pl/detail/hyundai/i30/34935780",
-              "checkedAt": "2026-11-09T13:20:00+01:00",
-              "kind": "seller",
-              "fields": [
-                "availability",
-                "price",
-                "priceGross",
-                "year",
-                "mileageKm",
-                "fuel",
-                "engine",
-                "body",
-                "transmission"
-              ],
-              "note": "Bieżąca karta AAA AUTO pokazuje listing pojazdu, cenę regularną, dane rocznika/przebiegu/silnika i przyciski zakupu online lub umówienia spotkania."
-            }
-          ],
-          "reportedFields": {
-            "id": "listing:aaaauto:34935780",
-            "modelKey": "hyundai-i30-iii-wagon",
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "photos": [
-              "https://aaaautoeuimg.vshcdn.net/thumb/300202876_1290x968x95.jpg"
-            ]
-          },
-          "changes": {}
-        },
-        {
-          "eventId": "a4cfe3414a9543798623d2c983a865c6fa4a9759324f1531b20bf2ec2fd0245f",
-          "runId": "dostepnosc-2026-11-10",
-          "checkedAt": "2026-11-10T23:19:38Z",
-          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34935780",
-          "availability": "available",
-          "note": "Otwarta karta AAA AUTO pasuje do ID 34935780; pokazuje Hyundai i30 Combi 2022, 108 068 km i cenę 47 500 zł, wraz z opcją umówienia spotkania.",
-          "httpStatus": null,
-          "photoCheck": null,
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:aaaauto:34935780"
-          },
-          "changes": {}
-        },
-        {
-          "eventId": "78583340ff4391985f02cd8dd83b95b0e363831143b1cadbe25c5664b11847fa",
-          "runId": "dostepnosc-2026-11-11-live",
-          "checkedAt": "2026-11-11T02:04:24.195Z",
-          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34935780",
-          "availability": "access_error",
-          "note": "Portal wyświetlił blokadę lub limit dostępu (HTTP 200).",
-          "httpStatus": 200,
-          "photoCheck": null,
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:aaaauto:34935780"
-          },
-          "changes": {}
-        }
-      ],
-      "assessment": {
-        "id": "listing:aaaauto:34935780",
-        "modelKey": "hyundai-i30-iii-wagon",
-        "verdict": "check",
-        "failures": [],
-        "unknowns": [
-          "body",
-          "exact_engine_variant",
-          "transmission",
-          "camera_or_compatible_retrofit",
-          "structural_history",
-          "stroller_and_family_fit"
-        ],
-        "preferenceNotes": []
-      },
-      "saleType": "fixed_price",
-      "lastCheckedAt": "2026-11-10T23:19:38Z",
-      "lastVerifiedAt": "2026-11-10T23:19:38Z",
-      "photos": [
-        "https://aaaautoeuimg.vshcdn.net/thumb/300202876_1290x968x95.jpg",
-        "https://aaaautoeuimg.vshcdn.net/thumb/300202876_9_828x621x95.jpg",
-        "https://aaaautoeuimg.vshcdn.net/thumb/300202876_15_828x621x95.jpg",
-        "https://aaaautoeuimg.vshcdn.net/thumb/300202876_4_828x621x95.jpg",
-        "https://aaaautoeuimg.vshcdn.net/thumb/300202876_6_828x621x95.jpg",
-        "https://aaaautoeuimg.vshcdn.net/thumb/300202876_1_828x621x95.jpg",
-        "https://aaaautoeuimg.vshcdn.net/thumb/300202876_2_828x621x95.jpg",
-        "https://aaaautoeuimg.vshcdn.net/thumb/300202876_3_828x621x95.jpg",
-        "https://aaaautoeuimg.vshcdn.net/thumb/300202876_5_828x621x95.jpg",
-        "https://aaaautoeuimg.vshcdn.net/thumb/300202876_7_828x621x95.jpg",
-        "https://aaaautoeuimg.vshcdn.net/thumb/300202876_11_828x621x95.jpg",
-        "https://aaaautoeuimg.vshcdn.net/thumb/300202876_12_828x621x95.jpg"
-      ],
-      "archive": {
-        "status": "unverified",
-        "reason": "no_listing_url_confirmed_available; at_least_one_access_error",
-        "archivedAt": "2026-11-11T02:04:24.195000+00:00"
       }
     },
     {
@@ -8146,21 +8225,21 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IjeFS.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:37.867Z",
+          "lastAttemptAt": "2026-11-11T15:40:57.712Z",
           "lastCheckedAt": "2026-11-10T23:02:06Z",
           "lastVerifiedAt": "2026-11-10T23:02:06Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IjeFS.html",
-            "checkedAt": "2026-11-11T02:03:37.867Z",
+            "checkedAt": "2026-11-11T15:40:57.712Z",
             "availability": "access_error",
-            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+            "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
             "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-10T23:02:06Z",
       "lastVerifiedAt": "2026-11-10T23:02:06Z",
-      "lastAttemptAt": "2026-11-11T02:03:37.867Z",
+      "lastAttemptAt": "2026-11-11T15:40:57.712Z",
       "history": [
         {
           "eventId": "24237e7168820012dfef78df727c91d9b11fbc6444ed9de6ff0f776b9222362c",
@@ -8384,6 +8463,21 @@
             "id": "listing:otomoto:ID6IjeFS"
           },
           "changes": {}
+        },
+        {
+          "eventId": "acdd93e64b0923482313fc37d19daeb9b6674c0d3314f51dcad08aa4c0f75af2",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T15:40:57.712Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IjeFS.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IjeFS"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -8461,21 +8555,21 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6Iiq7J.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:37.867Z",
+          "lastAttemptAt": "2026-11-11T15:37:12.522Z",
           "lastCheckedAt": "2026-11-10T23:02:06Z",
           "lastVerifiedAt": "2026-11-10T23:02:06Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6Iiq7J.html",
-            "checkedAt": "2026-11-11T02:03:37.867Z",
+            "checkedAt": "2026-11-11T15:37:12.522Z",
             "availability": "access_error",
-            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+            "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
             "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-10T23:02:06Z",
       "lastVerifiedAt": "2026-11-10T23:02:06Z",
-      "lastAttemptAt": "2026-11-11T02:03:37.867Z",
+      "lastAttemptAt": "2026-11-11T15:37:12.522Z",
       "history": [
         {
           "eventId": "dfa21a98e1e3155d1b24c20cbf474c22468f15b398dbe2d8104e4eb9ffdb4b74",
@@ -8699,6 +8793,21 @@
             "id": "listing:otomoto:ID6Iiq7J"
           },
           "changes": {}
+        },
+        {
+          "eventId": "ad9efd5ed58223a7334539655a69bfdd6d03f982ad8d6d50db13a492200178f5",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T15:37:12.522Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6Iiq7J.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6Iiq7J"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -8776,21 +8885,21 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiUPp.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:37.867Z",
+          "lastAttemptAt": "2026-11-11T15:37:12.523Z",
           "lastCheckedAt": "2026-11-10T23:02:06Z",
           "lastVerifiedAt": "2026-11-10T23:02:06Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiUPp.html",
-            "checkedAt": "2026-11-11T02:03:37.867Z",
+            "checkedAt": "2026-11-11T15:37:12.523Z",
             "availability": "access_error",
-            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+            "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
             "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-10T23:02:06Z",
       "lastVerifiedAt": "2026-11-10T23:02:06Z",
-      "lastAttemptAt": "2026-11-11T02:03:37.867Z",
+      "lastAttemptAt": "2026-11-11T15:37:12.523Z",
       "history": [
         {
           "eventId": "f822962f3df35413f6d916e7c520555ec11add01d96773dfc1cb500c0dfe3d70",
@@ -9007,6 +9116,21 @@
           "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiUPp.html",
           "availability": "access_error",
           "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IiUPp"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "02c352d862a14390d75c4bff2d845cfaac1a8754bac07ff20bb919677ede4931",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T15:37:12.523Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiUPp.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
           "httpStatus": null,
           "photoCheck": null,
           "evidence": [],
@@ -9517,21 +9641,21 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiF0O.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:37.873Z",
+          "lastAttemptAt": "2026-11-11T15:37:12.523Z",
           "lastCheckedAt": "2026-11-10T23:02:06Z",
           "lastVerifiedAt": "2026-11-10T23:02:06Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiF0O.html",
-            "checkedAt": "2026-11-11T02:03:37.873Z",
+            "checkedAt": "2026-11-11T15:37:12.523Z",
             "availability": "access_error",
-            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+            "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
             "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-10T23:02:06Z",
       "lastVerifiedAt": "2026-11-10T23:02:06Z",
-      "lastAttemptAt": "2026-11-11T02:03:37.873Z",
+      "lastAttemptAt": "2026-11-11T15:37:12.523Z",
       "history": [
         {
           "eventId": "d6426ce0cf7f7b76ee5d43ae4a0652c9ff20cdd0e5490cd0d14e25ff936b1f77",
@@ -9680,6 +9804,21 @@
             "id": "listing:otomoto:ID6IiF0O"
           },
           "changes": {}
+        },
+        {
+          "eventId": "a64b8fcc9144a456ca1ae0cd88ad3afacf799ee8d116422dd7e504ef52dc32d1",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T15:37:12.523Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiF0O.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IiF0O"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -9756,21 +9895,21 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IhGRc.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:37.874Z",
+          "lastAttemptAt": "2026-11-11T15:37:12.523Z",
           "lastCheckedAt": "2026-11-10T23:02:06Z",
           "lastVerifiedAt": "2026-11-10T23:02:06Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IhGRc.html",
-            "checkedAt": "2026-11-11T02:03:37.874Z",
+            "checkedAt": "2026-11-11T15:37:12.523Z",
             "availability": "access_error",
-            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+            "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
             "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-10T23:02:06Z",
       "lastVerifiedAt": "2026-11-10T23:02:06Z",
-      "lastAttemptAt": "2026-11-11T02:03:37.874Z",
+      "lastAttemptAt": "2026-11-11T15:37:12.523Z",
       "history": [
         {
           "eventId": "7bd1af73f95c2ef42f03a480adc4095ec9103b41491dac1d142cc3a337854631",
@@ -9918,6 +10057,21 @@
             "id": "listing:otomoto:ID6IhGRc"
           },
           "changes": {}
+        },
+        {
+          "eventId": "67493e67d88a4875b4b3523232fd3768427eecc76605361c9585ad4204ca1864",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T15:37:12.523Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IhGRc.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IhGRc"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -9994,21 +10148,21 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IegxD.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:37.874Z",
+          "lastAttemptAt": "2026-11-11T15:37:12.524Z",
           "lastCheckedAt": "2026-11-10T23:02:06Z",
           "lastVerifiedAt": "2026-11-10T23:02:06Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IegxD.html",
-            "checkedAt": "2026-11-11T02:03:37.874Z",
+            "checkedAt": "2026-11-11T15:37:12.524Z",
             "availability": "access_error",
-            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+            "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
             "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-10T23:02:06Z",
       "lastVerifiedAt": "2026-11-10T23:02:06Z",
-      "lastAttemptAt": "2026-11-11T02:03:37.874Z",
+      "lastAttemptAt": "2026-11-11T15:37:12.524Z",
       "history": [
         {
           "eventId": "772dc24209fedac222708e5959858466aa7e438305d6238780189c26d4e5993a",
@@ -10228,6 +10382,21 @@
             "id": "listing:otomoto:ID6IegxD"
           },
           "changes": {}
+        },
+        {
+          "eventId": "ae53aa76a1540c7fdb4bd5a8b6ea9dfe1c054c0b58d07a2ae2df88f1971ac6d1",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T15:37:12.524Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IegxD.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IegxD"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -10325,13 +10494,13 @@
         {
           "url": "https://www.aaaauto.pl/detail/hyundai/i30/34923513?campaign=online-sale",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:04:24.196Z",
+          "lastAttemptAt": "2026-11-11T15:37:35.001Z",
           "lastObservation": {
             "url": "https://www.aaaauto.pl/detail/hyundai/i30/34923513?campaign=online-sale",
-            "checkedAt": "2026-11-11T02:04:24.196Z",
+            "checkedAt": "2026-11-11T15:37:35.001Z",
             "availability": "access_error",
-            "note": "Portal wyświetlił blokadę lub limit dostępu (HTTP 200).",
-            "httpStatus": 200
+            "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.aaaauto.pl",
+            "httpStatus": null
           },
           "lastCheckedAt": "2026-11-10T23:19:38Z",
           "lastVerifiedAt": "2026-11-10T23:19:38Z"
@@ -10339,7 +10508,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:19:38Z",
       "lastVerifiedAt": "2026-11-10T23:19:38Z",
-      "lastAttemptAt": "2026-11-11T02:04:24.196Z",
+      "lastAttemptAt": "2026-11-11T15:37:35.001Z",
       "history": [
         {
           "eventId": "bedf2ced94b0db9a6bd05a8d03a653946e89bee289ff32e1c3a75c9721da20ea",
@@ -10620,6 +10789,21 @@
             "id": "listing:otomoto:ID6IiExw"
           },
           "changes": {}
+        },
+        {
+          "eventId": "3ac46dffdba77810d73c489d318bbd8a4ea0912812e77f5757a5e918f7a622a5",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T15:37:35.001Z",
+          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34923513?campaign=online-sale",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.aaaauto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IiExw"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -10696,19 +10880,19 @@
         {
           "url": "https://www.aaaauto.pl/detail/hyundai/i30/34811098",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:04:24.197Z",
+          "lastAttemptAt": "2026-11-11T15:37:35.002Z",
           "lastObservation": {
             "url": "https://www.aaaauto.pl/detail/hyundai/i30/34811098",
-            "checkedAt": "2026-11-11T02:04:24.197Z",
+            "checkedAt": "2026-11-11T15:37:35.002Z",
             "availability": "access_error",
-            "note": "Portal wyświetlił blokadę lub limit dostępu (HTTP 200).",
-            "httpStatus": 200
+            "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.aaaauto.pl",
+            "httpStatus": null
           },
           "lastCheckedAt": "2026-11-10T23:19:38Z",
           "lastVerifiedAt": "2026-11-10T23:19:38Z"
         }
       ],
-      "lastAttemptAt": "2026-11-11T02:04:24.197Z",
+      "lastAttemptAt": "2026-11-11T15:37:35.002Z",
       "history": [
         {
           "eventId": "822c06376caf90c962dcc91464024e1cd71b2d0c75410394b931ad177adc28ad",
@@ -10950,6 +11134,21 @@
             "id": "listing:aaaauto:34811098"
           },
           "changes": {}
+        },
+        {
+          "eventId": "887d6123ec9003ffc50704d095b3bcc6a7f3592c3a901c8195ab34be690151f1",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T15:37:35.002Z",
+          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34811098",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.aaaauto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:aaaauto:34811098"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -11060,13 +11259,13 @@
         {
           "url": "https://www.aaaauto.pl/detail/hyundai/i30/34905225",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:04:24.197Z",
+          "lastAttemptAt": "2026-11-11T15:37:35.002Z",
           "lastObservation": {
             "url": "https://www.aaaauto.pl/detail/hyundai/i30/34905225",
-            "checkedAt": "2026-11-11T02:04:24.197Z",
+            "checkedAt": "2026-11-11T15:37:35.002Z",
             "availability": "access_error",
-            "note": "Portal wyświetlił blokadę lub limit dostępu (HTTP 200).",
-            "httpStatus": 200
+            "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.aaaauto.pl",
+            "httpStatus": null
           },
           "lastCheckedAt": "2026-11-10T23:19:38Z",
           "lastVerifiedAt": "2026-11-10T23:19:38Z"
@@ -11074,7 +11273,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:19:38Z",
       "lastVerifiedAt": "2026-11-10T23:19:38Z",
-      "lastAttemptAt": "2026-11-11T02:04:24.197Z",
+      "lastAttemptAt": "2026-11-11T15:37:35.002Z",
       "history": [
         {
           "eventId": "4541497e15aad5a475e6697361a398df3cfe4b78c73b546627267ba965e394c6",
@@ -11457,6 +11656,21 @@
           "availability": "access_error",
           "note": "Portal wyświetlił blokadę lub limit dostępu (HTTP 200).",
           "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:aaaauto:34905225"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "bef71f8ea1582b2e2263b632c98f7c1a755d7b652f0998abd03dff22a60b03c7",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T15:37:35.002Z",
+          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34905225",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.aaaauto.pl",
+          "httpStatus": null,
           "photoCheck": null,
           "evidence": [],
           "reportedFields": {
@@ -15120,21 +15334,21 @@
         {
           "url": "https://www.aaaauto.pl/detail/hyundai/i30/34920519",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:04:24.499Z",
+          "lastAttemptAt": "2026-11-11T15:37:35.003Z",
           "lastCheckedAt": "2026-11-10T23:19:38Z",
           "lastVerifiedAt": "2026-11-10T23:19:38Z",
           "lastObservation": {
             "url": "https://www.aaaauto.pl/detail/hyundai/i30/34920519",
-            "checkedAt": "2026-11-11T02:04:24.499Z",
+            "checkedAt": "2026-11-11T15:37:35.003Z",
             "availability": "access_error",
-            "note": "Portal wyświetlił blokadę lub limit dostępu (HTTP 200).",
-            "httpStatus": 200
+            "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.aaaauto.pl",
+            "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-10T23:19:38Z",
       "lastVerifiedAt": "2026-11-10T23:19:38Z",
-      "lastAttemptAt": "2026-11-11T02:04:24.499Z",
+      "lastAttemptAt": "2026-11-11T15:37:35.003Z",
       "history": [
         {
           "eventId": "c9963abb803328de2e07851854c110b41c52fd2a47a8e399919ba5773525b1f6",
@@ -15357,6 +15571,21 @@
           "availability": "access_error",
           "note": "Portal wyświetlił blokadę lub limit dostępu (HTTP 200).",
           "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:aaaauto:34920519"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "8bfe8f9bb4ff86caeb1978874243b9eaa966b316b0f8e5b2456b46e7d59631ca",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T15:37:35.003Z",
+          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34920519",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.aaaauto.pl",
+          "httpStatus": null,
           "photoCheck": null,
           "evidence": [],
           "reportedFields": {

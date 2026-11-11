@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 import { portalNavigationPolicy } from "./portal-robots.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const ERROR_RE = /access denied|verify you are human|captcha|robot check|dostęp został zablokowany|zbyt wiele żądań/i;
+const ERROR_RE = /access denied|verify you are human|captcha|dostęp został zablokowany|zbyt wiele żądań/i;
 const CLOSED_RE = /(?:ogłoszenie|oferta)\s+nie\s+jest\s+(?:już\s+)?(?:dostępne|dostępna)|(?:ogłoszenie|oferta)\s+(?:jest\s+)?(?:już\s+)?(?:niedostępne|niedostępna|nieaktualne|nieaktualna|zakończone|zakończona|usunięte|usunięta|sprzedane|sprzedana)|(?:ogłoszenie|oferta)\s+(?:został[oa]?\s+(?:zakończon[ae]|usunięt[ae]|sprzedan[ey])|trafił[oa]?\s+do\s+archiwum)|(?:pojazd|samochód|auto)\s+(?:został[oa]?\s+)?sprzedan[ey]|oferta\s+w\s+archiwum|nie\s+znaleźliśmy\s+tej\s+oferty|(?:nie\s+znaleziono|nie\s+ma)\s+(?:takiego\s+)?(?:ogłoszenia|ogloszenia|oferty)|(?:ogłoszenie|oferta)\s+nie\s+istnieje|this\s+(?:listing|ad)\s+is\s+no\s+longer\s+available|listing\s+has\s+ended/i;
 
 function readStdin() {
@@ -61,8 +61,8 @@ async function main() {
     throw new Error("Usage: npm run availability:check -- --claim-stdin < claimed-task.json");
   }
   const task = await readStdin();
-  if (task?.kind !== "availability" || task.state !== "running" || !task.worker || !task.id || !task.runId) {
-    throw new Error("Input must be the JSON claim for a running availability task, with runId and worker");
+  if (!["availability", "archive-availability"].includes(task?.kind) || task.state !== "running" || !task.worker || !task.id || !task.runId) {
+    throw new Error("Input must be the JSON claim for a running availability or archive-availability task, with runId and worker");
   }
   if (!Array.isArray(task.refreshTargets) || !task.refreshTargets.length) {
     throw new Error("Availability task has no refreshTargets");
@@ -147,7 +147,9 @@ async function main() {
           const renderedTitle = await page.title().catch(() => "");
           const renderedText = await page.locator("body").innerText({ timeout: 2500 }).catch(() => "");
           const visible = `${renderedTitle} ${renderedText}`.replace(/\s+/g, " ").trim();
-          if (httpStatus === 403 || httpStatus === 429 || ERROR_RE.test(visible)) {
+          proof = liveCardSignals(visible, target.title);
+          const hasLiveCardProof = proof.identity && proof.contact && proof.price;
+          if (httpStatus === 403 || httpStatus === 429 || (ERROR_RE.test(visible) && !hasLiveCardProof)) {
             blockedCount += 1;
             note = `Portal wyświetlił blokadę lub limit dostępu${httpStatus ? ` (HTTP ${httpStatus})` : ""}.`;
           } else if (httpStatus === 404 && !CLOSED_RE.test(visible)) {
@@ -159,7 +161,6 @@ async function main() {
               closedMessage = closed[0];
               note = `Portal wyświetlił komunikat zamknięcia: „${closed[0]}”.`;
             } else {
-              proof = liveCardSignals(visible, target.title);
               if (httpStatus >= 200 && httpStatus < 300 && visible.length > 80 &&
                   proof.identity && proof.contact && proof.price) {
                 status = "available";

@@ -91,7 +91,7 @@ def validate_result(result, task):
         raise ValueError("Full outcome requires complete coverage")
     if task["state"] == "no_matches" and result["offers"]:
         raise ValueError("no_matches result cannot contain offers")
-    if task["state"] == "blocked" and task.get("kind") not in ("refresh", "availability") and result["offers"]:
+    if task["state"] == "blocked" and task.get("kind") not in ("refresh", "availability", "archive-availability") and result["offers"]:
         raise ValueError("Blocked search result cannot contain offers")
     if result["offers"]:
         timestamp(result.get("checkedAt"))
@@ -149,7 +149,7 @@ def validate_worker_result(result, task, model, root=ROOT, require_search_cache=
     finished_task = {**task, "state": result.get("outcome")}
     validate_result(result, finished_task)
     timestamp(result.get("checkedAt"))
-    if task.get("kind") not in ("search", "refresh", "availability"):
+    if task.get("kind") not in ("search", "refresh", "availability", "archive-availability"):
         raise ValueError("Unknown task kind")
     if task["kind"] == "search":
         coverage = result["coverage"]
@@ -253,7 +253,7 @@ def validate_worker_result(result, task, model, root=ROOT, require_search_cache=
             missing = [field for field in ("saleType", "lpgInstalled") if field not in offer]
             if missing:
                 raise ValueError(f"Refresh offer {index} is missing required fields: " + ", ".join(missing))
-    if task["kind"] in ("refresh", "availability"):
+    if task["kind"] in ("refresh", "availability", "archive-availability"):
         targets = {(item["offerId"], normalized_url(item["url"]))
                    for item in task.get("refreshTargets", [])}
         target_urls = {url for _, url in targets}
@@ -266,7 +266,7 @@ def validate_worker_result(result, task, model, root=ROOT, require_search_cache=
             observed.append(pair)
         if len(observed) != len(set(observed)):
             raise ValueError("Refresh result contains duplicate target observations")
-        if task["kind"] == "availability":
+        if task["kind"] in ("availability", "archive-availability"):
             for offer in result["offers"]:
                 observation = offer["observation"]
                 status = observation.get("httpStatus")
@@ -427,6 +427,7 @@ def prepare(root, run_id, config):
     terminal = {"complete", "partial", "blocked", "no_matches"}
     pending_observations = []
     imported_results = {}
+    archive_reactivated_ids = set()
     for task in queue["tasks"]:
         if task["state"] not in terminal:
             skipped.append({"taskId": task["id"], "reason": "task_not_finished"})
@@ -491,6 +492,21 @@ def prepare(root, run_id, config):
                 conflicts.append({"taskId": task["id"], "offerId": incoming.get("id"),
                                   "url": observation["url"], "reason": reason})
                 continue
+            if task.get("kind") == "archive-availability":
+                if not matches:
+                    skipped.append({"taskId": task["id"], "offerId": incoming.get("id"),
+                                    "url": observation["url"], "reason": "archived_offer_not_found"})
+                    continue
+                if collection == "offers" and old.get("id") in archive_reactivated_ids:
+                    pass
+                elif collection != "archivedOffers":
+                    skipped.append({"taskId": task["id"], "offerId": incoming.get("id"),
+                                    "url": observation["url"], "reason": "offer_no_longer_archived"})
+                    continue
+                elif (old.get("archive") or {}).get("status") == "excluded":
+                    skipped.append({"taskId": task["id"], "offerId": incoming.get("id"),
+                                    "url": observation["url"], "reason": "manually_excluded"})
+                    continue
             if (task.get("kind") in ("refresh", "availability") and matches
                     and collection == "archivedOffers"):
                 skipped.append({"taskId": task["id"], "offerId": incoming.get("id"),
@@ -502,7 +518,7 @@ def prepare(root, run_id, config):
                 continue
             merged, fields = merge_offer(old, incoming, observation, model,
                                          requirements_for_model(model, config["requirements"]), event_id, run_id,
-                                         availability_only=task.get("kind") == "availability")
+                                         availability_only=task.get("kind") in ("availability", "archive-availability"))
             manually_excluded = bool(old and (old.get("archive") or {}).get("status") == "excluded")
             reactivated = bool(matches and collection == "archivedOffers" and
                                observation["availability"] == "available" and not manually_excluded)
@@ -514,6 +530,8 @@ def prepare(root, run_id, config):
                     documents[model["key"]][collection][index] = merged
             else:
                 documents[model["key"]]["offers"].append(merged)
+            if reactivated and task.get("kind") == "archive-availability":
+                archive_reactivated_ids.add(merged["id"])
             ledger["events"].append(event_id)
             changes.append({"taskId": task["id"], "offerId": merged["id"],
                             "kind": "reactivated" if reactivated else ("updated" if old else "new"),
@@ -551,7 +569,9 @@ def prepare(root, run_id, config):
                                 else state.get("status"))
             all_confirmed_closed = bool(urls) and all(status in ("sold", "removed") for status in statuses)
             all_terminal_and_unavailable = (archive_access_errors and bool(urls)
-                                            and all(status in ("sold", "removed", "access_error") for status in statuses))
+                                            and all(status in ("sold", "removed", "access_error") for status in statuses)
+                                            and all(not (status == "access_error" and states[url].get("status") == "available")
+                                                    for url, status in zip(urls, statuses)))
             if all_confirmed_closed or all_terminal_and_unavailable:
                 archive_times = []
                 for url in urls:

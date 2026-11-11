@@ -12,8 +12,8 @@ użytkownik go nie wybierze. Opcje:
 
 - **Szukaj nowych ofert** — przeszukaj wszystkie aktywne modele i portale.
 - **Sprawdź dostępność** — sprawdź, czy aktywne ogłoszenia nadal są dostępne.
+- **Sprawdź archiwum** — sprawdź, czy zarchiwizowane ogłoszenia znów są dostępne.
 - **Odśwież dane ofert** — ponownie odczytaj zapisane karty i potwierdzone dane.
-- **Poleć modele** — wykonaj dwuetapowy ranking modeli i ofert.
 
 Użytkownik może wybrać numer lub opisać cel własnymi słowami. Zwykłe prośby
 wykonuj bez wymagania komendy `/flow` ani nazw wewnętrznych.
@@ -39,40 +39,6 @@ ze zdjęć faktów o stanie, wyposażeniu ani uszkodzeniach. Jeśli portal nie u
 bezpośrednich adresów, zdjęcie jest niedostępne albo link nie jest HTTPS, pomiń je.
 
 ## Praca równoległa
-
-Gdy użytkownik w czacie prosi o analizę „top modeli”, „polecane modele” lub
-podobny ranking, uruchom agentowy, dwuetapowy przebieg rekomendacji. Nie wymagaj
-od użytkownika ręcznego uruchamiania poleceń CLI.
-
-1. Koordynator uruchamia `python -B scripts/car-search.py recommend-plan --run
-   <run-id> --agents <liczba>` i rozdziela zadania `recommendation_model` między
-   dostępnych subagentów. Etap obejmuje wszystkie aktywne modele z przynajmniej
-   jednym kwalifikującym się ogłoszeniem HTTPS. Każdy agent ocenia jeden model
-   na podstawie jego karty wiedzy, ofert i źródeł internetowych. Nie otwiera
-   jeszcze wszystkich kart ogłoszeń. Wnioski muszą cytować źródła i jawnie
-   oznaczać niepewność.
-2. Koordynator nadzoruje wyniki, zapisuje je przez standardowe `finish`, a po
-   zakończeniu etapu uruchamia `recommend-select`. Wagi: bezpieczeństwo rodzinne
-   30, niezawodność 25, bagażnik 20, moc i użytkowanie miasto/trasa 20, kamera 5.
-   Status `confirmed` otrzymuje pełne punkty, `partial` połowę, `unknown` zero.
-   Twarde wymagania przypisane do danego modelu nie mogą być skompensowane punktacją.
-3. Dla pięciu najwyżej ocenionych modeli koordynator rozdziela po jednym zadaniu
-   `recommendation_listing` na model. Agent sprawdza kandydatów po kolei; przy
-   zakończonej lub niedostępnej karcie przechodzi do następnej oferty tego samego
-   modelu. Weryfikuje bieżącą dostępność, warunki ceny, dokładny wariant auta,
-   wyposażenie i pozostałe pola po karcie oraz dokładne specyfikacje po źródłach.
-   Nie analizuje zdjęć ani nie wyciąga z nich faktów. Jeśli karta pokazuje
-   bezpośrednie adresy HTTPS zdjęć danego auta, zapisuje do 12 w `photos`;
-   w przeciwnym razie pomija pole. Teksty widoczne w rankingu pisze po polsku.
-4. Po `finish` wszystkich pięciu zadań koordynator uruchamia
-   `recommend-finalize`. Wynik trafia do `reports/recommendations.json`, skąd
-   zakładka „Polecane modele” ładuje ranking. Nie importuj rekomendacji do
-   `offers/*.json` i niczego nie publikuj.
-
-Koordynator sam wykonuje `recommend-plan`, `claim`, `finish`, `recommend-select`
-i `recommend-finalize`; agenci nie zmieniają kolejki. Utrzymuj najwyżej jedno
-aktywne zadanie na subagenta. Zachowuj wyniki fazy modelowej i listingowej w
-`runs/<run-id>/results/`; nie nadpisuj dowodów bez zachowania kopii.
 
 Gdy użytkownik prosi o szukanie nowych ofert, uruchom oddzielny przebieg `plan`
 bez ograniczeń `--model` i `--source`: obejmuje wszystkie aktywne modele oraz
@@ -127,6 +93,12 @@ zamknięciu wszystkich adresów, w pozostałych przypadkach `unverified`. Rekord
 `excluded` pozostają tam i nie są przywracane automatycznie.
 Jeśli użytkownik wyraźnie prosi o pełne odświeżenie danych, użyj zamiast tego
 `refresh-plan` i jego reguł.
+Gdy użytkownik prosi o sprawdzenie dostępności ofert w archiwum, uruchom
+`archive-availability-plan`. Sprawdzaj wyłącznie `archivedOffers` ze statusem
+`closed` lub `unverified`; status `excluded` pomijaj. Ten przebieg nie aktualizuje
+danych auta i nie dotyka aktywnych ofert. Importuj z niego tylko potwierdzone
+`available`; taki rekord przenieś do `offers`, usuń z `archivedOffers` i zachowaj
+historię. Wyniki `sold`, `removed` i `access_error` pozostawiają rekord w archiwum.
 
 Koordynator przygotowuje przebieg poleceniem `plan` i tylko on zmienia `tasks.json`.
 Główny agent koordynuje kilku wykonawców; zadania pozostają osobne dla pary
