@@ -1,12 +1,11 @@
 {
-  "generatedAt": "2026-11-10T12:05:38.192155+00:00",
+  "generatedAt": "2026-11-10T22:16:21.964177+00:00",
   "configuration": {
     "requirements": {
       "version": 1,
       "purchase": {
         "maxPriceGrossPln": 55000,
         "scope": "purchase_only",
-        "mandatoryFinancingAllowed": false,
         "priceExceptions": [
           {
             "rule": "slightly_above_limit_only_for_exceptional_offer",
@@ -129,7 +128,8 @@
         "allowed": true,
         "mustBeMarked": true,
         "installationDocumentsMustBeChecked": true
-      }
+      },
+      "purpose": "template_for_new_models_only_active_model_requirements_are_in_search_models_json"
     },
     "models": {
       "version": 1,
@@ -185,7 +185,136 @@
             },
             "fullRecommendedThresholdMet": false
           },
-          "variantConstraints": []
+          "variantConstraints": [],
+          "requirements": {
+            "version": 1,
+            "purchase": {
+              "maxPriceGrossPln": 55000,
+              "scope": "purchase_only",
+              "priceExceptions": [
+                {
+                  "rule": "slightly_above_limit_only_for_exceptional_offer",
+                  "amountPln": null,
+                  "userMustConfirm": true
+                }
+              ],
+              "auctionsAllowed": false
+            },
+            "listingEvidence": {
+              "requiredFields": [],
+              "preferredFields": [
+                "vin",
+                "firstRegistrationDate"
+              ],
+              "missingPreferredFieldHandling": "mark_missing_and_consider_as_information_gap; do_not_automatically_exclude",
+              "registrationNumber": "record_presence_only; may be visible in listing photos; do not spend effort extracting from images or use as a strong ranking factor",
+              "independentInspectionRefusal": "exclude_only_if_listing_explicitly_states_inspection_is_not_allowed"
+            },
+            "sellerTypes": "any_non_auction_seller_if_price_conditions_fit",
+            "sellerClassification": {
+              "field": "offerType",
+              "values": [
+                "private",
+                "company",
+                "leasing_return",
+                "unknown"
+              ],
+              "unknownHandling": "mark_unknown; do_not_infer_from_platform_or_ad_style"
+            },
+            "priceAssessment": {
+              "baseLimitGrossPln": 55000,
+              "slightExceptionalOverageAllowed": true,
+              "import": "include material mandatory import costs; minor costs may be noted but ignored in initial screening"
+            },
+            "familyEquipment": {
+              "isofix": "important; if not stated, verify whether standard for exact model/year/market/trim; otherwise mark unknown"
+            },
+            "yearMin": 2018,
+            "mileage": {
+              "preferredMaxKm": 170000,
+              "hardMaxKm": 170000,
+              "assessment": "hard_maximum; exclude offers above 170000 km"
+            },
+            "transmissions": [
+              "manual",
+              "automatic"
+            ],
+            "camera": {
+              "required": true,
+              "preferred": true,
+              "requiredAtDelivery": false,
+              "mustMarkIfAbsent": true,
+              "retrofitAllowed": true,
+              "retrofitCompatibilityMustBeConfirmed": true
+            },
+            "frontParkingSensors": "preferred",
+            "structuralDamageAllowed": false,
+            "cosmeticRepairsAllowed": true,
+            "location": "PL",
+            "origins": [
+              "domestic",
+              "import"
+            ],
+            "bodyScope": [
+              "wagon",
+              "sedan",
+              "suv",
+              "crossover",
+              "hatchback",
+              "minivan"
+            ],
+            "modelScope": "active_models_in_search-models.json_only",
+            "engineScope": "listed_variants_only",
+            "fuelScope": "all_fuels; LPG allowed and must be marked with installation documents checked",
+            "transmissionPreference": "none; manual and automatic are equally acceptable",
+            "use": {
+              "adults": 2,
+              "children": 1,
+              "cityShare": 0.5,
+              "strollerAndLuggageRequired": true,
+              "annualMileageKm": {
+                "min": 12000,
+                "max": 15000
+              },
+              "typicalCityTripMinutes": 30
+            },
+            "rankingPriorities": [
+              "technical_condition",
+              "documented_service",
+              "engine_durability",
+              "equipment",
+              "value"
+            ],
+            "unknownHardRequirement": "check",
+            "openQuestions": {
+              "typicalCityTripKm": null,
+              "strollerDimensionsCm": null,
+              "cameraRequiredAtDelivery": null,
+              "fuelScopeBeyondSelectedEngines": "all fuels confirmed; engine variants remain restricted to configured list"
+            },
+            "confirmedByUser": [
+              "engineScope",
+              "lpg",
+              "modelScope",
+              "purchase.auctionsAllowed",
+              "purchase.maxPriceGrossPln",
+              "purchase.scope",
+              "transmissionPreference",
+              "use.annualMileageKm",
+              "use.typicalCityTripMinutes"
+            ],
+            "notes": [
+              "Wybrane silniki przeniesiono z dotychczasowych danych; nie oznacza to zakazu innych paliw ustalonego przez użytkownika.",
+              "Użytkownik podał czas jazdy miejskiej około 30 minut, nie odległość. Nie przeliczać automatycznie na kilometry.",
+              "Skrzynia manualna i automatyczna są równie akceptowalne; przed zakupem skrzynię ocenić dla konkretnego wariantu.",
+              "Katalog modeli i silników obejmuje wyłącznie aktualną listę użytkownika. Status wyboru nie jest rekomendacją niezawodności."
+            ],
+            "lpg": {
+              "allowed": true,
+              "mustBeMarked": true,
+              "installationDocumentsMustBeChecked": true
+            }
+          }
         },
         {
           "key": "kia-ceed-iii-sw",
@@ -232,6 +361,135 @@
               }
             },
             "fullRecommendedThresholdMet": false
+          },
+          "requirements": {
+            "version": 1,
+            "purchase": {
+              "maxPriceGrossPln": 55000,
+              "scope": "purchase_only",
+              "priceExceptions": [
+                {
+                  "rule": "slightly_above_limit_only_for_exceptional_offer",
+                  "amountPln": null,
+                  "userMustConfirm": true
+                }
+              ],
+              "auctionsAllowed": false
+            },
+            "listingEvidence": {
+              "requiredFields": [],
+              "preferredFields": [
+                "vin",
+                "firstRegistrationDate"
+              ],
+              "missingPreferredFieldHandling": "mark_missing_and_consider_as_information_gap; do_not_automatically_exclude",
+              "registrationNumber": "record_presence_only; may be visible in listing photos; do not spend effort extracting from images or use as a strong ranking factor",
+              "independentInspectionRefusal": "exclude_only_if_listing_explicitly_states_inspection_is_not_allowed"
+            },
+            "sellerTypes": "any_non_auction_seller_if_price_conditions_fit",
+            "sellerClassification": {
+              "field": "offerType",
+              "values": [
+                "private",
+                "company",
+                "leasing_return",
+                "unknown"
+              ],
+              "unknownHandling": "mark_unknown; do_not_infer_from_platform_or_ad_style"
+            },
+            "priceAssessment": {
+              "baseLimitGrossPln": 55000,
+              "slightExceptionalOverageAllowed": true,
+              "import": "include material mandatory import costs; minor costs may be noted but ignored in initial screening"
+            },
+            "familyEquipment": {
+              "isofix": "important; if not stated, verify whether standard for exact model/year/market/trim; otherwise mark unknown"
+            },
+            "yearMin": 2018,
+            "mileage": {
+              "preferredMaxKm": 170000,
+              "hardMaxKm": 170000,
+              "assessment": "hard_maximum; exclude offers above 170000 km"
+            },
+            "transmissions": [
+              "manual",
+              "automatic"
+            ],
+            "camera": {
+              "required": true,
+              "preferred": true,
+              "requiredAtDelivery": false,
+              "mustMarkIfAbsent": true,
+              "retrofitAllowed": true,
+              "retrofitCompatibilityMustBeConfirmed": true
+            },
+            "frontParkingSensors": "preferred",
+            "structuralDamageAllowed": false,
+            "cosmeticRepairsAllowed": true,
+            "location": "PL",
+            "origins": [
+              "domestic",
+              "import"
+            ],
+            "bodyScope": [
+              "wagon",
+              "sedan",
+              "suv",
+              "crossover",
+              "hatchback",
+              "minivan"
+            ],
+            "modelScope": "active_models_in_search-models.json_only",
+            "engineScope": "listed_variants_only",
+            "fuelScope": "all_fuels; LPG allowed and must be marked with installation documents checked",
+            "transmissionPreference": "none; manual and automatic are equally acceptable",
+            "use": {
+              "adults": 2,
+              "children": 1,
+              "cityShare": 0.5,
+              "strollerAndLuggageRequired": true,
+              "annualMileageKm": {
+                "min": 12000,
+                "max": 15000
+              },
+              "typicalCityTripMinutes": 30
+            },
+            "rankingPriorities": [
+              "technical_condition",
+              "documented_service",
+              "engine_durability",
+              "equipment",
+              "value"
+            ],
+            "unknownHardRequirement": "check",
+            "openQuestions": {
+              "typicalCityTripKm": null,
+              "strollerDimensionsCm": null,
+              "cameraRequiredAtDelivery": null,
+              "fuelScopeBeyondSelectedEngines": "all fuels confirmed; engine variants remain restricted to configured list"
+            },
+            "confirmedByUser": [
+              "engineScope",
+              "lpg",
+              "modelScope",
+              "purchase.auctionsAllowed",
+              "purchase.maxPriceGrossPln",
+              "purchase.scope",
+              "transmissionPreference",
+              "use.annualMileageKm",
+              "use.typicalCityTripMinutes"
+            ],
+            "notes": [
+              "Wybrane silniki przeniesiono z dotychczasowych danych; nie oznacza to zakazu innych paliw ustalonego przez użytkownika.",
+              "Użytkownik podał czas jazdy miejskiej około 30 minut, nie odległość. Nie przeliczać automatycznie na kilometry.",
+              "Skrzynia manualna i automatyczna są równie akceptowalne; przed zakupem skrzynię ocenić dla konkretnego wariantu.",
+              "Katalog modeli i silników obejmuje wyłącznie aktualną listę użytkownika. Status wyboru nie jest rekomendacją niezawodności."
+            ],
+            "lpg": {
+              "allowed": true,
+              "mustBeMarked": true,
+              "installationDocumentsMustBeChecked": true
+            }
           }
         },
         {
@@ -279,6 +537,135 @@
               }
             },
             "fullRecommendedThresholdMet": false
+          },
+          "requirements": {
+            "version": 1,
+            "purchase": {
+              "maxPriceGrossPln": 55000,
+              "scope": "purchase_only",
+              "priceExceptions": [
+                {
+                  "rule": "slightly_above_limit_only_for_exceptional_offer",
+                  "amountPln": null,
+                  "userMustConfirm": true
+                }
+              ],
+              "auctionsAllowed": false
+            },
+            "listingEvidence": {
+              "requiredFields": [],
+              "preferredFields": [
+                "vin",
+                "firstRegistrationDate"
+              ],
+              "missingPreferredFieldHandling": "mark_missing_and_consider_as_information_gap; do_not_automatically_exclude",
+              "registrationNumber": "record_presence_only; may be visible in listing photos; do not spend effort extracting from images or use as a strong ranking factor",
+              "independentInspectionRefusal": "exclude_only_if_listing_explicitly_states_inspection_is_not_allowed"
+            },
+            "sellerTypes": "any_non_auction_seller_if_price_conditions_fit",
+            "sellerClassification": {
+              "field": "offerType",
+              "values": [
+                "private",
+                "company",
+                "leasing_return",
+                "unknown"
+              ],
+              "unknownHandling": "mark_unknown; do_not_infer_from_platform_or_ad_style"
+            },
+            "priceAssessment": {
+              "baseLimitGrossPln": 55000,
+              "slightExceptionalOverageAllowed": true,
+              "import": "include material mandatory import costs; minor costs may be noted but ignored in initial screening"
+            },
+            "familyEquipment": {
+              "isofix": "important; if not stated, verify whether standard for exact model/year/market/trim; otherwise mark unknown"
+            },
+            "yearMin": 2018,
+            "mileage": {
+              "preferredMaxKm": 170000,
+              "hardMaxKm": 170000,
+              "assessment": "hard_maximum; exclude offers above 170000 km"
+            },
+            "transmissions": [
+              "manual",
+              "automatic"
+            ],
+            "camera": {
+              "required": true,
+              "preferred": true,
+              "requiredAtDelivery": false,
+              "mustMarkIfAbsent": true,
+              "retrofitAllowed": true,
+              "retrofitCompatibilityMustBeConfirmed": true
+            },
+            "frontParkingSensors": "preferred",
+            "structuralDamageAllowed": false,
+            "cosmeticRepairsAllowed": true,
+            "location": "PL",
+            "origins": [
+              "domestic",
+              "import"
+            ],
+            "bodyScope": [
+              "wagon",
+              "sedan",
+              "suv",
+              "crossover",
+              "hatchback",
+              "minivan"
+            ],
+            "modelScope": "active_models_in_search-models.json_only",
+            "engineScope": "listed_variants_only",
+            "fuelScope": "all_fuels; LPG allowed and must be marked with installation documents checked",
+            "transmissionPreference": "none; manual and automatic are equally acceptable",
+            "use": {
+              "adults": 2,
+              "children": 1,
+              "cityShare": 0.5,
+              "strollerAndLuggageRequired": true,
+              "annualMileageKm": {
+                "min": 12000,
+                "max": 15000
+              },
+              "typicalCityTripMinutes": 30
+            },
+            "rankingPriorities": [
+              "technical_condition",
+              "documented_service",
+              "engine_durability",
+              "equipment",
+              "value"
+            ],
+            "unknownHardRequirement": "check",
+            "openQuestions": {
+              "typicalCityTripKm": null,
+              "strollerDimensionsCm": null,
+              "cameraRequiredAtDelivery": null,
+              "fuelScopeBeyondSelectedEngines": "all fuels confirmed; engine variants remain restricted to configured list"
+            },
+            "confirmedByUser": [
+              "engineScope",
+              "lpg",
+              "modelScope",
+              "purchase.auctionsAllowed",
+              "purchase.maxPriceGrossPln",
+              "purchase.scope",
+              "transmissionPreference",
+              "use.annualMileageKm",
+              "use.typicalCityTripMinutes"
+            ],
+            "notes": [
+              "Wybrane silniki przeniesiono z dotychczasowych danych; nie oznacza to zakazu innych paliw ustalonego przez użytkownika.",
+              "Użytkownik podał czas jazdy miejskiej około 30 minut, nie odległość. Nie przeliczać automatycznie na kilometry.",
+              "Skrzynia manualna i automatyczna są równie akceptowalne; przed zakupem skrzynię ocenić dla konkretnego wariantu.",
+              "Katalog modeli i silników obejmuje wyłącznie aktualną listę użytkownika. Status wyboru nie jest rekomendacją niezawodności."
+            ],
+            "lpg": {
+              "allowed": true,
+              "mustBeMarked": true,
+              "installationDocumentsMustBeChecked": true
+            }
           }
         },
         {
@@ -321,6 +708,135 @@
               }
             },
             "fullRecommendedThresholdMet": false
+          },
+          "requirements": {
+            "version": 1,
+            "purchase": {
+              "maxPriceGrossPln": 55000,
+              "scope": "purchase_only",
+              "priceExceptions": [
+                {
+                  "rule": "slightly_above_limit_only_for_exceptional_offer",
+                  "amountPln": null,
+                  "userMustConfirm": true
+                }
+              ],
+              "auctionsAllowed": false
+            },
+            "listingEvidence": {
+              "requiredFields": [],
+              "preferredFields": [
+                "vin",
+                "firstRegistrationDate"
+              ],
+              "missingPreferredFieldHandling": "mark_missing_and_consider_as_information_gap; do_not_automatically_exclude",
+              "registrationNumber": "record_presence_only; may be visible in listing photos; do not spend effort extracting from images or use as a strong ranking factor",
+              "independentInspectionRefusal": "exclude_only_if_listing_explicitly_states_inspection_is_not_allowed"
+            },
+            "sellerTypes": "any_non_auction_seller_if_price_conditions_fit",
+            "sellerClassification": {
+              "field": "offerType",
+              "values": [
+                "private",
+                "company",
+                "leasing_return",
+                "unknown"
+              ],
+              "unknownHandling": "mark_unknown; do_not_infer_from_platform_or_ad_style"
+            },
+            "priceAssessment": {
+              "baseLimitGrossPln": 55000,
+              "slightExceptionalOverageAllowed": true,
+              "import": "include material mandatory import costs; minor costs may be noted but ignored in initial screening"
+            },
+            "familyEquipment": {
+              "isofix": "important; if not stated, verify whether standard for exact model/year/market/trim; otherwise mark unknown"
+            },
+            "yearMin": 2018,
+            "mileage": {
+              "preferredMaxKm": 170000,
+              "hardMaxKm": 170000,
+              "assessment": "hard_maximum; exclude offers above 170000 km"
+            },
+            "transmissions": [
+              "manual",
+              "automatic"
+            ],
+            "camera": {
+              "required": true,
+              "preferred": true,
+              "requiredAtDelivery": false,
+              "mustMarkIfAbsent": true,
+              "retrofitAllowed": true,
+              "retrofitCompatibilityMustBeConfirmed": true
+            },
+            "frontParkingSensors": "preferred",
+            "structuralDamageAllowed": false,
+            "cosmeticRepairsAllowed": true,
+            "location": "PL",
+            "origins": [
+              "domestic",
+              "import"
+            ],
+            "bodyScope": [
+              "wagon",
+              "sedan",
+              "suv",
+              "crossover",
+              "hatchback",
+              "minivan"
+            ],
+            "modelScope": "active_models_in_search-models.json_only",
+            "engineScope": "listed_variants_only",
+            "fuelScope": "all_fuels; LPG allowed and must be marked with installation documents checked",
+            "transmissionPreference": "none; manual and automatic are equally acceptable",
+            "use": {
+              "adults": 2,
+              "children": 1,
+              "cityShare": 0.5,
+              "strollerAndLuggageRequired": true,
+              "annualMileageKm": {
+                "min": 12000,
+                "max": 15000
+              },
+              "typicalCityTripMinutes": 30
+            },
+            "rankingPriorities": [
+              "technical_condition",
+              "documented_service",
+              "engine_durability",
+              "equipment",
+              "value"
+            ],
+            "unknownHardRequirement": "check",
+            "openQuestions": {
+              "typicalCityTripKm": null,
+              "strollerDimensionsCm": null,
+              "cameraRequiredAtDelivery": null,
+              "fuelScopeBeyondSelectedEngines": "all fuels confirmed; engine variants remain restricted to configured list"
+            },
+            "confirmedByUser": [
+              "engineScope",
+              "lpg",
+              "modelScope",
+              "purchase.auctionsAllowed",
+              "purchase.maxPriceGrossPln",
+              "purchase.scope",
+              "transmissionPreference",
+              "use.annualMileageKm",
+              "use.typicalCityTripMinutes"
+            ],
+            "notes": [
+              "Wybrane silniki przeniesiono z dotychczasowych danych; nie oznacza to zakazu innych paliw ustalonego przez użytkownika.",
+              "Użytkownik podał czas jazdy miejskiej około 30 minut, nie odległość. Nie przeliczać automatycznie na kilometry.",
+              "Skrzynia manualna i automatyczna są równie akceptowalne; przed zakupem skrzynię ocenić dla konkretnego wariantu.",
+              "Katalog modeli i silników obejmuje wyłącznie aktualną listę użytkownika. Status wyboru nie jest rekomendacją niezawodności."
+            ],
+            "lpg": {
+              "allowed": true,
+              "mustBeMarked": true,
+              "installationDocumentsMustBeChecked": true
+            }
           }
         },
         {
@@ -363,6 +879,135 @@
               }
             },
             "fullRecommendedThresholdMet": false
+          },
+          "requirements": {
+            "version": 1,
+            "purchase": {
+              "maxPriceGrossPln": 55000,
+              "scope": "purchase_only",
+              "priceExceptions": [
+                {
+                  "rule": "slightly_above_limit_only_for_exceptional_offer",
+                  "amountPln": null,
+                  "userMustConfirm": true
+                }
+              ],
+              "auctionsAllowed": false
+            },
+            "listingEvidence": {
+              "requiredFields": [],
+              "preferredFields": [
+                "vin",
+                "firstRegistrationDate"
+              ],
+              "missingPreferredFieldHandling": "mark_missing_and_consider_as_information_gap; do_not_automatically_exclude",
+              "registrationNumber": "record_presence_only; may be visible in listing photos; do not spend effort extracting from images or use as a strong ranking factor",
+              "independentInspectionRefusal": "exclude_only_if_listing_explicitly_states_inspection_is_not_allowed"
+            },
+            "sellerTypes": "any_non_auction_seller_if_price_conditions_fit",
+            "sellerClassification": {
+              "field": "offerType",
+              "values": [
+                "private",
+                "company",
+                "leasing_return",
+                "unknown"
+              ],
+              "unknownHandling": "mark_unknown; do_not_infer_from_platform_or_ad_style"
+            },
+            "priceAssessment": {
+              "baseLimitGrossPln": 55000,
+              "slightExceptionalOverageAllowed": true,
+              "import": "include material mandatory import costs; minor costs may be noted but ignored in initial screening"
+            },
+            "familyEquipment": {
+              "isofix": "important; if not stated, verify whether standard for exact model/year/market/trim; otherwise mark unknown"
+            },
+            "yearMin": 2018,
+            "mileage": {
+              "preferredMaxKm": 170000,
+              "hardMaxKm": 170000,
+              "assessment": "hard_maximum; exclude offers above 170000 km"
+            },
+            "transmissions": [
+              "manual",
+              "automatic"
+            ],
+            "camera": {
+              "required": true,
+              "preferred": true,
+              "requiredAtDelivery": false,
+              "mustMarkIfAbsent": true,
+              "retrofitAllowed": true,
+              "retrofitCompatibilityMustBeConfirmed": true
+            },
+            "frontParkingSensors": "preferred",
+            "structuralDamageAllowed": false,
+            "cosmeticRepairsAllowed": true,
+            "location": "PL",
+            "origins": [
+              "domestic",
+              "import"
+            ],
+            "bodyScope": [
+              "wagon",
+              "sedan",
+              "suv",
+              "crossover",
+              "hatchback",
+              "minivan"
+            ],
+            "modelScope": "active_models_in_search-models.json_only",
+            "engineScope": "listed_variants_only",
+            "fuelScope": "all_fuels; LPG allowed and must be marked with installation documents checked",
+            "transmissionPreference": "none; manual and automatic are equally acceptable",
+            "use": {
+              "adults": 2,
+              "children": 1,
+              "cityShare": 0.5,
+              "strollerAndLuggageRequired": true,
+              "annualMileageKm": {
+                "min": 12000,
+                "max": 15000
+              },
+              "typicalCityTripMinutes": 30
+            },
+            "rankingPriorities": [
+              "technical_condition",
+              "documented_service",
+              "engine_durability",
+              "equipment",
+              "value"
+            ],
+            "unknownHardRequirement": "check",
+            "openQuestions": {
+              "typicalCityTripKm": null,
+              "strollerDimensionsCm": null,
+              "cameraRequiredAtDelivery": null,
+              "fuelScopeBeyondSelectedEngines": "all fuels confirmed; engine variants remain restricted to configured list"
+            },
+            "confirmedByUser": [
+              "engineScope",
+              "lpg",
+              "modelScope",
+              "purchase.auctionsAllowed",
+              "purchase.maxPriceGrossPln",
+              "purchase.scope",
+              "transmissionPreference",
+              "use.annualMileageKm",
+              "use.typicalCityTripMinutes"
+            ],
+            "notes": [
+              "Wybrane silniki przeniesiono z dotychczasowych danych; nie oznacza to zakazu innych paliw ustalonego przez użytkownika.",
+              "Użytkownik podał czas jazdy miejskiej około 30 minut, nie odległość. Nie przeliczać automatycznie na kilometry.",
+              "Skrzynia manualna i automatyczna są równie akceptowalne; przed zakupem skrzynię ocenić dla konkretnego wariantu.",
+              "Katalog modeli i silników obejmuje wyłącznie aktualną listę użytkownika. Status wyboru nie jest rekomendacją niezawodności."
+            ],
+            "lpg": {
+              "allowed": true,
+              "mustBeMarked": true,
+              "installationDocumentsMustBeChecked": true
+            }
           }
         },
         {
@@ -410,6 +1055,135 @@
               }
             },
             "fullRecommendedThresholdMet": false
+          },
+          "requirements": {
+            "version": 1,
+            "purchase": {
+              "maxPriceGrossPln": 55000,
+              "scope": "purchase_only",
+              "priceExceptions": [
+                {
+                  "rule": "slightly_above_limit_only_for_exceptional_offer",
+                  "amountPln": null,
+                  "userMustConfirm": true
+                }
+              ],
+              "auctionsAllowed": false
+            },
+            "listingEvidence": {
+              "requiredFields": [],
+              "preferredFields": [
+                "vin",
+                "firstRegistrationDate"
+              ],
+              "missingPreferredFieldHandling": "mark_missing_and_consider_as_information_gap; do_not_automatically_exclude",
+              "registrationNumber": "record_presence_only; may be visible in listing photos; do not spend effort extracting from images or use as a strong ranking factor",
+              "independentInspectionRefusal": "exclude_only_if_listing_explicitly_states_inspection_is_not_allowed"
+            },
+            "sellerTypes": "any_non_auction_seller_if_price_conditions_fit",
+            "sellerClassification": {
+              "field": "offerType",
+              "values": [
+                "private",
+                "company",
+                "leasing_return",
+                "unknown"
+              ],
+              "unknownHandling": "mark_unknown; do_not_infer_from_platform_or_ad_style"
+            },
+            "priceAssessment": {
+              "baseLimitGrossPln": 55000,
+              "slightExceptionalOverageAllowed": true,
+              "import": "include material mandatory import costs; minor costs may be noted but ignored in initial screening"
+            },
+            "familyEquipment": {
+              "isofix": "important; if not stated, verify whether standard for exact model/year/market/trim; otherwise mark unknown"
+            },
+            "yearMin": 2018,
+            "mileage": {
+              "preferredMaxKm": 170000,
+              "hardMaxKm": 170000,
+              "assessment": "hard_maximum; exclude offers above 170000 km"
+            },
+            "transmissions": [
+              "manual",
+              "automatic"
+            ],
+            "camera": {
+              "required": true,
+              "preferred": true,
+              "requiredAtDelivery": false,
+              "mustMarkIfAbsent": true,
+              "retrofitAllowed": true,
+              "retrofitCompatibilityMustBeConfirmed": true
+            },
+            "frontParkingSensors": "preferred",
+            "structuralDamageAllowed": false,
+            "cosmeticRepairsAllowed": true,
+            "location": "PL",
+            "origins": [
+              "domestic",
+              "import"
+            ],
+            "bodyScope": [
+              "wagon",
+              "sedan",
+              "suv",
+              "crossover",
+              "hatchback",
+              "minivan"
+            ],
+            "modelScope": "active_models_in_search-models.json_only",
+            "engineScope": "listed_variants_only",
+            "fuelScope": "all_fuels; LPG allowed and must be marked with installation documents checked",
+            "transmissionPreference": "none; manual and automatic are equally acceptable",
+            "use": {
+              "adults": 2,
+              "children": 1,
+              "cityShare": 0.5,
+              "strollerAndLuggageRequired": true,
+              "annualMileageKm": {
+                "min": 12000,
+                "max": 15000
+              },
+              "typicalCityTripMinutes": 30
+            },
+            "rankingPriorities": [
+              "technical_condition",
+              "documented_service",
+              "engine_durability",
+              "equipment",
+              "value"
+            ],
+            "unknownHardRequirement": "check",
+            "openQuestions": {
+              "typicalCityTripKm": null,
+              "strollerDimensionsCm": null,
+              "cameraRequiredAtDelivery": null,
+              "fuelScopeBeyondSelectedEngines": "all fuels confirmed; engine variants remain restricted to configured list"
+            },
+            "confirmedByUser": [
+              "engineScope",
+              "lpg",
+              "modelScope",
+              "purchase.auctionsAllowed",
+              "purchase.maxPriceGrossPln",
+              "purchase.scope",
+              "transmissionPreference",
+              "use.annualMileageKm",
+              "use.typicalCityTripMinutes"
+            ],
+            "notes": [
+              "Wybrane silniki przeniesiono z dotychczasowych danych; nie oznacza to zakazu innych paliw ustalonego przez użytkownika.",
+              "Użytkownik podał czas jazdy miejskiej około 30 minut, nie odległość. Nie przeliczać automatycznie na kilometry.",
+              "Skrzynia manualna i automatyczna są równie akceptowalne; przed zakupem skrzynię ocenić dla konkretnego wariantu.",
+              "Katalog modeli i silników obejmuje wyłącznie aktualną listę użytkownika. Status wyboru nie jest rekomendacją niezawodności."
+            ],
+            "lpg": {
+              "allowed": true,
+              "mustBeMarked": true,
+              "installationDocumentsMustBeChecked": true
+            }
           }
         },
         {
@@ -457,6 +1231,135 @@
               }
             },
             "fullRecommendedThresholdMet": false
+          },
+          "requirements": {
+            "version": 1,
+            "purchase": {
+              "maxPriceGrossPln": 55000,
+              "scope": "purchase_only",
+              "priceExceptions": [
+                {
+                  "rule": "slightly_above_limit_only_for_exceptional_offer",
+                  "amountPln": null,
+                  "userMustConfirm": true
+                }
+              ],
+              "auctionsAllowed": false
+            },
+            "listingEvidence": {
+              "requiredFields": [],
+              "preferredFields": [
+                "vin",
+                "firstRegistrationDate"
+              ],
+              "missingPreferredFieldHandling": "mark_missing_and_consider_as_information_gap; do_not_automatically_exclude",
+              "registrationNumber": "record_presence_only; may be visible in listing photos; do not spend effort extracting from images or use as a strong ranking factor",
+              "independentInspectionRefusal": "exclude_only_if_listing_explicitly_states_inspection_is_not_allowed"
+            },
+            "sellerTypes": "any_non_auction_seller_if_price_conditions_fit",
+            "sellerClassification": {
+              "field": "offerType",
+              "values": [
+                "private",
+                "company",
+                "leasing_return",
+                "unknown"
+              ],
+              "unknownHandling": "mark_unknown; do_not_infer_from_platform_or_ad_style"
+            },
+            "priceAssessment": {
+              "baseLimitGrossPln": 55000,
+              "slightExceptionalOverageAllowed": true,
+              "import": "include material mandatory import costs; minor costs may be noted but ignored in initial screening"
+            },
+            "familyEquipment": {
+              "isofix": "important; if not stated, verify whether standard for exact model/year/market/trim; otherwise mark unknown"
+            },
+            "yearMin": 2018,
+            "mileage": {
+              "preferredMaxKm": 170000,
+              "hardMaxKm": 170000,
+              "assessment": "hard_maximum; exclude offers above 170000 km"
+            },
+            "transmissions": [
+              "manual",
+              "automatic"
+            ],
+            "camera": {
+              "required": true,
+              "preferred": true,
+              "requiredAtDelivery": false,
+              "mustMarkIfAbsent": true,
+              "retrofitAllowed": true,
+              "retrofitCompatibilityMustBeConfirmed": true
+            },
+            "frontParkingSensors": "preferred",
+            "structuralDamageAllowed": false,
+            "cosmeticRepairsAllowed": true,
+            "location": "PL",
+            "origins": [
+              "domestic",
+              "import"
+            ],
+            "bodyScope": [
+              "wagon",
+              "sedan",
+              "suv",
+              "crossover",
+              "hatchback",
+              "minivan"
+            ],
+            "modelScope": "active_models_in_search-models.json_only",
+            "engineScope": "listed_variants_only",
+            "fuelScope": "all_fuels; LPG allowed and must be marked with installation documents checked",
+            "transmissionPreference": "none; manual and automatic are equally acceptable",
+            "use": {
+              "adults": 2,
+              "children": 1,
+              "cityShare": 0.5,
+              "strollerAndLuggageRequired": true,
+              "annualMileageKm": {
+                "min": 12000,
+                "max": 15000
+              },
+              "typicalCityTripMinutes": 30
+            },
+            "rankingPriorities": [
+              "technical_condition",
+              "documented_service",
+              "engine_durability",
+              "equipment",
+              "value"
+            ],
+            "unknownHardRequirement": "check",
+            "openQuestions": {
+              "typicalCityTripKm": null,
+              "strollerDimensionsCm": null,
+              "cameraRequiredAtDelivery": null,
+              "fuelScopeBeyondSelectedEngines": "all fuels confirmed; engine variants remain restricted to configured list"
+            },
+            "confirmedByUser": [
+              "engineScope",
+              "lpg",
+              "modelScope",
+              "purchase.auctionsAllowed",
+              "purchase.maxPriceGrossPln",
+              "purchase.scope",
+              "transmissionPreference",
+              "use.annualMileageKm",
+              "use.typicalCityTripMinutes"
+            ],
+            "notes": [
+              "Wybrane silniki przeniesiono z dotychczasowych danych; nie oznacza to zakazu innych paliw ustalonego przez użytkownika.",
+              "Użytkownik podał czas jazdy miejskiej około 30 minut, nie odległość. Nie przeliczać automatycznie na kilometry.",
+              "Skrzynia manualna i automatyczna są równie akceptowalne; przed zakupem skrzynię ocenić dla konkretnego wariantu.",
+              "Katalog modeli i silników obejmuje wyłącznie aktualną listę użytkownika. Status wyboru nie jest rekomendacją niezawodności."
+            ],
+            "lpg": {
+              "allowed": true,
+              "mustBeMarked": true,
+              "installationDocumentsMustBeChecked": true
+            }
           }
         },
         {
@@ -532,69 +1435,135 @@
               }
             },
             "fullRecommendedThresholdMet": false
-          }
-        },
-        {
-          "key": "volkswagen-golf-vii-variant",
-          "name": "Volkswagen Golf VII Variant",
-          "description": "Kombi (Variant)",
-          "brand": "Volkswagen",
-          "model": "Golf",
-          "generation": "VII",
-          "bodies": [
-            "wagon"
-          ],
-          "searchYears": {
-            "min": 2017,
-            "max": 2018
           },
-          "allowedEngineVariants": [
-            "1.4-tsi-ea211-125",
-            "1.4-tsi-ea211-150"
-          ],
-          "active": true,
-          "priority": 2,
-          "offersFile": "offers/volkswagen-golf-vii-variant.json",
-          "knowledgeFile": "knowledge/models/volkswagen-golf-vii-variant.json",
-          "legacyEngineSelection": "1.4 TSI EA211 125 KM; 1.4 TSI EA211 150 KM",
-          "selectionStatus": "engine_reviewed_with_conditions",
-          "productionYears": null,
-          "notes": [
-            "Zakres lat dotyczy wyszukiwania modelu; dostępność silnika i nadwozia trzeba sprawdzić w karcie wiedzy.",
-            "Lista silników i roczniki odzwierciedlają aktualne założenia użytkownika; nie oznaczają rekomendacji trwałości.",
-            "Konflikt: aktywny zakres lat 2017–2018 nie potwierdza 1.4 TSI 150 KM; archiwum VW wskazuje 1.4/150 do 2016, a 1.5/150 później. Wariant 1.4/150 wstrzymany do sprawdzenia daty produkcji i VIN."
-          ],
-          "variantConstraints": [
-            {
-              "id": "14-tsi-production-window",
-              "engines": [
-                "1.4-tsi-ea211-125",
-                "1.4-tsi-ea211-150"
+          "requirements": {
+            "version": 1,
+            "purchase": {
+              "maxPriceGrossPln": 55000,
+              "scope": "purchase_only",
+              "priceExceptions": [
+                {
+                  "rule": "slightly_above_limit_only_for_exceptional_offer",
+                  "amountPln": null,
+                  "userMustConfirm": true
+                }
               ],
-              "yearMax": 2018,
-              "sourceIds": [
-                "golf-vii-profile"
-              ],
-              "notes": [
-                "Konflikt wymaga ustalenia daty produkcji i rynku; nie mylić z pierwszą rejestracją."
-              ]
-            }
-          ],
-          "engineReview": {
-            "method": "docs/metoda-oceny-silnikow.md",
-            "report": "reports/analiza-silnikow-batch-c-2026-11-08.md",
-            "reviewedAt": "2026-11-08",
-            "variants": {
-              "1.4-tsi-ea211-125": {
-                "status": "conditional_recommendation",
-                "reason": "Wariant potwierdzony dla lat 2017–2018; kod CZCA i obsługę paska/chłodzenia potwierdzić po VIN."
-              },
-              "1.4-tsi-ea211-150": {
-                "status": "hold_fitment_conflict",
-                "reason": "Archiwum VW przypisuje 1.4/150 do lat 2014–2016, a w 2017–2018 występuje 1.5/150. Nie zatwierdzać bez dokumentacji produkcji/homologacji/VIN."
-              }
+              "auctionsAllowed": false
             },
-            "fullRecommendedThresholdMet": false
+            "listingEvidence": {
+              "requiredFields": [],
+              "preferredFields": [
+                "vin",
+                "firstRegistrationDate"
+              ],
+              "missingPreferredFieldHandling": "mark_missing_and_consider_as_information_gap; do_not_automatically_exclude",
+              "registrationNumber": "record_presence_only; may be visible in listing photos; do not spend effort extracting from images or use as a strong ranking factor",
+              "independentInspectionRefusal": "exclude_only_if_listing_explicitly_states_inspection_is_not_allowed"
+            },
+            "sellerTypes": "any_non_auction_seller_if_price_conditions_fit",
+            "sellerClassification": {
+              "field": "offerType",
+              "values": [
+                "private",
+                "company",
+                "leasing_return",
+                "unknown"
+              ],
+              "unknownHandling": "mark_unknown; do_not_infer_from_platform_or_ad_style"
+            },
+            "priceAssessment": {
+              "baseLimitGrossPln": 55000,
+              "slightExceptionalOverageAllowed": true,
+              "import": "include material mandatory import costs; minor costs may be noted but ignored in initial screening"
+            },
+            "familyEquipment": {
+              "isofix": "important; if not stated, verify whether standard for exact model/year/market/trim; otherwise mark unknown"
+            },
+            "yearMin": 2018,
+            "mileage": {
+              "preferredMaxKm": 170000,
+              "hardMaxKm": 170000,
+              "assessment": "hard_maximum; exclude offers above 170000 km"
+            },
+            "transmissions": [
+              "manual",
+              "automatic"
+            ],
+            "camera": {
+              "required": true,
+              "preferred": true,
+              "requiredAtDelivery": false,
+              "mustMarkIfAbsent": true,
+              "retrofitAllowed": true,
+              "retrofitCompatibilityMustBeConfirmed": true
+            },
+            "frontParkingSensors": "preferred",
+            "structuralDamageAllowed": false,
+            "cosmeticRepairsAllowed": true,
+            "location": "PL",
+            "origins": [
+              "domestic",
+              "import"
+            ],
+            "bodyScope": [
+              "wagon",
+              "sedan",
+              "suv",
+              "crossover",
+              "hatchback",
+              "minivan"
+            ],
+            "modelScope": "active_models_in_search-models.json_only",
+            "engineScope": "listed_variants_only",
+            "fuelScope": "all_fuels; LPG allowed and must be marked with installation documents checked",
+            "transmissionPreference": "none; manual and automatic are equally acceptable",
+            "use": {
+              "adults": 2,
+              "children": 1,
+              "cityShare": 0.5,
+              "strollerAndLuggageRequired": true,
+              "annualMileageKm": {
+                "min": 12000,
+                "max": 15000
+              },
+              "typicalCityTripMinutes": 30
+            },
+            "rankingPriorities": [
+              "technical_condition",
+              "documented_service",
+              "engine_durability",
+              "equipment",
+              "value"
+            ],
+            "unknownHardRequirement": "check",
+            "openQuestions": {
+              "typicalCityTripKm": null,
+              "strollerDimensionsCm": null,
+              "cameraRequiredAtDelivery": null,
+              "fuelScopeBeyondSelectedEngines": "all fuels confirmed; engine variants remain restricted to configured list"
+            },
+            "confirmedByUser": [
+              "engineScope",
+              "lpg",
+              "modelScope",
+              "purchase.auctionsAllowed",
+              "purchase.maxPriceGrossPln",
+              "purchase.scope",
+              "transmissionPreference",
+              "use.annualMileageKm",
+              "use.typicalCityTripMinutes"
+            ],
+            "notes": [
+              "Wybrane silniki przeniesiono z dotychczasowych danych; nie oznacza to zakazu innych paliw ustalonego przez użytkownika.",
+              "Użytkownik podał czas jazdy miejskiej około 30 minut, nie odległość. Nie przeliczać automatycznie na kilometry.",
+              "Skrzynia manualna i automatyczna są równie akceptowalne; przed zakupem skrzynię ocenić dla konkretnego wariantu.",
+              "Katalog modeli i silników obejmuje wyłącznie aktualną listę użytkownika. Status wyboru nie jest rekomendacją niezawodności."
+            ],
+            "lpg": {
+              "allowed": true,
+              "mustBeMarked": true,
+              "installationDocumentsMustBeChecked": true
+            }
           }
         },
         {
@@ -642,6 +1611,135 @@
               }
             },
             "fullRecommendedThresholdMet": false
+          },
+          "requirements": {
+            "version": 1,
+            "purchase": {
+              "maxPriceGrossPln": 55000,
+              "scope": "purchase_only",
+              "priceExceptions": [
+                {
+                  "rule": "slightly_above_limit_only_for_exceptional_offer",
+                  "amountPln": null,
+                  "userMustConfirm": true
+                }
+              ],
+              "auctionsAllowed": false
+            },
+            "listingEvidence": {
+              "requiredFields": [],
+              "preferredFields": [
+                "vin",
+                "firstRegistrationDate"
+              ],
+              "missingPreferredFieldHandling": "mark_missing_and_consider_as_information_gap; do_not_automatically_exclude",
+              "registrationNumber": "record_presence_only; may be visible in listing photos; do not spend effort extracting from images or use as a strong ranking factor",
+              "independentInspectionRefusal": "exclude_only_if_listing_explicitly_states_inspection_is_not_allowed"
+            },
+            "sellerTypes": "any_non_auction_seller_if_price_conditions_fit",
+            "sellerClassification": {
+              "field": "offerType",
+              "values": [
+                "private",
+                "company",
+                "leasing_return",
+                "unknown"
+              ],
+              "unknownHandling": "mark_unknown; do_not_infer_from_platform_or_ad_style"
+            },
+            "priceAssessment": {
+              "baseLimitGrossPln": 55000,
+              "slightExceptionalOverageAllowed": true,
+              "import": "include material mandatory import costs; minor costs may be noted but ignored in initial screening"
+            },
+            "familyEquipment": {
+              "isofix": "important; if not stated, verify whether standard for exact model/year/market/trim; otherwise mark unknown"
+            },
+            "yearMin": 2018,
+            "mileage": {
+              "preferredMaxKm": 170000,
+              "hardMaxKm": 170000,
+              "assessment": "hard_maximum; exclude offers above 170000 km"
+            },
+            "transmissions": [
+              "manual",
+              "automatic"
+            ],
+            "camera": {
+              "required": true,
+              "preferred": true,
+              "requiredAtDelivery": false,
+              "mustMarkIfAbsent": true,
+              "retrofitAllowed": true,
+              "retrofitCompatibilityMustBeConfirmed": true
+            },
+            "frontParkingSensors": "preferred",
+            "structuralDamageAllowed": false,
+            "cosmeticRepairsAllowed": true,
+            "location": "PL",
+            "origins": [
+              "domestic",
+              "import"
+            ],
+            "bodyScope": [
+              "wagon",
+              "sedan",
+              "suv",
+              "crossover",
+              "hatchback",
+              "minivan"
+            ],
+            "modelScope": "active_models_in_search-models.json_only",
+            "engineScope": "listed_variants_only",
+            "fuelScope": "all_fuels; LPG allowed and must be marked with installation documents checked",
+            "transmissionPreference": "none; manual and automatic are equally acceptable",
+            "use": {
+              "adults": 2,
+              "children": 1,
+              "cityShare": 0.5,
+              "strollerAndLuggageRequired": true,
+              "annualMileageKm": {
+                "min": 12000,
+                "max": 15000
+              },
+              "typicalCityTripMinutes": 30
+            },
+            "rankingPriorities": [
+              "technical_condition",
+              "documented_service",
+              "engine_durability",
+              "equipment",
+              "value"
+            ],
+            "unknownHardRequirement": "check",
+            "openQuestions": {
+              "typicalCityTripKm": null,
+              "strollerDimensionsCm": null,
+              "cameraRequiredAtDelivery": null,
+              "fuelScopeBeyondSelectedEngines": "all fuels confirmed; engine variants remain restricted to configured list"
+            },
+            "confirmedByUser": [
+              "engineScope",
+              "lpg",
+              "modelScope",
+              "purchase.auctionsAllowed",
+              "purchase.maxPriceGrossPln",
+              "purchase.scope",
+              "transmissionPreference",
+              "use.annualMileageKm",
+              "use.typicalCityTripMinutes"
+            ],
+            "notes": [
+              "Wybrane silniki przeniesiono z dotychczasowych danych; nie oznacza to zakazu innych paliw ustalonego przez użytkownika.",
+              "Użytkownik podał czas jazdy miejskiej około 30 minut, nie odległość. Nie przeliczać automatycznie na kilometry.",
+              "Skrzynia manualna i automatyczna są równie akceptowalne; przed zakupem skrzynię ocenić dla konkretnego wariantu.",
+              "Katalog modeli i silników obejmuje wyłącznie aktualną listę użytkownika. Status wyboru nie jest rekomendacją niezawodności."
+            ],
+            "lpg": {
+              "allowed": true,
+              "mustBeMarked": true,
+              "installationDocumentsMustBeChecked": true
+            }
           }
         },
         {
@@ -683,6 +1781,135 @@
               }
             },
             "fullRecommendedThresholdMet": false
+          },
+          "requirements": {
+            "version": 1,
+            "purchase": {
+              "maxPriceGrossPln": 55000,
+              "scope": "purchase_only",
+              "priceExceptions": [
+                {
+                  "rule": "slightly_above_limit_only_for_exceptional_offer",
+                  "amountPln": null,
+                  "userMustConfirm": true
+                }
+              ],
+              "auctionsAllowed": false
+            },
+            "listingEvidence": {
+              "requiredFields": [],
+              "preferredFields": [
+                "vin",
+                "firstRegistrationDate"
+              ],
+              "missingPreferredFieldHandling": "mark_missing_and_consider_as_information_gap; do_not_automatically_exclude",
+              "registrationNumber": "record_presence_only; may be visible in listing photos; do not spend effort extracting from images or use as a strong ranking factor",
+              "independentInspectionRefusal": "exclude_only_if_listing_explicitly_states_inspection_is_not_allowed"
+            },
+            "sellerTypes": "any_non_auction_seller_if_price_conditions_fit",
+            "sellerClassification": {
+              "field": "offerType",
+              "values": [
+                "private",
+                "company",
+                "leasing_return",
+                "unknown"
+              ],
+              "unknownHandling": "mark_unknown; do_not_infer_from_platform_or_ad_style"
+            },
+            "priceAssessment": {
+              "baseLimitGrossPln": 55000,
+              "slightExceptionalOverageAllowed": true,
+              "import": "include material mandatory import costs; minor costs may be noted but ignored in initial screening"
+            },
+            "familyEquipment": {
+              "isofix": "important; if not stated, verify whether standard for exact model/year/market/trim; otherwise mark unknown"
+            },
+            "yearMin": 2018,
+            "mileage": {
+              "preferredMaxKm": 170000,
+              "hardMaxKm": 170000,
+              "assessment": "hard_maximum; exclude offers above 170000 km"
+            },
+            "transmissions": [
+              "manual",
+              "automatic"
+            ],
+            "camera": {
+              "required": true,
+              "preferred": true,
+              "requiredAtDelivery": false,
+              "mustMarkIfAbsent": true,
+              "retrofitAllowed": true,
+              "retrofitCompatibilityMustBeConfirmed": true
+            },
+            "frontParkingSensors": "preferred",
+            "structuralDamageAllowed": false,
+            "cosmeticRepairsAllowed": true,
+            "location": "PL",
+            "origins": [
+              "domestic",
+              "import"
+            ],
+            "bodyScope": [
+              "wagon",
+              "sedan",
+              "suv",
+              "crossover",
+              "hatchback",
+              "minivan"
+            ],
+            "modelScope": "active_models_in_search-models.json_only",
+            "engineScope": "listed_variants_only",
+            "fuelScope": "all_fuels; LPG allowed and must be marked with installation documents checked",
+            "transmissionPreference": "none; manual and automatic are equally acceptable",
+            "use": {
+              "adults": 2,
+              "children": 1,
+              "cityShare": 0.5,
+              "strollerAndLuggageRequired": true,
+              "annualMileageKm": {
+                "min": 12000,
+                "max": 15000
+              },
+              "typicalCityTripMinutes": 30
+            },
+            "rankingPriorities": [
+              "technical_condition",
+              "documented_service",
+              "engine_durability",
+              "equipment",
+              "value"
+            ],
+            "unknownHardRequirement": "check",
+            "openQuestions": {
+              "typicalCityTripKm": null,
+              "strollerDimensionsCm": null,
+              "cameraRequiredAtDelivery": null,
+              "fuelScopeBeyondSelectedEngines": "all fuels confirmed; engine variants remain restricted to configured list"
+            },
+            "confirmedByUser": [
+              "engineScope",
+              "lpg",
+              "modelScope",
+              "purchase.auctionsAllowed",
+              "purchase.maxPriceGrossPln",
+              "purchase.scope",
+              "transmissionPreference",
+              "use.annualMileageKm",
+              "use.typicalCityTripMinutes"
+            ],
+            "notes": [
+              "Wybrane silniki przeniesiono z dotychczasowych danych; nie oznacza to zakazu innych paliw ustalonego przez użytkownika.",
+              "Użytkownik podał czas jazdy miejskiej około 30 minut, nie odległość. Nie przeliczać automatycznie na kilometry.",
+              "Skrzynia manualna i automatyczna są równie akceptowalne; przed zakupem skrzynię ocenić dla konkretnego wariantu.",
+              "Katalog modeli i silników obejmuje wyłącznie aktualną listę użytkownika. Status wyboru nie jest rekomendacją niezawodności."
+            ],
+            "lpg": {
+              "allowed": true,
+              "mustBeMarked": true,
+              "installationDocumentsMustBeChecked": true
+            }
           }
         },
         {
@@ -729,108 +1956,135 @@
               }
             },
             "fullRecommendedThresholdMet": false
-          }
-        },
-        {
-          "key": "volkswagen-golf-sportsvan",
-          "name": "Volkswagen Golf Sportsvan",
-          "description": "Hatchback / minivan",
-          "brand": "Volkswagen",
-          "model": "Golf Sportsvan",
-          "generation": null,
-          "bodies": [
-            "minivan"
-          ],
-          "searchYears": {
-            "min": 2017,
-            "max": 2018
           },
-          "allowedEngineVariants": [
-            "1.4-tsi-ea211-125",
-            "1.4-tsi-ea211-150"
-          ],
-          "active": true,
-          "priority": 2,
-          "offersFile": "offers/volkswagen-golf-sportsvan.json",
-          "knowledgeFile": "knowledge/models/volkswagen-golf-sportsvan.json",
-          "legacyEngineSelection": "1.4 TSI EA211 125 KM; 1.4 TSI EA211 150 KM",
-          "selectionStatus": "engine_reviewed_with_conditions",
-          "productionYears": null,
-          "notes": [
-            "Compact MPV/minivan body. VW archive shows 1.5 TSI after 2017 update; 1.4 fitment must be confirmed by production date/VIN.",
-            "Lista silników i roczniki odzwierciedlają aktualne założenia użytkownika; nie oznaczają rekomendacji trwałości."
-          ],
-          "variantConstraints": [],
-          "engineReview": {
-            "method": "docs/metoda-oceny-silnikow.md",
-            "report": "reports/analiza-silnikow-batch-c-2026-11-08.md",
-            "reviewedAt": "2026-11-08",
-            "variants": {
-              "1.4-tsi-ea211-125": {
-                "status": "conditional_recommendation",
-                "reason": "Wariant potwierdzony; przy autach po modernizacji 2017 ustalić datę produkcji i VIN."
+          "requirements": {
+            "version": 1,
+            "purchase": {
+              "maxPriceGrossPln": 55000,
+              "scope": "purchase_only",
+              "priceExceptions": [
+                {
+                  "rule": "slightly_above_limit_only_for_exceptional_offer",
+                  "amountPln": null,
+                  "userMustConfirm": true
+                }
+              ],
+              "auctionsAllowed": false
+            },
+            "listingEvidence": {
+              "requiredFields": [],
+              "preferredFields": [
+                "vin",
+                "firstRegistrationDate"
+              ],
+              "missingPreferredFieldHandling": "mark_missing_and_consider_as_information_gap; do_not_automatically_exclude",
+              "registrationNumber": "record_presence_only; may be visible in listing photos; do not spend effort extracting from images or use as a strong ranking factor",
+              "independentInspectionRefusal": "exclude_only_if_listing_explicitly_states_inspection_is_not_allowed"
+            },
+            "sellerTypes": "any_non_auction_seller_if_price_conditions_fit",
+            "sellerClassification": {
+              "field": "offerType",
+              "values": [
+                "private",
+                "company",
+                "leasing_return",
+                "unknown"
+              ],
+              "unknownHandling": "mark_unknown; do_not_infer_from_platform_or_ad_style"
+            },
+            "priceAssessment": {
+              "baseLimitGrossPln": 55000,
+              "slightExceptionalOverageAllowed": true,
+              "import": "include material mandatory import costs; minor costs may be noted but ignored in initial screening"
+            },
+            "familyEquipment": {
+              "isofix": "important; if not stated, verify whether standard for exact model/year/market/trim; otherwise mark unknown"
+            },
+            "yearMin": 2018,
+            "mileage": {
+              "preferredMaxKm": 170000,
+              "hardMaxKm": 170000,
+              "assessment": "hard_maximum; exclude offers above 170000 km"
+            },
+            "transmissions": [
+              "manual",
+              "automatic"
+            ],
+            "camera": {
+              "required": true,
+              "preferred": true,
+              "requiredAtDelivery": false,
+              "mustMarkIfAbsent": true,
+              "retrofitAllowed": true,
+              "retrofitCompatibilityMustBeConfirmed": true
+            },
+            "frontParkingSensors": "preferred",
+            "structuralDamageAllowed": false,
+            "cosmeticRepairsAllowed": true,
+            "location": "PL",
+            "origins": [
+              "domestic",
+              "import"
+            ],
+            "bodyScope": [
+              "wagon",
+              "sedan",
+              "suv",
+              "crossover",
+              "hatchback",
+              "minivan"
+            ],
+            "modelScope": "active_models_in_search-models.json_only",
+            "engineScope": "listed_variants_only",
+            "fuelScope": "all_fuels; LPG allowed and must be marked with installation documents checked",
+            "transmissionPreference": "none; manual and automatic are equally acceptable",
+            "use": {
+              "adults": 2,
+              "children": 1,
+              "cityShare": 0.5,
+              "strollerAndLuggageRequired": true,
+              "annualMileageKm": {
+                "min": 12000,
+                "max": 15000
               },
-              "1.4-tsi-ea211-150": {
-                "status": "conditional_recommendation",
-                "reason": "Zapas mocy korzystny; przejście na 1.5 TSI przy modernizacji wymaga potwierdzenia daty produkcji/VIN; DSG osobno."
-              }
+              "typicalCityTripMinutes": 30
             },
-            "fullRecommendedThresholdMet": false
-          }
-        },
-        {
-          "key": "volkswagen-passat-b8-variant",
-          "name": "Volkswagen Passat B8 Variant",
-          "description": "Kombi",
-          "brand": "Volkswagen",
-          "model": "Passat",
-          "generation": "B8",
-          "bodies": [
-            "wagon"
-          ],
-          "searchYears": {
-            "min": 2017,
-            "max": 2018
-          },
-          "allowedEngineVariants": [
-            "1.4-tsi-ea211-act-150"
-          ],
-          "active": true,
-          "priority": 2,
-          "offersFile": "offers/volkswagen-passat-b8-variant.json",
-          "knowledgeFile": "knowledge/models/volkswagen-passat-b8-variant.json",
-          "legacyEngineSelection": "1.4 TSI EA211 ACT 150 KM",
-          "selectionStatus": "engine_reviewed_with_conditions",
-          "productionYears": null,
-          "notes": [
-            "Lista silników i roczniki odzwierciedlają aktualne założenia użytkownika; nie oznaczają rekomendacji trwałości."
-          ],
-          "variantConstraints": [
-            {
-              "id": "14-act-before-2019",
-              "engines": [
-                "1.4-tsi-ea211-act-150"
-              ],
-              "yearMax": 2018,
-              "sourceIds": [
-                "passatpl"
-              ],
-              "notes": [
-                "VW Polska archive gives before 2019."
-              ]
+            "rankingPriorities": [
+              "technical_condition",
+              "documented_service",
+              "engine_durability",
+              "equipment",
+              "value"
+            ],
+            "unknownHardRequirement": "check",
+            "openQuestions": {
+              "typicalCityTripKm": null,
+              "strollerDimensionsCm": null,
+              "cameraRequiredAtDelivery": null,
+              "fuelScopeBeyondSelectedEngines": "all fuels confirmed; engine variants remain restricted to configured list"
+            },
+            "confirmedByUser": [
+              "engineScope",
+              "lpg",
+              "modelScope",
+              "purchase.auctionsAllowed",
+              "purchase.maxPriceGrossPln",
+              "purchase.scope",
+              "transmissionPreference",
+              "use.annualMileageKm",
+              "use.typicalCityTripMinutes"
+            ],
+            "notes": [
+              "Wybrane silniki przeniesiono z dotychczasowych danych; nie oznacza to zakazu innych paliw ustalonego przez użytkownika.",
+              "Użytkownik podał czas jazdy miejskiej około 30 minut, nie odległość. Nie przeliczać automatycznie na kilometry.",
+              "Skrzynia manualna i automatyczna są równie akceptowalne; przed zakupem skrzynię ocenić dla konkretnego wariantu.",
+              "Katalog modeli i silników obejmuje wyłącznie aktualną listę użytkownika. Status wyboru nie jest rekomendacją niezawodności."
+            ],
+            "lpg": {
+              "allowed": true,
+              "mustBeMarked": true,
+              "installationDocumentsMustBeChecked": true
             }
-          ],
-          "engineReview": {
-            "method": "docs/metoda-oceny-silnikow.md",
-            "report": "reports/analiza-silnikow-batch-c-2026-11-08.md",
-            "reviewedAt": "2026-11-08",
-            "variants": {
-              "1.4-tsi-ea211-act-150": {
-                "status": "conditional_recommendation",
-                "reason": "Dobry zapas mocy dla Variant; kod CZEA prawdopodobny, lecz potwierdzić po VIN; DSG oceniać osobno."
-              }
-            },
-            "fullRecommendedThresholdMet": false
           }
         },
         {
@@ -878,6 +2132,135 @@
               }
             },
             "fullRecommendedThresholdMet": false
+          },
+          "requirements": {
+            "version": 1,
+            "purchase": {
+              "maxPriceGrossPln": 55000,
+              "scope": "purchase_only",
+              "priceExceptions": [
+                {
+                  "rule": "slightly_above_limit_only_for_exceptional_offer",
+                  "amountPln": null,
+                  "userMustConfirm": true
+                }
+              ],
+              "auctionsAllowed": false
+            },
+            "listingEvidence": {
+              "requiredFields": [],
+              "preferredFields": [
+                "vin",
+                "firstRegistrationDate"
+              ],
+              "missingPreferredFieldHandling": "mark_missing_and_consider_as_information_gap; do_not_automatically_exclude",
+              "registrationNumber": "record_presence_only; may be visible in listing photos; do not spend effort extracting from images or use as a strong ranking factor",
+              "independentInspectionRefusal": "exclude_only_if_listing_explicitly_states_inspection_is_not_allowed"
+            },
+            "sellerTypes": "any_non_auction_seller_if_price_conditions_fit",
+            "sellerClassification": {
+              "field": "offerType",
+              "values": [
+                "private",
+                "company",
+                "leasing_return",
+                "unknown"
+              ],
+              "unknownHandling": "mark_unknown; do_not_infer_from_platform_or_ad_style"
+            },
+            "priceAssessment": {
+              "baseLimitGrossPln": 55000,
+              "slightExceptionalOverageAllowed": true,
+              "import": "include material mandatory import costs; minor costs may be noted but ignored in initial screening"
+            },
+            "familyEquipment": {
+              "isofix": "important; if not stated, verify whether standard for exact model/year/market/trim; otherwise mark unknown"
+            },
+            "yearMin": 2018,
+            "mileage": {
+              "preferredMaxKm": 170000,
+              "hardMaxKm": 170000,
+              "assessment": "hard_maximum; exclude offers above 170000 km"
+            },
+            "transmissions": [
+              "manual",
+              "automatic"
+            ],
+            "camera": {
+              "required": true,
+              "preferred": true,
+              "requiredAtDelivery": false,
+              "mustMarkIfAbsent": true,
+              "retrofitAllowed": true,
+              "retrofitCompatibilityMustBeConfirmed": true
+            },
+            "frontParkingSensors": "preferred",
+            "structuralDamageAllowed": false,
+            "cosmeticRepairsAllowed": true,
+            "location": "PL",
+            "origins": [
+              "domestic",
+              "import"
+            ],
+            "bodyScope": [
+              "wagon",
+              "sedan",
+              "suv",
+              "crossover",
+              "hatchback",
+              "minivan"
+            ],
+            "modelScope": "active_models_in_search-models.json_only",
+            "engineScope": "listed_variants_only",
+            "fuelScope": "all_fuels; LPG allowed and must be marked with installation documents checked",
+            "transmissionPreference": "none; manual and automatic are equally acceptable",
+            "use": {
+              "adults": 2,
+              "children": 1,
+              "cityShare": 0.5,
+              "strollerAndLuggageRequired": true,
+              "annualMileageKm": {
+                "min": 12000,
+                "max": 15000
+              },
+              "typicalCityTripMinutes": 30
+            },
+            "rankingPriorities": [
+              "technical_condition",
+              "documented_service",
+              "engine_durability",
+              "equipment",
+              "value"
+            ],
+            "unknownHardRequirement": "check",
+            "openQuestions": {
+              "typicalCityTripKm": null,
+              "strollerDimensionsCm": null,
+              "cameraRequiredAtDelivery": null,
+              "fuelScopeBeyondSelectedEngines": "all fuels confirmed; engine variants remain restricted to configured list"
+            },
+            "confirmedByUser": [
+              "engineScope",
+              "lpg",
+              "modelScope",
+              "purchase.auctionsAllowed",
+              "purchase.maxPriceGrossPln",
+              "purchase.scope",
+              "transmissionPreference",
+              "use.annualMileageKm",
+              "use.typicalCityTripMinutes"
+            ],
+            "notes": [
+              "Wybrane silniki przeniesiono z dotychczasowych danych; nie oznacza to zakazu innych paliw ustalonego przez użytkownika.",
+              "Użytkownik podał czas jazdy miejskiej około 30 minut, nie odległość. Nie przeliczać automatycznie na kilometry.",
+              "Skrzynia manualna i automatyczna są równie akceptowalne; przed zakupem skrzynię ocenić dla konkretnego wariantu.",
+              "Katalog modeli i silników obejmuje wyłącznie aktualną listę użytkownika. Status wyboru nie jest rekomendacją niezawodności."
+            ],
+            "lpg": {
+              "allowed": true,
+              "mustBeMarked": true,
+              "installationDocumentsMustBeChecked": true
+            }
           }
         }
       ]
@@ -933,8 +2316,7 @@
           "purchaseConditions": {
             "retailBuyerAllowed": true,
             "auction": false,
-            "cashPurchaseMustBeConfirmed": true,
-            "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+            "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
           },
           "notes": []
         },
@@ -981,8 +2363,7 @@
           "purchaseConditions": {
             "retailBuyerAllowed": true,
             "auction": false,
-            "cashPurchaseMustBeConfirmed": true,
-            "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+            "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
           },
           "notes": [
             "searchUrl jest przykładem dla Mazowieckiego. Aby pokryć całą Polskę, agent ma iterować regiony i zapisywać je w coverage."
@@ -1028,8 +2409,7 @@
           "purchaseConditions": {
             "retailBuyerAllowed": true,
             "auction": false,
-            "cashPurchaseMustBeConfirmed": true,
-            "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+            "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
           },
           "notes": [
             "Oddzielać ogłoszenia ze stałą ceną od aukcji, które użytkownik wykluczył."
@@ -1075,8 +2455,7 @@
           "purchaseConditions": {
             "retailBuyerAllowed": true,
             "auction": false,
-            "cashPurchaseMustBeConfirmed": true,
-            "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+            "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
           },
           "notes": [
             "Wyłączone w kolejce: żadna aktywna marka/model CarOffers nie pasuje do zakresu źródła; włącz po dodaniu tej marki."
@@ -1121,8 +2500,7 @@
           "purchaseConditions": {
             "retailBuyerAllowed": true,
             "auction": false,
-            "cashPurchaseMustBeConfirmed": true,
-            "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+            "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
           },
           "notes": [
             "Wyłączone w kolejce: żadna aktywna marka/model CarOffers nie pasuje do zakresu źródła; włącz po dodaniu tej marki."
@@ -1167,8 +2545,7 @@
           "purchaseConditions": {
             "retailBuyerAllowed": true,
             "auction": false,
-            "cashPurchaseMustBeConfirmed": true,
-            "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+            "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
           },
           "notes": [
             "Źródło na przyszłość: obecna lista modeli nie zawiera BMW.",
@@ -1218,8 +2595,7 @@
           "purchaseConditions": {
             "retailBuyerAllowed": true,
             "auction": false,
-            "cashPurchaseMustBeConfirmed": true,
-            "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+            "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
           },
           "notes": [
             "Źródło na przyszłość: obecna lista modeli nie zawiera Mercedes-Benz.",
@@ -1271,8 +2647,7 @@
           "purchaseConditions": {
             "retailBuyerAllowed": null,
             "auction": false,
-            "cashPurchaseMustBeConfirmed": true,
-            "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+            "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
           },
           "notes": [
             "Portale w tej samej grupie właścicielskiej; część ogłoszeń może być cross-postowana. Deduplikuj po VIN/ID/URL."
@@ -1323,8 +2698,7 @@
           "purchaseConditions": {
             "retailBuyerAllowed": null,
             "auction": false,
-            "cashPurchaseMustBeConfirmed": true,
-            "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+            "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
           },
           "notes": [
             "Portale w tej samej grupie właścicielskiej; część ogłoszeń może być cross-postowana. Deduplikuj po VIN/ID/URL."
@@ -1335,7 +2709,7 @@
           "id": "autoplac",
           "name": "Autoplac",
           "url": "https://autoplac.pl/",
-          "searchUrl": "https://autoplac.pl/",
+          "searchUrl": "https://autoplac.pl/oferty/samochody-osobowe",
           "category": "general",
           "sellerTypes": [
             "private",
@@ -1372,8 +2746,7 @@
           "purchaseConditions": {
             "retailBuyerAllowed": null,
             "auction": false,
-            "cashPurchaseMustBeConfirmed": true,
-            "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+            "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
           },
           "notes": [
             "Nie uznawaj niepełnego dostępu za brak ofert."
@@ -1416,8 +2789,7 @@
           "purchaseConditions": {
             "retailBuyerAllowed": null,
             "auction": false,
-            "cashPurchaseMustBeConfirmed": true,
-            "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+            "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
           },
           "notes": [
             "Pusta lista filtrów oznaczała brak rozpoznania; minimum potwierdzone to kategoria samochodów osobowych.",
@@ -1459,8 +2831,7 @@
           "purchaseConditions": {
             "retailBuyerAllowed": null,
             "auction": false,
-            "cashPurchaseMustBeConfirmed": true,
-            "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+            "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
           },
           "notes": [
             "Traktuj jako osobne źródła; cross-post nie jest gwarantowany i rozpoznaje się go po VIN/URL."
@@ -1470,7 +2841,7 @@
           "id": "automarket",
           "name": "Automarket / Masterlease (Grupa PKO BP)",
           "url": "https://www.automarket.pl/samochody-poleasingowe",
-          "searchUrl": "https://www.automarket.pl/samochody-poleasingowe",
+          "searchUrl": "https://www.automarket.pl/samochody/uzywane/wszystkie?sort_by=popular&is_company=0&modal=full-filters",
           "category": "fleet",
           "sellerTypes": [
             "leasing_company",
@@ -1486,7 +2857,10 @@
           "enabled": true,
           "priority": 1,
           "effort": 2,
-          "filters": [],
+          "filters": [
+            "make",
+            "model"
+          ],
           "method": "Odczytaj wyszukiwarkę i ogłoszenie narzędziem web; przy niepełnej treści użyj przeglądarki. Wynik wyszukiwarki jest wskazówką, nie potwierdzeniem aktualności. Nie omijaj logowania ani zabezpieczeń.",
           "accessStatus": "listing_read",
           "lastAttemptAt": "2026-11-08",
@@ -1504,8 +2878,7 @@
           "purchaseConditions": {
             "retailBuyerAllowed": true,
             "auction": false,
-            "cashPurchaseMustBeConfirmed": true,
-            "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+            "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
           },
           "notes": [],
           "priceReview": "Sprawdź, czy cena podana w ogłoszeniu jest brutto; forma finansowania nie wpływa na ocenę."
@@ -1545,8 +2918,7 @@
           "purchaseConditions": {
             "retailBuyerAllowed": true,
             "auction": false,
-            "cashPurchaseMustBeConfirmed": true,
-            "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+            "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
           },
           "notes": [
             "Nie uznawaj niepełnego dostępu za brak ofert."
@@ -1595,8 +2967,7 @@
           "purchaseConditions": {
             "retailBuyerAllowed": true,
             "auction": false,
-            "cashPurchaseMustBeConfirmed": true,
-            "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+            "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
           },
           "notes": [],
           "priceReview": "Sprawdź, czy cena podana w ogłoszeniu jest brutto; forma finansowania nie wpływa na ocenę."
@@ -1637,8 +3008,7 @@
           "purchaseConditions": {
             "retailBuyerAllowed": null,
             "auction": false,
-            "cashPurchaseMustBeConfirmed": true,
-            "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+            "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
           },
           "notes": [
             "Nie uznawaj niepełnego dostępu za brak ofert.",
@@ -1680,8 +3050,7 @@
           "purchaseConditions": {
             "retailBuyerAllowed": null,
             "auction": false,
-            "cashPurchaseMustBeConfirmed": true,
-            "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+            "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
           },
           "notes": [
             "Nie uznawaj niepełnego dostępu za brak ofert.",
@@ -1724,51 +3093,7 @@
           "purchaseConditions": {
             "retailBuyerAllowed": null,
             "auction": false,
-            "cashPurchaseMustBeConfirmed": true,
-            "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
-          },
-          "notes": [
-            "Nie uznawaj niepełnego dostępu za brak ofert.",
-            "Warunki programu i certyfikat dotyczą konkretnego egzemplarza, nie każdego auta dealera."
-          ]
-        },
-        {
-          "id": "volkswagen-certyfikowane",
-          "name": "Volkswagen Certyfikowane używane",
-          "url": "https://www.volkswagen.pl/pl/osobowe/volkswagen-certyfikowane-uzywane.html",
-          "searchUrl": "https://www.volkswagen.pl/pl/oferty-i-promocje/gsl-results.html/__app/search/cars.app?priceMode-app=price&sort-app=DATE_OFFER&sortdirection-app=ASC&t_cartype-app=U&t_gwfc-app=1&viewMode-app=tile",
-          "category": "manufacturer_program",
-          "sellerTypes": [
-            "dealer"
-          ],
-          "origins": [
-            "mixed"
-          ],
-          "brands": [
-            "Volkswagen"
-          ],
-          "enabled": true,
-          "priority": 2,
-          "effort": 3,
-          "filters": [],
-          "method": "Odczytaj wyszukiwarkę i ogłoszenie narzędziem web; przy niepełnej treści użyj przeglądarki. Wynik wyszukiwarki jest wskazówką, nie potwierdzeniem aktualności. Nie omijaj logowania ani zabezpieczeń.",
-          "accessStatus": "partial",
-          "lastAttemptAt": "2026-11-08",
-          "lastSuccessfulSearchAt": null,
-          "verification": {
-            "checkedAt": "2026-11-08",
-            "evidenceUrls": [
-              "https://www.volkswagen.pl/pl/osobowe/volkswagen-certyfikowane-uzywane.html",
-              "https://www.volkswagen.pl/pl/oferty-i-promocje/gsl-results.html/__app/search/cars.app?priceMode-app=price&sort-app=DATE_OFFER&sortdirection-app=ASC&t_cartype-app=U&t_gwfc-app=1&viewMode-app=tile"
-            ],
-            "note": "Potwierdzono program i przejście do katalogu aut używanych; katalog w odczycie tekstowym nie pokazał ofert. Wymaga przeglądarki.",
-            "fullSearchCompleted": false
-          },
-          "purchaseConditions": {
-            "retailBuyerAllowed": null,
-            "auction": false,
-            "cashPurchaseMustBeConfirmed": true,
-            "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+            "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
           },
           "notes": [
             "Nie uznawaj niepełnego dostępu za brak ofert.",
@@ -1810,8 +3135,7 @@
           "purchaseConditions": {
             "retailBuyerAllowed": null,
             "auction": false,
-            "cashPurchaseMustBeConfirmed": true,
-            "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+            "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
           },
           "notes": [
             "Nie uznawaj niepełnego dostępu za brak ofert.",
@@ -1854,8 +3178,7 @@
           "purchaseConditions": {
             "retailBuyerAllowed": null,
             "auction": false,
-            "cashPurchaseMustBeConfirmed": true,
-            "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+            "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
           },
           "notes": [
             "Warunki programu i certyfikat dotyczą konkretnego egzemplarza, nie każdego auta dealera."
@@ -1879,7 +3202,9 @@
           "enabled": true,
           "priority": 2,
           "effort": 2,
-          "filters": [],
+          "filters": [
+            "model"
+          ],
           "method": "Odczytaj wyszukiwarkę i ogłoszenie narzędziem web; przy niepełnej treści użyj przeglądarki. Wynik wyszukiwarki jest wskazówką, nie potwierdzeniem aktualności. Nie omijaj logowania ani zabezpieczeń.",
           "accessStatus": "partial",
           "lastAttemptAt": "2026-11-09",
@@ -1896,8 +3221,7 @@
           "purchaseConditions": {
             "retailBuyerAllowed": null,
             "auction": false,
-            "cashPurchaseMustBeConfirmed": true,
-            "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+            "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
           },
           "notes": []
         },
@@ -1941,8 +3265,7 @@
           "purchaseConditions": {
             "retailBuyerAllowed": null,
             "auction": false,
-            "cashPurchaseMustBeConfirmed": true,
-            "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+            "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
           },
           "notes": [
             "Warunki programu i certyfikat dotyczą konkretnego egzemplarza, nie każdego auta dealera."
@@ -1980,8 +3303,7 @@
           "purchaseConditions": {
             "retailBuyerAllowed": null,
             "auction": false,
-            "cashPurchaseMustBeConfirmed": true,
-            "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+            "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
           },
           "notes": []
         },
@@ -2028,8 +3350,7 @@
           "purchaseConditions": {
             "retailBuyerAllowed": null,
             "auction": false,
-            "cashPurchaseMustBeConfirmed": true,
-            "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+            "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
           },
           "notes": []
         }
@@ -2043,7 +3364,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -2070,7 +3391,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -2100,7 +3421,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -2127,6 +3448,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -2153,6 +3475,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -2179,6 +3502,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -2205,7 +3529,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -2235,7 +3559,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -2265,7 +3589,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -2292,7 +3616,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -2322,7 +3646,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -2352,7 +3676,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -2382,6 +3706,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -2408,7 +3733,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -2438,7 +3763,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -2468,7 +3793,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -2498,7 +3823,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -2525,6 +3850,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -2551,6 +3877,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -2577,6 +3904,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -2603,7 +3931,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -2630,7 +3958,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -2657,7 +3985,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -2685,7 +4013,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -2713,7 +4041,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -2740,7 +4068,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -2766,7 +4094,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -2792,6 +4120,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -2818,6 +4147,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -2844,6 +4174,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -2873,6 +4204,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -2899,6 +4231,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -2926,6 +4259,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -2953,6 +4287,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -2978,6 +4313,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -3003,6 +4339,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -3030,6 +4367,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -3057,7 +4395,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -3084,7 +4422,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -3111,6 +4449,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -3137,6 +4476,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -3164,6 +4504,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -3190,6 +4531,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "exact_engine_variant",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -3217,7 +4559,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -3247,7 +4589,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -3277,7 +4619,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -3307,7 +4649,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -3337,7 +4679,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -3364,7 +4706,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -3394,7 +4736,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -3421,7 +4763,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -3448,7 +4790,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -3478,7 +4820,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -3508,7 +4850,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -3534,7 +4876,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -3561,7 +4903,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -3588,7 +4930,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -3615,7 +4957,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -3642,6 +4984,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -3667,6 +5010,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -3692,7 +5036,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -3718,7 +5062,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -3744,6 +5088,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -3769,6 +5114,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "body",
         "structural_history",
         "stroller_and_family_fit"
@@ -3795,7 +5141,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -3826,7 +5172,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -3853,7 +5199,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -3882,7 +5228,7 @@
         "year_outside_selection"
       ],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -3911,7 +5257,7 @@
         "year_outside_selection"
       ],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -3938,6 +5284,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -3963,6 +5310,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -3989,6 +5337,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -4014,7 +5363,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -4040,6 +5389,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -4066,6 +5416,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -4092,7 +5443,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -4122,7 +5473,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -4152,7 +5503,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -4182,7 +5533,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -4214,7 +5565,7 @@
         "year_outside_selection"
       ],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -4244,7 +5595,7 @@
         "year_outside_selection"
       ],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -4272,6 +5623,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -4299,6 +5651,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -4326,7 +5679,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "exact_engine_variant",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -4354,6 +5707,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -4381,7 +5735,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -4411,7 +5765,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -4441,7 +5795,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -4471,7 +5825,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -4497,7 +5851,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -4524,7 +5878,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -4554,6 +5908,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -4579,7 +5934,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -4605,7 +5960,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -4636,7 +5991,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -4666,7 +6021,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -4696,7 +6051,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -4726,7 +6081,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -4756,7 +6111,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -4786,6 +6141,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -4812,7 +6168,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -4838,7 +6194,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -4864,7 +6220,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -4891,7 +6247,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -4917,7 +6273,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -4944,7 +6300,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -4970,6 +6326,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -4995,6 +6352,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -5020,6 +6378,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -5045,6 +6404,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -5072,7 +6432,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -5100,6 +6460,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -5127,6 +6488,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -5152,7 +6514,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -5181,6 +6543,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -5207,7 +6570,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "price_exception_requires_user_confirmation",
+        "gross_purchase_price",
         "exact_engine_variant",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -5235,7 +6598,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -5263,7 +6626,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "body",
         "exact_engine_variant",
         "transmission",
@@ -5295,7 +6658,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "body",
         "exact_engine_variant",
         "camera_or_compatible_retrofit",
@@ -5324,6 +6687,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -5351,6 +6715,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -5373,184 +6738,12 @@
       }
     },
     {
-      "id": "listing:autoplac:0752-6350-VS",
-      "modelKey": "volkswagen-golf-vii-variant",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_unconditional_purchase_price",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 55500,
-        "priceBasis": null,
-        "year": 2018,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 116888,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:autoplac:4339-8672-AJ",
-      "modelKey": "volkswagen-golf-vii-variant",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_unconditional_purchase_price",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 51500,
-        "priceBasis": null,
-        "year": 2018,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 144000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:autoplac:3823-9193-RQ",
-      "modelKey": "volkswagen-golf-vii-variant",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_unconditional_purchase_price",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 55000,
-        "priceBasis": null,
-        "year": 2018,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 84000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:olx:1094434277",
-      "modelKey": "volkswagen-golf-vii-variant",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_unconditional_purchase_price",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 44900,
-        "priceBasis": "unknown",
-        "year": 2018,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-tsi-ea211-125",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 111457,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:otomoto:ID6Ifzpr",
-      "modelKey": "volkswagen-golf-vii-variant",
-      "verdict": "fail",
-      "failures": [
-        "year_outside_selection"
-      ],
-      "unknowns": [
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 49000,
-        "priceBasis": "gross_unconditional_total",
-        "year": 2017,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-tsi-ea211-125",
-        "transmissionCode": "automatic",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 167309,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:otomoto:ID6Ijs01",
-      "modelKey": "volkswagen-golf-vii-variant",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_unconditional_purchase_price",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 53000,
-        "priceBasis": "unknown",
-        "year": 2018,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-tsi-ea211-125",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 117150,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
       "id": "listing:otomoto:6151517602",
       "modelKey": "skoda-scala",
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -5577,7 +6770,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -5605,7 +6798,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -5633,7 +6826,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -5660,7 +6853,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -5688,7 +6881,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -5716,7 +6909,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -5744,7 +6937,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -5772,7 +6965,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -5800,6 +6993,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -5826,6 +7020,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -5852,6 +7047,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "structural_history",
         "stroller_and_family_fit"
       ],
@@ -5877,6 +7073,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -5904,6 +7101,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -5931,6 +7129,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -5958,7 +7157,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_unconditional_purchase_price",
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -5986,6 +7185,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -6013,6 +7213,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "structural_history",
         "stroller_and_family_fit"
@@ -6039,6 +7240,7 @@
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -6061,91 +7263,12 @@
       }
     },
     {
-      "id": "listing:olx:1103025800",
-      "modelKey": "volkswagen-passat-b8-variant",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_unconditional_purchase_price",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 42800,
-        "priceBasis": null,
-        "year": 2018,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-tsi-ea211-act-150",
-        "transmissionCode": "manual",
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 143520,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:autoplac:3907-3620-SN",
-      "modelKey": "volkswagen-passat-b8-variant",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 42800,
-        "priceBasis": "gross_unconditional_total",
-        "year": 2018,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-tsi-ea211-act-150",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 143520,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:olx:1108157034",
-      "modelKey": "volkswagen-passat-b8-variant",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_unconditional_purchase_price",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 46500,
-        "priceBasis": "unknown",
-        "year": 2018,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-tsi-ea211-act-150",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 160000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
       "id": "listing:autoplac:5298-7669-VQ",
       "modelKey": "mazda-6-iii-wagon",
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "exact_engine_variant",
         "camera_or_compatible_retrofit",
         "structural_history",

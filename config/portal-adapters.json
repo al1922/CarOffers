@@ -1,15 +1,166 @@
 {
-  "version": 1,
-  "note": "Selectors verified from public rendered DOM on 2026-11-09. Missing entries use the existing-result capture only; no speculative form clicks.",
+  "version": 2,
+  "note": "One declared adapter for every enabled source. Search controls marked observed were read from the public rendered interface. Existing-results adapters keep uncertain controls untouched. Cards use the shared read-only parser unless a dedicated source adapter exists.",
   "adapters": {
-    "allegro-lokalnie": { "queryInput": "input[placeholder*='czego szukasz' i]", "submit": "enter" },
-    "autotrader-pl": { "makeInput": "input[placeholder*='Dowolna marka' i]", "modelInput": "input[placeholder*='Dowolny model' i]", "submit": "enter" },
-    "intermoto": { "queryInput": "input[name='phrase']", "submitSelector": "button[name='search_submit']" },
-    "olx": { "queryInput": "input[placeholder*='Znajdź coś dla siebie' i]", "submitSelector": "button[name='searchBtn']" },
-    "autoplac": { "queryInput": "input[name='search']", "submit": "enter" },
-    "sprzedajemy": { "queryInput": "input[placeholder*='Szukaj wśród milionów ofert' i]", "submit": "enter" },
-    "arval-autoselect": { "queryInput": "input[name='search']", "submitSelector": "button:has-text('SZUKAJ')" },
-    "ayvens-usedcars": { "queryInput": "input[name='q']", "submit": "enter" },
-    "autopunkt": { "queryInput": "input[type='search']", "submit": "enter" }
+    "allegro-lokalnie": {
+      "mode": "text_query",
+      "queryInput": "input[placeholder*='czego szukasz' i]",
+      "submitSelector": "[data-testid='header-search-submit__button']",
+      "listingLink": "a[href^='/oferta/']",
+      "nextLink": "a.ml-pagination__link:not([aria-disabled='true']):has-text('Następna strona')",
+      "fields": {
+        "priceMax": "input[name='price_to']"
+      },
+      "cardMode": "generic"
+    },
+    "autotrader-pl": {
+      "mode": "make_model",
+      "makeInput": "input[placeholder*='Dowolna marka' i]",
+      "modelInput": "input[placeholder*='Dowolny model' i]",
+      "fields": {
+        "yearMin": "input[name='Criteria.ProductionYearFrom']",
+        "yearMax": "input[name='Criteria.ProductionYearTo']",
+        "priceMax": "input[name='Criteria.PriceInPlnTo']",
+        "mileageMax": "input[name='Criteria.MileageTo']"
+      },
+      "cardMode": "generic"
+    },
+    "intermoto": {
+      "mode": "text_query",
+      "queryInput": "form input[type='text']",
+      "submitSelector": "button[name='search_submit']",
+      "cardMode": "generic",
+      "note": "Search box selector is scoped to the visible search form to avoid hidden phrase inputs."
+    },
+    "otomoto": {
+      "mode": "blocked",
+      "cardMode": "generic",
+      "blockedAtPilot": true,
+      "note": "Previous headless access returned HTTP 403. Do not retry or bypass in automated runs."
+    },
+    "olx": {
+      "mode": "olx_category",
+      "listingLink": "a[href^='/d/oferta/'], a[href^='https://www.olx.pl/d/oferta/']",
+      "nextLink": "a[data-testid='pagination-forward']",
+      "cardMode": "generic"
+    },
+    "autoplac": {
+      "mode": "autoplac_dialog",
+      "listingLink": "a[data-analytics-label='offer-card-view-details'][href^='/oferta/']",
+      "listingContainer": "a[data-analytics-label='offer-card-view-details']",
+      "listingTitle": "h3",
+      "nextLink": "a[rel='next'][aria-label='Następna strona']",
+      "cardMode": "generic"
+    },
+    "motogratka": {
+      "mode": "text_query",
+      "queryInput": "input[name='q']",
+      "submitSelector": "button[aria-label='Szukaj']",
+      "fields": {
+        "yearMin": "input[name='rok-produkcji_min']",
+        "yearMax": "input[name='rok-produkcji_max']",
+        "priceMax": "input[name='cena-calkowita_max']",
+        "mileageMax": "input[name='przebieg_max']"
+      },
+      "cardMode": "generic"
+    },
+    "sprzedajemy": {
+      "mode": "dedicated",
+      "cardMode": "sprzedajemy"
+    },
+    "automarket": {
+      "mode": "dialog_make_model",
+      "filterGroup": "Lista filtrów",
+      "controls": {
+        "make": "Marka",
+        "model": "Model"
+      },
+      "confirmChoice": "Zapisz i wróć",
+      "showResults": "^Pokaż wyniki",
+      "listingLink": "main article a[href^='/oferta/']",
+      "listingTitle": "h2,h3,h4",
+      "pageParameter": "page",
+      "cardMode": "generic"
+    },
+    "arval-autoselect": {
+      "mode": "text_query",
+      "queryInput": "input[name='search']",
+      "submitSelector": "button:has-text('SZUKAJ')",
+      "cardMode": "generic"
+    },
+    "ayvens-usedcars": {
+      "mode": "text_query",
+      "queryInput": "input[name='q']",
+      "submitSelector": "button[aria-label='label.header.search.go']",
+      "cardMode": "generic"
+    },
+    "toyota-pewne-auto": {
+      "mode": "suggestion_brand_model",
+      "queryInput": "input[data-testid='hero-search-brand-all-finder']",
+      "cardMode": "generic",
+      "note": "Selects only exact visible brand and model suggestions; otherwise preserves the existing results."
+    },
+    "kia-uzywane": {
+      "mode": "existing_results",
+      "cardMode": "generic",
+      "note": "The configured URL showed no inventory in the pilot and Kia reports its online used-car search is temporarily unavailable. Preserve partial coverage."
+    },
+    "skoda-plus": {
+      "mode": "catalog_model",
+      "openFilters": "^Filtry(?: [0-9]+)?$",
+      "dialogName": "Zaawansowane filtrowanie",
+      "modelControl": "^Model(?: |$)",
+      "showResults": "^Pokaż dostępne samochody",
+      "modelLabels": {
+        "skoda-octavia-iii-combi": "Octavia Combi",
+        "skoda-superb-iii-combi": "Superb Combi",
+        "skoda-scala": "Scala"
+      },
+      "listingContainer": "[data-test='car-search-item']",
+      "listingLink": "[data-test='car-search-item'] a[href*='/apps/stock/carDetail/']",
+      "listingTitle": "[class*='MuiTypography-headerSmall']",
+      "loadMoreButton": "button[aria-label='result-page-more-results-btn']",
+      "cardMode": "generic"
+    },
+    "seat-certyfikowane": {
+      "mode": "existing_results",
+      "cardMode": "generic",
+      "note": "The configured page is a certification landing page; no inventory search was exposed."
+    },
+    "suzuki-uzywane": {
+      "mode": "native_select",
+      "modelSelect": "select[name='model']",
+      "fields": {
+        "priceMax": "input[name='price_to']"
+      },
+      "cardMode": "generic",
+      "note": "Selects the exact visible model option from the frozen model profile and applies the visible maximum price."
+    },
+    "hyundai-korea-motors": {
+      "mode": "checkbox_model",
+      "openFilters": "Pokaż filtry",
+      "modelCheckbox": "input[name='59[]']",
+      "listingLink": "a[href*='/samochod/'][href*='/id/']",
+      "nextLink": "a[href*='strona=']:text-is('>')",
+      "cardMode": "generic"
+    },
+    "spoticar": {
+      "mode": "blocked",
+      "cardMode": "generic",
+      "blockedAtPilot": true,
+      "note": "Previous pilot returned an access challenge/403. Do not retry or bypass in automated runs."
+    },
+    "aaaauto": {
+      "mode": "blocked",
+      "cardMode": "generic",
+      "blockedAtPilot": true,
+      "note": "Previous pilot returned an access challenge. Do not retry or bypass in automated runs."
+    },
+    "autopunkt": {
+      "mode": "text_query",
+      "queryInput": "input[type='search']",
+      "listingLink": "a[href*='/samochod/'][href*='/id/']",
+      "cardMode": "generic"
+    }
   }
 }

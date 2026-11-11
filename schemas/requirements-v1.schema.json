@@ -23,7 +23,6 @@
       "required": [
         "maxPriceGrossPln",
         "scope",
-        "mandatoryFinancingAllowed",
         "priceExceptions",
         "auctionsAllowed"
       ],
@@ -35,10 +34,6 @@
         "scope": {
           "const": "purchase_only",
           "type": "string"
-        },
-        "mandatoryFinancingAllowed": {
-          "const": false,
-          "type": "boolean"
         },
         "priceExceptions": {
           "type": "array",
@@ -53,8 +48,7 @@
           }
         },
         "auctionsAllowed": {
-          "type": "boolean",
-          "const": false
+          "type": "boolean"
         }
       },
       "additionalProperties": {}
@@ -103,7 +97,6 @@
       ],
       "properties": {
         "required": {
-          "const": true,
           "type": "boolean"
         },
         "retrofitAllowed": {
@@ -117,7 +110,6 @@
       "additionalProperties": {}
     },
     "structuralDamageAllowed": {
-      "const": false,
       "type": "boolean"
     },
     "unknownHardRequirement": {
@@ -132,12 +124,10 @@
       ],
       "properties": {
         "allowed": {
-          "type": "boolean",
-          "const": true
+          "type": "boolean"
         },
         "mustBeMarked": {
-          "type": "boolean",
-          "const": true
+          "type": "boolean"
         }
       },
       "additionalProperties": {}

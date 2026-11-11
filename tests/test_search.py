@@ -10,7 +10,7 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
-from search_core import assess, brand_key, load_config, write
+from search_core import assess, brand_key, load_config, read, write
 
 car_search_spec = importlib.util.spec_from_file_location("car_search_cli", ROOT / "scripts/car-search.py")
 car_search_cli = importlib.util.module_from_spec(car_search_spec)
@@ -20,9 +20,9 @@ car_search_spec.loader.exec_module(car_search_cli)
 class SearchTests(unittest.TestCase):
     def setUp(self):
         self.config = load_config()
-        self.req = self.config["requirements"]
         self.model = self.config["models"]["models"][0]
-        self.offer = {"id": "listing:test:1", "price": 55000, "priceBasis": "gross_unconditional_total",
+        self.req = self.model["requirements"]
+        self.offer = {"id": "listing:test:1", "price": 55000, "priceBasis": "gross_total",
                       "year": 2020, "mileage": 100000, "bodyCode": "wagon",
                       "engineVariant": "1.4-tgdi-140", "transmissionCode": "manual",
                       "cameraStatus": "installed_confirmed", "familyFitConfirmed": True,
@@ -40,13 +40,9 @@ class SearchTests(unittest.TestCase):
         self.req["purchase"]["maxPriceGrossPln"] = 56000
         self.assertEqual(self.evaluate()["verdict"], "match")
 
-    def test_sources_require_unconditional_gross_price_without_financing(self):
-        self.assertFalse(self.req["purchase"]["mandatoryFinancingAllowed"])
-        self.assertTrue(all(source["purchaseConditions"]["cashPurchaseMustBeConfirmed"]
-                            for source in self.config["sources"]["sources"]))
-        self.offer["priceBasis"] = "financing_conditional"
-        self.assertEqual(self.evaluate()["verdict"], "check")
-        self.assertIn("gross_unconditional_purchase_price", self.evaluate()["unknowns"])
+    def test_financing_conditions_do_not_change_gross_price_assessment(self):
+        self.offer["priceBasis"] = "gross_total"
+        self.assertEqual(self.evaluate()["verdict"], "match")
 
     def test_unknown_does_not_pass(self):
         self.req["purchase"]["priceExceptions"] = []
@@ -86,27 +82,38 @@ class SearchTests(unittest.TestCase):
         self.offer["engineVariant"] = "1.4-tgdi-140"
         self.offer["priceBasis"] = "net"
         self.assertEqual(self.evaluate()["verdict"], "check")
-        self.assertIn("gross_unconditional_purchase_price", self.evaluate()["unknowns"])
+        self.assertIn("gross_purchase_price", self.evaluate()["unknowns"])
 
     def test_corolla_has_no_hidden_budget_exception(self):
-        self.req["purchase"]["priceExceptions"] = []
         model = next(m for m in self.config["models"]["models"] if m["key"] == "toyota-corolla-e210")
+        model["requirements"]["purchase"]["priceExceptions"] = []
         self.offer["price"] = 59000
-        self.assertIn("price_over_limit", assess(self.offer, self.req, model)["failures"])
+        self.assertIn("price_over_limit", assess(self.offer, model["requirements"], model)["failures"])
 
-    def test_impossible_variant_does_not_pass_model_wide_year_filter(self):
-        model = next(m for m in self.config["models"]["models"] if m["key"] == "volkswagen-golf-vii-variant")
-        self.offer["year"] = 2020
-        self.offer["engineVariant"] = "1.4-tsi-ea211-150"
-        result = assess(self.offer, self.req, model)
-        self.assertEqual(result["verdict"], "fail")
-        self.assertIn("year_outside_selection", result["failures"])
+    def test_variant_constraint_is_reported_inside_model_year_range(self):
+        model = next(m for m in self.config["models"]["models"] if m["key"] == "toyota-corolla-e210")
+        self.offer["year"] = 2021
+        self.offer["bodyCode"] = "sedan"
+        self.offer["engineVariant"] = "1.6-valvematic-132"
+        result = assess(self.offer, model["requirements"], model)
+        self.assertNotIn("year_outside_selection", result["failures"])
+        self.assertEqual(result["verdict"], "check")
         self.assertTrue(any(x.startswith("variant_configuration_conflict:") for x in result["unknowns"]))
 
     def test_configured_price_exception_requires_manual_decision(self):
         self.offer["price"] = 55001
         self.assertEqual(self.evaluate()["verdict"], "check")
         self.assertIn("price_exception_requires_user_confirmation", self.evaluate()["unknowns"])
+
+    def test_each_model_owns_its_requirements_and_template_is_not_authoritative(self):
+        template = {key: value for key, value in self.config["requirements"].items() if key != "purpose"}
+        models = self.config["models"]["models"]
+        for model in models:
+            self.assertIsInstance(model.get("requirements"), dict)
+            self.assertIsNot(model["requirements"], template)
+        model_with_different_year = next(model for model in models
+                                         if model["requirements"]["yearMin"] != template["yearMin"])
+        self.assertEqual(model_with_different_year["requirements"]["yearMin"], 2017)
 
     def test_held_variant_is_not_automatically_approved(self):
         self.offer["engineVariant"] = "1.4-mpi-100"
@@ -120,6 +127,11 @@ class SearchTests(unittest.TestCase):
             import shutil
             for folder in ("config", "knowledge", "offers"):
                 shutil.copytree(ROOT / folder, root / folder)
+            model_config_path = root / "config/search-models.json"
+            model_config = read(model_config_path)
+            selected_model = next(m for m in model_config["models"] if m["key"] == self.model["key"])
+            selected_model["requirements"]["purchase"]["maxPriceGrossPln"] = 52000
+            write(model_config_path, model_config)
             def cli(*args):
                 return subprocess.run([sys.executable, "-B", str(ROOT / "scripts/car-search.py"),
                                        *args, "--root", str(root)], capture_output=True, text=True)
@@ -135,6 +147,8 @@ class SearchTests(unittest.TestCase):
             a = cli("claim", "--run", "test", "--worker", "a")
             self.assertEqual(a.returncode, 0, a.stderr)
             task = json.loads(a.stdout)
+            self.assertEqual(task["searchProfile"]["requirements"]["purchase"]["maxPriceGrossPln"], 52000)
+            self.assertEqual(task["searchProfile"]["maxGrossPurchasePln"], 52000)
             self.assertNotEqual(cli("claim", "--run", "test", "--worker", "a").returncode, 0)
             b = cli("claim", "--run", "test", "--worker", "b")
             self.assertNotEqual(task["id"], json.loads(b.stdout)["id"])
@@ -168,7 +182,11 @@ class SearchTests(unittest.TestCase):
                 tasks.append({"id": task_id, "kind": "search", "sourceId": "sprzedajemy",
                               "modelKey": self.model["key"], "state": "partial"})
                 write(results / (task_id + ".json"), {
-                    "offers": [], "coverage": {"listingUrlsChecked": [], "searchResults": [{
+                    "offers": [], "coverage": {
+                        "listingUrlsChecked": [listing_url],
+                        "cardReads": [{"url": listing_url, "checkedAt": checked_at,
+                                       "card": {"title": title, "fields": {}, "photos": []}}],
+                        "searchResults": [{
                         "url": page_url, "checkedAt": checked_at, "nextUrl": next_url,
                         "listings": [{"title": title, "url": listing_url}],
                     }]},
@@ -180,6 +198,7 @@ class SearchTests(unittest.TestCase):
             self.assertEqual(page["nextUrl"], page_url + "?offset=30&sort=new")
             self.assertTrue(page["listingsComplete"])
             self.assertEqual(listing["title"], "Current title")
+            self.assertEqual(cache["cardReads"][0]["card"]["title"], "Current title")
 
     def test_shared_search_cache_never_calls_truncated_listing_page_complete(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -200,6 +219,33 @@ class SearchTests(unittest.TestCase):
             self.assertEqual(page["listingCount"], 301)
             self.assertEqual(page["cachedListingCount"], 300)
             self.assertFalse(page["listingsComplete"])
+
+    def test_shared_card_cache_is_scoped_to_the_claimed_model(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            run = Path(tmp) / "run"
+            results = run / "results"
+            results.mkdir(parents=True)
+            listings = [
+                {"title": "Hyundai i30 1.5 DPi (Kia Ceed)", "url": "https://sprzedajemy.pl/hyundai-i30"},
+                {"title": "Kia Ceed SW 1.4 MPI", "url": "https://sprzedajemy.pl/kia-ceed"},
+            ]
+            reads = [{"url": item["url"], "checkedAt": "2026-11-09T10:00:00Z",
+                      "card": {"title": item["title"], "fields":
+                               {"Marka": "Hyundai", "Model": "i30"} if "hyundai" in item["url"] else
+                               {"Marka": "Kia", "Model": "Ceed"}, "photos": []}}
+                     for item in listings]
+            write(results / "prior.json", {"offers": [], "coverage": {
+                "searchResults": [{"url": "https://sprzedajemy.pl/search", "checkedAt": "2026-11-09T10:00:00Z",
+                                   "listings": listings}],
+                "listingUrlsChecked": [item["url"] for item in listings], "cardReads": reads,
+            }})
+            prior = {"id": "prior", "kind": "search", "sourceId": "sprzedajemy", "state": "partial"}
+            task = {"modelKey": "kia-ceed", "searchProfile": {"queryPlan": {"manualFilters": {
+                "make": "Kia", "model": "Ceed"}}}}
+            cache = car_search_cli.build_shared_search_cache(Path(tmp), run, {"tasks": [prior]}, "sprzedajemy", task)
+            self.assertEqual(cache["cacheModelKey"], "kia-ceed")
+            self.assertEqual([entry["card"]["title"] for entry in cache["cardReads"]], ["Kia Ceed SW 1.4 MPI"])
+            self.assertEqual(cache["listingUrlsChecked"], ["https://sprzedajemy.pl/kia-ceed"])
 
 
 if __name__ == "__main__":

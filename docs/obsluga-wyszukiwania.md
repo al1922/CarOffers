@@ -2,17 +2,19 @@
 
 ## Gdzie zmieniać ustawienia
 
-- `config/requirements.json`: `purchase.maxPriceGrossPln` to limit ceny zakupu;
-  `mileage.preferredMaxKm` to preferencja, `hardMaxKm: null` oznacza brak twardego limitu.
-- `config/search-models.json`: aktywność, nadwozia, silniki, priorytet i lata każdego modelu.
+- `config/search-models.json`: aktywność, nadwozia, silniki, priorytet, lata i
+  kompletny obiekt `requirements` każdego modelu. To jedyne aktywne źródło
+  wymagań podczas planowania wyszukiwania i oceny.
+- `config/requirements.json`: szablon startowy do skopiowania przy dodawaniu
+  modelu; nie nadpisuje wymagań już zapisanych przy modelach.
   Identyfikatory silników są lokalnymi etykietami wyszukiwania, nie kodami producenta.
 - `config/sources.json`: aktywność i priorytety portali. `brands: []` oznacza brak ograniczenia marki.
 - `knowledge/models/`: fakty techniczne z odnośnikami i jawnymi lukami.
 
-Potwierdzone: rocznie 12–15 tys. km, typowa jazda miejska około 30 minut,
-LPG dopuszczone i oznaczane, zakup aukcyjny wykluczony. Czasu nie przeliczamy na
-niepodaną odległość. Pozostałe pola `openQuestions` czekają na uzupełnienie. Zakres silników
-jest przeniesiony z dotychczasowego projektu i wymaga przeglądu na podstawie kart.
+Wymagania są kopiowane z dotychczasowego szablonu do każdego modelu i obecnie
+mają jednakowe wartości. Można je zmieniać niezależnie w `models[].requirements`
+bez wpływu na pozostałe modele. Czasu jazdy miejskiej nie przeliczamy na
+niepodaną odległość. Zakres silników pozostaje osobny dla każdego modelu.
 
 ## Polecenia z katalogu projektu
 
@@ -85,6 +87,14 @@ otwarcia karty zapisz w `coverage.listingUrlsChecked`, także gdy wystąpił bł
 Jeśli strona pokazuje link do następnej strony, zachowaj jego dokładny adres w
 `nextUrl`, żeby cache mógł wznowić paginację bez konstruowania URL-a.
 
+Przy `claim` odczyty kart w `sharedResultsCache` są ograniczane do tytułów
+pasujących do marki i modelu bieżącego zadania. Karta nadal przechodzi pełną
+kwalifikację z profilu tego zadania; cache nie przenosi statusu kwalifikacji
+między modelami. Offline replay na zapisanym przebiegu i30 zmniejszył cache
+przekazywany do symulowanego zadania Kia Ceed z 1,89 MB do 0,19 MB (−89,9%);
+pozostała część to strony i migawki wyników, a nie odczyty kart. Szczegóły są
+w `runs/sprzedajemy-i30-full-2026-11-10/benchmark-cache-scoping.json`.
+
 ### Szybszy odczyt w Playwright
 
 Projekt udostępnia narzędzie `scripts/playwright-pages.mjs`, które odwiedza
@@ -113,30 +123,39 @@ filtrów, nie loguje się, nie ponawia żądań i nie zapisuje ofert do bazy.
 
 ### Adapter Sprzedajemy
 
-`scripts/sprzedajemy-search.mjs` jest pierwszym adapterem źródłowym. Na podstawie
+Wspólny punkt wejścia `search:portal` wybiera adapter Sprzedajemy automatycznie.
+Jego implementacja w `scripts/sprzedajemy-search.mjs` na podstawie
 aktywnego `modelKey` odczytuje widoczne linki marki i modelu w kategoriach
 portalu, buduje filtrowany URL bez zgadywania slugów, pobiera widoczne karty z
 listy i przechodzi po linku „Następna”. Przy kilku kluczach modeli współdzieli
 odczyt stron kategorii marek w jednej sesji:
 
 ```powershell
-npm run search:sprzedajemy -- --model-key hyundai-i30-iii-wagon --max-pages 2
+python -B scripts/car-search.py claim --run <run-id> --worker <worker-id> --source sprzedajemy |
+  npm run search:portal -- --claim-stdin --max-pages 2
 ```
 
-Można powtórzyć `--model-key` dla kolejnych aktywnych modeli. Wynik jest migawką
-kandydatów w JSON na standardowym wyjściu, a nie plikiem wynikowym zadania:
+Wynik jest migawką kandydatów w JSON na standardowym wyjściu, a nie plikiem wynikowym zadania:
 adapter nie otwiera kart, nie potwierdza dostępności i nie filtruje rocznika,
 ceny, przebiegu, nadwozia ani silnika. Przekaż kandydatów do zwykłego
 `candidateScreening` i kontroli kart. Nie używaj tej migawki bezpośrednio w
 `finish` ani imporcie. `--max-pages` domyślnie wynosi 1; niewczytane strony są
 jawnie wskazane w polu `remaining`.
 
+Przy weryfikacji Sprzedajemy odsiew rozpoznaje też jednoznaczne tytuły ofert
+samych części (np. „zderzak”, „lampa”, „części”). Słowa wieloznaczne, takie jak
+„drzwi” lub „opony”, nie są podstawą odrzucenia. Regułę sprawdzono offline na
+712 zapisanych wynikach i 574 odczytach kart z pilota i30: 10 ofert części
+zostało pominiętych; wszystkie 10 miało wcześniej odczytane karty części.
+Przy historycznym czasie 201,366 s / 547 kart prognozowana oszczędność wynosi
+około 3,7 s na analogicznym przebiegu. To estymacja z migawki, nie nowy crawl.
+
 W aktywnym przebiegu użyj wejścia z `claim`, żeby adapter korzystał z profilu
 zamrożonego w zadaniu zamiast z bieżącej konfiguracji:
 
 ```powershell
 python -B scripts/car-search.py claim --run <run-id> --worker <worker-id> --source sprzedajemy |
-  node scripts/sprzedajemy-search.mjs --claim-stdin --max-pages 2
+  npm run search:portal -- --claim-stdin --max-pages 2
 ```
 
 W tym trybie adapter wymaga zadania `kind: search`, `state: running` i
@@ -147,6 +166,41 @@ przygotowaniu standardowego wyniku zadania. Dokładnie pasującą stronę z
 przenoszony do cache kolejnego zadania, by można było kontynuować paginację bez
 odgadywania adresu. Cache nadal jest tylko migawką wyników. Adapter sam nie
 wywołuje `finish` i nie zapisuje plików w `runs/`.
+
+Dodaj `--verify` do wywołania z `--claim-stdin`, aby w tej samej sesji
+sprawdzić również karty. Przykład używa zapisanej odpowiedzi `claim`:
+
+```powershell
+Get-Content -Raw claim.json |
+  npm run search:portal -- --claim-stdin --verify-cards
+```
+
+Tryb weryfikacji stosuje profil z zadania, pomija aktywne duplikaty i otwiera
+pozostałe karty po linkach z listy. Wynik na stdout zawiera `coverage`,
+`offers`, `errors` oraz czasy i decyzje w `diagnostics`. Koordynator
+zapisuje go w `results/<task-id>.json` i sprawdza przez `finish`. Przy
+pilotażu `--max-pages` ogranicza liczbę stron na zapytanie, a `--max-cards`
+liczbę nowych otwarć kart. Adapter przechodzi kategorię oraz zapytania
+tekstowe z zamrożonego planu. Stan każdego zapytania jest w
+`diagnostics.queryChecks`. Blokada, przerwana paginacja lub nierozstrzygnięte
+karty są widoczne w wyniku.
+
+Domyślnie adapter próbuje odczytać kartę z HTML w tej samej sesji. Przy
+niepełnym układzie używa zwykłego odczytu przeglądarką. Odmowa dostępu,
+CAPTCHA lub błąd certyfikatu kończy próbę bez przełączania sposobu odczytu.
+Wymuś przeglądarkę przez `--card-reader browser`. Liczniki
+`diagnostics.htmlCards` i `diagnostics.htmlFallbacks` pokazują użyte ścieżki.
+
+Pomiar można powtórzyć na 50 kartach z zapisanego wyniku, używając
+`node scripts/benchmark-sprzedajemy-cards.mjs <wynik.json>`. Polecenie odczytuje
+obie wersje w naprzemiennej kolejności, porównuje zebrane pola i zapisuje
+pomiar na stdout. Odczyt samego HTML nie uruchamia skryptów strony ani nie
+pobiera zasobów galerii.
+
+`coverage.cardReads` zapisuje odczytane dane z karty albo błąd wraz z URL-em
+i czasem. Kolejne zadanie w tym samym przebiegu może ocenić zachowaną kartę
+według własnego profilu. Stary wpis zawierający sam URL nie wystarcza do
+pominięcia odczytu.
 
 Wykonawca powinien utrzymywać jedną przeglądarkę i kontekst Playwright przez
 cały przydzielony zakres portalu. Dla stron wyników używaj nawigacji
@@ -290,6 +344,38 @@ obserwacja `available` dla zarchiwizowanego auta
 przywraca je do `offers`. Koordynator używa `import-preview`, przegląda zmiany,
 a potem `import-apply` oraz walidację.
 
+## Szybkie sprawdzenie dostępności
+
+Jeśli użytkownik pyta, czy oferty nadal istnieją, uruchom `availability-plan`
+dla wszystkich aktywnych URL-i. To krótki status check: nie odczytuje ceny,
+przebiegu, wyposażenia ani zdjęć. Zadania są podzielone według portalu i modelu;
+koordynator przydziela je pracownikom równolegle:
+
+```powershell
+python -B scripts/car-search.py availability-plan --run dostepnosc-2026-11-10 --agents 4
+python -B scripts/car-search.py claim --run dostepnosc-2026-11-10 --worker worker-1 |
+  node scripts/availability-check.mjs --claim-stdin
+```
+
+Helper używa jednego kontekstu i sprawdza do 4 kart równolegle. Najpierw szybko
+odczytuje HTML, a do renderowania przechodzi tylko, gdy nie może dopasować oferty.
+Zapisuje wynik w `runs/<run-id>/results/` i nie nadpisuje istniejących dowodów.
+Koordynator wykonuje `claim`, `finish`, `import-preview`, `import-apply` i
+walidację; nie uruchamia `assess` dla samego sprawdzenia dostępności.
+
+Pracownik zapisuje tylko `id`, URL, czas i status. Jawny komunikat portalu lub
+HTTP 410 oznacza `removed`/`sold`; karta z treścią auta oznacza `available`.
+HTTP 403/404, timeout, CAPTCHA i inne strony błędów oznaczają `access_error`;
+nie obchodź blokad ani nie ponawiaj ręcznie każdej karty. Zachowaj ten status w
+historii. Jeśli po sprawdzeniu wszystkich adresów auta nie ma ani jednej karty
+`available`, przebieg dostępności przenosi rekord do archiwum jako `unverified`.
+To usuwa go z aktywnej listy, ale nie stwierdza, że auto zostało sprzedane.
+Jeden dostępny URL pozostawia auto aktywne.
+
+Po `finish` wszystkich zadań koordynator wykonuje `import-preview`. Przy braku
+konfliktów stosuje `import-apply` i uruchamia walidację ofert. Historia zapisuje
+każdą próbę; nowa obserwacja `available` może przywrócić ofertę z archiwum.
+
 ## Walidacja i publikacja
 
 ### Kontrola dostępności źródeł i Playwright
@@ -308,13 +394,29 @@ blokad. `200` oznacza, że załadowała się strona, a nie że wyniki konkretneg
 modelu zostały przeszukane. `403`, błąd TLS lub strona wyzwania oznacza
 `blocked`; takiego źródła nie oznaczaj jako `no_matches`.
 
-Po udanym `claim` można uruchomić `npm run search:portal -- --claim-stdin` dla
-wspólnego odczytu widocznych kart wyników. Adapter wykonuje zapytania tekstowe
-z zamrożonego `queryPlan`, próbuje widocznej paginacji i zwraca wyłącznie
-`coverage.searchResults`; nie otwiera kart i nie potwierdza dostępności, ceny
-ani wyposażenia. Wynik pozostaje `partial`, dopóki wykonawca nie sprawdzi ofert.
-Dla portalu o innej strukturze dodaj dedykowaną strategię zamiast rozszerzać
-heurystykę tak, by zgadywała pola. Sprzedajemy zachowuje osobny adapter kategorii.
+`config/portal-adapters.json` ma wpis dla każdego aktywnego źródła; `validate`
+sprawdza kompletność i wymagane pola strategii. `search:portal` wybiera adapter
+na podstawie portalu w zadaniu `claim`. Obsługuje wyszukiwanie tekstowe,
+formularz marka/model, jednoznaczne sugestie, natywny wybór modelu oraz
+dedykowany adapter kategorii Sprzedajemy. Tam, gdzie nie ma stabilnego filtra,
+zachowuje widoczne wyniki i oznacza pozostały zakres jako niepełny. Nieznane
+pola formularzy pozostają nietknięte.
+
+Domyślne wywołanie zapisuje tylko migawkę wyników. Dodaj `--verify-cards`, aby
+otwierać przescreenowane karty (limit domyślnie 20, zmiana przez `--max-cards`):
+
+```powershell
+python -B scripts/car-search.py claim --run <run-id> --worker <worker-id> |
+  npm run search:portal -- --claim-stdin --max-pages 20 --verify-cards --max-cards 20
+```
+
+Wynik zapisuje wyrenderowane pola, dane JSON-LD, bezpośrednie HTTPS zdjęcia
+z galerii i URL każdej próby w `coverage.cardReads` oraz
+`coverage.listingUrlsChecked`. Kandydat staje się ofertą tylko po zgodności
+modelu i widocznym sygnale aktywnej sprzedaży; brakujące wymagania pozostają
+nieznane, a przebieg pozostaje `partial` do pełnej kontroli zakresu. Źródła
+oznaczone `blocked` kończą się bez ponawiania dostępu. Nigdy nie używaj snippetów
+ani danych z cache jako dowodu dostępności lub ceny.
 
 ```powershell
 python -B -m unittest discover -s tests -v

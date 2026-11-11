@@ -26,6 +26,7 @@
           "searchYears",
           "allowedEngineVariants",
           "legacyEngineSelection",
+          "requirements",
           "offersFile",
           "knowledgeFile"
         ],
@@ -96,6 +97,9 @@
           "legacyEngineSelection": {
             "type": "string",
             "minLength": 1
+          },
+          "requirements": {
+            "type": "object"
           },
           "offersFile": {
             "type": "string",

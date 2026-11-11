@@ -1,7 +1,7 @@
 import {defaultFilters,sanitizeFilters,encodeFilters,decodeFilters,dedupe,filterOffers,sortOffers,bodyNames,statuses,fmt,dateLabel,distance,availability,verdictNames} from './assets/core.mjs?v=13';
 import {createStore} from './assets/storage.mjs?v=11';
-import {loadData,loadKnowledge} from './assets/data.mjs?v=12';
-import {el,button,badge,empty,link,offerCard,offerTable,offerDetails,comparison,knowledgeCard,knowledgeDetails,updates} from './assets/views.mjs?v=13';
+import {loadData,loadKnowledge} from './assets/data.mjs?v=13';
+import {el,button,badge,empty,link,offerCard,offerTable,offerDetails,comparison,knowledgeCard,knowledgeDetails,updates} from './assets/views.mjs?v=14';
 
 const $=selector=>document.querySelector(selector);
 let data=null,filters=defaultFilters(),comparisonKeys=new Set(),grouped=[],loadToken=0;
@@ -16,7 +16,7 @@ for(const [id,label] of [['offer-dialog','Szczegóły oferty lub modelu'],['sett
 const keys=()=>data.models.map(m=>m.key);
 const compared=o=>o.storageKeys.some(k=>comparisonKeys.has(k));
 function selectedComparison(){return grouped.filter(compared).slice(0,4);}
-const context=()=>({budget:data.requirements.purchase.maxPriceGrossPln,meta:store.meta,origin:store.origin,compared,
+const context=()=>({budget:data.requirements.purchase.maxPriceGrossPln,requirementsFor:o=>data.models.find(m=>m.key===o.modelKey)?.searchRequirements??data.requirements,budgetFor:o=>data.models.find(m=>m.key===o.modelKey)?.searchRequirements?.purchase?.maxPriceGrossPln??data.requirements.purchase.maxPriceGrossPln,meta:store.meta,origin:store.origin,compared,
  favorite(o){const status=store.meta(o);store.update(o,{favorite:!status.favorite});render();const target=[...document.querySelectorAll('[data-favorite-key]')].find(b=>b.dataset.favoriteKey===o.key);target?.focus();},
  compare(o,checked){if(checked){if(selectedComparison().length>=4&&!compared(o)){notify('Porównanie mieści maksymalnie cztery auta. Usuń jedno, aby dodać kolejne.');render();return;}comparisonKeys.add(o.storageKeys[0]);}else{o.storageKeys.forEach(k=>comparisonKeys.delete(k));}store.comparison=[...comparisonKeys];render();[...document.querySelectorAll('[data-compare-key]')].find(input=>input.dataset.compareKey===o.key)?.focus({preventScroll:true});},
  open:openOffer,
@@ -38,10 +38,12 @@ function overview(){
  const matches=grouped.filter(o=>o.verdict==='match').length,located=grouped.filter(o=>o.location?.status==='available').length,geocoded=grouped.filter(o=>distance(o,{lat:0,lon:0})!==null).length;
  const rows=[[grouped.length,'Samochodów w bazie',data.offers.length+' zapisanych ogłoszeń'],[matches,'Zgodnych z warunkami','Według zapisanych dowodów'],[located,'Z miejscowością',geocoded+' z punktem do odległości'],[data.models.length,'Modeli do wyboru','Zamknięta lista wyszukiwania']];
  $('#overview').replaceChildren(...rows.map(([value,label,note])=>{const metric=el('div','metric');metric.append(el('p','metric-label',label),el('strong','',fmt(value)),el('small','',note));return metric;}));
- const req=data.requirements;
- $('#criteria-pills').replaceChildren(...[fmt(req.purchase.maxPriceGrossPln)+' zł brutto','Od '+req.yearMin,'Kamera lub zgodny montaż','LPG dopuszczone'].map(x=>el('span','pill',x)));
+ const selectedModels=filters.models.map(key=>data.models.find(m=>m.key===key)).filter(Boolean),req=selectedModels.length===1?selectedModels[0].searchRequirements:data.requirements;
+ const pills=selectedModels.length>1?['Wymagania ustalane osobno dla '+selectedModels.length+' modeli']:selectedModels.length===1?[fmt(req.purchase.maxPriceGrossPln)+' zł brutto','Od '+req.yearMin,req.camera.required?'Kamera lub zgodny montaż':'Kamera jako preferencja',req.lpg.allowed?'LPG dopuszczone':'Bez LPG']:[fmt(req.purchase.maxPriceGrossPln)+' zł brutto','Od '+req.yearMin,'Kamera lub zgodny montaż','LPG dopuszczone'];
+ $('#criteria-pills').replaceChildren(...pills.map(x=>el('span','pill',x)));
  const mileageRule=req.mileage.hardMaxKm!==null?`Twardy limit przebiegu: ${fmt(req.mileage.hardMaxKm)} km.`:`Przebieg do ${fmt(req.mileage.preferredMaxKm)} km jest preferencją, nie automatycznym odrzuceniem.`;
- const detail=$('#requirements-detail');detail.replaceChildren(el('p','',`Budżet zakupu: ${fmt(req.purchase.maxPriceGrossPln)} zł brutto według ceny podanej w ogłoszeniu. Przekroczenie tylko po Twojej osobnej decyzji. ${mileageRule}`),el('p','',`Dwie osoby dorosłe i dziecko, miejsce na wózek i bagaże. Kamera obecna lub potwierdzony montaż. Bez poważnych szkód konstrukcyjnych i aukcji. LPG wymaga oznaczenia i dokumentów. Roczniki, nadwozia i silniki są dodatkowo ograniczone dla danego modelu.`));
+ const familyText=use=>`${use.adults} ${use.adults===1?'dorosła osoba':'dorosłych'} i ${use.children} ${use.children===1?'dziecko':'dzieci'}${use.strollerAndLuggageRequired?', wymagane miejsce na wózek i bagaże':''}`;
+ const detail=$('#requirements-detail');detail.replaceChildren(el('p','',selectedModels.length>1?'Każdy zaznaczony model ma własny zestaw wymagań. Szczegóły są pokazane przy danym modelu i oferta jest oceniana według wymagań przypisanego do niej modelu.':`Budżet zakupu: ${fmt(req.purchase.maxPriceGrossPln)} zł brutto według ceny podanej w ogłoszeniu. Przekroczenie tylko po Twojej osobnej decyzji. ${mileageRule}`),...(selectedModels.length>1?[]:[el('p','',`${familyText(req.use||{})}. ${req.camera.required?'Kamera obecna lub potwierdzony montaż.':'Kamera nie jest wymagana.'} ${req.structuralDamageAllowed?'Uszkodzenia konstrukcyjne są dopuszczone.':'Bez poważnych szkód konstrukcyjnych.'} ${req.purchase.auctionsAllowed?'Aukcje dopuszczone.':'Zakup aukcyjny wykluczony.'} ${req.lpg.allowed?'LPG dopuszczone':'LPG niedopuszczone'}${req.lpg.mustBeMarked?' i wymaga oznaczenia oraz sprawdzenia dokumentów instalacji.':'.'}`)]));
  if(filters.models.length)for(const key of filters.models){const model=data.models.find(m=>m.key===key);if(model?.requirements)detail.append(el('p','hint',model.requirements));}
 }
 function renderModels(){const focused=document.activeElement?.dataset.modelKey,search=$('#model-search').value.toLocaleLowerCase('pl'),container=$('#model-options');container.replaceChildren();for(const model of data.models){if(!model.name.toLocaleLowerCase('pl').includes(search))continue;const label=el('label'),input=el('input');input.type='checkbox';input.dataset.modelKey=model.key;input.checked=filters.models.includes(model.key);input.addEventListener('change',()=>updateFilter('models',input.checked?[...filters.models,model.key]:filters.models.filter(k=>k!==model.key)));label.append(input,el('span','',model.name),el('small','',model.loadError?'Błąd':model.count));container.append(label);if(model.key===focused)input.focus({preventScroll:true});}}

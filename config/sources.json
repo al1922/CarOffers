@@ -49,8 +49,7 @@
       "purchaseConditions": {
         "retailBuyerAllowed": true,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+        "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
       },
       "notes": []
     },
@@ -97,8 +96,7 @@
       "purchaseConditions": {
         "retailBuyerAllowed": true,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+        "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
       },
       "notes": [
         "searchUrl jest przykładem dla Mazowieckiego. Aby pokryć całą Polskę, agent ma iterować regiony i zapisywać je w coverage."
@@ -144,8 +142,7 @@
       "purchaseConditions": {
         "retailBuyerAllowed": true,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+        "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
       },
       "notes": [
         "Oddzielać ogłoszenia ze stałą ceną od aukcji, które użytkownik wykluczył."
@@ -191,8 +188,7 @@
       "purchaseConditions": {
         "retailBuyerAllowed": true,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+        "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
       },
       "notes": [
         "Wyłączone w kolejce: żadna aktywna marka/model CarOffers nie pasuje do zakresu źródła; włącz po dodaniu tej marki."
@@ -237,8 +233,7 @@
       "purchaseConditions": {
         "retailBuyerAllowed": true,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+        "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
       },
       "notes": [
         "Wyłączone w kolejce: żadna aktywna marka/model CarOffers nie pasuje do zakresu źródła; włącz po dodaniu tej marki."
@@ -283,8 +278,7 @@
       "purchaseConditions": {
         "retailBuyerAllowed": true,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+        "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
       },
       "notes": [
         "Źródło na przyszłość: obecna lista modeli nie zawiera BMW.",
@@ -334,8 +328,7 @@
       "purchaseConditions": {
         "retailBuyerAllowed": true,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+        "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
       },
       "notes": [
         "Źródło na przyszłość: obecna lista modeli nie zawiera Mercedes-Benz.",
@@ -387,8 +380,7 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+        "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
       },
       "notes": [
         "Portale w tej samej grupie właścicielskiej; część ogłoszeń może być cross-postowana. Deduplikuj po VIN/ID/URL."
@@ -439,8 +431,7 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+        "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
       },
       "notes": [
         "Portale w tej samej grupie właścicielskiej; część ogłoszeń może być cross-postowana. Deduplikuj po VIN/ID/URL."
@@ -451,7 +442,7 @@
       "id": "autoplac",
       "name": "Autoplac",
       "url": "https://autoplac.pl/",
-      "searchUrl": "https://autoplac.pl/",
+      "searchUrl": "https://autoplac.pl/oferty/samochody-osobowe",
       "category": "general",
       "sellerTypes": [
         "private",
@@ -488,8 +479,7 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+        "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
       },
       "notes": [
         "Nie uznawaj niepełnego dostępu za brak ofert."
@@ -532,8 +522,7 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+        "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
       },
       "notes": [
         "Pusta lista filtrów oznaczała brak rozpoznania; minimum potwierdzone to kategoria samochodów osobowych.",
@@ -575,8 +564,7 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+        "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
       },
       "notes": [
         "Traktuj jako osobne źródła; cross-post nie jest gwarantowany i rozpoznaje się go po VIN/URL."
@@ -586,7 +574,7 @@
       "id": "automarket",
       "name": "Automarket / Masterlease (Grupa PKO BP)",
       "url": "https://www.automarket.pl/samochody-poleasingowe",
-      "searchUrl": "https://www.automarket.pl/samochody-poleasingowe",
+      "searchUrl": "https://www.automarket.pl/samochody/uzywane/wszystkie?sort_by=popular&is_company=0&modal=full-filters",
       "category": "fleet",
       "sellerTypes": [
         "leasing_company",
@@ -602,7 +590,10 @@
       "enabled": true,
       "priority": 1,
       "effort": 2,
-      "filters": [],
+      "filters": [
+        "make",
+        "model"
+      ],
       "method": "Odczytaj wyszukiwarkę i ogłoszenie narzędziem web; przy niepełnej treści użyj przeglądarki. Wynik wyszukiwarki jest wskazówką, nie potwierdzeniem aktualności. Nie omijaj logowania ani zabezpieczeń.",
       "accessStatus": "listing_read",
       "lastAttemptAt": "2026-11-08",
@@ -620,8 +611,7 @@
       "purchaseConditions": {
         "retailBuyerAllowed": true,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+        "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
       },
       "notes": [],
       "priceReview": "Sprawdź, czy cena podana w ogłoszeniu jest brutto; forma finansowania nie wpływa na ocenę."
@@ -661,8 +651,7 @@
       "purchaseConditions": {
         "retailBuyerAllowed": true,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+        "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
       },
       "notes": [
         "Nie uznawaj niepełnego dostępu za brak ofert."
@@ -711,8 +700,7 @@
       "purchaseConditions": {
         "retailBuyerAllowed": true,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+        "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
       },
       "notes": [],
       "priceReview": "Sprawdź, czy cena podana w ogłoszeniu jest brutto; forma finansowania nie wpływa na ocenę."
@@ -753,8 +741,7 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+        "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
       },
       "notes": [
         "Nie uznawaj niepełnego dostępu za brak ofert.",
@@ -796,8 +783,7 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+        "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
       },
       "notes": [
         "Nie uznawaj niepełnego dostępu za brak ofert.",
@@ -840,51 +826,7 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
-      },
-      "notes": [
-        "Nie uznawaj niepełnego dostępu za brak ofert.",
-        "Warunki programu i certyfikat dotyczą konkretnego egzemplarza, nie każdego auta dealera."
-      ]
-    },
-    {
-      "id": "volkswagen-certyfikowane",
-      "name": "Volkswagen Certyfikowane używane",
-      "url": "https://www.volkswagen.pl/pl/osobowe/volkswagen-certyfikowane-uzywane.html",
-      "searchUrl": "https://www.volkswagen.pl/pl/oferty-i-promocje/gsl-results.html/__app/search/cars.app?priceMode-app=price&sort-app=DATE_OFFER&sortdirection-app=ASC&t_cartype-app=U&t_gwfc-app=1&viewMode-app=tile",
-      "category": "manufacturer_program",
-      "sellerTypes": [
-        "dealer"
-      ],
-      "origins": [
-        "mixed"
-      ],
-      "brands": [
-        "Volkswagen"
-      ],
-      "enabled": true,
-      "priority": 2,
-      "effort": 3,
-      "filters": [],
-      "method": "Odczytaj wyszukiwarkę i ogłoszenie narzędziem web; przy niepełnej treści użyj przeglądarki. Wynik wyszukiwarki jest wskazówką, nie potwierdzeniem aktualności. Nie omijaj logowania ani zabezpieczeń.",
-      "accessStatus": "partial",
-      "lastAttemptAt": "2026-11-08",
-      "lastSuccessfulSearchAt": null,
-      "verification": {
-        "checkedAt": "2026-11-08",
-        "evidenceUrls": [
-          "https://www.volkswagen.pl/pl/osobowe/volkswagen-certyfikowane-uzywane.html",
-          "https://www.volkswagen.pl/pl/oferty-i-promocje/gsl-results.html/__app/search/cars.app?priceMode-app=price&sort-app=DATE_OFFER&sortdirection-app=ASC&t_cartype-app=U&t_gwfc-app=1&viewMode-app=tile"
-        ],
-        "note": "Potwierdzono program i przejście do katalogu aut używanych; katalog w odczycie tekstowym nie pokazał ofert. Wymaga przeglądarki.",
-        "fullSearchCompleted": false
-      },
-      "purchaseConditions": {
-        "retailBuyerAllowed": null,
-        "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+        "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
       },
       "notes": [
         "Nie uznawaj niepełnego dostępu za brak ofert.",
@@ -926,8 +868,7 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+        "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
       },
       "notes": [
         "Nie uznawaj niepełnego dostępu za brak ofert.",
@@ -970,8 +911,7 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+        "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
       },
       "notes": [
         "Warunki programu i certyfikat dotyczą konkretnego egzemplarza, nie każdego auta dealera."
@@ -995,7 +935,9 @@
       "enabled": true,
       "priority": 2,
       "effort": 2,
-      "filters": [],
+      "filters": [
+        "model"
+      ],
       "method": "Odczytaj wyszukiwarkę i ogłoszenie narzędziem web; przy niepełnej treści użyj przeglądarki. Wynik wyszukiwarki jest wskazówką, nie potwierdzeniem aktualności. Nie omijaj logowania ani zabezpieczeń.",
       "accessStatus": "partial",
       "lastAttemptAt": "2026-11-09",
@@ -1012,8 +954,7 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+        "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
       },
       "notes": []
     },
@@ -1057,8 +998,7 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+        "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
       },
       "notes": [
         "Warunki programu i certyfikat dotyczą konkretnego egzemplarza, nie każdego auta dealera."
@@ -1096,8 +1036,7 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+        "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
       },
       "notes": []
     },
@@ -1144,8 +1083,7 @@
       "purchaseConditions": {
         "retailBuyerAllowed": null,
         "auction": false,
-        "cashPurchaseMustBeConfirmed": true,
-        "priceBasis": "Potwierdź pełną cenę brutto przy zakupie bez obowiązkowego finansowania. Nie używaj raty ani ceny warunkowej finansowaniem jako ceny zakupu."
+        "priceBasis": "Użyj widocznej ceny brutto jako ceny zakupu; warunki finansowania nie wpływają na kwalifikację. Nie traktuj raty miesięcznej ani kwoty netto jako ceny całkowitej."
       },
       "notes": []
     }

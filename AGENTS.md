@@ -1,15 +1,22 @@
 # CarOffers — instrukcje wyszukiwania
 
+Mapa odpowiedzialności modułów i rutyna pracy nad kodem są w
+`docs/architektura-dla-agenta.md`. Ten plik pozostaje źródłem szczegółowych zasad
+wyszukiwania, dowodów, importu i koordynacji.
+
 ## Dane wejściowe
 
-Przed pracą przeczytaj `config/requirements.json`, `config/search-models.json`,
-`config/sources.json` oraz odpowiednie `knowledge/models/*.json`.
+Przed pracą przeczytaj `config/requirements.json` jako szablon domyślny,
+`config/search-models.json` z wymaganiami per model, `config/sources.json` oraz
+odpowiednie `knowledge/models/*.json`. Wyszukiwanie i ocena używają
+`models[].requirements`; szablon nie nadpisuje ustawień modelu.
 Uruchom `python -B scripts/car-search.py validate`. Konfiguracja jest nadrzędna
 wobec historycznych tekstów i ocen w ofertach. Nie rozluźniaj wymagań samodzielnie.
-Budżet dotyczy pełnej kwoty brutto zakupu bez obowiązkowego finansowania.
-Użytkowanie: 12–15 tys. km rocznie, typowy przejazd miejski około 30 minut.
-LPG jest dopuszczone, lecz musi być oznaczone przy ofercie i sprawdzone pod kątem
-dokumentów instalacji/zbiornika. Zakup aukcyjny jest wykluczony. Zapisuj `saleType`
+Wymagania budżetu, rodziny, przebiegu, kamery, LPG i sprzedaży są określone
+oddzielnie przy każdym modelu; bieżące wartości startowe są takie same.
+Warunki finansowania nie wpływają na kwalifikację ceny brutto. LPG musi być
+oznaczone zgodnie z wymaganiami modelu i sprawdzone pod kątem dokumentów
+instalacji/zbiornika. Zapisuj `saleType`
 oraz `lpgInstalled`; nie utożsamiaj samego silnika benzynowego z brakiem LPG.
 Zbieraj również bezpośrednie adresy zdjęć widoczne na karcie ogłoszenia i zapisuj
 je jako opcjonalną tablicę `photos` z URL-ami HTTPS. Zapisuj tylko zdjęcia danego
@@ -34,7 +41,7 @@ od użytkownika ręcznego uruchamiania poleceń CLI.
    zakończeniu etapu uruchamia `recommend-select`. Wagi: bezpieczeństwo rodzinne
    30, niezawodność 25, bagażnik 20, moc i użytkowanie miasto/trasa 20, kamera 5.
    Status `confirmed` otrzymuje pełne punkty, `partial` połowę, `unknown` zero.
-   Twarde wymagania z `requirements.json` nie mogą być skompensowane punktacją.
+   Twarde wymagania przypisane do danego modelu nie mogą być skompensowane punktacją.
 3. Dla pięciu najwyżej ocenionych modeli koordynator rozdziela po jednym zadaniu
    `recommendation_listing` na model. Agent sprawdza kandydatów po kolei; przy
    zakończonej lub niedostępnej karcie przechodzi do następnej oferty tego samego
@@ -68,7 +75,8 @@ twardy warunek (np. rocznik produkcji, maksymalny przebieg, nadwozie, wariant
 silnika, cena brutto lub aukcyjny typ sprzedaży). Nieznane albo niejednoznaczne
 pola nie są powodem do odrzucenia, jeśli pozostałe dane pasują — wtedy otwórz
 kartę i sprawdź brakujące fakty. Snippet wyszukiwarki nie potwierdza dostępności,
-pełnej ceny bez finansowania ani wyposażenia egzemplarza. Nie utożsamiaj roku
+ceny całkowitej ani wyposażenia egzemplarza. Warunki finansowania nie wpływają na
+kwalifikację ceny brutto. Nie utożsamiaj roku
 pierwszej rejestracji z rokiem produkcji. Filtry portalu zawężają wyniki, ale
 nie zastępują kontroli karty i nie zmieniają zakresu wymagań. Dla ceny stosuj
 wyjątki z profilu; kwota ponad limit wymaga jawnej zgody użytkownika i nie może
@@ -81,15 +89,17 @@ aktywnej listy. Po podglądzie bez konfliktów zastosuj lokalne zmiany, przelicz
 oceny i zwaliduj dane; nie generuj raportu pokrycia dla użytkownika. Na końcu
 pokaż wyłącznie nowe/przywrócone oferty widoczne w aktywnej bazie. Nie publikuj.
 
-Gdy użytkownik prosi w języku naturalnym o „weryfikację wszystkich aktualnych
-ofert”, uruchom pełny przebieg odświeżania wszystkich rekordów w aktywnej bazie
-(`refresh-plan` bez filtrów). Koordynator dzieli zadania między subagentów według
-portali, nadzoruje każdy wynik i po zakończeniu przygotowuje podgląd importu.
-Jeśli podgląd nie zawiera konfliktów ani błędów walidacji, zastosuj zmiany
-lokalnie, przelicz ocenę (`assess`), wygeneruj podsumowanie przebiegów i uruchom
-walidację ofert. Konflikty, błędy oraz URL-e bez
-jednoznacznego aktywnego portalu pozostaw do raportu i nie nazywaj całego
-przebiegu pełną weryfikacją. Nigdy nie publikuj wyników.
+Gdy użytkownik pyta, czy aktualne oferty nadal istnieją lub są dostępne, uruchom
+lekki przebieg `availability-plan` dla wszystkich aktywnych URL-i. Nie używaj
+`refresh-plan`, jeśli użytkownik nie prosi o aktualizację danych auta. Dla każdej
+karty sprawdź tylko, czy zawiera ofertę auta, jawny komunikat o zamknięciu, czy
+nie da się jej otworzyć. Użyj `scripts/availability-check.mjs`, które sprawdza
+maksymalnie 4 karty równolegle; nie otwieraj kart ręcznie i nie analizuj ceny,
+przebiegu ani wyposażenia. Koordynator pobiera zadania, a subagenci mogą równolegle
+przetwarzać osobne zadania portal/model. Po zakończeniu wykonaj `import-preview`,
+`import-apply` i walidację ofert; dla samej dostępności nie uruchamiaj `assess`.
+Jeśli użytkownik wyraźnie prosi o pełne odświeżenie danych, użyj zamiast tego
+`refresh-plan` i jego reguł.
 
 Koordynator przygotowuje przebieg poleceniem `plan` i tylko on zmienia `tasks.json`.
 Główny agent koordynuje kilku wykonawców; zadania pozostają osobne dla pary
@@ -171,12 +181,11 @@ zrzut renderowanej strony oraz metadane XHR/Fetch; JSON odpowiedzi włączaj tyl
 gdy jest potrzebny przez `--include-api-json`. Zwykłą paginację po widocznym
 linku można przejść przez `--next-selector <css> --max-pages <limit>`; narzędzie
 deduplikuje odwiedzone URL-e.
-Dla portalu `sprzedajemy` możesz użyć `npm run search:sprzedajemy -- --model-key
-<key>` do zbudowania URL-a z widocznych kategorii i zebrania migawki kandydatów.
-To nie jest wynik zadania ani dowód z karty: stosuj screening, otwieraj pasujące
-karty, uzupełnij coverage i zapisz standardowy plik `results/<task-id>.json`.
-W aktywnym przebiegu użyj `--claim-stdin`, aby adapter korzystał z profilu
-zadania z migawki; tryb `--model-key` służy tylko do niezależnego pilotażu.
+Portal `sprzedajemy` obsługuje wspólny punkt wejścia `npm run search:portal`;
+koordynator używa `claim` z `--source sprzedajemy`, a adapter wybiera się
+automatycznie z profilu zadania. Wynik migawki nie jest dowodem z karty: stosuj
+screening, otwieraj pasujące karty, uzupełnij coverage i zapisz standardowy
+plik `results/<task-id>.json`.
 Dokładne strony z `sharedResultsCache` adapter ponownie wykorzystuje, a `nextUrl`
 zachowuje w `coverage.searchResults` do dalszej paginacji.
 Nie omijaj logowania, CAPTCHA, blokad, `robots.txt` ani ograniczeń dostępu; przy
@@ -217,13 +226,20 @@ uruchamiaj importu, gdy inny wykonawca zapisuje plik wyniku.
 - Kamera dostępna w wersji nie oznacza kamery w egzemplarzu. Montaż wymaga dowodu zgodności.
 - Status `partial` karty wiedzy oznacza jawne luki. Nie przedstawiaj odziedziczonych
   filtrów silników jako potwierdzonych zaleceń technicznych.
-- Błąd otwarcia nie oznacza sprzedaży. Nie usuwaj historycznych ofert z tego powodu.
+- Błąd otwarcia nie jest dowodem sprzedaży. W zwykłym przebiegu wyszukiwania nie
+  usuwaj historycznych ofert z tego powodu. W przebiegu `availability` przenieś
+  auto do `archivedOffers` ze statusem `unverified`, jeśli żaden z jego URL-i nie
+  pokazał dostępnej karty, a każdy URL został sprawdzony i ma `sold`, `removed`
+  albo `access_error`. Zachowaj w historii właściwy wynik `access_error`; nie
+  zapisuj go jako `sold` ani `removed`. Jeżeli choć jeden URL pokazuje auto,
+  pozostaw rekord aktywny.
 - Po `available`, `sold` lub `removed` można zapisać `lastVerifiedAt`; po `access_error`
   zmieniaj tylko `lastAttemptAt` i nie odświeżaj daty ostatniej udanej weryfikacji.
-- W przebiegu odświeżania zweryfikuj każdy URL w `refreshTargets`. Koordynator
-  archiwizuje rekord auta dopiero po potwierdzeniu zamknięcia każdego jego URL-a.
-  Archiwizacja zachowuje historię; błędy dostępu i nieustalone statusy blokują
-  archiwizację. Nowa obserwacja dostępnego ogłoszenia może przywrócić auto z archiwum.
+- W przebiegu `refresh` zweryfikuj każdy URL w `refreshTargets`. Koordynator
+  archiwizuje rekord auta po potwierdzeniu zamknięcia każdego URL-a; błędy dostępu
+  blokują tę archiwizację. W przebiegu `availability` stosuj odrębną regułę
+  archiwum `unverified` opisaną powyżej. Archiwizacja zachowuje historię, a nowa
+  obserwacja dostępnego ogłoszenia może przywrócić auto do aktywnej listy.
 - Zapisuj URL źródła każdej istotnej obserwacji i czas sprawdzenia.
 - `photos` zawiera wyłącznie bezpośrednie adresy HTTPS zdjęć z karty danego auta;
   adres zdjęcia nie zastępuje URL-a ogłoszenia ani źródła dowodów. Nie pobieraj,
@@ -235,7 +251,7 @@ uruchamiaj importu, gdy inny wykonawca zapisuje plik wyniku.
   lokalizacji — nie można obliczyć odległości”. Kod pocztowy i współrzędne
   zapisuj wyłącznie ze wskazanym źródłem; nie zgaduj ani nie wyprowadzaj ich
   z nazwy sprzedawcy. Pełny adres nie jest wymagany.
-- Pola do lokalnej oceny: `priceBasis: gross_unconditional_total`, `bodyCode`,
+- Pola do lokalnej oceny: `priceBasis: gross_total`, `bodyCode`,
   `engineVariant` z katalogu, `transmissionCode: manual|automatic`,
   `cameraStatus: installed_confirmed|retrofit_confirmed|not_installable|unknown`,
   `structuralDamageStatus: confirmed|independently_checked_clear|unknown`,

@@ -40,9 +40,9 @@ Proponowany układ nowych danych:
 
 ```text
 config/
-  requirements.json          wymagania kupującego
+  requirements.json          szablon wymagań dla nowych modeli
   sources.json               rejestr źródeł
-  search-models.json         aktywne modele i wybrane warianty
+  search-models.json         modele, ich wymagania i wybrane warianty
 knowledge/
   models/<model-key>.json    fakty techniczne z dowodami
 runs/<run-id>/
@@ -76,7 +76,7 @@ Rejestr zbieramy w dwóch krokach: lista kandydatów, a następnie próba znalez
 
 Każda reguła ma identyfikator, wartość, jednostkę, poziom: twarda / preferowana / wyjątek oraz informację, jak traktować brak danych.
 
-- Cena to pełna kwota brutto zakupu dostępnego bez obowiązkowego finansowania; miesięczna rata i cena netto nie zastępują ceny zakupu. Nieznana cena lub nieznane opłaty oznaczają potrzebę weryfikacji.
+- Cena to kwota brutto zakupu; warunki finansowania nie wpływają na kwalifikację. Miesięczna rata i cena netto nie zastępują ceny całkowitej. Nieznana cena lub nieznane opłaty oznaczają potrzebę weryfikacji.
 - Oferta za ponad 55 000 zł odpada z aktualnego wyszukiwania. Nie zakładamy przyszłej negocjacji.
 - Model może zawężać wymagania globalne, np. podnosić minimalny rocznik. Rozluźnienie wymaga jawnego wyjątku od użytkownika; obecnie brak wyjątku cenowego.
 - Brak informacji o kamerze, silniku albo historii nie jest dowodem spełnienia ani niespełnienia wymagania.

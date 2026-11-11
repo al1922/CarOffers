@@ -7,7 +7,7 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
-from search_core import contained, load_config, read, write, assess
+from search_core import contained, load_config, read, write, assess, requirements_for_model
 
 
 WEIGHTS = {"safety": 30, "reliability": 25, "luggage": 20, "power_and_use": 20, "camera": 5}
@@ -71,27 +71,30 @@ def build(root):
     for model in config["models"]["models"]:
         if not model.get("active"):
             continue
+        model_requirements = requirements_for_model(model, requirements)
         card = read(contained(root, model["knowledgeFile"]))
         cards[model["key"]] = card
         offers = read(contained(root, model["offersFile"]))["offers"]
-        offers = [o for o in offers if assess(o, config["requirements"], model)["verdict"] != "fail"
+        offers = [o for o in offers if assess(o, model_requirements, model)["verdict"] != "fail"
                   and any(isinstance(x, dict) and isinstance(x.get("url"), str) and x["url"].startswith("https://") for x in o.get("urls", []))]
         if offers:
             ranked.append({"model": model, "signals": model_signals(model, card), "offers": offers})
     tasks = []
     for index, item in enumerate(ranked, 1):
         model = item["model"]
-        offers = sorted(item["offers"], key=lambda o: (-candidate_score(o, requirements, model), o.get("id", "")))
+        model_requirements = requirements_for_model(model, requirements)
+        offers = sorted(item["offers"], key=lambda o: (-candidate_score(o, model_requirements, model), o.get("id", "")))
         candidates = [{"offerId": o["id"], "title": o["title"], "urls": o.get("urls", []),
                        "year": o.get("year"), "price": o.get("price"), "mileage": o.get("mileage"),
                        "engine": o.get("engine"), "body": o.get("body"),
                        "lastVerifiedAt": o.get("lastVerifiedAt"), "lastCheckedAt": o.get("lastCheckedAt"),
-                       "existingAssessment": assess(o, requirements, model)} for o in offers]
+                       "existingAssessment": assess(o, model_requirements, model)} for o in offers]
         tasks.append({"id": f"recommend-model--{model['key']}", "kind": "recommendation_model",
                       "phase": "model_review", "rank": index, "modelKey": model["key"], "modelName": model["name"],
+                      "modelRequirements": model_requirements,
                       "modelSignals": item["signals"], "candidates": candidates,
                       "workerInstructions": [
-                          "This is phase 1: analyze this model using its knowledge card, allowed engines, current saved offer summaries and reputable web sources. Do not choose the final five; the coordinator compares all model results.",
+                          "This is phase 1: analyze this model using modelRequirements, its knowledge card, allowed engines, current saved offer summaries and reputable web sources. Do not choose the final five; the coordinator compares all model results.",
                           "Assess family safety, engine reliability, luggage capacity, power and city/road suitability, and camera as an optional preference. Use the user weights from the task. Explain limits and unknowns; cite each factual claim.",
                           "Saved offer summaries help judge availability of candidates and typical budget fit, but are not evidence that a listing is still live. Do not open every listing yet.",
                           "Do not inspect or interpret photos. Do not change offers/*.json. Save only runs/<run-id>/results/<task-id>.json."
@@ -125,13 +128,14 @@ def select_models(root, run_id):
         listing_tasks.append({"id": f"recommend-listing--{rank}--{model_task['modelKey']}",
             "kind": "recommendation_listing", "phase": "listing_review", "rank": rank,
             "modelKey": model_task["modelKey"], "modelName": model_task["modelName"],
+            "modelRequirements": model_task["modelRequirements"],
             "modelScore": score, "modelPoints": points, "modelResearch": model_result["research"],
             "modelSignals": model_task["modelSignals"],
             "candidates": candidates,
             "workerInstructions": [
                 "This is phase 2 for a model selected by the coordinator after comparing every model review.",
                 "Open candidate listing URLs in order. If one is sold, removed, inaccessible or otherwise not current, record the attempt and try the next listing for this same model.",
-                "For the first currently available candidate, inspect the listing carefully and verify year of production, exact engine/power, body, transmission, gross unconditional price, mileage, sale type, LPG, camera, location and seller statements. Preserve unknowns and cite the listing URL.",
+                "Use modelRequirements as the hard criteria for this model. For the first currently available candidate, inspect the listing carefully and verify year of production, exact engine/power, body, transmission, gross purchase price (financing terms are irrelevant), mileage, sale type, LPG, camera, location and seller statements. Preserve unknowns and cite the listing URL.",
                 "Use the research sources from phase 1 and add exact-market/exact-version sources where necessary. Write user-facing titles, facts and research notes in Polish. Do not analyze photos or infer condition/equipment from them. If the listing card exposes direct HTTPS photo URLs, save up to 12 in selectedOffer.photos; otherwise omit photos.",
                 "Save only runs/<run-id>/results/<task-id>.json. Never edit offers/*.json."
             ], "state": "pending", "worker": None, "attempts": 0})

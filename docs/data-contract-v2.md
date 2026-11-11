@@ -43,8 +43,9 @@ Opcja `-B` zapobiega tworzeniu `__pycache__` podczas uruchomień.
 Nazwa i tytuł muszą zawierać przynajmniej jeden znak inny niż biały.
 Puste `offers` jest dozwolone. `urls: []` jest dozwolone dla historycznego rekordu
 bez zachowanego adresu, ale powoduje ostrzeżenie. Brak samego pola `urls` jest błędem.
-`archivedOffers` przechowuje zamknięte rekordy w tym samym formacie oferty,
-z dodatkowym obiektem `archive` zawierającym status, przyczynę i datę archiwizacji.
+`archivedOffers` przechowuje rekordy wycofane z aktywnej listy w tym samym formacie oferty,
+z dodatkowym obiektem `archive` zawierającym status (`closed` lub `unverified`), przyczynę i datę archiwizacji.
+Status `unverified` oznacza archiwizację administracyjną bez potwierdzenia zamknięcia oferty.
 Archiwum nie jest wczytywane do aktywnej listy strony.
 
 ## Parametry opcjonalne

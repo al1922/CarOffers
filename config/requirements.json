@@ -3,7 +3,6 @@
   "purchase": {
     "maxPriceGrossPln": 55000,
     "scope": "purchase_only",
-    "mandatoryFinancingAllowed": false,
     "priceExceptions": [
       {
         "rule": "slightly_above_limit_only_for_exceptional_offer",
@@ -126,5 +125,6 @@
     "allowed": true,
     "mustBeMarked": true,
     "installationDocumentsMustBeChecked": true
-  }
+  },
+  "purpose": "template_for_new_models_only_active_model_requirements_are_in_search_models_json"
 }

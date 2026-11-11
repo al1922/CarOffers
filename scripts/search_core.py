@@ -39,6 +39,11 @@ def load_config(root=ROOT):
             [("requirements", "requirements"), ("models", "search-models"), ("sources", "sources")]}
 
 
+def requirements_for_model(model, defaults):
+    """Return the model's frozen criteria, falling back for older snapshots."""
+    return model.get("requirements") or defaults
+
+
 def audit(root=ROOT):
     config = load_config(root)
     issues = []
@@ -48,11 +53,20 @@ def audit(root=ROOT):
         validation.validate_schema(config[key], schema, schema, issues, filename)
     if any(i["severity"] == "error" for i in issues):
         return config, issues
-    for exception in config["requirements"]["purchase"]["priceExceptions"]:
-        if (exception.get("rule") != "slightly_above_limit_only_for_exceptional_offer" or
-                exception.get("amountPln") is not None or exception.get("userMustConfirm") is not True):
-            validation.issue(issues, "error", "UNSUPPORTED_EXCEPTION", "requirements", "",
-                             "Only a manually confirmed, unbounded slight-overage exception is supported")
+    requirements_schema = read(ROOT / "schemas/requirements-v1.schema.json")
+    for model in config["models"]["models"]:
+        model_requirements = model.get("requirements")
+        if not isinstance(model_requirements, dict):
+            validation.issue(issues, "error", "MODEL_REQUIREMENTS", model["key"], "requirements",
+                             "Every model must define its own requirements object")
+            continue
+        validation.validate_schema(model_requirements, requirements_schema, requirements_schema, issues,
+                                   model["key"] + ".requirements")
+        for exception in model_requirements.get("purchase", {}).get("priceExceptions", []):
+            if (exception.get("rule") != "slightly_above_limit_only_for_exceptional_offer" or
+                    exception.get("amountPln") is not None or exception.get("userMustConfirm") is not True):
+                validation.issue(issues, "error", "UNSUPPORTED_EXCEPTION", model["key"], "requirements",
+                                 "Only a manually confirmed, unbounded slight-overage exception is supported")
     for key, collection in [("models", "models"), ("sources", "sources")]:
         ids = [x["key" if key == "models" else "id"] for x in config[key][collection]]
         if len(ids) != len(set(ids)):
@@ -60,7 +74,8 @@ def audit(root=ROOT):
     for model in config["models"]["models"]:
         try:
             years = model["searchYears"]
-            if years["max"] is not None and years["max"] < max(years["min"], config["requirements"]["yearMin"]):
+            model_requirements = requirements_for_model(model, config["requirements"])
+            if years["max"] is not None and years["max"] < max(years["min"], model_requirements["yearMin"]):
                 raise ValueError("Empty production-year selection")
             if len(model["allowedEngineVariants"]) != len(set(model["allowedEngineVariants"])):
                 raise ValueError("Duplicate engine variant")
@@ -93,14 +108,28 @@ def description(requirements, model):
     age = f"od {max(requirements['yearMin'], years['min'])}"
     if years["max"] is not None:
         age += f" do {years['max']}"
-    camera = "kamera obecna lub potwierdzona możliwość montażu" if requirements["camera"]["retrofitAllowed"] else "kamera obecna"
+    camera = ("kamera wymagana, obecna lub z potwierdzoną możliwością montażu"
+              if requirements["camera"]["required"] and requirements["camera"]["retrofitAllowed"]
+              else "kamera wymagana" if requirements["camera"]["required"]
+              else "kamera jako preferencja")
+    damage = "bez poważnych szkód konstrukcyjnych" if not requirements["structuralDamageAllowed"] else "szkody konstrukcyjne oceniane indywidualnie"
+    lpg = ("LPG dopuszczone" + (" i oznaczane" if requirements["lpg"]["mustBeMarked"] else "")
+           if requirements["lpg"]["allowed"] else "LPG wykluczone")
+    auction = "bez aukcji" if not p["auctionsAllowed"] else "aukcje dopuszczone"
     price_text = f"maks. {p['maxPriceGrossPln']:,} zł brutto według ceny podanej w ogłoszeniu"
     if p["priceExceptions"]:
         price_text += "; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika"
-    return (f"{model['name']}; {model['legacyEngineSelection']}; rocznik {age}; "
+    family = requirements.get("use", {})
+    adults, children = family.get("adults", 0), family.get("children", 0)
+    adults_label = "dorosła osoba" if adults == 1 else "dorosłych"
+    children_label = "dziecko" if children == 1 else "dzieci"
+    family_text = f"{adults} {adults_label} i {children} {children_label}"
+    if family.get("strollerAndLuggageRequired", True):
+        family_text += "; wymagane miejsce na wózek i bagaż"
+    return (f"{model['name']}; {model['legacyEngineSelection']}; rodzina: {family_text}; rocznik {age}; "
             f"{price_text}; "
             f"przebieg do {requirements['mileage']['preferredMaxKm']:,} km preferowany; "
-            f"{camera}; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji."
+            f"{camera}; {damage}; {lpg}; {auction}."
             ).replace(",", " ")
 
 
@@ -108,12 +137,12 @@ def assess(offer, requirements, model):
     """Assess structured evidence; never infer facts from arbitrary seller prose."""
     fail, unknown, preferences = [], [], []
     price = offer.get("price")
-    gross_unconditional = offer.get("priceBasis") == "gross_unconditional_total"
-    if not gross_unconditional:
-        unknown.append("gross_unconditional_purchase_price")
+    gross_price = offer.get("priceBasis") == "gross_total"
+    if not gross_price:
+        unknown.append("gross_purchase_price")
     if type(price) not in (int, float) or price <= 0:
         unknown.append("purchase_price")
-    elif gross_unconditional and price > requirements["purchase"]["maxPriceGrossPln"]:
+    elif gross_price and price > requirements["purchase"]["maxPriceGrossPln"]:
         if requirements["purchase"]["priceExceptions"]:
             unknown.append("price_exception_requires_user_confirmation")
         else:
@@ -148,13 +177,13 @@ def assess(offer, requirements, model):
     elif offer["transmissionCode"] not in requirements["transmissions"]:
         fail.append("transmission_outside_selection")
     camera = offer.get("cameraStatus")
-    if camera == "not_installable":
+    if camera == "not_installable" and requirements["camera"]["required"]:
         fail.append("camera_unavailable")
     elif camera == "retrofit_confirmed" and not requirements["camera"]["retrofitAllowed"]:
         fail.append("camera_retrofit_not_allowed")
-    elif camera not in ("installed_confirmed", "retrofit_confirmed"):
+    elif camera not in ("installed_confirmed", "retrofit_confirmed") and requirements["camera"]["required"]:
         unknown.append("camera_or_compatible_retrofit")
-    if offer.get("structuralDamageStatus") == "confirmed":
+    if offer.get("structuralDamageStatus") == "confirmed" and not requirements["structuralDamageAllowed"]:
         fail.append("structural_damage")
     elif offer.get("structuralDamageStatus") != "independently_checked_clear":
         unknown.append("structural_history")
@@ -168,12 +197,15 @@ def assess(offer, requirements, model):
         unknown.append("mileage")
     if requirements.get("use", {}).get("strollerAndLuggageRequired", True) and offer.get("familyFitConfirmed") is not True:
         unknown.append("stroller_and_family_fit")
-    if offer.get("saleType") == "auction":
+    if offer.get("saleType") == "auction" and not requirements["purchase"]["auctionsAllowed"]:
         fail.append("auction_not_allowed")
-    elif offer.get("saleType") != "fixed_price":
+    elif offer.get("saleType") not in ("fixed_price", "auction"):
         unknown.append("purchase_not_auction")
     if offer.get("lpgInstalled") is True:
-        preferences.append("LPG: potwierdzić dokumenty instalacji, homologację zbiornika i serwis")
+        if not requirements["lpg"]["allowed"]:
+            fail.append("lpg_not_allowed")
+        else:
+            preferences.append("LPG: potwierdzić dokumenty instalacji, homologację zbiornika i serwis")
     return {"id": offer.get("id"), "modelKey": model["key"],
             "verdict": "fail" if fail else "check" if unknown else "match",
             "failures": fail, "unknowns": unknown, "preferenceNotes": preferences}

@@ -5,9 +5,10 @@
     "key": "mazda-6-iii-wagon",
     "name": "Mazda 6 III Wagon",
     "description": "Kombi (Wagon)",
-    "requirements": "Mazda 6 III Wagon; 2.0 Skyactiv-G 145 KM; 2.0 Skyactiv-G 165 KM; rocznik od 2018 do 2020; maks. 55 000 zł brutto według ceny podanej w ogłoszeniu; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 170 000 km preferowany; kamera obecna lub potwierdzona możliwość montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji."
+    "requirements": "Mazda 6 III Wagon; 2.0 Skyactiv-G 145 KM; 2.0 Skyactiv-G 165 KM; rodzina: 2 dorosłych i 1 dziecko; wymagane miejsce na wózek i bagaż; rocznik od 2018 do 2020; maks. 55 000 zł brutto według ceny podanej w ogłoszeniu; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 170 000 km preferowany; kamera wymagana  obecna lub z potwierdzoną możliwością montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji."
   },
-  "offers": [
+  "offers": [],
+  "archivedOffers": [
     {
       "id": "listing:autoplac:5298-7669-VQ",
       "title": "Mazda 6 III 2.0 kombi, 2018, manual, 50 000 km",
@@ -32,7 +33,7 @@
       "transmissionCode": "manual",
       "seller": "Osoba prywatna",
       "offerType": "private",
-      "priceBasis": "gross_unconditional_total",
+      "priceBasis": "gross_total",
       "cameraStatus": "unknown",
       "structuralDamageStatus": "unknown",
       "saleType": "fixed_price",
@@ -51,43 +52,22 @@
       "listingStates": [
         {
           "url": "https://autoplac.pl/oferta/mazda/6/iii-2-0-2018r-uszkodzona-pali-jezdzi-bogate-wyposazenie-krajowa-5298-7669-VQ",
-          "status": "available",
-          "lastAttemptAt": "2026-11-10T00:46:48Z",
-          "lastCheckedAt": "2026-11-10T00:46:48Z",
-          "lastVerifiedAt": "2026-11-10T00:46:48Z",
+          "status": "removed",
+          "lastAttemptAt": "2026-11-10T23:10:18Z",
+          "lastCheckedAt": "2026-11-10T23:10:18Z",
+          "lastVerifiedAt": "2026-11-10T23:10:18Z",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/mazda/6/iii-2-0-2018r-uszkodzona-pali-jezdzi-bogate-wyposazenie-krajowa-5298-7669-VQ",
-            "checkedAt": "2026-11-10T00:46:48Z",
-            "availability": "available",
-            "note": "Publiczna karta z widocznymi przyciskami Napisz/Pokaż numer i ceną 55 000 zł brutto; ostatnia aktualizacja 2 tygodnie temu. Podaje 2018, benzyna, 1 998 cm³, manual, 50 000 km, Rybnik oraz Uszkodzony: Tak. Moc i rodzaj szkody niewskazane; kamera i LPG niewskazane. Lokalizacja pokazuje niezgodność województwa i kodu z miastem, zapisano wyłącznie miasto. Bezpośredni HTTPS URL pierwszego zdjęcia galerii został ujawniony na karcie.",
-            "evidence": [
-              {
-                "url": "https://autoplac.pl/oferta/mazda/6/iii-2-0-2018r-uszkodzona-pali-jezdzi-bogate-wyposazenie-krajowa-5298-7669-VQ",
-                "checkedAt": "2026-11-10T00:46:48Z",
-                "kind": "seller",
-                "fields": [
-                  "year",
-                  "price",
-                  "mileage",
-                  "engine",
-                  "bodyCode",
-                  "transmissionCode",
-                  "offerType",
-                  "saleType",
-                  "location",
-                  "cameraStatus",
-                  "lpgInstalled",
-                  "structuralDamageStatus"
-                ],
-                "note": "Dane z karty: 2018, 2.0 benzyna, 1998 cm³, manual, 50 000 km, 55 000 zł brutto, oferta prywatna, Rybnik, Uszkodzony: Tak. Brak mocy i opisu zakresu uszkodzeń; kamera/LPG niepodane. Cena nie jest aukcyjna."
-              }
-            ]
+            "checkedAt": "2026-11-10T23:10:18Z",
+            "availability": "removed",
+            "httpStatus": null,
+            "note": "Autoplac wyświetla jawnie „Nie znaleźliśmy tej oferty” oraz „Oferta trafiła do archiwum”."
           }
         }
       ],
-      "lastCheckedAt": "2026-11-10T00:46:48Z",
-      "lastVerifiedAt": "2026-11-10T00:46:48Z",
-      "lastAttemptAt": "2026-11-10T00:46:48Z",
+      "lastCheckedAt": "2026-11-10T23:10:18Z",
+      "lastVerifiedAt": "2026-11-10T23:10:18Z",
+      "lastAttemptAt": "2026-11-10T23:10:18Z",
       "history": [
         {
           "eventId": "6f9c00239ad788137b38c0529f0fbe209a02b2aa92837970ec0e7726c427fd8a",
@@ -265,6 +245,26 @@
               "after": "mazda-6-iii-wagon"
             }
           }
+        },
+        {
+          "eventId": "38d47d738df10c8b24acd4d117dbce68a1ab4e7395a944247c713ff97d1f6afc",
+          "runId": "dostepnosc-2026-11-10",
+          "checkedAt": "2026-11-10T23:10:18Z",
+          "url": "https://autoplac.pl/oferta/mazda/6/iii-2-0-2018r-uszkodzona-pali-jezdzi-bogate-wyposazenie-krajowa-5298-7669-VQ",
+          "availability": "removed",
+          "note": "Autoplac wyświetla jawnie „Nie znaleźliśmy tej oferty” oraz „Oferta trafiła do archiwum”.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:5298-7669-VQ"
+          },
+          "changes": {
+            "priceBasis": {
+              "before": "gross_unconditional_total",
+              "after": "gross_total"
+            }
+          }
         }
       ],
       "assessment": {
@@ -282,7 +282,12 @@
       },
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
-      "verdictNote": "exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
+      "verdictNote": "exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "archive": {
+        "status": "closed",
+        "reason": "all_listings_confirmed_closed",
+        "archivedAt": "2026-11-10T23:10:18+00:00"
+      }
     }
   ]
 }

@@ -5,7 +5,7 @@
     "key": "skoda-octavia-iii-combi",
     "name": "Škoda Octavia III Combi",
     "description": "Kombi",
-    "requirements": "Škoda Octavia III Combi; 1.4 TSI EA211 150 KM; rocznik od 2018 do 2018; maks. 55 000 zł brutto według ceny podanej w ogłoszeniu; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 170 000 km preferowany; kamera obecna lub potwierdzona możliwość montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji."
+    "requirements": "Škoda Octavia III Combi; 1.4 TSI EA211 150 KM; rodzina: 2 dorosłych i 1 dziecko; wymagane miejsce na wózek i bagaż; rocznik od 2018 do 2018; maks. 55 000 zł brutto według ceny podanej w ogłoszeniu; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 170 000 km preferowany; kamera wymagana  obecna lub z potwierdzoną możliwością montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji."
   },
   "offers": [
     {
@@ -55,37 +55,21 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6Ii8aR.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-09T13:03:39Z",
-          "lastCheckedAt": "2026-11-09T13:03:39Z",
-          "lastVerifiedAt": "2026-11-09T13:03:39Z",
+          "lastAttemptAt": "2026-11-10T23:12:57Z",
+          "lastCheckedAt": "2026-11-10T23:12:57Z",
+          "lastVerifiedAt": "2026-11-10T23:12:57Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6Ii8aR.html",
-            "checkedAt": "2026-11-09T13:03:39Z",
+            "checkedAt": "2026-11-10T23:12:57Z",
             "availability": "available",
-            "note": "Karta Otomoto dostępna; 49 500 zł, rok produkcji 2018, 123 605 km, Škoda Octavia III Combi 1.4 TSI 150 KM, benzyna, manual. Karta informuje „do negocjacji”; opis sprzedawcy podaje polskie pochodzenie, książkę serwisową oraz ISOFIX. Kamera nie została wymieniona. AAA AUTO prosi o kontakt przed przyjazdem w celu potwierdzenia dostępności.",
-            "evidence": [
-              {
-                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6Ii8aR.html",
-                "checkedAt": "2026-11-09T13:03:39Z",
-                "kind": "seller",
-                "fields": [
-                  "price",
-                  "year",
-                  "mileage",
-                  "engine",
-                  "body",
-                  "transmission",
-                  "familyFitConfirmed"
-                ],
-                "note": "Karta i opis ogłoszenia pokazują cenę 49 500 zł, rok, przebieg, wersję silnika/skrzyni i wyposażenie ISOFIX."
-              }
-            ]
+            "note": "Bezpośrednia karta Otomoto „Skoda Octavia” wyświetla cenę 49 500 PLN, komunikat „DOSTĘPNY OD RĘKI”, opis ogłoszenia i kontakt do sprzedawcy. Brak komunikatu o zamknięciu.",
+            "httpStatus": null
           }
         }
       ],
-      "lastCheckedAt": "2026-11-09T13:03:39Z",
-      "lastVerifiedAt": "2026-11-09T13:03:39Z",
-      "lastAttemptAt": "2026-11-09T13:03:39Z",
+      "lastCheckedAt": "2026-11-10T23:12:57Z",
+      "lastVerifiedAt": "2026-11-10T23:12:57Z",
+      "lastAttemptAt": "2026-11-10T23:12:57Z",
       "history": [
         {
           "eventId": "cffe573daf641f1376a218d3d40feb8632b3ff169fd2c9f44b69701f6d71cac9",
@@ -205,6 +189,21 @@
               ]
             }
           }
+        },
+        {
+          "eventId": "b213d80eccbc4e1ccf039e11b89ed049acad9574a2ecf9f24ec23ee7378d24f5",
+          "runId": "dostepnosc-2026-11-10",
+          "checkedAt": "2026-11-10T23:12:57Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6Ii8aR.html",
+          "availability": "available",
+          "note": "Bezpośrednia karta Otomoto „Skoda Octavia” wyświetla cenę 49 500 PLN, komunikat „DOSTĘPNY OD RĘKI”, opis ogłoszenia i kontakt do sprzedawcy. Brak komunikatu o zamknięciu.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6Ii8aR"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -272,27 +271,21 @@
         {
           "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-tsi-7924-5099-SJ",
           "status": "available",
-          "lastAttemptAt": "2026-11-09T13:03:51+00:00",
-          "lastCheckedAt": "2026-11-09T13:03:51+00:00",
-          "lastVerifiedAt": "2026-11-09T13:03:51+00:00",
+          "lastAttemptAt": "2026-11-10T23:13:04Z",
+          "lastCheckedAt": "2026-11-10T23:13:04Z",
+          "lastVerifiedAt": "2026-11-10T23:13:04Z",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-tsi-7924-5099-SJ",
-            "checkedAt": "2026-11-09T13:03:51+00:00",
+            "checkedAt": "2026-11-10T23:13:04Z",
             "availability": "available",
-            "price": 50900,
-            "currency": "PLN",
-            "priceGross": true,
-            "year": 2018,
-            "mileageKm": 165000,
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "note": "Karta zaktualizowana 2 dni temu: Škoda Octavia III kombi, 1.4 TSI 150 KM, manual, benzyna, produkcja 2018, 165000 km, 50900 zł. VIN TMBJC7NE1J0371159; pierwsza rejestracja 08.11.2018. Karta oznacza kraj pochodzenia Polska, uszkodzony: nie, bezwypadkowość: brak danych. Historia CEPiK pokazuje 146539 km (data ostatniego odczytu niepodana w widocznej karcie) i badanie ważne do 11.2026. Wyposażenie obejmuje przednie i tylne czujniki parkowania. Kamera i LPG niepotwierdzone."
+            "note": "Otwarta karta Autoplac pasuje do ID 7924-5099-SJ; pokazuje tytuł Skoda Octavia III 1.4 TSI, cenę 50 900 zł, aktualizację sprzed 2 dni i opcje kontaktu. Nie ma komunikatu o zamknięciu.",
+            "httpStatus": null
           }
         }
       ],
-      "lastCheckedAt": "2026-11-09T13:03:51+00:00",
-      "lastVerifiedAt": "2026-11-09T13:03:51+00:00",
-      "lastAttemptAt": "2026-11-09T13:03:51+00:00",
+      "lastCheckedAt": "2026-11-10T23:13:04Z",
+      "lastVerifiedAt": "2026-11-10T23:13:04Z",
+      "lastAttemptAt": "2026-11-10T23:13:04Z",
       "history": [
         {
           "eventId": "21eb3caa3d97000a27cbba3153281d2f882500f11b6f2297406dfa5123aa473c",
@@ -385,6 +378,21 @@
               "after": "1.4 TSI, benzyna, 150 KM"
             }
           }
+        },
+        {
+          "eventId": "7f12ef5df6ecccea37543d58acefab57710b67a63a92b347bff8dcb7898d4d7f",
+          "runId": "dostepnosc-2026-11-10",
+          "checkedAt": "2026-11-10T23:13:04Z",
+          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-tsi-7924-5099-SJ",
+          "availability": "available",
+          "note": "Otwarta karta Autoplac pasuje do ID 7924-5099-SJ; pokazuje tytuł Skoda Octavia III 1.4 TSI, cenę 50 900 zł, aktualizację sprzed 2 dni i opcje kontaktu. Nie ma komunikatu o zamknięciu.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TMBJC7NE1J0371159"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -406,6 +414,1190 @@
         "https://euw2-cdn.autoplac.pl/v1/p/2c88707e-c839-4f27-ba21-c8b19f2777af?f=1920%3Awebp"
       ]
     },
+    {
+      "id": "listing:autoplac:3926-9546-XU",
+      "modelKey": "skoda-octavia-iii-combi",
+      "title": "Škoda Octavia III Combi 1.4 TSI 150 KM Style DSG — 2017/2018",
+      "urls": [
+        {
+          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-koda-kombi-3926-9546-XU"
+        }
+      ],
+      "listingIds": [
+        "autoplac:3926-9546-XU"
+      ],
+      "vin": "TMBJC7NE2J0225028",
+      "year": 2017,
+      "price": 53890,
+      "mileage": 146860,
+      "engine": "1.4 TSI, benzyna, 150 KM",
+      "engineVariant": "1.4-tsi-ea211-150",
+      "body": "Kombi / Combi",
+      "bodyCode": "wagon",
+      "transmission": "Automatyczna DSG",
+      "transmissionCode": "automatic",
+      "saleType": "fixed_price",
+      "offerType": "company",
+      "cameraStatus": "unknown",
+      "structuralDamageStatus": "unknown",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "city": "Bydgoszcz",
+        "voivodeship": "Kujawsko-Pomorskie"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-08T19:39:43+01:00",
+      "listingStates": [
+        {
+          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-koda-kombi-3926-9546-XU",
+          "status": "available",
+          "lastAttemptAt": "2026-11-10T23:13:04Z",
+          "lastCheckedAt": "2026-11-10T23:13:04Z",
+          "lastVerifiedAt": "2026-11-10T23:13:04Z",
+          "lastObservation": {
+            "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-koda-kombi-3926-9546-XU",
+            "checkedAt": "2026-11-10T23:13:04Z",
+            "availability": "available",
+            "note": "Otwarta karta Autoplac pasuje do ID 3926-9546-XU; pokazuje tytuł Skoda Octavia III 1.4 Combi, cenę 53 890 zł, aktualizację sprzed 2 dni oraz kontakt. Nie ma komunikatu o zamknięciu.",
+            "httpStatus": null
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-10T23:13:04Z",
+      "lastVerifiedAt": "2026-11-10T23:13:04Z",
+      "lastAttemptAt": "2026-11-10T23:13:04Z",
+      "history": [
+        {
+          "eventId": "2145f44f99fcf8126eea193edb9b52ecae576b626052959a78b80e50c8bcc52f",
+          "runId": "search-20261108",
+          "checkedAt": "2026-11-08T19:39:43+01:00",
+          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-koda-kombi-3926-9546-XU",
+          "availability": "available",
+          "note": "Karta ma opcję kontaktu i była aktualizowana 2 dni temu. Nagłówek i dane karty podają Octavię III Combi, benzynę, 1.4 TSI 150 KM, DSG, 146 860 km, cenę 53 890 zł brutto oraz VIN TMBJC7NE2J0225028; lokalizacja Bydgoszcz, sprzedawca: aktywny autoryzowany dealer. W opisie występuje rozbieżność rocznika: dane karty pokazują 2017, opis sprzedawcy 2018. Wyposażenie wymienia przednie i tylne czujniki, nie potwierdza kamery. LPG nieustalone. Dopasowanie silnika do wybranej wersji/okresu produkcji wymaga weryfikacji VIN, daty produkcji i wyposażenia; samo ogłoszenie nie rozstrzyga przejścia 1.4/1.5 TSI.",
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:3926-9546-XU",
+            "modelKey": "skoda-octavia-iii-combi",
+            "title": "Škoda Octavia III Combi 1.4 TSI 150 KM Style DSG — 2017/2018",
+            "urls": [
+              {
+                "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-koda-kombi-3926-9546-XU"
+              }
+            ],
+            "listingIds": [
+              "autoplac:3926-9546-XU"
+            ],
+            "vin": "TMBJC7NE2J0225028",
+            "year": 2017,
+            "price": 53890,
+            "mileage": 146860,
+            "engine": "1.4 TSI, 150 KM, benzyna",
+            "engineVariant": "1.4-tsi-ea211-150",
+            "body": "Kombi / Combi",
+            "bodyCode": "wagon",
+            "transmission": "Automatyczna DSG",
+            "transmissionCode": "automatic",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "offerType": "company",
+            "cameraStatus": "unknown",
+            "structuralDamageStatus": "unknown",
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "city": "Bydgoszcz",
+              "voivodeship": "Kujawsko-Pomorskie"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:autoplac:3926-9546-XU"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "skoda-octavia-iii-combi"
+            },
+            "title": {
+              "before": null,
+              "after": "Škoda Octavia III Combi 1.4 TSI 150 KM Style DSG — 2017/2018"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-koda-kombi-3926-9546-XU"
+                }
+              ]
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "autoplac:3926-9546-XU"
+              ]
+            },
+            "vin": {
+              "before": null,
+              "after": "TMBJC7NE2J0225028"
+            },
+            "year": {
+              "before": null,
+              "after": 2017
+            },
+            "price": {
+              "before": null,
+              "after": 53890
+            },
+            "mileage": {
+              "before": null,
+              "after": 146860
+            },
+            "engine": {
+              "before": null,
+              "after": "1.4 TSI, 150 KM, benzyna"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.4-tsi-ea211-150"
+            },
+            "body": {
+              "before": null,
+              "after": "Kombi / Combi"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmission": {
+              "before": null,
+              "after": "Automatyczna DSG"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "automatic"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "offerType": {
+              "before": null,
+              "after": "company"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "city": "Bydgoszcz",
+                "voivodeship": "Kujawsko-Pomorskie"
+              }
+            }
+          }
+        },
+        {
+          "eventId": "33f387ad609419e2a289213f5fb05973e44384ab7fc8b50f6b915050f3b81187",
+          "runId": "refresh-20261108-03",
+          "checkedAt": "2026-11-08T22:03:17+00:00",
+          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-koda-kombi-3926-9546-XU",
+          "availability": "available",
+          "note": "Karta widoczna; aktualizacja 2 dni temu. Pola ogłoszenia podają 53 890 zł brutto, rok produkcji 2017, 146 860 km, benzynę 1.4 TSI 150 KM i automat; opis sprzedawcy podaje rok produkcji 2018, więc rocznik jest sprzeczny (na stronie brak daty pierwszej rejestracji). VIN TMBJC7NE2J0225028 jest pokazany, lecz karta nie podaje kodu silnika ani dowodu z VIN potwierdzającego wariant 1.4 TSI 150. Sprzedawca deklaruje polski salon, jednego właściciela i bezwypadkowość, podczas gdy pole stanu pokazuje „Bezwypadkowy: Brak danych”. Karta prosi o telefoniczne potwierdzenie dostępności przed przyjazdem. LPG nieustalone, kamera niepotwierdzona.",
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:3926-9546-XU",
+            "saleType": "fixed_price",
+            "lpgInstalled": null
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "dcecfda06cedf1133024aa3f2095a7275982349810f40d977bb4f80bd57b9c37",
+          "runId": "photos-20261108-01",
+          "checkedAt": "2026-11-08T22:36:32+00:00",
+          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-koda-kombi-3926-9546-XU",
+          "availability": "available",
+          "note": "Karta otwarta; galeria pokazuje 1/24. Odczytano bezpośredni HTTPS URL zdjęcia głównego z CDN Autoplac. Strona podaje cenę 53 890 zł; LPG nieustalone.",
+          "photoCheck": {
+            "status": "found",
+            "note": "Znaleziono 1 bezpośredni HTTPS URL zdjęcia; pozostałych adresów galerii nie ujawniono w odczytanym widoku."
+          },
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:3926-9546-XU",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "photos": [
+              "https://euw2-cdn.autoplac.pl/v1/p/bc23a892-af7f-46f6-a05e-f6a29b8fde4c?f=1920%3Awebp"
+            ]
+          },
+          "changes": {
+            "photos": {
+              "before": null,
+              "after": [
+                "https://euw2-cdn.autoplac.pl/v1/p/bc23a892-af7f-46f6-a05e-f6a29b8fde4c?f=1920%3Awebp"
+              ]
+            }
+          }
+        },
+        {
+          "eventId": "7e86268819c9297331813db964811b06f2ea942b8e69bee29678faa5f57f305d",
+          "runId": "refresh20261109a",
+          "checkedAt": "2026-11-09T13:03:51+00:00",
+          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-koda-kombi-3926-9546-XU",
+          "availability": "available",
+          "note": "Karta zaktualizowana 2 dni temu: Škoda Octavia III Combi 1.4 TSI 150 KM, DSG/automat, benzyna, parametry karty: produkcja 2017, przebieg 146860 km, cena 53890 zł brutto. Opis sprzedawcy podaje jednak rok produkcji 2018 — konflikt rocznika wymaga wyjaśnienia z dokumentów. VIN TMBJC7NE2J0225028. Sprzedawca podaje salon Polska, jednego właściciela, serwisowanie i gwarancję, lecz zaznacza konieczność telefonicznego potwierdzenia dostępności przed przyjazdem. Karta nie podaje bezwypadkowości i kraju pochodzenia. Kamera i LPG niepotwierdzone.",
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:3926-9546-XU",
+            "price": 53890,
+            "year": 2017,
+            "mileage": 146860,
+            "engine": "1.4 TSI, benzyna, 150 KM",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "photos": [
+              "https://euw2-cdn.autoplac.pl/v1/p/bc23a892-af7f-46f6-a05e-f6a29b8fde4c?f=1920%3Awebp"
+            ]
+          },
+          "changes": {
+            "engine": {
+              "before": "1.4 TSI, 150 KM, benzyna",
+              "after": "1.4 TSI, benzyna, 150 KM"
+            }
+          }
+        },
+        {
+          "eventId": "5e28bb198ac90f4841e95cab7030212fc9143ce00c4fafdd1621847ea137616f",
+          "runId": "dostepnosc-2026-11-10",
+          "checkedAt": "2026-11-10T23:13:04Z",
+          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-koda-kombi-3926-9546-XU",
+          "availability": "available",
+          "note": "Otwarta karta Autoplac pasuje do ID 3926-9546-XU; pokazuje tytuł Skoda Octavia III 1.4 Combi, cenę 53 890 zł, aktualizację sprzed 2 dni oraz kontakt. Nie ma komunikatu o zamknięciu.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:3926-9546-XU"
+          },
+          "changes": {}
+        }
+      ],
+      "assessment": {
+        "id": "listing:autoplac:3926-9546-XU",
+        "modelKey": "skoda-octavia-iii-combi",
+        "verdict": "fail",
+        "failures": [
+          "year_outside_selection"
+        ],
+        "unknowns": [
+          "engine_review_requires_verification",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "fail",
+      "verdictTitle": "Poza wymaganiami",
+      "verdictNote": "year_outside_selection; engine_review_requires_verification; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "photos": [
+        "https://euw2-cdn.autoplac.pl/v1/p/bc23a892-af7f-46f6-a05e-f6a29b8fde4c?f=1920%3Awebp"
+      ]
+    },
+    {
+      "id": "listing:autoplac:3721-9203-YU",
+      "modelKey": "skoda-octavia-iii-combi",
+      "title": "Škoda Octavia III Combi 1.4 TSI 150 KM — 2017, manual",
+      "urls": [
+        {
+          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-tsi-150-km-3721-9203-YU"
+        }
+      ],
+      "listingIds": [
+        "autoplac:3721-9203-YU"
+      ],
+      "year": 2017,
+      "price": 53000,
+      "mileage": 146000,
+      "engine": "1.4 TSI, benzyna, 150 KM",
+      "engineVariant": "1.4-tsi-ea211-150",
+      "body": "Kombi (opis i karta modelu)",
+      "bodyCode": "wagon",
+      "transmission": "Manualna",
+      "transmissionCode": "manual",
+      "saleType": "fixed_price",
+      "offerType": "private",
+      "cameraStatus": "unknown",
+      "structuralDamageStatus": "unknown",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "city": "Czchów",
+        "voivodeship": "Małopolskie"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-08T19:39:43+01:00",
+      "listingStates": [
+        {
+          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-tsi-150-km-3721-9203-YU",
+          "status": "available",
+          "lastAttemptAt": "2026-11-10T23:13:04Z",
+          "lastCheckedAt": "2026-11-10T23:13:04Z",
+          "lastVerifiedAt": "2026-11-10T23:13:04Z",
+          "lastObservation": {
+            "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-tsi-150-km-3721-9203-YU",
+            "checkedAt": "2026-11-10T23:13:04Z",
+            "availability": "available",
+            "note": "Otwarta karta Autoplac pasuje do ID 3721-9203-YU; pokazuje Skoda Octavia III 1.4 TSI 150 KM, cenę 53 000 zł, aktualizację sprzed tygodnia i opcje kontaktu. Nie ma komunikatu o zamknięciu.",
+            "httpStatus": null
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-10T23:13:04Z",
+      "lastVerifiedAt": "2026-11-10T23:13:04Z",
+      "lastAttemptAt": "2026-11-10T23:13:04Z",
+      "history": [
+        {
+          "eventId": "d1ca2c63083c07b40114d735489c02851fadb92d96ebd95307c75754bcf74634",
+          "runId": "search-20261108",
+          "checkedAt": "2026-11-08T19:39:43+01:00",
+          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-tsi-150-km-3721-9203-YU",
+          "availability": "available",
+          "note": "Karta ma aktywne opcje kontaktu; strona oferty klasyfikuje auto jako kombi, 2017, benzyna 1.4 TSI 150 KM, manual, 146 000 km i 53 000 zł brutto. Opis sprzedawcy mówi o Octavii III po liftingu, aucie z polskiego salonu wyprodukowanym w 2017 r.; sprzedawca deklaruje wymianę prawego przedniego błotnika i bezwypadkowość: nie. VIN nie został podany na odczytanej karcie, kamera nie jest wymieniona, LPG nieustalone. Dokładny wariant 1.4 TSI trzeba potwierdzić dokumentami/datą produkcji, szczególnie z uwagi na zmianę 1.4/1.5 TSI w tym okresie.",
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:3721-9203-YU",
+            "modelKey": "skoda-octavia-iii-combi",
+            "title": "Škoda Octavia III Combi 1.4 TSI 150 KM — 2017, manual",
+            "urls": [
+              {
+                "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-tsi-150-km-3721-9203-YU"
+              }
+            ],
+            "listingIds": [
+              "autoplac:3721-9203-YU"
+            ],
+            "year": 2017,
+            "price": 53000,
+            "mileage": 146000,
+            "engine": "1.4 TSI, 150 KM, benzyna",
+            "engineVariant": "1.4-tsi-ea211-150",
+            "body": "Kombi (opis i karta modelu)",
+            "bodyCode": "wagon",
+            "transmission": "Manualna",
+            "transmissionCode": "manual",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "offerType": "private",
+            "cameraStatus": "unknown",
+            "structuralDamageStatus": "unknown",
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "city": "Czchów",
+              "voivodeship": "Małopolskie"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:autoplac:3721-9203-YU"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "skoda-octavia-iii-combi"
+            },
+            "title": {
+              "before": null,
+              "after": "Škoda Octavia III Combi 1.4 TSI 150 KM — 2017, manual"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-tsi-150-km-3721-9203-YU"
+                }
+              ]
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "autoplac:3721-9203-YU"
+              ]
+            },
+            "year": {
+              "before": null,
+              "after": 2017
+            },
+            "price": {
+              "before": null,
+              "after": 53000
+            },
+            "mileage": {
+              "before": null,
+              "after": 146000
+            },
+            "engine": {
+              "before": null,
+              "after": "1.4 TSI, 150 KM, benzyna"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.4-tsi-ea211-150"
+            },
+            "body": {
+              "before": null,
+              "after": "Kombi (opis i karta modelu)"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmission": {
+              "before": null,
+              "after": "Manualna"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "offerType": {
+              "before": null,
+              "after": "private"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "city": "Czchów",
+                "voivodeship": "Małopolskie"
+              }
+            }
+          }
+        },
+        {
+          "eventId": "f42296c848e6982703945373d44d26e03c6734c15b806221f95109f3abbacab0",
+          "runId": "refresh-20261108-03",
+          "checkedAt": "2026-11-08T22:03:17+00:00",
+          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-tsi-150-km-3721-9203-YU",
+          "availability": "available",
+          "note": "Karta widoczna; aktualizacja tydzień temu. Podaje 53 000 zł brutto, rok produkcji 2017, 146 000 km, benzynę 1.4 TSI 150 KM i skrzynię manualną; opis sprzedawcy także deklaruje produkcję w 2017 r., ale podaje przebieg 144 000 km, więc przebieg różni się o 2 000 km. Pierwsza rejestracja i VIN nie są pokazane. Brak kodu silnika lub niezależnego dowodu potwierdzającego wariant 1.4 TSI 150; zgodności silnika nie rozstrzygam. Karta oznacza „Bezwypadkowy: Nie”, opis wspomina wymieniony prawy błotnik. LPG nieustalone, kamera niepotwierdzona.",
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:3721-9203-YU",
+            "saleType": "fixed_price",
+            "lpgInstalled": null
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "5cce62f2d5cae0b469c197e6165c228ecc18585fd6c9d41161c7e9b33515d893",
+          "runId": "photos-20261108-01",
+          "checkedAt": "2026-11-08T22:36:32+00:00",
+          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-tsi-150-km-3721-9203-YU",
+          "availability": "available",
+          "note": "Karta otwarta; aktualizacja tydzień temu, galeria pokazuje 1/28. Odczytano bezpośredni HTTPS URL zdjęcia głównego z CDN Autoplac. Oferta widnieje za 53 000 zł; LPG nieustalone.",
+          "photoCheck": {
+            "status": "found",
+            "note": "Znaleziono 1 bezpośredni HTTPS URL zdjęcia; pozostałych adresów galerii nie ujawniono w odczytanym widoku."
+          },
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:3721-9203-YU",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "photos": [
+              "https://euw2-cdn.autoplac.pl/v1/p/67fa0bde-a6ab-4886-8bd9-df5db718f3a0?f=1920%3Awebp"
+            ]
+          },
+          "changes": {
+            "photos": {
+              "before": null,
+              "after": [
+                "https://euw2-cdn.autoplac.pl/v1/p/67fa0bde-a6ab-4886-8bd9-df5db718f3a0?f=1920%3Awebp"
+              ]
+            }
+          }
+        },
+        {
+          "eventId": "651f2805fcbc11ff4b743f892cfad4ce3d1bfa0c5e546d84202cca489a8981a4",
+          "runId": "refresh20261109a",
+          "checkedAt": "2026-11-09T13:03:51+00:00",
+          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-tsi-150-km-3721-9203-YU",
+          "availability": "available",
+          "note": "Karta zaktualizowana tydzień temu: Škoda Octavia III kombi 1.4 TSI 150 KM, manual, benzyna, produkcja 2017, 146000 km, 53000 zł. Opis sprzedawcy podaje też przebieg około 144000 km i informuje o wymienionym prawym przednim błotniku; karta oznacza bezwypadkowość: nie, uszkodzony: nie. Kraj pochodzenia wskazano jako Polska; sprzedawca prywatny. VIN nieudostępniony w widocznej treści. Czujniki parkowania przód/tył wymienione; kamera i LPG niepotwierdzone.",
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:3721-9203-YU",
+            "price": 53000,
+            "year": 2017,
+            "mileage": 146000,
+            "engine": "1.4 TSI, benzyna, 150 KM",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "photos": [
+              "https://euw2-cdn.autoplac.pl/v1/p/67fa0bde-a6ab-4886-8bd9-df5db718f3a0?f=1920%3Awebp"
+            ]
+          },
+          "changes": {
+            "engine": {
+              "before": "1.4 TSI, 150 KM, benzyna",
+              "after": "1.4 TSI, benzyna, 150 KM"
+            }
+          }
+        },
+        {
+          "eventId": "5858ef3a27fa12b0841de870414dba1dc48d4bd2aec170991bd205cddccb9acd",
+          "runId": "dostepnosc-2026-11-10",
+          "checkedAt": "2026-11-10T23:13:04Z",
+          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-tsi-150-km-3721-9203-YU",
+          "availability": "available",
+          "note": "Otwarta karta Autoplac pasuje do ID 3721-9203-YU; pokazuje Skoda Octavia III 1.4 TSI 150 KM, cenę 53 000 zł, aktualizację sprzed tygodnia i opcje kontaktu. Nie ma komunikatu o zamknięciu.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:3721-9203-YU"
+          },
+          "changes": {}
+        }
+      ],
+      "assessment": {
+        "id": "listing:autoplac:3721-9203-YU",
+        "modelKey": "skoda-octavia-iii-combi",
+        "verdict": "fail",
+        "failures": [
+          "year_outside_selection"
+        ],
+        "unknowns": [
+          "engine_review_requires_verification",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "fail",
+      "verdictTitle": "Poza wymaganiami",
+      "verdictNote": "year_outside_selection; engine_review_requires_verification; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "photos": [
+        "https://euw2-cdn.autoplac.pl/v1/p/67fa0bde-a6ab-4886-8bd9-df5db718f3a0?f=1920%3Awebp"
+      ]
+    },
+    {
+      "id": "listing:olx:ID1cQiTC",
+      "modelKey": "skoda-octavia-iii-combi",
+      "title": "Skoda Octavia III Combi 1.4 TSI 150 KM, 2018",
+      "urls": [
+        {
+          "url": "https://www.olx.pl/d/oferta/skoda-octavia-CID5-ID1cQiTC.html"
+        }
+      ],
+      "listingIds": [
+        "olx:ID1cQiTC"
+      ],
+      "vin": "TMBJC7NE7J0198619",
+      "year": 2018,
+      "price": 45900,
+      "priceBasis": "gross_total",
+      "bodyCode": "wagon",
+      "engineVariant": "1.4-tsi-ea211-150",
+      "transmissionCode": "manual",
+      "saleType": "fixed_price",
+      "offerType": "private",
+      "cameraStatus": "unknown",
+      "structuralDamageStatus": "unknown",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "voivodeship": "wielkopolskie",
+        "city": "Leszno"
+      },
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/r4jmmuhkxjkn-PL/image%3Bs%3D765x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/zo5nrtwkvwyh-PL/image%3Bs%3D765x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/fm1k4lm24p0s1-PL/image%3Bs%3D765x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/vhhi919y6k0u3-PL/image%3Bs%3D765x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/8x2mkfj9sq483-PL/image%3Bs%3D765x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/nh8jydjnjlpe3-PL/image%3Bs%3D765x1360",
+        "https://ireland.apollo.olxcdn.com/v1/files/6zo55l3p3c9y-PL/image%3Bs%3D765x1360"
+      ],
+      "details": {
+        "Dostępność i cena": "Karta OLX była dostępna podczas sprawdzenia; ogłoszenie odświeżono 03.11.2026. Cena 45 900 zł, bez widocznego warunku finansowania.",
+        "Dane auta": "Karta podaje produkcję 2018, kombi, benzynę, 1 395 cm³, 150 KM, manual, 141 500 km i VIN TMBJC7NE7J0198619. Sprzedawca opisuje wymianę rozrządu przy 120 tys. km; są to deklaracje sprzedawcy.",
+        "Wyposażenie i luki": "Opis podaje podgrzewane fotele, aktywny tempomat, klimatyzację dwustrefową i CarPlay, ale nie wymienia kamery ani LPG. Dokładny kod silnika i dopasowanie do wybranego wariantu wymagają sprawdzenia po VIN ze względu na przejście 1.4/1.5 TSI w tym okresie. Szkody konstrukcyjne nie zostały niezależnie sprawdzone."
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-09T14:29:47+01:00",
+      "listingStates": [
+        {
+          "url": "https://www.olx.pl/d/oferta/skoda-octavia-CID5-ID1cQiTC.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-10T23:13:13Z",
+          "lastCheckedAt": "2026-11-10T23:13:13Z",
+          "lastVerifiedAt": "2026-11-10T23:13:13Z",
+          "lastObservation": {
+            "url": "https://www.olx.pl/d/oferta/skoda-octavia-CID5-ID1cQiTC.html",
+            "checkedAt": "2026-11-10T23:13:13Z",
+            "availability": "available",
+            "note": "Bezpośrednia karta OLX pokazuje Skoda Octavia, ID ogłoszenia 1105914560, cenę 45 900 zł, kontakt ze sprzedawcą i treść o bieżącej sprzedaży; karta odświeżona 03.11.2026. Brak komunikatu o zamknięciu.",
+            "httpStatus": null
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-10T23:13:13Z",
+      "lastVerifiedAt": "2026-11-10T23:13:13Z",
+      "lastAttemptAt": "2026-11-10T23:13:13Z",
+      "history": [
+        {
+          "eventId": "961a6dec4d4600a939a0e8269c1998be863c656b0cf73f5f9e75a0fa8fcb0402",
+          "runId": "search-20261109",
+          "checkedAt": "2026-11-09T14:29:47+01:00",
+          "url": "https://www.olx.pl/d/oferta/skoda-octavia-CID5-ID1cQiTC.html",
+          "availability": "available",
+          "note": "Karta OLX dostępna; produkcja 2018, Skoda Octavia kombi, benzyna 1 395 cm³/150 KM, manual, 141 500 km, 45 900 zł, sprzedawca prywatny; odświeżono 03.11.2026. Kamera i instalacja LPG nie są wymienione. VIN podano na karcie. Dokładny kod silnika do potwierdzenia po VIN.",
+          "photoCheck": null,
+          "evidence": [
+            {
+              "fields": [
+                "availability",
+                "vin",
+                "year",
+                "price",
+                "priceBasis",
+                "mileageKm",
+                "bodyCode",
+                "engineVariant",
+                "transmissionCode",
+                "saleType",
+                "offerType",
+                "location",
+                "cameraStatus",
+                "lpgInstalled",
+                "structuralDamageStatus"
+              ],
+              "url": "https://www.olx.pl/d/oferta/skoda-octavia-CID5-ID1cQiTC.html",
+              "checkedAt": "2026-11-09T14:29:47+01:00",
+              "kind": "seller",
+              "note": "Karta wskazuje VIN, rok, paliwo, nadwozie, pojemność, moc, skrzynię i przebieg (lin. 38–62); opis i cena 45 900 zł oraz data odświeżenia 03.11.2026 (lin. 63–78). Wyniki OLX identyfikują miejscowość Leszno. Kamera i LPG nie są wymienione."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:olx:ID1cQiTC",
+            "modelKey": "skoda-octavia-iii-combi",
+            "title": "Skoda Octavia III Combi 1.4 TSI 150 KM, 2018",
+            "urls": [
+              {
+                "url": "https://www.olx.pl/d/oferta/skoda-octavia-CID5-ID1cQiTC.html"
+              }
+            ],
+            "listingIds": [
+              "olx:ID1cQiTC"
+            ],
+            "vin": "TMBJC7NE7J0198619",
+            "year": 2018,
+            "price": 45900,
+            "priceBasis": "gross_unconditional_total",
+            "mileageKm": 141500,
+            "bodyCode": "wagon",
+            "engineVariant": "1.4-tsi-ea211-150",
+            "transmissionCode": "manual",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "offerType": "private",
+            "cameraStatus": "unknown",
+            "structuralDamageStatus": "unknown",
+            "familyFitConfirmed": null,
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "voivodeship": "wielkopolskie",
+              "city": "Leszno"
+            },
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/r4jmmuhkxjkn-PL/image%3Bs%3D765x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/zo5nrtwkvwyh-PL/image%3Bs%3D765x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/fm1k4lm24p0s1-PL/image%3Bs%3D765x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/vhhi919y6k0u3-PL/image%3Bs%3D765x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/8x2mkfj9sq483-PL/image%3Bs%3D765x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/nh8jydjnjlpe3-PL/image%3Bs%3D765x1360",
+              "https://ireland.apollo.olxcdn.com/v1/files/6zo55l3p3c9y-PL/image%3Bs%3D765x1360"
+            ],
+            "details": {
+              "Dostępność i cena": "Karta OLX była dostępna podczas sprawdzenia; ogłoszenie odświeżono 03.11.2026. Cena 45 900 zł, bez widocznego warunku finansowania.",
+              "Dane auta": "Karta podaje produkcję 2018, kombi, benzynę, 1 395 cm³, 150 KM, manual, 141 500 km i VIN TMBJC7NE7J0198619. Sprzedawca opisuje wymianę rozrządu przy 120 tys. km; są to deklaracje sprzedawcy.",
+              "Wyposażenie i luki": "Opis podaje podgrzewane fotele, aktywny tempomat, klimatyzację dwustrefową i CarPlay, ale nie wymienia kamery ani LPG. Dokładny kod silnika i dopasowanie do wybranego wariantu wymagają sprawdzenia po VIN ze względu na przejście 1.4/1.5 TSI w tym okresie. Szkody konstrukcyjne nie zostały niezależnie sprawdzone."
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:olx:ID1cQiTC"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "skoda-octavia-iii-combi"
+            },
+            "title": {
+              "before": null,
+              "after": "Skoda Octavia III Combi 1.4 TSI 150 KM, 2018"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.olx.pl/d/oferta/skoda-octavia-CID5-ID1cQiTC.html"
+                }
+              ]
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "olx:ID1cQiTC"
+              ]
+            },
+            "vin": {
+              "before": null,
+              "after": "TMBJC7NE7J0198619"
+            },
+            "year": {
+              "before": null,
+              "after": 2018
+            },
+            "price": {
+              "before": null,
+              "after": 45900
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "gross_unconditional_total"
+            },
+            "mileageKm": {
+              "before": null,
+              "after": 141500
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.4-tsi-ea211-150"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "offerType": {
+              "before": null,
+              "after": "private"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "voivodeship": "wielkopolskie",
+                "city": "Leszno"
+              }
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/r4jmmuhkxjkn-PL/image%3Bs%3D765x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/zo5nrtwkvwyh-PL/image%3Bs%3D765x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/fm1k4lm24p0s1-PL/image%3Bs%3D765x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/vhhi919y6k0u3-PL/image%3Bs%3D765x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/8x2mkfj9sq483-PL/image%3Bs%3D765x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/nh8jydjnjlpe3-PL/image%3Bs%3D765x1360",
+                "https://ireland.apollo.olxcdn.com/v1/files/6zo55l3p3c9y-PL/image%3Bs%3D765x1360"
+              ]
+            },
+            "details": {
+              "before": null,
+              "after": {
+                "Dostępność i cena": "Karta OLX była dostępna podczas sprawdzenia; ogłoszenie odświeżono 03.11.2026. Cena 45 900 zł, bez widocznego warunku finansowania.",
+                "Dane auta": "Karta podaje produkcję 2018, kombi, benzynę, 1 395 cm³, 150 KM, manual, 141 500 km i VIN TMBJC7NE7J0198619. Sprzedawca opisuje wymianę rozrządu przy 120 tys. km; są to deklaracje sprzedawcy.",
+                "Wyposażenie i luki": "Opis podaje podgrzewane fotele, aktywny tempomat, klimatyzację dwustrefową i CarPlay, ale nie wymienia kamery ani LPG. Dokładny kod silnika i dopasowanie do wybranego wariantu wymagają sprawdzenia po VIN ze względu na przejście 1.4/1.5 TSI w tym okresie. Szkody konstrukcyjne nie zostały niezależnie sprawdzone."
+              }
+            }
+          }
+        },
+        {
+          "eventId": "14b3bba8ca106e78aaee6b1b048551716ef367da35be15b430e7d18db554a4cd",
+          "runId": "dostepnosc-2026-11-10",
+          "checkedAt": "2026-11-10T23:13:13Z",
+          "url": "https://www.olx.pl/d/oferta/skoda-octavia-CID5-ID1cQiTC.html",
+          "availability": "available",
+          "note": "Bezpośrednia karta OLX pokazuje Skoda Octavia, ID ogłoszenia 1105914560, cenę 45 900 zł, kontakt ze sprzedawcą i treść o bieżącej sprzedaży; karta odświeżona 03.11.2026. Brak komunikatu o zamknięciu.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:ID1cQiTC"
+          },
+          "changes": {
+            "priceBasis": {
+              "before": "gross_unconditional_total",
+              "after": "gross_total"
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "listing:olx:ID1cQiTC",
+        "modelKey": "skoda-octavia-iii-combi",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "engine_review_requires_verification",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "mileage",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "engine_review_requires_verification; camera_or_compatible_retrofit; structural_history; mileage; stroller_and_family_fit",
+      "mileage": 141500
+    },
+    {
+      "id": "listing:autoplac:7052-2823-ZX",
+      "modelKey": "skoda-octavia-iii-combi",
+      "vin": "TMBJC7NE9J0272699",
+      "listingIds": [
+        "autoplac:7052-2823-ZX"
+      ],
+      "urls": [
+        {
+          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-7052-2823-ZX",
+          "label": "Autoplac"
+        }
+      ],
+      "photos": [
+        "https://euw2-cdn.autoplac.pl/v1/p/9473df3e-4ac2-4e14-a53d-030a8834c52c?f=1920%3Awebp"
+      ],
+      "title": "Skoda Octavia III 1.4 TSI 150 KM Kombi, 2018, manual",
+      "year": 2018,
+      "price": 49499,
+      "priceLabel": "49 499 zł brutto; karta pokazuje kredyt jako odrębną opcję finansowania",
+      "mileage": 123605,
+      "engine": "1.4 TSI · 150 KM · 1 395 cm³ · benzyna",
+      "engineVariant": "1.4-tsi-ea211-150",
+      "body": "Kombi",
+      "bodyCode": "wagon",
+      "transmission": "manualna",
+      "transmissionCode": "manual",
+      "seller": "AAA Auto Zabrze — sprzedawca firmowy",
+      "offerType": "company",
+      "priceBasis": "gross_total",
+      "cameraStatus": "unknown",
+      "structuralDamageStatus": "unknown",
+      "saleType": "fixed_price",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "voivodeship": "śląskie",
+        "city": "Zabrze",
+        "postalCode": "41-800",
+        "precision": "postal_code",
+        "source": "listing",
+        "geoSource": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-7052-2823-ZX"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-10T00:23:25Z",
+      "listingStates": [
+        {
+          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-7052-2823-ZX",
+          "status": "available",
+          "lastAttemptAt": "2026-11-10T23:13:04Z",
+          "lastCheckedAt": "2026-11-10T23:13:04Z",
+          "lastVerifiedAt": "2026-11-10T23:13:04Z",
+          "lastObservation": {
+            "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-7052-2823-ZX",
+            "checkedAt": "2026-11-10T23:13:04Z",
+            "availability": "available",
+            "note": "Otwarta karta Autoplac pasuje do ID 7052-2823-ZX; pokazuje Skoda Octavia III 1.4, cenę 49 499 zł, aktualizację sprzed 2 tygodni i opcje kontaktu. Nie ma komunikatu o zamknięciu.",
+            "httpStatus": null
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-10T23:13:04Z",
+      "lastVerifiedAt": "2026-11-10T23:13:04Z",
+      "lastAttemptAt": "2026-11-10T23:13:04Z",
+      "history": [
+        {
+          "eventId": "047e5f902acd3e4401e15a388ad244fe3b2440e5732faa5ce897ed205b85b835",
+          "runId": "search-20261110-full",
+          "checkedAt": "2026-11-10T00:23:25Z",
+          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-7052-2823-ZX",
+          "availability": "available",
+          "note": "Karta otwarta publicznie, ostatnia aktualizacja tydzień temu, pokazuje aktywną firmę i kontakt „Poproś o kontakt”. Podaje VIN TMBJC7NE9J0272699, produkcję 2018, 1.4 TSI 150 KM/1395 cm³, Kombi, manual, 123 605 km, 49 499 zł brutto i Zabrze 41-800. Karta wyświetla Bezwypadkowy Nie, co nie potwierdza ani nie wyklucza szkody konstrukcyjnej. Kamera/LPG nie są wymienione; kredyt jest osobną opcją.",
+          "photoCheck": null,
+          "evidence": [
+            {
+              "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-7052-2823-ZX",
+              "checkedAt": "2026-11-10T00:23:25Z",
+              "kind": "seller",
+              "fields": [
+                "vin",
+                "year",
+                "price",
+                "mileage",
+                "engine",
+                "bodyCode",
+                "transmissionCode",
+                "offerType",
+                "saleType",
+                "location",
+                "cameraStatus",
+                "lpgInstalled",
+                "structuralDamageStatus"
+              ],
+              "note": "Karta zawiera VIN, 2018, 1.4 TSI 150 KM/1395 cm³, Kombi, manual, 123 605 km, 49 499 zł brutto, Zabrze 41-800, status Bezwypadkowy Nie i kontakt do aktywnej firmy. Kamera/LPG nie są wymienione; strukturalny zakres uszkodzeń pozostaje nieznany."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:autoplac:7052-2823-ZX",
+            "modelKey": "skoda-octavia-iii-combi",
+            "vin": "TMBJC7NE9J0272699",
+            "listingIds": [
+              "autoplac:7052-2823-ZX"
+            ],
+            "urls": [
+              {
+                "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-7052-2823-ZX",
+                "label": "Autoplac"
+              }
+            ],
+            "photos": [
+              "https://euw2-cdn.autoplac.pl/v1/p/9473df3e-4ac2-4e14-a53d-030a8834c52c?f=1920%3Awebp"
+            ],
+            "title": "Skoda Octavia III 1.4 TSI 150 KM Kombi, 2018, manual",
+            "year": 2018,
+            "price": 49499,
+            "priceLabel": "49 499 zł brutto; karta pokazuje kredyt jako odrębną opcję finansowania",
+            "mileage": 123605,
+            "engine": "1.4 TSI · 150 KM · 1 395 cm³ · benzyna",
+            "engineVariant": "1.4-tsi-ea211-150",
+            "body": "Kombi",
+            "bodyCode": "wagon",
+            "transmission": "manualna",
+            "transmissionCode": "manual",
+            "seller": "AAA Auto Zabrze — sprzedawca firmowy",
+            "offerType": "company",
+            "priceBasis": "gross_unconditional_total",
+            "cameraStatus": "unknown",
+            "structuralDamageStatus": "unknown",
+            "familyFitConfirmed": null,
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "voivodeship": "śląskie",
+              "city": "Zabrze",
+              "postalCode": "41-800",
+              "precision": "postal_code",
+              "source": "listing",
+              "geoSource": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-7052-2823-ZX"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:autoplac:7052-2823-ZX"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "skoda-octavia-iii-combi"
+            },
+            "vin": {
+              "before": null,
+              "after": "TMBJC7NE9J0272699"
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "autoplac:7052-2823-ZX"
+              ]
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-7052-2823-ZX",
+                  "label": "Autoplac"
+                }
+              ]
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://euw2-cdn.autoplac.pl/v1/p/9473df3e-4ac2-4e14-a53d-030a8834c52c?f=1920%3Awebp"
+              ]
+            },
+            "title": {
+              "before": null,
+              "after": "Skoda Octavia III 1.4 TSI 150 KM Kombi, 2018, manual"
+            },
+            "year": {
+              "before": null,
+              "after": 2018
+            },
+            "price": {
+              "before": null,
+              "after": 49499
+            },
+            "priceLabel": {
+              "before": null,
+              "after": "49 499 zł brutto; karta pokazuje kredyt jako odrębną opcję finansowania"
+            },
+            "mileage": {
+              "before": null,
+              "after": 123605
+            },
+            "engine": {
+              "before": null,
+              "after": "1.4 TSI · 150 KM · 1 395 cm³ · benzyna"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.4-tsi-ea211-150"
+            },
+            "body": {
+              "before": null,
+              "after": "Kombi"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmission": {
+              "before": null,
+              "after": "manualna"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "seller": {
+              "before": null,
+              "after": "AAA Auto Zabrze — sprzedawca firmowy"
+            },
+            "offerType": {
+              "before": null,
+              "after": "company"
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "gross_unconditional_total"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "voivodeship": "śląskie",
+                "city": "Zabrze",
+                "postalCode": "41-800",
+                "precision": "postal_code",
+                "source": "listing",
+                "geoSource": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-7052-2823-ZX"
+              }
+            }
+          }
+        },
+        {
+          "eventId": "9e0f5ee5be54e320e454833c989b147860c484a9b53874060eaa399903e214f2",
+          "runId": "dostepnosc-2026-11-10",
+          "checkedAt": "2026-11-10T23:13:04Z",
+          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-7052-2823-ZX",
+          "availability": "available",
+          "note": "Otwarta karta Autoplac pasuje do ID 7052-2823-ZX; pokazuje Skoda Octavia III 1.4, cenę 49 499 zł, aktualizację sprzed 2 tygodni i opcje kontaktu. Nie ma komunikatu o zamknięciu.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:7052-2823-ZX"
+          },
+          "changes": {
+            "priceBasis": {
+              "before": "gross_unconditional_total",
+              "after": "gross_total"
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "listing:autoplac:7052-2823-ZX",
+        "modelKey": "skoda-octavia-iii-combi",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "engine_review_requires_verification",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "engine_review_requires_verification; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
+    }
+  ],
+  "archivedOffers": [
     {
       "id": "listing:otomoto:ID6I9d1t",
       "modelKey": "skoda-octavia-iii-combi",
@@ -453,20 +1645,21 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6I9d1t.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-09T13:03:39Z",
+          "lastAttemptAt": "2026-11-10T23:12:57Z",
           "lastCheckedAt": "2026-11-08T18:57:19+01:00",
           "lastVerifiedAt": "2026-11-08T18:57:19+01:00",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6I9d1t.html",
-            "checkedAt": "2026-11-09T13:03:39Z",
+            "checkedAt": "2026-11-10T23:12:57Z",
             "availability": "access_error",
-            "note": "Narzędzie web zgłosiło URL jako niedostępny; ponowna próba odczytu bezpośredniej karty również nie powiodła się. Nie można ustalić, czy oferta jest nadal aktywna."
+            "note": "Dwie próby otwarcia bezpośredniego adresu w web__run zwróciły Internal Error; nie otrzymano treści karty ani jawnego komunikatu o zamknięciu.",
+            "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-08T18:57:19+01:00",
       "lastVerifiedAt": "2026-11-08T18:57:19+01:00",
-      "lastAttemptAt": "2026-11-09T13:03:39Z",
+      "lastAttemptAt": "2026-11-10T23:12:57Z",
       "history": [
         {
           "eventId": "d389003b7c3374dad0e8f978debc7e59b46ea87b74a7581b29ea8f903458fbd4",
@@ -676,6 +1869,21 @@
             "lpgInstalled": null
           },
           "changes": {}
+        },
+        {
+          "eventId": "9fef488cc2e7ddbf1150664ad54b2520aa59922924b7b11eda65ca42b58d9128",
+          "runId": "dostepnosc-2026-11-10",
+          "checkedAt": "2026-11-10T23:12:57Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6I9d1t.html",
+          "availability": "access_error",
+          "note": "Dwie próby otwarcia bezpośredniego adresu w web__run zwróciły Internal Error; nie otrzymano treści karty ani jawnego komunikatu o zamknięciu.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6I9d1t"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -695,7 +1903,12 @@
       },
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
-      "verdictNote": "body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
+      "verdictNote": "body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "archive": {
+        "status": "unverified",
+        "reason": "no_listing_url_confirmed_available; at_least_one_access_error",
+        "archivedAt": "2026-11-10T23:12:57+00:00"
+      }
     },
     {
       "id": "listing:olx:1100952300",
@@ -742,20 +1955,21 @@
         {
           "url": "https://www.olx.pl/d/oferta/skoda-octavia-1-4-tsi-style-salon-polska-serwis-aso-gaz-klimatronic-tempomat-CID5-ID1cwtZa.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-09T13:03:56+00:00",
+          "lastAttemptAt": "2026-11-10T23:13:13Z",
           "lastCheckedAt": "2026-11-08T23:41:44+01:00",
           "lastVerifiedAt": "2026-11-08T23:41:44+01:00",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/skoda-octavia-1-4-tsi-style-salon-polska-serwis-aso-gaz-klimatronic-tempomat-CID5-ID1cwtZa.html",
-            "checkedAt": "2026-11-09T13:03:56+00:00",
+            "checkedAt": "2026-11-10T23:13:13Z",
             "availability": "access_error",
-            "note": "Narzędzie web zwróciło tylko kopię crawlowaną około miesiąc wcześniej. Ta historyczna karta podawała rocznik 2018, LPG / benzyna+LPG, VIN TMBJC7NE1J0263379, 131 312 km i 49 000 zł; sprzedawca/AAA AUTO deklarował instalację LPG. Dokumentów instalacji, legalizacji i zbiornika nie podano, więc ich status pozostaje unknown. Bieżąca dostępność niepotwierdzona; nie zmieniam zapisanych pól ani nie wnioskuję o sprzedaży/usunięciu. Poprzednia udana obserwacja z 08.11.2026 już oznaczała lpgInstalled=true."
+            "note": "Bezpośrednia karta pokazuje Skoda Octavia z ceną 49 000 zł i przyciskiem kontaktu, ale ma datę odświeżenia 03.10.2026, a migawka OLX jest crawlowana miesiąc temu. Bieżącej dostępności nie da się potwierdzić.",
+            "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-08T23:41:44+01:00",
       "lastVerifiedAt": "2026-11-08T23:41:44+01:00",
-      "lastAttemptAt": "2026-11-09T13:03:56+00:00",
+      "lastAttemptAt": "2026-11-10T23:13:13Z",
       "history": [
         {
           "eventId": "3ed8e4367d6700997e4f19a0dbef8d55f95da34b1e3d6fbf21fe7f900ae17327",
@@ -1054,6 +2268,21 @@
             "changes": {}
           },
           "changes": {}
+        },
+        {
+          "eventId": "9d7da757907182a7331c01c48e9dcf2fc380f7b7356e7002c49de9f8f637ec56",
+          "runId": "dostepnosc-2026-11-10",
+          "checkedAt": "2026-11-10T23:13:13Z",
+          "url": "https://www.olx.pl/d/oferta/skoda-octavia-1-4-tsi-style-salon-polska-serwis-aso-gaz-klimatronic-tempomat-CID5-ID1cwtZa.html",
+          "availability": "access_error",
+          "note": "Bezpośrednia karta pokazuje Skoda Octavia z ceną 49 000 zł i przyciskiem kontaktu, ale ma datę odświeżenia 03.10.2026, a migawka OLX jest crawlowana miesiąc temu. Bieżącej dostępności nie da się potwierdzić.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1100952300"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -1086,878 +2315,12 @@
         "https://ireland.apollo.olxcdn.com/v1/files/tw83radaf5iz1-PL/image%3Bs%3D1667x1250",
         "https://ireland.apollo.olxcdn.com/v1/files/8e2j8laml8wt2-PL/image%3Bs%3D1667x1250",
         "https://ireland.apollo.olxcdn.com/v1/files/aec76tevgh8k1-PL/image%3Bs%3D1667x1250"
-      ]
-    },
-    {
-      "id": "listing:autoplac:3926-9546-XU",
-      "modelKey": "skoda-octavia-iii-combi",
-      "title": "Škoda Octavia III Combi 1.4 TSI 150 KM Style DSG — 2017/2018",
-      "urls": [
-        {
-          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-koda-kombi-3926-9546-XU"
-        }
       ],
-      "listingIds": [
-        "autoplac:3926-9546-XU"
-      ],
-      "vin": "TMBJC7NE2J0225028",
-      "year": 2017,
-      "price": 53890,
-      "mileage": 146860,
-      "engine": "1.4 TSI, benzyna, 150 KM",
-      "engineVariant": "1.4-tsi-ea211-150",
-      "body": "Kombi / Combi",
-      "bodyCode": "wagon",
-      "transmission": "Automatyczna DSG",
-      "transmissionCode": "automatic",
-      "saleType": "fixed_price",
-      "offerType": "company",
-      "cameraStatus": "unknown",
-      "structuralDamageStatus": "unknown",
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Bydgoszcz",
-        "voivodeship": "Kujawsko-Pomorskie"
-      },
-      "lpgInstalled": null,
-      "firstSeenAt": "2026-11-08T19:39:43+01:00",
-      "listingStates": [
-        {
-          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-koda-kombi-3926-9546-XU",
-          "status": "available",
-          "lastAttemptAt": "2026-11-09T13:03:51+00:00",
-          "lastCheckedAt": "2026-11-09T13:03:51+00:00",
-          "lastVerifiedAt": "2026-11-09T13:03:51+00:00",
-          "lastObservation": {
-            "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-koda-kombi-3926-9546-XU",
-            "checkedAt": "2026-11-09T13:03:51+00:00",
-            "availability": "available",
-            "price": 53890,
-            "currency": "PLN",
-            "priceGross": true,
-            "year": 2017,
-            "mileageKm": 146860,
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "note": "Karta zaktualizowana 2 dni temu: Škoda Octavia III Combi 1.4 TSI 150 KM, DSG/automat, benzyna, parametry karty: produkcja 2017, przebieg 146860 km, cena 53890 zł brutto. Opis sprzedawcy podaje jednak rok produkcji 2018 — konflikt rocznika wymaga wyjaśnienia z dokumentów. VIN TMBJC7NE2J0225028. Sprzedawca podaje salon Polska, jednego właściciela, serwisowanie i gwarancję, lecz zaznacza konieczność telefonicznego potwierdzenia dostępności przed przyjazdem. Karta nie podaje bezwypadkowości i kraju pochodzenia. Kamera i LPG niepotwierdzone."
-          }
-        }
-      ],
-      "lastCheckedAt": "2026-11-09T13:03:51+00:00",
-      "lastVerifiedAt": "2026-11-09T13:03:51+00:00",
-      "lastAttemptAt": "2026-11-09T13:03:51+00:00",
-      "history": [
-        {
-          "eventId": "2145f44f99fcf8126eea193edb9b52ecae576b626052959a78b80e50c8bcc52f",
-          "runId": "search-20261108",
-          "checkedAt": "2026-11-08T19:39:43+01:00",
-          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-koda-kombi-3926-9546-XU",
-          "availability": "available",
-          "note": "Karta ma opcję kontaktu i była aktualizowana 2 dni temu. Nagłówek i dane karty podają Octavię III Combi, benzynę, 1.4 TSI 150 KM, DSG, 146 860 km, cenę 53 890 zł brutto oraz VIN TMBJC7NE2J0225028; lokalizacja Bydgoszcz, sprzedawca: aktywny autoryzowany dealer. W opisie występuje rozbieżność rocznika: dane karty pokazują 2017, opis sprzedawcy 2018. Wyposażenie wymienia przednie i tylne czujniki, nie potwierdza kamery. LPG nieustalone. Dopasowanie silnika do wybranej wersji/okresu produkcji wymaga weryfikacji VIN, daty produkcji i wyposażenia; samo ogłoszenie nie rozstrzyga przejścia 1.4/1.5 TSI.",
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:autoplac:3926-9546-XU",
-            "modelKey": "skoda-octavia-iii-combi",
-            "title": "Škoda Octavia III Combi 1.4 TSI 150 KM Style DSG — 2017/2018",
-            "urls": [
-              {
-                "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-koda-kombi-3926-9546-XU"
-              }
-            ],
-            "listingIds": [
-              "autoplac:3926-9546-XU"
-            ],
-            "vin": "TMBJC7NE2J0225028",
-            "year": 2017,
-            "price": 53890,
-            "mileage": 146860,
-            "engine": "1.4 TSI, 150 KM, benzyna",
-            "engineVariant": "1.4-tsi-ea211-150",
-            "body": "Kombi / Combi",
-            "bodyCode": "wagon",
-            "transmission": "Automatyczna DSG",
-            "transmissionCode": "automatic",
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "offerType": "company",
-            "cameraStatus": "unknown",
-            "structuralDamageStatus": "unknown",
-            "location": {
-              "status": "available",
-              "countryCode": "PL",
-              "city": "Bydgoszcz",
-              "voivodeship": "Kujawsko-Pomorskie"
-            }
-          },
-          "changes": {
-            "id": {
-              "before": null,
-              "after": "listing:autoplac:3926-9546-XU"
-            },
-            "modelKey": {
-              "before": null,
-              "after": "skoda-octavia-iii-combi"
-            },
-            "title": {
-              "before": null,
-              "after": "Škoda Octavia III Combi 1.4 TSI 150 KM Style DSG — 2017/2018"
-            },
-            "urls": {
-              "before": null,
-              "after": [
-                {
-                  "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-koda-kombi-3926-9546-XU"
-                }
-              ]
-            },
-            "listingIds": {
-              "before": null,
-              "after": [
-                "autoplac:3926-9546-XU"
-              ]
-            },
-            "vin": {
-              "before": null,
-              "after": "TMBJC7NE2J0225028"
-            },
-            "year": {
-              "before": null,
-              "after": 2017
-            },
-            "price": {
-              "before": null,
-              "after": 53890
-            },
-            "mileage": {
-              "before": null,
-              "after": 146860
-            },
-            "engine": {
-              "before": null,
-              "after": "1.4 TSI, 150 KM, benzyna"
-            },
-            "engineVariant": {
-              "before": null,
-              "after": "1.4-tsi-ea211-150"
-            },
-            "body": {
-              "before": null,
-              "after": "Kombi / Combi"
-            },
-            "bodyCode": {
-              "before": null,
-              "after": "wagon"
-            },
-            "transmission": {
-              "before": null,
-              "after": "Automatyczna DSG"
-            },
-            "transmissionCode": {
-              "before": null,
-              "after": "automatic"
-            },
-            "saleType": {
-              "before": null,
-              "after": "fixed_price"
-            },
-            "offerType": {
-              "before": null,
-              "after": "company"
-            },
-            "cameraStatus": {
-              "before": null,
-              "after": "unknown"
-            },
-            "structuralDamageStatus": {
-              "before": null,
-              "after": "unknown"
-            },
-            "location": {
-              "before": null,
-              "after": {
-                "status": "available",
-                "countryCode": "PL",
-                "city": "Bydgoszcz",
-                "voivodeship": "Kujawsko-Pomorskie"
-              }
-            }
-          }
-        },
-        {
-          "eventId": "33f387ad609419e2a289213f5fb05973e44384ab7fc8b50f6b915050f3b81187",
-          "runId": "refresh-20261108-03",
-          "checkedAt": "2026-11-08T22:03:17+00:00",
-          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-koda-kombi-3926-9546-XU",
-          "availability": "available",
-          "note": "Karta widoczna; aktualizacja 2 dni temu. Pola ogłoszenia podają 53 890 zł brutto, rok produkcji 2017, 146 860 km, benzynę 1.4 TSI 150 KM i automat; opis sprzedawcy podaje rok produkcji 2018, więc rocznik jest sprzeczny (na stronie brak daty pierwszej rejestracji). VIN TMBJC7NE2J0225028 jest pokazany, lecz karta nie podaje kodu silnika ani dowodu z VIN potwierdzającego wariant 1.4 TSI 150. Sprzedawca deklaruje polski salon, jednego właściciela i bezwypadkowość, podczas gdy pole stanu pokazuje „Bezwypadkowy: Brak danych”. Karta prosi o telefoniczne potwierdzenie dostępności przed przyjazdem. LPG nieustalone, kamera niepotwierdzona.",
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:autoplac:3926-9546-XU",
-            "saleType": "fixed_price",
-            "lpgInstalled": null
-          },
-          "changes": {}
-        },
-        {
-          "eventId": "dcecfda06cedf1133024aa3f2095a7275982349810f40d977bb4f80bd57b9c37",
-          "runId": "photos-20261108-01",
-          "checkedAt": "2026-11-08T22:36:32+00:00",
-          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-koda-kombi-3926-9546-XU",
-          "availability": "available",
-          "note": "Karta otwarta; galeria pokazuje 1/24. Odczytano bezpośredni HTTPS URL zdjęcia głównego z CDN Autoplac. Strona podaje cenę 53 890 zł; LPG nieustalone.",
-          "photoCheck": {
-            "status": "found",
-            "note": "Znaleziono 1 bezpośredni HTTPS URL zdjęcia; pozostałych adresów galerii nie ujawniono w odczytanym widoku."
-          },
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:autoplac:3926-9546-XU",
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "photos": [
-              "https://euw2-cdn.autoplac.pl/v1/p/bc23a892-af7f-46f6-a05e-f6a29b8fde4c?f=1920%3Awebp"
-            ]
-          },
-          "changes": {
-            "photos": {
-              "before": null,
-              "after": [
-                "https://euw2-cdn.autoplac.pl/v1/p/bc23a892-af7f-46f6-a05e-f6a29b8fde4c?f=1920%3Awebp"
-              ]
-            }
-          }
-        },
-        {
-          "eventId": "7e86268819c9297331813db964811b06f2ea942b8e69bee29678faa5f57f305d",
-          "runId": "refresh20261109a",
-          "checkedAt": "2026-11-09T13:03:51+00:00",
-          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-koda-kombi-3926-9546-XU",
-          "availability": "available",
-          "note": "Karta zaktualizowana 2 dni temu: Škoda Octavia III Combi 1.4 TSI 150 KM, DSG/automat, benzyna, parametry karty: produkcja 2017, przebieg 146860 km, cena 53890 zł brutto. Opis sprzedawcy podaje jednak rok produkcji 2018 — konflikt rocznika wymaga wyjaśnienia z dokumentów. VIN TMBJC7NE2J0225028. Sprzedawca podaje salon Polska, jednego właściciela, serwisowanie i gwarancję, lecz zaznacza konieczność telefonicznego potwierdzenia dostępności przed przyjazdem. Karta nie podaje bezwypadkowości i kraju pochodzenia. Kamera i LPG niepotwierdzone.",
-          "photoCheck": null,
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:autoplac:3926-9546-XU",
-            "price": 53890,
-            "year": 2017,
-            "mileage": 146860,
-            "engine": "1.4 TSI, benzyna, 150 KM",
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "photos": [
-              "https://euw2-cdn.autoplac.pl/v1/p/bc23a892-af7f-46f6-a05e-f6a29b8fde4c?f=1920%3Awebp"
-            ]
-          },
-          "changes": {
-            "engine": {
-              "before": "1.4 TSI, 150 KM, benzyna",
-              "after": "1.4 TSI, benzyna, 150 KM"
-            }
-          }
-        }
-      ],
-      "assessment": {
-        "id": "listing:autoplac:3926-9546-XU",
-        "modelKey": "skoda-octavia-iii-combi",
-        "verdict": "fail",
-        "failures": [
-          "year_outside_selection"
-        ],
-        "unknowns": [
-          "engine_review_requires_verification",
-          "camera_or_compatible_retrofit",
-          "structural_history",
-          "stroller_and_family_fit"
-        ],
-        "preferenceNotes": []
-      },
-      "verdict": "fail",
-      "verdictTitle": "Poza wymaganiami",
-      "verdictNote": "year_outside_selection; engine_review_requires_verification; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
-      "photos": [
-        "https://euw2-cdn.autoplac.pl/v1/p/bc23a892-af7f-46f6-a05e-f6a29b8fde4c?f=1920%3Awebp"
-      ]
-    },
-    {
-      "id": "listing:autoplac:3721-9203-YU",
-      "modelKey": "skoda-octavia-iii-combi",
-      "title": "Škoda Octavia III Combi 1.4 TSI 150 KM — 2017, manual",
-      "urls": [
-        {
-          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-tsi-150-km-3721-9203-YU"
-        }
-      ],
-      "listingIds": [
-        "autoplac:3721-9203-YU"
-      ],
-      "year": 2017,
-      "price": 53000,
-      "mileage": 146000,
-      "engine": "1.4 TSI, benzyna, 150 KM",
-      "engineVariant": "1.4-tsi-ea211-150",
-      "body": "Kombi (opis i karta modelu)",
-      "bodyCode": "wagon",
-      "transmission": "Manualna",
-      "transmissionCode": "manual",
-      "saleType": "fixed_price",
-      "offerType": "private",
-      "cameraStatus": "unknown",
-      "structuralDamageStatus": "unknown",
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Czchów",
-        "voivodeship": "Małopolskie"
-      },
-      "lpgInstalled": null,
-      "firstSeenAt": "2026-11-08T19:39:43+01:00",
-      "listingStates": [
-        {
-          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-tsi-150-km-3721-9203-YU",
-          "status": "available",
-          "lastAttemptAt": "2026-11-09T13:03:51+00:00",
-          "lastCheckedAt": "2026-11-09T13:03:51+00:00",
-          "lastVerifiedAt": "2026-11-09T13:03:51+00:00",
-          "lastObservation": {
-            "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-tsi-150-km-3721-9203-YU",
-            "checkedAt": "2026-11-09T13:03:51+00:00",
-            "availability": "available",
-            "price": 53000,
-            "currency": "PLN",
-            "priceGross": true,
-            "year": 2017,
-            "mileageKm": 146000,
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "note": "Karta zaktualizowana tydzień temu: Škoda Octavia III kombi 1.4 TSI 150 KM, manual, benzyna, produkcja 2017, 146000 km, 53000 zł. Opis sprzedawcy podaje też przebieg około 144000 km i informuje o wymienionym prawym przednim błotniku; karta oznacza bezwypadkowość: nie, uszkodzony: nie. Kraj pochodzenia wskazano jako Polska; sprzedawca prywatny. VIN nieudostępniony w widocznej treści. Czujniki parkowania przód/tył wymienione; kamera i LPG niepotwierdzone."
-          }
-        }
-      ],
-      "lastCheckedAt": "2026-11-09T13:03:51+00:00",
-      "lastVerifiedAt": "2026-11-09T13:03:51+00:00",
-      "lastAttemptAt": "2026-11-09T13:03:51+00:00",
-      "history": [
-        {
-          "eventId": "d1ca2c63083c07b40114d735489c02851fadb92d96ebd95307c75754bcf74634",
-          "runId": "search-20261108",
-          "checkedAt": "2026-11-08T19:39:43+01:00",
-          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-tsi-150-km-3721-9203-YU",
-          "availability": "available",
-          "note": "Karta ma aktywne opcje kontaktu; strona oferty klasyfikuje auto jako kombi, 2017, benzyna 1.4 TSI 150 KM, manual, 146 000 km i 53 000 zł brutto. Opis sprzedawcy mówi o Octavii III po liftingu, aucie z polskiego salonu wyprodukowanym w 2017 r.; sprzedawca deklaruje wymianę prawego przedniego błotnika i bezwypadkowość: nie. VIN nie został podany na odczytanej karcie, kamera nie jest wymieniona, LPG nieustalone. Dokładny wariant 1.4 TSI trzeba potwierdzić dokumentami/datą produkcji, szczególnie z uwagi na zmianę 1.4/1.5 TSI w tym okresie.",
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:autoplac:3721-9203-YU",
-            "modelKey": "skoda-octavia-iii-combi",
-            "title": "Škoda Octavia III Combi 1.4 TSI 150 KM — 2017, manual",
-            "urls": [
-              {
-                "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-tsi-150-km-3721-9203-YU"
-              }
-            ],
-            "listingIds": [
-              "autoplac:3721-9203-YU"
-            ],
-            "year": 2017,
-            "price": 53000,
-            "mileage": 146000,
-            "engine": "1.4 TSI, 150 KM, benzyna",
-            "engineVariant": "1.4-tsi-ea211-150",
-            "body": "Kombi (opis i karta modelu)",
-            "bodyCode": "wagon",
-            "transmission": "Manualna",
-            "transmissionCode": "manual",
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "offerType": "private",
-            "cameraStatus": "unknown",
-            "structuralDamageStatus": "unknown",
-            "location": {
-              "status": "available",
-              "countryCode": "PL",
-              "city": "Czchów",
-              "voivodeship": "Małopolskie"
-            }
-          },
-          "changes": {
-            "id": {
-              "before": null,
-              "after": "listing:autoplac:3721-9203-YU"
-            },
-            "modelKey": {
-              "before": null,
-              "after": "skoda-octavia-iii-combi"
-            },
-            "title": {
-              "before": null,
-              "after": "Škoda Octavia III Combi 1.4 TSI 150 KM — 2017, manual"
-            },
-            "urls": {
-              "before": null,
-              "after": [
-                {
-                  "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-tsi-150-km-3721-9203-YU"
-                }
-              ]
-            },
-            "listingIds": {
-              "before": null,
-              "after": [
-                "autoplac:3721-9203-YU"
-              ]
-            },
-            "year": {
-              "before": null,
-              "after": 2017
-            },
-            "price": {
-              "before": null,
-              "after": 53000
-            },
-            "mileage": {
-              "before": null,
-              "after": 146000
-            },
-            "engine": {
-              "before": null,
-              "after": "1.4 TSI, 150 KM, benzyna"
-            },
-            "engineVariant": {
-              "before": null,
-              "after": "1.4-tsi-ea211-150"
-            },
-            "body": {
-              "before": null,
-              "after": "Kombi (opis i karta modelu)"
-            },
-            "bodyCode": {
-              "before": null,
-              "after": "wagon"
-            },
-            "transmission": {
-              "before": null,
-              "after": "Manualna"
-            },
-            "transmissionCode": {
-              "before": null,
-              "after": "manual"
-            },
-            "saleType": {
-              "before": null,
-              "after": "fixed_price"
-            },
-            "offerType": {
-              "before": null,
-              "after": "private"
-            },
-            "cameraStatus": {
-              "before": null,
-              "after": "unknown"
-            },
-            "structuralDamageStatus": {
-              "before": null,
-              "after": "unknown"
-            },
-            "location": {
-              "before": null,
-              "after": {
-                "status": "available",
-                "countryCode": "PL",
-                "city": "Czchów",
-                "voivodeship": "Małopolskie"
-              }
-            }
-          }
-        },
-        {
-          "eventId": "f42296c848e6982703945373d44d26e03c6734c15b806221f95109f3abbacab0",
-          "runId": "refresh-20261108-03",
-          "checkedAt": "2026-11-08T22:03:17+00:00",
-          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-tsi-150-km-3721-9203-YU",
-          "availability": "available",
-          "note": "Karta widoczna; aktualizacja tydzień temu. Podaje 53 000 zł brutto, rok produkcji 2017, 146 000 km, benzynę 1.4 TSI 150 KM i skrzynię manualną; opis sprzedawcy także deklaruje produkcję w 2017 r., ale podaje przebieg 144 000 km, więc przebieg różni się o 2 000 km. Pierwsza rejestracja i VIN nie są pokazane. Brak kodu silnika lub niezależnego dowodu potwierdzającego wariant 1.4 TSI 150; zgodności silnika nie rozstrzygam. Karta oznacza „Bezwypadkowy: Nie”, opis wspomina wymieniony prawy błotnik. LPG nieustalone, kamera niepotwierdzona.",
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:autoplac:3721-9203-YU",
-            "saleType": "fixed_price",
-            "lpgInstalled": null
-          },
-          "changes": {}
-        },
-        {
-          "eventId": "5cce62f2d5cae0b469c197e6165c228ecc18585fd6c9d41161c7e9b33515d893",
-          "runId": "photos-20261108-01",
-          "checkedAt": "2026-11-08T22:36:32+00:00",
-          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-tsi-150-km-3721-9203-YU",
-          "availability": "available",
-          "note": "Karta otwarta; aktualizacja tydzień temu, galeria pokazuje 1/28. Odczytano bezpośredni HTTPS URL zdjęcia głównego z CDN Autoplac. Oferta widnieje za 53 000 zł; LPG nieustalone.",
-          "photoCheck": {
-            "status": "found",
-            "note": "Znaleziono 1 bezpośredni HTTPS URL zdjęcia; pozostałych adresów galerii nie ujawniono w odczytanym widoku."
-          },
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:autoplac:3721-9203-YU",
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "photos": [
-              "https://euw2-cdn.autoplac.pl/v1/p/67fa0bde-a6ab-4886-8bd9-df5db718f3a0?f=1920%3Awebp"
-            ]
-          },
-          "changes": {
-            "photos": {
-              "before": null,
-              "after": [
-                "https://euw2-cdn.autoplac.pl/v1/p/67fa0bde-a6ab-4886-8bd9-df5db718f3a0?f=1920%3Awebp"
-              ]
-            }
-          }
-        },
-        {
-          "eventId": "651f2805fcbc11ff4b743f892cfad4ce3d1bfa0c5e546d84202cca489a8981a4",
-          "runId": "refresh20261109a",
-          "checkedAt": "2026-11-09T13:03:51+00:00",
-          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-tsi-150-km-3721-9203-YU",
-          "availability": "available",
-          "note": "Karta zaktualizowana tydzień temu: Škoda Octavia III kombi 1.4 TSI 150 KM, manual, benzyna, produkcja 2017, 146000 km, 53000 zł. Opis sprzedawcy podaje też przebieg około 144000 km i informuje o wymienionym prawym przednim błotniku; karta oznacza bezwypadkowość: nie, uszkodzony: nie. Kraj pochodzenia wskazano jako Polska; sprzedawca prywatny. VIN nieudostępniony w widocznej treści. Czujniki parkowania przód/tył wymienione; kamera i LPG niepotwierdzone.",
-          "photoCheck": null,
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:autoplac:3721-9203-YU",
-            "price": 53000,
-            "year": 2017,
-            "mileage": 146000,
-            "engine": "1.4 TSI, benzyna, 150 KM",
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "photos": [
-              "https://euw2-cdn.autoplac.pl/v1/p/67fa0bde-a6ab-4886-8bd9-df5db718f3a0?f=1920%3Awebp"
-            ]
-          },
-          "changes": {
-            "engine": {
-              "before": "1.4 TSI, 150 KM, benzyna",
-              "after": "1.4 TSI, benzyna, 150 KM"
-            }
-          }
-        }
-      ],
-      "assessment": {
-        "id": "listing:autoplac:3721-9203-YU",
-        "modelKey": "skoda-octavia-iii-combi",
-        "verdict": "fail",
-        "failures": [
-          "year_outside_selection"
-        ],
-        "unknowns": [
-          "engine_review_requires_verification",
-          "camera_or_compatible_retrofit",
-          "structural_history",
-          "stroller_and_family_fit"
-        ],
-        "preferenceNotes": []
-      },
-      "verdict": "fail",
-      "verdictTitle": "Poza wymaganiami",
-      "verdictNote": "year_outside_selection; engine_review_requires_verification; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
-      "photos": [
-        "https://euw2-cdn.autoplac.pl/v1/p/67fa0bde-a6ab-4886-8bd9-df5db718f3a0?f=1920%3Awebp"
-      ]
-    },
-    {
-      "id": "listing:olx:ID1cQiTC",
-      "modelKey": "skoda-octavia-iii-combi",
-      "title": "Skoda Octavia III Combi 1.4 TSI 150 KM, 2018",
-      "urls": [
-        {
-          "url": "https://www.olx.pl/d/oferta/skoda-octavia-CID5-ID1cQiTC.html"
-        }
-      ],
-      "listingIds": [
-        "olx:ID1cQiTC"
-      ],
-      "vin": "TMBJC7NE7J0198619",
-      "year": 2018,
-      "price": 45900,
-      "priceBasis": "gross_unconditional_total",
-      "bodyCode": "wagon",
-      "engineVariant": "1.4-tsi-ea211-150",
-      "transmissionCode": "manual",
-      "saleType": "fixed_price",
-      "offerType": "private",
-      "cameraStatus": "unknown",
-      "structuralDamageStatus": "unknown",
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "voivodeship": "wielkopolskie",
-        "city": "Leszno"
-      },
-      "photos": [
-        "https://ireland.apollo.olxcdn.com/v1/files/r4jmmuhkxjkn-PL/image%3Bs%3D765x1360",
-        "https://ireland.apollo.olxcdn.com/v1/files/zo5nrtwkvwyh-PL/image%3Bs%3D765x1360",
-        "https://ireland.apollo.olxcdn.com/v1/files/fm1k4lm24p0s1-PL/image%3Bs%3D765x1360",
-        "https://ireland.apollo.olxcdn.com/v1/files/vhhi919y6k0u3-PL/image%3Bs%3D765x1360",
-        "https://ireland.apollo.olxcdn.com/v1/files/8x2mkfj9sq483-PL/image%3Bs%3D765x1360",
-        "https://ireland.apollo.olxcdn.com/v1/files/nh8jydjnjlpe3-PL/image%3Bs%3D765x1360",
-        "https://ireland.apollo.olxcdn.com/v1/files/6zo55l3p3c9y-PL/image%3Bs%3D765x1360"
-      ],
-      "details": {
-        "Dostępność i cena": "Karta OLX była dostępna podczas sprawdzenia; ogłoszenie odświeżono 03.11.2026. Cena 45 900 zł, bez widocznego warunku finansowania.",
-        "Dane auta": "Karta podaje produkcję 2018, kombi, benzynę, 1 395 cm³, 150 KM, manual, 141 500 km i VIN TMBJC7NE7J0198619. Sprzedawca opisuje wymianę rozrządu przy 120 tys. km; są to deklaracje sprzedawcy.",
-        "Wyposażenie i luki": "Opis podaje podgrzewane fotele, aktywny tempomat, klimatyzację dwustrefową i CarPlay, ale nie wymienia kamery ani LPG. Dokładny kod silnika i dopasowanie do wybranego wariantu wymagają sprawdzenia po VIN ze względu na przejście 1.4/1.5 TSI w tym okresie. Szkody konstrukcyjne nie zostały niezależnie sprawdzone."
-      },
-      "lpgInstalled": null,
-      "firstSeenAt": "2026-11-09T14:29:47+01:00",
-      "listingStates": [
-        {
-          "url": "https://www.olx.pl/d/oferta/skoda-octavia-CID5-ID1cQiTC.html",
-          "status": "available",
-          "lastAttemptAt": "2026-11-09T14:29:47+01:00",
-          "lastCheckedAt": "2026-11-09T14:29:47+01:00",
-          "lastVerifiedAt": "2026-11-09T14:29:47+01:00",
-          "lastObservation": {
-            "url": "https://www.olx.pl/d/oferta/skoda-octavia-CID5-ID1cQiTC.html",
-            "checkedAt": "2026-11-09T14:29:47+01:00",
-            "availability": "available",
-            "note": "Karta OLX dostępna; produkcja 2018, Skoda Octavia kombi, benzyna 1 395 cm³/150 KM, manual, 141 500 km, 45 900 zł, sprzedawca prywatny; odświeżono 03.11.2026. Kamera i instalacja LPG nie są wymienione. VIN podano na karcie. Dokładny kod silnika do potwierdzenia po VIN.",
-            "evidence": [
-              {
-                "fields": [
-                  "availability",
-                  "vin",
-                  "year",
-                  "price",
-                  "priceBasis",
-                  "mileageKm",
-                  "bodyCode",
-                  "engineVariant",
-                  "transmissionCode",
-                  "saleType",
-                  "offerType",
-                  "location",
-                  "cameraStatus",
-                  "lpgInstalled",
-                  "structuralDamageStatus"
-                ],
-                "url": "https://www.olx.pl/d/oferta/skoda-octavia-CID5-ID1cQiTC.html",
-                "checkedAt": "2026-11-09T14:29:47+01:00",
-                "kind": "seller",
-                "note": "Karta wskazuje VIN, rok, paliwo, nadwozie, pojemność, moc, skrzynię i przebieg (lin. 38–62); opis i cena 45 900 zł oraz data odświeżenia 03.11.2026 (lin. 63–78). Wyniki OLX identyfikują miejscowość Leszno. Kamera i LPG nie są wymienione."
-              }
-            ]
-          }
-        }
-      ],
-      "lastCheckedAt": "2026-11-09T14:29:47+01:00",
-      "lastVerifiedAt": "2026-11-09T14:29:47+01:00",
-      "lastAttemptAt": "2026-11-09T14:29:47+01:00",
-      "history": [
-        {
-          "eventId": "961a6dec4d4600a939a0e8269c1998be863c656b0cf73f5f9e75a0fa8fcb0402",
-          "runId": "search-20261109",
-          "checkedAt": "2026-11-09T14:29:47+01:00",
-          "url": "https://www.olx.pl/d/oferta/skoda-octavia-CID5-ID1cQiTC.html",
-          "availability": "available",
-          "note": "Karta OLX dostępna; produkcja 2018, Skoda Octavia kombi, benzyna 1 395 cm³/150 KM, manual, 141 500 km, 45 900 zł, sprzedawca prywatny; odświeżono 03.11.2026. Kamera i instalacja LPG nie są wymienione. VIN podano na karcie. Dokładny kod silnika do potwierdzenia po VIN.",
-          "photoCheck": null,
-          "evidence": [
-            {
-              "fields": [
-                "availability",
-                "vin",
-                "year",
-                "price",
-                "priceBasis",
-                "mileageKm",
-                "bodyCode",
-                "engineVariant",
-                "transmissionCode",
-                "saleType",
-                "offerType",
-                "location",
-                "cameraStatus",
-                "lpgInstalled",
-                "structuralDamageStatus"
-              ],
-              "url": "https://www.olx.pl/d/oferta/skoda-octavia-CID5-ID1cQiTC.html",
-              "checkedAt": "2026-11-09T14:29:47+01:00",
-              "kind": "seller",
-              "note": "Karta wskazuje VIN, rok, paliwo, nadwozie, pojemność, moc, skrzynię i przebieg (lin. 38–62); opis i cena 45 900 zł oraz data odświeżenia 03.11.2026 (lin. 63–78). Wyniki OLX identyfikują miejscowość Leszno. Kamera i LPG nie są wymienione."
-            }
-          ],
-          "reportedFields": {
-            "id": "listing:olx:ID1cQiTC",
-            "modelKey": "skoda-octavia-iii-combi",
-            "title": "Skoda Octavia III Combi 1.4 TSI 150 KM, 2018",
-            "urls": [
-              {
-                "url": "https://www.olx.pl/d/oferta/skoda-octavia-CID5-ID1cQiTC.html"
-              }
-            ],
-            "listingIds": [
-              "olx:ID1cQiTC"
-            ],
-            "vin": "TMBJC7NE7J0198619",
-            "year": 2018,
-            "price": 45900,
-            "priceBasis": "gross_unconditional_total",
-            "mileageKm": 141500,
-            "bodyCode": "wagon",
-            "engineVariant": "1.4-tsi-ea211-150",
-            "transmissionCode": "manual",
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "offerType": "private",
-            "cameraStatus": "unknown",
-            "structuralDamageStatus": "unknown",
-            "familyFitConfirmed": null,
-            "location": {
-              "status": "available",
-              "countryCode": "PL",
-              "voivodeship": "wielkopolskie",
-              "city": "Leszno"
-            },
-            "photos": [
-              "https://ireland.apollo.olxcdn.com/v1/files/r4jmmuhkxjkn-PL/image%3Bs%3D765x1360",
-              "https://ireland.apollo.olxcdn.com/v1/files/zo5nrtwkvwyh-PL/image%3Bs%3D765x1360",
-              "https://ireland.apollo.olxcdn.com/v1/files/fm1k4lm24p0s1-PL/image%3Bs%3D765x1360",
-              "https://ireland.apollo.olxcdn.com/v1/files/vhhi919y6k0u3-PL/image%3Bs%3D765x1360",
-              "https://ireland.apollo.olxcdn.com/v1/files/8x2mkfj9sq483-PL/image%3Bs%3D765x1360",
-              "https://ireland.apollo.olxcdn.com/v1/files/nh8jydjnjlpe3-PL/image%3Bs%3D765x1360",
-              "https://ireland.apollo.olxcdn.com/v1/files/6zo55l3p3c9y-PL/image%3Bs%3D765x1360"
-            ],
-            "details": {
-              "Dostępność i cena": "Karta OLX była dostępna podczas sprawdzenia; ogłoszenie odświeżono 03.11.2026. Cena 45 900 zł, bez widocznego warunku finansowania.",
-              "Dane auta": "Karta podaje produkcję 2018, kombi, benzynę, 1 395 cm³, 150 KM, manual, 141 500 km i VIN TMBJC7NE7J0198619. Sprzedawca opisuje wymianę rozrządu przy 120 tys. km; są to deklaracje sprzedawcy.",
-              "Wyposażenie i luki": "Opis podaje podgrzewane fotele, aktywny tempomat, klimatyzację dwustrefową i CarPlay, ale nie wymienia kamery ani LPG. Dokładny kod silnika i dopasowanie do wybranego wariantu wymagają sprawdzenia po VIN ze względu na przejście 1.4/1.5 TSI w tym okresie. Szkody konstrukcyjne nie zostały niezależnie sprawdzone."
-            }
-          },
-          "changes": {
-            "id": {
-              "before": null,
-              "after": "listing:olx:ID1cQiTC"
-            },
-            "modelKey": {
-              "before": null,
-              "after": "skoda-octavia-iii-combi"
-            },
-            "title": {
-              "before": null,
-              "after": "Skoda Octavia III Combi 1.4 TSI 150 KM, 2018"
-            },
-            "urls": {
-              "before": null,
-              "after": [
-                {
-                  "url": "https://www.olx.pl/d/oferta/skoda-octavia-CID5-ID1cQiTC.html"
-                }
-              ]
-            },
-            "listingIds": {
-              "before": null,
-              "after": [
-                "olx:ID1cQiTC"
-              ]
-            },
-            "vin": {
-              "before": null,
-              "after": "TMBJC7NE7J0198619"
-            },
-            "year": {
-              "before": null,
-              "after": 2018
-            },
-            "price": {
-              "before": null,
-              "after": 45900
-            },
-            "priceBasis": {
-              "before": null,
-              "after": "gross_unconditional_total"
-            },
-            "mileageKm": {
-              "before": null,
-              "after": 141500
-            },
-            "bodyCode": {
-              "before": null,
-              "after": "wagon"
-            },
-            "engineVariant": {
-              "before": null,
-              "after": "1.4-tsi-ea211-150"
-            },
-            "transmissionCode": {
-              "before": null,
-              "after": "manual"
-            },
-            "saleType": {
-              "before": null,
-              "after": "fixed_price"
-            },
-            "offerType": {
-              "before": null,
-              "after": "private"
-            },
-            "cameraStatus": {
-              "before": null,
-              "after": "unknown"
-            },
-            "structuralDamageStatus": {
-              "before": null,
-              "after": "unknown"
-            },
-            "location": {
-              "before": null,
-              "after": {
-                "status": "available",
-                "countryCode": "PL",
-                "voivodeship": "wielkopolskie",
-                "city": "Leszno"
-              }
-            },
-            "photos": {
-              "before": null,
-              "after": [
-                "https://ireland.apollo.olxcdn.com/v1/files/r4jmmuhkxjkn-PL/image%3Bs%3D765x1360",
-                "https://ireland.apollo.olxcdn.com/v1/files/zo5nrtwkvwyh-PL/image%3Bs%3D765x1360",
-                "https://ireland.apollo.olxcdn.com/v1/files/fm1k4lm24p0s1-PL/image%3Bs%3D765x1360",
-                "https://ireland.apollo.olxcdn.com/v1/files/vhhi919y6k0u3-PL/image%3Bs%3D765x1360",
-                "https://ireland.apollo.olxcdn.com/v1/files/8x2mkfj9sq483-PL/image%3Bs%3D765x1360",
-                "https://ireland.apollo.olxcdn.com/v1/files/nh8jydjnjlpe3-PL/image%3Bs%3D765x1360",
-                "https://ireland.apollo.olxcdn.com/v1/files/6zo55l3p3c9y-PL/image%3Bs%3D765x1360"
-              ]
-            },
-            "details": {
-              "before": null,
-              "after": {
-                "Dostępność i cena": "Karta OLX była dostępna podczas sprawdzenia; ogłoszenie odświeżono 03.11.2026. Cena 45 900 zł, bez widocznego warunku finansowania.",
-                "Dane auta": "Karta podaje produkcję 2018, kombi, benzynę, 1 395 cm³, 150 KM, manual, 141 500 km i VIN TMBJC7NE7J0198619. Sprzedawca opisuje wymianę rozrządu przy 120 tys. km; są to deklaracje sprzedawcy.",
-                "Wyposażenie i luki": "Opis podaje podgrzewane fotele, aktywny tempomat, klimatyzację dwustrefową i CarPlay, ale nie wymienia kamery ani LPG. Dokładny kod silnika i dopasowanie do wybranego wariantu wymagają sprawdzenia po VIN ze względu na przejście 1.4/1.5 TSI w tym okresie. Szkody konstrukcyjne nie zostały niezależnie sprawdzone."
-              }
-            }
-          }
-        }
-      ],
-      "assessment": {
-        "id": "listing:olx:ID1cQiTC",
-        "modelKey": "skoda-octavia-iii-combi",
-        "verdict": "check",
-        "failures": [],
-        "unknowns": [
-          "engine_review_requires_verification",
-          "camera_or_compatible_retrofit",
-          "structural_history",
-          "mileage",
-          "stroller_and_family_fit"
-        ],
-        "preferenceNotes": []
-      },
-      "verdict": "check",
-      "verdictTitle": "Do weryfikacji",
-      "verdictNote": "engine_review_requires_verification; camera_or_compatible_retrofit; structural_history; mileage; stroller_and_family_fit",
-      "mileage": 141500
+      "archive": {
+        "status": "unverified",
+        "reason": "no_listing_url_confirmed_available; at_least_one_access_error",
+        "archivedAt": "2026-11-10T23:13:13+00:00"
+      }
     },
     {
       "id": "listing:autoplac:4868-2146-UC",
@@ -1973,7 +2336,7 @@
       ],
       "year": 2018,
       "price": 51900,
-      "priceBasis": "gross_unconditional_total",
+      "priceBasis": "gross_total",
       "engine": "1.4 TSI 150 KM / 110 kW, 1395 cm³",
       "engineVariant": "1.4-tsi-ea211-150",
       "body": "Kombi",
@@ -2002,49 +2365,21 @@
         {
           "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-kombi-tsi-150km-salon-polska-1-wlasciciel-4868-2146-UC",
           "status": "available",
-          "lastAttemptAt": "2026-11-09T14:45:23+01:00",
+          "lastAttemptAt": "2026-11-10T23:13:04Z",
           "lastCheckedAt": "2026-11-09T14:45:23+01:00",
           "lastVerifiedAt": "2026-11-09T14:45:23+01:00",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-kombi-tsi-150km-salon-polska-1-wlasciciel-4868-2146-UC",
-            "checkedAt": "2026-11-09T14:45:23+01:00",
-            "availability": "available",
-            "price": 51900,
-            "currency": "PLN",
-            "priceGross": true,
-            "year": 2018,
-            "mileageKm": 87000,
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "note": "Karta Autoplac była otwarta i udostępniała cenę 51 900 zł oraz kontakt „Zadzwoń/Napisz”; brak informacji o aukcji lub obowiązkowym finansowaniu. Ostatnia aktualizacja widoczna na karcie: 2026-08-26, dlatego bieżącą dostępność warto potwierdzić ze sprzedawcą. Rok produkcji 2018, Octavia III, kombi, 1.4 TSI 150 KM/110 kW, 87 000 km, manual. Sprzedawca prywatny; Dąbrowa Górnicza, woj. śląskie, kod 41-303. Karta oznacza auto jako bezwypadkowe i pierwszy właściciel, ale to deklaracje sprzedawcy; niezależna kontrola konstrukcji niepotwierdzona. W widocznym skróconym wyposażeniu czujniki parkowania tył; kamera cofania niewymieniona, więc status unknown. Paliwo benzyna; obecność instalacji LPG nieustalona.",
-            "evidence": [
-              {
-                "fields": [
-                  "availability",
-                  "year",
-                  "price",
-                  "mileageKm",
-                  "engineVariant",
-                  "bodyCode",
-                  "transmissionCode",
-                  "saleType",
-                  "location",
-                  "offerType",
-                  "cameraStatus",
-                  "lpgInstalled"
-                ],
-                "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-kombi-tsi-150km-salon-polska-1-wlasciciel-4868-2146-UC",
-                "checkedAt": "2026-11-09T14:45:23+01:00",
-                "kind": "seller",
-                "note": "Karta Autoplac: 2018, 87 000 km, 1.4 TSI 150 KM/110 kW/1395 cm³, kombi, manual, cena 51 900 zł; lokalizacja Dąbrowa Górnicza, Śląskie, 41-303; osoba prywatna. Karta nadal pokazuje kontakt i cenę, ale ostatnia aktualizacja to 2026-08-26. Wyposażenie widoczne w karcie zawiera tylne czujniki, kamera niepotwierdzona; LPG niepodane."
-              }
-            ]
+            "checkedAt": "2026-11-10T23:13:04Z",
+            "availability": "access_error",
+            "note": "Karta Autoplac pokazuje Skoda Octavia III 1.4 kombi TSI 150 KM, cenę 51 900 zł i kontakt, bez komunikatu o zamknięciu, ale podaje ostatnią aktualizację 2026-08-26. Ze względu na nieaktualną datę bieżąca dostępność pozostaje nieustalona.",
+            "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-09T14:45:23+01:00",
       "lastVerifiedAt": "2026-11-09T14:45:23+01:00",
-      "lastAttemptAt": "2026-11-09T14:45:23+01:00",
+      "lastAttemptAt": "2026-11-10T23:13:04Z",
       "history": [
         {
           "eventId": "9c4005e8a33c6a0a6a373a47ddf5412f5bb1796f07c804b93593d926072074fa",
@@ -2221,6 +2556,26 @@
               "after": false
             }
           }
+        },
+        {
+          "eventId": "8e95ac4263424f444efec91bf576e212ea9f47de1b7f4c024d884abd26bd15f9",
+          "runId": "dostepnosc-2026-11-10",
+          "checkedAt": "2026-11-10T23:13:04Z",
+          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-kombi-tsi-150km-salon-polska-1-wlasciciel-4868-2146-UC",
+          "availability": "access_error",
+          "note": "Karta Autoplac pokazuje Skoda Octavia III 1.4 kombi TSI 150 KM, cenę 51 900 zł i kontakt, bez komunikatu o zamknięciu, ale podaje ostatnią aktualizację 2026-08-26. Ze względu na nieaktualną datę bieżąca dostępność pozostaje nieustalona.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:4868-2146-UC"
+          },
+          "changes": {
+            "priceBasis": {
+              "before": "gross_unconditional_total",
+              "after": "gross_total"
+            }
+          }
         }
       ],
       "assessment": {
@@ -2240,7 +2595,12 @@
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
       "verdictNote": "engine_review_requires_verification; camera_or_compatible_retrofit; structural_history; mileage; stroller_and_family_fit",
-      "mileage": 87000
+      "mileage": 87000,
+      "archive": {
+        "status": "unverified",
+        "reason": "no_listing_url_confirmed_available; at_least_one_access_error",
+        "archivedAt": "2026-11-10T23:13:04+00:00"
+      }
     },
     {
       "id": "listing:olx:ID1c50yG",
@@ -2296,52 +2656,21 @@
         {
           "url": "https://www.olx.pl/d/oferta/skoda-octavia-skoda-octavia-iii-1-4-tsi-150-km-ambition-2018-1-wlasciciel-CID5-ID1c50yG.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-09T23:31:57Z",
+          "lastAttemptAt": "2026-11-10T23:13:13Z",
           "lastCheckedAt": "2026-11-09T23:31:57Z",
           "lastVerifiedAt": "2026-11-09T23:31:57Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/skoda-octavia-skoda-octavia-iii-1-4-tsi-150-km-ambition-2018-1-wlasciciel-CID5-ID1c50yG.html",
-            "checkedAt": "2026-11-09T23:31:57Z",
-            "availability": "available",
-            "note": "Karta OLX była publicznie dostępna z przyciskiem kontaktu; sprzedawca oznaczony jako online. Podaje VIN TMBJC7NE0J0342915, rok produkcji 2018, benzynę 1 395 cm³/150 KM, Kombi, manual, pole przebiegu 132 000 km (opis: 113 000 km), cenę 49 990 zł do negocjacji oraz lokalizację Wrocław Krzyki. Opis ujawnia naprawę blacharsko-lakierniczą elementów bocznych w 2019 r. Kamera nie jest wymieniona; LPG i bezwarunkowa cena końcowa nieustalone. Nie potwierdzono konstrukcyjnego charakteru naprawy ani dokładnego wariantu silnika po VIN. Bezpośrednie HTTPS zdjęcia odczytano z linków galerii karty.",
-            "evidence": [
-              {
-                "url": "https://www.olx.pl/d/oferta/skoda-octavia-skoda-octavia-iii-1-4-tsi-150-km-ambition-2018-1-wlasciciel-CID5-ID1c50yG.html",
-                "checkedAt": "2026-11-09T23:31:57Z",
-                "kind": "seller",
-                "fields": [
-                  "vin",
-                  "year",
-                  "price",
-                  "mileage",
-                  "engine",
-                  "bodyCode",
-                  "transmissionCode",
-                  "offerType",
-                  "saleType",
-                  "location",
-                  "structuralDamageStatus",
-                  "cameraStatus",
-                  "lpgInstalled"
-                ],
-                "note": "Pola i opis karty wskazują dane identyfikacyjne, rok, 1 395 cm³/150 KM, Kombi, manual, cenę negocjowalną, miejscowość, status prywatnego sprzedawcy oraz tekst o naprawie bocznych elementów. Strukturalny charakter naprawy nie jest określony; kamera i LPG nie są wymienione. Pole przebiegu i opis są sprzeczne."
-              },
-              {
-                "url": "https://bdl.stat.gov.pl/bdl/metadane/teryt/lista/550",
-                "checkedAt": "2026-11-09T23:31:57Z",
-                "kind": "independent",
-                "fields": [
-                  "location.voivodeship"
-                ],
-                "note": "GUS BDL/TERYT wykazuje Wrocław w województwie dolnośląskim; miejscowość Wrocław Krzyki pochodzi z karty OLX."
-              }
-            ]
+            "checkedAt": "2026-11-10T23:13:13Z",
+            "availability": "access_error",
+            "note": "Bezpośrednia karta pokazuje Skoda Octavia III Ambition z ceną 49 990 zł i przyciskiem kontaktu, ale migawka OLX jest crawlowana 2 miesiące temu, a ogłoszenie dodano 28.08.2026. Bieżącej dostępności nie da się potwierdzić.",
+            "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-09T23:31:57Z",
       "lastVerifiedAt": "2026-11-09T23:31:57Z",
-      "lastAttemptAt": "2026-11-09T23:31:57Z",
+      "lastAttemptAt": "2026-11-10T23:13:13Z",
       "history": [
         {
           "eventId": "9689dee16ba2132fc25b2c8f6cf7647764b3e77bb760b3d8c8580a65ead2db54",
@@ -2553,6 +2882,21 @@
               }
             }
           }
+        },
+        {
+          "eventId": "00531ab90c83a95bda66bad1ea8a06422aea1b69981588b0f35757bb11b2cfe0",
+          "runId": "dostepnosc-2026-11-10",
+          "checkedAt": "2026-11-10T23:13:13Z",
+          "url": "https://www.olx.pl/d/oferta/skoda-octavia-skoda-octavia-iii-1-4-tsi-150-km-ambition-2018-1-wlasciciel-CID5-ID1c50yG.html",
+          "availability": "access_error",
+          "note": "Bezpośrednia karta pokazuje Skoda Octavia III Ambition z ceną 49 990 zł i przyciskiem kontaktu, ale migawka OLX jest crawlowana 2 miesiące temu, a ogłoszenie dodano 28.08.2026. Bieżącej dostępności nie da się potwierdzić.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:ID1c50yG"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -2571,306 +2915,12 @@
       },
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
-      "verdictNote": "gross_unconditional_purchase_price; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
-    },
-    {
-      "id": "listing:autoplac:7052-2823-ZX",
-      "modelKey": "skoda-octavia-iii-combi",
-      "vin": "TMBJC7NE9J0272699",
-      "listingIds": [
-        "autoplac:7052-2823-ZX"
-      ],
-      "urls": [
-        {
-          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-7052-2823-ZX",
-          "label": "Autoplac"
-        }
-      ],
-      "photos": [
-        "https://euw2-cdn.autoplac.pl/v1/p/9473df3e-4ac2-4e14-a53d-030a8834c52c?f=1920%3Awebp"
-      ],
-      "title": "Skoda Octavia III 1.4 TSI 150 KM Kombi, 2018, manual",
-      "year": 2018,
-      "price": 49499,
-      "priceLabel": "49 499 zł brutto; karta pokazuje kredyt jako odrębną opcję finansowania",
-      "mileage": 123605,
-      "engine": "1.4 TSI · 150 KM · 1 395 cm³ · benzyna",
-      "engineVariant": "1.4-tsi-ea211-150",
-      "body": "Kombi",
-      "bodyCode": "wagon",
-      "transmission": "manualna",
-      "transmissionCode": "manual",
-      "seller": "AAA Auto Zabrze — sprzedawca firmowy",
-      "offerType": "company",
-      "priceBasis": "gross_unconditional_total",
-      "cameraStatus": "unknown",
-      "structuralDamageStatus": "unknown",
-      "saleType": "fixed_price",
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "voivodeship": "śląskie",
-        "city": "Zabrze",
-        "postalCode": "41-800",
-        "precision": "postal_code",
-        "source": "listing",
-        "geoSource": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-7052-2823-ZX"
-      },
-      "lpgInstalled": null,
-      "firstSeenAt": "2026-11-10T00:23:25Z",
-      "listingStates": [
-        {
-          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-7052-2823-ZX",
-          "status": "available",
-          "lastAttemptAt": "2026-11-10T00:23:25Z",
-          "lastCheckedAt": "2026-11-10T00:23:25Z",
-          "lastVerifiedAt": "2026-11-10T00:23:25Z",
-          "lastObservation": {
-            "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-7052-2823-ZX",
-            "checkedAt": "2026-11-10T00:23:25Z",
-            "availability": "available",
-            "note": "Karta otwarta publicznie, ostatnia aktualizacja tydzień temu, pokazuje aktywną firmę i kontakt „Poproś o kontakt”. Podaje VIN TMBJC7NE9J0272699, produkcję 2018, 1.4 TSI 150 KM/1395 cm³, Kombi, manual, 123 605 km, 49 499 zł brutto i Zabrze 41-800. Karta wyświetla Bezwypadkowy Nie, co nie potwierdza ani nie wyklucza szkody konstrukcyjnej. Kamera/LPG nie są wymienione; kredyt jest osobną opcją.",
-            "evidence": [
-              {
-                "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-7052-2823-ZX",
-                "checkedAt": "2026-11-10T00:23:25Z",
-                "kind": "seller",
-                "fields": [
-                  "vin",
-                  "year",
-                  "price",
-                  "mileage",
-                  "engine",
-                  "bodyCode",
-                  "transmissionCode",
-                  "offerType",
-                  "saleType",
-                  "location",
-                  "cameraStatus",
-                  "lpgInstalled",
-                  "structuralDamageStatus"
-                ],
-                "note": "Karta zawiera VIN, 2018, 1.4 TSI 150 KM/1395 cm³, Kombi, manual, 123 605 km, 49 499 zł brutto, Zabrze 41-800, status Bezwypadkowy Nie i kontakt do aktywnej firmy. Kamera/LPG nie są wymienione; strukturalny zakres uszkodzeń pozostaje nieznany."
-              }
-            ]
-          }
-        }
-      ],
-      "lastCheckedAt": "2026-11-10T00:23:25Z",
-      "lastVerifiedAt": "2026-11-10T00:23:25Z",
-      "lastAttemptAt": "2026-11-10T00:23:25Z",
-      "history": [
-        {
-          "eventId": "047e5f902acd3e4401e15a388ad244fe3b2440e5732faa5ce897ed205b85b835",
-          "runId": "search-20261110-full",
-          "checkedAt": "2026-11-10T00:23:25Z",
-          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-7052-2823-ZX",
-          "availability": "available",
-          "note": "Karta otwarta publicznie, ostatnia aktualizacja tydzień temu, pokazuje aktywną firmę i kontakt „Poproś o kontakt”. Podaje VIN TMBJC7NE9J0272699, produkcję 2018, 1.4 TSI 150 KM/1395 cm³, Kombi, manual, 123 605 km, 49 499 zł brutto i Zabrze 41-800. Karta wyświetla Bezwypadkowy Nie, co nie potwierdza ani nie wyklucza szkody konstrukcyjnej. Kamera/LPG nie są wymienione; kredyt jest osobną opcją.",
-          "photoCheck": null,
-          "evidence": [
-            {
-              "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-7052-2823-ZX",
-              "checkedAt": "2026-11-10T00:23:25Z",
-              "kind": "seller",
-              "fields": [
-                "vin",
-                "year",
-                "price",
-                "mileage",
-                "engine",
-                "bodyCode",
-                "transmissionCode",
-                "offerType",
-                "saleType",
-                "location",
-                "cameraStatus",
-                "lpgInstalled",
-                "structuralDamageStatus"
-              ],
-              "note": "Karta zawiera VIN, 2018, 1.4 TSI 150 KM/1395 cm³, Kombi, manual, 123 605 km, 49 499 zł brutto, Zabrze 41-800, status Bezwypadkowy Nie i kontakt do aktywnej firmy. Kamera/LPG nie są wymienione; strukturalny zakres uszkodzeń pozostaje nieznany."
-            }
-          ],
-          "reportedFields": {
-            "id": "listing:autoplac:7052-2823-ZX",
-            "modelKey": "skoda-octavia-iii-combi",
-            "vin": "TMBJC7NE9J0272699",
-            "listingIds": [
-              "autoplac:7052-2823-ZX"
-            ],
-            "urls": [
-              {
-                "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-7052-2823-ZX",
-                "label": "Autoplac"
-              }
-            ],
-            "photos": [
-              "https://euw2-cdn.autoplac.pl/v1/p/9473df3e-4ac2-4e14-a53d-030a8834c52c?f=1920%3Awebp"
-            ],
-            "title": "Skoda Octavia III 1.4 TSI 150 KM Kombi, 2018, manual",
-            "year": 2018,
-            "price": 49499,
-            "priceLabel": "49 499 zł brutto; karta pokazuje kredyt jako odrębną opcję finansowania",
-            "mileage": 123605,
-            "engine": "1.4 TSI · 150 KM · 1 395 cm³ · benzyna",
-            "engineVariant": "1.4-tsi-ea211-150",
-            "body": "Kombi",
-            "bodyCode": "wagon",
-            "transmission": "manualna",
-            "transmissionCode": "manual",
-            "seller": "AAA Auto Zabrze — sprzedawca firmowy",
-            "offerType": "company",
-            "priceBasis": "gross_unconditional_total",
-            "cameraStatus": "unknown",
-            "structuralDamageStatus": "unknown",
-            "familyFitConfirmed": null,
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "location": {
-              "status": "available",
-              "countryCode": "PL",
-              "voivodeship": "śląskie",
-              "city": "Zabrze",
-              "postalCode": "41-800",
-              "precision": "postal_code",
-              "source": "listing",
-              "geoSource": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-7052-2823-ZX"
-            }
-          },
-          "changes": {
-            "id": {
-              "before": null,
-              "after": "listing:autoplac:7052-2823-ZX"
-            },
-            "modelKey": {
-              "before": null,
-              "after": "skoda-octavia-iii-combi"
-            },
-            "vin": {
-              "before": null,
-              "after": "TMBJC7NE9J0272699"
-            },
-            "listingIds": {
-              "before": null,
-              "after": [
-                "autoplac:7052-2823-ZX"
-              ]
-            },
-            "urls": {
-              "before": null,
-              "after": [
-                {
-                  "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-7052-2823-ZX",
-                  "label": "Autoplac"
-                }
-              ]
-            },
-            "photos": {
-              "before": null,
-              "after": [
-                "https://euw2-cdn.autoplac.pl/v1/p/9473df3e-4ac2-4e14-a53d-030a8834c52c?f=1920%3Awebp"
-              ]
-            },
-            "title": {
-              "before": null,
-              "after": "Skoda Octavia III 1.4 TSI 150 KM Kombi, 2018, manual"
-            },
-            "year": {
-              "before": null,
-              "after": 2018
-            },
-            "price": {
-              "before": null,
-              "after": 49499
-            },
-            "priceLabel": {
-              "before": null,
-              "after": "49 499 zł brutto; karta pokazuje kredyt jako odrębną opcję finansowania"
-            },
-            "mileage": {
-              "before": null,
-              "after": 123605
-            },
-            "engine": {
-              "before": null,
-              "after": "1.4 TSI · 150 KM · 1 395 cm³ · benzyna"
-            },
-            "engineVariant": {
-              "before": null,
-              "after": "1.4-tsi-ea211-150"
-            },
-            "body": {
-              "before": null,
-              "after": "Kombi"
-            },
-            "bodyCode": {
-              "before": null,
-              "after": "wagon"
-            },
-            "transmission": {
-              "before": null,
-              "after": "manualna"
-            },
-            "transmissionCode": {
-              "before": null,
-              "after": "manual"
-            },
-            "seller": {
-              "before": null,
-              "after": "AAA Auto Zabrze — sprzedawca firmowy"
-            },
-            "offerType": {
-              "before": null,
-              "after": "company"
-            },
-            "priceBasis": {
-              "before": null,
-              "after": "gross_unconditional_total"
-            },
-            "cameraStatus": {
-              "before": null,
-              "after": "unknown"
-            },
-            "structuralDamageStatus": {
-              "before": null,
-              "after": "unknown"
-            },
-            "saleType": {
-              "before": null,
-              "after": "fixed_price"
-            },
-            "location": {
-              "before": null,
-              "after": {
-                "status": "available",
-                "countryCode": "PL",
-                "voivodeship": "śląskie",
-                "city": "Zabrze",
-                "postalCode": "41-800",
-                "precision": "postal_code",
-                "source": "listing",
-                "geoSource": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-7052-2823-ZX"
-              }
-            }
-          }
-        }
-      ],
-      "assessment": {
-        "id": "listing:autoplac:7052-2823-ZX",
-        "modelKey": "skoda-octavia-iii-combi",
-        "verdict": "check",
-        "failures": [],
-        "unknowns": [
-          "engine_review_requires_verification",
-          "camera_or_compatible_retrofit",
-          "structural_history",
-          "stroller_and_family_fit"
-        ],
-        "preferenceNotes": []
-      },
-      "verdict": "check",
-      "verdictTitle": "Do weryfikacji",
-      "verdictNote": "engine_review_requires_verification; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
+      "verdictNote": "gross_unconditional_purchase_price; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "archive": {
+        "status": "unverified",
+        "reason": "no_listing_url_confirmed_available; at_least_one_access_error",
+        "archivedAt": "2026-11-10T23:13:13+00:00"
+      }
     }
   ]
 }

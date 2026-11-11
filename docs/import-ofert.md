@@ -102,7 +102,8 @@ obserwacji każdego kandydata w `offers` musi być ujęty w `listingUrlsChecked`
 Nowa oferta wymaga `id`, `title`, niepustego `urls`, `location`, `saleType` i
 `lpgInstalled`. Nieznane LPG zapisujemy jako `null`. Nieznany rodzaj sprzedaży
 można zapisać jako `null`; ocena wymaga wtedy wyjaśnienia. Nie przypisujemy
-`gross_unconditional_total`, jeśli nie potwierdzono warunków ceny.
+`gross_total` dla widocznej ceny brutto; finansowanie ani jego warunki nie wpływają
+na kwalifikację ceny. Kwota netto nie spełnia limitu budżetu brutto.
 `photos` jest opcjonalną tablicą maksymalnie 12 bezpośrednich URL-i HTTPS zdjęć
 auta z karty ogłoszenia. Zapisujemy same adresy, nie pliki. Nie interpretujemy
 zdjęć jako dowodu stanu, wyposażenia ani szkód. Podczas odświeżenia, gdy nie
@@ -126,9 +127,12 @@ karta była niedostępna. Powtórzone obserwacje lub URL spoza zakresu blokują
 zamknięcie. `complete` dodatkowo wymaga odczytu wszystkich kart bez błędu dostępu.
 
 `availability`: `available`, `sold`, `removed`, `access_error`. Sprzedaż i
-usunięcie wymagają jawnego komunikatu źródła opisanego w `note`. Sam HTTP 404/410,
-brak wyniku wyszukiwarki i błąd otwarcia oznaczają `access_error`. Importer
-sprawdza strukturę dowodu; prawdziwość i adekwatność sprawdza koordynator.
+usunięcie wymagają jawnego komunikatu źródła opisanego w `note`. W zwykłym
+odświeżaniu sam HTTP 404/410, brak wyniku wyszukiwarki i błąd otwarcia oznaczają
+`access_error`. Wyjątkiem jest osobny przebieg `availability`: HTTP 410 jest
+zapisywany jako `removed`, 403 jako `access_error`, a sam 404 nadal jako
+`access_error`. Brak wyniku wyszukiwarki i blokada nie potwierdzają zamknięcia.
+Importer sprawdza strukturę dowodu; prawdziwość i adekwatność sprawdza koordynator.
 `errors` na poziomie zadania nie zmieniają statusów ofert. Aby zapisać próbę
 odświeżenia konkretnego ogłoszenia, dodaj jego obserwację `access_error`.
 
@@ -180,11 +184,14 @@ jeszcze wdrożone.
   ponów to samo `import-apply`. Wznowienie jest blokowane, jeśli pliki zostały
   w międzyczasie niezależnie zmienione. Niedokończony import blokuje nowy podgląd.
 - Tylko jeden koordynator zapisuje dane; nie uruchamiaj importów równolegle.
-- Po odświeżeniu rekord auta trafia do `archivedOffers` tylko wtedy, gdy każdy
-  powiązany URL ma potwierdzony status `sold` lub `removed`. W archiwum zostaje
-  cały rekord wraz z historią. Nierozpoznany portal, status `unknown` albo błąd
-  dostępu blokują archiwizację. Ponowna obserwacja `available` dopasowanego auta
-  przywraca je do aktywnej listy `offers`.
+- W przebiegu `refresh` rekord trafia do `archivedOffers` tylko wtedy, gdy każdy
+  powiązany URL ma potwierdzony status `sold` lub `removed`. W lekkim przebiegu
+  `availability` archiwizuj jako `unverified`, gdy wszystkie URL-e zostały
+  sprawdzone, żaden nie jest `available`, a co najmniej jeden ma `access_error`.
+  To wycofanie z aktywnej listy, nie dowód sprzedaży. Nieznany URL blokuje
+  archiwizację; jeśli choć jedna karta jest dostępna, rekord pozostaje aktywny.
+  W archiwum zachowaj cały rekord i historię. Ponowna obserwacja `available`
+  dopasowanego auta przywraca je do aktywnej listy `offers`.
 
 ## Strona i ocena
 

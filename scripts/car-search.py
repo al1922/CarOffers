@@ -6,8 +6,9 @@ import hashlib
 import json
 from pathlib import Path
 import re
+import unicodedata
 from urllib.parse import urlsplit
-from search_core import ASSESSMENT_FIELDS, ROOT, assess, audit, brand_key, contained, description, read, write
+from search_core import ASSESSMENT_FIELDS, ROOT, assess, audit, brand_key, contained, description, read, write, requirements_for_model
 from recommendation_flow import WEIGHTS as RECOMMENDATION_WEIGHTS, build as build_recommendations, finalize as finalize_recommendations, select_models as select_recommendation_models, validate_result as validate_recommendation_result
 
 
@@ -83,8 +84,50 @@ def build_query_plan(source, model, requirements, knowledge):
     }
 
 
-def build_shared_search_cache(root, run, queue, source_id):
-    pages, snippets, checked_urls = {}, {}, set()
+def normalized_search_text(value):
+    return "".join(char for char in unicodedata.normalize("NFD", str(value or "").lower())
+                   if unicodedata.category(char) != "Mn")
+
+
+def listing_matches_profile(listing, profile):
+    plan = profile.get("queryPlan", {})
+    query = plan.get("manualFilters", {})
+    native = plan.get("nativeFilters", {})
+    model = normalized_search_text(query.get("model") or native.get("model", "")).strip()
+    brand = normalized_search_text(query.get("make") or native.get("make", "")).strip()
+    text = normalized_search_text(" ".join(str(listing.get(key, "")) for key in ("title", "visibleText", "snippet")))
+    if not model or model not in text:
+        return False
+    if not brand:
+        return True
+    aliases = {"volkswagen": ("volkswagen", "vw"), "skoda": ("skoda", "skoda")}
+    if model.isdigit():
+        return any(f"{alias} {model}" in text for alias in aliases.get(brand, (brand,)))
+    return any(alias in text for alias in aliases.get(brand, (brand,)))
+
+
+def card_matches_profile(card, profile):
+    plan = profile.get("queryPlan", {})
+    query = plan.get("manualFilters", {})
+    native = plan.get("nativeFilters", {})
+    expected_model = normalized_search_text(query.get("model") or native.get("model", ""))
+    expected_brand = normalized_search_text(query.get("make") or native.get("make", ""))
+    fields = card.get("fields", {}) if isinstance(card, dict) else {}
+    actual_model = normalized_search_text(fields.get("Model", ""))
+    actual_brand = normalized_search_text(fields.get("Marka", ""))
+    if expected_model and expected_brand and actual_model and actual_brand:
+        actual_model_key = re.sub(r"[^a-z0-9]", "", actual_model)
+        expected_model_key = re.sub(r"[^a-z0-9]", "", expected_model)
+        brand_aliases = {"volkswagen": ("volkswagen", "vw"), "skoda": ("skoda",)}
+        actual_brand_key = re.sub(r"[^a-z0-9]", "", actual_brand)
+        brand_matches = {re.sub(r"[^a-z0-9]", "", item)
+                         for item in brand_aliases.get(expected_brand, (expected_brand,))}
+        return actual_model_key == expected_model_key and actual_brand_key in brand_matches
+    return listing_matches_profile({"title": card.get("title", "")}, profile)
+
+
+def build_shared_search_cache(root, run, queue, source_id, task=None):
+    pages, snippets, checked_urls, card_reads = {}, {}, set(), {}
     terminal = {"complete", "partial", "blocked", "no_matches"}
     for prior in queue.get("tasks", []):
         if prior.get("kind") != "search" or prior.get("sourceId") != source_id or prior.get("state") not in terminal:
@@ -102,6 +145,14 @@ def build_shared_search_cache(root, run, queue, source_id):
         checked_listing_urls = coverage.get("listingUrlsChecked", [])
         search_results = coverage.get("searchResults", [])
         offers = result.get("offers", []) if isinstance(result, dict) else []
+        reads = coverage.get("cardReads")
+        for entry in reads if isinstance(reads, list) else []:
+            if (not isinstance(entry, dict) or not isinstance(entry.get("url"), str)
+                    or not isinstance(entry.get("checkedAt"), str)):
+                continue
+            previous = card_reads.get(entry["url"])
+            if previous is None or entry["checkedAt"] > previous["checkedAt"]:
+                card_reads[entry["url"]] = entry
         for url in checked_listing_urls if isinstance(checked_listing_urls, list) else []:
             if isinstance(url, str):
                 checked_urls.add(url)
@@ -117,6 +168,7 @@ def build_shared_search_cache(root, run, queue, source_id):
             listing_count = len(page_listings) if isinstance(page_listings, list) else None
             page_entry = {"url": page_key, "checkedAt": page.get("checkedAt"),
                           "queryId": page.get("queryId"), "nextUrl": page.get("nextUrl"),
+                          "paginationComplete": page.get("paginationComplete") is True,
                           "listingCount": listing_count, "taskId": prior["id"],
                           "modelKey": prior.get("modelKey")}
             previous_page = pages.get(page_key)
@@ -133,6 +185,19 @@ def build_shared_search_cache(root, run, queue, source_id):
                 previous_snippet = snippets.get(listing_key)
                 if previous_snippet is None or (snippet_entry.get("checkedAt") or "") > (previous_snippet.get("checkedAt") or ""):
                     snippets[listing_key] = snippet_entry
+    profile = task.get("searchProfile", {}) if isinstance(task, dict) else {}
+    plan = profile.get("queryPlan", {})
+    model_scoped = bool(plan.get("manualFilters", {}).get("model") or plan.get("nativeFilters", {}).get("model"))
+    candidate_urls = None
+    if model_scoped:
+        candidate_urls = set()
+        for url, listing in snippets.items():
+            cached = card_reads.get(url)
+            matches = (card_matches_profile(cached.get("card") or {}, profile)
+                       if cached and isinstance(cached.get("card"), dict)
+                       else listing_matches_profile(listing, profile))
+            if matches:
+                candidate_urls.add(url)
     ordered_pages = sorted(pages.values(), key=lambda item: item.get("checkedAt") or "", reverse=True)[:100]
     ordered_snippets = sorted(snippets.values(), key=lambda item: item.get("checkedAt") or "", reverse=True)[:300]
     cached_counts = {}
@@ -143,13 +208,24 @@ def build_shared_search_cache(root, run, queue, source_id):
         cached_count = cached_counts.get(page["url"], 0)
         page["cachedListingCount"] = cached_count
         page["listingsComplete"] = page.get("listingCount") is not None and cached_count == page["listingCount"]
+    if candidate_urls is not None:
+        for entry in card_reads.values():
+            if card_matches_profile(entry.get("card") or {}, profile):
+                candidate_urls.add(entry["url"])
+        ordered_card_reads = [entry for entry in card_reads.values() if entry["url"] in candidate_urls]
+        ordered_checked_urls = sorted(checked_urls & candidate_urls)
+    else:
+        ordered_card_reads = list(card_reads.values())
+        ordered_checked_urls = sorted(checked_urls)
     return {"checkedSearchPages": ordered_pages, "visibleListings": ordered_snippets,
-            "listingUrlsChecked": sorted(checked_urls)[-500:]}
+            "listingUrlsChecked": ordered_checked_urls[-500:],
+            "cardReads": sorted(ordered_card_reads, key=lambda item: item["checkedAt"], reverse=True)[:500],
+            **({"cacheModelKey": task.get("modelKey")} if model_scoped else {})}
 
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("command", choices=["validate", "sync", "plan", "refresh-plan", "recommend-plan", "recommend-select", "recommend-finalize", "claim", "finish", "assess", "import-preview", "import-apply"])
+    p.add_argument("command", choices=["validate", "sync", "plan", "refresh-plan", "availability-plan", "recommend-plan", "recommend-select", "recommend-finalize", "claim", "finish", "assess", "import-preview", "import-apply"])
     p.add_argument("--root", type=Path, default=ROOT)
     p.add_argument("--run")
     p.add_argument("--worker")
@@ -208,12 +284,60 @@ def main():
         return 1
     req, models, sources = config["requirements"], config["models"]["models"], config["sources"]["sources"]
     if args.command == "validate":
-        print(f"OK: {len(models)} models, {len(sources)} sources")
+        adapter_config = read(root / "config/portal-adapters.json")
+        adapters = adapter_config.get("adapters", {})
+        enabled_sources = [source for source in sources if source.get("enabled")]
+        adapter_errors = []
+        supported_modes = {"text_query", "make_model", "native_select", "suggestion_brand_model", "dialog_make_model", "checkbox_model", "catalog_model", "olx_category", "autoplac_dialog", "existing_results", "blocked", "dedicated"}
+        known_source_ids = {source.get("id") for source in sources}
+        for source_id in adapters:
+            if source_id not in known_source_ids:
+                adapter_errors.append(f"Adapter references unknown source: {source_id}")
+        for source in enabled_sources:
+            adapter = adapters.get(source["id"])
+            if not isinstance(adapter, dict):
+                adapter_errors.append(f"Missing portal adapter: {source['id']}")
+                continue
+            if adapter.get("mode") not in supported_modes:
+                adapter_errors.append(f"Unsupported portal adapter mode for {source['id']}: {adapter.get('mode')}")
+            if adapter.get("mode") == "text_query" and not adapter.get("queryInput"):
+                adapter_errors.append(f"text_query adapter requires queryInput: {source['id']}")
+            if adapter.get("mode") == "make_model" and not (adapter.get("makeInput") and adapter.get("modelInput")):
+                adapter_errors.append(f"make_model adapter requires makeInput and modelInput: {source['id']}")
+            if adapter.get("mode") == "native_select" and not adapter.get("modelSelect"):
+                adapter_errors.append(f"native_select adapter requires modelSelect: {source['id']}")
+            if adapter.get("mode") == "suggestion_brand_model" and not adapter.get("queryInput"):
+                adapter_errors.append(f"suggestion_brand_model adapter requires queryInput: {source['id']}")
+            if adapter.get("mode") == "dialog_make_model" and (
+                not all(adapter.get(key) for key in ("filterGroup", "confirmChoice", "showResults"))
+                or not isinstance(adapter.get("controls"), dict)
+                or set(adapter["controls"]) != {"make", "model"}
+            ):
+                adapter_errors.append(f"dialog_make_model adapter requires filterGroup, make/model controls, confirmChoice and showResults: {source['id']}")
+            if adapter.get("mode") == "checkbox_model" and not all(adapter.get(key) for key in ("openFilters", "modelCheckbox")):
+                adapter_errors.append(f"checkbox_model adapter requires openFilters and modelCheckbox: {source['id']}")
+            if adapter.get("mode") == "catalog_model" and (
+                not all(adapter.get(key) for key in ("openFilters", "dialogName", "modelControl", "showResults"))
+                or not isinstance(adapter.get("modelLabels"), dict)
+            ):
+                adapter_errors.append(f"catalog_model adapter requires dialog and model controls: {source['id']}")
+            if not adapter.get("cardMode"):
+                adapter_errors.append(f"Portal adapter requires cardMode: {source['id']}")
+            if adapter.get("mode") == "blocked" and not adapter.get("note"):
+                adapter_errors.append(f"Blocked portal adapter requires an explanation: {source['id']}")
+            if adapter.get("mode") == "dedicated" and source["id"] != "sprzedajemy":
+                adapter_errors.append(f"dedicated adapter mode is reserved for the Sprzedajemy workflow: {source['id']}")
+        if adapter_errors:
+            for error in adapter_errors:
+                print("ERROR: " + error)
+            return 1
+        print(f"OK: {len(models)} models, {len(sources)} sources, {len(enabled_sources)} enabled portal adapters")
     elif args.command == "sync":
         for m in models:
+            model_req = requirements_for_model(m, req)
             path = contained(root, m["offersFile"])
             doc = read(path)
-            doc["model"]["requirements"] = description(req, m)
+            doc["model"]["requirements"] = description(model_req, m)
             write(path, doc)
         # The published index remains compatible with the existing frontend.
         index = []
@@ -226,8 +350,9 @@ def main():
     elif args.command == "assess":
         output = []
         for m in models:
+            model_req = requirements_for_model(m, req)
             for offer in read(contained(root, m["offersFile"]))["offers"]:
-                output.append({**assess(offer, req, m), "input": {key: offer.get(key) for key in ASSESSMENT_FIELDS}})
+                output.append({**assess(offer, model_req, m), "input": {key: offer.get(key) for key in ASSESSMENT_FIELDS}})
         write(root / "reports/current-assessment.json", {"generatedAt": datetime.now(timezone.utc).isoformat(),
               "configuration": config, "assessments": output})
         print(f"Assessed {len(output)} stored offers; report only, no listing availability check")
@@ -274,6 +399,7 @@ def main():
                 for m in sorted(selected_m, key=lambda m: m["priority"]):
                     if s["brands"] and brand_key(m["brand"]) not in [brand_key(b) for b in s["brands"]]:
                         continue
+                    model_req = requirements_for_model(m, req)
                     tasks.append({"id": f"{s['id']}--{m['key']}", "kind": "search",
                                   "sourceId": s["id"], "modelKey": m["key"],
                                   "searchProfile": {
@@ -282,27 +408,28 @@ def main():
                                       "filtersToVerifyManually": sorted({"make", "model", "body", "price", "year",
                                           "mileage", "fuel", "transmission", "seller_type"} - set(s["filters"])),
                                       "brands": [m["brand"]], "bodies": m["bodies"],
-                                      "years": {"min": max(req["yearMin"], m["searchYears"]["min"]),
+                                      "years": {"min": max(model_req["yearMin"], m["searchYears"]["min"]),
                                                 "max": m["searchYears"]["max"]},
                                       "engineVariants": m["allowedEngineVariants"],
-                                      "maxGrossPurchasePln": req["purchase"]["maxPriceGrossPln"],
-                                      "priceOverLimitRequiresUserApproval": bool(req["purchase"]["priceExceptions"]),
-                                      "preferredMileageKm": req["mileage"]["preferredMaxKm"],
+                                      "requirements": model_req,
+                                      "maxGrossPurchasePln": model_req["purchase"]["maxPriceGrossPln"],
+                                      "priceOverLimitRequiresUserApproval": bool(model_req["purchase"]["priceExceptions"]),
+                                      "preferredMileageKm": model_req["mileage"]["preferredMaxKm"],
                                       "candidateScreening": {
                                           "stage": "results_list_before_opening_candidate_cards",
                                           "visibleFields": ["production_year", "price_and_terms", "mileage",
                                                             "body", "engine_variant", "sale_type"],
                                           "screeningLimits": {
-                                              "productionYearMin": max(req["yearMin"], m["searchYears"]["min"]),
+                                              "productionYearMin": max(model_req["yearMin"], m["searchYears"]["min"]),
                                               "productionYearMax": m["searchYears"]["max"],
-                                              "basePurchaseGrossPlnMax": req["purchase"]["maxPriceGrossPln"],
-                                              "hardMileageKmMax": req["mileage"].get("hardMaxKm"),
+                                              "basePurchaseGrossPlnMax": model_req["purchase"]["maxPriceGrossPln"],
+                                              "hardMileageKmMax": model_req["mileage"].get("hardMaxKm"),
                                               "bodyCodes": m["bodies"],
                                               "engineVariants": m["allowedEngineVariants"],
-                                              "auctionsAllowed": req["purchase"]["auctionsAllowed"]
+                                              "auctionsAllowed": model_req["purchase"]["auctionsAllowed"]
                                           },
-                                          "priceExceptions": req["purchase"]["priceExceptions"],
-                                          "priceOverLimitRequiresUserApproval": bool(req["purchase"]["priceExceptions"]),
+                                          "priceExceptions": model_req["purchase"]["priceExceptions"],
+                                          "priceOverLimitRequiresUserApproval": bool(model_req["purchase"]["priceExceptions"]),
                                           "rejectOnlyOnVisibleConfirmedFailure": True,
                                           "unknownHandling": "open_card_if_other_visible_fields_are_plausible",
                                           "reminders": [
@@ -312,15 +439,15 @@ def main():
                                               "search result snippets do not confirm listing availability"
                                           ]
                                       },
-                                      "transmissions": req["transmissions"],
-                                      "cameraRequired": req["camera"]["required"],
-                                      "cameraRetrofitAllowed": req["camera"]["retrofitAllowed"],
-                                      "lpgAllowedAndMustBeMarked": req["lpg"]["allowed"],
-                                      "familyProfile": req["use"],
-                                      "structuralDamageAllowed": req["structuralDamageAllowed"],
-                                      "country": req["location"], "excludeAuctions": True,
+                                      "transmissions": model_req["transmissions"],
+                                      "cameraRequired": model_req["camera"]["required"],
+                                      "cameraRetrofitAllowed": model_req["camera"]["retrofitAllowed"],
+                                      "lpgAllowedAndMustBeMarked": model_req["lpg"]["allowed"],
+                                      "familyProfile": model_req["use"],
+                                      "structuralDamageAllowed": model_req["structuralDamageAllowed"],
+                                      "country": model_req["location"], "excludeAuctions": not model_req["purchase"]["auctionsAllowed"],
                                       "sourceAccessStatus": s["accessStatus"],
-                                      "queryPlan": build_query_plan(s, m, req, cards[m["key"]]),
+                                      "queryPlan": build_query_plan(s, m, model_req, cards[m["key"]]),
                                       "captureOfferLocation": {
                                           "required": True,
                                           "whenMissing": "set location.status=not_provided and show that distance cannot be calculated",
@@ -346,7 +473,10 @@ def main():
             print(f"Prepared {len(tasks)} tasks across {len(by_source)} compatible sources; no websites searched")
             if skipped:
                 print("No compatible selected model: " + ", ".join(skipped))
-        elif args.command == "refresh-plan":
+        elif args.command in ("refresh-plan", "availability-plan"):
+            availability_only = args.command == "availability-plan"
+            if availability_only and (args.models or args.sources or args.older_than_days is not None or args.offer_ids or args.photo_audit):
+                p.error("availability-plan always checks every active listing URL; do not pass model, source, age, offer or photo filters")
             if args.agents < 1:
                 p.error("--agents must be positive")
             if args.older_than_days is not None and args.older_than_days < 0:
@@ -437,11 +567,18 @@ def main():
                     grouped.items(), key=lambda item: (source_by_id[item[0][0]]["priority"], item[0][1])):
                 source, model = source_by_id[source_id], model_by_key[model_key]
                 unique_targets = list({(target["offerId"], target["url"]): target for target in targets}.values())
-                tasks.append({"id": f"refresh--{source_id}--{model_key}", "kind": "refresh",
-                              "sourceId": source_id, "modelKey": model_key, "refreshTargets": unique_targets,
-                              "photoAuditRequired": args.photo_audit,
-                              "sourceMethod": source["method"], "state": "pending", "worker": None,
-                              "attempts": 0, "note": ""})
+                target_batches = ([unique_targets[index:index + 5]
+                                   for index in range(0, len(unique_targets), 5)]
+                                  if availability_only else [unique_targets])
+                for batch_number, target_batch in enumerate(target_batches, start=1):
+                    task_id = (f"availability--{source_id}--{model_key}--{batch_number:02d}"
+                               if availability_only else f"refresh--{source_id}--{model_key}")
+                    tasks.append({"id": task_id, "kind": "availability" if availability_only else "refresh",
+                                  "sourceId": source_id, "modelKey": model_key, "refreshTargets": target_batch,
+                                  "photoAuditRequired": args.photo_audit,
+                                  "sourceMethod": source["method"], "state": "pending", "worker": None,
+                                  "attempts": 0, "note": "",
+                                  **({"workerInstructions": "Availability only: check each assigned URL quickly for a matching live car card, an explicit closed message, or an unreadable page. Save only id, URL, time, status and HTTP code. HTTP 410 is removed; HTTP 403/404, timeout or portal block is access_error (do not bypass it). Do not inspect/update car facts. Run scripts/availability-check.mjs; it checks up to four URLs concurrently. On import, if every URL for a car was checked and none is available, the availability flow archives it as closed when all statuses are sold/removed, otherwise as unverified. A live URL keeps the car active."} if availability_only else {})})
             if not tasks and not unmapped_targets:
                 p.error("No refresh candidates matched the selected models, sources and age/offer filters")
             run.mkdir(parents=True, exist_ok=False)
@@ -450,12 +587,12 @@ def main():
             snapshot = {"config": config, "knowledge": cards}
             digest = hashlib.sha256(json.dumps(snapshot, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
             write(run / "snapshot.json", {"createdAt": now.isoformat(), "sha256": digest, **snapshot})
-            write(run / "tasks.json", {"version": 1, "kind": "refresh", "agents": args.agents,
+            write(run / "tasks.json", {"version": 1, "kind": "availability" if availability_only else "refresh", "agents": args.agents,
                   "workerAssignments": {}, "refreshAfterDays": args.older_than_days,
                   "photoAuditRequired": args.photo_audit,
                   "unmappedTargets": unmapped_targets, "tasks": tasks})
             target_count = sum(len(task["refreshTargets"]) for task in tasks)
-            mode = f"not checked within {args.older_than_days} days" if args.older_than_days is not None else "all active offer records"
+            mode = "all active listing URLs (availability only)" if availability_only else (f"not checked within {args.older_than_days} days" if args.older_than_days is not None else "all active offer records")
             print(f"Prepared {len(tasks)} refresh tasks for {target_count} listing pages ({mode}); "
                   f"{len(unmapped_targets)} URL(s) need manual source mapping; no websites checked")
         else:
@@ -487,9 +624,10 @@ def main():
                     assignments.setdefault(args.worker, sorted(source_filter))
                 write(run / "tasks.json", queue)
                 claimed_task = dict(task)
+                claimed_task["runId"] = args.run
                 if task.get("kind") == "search":
                     claimed_task["sharedResultsCache"] = build_shared_search_cache(
-                        root, run, queue, task["sourceId"])
+                        root, run, queue, task["sourceId"], task)
                 print(json.dumps(claimed_task, ensure_ascii=False))
             else:
                 task = next((t for t in queue["tasks"] if t["id"] == args.task), None)
@@ -527,11 +665,11 @@ def main():
                     reject_result("Complete coverage requires searchUrls, pagesChecked >= 1 and empty remaining")
                 if args.result == "no_matches" and result["offers"]:
                     reject_result("no_matches cannot contain offers")
-                if args.result == "blocked" and task.get("kind") != "refresh" and result["offers"]:
+                if args.result == "blocked" and task.get("kind") not in ("refresh", "availability") and result["offers"]:
                     reject_result("blocked cannot contain offers")
-                if task.get("kind") == "refresh" and args.result == "no_matches":
-                    reject_result("Refresh tasks have known target listings; use complete, partial or blocked")
-                if task.get("kind") == "refresh" and args.result == "complete":
+                if task.get("kind") in ("refresh", "availability") and args.result == "no_matches":
+                    reject_result("Refresh/availability tasks have known target listings; use complete, partial or blocked")
+                if task.get("kind") in ("refresh", "availability") and args.result == "complete":
                     targets = {(target["offerId"], target["url"]) for target in task.get("refreshTargets", [])}
                     target_urls = {url for _, url in targets}
                     if coverage["pagesChecked"] < len(target_urls) or not target_urls.issubset(set(coverage["searchUrls"])):
@@ -547,7 +685,7 @@ def main():
                         observed.add(pair)
                     if observed != targets:
                         reject_result("Complete refresh requires one observation for every assigned target")
-                if task.get("kind") == "refresh" and args.result == "partial":
+                if task.get("kind") in ("refresh", "availability") and args.result == "partial":
                     targets = {(target["offerId"], target["url"]) for target in task.get("refreshTargets", [])}
                     for offer in result["offers"]:
                         observation = offer.get("observation", {}) if isinstance(offer, dict) else {}

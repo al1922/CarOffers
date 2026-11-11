@@ -3,6 +3,7 @@ async function json(path){const response=await fetch(new URL('../'+path,import.m
 export async function loadData(){
  const [index,requirements,catalog,sources]=await Promise.all(['models.json','config/requirements.json','config/search-models.json','config/sources.json'].map(json));
  const models=(index.models||[]).filter(m=>/^[a-z0-9-]+$/.test(m.key)&&/^offers\/[a-z0-9-]+\.json$/.test(m.file));
+ const modelRequirements=new Map((catalog.models||[]).map(model=>[model.key,model.requirements]));for(const model of models)model.searchRequirements=modelRequirements.get(model.key)||requirements;
  if(!models.length)throw Error('Brak poprawnego katalogu modeli.');
  const [results,report,dashboard,cityCatalog,locations,recommendationReport]=await Promise.all([
   Promise.allSettled(models.map(m=>json(m.file))),json('reports/current-assessment.json').catch(()=>null),json('reports/dashboard.json').catch(()=>null),

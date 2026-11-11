@@ -11,7 +11,7 @@ import os
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
 
-from search_core import ROOT, assess, contained, read, validation
+from search_core import ROOT, assess, contained, read, validation, requirements_for_model
 
 
 def digest(value):
@@ -91,7 +91,7 @@ def validate_result(result, task):
         raise ValueError("Full outcome requires complete coverage")
     if task["state"] == "no_matches" and result["offers"]:
         raise ValueError("no_matches result cannot contain offers")
-    if task["state"] == "blocked" and task.get("kind") != "refresh" and result["offers"]:
+    if task["state"] == "blocked" and task.get("kind") not in ("refresh", "availability") and result["offers"]:
         raise ValueError("Blocked search result cannot contain offers")
     if result["offers"]:
         timestamp(result.get("checkedAt"))
@@ -149,7 +149,7 @@ def validate_worker_result(result, task, model, root=ROOT, require_search_cache=
     finished_task = {**task, "state": result.get("outcome")}
     validate_result(result, finished_task)
     timestamp(result.get("checkedAt"))
-    if task.get("kind") not in ("search", "refresh"):
+    if task.get("kind") not in ("search", "refresh", "availability"):
         raise ValueError("Unknown task kind")
     if task["kind"] == "search":
         coverage = result["coverage"]
@@ -186,6 +186,20 @@ def validate_worker_result(result, task, model, root=ROOT, require_search_cache=
         if require_search_cache and coverage.get("pagesChecked", 0) < len(pages):
             raise ValueError("coverage.pagesChecked is smaller than coverage.searchResults")
         checked_listing_set = {normalized_url(url) for url in checked_listing_urls}
+        card_reads = coverage.get("cardReads", [])
+        if not isinstance(card_reads, list):
+            raise ValueError("coverage.cardReads must be an array")
+        for entry in card_reads:
+            if (not isinstance(entry, dict) or normalized_url(entry.get("url")) not in checked_listing_set
+                    or timestamp(entry.get("checkedAt")) > timestamp(result["checkedAt"])
+                    or ("card" in entry) == ("error" in entry)):
+                raise ValueError("Card reads require a checked URL, timestamp, and either card or error")
+            if "card" in entry and (not isinstance(entry["card"], dict)
+                                    or not isinstance(entry["card"].get("fields"), dict)
+                                    or not isinstance(entry["card"].get("photos"), list)):
+                raise ValueError("Card snapshot requires fields and photos")
+            if "error" in entry and (not isinstance(entry["error"], str) or not entry["error"].strip()):
+                raise ValueError("Card read error must be a nonempty message")
         for offer in result["offers"]:
             observation = offer.get("observation", {})
             if normalized_url(observation.get("url")) not in checked_listing_set:
@@ -239,7 +253,7 @@ def validate_worker_result(result, task, model, root=ROOT, require_search_cache=
             missing = [field for field in ("saleType", "lpgInstalled") if field not in offer]
             if missing:
                 raise ValueError(f"Refresh offer {index} is missing required fields: " + ", ".join(missing))
-    if task["kind"] == "refresh":
+    if task["kind"] in ("refresh", "availability"):
         targets = {(item["offerId"], normalized_url(item["url"]))
                    for item in task.get("refreshTargets", [])}
         target_urls = {url for _, url in targets}
@@ -252,6 +266,18 @@ def validate_worker_result(result, task, model, root=ROOT, require_search_cache=
             observed.append(pair)
         if len(observed) != len(set(observed)):
             raise ValueError("Refresh result contains duplicate target observations")
+        if task["kind"] == "availability":
+            for offer in result["offers"]:
+                observation = offer["observation"]
+                status = observation.get("httpStatus")
+                if status is not None and (type(status) is not int or not 100 <= status <= 599):
+                    raise ValueError("HTTP status must be an integer between 100 and 599")
+                if status == 403 and observation["availability"] != "access_error":
+                    raise ValueError("HTTP 403 is an access error, not proof that a listing is closed")
+                if status == 410 and observation["availability"] != "removed":
+                    raise ValueError("HTTP 410 Gone must be recorded as removed")
+                if status == 404 and observation["availability"] != "access_error" and "komunikat zamknięcia" not in observation["note"].casefold():
+                    raise ValueError("HTTP 404 alone is not proof that a listing is closed")
         if result["outcome"] in ("complete", "partial", "blocked"):
             if set(observed) != targets:
                 raise ValueError("Refresh result requires one observation for every assigned target")
@@ -270,8 +296,13 @@ RESERVED = {"observation", "verdict", "verdictTitle", "verdictNote", "assessment
             "listingStates", "firstSeenAt", "lastCheckedAt", "lastVerifiedAt", "lastAttemptAt", "archive"}
 
 
-def merge_offer(old, incoming, observation, model, requirements, event_id, run_id):
+def merge_offer(old, incoming, observation, model, requirements, event_id, run_id, availability_only=False):
     updated = copy.deepcopy(old or {})
+    if availability_only and not old:
+        raise ValueError("Availability observations may update existing offers only")
+    # Canonicalize the legacy spelling to the current contract's gross_total value.
+    if updated.get("priceBasis") == "gross_unconditional_total":
+        updated["priceBasis"] = "gross_total"
     if observation["availability"] == "available":
         updated.pop("archive", None)
     if observation["availability"] == "available":
@@ -349,13 +380,15 @@ def merge_offer(old, incoming, observation, model, requirements, event_id, run_i
     updated.setdefault("history", []).append({"eventId": event_id, "runId": run_id,
         "checkedAt": observation["checkedAt"], "url": observation["url"],
         "availability": observation["availability"], "note": observation["note"],
+        "httpStatus": observation.get("httpStatus"),
         "photoCheck": copy.deepcopy(observation.get("photoCheck")),
         "evidence": copy.deepcopy(observation.get("evidence", [])),
         "reportedFields": {k: copy.deepcopy(v) for k, v in incoming.items() if k not in RESERVED}, "changes": changes})
-    updated["assessment"] = assess(updated, requirements, model)
-    updated["verdict"] = updated["assessment"]["verdict"]
-    updated["verdictTitle"] = {"match": "Zgodne", "check": "Do weryfikacji", "fail": "Poza wymaganiami"}[updated["verdict"]]
-    updated["verdictNote"] = "; ".join(updated["assessment"]["failures"] + updated["assessment"]["unknowns"] + updated["assessment"]["preferenceNotes"])
+    if not availability_only:
+        updated["assessment"] = assess(updated, requirements, model)
+        updated["verdict"] = updated["assessment"]["verdict"]
+        updated["verdictTitle"] = {"match": "Zgodne", "check": "Do weryfikacji", "fail": "Poza wymaganiami"}[updated["verdict"]]
+        updated["verdictNote"] = "; ".join(updated["assessment"]["failures"] + updated["assessment"]["unknowns"] + updated["assessment"]["preferenceNotes"])
     schema = read(ROOT / "schemas/offers-v2.schema.json")
     issues = []
     validation.validate_schema(updated, schema["$defs"]["offer"], schema, issues, "import")
@@ -383,6 +416,7 @@ def prepare(root, run_id, config):
         capture(path.relative_to(root).as_posix())
     capture(f"runs/{run_id}/snapshot.json")
     queue = capture(f"runs/{run_id}/tasks.json")
+    archive_access_errors = queue.get("kind") == "availability"
     ledger_path = "data/import-state.json"
     ledger = capture(ledger_path) or {"version": 1, "results": {}, "events": []}
     models = {m["key"]: m for m in config["models"]["models"]}
@@ -461,7 +495,9 @@ def prepare(root, run_id, config):
                 skipped.append({"taskId": task["id"], "offerId": incoming.get("id"),
                                 "url": observation["url"], "reason": "already_active_offer"})
                 continue
-            merged, fields = merge_offer(old, incoming, observation, model, config["requirements"], event_id, run_id)
+            merged, fields = merge_offer(old, incoming, observation, model,
+                                         requirements_for_model(model, config["requirements"]), event_id, run_id,
+                                         availability_only=task.get("kind") == "availability")
             reactivated = bool(matches and collection == "archivedOffers" and observation["availability"] == "available")
             if matches:
                 if reactivated:
@@ -493,14 +529,41 @@ def prepare(root, run_id, config):
                     states[normalized_url(state["url"])] = state
                 except (KeyError, TypeError, ValueError):
                     continue
-            if urls and all(url in states and states[url].get("status") in ("sold", "removed") for url in urls):
-                dates = [timestamp(states[url]["lastCheckedAt"]) for url in urls if states[url].get("lastCheckedAt")]
+            statuses = []
+            for url in urls:
+                if url not in states:
+                    statuses.append(None)
+                    continue
+                state = states[url]
+                last_observation = state.get("lastObservation", {})
+                # access_error intentionally does not overwrite the last successfully
+                # verified status; availability runs still use the latest attempt when
+                # moving a listing that could not be opened to the unverified archive.
+                statuses.append(last_observation.get("availability")
+                                if last_observation.get("availability") == "access_error"
+                                else state.get("status"))
+            all_confirmed_closed = bool(urls) and all(status in ("sold", "removed") for status in statuses)
+            all_terminal_and_unavailable = (archive_access_errors and bool(urls)
+                                            and all(status in ("sold", "removed", "access_error") for status in statuses))
+            if all_confirmed_closed or all_terminal_and_unavailable:
+                archive_times = []
+                for url in urls:
+                    state = states[url]
+                    last_observation = state.get("lastObservation", {})
+                    observed_at = (last_observation.get("checkedAt")
+                                   if last_observation.get("availability") == "access_error"
+                                   else state.get("lastCheckedAt"))
+                    if observed_at:
+                        archive_times.append(timestamp(observed_at))
                 archived_offer = copy.deepcopy(offer)
-                archived_offer["archive"] = {"status": "closed", "reason": "all_listings_confirmed_closed",
-                                              "archivedAt": max(dates).isoformat() if dates else datetime.now(timezone.utc).isoformat()}
+                confirmed = all_confirmed_closed
+                archived_offer["archive"] = {"status": "closed" if confirmed else "unverified",
+                                              "reason": "all_listings_confirmed_closed" if confirmed else "no_listing_url_confirmed_available; at_least_one_access_error",
+                                              "archivedAt": max(archive_times).isoformat() if archive_times else datetime.now(timezone.utc).isoformat()}
                 archived.append(archived_offer)
                 changes.append({"taskId": None, "offerId": offer["id"], "kind": "archived",
-                                "availability": "sold_or_removed", "reason": "all_listings_confirmed_closed",
+                                "availability": "sold_or_removed" if confirmed else "unverified_access_error",
+                                "reason": archived_offer["archive"]["reason"],
                                 "verdict": offer.get("verdict"), "fields": {}})
             else:
                 kept.append(offer)

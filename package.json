@@ -3,10 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test tests/test_app.cjs",
+    "test": "node --test tests/test_app.cjs tests/test_sprzedajemy.mjs",
     "browse:pages": "node scripts/playwright-pages.mjs",
-    "search:sprzedajemy": "node scripts/sprzedajemy-search.mjs",
-    "search:portal": "node scripts/portal-candidates.mjs",
+    "availability:check": "node scripts/availability-check.mjs",
+    "search:portal": "node scripts/portal-search.mjs",
     "pilot:portals": "node scripts/pilot-portal-adapters.mjs",
     "pilot:cards": "node scripts/pilot-card-samples.mjs",
     "compare:portal-pilots": "python -B scripts/compare-portal-pilots.py",

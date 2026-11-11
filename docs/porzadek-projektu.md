@@ -90,7 +90,8 @@ Do jawnego sprawdzenia przed zatwierdzeniem filtrów pozostają co najmniej:
 
 ## Mapa plików
 
-- `config/requirements.json` — wspólne kryteria kupującego.
+- `config/requirements.json` — szablon kryteriów dla nowego modelu.
+- `config/search-models.json` — aktywne wymagania zakupowe przypisane do każdego modelu.
 - `config/search-models.json` — modele, lata i zamknięta lista silników.
 - `config/sources.json` — rejestr portali ogłoszeniowych.
 - `knowledge/models/*.json` — fakty, źródła, zakresy i otwarte pytania.
