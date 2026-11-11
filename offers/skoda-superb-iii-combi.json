@@ -1,12 +1,610 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-08",
+  "updatedAt": "2026-11-11",
   "model": {
     "key": "skoda-superb-iii-combi",
     "name": "Škoda Superb III Combi",
     "description": "Kombi",
     "requirements": "Škoda Superb III Combi; 1.4 TSI EA211 150 KM; rodzina: 2 dorosłych i 1 dziecko; wymagane miejsce na wózek i bagaż; rocznik od 2018 do 2018; maks. 55 000 zł brutto według ceny podanej w ogłoszeniu; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 170 000 km preferowany; kamera wymagana  obecna lub z potwierdzoną możliwością montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji."
   },
-  "offers": [],
+  "offers": [
+    {
+      "id": "listing:olx:1104658131",
+      "modelKey": "skoda-superb-iii-combi",
+      "vin": "TMBJB7NP5J7531040",
+      "listingIds": [
+        "olx:1104658131"
+      ],
+      "urls": [
+        {
+          "url": "https://www.olx.pl/d/oferta/skoda-superb-1-4-tsi-act-ambition-webasto-carplay-front-assist-2017-CID5-ID1cL22D.html?search_reason=search%7Cpromoted",
+          "normalized": "https://www.olx.pl/d/oferta/skoda-superb-1-4-tsi-act-ambition-webasto-carplay-front-assist-2017-CID5-ID1cL22D.html",
+          "label": "OLX"
+        }
+      ],
+      "title": "Skoda Superb III Combi 1.4 TSI ACT 150 KM, 2017",
+      "year": 2017,
+      "price": 49999,
+      "priceBasis": "gross_total",
+      "mileage": 163692,
+      "engine": "1.4 TSI ACT, benzyna, 150 KM",
+      "engineVariant": "1.4-tsi-ea211-150",
+      "body": "Kombi",
+      "bodyCode": "wagon",
+      "transmission": "manualna",
+      "transmissionCode": "manual",
+      "seller": "Rafał (osoba prywatna)",
+      "offerType": "private",
+      "saleType": "fixed_price",
+      "cameraStatus": "unknown",
+      "structuralDamageStatus": "unknown",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "city": "Jaworzno",
+        "precision": "city",
+        "source": "listing",
+        "checkedAt": "2026-11-11",
+        "voivodeship": "Śląskie",
+        "geoSource": "https://bdl.stat.gov.pl/BDL/dane/teryt/jednostka/489"
+      },
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/9ohrwaof5z7g1-PL/image%3Bs%3D1536x1024",
+        "https://ireland.apollo.olxcdn.com/v1/files/v3ap81k53jiv-PL/image%3Bs%3D1448x1086",
+        "https://ireland.apollo.olxcdn.com/v1/files/qaiis22tytzf2-PL/image%3Bs%3D1448x1086"
+      ],
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-11T17:20:23Z",
+      "listingStates": [
+        {
+          "url": "https://www.olx.pl/d/oferta/skoda-superb-1-4-tsi-act-ambition-webasto-carplay-front-assist-2017-CID5-ID1cL22D.html?search_reason=search%7Cpromoted",
+          "status": "available",
+          "lastAttemptAt": "2026-11-11T17:20:23Z",
+          "lastCheckedAt": "2026-11-11T17:20:23Z",
+          "lastVerifiedAt": "2026-11-11T17:20:23Z",
+          "lastObservation": {
+            "url": "https://www.olx.pl/d/oferta/skoda-superb-1-4-tsi-act-ambition-webasto-carplay-front-assist-2017-CID5-ID1cL22D.html?search_reason=search%7Cpromoted",
+            "checkedAt": "2026-11-11T17:20:23Z",
+            "availability": "available",
+            "note": "Otwarta karta podaje Skodę Superb III Combi z 2017 r., 1.4 TSI ACT 150 KM, benzynę, manualną skrzynię, 163 692 km i cenę 49 999 zł. VIN TMBJB7NP5J7531040. Karta zawiera aktywne kontrolki kontaktu, a strona wyników wskazuje Jaworzno. Ogłoszenie było odświeżone 19 października; sprzedawca ostatnio online 13 października, więc sygnał bieżącej aktywności jest ograniczony. Sprzedawca wymienia czujniki parkowania, ale nie kamerę cofania. LPG nieustalone. Odczytane adresy zdjęć są bezpośrednimi HTTPS URL-ami z karty.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.olx.pl/d/oferta/skoda-superb-1-4-tsi-act-ambition-webasto-carplay-front-assist-2017-CID5-ID1cL22D.html?search_reason=search%7Cpromoted",
+                "checkedAt": "2026-11-11T17:20:23Z",
+                "fields": [
+                  "year",
+                  "mileage",
+                  "price",
+                  "engineVariant",
+                  "bodyCode",
+                  "transmissionCode",
+                  "saleType",
+                  "cameraStatus",
+                  "location"
+                ],
+                "note": "Karta OLX podaje rok, wersję silnika, przebieg, cenę, nadwozie i skrzynię; lista wyników podaje Jaworzno. Kamera cofania nie jest wymieniona."
+              },
+              {
+                "fields": [
+                  "location"
+                ],
+                "url": "https://bdl.stat.gov.pl/BDL/dane/teryt/jednostka/489",
+                "checkedAt": "2026-11-11T17:20:23Z",
+                "kind": "independent",
+                "note": "GUS BDL identyfikuje Jaworzno jako położone w województwie śląskim."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-11T17:20:23Z",
+      "lastVerifiedAt": "2026-11-11T17:20:23Z",
+      "lastAttemptAt": "2026-11-11T17:20:23Z",
+      "history": [
+        {
+          "eventId": "aadb4009b379e388436af96bea75bfc0dc5c614e56c1db8d824008e955ba152e",
+          "runId": "20261111-search",
+          "checkedAt": "2026-11-11T17:20:23Z",
+          "url": "https://www.olx.pl/d/oferta/skoda-superb-1-4-tsi-act-ambition-webasto-carplay-front-assist-2017-CID5-ID1cL22D.html?search_reason=search%7Cpromoted",
+          "availability": "available",
+          "note": "Otwarta karta podaje Skodę Superb III Combi z 2017 r., 1.4 TSI ACT 150 KM, benzynę, manualną skrzynię, 163 692 km i cenę 49 999 zł. VIN TMBJB7NP5J7531040. Karta zawiera aktywne kontrolki kontaktu, a strona wyników wskazuje Jaworzno. Ogłoszenie było odświeżone 19 października; sprzedawca ostatnio online 13 października, więc sygnał bieżącej aktywności jest ograniczony. Sprzedawca wymienia czujniki parkowania, ale nie kamerę cofania. LPG nieustalone. Odczytane adresy zdjęć są bezpośrednimi HTTPS URL-ami z karty.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.olx.pl/d/oferta/skoda-superb-1-4-tsi-act-ambition-webasto-carplay-front-assist-2017-CID5-ID1cL22D.html?search_reason=search%7Cpromoted",
+              "checkedAt": "2026-11-11T17:20:23Z",
+              "fields": [
+                "year",
+                "mileage",
+                "price",
+                "engineVariant",
+                "bodyCode",
+                "transmissionCode",
+                "saleType",
+                "cameraStatus",
+                "location"
+              ],
+              "note": "Karta OLX podaje rok, wersję silnika, przebieg, cenę, nadwozie i skrzynię; lista wyników podaje Jaworzno. Kamera cofania nie jest wymieniona."
+            },
+            {
+              "fields": [
+                "location"
+              ],
+              "url": "https://bdl.stat.gov.pl/BDL/dane/teryt/jednostka/489",
+              "checkedAt": "2026-11-11T17:20:23Z",
+              "kind": "independent",
+              "note": "GUS BDL identyfikuje Jaworzno jako położone w województwie śląskim."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:olx:1104658131",
+            "modelKey": "skoda-superb-iii-combi",
+            "vin": "TMBJB7NP5J7531040",
+            "listingIds": [
+              "olx:1104658131"
+            ],
+            "urls": [
+              {
+                "url": "https://www.olx.pl/d/oferta/skoda-superb-1-4-tsi-act-ambition-webasto-carplay-front-assist-2017-CID5-ID1cL22D.html?search_reason=search%7Cpromoted",
+                "normalized": "https://www.olx.pl/d/oferta/skoda-superb-1-4-tsi-act-ambition-webasto-carplay-front-assist-2017-CID5-ID1cL22D.html",
+                "label": "OLX"
+              }
+            ],
+            "title": "Skoda Superb III Combi 1.4 TSI ACT 150 KM, 2017",
+            "year": 2017,
+            "price": 49999,
+            "priceBasis": "gross_total",
+            "mileage": 163692,
+            "engine": "1.4 TSI ACT, benzyna, 150 KM",
+            "engineVariant": "1.4-tsi-ea211-150",
+            "body": "Kombi",
+            "bodyCode": "wagon",
+            "transmission": "manualna",
+            "transmissionCode": "manual",
+            "seller": "Rafał (osoba prywatna)",
+            "offerType": "private",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "cameraStatus": "unknown",
+            "structuralDamageStatus": "unknown",
+            "familyFitConfirmed": null,
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "city": "Jaworzno",
+              "precision": "city",
+              "source": "listing",
+              "checkedAt": "2026-11-11",
+              "voivodeship": "Śląskie",
+              "geoSource": "https://bdl.stat.gov.pl/BDL/dane/teryt/jednostka/489"
+            },
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/9ohrwaof5z7g1-PL/image%3Bs%3D1536x1024",
+              "https://ireland.apollo.olxcdn.com/v1/files/v3ap81k53jiv-PL/image%3Bs%3D1448x1086",
+              "https://ireland.apollo.olxcdn.com/v1/files/qaiis22tytzf2-PL/image%3Bs%3D1448x1086"
+            ]
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:olx:1104658131"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "skoda-superb-iii-combi"
+            },
+            "vin": {
+              "before": null,
+              "after": "TMBJB7NP5J7531040"
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "olx:1104658131"
+              ]
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.olx.pl/d/oferta/skoda-superb-1-4-tsi-act-ambition-webasto-carplay-front-assist-2017-CID5-ID1cL22D.html?search_reason=search%7Cpromoted",
+                  "normalized": "https://www.olx.pl/d/oferta/skoda-superb-1-4-tsi-act-ambition-webasto-carplay-front-assist-2017-CID5-ID1cL22D.html",
+                  "label": "OLX"
+                }
+              ]
+            },
+            "title": {
+              "before": null,
+              "after": "Skoda Superb III Combi 1.4 TSI ACT 150 KM, 2017"
+            },
+            "year": {
+              "before": null,
+              "after": 2017
+            },
+            "price": {
+              "before": null,
+              "after": 49999
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "gross_total"
+            },
+            "mileage": {
+              "before": null,
+              "after": 163692
+            },
+            "engine": {
+              "before": null,
+              "after": "1.4 TSI ACT, benzyna, 150 KM"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.4-tsi-ea211-150"
+            },
+            "body": {
+              "before": null,
+              "after": "Kombi"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmission": {
+              "before": null,
+              "after": "manualna"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "seller": {
+              "before": null,
+              "after": "Rafał (osoba prywatna)"
+            },
+            "offerType": {
+              "before": null,
+              "after": "private"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "city": "Jaworzno",
+                "precision": "city",
+                "source": "listing",
+                "checkedAt": "2026-11-11",
+                "voivodeship": "Śląskie",
+                "geoSource": "https://bdl.stat.gov.pl/BDL/dane/teryt/jednostka/489"
+              }
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/9ohrwaof5z7g1-PL/image%3Bs%3D1536x1024",
+                "https://ireland.apollo.olxcdn.com/v1/files/v3ap81k53jiv-PL/image%3Bs%3D1448x1086",
+                "https://ireland.apollo.olxcdn.com/v1/files/qaiis22tytzf2-PL/image%3Bs%3D1448x1086"
+              ]
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "listing:olx:1104658131",
+        "modelKey": "skoda-superb-iii-combi",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
+    },
+    {
+      "id": "listing:autoplac:5914-3435-CE",
+      "modelKey": "skoda-superb-iii-combi",
+      "vin": "TMBJB7NP4J7530879",
+      "listingIds": [
+        "autoplac:5914-3435-CE"
+      ],
+      "urls": [
+        {
+          "url": "https://autoplac.pl/oferta/skoda/superb/iii-1-4-2017r-super14-tsi-act-ambition-5914-3435-CE",
+          "normalized": "https://autoplac.pl/oferta/skoda/superb/iii-1-4-2017r-super14-tsi-act-ambition-5914-3435-CE",
+          "label": "Autoplac"
+        }
+      ],
+      "title": "Skoda Superb III 1.4 TSI ACT Ambition Kombi, 2017",
+      "year": 2017,
+      "price": 52900,
+      "priceBasis": "gross_total",
+      "mileage": 156000,
+      "engine": "1.4 TSI ACT, benzyna; sprzedawca deklaruje tuning do 170 KM",
+      "engineVariant": "1.4-tsi-ea211-150",
+      "body": "Kombi",
+      "bodyCode": "wagon",
+      "transmission": "manualna",
+      "transmissionCode": "manual",
+      "seller": "osoba prywatna",
+      "offerType": "private",
+      "saleType": "fixed_price",
+      "cameraStatus": "unknown",
+      "structuralDamageStatus": "unknown",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "voivodeship": "Śląskie",
+        "city": "Knurów",
+        "precision": "city",
+        "source": "listing",
+        "checkedAt": "2026-11-11"
+      },
+      "photos": [
+        "https://euw2-cdn.autoplac.pl/v1/p/b07324eb-14ff-4aae-8f91-a2c7b63e6033?f=1920%3Awebp"
+      ],
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-11T17:30:43Z",
+      "listingStates": [
+        {
+          "url": "https://autoplac.pl/oferta/skoda/superb/iii-1-4-2017r-super14-tsi-act-ambition-5914-3435-CE",
+          "status": "available",
+          "lastAttemptAt": "2026-11-11T17:30:43Z",
+          "lastCheckedAt": "2026-11-11T17:30:43Z",
+          "lastVerifiedAt": "2026-11-11T17:30:43Z",
+          "lastObservation": {
+            "url": "https://autoplac.pl/oferta/skoda/superb/iii-1-4-2017r-super14-tsi-act-ambition-5914-3435-CE",
+            "checkedAt": "2026-11-11T17:30:43Z",
+            "availability": "available",
+            "note": "Karta podaje Skodę Superb kombi 2017, 1.4 TSI ACT 1395 cm³, manual, 156 000 km i 52 900 zł brutto; VIN TMBJB7NP4J7530879, pierwsza rejestracja 03.10.2017. Karta była aktualizowana 2 dni temu i zawiera kontrolki kontaktu. Sprzedawca opisuje zmianę mocy do 170 KM oraz wcześniejszą szkodę parkingową z wymianą tylnego zderzaka; wpływ na wariant i zakres naprawy wymaga wyjaśnienia. Kamera cofania i LPG niepodane. Bezwypadkowość to deklaracja formularza sprzedawcy, nie niezależne potwierdzenie.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://autoplac.pl/oferta/skoda/superb/iii-1-4-2017r-super14-tsi-act-ambition-5914-3435-CE",
+                "checkedAt": "2026-11-11T17:30:43Z",
+                "fields": [
+                  "year",
+                  "price",
+                  "mileage",
+                  "engineVariant",
+                  "bodyCode",
+                  "transmissionCode",
+                  "saleType",
+                  "location",
+                  "vin"
+                ],
+                "note": "Silnik i modyfikację mocy, wyposażenie i przebieg opisuje sprzedawca; dane identyfikacyjne są widoczne na karcie. Zdarzenie parkingowe oraz wymiana zderzaka opisane przez sprzedawcę."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-11T17:30:43Z",
+      "lastVerifiedAt": "2026-11-11T17:30:43Z",
+      "lastAttemptAt": "2026-11-11T17:30:43Z",
+      "history": [
+        {
+          "eventId": "7695c7a6966569211142ec1c9a8dcb548ffe2ac74f17e3907d7fadfb615648dd",
+          "runId": "20261111-search",
+          "checkedAt": "2026-11-11T17:30:43Z",
+          "url": "https://autoplac.pl/oferta/skoda/superb/iii-1-4-2017r-super14-tsi-act-ambition-5914-3435-CE",
+          "availability": "available",
+          "note": "Karta podaje Skodę Superb kombi 2017, 1.4 TSI ACT 1395 cm³, manual, 156 000 km i 52 900 zł brutto; VIN TMBJB7NP4J7530879, pierwsza rejestracja 03.10.2017. Karta była aktualizowana 2 dni temu i zawiera kontrolki kontaktu. Sprzedawca opisuje zmianę mocy do 170 KM oraz wcześniejszą szkodę parkingową z wymianą tylnego zderzaka; wpływ na wariant i zakres naprawy wymaga wyjaśnienia. Kamera cofania i LPG niepodane. Bezwypadkowość to deklaracja formularza sprzedawcy, nie niezależne potwierdzenie.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://autoplac.pl/oferta/skoda/superb/iii-1-4-2017r-super14-tsi-act-ambition-5914-3435-CE",
+              "checkedAt": "2026-11-11T17:30:43Z",
+              "fields": [
+                "year",
+                "price",
+                "mileage",
+                "engineVariant",
+                "bodyCode",
+                "transmissionCode",
+                "saleType",
+                "location",
+                "vin"
+              ],
+              "note": "Silnik i modyfikację mocy, wyposażenie i przebieg opisuje sprzedawca; dane identyfikacyjne są widoczne na karcie. Zdarzenie parkingowe oraz wymiana zderzaka opisane przez sprzedawcę."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:autoplac:5914-3435-CE",
+            "modelKey": "skoda-superb-iii-combi",
+            "vin": "TMBJB7NP4J7530879",
+            "listingIds": [
+              "autoplac:5914-3435-CE"
+            ],
+            "urls": [
+              {
+                "url": "https://autoplac.pl/oferta/skoda/superb/iii-1-4-2017r-super14-tsi-act-ambition-5914-3435-CE",
+                "normalized": "https://autoplac.pl/oferta/skoda/superb/iii-1-4-2017r-super14-tsi-act-ambition-5914-3435-CE",
+                "label": "Autoplac"
+              }
+            ],
+            "title": "Skoda Superb III 1.4 TSI ACT Ambition Kombi, 2017",
+            "year": 2017,
+            "price": 52900,
+            "priceBasis": "gross_total",
+            "mileage": 156000,
+            "engine": "1.4 TSI ACT, benzyna; sprzedawca deklaruje tuning do 170 KM",
+            "engineVariant": "1.4-tsi-ea211-150",
+            "body": "Kombi",
+            "bodyCode": "wagon",
+            "transmission": "manualna",
+            "transmissionCode": "manual",
+            "seller": "osoba prywatna",
+            "offerType": "private",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "cameraStatus": "unknown",
+            "structuralDamageStatus": "unknown",
+            "familyFitConfirmed": null,
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "voivodeship": "Śląskie",
+              "city": "Knurów",
+              "precision": "city",
+              "source": "listing",
+              "checkedAt": "2026-11-11"
+            },
+            "photos": [
+              "https://euw2-cdn.autoplac.pl/v1/p/b07324eb-14ff-4aae-8f91-a2c7b63e6033?f=1920%3Awebp"
+            ]
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:autoplac:5914-3435-CE"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "skoda-superb-iii-combi"
+            },
+            "vin": {
+              "before": null,
+              "after": "TMBJB7NP4J7530879"
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "autoplac:5914-3435-CE"
+              ]
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://autoplac.pl/oferta/skoda/superb/iii-1-4-2017r-super14-tsi-act-ambition-5914-3435-CE",
+                  "normalized": "https://autoplac.pl/oferta/skoda/superb/iii-1-4-2017r-super14-tsi-act-ambition-5914-3435-CE",
+                  "label": "Autoplac"
+                }
+              ]
+            },
+            "title": {
+              "before": null,
+              "after": "Skoda Superb III 1.4 TSI ACT Ambition Kombi, 2017"
+            },
+            "year": {
+              "before": null,
+              "after": 2017
+            },
+            "price": {
+              "before": null,
+              "after": 52900
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "gross_total"
+            },
+            "mileage": {
+              "before": null,
+              "after": 156000
+            },
+            "engine": {
+              "before": null,
+              "after": "1.4 TSI ACT, benzyna; sprzedawca deklaruje tuning do 170 KM"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.4-tsi-ea211-150"
+            },
+            "body": {
+              "before": null,
+              "after": "Kombi"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmission": {
+              "before": null,
+              "after": "manualna"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "seller": {
+              "before": null,
+              "after": "osoba prywatna"
+            },
+            "offerType": {
+              "before": null,
+              "after": "private"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "voivodeship": "Śląskie",
+                "city": "Knurów",
+                "precision": "city",
+                "source": "listing",
+                "checkedAt": "2026-11-11"
+              }
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://euw2-cdn.autoplac.pl/v1/p/b07324eb-14ff-4aae-8f91-a2c7b63e6033?f=1920%3Awebp"
+              ]
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "listing:autoplac:5914-3435-CE",
+        "modelKey": "skoda-superb-iii-combi",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
+    }
+  ],
   "archivedOffers": []
 }

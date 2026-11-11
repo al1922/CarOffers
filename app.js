@@ -1,7 +1,7 @@
 import {defaultFilters,sanitizeFilters,encodeFilters,decodeFilters,dedupe,filterOffers,sortOffers,bodyNames,statuses,fmt,dateLabel,distance,verdictNames} from './assets/core.mjs?v=15';
 import {createStore} from './assets/storage.mjs?v=11';
 import {loadData,loadKnowledge} from './assets/data.mjs?v=15';
-import {el,button,badge,empty,link,offerCard,archivedOfferCard,offerTable,offerDetails,comparison,knowledgeCard,knowledgeDetails,updates} from './assets/views.mjs?v=16';
+import {el,button,badge,empty,link,offerCard,archivedOfferCard,offerTable,offerDetails,comparison,knowledgeCard,knowledgeDetails,updates} from './assets/views.mjs?v=17';
 
 const $=selector=>document.querySelector(selector);
 let data=null,filters=defaultFilters(),comparisonKeys=new Set(),grouped=[],archivedGrouped=[],loadToken=0;

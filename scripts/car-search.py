@@ -8,7 +8,7 @@ from pathlib import Path
 import re
 import unicodedata
 from urllib.parse import urlsplit
-from search_core import ASSESSMENT_FIELDS, ROOT, assess, audit, brand_key, contained, description, read, write, requirements_for_model
+from search_core import ASSESSMENT_FIELDS, ROOT, assess, audit, audit_model_index, brand_key, contained, description, read, write, requirements_for_model
 
 
 BODY_TERMS = {
@@ -329,6 +329,11 @@ def main():
         if adapter_errors:
             for error in adapter_errors:
                 print("ERROR: " + error)
+            return 1
+        index_issues = audit_model_index(root, config)
+        for item in index_issues:
+            print(json.dumps(item, ensure_ascii=False))
+        if any(item["severity"] == "error" for item in index_issues):
             return 1
         print(f"OK: {len(models)} models, {len(sources)} sources, {len(enabled_sources)} enabled portal adapters")
     elif args.command == "sync":

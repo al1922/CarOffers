@@ -1471,6 +1471,765 @@
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
       "verdictNote": "gross_unconditional_purchase_price; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; LPG: potwierdzić dokumenty instalacji, homologację zbiornika i serwis"
+    },
+    {
+      "id": "listing:otomoto:6151111263",
+      "modelKey": "toyota-auris-touring-sports",
+      "title": "Toyota Auris II Touring Sports 1.6 Valvematic 132 KM — 2018",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6Ihr1Z.html"
+        }
+      ],
+      "listingIds": [
+        "otomoto:ID6Ihr1Z",
+        "otomoto:6151111263"
+      ],
+      "firstRegistrationDate": "2019-03-27",
+      "year": 2018,
+      "price": 45000,
+      "priceBasis": "gross_total",
+      "mileage": 148000,
+      "engine": "1.6 Valvematic, benzyna, 132 KM",
+      "engineVariant": "1.6-valvematic-132",
+      "body": "Kombi / Touring Sports",
+      "bodyCode": "wagon",
+      "transmission": "Manualna",
+      "transmissionCode": "manual",
+      "saleType": "fixed_price",
+      "offerType": "private",
+      "cameraStatus": "unknown",
+      "structuralDamageStatus": "unknown",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "city": "Katowice",
+        "voivodeship": "Śląskie"
+      },
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImRhdmxrMnh1cXRxbTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.1JAxOtjG2fmpNBDfR7CcqVqJwSuhsH2jyl3394fEysg/image;s=5120x0;q=80"
+      ],
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-11T17:00:19Z",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6Ihr1Z.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-11T17:00:19Z",
+          "lastCheckedAt": "2026-11-11T17:00:19Z",
+          "lastVerifiedAt": "2026-11-11T17:00:19Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6Ihr1Z.html",
+            "checkedAt": "2026-11-11T17:00:19Z",
+            "availability": "available",
+            "httpStatus": null,
+            "availabilityProof": {
+              "identity": true,
+              "contact": true,
+              "price": true,
+              "titleTokensMatched": 6
+            },
+            "note": "Odczytana dziś karta Otomoto podaje Toyotę Auris II kombi z 2018 r., 1.6 Valvematic benzyna 132 KM, manualną skrzynię, 148 000 km, 45 000 zł oraz lokalizację Katowice (Śląskie); wyświetla aktywne kontrolki kontaktu „Napisz” i „Wyświetl numer”. Sprzedawca prywatny deklaruje zakup w salonie Toyoty i bezwypadkowość oraz regularny serwis ASO. Karta podaje pierwszą rejestrację 27.03.2019. Kamera cofania nie jest wymieniona w wyposażeniu, więc pozostaje niepotwierdzona; LPG nie wskazano, ale brak informacji nie potwierdza jego nieobecności. Nie ustalono zgodności montażu kamery ani stanu konstrukcji niezależnym oględzinami."
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-11T17:00:19Z",
+      "lastVerifiedAt": "2026-11-11T17:00:19Z",
+      "lastAttemptAt": "2026-11-11T17:00:19Z",
+      "history": [
+        {
+          "eventId": "0e533a72c9c04b1966621d79557f3a8edea7d2db8380fd272c7a00917715fa05",
+          "runId": "20261111-search",
+          "checkedAt": "2026-11-11T17:00:19Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6Ihr1Z.html",
+          "availability": "available",
+          "note": "Odczytana dziś karta Otomoto podaje Toyotę Auris II kombi z 2018 r., 1.6 Valvematic benzyna 132 KM, manualną skrzynię, 148 000 km, 45 000 zł oraz lokalizację Katowice (Śląskie); wyświetla aktywne kontrolki kontaktu „Napisz” i „Wyświetl numer”. Sprzedawca prywatny deklaruje zakup w salonie Toyoty i bezwypadkowość oraz regularny serwis ASO. Karta podaje pierwszą rejestrację 27.03.2019. Kamera cofania nie jest wymieniona w wyposażeniu, więc pozostaje niepotwierdzona; LPG nie wskazano, ale brak informacji nie potwierdza jego nieobecności. Nie ustalono zgodności montażu kamery ani stanu konstrukcji niezależnym oględzinami.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:6151111263",
+            "modelKey": "toyota-auris-touring-sports",
+            "title": "Toyota Auris II Touring Sports 1.6 Valvematic 132 KM — 2018",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6Ihr1Z.html"
+              }
+            ],
+            "listingIds": [
+              "otomoto:ID6Ihr1Z",
+              "otomoto:6151111263"
+            ],
+            "firstRegistrationDate": "2019-03-27",
+            "year": 2018,
+            "price": 45000,
+            "priceBasis": "gross_total",
+            "mileage": 148000,
+            "engine": "1.6 Valvematic, benzyna, 132 KM",
+            "engineVariant": "1.6-valvematic-132",
+            "body": "Kombi / Touring Sports",
+            "bodyCode": "wagon",
+            "transmission": "Manualna",
+            "transmissionCode": "manual",
+            "saleType": "fixed_price",
+            "offerType": "private",
+            "cameraStatus": "unknown",
+            "structuralDamageStatus": "unknown",
+            "familyFitConfirmed": null,
+            "lpgInstalled": null,
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "city": "Katowice",
+              "voivodeship": "Śląskie"
+            },
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImRhdmxrMnh1cXRxbTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.1JAxOtjG2fmpNBDfR7CcqVqJwSuhsH2jyl3394fEysg/image;s=5120x0;q=80"
+            ]
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:otomoto:6151111263"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "toyota-auris-touring-sports"
+            },
+            "title": {
+              "before": null,
+              "after": "Toyota Auris II Touring Sports 1.6 Valvematic 132 KM — 2018"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6Ihr1Z.html"
+                }
+              ]
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "otomoto:ID6Ihr1Z",
+                "otomoto:6151111263"
+              ]
+            },
+            "firstRegistrationDate": {
+              "before": null,
+              "after": "2019-03-27"
+            },
+            "year": {
+              "before": null,
+              "after": 2018
+            },
+            "price": {
+              "before": null,
+              "after": 45000
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "gross_total"
+            },
+            "mileage": {
+              "before": null,
+              "after": 148000
+            },
+            "engine": {
+              "before": null,
+              "after": "1.6 Valvematic, benzyna, 132 KM"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.6-valvematic-132"
+            },
+            "body": {
+              "before": null,
+              "after": "Kombi / Touring Sports"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmission": {
+              "before": null,
+              "after": "Manualna"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "offerType": {
+              "before": null,
+              "after": "private"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "city": "Katowice",
+                "voivodeship": "Śląskie"
+              }
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImRhdmxrMnh1cXRxbTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.1JAxOtjG2fmpNBDfR7CcqVqJwSuhsH2jyl3394fEysg/image;s=5120x0;q=80"
+              ]
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "listing:otomoto:6151111263",
+        "modelKey": "toyota-auris-touring-sports",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "engine_review_requires_verification",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "engine_review_requires_verification; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
+    },
+    {
+      "id": "listing:olx:ID1d6Ixr",
+      "modelKey": "toyota-auris-touring-sports",
+      "listingIds": [
+        "olx:ID1d6Ixr"
+      ],
+      "urls": [
+        {
+          "url": "https://www.olx.pl/d/oferta/toyota-auris-toyota-auris-1-6-132-km-salon-pl-stan-perfekcyjny-CID5-ID1d6Ixr.html",
+          "normalized": "https://www.olx.pl/d/oferta/toyota-auris-toyota-auris-1-6-132-km-salon-pl-stan-perfekcyjny-CID5-ID1d6Ixr.html",
+          "label": "OLX"
+        }
+      ],
+      "title": "Toyota Auris 1.6 132 KM, kombi, 2018",
+      "year": 2018,
+      "price": 43800,
+      "priceBasis": "gross_total",
+      "mileage": 149850,
+      "engine": "1.6 Valvematic, benzyna, 132 KM",
+      "engineVariant": "1.6-valvematic-132",
+      "body": "Kombi",
+      "bodyCode": "wagon",
+      "transmission": "manualna",
+      "transmissionCode": "manual",
+      "seller": "osoba prywatna",
+      "offerType": "private",
+      "saleType": "fixed_price",
+      "cameraStatus": "unknown",
+      "structuralDamageStatus": "unknown",
+      "location": {
+        "status": "not_provided"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-11T17:16:32.977Z",
+      "listingStates": [
+        {
+          "url": "https://www.olx.pl/d/oferta/toyota-auris-toyota-auris-1-6-132-km-salon-pl-stan-perfekcyjny-CID5-ID1d6Ixr.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-11T17:16:32.977Z",
+          "lastCheckedAt": "2026-11-11T17:16:32.977Z",
+          "lastVerifiedAt": "2026-11-11T17:16:32.977Z",
+          "lastObservation": {
+            "url": "https://www.olx.pl/d/oferta/toyota-auris-toyota-auris-1-6-132-km-salon-pl-stan-perfekcyjny-CID5-ID1d6Ixr.html",
+            "checkedAt": "2026-11-11T17:16:32.977Z",
+            "availability": "available",
+            "note": "Otwarta karta OLX podaje Auris kombi z 2018 r., 1.6 Valvematic 132 KM, manualną skrzynię, 149 850 km i cenę 43 800 zł. Karta wskazuje dodanie dzisiaj o 08:58 i zawiera aktywne kontrolki kontaktu. Lokalizacja i kamera cofania nie są podane. Sprzedawca deklaruje brak wypadkowości i brak lakierowanych elementów; brak niezależnego potwierdzenia stanu. LPG nieustalone. Nie uzyskano bezpośrednich HTTPS URL-i zdjęć.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.olx.pl/d/oferta/toyota-auris-toyota-auris-1-6-132-km-salon-pl-stan-perfekcyjny-CID5-ID1d6Ixr.html",
+                "checkedAt": "2026-11-11T17:16:32.977Z",
+                "fields": [
+                  "year",
+                  "mileage",
+                  "price",
+                  "engineVariant",
+                  "bodyCode",
+                  "transmissionCode",
+                  "saleType",
+                  "location",
+                  "cameraStatus",
+                  "structuralDamageStatus"
+                ],
+                "note": "Dane techniczne i cena z karty OLX; data dodania i kontrolki kontaktu wskazują aktywne ogłoszenie. Brak lokalizacji oraz kamery cofania w odczytanej treści. Deklaracja bezwypadkowości pochodzi od sprzedawcy."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-11T17:16:32.977Z",
+      "lastVerifiedAt": "2026-11-11T17:16:32.977Z",
+      "lastAttemptAt": "2026-11-11T17:16:32.977Z",
+      "history": [
+        {
+          "eventId": "84cff6df4ce6a5dbf19f09794386b35bc3f37b870e42e7ce6879e94dd6614c91",
+          "runId": "20261111-search",
+          "checkedAt": "2026-11-11T17:16:32.977Z",
+          "url": "https://www.olx.pl/d/oferta/toyota-auris-toyota-auris-1-6-132-km-salon-pl-stan-perfekcyjny-CID5-ID1d6Ixr.html",
+          "availability": "available",
+          "note": "Otwarta karta OLX podaje Auris kombi z 2018 r., 1.6 Valvematic 132 KM, manualną skrzynię, 149 850 km i cenę 43 800 zł. Karta wskazuje dodanie dzisiaj o 08:58 i zawiera aktywne kontrolki kontaktu. Lokalizacja i kamera cofania nie są podane. Sprzedawca deklaruje brak wypadkowości i brak lakierowanych elementów; brak niezależnego potwierdzenia stanu. LPG nieustalone. Nie uzyskano bezpośrednich HTTPS URL-i zdjęć.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.olx.pl/d/oferta/toyota-auris-toyota-auris-1-6-132-km-salon-pl-stan-perfekcyjny-CID5-ID1d6Ixr.html",
+              "checkedAt": "2026-11-11T17:16:32.977Z",
+              "fields": [
+                "year",
+                "mileage",
+                "price",
+                "engineVariant",
+                "bodyCode",
+                "transmissionCode",
+                "saleType",
+                "location",
+                "cameraStatus",
+                "structuralDamageStatus"
+              ],
+              "note": "Dane techniczne i cena z karty OLX; data dodania i kontrolki kontaktu wskazują aktywne ogłoszenie. Brak lokalizacji oraz kamery cofania w odczytanej treści. Deklaracja bezwypadkowości pochodzi od sprzedawcy."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:olx:ID1d6Ixr",
+            "modelKey": "toyota-auris-touring-sports",
+            "listingIds": [
+              "olx:ID1d6Ixr"
+            ],
+            "urls": [
+              {
+                "url": "https://www.olx.pl/d/oferta/toyota-auris-toyota-auris-1-6-132-km-salon-pl-stan-perfekcyjny-CID5-ID1d6Ixr.html",
+                "normalized": "https://www.olx.pl/d/oferta/toyota-auris-toyota-auris-1-6-132-km-salon-pl-stan-perfekcyjny-CID5-ID1d6Ixr.html",
+                "label": "OLX"
+              }
+            ],
+            "title": "Toyota Auris 1.6 132 KM, kombi, 2018",
+            "year": 2018,
+            "price": 43800,
+            "priceBasis": "gross_total",
+            "mileage": 149850,
+            "engine": "1.6 Valvematic, benzyna, 132 KM",
+            "engineVariant": "1.6-valvematic-132",
+            "body": "Kombi",
+            "bodyCode": "wagon",
+            "transmission": "manualna",
+            "transmissionCode": "manual",
+            "seller": "osoba prywatna",
+            "offerType": "private",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "cameraStatus": "unknown",
+            "structuralDamageStatus": "unknown",
+            "familyFitConfirmed": null,
+            "location": {
+              "status": "not_provided"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:olx:ID1d6Ixr"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "toyota-auris-touring-sports"
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "olx:ID1d6Ixr"
+              ]
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.olx.pl/d/oferta/toyota-auris-toyota-auris-1-6-132-km-salon-pl-stan-perfekcyjny-CID5-ID1d6Ixr.html",
+                  "normalized": "https://www.olx.pl/d/oferta/toyota-auris-toyota-auris-1-6-132-km-salon-pl-stan-perfekcyjny-CID5-ID1d6Ixr.html",
+                  "label": "OLX"
+                }
+              ]
+            },
+            "title": {
+              "before": null,
+              "after": "Toyota Auris 1.6 132 KM, kombi, 2018"
+            },
+            "year": {
+              "before": null,
+              "after": 2018
+            },
+            "price": {
+              "before": null,
+              "after": 43800
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "gross_total"
+            },
+            "mileage": {
+              "before": null,
+              "after": 149850
+            },
+            "engine": {
+              "before": null,
+              "after": "1.6 Valvematic, benzyna, 132 KM"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.6-valvematic-132"
+            },
+            "body": {
+              "before": null,
+              "after": "Kombi"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmission": {
+              "before": null,
+              "after": "manualna"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "seller": {
+              "before": null,
+              "after": "osoba prywatna"
+            },
+            "offerType": {
+              "before": null,
+              "after": "private"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "listing:olx:ID1d6Ixr",
+        "modelKey": "toyota-auris-touring-sports",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "engine_review_requires_verification",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "engine_review_requires_verification; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
+    },
+    {
+      "id": "listing:toyota-pewne-auto:434239",
+      "modelKey": "toyota-auris-touring-sports",
+      "title": "Toyota Auris 1.6 Premium/gwarancja/fv23%",
+      "urls": [
+        {
+          "url": "https://pewneauto.pl/oferta/toyota-auris/434239"
+        }
+      ],
+      "listingIds": [
+        "toyota-pewne-auto:434239"
+      ],
+      "vin": "SB1ZE3JE20E113007",
+      "year": 2018,
+      "firstRegistrationDate": "2018-07-17",
+      "price": 51900,
+      "priceBasis": "gross_total",
+      "mileage": 145648,
+      "engine": "1.6 Valvematic, 1598 cm³, 132 KM, benzyna",
+      "engineVariant": "1.6-valvematic-132",
+      "body": "Kombi",
+      "bodyCode": "wagon",
+      "transmission": "Manualna",
+      "transmissionCode": "manual",
+      "saleType": "fixed_price",
+      "offerType": "company",
+      "cameraStatus": "installed_confirmed",
+      "structuralDamageStatus": "unknown",
+      "photos": [
+        "https://panel.pewneauto.pl/media/UsedCar/434239/6af30f0c41a64.png"
+      ],
+      "location": {
+        "status": "not_provided"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-11T19:27:52Z",
+      "listingStates": [
+        {
+          "url": "https://pewneauto.pl/oferta/toyota-auris/434239",
+          "status": "available",
+          "lastAttemptAt": "2026-11-11T19:27:52Z",
+          "lastCheckedAt": "2026-11-11T19:27:52Z",
+          "lastVerifiedAt": "2026-11-11T19:27:52Z",
+          "lastObservation": {
+            "url": "https://pewneauto.pl/oferta/toyota-auris/434239",
+            "checkedAt": "2026-11-11T19:27:52Z",
+            "availability": "available",
+            "note": "Karta zawiera cenę 51 900 zł brutto, produkcję 2018, kombi, benzynowy 1.6 Valvematic 132 KM, manualną skrzynię i VIN. Tabela techniczna podaje 145 648 km, natomiast tekst podsumowania podaje 145 630 km; zapisano wartość z tabeli i zachowano rozbieżność w notatce. Karta wymienia kamerę cofania i aktywne kontrolki kontaktu (wyświetlenie numeru, e-mail, jazda próbna). Sprzedawca deklaruje bezwypadkowość i pełną historię serwisową, ale nie ma niezależnego potwierdzenia stanu, więc structuralDamageStatus pozostaje unknown. Lokalizacja auta nie jest podana; adres dealera nie został potraktowany jako lokalizacja pojazdu. Karta pokazywała jedno zdjęcie z bezpośrednim HTTPS; bezpośredni adres po otwarciu zwrócił Cache miss, więc zachowano go jako adres widoczny na karcie.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "fields": [
+                  "year",
+                  "firstRegistrationDate",
+                  "engine",
+                  "body",
+                  "transmission",
+                  "price",
+                  "mileage",
+                  "offerType",
+                  "saleType",
+                  "cameraStatus",
+                  "vin",
+                  "lpgInstalled",
+                  "structuralDamageStatus"
+                ],
+                "url": "https://pewneauto.pl/oferta/toyota-auris/434239",
+                "checkedAt": "2026-11-11T19:27:52Z",
+                "note": "Karta pojazdu: tabela danych podaje rok produkcji 2018, 17.07.2018 jako pierwszą rejestrację, 145 648 km, nadwozie Kombi, 1598 cm³/132 KM, benzynę i manual. Cena widoczna jako 51 900 zł brutto; wyposażenie zawiera kamerę cofania. Tekst sprzedawcy podaje 145 630 km oraz deklaruje bezwypadkowość i pełną historię serwisową. Kontakt telefoniczny/e-mail i umówienie jazdy próbnej są dostępne na karcie. LPG nieopisane."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-11T19:27:52Z",
+      "lastVerifiedAt": "2026-11-11T19:27:52Z",
+      "lastAttemptAt": "2026-11-11T19:27:52Z",
+      "history": [
+        {
+          "eventId": "c98a9cdf8cfbda46a53e0c1988283e141e9532fa816255df9c5a02fda3253dd6",
+          "runId": "20261111-search",
+          "checkedAt": "2026-11-11T19:27:52Z",
+          "url": "https://pewneauto.pl/oferta/toyota-auris/434239",
+          "availability": "available",
+          "note": "Karta zawiera cenę 51 900 zł brutto, produkcję 2018, kombi, benzynowy 1.6 Valvematic 132 KM, manualną skrzynię i VIN. Tabela techniczna podaje 145 648 km, natomiast tekst podsumowania podaje 145 630 km; zapisano wartość z tabeli i zachowano rozbieżność w notatce. Karta wymienia kamerę cofania i aktywne kontrolki kontaktu (wyświetlenie numeru, e-mail, jazda próbna). Sprzedawca deklaruje bezwypadkowość i pełną historię serwisową, ale nie ma niezależnego potwierdzenia stanu, więc structuralDamageStatus pozostaje unknown. Lokalizacja auta nie jest podana; adres dealera nie został potraktowany jako lokalizacja pojazdu. Karta pokazywała jedno zdjęcie z bezpośrednim HTTPS; bezpośredni adres po otwarciu zwrócił Cache miss, więc zachowano go jako adres widoczny na karcie.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "fields": [
+                "year",
+                "firstRegistrationDate",
+                "engine",
+                "body",
+                "transmission",
+                "price",
+                "mileage",
+                "offerType",
+                "saleType",
+                "cameraStatus",
+                "vin",
+                "lpgInstalled",
+                "structuralDamageStatus"
+              ],
+              "url": "https://pewneauto.pl/oferta/toyota-auris/434239",
+              "checkedAt": "2026-11-11T19:27:52Z",
+              "note": "Karta pojazdu: tabela danych podaje rok produkcji 2018, 17.07.2018 jako pierwszą rejestrację, 145 648 km, nadwozie Kombi, 1598 cm³/132 KM, benzynę i manual. Cena widoczna jako 51 900 zł brutto; wyposażenie zawiera kamerę cofania. Tekst sprzedawcy podaje 145 630 km oraz deklaruje bezwypadkowość i pełną historię serwisową. Kontakt telefoniczny/e-mail i umówienie jazdy próbnej są dostępne na karcie. LPG nieopisane."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:toyota-pewne-auto:434239",
+            "modelKey": "toyota-auris-touring-sports",
+            "title": "Toyota Auris 1.6 Premium/gwarancja/fv23%",
+            "urls": [
+              {
+                "url": "https://pewneauto.pl/oferta/toyota-auris/434239"
+              }
+            ],
+            "listingIds": [
+              "toyota-pewne-auto:434239"
+            ],
+            "vin": "SB1ZE3JE20E113007",
+            "year": 2018,
+            "firstRegistrationDate": "2018-07-17",
+            "price": 51900,
+            "priceBasis": "gross_total",
+            "mileage": 145648,
+            "engine": "1.6 Valvematic, 1598 cm³, 132 KM, benzyna",
+            "engineVariant": "1.6-valvematic-132",
+            "body": "Kombi",
+            "bodyCode": "wagon",
+            "transmission": "Manualna",
+            "transmissionCode": "manual",
+            "saleType": "fixed_price",
+            "offerType": "company",
+            "cameraStatus": "installed_confirmed",
+            "structuralDamageStatus": "unknown",
+            "familyFitConfirmed": null,
+            "lpgInstalled": null,
+            "photos": [
+              "https://panel.pewneauto.pl/media/UsedCar/434239/6af30f0c41a64.png"
+            ],
+            "location": {
+              "status": "not_provided"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:toyota-pewne-auto:434239"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "toyota-auris-touring-sports"
+            },
+            "title": {
+              "before": null,
+              "after": "Toyota Auris 1.6 Premium/gwarancja/fv23%"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://pewneauto.pl/oferta/toyota-auris/434239"
+                }
+              ]
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "toyota-pewne-auto:434239"
+              ]
+            },
+            "vin": {
+              "before": null,
+              "after": "SB1ZE3JE20E113007"
+            },
+            "year": {
+              "before": null,
+              "after": 2018
+            },
+            "firstRegistrationDate": {
+              "before": null,
+              "after": "2018-07-17"
+            },
+            "price": {
+              "before": null,
+              "after": 51900
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "gross_total"
+            },
+            "mileage": {
+              "before": null,
+              "after": 145648
+            },
+            "engine": {
+              "before": null,
+              "after": "1.6 Valvematic, 1598 cm³, 132 KM, benzyna"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.6-valvematic-132"
+            },
+            "body": {
+              "before": null,
+              "after": "Kombi"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmission": {
+              "before": null,
+              "after": "Manualna"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "offerType": {
+              "before": null,
+              "after": "company"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "installed_confirmed"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://panel.pewneauto.pl/media/UsedCar/434239/6af30f0c41a64.png"
+              ]
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "listing:toyota-pewne-auto:434239",
+        "modelKey": "toyota-auris-touring-sports",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "engine_review_requires_verification",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "engine_review_requires_verification; structural_history; stroller_and_family_fit"
     }
   ],
   "archivedOffers": [

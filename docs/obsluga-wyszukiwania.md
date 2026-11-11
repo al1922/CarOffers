@@ -19,8 +19,8 @@ niepodaną odległość. Zakres silników pozostaje osobny dla każdego modelu.
 ## Polecenia z katalogu projektu
 
 ```powershell
-python -B scripts/car-search.py validate
 python -B scripts/car-search.py sync
+python -B scripts/car-search.py validate
 python -B scripts/validate-offers.py
 python -B scripts/car-search.py assess
 ```

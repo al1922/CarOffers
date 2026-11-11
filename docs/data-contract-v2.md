@@ -1,7 +1,9 @@
 # Kontrakt danych CarOffers v2
 
-Etap 1, 2026-11-08. Kontrakt opisuje obecny format i nie migruje danych.
-Frontend, pliki ofert, indeks oraz workflow pozostają bez zmian.
+Kontrakt v2 opisuje format danych i nie migruje zapisanych ofert. Pierwszy etap
+powstał 8 listopada 2026 r.; od tego czasu dokument uzupełniono o zasady dat
+wyświetlanych przez interfejs. Zmiany widoku nie zmieniają same przez się wymagań
+wyszukiwania ani nie potwierdzają danych auta.
 
 ## Schematy i uruchamianie
 
@@ -51,12 +53,31 @@ uszkodzenia lub jawnej niezgodności z wymaganiami. Automatyczny import nie przy
 rekordu `excluded` do aktywnej listy.
 Archiwum nie jest wczytywane do aktywnej listy strony.
 
+## Daty i ich prezentacja
+
+- `firstSeenAt` oznacza pierwsze zapisanie oferty w bazie; nie jest datą publikacji
+  ogłoszenia. Jeśli data publikacji nie została osobno zapisana, szczegóły pokazują
+  ją jako nieustaloną. Nie wyprowadzaj jej z `firstSeenAt` ani z daty pierwszej
+  rejestracji pojazdu.
+- `lastVerifiedAt` oznacza ostatnie udane ustalenie statusu ogłoszenia.
+  `lastAttemptAt` oznacza ostatnią próbę, również zakończoną błędem dostępu.
+  Błąd nie przesuwa daty ostatniego udanego odczytu.
+- `lastCheckedAt` pozostaje zgodnościowym znacznikiem udanego odczytu dla
+  istniejących danych; gdy dostępne jest `lastVerifiedAt`, to ono jest źródłem
+  daty ostatniego potwierdzenia.
+- Data przeliczenia oceny pochodzi z czasu wygenerowania bieżącego raportu oceny.
+  Nie jest datą odczytu portalu ani potwierdzeniem dostępności.
+- Interfejs formatuje daty i godziny w strefie `Europe/Warsaw`. Dokładne daty
+  odczytu, próby i oceny są pokazywane w szczegółach oferty; karta listy pokazuje
+  jedynie opisowy status dostępności.
+
 ## Parametry opcjonalne
 
 | Pole oferty | Typ i ograniczenia |
 |---|---|
 | `modelKey` | Poprawny klucz modelu; jeśli podany, musi zgadzać się z plikiem |
 | `vin` | `null` albo 17 znaków ASCII, bez I, O, Q; wielkość liter dowolna |
+| `publicationDate` | Opcjonalna data publikacji podana jawnie przez portal, `YYYY-MM-DD`; nie zastępuje `firstSeenAt` |
 | `listingIds` | Tablica niepustych identyfikatorów tekstowych |
 | `photos` | Opcjonalna tablica adresów HTTPS zdjęć z ogłoszenia; zapisujemy URL-e, nie pliki. Instrukcja zbierania ogranicza ją do 12 adresów. Frontend ładuje zdjęcia leniwie i pokazuje pierwsze jako miniaturę. Adres może wygasnąć lub portal może blokować osadzanie; wtedy pozostaje placeholder i link do ogłoszenia. |
 | `price` | `null` albo nieujemna, skończona liczba; kwoty ułamkowe dozwolone |

@@ -2813,6 +2813,243 @@
       "verdictTitle": "Do weryfikacji",
       "verdictNote": "engine_review_requires_verification; camera_or_compatible_retrofit; structural_history; mileage; stroller_and_family_fit",
       "mileage": 141500
+    },
+    {
+      "id": "listing:otomoto:6146967813",
+      "modelKey": "skoda-octavia-iii-combi",
+      "title": "Skoda Octavia 1.4 TSI Ambition DSG",
+      "year": 2018,
+      "price": 48900,
+      "mileage": 149980,
+      "fuel": "benzyna",
+      "engine": "1.4 TSI 150 KM",
+      "engineVariant": "1.4-tsi-ea211-150",
+      "body": "Kombi",
+      "bodyCode": "wagon",
+      "transmission": "Automatyczna DSG",
+      "transmissionCode": "automatic",
+      "seller": "99Select, firma",
+      "offerType": "company",
+      "saleType": "fixed_price",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "voivodeship": "mazowieckie",
+        "city": "Warszawa"
+      },
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6I0389.html",
+          "label": "Otomoto"
+        }
+      ],
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-11T16:55:20Z",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6I0389.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-11T16:55:20Z",
+          "lastCheckedAt": "2026-11-11T16:55:20Z",
+          "lastVerifiedAt": "2026-11-11T16:55:20Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6I0389.html",
+            "checkedAt": "2026-11-11T16:55:20Z",
+            "availability": "available",
+            "httpStatus": null,
+            "note": "Karta dostępna w odczycie web i zawiera tytuł, cenę 48 900 zł brutto, aktywne elementy kontaktu, rok produkcji 2018, 1.4 TSI 150 KM, nadwozie kombi i 149 980 km. Lokalizacja: Połczyńska 5, Warszawa. Sprzedawca podaje ISOFIX i przednie czujniki parkowania; kamera nie jest wymieniona. Cena i dane pochodzą z karty Otomoto; brak jawnego oświadczenia o instalacji LPG, więc lpgInstalled=false oznacza brak wskazania LPG w karcie, nie potwierdzenie dokumentów instalacji.",
+            "evidence": [
+              {
+                "fields": [
+                  "title",
+                  "year",
+                  "price",
+                  "mileage",
+                  "engineVariant",
+                  "bodyCode",
+                  "transmissionCode",
+                  "offerType",
+                  "location",
+                  "saleType",
+                  "lpgInstalled"
+                ],
+                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6I0389.html",
+                "checkedAt": "2026-11-11T16:55:20Z",
+                "kind": "seller",
+                "note": "Karta Otomoto: 2018, 1.4 TSI 150 KM, benzyna, 1395 cm3, automat, kombi, 149 980 km, cena 48 900 brutto; sprzedawca firma 99Select, lokalizacja Warszawa. Instalacja LPG niepotwierdzona; karta wymienia paliwo benzynowe, ale nie rozstrzyga obecności dodatkowej instalacji."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-11T16:55:20Z",
+      "lastVerifiedAt": "2026-11-11T16:55:20Z",
+      "lastAttemptAt": "2026-11-11T16:55:20Z",
+      "history": [
+        {
+          "eventId": "2f9a58d3758e125dd175eac3f1b28378d3629a98cad55fa4b6d1dffa858ddddd",
+          "runId": "20261111-search",
+          "checkedAt": "2026-11-11T16:55:20Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6I0389.html",
+          "availability": "available",
+          "note": "Karta dostępna w odczycie web i zawiera tytuł, cenę 48 900 zł brutto, aktywne elementy kontaktu, rok produkcji 2018, 1.4 TSI 150 KM, nadwozie kombi i 149 980 km. Lokalizacja: Połczyńska 5, Warszawa. Sprzedawca podaje ISOFIX i przednie czujniki parkowania; kamera nie jest wymieniona. Cena i dane pochodzą z karty Otomoto; brak jawnego oświadczenia o instalacji LPG, więc lpgInstalled=false oznacza brak wskazania LPG w karcie, nie potwierdzenie dokumentów instalacji.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "fields": [
+                "title",
+                "year",
+                "price",
+                "mileage",
+                "engineVariant",
+                "bodyCode",
+                "transmissionCode",
+                "offerType",
+                "location",
+                "saleType",
+                "lpgInstalled"
+              ],
+              "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6I0389.html",
+              "checkedAt": "2026-11-11T16:55:20Z",
+              "kind": "seller",
+              "note": "Karta Otomoto: 2018, 1.4 TSI 150 KM, benzyna, 1395 cm3, automat, kombi, 149 980 km, cena 48 900 brutto; sprzedawca firma 99Select, lokalizacja Warszawa. Instalacja LPG niepotwierdzona; karta wymienia paliwo benzynowe, ale nie rozstrzyga obecności dodatkowej instalacji."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:otomoto:6146967813",
+            "modelKey": "skoda-octavia-iii-combi",
+            "title": "Skoda Octavia 1.4 TSI Ambition DSG",
+            "year": 2018,
+            "price": 48900,
+            "mileage": 149980,
+            "fuel": "benzyna",
+            "engine": "1.4 TSI 150 KM",
+            "engineVariant": "1.4-tsi-ea211-150",
+            "body": "Kombi",
+            "bodyCode": "wagon",
+            "transmission": "Automatyczna DSG",
+            "transmissionCode": "automatic",
+            "seller": "99Select, firma",
+            "offerType": "company",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "voivodeship": "mazowieckie",
+              "city": "Warszawa"
+            },
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6I0389.html",
+                "label": "Otomoto"
+              }
+            ]
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:otomoto:6146967813"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "skoda-octavia-iii-combi"
+            },
+            "title": {
+              "before": null,
+              "after": "Skoda Octavia 1.4 TSI Ambition DSG"
+            },
+            "year": {
+              "before": null,
+              "after": 2018
+            },
+            "price": {
+              "before": null,
+              "after": 48900
+            },
+            "mileage": {
+              "before": null,
+              "after": 149980
+            },
+            "fuel": {
+              "before": null,
+              "after": "benzyna"
+            },
+            "engine": {
+              "before": null,
+              "after": "1.4 TSI 150 KM"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.4-tsi-ea211-150"
+            },
+            "body": {
+              "before": null,
+              "after": "Kombi"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmission": {
+              "before": null,
+              "after": "Automatyczna DSG"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "automatic"
+            },
+            "seller": {
+              "before": null,
+              "after": "99Select, firma"
+            },
+            "offerType": {
+              "before": null,
+              "after": "company"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "voivodeship": "mazowieckie",
+                "city": "Warszawa"
+              }
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6I0389.html",
+                  "label": "Otomoto"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "listing:otomoto:6146967813",
+        "modelKey": "skoda-octavia-iii-combi",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_purchase_price",
+          "engine_review_requires_verification",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_purchase_price; engine_review_requires_verification; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
     }
   ],
   "archivedOffers": [

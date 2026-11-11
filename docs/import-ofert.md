@@ -41,7 +41,7 @@ podglądu. Ocena podczas importu używa bieżącej konfiguracji; ustawienia uży
 do wyszukiwania pozostają w snapshotcie. Obie wersje są oznaczone w podglądzie.
 
 Importer nie zmienia katalogu modeli, więc nie wymaga regeneracji indeksu.
-Po zmianach konfiguracji nadal obowiązują `validate`, `sync` i `assess`.
+Po zmianach konfiguracji uruchom `sync`, następnie `validate` i `assess`.
 Żadne z tych poleceń nie publikuje zmian. Publikacja wymaga zgody użytkownika.
 
 ## Obserwacja w wyniku pracownika
@@ -172,8 +172,14 @@ jeszcze wdrożone.
 - `history` zapisuje poprzednie i nowe wartości, zgłoszone pola, dowody, URL,
   czas oraz przebieg. `firstSeenAt` dotyczy pierwszego importu do nowego mechanizmu,
   nie daty publikacji ogłoszenia.
+- `publicationDate` zapisuj jako `YYYY-MM-DD` tylko wtedy, gdy portal jawnie podaje
+  tę datę. Nie przeliczaj tekstów względnych ani nie wyprowadzaj jej z `firstSeenAt`.
 - `lastAttemptAt` zapisuje także błędy. `lastCheckedAt` i `lastVerifiedAt` zmieniają
   się wyłącznie po udanym ustaleniu statusu. Nie oznaczają niezależnych oględzin auta.
+- W widoku oferty `firstSeenAt` jest opisane jako dodanie do bazy, osobno od daty
+  publikacji, jeśli ta została zapisana. Daty ostatniego udanego odczytu, próby
+  i przeliczenia oceny są rozdzielone i widoczne w szczegółach; błędna próba nie
+  zastępuje daty ostatniej udanej weryfikacji.
 - `data/import-state.json` identyfikuje przetworzone wyniki i obserwacje.
   Nie należy usuwać tego pliku przy zachowaniu zaimportowanych ofert.
 - Zmiana już zaimportowanego wyniku jest blokowana. Zachowaj poprzedni plik

@@ -7,7 +7,272 @@
     "description": "Kombi (Wagon)",
     "requirements": "Mazda 6 III Wagon; 2.0 Skyactiv-G 145 KM; 2.0 Skyactiv-G 165 KM; rodzina: 2 dorosłych i 1 dziecko; wymagane miejsce na wózek i bagaż; rocznik od 2018 do 2020; maks. 55 000 zł brutto według ceny podanej w ogłoszeniu; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 170 000 km preferowany; kamera wymagana  obecna lub z potwierdzoną możliwością montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji."
   },
-  "offers": [],
+  "offers": [
+    {
+      "id": "listing:otomoto:ID6IiHi1",
+      "modelKey": "mazda-6-iii-wagon",
+      "title": "Mazda 6 SKYACTIV-G 145 Exclusive-Line — 2017, kombi, manual",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/mazda-6-ID6IiHi1.html"
+        }
+      ],
+      "listingIds": [
+        "otomoto:ID6IiHi1",
+        "otomoto:6151412089"
+      ],
+      "year": 2017,
+      "price": 53900,
+      "priceBasis": "gross_total",
+      "mileage": 165713,
+      "engine": "2.0 SKYACTIV-G benzyna, 1 998 cm³, 145 KM",
+      "engineVariant": "2.0-skyactiv-g-145",
+      "body": "Kombi",
+      "bodyCode": "wagon",
+      "transmission": "Manualna",
+      "transmissionCode": "manual",
+      "saleType": "fixed_price",
+      "offerType": "company",
+      "cameraStatus": "unknown",
+      "structuralDamageStatus": "unknown",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "city": "Jeżów Sudecki",
+        "voivodeship": "Dolnośląskie",
+        "precision": "postal_code",
+        "source": "listing",
+        "checkedAt": "2026-11-11"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-11T17:04:41Z",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/mazda-6-ID6IiHi1.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-11T17:04:41Z",
+          "lastCheckedAt": "2026-11-11T17:04:41Z",
+          "lastVerifiedAt": "2026-11-11T17:04:41Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/mazda-6-ID6IiHi1.html",
+            "checkedAt": "2026-11-11T17:04:41Z",
+            "availability": "available",
+            "note": "Przeczytana karta Otomoto pokazuje Mazda 6 Kombi 2.0 SKYACTIV-G 145 KM, 2017, 165 713 km, 53 900 zł oraz kontrolki kontaktu „Napisz” i „Wyświetl numer”. Karta została udostępniona w warstwie web jako crawl z ostatniego tygodnia, a indeks wyników Otomoto z dzisiejszym crawl nadal zawiera ogłoszenie. Nie uzyskano bieżącego HTTP przez Playwright z powodu net::ERR_NAME_NOT_RESOLVED, dlatego dostępność opiera się na widocznej karcie i aktualnym indeksie, bez deklarowania kodu HTTP. Lokalizacja Jeżów Sudecki, Dolnośląskie, 58-521 jest widoczna przy sprzedającym. Sprzedawca klasyfikowany przez portal jako firma i deklaruje bezwypadkowość; nie ma niezależnej kontroli konstrukcji. Kamera cofania i LPG nie są potwierdzone. Bezpośrednie zdjęcia CDN zwróciły cache miss, więc pominięto photos.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "fields": [
+                  "year",
+                  "engine",
+                  "body",
+                  "transmission",
+                  "price",
+                  "mileage",
+                  "location",
+                  "offerType",
+                  "saleType",
+                  "lpgInstalled",
+                  "cameraStatus",
+                  "structuralDamageStatus"
+                ],
+                "url": "https://www.otomoto.pl/osobowe/oferta/mazda-6-ID6IiHi1.html",
+                "checkedAt": "2026-11-11T17:04:41Z",
+                "note": "Karta ogłoszenia podaje 2017, silnik benzynowy 1 998 cm³/145 KM, kombi, manual, 165 713 km, 53 900 zł, wyposażenie parkowania i lokalizację Jeżów Sudecki 58-521. Portal pokazuje sprzedawcę firmowego oraz aktywne kontrolki kontaktu. Kamera nie jest wymieniona. Bezwypadkowość pochodzi wyłącznie z deklaracji sprzedawcy, bez niezależnej kontroli; LPG niepotwierdzone."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-11T17:04:41Z",
+      "lastVerifiedAt": "2026-11-11T17:04:41Z",
+      "lastAttemptAt": "2026-11-11T17:04:41Z",
+      "history": [
+        {
+          "eventId": "6b973dad07f5303a0339ecf7c45a35f7c3740fac393812fd253689eda1e5f22f",
+          "runId": "20261111-search",
+          "checkedAt": "2026-11-11T17:04:41Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/mazda-6-ID6IiHi1.html",
+          "availability": "available",
+          "note": "Przeczytana karta Otomoto pokazuje Mazda 6 Kombi 2.0 SKYACTIV-G 145 KM, 2017, 165 713 km, 53 900 zł oraz kontrolki kontaktu „Napisz” i „Wyświetl numer”. Karta została udostępniona w warstwie web jako crawl z ostatniego tygodnia, a indeks wyników Otomoto z dzisiejszym crawl nadal zawiera ogłoszenie. Nie uzyskano bieżącego HTTP przez Playwright z powodu net::ERR_NAME_NOT_RESOLVED, dlatego dostępność opiera się na widocznej karcie i aktualnym indeksie, bez deklarowania kodu HTTP. Lokalizacja Jeżów Sudecki, Dolnośląskie, 58-521 jest widoczna przy sprzedającym. Sprzedawca klasyfikowany przez portal jako firma i deklaruje bezwypadkowość; nie ma niezależnej kontroli konstrukcji. Kamera cofania i LPG nie są potwierdzone. Bezpośrednie zdjęcia CDN zwróciły cache miss, więc pominięto photos.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "fields": [
+                "year",
+                "engine",
+                "body",
+                "transmission",
+                "price",
+                "mileage",
+                "location",
+                "offerType",
+                "saleType",
+                "lpgInstalled",
+                "cameraStatus",
+                "structuralDamageStatus"
+              ],
+              "url": "https://www.otomoto.pl/osobowe/oferta/mazda-6-ID6IiHi1.html",
+              "checkedAt": "2026-11-11T17:04:41Z",
+              "note": "Karta ogłoszenia podaje 2017, silnik benzynowy 1 998 cm³/145 KM, kombi, manual, 165 713 km, 53 900 zł, wyposażenie parkowania i lokalizację Jeżów Sudecki 58-521. Portal pokazuje sprzedawcę firmowego oraz aktywne kontrolki kontaktu. Kamera nie jest wymieniona. Bezwypadkowość pochodzi wyłącznie z deklaracji sprzedawcy, bez niezależnej kontroli; LPG niepotwierdzone."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IiHi1",
+            "modelKey": "mazda-6-iii-wagon",
+            "title": "Mazda 6 SKYACTIV-G 145 Exclusive-Line — 2017, kombi, manual",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/mazda-6-ID6IiHi1.html"
+              }
+            ],
+            "listingIds": [
+              "otomoto:ID6IiHi1",
+              "otomoto:6151412089"
+            ],
+            "year": 2017,
+            "price": 53900,
+            "priceBasis": "gross_total",
+            "mileage": 165713,
+            "engine": "2.0 SKYACTIV-G benzyna, 1 998 cm³, 145 KM",
+            "engineVariant": "2.0-skyactiv-g-145",
+            "body": "Kombi",
+            "bodyCode": "wagon",
+            "transmission": "Manualna",
+            "transmissionCode": "manual",
+            "saleType": "fixed_price",
+            "offerType": "company",
+            "cameraStatus": "unknown",
+            "structuralDamageStatus": "unknown",
+            "familyFitConfirmed": null,
+            "lpgInstalled": null,
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "city": "Jeżów Sudecki",
+              "voivodeship": "Dolnośląskie",
+              "precision": "postal_code",
+              "source": "listing",
+              "checkedAt": "2026-11-11"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:otomoto:ID6IiHi1"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "mazda-6-iii-wagon"
+            },
+            "title": {
+              "before": null,
+              "after": "Mazda 6 SKYACTIV-G 145 Exclusive-Line — 2017, kombi, manual"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/mazda-6-ID6IiHi1.html"
+                }
+              ]
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "otomoto:ID6IiHi1",
+                "otomoto:6151412089"
+              ]
+            },
+            "year": {
+              "before": null,
+              "after": 2017
+            },
+            "price": {
+              "before": null,
+              "after": 53900
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "gross_total"
+            },
+            "mileage": {
+              "before": null,
+              "after": 165713
+            },
+            "engine": {
+              "before": null,
+              "after": "2.0 SKYACTIV-G benzyna, 1 998 cm³, 145 KM"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "2.0-skyactiv-g-145"
+            },
+            "body": {
+              "before": null,
+              "after": "Kombi"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmission": {
+              "before": null,
+              "after": "Manualna"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "offerType": {
+              "before": null,
+              "after": "company"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "city": "Jeżów Sudecki",
+                "voivodeship": "Dolnośląskie",
+                "precision": "postal_code",
+                "source": "listing",
+                "checkedAt": "2026-11-11"
+              }
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "listing:otomoto:ID6IiHi1",
+        "modelKey": "mazda-6-iii-wagon",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
+    }
+  ],
   "archivedOffers": [
     {
       "id": "listing:autoplac:5298-7669-VQ",

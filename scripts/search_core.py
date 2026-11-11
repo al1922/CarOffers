@@ -53,6 +53,20 @@ def audit(root=ROOT):
         validation.validate_schema(config[key], schema, schema, issues, filename)
     if any(i["severity"] == "error" for i in issues):
         return config, issues
+    configured_offer_files = set()
+    for model in config["models"]["models"]:
+        relative = Path(model["offersFile"]).as_posix()
+        if relative in configured_offer_files:
+            validation.issue(issues, "error", "DUPLICATE_OFFERS_FILE", "config/search-models.json",
+                             model["key"], f"Plik ofert jest przypisany więcej niż raz: {relative}")
+        configured_offer_files.add(relative)
+    actual_offer_files = {f"offers/{path.name}" for path in (root / "offers").glob("*.json")}
+    for relative in sorted(configured_offer_files - actual_offer_files):
+        validation.issue(issues, "error", "MODEL_OFFERS_MISSING", "config/search-models.json", "",
+                         f"Model wskazuje brakujący plik {relative}")
+    for relative in sorted(actual_offer_files - configured_offer_files):
+        validation.issue(issues, "error", "ORPHAN_OFFERS_FILE", relative, "",
+                         "Plik ofert nie ma modelu w config/search-models.json; usuń go lub przywróć konfigurację")
     requirements_schema = read(ROOT / "schemas/requirements-v1.schema.json")
     for model in config["models"]["models"]:
         model_requirements = model.get("requirements")
@@ -100,6 +114,42 @@ def audit(root=ROOT):
         except (OSError, KeyError, ValueError) as exc:
             validation.issue(issues, "error", "REFERENCE", model["key"], "", str(exc))
     return config, issues
+
+
+def audit_model_index(root=ROOT, config=None):
+    """Check that the generated site index lists exactly the configured offer files."""
+    config = config or load_config(root)
+    issues = []
+    index_path = root / "models.json"
+    try:
+        index = read(index_path)
+    except (OSError, ValueError) as exc:
+        validation.issue(issues, "error", "MODEL_INDEX_READ", "models.json", "", str(exc))
+        return issues
+    expected = {model["key"]: Path(model["offersFile"]).as_posix()
+                for model in config["models"]["models"]}
+    entries = index.get("models", []) if isinstance(index, dict) else []
+    entries = entries if isinstance(entries, list) else []
+    actual = {}
+    for position, entry in enumerate(entries):
+        if not isinstance(entry, dict) or not isinstance(entry.get("key"), str):
+            continue
+        key = entry["key"]
+        if key in actual:
+            validation.issue(issues, "error", "MODEL_INDEX_DUPLICATE", "models.json",
+                             f"/models/{position}/key", f"Powtórzony model w indeksie: {key}")
+        actual[key] = entry.get("file")
+    for key in sorted(expected.keys() - actual.keys()):
+        validation.issue(issues, "error", "MODEL_INDEX_MISSING", "models.json", "",
+                         f"Indeks nie zawiera modelu {key}; uruchom `python -B scripts/car-search.py sync`")
+    for key in sorted(actual.keys() - expected.keys()):
+        validation.issue(issues, "error", "MODEL_INDEX_ORPHAN", "models.json", "",
+                         f"Indeks zawiera model {key}, którego nie ma w konfiguracji; uruchom sync")
+    for key in sorted(expected.keys() & actual.keys()):
+        if actual[key] != expected[key]:
+            validation.issue(issues, "error", "MODEL_INDEX_FILE", "models.json", "",
+                             f"Model {key} wskazuje {actual[key]!r}, oczekiwano {expected[key]!r}; uruchom sync")
+    return issues
 
 
 def description(requirements, model):

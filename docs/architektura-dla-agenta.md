@@ -1,7 +1,8 @@
 # Mapa projektu dla agenta AI
 
 Ten plik opisuje granice kodu i kolejność sprawdzania danych. Szczegółowe reguły
-operacyjne wyszukiwania, importu i pracy równoległej pozostają w `AGENTS.md`.
+operacyjne wyszukiwania i importu są w `docs/agent/search-operations.md`;
+`AGENTS.md` jest krótkim indeksem i zawiera zasady zawsze obowiązujące.
 
 ## Zasada nadrzędna
 
@@ -51,22 +52,26 @@ czyste reguły do małych modułów, ale utrzymuj dotychczasowe eksporty i polec
 - **Widok strony:** dane pochodzą z istniejących plików JSON. Zmiana strony nie
   aktualizuje wymagań ani nie potwierdza aktualności ogłoszeń.
 
-Dokładne kontrakty wyników i zasady przydziału znajdują się w `AGENTS.md`; nie
-twórz alternatywnego przepływu ani drugiego formatu wyników.
+Dokładne kontrakty wyników i zasady przydziału znajdują się w
+`docs/agent/search-operations.md`; nie twórz alternatywnego przepływu ani
+drugiego formatu wyników.
 
 ## Rutyna przed zmianą kodu
 
 1. Sprawdź `git status --short` i `git diff --stat`; traktuj istniejące lokalne
    zmiany jako pracę do zachowania.
-2. Przeczytaj ten przewodnik, właściwą część `AGENTS.md` i tylko te pliki
-   konfiguracji/wiedzy, których dotyczy zadanie.
-3. Uruchom `python -B scripts/car-search.py validate` przed pracą zależną od
+2. Przy zmianie przekrojowej najpierw użyj macierzy w
+   `docs/agent/change-impact.md`, aby ustalić odbiorców i pliki pochodne.
+3. Przeczytaj ten przewodnik, `AGENTS.md` oraz tylko poradnik i pliki
+   konfiguracji/wiedzy potrzebne do bieżącego zadania. Nie wczytuj wszystkich
+   dokumentów z `docs/agent/` naraz.
+4. Uruchom `python -B scripts/car-search.py validate` przed pracą zależną od
    zakresu modeli lub portali.
-4. Zmień możliwie najmniejszą granicę modułu. Nie przemianowuj ścieżek publicznych,
+5. Zmień możliwie najmniejszą granicę modułu. Nie przemianowuj ścieżek publicznych,
    skryptów CLI ani formatów wyników bez aktualizacji wszystkich wywołań.
-5. Uruchom testy dotyczące zmienionego modułu. Pełny zestaw:
+6. Uruchom testy dotyczące zmienionego modułu. Pełny zestaw:
    `npm test` oraz `python -B -m unittest discover -s tests -v`.
-6. Po zmianie konfiguracji uruchom walidację konfiguracji i walidator ofert.
+7. Po zmianie konfiguracji uruchom walidację konfiguracji i walidator ofert.
    Nie uruchamiaj importu ani nie publikuj bez wyraźnego celu użytkownika.
 
 ## Reguły zmian

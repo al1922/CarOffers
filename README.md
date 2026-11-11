@@ -22,8 +22,12 @@ względne, więc aplikacja działa również pod adresem `użytkownik.github.io/
 - Korzystać z jasnego i ciemnego motywu oraz układu mobilnego.
 
 Strona nie sprawdza sama ogłoszeń na portalach. „Wczytaj dane ponownie” pobiera
-zapisane pliki JSON. Data przeliczenia oceny i data raportu nie potwierdzają
-aktualności oferty. Lokalizacje z historycznych tytułów są oznaczone jako historyczne.
+zapisane pliki JSON. Karty pokazują status dostępności bez dokładnej daty odczytu;
+daty znajdują się w szczegółach oferty. „Dodano do bazy” oznacza pierwszy zapis
+oferty w bazie, a nie datę jej publikacji. Ostatni udany odczyt, ostatnia próba
+i przeliczenie oceny to osobne zdarzenia; data oceny ani data raportu nie
+potwierdzają aktualności ogłoszenia. Daty i godziny są wyświetlane w strefie
+Europe/Warsaw. Lokalizacje z historycznych tytułów są oznaczone jako historyczne.
 Odległość dotyczy punktu miejscowości, nie adresu samochodu ani trasy dojazdu.
 Brak miejscowości lub niejednoznaczne współrzędne są pokazane jawnie.
 
@@ -69,8 +73,8 @@ Nie zmieniaj wyłącznie opisów na stronie, aby zmieniać reguły wyszukiwania.
 Po zmianie ustawień:
 
 ```powershell
-python -B scripts/car-search.py validate
 python -B scripts/car-search.py sync
+python -B scripts/car-search.py validate
 python -B scripts/car-search.py assess
 python -B scripts/generate-dashboard.py
 python -B scripts/validate-offers.py
@@ -90,9 +94,13 @@ python -B scripts/validate-offers.py
 i wyniki zadań, zachowując rozróżnienie przeszukania częściowego, blokady,
 braku dopasowań i zadań niezakończonych. Uruchom go po zmianie stanów/wyników.
 
-Szczegóły: [obsługa wyszukiwania](docs/obsluga-wyszukiwania.md),
+Dokumentacja jest zebrana w [indeksie tematów](docs/README.md). Szczegóły:
+[obsługa wyszukiwania](docs/obsluga-wyszukiwania.md),
 [import i historia](docs/import-ofert.md), [kontrakt danych](docs/data-contract-v2.md),
-[założenia](docs/porzadek-projektu.md), [flow polecanych modeli](docs/flow-polecane-modele.md).
+[założenia](docs/porzadek-projektu.md).
+
+Instrukcje dla agenta: [punkt wejścia](AGENTS.md), [mapa projektu](docs/architektura-dla-agenta.md)
+i poradniki zależne od zadania w [`docs/agent/`](docs/agent/).
 
 Lokalizacje i ich odtwarzanie opisuje [dokumentacja lokalizacji](docs/lokalizacje.md).
 

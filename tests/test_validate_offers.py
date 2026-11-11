@@ -68,6 +68,13 @@ class ValidationTests(unittest.TestCase):
         offer["firstRegistrationDate"] = "15.04.2020"
         self.assertCode(self.audit(), "DATE")
 
+    def test_publication_date_is_optional_and_must_be_a_calendar_date(self):
+        offer = self.doc["offers"][0]
+        offer["publicationDate"] = "2026-11-07"
+        self.assertEqual(self.audit()["errors"], 0)
+        offer["publicationDate"] = "wczoraj"
+        self.assertCode(self.audit(), "DATE")
+
     def test_invalid_prices(self):
         for price in ("50000", -1, True, [], {}):
             with self.subTest(price=price):

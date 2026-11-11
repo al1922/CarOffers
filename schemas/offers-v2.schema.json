@@ -69,6 +69,7 @@
         "familyFitConfirmed": {"type": ["boolean", "null"]},
         "saleType": {"type": ["string", "null"], "enum": ["fixed_price", "auction", null]},
         "lpgInstalled": {"type": ["boolean", "null"]},
+        "publicationDate": {"type": ["string", "null"], "format": "date"},
         "firstSeenAt": {"type": "string"},
         "lastCheckedAt": {"type": "string"},
         "lastVerifiedAt": {"type": "string"},

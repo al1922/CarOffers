@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T01:43:49.253814+00:00",
+  "generatedAt": "2026-11-11T20:04:45.849031+00:00",
   "configuration": {
     "requirements": {
       "version": 1,
@@ -3359,7 +3359,7 @@
   },
   "assessments": [
     {
-      "id": "vin:TMAH281CANJ118698",
+      "id": "vin:TMAH251CANJ114334",
       "modelKey": "hyundai-i30-iii-wagon",
       "verdict": "check",
       "failures": [],
@@ -3371,7 +3371,7 @@
       ],
       "preferenceNotes": [],
       "input": {
-        "price": 47999,
+        "price": 50700,
         "priceBasis": null,
         "year": 2022,
         "bodyCode": "wagon",
@@ -3379,7 +3379,256 @@
         "transmissionCode": "manual",
         "cameraStatus": null,
         "structuralDamageStatus": null,
-        "mileage": 63000,
+        "mileage": 121245,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:autoplac:7145-2764-EG",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "body",
+        "exact_engine_variant",
+        "transmission",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 48700,
+        "priceBasis": null,
+        "year": 2022,
+        "bodyCode": null,
+        "engineVariant": null,
+        "transmissionCode": null,
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 129383,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:autoplac:1492-6499-YL",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "body",
+        "exact_engine_variant",
+        "transmission",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 45900,
+        "priceBasis": null,
+        "year": 2021,
+        "bodyCode": null,
+        "engineVariant": null,
+        "transmissionCode": null,
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 123000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:autoplac:0060-7009-GM",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "body",
+        "exact_engine_variant",
+        "transmission",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 47900,
+        "priceBasis": null,
+        "year": 2022,
+        "bodyCode": null,
+        "engineVariant": null,
+        "transmissionCode": null,
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 150764,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:autoplac:1047-6014-UA",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 52900,
+        "priceBasis": null,
+        "year": 2019,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-tgdi-140",
+        "transmissionCode": "manual",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 99539,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:automarket:T147419",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 41900,
+        "priceBasis": null,
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-tgdi-140",
+        "transmissionCode": "manual",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 153000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": false
+      }
+    },
+    {
+      "id": "listing:allegro-lokalnie:a55e49a8-b9a0-412f-830e-8d5d076aaaa0",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 46000,
+        "priceBasis": "gross_total",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-tgdi-140",
+        "transmissionCode": "automatic",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 156000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:autoplac:9862-7198-CV",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "engine_review_requires_verification",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 46500,
+        "priceBasis": "gross_total",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-mpi-100",
+        "transmissionCode": "manual",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 103750,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:autoplac:9572-3905-EU",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "engine_review_requires_verification",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 38900,
+        "priceBasis": "gross_total",
+        "year": 2019,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-mpi-100",
+        "transmissionCode": "manual",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 162700,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:sprzedajemy:70513445",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "engine_review_requires_verification",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 38900,
+        "priceBasis": "gross_total",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-mpi-100",
+        "transmissionCode": "manual",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 88769,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null
@@ -3416,7 +3665,7 @@
       }
     },
     {
-      "id": "vin:TMAH251CANJ114334",
+      "id": "vin:TMAH281CANJ114421",
       "modelKey": "hyundai-i30-iii-wagon",
       "verdict": "check",
       "failures": [],
@@ -3428,7 +3677,7 @@
       ],
       "preferenceNotes": [],
       "input": {
-        "price": 50700,
+        "price": 46000,
         "priceBasis": null,
         "year": 2022,
         "bodyCode": "wagon",
@@ -3436,7 +3685,196 @@
         "transmissionCode": "manual",
         "cameraStatus": null,
         "structuralDamageStatus": null,
-        "mileage": 121245,
+        "mileage": 112009,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "vin:TMAH3813GLJ064598",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 49999,
+        "priceBasis": null,
+        "year": 2019,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-tgdi-140",
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 112100,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:olx:1101349711",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 53500,
+        "priceBasis": "unknown",
+        "year": 2020,
+        "bodyCode": "wagon",
+        "engineVariant": "1.5-dpi-110",
+        "transmissionCode": "manual",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 43000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:automarket:308024",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 53849.4,
+        "priceBasis": "gross_total",
+        "year": 2022,
+        "bodyCode": "wagon",
+        "engineVariant": "1.5-dpi-110",
+        "transmissionCode": "manual",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 119871,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:olx:1101065415",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "engine_review_requires_verification",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 22999,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-mpi-100",
+        "transmissionCode": "manual",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 162000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:olx:1094170529",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 42998,
+        "priceBasis": "unknown",
+        "year": 2022,
+        "bodyCode": "wagon",
+        "engineVariant": "1.5-dpi-110",
+        "transmissionCode": "manual",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 160199,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:olx:1109370005",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "engine_review_requires_verification",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 41900,
+        "priceBasis": "gross_total",
+        "year": 2019,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-mpi-100",
+        "transmissionCode": "manual",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 121223,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "vin:TMAH281CANJ118698",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 47999,
+        "priceBasis": null,
+        "year": 2022,
+        "bodyCode": "wagon",
+        "engineVariant": "1.5-dpi-110",
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 63000,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null
@@ -3515,96 +3953,6 @@
         "cameraStatus": null,
         "structuralDamageStatus": null,
         "mileage": 87837,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:autoplac:0240-6320-YN",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 53700,
-        "priceBasis": null,
-        "year": 2021,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 100000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:autoplac:8403-6811-DV",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 49999,
-        "priceBasis": null,
-        "year": 2021,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 105650,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:autoplac:7145-2764-EG",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 48700,
-        "priceBasis": null,
-        "year": 2022,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 129383,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null
@@ -3691,66 +4039,6 @@
         "cameraStatus": null,
         "structuralDamageStatus": null,
         "mileage": 99000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:autoplac:1492-6499-YL",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 45900,
-        "priceBasis": null,
-        "year": 2021,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 123000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:autoplac:0060-7009-GM",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 47900,
-        "priceBasis": null,
-        "year": 2022,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 150764,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null
@@ -3920,113 +4208,6 @@
       }
     },
     {
-      "id": "listing:olx:1101065415",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "engine_review_requires_verification",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 22999,
-        "priceBasis": "unknown",
-        "year": 2018,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-mpi-100",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 162000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:olx:1094170529",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 42998,
-        "priceBasis": "unknown",
-        "year": 2022,
-        "bodyCode": "wagon",
-        "engineVariant": "1.5-dpi-110",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 160199,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:autoplac:1047-6014-UA",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 52900,
-        "priceBasis": null,
-        "year": 2019,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-tgdi-140",
-        "transmissionCode": "manual",
-        "cameraStatus": "installed_confirmed",
-        "structuralDamageStatus": "unknown",
-        "mileage": 99539,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:automarket:T147419",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 41900,
-        "priceBasis": null,
-        "year": 2018,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-tgdi-140",
-        "transmissionCode": "manual",
-        "cameraStatus": "installed_confirmed",
-        "structuralDamageStatus": "unknown",
-        "mileage": 153000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": false
-      }
-    },
-    {
       "id": "listing:autopunkt:AAU05643IE",
       "modelKey": "hyundai-i30-iii-wagon",
       "verdict": "check",
@@ -4047,32 +4228,6 @@
         "cameraStatus": "unknown",
         "structuralDamageStatus": "unknown",
         "mileage": 146312,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:allegro-lokalnie:a55e49a8-b9a0-412f-830e-8d5d076aaaa0",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 46000,
-        "priceBasis": "gross_total",
-        "year": 2018,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-tgdi-140",
-        "transmissionCode": "automatic",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 156000,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null
@@ -4134,60 +4289,6 @@
       }
     },
     {
-      "id": "listing:autoplac:9862-7198-CV",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "engine_review_requires_verification",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 46500,
-        "priceBasis": "gross_total",
-        "year": 2018,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-mpi-100",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 103750,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:autoplac:9572-3905-EU",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "engine_review_requires_verification",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 38900,
-        "priceBasis": "gross_total",
-        "year": 2019,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-mpi-100",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 162700,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
       "id": "listing:olx:1108714676",
       "modelKey": "hyundai-i30-iii-wagon",
       "verdict": "check",
@@ -4238,33 +4339,6 @@
       }
     },
     {
-      "id": "listing:olx:1109370005",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "engine_review_requires_verification",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 41900,
-        "priceBasis": "gross_total",
-        "year": 2019,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-mpi-100",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 121223,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
       "id": "listing:olx:1106021585",
       "modelKey": "hyundai-i30-iii-wagon",
       "verdict": "check",
@@ -4286,33 +4360,6 @@
         "cameraStatus": "unknown",
         "structuralDamageStatus": "unknown",
         "mileage": 142125,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:sprzedajemy:70513445",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "engine_review_requires_verification",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 38900,
-        "priceBasis": "gross_total",
-        "year": 2018,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-mpi-100",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 88769,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null
@@ -4372,30 +4419,105 @@
       }
     },
     {
-      "id": "listing:otomoto:ID6Ihu7p",
-      "modelKey": "kia-ceed-iii-sw",
+      "id": "listing:olx:1093230472",
+      "modelKey": "hyundai-i30-iii-wagon",
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_purchase_price",
-        "body",
-        "exact_engine_variant",
-        "transmission",
+        "engine_review_requires_verification",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 43500,
+        "priceBasis": "gross_total",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-mpi-100",
+        "transmissionCode": "manual",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 78140,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:autoplac:1416-7933-KJ",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
       ],
       "preferenceNotes": [],
       "input": {
-        "price": 55000,
-        "priceBasis": null,
-        "year": 2020,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 85026,
+        "price": 42890,
+        "priceBasis": "gross_total",
+        "year": 2019,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-mpi-100",
+        "transmissionCode": "manual",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 142329,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:autoplac:0154-6914-CJ",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "engine_review_requires_verification",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 46100,
+        "priceBasis": "gross_total",
+        "year": 2019,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-mpi-100",
+        "transmissionCode": "manual",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 109000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:sprzedajemy:73931017",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 46900,
+        "priceBasis": "gross_total",
+        "year": 2022,
+        "bodyCode": "wagon",
+        "engineVariant": "1.5-dpi-110",
+        "transmissionCode": "manual",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 150764,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null
@@ -4432,36 +4554,6 @@
       }
     },
     {
-      "id": "listing:otomoto:ID6IitBU",
-      "modelKey": "kia-ceed-iii-sw",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 46999,
-        "priceBasis": null,
-        "year": 2020,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 164406,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
       "id": "listing:autoplac:5272-7704-QL",
       "modelKey": "kia-ceed-iii-sw",
       "verdict": "check",
@@ -4486,6 +4578,229 @@
         "cameraStatus": null,
         "structuralDamageStatus": null,
         "mileage": 105817,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:autoplac:7248-2032-PJ",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "body",
+        "exact_engine_variant",
+        "transmission",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 46000,
+        "priceBasis": null,
+        "year": 2019,
+        "bodyCode": null,
+        "engineVariant": null,
+        "transmissionCode": null,
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 160000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:automarket:T88922",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 51699,
+        "priceBasis": null,
+        "year": 2020,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-tgdi-140",
+        "transmissionCode": "automatic",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 136491,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:automarket:T179898",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 50000,
+        "priceBasis": null,
+        "year": 2019,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-tgdi-140",
+        "transmissionCode": "automatic",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 131625,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:automarket:T180234",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 47000,
+        "priceBasis": null,
+        "year": 2020,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-tgdi-140",
+        "transmissionCode": "automatic",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 164406,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:automarket:T180544",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 55000,
+        "priceBasis": null,
+        "year": 2020,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-tgdi-140",
+        "transmissionCode": "manual",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 85026,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:sprzedajemy:73545565",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "body",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 51900,
+        "priceBasis": "gross_total",
+        "year": 2019,
+        "bodyCode": null,
+        "engineVariant": "1.4-tgdi-140",
+        "transmissionCode": "manual",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 118000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:otomoto:ID6Ihu7p",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "body",
+        "exact_engine_variant",
+        "transmission",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 55000,
+        "priceBasis": null,
+        "year": 2020,
+        "bodyCode": null,
+        "engineVariant": null,
+        "transmissionCode": null,
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 85026,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:otomoto:ID6IitBU",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "body",
+        "exact_engine_variant",
+        "transmission",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 46999,
+        "priceBasis": null,
+        "year": 2020,
+        "bodyCode": null,
+        "engineVariant": null,
+        "transmissionCode": null,
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 164406,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null
@@ -4603,62 +4918,6 @@
       }
     },
     {
-      "id": "listing:autoplac:7248-2032-PJ",
-      "modelKey": "kia-ceed-iii-sw",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 46000,
-        "priceBasis": null,
-        "year": 2019,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 160000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:automarket:T88922",
-      "modelKey": "kia-ceed-iii-sw",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 51699,
-        "priceBasis": null,
-        "year": 2020,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-tgdi-140",
-        "transmissionCode": "automatic",
-        "cameraStatus": "installed_confirmed",
-        "structuralDamageStatus": "unknown",
-        "mileage": 136491,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
       "id": "listing:automarket:T180708",
       "modelKey": "kia-ceed-iii-sw",
       "verdict": "check",
@@ -4680,60 +4939,6 @@
         "cameraStatus": "unknown",
         "structuralDamageStatus": "unknown",
         "mileage": 136850,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:automarket:T179898",
-      "modelKey": "kia-ceed-iii-sw",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 50000,
-        "priceBasis": null,
-        "year": 2019,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-tgdi-140",
-        "transmissionCode": "automatic",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 131625,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:automarket:T180234",
-      "modelKey": "kia-ceed-iii-sw",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 47000,
-        "priceBasis": null,
-        "year": 2020,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-tgdi-140",
-        "transmissionCode": "automatic",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 164406,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null
@@ -4817,7 +5022,59 @@
       }
     },
     {
-      "id": "listing:sprzedajemy:72146103",
+      "id": "listing:olx:1105370309",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 42700,
+        "priceBasis": "gross_total",
+        "year": 2019,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-mpi-100",
+        "transmissionCode": "manual",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 169000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:autoplac:4608-7792-GG",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 49900,
+        "priceBasis": "gross_total",
+        "year": 2020,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-tgdi-140",
+        "transmissionCode": "automatic",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 140000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:aaaauto:27992427",
       "modelKey": "kia-ceed-iii-sw",
       "verdict": "check",
       "failures": [],
@@ -4827,69 +5084,15 @@
       ],
       "preferenceNotes": [],
       "input": {
-        "price": 53900,
+        "price": 51000,
         "priceBasis": "gross_total",
         "year": 2020,
         "bodyCode": "wagon",
         "engineVariant": "1.4-tgdi-140",
-        "transmissionCode": "manual",
+        "transmissionCode": "automatic",
         "cameraStatus": "installed_confirmed",
         "structuralDamageStatus": "unknown",
-        "mileage": 129500,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:otomoto:ID6IaKVJ",
-      "modelKey": "seat-leon-iii-st",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 46900,
-        "priceBasis": null,
-        "year": 2018,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-tsi-ea211-125",
-        "transmissionCode": "manual",
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 140000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:olx:1110426795",
-      "modelKey": "seat-leon-iii-st",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 50900,
-        "priceBasis": null,
-        "year": 2018,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-tsi-ea211-125",
-        "transmissionCode": "manual",
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 114700,
+        "mileage": 136850,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null
@@ -4954,31 +5157,6 @@
       }
     },
     {
-      "id": "listing:otomoto:ID6IjmTL",
-      "modelKey": "seat-leon-iii-st",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 50900,
-        "priceBasis": "gross_total",
-        "year": 2018,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-tsi-ea211-125",
-        "transmissionCode": "manual",
-        "cameraStatus": "installed_confirmed",
-        "structuralDamageStatus": "unknown",
-        "mileage": 114700,
-        "familyFitConfirmed": false,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
       "id": "listing:autoplac:7840-5141-TW",
       "modelKey": "seat-leon-iii-st",
       "verdict": "check",
@@ -4999,32 +5177,6 @@
         "cameraStatus": "unknown",
         "structuralDamageStatus": "unknown",
         "mileage": 107460,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:otomoto:ID6IiMlg",
-      "modelKey": "seat-leon-iii-st",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 49999,
-        "priceBasis": "unknown",
-        "year": 2018,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-tsi-ea211-125",
-        "transmissionCode": "manual",
-        "cameraStatus": "installed_confirmed",
-        "structuralDamageStatus": "unknown",
-        "mileage": 130000,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null
@@ -5057,30 +5209,181 @@
       }
     },
     {
-      "id": "listing:otomoto:ID6Ii8aR",
-      "modelKey": "skoda-octavia-iii-combi",
+      "id": "listing:otomoto:ID6IaKVJ",
+      "modelKey": "seat-leon-iii-st",
       "verdict": "check",
       "failures": [],
       "unknowns": [
         "gross_purchase_price",
-        "body",
-        "exact_engine_variant",
-        "transmission",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
       ],
       "preferenceNotes": [],
       "input": {
-        "price": 49500,
+        "price": 46900,
         "priceBasis": null,
         "year": 2018,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-tsi-ea211-125",
+        "transmissionCode": "manual",
         "cameraStatus": null,
         "structuralDamageStatus": null,
-        "mileage": 123605,
+        "mileage": 140000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:olx:1110426795",
+      "modelKey": "seat-leon-iii-st",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 50900,
+        "priceBasis": null,
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-tsi-ea211-125",
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 114700,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:otomoto:ID6IjmTL",
+      "modelKey": "seat-leon-iii-st",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 50900,
+        "priceBasis": "gross_total",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-tsi-ea211-125",
+        "transmissionCode": "manual",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 114700,
+        "familyFitConfirmed": false,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:otomoto:ID6IiMlg",
+      "modelKey": "seat-leon-iii-st",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 49999,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-tsi-ea211-125",
+        "transmissionCode": "manual",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 130000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:otomoto:ID6HTzMA",
+      "modelKey": "seat-leon-iii-st",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 53900,
+        "priceBasis": "gross_total",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-tsi-ea211-125",
+        "transmissionCode": "manual",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 89287,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:autoplac:7910-1456-SB",
+      "modelKey": "seat-leon-iii-st",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 46999,
+        "priceBasis": "gross_total",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-tsi-ea211-125",
+        "transmissionCode": "manual",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 88000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "vin:VSSZZZ5FZJR038225",
+      "modelKey": "seat-leon-iii-st",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 44999,
+        "priceBasis": "gross_total",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-tsi-ea211-125",
+        "transmissionCode": "manual",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 88000,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null
@@ -5177,6 +5480,151 @@
       }
     },
     {
+      "id": "listing:autoplac:7052-2823-ZX",
+      "modelKey": "skoda-octavia-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "engine_review_requires_verification",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 49499,
+        "priceBasis": "gross_total",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-tsi-ea211-150",
+        "transmissionCode": "manual",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 123605,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:otomoto:ID6I9d1t",
+      "modelKey": "skoda-octavia-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "body",
+        "exact_engine_variant",
+        "transmission",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 53000,
+        "priceBasis": null,
+        "year": 2018,
+        "bodyCode": null,
+        "engineVariant": null,
+        "transmissionCode": null,
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 118000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:olx:1100952300",
+      "modelKey": "skoda-octavia-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "engine_review_requires_verification",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [
+        "LPG: potwierdzić dokumenty instalacji, homologację zbiornika i serwis"
+      ],
+      "input": {
+        "price": 49000,
+        "priceBasis": null,
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-tsi-ea211-150",
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 131312,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": true
+      }
+    },
+    {
+      "id": "listing:olx:ID1c50yG",
+      "modelKey": "skoda-octavia-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 49990,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 132000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:otomoto:ID6Ii8aR",
+      "modelKey": "skoda-octavia-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "body",
+        "exact_engine_variant",
+        "transmission",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 49500,
+        "priceBasis": null,
+        "year": 2018,
+        "bodyCode": null,
+        "engineVariant": null,
+        "transmissionCode": null,
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 123605,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
       "id": "listing:olx:ID1cQiTC",
       "modelKey": "skoda-octavia-iii-combi",
       "verdict": "check",
@@ -5204,11 +5652,12 @@
       }
     },
     {
-      "id": "listing:autoplac:7052-2823-ZX",
+      "id": "listing:otomoto:6146967813",
       "modelKey": "skoda-octavia-iii-combi",
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
         "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
@@ -5216,15 +5665,15 @@
       ],
       "preferenceNotes": [],
       "input": {
-        "price": 49499,
-        "priceBasis": "gross_total",
+        "price": 48900,
+        "priceBasis": null,
         "year": 2018,
         "bodyCode": "wagon",
         "engineVariant": "1.4-tsi-ea211-150",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 123605,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 149980,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null
@@ -5455,7 +5904,60 @@
       }
     },
     {
-      "id": "vin:TSMLYDA1S00442946",
+      "id": "listing:autoplac:4983-2601-FU",
+      "modelKey": "suzuki-vitara-ii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 38900,
+        "priceBasis": null,
+        "year": 2018,
+        "bodyCode": "suv",
+        "engineVariant": "1.6-vvt-120",
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 150000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:automarket:T237054",
+      "modelKey": "suzuki-vitara-ii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 51900,
+        "priceBasis": null,
+        "year": 2019,
+        "bodyCode": "suv",
+        "engineVariant": "1.4-boosterjet-140",
+        "transmissionCode": "automatic",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 162000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:autoplac:8822-4153-ST",
       "modelKey": "suzuki-vitara-ii",
       "verdict": "check",
       "failures": [],
@@ -5466,11 +5968,12 @@
         "transmission",
         "camera_or_compatible_retrofit",
         "structural_history",
-        "stroller_and_family_fit"
+        "stroller_and_family_fit",
+        "purchase_not_auction"
       ],
       "preferenceNotes": [],
       "input": {
-        "price": 50900,
+        "price": 49800,
         "priceBasis": null,
         "year": 2018,
         "bodyCode": null,
@@ -5478,7 +5981,109 @@
         "transmissionCode": null,
         "cameraStatus": null,
         "structuralDamageStatus": null,
-        "mileage": 103250,
+        "mileage": 119000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:olx:1096226049",
+      "modelKey": "suzuki-vitara-ii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 50000,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "suv",
+        "engineVariant": "1.4-boosterjet-140",
+        "transmissionCode": "manual",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 160031,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:olx:1098944979",
+      "modelKey": "suzuki-vitara-ii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 52900,
+        "priceBasis": "unknown",
+        "year": 2019,
+        "bodyCode": "suv",
+        "engineVariant": "1.4-boosterjet-140",
+        "transmissionCode": "manual",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 47000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:otomoto:ID6IdNp7",
+      "modelKey": "suzuki-vitara-ii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 52900,
+        "priceBasis": "gross_total",
+        "year": 2018,
+        "bodyCode": "suv",
+        "engineVariant": "1.4-boosterjet-140",
+        "transmissionCode": "manual",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 134755,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:olx:1097096349",
+      "modelKey": "suzuki-vitara-ii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 53999,
+        "priceBasis": "gross_total",
+        "year": 2018,
+        "bodyCode": "suv",
+        "engineVariant": "1.6-vvt-120",
+        "transmissionCode": "manual",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 163013,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null
@@ -5624,53 +6229,52 @@
       }
     },
     {
-      "id": "listing:autoplac:4983-2601-FU",
+      "id": "listing:otomoto:6151248873",
       "modelKey": "suzuki-vitara-ii",
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_purchase_price",
-        "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
       ],
       "preferenceNotes": [],
       "input": {
-        "price": 38900,
-        "priceBasis": null,
+        "price": 53900,
+        "priceBasis": "gross_total",
         "year": 2018,
         "bodyCode": "suv",
         "engineVariant": "1.6-vvt-120",
         "transmissionCode": "manual",
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 150000,
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 106000,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null
       }
     },
     {
-      "id": "listing:automarket:T237054",
+      "id": "listing:otomoto:6151333908",
       "modelKey": "suzuki-vitara-ii",
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
       ],
       "preferenceNotes": [],
       "input": {
-        "price": 51900,
-        "priceBasis": null,
-        "year": 2019,
+        "price": 49999,
+        "priceBasis": "gross_total",
+        "year": 2018,
         "bodyCode": "suv",
-        "engineVariant": "1.4-boosterjet-140",
-        "transmissionCode": "automatic",
-        "cameraStatus": "installed_confirmed",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": "unknown",
         "structuralDamageStatus": "unknown",
-        "mileage": 162000,
+        "mileage": 71743,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null
@@ -5702,33 +6306,6 @@
       }
     },
     {
-      "id": "listing:otomoto:6151062018",
-      "modelKey": "toyota-auris-touring-sports",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [
-        "LPG: potwierdzić dokumenty instalacji, homologację zbiornika i serwis"
-      ],
-      "input": {
-        "price": 48000,
-        "priceBasis": "gross_total",
-        "year": 2018,
-        "bodyCode": "wagon",
-        "engineVariant": "1.8-hybrid-136",
-        "transmissionCode": "automatic",
-        "cameraStatus": "installed_confirmed",
-        "structuralDamageStatus": "unknown",
-        "mileage": 166927,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": true
-      }
-    },
-    {
       "id": "listing:autoplac:7718-1651-TH",
       "modelKey": "toyota-auris-touring-sports",
       "verdict": "check",
@@ -5754,6 +6331,33 @@
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:otomoto:6151062018",
+      "modelKey": "toyota-auris-touring-sports",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [
+        "LPG: potwierdzić dokumenty instalacji, homologację zbiornika i serwis"
+      ],
+      "input": {
+        "price": 48000,
+        "priceBasis": "gross_total",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": "1.8-hybrid-136",
+        "transmissionCode": "automatic",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 166927,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": true
       }
     },
     {
@@ -5813,26 +6417,109 @@
       }
     },
     {
-      "id": "listing:autoplac:0760-5834-PA",
+      "id": "listing:otomoto:6151111263",
       "modelKey": "toyota-auris-touring-sports",
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
       ],
       "preferenceNotes": [],
       "input": {
-        "price": 24200,
+        "price": 45000,
         "priceBasis": "gross_total",
         "year": 2018,
         "bodyCode": "wagon",
-        "engineVariant": "1.8-hybrid-136",
-        "transmissionCode": "automatic",
+        "engineVariant": "1.6-valvematic-132",
+        "transmissionCode": "manual",
         "cameraStatus": "unknown",
         "structuralDamageStatus": "unknown",
-        "mileage": 160000,
+        "mileage": 148000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:olx:ID1d6Ixr",
+      "modelKey": "toyota-auris-touring-sports",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "engine_review_requires_verification",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 43800,
+        "priceBasis": "gross_total",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": "1.6-valvematic-132",
+        "transmissionCode": "manual",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 149850,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:toyota-pewne-auto:434239",
+      "modelKey": "toyota-auris-touring-sports",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "engine_review_requires_verification",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 51900,
+        "priceBasis": "gross_total",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": "1.6-valvematic-132",
+        "transmissionCode": "manual",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 145648,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:olx:1094330256",
+      "modelKey": "toyota-corolla-e210",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "body",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 54500,
+        "priceBasis": null,
+        "year": 2019,
+        "bodyCode": null,
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 140229,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null
@@ -5895,8 +6582,64 @@
       }
     },
     {
-      "id": "listing:autoplac:4541-3083-BH",
-      "modelKey": "toyota-corolla-e210",
+      "id": "vin:TMBER6NW1N3065943",
+      "modelKey": "skoda-scala",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "engine_review_requires_verification",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 48000,
+        "priceBasis": null,
+        "year": 2022,
+        "bodyCode": "hatchback",
+        "engineVariant": "1.0-tsi-110",
+        "transmissionCode": "manual",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 142412,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:autoplac:3607-8813-VK",
+      "modelKey": "skoda-scala",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "engine_review_requires_verification",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 45900,
+        "priceBasis": null,
+        "year": 2021,
+        "bodyCode": "hatchback",
+        "engineVariant": "1.0-tsi-110",
+        "transmissionCode": "manual",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 118000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:autoplac:9465-3557-JC",
+      "modelKey": "skoda-scala",
       "verdict": "check",
       "failures": [],
       "unknowns": [
@@ -5907,15 +6650,232 @@
       ],
       "preferenceNotes": [],
       "input": {
-        "price": 19800,
+        "price": 53700,
         "priceBasis": "gross_total",
-        "year": 2019,
-        "bodyCode": "sedan",
-        "engineVariant": "1.6-valvematic-132",
+        "year": 2021,
+        "bodyCode": "hatchback",
+        "engineVariant": "1.0-tsi-110",
         "transmissionCode": "automatic",
         "cameraStatus": "unknown",
         "structuralDamageStatus": "unknown",
-        "mileage": 138125,
+        "mileage": 80000,
+        "familyFitConfirmed": false,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:autoplac:5233-7770-QF",
+      "modelKey": "skoda-scala",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "engine_review_requires_verification",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 53900,
+        "priceBasis": "gross_total",
+        "year": 2022,
+        "bodyCode": "hatchback",
+        "engineVariant": "1.0-tsi-110",
+        "transmissionCode": "manual",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 55300,
+        "familyFitConfirmed": false,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "vin:TMBER6NW5N3041760",
+      "modelKey": "skoda-scala",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "engine_review_requires_verification",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 42500,
+        "priceBasis": null,
+        "year": 2021,
+        "bodyCode": "hatchback",
+        "engineVariant": "1.0-tsi-110",
+        "transmissionCode": "manual",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 166876,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:automarket:T144062",
+      "modelKey": "skoda-scala",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "engine_review_requires_verification",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 52900,
+        "priceBasis": "gross_total",
+        "year": 2022,
+        "bodyCode": "hatchback",
+        "engineVariant": "1.0-tsi-110",
+        "transmissionCode": "manual",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 112410,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:olx:1095446746",
+      "modelKey": "skoda-scala",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "engine_review_requires_verification",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 44998,
+        "priceBasis": null,
+        "year": 2021,
+        "bodyCode": "hatchback",
+        "engineVariant": "1.0-tsi-110",
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 149327,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "vin:TMBER6NW9M3160605",
+      "modelKey": "skoda-scala",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "engine_review_requires_verification",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 47900,
+        "priceBasis": null,
+        "year": 2021,
+        "bodyCode": "hatchback",
+        "engineVariant": "1.0-tsi-110",
+        "transmissionCode": "manual",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 109243,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:olx:ID1cVId5",
+      "modelKey": "skoda-scala",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 47500,
+        "priceBasis": "gross_total",
+        "year": 2020,
+        "bodyCode": "hatchback",
+        "engineVariant": "1.0-tsi-115",
+        "transmissionCode": "manual",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 94000,
+        "familyFitConfirmed": false,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:olx:ID1bRO4I",
+      "modelKey": "skoda-scala",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 54200,
+        "priceBasis": "gross_total",
+        "year": 2020,
+        "bodyCode": "hatchback",
+        "engineVariant": "1.0-tsi-115",
+        "transmissionCode": "automatic",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 94500,
+        "familyFitConfirmed": false,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:olx:ID1c2g9b",
+      "modelKey": "skoda-scala",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "engine_review_requires_verification",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 51900,
+        "priceBasis": "unknown",
+        "year": 2022,
+        "bodyCode": "hatchback",
+        "engineVariant": "1.0-tsi-110",
+        "transmissionCode": "manual",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 98600,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null
@@ -5977,62 +6937,6 @@
       }
     },
     {
-      "id": "listing:autoplac:3607-8813-VK",
-      "modelKey": "skoda-scala",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "engine_review_requires_verification",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 45900,
-        "priceBasis": null,
-        "year": 2021,
-        "bodyCode": "hatchback",
-        "engineVariant": "1.0-tsi-110",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 118000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "vin:TMBER6NW1N3065943",
-      "modelKey": "skoda-scala",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "engine_review_requires_verification",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 48000,
-        "priceBasis": null,
-        "year": 2022,
-        "bodyCode": "hatchback",
-        "engineVariant": "1.0-tsi-110",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 142412,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
       "id": "listing:autopunkt:AAU06403IE",
       "modelKey": "skoda-scala",
       "verdict": "check",
@@ -6082,60 +6986,6 @@
         "structuralDamageStatus": "unknown",
         "mileage": 122750,
         "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:autoplac:9465-3557-JC",
-      "modelKey": "skoda-scala",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "engine_review_requires_verification",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 53700,
-        "priceBasis": "gross_total",
-        "year": 2021,
-        "bodyCode": "hatchback",
-        "engineVariant": "1.0-tsi-110",
-        "transmissionCode": "automatic",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 80000,
-        "familyFitConfirmed": false,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:autoplac:5233-7770-QF",
-      "modelKey": "skoda-scala",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "engine_review_requires_verification",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 53900,
-        "priceBasis": "gross_total",
-        "year": 2022,
-        "bodyCode": "hatchback",
-        "engineVariant": "1.0-tsi-110",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 55300,
-        "familyFitConfirmed": false,
         "saleType": "fixed_price",
         "lpgInstalled": null
       }
@@ -6215,6 +7065,189 @@
         "cameraStatus": "unknown",
         "structuralDamageStatus": "unknown",
         "mileage": 138632,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:autoplac:7356-2035-YD",
+      "modelKey": "skoda-scala",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "engine_review_requires_verification",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 53900,
+        "priceBasis": "gross_total",
+        "year": 2022,
+        "bodyCode": "hatchback",
+        "engineVariant": "1.0-tsi-110",
+        "transmissionCode": "manual",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 123440,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:automarket:T165779",
+      "modelKey": "skoda-scala",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "engine_review_requires_verification",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 54000,
+        "priceBasis": "gross_total",
+        "year": 2021,
+        "bodyCode": "hatchback",
+        "engineVariant": "1.0-tsi-110",
+        "transmissionCode": "manual",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 82704,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": false
+      }
+    },
+    {
+      "id": "listing:olx:1104658131",
+      "modelKey": "skoda-superb-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 49999,
+        "priceBasis": "gross_total",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-tsi-ea211-150",
+        "transmissionCode": "manual",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 163692,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:autoplac:5914-3435-CE",
+      "modelKey": "skoda-superb-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 52900,
+        "priceBasis": "gross_total",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-tsi-ea211-150",
+        "transmissionCode": "manual",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 156000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:otomoto:6147568392",
+      "modelKey": "toyota-avensis-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 48000,
+        "priceBasis": "gross_total",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": "1.8-valvematic-147",
+        "transmissionCode": "automatic",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 159648,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:autoplac:4793-2321-NK",
+      "modelKey": "toyota-avensis-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 53900,
+        "priceBasis": "gross_total",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": "1.8-valvematic-147",
+        "transmissionCode": "automatic",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 163000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:otomoto:ID6IiHi1",
+      "modelKey": "mazda-6-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 53900,
+        "priceBasis": "gross_total",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": "2.0-skyactiv-g-145",
+        "transmissionCode": "manual",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 165713,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null

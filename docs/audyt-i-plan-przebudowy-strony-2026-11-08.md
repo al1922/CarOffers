@@ -1,7 +1,13 @@
 # Audyt i plan przebudowy CarOffers
 
-Stan: 8 listopada 2026. Zakres zatwierdzony przez użytkownika: audyt i plan,
-bez implementacji przebudowy. Przejrzano działającą stronę we wbudowanej
+> **Dokument historyczny — stan na 8 listopada 2026 r.** To zapis audytu i planu
+> z tamtego dnia, a nie opis bieżącej aplikacji. Liczby i obserwacje poniżej są
+> historyczne; przed podjęciem decyzji należy porównać je z aktualnym kodem,
+> konfiguracją i danymi. Późniejsza walidacja konfiguracji (11 listopada 2026 r.)
+> wykazała 12 modeli, 24 źródła i 20 aktywnych adapterów.
+
+Zakres zatwierdzony przez użytkownika: audyt i plan, bez implementacji przebudowy.
+Przejrzano działającą stronę we wbudowanej
 przeglądarce, karty i tabelę, szczegóły oferty, kod oraz konfigurację.
 Walidacja: OK, 16 modeli i 26 zarejestrowanych źródeł. Liczba źródeł nie oznacza
 liczby działających adapterów ani pełnego pokrycia portali.

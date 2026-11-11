@@ -1,7 +1,9 @@
 # CarOffers — założenia i kolejność prac
 
 Stan: 8 listopada 2026. Ten dokument jest krótkim przewodnikiem po aktualnych
-ustaleniach. Konfiguracje JSON pozostają źródłem danych dla narzędzi.
+ustaleniach **z tamtego dnia**. To historyczna migawka: sekcje „kolejność prac”
+nie są bieżącą listą zadań. Konfiguracje JSON pozostają źródłem danych dla narzędzi;
+aktualny indeks dokumentów znajduje się w `docs/README.md`.
 
 ## Ustalone założenia kupującego
 
@@ -81,18 +83,15 @@ Do jawnego sprawdzenia przed zatwierdzeniem filtrów pozostają co najmniej:
    automatycznie po samym roku pierwszej rejestracji.
 2. Uzupełnić karty wyposażenia i kamer dla wszystkich aktywnych modeli, z
    rozdzieleniem dostępności w wersji od potwierdzenia wyposażenia konkretnego auta.
-3. Dodać widok odległości: katalog większych miast z lokalnymi współrzędnymi,
-   wybór miasta lub własnego punktu oraz obliczenie w przeglądarce. Odległość
-   w linii prostej pokazywać jako podstawową; ewentualny zakres drogowy oznaczać
-   jako przybliżenie.
+3. **Zrealizowano:** dodać widok odległości na podstawie lokalnego katalogu miast
+   i udokumentowanych współrzędnych; aktualny opis jest w [README](../README.md).
 4. Po zatwierdzeniu katalogu silników i przygotowaniu zbierania lokalizacji
    rozpocząć wyszukiwanie ofert.
 
 ## Mapa plików
 
 - `config/requirements.json` — szablon kryteriów dla nowego modelu.
-- `config/search-models.json` — aktywne wymagania zakupowe przypisane do każdego modelu.
-- `config/search-models.json` — modele, lata i zamknięta lista silników.
+- `config/search-models.json` — aktywne modele, wymagania zakupowe, lata i zamknięta lista silników.
 - `config/sources.json` — rejestr portali ogłoszeniowych.
 - `knowledge/models/*.json` — fakty, źródła, zakresy i otwarte pytania.
 - `offers/*.json` — dane ofert; opisy kryteriów są synchronizowane z konfiguracji.

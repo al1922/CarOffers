@@ -3,7 +3,7 @@ export const verdictNames = {match:'Zgodne z warunkami',check:'Do weryfikacji',f
 export const statuses = {considering:'Do rozważenia',contact:'Kontakt ze sprzedawcą',inspection:'Oględziny',rejected:'Odrzucone przeze mnie',bought:'Kupione'};
 export const bodyNames = {wagon:'Kombi',sedan:'Sedan',suv:'SUV',crossover:'Crossover',hatchback:'Hatchback',minivan:'Minivan'};
 export const reasons = {
- purchase_price:'Brak ceny zakupu',price_over_limit:'Cena ponad budżetem',price_exception_requires_user_confirmation:'Cena ponad budżetem — potrzebna Twoja decyzja',
+ purchase_price:'Brak ceny zakupu',gross_purchase_price:'Potwierdzić pełną cenę zakupu brutto',price_over_limit:'Cena ponad budżetem',price_exception_requires_user_confirmation:'Cena ponad budżetem — potrzebna Twoja decyzja',
  production_year:'Potwierdzić rok produkcji',year_outside_selection:'Rocznik poza zakresem',
  body:'Potwierdzić nadwozie',body_outside_selection:'Nadwozie poza zakresem',exact_engine_variant:'Potwierdzić dokładny wariant silnika',engine_outside_selection:'Silnik poza listą',engine_review_requires_verification:'Wariant silnika wymaga dodatkowej weryfikacji',
  transmission:'Potwierdzić skrzynię',transmission_outside_selection:'Skrzynia poza zakresem',camera_unavailable:'Brak możliwości instalacji kamery',camera_retrofit_not_allowed:'Montaż kamery poza wymaganiami',camera_or_compatible_retrofit:'Potwierdzić kamerę lub zgodność montażu',
