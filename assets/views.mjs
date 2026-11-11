@@ -106,17 +106,3 @@ export function updates(data){
  const grid=el('div','source-list');for(const source of data.sources){const card=el('article','info-card');card.append(el('h3','',source.name),badge(source.enabled?'Włączone w konfiguracji':'Wyłączone'),el('p','',data.sourceDefinitions[source.accessStatus]||source.accessStatus),el('p','hint','Ostatnia próba: '+dateLabel(source.lastAttemptAt)),el('p','',source.verification?.fullSearchCompleted?'Zapisano pełne przeszukanie.':'Pełne przeszukanie niepotwierdzone.'),link('Źródło ↗',source.url));grid.append(card);}wrap.append(grid);return wrap;
 }
 
-export function flowGuide(){
- const wrap=el('div','flow-guide');
- wrap.append(el('p','section-intro','Wybierz zadanie. Przycisk skopiuje gotową prośbę — wklej ją w czacie, a agent poprowadzi cały przebieg i dobierze szczegóły z konfiguracji.'));
- const cards=[
-  ['Szukaj nowych ofert','Przeszukaj wszystkie aktywne modele i portale. Przyda się, gdy chcesz znaleźć nowe samochody.','Wyszukaj nowe oferty samochodów zgodnie z konfiguracją.'],
-  ['Sprawdź dostępność','Lekko sprawdź, czy zapisane ogłoszenia nadal są dostępne.','Sprawdź, czy aktualne oferty nadal istnieją lub są dostępne.'],
-  ['Odśwież dane ofert','Ponownie odczytaj zapisane karty i uaktualnij potwierdzone dane aut.','Zrób pełne odświeżenie danych aktualnych ofert.'],
-  ['Poleć modele','Przygotuj ranking modeli i zweryfikuj po jednej aktualnej ofercie dla najlepszych.','Przygotuj ranking polecanych modeli.']
- ];
- const grid=el('div','flow-grid');
- for(const [title,description,prompt] of cards){const card=el('article','info-card flow-card');card.append(el('h2','',title),el('p','',description));const action=button('Kopiuj prośbę ↗',async()=>{try{await navigator.clipboard.writeText(prompt);action.textContent='Skopiowano — wklej w czacie';action.classList.add('copied');}catch{action.textContent=prompt;}} ,'button primary');action.dataset.flowPrompt=prompt;card.append(action);grid.append(card);}
- wrap.append(grid,el('p','hint','Możesz też opisać cel własnymi słowami, np. „znajdź kilka nowych aut” albo „czy te oferty są jeszcze aktualne?”. Nie trzeba znać nazw flow.'));
- return wrap;
-}

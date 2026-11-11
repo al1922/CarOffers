@@ -491,6 +491,11 @@ def prepare(root, run_id, config):
                 conflicts.append({"taskId": task["id"], "offerId": incoming.get("id"),
                                   "url": observation["url"], "reason": reason})
                 continue
+            if (task.get("kind") in ("refresh", "availability") and matches
+                    and collection == "archivedOffers"):
+                skipped.append({"taskId": task["id"], "offerId": incoming.get("id"),
+                                "url": observation["url"], "reason": "offer_archived_since_plan"})
+                continue
             if task.get("kind") == "search" and matches and collection == "offers":
                 skipped.append({"taskId": task["id"], "offerId": incoming.get("id"),
                                 "url": observation["url"], "reason": "already_active_offer"})

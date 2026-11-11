@@ -1,7 +1,7 @@
 import {defaultFilters,sanitizeFilters,encodeFilters,decodeFilters,dedupe,filterOffers,sortOffers,bodyNames,statuses,fmt,dateLabel,distance,availability,verdictNames} from './assets/core.mjs?v=14';
 import {createStore} from './assets/storage.mjs?v=11';
 import {loadData,loadKnowledge} from './assets/data.mjs?v=14';
-import {el,button,badge,empty,link,offerCard,archivedOfferCard,offerTable,offerDetails,comparison,knowledgeCard,knowledgeDetails,updates,flowGuide} from './assets/views.mjs?v=16';
+import {el,button,badge,empty,link,offerCard,archivedOfferCard,offerTable,offerDetails,comparison,knowledgeCard,knowledgeDetails,updates} from './assets/views.mjs?v=15';
 
 const $=selector=>document.querySelector(selector);
 let data=null,filters=defaultFilters(),comparisonKeys=new Set(),grouped=[],archivedGrouped=[],loadToken=0;
@@ -73,11 +73,11 @@ function render(){
  archivedGrouped=dedupe(data.archivedOffers||[]);
  $('#nav-total').textContent=grouped.length;$('#nav-archive').textContent=archivedGrouped.length;$('#nav-saved').textContent=grouped.filter(o=>store.meta(o).favorite).length;$('#nav-compare').textContent=selectedComparison().length;
  document.querySelectorAll('[data-section]').forEach(b=>{const active=b.dataset.section===filters.section;b.classList.toggle('active',active);if(active)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
- const titles={offers:'Oferty samochodów',archive:'Archiwum',saved:'Zapisane',compare:'Porównanie',recommended:'Polecane modele',knowledge:'Modele i wiedza',flows:'Co mogę uruchomić?',updates:'Aktualizacje'};
+ const titles={offers:'Oferty samochodów',archive:'Archiwum',saved:'Zapisane',compare:'Porównanie',recommended:'Polecane modele',knowledge:'Modele i wiedza',updates:'Aktualizacje'};
  $('#page-title').textContent=titles[filters.section];$('#page-title').tabIndex=-1;document.title=titles[filters.section]+' — CarOffers';
  const browsing=['offers','saved'].includes(filters.section);
  $('#browser-tools').hidden=!browsing;$('#offers-section').hidden=!browsing;$('#requirements').hidden=!browsing;
- for(const section of ['archive','compare','recommended','knowledge','flows','updates'])$('#'+section+'-section').hidden=filters.section!==section;
+ for(const section of ['archive','compare','recommended','knowledge','updates'])$('#'+section+'-section').hidden=filters.section!==section;
  $('#overview').hidden=filters.section==='archive';
  overview();
  for(const input of document.querySelectorAll('[data-filter]')){const value=filters[input.dataset.filter];if(input.type==='checkbox')input.checked=value;else input.value=value;}
@@ -104,7 +104,6 @@ function render(){
  if(filters.section==='archive')renderArchive();
  if(filters.section==='recommended')renderRecommended();
  if(filters.section==='knowledge'){const container=$('#knowledge-section'),grid=el('div','knowledge-grid');grid.append(...data.catalog.models.filter(m=>m.active).map(m=>knowledgeCard(m,data.models.find(e=>e.key===m.key),openKnowledge)));container.replaceChildren(el('p','section-intro','Karty są częściowe. Luki w źródłach i warianty wstrzymane pozostają widoczne. Sama obecność silnika w katalogu nie oznacza rekomendacji trwałości.'),grid);}
- if(filters.section==='flows')$('#flows-section').replaceChildren(flowGuide());
  if(filters.section==='updates')$('#updates-section').replaceChildren(updates(data));
 }
 function openOffer(o){knowledgeToken++;$('#offer-detail').replaceChildren(offerDetails(o,context()));$('#offer-dialog').showModal();$('#offer-dialog').scrollTop=0;}

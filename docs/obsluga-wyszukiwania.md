@@ -296,7 +296,9 @@ Pełny kontrakt: [import ofert](import-ofert.md).
 ## Weryfikacja wszystkich zapisanych ogłoszeń
 
 `refresh-plan` bez dodatkowych filtrów tworzy zadania dla wszystkich URL-i ofert
-z aktywnej bazy. Oferta z archiwum nie jest odświeżana. Można zawęzić przebieg do
+z aktywnej bazy. Oferta z archiwum nie jest odświeżana ani przywracana przez ten
+przebieg; import pomija ją również wtedy, gdy trafiła do archiwum po utworzeniu
+planu. Można zawęzić przebieg do
 modeli/portali, wybrać konkretne ID-y albo ograniczyć go do ofert starszych niż
 podany wiek. Przykłady:
 
@@ -376,7 +378,9 @@ historii. Jeśli po sprawdzeniu wszystkich adresów auta nie ma ani jednej karty
 To usuwa go z aktywnej listy, ale nie stwierdza, że auto zostało sprzedane.
 Jeden dostępny URL pozostawia auto aktywne.
 Kolejka obejmuje wyłącznie `offers`; rekordy z `archivedOffers` są dostępne
-w zakładce „Archiwum” i nie są ponownie sprawdzane ani przenoszone automatycznie.
+w zakładce „Archiwum” i nie są ponownie sprawdzane ani przywracane przez flow
+dostępności lub aktualizacji. Mogą wrócić do aktywnej listy po potwierdzeniu
+dostępnego ogłoszenia w osobnym przebiegu wyszukiwania.
 
 Po `finish` wszystkich zadań koordynator wykonuje `import-preview`. Przy braku
 konfliktów stosuje `import-apply` i uruchamia walidację ofert. Historia zapisuje

@@ -4,15 +4,19 @@ Mapa odpowiedzialności modułów i rutyna pracy nad kodem są w
 `docs/architektura-dla-agenta.md`. Ten plik pozostaje źródłem szczegółowych zasad
 wyszukiwania, dowodów, importu i koordynacji.
 
-## Rozpoznawanie intencji w czacie
+## Menu flow w czacie
 
-Użytkownik nie musi znać nazw poleceń ani flow. Rozpoznawaj cel po zwykłym opisie
-i sam uruchamiaj właściwy przebieg: znalezienie aut oznacza `plan`; pytanie, czy
-ogłoszenia nadal istnieją, oznacza `availability-plan`; prośba o aktualizację
-danych zapisanych aut oznacza `refresh-plan`; ranking modeli oznacza rekomendacje
-dwuetapowe. Jeśli cel jest niejasny, krótko zaproponuj te opcje prostym językiem
-i wskaż, czym się różnią. Nie każ użytkownikowi uruchamiać CLI ani podawać nazw
-wewnętrznych flow.
+Gdy użytkownik wyśle samo `/flow` (lub poprosi o listę dostępnych flow), pokaż
+krótkie menu po polsku i poproś o wybór. Nie uruchamiaj przebiegu, dopóki
+użytkownik go nie wybierze. Opcje:
+
+- **Szukaj nowych ofert** — przeszukaj wszystkie aktywne modele i portale.
+- **Sprawdź dostępność** — sprawdź, czy aktywne ogłoszenia nadal są dostępne.
+- **Odśwież dane ofert** — ponownie odczytaj zapisane karty i potwierdzone dane.
+- **Poleć modele** — wykonaj dwuetapowy ranking modeli i ofert.
+
+Użytkownik może wybrać numer lub opisać cel własnymi słowami. Zwykłe prośby
+wykonuj bez wymagania komendy `/flow` ani nazw wewnętrznych.
 
 ## Dane wejściowe
 
@@ -114,7 +118,10 @@ cache lub wspólny element strony nie potwierdzają dostępności. `finish` odrz
 przetwarzać osobne zadania portal/model. Po zakończeniu wykonaj `import-preview`,
 `import-apply` i walidację ofert; dla samej dostępności nie uruchamiaj `assess`.
 Zakładka „Archiwum” wyświetla wyłącznie `archivedOffers`; nie dodawaj tych URL-i
-do kolejki. Każdy aktywny rekord, którego wszystkie URL-e sprawdzono i żaden nie
+do kolejki. Dotyczy to zarówno `availability-plan`, jak i `refresh-plan`; import
+wyników tych przebiegów pomija też rekord, który trafił do archiwum już po
+utworzeniu planu. Żaden z tych przebiegów nie przywraca ofert z archiwum.
+Każdy aktywny rekord, którego wszystkie URL-e sprawdzono i żaden nie
 potwierdził dostępności, przenieś do archiwum: `closed` tylko przy potwierdzonym
 zamknięciu wszystkich adresów, w pozostałych przypadkach `unverified`. Rekordy
 `excluded` pozostają tam i nie są przywracane automatycznie.
