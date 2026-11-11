@@ -397,6 +397,14 @@ Po `import-preview` i `import-apply` potwierdzona dostępna oferta wraca do
 zmieniony na aktywny albo `excluded` już po utworzeniu planu, jest pomijany.
 Flow nie zmienia istniejących aktywnych ofert.
 
+Import naprawia też stare błędne archiwizacje: jeśli rekord ma status `unverified`,
+a ostatni udany status któregoś URL-a nadal wynosi `available`, późniejszy
+`access_error` nie jest traktowany jako dowód zamknięcia i oferta wraca do
+`offers`. Najnowsza próba pozostaje błędem dostępu, a `lastVerifiedAt` nie jest
+odświeżany. Gdy bieżący przebieg potwierdzi zamknięcie każdego URL-a, status
+archiwum zmienia się na `closed`; błąd dostępu lub brak obserwacji blokuje to
+potwierdzenie. Rekord `excluded` nie jest przywracany.
+
 ```powershell
 python -B scripts/car-search.py archive-availability-plan --run sprawdz-archiwum-2026-11-11 --agents 4
 python -B scripts/car-search.py claim --run sprawdz-archiwum-2026-11-11 --worker worker-1 |

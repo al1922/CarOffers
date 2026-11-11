@@ -1969,825 +1969,6 @@
         "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE5OTQ3NF84/XzE2MDB4MTIwMHg5/NV85LmpwZw.webp",
         "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE5OTQ3NF85/XzE2MDB4MTIwMHg5/NV85LmpwZw.webp"
       ]
-    }
-  ],
-  "archivedOffers": [
-    {
-      "id": "listing:otomoto:ID6Iej1t",
-      "modelKey": "kia-ceed-iii-sw",
-      "vin": null,
-      "listingIds": [
-        "otomoto:ID6Iej1t"
-      ],
-      "urls": [
-        {
-          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Iej1t.html",
-          "normalized": "https://otomoto.pl/osobowe/oferta/kia-ceed-ID6Iej1t.html",
-          "label": "Zobacz ogłoszenie"
-        }
-      ],
-      "title": "Kia Ceed III Sportswagon — 1.4 T-GDI · 140 KM  156 000 km",
-      "year": 2020,
-      "price": 49500,
-      "priceLabel": "49 500 zł",
-      "mileage": 156000,
-      "mileageLabel": "156 000 km",
-      "engine": "1.4 T-GDI · 140 KM",
-      "body": "Kombi / SW",
-      "transmission": "Automatyczna DCT",
-      "seller": "Sprzedawca · Tomaszów Lubelski",
-      "subtitle": "2020 · Kombi / SW · 1.4 T-GDI · 140 KM",
-      "priority": "Priorytet 3",
-      "verdict": "check",
-      "verdictTitle": "Do weryfikacji",
-      "verdictNote": "body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
-      "specs": {
-        "rocznik": "2020",
-        "nadwozie": "Kombi / SW",
-        "silnik": "1.4 T-GDI · 140 KM",
-        "skrzynia": "Automatyczna DCT",
-        "przebieg": "156 000 km",
-        "cena zakupu": "49 500 zł"
-      },
-      "details": {
-        "Historia i pochodzenie": "Sprowadzona z Niemiec. Sprzedawca deklaruje zakup od pierwszego właściciela, komplet dokumentacji i stan bezwypadkowy.",
-        "Wyposażenie": "Bogate wyposażenie deklarowane; szczegóły kamery i czujników do weryfikacji.",
-        "Problemy / niepewności": "7DCT: sprawdzić szarpanie, płynność ruszania, sprzęgła i błędy sterownika. Brak publicznego VIN.",
-        "Ocena": "Zgodna konfiguracja, ale skrzynia DCT i brak VIN powodują niższy priorytet."
-      },
-      "offerType": "unknown",
-      "saleType": "fixed_price",
-      "listingStates": [
-        {
-          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Iej1t.html",
-          "status": "removed",
-          "lastAttemptAt": "2026-11-09T12:59:53Z",
-          "lastCheckedAt": "2026-11-09T12:59:53Z",
-          "lastVerifiedAt": "2026-11-09T12:59:53Z",
-          "lastObservation": {
-            "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Iej1t.html",
-            "checkedAt": "2026-11-09T12:59:53Z",
-            "availability": "removed",
-            "note": "Bezpośrednia karta ogłoszenia zwraca HTTP 410 Gone; portal nie udostępnia już tej oferty."
-          }
-        }
-      ],
-      "lastCheckedAt": "2026-11-09T12:59:53Z",
-      "lastVerifiedAt": "2026-11-09T12:59:53Z",
-      "lastAttemptAt": "2026-11-09T12:59:53Z",
-      "history": [
-        {
-          "eventId": "827dc74f3e35e81613e4bee3f001c5a2b5868ef4dad4b262484f9bb84e81534a",
-          "runId": "refresh-20261108-01",
-          "checkedAt": "2026-11-08T18:39:20+01:00",
-          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Iej1t.html",
-          "availability": "available",
-          "note": "Karta Otomoto publicznie otwiera się w bieżącym odczycie i przedstawia aktywne ogłoszenie. Tytuł zapisany w bazie: Kia Ceed III Sportswagon — 1.4 T-GDI · 140 KM  156 000 km; poprzednia cena w bazie: 49500 PLN. Nie wyciągnięto nowych wniosków o historii, szkodach ani warunkach zakupu.",
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:otomoto:ID6Iej1t",
-            "modelKey": "kia-ceed-iii-sw",
-            "urls": [
-              {
-                "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Iej1t.html"
-              }
-            ],
-            "saleType": "fixed_price",
-            "lpgInstalled": null
-          },
-          "changes": {
-            "urls": {
-              "before": [
-                {
-                  "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Iej1t.html",
-                  "normalized": "https://otomoto.pl/osobowe/oferta/kia-ceed-ID6Iej1t.html",
-                  "label": "Zobacz ogłoszenie"
-                }
-              ],
-              "after": [
-                {
-                  "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Iej1t.html",
-                  "normalized": "https://otomoto.pl/osobowe/oferta/kia-ceed-ID6Iej1t.html",
-                  "label": "Zobacz ogłoszenie"
-                },
-                {
-                  "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Iej1t.html"
-                }
-              ]
-            },
-            "saleType": {
-              "before": null,
-              "after": "fixed_price"
-            }
-          }
-        },
-        {
-          "eventId": "53acba5ddb48fdd1718bd4254581232574074e7f56b884409a305b6efb4e181d",
-          "runId": "refresh-20261108-03",
-          "checkedAt": "2026-11-08T22:58:24+01:00",
-          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Iej1t.html",
-          "availability": "access_error",
-          "note": "Próba otwarcia karty w Otomoto zwróciła HTTP 410 Gone; status oferty i dane niepotwierdzone.",
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:otomoto:ID6Iej1t"
-          },
-          "changes": {}
-        },
-        {
-          "eventId": "9c1e09b23ad2eccb9f0e13d01936dc3d314a24dca58475f97dc677ac6f117765",
-          "runId": "photos-20261108-01",
-          "checkedAt": "2026-11-08T23:33:03+01:00",
-          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Iej1t.html",
-          "availability": "access_error",
-          "note": "Otworzenie dokładnego URL zwróciło HTTP 410 Gone. Nie przesądzam, czy ogłoszenie zostało sprzedane lub usunięte; zdjęć nie można ocenić.",
-          "photoCheck": {
-            "status": "access_error",
-            "note": "Karta zwróciła HTTP 410 Gone; nie można sprawdzić widoczności bezpośrednich adresów zdjęć HTTPS."
-          },
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:otomoto:ID6Iej1t"
-          },
-          "changes": {}
-        },
-        {
-          "eventId": "9cbbbe16fc2f35bdc2bf96f0ee92e89098f61c5d37bdc279509b67e588344517",
-          "runId": "refresh20261109a",
-          "checkedAt": "2026-11-09T12:59:53Z",
-          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Iej1t.html",
-          "availability": "removed",
-          "note": "Bezpośrednia karta ogłoszenia zwraca HTTP 410 Gone; portal nie udostępnia już tej oferty.",
-          "photoCheck": null,
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:otomoto:ID6Iej1t",
-            "modelKey": "kia-ceed-iii-sw",
-            "saleType": "fixed_price",
-            "lpgInstalled": null
-          },
-          "changes": {}
-        }
-      ],
-      "assessment": {
-        "id": "listing:otomoto:ID6Iej1t",
-        "modelKey": "kia-ceed-iii-sw",
-        "verdict": "check",
-        "failures": [],
-        "unknowns": [
-          "body",
-          "exact_engine_variant",
-          "transmission",
-          "camera_or_compatible_retrofit",
-          "structural_history",
-          "stroller_and_family_fit"
-        ],
-        "preferenceNotes": []
-      },
-      "archive": {
-        "status": "closed",
-        "reason": "all_listings_confirmed_closed",
-        "archivedAt": "2026-11-09T12:59:53+00:00"
-      }
-    },
-    {
-      "id": "listing:otomoto:ID6I7r0t",
-      "modelKey": "kia-ceed-iii-sw",
-      "title": "Kia Ceed 1.4 T-GDI 140 KM Kombi, 2020",
-      "urls": [
-        {
-          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6I7r0t.html",
-          "label": "Otomoto"
-        }
-      ],
-      "listingIds": [
-        "otomoto:ID6I7r0t"
-      ],
-      "year": 2020,
-      "price": 53900,
-      "priceLabel": "53 900 zł",
-      "mileage": 85523,
-      "mileageLabel": "85 523 km",
-      "engine": "1.4 T-GDI, 140 KM, benzyna",
-      "body": "Kombi",
-      "transmission": "manualna, 6-biegowa",
-      "offerType": "private",
-      "saleType": "fixed_price",
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "voivodeship": "Mazowieckie",
-        "city": "Izabelin",
-        "precision": "city",
-        "source": "listing",
-        "checkedAt": "2026-11-08"
-      },
-      "details": {
-        "Data pierwszej rejestracji": "09.11.2020",
-        "VIN": "U5YH5814ALL080150",
-        "Kamera": "Kamera parkowania tył wskazana w wyposażeniu karty",
-        "Historia sprzedawcy": "Opis deklaruje krajowe pochodzenie, regularny serwis; karta wskazuje status bezwypadkowy i serwis ASO. Niepotwierdzone niezależnie.",
-        "LPG": "Karta podaje benzynę; brak informacji, czy zamontowano LPG. Dokumenty instalacji i zbiornika do sprawdzenia, jeśli instalacja istnieje.",
-        "Cena": "Cena ogłoszenia 53 900 zł; brak informacji o obowiązkowym finansowaniu. Przed zakupem potwierdzić kwotę końcową u sprzedawcy.",
-        "Dostępność": "Strona ogłoszenia była dostępna i zawierała aktywne dane kontaktowe oraz opis sprzedaży; sprzedawca prosi o potwierdzenie aktualności przed wizytą. Nie kontaktowano się ze sprzedawcą."
-      },
-      "lpgInstalled": null,
-      "firstSeenAt": "2026-11-08T18:54:31+01:00",
-      "listingStates": [
-        {
-          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6I7r0t.html",
-          "status": "removed",
-          "lastAttemptAt": "2026-11-09T12:59:53Z",
-          "lastCheckedAt": "2026-11-09T12:59:53Z",
-          "lastVerifiedAt": "2026-11-09T12:59:53Z",
-          "lastObservation": {
-            "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6I7r0t.html",
-            "checkedAt": "2026-11-09T12:59:53Z",
-            "availability": "removed",
-            "note": "Bezpośrednia karta ogłoszenia zwraca HTTP 410 Gone; portal nie udostępnia już tej oferty."
-          }
-        }
-      ],
-      "lastCheckedAt": "2026-11-09T12:59:53Z",
-      "lastVerifiedAt": "2026-11-09T12:59:53Z",
-      "lastAttemptAt": "2026-11-09T12:59:53Z",
-      "history": [
-        {
-          "eventId": "a32e164034e31544b73269e890fcbd74d9173f56b25f066dd8a3c016d1ca257d",
-          "runId": "search-20261108",
-          "checkedAt": "2026-11-08T18:54:31+01:00",
-          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6I7r0t.html",
-          "availability": "available",
-          "note": "Odczytano kartę ogłoszenia Otomoto: 53 900 zł, 2020, 85 523 km, 1.4 T-GDI 140 KM, kombi, skrzynia manualna, lokalizacja Izabelin (woj. mazowieckie), wyposażenie kamery cofania. Oferta jest opisana jako prywatna; dostępność nie została potwierdzona bezpośrednio u sprzedawcy.",
-          "evidence": [
-            {
-              "fields": [
-                "year",
-                "price",
-                "mileage",
-                "engine",
-                "body",
-                "transmission",
-                "offerType",
-                "saleType",
-                "location",
-                "cameraStatus"
-              ],
-              "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6I7r0t.html",
-              "checkedAt": "2026-11-08T18:54:31+01:00",
-              "kind": "seller",
-              "note": "Karta Otomoto: pola podstawowe, opis sprzedawcy, lokalizacja i wyposażenie. Karta opublikowana 02.07.2026; strona i kontakt pozostają dostępne w odczycie. Deklaracje stanu oraz historia są informacją sprzedawcy, nie niezależnym potwierdzeniem."
-            }
-          ],
-          "reportedFields": {
-            "id": "listing:otomoto:ID6I7r0t",
-            "modelKey": "kia-ceed-iii-sw",
-            "title": "Kia Ceed 1.4 T-GDI 140 KM Kombi, 2020",
-            "urls": [
-              {
-                "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6I7r0t.html",
-                "label": "Otomoto"
-              }
-            ],
-            "listingIds": [
-              "otomoto:ID6I7r0t"
-            ],
-            "year": 2020,
-            "price": 53900,
-            "priceLabel": "53 900 zł",
-            "mileage": 85523,
-            "mileageLabel": "85 523 km",
-            "engine": "1.4 T-GDI, 140 KM, benzyna",
-            "body": "Kombi",
-            "transmission": "manualna, 6-biegowa",
-            "offerType": "private",
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "location": {
-              "status": "available",
-              "countryCode": "PL",
-              "voivodeship": "Mazowieckie",
-              "city": "Izabelin",
-              "precision": "city",
-              "source": "listing",
-              "checkedAt": "2026-11-08"
-            },
-            "details": {
-              "Data pierwszej rejestracji": "09.11.2020",
-              "VIN": "U5YH5814ALL080150",
-              "Kamera": "Kamera parkowania tył wskazana w wyposażeniu karty",
-              "Historia sprzedawcy": "Opis deklaruje krajowe pochodzenie, regularny serwis; karta wskazuje status bezwypadkowy i serwis ASO. Niepotwierdzone niezależnie.",
-              "LPG": "Karta podaje benzynę; brak informacji, czy zamontowano LPG. Dokumenty instalacji i zbiornika do sprawdzenia, jeśli instalacja istnieje.",
-              "Cena": "Cena ogłoszenia 53 900 zł; brak informacji o obowiązkowym finansowaniu. Przed zakupem potwierdzić kwotę końcową u sprzedawcy.",
-              "Dostępność": "Strona ogłoszenia była dostępna i zawierała aktywne dane kontaktowe oraz opis sprzedaży; sprzedawca prosi o potwierdzenie aktualności przed wizytą. Nie kontaktowano się ze sprzedawcą."
-            }
-          },
-          "changes": {
-            "id": {
-              "before": null,
-              "after": "listing:otomoto:ID6I7r0t"
-            },
-            "modelKey": {
-              "before": null,
-              "after": "kia-ceed-iii-sw"
-            },
-            "title": {
-              "before": null,
-              "after": "Kia Ceed 1.4 T-GDI 140 KM Kombi, 2020"
-            },
-            "urls": {
-              "before": null,
-              "after": [
-                {
-                  "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6I7r0t.html",
-                  "label": "Otomoto"
-                }
-              ]
-            },
-            "listingIds": {
-              "before": null,
-              "after": [
-                "otomoto:ID6I7r0t"
-              ]
-            },
-            "year": {
-              "before": null,
-              "after": 2020
-            },
-            "price": {
-              "before": null,
-              "after": 53900
-            },
-            "priceLabel": {
-              "before": null,
-              "after": "53 900 zł"
-            },
-            "mileage": {
-              "before": null,
-              "after": 85523
-            },
-            "mileageLabel": {
-              "before": null,
-              "after": "85 523 km"
-            },
-            "engine": {
-              "before": null,
-              "after": "1.4 T-GDI, 140 KM, benzyna"
-            },
-            "body": {
-              "before": null,
-              "after": "Kombi"
-            },
-            "transmission": {
-              "before": null,
-              "after": "manualna, 6-biegowa"
-            },
-            "offerType": {
-              "before": null,
-              "after": "private"
-            },
-            "saleType": {
-              "before": null,
-              "after": "fixed_price"
-            },
-            "location": {
-              "before": null,
-              "after": {
-                "status": "available",
-                "countryCode": "PL",
-                "voivodeship": "Mazowieckie",
-                "city": "Izabelin",
-                "precision": "city",
-                "source": "listing",
-                "checkedAt": "2026-11-08"
-              }
-            },
-            "details": {
-              "before": null,
-              "after": {
-                "Data pierwszej rejestracji": "09.11.2020",
-                "VIN": "U5YH5814ALL080150",
-                "Kamera": "Kamera parkowania tył wskazana w wyposażeniu karty",
-                "Historia sprzedawcy": "Opis deklaruje krajowe pochodzenie, regularny serwis; karta wskazuje status bezwypadkowy i serwis ASO. Niepotwierdzone niezależnie.",
-                "LPG": "Karta podaje benzynę; brak informacji, czy zamontowano LPG. Dokumenty instalacji i zbiornika do sprawdzenia, jeśli instalacja istnieje.",
-                "Cena": "Cena ogłoszenia 53 900 zł; brak informacji o obowiązkowym finansowaniu. Przed zakupem potwierdzić kwotę końcową u sprzedawcy.",
-                "Dostępność": "Strona ogłoszenia była dostępna i zawierała aktywne dane kontaktowe oraz opis sprzedaży; sprzedawca prosi o potwierdzenie aktualności przed wizytą. Nie kontaktowano się ze sprzedawcą."
-              }
-            }
-          }
-        },
-        {
-          "eventId": "016c033c36bc6e7241dbf85a73f4e59ba0ecc198c2d6366b60418bf92ca687e4",
-          "runId": "refresh-20261108-03",
-          "checkedAt": "2026-11-08T22:58:24+01:00",
-          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6I7r0t.html",
-          "availability": "access_error",
-          "note": "Próba otwarcia karty w Otomoto zwróciła HTTP 410 Gone; status oferty i dane niepotwierdzone.",
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:otomoto:ID6I7r0t"
-          },
-          "changes": {}
-        },
-        {
-          "eventId": "d159822334b8f0242aaa14b42420d9083d0b1322c8ecb1cc44ef7f9c6a628779",
-          "runId": "photos-20261108-01",
-          "checkedAt": "2026-11-08T23:33:03+01:00",
-          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6I7r0t.html",
-          "availability": "access_error",
-          "note": "Otworzenie dokładnego URL zwróciło HTTP 410 Gone. Nie przesądzam, czy ogłoszenie zostało sprzedane lub usunięte; zdjęć nie można ocenić.",
-          "photoCheck": {
-            "status": "access_error",
-            "note": "Karta zwróciła HTTP 410 Gone; nie można sprawdzić widoczności bezpośrednich adresów zdjęć HTTPS."
-          },
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:otomoto:ID6I7r0t"
-          },
-          "changes": {}
-        },
-        {
-          "eventId": "976bf611baa69a3a5f56097393750d27b02df83414e3a9a44cf4a75ae5ac091e",
-          "runId": "refresh20261109a",
-          "checkedAt": "2026-11-09T12:59:53Z",
-          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6I7r0t.html",
-          "availability": "removed",
-          "note": "Bezpośrednia karta ogłoszenia zwraca HTTP 410 Gone; portal nie udostępnia już tej oferty.",
-          "photoCheck": null,
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:otomoto:ID6I7r0t",
-            "modelKey": "kia-ceed-iii-sw",
-            "saleType": "fixed_price",
-            "lpgInstalled": null
-          },
-          "changes": {}
-        }
-      ],
-      "assessment": {
-        "id": "listing:otomoto:ID6I7r0t",
-        "modelKey": "kia-ceed-iii-sw",
-        "verdict": "check",
-        "failures": [],
-        "unknowns": [
-          "body",
-          "exact_engine_variant",
-          "transmission",
-          "camera_or_compatible_retrofit",
-          "structural_history",
-          "stroller_and_family_fit"
-        ],
-        "preferenceNotes": []
-      },
-      "verdict": "check",
-      "verdictTitle": "Do weryfikacji",
-      "verdictNote": "body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
-      "archive": {
-        "status": "closed",
-        "reason": "all_listings_confirmed_closed",
-        "archivedAt": "2026-11-09T12:59:53+00:00"
-      }
-    },
-    {
-      "id": "listing:autoplac:7814-5113-VB",
-      "modelKey": "kia-ceed-iii-sw",
-      "title": "Kia Ceed III Kombi 1.4 MPI 100 KM, 2019, 87 000 km",
-      "urls": [
-        {
-          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
-          "label": "Autoplac"
-        }
-      ],
-      "listingIds": [
-        "autoplac:7814-5113-VB"
-      ],
-      "year": 2019,
-      "price": 45800,
-      "mileage": 87000,
-      "engine": "1.4 MPI, benzyna",
-      "body": "Kombi",
-      "transmission": "manualna",
-      "offerType": "company",
-      "saleType": "fixed_price",
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "voivodeship": "Mazowieckie",
-        "city": "Strzyżew",
-        "precision": "city",
-        "source": "listing",
-        "checkedAt": "2026-11-08"
-      },
-      "details": {
-        "Pierwsza rejestracja": "17.06.2019 według karty.",
-        "VIN": "Karta pokazuje częściowo zamaskowany numer; pełnego VIN nie zapisano.",
-        "Kamera": "Opis sprzedawcy wymienia kamerę cofania oraz tylne czujniki parkowania.",
-        "ISOFIX": "Nie potwierdzono w odczytanej części karty.",
-        "LPG": "Karta podaje benzynę, ale nie rozstrzyga, czy jest zamontowana instalacja LPG; w razie jej obecności sprawdzić dokumenty i zbiornik.",
-        "Stan i historia": "Sprzedawca deklaruje polski salon, serwis ASO i bezwypadkowość; brak niezależnej weryfikacji.",
-        "Cena i dostępność": "Karta wyświetla stałą cenę 45 800 zł brutto i aktywne opcje kontaktu. Sprzedawca oferuje finansowanie, lecz nie wskazuje, że jest ono obowiązkowe; warunki gotówkowe należy potwierdzić."
-      },
-      "lpgInstalled": null,
-      "firstSeenAt": "2026-11-08T19:37:26+01:00",
-      "listingStates": [
-        {
-          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
-          "status": "removed",
-          "lastAttemptAt": "2026-11-10T23:08:10Z",
-          "lastCheckedAt": "2026-11-10T23:08:10Z",
-          "lastVerifiedAt": "2026-11-10T23:08:10Z",
-          "lastObservation": {
-            "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
-            "checkedAt": "2026-11-10T23:08:10Z",
-            "availability": "removed",
-            "httpStatus": null,
-            "note": "Autoplac page displays “Nie znaleźliśmy tej oferty” and “Oferta trafiła do archiwum”."
-          }
-        }
-      ],
-      "lastCheckedAt": "2026-11-10T23:08:10Z",
-      "lastVerifiedAt": "2026-11-10T23:08:10Z",
-      "lastAttemptAt": "2026-11-10T23:08:10Z",
-      "history": [
-        {
-          "eventId": "8151db7e0383f52bc7e41e8a139114173482547a225f61782b212fedf4057db3",
-          "runId": "search-20261108",
-          "checkedAt": "2026-11-08T19:37:26+01:00",
-          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
-          "availability": "available",
-          "note": "Bezpośrednio odczytana aktywna karta Autoplac: Kia Ceed III 1.4 MPI 100 KM, kombi, produkcja 2019, 87 000 km, manualna skrzynia, 45 800 zł brutto. Opis wymienia kamerę cofania i tylne czujniki. Karta podaje lokalizację Strzyżew (Mazowieckie) i aktywne opcje kontaktu; sprzedawca to salon samochodów używanych. Pełny VIN nie jest widoczny. Sprzedawcy nie kontaktowano.",
-          "evidence": [
-            {
-              "fields": [
-                "year",
-                "price",
-                "mileage",
-                "engine",
-                "body",
-                "transmission",
-                "offerType",
-                "saleType",
-                "location",
-                "cameraStatus"
-              ],
-              "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
-              "checkedAt": "2026-11-08T19:37:26+01:00",
-              "kind": "seller",
-              "note": "Dane z pól i opisu oferty; salon samochodów używanych wskazany w karcie. Pełnego VIN nie ujawniono."
-            }
-          ],
-          "reportedFields": {
-            "id": "listing:autoplac:7814-5113-VB",
-            "modelKey": "kia-ceed-iii-sw",
-            "title": "Kia Ceed III Kombi 1.4 MPI 100 KM, 2019, 87 000 km",
-            "urls": [
-              {
-                "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
-                "label": "Autoplac"
-              }
-            ],
-            "listingIds": [
-              "autoplac:7814-5113-VB"
-            ],
-            "vin": null,
-            "year": 2019,
-            "price": 45800,
-            "priceLabel": "45 800 zł brutto",
-            "mileage": 87000,
-            "mileageLabel": "87 000 km",
-            "engine": "1.4 MPI, 100 KM, benzyna",
-            "body": "Kombi",
-            "transmission": "manualna",
-            "offerType": "company",
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "location": {
-              "status": "available",
-              "countryCode": "PL",
-              "voivodeship": "Mazowieckie",
-              "city": "Strzyżew",
-              "precision": "city",
-              "source": "listing",
-              "checkedAt": "2026-11-08"
-            },
-            "details": {
-              "Pierwsza rejestracja": "17.06.2019 według karty.",
-              "VIN": "Karta pokazuje częściowo zamaskowany numer; pełnego VIN nie zapisano.",
-              "Kamera": "Opis sprzedawcy wymienia kamerę cofania oraz tylne czujniki parkowania.",
-              "ISOFIX": "Nie potwierdzono w odczytanej części karty.",
-              "LPG": "Karta podaje benzynę, ale nie rozstrzyga, czy jest zamontowana instalacja LPG; w razie jej obecności sprawdzić dokumenty i zbiornik.",
-              "Stan i historia": "Sprzedawca deklaruje polski salon, serwis ASO i bezwypadkowość; brak niezależnej weryfikacji.",
-              "Cena i dostępność": "Karta wyświetla stałą cenę 45 800 zł brutto i aktywne opcje kontaktu. Sprzedawca oferuje finansowanie, lecz nie wskazuje, że jest ono obowiązkowe; warunki gotówkowe należy potwierdzić."
-            }
-          },
-          "changes": {
-            "id": {
-              "before": null,
-              "after": "listing:autoplac:7814-5113-VB"
-            },
-            "modelKey": {
-              "before": null,
-              "after": "kia-ceed-iii-sw"
-            },
-            "title": {
-              "before": null,
-              "after": "Kia Ceed III Kombi 1.4 MPI 100 KM, 2019, 87 000 km"
-            },
-            "urls": {
-              "before": null,
-              "after": [
-                {
-                  "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
-                  "label": "Autoplac"
-                }
-              ]
-            },
-            "listingIds": {
-              "before": null,
-              "after": [
-                "autoplac:7814-5113-VB"
-              ]
-            },
-            "year": {
-              "before": null,
-              "after": 2019
-            },
-            "price": {
-              "before": null,
-              "after": 45800
-            },
-            "priceLabel": {
-              "before": null,
-              "after": "45 800 zł brutto"
-            },
-            "mileage": {
-              "before": null,
-              "after": 87000
-            },
-            "mileageLabel": {
-              "before": null,
-              "after": "87 000 km"
-            },
-            "engine": {
-              "before": null,
-              "after": "1.4 MPI, 100 KM, benzyna"
-            },
-            "body": {
-              "before": null,
-              "after": "Kombi"
-            },
-            "transmission": {
-              "before": null,
-              "after": "manualna"
-            },
-            "offerType": {
-              "before": null,
-              "after": "company"
-            },
-            "saleType": {
-              "before": null,
-              "after": "fixed_price"
-            },
-            "location": {
-              "before": null,
-              "after": {
-                "status": "available",
-                "countryCode": "PL",
-                "voivodeship": "Mazowieckie",
-                "city": "Strzyżew",
-                "precision": "city",
-                "source": "listing",
-                "checkedAt": "2026-11-08"
-              }
-            },
-            "details": {
-              "before": null,
-              "after": {
-                "Pierwsza rejestracja": "17.06.2019 według karty.",
-                "VIN": "Karta pokazuje częściowo zamaskowany numer; pełnego VIN nie zapisano.",
-                "Kamera": "Opis sprzedawcy wymienia kamerę cofania oraz tylne czujniki parkowania.",
-                "ISOFIX": "Nie potwierdzono w odczytanej części karty.",
-                "LPG": "Karta podaje benzynę, ale nie rozstrzyga, czy jest zamontowana instalacja LPG; w razie jej obecności sprawdzić dokumenty i zbiornik.",
-                "Stan i historia": "Sprzedawca deklaruje polski salon, serwis ASO i bezwypadkowość; brak niezależnej weryfikacji.",
-                "Cena i dostępność": "Karta wyświetla stałą cenę 45 800 zł brutto i aktywne opcje kontaktu. Sprzedawca oferuje finansowanie, lecz nie wskazuje, że jest ono obowiązkowe; warunki gotówkowe należy potwierdzić."
-              }
-            }
-          }
-        },
-        {
-          "eventId": "4cacf62f4b67506a28fe83c5f44c09ca8248ad94e53af61838aba6be0975e390",
-          "runId": "refresh-20261108-03",
-          "checkedAt": "2026-11-08T21:57:50+00:00",
-          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
-          "availability": "available",
-          "note": "Karta nadal dostępna, ostatnia aktualizacja tydzień temu. Cena 45 800 zł; benzyna, manual, 1 368 cm³. Tytuł/opis wskazuje 100 KM, pole techniczne 101 KM — zachować rozbieżność do weryfikacji dokumentami. Pierwsza rejestracja 06.2019. Opis deklaruje salon PL, serwis ASO i bezwypadkowość; kamera cofania i czujniki wymienione. VIN udostępniany na życzenie, więc brak w odczycie. LPG nieustalone.",
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:autoplac:7814-5113-VB",
-            "saleType": "fixed_price",
-            "lpgInstalled": null
-          },
-          "changes": {}
-        },
-        {
-          "eventId": "2892b6b57081d34d3375b9387f155bac67a07952e36882868497ede06cff22fe",
-          "runId": "photos-20261108-01",
-          "checkedAt": "2026-11-08T22:31:52+00:00",
-          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
-          "availability": "available",
-          "note": "Karta dostępna, pokazuje galerię 1/26. Ujawniony link obrazu prowadzi bezpośrednio do HTTPS CDN Autoplac; zapisano zdjęcie główne. Cena 45 800 zł; finansowanie jest opcjonalne. LPG nieustalone.",
-          "photoCheck": {
-            "status": "found",
-            "note": "Znaleziono 1 bezpośredni HTTPS URL zdjęcia. Pozostałych adresów galerii nie ujawniono w odczytanym widoku."
-          },
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:autoplac:7814-5113-VB",
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "photos": [
-              "https://euw2-cdn.autoplac.pl/v1/p/ec036c1c-025d-472a-9dc7-bfd4e69eebdb?f=1920%3Awebp"
-            ]
-          },
-          "changes": {
-            "photos": {
-              "before": null,
-              "after": [
-                "https://euw2-cdn.autoplac.pl/v1/p/ec036c1c-025d-472a-9dc7-bfd4e69eebdb?f=1920%3Awebp"
-              ]
-            }
-          }
-        },
-        {
-          "eventId": "09ff16a51cb06310a2891f4fb785d564c98d79aa300059918921c877c27cd37b",
-          "runId": "refresh20261109a",
-          "checkedAt": "2026-11-09T13:00:00+00:00",
-          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
-          "availability": "available",
-          "note": "Karta zaktualizowana tydzień temu: Kia Ceed III M, 1.4 MPI/DOHC 100 KM (karta pokazuje 101 KM), manual, 2019, 87000 km, 45800 zł. Opis sprzedawcy deklaruje polski salon, serwis ASO, kamerę cofania, tylne czujniki parkowania i pisemną gwarancję. Pierwsza rejestracja 06.2019. Sprzedawca prosi o telefoniczne potwierdzenie dostępności przed przyjazdem. LPG nieustalone.",
-          "photoCheck": null,
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:autoplac:7814-5113-VB",
-            "price": 45800,
-            "year": 2019,
-            "mileage": 87000,
-            "engine": "1.4 MPI, benzyna",
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "photos": [
-              "https://euw2-cdn.autoplac.pl/v1/p/ec036c1c-025d-472a-9dc7-bfd4e69eebdb?f=1920%3Awebp"
-            ]
-          },
-          "changes": {
-            "engine": {
-              "before": "1.4 MPI, 100 KM, benzyna",
-              "after": "1.4 MPI, benzyna"
-            }
-          }
-        },
-        {
-          "eventId": "d5eadbab805fdd03282cb9d83aada9cc562ce1a2cf9ae216a65987e779cd7702",
-          "runId": "dostepnosc-2026-11-10",
-          "checkedAt": "2026-11-10T23:08:10Z",
-          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
-          "availability": "removed",
-          "note": "Autoplac page displays “Nie znaleźliśmy tej oferty” and “Oferta trafiła do archiwum”.",
-          "httpStatus": null,
-          "photoCheck": null,
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:autoplac:7814-5113-VB"
-          },
-          "changes": {}
-        }
-      ],
-      "assessment": {
-        "id": "listing:autoplac:7814-5113-VB",
-        "modelKey": "kia-ceed-iii-sw",
-        "verdict": "check",
-        "failures": [],
-        "unknowns": [
-          "body",
-          "exact_engine_variant",
-          "transmission",
-          "camera_or_compatible_retrofit",
-          "structural_history",
-          "stroller_and_family_fit"
-        ],
-        "preferenceNotes": []
-      },
-      "verdict": "check",
-      "verdictTitle": "Do weryfikacji",
-      "verdictNote": "body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
-      "photos": [
-        "https://euw2-cdn.autoplac.pl/v1/p/ec036c1c-025d-472a-9dc7-bfd4e69eebdb?f=1920%3Awebp"
-      ],
-      "archive": {
-        "status": "closed",
-        "reason": "all_listings_confirmed_closed",
-        "archivedAt": "2026-11-10T23:08:10+00:00"
-      }
     },
     {
       "id": "listing:automarket:T180544",
@@ -2829,21 +2010,27 @@
         {
           "url": "https://automarket.pl/oferta/kia/cee%27d/T180544/zakup",
           "status": "available",
-          "lastAttemptAt": "2026-11-10T23:11:44Z",
-          "lastCheckedAt": "2026-11-08T19:58:38+01:00",
-          "lastVerifiedAt": "2026-11-08T19:58:38+01:00",
+          "lastAttemptAt": "2026-11-11T16:37:23.129Z",
+          "lastCheckedAt": "2026-11-11T16:37:23.129Z",
+          "lastVerifiedAt": "2026-11-11T16:37:23.129Z",
           "lastObservation": {
             "url": "https://automarket.pl/oferta/kia/cee%27d/T180544/zakup",
-            "checkedAt": "2026-11-10T23:11:44Z",
-            "availability": "access_error",
-            "note": "Bezpośrednie otwarcie exact URL nie powiodło się. Dostępna migawka z wyszukiwania jest crawlowana miesiąc temu, więc nie potwierdza bieżącej dostępności.",
-            "httpStatus": null
+            "checkedAt": "2026-11-11T16:37:23.129Z",
+            "availability": "available",
+            "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+            "httpStatus": 200,
+            "availabilityProof": {
+              "identity": true,
+              "contact": true,
+              "price": true,
+              "titleTokensMatched": 7
+            }
           }
         }
       ],
-      "lastCheckedAt": "2026-11-08T19:58:38+01:00",
-      "lastVerifiedAt": "2026-11-08T19:58:38+01:00",
-      "lastAttemptAt": "2026-11-10T23:11:44Z",
+      "lastCheckedAt": "2026-11-11T16:37:23.129Z",
+      "lastVerifiedAt": "2026-11-11T16:37:23.129Z",
+      "lastAttemptAt": "2026-11-11T16:37:23.129Z",
       "history": [
         {
           "eventId": "c8f9a0807c6bd4b4a72064bcdf63f9e742d659c034ec512f735d479795f8ae49",
@@ -3072,6 +2259,21 @@
             "id": "listing:automarket:T180544"
           },
           "changes": {}
+        },
+        {
+          "eventId": "a50370c90a175dae86196662229a50e82b0b8c6eb5f5a996734c5a494c433b14",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T16:37:23.129Z",
+          "url": "https://automarket.pl/oferta/kia/cee%27d/T180544/zakup",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:automarket:T180544"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -3088,291 +2290,7 @@
       },
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
-      "verdictNote": "camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
-      "archive": {
-        "status": "unverified",
-        "reason": "no_listing_url_confirmed_available; at_least_one_access_error",
-        "archivedAt": "2026-11-10T23:11:44+00:00"
-      }
-    },
-    {
-      "id": "listing:autoplac:9947-3481-EB",
-      "modelKey": "kia-ceed-iii-sw",
-      "title": "Kia Ceed III SW 1.4 T-GDI 140 KM, 2019",
-      "urls": [
-        {
-          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-kamera-navi-led-auto-klima-asystenci-tempomat-9947-3481-EB"
-        }
-      ],
-      "listingIds": [
-        "autoplac:9947-3481-EB"
-      ],
-      "vin": "U5YH4814AKL034515",
-      "year": 2019,
-      "price": 43900,
-      "priceBasis": "gross_total",
-      "bodyCode": "wagon",
-      "engineVariant": "1.4-tgdi-140",
-      "transmissionCode": "manual",
-      "saleType": "fixed_price",
-      "offerType": "company",
-      "cameraStatus": "installed_confirmed",
-      "structuralDamageStatus": "unknown",
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "voivodeship": "mazowieckie",
-        "city": "Warszawa",
-        "postalCode": "01-943",
-        "geoSource": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-kamera-navi-led-auto-klima-asystenci-tempomat-9947-3481-EB"
-      },
-      "photos": [
-        "https://euw2-cdn.autoplac.pl/v1/p/2b37f555-ad34-4a7c-b3b6-58d549f6672e?f=1920%3Awebp"
-      ],
-      "details": {
-        "Dostępność i cena": "Karta Autohero aktywna; podaje dostępność w Autohero Center Warszawa Młociny, oględziny przed zakupem oraz zakup online. Cena wynosi 43 900 zł brutto; nie wskazano obowiązkowego finansowania.",
-        "Dane i luki": "2019, Ceed III kombi, 1.4 T-GDI 140 KM, manual, 121 530 km. Kamera cofania wymieniona na karcie. LPG nie wymienione i pozostaje nieustalone. Portal oznacza bezwypadkowość jako tak, ale brak niezależnej kontroli struktury."
-      },
-      "lpgInstalled": null,
-      "firstSeenAt": "2026-11-09T14:39:30+01:00",
-      "listingStates": [
-        {
-          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-kamera-navi-led-auto-klima-asystenci-tempomat-9947-3481-EB",
-          "status": "removed",
-          "lastAttemptAt": "2026-11-10T23:08:10Z",
-          "lastCheckedAt": "2026-11-10T23:08:10Z",
-          "lastVerifiedAt": "2026-11-10T23:08:10Z",
-          "lastObservation": {
-            "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-kamera-navi-led-auto-klima-asystenci-tempomat-9947-3481-EB",
-            "checkedAt": "2026-11-10T23:08:10Z",
-            "availability": "removed",
-            "httpStatus": null,
-            "note": "Autoplac page displays “Nie znaleźliśmy tej oferty” and “Oferta trafiła do archiwum”."
-          }
-        }
-      ],
-      "lastCheckedAt": "2026-11-10T23:08:10Z",
-      "lastVerifiedAt": "2026-11-10T23:08:10Z",
-      "lastAttemptAt": "2026-11-10T23:08:10Z",
-      "history": [
-        {
-          "eventId": "deab8c4b495e28e1243fb5a2b1b0d7a495ceb0fffff9d20434c2662ac98aa11b",
-          "runId": "search-20261109",
-          "checkedAt": "2026-11-09T14:39:30+01:00",
-          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-kamera-navi-led-auto-klima-asystenci-tempomat-9947-3481-EB",
-          "availability": "available",
-          "note": "Karta Autohero dostępna; wskazuje auto w Autohero Center Warszawa Młociny, 2019, Ceed III kombi, 1.4 benzyna 140 KM, manual, 121 530 km, 43 900 zł brutto. Karta wymienia kamerę cofania i lokalizację Warszawa. Nie podaje informacji o LPG; nie zakładam jego braku. Niezależna kontrola szkód strukturalnych nie została udokumentowana.",
-          "photoCheck": null,
-          "evidence": [
-            {
-              "fields": [
-                "availability",
-                "vin",
-                "year",
-                "price",
-                "priceBasis",
-                "mileageKm",
-                "bodyCode",
-                "engineVariant",
-                "transmissionCode",
-                "saleType",
-                "offerType",
-                "cameraStatus",
-                "lpgInstalled",
-                "structuralDamageStatus",
-                "location"
-              ],
-              "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-kamera-navi-led-auto-klima-asystenci-tempomat-9947-3481-EB",
-              "checkedAt": "2026-11-09T14:39:30+01:00",
-              "kind": "seller",
-              "note": "Karta: aktualizacja 3 dni, ID 9947-3481-EB, cena, przebieg, paliwo, moc i manual (lin. 20–55); auto dostępne w Autohero Center i warunki obejrzenia 62–78; bezwypadkowość portalu 91–95; VIN 109–110; kamera 127–135; adres i Warszawa 136–139; cena brutto powtórzona 201–205."
-            }
-          ],
-          "reportedFields": {
-            "id": "listing:autoplac:9947-3481-EB",
-            "modelKey": "kia-ceed-iii-sw",
-            "title": "Kia Ceed III SW 1.4 T-GDI 140 KM, 2019",
-            "urls": [
-              {
-                "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-kamera-navi-led-auto-klima-asystenci-tempomat-9947-3481-EB"
-              }
-            ],
-            "listingIds": [
-              "autoplac:9947-3481-EB"
-            ],
-            "vin": "U5YH4814AKL034515",
-            "year": 2019,
-            "price": 43900,
-            "priceBasis": "gross_unconditional_total",
-            "mileageKm": 121530,
-            "bodyCode": "wagon",
-            "engineVariant": "1.4-tgdi-140",
-            "transmissionCode": "manual",
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "offerType": "company",
-            "cameraStatus": "installed_confirmed",
-            "structuralDamageStatus": "unknown",
-            "familyFitConfirmed": null,
-            "location": {
-              "status": "available",
-              "countryCode": "PL",
-              "voivodeship": "mazowieckie",
-              "city": "Warszawa",
-              "postalCode": "01-943",
-              "geoSource": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-kamera-navi-led-auto-klima-asystenci-tempomat-9947-3481-EB"
-            },
-            "photos": [
-              "https://euw2-cdn.autoplac.pl/v1/p/2b37f555-ad34-4a7c-b3b6-58d549f6672e?f=1920%3Awebp"
-            ],
-            "details": {
-              "Dostępność i cena": "Karta Autohero aktywna; podaje dostępność w Autohero Center Warszawa Młociny, oględziny przed zakupem oraz zakup online. Cena wynosi 43 900 zł brutto; nie wskazano obowiązkowego finansowania.",
-              "Dane i luki": "2019, Ceed III kombi, 1.4 T-GDI 140 KM, manual, 121 530 km. Kamera cofania wymieniona na karcie. LPG nie wymienione i pozostaje nieustalone. Portal oznacza bezwypadkowość jako tak, ale brak niezależnej kontroli struktury."
-            }
-          },
-          "changes": {
-            "id": {
-              "before": null,
-              "after": "listing:autoplac:9947-3481-EB"
-            },
-            "modelKey": {
-              "before": null,
-              "after": "kia-ceed-iii-sw"
-            },
-            "title": {
-              "before": null,
-              "after": "Kia Ceed III SW 1.4 T-GDI 140 KM, 2019"
-            },
-            "urls": {
-              "before": null,
-              "after": [
-                {
-                  "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-kamera-navi-led-auto-klima-asystenci-tempomat-9947-3481-EB"
-                }
-              ]
-            },
-            "listingIds": {
-              "before": null,
-              "after": [
-                "autoplac:9947-3481-EB"
-              ]
-            },
-            "vin": {
-              "before": null,
-              "after": "U5YH4814AKL034515"
-            },
-            "year": {
-              "before": null,
-              "after": 2019
-            },
-            "price": {
-              "before": null,
-              "after": 43900
-            },
-            "priceBasis": {
-              "before": null,
-              "after": "gross_unconditional_total"
-            },
-            "mileageKm": {
-              "before": null,
-              "after": 121530
-            },
-            "bodyCode": {
-              "before": null,
-              "after": "wagon"
-            },
-            "engineVariant": {
-              "before": null,
-              "after": "1.4-tgdi-140"
-            },
-            "transmissionCode": {
-              "before": null,
-              "after": "manual"
-            },
-            "saleType": {
-              "before": null,
-              "after": "fixed_price"
-            },
-            "offerType": {
-              "before": null,
-              "after": "company"
-            },
-            "cameraStatus": {
-              "before": null,
-              "after": "installed_confirmed"
-            },
-            "structuralDamageStatus": {
-              "before": null,
-              "after": "unknown"
-            },
-            "location": {
-              "before": null,
-              "after": {
-                "status": "available",
-                "countryCode": "PL",
-                "voivodeship": "mazowieckie",
-                "city": "Warszawa",
-                "postalCode": "01-943",
-                "geoSource": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-kamera-navi-led-auto-klima-asystenci-tempomat-9947-3481-EB"
-              }
-            },
-            "photos": {
-              "before": null,
-              "after": [
-                "https://euw2-cdn.autoplac.pl/v1/p/2b37f555-ad34-4a7c-b3b6-58d549f6672e?f=1920%3Awebp"
-              ]
-            },
-            "details": {
-              "before": null,
-              "after": {
-                "Dostępność i cena": "Karta Autohero aktywna; podaje dostępność w Autohero Center Warszawa Młociny, oględziny przed zakupem oraz zakup online. Cena wynosi 43 900 zł brutto; nie wskazano obowiązkowego finansowania.",
-                "Dane i luki": "2019, Ceed III kombi, 1.4 T-GDI 140 KM, manual, 121 530 km. Kamera cofania wymieniona na karcie. LPG nie wymienione i pozostaje nieustalone. Portal oznacza bezwypadkowość jako tak, ale brak niezależnej kontroli struktury."
-              }
-            }
-          }
-        },
-        {
-          "eventId": "479de4d7e2ff1bd7ac249f1a68a83ae1a2ee7202c549eee388f2dbf52f1e528b",
-          "runId": "dostepnosc-2026-11-10",
-          "checkedAt": "2026-11-10T23:08:10Z",
-          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-kamera-navi-led-auto-klima-asystenci-tempomat-9947-3481-EB",
-          "availability": "removed",
-          "note": "Autoplac page displays “Nie znaleźliśmy tej oferty” and “Oferta trafiła do archiwum”.",
-          "httpStatus": null,
-          "photoCheck": null,
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:autoplac:9947-3481-EB"
-          },
-          "changes": {
-            "priceBasis": {
-              "before": "gross_unconditional_total",
-              "after": "gross_total"
-            }
-          }
-        }
-      ],
-      "assessment": {
-        "id": "listing:autoplac:9947-3481-EB",
-        "modelKey": "kia-ceed-iii-sw",
-        "verdict": "check",
-        "failures": [],
-        "unknowns": [
-          "structural_history",
-          "mileage",
-          "stroller_and_family_fit"
-        ],
-        "preferenceNotes": []
-      },
-      "verdict": "check",
-      "verdictTitle": "Do weryfikacji",
-      "verdictNote": "structural_history; mileage; stroller_and_family_fit",
-      "mileage": 121530,
-      "archive": {
-        "status": "closed",
-        "reason": "all_listings_confirmed_closed",
-        "archivedAt": "2026-11-10T23:08:10+00:00"
-      }
+      "verdictNote": "camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
     },
     {
       "id": "listing:sprzedajemy:73545565",
@@ -3429,21 +2347,27 @@
         {
           "url": "https://sprzedajemy.pl/kia-ceed-1-4-t-gdi-salon-polska-wzorowy-stan-warszawa-4-6bea9f-nr73545565",
           "status": "available",
-          "lastAttemptAt": "2026-11-10T23:19:46Z",
-          "lastCheckedAt": "2026-11-10T02:41:44Z",
-          "lastVerifiedAt": "2026-11-10T02:41:44Z",
+          "lastAttemptAt": "2026-11-11T16:40:47.974Z",
+          "lastCheckedAt": "2026-11-11T16:40:47.974Z",
+          "lastVerifiedAt": "2026-11-11T16:40:47.974Z",
           "lastObservation": {
             "url": "https://sprzedajemy.pl/kia-ceed-1-4-t-gdi-salon-polska-wzorowy-stan-warszawa-4-6bea9f-nr73545565",
-            "checkedAt": "2026-11-10T23:19:46Z",
-            "availability": "access_error",
-            "httpStatus": null,
-            "note": "Odczyt bezpośredniego adresu zwrócił Internal Error, bez treści karty i bez komunikatu o archiwum."
+            "checkedAt": "2026-11-11T16:40:47.974Z",
+            "availability": "available",
+            "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+            "httpStatus": 200,
+            "availabilityProof": {
+              "identity": true,
+              "contact": true,
+              "price": true,
+              "titleTokensMatched": 7
+            }
           }
         }
       ],
-      "lastCheckedAt": "2026-11-10T02:41:44Z",
-      "lastVerifiedAt": "2026-11-10T02:41:44Z",
-      "lastAttemptAt": "2026-11-10T23:19:46Z",
+      "lastCheckedAt": "2026-11-11T16:40:47.974Z",
+      "lastVerifiedAt": "2026-11-11T16:40:47.974Z",
+      "lastAttemptAt": "2026-11-11T16:40:47.974Z",
       "history": [
         {
           "eventId": "e42c4006665bfd416e953050682787604ac62b70408af4569d551ed62c8571a8",
@@ -3661,6 +2585,21 @@
               "after": "gross_total"
             }
           }
+        },
+        {
+          "eventId": "a646343600f77ce5c3eb46dc6bc2443bc5d27b95d1ce5e681729f6b1e22800a8",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T16:40:47.974Z",
+          "url": "https://sprzedajemy.pl/kia-ceed-1-4-t-gdi-salon-polska-wzorowy-stan-warszawa-4-6bea9f-nr73545565",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:sprzedajemy:73545565"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -3677,12 +2616,7 @@
       },
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
-      "verdictNote": "body; structural_history; stroller_and_family_fit",
-      "archive": {
-        "status": "unverified",
-        "reason": "no_listing_url_confirmed_available; at_least_one_access_error",
-        "archivedAt": "2026-11-10T23:19:46+00:00"
-      }
+      "verdictNote": "body; structural_history; stroller_and_family_fit"
     },
     {
       "id": "listing:otomoto:ID6Ihu7p",
@@ -3731,12 +2665,12 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Ihu7p.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:47.784Z",
+          "lastAttemptAt": "2026-11-11T16:36:49.303Z",
           "lastCheckedAt": "2026-11-10T23:08:21Z",
           "lastVerifiedAt": "2026-11-10T23:08:21Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Ihu7p.html",
-            "checkedAt": "2026-11-11T02:03:47.784Z",
+            "checkedAt": "2026-11-11T16:36:49.303Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -3745,7 +2679,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:08:21Z",
       "lastVerifiedAt": "2026-11-10T23:08:21Z",
-      "lastAttemptAt": "2026-11-11T02:03:47.784Z",
+      "lastAttemptAt": "2026-11-11T16:36:49.303Z",
       "history": [
         {
           "eventId": "8fd53b2c5fe62cbc2b7ed343da88724277f58037f275aaa35735822c83c012c2",
@@ -3896,6 +2830,21 @@
             "id": "listing:otomoto:ID6Ihu7p"
           },
           "changes": {}
+        },
+        {
+          "eventId": "06d075e609167c395e6800526a8f62b5ec59855500e301deda0d93c6c029a7f3",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T16:36:49.303Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Ihu7p.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6Ihu7p"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -3916,12 +2865,7 @@
       "photos": [
         "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImFrbTU3dG11bnViejEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.48yxBpsdqsB9qw1rW_QMcJf39tz3GauDDv9lw4JckZQ/image%3Bs%3D5120x0%3Bq%3D100",
         "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImFrbTU3dG11bnViejEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.48yxBpsdqsB9qw1rW_QMcJf39tz3GauDDv9lw4JckZQ/image;s=5120x0;q=100"
-      ],
-      "archive": {
-        "status": "unverified",
-        "reason": "no_listing_url_confirmed_available; at_least_one_access_error",
-        "archivedAt": "2026-11-11T02:03:47.784000+00:00"
-      }
+      ]
     },
     {
       "id": "listing:otomoto:ID6IitBU",
@@ -3970,12 +2914,12 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IitBU.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:47.784Z",
+          "lastAttemptAt": "2026-11-11T16:36:49.303Z",
           "lastCheckedAt": "2026-11-10T23:08:21Z",
           "lastVerifiedAt": "2026-11-10T23:08:21Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IitBU.html",
-            "checkedAt": "2026-11-11T02:03:47.784Z",
+            "checkedAt": "2026-11-11T16:36:49.303Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -3984,7 +2928,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:08:21Z",
       "lastVerifiedAt": "2026-11-10T23:08:21Z",
-      "lastAttemptAt": "2026-11-11T02:03:47.784Z",
+      "lastAttemptAt": "2026-11-11T16:36:49.303Z",
       "history": [
         {
           "eventId": "54ee84128f2971c42e782fbb2d0b06d5c481e80f9100907cc305f5cba6faef7c",
@@ -4135,6 +3079,21 @@
             "id": "listing:otomoto:ID6IitBU"
           },
           "changes": {}
+        },
+        {
+          "eventId": "059e814266783f8ff37d6b7221c53e4aa12873227e596bcec24d5e1374a53b46",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T16:36:49.303Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IitBU.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IitBU"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -4155,12 +3114,7 @@
       "photos": [
         "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjJqa3k2aWN1ZnVpaDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.M2Lrd0BO6jRRB6M28fplxB7yyF8Q-C0hXeHCzBkbJwI/image%3Bs%3D5120x0%3Bq%3D100",
         "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjJqa3k2aWN1ZnVpaDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.M2Lrd0BO6jRRB6M28fplxB7yyF8Q-C0hXeHCzBkbJwI/image;s=5120x0;q=100"
-      ],
-      "archive": {
-        "status": "unverified",
-        "reason": "no_listing_url_confirmed_available; at_least_one_access_error",
-        "archivedAt": "2026-11-11T02:03:47.784000+00:00"
-      }
+      ]
     },
     {
       "id": "vin:U5YH5814GLL068044",
@@ -4212,12 +3166,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/kia-ceed-kia-ceed-1-4-t-gdi-140-km-automat-kombi-2020-114-600km-benzyna-CID5-ID19Nq8n.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:47.784Z",
+          "lastAttemptAt": "2026-11-11T16:37:22.649Z",
           "lastCheckedAt": "2026-11-10T23:11:34Z",
           "lastVerifiedAt": "2026-11-10T23:11:34Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/kia-ceed-kia-ceed-1-4-t-gdi-140-km-automat-kombi-2020-114-600km-benzyna-CID5-ID19Nq8n.html",
-            "checkedAt": "2026-11-11T02:03:47.784Z",
+            "checkedAt": "2026-11-11T16:37:22.649Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -4226,7 +3180,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:11:34Z",
       "lastVerifiedAt": "2026-11-10T23:11:34Z",
-      "lastAttemptAt": "2026-11-11T02:03:47.784Z",
+      "lastAttemptAt": "2026-11-11T16:37:22.649Z",
       "history": [
         {
           "eventId": "1c3d6666235b06ce4a035856bff79e1f41184ed44c4b66e4f6ada05058af3d0d",
@@ -4451,6 +3405,21 @@
             "id": "vin:U5YH5814GLL068044"
           },
           "changes": {}
+        },
+        {
+          "eventId": "9219cf26c504dc494ac59b77d07c8c35dfddd60eb8b096789ac674f28a3e4e27",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T16:37:22.649Z",
+          "url": "https://www.olx.pl/d/oferta/kia-ceed-kia-ceed-1-4-t-gdi-140-km-automat-kombi-2020-114-600km-benzyna-CID5-ID19Nq8n.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:U5YH5814GLL068044"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -4474,12 +3443,7 @@
         "https://ireland.apollo.olxcdn.com/v1/files/i64vli5t924v2-PL/image%3Bs%3D2048x786",
         "https://ireland.apollo.olxcdn.com/v1/files/dpbud9nuyu3w3-PL/image%3Bs%3D1564x854",
         "https://ireland.apollo.olxcdn.com/v1/files/ryue4gbfzlod3-PL/image%3Bs%3D910x622"
-      ],
-      "archive": {
-        "status": "unverified",
-        "reason": "no_listing_url_confirmed_available; at_least_one_access_error",
-        "archivedAt": "2026-11-11T02:03:47.784000+00:00"
-      }
+      ]
     },
     {
       "id": "listing:otomoto:ID6Ii6CO",
@@ -4528,12 +3492,12 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Ii6CO.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:47.784Z",
+          "lastAttemptAt": "2026-11-11T16:36:49.303Z",
           "lastCheckedAt": "2026-11-10T23:08:21Z",
           "lastVerifiedAt": "2026-11-10T23:08:21Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Ii6CO.html",
-            "checkedAt": "2026-11-11T02:03:47.784Z",
+            "checkedAt": "2026-11-11T16:36:49.303Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -4542,7 +3506,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:08:21Z",
       "lastVerifiedAt": "2026-11-10T23:08:21Z",
-      "lastAttemptAt": "2026-11-11T02:03:47.784Z",
+      "lastAttemptAt": "2026-11-11T16:36:49.303Z",
       "history": [
         {
           "eventId": "cb047c5aa05921a35129ca81e4e971b0c4b7f635f4c0771bb02ca21d5cfc9c11",
@@ -4697,6 +3661,21 @@
             "id": "listing:otomoto:ID6Ii6CO"
           },
           "changes": {}
+        },
+        {
+          "eventId": "47f37c9012c6aa43721bea09275a7a656477d25c565b8bdf74ff9e06e137b61f",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T16:36:49.303Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Ii6CO.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6Ii6CO"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -4718,12 +3697,7 @@
       "photos": [
         "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImJxZ20xempneW9qdC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.tfVzNdc82oeKYk0nb_T2het-W5Hnkr5JZ3fB8UIByZc/image%3Bs%3D5120x0%3Bq%3D100",
         "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImJxZ20xempneW9qdC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.tfVzNdc82oeKYk0nb_T2het-W5Hnkr5JZ3fB8UIByZc/image;s=5120x0;q=100"
-      ],
-      "archive": {
-        "status": "unverified",
-        "reason": "no_listing_url_confirmed_available; at_least_one_access_error",
-        "archivedAt": "2026-11-11T02:03:47.784000+00:00"
-      }
+      ]
     },
     {
       "id": "listing:olx:1108121746",
@@ -4770,12 +3744,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/kia-ceed-kia-cee-039d-kombi-2019-wersja-l-83-tys-km-salon-polska-bezwypad-CID5-ID1cZz5o.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:47.784Z",
+          "lastAttemptAt": "2026-11-11T16:37:22.650Z",
           "lastCheckedAt": "2026-11-10T23:11:34Z",
           "lastVerifiedAt": "2026-11-10T23:11:34Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/kia-ceed-kia-cee-039d-kombi-2019-wersja-l-83-tys-km-salon-polska-bezwypad-CID5-ID1cZz5o.html",
-            "checkedAt": "2026-11-11T02:03:47.784Z",
+            "checkedAt": "2026-11-11T16:37:22.650Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -4784,7 +3758,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:11:34Z",
       "lastVerifiedAt": "2026-11-10T23:11:34Z",
-      "lastAttemptAt": "2026-11-11T02:03:47.784Z",
+      "lastAttemptAt": "2026-11-11T16:37:22.650Z",
       "history": [
         {
           "eventId": "a9b04b624f2adc0c0a181b4c3b361115b9b3e1eabef4d3756fc6beb827d1d96a",
@@ -5111,6 +4085,21 @@
             "id": "listing:olx:1108121746"
           },
           "changes": {}
+        },
+        {
+          "eventId": "64d94bdc928d111cd0ce6c0bb158dcc53de4b4cad1e52575ca0e8944bb04e7fd",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T16:37:22.650Z",
+          "url": "https://www.olx.pl/d/oferta/kia-ceed-kia-cee-039d-kombi-2019-wersja-l-83-tys-km-salon-polska-bezwypad-CID5-ID1cZz5o.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1108121746"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -5140,12 +4129,7 @@
         "https://ireland.apollo.olxcdn.com/v1/files/8x68ss3856qo1-PL/image%3Bs%3D1813x1360",
         "https://ireland.apollo.olxcdn.com/v1/files/r7hytfm6q2bg3-PL/image%3Bs%3D1813x1360",
         "https://ireland.apollo.olxcdn.com/v1/files/wsip3oy355x9-PL/image%3Bs%3D1813x1360"
-      ],
-      "archive": {
-        "status": "unverified",
-        "reason": "no_listing_url_confirmed_available; at_least_one_access_error",
-        "archivedAt": "2026-11-11T02:03:47.784000+00:00"
-      }
+      ]
     },
     {
       "id": "listing:olx:1108290186",
@@ -5192,12 +4176,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/kia-ceed-kia-ceed-kombi-quotl-quot-business-line-2019r-1-4-140-km-automat-7dct-winter-CID5-ID1d0gUa.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:47.784Z",
+          "lastAttemptAt": "2026-11-11T16:37:22.650Z",
           "lastCheckedAt": "2026-11-10T23:11:34Z",
           "lastVerifiedAt": "2026-11-10T23:11:34Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/kia-ceed-kia-ceed-kombi-quotl-quot-business-line-2019r-1-4-140-km-automat-7dct-winter-CID5-ID1d0gUa.html",
-            "checkedAt": "2026-11-11T02:03:47.784Z",
+            "checkedAt": "2026-11-11T16:37:22.650Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -5206,7 +4190,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:11:34Z",
       "lastVerifiedAt": "2026-11-10T23:11:34Z",
-      "lastAttemptAt": "2026-11-11T02:03:47.784Z",
+      "lastAttemptAt": "2026-11-11T16:37:22.650Z",
       "history": [
         {
           "eventId": "0fca918d9bee6307058355c60df9409d8d1e1369ed49452aa569fe7a7ed0a8e4",
@@ -5533,6 +4517,21 @@
             "id": "listing:olx:1108290186"
           },
           "changes": {}
+        },
+        {
+          "eventId": "12488f325f2efe5aa44e8991903a83e8d8e9f2ee93497f897e5dfe78b51e067f",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T16:37:22.650Z",
+          "url": "https://www.olx.pl/d/oferta/kia-ceed-kia-ceed-kombi-quotl-quot-business-line-2019r-1-4-140-km-automat-7dct-winter-CID5-ID1d0gUa.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1108290186"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -5562,12 +4561,7 @@
         "https://ireland.apollo.olxcdn.com/v1/files/y5ac7pepsvwt1-PL/image%3Bs%3D1813x1360",
         "https://ireland.apollo.olxcdn.com/v1/files/fl45n9w9t8kl2-PL/image%3Bs%3D1813x1360",
         "https://ireland.apollo.olxcdn.com/v1/files/aijc47a2xz0i3-PL/image%3Bs%3D1813x1360"
-      ],
-      "archive": {
-        "status": "unverified",
-        "reason": "no_listing_url_confirmed_available; at_least_one_access_error",
-        "archivedAt": "2026-11-11T02:03:47.784000+00:00"
-      }
+      ]
     },
     {
       "id": "listing:automarket:T180708",
@@ -5609,12 +4603,12 @@
         {
           "url": "https://automarket.pl/oferta/kia/cee%27d/T180708/pozyczka",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:52.079Z",
+          "lastAttemptAt": "2026-11-11T16:37:23.130Z",
           "lastCheckedAt": "2026-11-10T23:11:44Z",
           "lastVerifiedAt": "2026-11-10T23:11:44Z",
           "lastObservation": {
             "url": "https://automarket.pl/oferta/kia/cee%27d/T180708/pozyczka",
-            "checkedAt": "2026-11-11T02:03:52.079Z",
+            "checkedAt": "2026-11-11T16:37:23.130Z",
             "availability": "access_error",
             "note": "Brak potwierdzenia aktywnej karty: tytuł=true, cena=true, kontakt=false (HTTP 200).",
             "httpStatus": 200,
@@ -5629,7 +4623,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:11:44Z",
       "lastVerifiedAt": "2026-11-10T23:11:44Z",
-      "lastAttemptAt": "2026-11-11T02:03:52.079Z",
+      "lastAttemptAt": "2026-11-11T16:37:23.130Z",
       "history": [
         {
           "eventId": "87fe8f93dac1fc07c5ff94c1cc0c06f5940067379be7e6fccf2f7007ea946a9e",
@@ -5934,6 +4928,21 @@
             "id": "listing:automarket:T180708"
           },
           "changes": {}
+        },
+        {
+          "eventId": "c352caa1d3f91f7b91c4b101bad430aff5637338076819f76d206b1cbdfa2156",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T16:37:23.130Z",
+          "url": "https://automarket.pl/oferta/kia/cee%27d/T180708/pozyczka",
+          "availability": "access_error",
+          "note": "Brak potwierdzenia aktywnej karty: tytuł=true, cena=true, kontakt=false (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:automarket:T180708"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -5962,12 +4971,7 @@
         "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE4OTg2NF83/XzE2MDB4MTIwMHg5/NV85LmpwZw.webp",
         "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE4OTg2NF84/XzE2MDB4MTIwMHg5/NV85LmpwZw.webp",
         "https://cdn.automarket.pl/i/_/rs%3Afill%3A928%3A522/bG9jYWw6Ly8vbWVk/aWEvaW1hZ2UvMy8w/LzMwMDE4OTg2NF85/XzE2MDB4MTIwMHg5/NV85LmpwZw.webp"
-      ],
-      "archive": {
-        "status": "unverified",
-        "reason": "no_listing_url_confirmed_available; at_least_one_access_error",
-        "archivedAt": "2026-11-11T02:03:52.079000+00:00"
-      }
+      ]
     },
     {
       "id": "listing:otomoto:6151387604",
@@ -6004,12 +5008,12 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IiAW6.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:47.784Z",
+          "lastAttemptAt": "2026-11-11T16:36:50.424Z",
           "lastCheckedAt": "2026-11-10T23:08:21Z",
           "lastVerifiedAt": "2026-11-10T23:08:21Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IiAW6.html",
-            "checkedAt": "2026-11-11T02:03:47.784Z",
+            "checkedAt": "2026-11-11T16:36:50.424Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -6018,7 +5022,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:08:21Z",
       "lastVerifiedAt": "2026-11-10T23:08:21Z",
-      "lastAttemptAt": "2026-11-11T02:03:47.784Z",
+      "lastAttemptAt": "2026-11-11T16:36:50.424Z",
       "history": [
         {
           "eventId": "467f34b568884b75b5bce0ca8df1ce882a75288cee709955f7742660874d18bc",
@@ -6200,6 +5204,21 @@
             "id": "listing:otomoto:6151387604"
           },
           "changes": {}
+        },
+        {
+          "eventId": "d2e04fe7535f2c574c381f8179657ee7d469dd17002757d8453b91275a03ecf5",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T16:36:50.424Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IiAW6.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:6151387604"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -6217,12 +5236,7 @@
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
       "verdictNote": "structural_history; mileage; stroller_and_family_fit",
-      "mileage": 83000,
-      "archive": {
-        "status": "unverified",
-        "reason": "no_listing_url_confirmed_available; at_least_one_access_error",
-        "archivedAt": "2026-11-11T02:03:47.784000+00:00"
-      }
+      "mileage": 83000
     },
     {
       "id": "listing:otomoto:ID6IjcD1",
@@ -6278,12 +5292,12 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IjcD1.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:47.784Z",
+          "lastAttemptAt": "2026-11-11T16:36:50.425Z",
           "lastCheckedAt": "2026-11-10T23:08:21Z",
           "lastVerifiedAt": "2026-11-10T23:08:21Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IjcD1.html",
-            "checkedAt": "2026-11-11T02:03:47.784Z",
+            "checkedAt": "2026-11-11T16:36:50.425Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -6292,7 +5306,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:08:21Z",
       "lastVerifiedAt": "2026-11-10T23:08:21Z",
-      "lastAttemptAt": "2026-11-11T02:03:47.784Z",
+      "lastAttemptAt": "2026-11-11T16:36:50.425Z",
       "history": [
         {
           "eventId": "540152c1bdd221aabde9aa2234dbf76d9d052072900a3632895db7f3ca42f9f5",
@@ -6531,6 +5545,21 @@
             "id": "listing:otomoto:ID6IjcD1"
           },
           "changes": {}
+        },
+        {
+          "eventId": "aeef663f1544a994d9a46bf05ccc388a174d913b0ba23e12f58bd1d01b8bac7b",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T16:36:50.425Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IjcD1.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IjcD1"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -6547,12 +5576,7 @@
       },
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
-      "verdictNote": "gross_unconditional_purchase_price; structural_history; stroller_and_family_fit",
-      "archive": {
-        "status": "unverified",
-        "reason": "no_listing_url_confirmed_available; at_least_one_access_error",
-        "archivedAt": "2026-11-11T02:03:47.784000+00:00"
-      }
+      "verdictNote": "gross_unconditional_purchase_price; structural_history; stroller_and_family_fit"
     },
     {
       "id": "listing:olx:ID1cPpgl",
@@ -6609,12 +5633,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/kia-ceed-sw-1-4-t-gdi-140-km-automat-l-polski-salon-aso-pakiet-zimowy-CID5-ID1cPpgl.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:47.784Z",
+          "lastAttemptAt": "2026-11-11T16:37:22.650Z",
           "lastCheckedAt": "2026-11-10T23:11:34Z",
           "lastVerifiedAt": "2026-11-10T23:11:34Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/kia-ceed-sw-1-4-t-gdi-140-km-automat-l-polski-salon-aso-pakiet-zimowy-CID5-ID1cPpgl.html",
-            "checkedAt": "2026-11-11T02:03:47.784Z",
+            "checkedAt": "2026-11-11T16:37:22.650Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -6623,7 +5647,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:11:34Z",
       "lastVerifiedAt": "2026-11-10T23:11:34Z",
-      "lastAttemptAt": "2026-11-11T02:03:47.784Z",
+      "lastAttemptAt": "2026-11-11T16:37:22.650Z",
       "history": [
         {
           "eventId": "654fce2d43e622cce4b2bbe737aa8c1ee5b84679788c29d2bdfc711344e64e6b",
@@ -6869,6 +5893,21 @@
             "id": "listing:olx:ID1cPpgl"
           },
           "changes": {}
+        },
+        {
+          "eventId": "08bf631b30b21909b479be490e6415d228f5fb41209b9dc5935a9c70c4075882",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T16:37:22.650Z",
+          "url": "https://www.olx.pl/d/oferta/kia-ceed-sw-1-4-t-gdi-140-km-automat-l-polski-salon-aso-pakiet-zimowy-CID5-ID1cPpgl.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:ID1cPpgl"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -6885,11 +5924,1168 @@
       },
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
-      "verdictNote": "gross_unconditional_purchase_price; structural_history; stroller_and_family_fit",
+      "verdictNote": "gross_unconditional_purchase_price; structural_history; stroller_and_family_fit"
+    }
+  ],
+  "archivedOffers": [
+    {
+      "id": "listing:otomoto:ID6Iej1t",
+      "modelKey": "kia-ceed-iii-sw",
+      "vin": null,
+      "listingIds": [
+        "otomoto:ID6Iej1t"
+      ],
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Iej1t.html",
+          "normalized": "https://otomoto.pl/osobowe/oferta/kia-ceed-ID6Iej1t.html",
+          "label": "Zobacz ogłoszenie"
+        }
+      ],
+      "title": "Kia Ceed III Sportswagon — 1.4 T-GDI · 140 KM  156 000 km",
+      "year": 2020,
+      "price": 49500,
+      "priceLabel": "49 500 zł",
+      "mileage": 156000,
+      "mileageLabel": "156 000 km",
+      "engine": "1.4 T-GDI · 140 KM",
+      "body": "Kombi / SW",
+      "transmission": "Automatyczna DCT",
+      "seller": "Sprzedawca · Tomaszów Lubelski",
+      "subtitle": "2020 · Kombi / SW · 1.4 T-GDI · 140 KM",
+      "priority": "Priorytet 3",
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "specs": {
+        "rocznik": "2020",
+        "nadwozie": "Kombi / SW",
+        "silnik": "1.4 T-GDI · 140 KM",
+        "skrzynia": "Automatyczna DCT",
+        "przebieg": "156 000 km",
+        "cena zakupu": "49 500 zł"
+      },
+      "details": {
+        "Historia i pochodzenie": "Sprowadzona z Niemiec. Sprzedawca deklaruje zakup od pierwszego właściciela, komplet dokumentacji i stan bezwypadkowy.",
+        "Wyposażenie": "Bogate wyposażenie deklarowane; szczegóły kamery i czujników do weryfikacji.",
+        "Problemy / niepewności": "7DCT: sprawdzić szarpanie, płynność ruszania, sprzęgła i błędy sterownika. Brak publicznego VIN.",
+        "Ocena": "Zgodna konfiguracja, ale skrzynia DCT i brak VIN powodują niższy priorytet."
+      },
+      "offerType": "unknown",
+      "saleType": "fixed_price",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Iej1t.html",
+          "status": "removed",
+          "lastAttemptAt": "2026-11-11T16:36:49.302Z",
+          "lastCheckedAt": "2026-11-09T12:59:53Z",
+          "lastVerifiedAt": "2026-11-09T12:59:53Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Iej1t.html",
+            "checkedAt": "2026-11-11T16:36:49.302Z",
+            "availability": "access_error",
+            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+            "httpStatus": null
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-09T12:59:53Z",
+      "lastVerifiedAt": "2026-11-09T12:59:53Z",
+      "lastAttemptAt": "2026-11-11T16:36:49.302Z",
+      "history": [
+        {
+          "eventId": "827dc74f3e35e81613e4bee3f001c5a2b5868ef4dad4b262484f9bb84e81534a",
+          "runId": "refresh-20261108-01",
+          "checkedAt": "2026-11-08T18:39:20+01:00",
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Iej1t.html",
+          "availability": "available",
+          "note": "Karta Otomoto publicznie otwiera się w bieżącym odczycie i przedstawia aktywne ogłoszenie. Tytuł zapisany w bazie: Kia Ceed III Sportswagon — 1.4 T-GDI · 140 KM  156 000 km; poprzednia cena w bazie: 49500 PLN. Nie wyciągnięto nowych wniosków o historii, szkodach ani warunkach zakupu.",
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6Iej1t",
+            "modelKey": "kia-ceed-iii-sw",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Iej1t.html"
+              }
+            ],
+            "saleType": "fixed_price",
+            "lpgInstalled": null
+          },
+          "changes": {
+            "urls": {
+              "before": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Iej1t.html",
+                  "normalized": "https://otomoto.pl/osobowe/oferta/kia-ceed-ID6Iej1t.html",
+                  "label": "Zobacz ogłoszenie"
+                }
+              ],
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Iej1t.html",
+                  "normalized": "https://otomoto.pl/osobowe/oferta/kia-ceed-ID6Iej1t.html",
+                  "label": "Zobacz ogłoszenie"
+                },
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Iej1t.html"
+                }
+              ]
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            }
+          }
+        },
+        {
+          "eventId": "53acba5ddb48fdd1718bd4254581232574074e7f56b884409a305b6efb4e181d",
+          "runId": "refresh-20261108-03",
+          "checkedAt": "2026-11-08T22:58:24+01:00",
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Iej1t.html",
+          "availability": "access_error",
+          "note": "Próba otwarcia karty w Otomoto zwróciła HTTP 410 Gone; status oferty i dane niepotwierdzone.",
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6Iej1t"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "9c1e09b23ad2eccb9f0e13d01936dc3d314a24dca58475f97dc677ac6f117765",
+          "runId": "photos-20261108-01",
+          "checkedAt": "2026-11-08T23:33:03+01:00",
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Iej1t.html",
+          "availability": "access_error",
+          "note": "Otworzenie dokładnego URL zwróciło HTTP 410 Gone. Nie przesądzam, czy ogłoszenie zostało sprzedane lub usunięte; zdjęć nie można ocenić.",
+          "photoCheck": {
+            "status": "access_error",
+            "note": "Karta zwróciła HTTP 410 Gone; nie można sprawdzić widoczności bezpośrednich adresów zdjęć HTTPS."
+          },
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6Iej1t"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "9cbbbe16fc2f35bdc2bf96f0ee92e89098f61c5d37bdc279509b67e588344517",
+          "runId": "refresh20261109a",
+          "checkedAt": "2026-11-09T12:59:53Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Iej1t.html",
+          "availability": "removed",
+          "note": "Bezpośrednia karta ogłoszenia zwraca HTTP 410 Gone; portal nie udostępnia już tej oferty.",
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6Iej1t",
+            "modelKey": "kia-ceed-iii-sw",
+            "saleType": "fixed_price",
+            "lpgInstalled": null
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "02898c4059032025755e7ad809d768c474334deedfb1c441c6b2a5dd6b829b68",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T16:36:49.302Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Iej1t.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6Iej1t"
+          },
+          "changes": {}
+        }
+      ],
+      "assessment": {
+        "id": "listing:otomoto:ID6Iej1t",
+        "modelKey": "kia-ceed-iii-sw",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "body",
+          "exact_engine_variant",
+          "transmission",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
       "archive": {
-        "status": "unverified",
-        "reason": "no_listing_url_confirmed_available; at_least_one_access_error",
-        "archivedAt": "2026-11-11T02:03:47.784000+00:00"
+        "status": "closed",
+        "reason": "all_listings_confirmed_closed",
+        "archivedAt": "2026-11-09T12:59:53+00:00"
+      }
+    },
+    {
+      "id": "listing:otomoto:ID6I7r0t",
+      "modelKey": "kia-ceed-iii-sw",
+      "title": "Kia Ceed 1.4 T-GDI 140 KM Kombi, 2020",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6I7r0t.html",
+          "label": "Otomoto"
+        }
+      ],
+      "listingIds": [
+        "otomoto:ID6I7r0t"
+      ],
+      "year": 2020,
+      "price": 53900,
+      "priceLabel": "53 900 zł",
+      "mileage": 85523,
+      "mileageLabel": "85 523 km",
+      "engine": "1.4 T-GDI, 140 KM, benzyna",
+      "body": "Kombi",
+      "transmission": "manualna, 6-biegowa",
+      "offerType": "private",
+      "saleType": "fixed_price",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "voivodeship": "Mazowieckie",
+        "city": "Izabelin",
+        "precision": "city",
+        "source": "listing",
+        "checkedAt": "2026-11-08"
+      },
+      "details": {
+        "Data pierwszej rejestracji": "09.11.2020",
+        "VIN": "U5YH5814ALL080150",
+        "Kamera": "Kamera parkowania tył wskazana w wyposażeniu karty",
+        "Historia sprzedawcy": "Opis deklaruje krajowe pochodzenie, regularny serwis; karta wskazuje status bezwypadkowy i serwis ASO. Niepotwierdzone niezależnie.",
+        "LPG": "Karta podaje benzynę; brak informacji, czy zamontowano LPG. Dokumenty instalacji i zbiornika do sprawdzenia, jeśli instalacja istnieje.",
+        "Cena": "Cena ogłoszenia 53 900 zł; brak informacji o obowiązkowym finansowaniu. Przed zakupem potwierdzić kwotę końcową u sprzedawcy.",
+        "Dostępność": "Strona ogłoszenia była dostępna i zawierała aktywne dane kontaktowe oraz opis sprzedaży; sprzedawca prosi o potwierdzenie aktualności przed wizytą. Nie kontaktowano się ze sprzedawcą."
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-08T18:54:31+01:00",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6I7r0t.html",
+          "status": "removed",
+          "lastAttemptAt": "2026-11-11T16:36:49.303Z",
+          "lastCheckedAt": "2026-11-09T12:59:53Z",
+          "lastVerifiedAt": "2026-11-09T12:59:53Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6I7r0t.html",
+            "checkedAt": "2026-11-11T16:36:49.303Z",
+            "availability": "access_error",
+            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+            "httpStatus": null
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-09T12:59:53Z",
+      "lastVerifiedAt": "2026-11-09T12:59:53Z",
+      "lastAttemptAt": "2026-11-11T16:36:49.303Z",
+      "history": [
+        {
+          "eventId": "a32e164034e31544b73269e890fcbd74d9173f56b25f066dd8a3c016d1ca257d",
+          "runId": "search-20261108",
+          "checkedAt": "2026-11-08T18:54:31+01:00",
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6I7r0t.html",
+          "availability": "available",
+          "note": "Odczytano kartę ogłoszenia Otomoto: 53 900 zł, 2020, 85 523 km, 1.4 T-GDI 140 KM, kombi, skrzynia manualna, lokalizacja Izabelin (woj. mazowieckie), wyposażenie kamery cofania. Oferta jest opisana jako prywatna; dostępność nie została potwierdzona bezpośrednio u sprzedawcy.",
+          "evidence": [
+            {
+              "fields": [
+                "year",
+                "price",
+                "mileage",
+                "engine",
+                "body",
+                "transmission",
+                "offerType",
+                "saleType",
+                "location",
+                "cameraStatus"
+              ],
+              "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6I7r0t.html",
+              "checkedAt": "2026-11-08T18:54:31+01:00",
+              "kind": "seller",
+              "note": "Karta Otomoto: pola podstawowe, opis sprzedawcy, lokalizacja i wyposażenie. Karta opublikowana 02.07.2026; strona i kontakt pozostają dostępne w odczycie. Deklaracje stanu oraz historia są informacją sprzedawcy, nie niezależnym potwierdzeniem."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6I7r0t",
+            "modelKey": "kia-ceed-iii-sw",
+            "title": "Kia Ceed 1.4 T-GDI 140 KM Kombi, 2020",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6I7r0t.html",
+                "label": "Otomoto"
+              }
+            ],
+            "listingIds": [
+              "otomoto:ID6I7r0t"
+            ],
+            "year": 2020,
+            "price": 53900,
+            "priceLabel": "53 900 zł",
+            "mileage": 85523,
+            "mileageLabel": "85 523 km",
+            "engine": "1.4 T-GDI, 140 KM, benzyna",
+            "body": "Kombi",
+            "transmission": "manualna, 6-biegowa",
+            "offerType": "private",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "voivodeship": "Mazowieckie",
+              "city": "Izabelin",
+              "precision": "city",
+              "source": "listing",
+              "checkedAt": "2026-11-08"
+            },
+            "details": {
+              "Data pierwszej rejestracji": "09.11.2020",
+              "VIN": "U5YH5814ALL080150",
+              "Kamera": "Kamera parkowania tył wskazana w wyposażeniu karty",
+              "Historia sprzedawcy": "Opis deklaruje krajowe pochodzenie, regularny serwis; karta wskazuje status bezwypadkowy i serwis ASO. Niepotwierdzone niezależnie.",
+              "LPG": "Karta podaje benzynę; brak informacji, czy zamontowano LPG. Dokumenty instalacji i zbiornika do sprawdzenia, jeśli instalacja istnieje.",
+              "Cena": "Cena ogłoszenia 53 900 zł; brak informacji o obowiązkowym finansowaniu. Przed zakupem potwierdzić kwotę końcową u sprzedawcy.",
+              "Dostępność": "Strona ogłoszenia była dostępna i zawierała aktywne dane kontaktowe oraz opis sprzedaży; sprzedawca prosi o potwierdzenie aktualności przed wizytą. Nie kontaktowano się ze sprzedawcą."
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:otomoto:ID6I7r0t"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "kia-ceed-iii-sw"
+            },
+            "title": {
+              "before": null,
+              "after": "Kia Ceed 1.4 T-GDI 140 KM Kombi, 2020"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6I7r0t.html",
+                  "label": "Otomoto"
+                }
+              ]
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "otomoto:ID6I7r0t"
+              ]
+            },
+            "year": {
+              "before": null,
+              "after": 2020
+            },
+            "price": {
+              "before": null,
+              "after": 53900
+            },
+            "priceLabel": {
+              "before": null,
+              "after": "53 900 zł"
+            },
+            "mileage": {
+              "before": null,
+              "after": 85523
+            },
+            "mileageLabel": {
+              "before": null,
+              "after": "85 523 km"
+            },
+            "engine": {
+              "before": null,
+              "after": "1.4 T-GDI, 140 KM, benzyna"
+            },
+            "body": {
+              "before": null,
+              "after": "Kombi"
+            },
+            "transmission": {
+              "before": null,
+              "after": "manualna, 6-biegowa"
+            },
+            "offerType": {
+              "before": null,
+              "after": "private"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "voivodeship": "Mazowieckie",
+                "city": "Izabelin",
+                "precision": "city",
+                "source": "listing",
+                "checkedAt": "2026-11-08"
+              }
+            },
+            "details": {
+              "before": null,
+              "after": {
+                "Data pierwszej rejestracji": "09.11.2020",
+                "VIN": "U5YH5814ALL080150",
+                "Kamera": "Kamera parkowania tył wskazana w wyposażeniu karty",
+                "Historia sprzedawcy": "Opis deklaruje krajowe pochodzenie, regularny serwis; karta wskazuje status bezwypadkowy i serwis ASO. Niepotwierdzone niezależnie.",
+                "LPG": "Karta podaje benzynę; brak informacji, czy zamontowano LPG. Dokumenty instalacji i zbiornika do sprawdzenia, jeśli instalacja istnieje.",
+                "Cena": "Cena ogłoszenia 53 900 zł; brak informacji o obowiązkowym finansowaniu. Przed zakupem potwierdzić kwotę końcową u sprzedawcy.",
+                "Dostępność": "Strona ogłoszenia była dostępna i zawierała aktywne dane kontaktowe oraz opis sprzedaży; sprzedawca prosi o potwierdzenie aktualności przed wizytą. Nie kontaktowano się ze sprzedawcą."
+              }
+            }
+          }
+        },
+        {
+          "eventId": "016c033c36bc6e7241dbf85a73f4e59ba0ecc198c2d6366b60418bf92ca687e4",
+          "runId": "refresh-20261108-03",
+          "checkedAt": "2026-11-08T22:58:24+01:00",
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6I7r0t.html",
+          "availability": "access_error",
+          "note": "Próba otwarcia karty w Otomoto zwróciła HTTP 410 Gone; status oferty i dane niepotwierdzone.",
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6I7r0t"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "d159822334b8f0242aaa14b42420d9083d0b1322c8ecb1cc44ef7f9c6a628779",
+          "runId": "photos-20261108-01",
+          "checkedAt": "2026-11-08T23:33:03+01:00",
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6I7r0t.html",
+          "availability": "access_error",
+          "note": "Otworzenie dokładnego URL zwróciło HTTP 410 Gone. Nie przesądzam, czy ogłoszenie zostało sprzedane lub usunięte; zdjęć nie można ocenić.",
+          "photoCheck": {
+            "status": "access_error",
+            "note": "Karta zwróciła HTTP 410 Gone; nie można sprawdzić widoczności bezpośrednich adresów zdjęć HTTPS."
+          },
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6I7r0t"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "976bf611baa69a3a5f56097393750d27b02df83414e3a9a44cf4a75ae5ac091e",
+          "runId": "refresh20261109a",
+          "checkedAt": "2026-11-09T12:59:53Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6I7r0t.html",
+          "availability": "removed",
+          "note": "Bezpośrednia karta ogłoszenia zwraca HTTP 410 Gone; portal nie udostępnia już tej oferty.",
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6I7r0t",
+            "modelKey": "kia-ceed-iii-sw",
+            "saleType": "fixed_price",
+            "lpgInstalled": null
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "a1ecc9de54ee0173e8ea58848efa3d0257401dde1f3ce062a2f4c20178d1f42d",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T16:36:49.303Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6I7r0t.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6I7r0t"
+          },
+          "changes": {}
+        }
+      ],
+      "assessment": {
+        "id": "listing:otomoto:ID6I7r0t",
+        "modelKey": "kia-ceed-iii-sw",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "body",
+          "exact_engine_variant",
+          "transmission",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "archive": {
+        "status": "closed",
+        "reason": "all_listings_confirmed_closed",
+        "archivedAt": "2026-11-09T12:59:53+00:00"
+      }
+    },
+    {
+      "id": "listing:autoplac:7814-5113-VB",
+      "modelKey": "kia-ceed-iii-sw",
+      "title": "Kia Ceed III Kombi 1.4 MPI 100 KM, 2019, 87 000 km",
+      "urls": [
+        {
+          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
+          "label": "Autoplac"
+        }
+      ],
+      "listingIds": [
+        "autoplac:7814-5113-VB"
+      ],
+      "year": 2019,
+      "price": 45800,
+      "mileage": 87000,
+      "engine": "1.4 MPI, benzyna",
+      "body": "Kombi",
+      "transmission": "manualna",
+      "offerType": "company",
+      "saleType": "fixed_price",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "voivodeship": "Mazowieckie",
+        "city": "Strzyżew",
+        "precision": "city",
+        "source": "listing",
+        "checkedAt": "2026-11-08"
+      },
+      "details": {
+        "Pierwsza rejestracja": "17.06.2019 według karty.",
+        "VIN": "Karta pokazuje częściowo zamaskowany numer; pełnego VIN nie zapisano.",
+        "Kamera": "Opis sprzedawcy wymienia kamerę cofania oraz tylne czujniki parkowania.",
+        "ISOFIX": "Nie potwierdzono w odczytanej części karty.",
+        "LPG": "Karta podaje benzynę, ale nie rozstrzyga, czy jest zamontowana instalacja LPG; w razie jej obecności sprawdzić dokumenty i zbiornik.",
+        "Stan i historia": "Sprzedawca deklaruje polski salon, serwis ASO i bezwypadkowość; brak niezależnej weryfikacji.",
+        "Cena i dostępność": "Karta wyświetla stałą cenę 45 800 zł brutto i aktywne opcje kontaktu. Sprzedawca oferuje finansowanie, lecz nie wskazuje, że jest ono obowiązkowe; warunki gotówkowe należy potwierdzić."
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-08T19:37:26+01:00",
+      "listingStates": [
+        {
+          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
+          "status": "removed",
+          "lastAttemptAt": "2026-11-11T16:36:50.311Z",
+          "lastCheckedAt": "2026-11-11T16:36:50.311Z",
+          "lastVerifiedAt": "2026-11-11T16:36:50.311Z",
+          "lastObservation": {
+            "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
+            "checkedAt": "2026-11-11T16:36:50.311Z",
+            "availability": "removed",
+            "note": "Portal zwrócił HTTP 404 i jawny komunikat zamknięcia: „Nie znaleźliśmy tej oferty”.",
+            "httpStatus": 404,
+            "closedMessage": "Nie znaleźliśmy tej oferty"
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-11T16:36:50.311Z",
+      "lastVerifiedAt": "2026-11-11T16:36:50.311Z",
+      "lastAttemptAt": "2026-11-11T16:36:50.311Z",
+      "history": [
+        {
+          "eventId": "8151db7e0383f52bc7e41e8a139114173482547a225f61782b212fedf4057db3",
+          "runId": "search-20261108",
+          "checkedAt": "2026-11-08T19:37:26+01:00",
+          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
+          "availability": "available",
+          "note": "Bezpośrednio odczytana aktywna karta Autoplac: Kia Ceed III 1.4 MPI 100 KM, kombi, produkcja 2019, 87 000 km, manualna skrzynia, 45 800 zł brutto. Opis wymienia kamerę cofania i tylne czujniki. Karta podaje lokalizację Strzyżew (Mazowieckie) i aktywne opcje kontaktu; sprzedawca to salon samochodów używanych. Pełny VIN nie jest widoczny. Sprzedawcy nie kontaktowano.",
+          "evidence": [
+            {
+              "fields": [
+                "year",
+                "price",
+                "mileage",
+                "engine",
+                "body",
+                "transmission",
+                "offerType",
+                "saleType",
+                "location",
+                "cameraStatus"
+              ],
+              "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
+              "checkedAt": "2026-11-08T19:37:26+01:00",
+              "kind": "seller",
+              "note": "Dane z pól i opisu oferty; salon samochodów używanych wskazany w karcie. Pełnego VIN nie ujawniono."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:autoplac:7814-5113-VB",
+            "modelKey": "kia-ceed-iii-sw",
+            "title": "Kia Ceed III Kombi 1.4 MPI 100 KM, 2019, 87 000 km",
+            "urls": [
+              {
+                "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
+                "label": "Autoplac"
+              }
+            ],
+            "listingIds": [
+              "autoplac:7814-5113-VB"
+            ],
+            "vin": null,
+            "year": 2019,
+            "price": 45800,
+            "priceLabel": "45 800 zł brutto",
+            "mileage": 87000,
+            "mileageLabel": "87 000 km",
+            "engine": "1.4 MPI, 100 KM, benzyna",
+            "body": "Kombi",
+            "transmission": "manualna",
+            "offerType": "company",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "voivodeship": "Mazowieckie",
+              "city": "Strzyżew",
+              "precision": "city",
+              "source": "listing",
+              "checkedAt": "2026-11-08"
+            },
+            "details": {
+              "Pierwsza rejestracja": "17.06.2019 według karty.",
+              "VIN": "Karta pokazuje częściowo zamaskowany numer; pełnego VIN nie zapisano.",
+              "Kamera": "Opis sprzedawcy wymienia kamerę cofania oraz tylne czujniki parkowania.",
+              "ISOFIX": "Nie potwierdzono w odczytanej części karty.",
+              "LPG": "Karta podaje benzynę, ale nie rozstrzyga, czy jest zamontowana instalacja LPG; w razie jej obecności sprawdzić dokumenty i zbiornik.",
+              "Stan i historia": "Sprzedawca deklaruje polski salon, serwis ASO i bezwypadkowość; brak niezależnej weryfikacji.",
+              "Cena i dostępność": "Karta wyświetla stałą cenę 45 800 zł brutto i aktywne opcje kontaktu. Sprzedawca oferuje finansowanie, lecz nie wskazuje, że jest ono obowiązkowe; warunki gotówkowe należy potwierdzić."
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:autoplac:7814-5113-VB"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "kia-ceed-iii-sw"
+            },
+            "title": {
+              "before": null,
+              "after": "Kia Ceed III Kombi 1.4 MPI 100 KM, 2019, 87 000 km"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
+                  "label": "Autoplac"
+                }
+              ]
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "autoplac:7814-5113-VB"
+              ]
+            },
+            "year": {
+              "before": null,
+              "after": 2019
+            },
+            "price": {
+              "before": null,
+              "after": 45800
+            },
+            "priceLabel": {
+              "before": null,
+              "after": "45 800 zł brutto"
+            },
+            "mileage": {
+              "before": null,
+              "after": 87000
+            },
+            "mileageLabel": {
+              "before": null,
+              "after": "87 000 km"
+            },
+            "engine": {
+              "before": null,
+              "after": "1.4 MPI, 100 KM, benzyna"
+            },
+            "body": {
+              "before": null,
+              "after": "Kombi"
+            },
+            "transmission": {
+              "before": null,
+              "after": "manualna"
+            },
+            "offerType": {
+              "before": null,
+              "after": "company"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "voivodeship": "Mazowieckie",
+                "city": "Strzyżew",
+                "precision": "city",
+                "source": "listing",
+                "checkedAt": "2026-11-08"
+              }
+            },
+            "details": {
+              "before": null,
+              "after": {
+                "Pierwsza rejestracja": "17.06.2019 według karty.",
+                "VIN": "Karta pokazuje częściowo zamaskowany numer; pełnego VIN nie zapisano.",
+                "Kamera": "Opis sprzedawcy wymienia kamerę cofania oraz tylne czujniki parkowania.",
+                "ISOFIX": "Nie potwierdzono w odczytanej części karty.",
+                "LPG": "Karta podaje benzynę, ale nie rozstrzyga, czy jest zamontowana instalacja LPG; w razie jej obecności sprawdzić dokumenty i zbiornik.",
+                "Stan i historia": "Sprzedawca deklaruje polski salon, serwis ASO i bezwypadkowość; brak niezależnej weryfikacji.",
+                "Cena i dostępność": "Karta wyświetla stałą cenę 45 800 zł brutto i aktywne opcje kontaktu. Sprzedawca oferuje finansowanie, lecz nie wskazuje, że jest ono obowiązkowe; warunki gotówkowe należy potwierdzić."
+              }
+            }
+          }
+        },
+        {
+          "eventId": "4cacf62f4b67506a28fe83c5f44c09ca8248ad94e53af61838aba6be0975e390",
+          "runId": "refresh-20261108-03",
+          "checkedAt": "2026-11-08T21:57:50+00:00",
+          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
+          "availability": "available",
+          "note": "Karta nadal dostępna, ostatnia aktualizacja tydzień temu. Cena 45 800 zł; benzyna, manual, 1 368 cm³. Tytuł/opis wskazuje 100 KM, pole techniczne 101 KM — zachować rozbieżność do weryfikacji dokumentami. Pierwsza rejestracja 06.2019. Opis deklaruje salon PL, serwis ASO i bezwypadkowość; kamera cofania i czujniki wymienione. VIN udostępniany na życzenie, więc brak w odczycie. LPG nieustalone.",
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:7814-5113-VB",
+            "saleType": "fixed_price",
+            "lpgInstalled": null
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "2892b6b57081d34d3375b9387f155bac67a07952e36882868497ede06cff22fe",
+          "runId": "photos-20261108-01",
+          "checkedAt": "2026-11-08T22:31:52+00:00",
+          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
+          "availability": "available",
+          "note": "Karta dostępna, pokazuje galerię 1/26. Ujawniony link obrazu prowadzi bezpośrednio do HTTPS CDN Autoplac; zapisano zdjęcie główne. Cena 45 800 zł; finansowanie jest opcjonalne. LPG nieustalone.",
+          "photoCheck": {
+            "status": "found",
+            "note": "Znaleziono 1 bezpośredni HTTPS URL zdjęcia. Pozostałych adresów galerii nie ujawniono w odczytanym widoku."
+          },
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:7814-5113-VB",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "photos": [
+              "https://euw2-cdn.autoplac.pl/v1/p/ec036c1c-025d-472a-9dc7-bfd4e69eebdb?f=1920%3Awebp"
+            ]
+          },
+          "changes": {
+            "photos": {
+              "before": null,
+              "after": [
+                "https://euw2-cdn.autoplac.pl/v1/p/ec036c1c-025d-472a-9dc7-bfd4e69eebdb?f=1920%3Awebp"
+              ]
+            }
+          }
+        },
+        {
+          "eventId": "09ff16a51cb06310a2891f4fb785d564c98d79aa300059918921c877c27cd37b",
+          "runId": "refresh20261109a",
+          "checkedAt": "2026-11-09T13:00:00+00:00",
+          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
+          "availability": "available",
+          "note": "Karta zaktualizowana tydzień temu: Kia Ceed III M, 1.4 MPI/DOHC 100 KM (karta pokazuje 101 KM), manual, 2019, 87000 km, 45800 zł. Opis sprzedawcy deklaruje polski salon, serwis ASO, kamerę cofania, tylne czujniki parkowania i pisemną gwarancję. Pierwsza rejestracja 06.2019. Sprzedawca prosi o telefoniczne potwierdzenie dostępności przed przyjazdem. LPG nieustalone.",
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:7814-5113-VB",
+            "price": 45800,
+            "year": 2019,
+            "mileage": 87000,
+            "engine": "1.4 MPI, benzyna",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "photos": [
+              "https://euw2-cdn.autoplac.pl/v1/p/ec036c1c-025d-472a-9dc7-bfd4e69eebdb?f=1920%3Awebp"
+            ]
+          },
+          "changes": {
+            "engine": {
+              "before": "1.4 MPI, 100 KM, benzyna",
+              "after": "1.4 MPI, benzyna"
+            }
+          }
+        },
+        {
+          "eventId": "d5eadbab805fdd03282cb9d83aada9cc562ce1a2cf9ae216a65987e779cd7702",
+          "runId": "dostepnosc-2026-11-10",
+          "checkedAt": "2026-11-10T23:08:10Z",
+          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
+          "availability": "removed",
+          "note": "Autoplac page displays “Nie znaleźliśmy tej oferty” and “Oferta trafiła do archiwum”.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:7814-5113-VB"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "706b9cbb466a1df55a9a6d5d5640ae786932c982f78542074304fe035d7c5de2",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T16:36:50.311Z",
+          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
+          "availability": "removed",
+          "note": "Portal zwrócił HTTP 404 i jawny komunikat zamknięcia: „Nie znaleźliśmy tej oferty”.",
+          "httpStatus": 404,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:7814-5113-VB"
+          },
+          "changes": {}
+        }
+      ],
+      "assessment": {
+        "id": "listing:autoplac:7814-5113-VB",
+        "modelKey": "kia-ceed-iii-sw",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "body",
+          "exact_engine_variant",
+          "transmission",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "photos": [
+        "https://euw2-cdn.autoplac.pl/v1/p/ec036c1c-025d-472a-9dc7-bfd4e69eebdb?f=1920%3Awebp"
+      ],
+      "archive": {
+        "status": "closed",
+        "reason": "all_listings_confirmed_closed",
+        "archivedAt": "2026-11-10T23:08:10+00:00"
+      }
+    },
+    {
+      "id": "listing:autoplac:9947-3481-EB",
+      "modelKey": "kia-ceed-iii-sw",
+      "title": "Kia Ceed III SW 1.4 T-GDI 140 KM, 2019",
+      "urls": [
+        {
+          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-kamera-navi-led-auto-klima-asystenci-tempomat-9947-3481-EB"
+        }
+      ],
+      "listingIds": [
+        "autoplac:9947-3481-EB"
+      ],
+      "vin": "U5YH4814AKL034515",
+      "year": 2019,
+      "price": 43900,
+      "priceBasis": "gross_total",
+      "bodyCode": "wagon",
+      "engineVariant": "1.4-tgdi-140",
+      "transmissionCode": "manual",
+      "saleType": "fixed_price",
+      "offerType": "company",
+      "cameraStatus": "installed_confirmed",
+      "structuralDamageStatus": "unknown",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "voivodeship": "mazowieckie",
+        "city": "Warszawa",
+        "postalCode": "01-943",
+        "geoSource": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-kamera-navi-led-auto-klima-asystenci-tempomat-9947-3481-EB"
+      },
+      "photos": [
+        "https://euw2-cdn.autoplac.pl/v1/p/2b37f555-ad34-4a7c-b3b6-58d549f6672e?f=1920%3Awebp"
+      ],
+      "details": {
+        "Dostępność i cena": "Karta Autohero aktywna; podaje dostępność w Autohero Center Warszawa Młociny, oględziny przed zakupem oraz zakup online. Cena wynosi 43 900 zł brutto; nie wskazano obowiązkowego finansowania.",
+        "Dane i luki": "2019, Ceed III kombi, 1.4 T-GDI 140 KM, manual, 121 530 km. Kamera cofania wymieniona na karcie. LPG nie wymienione i pozostaje nieustalone. Portal oznacza bezwypadkowość jako tak, ale brak niezależnej kontroli struktury."
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-09T14:39:30+01:00",
+      "listingStates": [
+        {
+          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-kamera-navi-led-auto-klima-asystenci-tempomat-9947-3481-EB",
+          "status": "removed",
+          "lastAttemptAt": "2026-11-11T16:36:50.313Z",
+          "lastCheckedAt": "2026-11-11T16:36:50.313Z",
+          "lastVerifiedAt": "2026-11-11T16:36:50.313Z",
+          "lastObservation": {
+            "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-kamera-navi-led-auto-klima-asystenci-tempomat-9947-3481-EB",
+            "checkedAt": "2026-11-11T16:36:50.313Z",
+            "availability": "removed",
+            "note": "Portal zwrócił HTTP 404 i jawny komunikat zamknięcia: „Nie znaleźliśmy tej oferty”.",
+            "httpStatus": 404,
+            "closedMessage": "Nie znaleźliśmy tej oferty"
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-11T16:36:50.313Z",
+      "lastVerifiedAt": "2026-11-11T16:36:50.313Z",
+      "lastAttemptAt": "2026-11-11T16:36:50.313Z",
+      "history": [
+        {
+          "eventId": "deab8c4b495e28e1243fb5a2b1b0d7a495ceb0fffff9d20434c2662ac98aa11b",
+          "runId": "search-20261109",
+          "checkedAt": "2026-11-09T14:39:30+01:00",
+          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-kamera-navi-led-auto-klima-asystenci-tempomat-9947-3481-EB",
+          "availability": "available",
+          "note": "Karta Autohero dostępna; wskazuje auto w Autohero Center Warszawa Młociny, 2019, Ceed III kombi, 1.4 benzyna 140 KM, manual, 121 530 km, 43 900 zł brutto. Karta wymienia kamerę cofania i lokalizację Warszawa. Nie podaje informacji o LPG; nie zakładam jego braku. Niezależna kontrola szkód strukturalnych nie została udokumentowana.",
+          "photoCheck": null,
+          "evidence": [
+            {
+              "fields": [
+                "availability",
+                "vin",
+                "year",
+                "price",
+                "priceBasis",
+                "mileageKm",
+                "bodyCode",
+                "engineVariant",
+                "transmissionCode",
+                "saleType",
+                "offerType",
+                "cameraStatus",
+                "lpgInstalled",
+                "structuralDamageStatus",
+                "location"
+              ],
+              "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-kamera-navi-led-auto-klima-asystenci-tempomat-9947-3481-EB",
+              "checkedAt": "2026-11-09T14:39:30+01:00",
+              "kind": "seller",
+              "note": "Karta: aktualizacja 3 dni, ID 9947-3481-EB, cena, przebieg, paliwo, moc i manual (lin. 20–55); auto dostępne w Autohero Center i warunki obejrzenia 62–78; bezwypadkowość portalu 91–95; VIN 109–110; kamera 127–135; adres i Warszawa 136–139; cena brutto powtórzona 201–205."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:autoplac:9947-3481-EB",
+            "modelKey": "kia-ceed-iii-sw",
+            "title": "Kia Ceed III SW 1.4 T-GDI 140 KM, 2019",
+            "urls": [
+              {
+                "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-kamera-navi-led-auto-klima-asystenci-tempomat-9947-3481-EB"
+              }
+            ],
+            "listingIds": [
+              "autoplac:9947-3481-EB"
+            ],
+            "vin": "U5YH4814AKL034515",
+            "year": 2019,
+            "price": 43900,
+            "priceBasis": "gross_unconditional_total",
+            "mileageKm": 121530,
+            "bodyCode": "wagon",
+            "engineVariant": "1.4-tgdi-140",
+            "transmissionCode": "manual",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "offerType": "company",
+            "cameraStatus": "installed_confirmed",
+            "structuralDamageStatus": "unknown",
+            "familyFitConfirmed": null,
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "voivodeship": "mazowieckie",
+              "city": "Warszawa",
+              "postalCode": "01-943",
+              "geoSource": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-kamera-navi-led-auto-klima-asystenci-tempomat-9947-3481-EB"
+            },
+            "photos": [
+              "https://euw2-cdn.autoplac.pl/v1/p/2b37f555-ad34-4a7c-b3b6-58d549f6672e?f=1920%3Awebp"
+            ],
+            "details": {
+              "Dostępność i cena": "Karta Autohero aktywna; podaje dostępność w Autohero Center Warszawa Młociny, oględziny przed zakupem oraz zakup online. Cena wynosi 43 900 zł brutto; nie wskazano obowiązkowego finansowania.",
+              "Dane i luki": "2019, Ceed III kombi, 1.4 T-GDI 140 KM, manual, 121 530 km. Kamera cofania wymieniona na karcie. LPG nie wymienione i pozostaje nieustalone. Portal oznacza bezwypadkowość jako tak, ale brak niezależnej kontroli struktury."
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:autoplac:9947-3481-EB"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "kia-ceed-iii-sw"
+            },
+            "title": {
+              "before": null,
+              "after": "Kia Ceed III SW 1.4 T-GDI 140 KM, 2019"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-kamera-navi-led-auto-klima-asystenci-tempomat-9947-3481-EB"
+                }
+              ]
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "autoplac:9947-3481-EB"
+              ]
+            },
+            "vin": {
+              "before": null,
+              "after": "U5YH4814AKL034515"
+            },
+            "year": {
+              "before": null,
+              "after": 2019
+            },
+            "price": {
+              "before": null,
+              "after": 43900
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "gross_unconditional_total"
+            },
+            "mileageKm": {
+              "before": null,
+              "after": 121530
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.4-tgdi-140"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "offerType": {
+              "before": null,
+              "after": "company"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "installed_confirmed"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "voivodeship": "mazowieckie",
+                "city": "Warszawa",
+                "postalCode": "01-943",
+                "geoSource": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-kamera-navi-led-auto-klima-asystenci-tempomat-9947-3481-EB"
+              }
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://euw2-cdn.autoplac.pl/v1/p/2b37f555-ad34-4a7c-b3b6-58d549f6672e?f=1920%3Awebp"
+              ]
+            },
+            "details": {
+              "before": null,
+              "after": {
+                "Dostępność i cena": "Karta Autohero aktywna; podaje dostępność w Autohero Center Warszawa Młociny, oględziny przed zakupem oraz zakup online. Cena wynosi 43 900 zł brutto; nie wskazano obowiązkowego finansowania.",
+                "Dane i luki": "2019, Ceed III kombi, 1.4 T-GDI 140 KM, manual, 121 530 km. Kamera cofania wymieniona na karcie. LPG nie wymienione i pozostaje nieustalone. Portal oznacza bezwypadkowość jako tak, ale brak niezależnej kontroli struktury."
+              }
+            }
+          }
+        },
+        {
+          "eventId": "479de4d7e2ff1bd7ac249f1a68a83ae1a2ee7202c549eee388f2dbf52f1e528b",
+          "runId": "dostepnosc-2026-11-10",
+          "checkedAt": "2026-11-10T23:08:10Z",
+          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-kamera-navi-led-auto-klima-asystenci-tempomat-9947-3481-EB",
+          "availability": "removed",
+          "note": "Autoplac page displays “Nie znaleźliśmy tej oferty” and “Oferta trafiła do archiwum”.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:9947-3481-EB"
+          },
+          "changes": {
+            "priceBasis": {
+              "before": "gross_unconditional_total",
+              "after": "gross_total"
+            }
+          }
+        },
+        {
+          "eventId": "e337633473f851b1e9660588452ce750c904b10e82d432175e91da22bab80c99",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T16:36:50.313Z",
+          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-kamera-navi-led-auto-klima-asystenci-tempomat-9947-3481-EB",
+          "availability": "removed",
+          "note": "Portal zwrócił HTTP 404 i jawny komunikat zamknięcia: „Nie znaleźliśmy tej oferty”.",
+          "httpStatus": 404,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:9947-3481-EB"
+          },
+          "changes": {}
+        }
+      ],
+      "assessment": {
+        "id": "listing:autoplac:9947-3481-EB",
+        "modelKey": "kia-ceed-iii-sw",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "structural_history",
+          "mileage",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "structural_history; mileage; stroller_and_family_fit",
+      "mileage": 121530,
+      "archive": {
+        "status": "closed",
+        "reason": "all_listings_confirmed_closed",
+        "archivedAt": "2026-11-10T23:08:10+00:00"
       }
     },
     {
@@ -6949,22 +7145,28 @@
         {
           "url": "https://sprzedajemy.pl/kia-ceed-sw-iii-m-1-4-t-gdi-140km-kombi-krajowy-lublin-4-6bea9f-nr72146103",
           "status": "removed",
-          "lastAttemptAt": "2026-11-11T02:04:28.169Z",
-          "lastCheckedAt": "2026-11-11T02:04:28.169Z",
-          "lastVerifiedAt": "2026-11-11T02:04:28.169Z",
+          "lastAttemptAt": "2026-11-11T16:40:47.977Z",
+          "lastCheckedAt": "2026-11-11T16:40:47.977Z",
+          "lastVerifiedAt": "2026-11-11T16:40:47.977Z",
           "lastObservation": {
             "url": "https://sprzedajemy.pl/kia-ceed-sw-iii-m-1-4-t-gdi-140km-kombi-krajowy-lublin-4-6bea9f-nr72146103",
-            "checkedAt": "2026-11-11T02:04:28.169Z",
+            "checkedAt": "2026-11-11T16:40:47.977Z",
             "availability": "removed",
             "note": "Portal wyświetlił komunikat zamknięcia: „oferta jest już nieaktualna”.",
             "httpStatus": 200,
+            "availabilityProof": {
+              "identity": true,
+              "contact": false,
+              "price": true,
+              "titleTokensMatched": 8
+            },
             "closedMessage": "oferta jest już nieaktualna"
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T02:04:28.169Z",
-      "lastVerifiedAt": "2026-11-11T02:04:28.169Z",
-      "lastAttemptAt": "2026-11-11T02:04:28.169Z",
+      "lastCheckedAt": "2026-11-11T16:40:47.977Z",
+      "lastVerifiedAt": "2026-11-11T16:40:47.977Z",
+      "lastAttemptAt": "2026-11-11T16:40:47.977Z",
       "history": [
         {
           "eventId": "93e71d602a04b499d55c8278f6d55dce3470bd55edf71692757d8a86fba09bdf",
@@ -7198,6 +7400,21 @@
           "eventId": "4bb44a27eba73f71275418c9c8da37854dbc2ba3d040140e051a8133211d34e2",
           "runId": "dostepnosc-2026-11-11-live",
           "checkedAt": "2026-11-11T02:04:28.169Z",
+          "url": "https://sprzedajemy.pl/kia-ceed-sw-iii-m-1-4-t-gdi-140km-kombi-krajowy-lublin-4-6bea9f-nr72146103",
+          "availability": "removed",
+          "note": "Portal wyświetlił komunikat zamknięcia: „oferta jest już nieaktualna”.",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:sprzedajemy:72146103"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "4de7bd249c3120d00c8a81b8c38da4dbfe87cfe40356a405c787f7b469c37030",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T16:40:47.977Z",
           "url": "https://sprzedajemy.pl/kia-ceed-sw-iii-m-1-4-t-gdi-140km-kombi-krajowy-lublin-4-6bea9f-nr72146103",
           "availability": "removed",
           "note": "Portal wyświetlił komunikat zamknięcia: „oferta jest już nieaktualna”.",

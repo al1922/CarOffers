@@ -1291,960 +1291,6 @@
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
       "verdictNote": "camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
-    }
-  ],
-  "archivedOffers": [
-    {
-      "id": "listing:otomoto:ID6I2BPK",
-      "modelKey": "seat-leon-iii-st",
-      "vin": null,
-      "listingIds": [
-        "otomoto:ID6I2BPK"
-      ],
-      "urls": [
-        {
-          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6I2BPK.html",
-          "normalized": "https://otomoto.pl/osobowe/oferta/seat-leon-ID6I2BPK.html",
-          "label": "Zobacz ogłoszenie — Otomoto"
-        }
-      ],
-      "title": "1.4 TSI EA211 125 KM Kombi — Polska (lokalizacja w ogłoszeniu)  99 000 km",
-      "year": 2018,
-      "price": 47900,
-      "priceLabel": "47 900 zł",
-      "mileage": 99000,
-      "mileageLabel": "99 000 km",
-      "engine": "1.4 TSI EA211 · 125 KM",
-      "body": "Kombi",
-      "transmission": "manualna",
-      "seller": "sprzedawca Otomoto · karta Otomoto otwarta w ramach weryfikacji 06.11.2026",
-      "subtitle": "2018 · Kombi · 1.4 TSI EA211 · 125 KM",
-      "priority": "Priorytet 3",
-      "verdict": "check",
-      "verdictTitle": "Do weryfikacji",
-      "verdictNote": "body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction",
-      "specs": {
-        "rocznik": "2018",
-        "nadwozie": "Kombi",
-        "silnik": "1.4 TSI EA211 · 125 KM",
-        "skrzynia": "manualna",
-        "przebieg": "99 000 km",
-        "cena zakupu": "47 900 zł — cena ogłoszenia; kwotę końcową potwierdzić"
-      },
-      "details": {
-        "Historia i pochodzenie": "Ogłoszenie w indeksie wskazuje kombi i 1.4 TSI 125 KM.",
-        "Wyposażenie": "VIN nieujawniony w zweryfikowanym fragmencie karty; uzyskać od sprzedawcy.",
-        "Problemy / niepewności": "Rozbieżny przebieg 99 tys. km w nagłówku / 102 tys. km w opisie. Użytkować jako trop z weryfikacją danych; link był dostępny w przeglądzie.",
-        "Ocena": "Rocznik, nadwozie, pojemność/moc oraz cena podstawowa mieszczą się w kryteriach. Weryfikacja dostępności sprzedawcy i stanu technicznego pozostaje do wykonania."
-      },
-      "offerType": "unknown",
-      "listingStates": [
-        {
-          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6I2BPK.html",
-          "status": "removed",
-          "lastAttemptAt": "2026-11-09T13:01:58Z",
-          "lastObservation": {
-            "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6I2BPK.html",
-            "checkedAt": "2026-11-09T13:01:58Z",
-            "availability": "removed",
-            "note": "Bezpośrednia karta ogłoszenia zwraca HTTP 410 Gone; portal nie udostępnia już tej oferty."
-          },
-          "lastCheckedAt": "2026-11-09T13:01:58Z",
-          "lastVerifiedAt": "2026-11-09T13:01:58Z"
-        }
-      ],
-      "lastAttemptAt": "2026-11-09T13:01:58Z",
-      "history": [
-        {
-          "eventId": "819ba807840f91212af4ded02faf9b1d005cdec168f3d8fbafc91e9cd1e93b84",
-          "runId": "refresh-20261108-01",
-          "checkedAt": "2026-11-08T18:39:30+01:00",
-          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6I2BPK.html",
-          "availability": "access_error",
-          "note": "Bezpośredni odczyt strony nie powiódł się: narzędzie zwróciło HTTP 410 Gone. Nie jest to dowód sprzedaży ani usunięcia; status ogłoszenia pozostaje nieustalony.",
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:otomoto:ID6I2BPK",
-            "modelKey": "seat-leon-iii-st",
-            "urls": [
-              {
-                "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6I2BPK.html"
-              }
-            ]
-          },
-          "changes": {}
-        },
-        {
-          "eventId": "235dca3cae0e4a2260ff5124c8edcb8a8d898e87f404eebc3514e3498dd99b3f",
-          "runId": "refresh-20261108-03",
-          "checkedAt": "2026-11-08T23:01:40+01:00",
-          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6I2BPK.html",
-          "availability": "access_error",
-          "note": "Próba otwarcia karty w Otomoto zwróciła HTTP 410 Gone; status oferty i dane niepotwierdzone.",
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:otomoto:ID6I2BPK"
-          },
-          "changes": {}
-        },
-        {
-          "eventId": "f0830be4f88fbd4d6b69d28b5e003eea436cccedd3c4f012900537491110f626",
-          "runId": "photos-20261108-01",
-          "checkedAt": "2026-11-08T23:35:26+01:00",
-          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6I2BPK.html",
-          "availability": "access_error",
-          "note": "Otworzenie dokładnego URL zwróciło HTTP 410 Gone. Nie wyciągam wniosku o sprzedaży ani usunięciu oferty; zdjęcia nie zostały odczytane.",
-          "photoCheck": {
-            "status": "access_error",
-            "note": "Karta zwróciła HTTP 410 Gone; nie można sprawdzić bezpośrednich adresów zdjęć HTTPS."
-          },
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:otomoto:ID6I2BPK"
-          },
-          "changes": {}
-        },
-        {
-          "eventId": "10953930cf0ad6eea33cff66527152ca4d6726744563c535f351a912bb4d66d1",
-          "runId": "refresh20261109a",
-          "checkedAt": "2026-11-09T13:01:58Z",
-          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6I2BPK.html",
-          "availability": "removed",
-          "note": "Bezpośrednia karta ogłoszenia zwraca HTTP 410 Gone; portal nie udostępnia już tej oferty.",
-          "photoCheck": null,
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:otomoto:ID6I2BPK",
-            "modelKey": "seat-leon-iii-st",
-            "saleType": "fixed_price",
-            "lpgInstalled": null
-          },
-          "changes": {}
-        }
-      ],
-      "assessment": {
-        "id": "listing:otomoto:ID6I2BPK",
-        "modelKey": "seat-leon-iii-st",
-        "verdict": "check",
-        "failures": [],
-        "unknowns": [
-          "body",
-          "exact_engine_variant",
-          "transmission",
-          "camera_or_compatible_retrofit",
-          "structural_history",
-          "stroller_and_family_fit",
-          "purchase_not_auction"
-        ],
-        "preferenceNotes": []
-      },
-      "lastCheckedAt": "2026-11-09T13:01:58Z",
-      "lastVerifiedAt": "2026-11-09T13:01:58Z",
-      "archive": {
-        "status": "closed",
-        "reason": "all_listings_confirmed_closed",
-        "archivedAt": "2026-11-09T13:01:58+00:00"
-      }
-    },
-    {
-      "id": "vin:VSSZZZ5FZJR038225",
-      "modelKey": "seat-leon-iii-st",
-      "vin": "VSSZZZ5FZJR038225",
-      "listingIds": [
-        "olx:ID1byi2o"
-      ],
-      "urls": [
-        {
-          "url": "https://www.olx.pl/d/oferta/seat-leon-leon-st-fr-1-4-benz-125-km-2018r-88-000-km-warszawa-CID5-ID1byi2o.html",
-          "normalized": "https://olx.pl/d/oferta/seat-leon-leon-st-fr-1-4-benz-125-km-2018r-88-000-km-warszawa-CID5-ID1byi2o.html",
-          "label": "Zobacz ogłoszenie"
-        }
-      ],
-      "title": "SEAT Leon III ST — 1.4 TSI EA211 · 125 KM  88 000 km",
-      "year": 2018,
-      "price": 49999,
-      "priceLabel": "49 999 zł",
-      "mileage": 88000,
-      "mileageLabel": "88 000 km",
-      "engine": "1.4 TSI EA211 · 125 KM",
-      "body": "Kombi / ST",
-      "transmission": "Manualna",
-      "seller": "Alejaautpl · Warszawa",
-      "subtitle": "2018 · Kombi / ST · 1.4 TSI EA211 · 125 KM",
-      "priority": "Priorytet 1",
-      "verdict": "check",
-      "verdictTitle": "Do weryfikacji",
-      "verdictNote": "body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction",
-      "specs": {
-        "rocznik": "2018",
-        "nadwozie": "Kombi / ST",
-        "silnik": "1.4 TSI EA211 · 125 KM",
-        "skrzynia": "Manualna",
-        "przebieg": "88 000 km",
-        "cena zakupu": "49 999 zł"
-      },
-      "details": {
-        "Historia i pochodzenie": "Import z Niemiec, sprzedawca firmowy. Numer VIN widoczny; serwis i bezwypadkowość do potwierdzenia w dokumentacji.",
-        "Wyposażenie": "Kamera cofania, Full LED, podgrzewane fotele, wersja FR.",
-        "Problemy / niepewności": "Niski deklarowany przebieg należy zestawić z historią zagraniczną; brak pełnego raportu szkód.",
-        "Ocena": "Stosunkowo niski przebieg i manual z EA211; dobra oferta do sprawdzenia."
-      },
-      "offerType": "unknown",
-      "listingStates": [
-        {
-          "url": "https://www.olx.pl/d/oferta/seat-leon-leon-st-fr-1-4-benz-125-km-2018r-88-000-km-warszawa-CID5-ID1byi2o.html",
-          "status": "removed",
-          "lastAttemptAt": "2026-11-10T23:10:57Z",
-          "lastObservation": {
-            "url": "https://www.olx.pl/d/oferta/seat-leon-leon-st-fr-1-4-benz-125-km-2018r-88-000-km-warszawa-CID5-ID1byi2o.html",
-            "checkedAt": "2026-11-10T23:10:57Z",
-            "availability": "removed",
-            "httpStatus": 410,
-            "note": "OLX odpowiedział błędem HTTP 410 Gone przy bezpośrednim otwarciu karty; zgodnie z regułą flow oznaczono jako removed."
-          },
-          "lastCheckedAt": "2026-11-10T23:10:57Z",
-          "lastVerifiedAt": "2026-11-10T23:10:57Z"
-        }
-      ],
-      "lastAttemptAt": "2026-11-10T23:10:57Z",
-      "history": [
-        {
-          "eventId": "a1486f364208e961e248a1f561429cc9eb16bf001e1c2aeaa0bee809231138cf",
-          "runId": "refresh-20261108-01",
-          "checkedAt": "2026-11-08T18:44:22+01:00",
-          "url": "https://www.olx.pl/d/oferta/seat-leon-leon-st-fr-1-4-benz-125-km-2018r-88-000-km-warszawa-CID5-ID1byi2o.html",
-          "availability": "access_error",
-          "note": "Próba bezpośredniego otwarcia karty OLX nie powiodła się: narzędzie zwróciło HTTP 410 Gone. Wyszukiwarka pokazuje jedynie starszą kopię z sierpnia 2026, która nie wystarcza do potwierdzenia bieżącego statusu ani danych. Nie wnioskuję, że oferta została sprzedana lub usunięta.",
-          "evidence": [],
-          "reportedFields": {
-            "id": "vin:VSSZZZ5FZJR038225",
-            "title": "SEAT Leon III ST 1.4 TSI 125 KM",
-            "urls": [
-              {
-                "url": "https://www.olx.pl/d/oferta/seat-leon-leon-st-fr-1-4-benz-125-km-2018r-88-000-km-warszawa-CID5-ID1byi2o.html"
-              }
-            ]
-          },
-          "changes": {}
-        },
-        {
-          "eventId": "0b17864836440153e90550e433dea0ef746d1c0f98a2b081051773a22fcd6410",
-          "runId": "refresh-20261108-03",
-          "checkedAt": "2026-11-08T23:00:24+01:00",
-          "url": "https://www.olx.pl/d/oferta/seat-leon-leon-st-fr-1-4-benz-125-km-2018r-88-000-km-warszawa-CID5-ID1byi2o.html",
-          "availability": "access_error",
-          "note": "Bezpośrednie otwarcie karty OLX zwróciło HTTP 410 Gone. Wyszukiwarka ma tylko kopię sprzed około dwóch miesięcy, niewystarczającą do potwierdzenia bieżącego stanu ani ceny. Nie wnioskuję, że ogłoszenie zostało sprzedane lub usunięte.",
-          "evidence": [],
-          "reportedFields": {
-            "id": "vin:VSSZZZ5FZJR038225",
-            "title": "SEAT Leon III ST — 1.4 TSI EA211 · 125 KM  88 000 km",
-            "urls": [
-              {
-                "url": "https://www.olx.pl/d/oferta/seat-leon-leon-st-fr-1-4-benz-125-km-2018r-88-000-km-warszawa-CID5-ID1byi2o.html"
-              }
-            ]
-          },
-          "changes": {}
-        },
-        {
-          "eventId": "9877ca4328e2d90a051f74f3fcb5ed778af4ad2ef4faa1b18c0d32a58c3c81a8",
-          "runId": "photos-20261108-01",
-          "checkedAt": "2026-11-08T23:40:48+01:00",
-          "url": "https://www.olx.pl/d/oferta/seat-leon-leon-st-fr-1-4-benz-125-km-2018r-88-000-km-warszawa-CID5-ID1byi2o.html",
-          "availability": "access_error",
-          "note": "Próba otwarcia dokładnego URL zwróciła HTTP 410 Gone. Nie udało się odczytać karty ani galerii; nie wnioskuję, że ogłoszenie zostało sprzedane lub usunięte.",
-          "photoCheck": {
-            "status": "access_error",
-            "note": "Karta zwróciła HTTP 410 Gone, więc nie można odczytać bezpośrednich URL-i zdjęć."
-          },
-          "evidence": [],
-          "reportedFields": {
-            "id": "vin:VSSZZZ5FZJR038225",
-            "title": "SEAT Leon III ST — 1.4 TSI EA211 · 125 KM  88 000 km",
-            "urls": [
-              {
-                "url": "https://www.olx.pl/d/oferta/seat-leon-leon-st-fr-1-4-benz-125-km-2018r-88-000-km-warszawa-CID5-ID1byi2o.html"
-              }
-            ]
-          },
-          "changes": {}
-        },
-        {
-          "eventId": "77236189286f91a19efd4391c64334f115dc66d6ca93d14b7d5597d468e0db81",
-          "runId": "refresh20261109a",
-          "checkedAt": "2026-11-09T13:02:05+00:00",
-          "url": "https://www.olx.pl/d/oferta/seat-leon-leon-st-fr-1-4-benz-125-km-2018r-88-000-km-warszawa-CID5-ID1byi2o.html",
-          "availability": "access_error",
-          "note": "Dokładny URL zwrócił HTTP 410 Gone. Nie mogłem odczytać karty; nie wnioskuję o sprzedaży ani usunięciu oferty.",
-          "photoCheck": null,
-          "evidence": [],
-          "reportedFields": {
-            "id": "vin:VSSZZZ5FZJR038225",
-            "changes": {}
-          },
-          "changes": {}
-        },
-        {
-          "eventId": "592004c26c9be43494aea3d9df82bab375cb763a52d57a5a4604d473b9a1bb59",
-          "runId": "dostepnosc-2026-11-10",
-          "checkedAt": "2026-11-10T23:10:57Z",
-          "url": "https://www.olx.pl/d/oferta/seat-leon-leon-st-fr-1-4-benz-125-km-2018r-88-000-km-warszawa-CID5-ID1byi2o.html",
-          "availability": "removed",
-          "note": "OLX odpowiedział błędem HTTP 410 Gone przy bezpośrednim otwarciu karty; zgodnie z regułą flow oznaczono jako removed.",
-          "httpStatus": 410,
-          "photoCheck": null,
-          "evidence": [],
-          "reportedFields": {
-            "id": "vin:VSSZZZ5FZJR038225"
-          },
-          "changes": {}
-        }
-      ],
-      "assessment": {
-        "id": "vin:VSSZZZ5FZJR038225",
-        "modelKey": "seat-leon-iii-st",
-        "verdict": "check",
-        "failures": [],
-        "unknowns": [
-          "body",
-          "exact_engine_variant",
-          "transmission",
-          "camera_or_compatible_retrofit",
-          "structural_history",
-          "stroller_and_family_fit",
-          "purchase_not_auction"
-        ],
-        "preferenceNotes": []
-      },
-      "lastCheckedAt": "2026-11-10T23:10:57Z",
-      "lastVerifiedAt": "2026-11-10T23:10:57Z",
-      "archive": {
-        "status": "closed",
-        "reason": "all_listings_confirmed_closed",
-        "archivedAt": "2026-11-10T23:10:57+00:00"
-      }
-    },
-    {
-      "id": "listing:autoplac:7910-1456-SB",
-      "modelKey": "seat-leon-iii-st",
-      "title": "SEAT Leon ST FR 1.4 TSI 125 KM, kamera cofania",
-      "urls": [
-        {
-          "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-st-fr-benz-125-km-bezwypadkowy-2018r-88000-km-warszawa-7910-1456-SB",
-          "label": "Autoplac"
-        }
-      ],
-      "listingIds": [
-        "autoplac:7910-1456-SB"
-      ],
-      "year": 2018,
-      "price": 46999,
-      "priceBasis": "gross_total",
-      "mileage": 88000,
-      "engineVariant": "1.4-tsi-ea211-125",
-      "bodyCode": "wagon",
-      "transmissionCode": "manual",
-      "cameraStatus": "installed_confirmed",
-      "structuralDamageStatus": "unknown",
-      "offerType": "company",
-      "saleType": "fixed_price",
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "voivodeship": "Mazowieckie",
-        "city": "Nowa Wola"
-      },
-      "photos": [
-        "https://euw2-cdn.autoplac.pl/v1/p/e594e6e4-3600-4eb7-ab91-0b9bf4d88953?f=1920%3Awebp"
-      ],
-      "details": {
-        "Cena i warunki": "46 999 zł brutto. Karta oferuje opcjonalny kredyt lub leasing; nie wskazano, że niższa cena wymaga finansowania.",
-        "Kamera cofania": "Opis sprzedawcy wymienia kamerę cofania oraz czujniki parkowania z przodu i z tyłu.",
-        "LPG": "Karta podaje benzynę, nie określa montażu LPG.",
-        "Szkody": "Pola Autoplac: bezwypadkowy tak, uszkodzony nie; niezależna kontrola strukturalna niepotwierdzona.",
-        "Lokalizacja": "Nowa Wola, Mazowieckie; Autoplac podaje również adres/obszar Nowa Wola, 05-500."
-      },
-      "lpgInstalled": null,
-      "firstSeenAt": "2026-11-09T14:44:17+01:00",
-      "listingStates": [
-        {
-          "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-st-fr-benz-125-km-bezwypadkowy-2018r-88000-km-warszawa-7910-1456-SB",
-          "status": "removed",
-          "lastAttemptAt": "2026-11-10T23:11:51Z",
-          "lastCheckedAt": "2026-11-10T23:11:51Z",
-          "lastVerifiedAt": "2026-11-10T23:11:51Z",
-          "lastObservation": {
-            "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-st-fr-benz-125-km-bezwypadkowy-2018r-88000-km-warszawa-7910-1456-SB",
-            "checkedAt": "2026-11-10T23:11:51Z",
-            "availability": "removed",
-            "httpStatus": null,
-            "note": "Autoplac pokazuje „Nie znaleźliśmy tej oferty” i „Oferta trafiła do archiwum”."
-          }
-        }
-      ],
-      "lastCheckedAt": "2026-11-10T23:11:51Z",
-      "lastVerifiedAt": "2026-11-10T23:11:51Z",
-      "lastAttemptAt": "2026-11-10T23:11:51Z",
-      "history": [
-        {
-          "eventId": "5c2afaca755e9647331023ddef150eb9cc2a923a4e05bbe4800d0c1bf015fef4",
-          "runId": "search-20261109",
-          "checkedAt": "2026-11-09T14:44:17+01:00",
-          "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-st-fr-benz-125-km-bezwypadkowy-2018r-88000-km-warszawa-7910-1456-SB",
-          "availability": "available",
-          "note": "Karta Autoplac (ostatnia aktualizacja w ostatnim tygodniu) pokazuje SEAT Leon ST/FR 2018, benzynowy 1.4 TSI 125 KM, manual 6-biegowy, 88 000 km i 46 999 zł brutto. Karta wymienia kamerę cofania i czujniki parkowania. Sprzedawca firma; LPG nieustalone; brak niezależnej kontroli strukturalnej.",
-          "photoCheck": null,
-          "evidence": [
-            {
-              "fields": [
-                "year",
-                "price",
-                "priceBasis",
-                "mileage",
-                "engineVariant",
-                "bodyCode",
-                "transmissionCode",
-                "cameraStatus",
-                "structuralDamageStatus",
-                "offerType",
-                "saleType",
-                "lpgInstalled",
-                "location"
-              ],
-              "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-st-fr-benz-125-km-bezwypadkowy-2018r-88000-km-warszawa-7910-1456-SB",
-              "checkedAt": "2026-11-09T14:44:17+01:00",
-              "kind": "seller",
-              "note": "Karta i opis sprzedawcy: produkcja 2018, 1.4 TSI 125 KM, ST/kombi, manual, przebieg 88 000 km, cena brutto 46 999 zł, firma, lokalizacja Nowa Wola/Mazowieckie; opis jawnie wymienia kamerę. Karta deklaruje bezwypadkowy/nieuszkodzony, ale brak niezależnej kontroli. LPG niepodane."
-            }
-          ],
-          "reportedFields": {
-            "id": "listing:autoplac:7910-1456-SB",
-            "modelKey": "seat-leon-iii-st",
-            "title": "SEAT Leon ST FR 1.4 TSI 125 KM, kamera cofania",
-            "urls": [
-              {
-                "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-st-fr-benz-125-km-bezwypadkowy-2018r-88000-km-warszawa-7910-1456-SB",
-                "label": "Autoplac"
-              }
-            ],
-            "listingIds": [
-              "autoplac:7910-1456-SB"
-            ],
-            "year": 2018,
-            "price": 46999,
-            "priceBasis": "gross_unconditional_total",
-            "mileage": 88000,
-            "engineVariant": "1.4-tsi-ea211-125",
-            "bodyCode": "wagon",
-            "transmissionCode": "manual",
-            "cameraStatus": "installed_confirmed",
-            "structuralDamageStatus": "unknown",
-            "familyFitConfirmed": null,
-            "offerType": "company",
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "location": {
-              "status": "available",
-              "countryCode": "PL",
-              "voivodeship": "Mazowieckie",
-              "city": "Nowa Wola"
-            },
-            "photos": [
-              "https://euw2-cdn.autoplac.pl/v1/p/e594e6e4-3600-4eb7-ab91-0b9bf4d88953?f=1920%3Awebp"
-            ],
-            "details": {
-              "Cena i warunki": "46 999 zł brutto. Karta oferuje opcjonalny kredyt lub leasing; nie wskazano, że niższa cena wymaga finansowania.",
-              "Kamera cofania": "Opis sprzedawcy wymienia kamerę cofania oraz czujniki parkowania z przodu i z tyłu.",
-              "LPG": "Karta podaje benzynę, nie określa montażu LPG.",
-              "Szkody": "Pola Autoplac: bezwypadkowy tak, uszkodzony nie; niezależna kontrola strukturalna niepotwierdzona.",
-              "Lokalizacja": "Nowa Wola, Mazowieckie; Autoplac podaje również adres/obszar Nowa Wola, 05-500."
-            }
-          },
-          "changes": {
-            "id": {
-              "before": null,
-              "after": "listing:autoplac:7910-1456-SB"
-            },
-            "modelKey": {
-              "before": null,
-              "after": "seat-leon-iii-st"
-            },
-            "title": {
-              "before": null,
-              "after": "SEAT Leon ST FR 1.4 TSI 125 KM, kamera cofania"
-            },
-            "urls": {
-              "before": null,
-              "after": [
-                {
-                  "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-st-fr-benz-125-km-bezwypadkowy-2018r-88000-km-warszawa-7910-1456-SB",
-                  "label": "Autoplac"
-                }
-              ]
-            },
-            "listingIds": {
-              "before": null,
-              "after": [
-                "autoplac:7910-1456-SB"
-              ]
-            },
-            "year": {
-              "before": null,
-              "after": 2018
-            },
-            "price": {
-              "before": null,
-              "after": 46999
-            },
-            "priceBasis": {
-              "before": null,
-              "after": "gross_unconditional_total"
-            },
-            "mileage": {
-              "before": null,
-              "after": 88000
-            },
-            "engineVariant": {
-              "before": null,
-              "after": "1.4-tsi-ea211-125"
-            },
-            "bodyCode": {
-              "before": null,
-              "after": "wagon"
-            },
-            "transmissionCode": {
-              "before": null,
-              "after": "manual"
-            },
-            "cameraStatus": {
-              "before": null,
-              "after": "installed_confirmed"
-            },
-            "structuralDamageStatus": {
-              "before": null,
-              "after": "unknown"
-            },
-            "offerType": {
-              "before": null,
-              "after": "company"
-            },
-            "saleType": {
-              "before": null,
-              "after": "fixed_price"
-            },
-            "location": {
-              "before": null,
-              "after": {
-                "status": "available",
-                "countryCode": "PL",
-                "voivodeship": "Mazowieckie",
-                "city": "Nowa Wola"
-              }
-            },
-            "photos": {
-              "before": null,
-              "after": [
-                "https://euw2-cdn.autoplac.pl/v1/p/e594e6e4-3600-4eb7-ab91-0b9bf4d88953?f=1920%3Awebp"
-              ]
-            },
-            "details": {
-              "before": null,
-              "after": {
-                "Cena i warunki": "46 999 zł brutto. Karta oferuje opcjonalny kredyt lub leasing; nie wskazano, że niższa cena wymaga finansowania.",
-                "Kamera cofania": "Opis sprzedawcy wymienia kamerę cofania oraz czujniki parkowania z przodu i z tyłu.",
-                "LPG": "Karta podaje benzynę, nie określa montażu LPG.",
-                "Szkody": "Pola Autoplac: bezwypadkowy tak, uszkodzony nie; niezależna kontrola strukturalna niepotwierdzona.",
-                "Lokalizacja": "Nowa Wola, Mazowieckie; Autoplac podaje również adres/obszar Nowa Wola, 05-500."
-              }
-            }
-          }
-        },
-        {
-          "eventId": "00043d232cb19bf1c57e15f6b5db7c767b68d9a7870a25221bfdd32df9dc7071",
-          "runId": "dostepnosc-2026-11-10",
-          "checkedAt": "2026-11-10T23:11:51Z",
-          "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-st-fr-benz-125-km-bezwypadkowy-2018r-88000-km-warszawa-7910-1456-SB",
-          "availability": "removed",
-          "note": "Autoplac pokazuje „Nie znaleźliśmy tej oferty” i „Oferta trafiła do archiwum”.",
-          "httpStatus": null,
-          "photoCheck": null,
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:autoplac:7910-1456-SB"
-          },
-          "changes": {
-            "priceBasis": {
-              "before": "gross_unconditional_total",
-              "after": "gross_total"
-            }
-          }
-        }
-      ],
-      "assessment": {
-        "id": "listing:autoplac:7910-1456-SB",
-        "modelKey": "seat-leon-iii-st",
-        "verdict": "check",
-        "failures": [],
-        "unknowns": [
-          "structural_history",
-          "stroller_and_family_fit"
-        ],
-        "preferenceNotes": []
-      },
-      "verdict": "check",
-      "verdictTitle": "Do weryfikacji",
-      "verdictNote": "structural_history; stroller_and_family_fit",
-      "archive": {
-        "status": "closed",
-        "reason": "all_listings_confirmed_closed",
-        "archivedAt": "2026-11-10T23:11:51+00:00"
-      }
-    },
-    {
-      "id": "listing:autoplac:AG9jO66DU2Sq",
-      "modelKey": "seat-leon-iii-st",
-      "listingIds": [
-        "autoplac:AG9jO66DU2Sq"
-      ],
-      "urls": [
-        {
-          "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-tsi-startstop-x-perience-AG9jO66DU2Sq",
-          "normalized": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-tsi-startstop-x-perience-AG9jO66DU2Sq",
-          "label": "Zobacz ogłoszenie — Autoplac"
-        }
-      ],
-      "title": "SEAT Leon III ST 1.4 TSI EA211 125 KM — 140 000 km",
-      "year": 2018,
-      "price": 45800,
-      "priceLabel": "45 800 zł",
-      "mileage": 140000,
-      "mileageLabel": "140 000 km",
-      "engine": "1.4 TSI EA211 · 125 KM",
-      "engineVariant": "1.4-tsi-ea211-125",
-      "body": "Kombi / ST",
-      "bodyCode": "wagon",
-      "transmission": "Manualna",
-      "transmissionCode": "manual",
-      "seller": "TOM-CAR · ogłoszenie firmowe/handlowe Autoplac",
-      "offerType": "unknown",
-      "priceBasis": "gross_total",
-      "saleType": "fixed_price",
-      "cameraStatus": "unknown",
-      "structuralDamageStatus": "unknown",
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "voivodeship": "Lubelskie",
-        "city": "Sitaniec",
-        "postalCode": "22-400",
-        "precision": "postal_code",
-        "source": "listing",
-        "checkedAt": "2026-11-10",
-        "geoSource": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-tsi-startstop-x-perience-AG9jO66DU2Sq"
-      },
-      "subtitle": "2018 · Kombi · 1.4 TSI 125 KM · manualna · 140 000 km",
-      "specs": {
-        "rocznik": "2018",
-        "nadwozie": "Kombi / ST",
-        "silnik": "1.4 TSI EA211 · 125 KM",
-        "skrzynia": "manualna",
-        "przebieg": "140 000 km",
-        "cena zakupu": "45 800 zł — cena widoczna na karcie; finansowanie pokazano osobno jako opcję"
-      },
-      "details": {
-        "Historia i pochodzenie": "Karta podaje pochodzenie zagraniczne; numer VIN nieujawniony w widocznym fragmencie.",
-        "Wyposażenie": "W widocznym fragmencie wymieniono m.in. skórzaną dźwignię biegów, Hill Holder, lampy przeciwmgielne LED i kierownicę ze sterowaniem radia. Karta odsyła do rozwinięcia wyposażenia; kamera nie została potwierdzona.",
-        "Problemy / niepewności": "Ostatnia aktualizacja karty: 2026-09-04. Dostępność wymaga potwierdzenia u sprzedawcy. LPG, historia szkód oraz możliwość/działanie kamery pozostają nieznane.",
-        "Ocena": "Podstawowe parametry widoczne na karcie mieszczą się w kryteriach; nieznane wymagania pozostawiono do dalszej weryfikacji."
-      },
-      "lpgInstalled": null,
-      "firstSeenAt": "2026-11-10T00:16:02Z",
-      "listingStates": [
-        {
-          "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-tsi-startstop-x-perience-AG9jO66DU2Sq",
-          "status": "removed",
-          "lastAttemptAt": "2026-11-10T23:11:51Z",
-          "lastCheckedAt": "2026-11-10T23:11:51Z",
-          "lastVerifiedAt": "2026-11-10T23:11:51Z",
-          "lastObservation": {
-            "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-tsi-startstop-x-perience-AG9jO66DU2Sq",
-            "checkedAt": "2026-11-10T23:11:51Z",
-            "availability": "removed",
-            "httpStatus": null,
-            "note": "Autoplac pokazuje „Nie znaleźliśmy tej oferty” i „Oferta trafiła do archiwum”."
-          }
-        }
-      ],
-      "lastCheckedAt": "2026-11-10T23:11:51Z",
-      "lastVerifiedAt": "2026-11-10T23:11:51Z",
-      "lastAttemptAt": "2026-11-10T23:11:51Z",
-      "history": [
-        {
-          "eventId": "bda76cd748db6b184286ca86fca07cd3823827f3154211571f556c55c45e684d",
-          "runId": "search-20261110-full",
-          "checkedAt": "2026-11-10T00:16:02Z",
-          "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-tsi-startstop-x-perience-AG9jO66DU2Sq",
-          "availability": "available",
-          "note": "Bezpośrednia karta Autoplac otworzyła się i nadal wyświetla cenę, opis oraz przyciski „Zadzwoń/Napisz”; portal nie pokazywał oznaczenia sprzedane/nieaktywne. Ostatnia aktualizacja ogłoszenia na karcie: 2026-09-04. Bieżącą dostępność należy potwierdzić ze sprzedawcą.",
-          "photoCheck": null,
-          "evidence": [
-            {
-              "kind": "seller",
-              "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-tsi-startstop-x-perience-AG9jO66DU2Sq",
-              "checkedAt": "2026-11-10T00:16:02Z",
-              "fields": [
-                "year",
-                "bodyCode",
-                "engineVariant",
-                "transmissionCode",
-                "mileage",
-                "price",
-                "priceBasis",
-                "saleType",
-                "location"
-              ],
-              "note": "Karta Autoplac: 2018, Kombi, 1.4 TSI 125 KM/1395 cm³, manualna, 140 000 km, cena 45 800 zł; cena widoczna jako cena zakupu, leasing pokazany oddzielnie. Lokalizacja: Sitaniec 22-400, Lubelskie. Aktywna karta z przyciskami kontaktu; ostatnia aktualizacja 2026-09-04."
-            }
-          ],
-          "reportedFields": {
-            "id": "listing:autoplac:AG9jO66DU2Sq",
-            "modelKey": "seat-leon-iii-st",
-            "vin": null,
-            "listingIds": [
-              "autoplac:AG9jO66DU2Sq"
-            ],
-            "urls": [
-              {
-                "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-tsi-startstop-x-perience-AG9jO66DU2Sq",
-                "normalized": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-tsi-startstop-x-perience-AG9jO66DU2Sq",
-                "label": "Zobacz ogłoszenie — Autoplac"
-              }
-            ],
-            "title": "SEAT Leon III ST 1.4 TSI EA211 125 KM — 140 000 km",
-            "year": 2018,
-            "price": 45800,
-            "priceLabel": "45 800 zł",
-            "mileage": 140000,
-            "mileageLabel": "140 000 km",
-            "engine": "1.4 TSI EA211 · 125 KM",
-            "engineVariant": "1.4-tsi-ea211-125",
-            "body": "Kombi / ST",
-            "bodyCode": "wagon",
-            "transmission": "Manualna",
-            "transmissionCode": "manual",
-            "seller": "TOM-CAR · ogłoszenie firmowe/handlowe Autoplac",
-            "offerType": "unknown",
-            "priceBasis": "gross_unconditional_total",
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "cameraStatus": "unknown",
-            "structuralDamageStatus": "unknown",
-            "familyFitConfirmed": null,
-            "location": {
-              "status": "available",
-              "countryCode": "PL",
-              "voivodeship": "Lubelskie",
-              "city": "Sitaniec",
-              "postalCode": "22-400",
-              "precision": "postal_code",
-              "source": "listing",
-              "checkedAt": "2026-11-10",
-              "geoSource": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-tsi-startstop-x-perience-AG9jO66DU2Sq"
-            },
-            "subtitle": "2018 · Kombi · 1.4 TSI 125 KM · manualna · 140 000 km",
-            "specs": {
-              "rocznik": "2018",
-              "nadwozie": "Kombi / ST",
-              "silnik": "1.4 TSI EA211 · 125 KM",
-              "skrzynia": "manualna",
-              "przebieg": "140 000 km",
-              "cena zakupu": "45 800 zł — cena widoczna na karcie; finansowanie pokazano osobno jako opcję"
-            },
-            "details": {
-              "Historia i pochodzenie": "Karta podaje pochodzenie zagraniczne; numer VIN nieujawniony w widocznym fragmencie.",
-              "Wyposażenie": "W widocznym fragmencie wymieniono m.in. skórzaną dźwignię biegów, Hill Holder, lampy przeciwmgielne LED i kierownicę ze sterowaniem radia. Karta odsyła do rozwinięcia wyposażenia; kamera nie została potwierdzona.",
-              "Problemy / niepewności": "Ostatnia aktualizacja karty: 2026-09-04. Dostępność wymaga potwierdzenia u sprzedawcy. LPG, historia szkód oraz możliwość/działanie kamery pozostają nieznane.",
-              "Ocena": "Podstawowe parametry widoczne na karcie mieszczą się w kryteriach; nieznane wymagania pozostawiono do dalszej weryfikacji."
-            }
-          },
-          "changes": {
-            "id": {
-              "before": null,
-              "after": "listing:autoplac:AG9jO66DU2Sq"
-            },
-            "modelKey": {
-              "before": null,
-              "after": "seat-leon-iii-st"
-            },
-            "listingIds": {
-              "before": null,
-              "after": [
-                "autoplac:AG9jO66DU2Sq"
-              ]
-            },
-            "urls": {
-              "before": null,
-              "after": [
-                {
-                  "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-tsi-startstop-x-perience-AG9jO66DU2Sq",
-                  "normalized": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-tsi-startstop-x-perience-AG9jO66DU2Sq",
-                  "label": "Zobacz ogłoszenie — Autoplac"
-                }
-              ]
-            },
-            "title": {
-              "before": null,
-              "after": "SEAT Leon III ST 1.4 TSI EA211 125 KM — 140 000 km"
-            },
-            "year": {
-              "before": null,
-              "after": 2018
-            },
-            "price": {
-              "before": null,
-              "after": 45800
-            },
-            "priceLabel": {
-              "before": null,
-              "after": "45 800 zł"
-            },
-            "mileage": {
-              "before": null,
-              "after": 140000
-            },
-            "mileageLabel": {
-              "before": null,
-              "after": "140 000 km"
-            },
-            "engine": {
-              "before": null,
-              "after": "1.4 TSI EA211 · 125 KM"
-            },
-            "engineVariant": {
-              "before": null,
-              "after": "1.4-tsi-ea211-125"
-            },
-            "body": {
-              "before": null,
-              "after": "Kombi / ST"
-            },
-            "bodyCode": {
-              "before": null,
-              "after": "wagon"
-            },
-            "transmission": {
-              "before": null,
-              "after": "Manualna"
-            },
-            "transmissionCode": {
-              "before": null,
-              "after": "manual"
-            },
-            "seller": {
-              "before": null,
-              "after": "TOM-CAR · ogłoszenie firmowe/handlowe Autoplac"
-            },
-            "offerType": {
-              "before": null,
-              "after": "unknown"
-            },
-            "priceBasis": {
-              "before": null,
-              "after": "gross_unconditional_total"
-            },
-            "saleType": {
-              "before": null,
-              "after": "fixed_price"
-            },
-            "cameraStatus": {
-              "before": null,
-              "after": "unknown"
-            },
-            "structuralDamageStatus": {
-              "before": null,
-              "after": "unknown"
-            },
-            "location": {
-              "before": null,
-              "after": {
-                "status": "available",
-                "countryCode": "PL",
-                "voivodeship": "Lubelskie",
-                "city": "Sitaniec",
-                "postalCode": "22-400",
-                "precision": "postal_code",
-                "source": "listing",
-                "checkedAt": "2026-11-10",
-                "geoSource": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-tsi-startstop-x-perience-AG9jO66DU2Sq"
-              }
-            },
-            "subtitle": {
-              "before": null,
-              "after": "2018 · Kombi · 1.4 TSI 125 KM · manualna · 140 000 km"
-            },
-            "specs": {
-              "before": null,
-              "after": {
-                "rocznik": "2018",
-                "nadwozie": "Kombi / ST",
-                "silnik": "1.4 TSI EA211 · 125 KM",
-                "skrzynia": "manualna",
-                "przebieg": "140 000 km",
-                "cena zakupu": "45 800 zł — cena widoczna na karcie; finansowanie pokazano osobno jako opcję"
-              }
-            },
-            "details": {
-              "before": null,
-              "after": {
-                "Historia i pochodzenie": "Karta podaje pochodzenie zagraniczne; numer VIN nieujawniony w widocznym fragmencie.",
-                "Wyposażenie": "W widocznym fragmencie wymieniono m.in. skórzaną dźwignię biegów, Hill Holder, lampy przeciwmgielne LED i kierownicę ze sterowaniem radia. Karta odsyła do rozwinięcia wyposażenia; kamera nie została potwierdzona.",
-                "Problemy / niepewności": "Ostatnia aktualizacja karty: 2026-09-04. Dostępność wymaga potwierdzenia u sprzedawcy. LPG, historia szkód oraz możliwość/działanie kamery pozostają nieznane.",
-                "Ocena": "Podstawowe parametry widoczne na karcie mieszczą się w kryteriach; nieznane wymagania pozostawiono do dalszej weryfikacji."
-              }
-            }
-          }
-        },
-        {
-          "eventId": "0db7057f6dea7df2ef3cde1ec50564654be9c8293fec52ba87eb36762bbb8738",
-          "runId": "dostepnosc-2026-11-10",
-          "checkedAt": "2026-11-10T23:11:51Z",
-          "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-tsi-startstop-x-perience-AG9jO66DU2Sq",
-          "availability": "removed",
-          "note": "Autoplac pokazuje „Nie znaleźliśmy tej oferty” i „Oferta trafiła do archiwum”.",
-          "httpStatus": null,
-          "photoCheck": null,
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:autoplac:AG9jO66DU2Sq"
-          },
-          "changes": {
-            "priceBasis": {
-              "before": "gross_unconditional_total",
-              "after": "gross_total"
-            }
-          }
-        }
-      ],
-      "assessment": {
-        "id": "listing:autoplac:AG9jO66DU2Sq",
-        "modelKey": "seat-leon-iii-st",
-        "verdict": "check",
-        "failures": [],
-        "unknowns": [
-          "camera_or_compatible_retrofit",
-          "structural_history",
-          "stroller_and_family_fit"
-        ],
-        "preferenceNotes": []
-      },
-      "verdict": "check",
-      "verdictTitle": "Do weryfikacji",
-      "verdictNote": "camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
-      "archive": {
-        "status": "closed",
-        "reason": "all_listings_confirmed_closed",
-        "archivedAt": "2026-11-10T23:11:51+00:00"
-      }
     },
     {
       "id": "listing:otomoto:ID6IaKVJ",
@@ -2281,12 +1327,12 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IaKVJ.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:51.743Z",
+          "lastAttemptAt": "2026-11-11T16:37:22.739Z",
           "lastCheckedAt": "2026-11-10T23:11:52Z",
           "lastVerifiedAt": "2026-11-10T23:11:52Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IaKVJ.html",
-            "checkedAt": "2026-11-11T02:03:51.743Z",
+            "checkedAt": "2026-11-11T16:37:22.739Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -2295,7 +1341,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:11:52Z",
       "lastVerifiedAt": "2026-11-10T23:11:52Z",
-      "lastAttemptAt": "2026-11-11T02:03:51.743Z",
+      "lastAttemptAt": "2026-11-11T16:37:22.739Z",
       "history": [
         {
           "eventId": "1a39e36ca8f5981d506a5e9bb3071cd30c972be488c77defdedd52306cbbdbdb",
@@ -2539,6 +1585,21 @@
             "id": "listing:otomoto:ID6IaKVJ"
           },
           "changes": {}
+        },
+        {
+          "eventId": "09a1cb83a7955b628b885e2a20b949e29bd240ad6fcc6426d2d4fd20a03cfe9a",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T16:37:22.739Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IaKVJ.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IaKVJ"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -2559,12 +1620,7 @@
       "photos": [
         "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpibWk2YWRzNDM4NjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.sjODOXfvBioYgUmBUBK9ZRhpfIvrC6U5fjn2eUG2fkA/image%3Bs%3D5120x0%3Bq%3D80",
         "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpibWk2YWRzNDM4NjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.sjODOXfvBioYgUmBUBK9ZRhpfIvrC6U5fjn2eUG2fkA/image;s=5120x0;q=80"
-      ],
-      "archive": {
-        "status": "unverified",
-        "reason": "no_listing_url_confirmed_available; at_least_one_access_error",
-        "archivedAt": "2026-11-11T02:03:51.743000+00:00"
-      }
+      ]
     },
     {
       "id": "listing:olx:1110426795",
@@ -2598,12 +1654,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/seat-leon-CID5-ID1d9eJB.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:51.743Z",
+          "lastAttemptAt": "2026-11-11T16:38:00.117Z",
           "lastCheckedAt": "2026-11-10T23:10:57Z",
           "lastVerifiedAt": "2026-11-10T23:10:57Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/seat-leon-CID5-ID1d9eJB.html",
-            "checkedAt": "2026-11-11T02:03:51.743Z",
+            "checkedAt": "2026-11-11T16:38:00.117Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -2612,7 +1668,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:10:57Z",
       "lastVerifiedAt": "2026-11-10T23:10:57Z",
-      "lastAttemptAt": "2026-11-11T02:03:51.743Z",
+      "lastAttemptAt": "2026-11-11T16:38:00.117Z",
       "history": [
         {
           "eventId": "1ac7df09434e31752fea20cbc8807feab148f6f1183ad767b77caaf1b7ccff95",
@@ -2886,6 +1942,21 @@
             "id": "listing:olx:1110426795"
           },
           "changes": {}
+        },
+        {
+          "eventId": "3fc1ffcf6f67c00caeabf72df3b02e2ce20c216693d147dba956848e1cbe4a61",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T16:38:00.117Z",
+          "url": "https://www.olx.pl/d/oferta/seat-leon-CID5-ID1d9eJB.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1110426795"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -2902,12 +1973,7 @@
       },
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
-      "verdictNote": "camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
-      "archive": {
-        "status": "unverified",
-        "reason": "no_listing_url_confirmed_available; at_least_one_access_error",
-        "archivedAt": "2026-11-11T02:03:51.743000+00:00"
-      }
+      "verdictNote": "camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
     },
     {
       "id": "listing:otomoto:ID6IjmTL",
@@ -2961,12 +2027,12 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IjmTL.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:51.743Z",
+          "lastAttemptAt": "2026-11-11T16:37:22.739Z",
           "lastCheckedAt": "2026-11-10T23:11:52Z",
           "lastVerifiedAt": "2026-11-10T23:11:52Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IjmTL.html",
-            "checkedAt": "2026-11-11T02:03:51.743Z",
+            "checkedAt": "2026-11-11T16:37:22.739Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -2975,7 +2041,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:11:52Z",
       "lastVerifiedAt": "2026-11-10T23:11:52Z",
-      "lastAttemptAt": "2026-11-11T02:03:51.743Z",
+      "lastAttemptAt": "2026-11-11T16:37:22.739Z",
       "history": [
         {
           "eventId": "ea301a5fba00368912e34aa99e9774c1aa2edd2a53f9e00316246fa07c2846d6",
@@ -3205,6 +2271,21 @@
             "id": "listing:otomoto:ID6IjmTL"
           },
           "changes": {}
+        },
+        {
+          "eventId": "a783fa22b4735e5f8586b4dfd6c2eaa260cb487287517ce0d62bb383bf7dbea8",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T16:37:22.739Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IjmTL.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IjmTL"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -3222,12 +2303,7 @@
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
       "verdictNote": "structural_history; mileage; stroller_and_family_fit",
-      "mileage": 114700,
-      "archive": {
-        "status": "unverified",
-        "reason": "no_listing_url_confirmed_available; at_least_one_access_error",
-        "archivedAt": "2026-11-11T02:03:51.743000+00:00"
-      }
+      "mileage": 114700
     },
     {
       "id": "listing:otomoto:ID6IiMlg",
@@ -3293,12 +2369,12 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IiMlg.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:51.743Z",
+          "lastAttemptAt": "2026-11-11T16:37:22.739Z",
           "lastCheckedAt": "2026-11-10T23:11:52Z",
           "lastVerifiedAt": "2026-11-10T23:11:52Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IiMlg.html",
-            "checkedAt": "2026-11-11T02:03:51.743Z",
+            "checkedAt": "2026-11-11T16:37:22.739Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -3307,7 +2383,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:11:52Z",
       "lastVerifiedAt": "2026-11-10T23:11:52Z",
-      "lastAttemptAt": "2026-11-11T02:03:51.743Z",
+      "lastAttemptAt": "2026-11-11T16:37:22.739Z",
       "history": [
         {
           "eventId": "bcdb58f4039afe1b2e04bb0060133df6feac01cec2268306c35de0d1295f23db",
@@ -3564,6 +2640,21 @@
             "id": "listing:otomoto:ID6IiMlg"
           },
           "changes": {}
+        },
+        {
+          "eventId": "f8218c3b6e88a4a5da1a4a49569d9fb2d9dcd7ce45eade791d5cf7640db9b23b",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T16:37:22.739Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6IiMlg.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IiMlg"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -3580,11 +2671,1023 @@
       },
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
-      "verdictNote": "gross_unconditional_purchase_price; structural_history; stroller_and_family_fit",
+      "verdictNote": "gross_unconditional_purchase_price; structural_history; stroller_and_family_fit"
+    }
+  ],
+  "archivedOffers": [
+    {
+      "id": "listing:otomoto:ID6I2BPK",
+      "modelKey": "seat-leon-iii-st",
+      "vin": null,
+      "listingIds": [
+        "otomoto:ID6I2BPK"
+      ],
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6I2BPK.html",
+          "normalized": "https://otomoto.pl/osobowe/oferta/seat-leon-ID6I2BPK.html",
+          "label": "Zobacz ogłoszenie — Otomoto"
+        }
+      ],
+      "title": "1.4 TSI EA211 125 KM Kombi — Polska (lokalizacja w ogłoszeniu)  99 000 km",
+      "year": 2018,
+      "price": 47900,
+      "priceLabel": "47 900 zł",
+      "mileage": 99000,
+      "mileageLabel": "99 000 km",
+      "engine": "1.4 TSI EA211 · 125 KM",
+      "body": "Kombi",
+      "transmission": "manualna",
+      "seller": "sprzedawca Otomoto · karta Otomoto otwarta w ramach weryfikacji 06.11.2026",
+      "subtitle": "2018 · Kombi · 1.4 TSI EA211 · 125 KM",
+      "priority": "Priorytet 3",
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction",
+      "specs": {
+        "rocznik": "2018",
+        "nadwozie": "Kombi",
+        "silnik": "1.4 TSI EA211 · 125 KM",
+        "skrzynia": "manualna",
+        "przebieg": "99 000 km",
+        "cena zakupu": "47 900 zł — cena ogłoszenia; kwotę końcową potwierdzić"
+      },
+      "details": {
+        "Historia i pochodzenie": "Ogłoszenie w indeksie wskazuje kombi i 1.4 TSI 125 KM.",
+        "Wyposażenie": "VIN nieujawniony w zweryfikowanym fragmencie karty; uzyskać od sprzedawcy.",
+        "Problemy / niepewności": "Rozbieżny przebieg 99 tys. km w nagłówku / 102 tys. km w opisie. Użytkować jako trop z weryfikacją danych; link był dostępny w przeglądzie.",
+        "Ocena": "Rocznik, nadwozie, pojemność/moc oraz cena podstawowa mieszczą się w kryteriach. Weryfikacja dostępności sprzedawcy i stanu technicznego pozostaje do wykonania."
+      },
+      "offerType": "unknown",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6I2BPK.html",
+          "status": "removed",
+          "lastAttemptAt": "2026-11-11T16:37:22.738Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6I2BPK.html",
+            "checkedAt": "2026-11-11T16:37:22.738Z",
+            "availability": "access_error",
+            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+            "httpStatus": null
+          },
+          "lastCheckedAt": "2026-11-09T13:01:58Z",
+          "lastVerifiedAt": "2026-11-09T13:01:58Z"
+        }
+      ],
+      "lastAttemptAt": "2026-11-11T16:37:22.738Z",
+      "history": [
+        {
+          "eventId": "819ba807840f91212af4ded02faf9b1d005cdec168f3d8fbafc91e9cd1e93b84",
+          "runId": "refresh-20261108-01",
+          "checkedAt": "2026-11-08T18:39:30+01:00",
+          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6I2BPK.html",
+          "availability": "access_error",
+          "note": "Bezpośredni odczyt strony nie powiódł się: narzędzie zwróciło HTTP 410 Gone. Nie jest to dowód sprzedaży ani usunięcia; status ogłoszenia pozostaje nieustalony.",
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6I2BPK",
+            "modelKey": "seat-leon-iii-st",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6I2BPK.html"
+              }
+            ]
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "235dca3cae0e4a2260ff5124c8edcb8a8d898e87f404eebc3514e3498dd99b3f",
+          "runId": "refresh-20261108-03",
+          "checkedAt": "2026-11-08T23:01:40+01:00",
+          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6I2BPK.html",
+          "availability": "access_error",
+          "note": "Próba otwarcia karty w Otomoto zwróciła HTTP 410 Gone; status oferty i dane niepotwierdzone.",
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6I2BPK"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "f0830be4f88fbd4d6b69d28b5e003eea436cccedd3c4f012900537491110f626",
+          "runId": "photos-20261108-01",
+          "checkedAt": "2026-11-08T23:35:26+01:00",
+          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6I2BPK.html",
+          "availability": "access_error",
+          "note": "Otworzenie dokładnego URL zwróciło HTTP 410 Gone. Nie wyciągam wniosku o sprzedaży ani usunięciu oferty; zdjęcia nie zostały odczytane.",
+          "photoCheck": {
+            "status": "access_error",
+            "note": "Karta zwróciła HTTP 410 Gone; nie można sprawdzić bezpośrednich adresów zdjęć HTTPS."
+          },
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6I2BPK"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "10953930cf0ad6eea33cff66527152ca4d6726744563c535f351a912bb4d66d1",
+          "runId": "refresh20261109a",
+          "checkedAt": "2026-11-09T13:01:58Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6I2BPK.html",
+          "availability": "removed",
+          "note": "Bezpośrednia karta ogłoszenia zwraca HTTP 410 Gone; portal nie udostępnia już tej oferty.",
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6I2BPK",
+            "modelKey": "seat-leon-iii-st",
+            "saleType": "fixed_price",
+            "lpgInstalled": null
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "e4a1ad6222940507929f2e650413db4d2322e5ad60069aa87abb2f5a3c006caf",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T16:37:22.738Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/seat-leon-ID6I2BPK.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6I2BPK"
+          },
+          "changes": {}
+        }
+      ],
+      "assessment": {
+        "id": "listing:otomoto:ID6I2BPK",
+        "modelKey": "seat-leon-iii-st",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "body",
+          "exact_engine_variant",
+          "transmission",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit",
+          "purchase_not_auction"
+        ],
+        "preferenceNotes": []
+      },
+      "lastCheckedAt": "2026-11-09T13:01:58Z",
+      "lastVerifiedAt": "2026-11-09T13:01:58Z",
       "archive": {
-        "status": "unverified",
-        "reason": "no_listing_url_confirmed_available; at_least_one_access_error",
-        "archivedAt": "2026-11-11T02:03:51.743000+00:00"
+        "status": "closed",
+        "reason": "all_listings_confirmed_closed",
+        "archivedAt": "2026-11-09T13:01:58+00:00"
+      }
+    },
+    {
+      "id": "vin:VSSZZZ5FZJR038225",
+      "modelKey": "seat-leon-iii-st",
+      "vin": "VSSZZZ5FZJR038225",
+      "listingIds": [
+        "olx:ID1byi2o"
+      ],
+      "urls": [
+        {
+          "url": "https://www.olx.pl/d/oferta/seat-leon-leon-st-fr-1-4-benz-125-km-2018r-88-000-km-warszawa-CID5-ID1byi2o.html",
+          "normalized": "https://olx.pl/d/oferta/seat-leon-leon-st-fr-1-4-benz-125-km-2018r-88-000-km-warszawa-CID5-ID1byi2o.html",
+          "label": "Zobacz ogłoszenie"
+        }
+      ],
+      "title": "SEAT Leon III ST — 1.4 TSI EA211 · 125 KM  88 000 km",
+      "year": 2018,
+      "price": 49999,
+      "priceLabel": "49 999 zł",
+      "mileage": 88000,
+      "mileageLabel": "88 000 km",
+      "engine": "1.4 TSI EA211 · 125 KM",
+      "body": "Kombi / ST",
+      "transmission": "Manualna",
+      "seller": "Alejaautpl · Warszawa",
+      "subtitle": "2018 · Kombi / ST · 1.4 TSI EA211 · 125 KM",
+      "priority": "Priorytet 1",
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction",
+      "specs": {
+        "rocznik": "2018",
+        "nadwozie": "Kombi / ST",
+        "silnik": "1.4 TSI EA211 · 125 KM",
+        "skrzynia": "Manualna",
+        "przebieg": "88 000 km",
+        "cena zakupu": "49 999 zł"
+      },
+      "details": {
+        "Historia i pochodzenie": "Import z Niemiec, sprzedawca firmowy. Numer VIN widoczny; serwis i bezwypadkowość do potwierdzenia w dokumentacji.",
+        "Wyposażenie": "Kamera cofania, Full LED, podgrzewane fotele, wersja FR.",
+        "Problemy / niepewności": "Niski deklarowany przebieg należy zestawić z historią zagraniczną; brak pełnego raportu szkód.",
+        "Ocena": "Stosunkowo niski przebieg i manual z EA211; dobra oferta do sprawdzenia."
+      },
+      "offerType": "unknown",
+      "listingStates": [
+        {
+          "url": "https://www.olx.pl/d/oferta/seat-leon-leon-st-fr-1-4-benz-125-km-2018r-88-000-km-warszawa-CID5-ID1byi2o.html",
+          "status": "removed",
+          "lastAttemptAt": "2026-11-11T16:38:00.116Z",
+          "lastObservation": {
+            "url": "https://www.olx.pl/d/oferta/seat-leon-leon-st-fr-1-4-benz-125-km-2018r-88-000-km-warszawa-CID5-ID1byi2o.html",
+            "checkedAt": "2026-11-11T16:38:00.116Z",
+            "availability": "access_error",
+            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+            "httpStatus": null
+          },
+          "lastCheckedAt": "2026-11-10T23:10:57Z",
+          "lastVerifiedAt": "2026-11-10T23:10:57Z"
+        }
+      ],
+      "lastAttemptAt": "2026-11-11T16:38:00.116Z",
+      "history": [
+        {
+          "eventId": "a1486f364208e961e248a1f561429cc9eb16bf001e1c2aeaa0bee809231138cf",
+          "runId": "refresh-20261108-01",
+          "checkedAt": "2026-11-08T18:44:22+01:00",
+          "url": "https://www.olx.pl/d/oferta/seat-leon-leon-st-fr-1-4-benz-125-km-2018r-88-000-km-warszawa-CID5-ID1byi2o.html",
+          "availability": "access_error",
+          "note": "Próba bezpośredniego otwarcia karty OLX nie powiodła się: narzędzie zwróciło HTTP 410 Gone. Wyszukiwarka pokazuje jedynie starszą kopię z sierpnia 2026, która nie wystarcza do potwierdzenia bieżącego statusu ani danych. Nie wnioskuję, że oferta została sprzedana lub usunięta.",
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:VSSZZZ5FZJR038225",
+            "title": "SEAT Leon III ST 1.4 TSI 125 KM",
+            "urls": [
+              {
+                "url": "https://www.olx.pl/d/oferta/seat-leon-leon-st-fr-1-4-benz-125-km-2018r-88-000-km-warszawa-CID5-ID1byi2o.html"
+              }
+            ]
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "0b17864836440153e90550e433dea0ef746d1c0f98a2b081051773a22fcd6410",
+          "runId": "refresh-20261108-03",
+          "checkedAt": "2026-11-08T23:00:24+01:00",
+          "url": "https://www.olx.pl/d/oferta/seat-leon-leon-st-fr-1-4-benz-125-km-2018r-88-000-km-warszawa-CID5-ID1byi2o.html",
+          "availability": "access_error",
+          "note": "Bezpośrednie otwarcie karty OLX zwróciło HTTP 410 Gone. Wyszukiwarka ma tylko kopię sprzed około dwóch miesięcy, niewystarczającą do potwierdzenia bieżącego stanu ani ceny. Nie wnioskuję, że ogłoszenie zostało sprzedane lub usunięte.",
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:VSSZZZ5FZJR038225",
+            "title": "SEAT Leon III ST — 1.4 TSI EA211 · 125 KM  88 000 km",
+            "urls": [
+              {
+                "url": "https://www.olx.pl/d/oferta/seat-leon-leon-st-fr-1-4-benz-125-km-2018r-88-000-km-warszawa-CID5-ID1byi2o.html"
+              }
+            ]
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "9877ca4328e2d90a051f74f3fcb5ed778af4ad2ef4faa1b18c0d32a58c3c81a8",
+          "runId": "photos-20261108-01",
+          "checkedAt": "2026-11-08T23:40:48+01:00",
+          "url": "https://www.olx.pl/d/oferta/seat-leon-leon-st-fr-1-4-benz-125-km-2018r-88-000-km-warszawa-CID5-ID1byi2o.html",
+          "availability": "access_error",
+          "note": "Próba otwarcia dokładnego URL zwróciła HTTP 410 Gone. Nie udało się odczytać karty ani galerii; nie wnioskuję, że ogłoszenie zostało sprzedane lub usunięte.",
+          "photoCheck": {
+            "status": "access_error",
+            "note": "Karta zwróciła HTTP 410 Gone, więc nie można odczytać bezpośrednich URL-i zdjęć."
+          },
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:VSSZZZ5FZJR038225",
+            "title": "SEAT Leon III ST — 1.4 TSI EA211 · 125 KM  88 000 km",
+            "urls": [
+              {
+                "url": "https://www.olx.pl/d/oferta/seat-leon-leon-st-fr-1-4-benz-125-km-2018r-88-000-km-warszawa-CID5-ID1byi2o.html"
+              }
+            ]
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "77236189286f91a19efd4391c64334f115dc66d6ca93d14b7d5597d468e0db81",
+          "runId": "refresh20261109a",
+          "checkedAt": "2026-11-09T13:02:05+00:00",
+          "url": "https://www.olx.pl/d/oferta/seat-leon-leon-st-fr-1-4-benz-125-km-2018r-88-000-km-warszawa-CID5-ID1byi2o.html",
+          "availability": "access_error",
+          "note": "Dokładny URL zwrócił HTTP 410 Gone. Nie mogłem odczytać karty; nie wnioskuję o sprzedaży ani usunięciu oferty.",
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:VSSZZZ5FZJR038225",
+            "changes": {}
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "592004c26c9be43494aea3d9df82bab375cb763a52d57a5a4604d473b9a1bb59",
+          "runId": "dostepnosc-2026-11-10",
+          "checkedAt": "2026-11-10T23:10:57Z",
+          "url": "https://www.olx.pl/d/oferta/seat-leon-leon-st-fr-1-4-benz-125-km-2018r-88-000-km-warszawa-CID5-ID1byi2o.html",
+          "availability": "removed",
+          "note": "OLX odpowiedział błędem HTTP 410 Gone przy bezpośrednim otwarciu karty; zgodnie z regułą flow oznaczono jako removed.",
+          "httpStatus": 410,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:VSSZZZ5FZJR038225"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "39283b707d2e4836f47a3cff8cd42ab540679fb183d04ea79b2cf6dc3545f49c",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T16:38:00.116Z",
+          "url": "https://www.olx.pl/d/oferta/seat-leon-leon-st-fr-1-4-benz-125-km-2018r-88-000-km-warszawa-CID5-ID1byi2o.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:VSSZZZ5FZJR038225"
+          },
+          "changes": {}
+        }
+      ],
+      "assessment": {
+        "id": "vin:VSSZZZ5FZJR038225",
+        "modelKey": "seat-leon-iii-st",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "body",
+          "exact_engine_variant",
+          "transmission",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit",
+          "purchase_not_auction"
+        ],
+        "preferenceNotes": []
+      },
+      "lastCheckedAt": "2026-11-10T23:10:57Z",
+      "lastVerifiedAt": "2026-11-10T23:10:57Z",
+      "archive": {
+        "status": "closed",
+        "reason": "all_listings_confirmed_closed",
+        "archivedAt": "2026-11-10T23:10:57+00:00"
+      }
+    },
+    {
+      "id": "listing:autoplac:7910-1456-SB",
+      "modelKey": "seat-leon-iii-st",
+      "title": "SEAT Leon ST FR 1.4 TSI 125 KM, kamera cofania",
+      "urls": [
+        {
+          "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-st-fr-benz-125-km-bezwypadkowy-2018r-88000-km-warszawa-7910-1456-SB",
+          "label": "Autoplac"
+        }
+      ],
+      "listingIds": [
+        "autoplac:7910-1456-SB"
+      ],
+      "year": 2018,
+      "price": 46999,
+      "priceBasis": "gross_total",
+      "mileage": 88000,
+      "engineVariant": "1.4-tsi-ea211-125",
+      "bodyCode": "wagon",
+      "transmissionCode": "manual",
+      "cameraStatus": "installed_confirmed",
+      "structuralDamageStatus": "unknown",
+      "offerType": "company",
+      "saleType": "fixed_price",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "voivodeship": "Mazowieckie",
+        "city": "Nowa Wola"
+      },
+      "photos": [
+        "https://euw2-cdn.autoplac.pl/v1/p/e594e6e4-3600-4eb7-ab91-0b9bf4d88953?f=1920%3Awebp"
+      ],
+      "details": {
+        "Cena i warunki": "46 999 zł brutto. Karta oferuje opcjonalny kredyt lub leasing; nie wskazano, że niższa cena wymaga finansowania.",
+        "Kamera cofania": "Opis sprzedawcy wymienia kamerę cofania oraz czujniki parkowania z przodu i z tyłu.",
+        "LPG": "Karta podaje benzynę, nie określa montażu LPG.",
+        "Szkody": "Pola Autoplac: bezwypadkowy tak, uszkodzony nie; niezależna kontrola strukturalna niepotwierdzona.",
+        "Lokalizacja": "Nowa Wola, Mazowieckie; Autoplac podaje również adres/obszar Nowa Wola, 05-500."
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-09T14:44:17+01:00",
+      "listingStates": [
+        {
+          "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-st-fr-benz-125-km-bezwypadkowy-2018r-88000-km-warszawa-7910-1456-SB",
+          "status": "removed",
+          "lastAttemptAt": "2026-11-11T16:37:59.039Z",
+          "lastCheckedAt": "2026-11-11T16:37:59.039Z",
+          "lastVerifiedAt": "2026-11-11T16:37:59.039Z",
+          "lastObservation": {
+            "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-st-fr-benz-125-km-bezwypadkowy-2018r-88000-km-warszawa-7910-1456-SB",
+            "checkedAt": "2026-11-11T16:37:59.039Z",
+            "availability": "removed",
+            "note": "Portal zwrócił HTTP 404 i jawny komunikat zamknięcia: „Nie znaleźliśmy tej oferty”.",
+            "httpStatus": 404,
+            "closedMessage": "Nie znaleźliśmy tej oferty"
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-11T16:37:59.039Z",
+      "lastVerifiedAt": "2026-11-11T16:37:59.039Z",
+      "lastAttemptAt": "2026-11-11T16:37:59.039Z",
+      "history": [
+        {
+          "eventId": "5c2afaca755e9647331023ddef150eb9cc2a923a4e05bbe4800d0c1bf015fef4",
+          "runId": "search-20261109",
+          "checkedAt": "2026-11-09T14:44:17+01:00",
+          "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-st-fr-benz-125-km-bezwypadkowy-2018r-88000-km-warszawa-7910-1456-SB",
+          "availability": "available",
+          "note": "Karta Autoplac (ostatnia aktualizacja w ostatnim tygodniu) pokazuje SEAT Leon ST/FR 2018, benzynowy 1.4 TSI 125 KM, manual 6-biegowy, 88 000 km i 46 999 zł brutto. Karta wymienia kamerę cofania i czujniki parkowania. Sprzedawca firma; LPG nieustalone; brak niezależnej kontroli strukturalnej.",
+          "photoCheck": null,
+          "evidence": [
+            {
+              "fields": [
+                "year",
+                "price",
+                "priceBasis",
+                "mileage",
+                "engineVariant",
+                "bodyCode",
+                "transmissionCode",
+                "cameraStatus",
+                "structuralDamageStatus",
+                "offerType",
+                "saleType",
+                "lpgInstalled",
+                "location"
+              ],
+              "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-st-fr-benz-125-km-bezwypadkowy-2018r-88000-km-warszawa-7910-1456-SB",
+              "checkedAt": "2026-11-09T14:44:17+01:00",
+              "kind": "seller",
+              "note": "Karta i opis sprzedawcy: produkcja 2018, 1.4 TSI 125 KM, ST/kombi, manual, przebieg 88 000 km, cena brutto 46 999 zł, firma, lokalizacja Nowa Wola/Mazowieckie; opis jawnie wymienia kamerę. Karta deklaruje bezwypadkowy/nieuszkodzony, ale brak niezależnej kontroli. LPG niepodane."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:autoplac:7910-1456-SB",
+            "modelKey": "seat-leon-iii-st",
+            "title": "SEAT Leon ST FR 1.4 TSI 125 KM, kamera cofania",
+            "urls": [
+              {
+                "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-st-fr-benz-125-km-bezwypadkowy-2018r-88000-km-warszawa-7910-1456-SB",
+                "label": "Autoplac"
+              }
+            ],
+            "listingIds": [
+              "autoplac:7910-1456-SB"
+            ],
+            "year": 2018,
+            "price": 46999,
+            "priceBasis": "gross_unconditional_total",
+            "mileage": 88000,
+            "engineVariant": "1.4-tsi-ea211-125",
+            "bodyCode": "wagon",
+            "transmissionCode": "manual",
+            "cameraStatus": "installed_confirmed",
+            "structuralDamageStatus": "unknown",
+            "familyFitConfirmed": null,
+            "offerType": "company",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "voivodeship": "Mazowieckie",
+              "city": "Nowa Wola"
+            },
+            "photos": [
+              "https://euw2-cdn.autoplac.pl/v1/p/e594e6e4-3600-4eb7-ab91-0b9bf4d88953?f=1920%3Awebp"
+            ],
+            "details": {
+              "Cena i warunki": "46 999 zł brutto. Karta oferuje opcjonalny kredyt lub leasing; nie wskazano, że niższa cena wymaga finansowania.",
+              "Kamera cofania": "Opis sprzedawcy wymienia kamerę cofania oraz czujniki parkowania z przodu i z tyłu.",
+              "LPG": "Karta podaje benzynę, nie określa montażu LPG.",
+              "Szkody": "Pola Autoplac: bezwypadkowy tak, uszkodzony nie; niezależna kontrola strukturalna niepotwierdzona.",
+              "Lokalizacja": "Nowa Wola, Mazowieckie; Autoplac podaje również adres/obszar Nowa Wola, 05-500."
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:autoplac:7910-1456-SB"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "seat-leon-iii-st"
+            },
+            "title": {
+              "before": null,
+              "after": "SEAT Leon ST FR 1.4 TSI 125 KM, kamera cofania"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-st-fr-benz-125-km-bezwypadkowy-2018r-88000-km-warszawa-7910-1456-SB",
+                  "label": "Autoplac"
+                }
+              ]
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "autoplac:7910-1456-SB"
+              ]
+            },
+            "year": {
+              "before": null,
+              "after": 2018
+            },
+            "price": {
+              "before": null,
+              "after": 46999
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "gross_unconditional_total"
+            },
+            "mileage": {
+              "before": null,
+              "after": 88000
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.4-tsi-ea211-125"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "installed_confirmed"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "offerType": {
+              "before": null,
+              "after": "company"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "voivodeship": "Mazowieckie",
+                "city": "Nowa Wola"
+              }
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://euw2-cdn.autoplac.pl/v1/p/e594e6e4-3600-4eb7-ab91-0b9bf4d88953?f=1920%3Awebp"
+              ]
+            },
+            "details": {
+              "before": null,
+              "after": {
+                "Cena i warunki": "46 999 zł brutto. Karta oferuje opcjonalny kredyt lub leasing; nie wskazano, że niższa cena wymaga finansowania.",
+                "Kamera cofania": "Opis sprzedawcy wymienia kamerę cofania oraz czujniki parkowania z przodu i z tyłu.",
+                "LPG": "Karta podaje benzynę, nie określa montażu LPG.",
+                "Szkody": "Pola Autoplac: bezwypadkowy tak, uszkodzony nie; niezależna kontrola strukturalna niepotwierdzona.",
+                "Lokalizacja": "Nowa Wola, Mazowieckie; Autoplac podaje również adres/obszar Nowa Wola, 05-500."
+              }
+            }
+          }
+        },
+        {
+          "eventId": "00043d232cb19bf1c57e15f6b5db7c767b68d9a7870a25221bfdd32df9dc7071",
+          "runId": "dostepnosc-2026-11-10",
+          "checkedAt": "2026-11-10T23:11:51Z",
+          "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-st-fr-benz-125-km-bezwypadkowy-2018r-88000-km-warszawa-7910-1456-SB",
+          "availability": "removed",
+          "note": "Autoplac pokazuje „Nie znaleźliśmy tej oferty” i „Oferta trafiła do archiwum”.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:7910-1456-SB"
+          },
+          "changes": {
+            "priceBasis": {
+              "before": "gross_unconditional_total",
+              "after": "gross_total"
+            }
+          }
+        },
+        {
+          "eventId": "1190f8215ec5887d6db2f67af5119b6b642826b02b53b856252f0c263abee176",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T16:37:59.039Z",
+          "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-st-fr-benz-125-km-bezwypadkowy-2018r-88000-km-warszawa-7910-1456-SB",
+          "availability": "removed",
+          "note": "Portal zwrócił HTTP 404 i jawny komunikat zamknięcia: „Nie znaleźliśmy tej oferty”.",
+          "httpStatus": 404,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:7910-1456-SB"
+          },
+          "changes": {}
+        }
+      ],
+      "assessment": {
+        "id": "listing:autoplac:7910-1456-SB",
+        "modelKey": "seat-leon-iii-st",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "structural_history; stroller_and_family_fit",
+      "archive": {
+        "status": "closed",
+        "reason": "all_listings_confirmed_closed",
+        "archivedAt": "2026-11-10T23:11:51+00:00"
+      }
+    },
+    {
+      "id": "listing:autoplac:AG9jO66DU2Sq",
+      "modelKey": "seat-leon-iii-st",
+      "listingIds": [
+        "autoplac:AG9jO66DU2Sq"
+      ],
+      "urls": [
+        {
+          "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-tsi-startstop-x-perience-AG9jO66DU2Sq",
+          "normalized": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-tsi-startstop-x-perience-AG9jO66DU2Sq",
+          "label": "Zobacz ogłoszenie — Autoplac"
+        }
+      ],
+      "title": "SEAT Leon III ST 1.4 TSI EA211 125 KM — 140 000 km",
+      "year": 2018,
+      "price": 45800,
+      "priceLabel": "45 800 zł",
+      "mileage": 140000,
+      "mileageLabel": "140 000 km",
+      "engine": "1.4 TSI EA211 · 125 KM",
+      "engineVariant": "1.4-tsi-ea211-125",
+      "body": "Kombi / ST",
+      "bodyCode": "wagon",
+      "transmission": "Manualna",
+      "transmissionCode": "manual",
+      "seller": "TOM-CAR · ogłoszenie firmowe/handlowe Autoplac",
+      "offerType": "unknown",
+      "priceBasis": "gross_total",
+      "saleType": "fixed_price",
+      "cameraStatus": "unknown",
+      "structuralDamageStatus": "unknown",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "voivodeship": "Lubelskie",
+        "city": "Sitaniec",
+        "postalCode": "22-400",
+        "precision": "postal_code",
+        "source": "listing",
+        "checkedAt": "2026-11-10",
+        "geoSource": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-tsi-startstop-x-perience-AG9jO66DU2Sq"
+      },
+      "subtitle": "2018 · Kombi · 1.4 TSI 125 KM · manualna · 140 000 km",
+      "specs": {
+        "rocznik": "2018",
+        "nadwozie": "Kombi / ST",
+        "silnik": "1.4 TSI EA211 · 125 KM",
+        "skrzynia": "manualna",
+        "przebieg": "140 000 km",
+        "cena zakupu": "45 800 zł — cena widoczna na karcie; finansowanie pokazano osobno jako opcję"
+      },
+      "details": {
+        "Historia i pochodzenie": "Karta podaje pochodzenie zagraniczne; numer VIN nieujawniony w widocznym fragmencie.",
+        "Wyposażenie": "W widocznym fragmencie wymieniono m.in. skórzaną dźwignię biegów, Hill Holder, lampy przeciwmgielne LED i kierownicę ze sterowaniem radia. Karta odsyła do rozwinięcia wyposażenia; kamera nie została potwierdzona.",
+        "Problemy / niepewności": "Ostatnia aktualizacja karty: 2026-09-04. Dostępność wymaga potwierdzenia u sprzedawcy. LPG, historia szkód oraz możliwość/działanie kamery pozostają nieznane.",
+        "Ocena": "Podstawowe parametry widoczne na karcie mieszczą się w kryteriach; nieznane wymagania pozostawiono do dalszej weryfikacji."
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-10T00:16:02Z",
+      "listingStates": [
+        {
+          "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-tsi-startstop-x-perience-AG9jO66DU2Sq",
+          "status": "removed",
+          "lastAttemptAt": "2026-11-11T16:37:59.042Z",
+          "lastCheckedAt": "2026-11-11T16:37:59.042Z",
+          "lastVerifiedAt": "2026-11-11T16:37:59.042Z",
+          "lastObservation": {
+            "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-tsi-startstop-x-perience-AG9jO66DU2Sq",
+            "checkedAt": "2026-11-11T16:37:59.042Z",
+            "availability": "removed",
+            "note": "Portal zwrócił HTTP 404 i jawny komunikat zamknięcia: „Nie znaleźliśmy tej oferty”.",
+            "httpStatus": 404,
+            "closedMessage": "Nie znaleźliśmy tej oferty"
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-11T16:37:59.042Z",
+      "lastVerifiedAt": "2026-11-11T16:37:59.042Z",
+      "lastAttemptAt": "2026-11-11T16:37:59.042Z",
+      "history": [
+        {
+          "eventId": "bda76cd748db6b184286ca86fca07cd3823827f3154211571f556c55c45e684d",
+          "runId": "search-20261110-full",
+          "checkedAt": "2026-11-10T00:16:02Z",
+          "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-tsi-startstop-x-perience-AG9jO66DU2Sq",
+          "availability": "available",
+          "note": "Bezpośrednia karta Autoplac otworzyła się i nadal wyświetla cenę, opis oraz przyciski „Zadzwoń/Napisz”; portal nie pokazywał oznaczenia sprzedane/nieaktywne. Ostatnia aktualizacja ogłoszenia na karcie: 2026-09-04. Bieżącą dostępność należy potwierdzić ze sprzedawcą.",
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-tsi-startstop-x-perience-AG9jO66DU2Sq",
+              "checkedAt": "2026-11-10T00:16:02Z",
+              "fields": [
+                "year",
+                "bodyCode",
+                "engineVariant",
+                "transmissionCode",
+                "mileage",
+                "price",
+                "priceBasis",
+                "saleType",
+                "location"
+              ],
+              "note": "Karta Autoplac: 2018, Kombi, 1.4 TSI 125 KM/1395 cm³, manualna, 140 000 km, cena 45 800 zł; cena widoczna jako cena zakupu, leasing pokazany oddzielnie. Lokalizacja: Sitaniec 22-400, Lubelskie. Aktywna karta z przyciskami kontaktu; ostatnia aktualizacja 2026-09-04."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:autoplac:AG9jO66DU2Sq",
+            "modelKey": "seat-leon-iii-st",
+            "vin": null,
+            "listingIds": [
+              "autoplac:AG9jO66DU2Sq"
+            ],
+            "urls": [
+              {
+                "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-tsi-startstop-x-perience-AG9jO66DU2Sq",
+                "normalized": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-tsi-startstop-x-perience-AG9jO66DU2Sq",
+                "label": "Zobacz ogłoszenie — Autoplac"
+              }
+            ],
+            "title": "SEAT Leon III ST 1.4 TSI EA211 125 KM — 140 000 km",
+            "year": 2018,
+            "price": 45800,
+            "priceLabel": "45 800 zł",
+            "mileage": 140000,
+            "mileageLabel": "140 000 km",
+            "engine": "1.4 TSI EA211 · 125 KM",
+            "engineVariant": "1.4-tsi-ea211-125",
+            "body": "Kombi / ST",
+            "bodyCode": "wagon",
+            "transmission": "Manualna",
+            "transmissionCode": "manual",
+            "seller": "TOM-CAR · ogłoszenie firmowe/handlowe Autoplac",
+            "offerType": "unknown",
+            "priceBasis": "gross_unconditional_total",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "cameraStatus": "unknown",
+            "structuralDamageStatus": "unknown",
+            "familyFitConfirmed": null,
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "voivodeship": "Lubelskie",
+              "city": "Sitaniec",
+              "postalCode": "22-400",
+              "precision": "postal_code",
+              "source": "listing",
+              "checkedAt": "2026-11-10",
+              "geoSource": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-tsi-startstop-x-perience-AG9jO66DU2Sq"
+            },
+            "subtitle": "2018 · Kombi · 1.4 TSI 125 KM · manualna · 140 000 km",
+            "specs": {
+              "rocznik": "2018",
+              "nadwozie": "Kombi / ST",
+              "silnik": "1.4 TSI EA211 · 125 KM",
+              "skrzynia": "manualna",
+              "przebieg": "140 000 km",
+              "cena zakupu": "45 800 zł — cena widoczna na karcie; finansowanie pokazano osobno jako opcję"
+            },
+            "details": {
+              "Historia i pochodzenie": "Karta podaje pochodzenie zagraniczne; numer VIN nieujawniony w widocznym fragmencie.",
+              "Wyposażenie": "W widocznym fragmencie wymieniono m.in. skórzaną dźwignię biegów, Hill Holder, lampy przeciwmgielne LED i kierownicę ze sterowaniem radia. Karta odsyła do rozwinięcia wyposażenia; kamera nie została potwierdzona.",
+              "Problemy / niepewności": "Ostatnia aktualizacja karty: 2026-09-04. Dostępność wymaga potwierdzenia u sprzedawcy. LPG, historia szkód oraz możliwość/działanie kamery pozostają nieznane.",
+              "Ocena": "Podstawowe parametry widoczne na karcie mieszczą się w kryteriach; nieznane wymagania pozostawiono do dalszej weryfikacji."
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:autoplac:AG9jO66DU2Sq"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "seat-leon-iii-st"
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "autoplac:AG9jO66DU2Sq"
+              ]
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-tsi-startstop-x-perience-AG9jO66DU2Sq",
+                  "normalized": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-tsi-startstop-x-perience-AG9jO66DU2Sq",
+                  "label": "Zobacz ogłoszenie — Autoplac"
+                }
+              ]
+            },
+            "title": {
+              "before": null,
+              "after": "SEAT Leon III ST 1.4 TSI EA211 125 KM — 140 000 km"
+            },
+            "year": {
+              "before": null,
+              "after": 2018
+            },
+            "price": {
+              "before": null,
+              "after": 45800
+            },
+            "priceLabel": {
+              "before": null,
+              "after": "45 800 zł"
+            },
+            "mileage": {
+              "before": null,
+              "after": 140000
+            },
+            "mileageLabel": {
+              "before": null,
+              "after": "140 000 km"
+            },
+            "engine": {
+              "before": null,
+              "after": "1.4 TSI EA211 · 125 KM"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.4-tsi-ea211-125"
+            },
+            "body": {
+              "before": null,
+              "after": "Kombi / ST"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmission": {
+              "before": null,
+              "after": "Manualna"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "seller": {
+              "before": null,
+              "after": "TOM-CAR · ogłoszenie firmowe/handlowe Autoplac"
+            },
+            "offerType": {
+              "before": null,
+              "after": "unknown"
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "gross_unconditional_total"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "voivodeship": "Lubelskie",
+                "city": "Sitaniec",
+                "postalCode": "22-400",
+                "precision": "postal_code",
+                "source": "listing",
+                "checkedAt": "2026-11-10",
+                "geoSource": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-tsi-startstop-x-perience-AG9jO66DU2Sq"
+              }
+            },
+            "subtitle": {
+              "before": null,
+              "after": "2018 · Kombi · 1.4 TSI 125 KM · manualna · 140 000 km"
+            },
+            "specs": {
+              "before": null,
+              "after": {
+                "rocznik": "2018",
+                "nadwozie": "Kombi / ST",
+                "silnik": "1.4 TSI EA211 · 125 KM",
+                "skrzynia": "manualna",
+                "przebieg": "140 000 km",
+                "cena zakupu": "45 800 zł — cena widoczna na karcie; finansowanie pokazano osobno jako opcję"
+              }
+            },
+            "details": {
+              "before": null,
+              "after": {
+                "Historia i pochodzenie": "Karta podaje pochodzenie zagraniczne; numer VIN nieujawniony w widocznym fragmencie.",
+                "Wyposażenie": "W widocznym fragmencie wymieniono m.in. skórzaną dźwignię biegów, Hill Holder, lampy przeciwmgielne LED i kierownicę ze sterowaniem radia. Karta odsyła do rozwinięcia wyposażenia; kamera nie została potwierdzona.",
+                "Problemy / niepewności": "Ostatnia aktualizacja karty: 2026-09-04. Dostępność wymaga potwierdzenia u sprzedawcy. LPG, historia szkód oraz możliwość/działanie kamery pozostają nieznane.",
+                "Ocena": "Podstawowe parametry widoczne na karcie mieszczą się w kryteriach; nieznane wymagania pozostawiono do dalszej weryfikacji."
+              }
+            }
+          }
+        },
+        {
+          "eventId": "0db7057f6dea7df2ef3cde1ec50564654be9c8293fec52ba87eb36762bbb8738",
+          "runId": "dostepnosc-2026-11-10",
+          "checkedAt": "2026-11-10T23:11:51Z",
+          "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-tsi-startstop-x-perience-AG9jO66DU2Sq",
+          "availability": "removed",
+          "note": "Autoplac pokazuje „Nie znaleźliśmy tej oferty” i „Oferta trafiła do archiwum”.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:AG9jO66DU2Sq"
+          },
+          "changes": {
+            "priceBasis": {
+              "before": "gross_unconditional_total",
+              "after": "gross_total"
+            }
+          }
+        },
+        {
+          "eventId": "1a323ffecb425a1892c278fe992af455e8236bb22eeada4fa89de9c62c0b4968",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T16:37:59.042Z",
+          "url": "https://autoplac.pl/oferta/seat/leon/iii-1-4-2018r-tsi-startstop-x-perience-AG9jO66DU2Sq",
+          "availability": "removed",
+          "note": "Portal zwrócił HTTP 404 i jawny komunikat zamknięcia: „Nie znaleźliśmy tej oferty”.",
+          "httpStatus": 404,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:AG9jO66DU2Sq"
+          },
+          "changes": {}
+        }
+      ],
+      "assessment": {
+        "id": "listing:autoplac:AG9jO66DU2Sq",
+        "modelKey": "seat-leon-iii-st",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "archive": {
+        "status": "closed",
+        "reason": "all_listings_confirmed_closed",
+        "archivedAt": "2026-11-10T23:11:51+00:00"
       }
     }
   ]

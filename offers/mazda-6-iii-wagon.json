@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-10",
+  "updatedAt": "2026-11-11",
   "model": {
     "key": "mazda-6-iii-wagon",
     "name": "Mazda 6 III Wagon",
@@ -53,21 +53,22 @@
         {
           "url": "https://autoplac.pl/oferta/mazda/6/iii-2-0-2018r-uszkodzona-pali-jezdzi-bogate-wyposazenie-krajowa-5298-7669-VQ",
           "status": "removed",
-          "lastAttemptAt": "2026-11-10T23:10:18Z",
-          "lastCheckedAt": "2026-11-10T23:10:18Z",
-          "lastVerifiedAt": "2026-11-10T23:10:18Z",
+          "lastAttemptAt": "2026-11-11T16:37:23.569Z",
+          "lastCheckedAt": "2026-11-11T16:37:23.569Z",
+          "lastVerifiedAt": "2026-11-11T16:37:23.569Z",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/mazda/6/iii-2-0-2018r-uszkodzona-pali-jezdzi-bogate-wyposazenie-krajowa-5298-7669-VQ",
-            "checkedAt": "2026-11-10T23:10:18Z",
+            "checkedAt": "2026-11-11T16:37:23.569Z",
             "availability": "removed",
-            "httpStatus": null,
-            "note": "Autoplac wyświetla jawnie „Nie znaleźliśmy tej oferty” oraz „Oferta trafiła do archiwum”."
+            "note": "Portal zwrócił HTTP 404 i jawny komunikat zamknięcia: „Nie znaleźliśmy tej oferty”.",
+            "httpStatus": 404,
+            "closedMessage": "Nie znaleźliśmy tej oferty"
           }
         }
       ],
-      "lastCheckedAt": "2026-11-10T23:10:18Z",
-      "lastVerifiedAt": "2026-11-10T23:10:18Z",
-      "lastAttemptAt": "2026-11-10T23:10:18Z",
+      "lastCheckedAt": "2026-11-11T16:37:23.569Z",
+      "lastVerifiedAt": "2026-11-11T16:37:23.569Z",
+      "lastAttemptAt": "2026-11-11T16:37:23.569Z",
       "history": [
         {
           "eventId": "6f9c00239ad788137b38c0529f0fbe209a02b2aa92837970ec0e7726c427fd8a",
@@ -265,6 +266,21 @@
               "after": "gross_total"
             }
           }
+        },
+        {
+          "eventId": "f1002d3632a489a83dd2069124fc889c3f9524529f8184c6f1187579589cd782",
+          "runId": "archive-check-2026-11-11",
+          "checkedAt": "2026-11-11T16:37:23.569Z",
+          "url": "https://autoplac.pl/oferta/mazda/6/iii-2-0-2018r-uszkodzona-pali-jezdzi-bogate-wyposazenie-krajowa-5298-7669-VQ",
+          "availability": "removed",
+          "note": "Portal zwrócił HTTP 404 i jawny komunikat zamknięcia: „Nie znaleźliśmy tej oferty”.",
+          "httpStatus": 404,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:5298-7669-VQ"
+          },
+          "changes": {}
         }
       ],
       "assessment": {

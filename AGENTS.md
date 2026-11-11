@@ -98,7 +98,13 @@ Gdy użytkownik prosi o sprawdzenie dostępności ofert w archiwum, uruchom
 `closed` lub `unverified`; status `excluded` pomijaj. Ten przebieg nie aktualizuje
 danych auta i nie dotyka aktywnych ofert. Importuj z niego tylko potwierdzone
 `available`; taki rekord przenieś do `offers`, usuń z `archivedOffers` i zachowaj
-historię. Wyniki `sold`, `removed` i `access_error` pozostawiają rekord w archiwum.
+historię. Dodatkowo napraw starsze błędne archiwizacje: rekord `unverified` z
+zapisanym stanem ogłoszenia `available` przywróć do `offers`, jeżeli późniejsza
+próba miała wyłącznie `access_error`; zachowaj błąd próby i nie odświeżaj
+`lastVerifiedAt`. Nie przywracaj `excluded`. Jeśli przebieg potwierdzi `sold` lub
+`removed` dla każdego URL-a oferty, ustaw archiwum na `closed`; każdy błąd dostępu
+lub brak obserwacji blokuje takie potwierdzenie. Błędy i nieustalone statusy nie
+są dowodem zamknięcia.
 
 Koordynator przygotowuje przebieg poleceniem `plan` i tylko on zmienia `tasks.json`.
 Główny agent koordynuje kilku wykonawców; zadania pozostają osobne dla pary

@@ -538,6 +538,57 @@ def prepare(root, run_id, config):
                             "url": observation["url"], "availability": observation["availability"], "fields": fields,
                             "verdict": merged["verdict"]})
     ledger["results"].update(imported_results)
+    if queue.get("kind") == "archive-availability":
+        # Past availability runs incorrectly moved some listings into the archive
+        # after access_error, even though their last successful state was available.
+        # Restore those records from the preserved per-URL state; the failed latest
+        # attempt remains visible and does not become a fresh verification.
+        for model_key, doc in documents.items():
+            kept_archived = []
+            for offer in doc.get("archivedOffers", []):
+                archive = offer.get("archive") or {}
+                archive_status = archive.get("status")
+                known_available = any(state.get("status") == "available"
+                                      for state in offer.get("listingStates", []))
+                if archive_status == "unverified" and known_available:
+                    restored = copy.deepcopy(offer)
+                    restored.pop("archive", None)
+                    doc["offers"].append(restored)
+                    changes.append({"taskId": None, "offerId": offer["id"], "kind": "reactivated",
+                                    "availability": "last_verified_available",
+                                    "reason": "previous_access_error_did_not_overturn_available_state",
+                                    "verdict": offer.get("verdict"), "fields": {}})
+                else:
+                    urls = []
+                    for item in offer.get("urls", []):
+                        try:
+                            urls.append(normalized_url(item.get("url") if isinstance(item, dict) else item))
+                        except (TypeError, ValueError):
+                            continue
+                    run_status_by_url = {}
+                    run_time_by_url = {}
+                    for event in offer.get("history", []):
+                        if event.get("runId") != run_id:
+                            continue
+                        try:
+                            event_url = normalized_url(event.get("url"))
+                        except (TypeError, ValueError):
+                            continue
+                        run_status_by_url[event_url] = event.get("availability")
+                        run_time_by_url[event_url] = event.get("checkedAt")
+                    if (archive_status == "unverified" and urls and
+                            all(run_status_by_url.get(url) in ("sold", "removed") for url in urls)):
+                        archive["status"] = "closed"
+                        archive["reason"] = "all_listings_confirmed_closed"
+                        archive["archivedAt"] = max(
+                            (run_time_by_url[url] for url in urls if run_time_by_url.get(url)),
+                            default=archive.get("archivedAt"))
+                        offer["archive"] = archive
+                        changes.append({"taskId": None, "offerId": offer["id"], "kind": "confirmed_closed",
+                                        "availability": "sold_or_removed", "reason": archive["reason"],
+                                        "verdict": offer.get("verdict"), "fields": {}})
+                    kept_archived.append(offer)
+            doc["archivedOffers"] = kept_archived
     for model_key, doc in documents.items():
         active, archived = doc["offers"], doc.get("archivedOffers", [])
         kept = []
