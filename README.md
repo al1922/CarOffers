@@ -8,6 +8,8 @@ względne, więc aplikacja działa również pod adresem `użytkownik.github.io/
 ## Co można zrobić na stronie
 
 - Przeglądać wszystkie modele lub wybrać kilka, korzystać z kart i tabeli.
+- Przeglądać aktywne oferty osobno od archiwum zamkniętych, niezweryfikowanych
+  i ręcznie wykluczonych aut; archiwum nie wchodzi do kolejki sprawdzania.
 - Filtrować cenę, przebieg, roczniki, nadwozie, skrzynię, silnik, źródło, kamerę,
   LPG, zgodność, dostępność, datę odczytu i własny status.
 - Odtworzyć filtry z URL lub zapisać wyszukiwanie pod własną nazwą.
@@ -37,7 +39,7 @@ Brak miejscowości lub niejednoznaczne współrzędne są pokazane jawnie.
 | `assets/data.mjs` | Odczyt plików i kontrola aktualności oceny |
 | `assets/storage.mjs` | Prywatne dane lokalne i kopie zapasowe |
 | `assets/views.mjs` | Karty, tabela, porównanie, szczegóły, wiedza i aktualizacje |
-| `models.json`, `offers/*.json` | Indeks modeli i opublikowane dane ofert |
+| `models.json`, `offers/*.json` | Indeks modeli, aktywne oferty i oddzielna kolekcja `archivedOffers` |
 | `data/*.json` | Katalog miast, udokumentowane lokalizacje i dowody odczytu |
 | `config/*.json`, `knowledge/models/*.json` | Wymagania, wybrane modele, źródła i wiedza |
 | `reports/current-assessment.json` | Wyniki lokalnego silnika oceny |

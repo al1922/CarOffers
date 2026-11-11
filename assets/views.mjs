@@ -1,4 +1,4 @@
-import {fmt,money,dateLabel,safeURL,bodyNames,verdictNames,statuses,reason,locationLabel,cameraLabel,lpgLabel,availability,availabilityNames,distance} from './core.mjs?v=13';
+import {fmt,money,dateLabel,safeURL,bodyNames,verdictNames,statuses,reason,locationLabel,cameraLabel,lpgLabel,availability,availabilityNames,distance} from './core.mjs?v=14';
 export function el(tag,className='',text){const node=document.createElement(tag);if(className)node.className=className;if(text!==undefined)node.textContent=String(text??'');return node;}
 export function button(text,action,className='button secondary'){const b=el('button',className,text);b.type='button';b.addEventListener('click',action);return b;}
 export function link(text,url,className='button secondary'){const safe=safeURL(url);if(!safe)return el('span','muted','Źródło niedostępne');const a=el('a',className,text);a.href=safe;a.target='_blank';a.rel='noopener noreferrer';return a;}
@@ -24,6 +24,17 @@ export function offerCard(o,ctx){
  const place=locationLine(o,ctx);if(place)content.append(place);const reasonText=shortReason(o);if(reasonText)content.append(el('p','card-reason',reasonText));
  const actions=el('div','card-bottom');actions.append(compareCheck(o,ctx),button('Szczegóły',()=>ctx.open(o),'button details-button'));const url=(o.urls||[]).find(x=>safeURL(x.url));if(url)actions.append(link('Otwórz ofertę ↗',url.url,'button primary direct-offer'));content.append(actions);
  const verifiedAt=o.lastVerifiedAt||o.lastCheckedAt;content.append(el('p','card-date',availabilityNames[availability(o)]+' · '+(verifiedAt?'Weryfikacja: '+dateLabel(verifiedAt):'Brak daty udanej weryfikacji')));card.append(photo,content);return card;
+}
+export function archivedOfferCard(o,ctx){
+ const card=offerCard(o,ctx),content=card.querySelector('.offer-card-content'),archive=o.archive||{};
+ card.classList.add('archived-offer-card');
+ card.querySelector('[data-favorite-key]')?.remove();card.querySelector('.compare-check')?.remove();
+ const labels={closed:'Zamknięta',unverified:'Niezweryfikowana',excluded:'Wykluczona ręcznie'};
+ const notes={closed:'Ogłoszenie zostało potwierdzone jako zamknięte.',unverified:'Nie udało się potwierdzić dostępnej karty. To nie jest potwierdzenie sprzedaży.',excluded:'Rekord wykluczono z aktywnej listy.'};
+ const banner=el('div','archive-card-state');banner.append(badge(labels[archive.status]||'Archiwalna',archive.status==='closed'?'fail':'check'));
+ if(archive.archivedAt)banner.append(el('span','',`W archiwum od ${dateLabel(archive.archivedAt)}`));
+ content.prepend(banner);content.append(el('p','archive-reason',archive.reportNote||notes[archive.status]||archive.reason||'Oferta została przeniesiona do archiwum.'));
+ return card;
 }
 export function offerTable(list,ctx){
  const wrap=el('div','table-wrap offer-list-table'),table=el('table'),head=el('thead'),row=el('tr');
@@ -93,4 +104,19 @@ export function updates(data){
  }
  wrap.append(el('h2','','Rejestr źródeł'),el('p','section-intro','Wpis w rejestrze ani otwarcie przykładowej karty nie oznacza pełnego przeszukania portalu. Źródła aukcyjne i wyłączone nie są dopuszczane do kolejki.'));
  const grid=el('div','source-list');for(const source of data.sources){const card=el('article','info-card');card.append(el('h3','',source.name),badge(source.enabled?'Włączone w konfiguracji':'Wyłączone'),el('p','',data.sourceDefinitions[source.accessStatus]||source.accessStatus),el('p','hint','Ostatnia próba: '+dateLabel(source.lastAttemptAt)),el('p','',source.verification?.fullSearchCompleted?'Zapisano pełne przeszukanie.':'Pełne przeszukanie niepotwierdzone.'),link('Źródło ↗',source.url));grid.append(card);}wrap.append(grid);return wrap;
+}
+
+export function flowGuide(){
+ const wrap=el('div','flow-guide');
+ wrap.append(el('p','section-intro','Wybierz zadanie. Przycisk skopiuje gotową prośbę — wklej ją w czacie, a agent poprowadzi cały przebieg i dobierze szczegóły z konfiguracji.'));
+ const cards=[
+  ['Szukaj nowych ofert','Przeszukaj wszystkie aktywne modele i portale. Przyda się, gdy chcesz znaleźć nowe samochody.','Wyszukaj nowe oferty samochodów zgodnie z konfiguracją.'],
+  ['Sprawdź dostępność','Lekko sprawdź, czy zapisane ogłoszenia nadal są dostępne.','Sprawdź, czy aktualne oferty nadal istnieją lub są dostępne.'],
+  ['Odśwież dane ofert','Ponownie odczytaj zapisane karty i uaktualnij potwierdzone dane aut.','Zrób pełne odświeżenie danych aktualnych ofert.'],
+  ['Poleć modele','Przygotuj ranking modeli i zweryfikuj po jednej aktualnej ofercie dla najlepszych.','Przygotuj ranking polecanych modeli.']
+ ];
+ const grid=el('div','flow-grid');
+ for(const [title,description,prompt] of cards){const card=el('article','info-card flow-card');card.append(el('h2','',title),el('p','',description));const action=button('Kopiuj prośbę ↗',async()=>{try{await navigator.clipboard.writeText(prompt);action.textContent='Skopiowano — wklej w czacie';action.classList.add('copied');}catch{action.textContent=prompt;}} ,'button primary');action.dataset.flowPrompt=prompt;card.append(action);grid.append(card);}
+ wrap.append(grid,el('p','hint','Możesz też opisać cel własnymi słowami, np. „znajdź kilka nowych aut” albo „czy te oferty są jeszcze aktualne?”. Nie trzeba znać nazw flow.'));
+ return wrap;
 }

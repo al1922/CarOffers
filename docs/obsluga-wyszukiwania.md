@@ -364,7 +364,7 @@ Koordynator wykonuje `claim`, `finish`, `import-preview`, `import-apply` i
 walidację; nie uruchamia `assess` dla samego sprawdzenia dostępności.
 
 `available` wymaga HTTP 2xx oraz wyrenderowanej karty z dopasowaniem co najmniej
-4 cech tytułu, widoczną ceną i aktywną kontrolką kontaktu. Helper zapisuje te
+3 wyróżniających słów tytułu, widoczną ceną i aktywną kontrolką kontaktu. Helper zapisuje te
 sygnały jako `availabilityProof`; `finish` odrzuca `available` bez wszystkich
 sygnałów i kodu HTTP. Sam tytuł z metadanych/cache ani przycisk ze wspólnego
 szablonu portalu nie wystarczają. Jawny komunikat zamknięcia lub HTTP 410 oznacza
@@ -375,6 +375,8 @@ historii. Jeśli po sprawdzeniu wszystkich adresów auta nie ma ani jednej karty
 `available`, przebieg dostępności przenosi rekord do archiwum jako `unverified`.
 To usuwa go z aktywnej listy, ale nie stwierdza, że auto zostało sprzedane.
 Jeden dostępny URL pozostawia auto aktywne.
+Kolejka obejmuje wyłącznie `offers`; rekordy z `archivedOffers` są dostępne
+w zakładce „Archiwum” i nie są ponownie sprawdzane ani przenoszone automatycznie.
 
 Po `finish` wszystkich zadań koordynator wykonuje `import-preview`. Przy braku
 konfliktów stosuje `import-apply` i uruchamia walidację ofert. Historia zapisuje
