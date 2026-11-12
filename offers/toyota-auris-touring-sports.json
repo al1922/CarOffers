@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-12",
   "model": {
     "key": "toyota-auris-touring-sports",
     "name": "Toyota Auris II Touring Sports",
@@ -46,12 +46,12 @@
         {
           "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-6-2018r-7718-1651-TH",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:04:20.650Z",
-          "lastCheckedAt": "2026-11-11T02:04:20.650Z",
-          "lastVerifiedAt": "2026-11-11T02:04:20.650Z",
+          "lastAttemptAt": "2026-11-12T15:49:49.275Z",
+          "lastCheckedAt": "2026-11-12T15:49:49.275Z",
+          "lastVerifiedAt": "2026-11-12T15:49:49.275Z",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-6-2018r-7718-1651-TH",
-            "checkedAt": "2026-11-11T02:04:20.650Z",
+            "checkedAt": "2026-11-12T15:49:49.275Z",
             "availability": "available",
             "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
             "httpStatus": 200,
@@ -64,9 +64,9 @@
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T02:04:20.650Z",
-      "lastVerifiedAt": "2026-11-11T02:04:20.650Z",
-      "lastAttemptAt": "2026-11-11T02:04:20.650Z",
+      "lastCheckedAt": "2026-11-12T15:49:49.275Z",
+      "lastVerifiedAt": "2026-11-12T15:49:49.275Z",
+      "lastAttemptAt": "2026-11-12T15:49:49.275Z",
       "history": [
         {
           "eventId": "6dd2305ba8a22a5093bec9ddc7cb3b882b354029ccd5d15491cc6ef9578aa9a8",
@@ -313,6 +313,36 @@
             "id": "listing:autoplac:7718-1651-TH"
           },
           "changes": {}
+        },
+        {
+          "eventId": "938d821aa3197c1cfbae981dc96b24fa71171850a828465268e18ce4b36db094",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:38:41.054Z",
+          "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-6-2018r-7718-1651-TH",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND autoplac.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:7718-1651-TH"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "36e154357f9d84462f64ed93bbf7f33985324026a67e953f5e3c6094297fb15d",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:49:49.275Z",
+          "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-6-2018r-7718-1651-TH",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:7718-1651-TH"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -399,12 +429,12 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6IhedI.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:40:16.734Z",
+          "lastAttemptAt": "2026-11-12T15:49:52.995Z",
           "lastCheckedAt": "2026-11-10T23:17:49Z",
           "lastVerifiedAt": "2026-11-10T23:17:49Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6IhedI.html",
-            "checkedAt": "2026-11-11T16:40:16.734Z",
+            "checkedAt": "2026-11-12T15:49:52.995Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -413,7 +443,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:17:49Z",
       "lastVerifiedAt": "2026-11-10T23:17:49Z",
-      "lastAttemptAt": "2026-11-11T16:40:16.734Z",
+      "lastAttemptAt": "2026-11-12T15:49:52.995Z",
       "history": [
         {
           "eventId": "34fa0092da6ca50f3a41896d837930b3df8cb2e78f3d0d821e833472f1222bd9",
@@ -791,6 +821,36 @@
             "id": "listing:otomoto:6151062018"
           },
           "changes": {}
+        },
+        {
+          "eventId": "e248e3070eb7bf5b715ecdc2d3c8dfd4a344f06593575af160f2ad3d24ae5d72",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:38:44.534Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6IhedI.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:6151062018"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "574568cce22fc1c3baec92072f9fb49e1d08167f746ac23c2e4218ee48640313",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:49:52.995Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6IhedI.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:6151062018"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -857,12 +917,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/toyota-auris-1-6-132-km-salon-pl-stan-perfekcyjny-CID5-ID1d6Ixr.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:40:17.329Z",
+          "lastAttemptAt": "2026-11-12T15:49:55.335Z",
           "lastCheckedAt": "2026-11-10T23:18:09Z",
           "lastVerifiedAt": "2026-11-10T23:18:09Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/toyota-auris-1-6-132-km-salon-pl-stan-perfekcyjny-CID5-ID1d6Ixr.html",
-            "checkedAt": "2026-11-11T16:40:17.329Z",
+            "checkedAt": "2026-11-12T15:49:55.335Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -871,7 +931,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:18:09Z",
       "lastVerifiedAt": "2026-11-10T23:18:09Z",
-      "lastAttemptAt": "2026-11-11T16:40:17.329Z",
+      "lastAttemptAt": "2026-11-12T15:49:55.335Z",
       "history": [
         {
           "eventId": "2701b8ef3526137e36c6511b0546478928ac39d7e72d9d95d60d6950636ac4e7",
@@ -1096,6 +1156,36 @@
             "id": "listing:olx:1109826377"
           },
           "changes": {}
+        },
+        {
+          "eventId": "212d64e685a5a326013923bc76f61974614c6e77364ef5d0266304db299da798",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:38:48.036Z",
+          "url": "https://www.olx.pl/d/oferta/toyota-auris-1-6-132-km-salon-pl-stan-perfekcyjny-CID5-ID1d6Ixr.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1109826377"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "89f47cacd1e1ec5c8ee9738eda58213b581ef0a877a540f1886aa45e2c020e4c",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:49:55.335Z",
+          "url": "https://www.olx.pl/d/oferta/toyota-auris-1-6-132-km-salon-pl-stan-perfekcyjny-CID5-ID1d6Ixr.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1109826377"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -1172,12 +1262,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/toyota-auris-toyota-auris-niski-przebieg-lpg-CID5-ID1cHB64.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:40:17.330Z",
+          "lastAttemptAt": "2026-11-12T15:49:55.336Z",
           "lastCheckedAt": "2026-11-10T23:18:09Z",
           "lastVerifiedAt": "2026-11-10T23:18:09Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/toyota-auris-toyota-auris-niski-przebieg-lpg-CID5-ID1cHB64.html",
-            "checkedAt": "2026-11-11T16:40:17.330Z",
+            "checkedAt": "2026-11-12T15:49:55.336Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -1186,7 +1276,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:18:09Z",
       "lastVerifiedAt": "2026-11-10T23:18:09Z",
-      "lastAttemptAt": "2026-11-11T16:40:17.330Z",
+      "lastAttemptAt": "2026-11-12T15:49:55.336Z",
       "history": [
         {
           "eventId": "219fe0af0053e290bebe7e09b1974731a602a3e2276cb01dfd66a2f801fe0b88",
@@ -1451,6 +1541,36 @@
             "id": "listing:olx:ID1cHB64"
           },
           "changes": {}
+        },
+        {
+          "eventId": "214edffe9f1eec53b53594daeead96b259aa63b508849f6e2e2a84732b56fd9f",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:38:48.037Z",
+          "url": "https://www.olx.pl/d/oferta/toyota-auris-toyota-auris-niski-przebieg-lpg-CID5-ID1cHB64.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:ID1cHB64"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "434ec5d541516320b045cb94a0374a18f99532739662bd49ddb5558575693b7a",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:49:55.336Z",
+          "url": "https://www.olx.pl/d/oferta/toyota-auris-toyota-auris-niski-przebieg-lpg-CID5-ID1cHB64.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:ID1cHB64"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -1515,27 +1635,21 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6Ihr1Z.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T17:00:19Z",
+          "lastAttemptAt": "2026-11-12T15:49:52.995Z",
           "lastCheckedAt": "2026-11-11T17:00:19Z",
           "lastVerifiedAt": "2026-11-11T17:00:19Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6Ihr1Z.html",
-            "checkedAt": "2026-11-11T17:00:19Z",
-            "availability": "available",
-            "httpStatus": null,
-            "availabilityProof": {
-              "identity": true,
-              "contact": true,
-              "price": true,
-              "titleTokensMatched": 6
-            },
-            "note": "Odczytana dziś karta Otomoto podaje Toyotę Auris II kombi z 2018 r., 1.6 Valvematic benzyna 132 KM, manualną skrzynię, 148 000 km, 45 000 zł oraz lokalizację Katowice (Śląskie); wyświetla aktywne kontrolki kontaktu „Napisz” i „Wyświetl numer”. Sprzedawca prywatny deklaruje zakup w salonie Toyoty i bezwypadkowość oraz regularny serwis ASO. Karta podaje pierwszą rejestrację 27.03.2019. Kamera cofania nie jest wymieniona w wyposażeniu, więc pozostaje niepotwierdzona; LPG nie wskazano, ale brak informacji nie potwierdza jego nieobecności. Nie ustalono zgodności montażu kamery ani stanu konstrukcji niezależnym oględzinami."
+            "checkedAt": "2026-11-12T15:49:52.995Z",
+            "availability": "access_error",
+            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+            "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-11T17:00:19Z",
       "lastVerifiedAt": "2026-11-11T17:00:19Z",
-      "lastAttemptAt": "2026-11-11T17:00:19Z",
+      "lastAttemptAt": "2026-11-12T15:49:52.995Z",
       "history": [
         {
           "eventId": "0e533a72c9c04b1966621d79557f3a8edea7d2db8380fd272c7a00917715fa05",
@@ -1691,6 +1805,36 @@
               ]
             }
           }
+        },
+        {
+          "eventId": "8202e920be3bc39de9bb6cf62b3f75caaee99957b41ed875890d7219eb083e94",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:38:44.535Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6Ihr1Z.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:6151111263"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "21599c8d8fc577ad839df31462be9781c668557f31de141769a1304405fc8a1c",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:49:52.995Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6Ihr1Z.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:6151111263"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -1748,40 +1892,21 @@
         {
           "url": "https://www.olx.pl/d/oferta/toyota-auris-toyota-auris-1-6-132-km-salon-pl-stan-perfekcyjny-CID5-ID1d6Ixr.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T17:16:32.977Z",
+          "lastAttemptAt": "2026-11-12T15:49:55.336Z",
           "lastCheckedAt": "2026-11-11T17:16:32.977Z",
           "lastVerifiedAt": "2026-11-11T17:16:32.977Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/toyota-auris-toyota-auris-1-6-132-km-salon-pl-stan-perfekcyjny-CID5-ID1d6Ixr.html",
-            "checkedAt": "2026-11-11T17:16:32.977Z",
-            "availability": "available",
-            "note": "Otwarta karta OLX podaje Auris kombi z 2018 r., 1.6 Valvematic 132 KM, manualną skrzynię, 149 850 km i cenę 43 800 zł. Karta wskazuje dodanie dzisiaj o 08:58 i zawiera aktywne kontrolki kontaktu. Lokalizacja i kamera cofania nie są podane. Sprzedawca deklaruje brak wypadkowości i brak lakierowanych elementów; brak niezależnego potwierdzenia stanu. LPG nieustalone. Nie uzyskano bezpośrednich HTTPS URL-i zdjęć.",
-            "evidence": [
-              {
-                "kind": "seller",
-                "url": "https://www.olx.pl/d/oferta/toyota-auris-toyota-auris-1-6-132-km-salon-pl-stan-perfekcyjny-CID5-ID1d6Ixr.html",
-                "checkedAt": "2026-11-11T17:16:32.977Z",
-                "fields": [
-                  "year",
-                  "mileage",
-                  "price",
-                  "engineVariant",
-                  "bodyCode",
-                  "transmissionCode",
-                  "saleType",
-                  "location",
-                  "cameraStatus",
-                  "structuralDamageStatus"
-                ],
-                "note": "Dane techniczne i cena z karty OLX; data dodania i kontrolki kontaktu wskazują aktywne ogłoszenie. Brak lokalizacji oraz kamery cofania w odczytanej treści. Deklaracja bezwypadkowości pochodzi od sprzedawcy."
-              }
-            ]
+            "checkedAt": "2026-11-12T15:49:55.336Z",
+            "availability": "access_error",
+            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+            "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-11T17:16:32.977Z",
       "lastVerifiedAt": "2026-11-11T17:16:32.977Z",
-      "lastAttemptAt": "2026-11-11T17:16:32.977Z",
+      "lastAttemptAt": "2026-11-12T15:49:55.336Z",
       "history": [
         {
           "eventId": "84cff6df4ce6a5dbf19f09794386b35bc3f37b870e42e7ce6879e94dd6614c91",
@@ -1943,6 +2068,36 @@
               }
             }
           }
+        },
+        {
+          "eventId": "99a6d8fb13e810954669acda94ee5da427a555dae6ee5cdefd0ad9b7d0a6ad6e",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:38:48.038Z",
+          "url": "https://www.olx.pl/d/oferta/toyota-auris-toyota-auris-1-6-132-km-salon-pl-stan-perfekcyjny-CID5-ID1d6Ixr.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:ID1d6Ixr"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "972cd8a078e00700c3fae1282b20445febb2fb72283b60136c98046c2a022856",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:49:55.336Z",
+          "url": "https://www.olx.pl/d/oferta/toyota-auris-toyota-auris-1-6-132-km-salon-pl-stan-perfekcyjny-CID5-ID1d6Ixr.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:ID1d6Ixr"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -2002,43 +2157,27 @@
         {
           "url": "https://pewneauto.pl/oferta/toyota-auris/434239",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T19:27:52Z",
+          "lastAttemptAt": "2026-11-12T15:50:39.520Z",
           "lastCheckedAt": "2026-11-11T19:27:52Z",
           "lastVerifiedAt": "2026-11-11T19:27:52Z",
           "lastObservation": {
             "url": "https://pewneauto.pl/oferta/toyota-auris/434239",
-            "checkedAt": "2026-11-11T19:27:52Z",
-            "availability": "available",
-            "note": "Karta zawiera cenę 51 900 zł brutto, produkcję 2018, kombi, benzynowy 1.6 Valvematic 132 KM, manualną skrzynię i VIN. Tabela techniczna podaje 145 648 km, natomiast tekst podsumowania podaje 145 630 km; zapisano wartość z tabeli i zachowano rozbieżność w notatce. Karta wymienia kamerę cofania i aktywne kontrolki kontaktu (wyświetlenie numeru, e-mail, jazda próbna). Sprzedawca deklaruje bezwypadkowość i pełną historię serwisową, ale nie ma niezależnego potwierdzenia stanu, więc structuralDamageStatus pozostaje unknown. Lokalizacja auta nie jest podana; adres dealera nie został potraktowany jako lokalizacja pojazdu. Karta pokazywała jedno zdjęcie z bezpośrednim HTTPS; bezpośredni adres po otwarciu zwrócił Cache miss, więc zachowano go jako adres widoczny na karcie.",
-            "evidence": [
-              {
-                "kind": "seller",
-                "fields": [
-                  "year",
-                  "firstRegistrationDate",
-                  "engine",
-                  "body",
-                  "transmission",
-                  "price",
-                  "mileage",
-                  "offerType",
-                  "saleType",
-                  "cameraStatus",
-                  "vin",
-                  "lpgInstalled",
-                  "structuralDamageStatus"
-                ],
-                "url": "https://pewneauto.pl/oferta/toyota-auris/434239",
-                "checkedAt": "2026-11-11T19:27:52Z",
-                "note": "Karta pojazdu: tabela danych podaje rok produkcji 2018, 17.07.2018 jako pierwszą rejestrację, 145 648 km, nadwozie Kombi, 1598 cm³/132 KM, benzynę i manual. Cena widoczna jako 51 900 zł brutto; wyposażenie zawiera kamerę cofania. Tekst sprzedawcy podaje 145 630 km oraz deklaruje bezwypadkowość i pełną historię serwisową. Kontakt telefoniczny/e-mail i umówienie jazdy próbnej są dostępne na karcie. LPG nieopisane."
-              }
-            ]
+            "checkedAt": "2026-11-12T15:50:39.520Z",
+            "availability": "access_error",
+            "note": "Brak potwierdzenia aktywnej karty: tytuł=true, cena=true, kontakt=false (HTTP 200).",
+            "httpStatus": 200,
+            "availabilityProof": {
+              "identity": true,
+              "contact": false,
+              "price": true,
+              "titleTokensMatched": 5
+            }
           }
         }
       ],
       "lastCheckedAt": "2026-11-11T19:27:52Z",
       "lastVerifiedAt": "2026-11-11T19:27:52Z",
-      "lastAttemptAt": "2026-11-11T19:27:52Z",
+      "lastAttemptAt": "2026-11-12T15:50:39.520Z",
       "history": [
         {
           "eventId": "c98a9cdf8cfbda46a53e0c1988283e141e9532fa816255df9c5a02fda3253dd6",
@@ -2213,6 +2352,36 @@
               }
             }
           }
+        },
+        {
+          "eventId": "6ee4ec94adf894a8bba81f5ecfc14b13d1929534f9e07fc6057f1becba2e7143",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:39:33.178Z",
+          "url": "https://pewneauto.pl/oferta/toyota-auris/434239",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND pewneauto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:toyota-pewne-auto:434239"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "67cd06a7d3054ad6ab4ec4ec0868c3f973ed839b74fd5b703f64acc8acfdb0c7",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:50:39.520Z",
+          "url": "https://pewneauto.pl/oferta/toyota-auris/434239",
+          "availability": "access_error",
+          "note": "Brak potwierdzenia aktywnej karty: tytuł=true, cena=true, kontakt=false (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:toyota-pewne-auto:434239"
+          },
+          "changes": {}
         }
       ],
       "assessment": {

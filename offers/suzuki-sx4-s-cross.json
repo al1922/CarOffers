@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-12",
   "model": {
     "key": "suzuki-sx4-s-cross",
     "name": "Suzuki SX4 S-Cross",
@@ -53,12 +53,12 @@
         {
           "url": "https://autoplac.pl/oferta/suzuki/sx4-s-cross/1-4-2018r-salon-pl-premiumplus-0059-7061-XY",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:04:12.715Z",
-          "lastCheckedAt": "2026-11-11T02:04:12.715Z",
-          "lastVerifiedAt": "2026-11-11T02:04:12.715Z",
+          "lastAttemptAt": "2026-11-12T15:49:24.120Z",
+          "lastCheckedAt": "2026-11-12T15:49:24.120Z",
+          "lastVerifiedAt": "2026-11-12T15:49:24.120Z",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/suzuki/sx4-s-cross/1-4-2018r-salon-pl-premiumplus-0059-7061-XY",
-            "checkedAt": "2026-11-11T02:04:12.715Z",
+            "checkedAt": "2026-11-12T15:49:24.120Z",
             "availability": "available",
             "note": "Karta zawiera dopasowanie 5 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
             "httpStatus": 200,
@@ -71,9 +71,9 @@
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T02:04:12.715Z",
-      "lastVerifiedAt": "2026-11-11T02:04:12.715Z",
-      "lastAttemptAt": "2026-11-11T02:04:12.715Z",
+      "lastCheckedAt": "2026-11-12T15:49:24.120Z",
+      "lastVerifiedAt": "2026-11-12T15:49:24.120Z",
+      "lastAttemptAt": "2026-11-12T15:49:24.120Z",
       "history": [
         {
           "eventId": "364310270fd518c4e7290fc9231829470441b8aa3a8936fd49562d9cba8552e9",
@@ -196,6 +196,36 @@
             "id": "vin:TSMJYAA2S00585117"
           },
           "changes": {}
+        },
+        {
+          "eventId": "c5805ccf5d5b26cb0826551bd3bf6dc26803fdef8a1cb816e110052dd57f021b",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:38:12.950Z",
+          "url": "https://autoplac.pl/oferta/suzuki/sx4-s-cross/1-4-2018r-salon-pl-premiumplus-0059-7061-XY",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND autoplac.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TSMJYAA2S00585117"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "427247b74cc4a5090c78850583e464fc4f25a949929f3e2549cd533c3895b277",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:49:24.120Z",
+          "url": "https://autoplac.pl/oferta/suzuki/sx4-s-cross/1-4-2018r-salon-pl-premiumplus-0059-7061-XY",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 5 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TSMJYAA2S00585117"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -262,12 +292,12 @@
         {
           "url": "https://autoplac.pl/oferta/suzuki/sx4-s-cross/1-4-2018r-boosterjet-allgrip-comfort-bogata-wersja-4006-3607-VB",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:04:12.716Z",
-          "lastCheckedAt": "2026-11-11T02:04:12.716Z",
-          "lastVerifiedAt": "2026-11-11T02:04:12.716Z",
+          "lastAttemptAt": "2026-11-12T15:49:24.122Z",
+          "lastCheckedAt": "2026-11-12T15:49:24.122Z",
+          "lastVerifiedAt": "2026-11-12T15:49:24.122Z",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/suzuki/sx4-s-cross/1-4-2018r-boosterjet-allgrip-comfort-bogata-wersja-4006-3607-VB",
-            "checkedAt": "2026-11-11T02:04:12.716Z",
+            "checkedAt": "2026-11-12T15:49:24.122Z",
             "availability": "available",
             "note": "Karta zawiera dopasowanie 6 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
             "httpStatus": 200,
@@ -280,9 +310,9 @@
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T02:04:12.716Z",
-      "lastVerifiedAt": "2026-11-11T02:04:12.716Z",
-      "lastAttemptAt": "2026-11-11T02:04:12.716Z",
+      "lastCheckedAt": "2026-11-12T15:49:24.122Z",
+      "lastVerifiedAt": "2026-11-12T15:49:24.122Z",
+      "lastAttemptAt": "2026-11-12T15:49:24.122Z",
       "history": [
         {
           "eventId": "c61e6108511716f8fa5301e3fe4d6910d72aa20477f59f2d3f09a079650084e5",
@@ -405,6 +435,36 @@
             "id": "vin:TSMJYBA2S00591656"
           },
           "changes": {}
+        },
+        {
+          "eventId": "d638bd33098890933d86c8b23a5a2d8737c56187c30ac1814667d5e8e9fd528e",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:38:12.950Z",
+          "url": "https://autoplac.pl/oferta/suzuki/sx4-s-cross/1-4-2018r-boosterjet-allgrip-comfort-bogata-wersja-4006-3607-VB",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND autoplac.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TSMJYBA2S00591656"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "b178d1fd9df9e26d2c09f42de62fa425e922d23df2484709a8626b41094d9556",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:49:24.122Z",
+          "url": "https://autoplac.pl/oferta/suzuki/sx4-s-cross/1-4-2018r-boosterjet-allgrip-comfort-bogata-wersja-4006-3607-VB",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 6 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TSMJYBA2S00591656"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -491,12 +551,12 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-sx4-s-cross-ID6IiOIJ.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:39:04.107Z",
+          "lastAttemptAt": "2026-11-12T15:49:28.184Z",
           "lastCheckedAt": "2026-11-10T23:15:08Z",
           "lastVerifiedAt": "2026-11-10T23:15:08Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-sx4-s-cross-ID6IiOIJ.html",
-            "checkedAt": "2026-11-11T16:39:04.107Z",
+            "checkedAt": "2026-11-12T15:49:28.184Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -505,7 +565,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:15:08Z",
       "lastVerifiedAt": "2026-11-10T23:15:08Z",
-      "lastAttemptAt": "2026-11-11T16:39:04.107Z",
+      "lastAttemptAt": "2026-11-12T15:49:28.184Z",
       "history": [
         {
           "eventId": "67e8edaf2e1b32e3048e17078441071bed2387fd7426ddec3c971f411ebb535a",
@@ -852,6 +912,36 @@
             "id": "listing:otomoto:6151440653"
           },
           "changes": {}
+        },
+        {
+          "eventId": "4726a98336c9bcf238ea346d92966f1c930aa2af23569a9dacce567dbe38cfe4",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:38:16.304Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-sx4-s-cross-ID6IiOIJ.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:6151440653"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "f46bc8ec23351a616972010a64d86e7369fb60136f73596fb7a733953e8cdf95",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:49:28.184Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-sx4-s-cross-ID6IiOIJ.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:6151440653"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -905,12 +995,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/suzuki-sx4-s-cross-suzuki-sx4-s-cross-1-4-140-km-automat-salon-pl-CID5-ID1d5Vpd.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:39:36.769Z",
+          "lastAttemptAt": "2026-11-12T15:49:30.519Z",
           "lastCheckedAt": "2026-11-10T23:15:27Z",
           "lastVerifiedAt": "2026-11-10T23:15:27Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/suzuki-sx4-s-cross-suzuki-sx4-s-cross-1-4-140-km-automat-salon-pl-CID5-ID1d5Vpd.html",
-            "checkedAt": "2026-11-11T16:39:36.769Z",
+            "checkedAt": "2026-11-12T15:49:30.519Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -919,7 +1009,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:15:27Z",
       "lastVerifiedAt": "2026-11-10T23:15:27Z",
-      "lastAttemptAt": "2026-11-11T16:39:36.769Z",
+      "lastAttemptAt": "2026-11-12T15:49:30.519Z",
       "history": [
         {
           "eventId": "f20f836e4603267ae5bdfc2595e40e89217cc0934dde9234682da119deca160c",
@@ -1234,6 +1324,36 @@
             "id": "listing:olx:1109641355"
           },
           "changes": {}
+        },
+        {
+          "eventId": "e0fe3656327a871d796a29727022cd4f711741e4ee8490eb67bb4f770f627629",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:38:19.887Z",
+          "url": "https://www.olx.pl/d/oferta/suzuki-sx4-s-cross-suzuki-sx4-s-cross-1-4-140-km-automat-salon-pl-CID5-ID1d5Vpd.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1109641355"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "0bda10d89997fb46b9c25e085a30a14ad66f49e1f49b0da05a5df21bcfde346d",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:49:30.519Z",
+          "url": "https://www.olx.pl/d/oferta/suzuki-sx4-s-cross-suzuki-sx4-s-cross-1-4-140-km-automat-salon-pl-CID5-ID1d5Vpd.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1109641355"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -1297,12 +1417,12 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-sx4-s-cross-ID6IhhAY.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:39:04.108Z",
+          "lastAttemptAt": "2026-11-12T15:49:28.184Z",
           "lastCheckedAt": "2026-11-10T23:15:08Z",
           "lastVerifiedAt": "2026-11-10T23:15:08Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-sx4-s-cross-ID6IhhAY.html",
-            "checkedAt": "2026-11-11T16:39:04.108Z",
+            "checkedAt": "2026-11-12T15:49:28.184Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -1311,7 +1431,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:15:08Z",
       "lastVerifiedAt": "2026-11-10T23:15:08Z",
-      "lastAttemptAt": "2026-11-11T16:39:04.108Z",
+      "lastAttemptAt": "2026-11-12T15:49:28.184Z",
       "history": [
         {
           "eventId": "2fb3e8a6891553a1f0548974ae379d9b9de6032a8199dcc768c2f11c4e7d700f",
@@ -1508,6 +1628,36 @@
             "id": "listing:otomoto:6151074992"
           },
           "changes": {}
+        },
+        {
+          "eventId": "f69a239256745da3c5c1574ffbb3a8327cde6c8818fc8ff051b06d0c2c3168b1",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:38:16.304Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-sx4-s-cross-ID6IhhAY.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:6151074992"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "6e22e7085e13c116d78a3c57a2cc31d39b373145d7e911a96f6c42ed6a578e4e",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:49:28.184Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/suzuki-sx4-s-cross-ID6IhhAY.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:6151074992"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -1572,12 +1722,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/suzuki-sx4-s-cross-1-4-boosterjet-salon-polska-klimatronic-tempomat-CID5-ID1d2dwf.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:39:36.770Z",
+          "lastAttemptAt": "2026-11-12T15:49:30.519Z",
           "lastCheckedAt": "2026-11-10T23:15:27Z",
           "lastVerifiedAt": "2026-11-10T23:15:27Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/suzuki-sx4-s-cross-1-4-boosterjet-salon-polska-klimatronic-tempomat-CID5-ID1d2dwf.html",
-            "checkedAt": "2026-11-11T16:39:36.770Z",
+            "checkedAt": "2026-11-12T15:49:30.519Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -1586,7 +1736,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:15:27Z",
       "lastVerifiedAt": "2026-11-10T23:15:27Z",
-      "lastAttemptAt": "2026-11-11T16:39:36.770Z",
+      "lastAttemptAt": "2026-11-12T15:49:30.519Z",
       "history": [
         {
           "eventId": "5162b041b546e47ca367dd873d81a4dfbb616e6884b930dcdaba17784341d733",
@@ -1814,6 +1964,36 @@
           "eventId": "ec929308ff3bef07588f9aa1ca56b5f95c22f7604d37f5c7c2e6e85f00c450b5",
           "runId": "archive-check-2026-11-11",
           "checkedAt": "2026-11-11T16:39:36.770Z",
+          "url": "https://www.olx.pl/d/oferta/suzuki-sx4-s-cross-1-4-boosterjet-salon-polska-klimatronic-tempomat-CID5-ID1d2dwf.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:ID1d2dwf"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "a3b0c6b4ea3b2272dacbf467213bc9a297bae51d04c03ba1ae784d410c57c8fb",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:38:19.888Z",
+          "url": "https://www.olx.pl/d/oferta/suzuki-sx4-s-cross-1-4-boosterjet-salon-polska-klimatronic-tempomat-CID5-ID1d2dwf.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:ID1d2dwf"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "2c03516523f1d061a6e85f94454be26159a29bc542eb7dca28d9877f28360ecc",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:49:30.519Z",
           "url": "https://www.olx.pl/d/oferta/suzuki-sx4-s-cross-1-4-boosterjet-salon-polska-klimatronic-tempomat-CID5-ID1d2dwf.html",
           "availability": "access_error",
           "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",

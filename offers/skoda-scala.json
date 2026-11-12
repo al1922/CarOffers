@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-12",
   "model": {
     "key": "skoda-scala",
     "name": "Škoda Scala",
@@ -46,27 +46,27 @@
         {
           "url": "https://automarket.pl/oferta/skoda/scala/T198069/zakup",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:04:00.884Z",
-          "lastCheckedAt": "2026-11-11T02:04:00.884Z",
-          "lastVerifiedAt": "2026-11-11T02:04:00.884Z",
+          "lastAttemptAt": "2026-11-12T15:48:50.977Z",
+          "lastCheckedAt": "2026-11-12T15:48:50.977Z",
+          "lastVerifiedAt": "2026-11-12T15:48:50.977Z",
           "lastObservation": {
             "url": "https://automarket.pl/oferta/skoda/scala/T198069/zakup",
-            "checkedAt": "2026-11-11T02:04:00.884Z",
+            "checkedAt": "2026-11-12T15:48:50.977Z",
             "availability": "available",
-            "note": "Karta zawiera dopasowanie 4 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+            "note": "Karta zawiera dopasowanie 5 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
             "httpStatus": 200,
             "availabilityProof": {
               "identity": true,
               "contact": true,
               "price": true,
-              "titleTokensMatched": 4
+              "titleTokensMatched": 5
             }
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T02:04:00.884Z",
-      "lastVerifiedAt": "2026-11-11T02:04:00.884Z",
-      "lastAttemptAt": "2026-11-11T02:04:00.884Z",
+      "lastCheckedAt": "2026-11-12T15:48:50.977Z",
+      "lastVerifiedAt": "2026-11-12T15:48:50.977Z",
+      "lastAttemptAt": "2026-11-12T15:48:50.977Z",
       "history": [
         {
           "eventId": "3fc5cf091267f3cc62d8f5a684ceb8e2ebd58285a20ec3a6542fd5ff24df2d8c",
@@ -349,6 +349,36 @@
             "id": "vin:TMBER6NW1N3065943"
           },
           "changes": {}
+        },
+        {
+          "eventId": "a36fb6235f8bc74c5066922b1145d2e7fef61796befe76994e6d2bef6d553577",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:48.764Z",
+          "url": "https://automarket.pl/oferta/skoda/scala/T198069/zakup",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND automarket.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TMBER6NW1N3065943"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "03cc003d457fad435d6e67be73b065fa115c01629e37d5825be8b46c45ae52a3",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:50.977Z",
+          "url": "https://automarket.pl/oferta/skoda/scala/T198069/zakup",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 5 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TMBER6NW1N3065943"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -417,27 +447,21 @@
         {
           "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2021r-ambition-fv23-salonpl-110km-led-klimatronik-android-apple-3607-8813-VK",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:38:30.548Z",
+          "lastAttemptAt": "2026-11-12T15:49:06.604Z",
           "lastCheckedAt": "2026-11-11T16:38:30.548Z",
           "lastVerifiedAt": "2026-11-11T16:38:30.548Z",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2021r-ambition-fv23-salonpl-110km-led-klimatronik-android-apple-3607-8813-VK",
-            "checkedAt": "2026-11-11T16:38:30.548Z",
-            "availability": "available",
-            "note": "Karta zawiera dopasowanie 10 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
-            "httpStatus": 200,
-            "availabilityProof": {
-              "identity": true,
-              "contact": true,
-              "price": true,
-              "titleTokensMatched": 10
-            }
+            "checkedAt": "2026-11-12T15:49:06.604Z",
+            "availability": "access_error",
+            "note": "apiRequestContext.get: Timeout 10000ms exceeded.",
+            "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-11T16:38:30.548Z",
       "lastVerifiedAt": "2026-11-11T16:38:30.548Z",
-      "lastAttemptAt": "2026-11-11T16:38:30.548Z",
+      "lastAttemptAt": "2026-11-12T15:49:06.604Z",
       "history": [
         {
           "eventId": "6ae754c7ece50033ca68c3baa365bcaaa2d9ae2899e4d23d64ba84bfb4d16826",
@@ -707,6 +731,36 @@
             "id": "listing:autoplac:3607-8813-VK"
           },
           "changes": {}
+        },
+        {
+          "eventId": "8d43aa19ff533eadcb15fcc40d23d5987245318fcdd97edcbad81d642b1a9426",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:52.271Z",
+          "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2021r-ambition-fv23-salonpl-110km-led-klimatronik-android-apple-3607-8813-VK",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND autoplac.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:3607-8813-VK"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "000c5e75638830cad195141a66ed6ff199305b46873fc6a3aaed4838f681c5ff",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:49:06.604Z",
+          "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2021r-ambition-fv23-salonpl-110km-led-klimatronik-android-apple-3607-8813-VK",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: Timeout 10000ms exceeded.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:3607-8813-VK"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -772,27 +826,21 @@
         {
           "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2021r-10tsi-dsg-110km-salon-polska-niski-udok-przebieg-2-kpl-opon-oplaty-9465-3557-JC",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:38:30.551Z",
+          "lastAttemptAt": "2026-11-12T15:49:06.605Z",
           "lastCheckedAt": "2026-11-11T16:38:30.551Z",
           "lastVerifiedAt": "2026-11-11T16:38:30.551Z",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2021r-10tsi-dsg-110km-salon-polska-niski-udok-przebieg-2-kpl-opon-oplaty-9465-3557-JC",
-            "checkedAt": "2026-11-11T16:38:30.551Z",
-            "availability": "available",
-            "note": "Karta zawiera dopasowanie 5 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
-            "httpStatus": 200,
-            "availabilityProof": {
-              "identity": true,
-              "contact": true,
-              "price": true,
-              "titleTokensMatched": 5
-            }
+            "checkedAt": "2026-11-12T15:49:06.605Z",
+            "availability": "access_error",
+            "note": "apiRequestContext.get: Timeout 10000ms exceeded.",
+            "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-11T16:38:30.551Z",
       "lastVerifiedAt": "2026-11-11T16:38:30.551Z",
-      "lastAttemptAt": "2026-11-11T16:38:30.551Z",
+      "lastAttemptAt": "2026-11-12T15:49:06.605Z",
       "history": [
         {
           "eventId": "b1480e181fc61f90ac8297776a3be95107af6b465eaeea330fd50404090dd754",
@@ -1019,6 +1067,36 @@
             "id": "listing:autoplac:9465-3557-JC"
           },
           "changes": {}
+        },
+        {
+          "eventId": "e12bd67d8e04a75ce69348286801fb24ad07b297ed9e4d4af5b31ea2340f042f",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:52.272Z",
+          "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2021r-10tsi-dsg-110km-salon-polska-niski-udok-przebieg-2-kpl-opon-oplaty-9465-3557-JC",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND autoplac.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:9465-3557-JC"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "e18de0a7609dfde5f8049c8d3628e430bcddb96477667c1590bb5b4fd57354ee",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:49:06.605Z",
+          "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2021r-10tsi-dsg-110km-salon-polska-niski-udok-przebieg-2-kpl-opon-oplaty-9465-3557-JC",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: Timeout 10000ms exceeded.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:9465-3557-JC"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -1083,27 +1161,21 @@
         {
           "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2022r-tsi-ambition-5233-7770-QF",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:38:30.552Z",
+          "lastAttemptAt": "2026-11-12T15:49:06.605Z",
           "lastCheckedAt": "2026-11-11T16:38:30.552Z",
           "lastVerifiedAt": "2026-11-11T16:38:30.552Z",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2022r-tsi-ambition-5233-7770-QF",
-            "checkedAt": "2026-11-11T16:38:30.552Z",
-            "availability": "available",
-            "note": "Karta zawiera dopasowanie 5 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
-            "httpStatus": 200,
-            "availabilityProof": {
-              "identity": true,
-              "contact": true,
-              "price": true,
-              "titleTokensMatched": 5
-            }
+            "checkedAt": "2026-11-12T15:49:06.605Z",
+            "availability": "access_error",
+            "note": "apiRequestContext.get: Timeout 10000ms exceeded.",
+            "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-11T16:38:30.552Z",
       "lastVerifiedAt": "2026-11-11T16:38:30.552Z",
-      "lastAttemptAt": "2026-11-11T16:38:30.552Z",
+      "lastAttemptAt": "2026-11-12T15:49:06.605Z",
       "history": [
         {
           "eventId": "09e818a7261d507049f121a11e685f2b655f6b784bc77c36a6a6d6b50de91076",
@@ -1331,6 +1403,36 @@
             "id": "listing:autoplac:5233-7770-QF"
           },
           "changes": {}
+        },
+        {
+          "eventId": "e47efff6983fc387b29a4c398e59073dc710d0f161934f542b2bb0900c11803d",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:52.272Z",
+          "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2022r-tsi-ambition-5233-7770-QF",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND autoplac.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:5233-7770-QF"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "466e924c3d864c664c5e0c7b37bc981ee9ea3685afd43b4e3698224c2df802b5",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:49:06.605Z",
+          "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2022r-tsi-ambition-5233-7770-QF",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: Timeout 10000ms exceeded.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:5233-7770-QF"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -1390,27 +1492,27 @@
         {
           "url": "https://automarket.pl/oferta/skoda/scala/T180154/zakup",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:38:31.377Z",
-          "lastCheckedAt": "2026-11-11T16:38:31.377Z",
-          "lastVerifiedAt": "2026-11-11T16:38:31.377Z",
+          "lastAttemptAt": "2026-11-12T15:48:50.978Z",
+          "lastCheckedAt": "2026-11-12T15:48:50.978Z",
+          "lastVerifiedAt": "2026-11-12T15:48:50.978Z",
           "lastObservation": {
             "url": "https://automarket.pl/oferta/skoda/scala/T180154/zakup",
-            "checkedAt": "2026-11-11T16:38:31.377Z",
+            "checkedAt": "2026-11-12T15:48:50.978Z",
             "availability": "available",
-            "note": "Karta zawiera dopasowanie 4 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+            "note": "Karta zawiera dopasowanie 5 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
             "httpStatus": 200,
             "availabilityProof": {
               "identity": true,
               "contact": true,
               "price": true,
-              "titleTokensMatched": 4
+              "titleTokensMatched": 5
             }
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T16:38:31.377Z",
-      "lastVerifiedAt": "2026-11-11T16:38:31.377Z",
-      "lastAttemptAt": "2026-11-11T16:38:31.377Z",
+      "lastCheckedAt": "2026-11-12T15:48:50.978Z",
+      "lastVerifiedAt": "2026-11-12T15:48:50.978Z",
+      "lastAttemptAt": "2026-11-12T15:48:50.978Z",
       "history": [
         {
           "eventId": "5e5ab56251c5b84d68cb3a11b7bbd5f570f226cbb4c8c6edc591152bb1cb76c7",
@@ -1630,6 +1732,36 @@
             "id": "vin:TMBER6NW5N3041760"
           },
           "changes": {}
+        },
+        {
+          "eventId": "d56bf1288d119ef74d21f306c74ff9bee9de2ee335ffcf0ac0a0de4a73fa4158",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:48.765Z",
+          "url": "https://automarket.pl/oferta/skoda/scala/T180154/zakup",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND automarket.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TMBER6NW5N3041760"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "ea58127e3b5031f1d2867e45388b25d1158a5192a3d47af9af45af1ecceff504",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:50.978Z",
+          "url": "https://automarket.pl/oferta/skoda/scala/T180154/zakup",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 5 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TMBER6NW5N3041760"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -1696,12 +1828,12 @@
         {
           "url": "https://automarket.pl/oferta/skoda/scala/T144062/zakup",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:38:31.378Z",
-          "lastCheckedAt": "2026-11-11T16:38:31.378Z",
-          "lastVerifiedAt": "2026-11-11T16:38:31.378Z",
+          "lastAttemptAt": "2026-11-12T15:48:50.978Z",
+          "lastCheckedAt": "2026-11-12T15:48:50.978Z",
+          "lastVerifiedAt": "2026-11-12T15:48:50.978Z",
           "lastObservation": {
             "url": "https://automarket.pl/oferta/skoda/scala/T144062/zakup",
-            "checkedAt": "2026-11-11T16:38:31.378Z",
+            "checkedAt": "2026-11-12T15:48:50.978Z",
             "availability": "available",
             "note": "Karta zawiera dopasowanie 4 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
             "httpStatus": 200,
@@ -1714,9 +1846,9 @@
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T16:38:31.378Z",
-      "lastVerifiedAt": "2026-11-11T16:38:31.378Z",
-      "lastAttemptAt": "2026-11-11T16:38:31.378Z",
+      "lastCheckedAt": "2026-11-12T15:48:50.978Z",
+      "lastVerifiedAt": "2026-11-12T15:48:50.978Z",
+      "lastAttemptAt": "2026-11-12T15:48:50.978Z",
       "history": [
         {
           "eventId": "6f734937e4f2e6dae57e93f2e9f230a656c4c66824f9cbd55a7e1184b25a2da1",
@@ -1942,6 +2074,36 @@
             "id": "listing:automarket:T144062"
           },
           "changes": {}
+        },
+        {
+          "eventId": "8d73676edb8ec68103a67dcd3d17d4208903c89b277edb6837aa6a24331c0f62",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:48.765Z",
+          "url": "https://automarket.pl/oferta/skoda/scala/T144062/zakup",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND automarket.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:automarket:T144062"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "6610569d4ccc342bc4da9a01177c2e591d4da8be7c5c9fe697b11d85ee39d0dc",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:50.978Z",
+          "url": "https://automarket.pl/oferta/skoda/scala/T144062/zakup",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 4 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:automarket:T144062"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -1993,12 +2155,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/skoda-scala-1-0-tsi-salon-polska-1-wlasciciel-vat-23-klimatronic-CID5-ID1c8nJU.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:38:31.066Z",
+          "lastAttemptAt": "2026-11-12T15:49:08.996Z",
           "lastCheckedAt": "2026-11-08T23:42:48+01:00",
           "lastVerifiedAt": "2026-11-08T23:42:48+01:00",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/skoda-scala-1-0-tsi-salon-polska-1-wlasciciel-vat-23-klimatronic-CID5-ID1c8nJU.html",
-            "checkedAt": "2026-11-11T16:38:31.066Z",
+            "checkedAt": "2026-11-12T15:49:08.996Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -2007,7 +2169,7 @@
       ],
       "lastCheckedAt": "2026-11-08T23:42:48+01:00",
       "lastVerifiedAt": "2026-11-08T23:42:48+01:00",
-      "lastAttemptAt": "2026-11-11T16:38:31.066Z",
+      "lastAttemptAt": "2026-11-12T15:49:08.996Z",
       "history": [
         {
           "eventId": "114a05db020e1a8f2740cf7bc328e5f61449e2c0e8179b61cb5aaa95d56487b3",
@@ -2285,6 +2447,36 @@
             "id": "listing:olx:1095446746"
           },
           "changes": {}
+        },
+        {
+          "eventId": "7d4086da90e0cf7da1ab49db8d80469cd8431bfe56c47ffcb6be804bf850cff3",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:55.787Z",
+          "url": "https://www.olx.pl/d/oferta/skoda-scala-1-0-tsi-salon-polska-1-wlasciciel-vat-23-klimatronic-CID5-ID1c8nJU.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1095446746"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "e19380a89f67408cbac30cafeaa94cd6c374e06892b13bb47058c0395a332691",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:49:08.996Z",
+          "url": "https://www.olx.pl/d/oferta/skoda-scala-1-0-tsi-salon-polska-1-wlasciciel-vat-23-klimatronic-CID5-ID1c8nJU.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1095446746"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -2352,12 +2544,12 @@
         {
           "url": "https://automarket.pl/oferta/skoda/scala/T141602/zakup",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:38:31.376Z",
+          "lastAttemptAt": "2026-11-12T15:48:50.979Z",
           "lastCheckedAt": "2026-11-08T20:06:50+01:00",
           "lastVerifiedAt": "2026-11-08T20:06:50+01:00",
           "lastObservation": {
             "url": "https://automarket.pl/oferta/skoda/scala/T141602/zakup",
-            "checkedAt": "2026-11-11T16:38:31.376Z",
+            "checkedAt": "2026-11-12T15:48:50.979Z",
             "availability": "access_error",
             "note": "Portal zwrócił HTTP 404; sam kod nie potwierdza zamknięcia ogłoszenia.",
             "httpStatus": 404
@@ -2366,7 +2558,7 @@
       ],
       "lastCheckedAt": "2026-11-08T20:06:50+01:00",
       "lastVerifiedAt": "2026-11-08T20:06:50+01:00",
-      "lastAttemptAt": "2026-11-11T16:38:31.376Z",
+      "lastAttemptAt": "2026-11-12T15:48:50.979Z",
       "history": [
         {
           "eventId": "b3c2f436821bdb6bfa60e8d0cde2d3d90e3af6b705754786506edd6adcfc0a87",
@@ -2586,6 +2778,36 @@
             "id": "vin:TMBER6NW9M3160605"
           },
           "changes": {}
+        },
+        {
+          "eventId": "0a13384c7dd1eb0233ceb920f9fa0a830524cccae5d297e761e3543e858503a5",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:48.765Z",
+          "url": "https://automarket.pl/oferta/skoda/scala/T141602/zakup",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND automarket.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TMBER6NW9M3160605"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "07e719ee1cb7062d22e78b94fcde378c3ee36507fa8163f23e54a0ce522a1ed2",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:50.979Z",
+          "url": "https://automarket.pl/oferta/skoda/scala/T141602/zakup",
+          "availability": "access_error",
+          "note": "Portal zwrócił HTTP 404; sam kod nie potwierdza zamknięcia ogłoszenia.",
+          "httpStatus": 404,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TMBER6NW9M3160605"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -2646,12 +2868,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/skoda-scala-1-0-tsi-115-km-m6-salon-pl-bezwypadkowy-pelen-serwis-CID5-ID1cVId5.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:38:31.066Z",
+          "lastAttemptAt": "2026-11-12T15:49:08.997Z",
           "lastCheckedAt": "2026-11-09T14:37:33+01:00",
           "lastVerifiedAt": "2026-11-09T14:37:33+01:00",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/skoda-scala-1-0-tsi-115-km-m6-salon-pl-bezwypadkowy-pelen-serwis-CID5-ID1cVId5.html",
-            "checkedAt": "2026-11-11T16:38:31.066Z",
+            "checkedAt": "2026-11-12T15:49:08.997Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -2660,7 +2882,7 @@
       ],
       "lastCheckedAt": "2026-11-09T14:37:33+01:00",
       "lastVerifiedAt": "2026-11-09T14:37:33+01:00",
-      "lastAttemptAt": "2026-11-11T16:38:31.066Z",
+      "lastAttemptAt": "2026-11-12T15:49:08.997Z",
       "history": [
         {
           "eventId": "209bed6b07f2d108bcee54d98f057771967c22bdf333566a450acd26869bf298",
@@ -2868,6 +3090,36 @@
             "id": "listing:olx:ID1cVId5"
           },
           "changes": {}
+        },
+        {
+          "eventId": "25f884139503115a43d28ce244b9feeacbb41c5c085389d2a74adbe1a1cc3576",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:55.788Z",
+          "url": "https://www.olx.pl/d/oferta/skoda-scala-1-0-tsi-115-km-m6-salon-pl-bezwypadkowy-pelen-serwis-CID5-ID1cVId5.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:ID1cVId5"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "fca1f0d5aea53418aaa5d3ede5c1ee80c199c2c5501ffc870a9f005dfa28c835",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:49:08.997Z",
+          "url": "https://www.olx.pl/d/oferta/skoda-scala-1-0-tsi-115-km-m6-salon-pl-bezwypadkowy-pelen-serwis-CID5-ID1cVId5.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:ID1cVId5"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -2929,12 +3181,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/skoda-scala-skoda-scala-1-0-tsi-110-km-dsg-style-CID5-ID1bRO4I.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:38:31.067Z",
+          "lastAttemptAt": "2026-11-12T15:49:08.997Z",
           "lastCheckedAt": "2026-11-09T14:37:33+01:00",
           "lastVerifiedAt": "2026-11-09T14:37:33+01:00",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/skoda-scala-skoda-scala-1-0-tsi-110-km-dsg-style-CID5-ID1bRO4I.html",
-            "checkedAt": "2026-11-11T16:38:31.067Z",
+            "checkedAt": "2026-11-12T15:49:08.997Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -2943,7 +3195,7 @@
       ],
       "lastCheckedAt": "2026-11-09T14:37:33+01:00",
       "lastVerifiedAt": "2026-11-09T14:37:33+01:00",
-      "lastAttemptAt": "2026-11-11T16:38:31.067Z",
+      "lastAttemptAt": "2026-11-12T15:49:08.997Z",
       "history": [
         {
           "eventId": "ca470f0908ea73003c0529bf2e0e1a3f068b1f279c37b6e85474eb05a3f8ae76",
@@ -3151,6 +3403,36 @@
             "id": "listing:olx:ID1bRO4I"
           },
           "changes": {}
+        },
+        {
+          "eventId": "b47be40498116ff0826c66c15610dd53dda3bfb95ea184d35ae5f69af4482791",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:55.788Z",
+          "url": "https://www.olx.pl/d/oferta/skoda-scala-skoda-scala-1-0-tsi-110-km-dsg-style-CID5-ID1bRO4I.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:ID1bRO4I"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "949e786b509c53e93983ae13df6f5587fd4bcc603e4fdc1868f9032afe85ee89",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:49:08.997Z",
+          "url": "https://www.olx.pl/d/oferta/skoda-scala-skoda-scala-1-0-tsi-110-km-dsg-style-CID5-ID1bRO4I.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:ID1bRO4I"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -3224,12 +3506,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/skoda-scala-1-0-tsi-110-km-2022-salon-pl-fullled-aso-bezwypadkowy-CID5-ID1c2g9b.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:38:31.067Z",
+          "lastAttemptAt": "2026-11-12T15:49:08.997Z",
           "lastCheckedAt": "2026-11-10T00:06:12Z",
           "lastVerifiedAt": "2026-11-10T00:06:12Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/skoda-scala-1-0-tsi-110-km-2022-salon-pl-fullled-aso-bezwypadkowy-CID5-ID1c2g9b.html",
-            "checkedAt": "2026-11-11T16:38:31.067Z",
+            "checkedAt": "2026-11-12T15:49:08.997Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -3238,7 +3520,7 @@
       ],
       "lastCheckedAt": "2026-11-10T00:06:12Z",
       "lastVerifiedAt": "2026-11-10T00:06:12Z",
-      "lastAttemptAt": "2026-11-11T16:38:31.067Z",
+      "lastAttemptAt": "2026-11-12T15:49:08.997Z",
       "history": [
         {
           "eventId": "1badfeee4f3262d727f6c3967a33b0a15dce3f528bea8a99299f5cc167428caa",
@@ -3482,6 +3764,36 @@
             "id": "listing:olx:ID1c2g9b"
           },
           "changes": {}
+        },
+        {
+          "eventId": "ea78bbec6ed127c30cfc8eaec7bd66faf27ac9c5d07ca08ba48d5b84c76a5bb9",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:55.789Z",
+          "url": "https://www.olx.pl/d/oferta/skoda-scala-1-0-tsi-110-km-2022-salon-pl-fullled-aso-bezwypadkowy-CID5-ID1c2g9b.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:ID1c2g9b"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "343c8af578225158b5c291937a1e7f48ef6b5d0879dfd3fc2a13e1554d789b27",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:49:08.997Z",
+          "url": "https://www.olx.pl/d/oferta/skoda-scala-1-0-tsi-110-km-2022-salon-pl-fullled-aso-bezwypadkowy-CID5-ID1c2g9b.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:ID1c2g9b"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -3567,12 +3879,12 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6Ij8JQ.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:39:05.219Z",
+          "lastAttemptAt": "2026-11-12T15:49:11.369Z",
           "lastCheckedAt": "2026-11-10T23:13:05Z",
           "lastVerifiedAt": "2026-11-10T23:13:05Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6Ij8JQ.html",
-            "checkedAt": "2026-11-11T16:39:05.219Z",
+            "checkedAt": "2026-11-12T15:49:11.369Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -3581,7 +3893,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:13:05Z",
       "lastVerifiedAt": "2026-11-10T23:13:05Z",
-      "lastAttemptAt": "2026-11-11T16:39:05.219Z",
+      "lastAttemptAt": "2026-11-12T15:49:11.369Z",
       "history": [
         {
           "eventId": "dd484f3fa35ddab508750dffa256a3ef3d3bc46cc500deedc10ff44c595e0551",
@@ -3927,6 +4239,36 @@
             "id": "listing:otomoto:6151517602"
           },
           "changes": {}
+        },
+        {
+          "eventId": "69d3cb4fa761d0a2d3fd6b8f393835d6ba081a909d50d32a0723a19dfaca6029",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:59.276Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6Ij8JQ.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:6151517602"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "184e68f8855cd778a22306f1b6c830501232236013cd89c05bd239ae75629f36",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:49:11.369Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6Ij8JQ.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:6151517602"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -3981,12 +4323,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/skoda-scala-skoda-scala-rok-2023-1-0-tsi-110km-lakier-oryginal-i-rej-11-2023-CID5-ID1bAkRW.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:38:31.067Z",
+          "lastAttemptAt": "2026-11-12T15:49:08.998Z",
           "lastCheckedAt": "2026-11-10T23:13:56Z",
           "lastVerifiedAt": "2026-11-10T23:13:56Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/skoda-scala-skoda-scala-rok-2023-1-0-tsi-110km-lakier-oryginal-i-rej-11-2023-CID5-ID1bAkRW.html",
-            "checkedAt": "2026-11-11T16:38:31.067Z",
+            "checkedAt": "2026-11-12T15:49:08.998Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -3995,7 +4337,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:13:56Z",
       "lastVerifiedAt": "2026-11-10T23:13:56Z",
-      "lastAttemptAt": "2026-11-11T16:38:31.067Z",
+      "lastAttemptAt": "2026-11-12T15:49:08.998Z",
       "history": [
         {
           "eventId": "097157451b6ca05fc8341a4c3c20268e59a16998295dc5197810eb1f6250cf24",
@@ -4290,6 +4632,36 @@
             "id": "listing:olx:1087332559"
           },
           "changes": {}
+        },
+        {
+          "eventId": "0bff25d61913fc78d1d3a9f3ce27de6716f9fdeedaf60ce1504c5ea11b36237d",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:55.789Z",
+          "url": "https://www.olx.pl/d/oferta/skoda-scala-skoda-scala-rok-2023-1-0-tsi-110km-lakier-oryginal-i-rej-11-2023-CID5-ID1bAkRW.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1087332559"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "3b8107c206ab1ac2d848060acba244c8d2c1e08582a36c6bdb40bdaedcd5105e",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:49:08.998Z",
+          "url": "https://www.olx.pl/d/oferta/skoda-scala-skoda-scala-rok-2023-1-0-tsi-110km-lakier-oryginal-i-rej-11-2023-CID5-ID1bAkRW.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1087332559"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -4357,12 +4729,12 @@
         {
           "url": "https://autopunkt.pl/samochod/warszawa/kompakt/skoda/scala/id/111798",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:39:05.285Z",
+          "lastAttemptAt": "2026-11-12T15:49:13.715Z",
           "lastCheckedAt": "2026-11-10T23:14:36Z",
           "lastVerifiedAt": "2026-11-10T23:14:36Z",
           "lastObservation": {
             "url": "https://autopunkt.pl/samochod/warszawa/kompakt/skoda/scala/id/111798",
-            "checkedAt": "2026-11-11T16:39:05.285Z",
+            "checkedAt": "2026-11-12T15:49:13.715Z",
             "availability": "access_error",
             "note": "Brak potwierdzenia aktywnej karty: tytuł=true, cena=true, kontakt=false (HTTP 200).",
             "httpStatus": 200,
@@ -4377,7 +4749,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:14:36Z",
       "lastVerifiedAt": "2026-11-10T23:14:36Z",
-      "lastAttemptAt": "2026-11-11T16:39:05.285Z",
+      "lastAttemptAt": "2026-11-12T15:49:13.715Z",
       "history": [
         {
           "eventId": "3987e19aa2bebeb36e29d101a497956b07ba1b6f76f208f9400167e523ceb506",
@@ -4635,6 +5007,36 @@
             "id": "listing:autopunkt:AAU06403IE"
           },
           "changes": {}
+        },
+        {
+          "eventId": "5b1107b3c6600fff15f69dff397a5d03682ce7960737e622bc149fc13ad24f20",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:38:02.812Z",
+          "url": "https://autopunkt.pl/samochod/warszawa/kompakt/skoda/scala/id/111798",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND autopunkt.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autopunkt:AAU06403IE"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "d7279defa607f4de9be35a4233dfe50f2cc35c583900654d50ff813db9c2c113",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:49:13.715Z",
+          "url": "https://autopunkt.pl/samochod/warszawa/kompakt/skoda/scala/id/111798",
+          "availability": "access_error",
+          "note": "Brak potwierdzenia aktywnej karty: tytuł=true, cena=true, kontakt=false (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autopunkt:AAU06403IE"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -4704,12 +5106,12 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6Ii5Ca.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:39:05.219Z",
+          "lastAttemptAt": "2026-11-12T15:49:11.369Z",
           "lastCheckedAt": "2026-11-10T23:13:05Z",
           "lastVerifiedAt": "2026-11-10T23:13:05Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6Ii5Ca.html",
-            "checkedAt": "2026-11-11T16:39:05.219Z",
+            "checkedAt": "2026-11-12T15:49:11.369Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -4718,7 +5120,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:13:05Z",
       "lastVerifiedAt": "2026-11-10T23:13:05Z",
-      "lastAttemptAt": "2026-11-11T16:39:05.219Z",
+      "lastAttemptAt": "2026-11-12T15:49:11.369Z",
       "history": [
         {
           "eventId": "ff9157366759638660e72cccc93cb82bccca4bb0d1d8a9dcc0227bd6647a1734",
@@ -4943,6 +5345,36 @@
             "id": "listing:otomoto:ID6Ii5Ca"
           },
           "changes": {}
+        },
+        {
+          "eventId": "d2f1e0000b4c4ad8bde136acbafa072f555b92477174f25d541ea94a4bcbd0e1",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:59.277Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6Ii5Ca.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6Ii5Ca"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "9b5b274524e09d18415f4121c25a166025a4e327ff05f43a98fdb5510e1db88c",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:49:11.369Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6Ii5Ca.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6Ii5Ca"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -5009,12 +5441,12 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6IiYdS.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:39:05.219Z",
+          "lastAttemptAt": "2026-11-12T15:49:11.370Z",
           "lastCheckedAt": "2026-11-10T23:13:05Z",
           "lastVerifiedAt": "2026-11-10T23:13:05Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6IiYdS.html",
-            "checkedAt": "2026-11-11T16:39:05.219Z",
+            "checkedAt": "2026-11-12T15:49:11.370Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -5023,7 +5455,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:13:05Z",
       "lastVerifiedAt": "2026-11-10T23:13:05Z",
-      "lastAttemptAt": "2026-11-11T16:39:05.219Z",
+      "lastAttemptAt": "2026-11-12T15:49:11.370Z",
       "history": [
         {
           "eventId": "73938cefc89b62e5f0e49aa12790a18667e2894f1234a2b6df605a9e22e47242",
@@ -5272,6 +5704,36 @@
             "id": "listing:otomoto:6151477180"
           },
           "changes": {}
+        },
+        {
+          "eventId": "1a13b6d055eee95287baa3fd4038a861934e952596d4342d3ec81a75b1b361af",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:59.277Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6IiYdS.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:6151477180"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "5cb8d98c2169038431248c00709b3a216026079450b601fd7a005950de30be0b",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:49:11.370Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6IiYdS.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:6151477180"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -5331,12 +5793,12 @@
         {
           "url": "https://www.aaaauto.pl/detail/skoda/scala/34835133",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:31:33.784Z",
+          "lastAttemptAt": "2026-11-12T15:50:32.594Z",
           "lastCheckedAt": "2026-11-10T23:20:07Z",
           "lastVerifiedAt": "2026-11-10T23:20:07Z",
           "lastObservation": {
             "url": "https://www.aaaauto.pl/detail/skoda/scala/34835133",
-            "checkedAt": "2026-11-11T16:31:33.784Z",
+            "checkedAt": "2026-11-12T15:50:32.594Z",
             "availability": "access_error",
             "note": "Portal wyświetlił blokadę lub limit dostępu (HTTP 200).",
             "httpStatus": 200,
@@ -5351,7 +5813,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:20:07Z",
       "lastVerifiedAt": "2026-11-10T23:20:07Z",
-      "lastAttemptAt": "2026-11-11T16:31:33.784Z",
+      "lastAttemptAt": "2026-11-12T15:50:32.594Z",
       "history": [
         {
           "eventId": "8c9ac3bc80ede75f66962b353b1ddbe77cc413f28d2663067fffb5f442b6898a",
@@ -5573,6 +6035,36 @@
             "id": "listing:aaaauto:34835133"
           },
           "changes": {}
+        },
+        {
+          "eventId": "4d7c89d8c10c9bcd5b4c4861a6ae3e5e4b5615272705c72850ae83a39186ab2b",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:39:26.392Z",
+          "url": "https://www.aaaauto.pl/detail/skoda/scala/34835133",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.aaaauto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:aaaauto:34835133"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "79390f2cd987a0d9f305a9c3f111cea75b5c3e3ad96bfd1e00a4f63779a168ef",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:50:32.594Z",
+          "url": "https://www.aaaauto.pl/detail/skoda/scala/34835133",
+          "availability": "access_error",
+          "note": "Portal wyświetlił blokadę lub limit dostępu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:aaaauto:34835133"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -5631,12 +6123,12 @@
         {
           "url": "https://www.aaaauto.pl/detail/skoda/scala/34850164",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:31:33.785Z",
+          "lastAttemptAt": "2026-11-12T15:50:32.595Z",
           "lastCheckedAt": "2026-11-10T23:20:07Z",
           "lastVerifiedAt": "2026-11-10T23:20:07Z",
           "lastObservation": {
             "url": "https://www.aaaauto.pl/detail/skoda/scala/34850164",
-            "checkedAt": "2026-11-11T16:31:33.785Z",
+            "checkedAt": "2026-11-12T15:50:32.595Z",
             "availability": "access_error",
             "note": "Portal wyświetlił blokadę lub limit dostępu (HTTP 200).",
             "httpStatus": 200,
@@ -5651,7 +6143,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:20:07Z",
       "lastVerifiedAt": "2026-11-10T23:20:07Z",
-      "lastAttemptAt": "2026-11-11T16:31:33.785Z",
+      "lastAttemptAt": "2026-11-12T15:50:32.595Z",
       "history": [
         {
           "eventId": "f41bb1a1301ad56645a8bb771b2924b015b9ca93c404a90a7c76fdb3020a4ec8",
@@ -5873,6 +6365,36 @@
             "id": "listing:aaaauto:34850164"
           },
           "changes": {}
+        },
+        {
+          "eventId": "2db17f7bdf958bdc457abbe92a3aa3ee700a48227249f5c0470709659c509782",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:39:26.393Z",
+          "url": "https://www.aaaauto.pl/detail/skoda/scala/34850164",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.aaaauto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:aaaauto:34850164"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "24ea77ab9288b9b358a0404b695472acf38ad44ca73a47ed77e0d3f35d04b673",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:50:32.595Z",
+          "url": "https://www.aaaauto.pl/detail/skoda/scala/34850164",
+          "availability": "access_error",
+          "note": "Portal wyświetlił blokadę lub limit dostępu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:aaaauto:34850164"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -5932,51 +6454,21 @@
         {
           "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2022r-koda-kompakt-7356-2035-YD",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T17:36:19Z",
+          "lastAttemptAt": "2026-11-12T15:49:06.606Z",
           "lastCheckedAt": "2026-11-11T17:36:19Z",
           "lastVerifiedAt": "2026-11-11T17:36:19Z",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2022r-koda-kompakt-7356-2035-YD",
-            "checkedAt": "2026-11-11T17:36:19Z",
-            "availability": "available",
-            "httpStatus": null,
-            "availabilityProof": {
-              "identity": true,
-              "contact": true,
-              "price": true,
-              "titleTokensMatched": 3
-            },
-            "evidence": [
-              {
-                "kind": "seller",
-                "fields": [
-                  "year",
-                  "engine",
-                  "body",
-                  "transmission",
-                  "price",
-                  "mileage",
-                  "location",
-                  "offerType",
-                  "saleType",
-                  "lpgInstalled",
-                  "cameraStatus",
-                  "structuralDamageStatus",
-                  "vin",
-                  "firstRegistrationDate"
-                ],
-                "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2022r-koda-kompakt-7356-2035-YD",
-                "checkedAt": "2026-11-11T17:36:19Z",
-                "note": "Karta Autoplac przedstawia Skodę Scalę hatchback z 2022 r., benzynowy 1.0 TSI 110 KM, manual, 123 440 km i 53 900 zł brutto. Sprzedawca podaje VIN TMBER6NW6N3066778 i pierwszą rejestrację 16.02.2022. Auto ma tylne czujniki parkowania i ISOFIX; kamera cofania nie jest wymieniona. Stan: karta oznacza uszkodzony: nie, ale status bezwypadkowości brak danych. Lokalizacja: Gdańsk 80-557; kontrolki kontaktu widoczne. Próba odczytu bezpośredniego zdjęcia CDN zakończyła się cache miss; photos pominięte."
-              }
-            ],
-            "note": "Oferta dostępna na karcie z widocznymi kontrolkami kontaktu i ceną; brak wzmianki o kamerze. LPG nieustalone; nie wnioskuję, że brak instalacji."
+            "checkedAt": "2026-11-12T15:49:06.606Z",
+            "availability": "access_error",
+            "note": "apiRequestContext.get: Timeout 10000ms exceeded.",
+            "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-11T17:36:19Z",
       "lastVerifiedAt": "2026-11-11T17:36:19Z",
-      "lastAttemptAt": "2026-11-11T17:36:19Z",
+      "lastAttemptAt": "2026-11-12T15:49:06.606Z",
       "history": [
         {
           "eventId": "91310589eb74aec5c618999ee22e5d7916bf58a157a2d0b83aaca210a8645b1f",
@@ -6143,6 +6635,36 @@
               }
             }
           }
+        },
+        {
+          "eventId": "80494a1a15830a82748e72ebaf605ed8b34e26814acdcfdfa991cc289e539659",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:52.272Z",
+          "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2022r-koda-kompakt-7356-2035-YD",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND autoplac.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:7356-2035-YD"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "9777fe2ec8c0e8f2301ea6d7b9aa853565f710ed30c59686c97b377c64ec6b92",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:49:06.606Z",
+          "url": "https://autoplac.pl/oferta/skoda/scala/1-0-2022r-koda-kompakt-7356-2035-YD",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: Timeout 10000ms exceeded.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:7356-2035-YD"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -6213,40 +6735,27 @@
         {
           "url": "https://automarket.pl/oferta/skoda/scala/T165779/zakup",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T17:41:00Z",
-          "lastCheckedAt": "2026-11-11T17:41:00Z",
-          "lastVerifiedAt": "2026-11-11T17:41:00Z",
+          "lastAttemptAt": "2026-11-12T15:48:53.233Z",
+          "lastCheckedAt": "2026-11-12T15:48:53.233Z",
+          "lastVerifiedAt": "2026-11-12T15:48:53.233Z",
           "lastObservation": {
             "url": "https://automarket.pl/oferta/skoda/scala/T165779/zakup",
-            "checkedAt": "2026-11-11T17:41:00Z",
+            "checkedAt": "2026-11-12T15:48:53.233Z",
             "availability": "available",
-            "note": "Karta podaje Skoda Scala hatchback, 2021, benzynowy 1.0 TSI 110 KM, manualną skrzynię 6-biegową, 82 704 km i 54 000 zł brutto. VIN TMBER6NW4N3024285; pierwsza rejestracja 2021-10-06. Karta pokazuje kontakt oraz opis dostępny od ręki, z zaleceniem telefonicznego potwierdzenia przed wizytą. Benzyna jest podana, LPG nie jest wskazane. Kamera niepotwierdzona. Sekcja stanu odsyła do zdjęć; stan konstrukcyjny niezweryfikowany. Lokalizacja Piaseczno, Mazowieckie, 05-500.",
-            "evidence": [
-              {
-                "kind": "seller",
-                "url": "https://automarket.pl/oferta/skoda/scala/T165779/zakup",
-                "checkedAt": "2026-11-11T17:41:00Z",
-                "fields": [
-                  "year",
-                  "price",
-                  "mileage",
-                  "engineVariant",
-                  "bodyCode",
-                  "transmissionCode",
-                  "saleType",
-                  "vin",
-                  "firstRegistrationDate",
-                  "location"
-                ],
-                "note": "Dane odczytane z karty Automarket. Wyposażenie nie wymienia kamery; brak twierdzenia o jej braku. Stan pojazdu określono jako zgodny ze zdjęciami, bez niezależnej oceny."
-              }
-            ]
+            "note": "Karta zawiera dopasowanie 6 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+            "httpStatus": 200,
+            "availabilityProof": {
+              "identity": true,
+              "contact": true,
+              "price": true,
+              "titleTokensMatched": 6
+            }
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T17:41:00Z",
-      "lastVerifiedAt": "2026-11-11T17:41:00Z",
-      "lastAttemptAt": "2026-11-11T17:41:00Z",
+      "lastCheckedAt": "2026-11-12T15:48:53.233Z",
+      "lastVerifiedAt": "2026-11-12T15:48:53.233Z",
+      "lastAttemptAt": "2026-11-12T15:48:53.233Z",
       "history": [
         {
           "eventId": "331700bb653b817d2f7ab9cfd3a97a5dc8d13fee1479cea44a28def35b7490b6",
@@ -6444,6 +6953,36 @@
               ]
             }
           }
+        },
+        {
+          "eventId": "c8fa63fa4bb6efca53739ca221f5d2ee404346727ee359304b0a778681aa2569",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:48.766Z",
+          "url": "https://automarket.pl/oferta/skoda/scala/T165779/zakup",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND automarket.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:automarket:T165779"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "8b47a5e906fddfadfca3ec4a2ecf1053d1fae4cb2bb05e327377f511f89f9f22",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:53.233Z",
+          "url": "https://automarket.pl/oferta/skoda/scala/T165779/zakup",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 6 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:automarket:T165779"
+          },
+          "changes": {}
         }
       ],
       "assessment": {

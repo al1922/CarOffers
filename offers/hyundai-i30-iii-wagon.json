@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-12",
   "model": {
     "key": "hyundai-i30-iii-wagon",
     "name": "Hyundai i30 III Wagon",
@@ -66,12 +66,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/hyundai-i30-2022-1-5-dpi-pl-salon-lane-assist-android-auto-carplay-oryg-lakier-CID5-ID1cN3bI.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:37.874Z",
+          "lastAttemptAt": "2026-11-12T15:47:43.475Z",
           "lastCheckedAt": "2026-11-10T22:59:22Z",
           "lastVerifiedAt": "2026-11-10T22:59:22Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/hyundai-i30-2022-1-5-dpi-pl-salon-lane-assist-android-auto-carplay-oryg-lakier-CID5-ID1cN3bI.html",
-            "checkedAt": "2026-11-11T02:03:37.874Z",
+            "checkedAt": "2026-11-12T15:47:43.475Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -80,12 +80,12 @@
         {
           "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-5-2022r-hyundai-i30-dpi-classic-1722-7171-LE",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:40.329Z",
-          "lastCheckedAt": "2026-11-11T02:03:40.329Z",
-          "lastVerifiedAt": "2026-11-11T02:03:40.329Z",
+          "lastAttemptAt": "2026-11-12T15:46:43.303Z",
+          "lastCheckedAt": "2026-11-12T15:46:43.303Z",
+          "lastVerifiedAt": "2026-11-12T15:46:43.303Z",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-5-2022r-hyundai-i30-dpi-classic-1722-7171-LE",
-            "checkedAt": "2026-11-11T02:03:40.329Z",
+            "checkedAt": "2026-11-12T15:46:43.303Z",
             "availability": "available",
             "note": "Karta zawiera dopasowanie 5 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
             "httpStatus": 200,
@@ -98,9 +98,9 @@
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T02:03:40.329Z",
-      "lastVerifiedAt": "2026-11-11T02:03:40.329Z",
-      "lastAttemptAt": "2026-11-11T02:03:40.329Z",
+      "lastCheckedAt": "2026-11-12T15:46:43.303Z",
+      "lastVerifiedAt": "2026-11-12T15:46:43.303Z",
+      "lastAttemptAt": "2026-11-12T15:47:43.475Z",
       "history": [
         {
           "eventId": "992207c9563c2a92e279a78e80b00a6196e1abddd9471e6c8e2fb598657a577e",
@@ -469,6 +469,66 @@
             "id": "vin:TMAH251CANJ114334"
           },
           "changes": {}
+        },
+        {
+          "eventId": "591e383e48bdb5ff46c86bc466e6ecc26b9255d33fbd04a6ca5e00bc8e9a510a",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:18.916Z",
+          "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-5-2022r-hyundai-i30-dpi-classic-1722-7171-LE",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND autoplac.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TMAH251CANJ114334"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "965e55f419fe08982df9910f51b09f28543d2435a7cf47922e1bae19250981a8",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:37.805Z",
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-2022-1-5-dpi-pl-salon-lane-assist-android-auto-carplay-oryg-lakier-CID5-ID1cN3bI.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TMAH251CANJ114334"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "8d7c841e013b2f57bda3632ec58d2e7d7caa537fdf79a76291c1017559dd27d1",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:46:43.303Z",
+          "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-5-2022r-hyundai-i30-dpi-classic-1722-7171-LE",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 5 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TMAH251CANJ114334"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "5446633502c0f9f4637d70c16ee6eb61d775e28e4df8bbfea0a8724d10857c33",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:47:43.475Z",
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-2022-1-5-dpi-pl-salon-lane-assist-android-auto-carplay-oryg-lakier-CID5-ID1cN3bI.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TMAH251CANJ114334"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -550,12 +610,12 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6Ijf8c.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:37.867Z",
+          "lastAttemptAt": "2026-11-12T15:47:50.577Z",
           "lastCheckedAt": "2026-11-10T23:02:06Z",
           "lastVerifiedAt": "2026-11-10T23:02:06Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6Ijf8c.html",
-            "checkedAt": "2026-11-11T02:03:37.867Z",
+            "checkedAt": "2026-11-12T15:47:50.577Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -564,12 +624,12 @@
         {
           "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-5-2022r-hyundai-i30-dpi-classic-7145-2764-EG",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:40.331Z",
-          "lastCheckedAt": "2026-11-11T02:03:40.331Z",
-          "lastVerifiedAt": "2026-11-11T02:03:40.331Z",
+          "lastAttemptAt": "2026-11-12T15:46:43.306Z",
+          "lastCheckedAt": "2026-11-12T15:46:43.306Z",
+          "lastVerifiedAt": "2026-11-12T15:46:43.306Z",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-5-2022r-hyundai-i30-dpi-classic-7145-2764-EG",
-            "checkedAt": "2026-11-11T02:03:40.331Z",
+            "checkedAt": "2026-11-12T15:46:43.306Z",
             "availability": "available",
             "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
             "httpStatus": 200,
@@ -582,9 +642,9 @@
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T02:03:40.331Z",
-      "lastVerifiedAt": "2026-11-11T02:03:40.331Z",
-      "lastAttemptAt": "2026-11-11T02:03:40.331Z",
+      "lastCheckedAt": "2026-11-12T15:46:43.306Z",
+      "lastVerifiedAt": "2026-11-12T15:46:43.306Z",
+      "lastAttemptAt": "2026-11-12T15:47:50.577Z",
       "history": [
         {
           "eventId": "8d915db5c4740f866d6bffa83ae5c4c0798f65a60092a36da2051a4903dc00c0",
@@ -842,6 +902,66 @@
             "id": "listing:autoplac:7145-2764-EG"
           },
           "changes": {}
+        },
+        {
+          "eventId": "1234f5bf9aea879fff78163f9523075be448948405486b3d60285b4869494660",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:18.917Z",
+          "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-5-2022r-hyundai-i30-dpi-classic-7145-2764-EG",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND autoplac.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:7145-2764-EG"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "2b559732416eb2bdc048c6761c65a5a3daa307736faa7209d4b904e485a4e995",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:48.747Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6Ijf8c.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:7145-2764-EG"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "05f88c7d3d2bcd1dacff7e5467a9f394a51c9af472e461156a868a87f4eddf6c",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:46:43.306Z",
+          "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-5-2022r-hyundai-i30-dpi-classic-7145-2764-EG",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:7145-2764-EG"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "76bcc3095fe65d7cd522a1e3379593201ac10d8bb8ff24cacdd8aef3a6168687",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:47:50.577Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6Ijf8c.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:7145-2764-EG"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -914,12 +1034,12 @@
         {
           "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-5-2021r-dpi-nawigacja-1492-6499-YL",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:44.107Z",
-          "lastCheckedAt": "2026-11-11T02:03:44.107Z",
-          "lastVerifiedAt": "2026-11-11T02:03:44.107Z",
+          "lastAttemptAt": "2026-11-12T15:46:43.309Z",
+          "lastCheckedAt": "2026-11-12T15:46:43.309Z",
+          "lastVerifiedAt": "2026-11-12T15:46:43.309Z",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-5-2021r-dpi-nawigacja-1492-6499-YL",
-            "checkedAt": "2026-11-11T02:03:44.107Z",
+            "checkedAt": "2026-11-12T15:46:43.309Z",
             "availability": "available",
             "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
             "httpStatus": 200,
@@ -932,9 +1052,9 @@
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T02:03:44.107Z",
-      "lastVerifiedAt": "2026-11-11T02:03:44.107Z",
-      "lastAttemptAt": "2026-11-11T02:03:44.107Z",
+      "lastCheckedAt": "2026-11-12T15:46:43.309Z",
+      "lastVerifiedAt": "2026-11-12T15:46:43.309Z",
+      "lastAttemptAt": "2026-11-12T15:46:43.309Z",
       "history": [
         {
           "eventId": "67069e911d8fcf537cdfe13ed12bce1d17b4d6da4cfc50da63e5bdb3dd56886f",
@@ -1057,6 +1177,36 @@
             "id": "listing:autoplac:1492-6499-YL"
           },
           "changes": {}
+        },
+        {
+          "eventId": "e099f1ef8e5ad8f33a54d840cb2b79c538e0def53161638d83e05038292b76e8",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:18.917Z",
+          "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-5-2021r-dpi-nawigacja-1492-6499-YL",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND autoplac.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:1492-6499-YL"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "9dea12a56cb5447917b624d49097ba85db76a9778e465885f94d38e10b8f27ab",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:46:43.309Z",
+          "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-5-2021r-dpi-nawigacja-1492-6499-YL",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:1492-6499-YL"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -1127,12 +1277,12 @@
         {
           "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-5-2022r-15dpi-110km-modern-gwarancja-salon-polska-2022-vat23-0060-7009-GM",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:40.326Z",
-          "lastCheckedAt": "2026-11-11T02:03:40.326Z",
-          "lastVerifiedAt": "2026-11-11T02:03:40.326Z",
+          "lastAttemptAt": "2026-11-12T15:46:43.309Z",
+          "lastCheckedAt": "2026-11-12T15:46:43.309Z",
+          "lastVerifiedAt": "2026-11-12T15:46:43.309Z",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-5-2022r-15dpi-110km-modern-gwarancja-salon-polska-2022-vat23-0060-7009-GM",
-            "checkedAt": "2026-11-11T02:03:40.326Z",
+            "checkedAt": "2026-11-12T15:46:43.309Z",
             "availability": "available",
             "note": "Karta zawiera dopasowanie 6 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
             "httpStatus": 200,
@@ -1145,9 +1295,9 @@
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T02:03:40.326Z",
-      "lastVerifiedAt": "2026-11-11T02:03:40.326Z",
-      "lastAttemptAt": "2026-11-11T02:03:40.326Z",
+      "lastCheckedAt": "2026-11-12T15:46:43.309Z",
+      "lastVerifiedAt": "2026-11-12T15:46:43.309Z",
+      "lastAttemptAt": "2026-11-12T15:46:43.309Z",
       "history": [
         {
           "eventId": "66f93f50e24b6bd69f7fbcc87361cd14b6323e8a3d08133e96a8e251cbd91a4d",
@@ -1270,6 +1420,36 @@
             "id": "listing:autoplac:0060-7009-GM"
           },
           "changes": {}
+        },
+        {
+          "eventId": "c665ad77e488d84063b5a8befd399996462fecbcdc167e3e02f6ce899148ac49",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:18.918Z",
+          "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-5-2022r-15dpi-110km-modern-gwarancja-salon-polska-2022-vat23-0060-7009-GM",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND autoplac.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:0060-7009-GM"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "e145038d541fd44fbb00a340b08a0f263f3955f690e8e7f17158c82a65344229",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:46:43.309Z",
+          "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-5-2022r-15dpi-110km-modern-gwarancja-salon-polska-2022-vat23-0060-7009-GM",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 6 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:0060-7009-GM"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -1329,12 +1509,12 @@
         {
           "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-4-2019r-t-gdi-140-km-go-plus-2019-salon-polska-bogate-1047-6014-UA",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:40.327Z",
-          "lastCheckedAt": "2026-11-11T02:03:40.327Z",
-          "lastVerifiedAt": "2026-11-11T02:03:40.327Z",
+          "lastAttemptAt": "2026-11-12T15:46:48.575Z",
+          "lastCheckedAt": "2026-11-12T15:46:48.575Z",
+          "lastVerifiedAt": "2026-11-12T15:46:48.575Z",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-4-2019r-t-gdi-140-km-go-plus-2019-salon-polska-bogate-1047-6014-UA",
-            "checkedAt": "2026-11-11T02:03:40.327Z",
+            "checkedAt": "2026-11-12T15:46:48.575Z",
             "availability": "available",
             "note": "Karta zawiera dopasowanie 9 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
             "httpStatus": 200,
@@ -1347,9 +1527,9 @@
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T02:03:40.327Z",
-      "lastVerifiedAt": "2026-11-11T02:03:40.327Z",
-      "lastAttemptAt": "2026-11-11T02:03:40.327Z",
+      "lastCheckedAt": "2026-11-12T15:46:48.575Z",
+      "lastVerifiedAt": "2026-11-12T15:46:48.575Z",
+      "lastAttemptAt": "2026-11-12T15:46:48.575Z",
       "history": [
         {
           "eventId": "f5b795471ce7361acfc5827ec33f645aa528e241c9afd2fbda15e1c9fa640367",
@@ -1614,6 +1794,36 @@
             "id": "listing:autoplac:1047-6014-UA"
           },
           "changes": {}
+        },
+        {
+          "eventId": "d91f655cfd155f3497381004630405a496d61b3171b13a84c886ee774e8e330b",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:18.918Z",
+          "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-4-2019r-t-gdi-140-km-go-plus-2019-salon-polska-bogate-1047-6014-UA",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND autoplac.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:1047-6014-UA"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "a22d62b7ddb2e620c564289557df7c424e88937df82a4bffc1333521c26e356b",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:46:48.575Z",
+          "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-4-2019r-t-gdi-140-km-go-plus-2019-salon-polska-bogate-1047-6014-UA",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 9 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:1047-6014-UA"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -1673,12 +1883,12 @@
         {
           "url": "https://automarket.pl/oferta/hyundai/i30/T147419/zakup",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:40.590Z",
-          "lastCheckedAt": "2026-11-11T02:03:40.590Z",
-          "lastVerifiedAt": "2026-11-11T02:03:40.590Z",
+          "lastAttemptAt": "2026-11-12T15:47:58.710Z",
+          "lastCheckedAt": "2026-11-12T15:47:58.710Z",
+          "lastVerifiedAt": "2026-11-12T15:47:58.710Z",
           "lastObservation": {
             "url": "https://automarket.pl/oferta/hyundai/i30/T147419/zakup",
-            "checkedAt": "2026-11-11T02:03:40.590Z",
+            "checkedAt": "2026-11-12T15:47:58.710Z",
             "availability": "available",
             "note": "Karta zawiera dopasowanie 6 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
             "httpStatus": 200,
@@ -1691,9 +1901,9 @@
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T02:03:40.590Z",
-      "lastVerifiedAt": "2026-11-11T02:03:40.590Z",
-      "lastAttemptAt": "2026-11-11T02:03:40.590Z",
+      "lastCheckedAt": "2026-11-12T15:47:58.710Z",
+      "lastVerifiedAt": "2026-11-12T15:47:58.710Z",
+      "lastAttemptAt": "2026-11-12T15:47:58.710Z",
       "history": [
         {
           "eventId": "12acbb1ba8958ff75fa2a702df2cc8a6ed9769240f300772299e1f6766da8adc",
@@ -2054,6 +2264,36 @@
             "id": "listing:automarket:T147419"
           },
           "changes": {}
+        },
+        {
+          "eventId": "e60f1e64c867adaa670fef4faf8055c66c368d5ca61659ce67161c13c2327ce2",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:59.420Z",
+          "url": "https://automarket.pl/oferta/hyundai/i30/T147419/zakup",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND automarket.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:automarket:T147419"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "3c7c98de8f22d4d861e1e5ac4aa24d349d50f1192e949a24ad5baeef774b1665",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:47:58.710Z",
+          "url": "https://automarket.pl/oferta/hyundai/i30/T147419/zakup",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 6 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:automarket:T147419"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -2122,12 +2362,12 @@
         {
           "url": "https://allegrolokalnie.pl/oferta/bezwypadkowy-zarejestrowany-ubezpieczony?navCategoryId=4029",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:04:24.236Z",
-          "lastCheckedAt": "2026-11-11T02:04:24.236Z",
-          "lastVerifiedAt": "2026-11-11T02:04:24.236Z",
+          "lastAttemptAt": "2026-11-12T15:50:10.385Z",
+          "lastCheckedAt": "2026-11-12T15:50:10.385Z",
+          "lastVerifiedAt": "2026-11-12T15:50:10.385Z",
           "lastObservation": {
             "url": "https://allegrolokalnie.pl/oferta/bezwypadkowy-zarejestrowany-ubezpieczony?navCategoryId=4029",
-            "checkedAt": "2026-11-11T02:04:24.236Z",
+            "checkedAt": "2026-11-12T15:50:10.385Z",
             "availability": "available",
             "note": "Karta zawiera dopasowanie 5 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
             "httpStatus": 200,
@@ -2140,9 +2380,9 @@
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T02:04:24.236Z",
-      "lastVerifiedAt": "2026-11-11T02:04:24.236Z",
-      "lastAttemptAt": "2026-11-11T02:04:24.236Z",
+      "lastCheckedAt": "2026-11-12T15:50:10.385Z",
+      "lastVerifiedAt": "2026-11-12T15:50:10.385Z",
+      "lastAttemptAt": "2026-11-12T15:50:10.385Z",
       "history": [
         {
           "eventId": "17244a7db876342f9858364f1a93c167603aa4dd7939d10d6b28c629b188cabf",
@@ -2484,6 +2724,36 @@
             "id": "listing:allegro-lokalnie:a55e49a8-b9a0-412f-830e-8d5d076aaaa0"
           },
           "changes": {}
+        },
+        {
+          "eventId": "d0cca15f55001193fe433bba37d6b092dafc4f08c6c669d46ed27fdbc539ce86",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:39:05.397Z",
+          "url": "https://allegrolokalnie.pl/oferta/bezwypadkowy-zarejestrowany-ubezpieczony?navCategoryId=4029",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND allegrolokalnie.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:allegro-lokalnie:a55e49a8-b9a0-412f-830e-8d5d076aaaa0"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "9280eea99d7ab945d2e66a6bf9ac33607a6b3c44a03e22a3217b735596b657a5",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:50:10.385Z",
+          "url": "https://allegrolokalnie.pl/oferta/bezwypadkowy-zarejestrowany-ubezpieczony?navCategoryId=4029",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 5 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:allegro-lokalnie:a55e49a8-b9a0-412f-830e-8d5d076aaaa0"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -2565,12 +2835,12 @@
         {
           "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-4-2018r-hyundaia-generacji-mpi-o-mocy-100-km-benzyna-9862-7198-CV",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:40.329Z",
-          "lastCheckedAt": "2026-11-11T02:03:40.329Z",
-          "lastVerifiedAt": "2026-11-11T02:03:40.329Z",
+          "lastAttemptAt": "2026-11-12T15:47:38.869Z",
+          "lastCheckedAt": "2026-11-12T15:47:38.869Z",
+          "lastVerifiedAt": "2026-11-12T15:47:38.869Z",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-4-2018r-hyundaia-generacji-mpi-o-mocy-100-km-benzyna-9862-7198-CV",
-            "checkedAt": "2026-11-11T02:03:40.329Z",
+            "checkedAt": "2026-11-12T15:47:38.869Z",
             "availability": "available",
             "note": "Karta zawiera dopasowanie 6 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
             "httpStatus": 200,
@@ -2583,9 +2853,9 @@
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T02:03:40.329Z",
-      "lastVerifiedAt": "2026-11-11T02:03:40.329Z",
-      "lastAttemptAt": "2026-11-11T02:03:40.329Z",
+      "lastCheckedAt": "2026-11-12T15:47:38.869Z",
+      "lastVerifiedAt": "2026-11-12T15:47:38.869Z",
+      "lastAttemptAt": "2026-11-12T15:47:38.869Z",
       "history": [
         {
           "eventId": "435f06d746c63df513ea4f4899b9748efa8d4a2e88acc58842da034da61f41b5",
@@ -2798,6 +3068,36 @@
             "id": "listing:autoplac:9862-7198-CV"
           },
           "changes": {}
+        },
+        {
+          "eventId": "c1944592f408ce84665bf01e30891b0127ef70eae646484025756aaf051a7c5b",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:34.252Z",
+          "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-4-2018r-hyundaia-generacji-mpi-o-mocy-100-km-benzyna-9862-7198-CV",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND autoplac.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:9862-7198-CV"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "64b452ff5a7454ba5b83f6a3706ea68190cf6e69efc716640a7d030469081ce2",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:47:38.869Z",
+          "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-4-2018r-hyundaia-generacji-mpi-o-mocy-100-km-benzyna-9862-7198-CV",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 6 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:9862-7198-CV"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -2864,12 +3164,12 @@
         {
           "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-4-2019r-wagon-mpi-100-km-2019-benzyna-162-700-km-thule-9572-3905-EU",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:40.329Z",
-          "lastCheckedAt": "2026-11-11T02:03:40.329Z",
-          "lastVerifiedAt": "2026-11-11T02:03:40.329Z",
+          "lastAttemptAt": "2026-11-12T15:47:38.872Z",
+          "lastCheckedAt": "2026-11-12T15:47:38.872Z",
+          "lastVerifiedAt": "2026-11-12T15:47:38.872Z",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-4-2019r-wagon-mpi-100-km-2019-benzyna-162-700-km-thule-9572-3905-EU",
-            "checkedAt": "2026-11-11T02:03:40.329Z",
+            "checkedAt": "2026-11-12T15:47:38.872Z",
             "availability": "available",
             "note": "Karta zawiera dopasowanie 6 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
             "httpStatus": 200,
@@ -2882,9 +3182,9 @@
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T02:03:40.329Z",
-      "lastVerifiedAt": "2026-11-11T02:03:40.329Z",
-      "lastAttemptAt": "2026-11-11T02:03:40.329Z",
+      "lastCheckedAt": "2026-11-12T15:47:38.872Z",
+      "lastVerifiedAt": "2026-11-12T15:47:38.872Z",
+      "lastAttemptAt": "2026-11-12T15:47:38.872Z",
       "history": [
         {
           "eventId": "d5a0dcef4f7f59f58eebd6eb62f75d8801d5b96e09d751b1062335e13da0aada",
@@ -3095,6 +3395,36 @@
             "id": "listing:autoplac:9572-3905-EU"
           },
           "changes": {}
+        },
+        {
+          "eventId": "309e239d9c7c7d4da466e04265f7e794e794577fb942c1e9e307b0bb8f4b4f0f",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:34.253Z",
+          "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-4-2019r-wagon-mpi-100-km-2019-benzyna-162-700-km-thule-9572-3905-EU",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND autoplac.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:9572-3905-EU"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "8f2836790af671bae3fcc8a6570ce1b5ed7dca83305f2e113561af02afb33442",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:47:38.872Z",
+          "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-4-2019r-wagon-mpi-100-km-2019-benzyna-162-700-km-thule-9572-3905-EU",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 6 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:9572-3905-EU"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -3167,12 +3497,12 @@
         {
           "url": "https://sprzedajemy.pl/hyundai-i30-1-4-100km-2018r-brwinow-4-6bea9f-nr70513445",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:04:24.338Z",
-          "lastCheckedAt": "2026-11-11T02:04:24.338Z",
-          "lastVerifiedAt": "2026-11-11T02:04:24.338Z",
+          "lastAttemptAt": "2026-11-12T15:50:14.843Z",
+          "lastCheckedAt": "2026-11-12T15:50:14.843Z",
+          "lastVerifiedAt": "2026-11-12T15:50:14.843Z",
           "lastObservation": {
             "url": "https://sprzedajemy.pl/hyundai-i30-1-4-100km-2018r-brwinow-4-6bea9f-nr70513445",
-            "checkedAt": "2026-11-11T02:04:24.338Z",
+            "checkedAt": "2026-11-12T15:50:14.843Z",
             "availability": "available",
             "note": "Karta zawiera dopasowanie 6 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
             "httpStatus": 200,
@@ -3185,9 +3515,9 @@
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T02:04:24.338Z",
-      "lastVerifiedAt": "2026-11-11T02:04:24.338Z",
-      "lastAttemptAt": "2026-11-11T02:04:24.338Z",
+      "lastCheckedAt": "2026-11-12T15:50:14.843Z",
+      "lastVerifiedAt": "2026-11-12T15:50:14.843Z",
+      "lastAttemptAt": "2026-11-12T15:50:14.843Z",
       "history": [
         {
           "eventId": "10d1264081983489894ec3cdee4ba647b3fa9d65f0bf09dd60a01478c95cc8a9",
@@ -3412,6 +3742,36 @@
             "id": "listing:sprzedajemy:70513445"
           },
           "changes": {}
+        },
+        {
+          "eventId": "a86459299c8a4f8d896053acf3f292fe55216c05ca9530255bde93c8e2814660",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:39:08.880Z",
+          "url": "https://sprzedajemy.pl/hyundai-i30-1-4-100km-2018r-brwinow-4-6bea9f-nr70513445",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND sprzedajemy.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:sprzedajemy:70513445"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "c26d2db324d8bc11f928781c3ad2bab2cfe52095333d1b69c87d403a6d0fbcc8",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:50:14.843Z",
+          "url": "https://sprzedajemy.pl/hyundai-i30-1-4-100km-2018r-brwinow-4-6bea9f-nr70513445",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 6 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:sprzedajemy:70513445"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -3479,25 +3839,25 @@
         {
           "url": "https://www.aaaauto.pl/detail/hyundai/i30/34935780",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T15:38:59Z",
+          "lastAttemptAt": "2026-11-12T15:50:18.684Z",
           "lastObservation": {
             "url": "https://www.aaaauto.pl/detail/hyundai/i30/34935780",
-            "checkedAt": "2026-11-11T15:38:59Z",
-            "availability": "available",
-            "note": "Bieżąca karta AAA AUTO została odczytana przez web.open: Hyundai i30 Combi 2022, 1.5 DPI, 108 068 km, cena 47 500 zł oraz aktywny formularz umówienia spotkania i opcja kontaktu telefonicznego. Strona zwróciła pełną kartę; czytnik web nie udostępnia surowego kodu HTTP.",
+            "checkedAt": "2026-11-12T15:50:18.684Z",
+            "availability": "access_error",
+            "note": "Portal wyświetlił blokadę lub limit dostępu (HTTP 200).",
             "httpStatus": 200,
             "availabilityProof": {
-              "identity": true,
-              "contact": true,
-              "price": true,
-              "titleTokensMatched": 7
+              "identity": false,
+              "contact": false,
+              "price": false,
+              "titleTokensMatched": 0
             }
           },
           "lastCheckedAt": "2026-11-11T15:38:59Z",
           "lastVerifiedAt": "2026-11-11T15:38:59Z"
         }
       ],
-      "lastAttemptAt": "2026-11-11T15:38:59Z",
+      "lastAttemptAt": "2026-11-12T15:50:18.684Z",
       "history": [
         {
           "eventId": "6836c91afc51c2571cbd6c419adf095a14424135fb30fd92c4334246ee49c7af",
@@ -3679,6 +4039,36 @@
             "id": "listing:aaaauto:34935780"
           },
           "changes": {}
+        },
+        {
+          "eventId": "7d1c3e4c7095776df45f53962703e4da6a13060ef83e3fcaf52a06b27728395f",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:39:12.509Z",
+          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34935780",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.aaaauto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:aaaauto:34935780"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "a307d711c74c6beebc4c219177de83a6046122d12f21f50f94246b364e7a37d4",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:50:18.684Z",
+          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34935780",
+          "availability": "access_error",
+          "note": "Portal wyświetlił blokadę lub limit dostępu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:aaaauto:34935780"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -3767,12 +4157,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-5-dpi-classic-plus-salon-polska-1-wlasciciel-vat-23-klima-CID5-ID1bW3HH.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:32:03.262Z",
+          "lastAttemptAt": "2026-11-12T15:47:43.475Z",
           "lastCheckedAt": "2026-11-08T23:28:39+01:00",
           "lastVerifiedAt": "2026-11-08T23:28:39+01:00",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-5-dpi-classic-plus-salon-polska-1-wlasciciel-vat-23-klima-CID5-ID1bW3HH.html",
-            "checkedAt": "2026-11-11T16:32:03.262Z",
+            "checkedAt": "2026-11-12T15:47:43.475Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -3781,7 +4171,7 @@
       ],
       "lastCheckedAt": "2026-11-08T23:28:39+01:00",
       "lastVerifiedAt": "2026-11-08T23:28:39+01:00",
-      "lastAttemptAt": "2026-11-11T16:32:03.262Z",
+      "lastAttemptAt": "2026-11-12T15:47:43.475Z",
       "history": [
         {
           "eventId": "eb56dc2facddb99bf67f1a701842e1d70466349c83fc2555bdecb8e188ddb212",
@@ -4001,6 +4391,36 @@
             "id": "vin:TMAH281CANJ114421"
           },
           "changes": {}
+        },
+        {
+          "eventId": "e7e135384142ca7ec111298811e11ca41e65ecfbf5fe1ba3fb3983118de73c53",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:37.805Z",
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-5-dpi-classic-plus-salon-polska-1-wlasciciel-vat-23-klima-CID5-ID1bW3HH.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TMAH281CANJ114421"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "10613565f08d18c53bb720a331ef2cfffccac4a7b639f6448206115483a258e1",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:47:43.475Z",
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-5-dpi-classic-plus-salon-polska-1-wlasciciel-vat-23-klima-CID5-ID1bW3HH.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TMAH281CANJ114421"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -4079,12 +4499,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/hyundai-i30-kombi-1-4-t-gdi-140-km-automat-salon-polska-kamera-bezwypadkowy-CID5-ID1bPr3c.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:32:03.263Z",
+          "lastAttemptAt": "2026-11-12T15:47:43.476Z",
           "lastCheckedAt": "2026-11-09T00:47:18+01:00",
           "lastVerifiedAt": "2026-11-09T00:47:18+01:00",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/hyundai-i30-kombi-1-4-t-gdi-140-km-automat-salon-polska-kamera-bezwypadkowy-CID5-ID1bPr3c.html",
-            "checkedAt": "2026-11-11T16:32:03.263Z",
+            "checkedAt": "2026-11-12T15:47:43.476Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -4093,7 +4513,7 @@
       ],
       "lastCheckedAt": "2026-11-09T00:47:18+01:00",
       "lastVerifiedAt": "2026-11-09T00:47:18+01:00",
-      "lastAttemptAt": "2026-11-11T16:32:03.263Z",
+      "lastAttemptAt": "2026-11-12T15:47:43.476Z",
       "history": [
         {
           "eventId": "5aed345e2ed496787186170f3ad7dd8630c386dd6567c141096c85d7cd948eed",
@@ -4348,6 +4768,36 @@
             "id": "vin:TMAH3813GLJ064598"
           },
           "changes": {}
+        },
+        {
+          "eventId": "1a08308e4aa1677a126c5e7059bacec86ac48e87d489ba0ad19a83853756571d",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:37.806Z",
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-kombi-1-4-t-gdi-140-km-automat-salon-polska-kamera-bezwypadkowy-CID5-ID1bPr3c.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TMAH3813GLJ064598"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "8962268eaf3da27a0998013209fd4295aedc1479e9db5d3ec188a9675bf91132",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:47:43.476Z",
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-kombi-1-4-t-gdi-140-km-automat-salon-polska-kamera-bezwypadkowy-CID5-ID1bPr3c.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TMAH3813GLJ064598"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -4435,12 +4885,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-5-dpi-2020-2021-43tys-km-silnik-pod-lpg-CID5-ID1cx9n1.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:32:03.263Z",
+          "lastAttemptAt": "2026-11-12T15:47:43.476Z",
           "lastCheckedAt": "2026-11-08T23:28:39+01:00",
           "lastVerifiedAt": "2026-11-08T23:28:39+01:00",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-5-dpi-2020-2021-43tys-km-silnik-pod-lpg-CID5-ID1cx9n1.html",
-            "checkedAt": "2026-11-11T16:32:03.263Z",
+            "checkedAt": "2026-11-12T15:47:43.476Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -4449,7 +4899,7 @@
       ],
       "lastCheckedAt": "2026-11-08T23:28:39+01:00",
       "lastVerifiedAt": "2026-11-08T23:28:39+01:00",
-      "lastAttemptAt": "2026-11-11T16:32:03.263Z",
+      "lastAttemptAt": "2026-11-12T15:47:43.476Z",
       "history": [
         {
           "eventId": "1995375d5a7e638615fae0171bd29e7f04e13106fe98cdd0225d589b06a39de3",
@@ -4821,6 +5271,36 @@
             "id": "listing:olx:1101349711"
           },
           "changes": {}
+        },
+        {
+          "eventId": "b49cd043a759a9b691033a9d94be467013119fa8c64a6c640af17d15157808d3",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:37.806Z",
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-5-dpi-2020-2021-43tys-km-silnik-pod-lpg-CID5-ID1cx9n1.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1101349711"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "162509e28487854a136f6d5bb4e919813292c317c00c8bb1168d61e14e2d0e61",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:47:43.476Z",
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-5-dpi-2020-2021-43tys-km-silnik-pod-lpg-CID5-ID1cx9n1.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1101349711"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -4898,12 +5378,12 @@
         {
           "url": "https://www.automarket.pl/oferta/hyundai/i30/308024/zakup?f=IjM2LDIwLDIwMDAwLDEsMzAi",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:36:05.888Z",
+          "lastAttemptAt": "2026-11-12T15:47:58.710Z",
           "lastCheckedAt": "2026-11-10T00:53:06Z",
           "lastVerifiedAt": "2026-11-10T00:53:06Z",
           "lastObservation": {
             "url": "https://www.automarket.pl/oferta/hyundai/i30/308024/zakup?f=IjM2LDIwLDIwMDAwLDEsMzAi",
-            "checkedAt": "2026-11-11T16:36:05.888Z",
+            "checkedAt": "2026-11-12T15:47:58.710Z",
             "availability": "access_error",
             "note": "Portal zwrócił HTTP 404; sam kod nie potwierdza zamknięcia ogłoszenia.",
             "httpStatus": 404
@@ -4912,7 +5392,7 @@
       ],
       "lastCheckedAt": "2026-11-10T00:53:06Z",
       "lastVerifiedAt": "2026-11-10T00:53:06Z",
-      "lastAttemptAt": "2026-11-11T16:36:05.888Z",
+      "lastAttemptAt": "2026-11-12T15:47:58.710Z",
       "history": [
         {
           "eventId": "a5a2aae71cc3c8f955f553ed2c7f8f7f2e0cedf8d932229e2abfb06c259659b2",
@@ -5140,6 +5620,36 @@
             "id": "listing:automarket:308024"
           },
           "changes": {}
+        },
+        {
+          "eventId": "9ccc18746d0f3373247ad3c9072074d83c96544a525ed6c34dd15594238dee06",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:59.421Z",
+          "url": "https://www.automarket.pl/oferta/hyundai/i30/308024/zakup?f=IjM2LDIwLDIwMDAwLDEsMzAi",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.automarket.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:automarket:308024"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "5ea6ace92cc134eadca3a36b642a963c6804d1344d206b8d86c1d34e58505f0f",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:47:58.710Z",
+          "url": "https://www.automarket.pl/oferta/hyundai/i30/308024/zakup?f=IjM2LDIwLDIwMDAwLDEsMzAi",
+          "availability": "access_error",
+          "note": "Portal zwrócił HTTP 404; sam kod nie potwierdza zamknięcia ogłoszenia.",
+          "httpStatus": 404,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:automarket:308024"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -5221,12 +5731,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/hyundai-i30-hyundai-i30-1-4-mpi-100-km-2018-polski-salon-160-tys-km-CID5-ID1cwXpB.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:32:03.264Z",
+          "lastAttemptAt": "2026-11-12T15:47:43.476Z",
           "lastCheckedAt": "2026-11-10T23:04:44Z",
           "lastVerifiedAt": "2026-11-10T23:04:44Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/hyundai-i30-hyundai-i30-1-4-mpi-100-km-2018-polski-salon-160-tys-km-CID5-ID1cwXpB.html",
-            "checkedAt": "2026-11-11T16:32:03.264Z",
+            "checkedAt": "2026-11-12T15:47:43.476Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -5235,7 +5745,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:04:44Z",
       "lastVerifiedAt": "2026-11-10T23:04:44Z",
-      "lastAttemptAt": "2026-11-11T16:32:03.264Z",
+      "lastAttemptAt": "2026-11-12T15:47:43.476Z",
       "history": [
         {
           "eventId": "ec1e01efbeff74d08af8e5a8cef3088efb0edeeff1be5aead6bf9dbfb753ea9e",
@@ -5618,6 +6128,36 @@
             "id": "listing:olx:1101065415"
           },
           "changes": {}
+        },
+        {
+          "eventId": "c1ceaccced81e3c11034eff2f235481c1b1917b570251ab1d74514842c7dc120",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:37.806Z",
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-hyundai-i30-1-4-mpi-100-km-2018-polski-salon-160-tys-km-CID5-ID1cwXpB.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1101065415"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "9ae6c3c9501c2d43896b61f639a8ed05b2084797ebd9dc5aa201fcf4371145ba",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:47:43.476Z",
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-hyundai-i30-1-4-mpi-100-km-2018-polski-salon-160-tys-km-CID5-ID1cwXpB.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1101065415"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -5711,12 +6251,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-5-dpi-life-salon-polska-1-wlasciciel-vat-23-klima-tempomat-CID5-ID1c31JL.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:32:03.264Z",
+          "lastAttemptAt": "2026-11-12T15:47:45.861Z",
           "lastCheckedAt": "2026-11-10T23:04:44Z",
           "lastVerifiedAt": "2026-11-10T23:04:44Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-5-dpi-life-salon-polska-1-wlasciciel-vat-23-klima-tempomat-CID5-ID1c31JL.html",
-            "checkedAt": "2026-11-11T16:32:03.264Z",
+            "checkedAt": "2026-11-12T15:47:45.861Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -5725,7 +6265,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:04:44Z",
       "lastVerifiedAt": "2026-11-10T23:04:44Z",
-      "lastAttemptAt": "2026-11-11T16:32:03.264Z",
+      "lastAttemptAt": "2026-11-12T15:47:45.861Z",
       "history": [
         {
           "eventId": "2ee420c564f5df4fa2746e2e25e779229865f243bd0b79f04548b2358c437bbf",
@@ -6105,6 +6645,36 @@
             "id": "listing:olx:1094170529"
           },
           "changes": {}
+        },
+        {
+          "eventId": "9129907d110b47226272f414f422b16f45b9c55d6de4aec05027007e6133b808",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:41.438Z",
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-5-dpi-life-salon-polska-1-wlasciciel-vat-23-klima-tempomat-CID5-ID1c31JL.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1094170529"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "c9fb20e96890de05dc9f5249d231759e107615da4fcb8a63f3d32eaf86ec3576",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:47:45.861Z",
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-5-dpi-life-salon-polska-1-wlasciciel-vat-23-klima-tempomat-CID5-ID1c31JL.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1094170529"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -6187,12 +6757,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/hyundai-i30-CID5-ID1d4NOB.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:36:04.893Z",
+          "lastAttemptAt": "2026-11-12T15:47:45.862Z",
           "lastCheckedAt": "2026-11-10T23:04:23Z",
           "lastVerifiedAt": "2026-11-10T23:04:23Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/hyundai-i30-CID5-ID1d4NOB.html",
-            "checkedAt": "2026-11-11T16:36:04.893Z",
+            "checkedAt": "2026-11-12T15:47:45.862Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -6201,7 +6771,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:04:23Z",
       "lastVerifiedAt": "2026-11-10T23:04:23Z",
-      "lastAttemptAt": "2026-11-11T16:36:04.893Z",
+      "lastAttemptAt": "2026-11-12T15:47:45.862Z",
       "history": [
         {
           "eventId": "41e696c42222ba28e7d5b8df5f6d5d4ca028dc4e867b277b7b7a5c47a54c1b4f",
@@ -6454,6 +7024,36 @@
             "id": "listing:olx:1109370005"
           },
           "changes": {}
+        },
+        {
+          "eventId": "cd291429388d1f56cda12414b34e125bd5f505a20d4901bdf783d3e5e32a4476",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:41.438Z",
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-CID5-ID1d4NOB.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1109370005"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "3e15f78c57e7c47b2956c1d15635fd83ff585c3953f5d0ce8da3bfce64556aa3",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:47:45.862Z",
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-CID5-ID1d4NOB.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1109370005"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -6528,26 +7128,26 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiMLq.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T15:40:57.712Z",
+          "lastAttemptAt": "2026-11-12T15:47:50.578Z",
           "lastCheckedAt": "2026-11-10T23:02:06Z",
           "lastVerifiedAt": "2026-11-10T23:02:06Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiMLq.html",
-            "checkedAt": "2026-11-11T15:40:57.712Z",
+            "checkedAt": "2026-11-12T15:47:50.578Z",
             "availability": "access_error",
-            "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
           }
         },
         {
           "url": "https://www.olx.pl/d/oferta/hyundai-i30-tylko-63tys-km-bezwypadkowy-salon-pl-1-5-110km-pl-CID5-ID1d1NKr.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:36:04.894Z",
+          "lastAttemptAt": "2026-11-12T15:47:45.862Z",
           "lastCheckedAt": "2026-11-10T22:59:22Z",
           "lastVerifiedAt": "2026-11-10T22:59:22Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/hyundai-i30-tylko-63tys-km-bezwypadkowy-salon-pl-1-5-110km-pl-CID5-ID1d1NKr.html",
-            "checkedAt": "2026-11-11T16:36:04.894Z",
+            "checkedAt": "2026-11-12T15:47:45.862Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -6556,7 +7156,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:02:06Z",
       "lastVerifiedAt": "2026-11-10T23:02:06Z",
-      "lastAttemptAt": "2026-11-11T16:36:04.894Z",
+      "lastAttemptAt": "2026-11-12T15:47:50.578Z",
       "history": [
         {
           "eventId": "6faa416271cb8590a8a25b2509bcc04a962485bc981dcd8caeb7680cf9652350",
@@ -6935,6 +7535,66 @@
             "id": "vin:TMAH281CANJ118698"
           },
           "changes": {}
+        },
+        {
+          "eventId": "333559557fa513e4e0d73104b2a449bd8750b9864bab18dc35e298c5f3ac14b0",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:41.438Z",
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-tylko-63tys-km-bezwypadkowy-salon-pl-1-5-110km-pl-CID5-ID1d1NKr.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TMAH281CANJ118698"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "fc1e0ce9532e4939b14885d52dc4de3130ae173fae9d98cbc0caf98285cfe6a3",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:48.748Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiMLq.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TMAH281CANJ118698"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "46e2657b07f67ddf14301ed7f7f7ab908a52b733306e21efc92b0dde9a518e86",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:47:45.862Z",
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-tylko-63tys-km-bezwypadkowy-salon-pl-1-5-110km-pl-CID5-ID1d1NKr.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TMAH281CANJ118698"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "a035c5ff8ccae7898cfafb727f817405652e8ed3e9abf6f7c819e5c92eb059e7",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:47:50.578Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiMLq.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TMAH281CANJ118698"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -7006,21 +7666,21 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IjeFS.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T15:40:57.712Z",
+          "lastAttemptAt": "2026-11-12T15:47:50.578Z",
           "lastCheckedAt": "2026-11-10T23:02:06Z",
           "lastVerifiedAt": "2026-11-10T23:02:06Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IjeFS.html",
-            "checkedAt": "2026-11-11T15:40:57.712Z",
+            "checkedAt": "2026-11-12T15:47:50.578Z",
             "availability": "access_error",
-            "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-10T23:02:06Z",
       "lastVerifiedAt": "2026-11-10T23:02:06Z",
-      "lastAttemptAt": "2026-11-11T15:40:57.712Z",
+      "lastAttemptAt": "2026-11-12T15:47:50.578Z",
       "history": [
         {
           "eventId": "24237e7168820012dfef78df727c91d9b11fbc6444ed9de6ff0f776b9222362c",
@@ -7259,6 +7919,36 @@
             "id": "listing:otomoto:ID6IjeFS"
           },
           "changes": {}
+        },
+        {
+          "eventId": "47a372d5fe24f27237c1a5e314f72d3d3142a7b23160bff6c23bbcac6dce450a",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:48.748Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IjeFS.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IjeFS"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "cb5d4f0533f781e2c06726ec7d54615ccb5889ce9c424d806e0fdd2af3f3b0b0",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:47:50.578Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IjeFS.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IjeFS"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -7331,21 +8021,21 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6Iiq7J.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T15:37:12.522Z",
+          "lastAttemptAt": "2026-11-12T15:47:50.578Z",
           "lastCheckedAt": "2026-11-10T23:02:06Z",
           "lastVerifiedAt": "2026-11-10T23:02:06Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6Iiq7J.html",
-            "checkedAt": "2026-11-11T15:37:12.522Z",
+            "checkedAt": "2026-11-12T15:47:50.578Z",
             "availability": "access_error",
-            "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-10T23:02:06Z",
       "lastVerifiedAt": "2026-11-10T23:02:06Z",
-      "lastAttemptAt": "2026-11-11T15:37:12.522Z",
+      "lastAttemptAt": "2026-11-12T15:47:50.578Z",
       "history": [
         {
           "eventId": "dfa21a98e1e3155d1b24c20cbf474c22468f15b398dbe2d8104e4eb9ffdb4b74",
@@ -7584,6 +8274,36 @@
             "id": "listing:otomoto:ID6Iiq7J"
           },
           "changes": {}
+        },
+        {
+          "eventId": "d52d53e0f934a99dbf1b5ac831b12c8bc476d62f6cb43aca5fbd8b6092901de0",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:48.749Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6Iiq7J.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6Iiq7J"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "3c875c14c643edaf3073c8f248b6e11ad7da63597f453a700c92bb2166641d8b",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:47:50.578Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6Iiq7J.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6Iiq7J"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -7656,21 +8376,21 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiUPp.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T15:37:12.523Z",
+          "lastAttemptAt": "2026-11-12T15:47:50.579Z",
           "lastCheckedAt": "2026-11-10T23:02:06Z",
           "lastVerifiedAt": "2026-11-10T23:02:06Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiUPp.html",
-            "checkedAt": "2026-11-11T15:37:12.523Z",
+            "checkedAt": "2026-11-12T15:47:50.579Z",
             "availability": "access_error",
-            "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-10T23:02:06Z",
       "lastVerifiedAt": "2026-11-10T23:02:06Z",
-      "lastAttemptAt": "2026-11-11T15:37:12.523Z",
+      "lastAttemptAt": "2026-11-12T15:47:50.579Z",
       "history": [
         {
           "eventId": "f822962f3df35413f6d916e7c520555ec11add01d96773dfc1cb500c0dfe3d70",
@@ -7909,6 +8629,36 @@
             "id": "listing:otomoto:ID6IiUPp"
           },
           "changes": {}
+        },
+        {
+          "eventId": "41344510d1b06934aefc7e0aed624f84f8134ac6ee4c78bc303826d361f62e20",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:48.749Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiUPp.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IiUPp"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "ea9198caf7ee97b906ddfa2f0f4caa47d3debe52d9709f9d66f1b9dca2e21158",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:47:50.579Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiUPp.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IiUPp"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -7981,21 +8731,21 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiF0O.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T15:37:12.523Z",
+          "lastAttemptAt": "2026-11-12T15:47:52.937Z",
           "lastCheckedAt": "2026-11-10T23:02:06Z",
           "lastVerifiedAt": "2026-11-10T23:02:06Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiF0O.html",
-            "checkedAt": "2026-11-11T15:37:12.523Z",
+            "checkedAt": "2026-11-12T15:47:52.937Z",
             "availability": "access_error",
-            "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-10T23:02:06Z",
       "lastVerifiedAt": "2026-11-10T23:02:06Z",
-      "lastAttemptAt": "2026-11-11T15:37:12.523Z",
+      "lastAttemptAt": "2026-11-12T15:47:52.937Z",
       "history": [
         {
           "eventId": "d6426ce0cf7f7b76ee5d43ae4a0652c9ff20cdd0e5490cd0d14e25ff936b1f77",
@@ -8159,6 +8909,36 @@
             "id": "listing:otomoto:ID6IiF0O"
           },
           "changes": {}
+        },
+        {
+          "eventId": "d22827cda8a718da2ab3484b548989b01c6989c16b642aaa773f2faf79a518a5",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:52.278Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiF0O.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IiF0O"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "64a1b7c6d6ca0e93e7fa07f8530ab7946c7f78032781cc16b2ec3aa0f6123a2d",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:47:52.937Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiF0O.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IiF0O"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -8230,21 +9010,21 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IhGRc.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T15:37:12.523Z",
+          "lastAttemptAt": "2026-11-12T15:47:52.938Z",
           "lastCheckedAt": "2026-11-10T23:02:06Z",
           "lastVerifiedAt": "2026-11-10T23:02:06Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IhGRc.html",
-            "checkedAt": "2026-11-11T15:37:12.523Z",
+            "checkedAt": "2026-11-12T15:47:52.938Z",
             "availability": "access_error",
-            "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-10T23:02:06Z",
       "lastVerifiedAt": "2026-11-10T23:02:06Z",
-      "lastAttemptAt": "2026-11-11T15:37:12.523Z",
+      "lastAttemptAt": "2026-11-12T15:47:52.938Z",
       "history": [
         {
           "eventId": "7bd1af73f95c2ef42f03a480adc4095ec9103b41491dac1d142cc3a337854631",
@@ -8407,6 +9187,36 @@
             "id": "listing:otomoto:ID6IhGRc"
           },
           "changes": {}
+        },
+        {
+          "eventId": "15bdcbc55e04954a6d36c9707475d3ca94c5ea579b34c24875be06b92aae4151",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:52.279Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IhGRc.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IhGRc"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "fd2ac6ce3f45b2ca1180cf88b9d4cd8bd616a63bc08f6611fefcd744d1256d6e",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:47:52.938Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IhGRc.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IhGRc"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -8478,21 +9288,21 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IegxD.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T15:37:12.524Z",
+          "lastAttemptAt": "2026-11-12T15:47:52.938Z",
           "lastCheckedAt": "2026-11-10T23:02:06Z",
           "lastVerifiedAt": "2026-11-10T23:02:06Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IegxD.html",
-            "checkedAt": "2026-11-11T15:37:12.524Z",
+            "checkedAt": "2026-11-12T15:47:52.938Z",
             "availability": "access_error",
-            "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-10T23:02:06Z",
       "lastVerifiedAt": "2026-11-10T23:02:06Z",
-      "lastAttemptAt": "2026-11-11T15:37:12.524Z",
+      "lastAttemptAt": "2026-11-12T15:47:52.938Z",
       "history": [
         {
           "eventId": "772dc24209fedac222708e5959858466aa7e438305d6238780189c26d4e5993a",
@@ -8727,6 +9537,36 @@
             "id": "listing:otomoto:ID6IegxD"
           },
           "changes": {}
+        },
+        {
+          "eventId": "4c733ba375272f5bf9ee9894c1d0f103a599191aaeb5a9c944edb4c527fc2fec",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:52.279Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IegxD.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IegxD"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "7415272854eaf3fe6ab4bd20ae4c20590c555aad585fdb4c2dc73fa76d657e33",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:47:52.938Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IegxD.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IegxD"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -8805,12 +9645,12 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiExw.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:35:52.442Z",
+          "lastAttemptAt": "2026-11-12T15:47:52.938Z",
           "lastCheckedAt": "2026-11-10T23:02:06Z",
           "lastVerifiedAt": "2026-11-10T23:02:06Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiExw.html",
-            "checkedAt": "2026-11-11T16:35:52.442Z",
+            "checkedAt": "2026-11-12T15:47:52.938Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -8819,13 +9659,19 @@
         {
           "url": "https://www.aaaauto.pl/detail/hyundai/i30/34923513?campaign=online-sale",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T15:37:35.001Z",
+          "lastAttemptAt": "2026-11-12T15:50:18.685Z",
           "lastObservation": {
             "url": "https://www.aaaauto.pl/detail/hyundai/i30/34923513?campaign=online-sale",
-            "checkedAt": "2026-11-11T15:37:35.001Z",
+            "checkedAt": "2026-11-12T15:50:18.685Z",
             "availability": "access_error",
-            "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.aaaauto.pl",
-            "httpStatus": null
+            "note": "Portal wyświetlił blokadę lub limit dostępu (HTTP 200).",
+            "httpStatus": 200,
+            "availabilityProof": {
+              "identity": false,
+              "contact": false,
+              "price": false,
+              "titleTokensMatched": 0
+            }
           },
           "lastCheckedAt": "2026-11-10T23:19:38Z",
           "lastVerifiedAt": "2026-11-10T23:19:38Z"
@@ -8833,7 +9679,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:19:38Z",
       "lastVerifiedAt": "2026-11-10T23:19:38Z",
-      "lastAttemptAt": "2026-11-11T16:35:52.442Z",
+      "lastAttemptAt": "2026-11-12T15:50:18.685Z",
       "history": [
         {
           "eventId": "bedf2ced94b0db9a6bd05a8d03a653946e89bee289ff32e1c3a75c9721da20ea",
@@ -9144,6 +9990,66 @@
             "id": "listing:otomoto:ID6IiExw"
           },
           "changes": {}
+        },
+        {
+          "eventId": "90721cc4c8f66f430a1becbd906e8db0f97f963ac6429f57e392719a5ddfe269",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:52.279Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiExw.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IiExw"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "fae3fd72d166538a5d684f80cfcfff03c71dbe197b9970008003084941e27247",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:39:12.510Z",
+          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34923513?campaign=online-sale",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.aaaauto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IiExw"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "e4211042e8eee59e0760b33af73293ed5412aaca2e191ed27fc932bfdbe1148e",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:47:52.938Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiExw.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IiExw"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "f0659a0d1bdcce1dfc41ff82b54e68763fe0d587cb0bfc56a2ebded35652136a",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:50:18.685Z",
+          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34923513?campaign=online-sale",
+          "availability": "access_error",
+          "note": "Portal wyświetlił blokadę lub limit dostępu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IiExw"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -9215,19 +10121,25 @@
         {
           "url": "https://www.aaaauto.pl/detail/hyundai/i30/34811098",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T15:37:35.002Z",
+          "lastAttemptAt": "2026-11-12T15:50:18.686Z",
           "lastObservation": {
             "url": "https://www.aaaauto.pl/detail/hyundai/i30/34811098",
-            "checkedAt": "2026-11-11T15:37:35.002Z",
+            "checkedAt": "2026-11-12T15:50:18.686Z",
             "availability": "access_error",
-            "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.aaaauto.pl",
-            "httpStatus": null
+            "note": "Portal wyświetlił blokadę lub limit dostępu (HTTP 200).",
+            "httpStatus": 200,
+            "availabilityProof": {
+              "identity": false,
+              "contact": false,
+              "price": false,
+              "titleTokensMatched": 0
+            }
           },
           "lastCheckedAt": "2026-11-10T23:19:38Z",
           "lastVerifiedAt": "2026-11-10T23:19:38Z"
         }
       ],
-      "lastAttemptAt": "2026-11-11T15:37:35.002Z",
+      "lastAttemptAt": "2026-11-12T15:50:18.686Z",
       "history": [
         {
           "eventId": "822c06376caf90c962dcc91464024e1cd71b2d0c75410394b931ad177adc28ad",
@@ -9484,6 +10396,36 @@
             "id": "listing:aaaauto:34811098"
           },
           "changes": {}
+        },
+        {
+          "eventId": "5736bc6bd7b793e8190df0dc44d140ca3256fafbc3d18fddd66f61ecdedbfca1",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:39:12.510Z",
+          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34811098",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.aaaauto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:aaaauto:34811098"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "c6b620ac4b9ad42439a59cbb95b593ab7a893e7796b43ca332110091bee63de7",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:50:18.686Z",
+          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34811098",
+          "availability": "access_error",
+          "note": "Portal wyświetlił blokadę lub limit dostępu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:aaaauto:34811098"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -9575,12 +10517,12 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IhJS4.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:35:52.443Z",
+          "lastAttemptAt": "2026-11-12T15:47:52.938Z",
           "lastCheckedAt": "2026-11-10T23:02:06Z",
           "lastVerifiedAt": "2026-11-10T23:02:06Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IhJS4.html",
-            "checkedAt": "2026-11-11T16:35:52.443Z",
+            "checkedAt": "2026-11-12T15:47:52.938Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -9589,13 +10531,19 @@
         {
           "url": "https://www.aaaauto.pl/detail/hyundai/i30/34905225",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T15:37:35.002Z",
+          "lastAttemptAt": "2026-11-12T15:50:18.687Z",
           "lastObservation": {
             "url": "https://www.aaaauto.pl/detail/hyundai/i30/34905225",
-            "checkedAt": "2026-11-11T15:37:35.002Z",
+            "checkedAt": "2026-11-12T15:50:18.687Z",
             "availability": "access_error",
-            "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.aaaauto.pl",
-            "httpStatus": null
+            "note": "Portal wyświetlił blokadę lub limit dostępu (HTTP 200).",
+            "httpStatus": 200,
+            "availabilityProof": {
+              "identity": false,
+              "contact": false,
+              "price": false,
+              "titleTokensMatched": 0
+            }
           },
           "lastCheckedAt": "2026-11-10T23:19:38Z",
           "lastVerifiedAt": "2026-11-10T23:19:38Z"
@@ -9603,7 +10551,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:19:38Z",
       "lastVerifiedAt": "2026-11-10T23:19:38Z",
-      "lastAttemptAt": "2026-11-11T16:35:52.443Z",
+      "lastAttemptAt": "2026-11-12T15:50:18.687Z",
       "history": [
         {
           "eventId": "4541497e15aad5a475e6697361a398df3cfe4b78c73b546627267ba965e394c6",
@@ -10022,6 +10970,66 @@
             "id": "listing:aaaauto:34905225"
           },
           "changes": {}
+        },
+        {
+          "eventId": "8cd0fe926248ce32829a09d7b641473571b6f7818d79d4d64048c246024daee1",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:52.280Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IhJS4.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:aaaauto:34905225"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "ecb7550ebb7a31213453fc8e1db5a103952eed4f06aba9717f3379348e66d493",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:39:12.511Z",
+          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34905225",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.aaaauto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:aaaauto:34905225"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "a1b72768ccdcffff61b883ca44cd6b8df40e5bd80b88fbc359d43efb26ac4edf",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:47:52.938Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IhJS4.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:aaaauto:34905225"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "e06022934f73465591e20ba9eb08b9ef6770ce119e82758f766bcab5487db425",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:50:18.687Z",
+          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34905225",
+          "availability": "access_error",
+          "note": "Portal wyświetlił blokadę lub limit dostępu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:aaaauto:34905225"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -10095,12 +11103,12 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IgIXq.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:35:52.443Z",
+          "lastAttemptAt": "2026-11-12T15:47:55.287Z",
           "lastCheckedAt": "2026-11-10T23:02:06Z",
           "lastVerifiedAt": "2026-11-10T23:02:06Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IgIXq.html",
-            "checkedAt": "2026-11-11T16:35:52.443Z",
+            "checkedAt": "2026-11-12T15:47:55.287Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -10109,7 +11117,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:02:06Z",
       "lastVerifiedAt": "2026-11-10T23:02:06Z",
-      "lastAttemptAt": "2026-11-11T16:35:52.443Z",
+      "lastAttemptAt": "2026-11-12T15:47:55.287Z",
       "history": [
         {
           "eventId": "b98a5fe6030c95b1b1e14cf8603abaea206144c346a843828b7a93f0d6e31626",
@@ -10352,6 +11360,36 @@
             "id": "listing:otomoto:ID6IgIXq"
           },
           "changes": {}
+        },
+        {
+          "eventId": "4bcb3601e4bc120263e7af02840b86000901c5566e3ad493b8b15f1fdad7f7e7",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:55.726Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IgIXq.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IgIXq"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "f48b177bf48bc90a262de11f1028c7033e3bfe5c9d2db2ffcc96231a69c67bff",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:47:55.287Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IgIXq.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IgIXq"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -10439,12 +11477,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/hyundai-i30-combi-1-4-tb-140-ps-serwis-1wszy-wlasciciel-CID5-ID17OFy8.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:36:04.894Z",
+          "lastAttemptAt": "2026-11-12T15:47:45.862Z",
           "lastCheckedAt": "2026-11-10T23:04:44Z",
           "lastVerifiedAt": "2026-11-10T23:04:44Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/hyundai-i30-combi-1-4-tb-140-ps-serwis-1wszy-wlasciciel-CID5-ID17OFy8.html",
-            "checkedAt": "2026-11-11T16:36:04.894Z",
+            "checkedAt": "2026-11-12T15:47:45.862Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -10453,7 +11491,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:04:44Z",
       "lastVerifiedAt": "2026-11-10T23:04:44Z",
-      "lastAttemptAt": "2026-11-11T16:36:04.894Z",
+      "lastAttemptAt": "2026-11-12T15:47:45.862Z",
       "history": [
         {
           "eventId": "25eaeb08dc76c58289ebd26c39f3d31ba99e534d9b647f98bc03e3268b481465",
@@ -10834,6 +11872,36 @@
             "id": "listing:olx:1031643304"
           },
           "changes": {}
+        },
+        {
+          "eventId": "efee423243593446962b72ba2a5ec76289498f7ef23b5b5960d8f0295813777f",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:41.439Z",
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-combi-1-4-tb-140-ps-serwis-1wszy-wlasciciel-CID5-ID17OFy8.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1031643304"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "05003ef40f3f0e28187b31d14c7e41a3bde76a2e7bf3bb53849dff391ca487f1",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:47:45.862Z",
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-combi-1-4-tb-140-ps-serwis-1wszy-wlasciciel-CID5-ID17OFy8.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1031643304"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -10924,12 +11992,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-4-mpi-stan-idealny-navi-alu-top-czujniki-CID5-ID1bZMKh.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:36:04.894Z",
+          "lastAttemptAt": "2026-11-12T15:47:45.863Z",
           "lastCheckedAt": "2026-11-10T23:04:44Z",
           "lastVerifiedAt": "2026-11-10T23:04:44Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-4-mpi-stan-idealny-navi-alu-top-czujniki-CID5-ID1bZMKh.html",
-            "checkedAt": "2026-11-11T16:36:04.894Z",
+            "checkedAt": "2026-11-12T15:47:45.863Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -10938,7 +12006,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:04:44Z",
       "lastVerifiedAt": "2026-11-10T23:04:44Z",
-      "lastAttemptAt": "2026-11-11T16:36:04.894Z",
+      "lastAttemptAt": "2026-11-12T15:47:45.863Z",
       "history": [
         {
           "eventId": "566df1d258f9c83d7b0c8188ebc80c414aedccf484aabbc6a24008978c7015f3",
@@ -11321,6 +12389,36 @@
             "id": "listing:olx:1093397917"
           },
           "changes": {}
+        },
+        {
+          "eventId": "f2ba6ccc4ed4c2529b8999c3cce3437f3ae1efad9cecb37e19046d4b7b6fae29",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:41.439Z",
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-4-mpi-stan-idealny-navi-alu-top-czujniki-CID5-ID1bZMKh.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1093397917"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "82173b16c5906ee7266a8c1844ece75ced75e4dbfd92190337d4556383abb84d",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:47:45.863Z",
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-4-mpi-stan-idealny-navi-alu-top-czujniki-CID5-ID1bZMKh.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1093397917"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -11387,12 +12485,12 @@
         {
           "url": "https://autopunkt.pl/samochod/krakow/kombi/hyundai/i30/id/111386",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:36:50.402Z",
+          "lastAttemptAt": "2026-11-12T15:48:04.016Z",
           "lastCheckedAt": "2026-11-10T23:07:27Z",
           "lastVerifiedAt": "2026-11-10T23:07:27Z",
           "lastObservation": {
             "url": "https://autopunkt.pl/samochod/krakow/kombi/hyundai/i30/id/111386",
-            "checkedAt": "2026-11-11T16:36:50.402Z",
+            "checkedAt": "2026-11-12T15:48:04.016Z",
             "availability": "access_error",
             "note": "Brak potwierdzenia aktywnej karty: tytuł=true, cena=true, kontakt=false (HTTP 200).",
             "httpStatus": 200,
@@ -11407,7 +12505,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:07:27Z",
       "lastVerifiedAt": "2026-11-10T23:07:27Z",
-      "lastAttemptAt": "2026-11-11T16:36:50.402Z",
+      "lastAttemptAt": "2026-11-12T15:48:04.016Z",
       "history": [
         {
           "eventId": "6e79664231f303ab6429b8cd485f30240b0d386b440f8a69571cc59f93ccdba7",
@@ -11723,6 +12821,36 @@
             "id": "listing:autopunkt:AAU05643IE"
           },
           "changes": {}
+        },
+        {
+          "eventId": "50456907dc6926f613b8a4e60a8692030eeb1ef98ba4c1ce8e361b529357369f",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:03.082Z",
+          "url": "https://autopunkt.pl/samochod/krakow/kombi/hyundai/i30/id/111386",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND autopunkt.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autopunkt:AAU05643IE"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "323a348c0dcf447035549955fcaf05d7ff883e1f50296d3df86bdb9a0dbf3df8",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:04.016Z",
+          "url": "https://autopunkt.pl/samochod/krakow/kombi/hyundai/i30/id/111386",
+          "availability": "access_error",
+          "note": "Brak potwierdzenia aktywnej karty: tytuł=true, cena=true, kontakt=false (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autopunkt:AAU05643IE"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -11791,12 +12919,12 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6Iifp5.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:35:52.443Z",
+          "lastAttemptAt": "2026-11-12T15:47:55.288Z",
           "lastCheckedAt": "2026-11-10T23:02:06Z",
           "lastVerifiedAt": "2026-11-10T23:02:06Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6Iifp5.html",
-            "checkedAt": "2026-11-11T16:35:52.443Z",
+            "checkedAt": "2026-11-12T15:47:55.288Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -11805,7 +12933,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:02:06Z",
       "lastVerifiedAt": "2026-11-10T23:02:06Z",
-      "lastAttemptAt": "2026-11-11T16:35:52.443Z",
+      "lastAttemptAt": "2026-11-12T15:47:55.288Z",
       "history": [
         {
           "eventId": "d034a6c503b4be4cbdbc989d56774a62d51982de4579b8ad618301b5dcc558c2",
@@ -12033,6 +13161,36 @@
             "id": "listing:otomoto:ID6Iifp5"
           },
           "changes": {}
+        },
+        {
+          "eventId": "31cc3cd89fe20e74b2493b559ff23b382dfc499d45ffabd1a727889f6a05ba56",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:55.727Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6Iifp5.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6Iifp5"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "0cb835ddbf5d9548588b5e6cebf8af80d401be5b6845cd34908a2adcae862874",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:47:55.288Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6Iifp5.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6Iifp5"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -12099,12 +13257,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-5-dpi-classic-110km-krajowy-serwisowany-1wl-fv23-bezwypadkowy-CID5-ID1cYUz2.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:36:04.894Z",
+          "lastAttemptAt": "2026-11-12T15:47:48.167Z",
           "lastCheckedAt": "2026-11-10T23:04:44Z",
           "lastVerifiedAt": "2026-11-10T23:04:44Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-5-dpi-classic-110km-krajowy-serwisowany-1wl-fv23-bezwypadkowy-CID5-ID1cYUz2.html",
-            "checkedAt": "2026-11-11T16:36:04.894Z",
+            "checkedAt": "2026-11-12T15:47:48.167Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -12113,7 +13271,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:04:44Z",
       "lastVerifiedAt": "2026-11-10T23:04:44Z",
-      "lastAttemptAt": "2026-11-11T16:36:04.894Z",
+      "lastAttemptAt": "2026-11-12T15:47:48.167Z",
       "history": [
         {
           "eventId": "941cf270ffcbb54ead248f88d3e3f948ddc583e60aec99bca41f929e365a6a86",
@@ -12342,6 +13500,36 @@
             "id": "listing:olx:ID1cYUz2"
           },
           "changes": {}
+        },
+        {
+          "eventId": "d250abd95b3a3b19875f43b784e3974832a1bf1e6778dacfc81276cb403a2215",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:45.116Z",
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-5-dpi-classic-110km-krajowy-serwisowany-1wl-fv23-bezwypadkowy-CID5-ID1cYUz2.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:ID1cYUz2"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "41a844e36bb1aac58ec9241d37033a38cfa18fa94a528754a5c7d00729639a51",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:47:48.167Z",
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-5-dpi-classic-110km-krajowy-serwisowany-1wl-fv23-bezwypadkowy-CID5-ID1cYUz2.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:ID1cYUz2"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -12416,12 +13604,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-4turbo-100tys-przebiegu-panorama-grzane-fotele-i-kiera-czarny-sufit-CID5-ID1d23kM.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:36:04.127Z",
+          "lastAttemptAt": "2026-11-12T15:47:48.168Z",
           "lastCheckedAt": "2026-11-10T23:04:23Z",
           "lastVerifiedAt": "2026-11-10T23:04:23Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-4turbo-100tys-przebiegu-panorama-grzane-fotele-i-kiera-czarny-sufit-CID5-ID1d23kM.html",
-            "checkedAt": "2026-11-11T16:36:04.127Z",
+            "checkedAt": "2026-11-12T15:47:48.168Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -12430,7 +13618,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:04:23Z",
       "lastVerifiedAt": "2026-11-10T23:04:23Z",
-      "lastAttemptAt": "2026-11-11T16:36:04.127Z",
+      "lastAttemptAt": "2026-11-12T15:47:48.168Z",
       "history": [
         {
           "eventId": "0b4ea6fc7a7ee40ce23a902148d4306e24b39fac4395f2d28fa05e0e6f30d980",
@@ -12692,6 +13880,36 @@
             "id": "listing:olx:1108714676"
           },
           "changes": {}
+        },
+        {
+          "eventId": "70df4a28b33aca9f002cbb66de97b0baedf1138f144fde44e8d3a21917df542d",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:45.117Z",
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-4turbo-100tys-przebiegu-panorama-grzane-fotele-i-kiera-czarny-sufit-CID5-ID1d23kM.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1108714676"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "d12c719ea358dde534f3e2585fcc6bf0d8e9aecaef3246dc3cd5c94fdd570c2d",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:47:48.168Z",
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-4turbo-100tys-przebiegu-panorama-grzane-fotele-i-kiera-czarny-sufit-CID5-ID1d23kM.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1108714676"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -12763,12 +13981,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/hyundai-i30-hyundai-i30-1-5-dpi-comfort-2021-rok-salon-polska-doinwestowany-CID5-ID1dafV1.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:36:04.128Z",
+          "lastAttemptAt": "2026-11-12T15:47:48.168Z",
           "lastCheckedAt": "2026-11-10T23:04:23Z",
           "lastVerifiedAt": "2026-11-10T23:04:23Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/hyundai-i30-hyundai-i30-1-5-dpi-comfort-2021-rok-salon-polska-doinwestowany-CID5-ID1dafV1.html",
-            "checkedAt": "2026-11-11T16:36:04.128Z",
+            "checkedAt": "2026-11-12T15:47:48.168Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -12777,7 +13995,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:04:23Z",
       "lastVerifiedAt": "2026-11-10T23:04:23Z",
-      "lastAttemptAt": "2026-11-11T16:36:04.128Z",
+      "lastAttemptAt": "2026-11-12T15:47:48.168Z",
       "history": [
         {
           "eventId": "cd09a3e22c08632db8f512ea9d5025fcaeae14b26db7b5c23a510c8d82d0dc97",
@@ -13039,6 +14257,36 @@
             "id": "listing:olx:1110669737"
           },
           "changes": {}
+        },
+        {
+          "eventId": "1ffc559ad1b8656deaff753c67e7765b305e24353ce884f6e42dca9ed142b9c8",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:45.117Z",
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-hyundai-i30-1-5-dpi-comfort-2021-rok-salon-polska-doinwestowany-CID5-ID1dafV1.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1110669737"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "34d53a1eac2ffb0aaeeecb92e14f3dff154fd0812cc06d369a0a67e8ea7e0bc1",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:47:48.168Z",
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-hyundai-i30-1-5-dpi-comfort-2021-rok-salon-polska-doinwestowany-CID5-ID1dafV1.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1110669737"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -13110,12 +14358,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-4-classic-2018-kombi-CID5-ID1cQKJP.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:36:04.128Z",
+          "lastAttemptAt": "2026-11-12T15:47:48.168Z",
           "lastCheckedAt": "2026-11-10T23:04:23Z",
           "lastVerifiedAt": "2026-11-10T23:04:23Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-4-classic-2018-kombi-CID5-ID1cQKJP.html",
-            "checkedAt": "2026-11-11T16:36:04.128Z",
+            "checkedAt": "2026-11-12T15:47:48.168Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -13124,7 +14372,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:04:23Z",
       "lastVerifiedAt": "2026-11-10T23:04:23Z",
-      "lastAttemptAt": "2026-11-11T16:36:04.128Z",
+      "lastAttemptAt": "2026-11-12T15:47:48.168Z",
       "history": [
         {
           "eventId": "7c7814acb88fb30266916c818d3ef5a4ecb9e5cd089dd786c7d558a98cabe987",
@@ -13395,6 +14643,36 @@
             "id": "listing:olx:1106021585"
           },
           "changes": {}
+        },
+        {
+          "eventId": "ac47f4c0c760923a3e8835b23d16653884b817d10e784bca620ea17168de25bb",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:45.117Z",
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-4-classic-2018-kombi-CID5-ID1cQKJP.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1106021585"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "7d48941e792727aa070f461af64ea6fbb18bae2688fa07bb69d4c0e5d08ca455",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:47:48.168Z",
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-4-classic-2018-kombi-CID5-ID1cQKJP.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1106021585"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -13459,12 +14737,12 @@
         {
           "url": "https://www.hyundai.koreamotors.pl/samochod/hyundai-i30-i30-fl-wagon-5dr-1-5-dpi-110km-2wd-6mt/id/119690",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:40:48.037Z",
+          "lastAttemptAt": "2026-11-12T15:50:21.662Z",
           "lastCheckedAt": "2026-11-10T23:19:20Z",
           "lastVerifiedAt": "2026-11-10T23:19:20Z",
           "lastObservation": {
             "url": "https://www.hyundai.koreamotors.pl/samochod/hyundai-i30-i30-fl-wagon-5dr-1-5-dpi-110km-2wd-6mt/id/119690",
-            "checkedAt": "2026-11-11T16:40:48.037Z",
+            "checkedAt": "2026-11-12T15:50:21.662Z",
             "availability": "access_error",
             "note": "Portal zwrócił HTTP 404; sam kod nie potwierdza zamknięcia ogłoszenia.",
             "httpStatus": 404
@@ -13473,7 +14751,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:19:20Z",
       "lastVerifiedAt": "2026-11-10T23:19:20Z",
-      "lastAttemptAt": "2026-11-11T16:40:48.037Z",
+      "lastAttemptAt": "2026-11-12T15:50:21.662Z",
       "history": [
         {
           "eventId": "4bc7bc872e778b264dc41b93d97c976d0e1c3bcc8391c37891e725ec356d1fa0",
@@ -13705,6 +14983,36 @@
             "id": "listing:hyundai-korea-motors:KAU0197IE"
           },
           "changes": {}
+        },
+        {
+          "eventId": "b45f8a39907d707888dfbf7a74d85f35de8e481113d31fb9032b7f96fa488430",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:39:16.029Z",
+          "url": "https://www.hyundai.koreamotors.pl/samochod/hyundai-i30-i30-fl-wagon-5dr-1-5-dpi-110km-2wd-6mt/id/119690",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.hyundai.koreamotors.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:hyundai-korea-motors:KAU0197IE"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "037c12d0e45f61640e8d6f7c6527ddfa62481e1890006fc6448e32745fdab716",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:50:21.662Z",
+          "url": "https://www.hyundai.koreamotors.pl/samochod/hyundai-i30-i30-fl-wagon-5dr-1-5-dpi-110km-2wd-6mt/id/119690",
+          "availability": "access_error",
+          "note": "Portal zwrócił HTTP 404; sam kod nie potwierdza zamknięcia ogłoszenia.",
+          "httpStatus": 404,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:hyundai-korea-motors:KAU0197IE"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -13774,21 +15082,27 @@
         {
           "url": "https://www.aaaauto.pl/detail/hyundai/i30/34920519",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T15:37:35.003Z",
+          "lastAttemptAt": "2026-11-12T15:50:19.074Z",
           "lastCheckedAt": "2026-11-10T23:19:38Z",
           "lastVerifiedAt": "2026-11-10T23:19:38Z",
           "lastObservation": {
             "url": "https://www.aaaauto.pl/detail/hyundai/i30/34920519",
-            "checkedAt": "2026-11-11T15:37:35.003Z",
+            "checkedAt": "2026-11-12T15:50:19.074Z",
             "availability": "access_error",
-            "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.aaaauto.pl",
-            "httpStatus": null
+            "note": "Portal wyświetlił blokadę lub limit dostępu (HTTP 200).",
+            "httpStatus": 200,
+            "availabilityProof": {
+              "identity": false,
+              "contact": false,
+              "price": false,
+              "titleTokensMatched": 0
+            }
           }
         }
       ],
       "lastCheckedAt": "2026-11-10T23:19:38Z",
       "lastVerifiedAt": "2026-11-10T23:19:38Z",
-      "lastAttemptAt": "2026-11-11T15:37:35.003Z",
+      "lastAttemptAt": "2026-11-12T15:50:19.074Z",
       "history": [
         {
           "eventId": "c9963abb803328de2e07851854c110b41c52fd2a47a8e399919ba5773525b1f6",
@@ -14032,6 +15346,36 @@
             "id": "listing:aaaauto:34920519"
           },
           "changes": {}
+        },
+        {
+          "eventId": "78445eb8ef1fbac8bf0f330027aee66a61919940927076db3c12c462da6ac8a7",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:39:12.511Z",
+          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34920519",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.aaaauto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:aaaauto:34920519"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "3394e9c94bb151da3fde838b2dcef0fcac02e63d98cf80cd0fcd92544ff0e0c4",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:50:19.074Z",
+          "url": "https://www.aaaauto.pl/detail/hyundai/i30/34920519",
+          "availability": "access_error",
+          "note": "Portal wyświetlił blokadę lub limit dostępu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:aaaauto:34920519"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -14099,39 +15443,21 @@
         {
           "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-4-go-100km-2018r-CID5-ID1bZ5by.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T17:04:17.848Z",
+          "lastAttemptAt": "2026-11-12T15:47:48.168Z",
           "lastCheckedAt": "2026-11-11T17:04:17.848Z",
           "lastVerifiedAt": "2026-11-11T17:04:17.848Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-4-go-100km-2018r-CID5-ID1bZ5by.html",
-            "checkedAt": "2026-11-11T17:04:17.848Z",
-            "availability": "available",
-            "note": "Otwarta karta podaje Hyundai i30 kombi 2018, 1.4 MPI 100 KM, manualna skrzynia, 78 140 km i 43 500 zł. Opis wymienia kamerę cofania i zachęca do oględzin; aktywne kontrolki kontaktu, sprzedawca online poprzedniego dnia. LPG nieustalone. Dane karty pochodziły z odczytu aktualizowanego około dwóch miesięcy temu, dlatego bieżąca dostępność potwierdzona słabiej niż dla ogłoszenia dodanego dziś.",
-            "evidence": [
-              {
-                "kind": "seller",
-                "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-4-go-100km-2018r-CID5-ID1bZ5by.html",
-                "checkedAt": "2026-11-11T17:04:17.848Z",
-                "fields": [
-                  "year",
-                  "mileage",
-                  "price",
-                  "engineVariant",
-                  "bodyCode",
-                  "transmissionCode",
-                  "saleType",
-                  "cameraStatus",
-                  "location"
-                ],
-                "note": "Karta podaje 2018, i30 Kombi, 1.4 MPI 100 KM, 78 140 km, 43 500 zł i kamerę; opis zaprasza na oględziny."
-              }
-            ]
+            "checkedAt": "2026-11-12T15:47:48.168Z",
+            "availability": "access_error",
+            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+            "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-11T17:04:17.848Z",
       "lastVerifiedAt": "2026-11-11T17:04:17.848Z",
-      "lastAttemptAt": "2026-11-11T17:04:17.848Z",
+      "lastAttemptAt": "2026-11-12T15:47:48.168Z",
       "history": [
         {
           "eventId": "5976ed5966f73620067be1d925c2b9122ec7cd52285e2a36fa62a0ebb292b10c",
@@ -14318,6 +15644,36 @@
               ]
             }
           }
+        },
+        {
+          "eventId": "417f4a7a150ed68433785607117129d93726404fc63371eb86f12af1c974f35c",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:45.118Z",
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-4-go-100km-2018r-CID5-ID1bZ5by.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1093230472"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "f4fb07eacd17e62f0d29b321490d3b999bf2b8fabd039ab72baff7c98330b50b",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:47:48.168Z",
+          "url": "https://www.olx.pl/d/oferta/hyundai-i30-1-4-go-100km-2018r-CID5-ID1bZ5by.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1093230472"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -14376,51 +15732,27 @@
         {
           "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-4-2019r-1416-7933-KJ",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T17:25:23Z",
-          "lastCheckedAt": "2026-11-11T17:25:23Z",
-          "lastVerifiedAt": "2026-11-11T17:25:23Z",
+          "lastAttemptAt": "2026-11-12T15:47:38.876Z",
+          "lastCheckedAt": "2026-11-12T15:47:38.876Z",
+          "lastVerifiedAt": "2026-11-12T15:47:38.876Z",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-4-2019r-1416-7933-KJ",
-            "checkedAt": "2026-11-11T17:25:23Z",
+            "checkedAt": "2026-11-12T15:47:38.876Z",
             "availability": "available",
-            "httpStatus": null,
+            "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+            "httpStatus": 200,
             "availabilityProof": {
               "identity": true,
               "contact": true,
               "price": true,
-              "titleTokensMatched": 4
-            },
-            "evidence": [
-              {
-                "kind": "seller",
-                "fields": [
-                  "year",
-                  "engine",
-                  "body",
-                  "transmission",
-                  "price",
-                  "mileage",
-                  "location",
-                  "offerType",
-                  "saleType",
-                  "lpgInstalled",
-                  "cameraStatus",
-                  "structuralDamageStatus",
-                  "vin",
-                  "firstRegistrationDate"
-                ],
-                "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-4-2019r-1416-7933-KJ",
-                "checkedAt": "2026-11-11T17:25:23Z",
-                "note": "Karta Autoplac pokazuje Hyundai i30 III kombi z 2019 r., benzynowy 1.4 MPI 100 KM, manual, 142 329 km, cenę 42 890 zł brutto, VIN TMAH2814AKJ047284 i pierwszą rejestrację 15.02.2019. Sprzedawca firmowy deklaruje bezwypadkowy i nieuszkodzony stan; kamera i LPG nie są wymienione. Karta pokazuje kontrolę kontaktu oraz lokalizację Jawornik 32-400. Bezpośredni URL zdjęcia CDN zwrócił cache miss, więc zdjęć nie zapisano."
-              }
-            ],
-            "note": "Karta dostępna i kontakt możliwy; brak potwierdzenia kamery i instalacji LPG. Stan bezwypadkowy/nieuszkodzony pochodzi z deklaracji sprzedawcy."
+              "titleTokensMatched": 7
+            }
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T17:25:23Z",
-      "lastVerifiedAt": "2026-11-11T17:25:23Z",
-      "lastAttemptAt": "2026-11-11T17:25:23Z",
+      "lastCheckedAt": "2026-11-12T15:47:38.876Z",
+      "lastVerifiedAt": "2026-11-12T15:47:38.876Z",
+      "lastAttemptAt": "2026-11-12T15:47:38.876Z",
       "history": [
         {
           "eventId": "9d095749e834907ac21fe0c018bc653af9a4888b9d7ef0d4f6a0ecb4d9653952",
@@ -14587,6 +15919,36 @@
               }
             }
           }
+        },
+        {
+          "eventId": "eec73bce69bd81fccd582e241ed4ede37748732f5417194160038d0816100126",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:34.253Z",
+          "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-4-2019r-1416-7933-KJ",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND autoplac.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:1416-7933-KJ"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "52757eebd59f416db371994c975ddae3bacaaef74fb93d295e380d851c957135",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:47:38.876Z",
+          "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-4-2019r-1416-7933-KJ",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:1416-7933-KJ"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -14646,51 +16008,27 @@
         {
           "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-4-2019r-bezwypadkowy-0154-6914-CJ",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T17:25:23Z",
-          "lastCheckedAt": "2026-11-11T17:25:23Z",
-          "lastVerifiedAt": "2026-11-11T17:25:23Z",
+          "lastAttemptAt": "2026-11-12T15:47:38.877Z",
+          "lastCheckedAt": "2026-11-12T15:47:38.877Z",
+          "lastVerifiedAt": "2026-11-12T15:47:38.877Z",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-4-2019r-bezwypadkowy-0154-6914-CJ",
-            "checkedAt": "2026-11-11T17:25:23Z",
+            "checkedAt": "2026-11-12T15:47:38.877Z",
             "availability": "available",
-            "httpStatus": null,
+            "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+            "httpStatus": 200,
             "availabilityProof": {
               "identity": true,
               "contact": true,
               "price": true,
-              "titleTokensMatched": 4
-            },
-            "evidence": [
-              {
-                "kind": "seller",
-                "fields": [
-                  "year",
-                  "engine",
-                  "body",
-                  "transmission",
-                  "price",
-                  "mileage",
-                  "location",
-                  "offerType",
-                  "saleType",
-                  "lpgInstalled",
-                  "cameraStatus",
-                  "structuralDamageStatus",
-                  "vin",
-                  "firstRegistrationDate"
-                ],
-                "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-4-2019r-bezwypadkowy-0154-6914-CJ",
-                "checkedAt": "2026-11-11T17:25:23Z",
-                "note": "Karta Autoplac pokazuje Hyundai i30 III kombi 2019, benzynowy 1.4 MPI 100 KM, manual, 109 000 km, cenę 46 100 zł brutto, VIN TMAH2814ALJ057703, pierwszą rejestrację 19.08.2019 i ISOFIX. Sprzedawca firmowy deklaruje egzemplarz bezwypadkowy i nieuszkodzony; kamera i LPG nie są wymienione. Karta pokazuje kontakt oraz lokalizację Gostyń 43-176. Bezpośredni URL zdjęcia CDN zwrócił cache miss, więc zdjęć nie zapisano."
-              }
-            ],
-            "note": "Karta dostępna i kontakt możliwy; brak potwierdzenia kamery oraz LPG. Informacja o stanie pochodzi z deklaracji sprzedawcy."
+              "titleTokensMatched": 7
+            }
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T17:25:23Z",
-      "lastVerifiedAt": "2026-11-11T17:25:23Z",
-      "lastAttemptAt": "2026-11-11T17:25:23Z",
+      "lastCheckedAt": "2026-11-12T15:47:38.877Z",
+      "lastVerifiedAt": "2026-11-12T15:47:38.877Z",
+      "lastAttemptAt": "2026-11-12T15:47:38.877Z",
       "history": [
         {
           "eventId": "2c42bbc5aa281727cb58e851f73d8e829be5e54006353617ff93ce916d80e61f",
@@ -14857,6 +16195,36 @@
               }
             }
           }
+        },
+        {
+          "eventId": "1bda3e2b902debd8cb5d0d5d998d65f21a9719922c2bcbfcb270b1b343942133",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:36:34.254Z",
+          "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-4-2019r-bezwypadkowy-0154-6914-CJ",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND autoplac.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:0154-6914-CJ"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "56360a6ca9626bdcf84e3df27e9a4162598cdae7d7517e359ad181951b161612",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:47:38.877Z",
+          "url": "https://autoplac.pl/oferta/hyundai/i30/iii-1-4-2019r-bezwypadkowy-0154-6914-CJ",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:0154-6914-CJ"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -14930,42 +16298,27 @@
         {
           "url": "https://sprzedajemy.pl/hyundai-i30-1-5dpi-110km-modern-gwarancja-salon-polska-2022-vat23-iii-20-piotrkow-trybunalski-4-6bea9f-nr73931017",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T19:23:00Z",
-          "lastCheckedAt": "2026-11-11T19:23:00Z",
-          "lastVerifiedAt": "2026-11-11T19:23:00Z",
+          "lastAttemptAt": "2026-11-12T15:50:14.845Z",
+          "lastCheckedAt": "2026-11-12T15:50:14.845Z",
+          "lastVerifiedAt": "2026-11-12T15:50:14.845Z",
           "lastObservation": {
             "url": "https://sprzedajemy.pl/hyundai-i30-1-5dpi-110km-modern-gwarancja-salon-polska-2022-vat23-iii-20-piotrkow-trybunalski-4-6bea9f-nr73931017",
-            "checkedAt": "2026-11-11T19:23:00Z",
+            "checkedAt": "2026-11-12T15:50:14.845Z",
             "availability": "available",
-            "note": "Bezpośrednia karta zawiera cenę 46 900 zł brutto, rok produkcji 2022, przebieg 150 764 km, Kombi, silnik 1.5 DPi 110 KM, skrzynię manualną i lokalizację Piotrków Trybunalski. Karta wymienia kamerę cofania oraz pokazuje aktywne kontrolki kontaktu. Cena promocyjna 46 900 zł obowiązuje przy finansowaniu MK Centrum lub płatności gotówką/przelewem bankowym wraz z ubezpieczeniem; zewnętrzne finansowanie lub ubezpieczenie podnosi cenę o 2%. Oferta mieści się w limicie przy wskazanej płatności gotówką/przelewem. Sprzedawca oznacza auto jako nieuszkodzone, lecz stan nie był niezależnie sprawdzony. LPG nieopisane.",
-            "evidence": [
-              {
-                "kind": "seller",
-                "fields": [
-                  "year",
-                  "price",
-                  "mileage",
-                  "engine",
-                  "body",
-                  "transmission",
-                  "location",
-                  "offerType",
-                  "saleType",
-                  "cameraStatus",
-                  "structuralDamageStatus",
-                  "lpgInstalled"
-                ],
-                "url": "https://sprzedajemy.pl/hyundai-i30-1-5dpi-110km-modern-gwarancja-salon-polska-2022-vat23-iii-20-piotrkow-trybunalski-4-6bea9f-nr73931017",
-                "checkedAt": "2026-11-11T19:23:00Z",
-                "note": "Dane oraz wyposażenie odczytane z karty sprzedającego. Deklaracja sprzedającego o braku uszkodzeń nie jest niezależnym potwierdzeniem stanu."
-              }
-            ]
+            "note": "Karta zawiera dopasowanie 11 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+            "httpStatus": 200,
+            "availabilityProof": {
+              "identity": true,
+              "contact": true,
+              "price": true,
+              "titleTokensMatched": 11
+            }
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T19:23:00Z",
-      "lastVerifiedAt": "2026-11-11T19:23:00Z",
-      "lastAttemptAt": "2026-11-11T19:23:00Z",
+      "lastCheckedAt": "2026-11-12T15:50:14.845Z",
+      "lastVerifiedAt": "2026-11-12T15:50:14.845Z",
+      "lastAttemptAt": "2026-11-12T15:50:14.845Z",
       "history": [
         {
           "eventId": "12cff817f1109ab167a9b0ee3ce093abbf50ae6e6230b6a6443ca442043cb845",
@@ -15161,6 +16514,36 @@
               }
             }
           }
+        },
+        {
+          "eventId": "50659653afb2a0bade0ee748a959f9099c4842d333efd5a2a53232edf68d1ab2",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:39:08.881Z",
+          "url": "https://sprzedajemy.pl/hyundai-i30-1-5dpi-110km-modern-gwarancja-salon-polska-2022-vat23-iii-20-piotrkow-trybunalski-4-6bea9f-nr73931017",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND sprzedajemy.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:sprzedajemy:73931017"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "b00540f709938726e1e809fe476f73ea865c6db99026ba61a355ba16de2c2f6e",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:50:14.845Z",
+          "url": "https://sprzedajemy.pl/hyundai-i30-1-5dpi-110km-modern-gwarancja-salon-polska-2022-vat23-iii-20-piotrkow-trybunalski-4-6bea9f-nr73931017",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 11 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:sprzedajemy:73931017"
+          },
+          "changes": {}
         }
       ],
       "assessment": {

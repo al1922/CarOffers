@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-12",
   "model": {
     "key": "skoda-superb-iii-combi",
     "name": "Škoda Superb III Combi",
@@ -59,48 +59,21 @@
         {
           "url": "https://www.olx.pl/d/oferta/skoda-superb-1-4-tsi-act-ambition-webasto-carplay-front-assist-2017-CID5-ID1cL22D.html?search_reason=search%7Cpromoted",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T17:20:23Z",
+          "lastAttemptAt": "2026-11-12T15:49:17.324Z",
           "lastCheckedAt": "2026-11-11T17:20:23Z",
           "lastVerifiedAt": "2026-11-11T17:20:23Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/skoda-superb-1-4-tsi-act-ambition-webasto-carplay-front-assist-2017-CID5-ID1cL22D.html?search_reason=search%7Cpromoted",
-            "checkedAt": "2026-11-11T17:20:23Z",
-            "availability": "available",
-            "note": "Otwarta karta podaje Skodę Superb III Combi z 2017 r., 1.4 TSI ACT 150 KM, benzynę, manualną skrzynię, 163 692 km i cenę 49 999 zł. VIN TMBJB7NP5J7531040. Karta zawiera aktywne kontrolki kontaktu, a strona wyników wskazuje Jaworzno. Ogłoszenie było odświeżone 19 października; sprzedawca ostatnio online 13 października, więc sygnał bieżącej aktywności jest ograniczony. Sprzedawca wymienia czujniki parkowania, ale nie kamerę cofania. LPG nieustalone. Odczytane adresy zdjęć są bezpośrednimi HTTPS URL-ami z karty.",
-            "evidence": [
-              {
-                "kind": "seller",
-                "url": "https://www.olx.pl/d/oferta/skoda-superb-1-4-tsi-act-ambition-webasto-carplay-front-assist-2017-CID5-ID1cL22D.html?search_reason=search%7Cpromoted",
-                "checkedAt": "2026-11-11T17:20:23Z",
-                "fields": [
-                  "year",
-                  "mileage",
-                  "price",
-                  "engineVariant",
-                  "bodyCode",
-                  "transmissionCode",
-                  "saleType",
-                  "cameraStatus",
-                  "location"
-                ],
-                "note": "Karta OLX podaje rok, wersję silnika, przebieg, cenę, nadwozie i skrzynię; lista wyników podaje Jaworzno. Kamera cofania nie jest wymieniona."
-              },
-              {
-                "fields": [
-                  "location"
-                ],
-                "url": "https://bdl.stat.gov.pl/BDL/dane/teryt/jednostka/489",
-                "checkedAt": "2026-11-11T17:20:23Z",
-                "kind": "independent",
-                "note": "GUS BDL identyfikuje Jaworzno jako położone w województwie śląskim."
-              }
-            ]
+            "checkedAt": "2026-11-12T15:49:17.324Z",
+            "availability": "access_error",
+            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+            "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-11T17:20:23Z",
       "lastVerifiedAt": "2026-11-11T17:20:23Z",
-      "lastAttemptAt": "2026-11-11T17:20:23Z",
+      "lastAttemptAt": "2026-11-12T15:49:17.324Z",
       "history": [
         {
           "eventId": "aadb4009b379e388436af96bea75bfc0dc5c614e56c1db8d824008e955ba152e",
@@ -302,6 +275,36 @@
               ]
             }
           }
+        },
+        {
+          "eventId": "a556572b60baf8be803f56a8d8e71cff3a8f05a522196368e5a8ea11c00578c9",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:38:06.176Z",
+          "url": "https://www.olx.pl/d/oferta/skoda-superb-1-4-tsi-act-ambition-webasto-carplay-front-assist-2017-CID5-ID1cL22D.html?search_reason=search%7Cpromoted",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1104658131"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "121135a6b635b9d98eed62301fbcc8cdb64429c2587f604d0332d7154718dddb",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:49:17.324Z",
+          "url": "https://www.olx.pl/d/oferta/skoda-superb-1-4-tsi-act-ambition-webasto-carplay-front-assist-2017-CID5-ID1cL22D.html?search_reason=search%7Cpromoted",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1104658131"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -368,39 +371,27 @@
         {
           "url": "https://autoplac.pl/oferta/skoda/superb/iii-1-4-2017r-super14-tsi-act-ambition-5914-3435-CE",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T17:30:43Z",
-          "lastCheckedAt": "2026-11-11T17:30:43Z",
-          "lastVerifiedAt": "2026-11-11T17:30:43Z",
+          "lastAttemptAt": "2026-11-12T15:49:19.797Z",
+          "lastCheckedAt": "2026-11-12T15:49:19.797Z",
+          "lastVerifiedAt": "2026-11-12T15:49:19.797Z",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/skoda/superb/iii-1-4-2017r-super14-tsi-act-ambition-5914-3435-CE",
-            "checkedAt": "2026-11-11T17:30:43Z",
+            "checkedAt": "2026-11-12T15:49:19.797Z",
             "availability": "available",
-            "note": "Karta podaje Skodę Superb kombi 2017, 1.4 TSI ACT 1395 cm³, manual, 156 000 km i 52 900 zł brutto; VIN TMBJB7NP4J7530879, pierwsza rejestracja 03.10.2017. Karta była aktualizowana 2 dni temu i zawiera kontrolki kontaktu. Sprzedawca opisuje zmianę mocy do 170 KM oraz wcześniejszą szkodę parkingową z wymianą tylnego zderzaka; wpływ na wariant i zakres naprawy wymaga wyjaśnienia. Kamera cofania i LPG niepodane. Bezwypadkowość to deklaracja formularza sprzedawcy, nie niezależne potwierdzenie.",
-            "evidence": [
-              {
-                "kind": "seller",
-                "url": "https://autoplac.pl/oferta/skoda/superb/iii-1-4-2017r-super14-tsi-act-ambition-5914-3435-CE",
-                "checkedAt": "2026-11-11T17:30:43Z",
-                "fields": [
-                  "year",
-                  "price",
-                  "mileage",
-                  "engineVariant",
-                  "bodyCode",
-                  "transmissionCode",
-                  "saleType",
-                  "location",
-                  "vin"
-                ],
-                "note": "Silnik i modyfikację mocy, wyposażenie i przebieg opisuje sprzedawca; dane identyfikacyjne są widoczne na karcie. Zdarzenie parkingowe oraz wymiana zderzaka opisane przez sprzedawcę."
-              }
-            ]
+            "note": "Karta zawiera dopasowanie 8 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+            "httpStatus": 200,
+            "availabilityProof": {
+              "identity": true,
+              "contact": true,
+              "price": true,
+              "titleTokensMatched": 8
+            }
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T17:30:43Z",
-      "lastVerifiedAt": "2026-11-11T17:30:43Z",
-      "lastAttemptAt": "2026-11-11T17:30:43Z",
+      "lastCheckedAt": "2026-11-12T15:49:19.797Z",
+      "lastVerifiedAt": "2026-11-12T15:49:19.797Z",
+      "lastAttemptAt": "2026-11-12T15:49:19.797Z",
       "history": [
         {
           "eventId": "7695c7a6966569211142ec1c9a8dcb548ffe2ac74f17e3907d7fadfb615648dd",
@@ -587,6 +578,36 @@
               ]
             }
           }
+        },
+        {
+          "eventId": "12ee7121085ad94e7cae0a585141c895592869a7f579aaabab4d04edecf32640",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:38:09.589Z",
+          "url": "https://autoplac.pl/oferta/skoda/superb/iii-1-4-2017r-super14-tsi-act-ambition-5914-3435-CE",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND autoplac.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:5914-3435-CE"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "8c46d33745da4ab30bcaa29eb99d8cffc6dc5397cc0634443d710b3000dfbbb9",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:49:19.797Z",
+          "url": "https://autoplac.pl/oferta/skoda/superb/iii-1-4-2017r-super14-tsi-act-ambition-5914-3435-CE",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 8 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:5914-3435-CE"
+          },
+          "changes": {}
         }
       ],
       "assessment": {

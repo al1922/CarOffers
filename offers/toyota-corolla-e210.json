@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-12",
   "model": {
     "key": "toyota-corolla-e210",
     "name": "Toyota Corolla XII (E210)",
@@ -53,12 +53,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-1-6-manual-132-km-benzyna-CID5-ID1c3Hi0.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:40:17.311Z",
+          "lastAttemptAt": "2026-11-12T15:50:04.075Z",
           "lastCheckedAt": "2026-11-08T23:49:22+01:00",
           "lastVerifiedAt": "2026-11-08T23:49:22+01:00",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-1-6-manual-132-km-benzyna-CID5-ID1c3Hi0.html",
-            "checkedAt": "2026-11-11T16:40:17.311Z",
+            "checkedAt": "2026-11-12T15:50:04.075Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -67,7 +67,7 @@
       ],
       "lastCheckedAt": "2026-11-08T23:49:22+01:00",
       "lastVerifiedAt": "2026-11-08T23:49:22+01:00",
-      "lastAttemptAt": "2026-11-11T16:40:17.311Z",
+      "lastAttemptAt": "2026-11-12T15:50:04.075Z",
       "history": [
         {
           "eventId": "34837c97b8cc64f5548cca45900644665162d48ccc76f1190bc218ba78b0a321",
@@ -377,6 +377,36 @@
             "id": "listing:olx:1094330256"
           },
           "changes": {}
+        },
+        {
+          "eventId": "4bd4798f3e81ca3b06a65824bea2273305580b2d21515968da4d19eadc6cb66d",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:38:58.468Z",
+          "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-1-6-manual-132-km-benzyna-CID5-ID1c3Hi0.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1094330256"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "98563c834619e22456bbaa4ede6ad0c8bb8ecb6d2237cc7c8909087602e55db7",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:50:04.075Z",
+          "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-1-6-manual-132-km-benzyna-CID5-ID1c3Hi0.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1094330256"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -453,12 +483,12 @@
         {
           "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2020r-1szy-wlasc-serw-aso-salon-pl-stan-idealny-comforttech-9562-3889-PX",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:40:17.337Z",
+          "lastAttemptAt": "2026-11-12T15:50:06.508Z",
           "lastCheckedAt": "2026-11-10T23:18:09Z",
           "lastVerifiedAt": "2026-11-10T23:18:09Z",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2020r-1szy-wlasc-serw-aso-salon-pl-stan-idealny-comforttech-9562-3889-PX",
-            "checkedAt": "2026-11-11T16:40:17.337Z",
+            "checkedAt": "2026-11-12T15:50:06.508Z",
             "availability": "access_error",
             "note": "Brak potwierdzenia aktywnej karty: tytuł=false, cena=true, kontakt=true (HTTP 200).",
             "httpStatus": 200,
@@ -473,7 +503,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:18:09Z",
       "lastVerifiedAt": "2026-11-10T23:18:09Z",
-      "lastAttemptAt": "2026-11-11T16:40:17.337Z",
+      "lastAttemptAt": "2026-11-12T15:50:06.508Z",
       "history": [
         {
           "eventId": "d944d7e7db2cec81bb5674dac911780fd7236bc90323a2cd6fa157a1bbe11eba",
@@ -663,6 +693,36 @@
             "id": "vin:NMTBE3BE90R086070"
           },
           "changes": {}
+        },
+        {
+          "eventId": "59119beaa64d4c0e328aedba58ade546e39bb0a41483ab423b04cd562fbbed45",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:39:01.858Z",
+          "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2020r-1szy-wlasc-serw-aso-salon-pl-stan-idealny-comforttech-9562-3889-PX",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND autoplac.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:NMTBE3BE90R086070"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "7f8bc94e5a612e473385b1c32d02347c4145ae0508e1e93df040961ec1e7b4bd",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:50:06.508Z",
+          "url": "https://autoplac.pl/oferta/toyota/corolla/xii-1-6-2020r-1szy-wlasc-serw-aso-salon-pl-stan-idealny-comforttech-9562-3889-PX",
+          "availability": "access_error",
+          "note": "Brak potwierdzenia aktywnej karty: tytuł=false, cena=true, kontakt=true (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:NMTBE3BE90R086070"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -737,12 +797,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:40:17.311Z",
+          "lastAttemptAt": "2026-11-12T15:50:04.075Z",
           "lastCheckedAt": "2026-11-10T23:18:49Z",
           "lastVerifiedAt": "2026-11-10T23:18:49Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
-            "checkedAt": "2026-11-11T16:40:17.311Z",
+            "checkedAt": "2026-11-12T15:50:04.075Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -751,7 +811,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:18:49Z",
       "lastVerifiedAt": "2026-11-10T23:18:49Z",
-      "lastAttemptAt": "2026-11-11T16:40:17.311Z",
+      "lastAttemptAt": "2026-11-12T15:50:04.075Z",
       "history": [
         {
           "eventId": "9b2bc29473967d633b3e7fd706316b704399d963ed59809d97fe930d9faa118f",
@@ -1011,6 +1071,36 @@
           "eventId": "4d83dd02ef63fb20e0a473da8c24e84ca5d58e27064064c35ca004f3823c4c79",
           "runId": "archive-check-2026-11-11",
           "checkedAt": "2026-11-11T16:40:17.311Z",
+          "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:NMTBE3BE00R023715"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "379bd14d92a30ac101e71c6b2a59cca02f774bdef2ff5e24b1e738e9f7572387",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:38:58.468Z",
+          "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:NMTBE3BE00R023715"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "abcab7a551e79681502d060d42c44f07c73654bdaa2036f0d7d069e17507dd2a",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:50:04.075Z",
           "url": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
           "availability": "access_error",
           "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",

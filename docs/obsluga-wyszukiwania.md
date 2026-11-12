@@ -97,6 +97,22 @@ w `runs/sprzedajemy-i30-full-2026-11-10/benchmark-cache-scoping.json`.
 
 ### Szybszy odczyt w Playwright
 
+#### Sieć sandboxa a błąd DNS
+
+Wszystkie live flow (nowe wyszukiwanie, dostępność, dostępność archiwum i
+odświeżanie) wymagają połączeń do portali. Jeśli Playwright zgłasza
+`getaddrinfo ENOTFOUND`, `ERR_NAME_NOT_RESOLVED` albo `EAI_AGAIN` dla wielu
+niezależnych domen, a próby nie otrzymują kodu HTTP, sprawdź najpierw, czy
+uruchomienie nie jest ograniczone przez sandbox. Taki błąd nie mówi nic o stanie
+ofert. Nie kończ ani nie importuj przebiegu opartego na masowych błędach DNS.
+
+Jeśli platforma udostępnia zatwierdzony dostęp sieciowy poza sandboxem, uruchom
+ten sam checker w tym trybie. Wyszukiwanie używa `search:portal` lub właściwego
+adaptera, a dostępność i archiwum używają `scripts/availability-check.mjs`.
+Zachowaj ograniczenia `robots.txt`, CAPTCHA i blokad portalu. Gdy wyjście poza
+sandbox nie jest dostępne, przerwij część online i zgłoś ograniczenie; nie
+zastępuj odczytu portalowego snippetami ani nie zmieniaj DNS/proxy.
+
 Projekt udostępnia narzędzie `scripts/playwright-pages.mjs`, które odwiedza
 podane adresy w jednej przeglądarce i kontekście, bez ponownego uruchamiania
 Chromium dla każdej strony. Zwraca tekst i linki z renderowanej strony oraz
@@ -435,6 +451,13 @@ metadane odpowiedzi XHR/Fetch. Nie zapisuje ofert, nie loguje się i nie omija
 blokad. `200` oznacza, że załadowała się strona, a nie że wyniki konkretnego
 modelu zostały przeszukane. `403`, błąd TLS lub strona wyzwania oznacza
 `blocked`; takiego źródła nie oznaczaj jako `no_matches`.
+
+Rozróżniaj błędy środowiska od odmowy portalu: `ENOTFOUND`,
+`ERR_NAME_NOT_RESOLVED` i `EAI_AGAIN` bez HTTP na wielu różnych domenach zwykle
+wskazują na brak DNS w środowisku wykonawczym. Najpierw ponów dozwolony odczyt
+w zatwierdzonym środowisku sieciowym poza sandboxem. Dopiero odpowiedź portalu
+(np. HTTP 403/429 lub strona CAPTCHA) jest dowodem blokady po stronie portalu;
+nie próbuj jej obchodzić.
 
 `config/portal-adapters.json` ma wpis dla każdego aktywnego źródła; `validate`
 sprawdza kompletność i wymagane pola strategii. `search:portal` wybiera adapter

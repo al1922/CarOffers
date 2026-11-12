@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-12",
   "model": {
     "key": "skoda-octavia-iii-combi",
     "name": "Škoda Octavia III Combi",
@@ -53,12 +53,12 @@
         {
           "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-tsi-7924-5099-SJ",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:56.174Z",
-          "lastCheckedAt": "2026-11-11T02:03:56.174Z",
-          "lastVerifiedAt": "2026-11-11T02:03:56.174Z",
+          "lastAttemptAt": "2026-11-12T15:48:41.129Z",
+          "lastCheckedAt": "2026-11-12T15:48:41.129Z",
+          "lastVerifiedAt": "2026-11-12T15:48:41.129Z",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-tsi-7924-5099-SJ",
-            "checkedAt": "2026-11-11T02:03:56.174Z",
+            "checkedAt": "2026-11-12T15:48:41.129Z",
             "availability": "available",
             "note": "Karta zawiera dopasowanie 6 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
             "httpStatus": 200,
@@ -71,9 +71,9 @@
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T02:03:56.174Z",
-      "lastVerifiedAt": "2026-11-11T02:03:56.174Z",
-      "lastAttemptAt": "2026-11-11T02:03:56.174Z",
+      "lastCheckedAt": "2026-11-12T15:48:41.129Z",
+      "lastVerifiedAt": "2026-11-12T15:48:41.129Z",
+      "lastAttemptAt": "2026-11-12T15:48:41.129Z",
       "history": [
         {
           "eventId": "21eb3caa3d97000a27cbba3153281d2f882500f11b6f2297406dfa5123aa473c",
@@ -196,6 +196,36 @@
             "id": "vin:TMBJC7NE1J0371159"
           },
           "changes": {}
+        },
+        {
+          "eventId": "f95a4099f0e12d1e2b18af9add916ea2fc331815852564bc9dedadffff50448c",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:38.212Z",
+          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-tsi-7924-5099-SJ",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND autoplac.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TMBJC7NE1J0371159"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "48436c312a0da231f142cd699d126fd8c0ab1bf7c5c398f000cee6268ec272fb",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:41.129Z",
+          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-tsi-7924-5099-SJ",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 6 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:TMBJC7NE1J0371159"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -255,12 +285,12 @@
         {
           "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-koda-kombi-3926-9546-XU",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:56.175Z",
-          "lastCheckedAt": "2026-11-11T02:03:56.175Z",
-          "lastVerifiedAt": "2026-11-11T02:03:56.175Z",
+          "lastAttemptAt": "2026-11-12T15:48:41.130Z",
+          "lastCheckedAt": "2026-11-12T15:48:41.130Z",
+          "lastVerifiedAt": "2026-11-12T15:48:41.130Z",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-koda-kombi-3926-9546-XU",
-            "checkedAt": "2026-11-11T02:03:56.175Z",
+            "checkedAt": "2026-11-12T15:48:41.130Z",
             "availability": "available",
             "note": "Karta zawiera dopasowanie 9 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
             "httpStatus": 200,
@@ -273,9 +303,9 @@
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T02:03:56.175Z",
-      "lastVerifiedAt": "2026-11-11T02:03:56.175Z",
-      "lastAttemptAt": "2026-11-11T02:03:56.175Z",
+      "lastCheckedAt": "2026-11-12T15:48:41.130Z",
+      "lastVerifiedAt": "2026-11-12T15:48:41.130Z",
+      "lastAttemptAt": "2026-11-12T15:48:41.130Z",
       "history": [
         {
           "eventId": "2145f44f99fcf8126eea193edb9b52ecae576b626052959a78b80e50c8bcc52f",
@@ -514,6 +544,36 @@
             "id": "listing:autoplac:3926-9546-XU"
           },
           "changes": {}
+        },
+        {
+          "eventId": "354dec10ec274018a8b93ccbe33a70d028d32f1c8d4474d3a182c69772f3b456",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:38.213Z",
+          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-koda-kombi-3926-9546-XU",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND autoplac.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:3926-9546-XU"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "c9c8936c702d34fe79e8721ae2a77e2461ad51c63c307bd2403984177ebf104a",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:41.130Z",
+          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-koda-kombi-3926-9546-XU",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 9 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:3926-9546-XU"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -575,27 +635,27 @@
         {
           "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-tsi-150-km-3721-9203-YU",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:56.176Z",
-          "lastCheckedAt": "2026-11-11T02:03:56.176Z",
-          "lastVerifiedAt": "2026-11-11T02:03:56.176Z",
+          "lastAttemptAt": "2026-11-12T15:48:41.133Z",
+          "lastCheckedAt": "2026-11-12T15:48:41.133Z",
+          "lastVerifiedAt": "2026-11-12T15:48:41.133Z",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-tsi-150-km-3721-9203-YU",
-            "checkedAt": "2026-11-11T02:03:56.176Z",
+            "checkedAt": "2026-11-12T15:48:41.133Z",
             "availability": "available",
-            "note": "Karta zawiera dopasowanie 6 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+            "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
             "httpStatus": 200,
             "availabilityProof": {
               "identity": true,
               "contact": true,
               "price": true,
-              "titleTokensMatched": 6
+              "titleTokensMatched": 7
             }
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T02:03:56.176Z",
-      "lastVerifiedAt": "2026-11-11T02:03:56.176Z",
-      "lastAttemptAt": "2026-11-11T02:03:56.176Z",
+      "lastCheckedAt": "2026-11-12T15:48:41.133Z",
+      "lastVerifiedAt": "2026-11-12T15:48:41.133Z",
+      "lastAttemptAt": "2026-11-12T15:48:41.133Z",
       "history": [
         {
           "eventId": "d1ca2c63083c07b40114d735489c02851fadb92d96ebd95307c75754bcf74634",
@@ -829,6 +889,36 @@
             "id": "listing:autoplac:3721-9203-YU"
           },
           "changes": {}
+        },
+        {
+          "eventId": "a33fe7d7bd33e5c6957722a108713ee527c0c4d2271baef28715f0a833eb3c52",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:38.213Z",
+          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-tsi-150-km-3721-9203-YU",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND autoplac.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:3721-9203-YU"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "5cb9f8fc801a07a397a86bdda823871f95e75f25aea55ad09d7721d04bf55cc4",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:41.133Z",
+          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2017r-tsi-150-km-3721-9203-YU",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:3721-9203-YU"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -902,12 +992,12 @@
         {
           "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-7052-2823-ZX",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:56.176Z",
-          "lastCheckedAt": "2026-11-11T02:03:56.176Z",
-          "lastVerifiedAt": "2026-11-11T02:03:56.176Z",
+          "lastAttemptAt": "2026-11-12T15:48:41.133Z",
+          "lastCheckedAt": "2026-11-12T15:48:41.133Z",
+          "lastVerifiedAt": "2026-11-12T15:48:41.133Z",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-7052-2823-ZX",
-            "checkedAt": "2026-11-11T02:03:56.176Z",
+            "checkedAt": "2026-11-12T15:48:41.133Z",
             "availability": "available",
             "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
             "httpStatus": 200,
@@ -920,9 +1010,9 @@
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T02:03:56.176Z",
-      "lastVerifiedAt": "2026-11-11T02:03:56.176Z",
-      "lastAttemptAt": "2026-11-11T02:03:56.176Z",
+      "lastCheckedAt": "2026-11-12T15:48:41.133Z",
+      "lastVerifiedAt": "2026-11-12T15:48:41.133Z",
+      "lastAttemptAt": "2026-11-12T15:48:41.133Z",
       "history": [
         {
           "eventId": "047e5f902acd3e4401e15a388ad244fe3b2440e5732faa5ce897ed205b85b835",
@@ -1152,6 +1242,36 @@
             "id": "listing:autoplac:7052-2823-ZX"
           },
           "changes": {}
+        },
+        {
+          "eventId": "6bbe97901844825ec6e697b2fa1e0e1daca56ce54de90d6e8a500c0c4cf3871e",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:38.213Z",
+          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-7052-2823-ZX",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND autoplac.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:7052-2823-ZX"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "56fd2b9605cb9578c0deda4261903315766561734c56c6cfa80c612e92207878",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:41.133Z",
+          "url": "https://autoplac.pl/oferta/skoda/octavia/iii-1-4-2018r-7052-2823-ZX",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:7052-2823-ZX"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -1218,12 +1338,12 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6I9d1t.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:37:59.764Z",
+          "lastAttemptAt": "2026-11-12T15:48:45.725Z",
           "lastCheckedAt": "2026-11-08T18:57:19+01:00",
           "lastVerifiedAt": "2026-11-08T18:57:19+01:00",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6I9d1t.html",
-            "checkedAt": "2026-11-11T16:37:59.764Z",
+            "checkedAt": "2026-11-12T15:48:45.725Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -1232,7 +1352,7 @@
       ],
       "lastCheckedAt": "2026-11-08T18:57:19+01:00",
       "lastVerifiedAt": "2026-11-08T18:57:19+01:00",
-      "lastAttemptAt": "2026-11-11T16:37:59.764Z",
+      "lastAttemptAt": "2026-11-12T15:48:45.725Z",
       "history": [
         {
           "eventId": "d389003b7c3374dad0e8f978debc7e59b46ea87b74a7581b29ea8f903458fbd4",
@@ -1472,6 +1592,36 @@
             "id": "listing:otomoto:ID6I9d1t"
           },
           "changes": {}
+        },
+        {
+          "eventId": "adba130d5ee2f95fde4160e96bc002e4acc7abe168697b6faed55b94936184a2",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:41.681Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6I9d1t.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6I9d1t"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "80b520b54a7994dd00c4c647632eebe35911ef3256fd6bfa611ac59b3a1602f4",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:45.725Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6I9d1t.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6I9d1t"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -1538,12 +1688,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/skoda-octavia-1-4-tsi-style-salon-polska-serwis-aso-gaz-klimatronic-tempomat-CID5-ID1cwtZa.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:38:00.043Z",
+          "lastAttemptAt": "2026-11-12T15:48:48.067Z",
           "lastCheckedAt": "2026-11-08T23:41:44+01:00",
           "lastVerifiedAt": "2026-11-08T23:41:44+01:00",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/skoda-octavia-1-4-tsi-style-salon-polska-serwis-aso-gaz-klimatronic-tempomat-CID5-ID1cwtZa.html",
-            "checkedAt": "2026-11-11T16:38:00.043Z",
+            "checkedAt": "2026-11-12T15:48:48.067Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -1552,7 +1702,7 @@
       ],
       "lastCheckedAt": "2026-11-08T23:41:44+01:00",
       "lastVerifiedAt": "2026-11-08T23:41:44+01:00",
-      "lastAttemptAt": "2026-11-11T16:38:00.043Z",
+      "lastAttemptAt": "2026-11-12T15:48:48.067Z",
       "history": [
         {
           "eventId": "3ed8e4367d6700997e4f19a0dbef8d55f95da34b1e3d6fbf21fe7f900ae17327",
@@ -1881,6 +2031,36 @@
             "id": "listing:olx:1100952300"
           },
           "changes": {}
+        },
+        {
+          "eventId": "aa049853e55ec3eff7cedd47c25fe4fd905871a27529cf96e8326be826e9328c",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:45.204Z",
+          "url": "https://www.olx.pl/d/oferta/skoda-octavia-1-4-tsi-style-salon-polska-serwis-aso-gaz-klimatronic-tempomat-CID5-ID1cwtZa.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1100952300"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "b6ec62f0e41bc3c2eebb61cbb3042a13a753057d1e06de62e9d5bcf2807e8115",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:48.067Z",
+          "url": "https://www.olx.pl/d/oferta/skoda-octavia-1-4-tsi-style-salon-polska-serwis-aso-gaz-klimatronic-tempomat-CID5-ID1cwtZa.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1100952300"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -1969,12 +2149,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/skoda-octavia-skoda-octavia-iii-1-4-tsi-150-km-ambition-2018-1-wlasciciel-CID5-ID1c50yG.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:38:00.044Z",
+          "lastAttemptAt": "2026-11-12T15:48:48.067Z",
           "lastCheckedAt": "2026-11-09T23:31:57Z",
           "lastVerifiedAt": "2026-11-09T23:31:57Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/skoda-octavia-skoda-octavia-iii-1-4-tsi-150-km-ambition-2018-1-wlasciciel-CID5-ID1c50yG.html",
-            "checkedAt": "2026-11-11T16:38:00.044Z",
+            "checkedAt": "2026-11-12T15:48:48.067Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -1983,7 +2163,7 @@
       ],
       "lastCheckedAt": "2026-11-09T23:31:57Z",
       "lastVerifiedAt": "2026-11-09T23:31:57Z",
-      "lastAttemptAt": "2026-11-11T16:38:00.044Z",
+      "lastAttemptAt": "2026-11-12T15:48:48.067Z",
       "history": [
         {
           "eventId": "9689dee16ba2132fc25b2c8f6cf7647764b3e77bb760b3d8c8580a65ead2db54",
@@ -2225,6 +2405,36 @@
             "id": "listing:olx:ID1c50yG"
           },
           "changes": {}
+        },
+        {
+          "eventId": "5a7a1dd0de51358c1d7e72248d65ae38d196b0c6eba358b395286d97e21c6002",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:45.205Z",
+          "url": "https://www.olx.pl/d/oferta/skoda-octavia-skoda-octavia-iii-1-4-tsi-150-km-ambition-2018-1-wlasciciel-CID5-ID1c50yG.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:ID1c50yG"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "11d6326fdcf51a5c69b518db6de15fb303c2c38103250cf04edf7797ef4d2e0b",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:48.067Z",
+          "url": "https://www.olx.pl/d/oferta/skoda-octavia-skoda-octavia-iii-1-4-tsi-150-km-ambition-2018-1-wlasciciel-CID5-ID1c50yG.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:ID1c50yG"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -2292,12 +2502,12 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6Ii8aR.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:37:59.765Z",
+          "lastAttemptAt": "2026-11-12T15:48:45.725Z",
           "lastCheckedAt": "2026-11-10T23:12:57Z",
           "lastVerifiedAt": "2026-11-10T23:12:57Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6Ii8aR.html",
-            "checkedAt": "2026-11-11T16:37:59.765Z",
+            "checkedAt": "2026-11-12T15:48:45.725Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -2306,7 +2516,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:12:57Z",
       "lastVerifiedAt": "2026-11-10T23:12:57Z",
-      "lastAttemptAt": "2026-11-11T16:37:59.765Z",
+      "lastAttemptAt": "2026-11-12T15:48:45.725Z",
       "history": [
         {
           "eventId": "cffe573daf641f1376a218d3d40feb8632b3ff169fd2c9f44b69701f6d71cac9",
@@ -2471,6 +2681,36 @@
             "id": "listing:otomoto:ID6Ii8aR"
           },
           "changes": {}
+        },
+        {
+          "eventId": "3add10b3bef856da49daa207564da68bbbc3a2558e0efe1dfae1abbb87ce3dd5",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:41.681Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6Ii8aR.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6Ii8aR"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "3ae0dd65f6dcc7000300a6e3fdbed2a09725b4fa31e0d307953fdfdc5a342c0c",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:45.725Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6Ii8aR.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6Ii8aR"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -2542,12 +2782,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/skoda-octavia-CID5-ID1cQiTC.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:38:00.044Z",
+          "lastAttemptAt": "2026-11-12T15:48:48.068Z",
           "lastCheckedAt": "2026-11-10T23:13:13Z",
           "lastVerifiedAt": "2026-11-10T23:13:13Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/skoda-octavia-CID5-ID1cQiTC.html",
-            "checkedAt": "2026-11-11T16:38:00.044Z",
+            "checkedAt": "2026-11-12T15:48:48.068Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -2556,7 +2796,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:13:13Z",
       "lastVerifiedAt": "2026-11-10T23:13:13Z",
-      "lastAttemptAt": "2026-11-11T16:38:00.044Z",
+      "lastAttemptAt": "2026-11-12T15:48:48.068Z",
       "history": [
         {
           "eventId": "961a6dec4d4600a939a0e8269c1998be863c656b0cf73f5f9e75a0fa8fcb0402",
@@ -2793,6 +3033,36 @@
             "id": "listing:olx:ID1cQiTC"
           },
           "changes": {}
+        },
+        {
+          "eventId": "b20af69711f43cc82fc5df55fe62babe339de635b059d46d85ff4e9dea7a5ade",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:45.205Z",
+          "url": "https://www.olx.pl/d/oferta/skoda-octavia-CID5-ID1cQiTC.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:ID1cQiTC"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "d5cfafbd228c5f1fdb3c776322e3ef723e405328fba85c0b8a096d0e86dce271",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:48.068Z",
+          "url": "https://www.olx.pl/d/oferta/skoda-octavia-CID5-ID1cQiTC.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:ID1cQiTC"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -2849,42 +3119,21 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6I0389.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:55:20Z",
+          "lastAttemptAt": "2026-11-12T15:48:45.726Z",
           "lastCheckedAt": "2026-11-11T16:55:20Z",
           "lastVerifiedAt": "2026-11-11T16:55:20Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6I0389.html",
-            "checkedAt": "2026-11-11T16:55:20Z",
-            "availability": "available",
-            "httpStatus": null,
-            "note": "Karta dostępna w odczycie web i zawiera tytuł, cenę 48 900 zł brutto, aktywne elementy kontaktu, rok produkcji 2018, 1.4 TSI 150 KM, nadwozie kombi i 149 980 km. Lokalizacja: Połczyńska 5, Warszawa. Sprzedawca podaje ISOFIX i przednie czujniki parkowania; kamera nie jest wymieniona. Cena i dane pochodzą z karty Otomoto; brak jawnego oświadczenia o instalacji LPG, więc lpgInstalled=false oznacza brak wskazania LPG w karcie, nie potwierdzenie dokumentów instalacji.",
-            "evidence": [
-              {
-                "fields": [
-                  "title",
-                  "year",
-                  "price",
-                  "mileage",
-                  "engineVariant",
-                  "bodyCode",
-                  "transmissionCode",
-                  "offerType",
-                  "location",
-                  "saleType",
-                  "lpgInstalled"
-                ],
-                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6I0389.html",
-                "checkedAt": "2026-11-11T16:55:20Z",
-                "kind": "seller",
-                "note": "Karta Otomoto: 2018, 1.4 TSI 150 KM, benzyna, 1395 cm3, automat, kombi, 149 980 km, cena 48 900 brutto; sprzedawca firma 99Select, lokalizacja Warszawa. Instalacja LPG niepotwierdzona; karta wymienia paliwo benzynowe, ale nie rozstrzyga obecności dodatkowej instalacji."
-              }
-            ]
+            "checkedAt": "2026-11-12T15:48:45.726Z",
+            "availability": "access_error",
+            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+            "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-11T16:55:20Z",
       "lastVerifiedAt": "2026-11-11T16:55:20Z",
-      "lastAttemptAt": "2026-11-11T16:55:20Z",
+      "lastAttemptAt": "2026-11-12T15:48:45.726Z",
       "history": [
         {
           "eventId": "2f9a58d3758e125dd175eac3f1b28378d3629a98cad55fa4b6d1dffa858ddddd",
@@ -3031,6 +3280,36 @@
               ]
             }
           }
+        },
+        {
+          "eventId": "94c8709a3126b0db4ee0bbe396f88ca0b834c4191569fd77abbb9f757b6a0442",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:41.682Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6I0389.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:6146967813"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "440a65f880137f6d52fba72b31f5a446577c867d277824c5213eeb395bf6ada2",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:45.726Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6I0389.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:6146967813"
+          },
+          "changes": {}
         }
       ],
       "assessment": {

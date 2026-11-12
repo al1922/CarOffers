@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-12",
   "model": {
     "key": "kia-ceed-iii-sw",
     "name": "Kia Ceed III Sportswagon",
@@ -55,27 +55,27 @@
         {
           "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2020r-t-gdi-140-automat-salon-pl-kamera-aso-tylko-71-tys-km-7600-2296-WW",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:47.866Z",
-          "lastCheckedAt": "2026-11-11T02:03:47.866Z",
-          "lastVerifiedAt": "2026-11-11T02:03:47.866Z",
+          "lastAttemptAt": "2026-11-12T15:48:08.094Z",
+          "lastCheckedAt": "2026-11-12T15:48:08.094Z",
+          "lastVerifiedAt": "2026-11-12T15:48:08.094Z",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2020r-t-gdi-140-automat-salon-pl-kamera-aso-tylko-71-tys-km-7600-2296-WW",
-            "checkedAt": "2026-11-11T02:03:47.866Z",
+            "checkedAt": "2026-11-12T15:48:08.094Z",
             "availability": "available",
-            "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+            "note": "Karta zawiera dopasowanie 8 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
             "httpStatus": 200,
             "availabilityProof": {
               "identity": true,
               "contact": true,
               "price": true,
-              "titleTokensMatched": 7
+              "titleTokensMatched": 8
             }
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T02:03:47.866Z",
-      "lastVerifiedAt": "2026-11-11T02:03:47.866Z",
-      "lastAttemptAt": "2026-11-11T02:03:47.866Z",
+      "lastCheckedAt": "2026-11-12T15:48:08.094Z",
+      "lastVerifiedAt": "2026-11-12T15:48:08.094Z",
+      "lastAttemptAt": "2026-11-12T15:48:08.094Z",
       "history": [
         {
           "eventId": "7968a3aea41096df7c364561901385aa94ee953615350550d6b90a69eb24e138",
@@ -198,6 +198,36 @@
             "id": "listing:autoplac:7600-2296-WW"
           },
           "changes": {}
+        },
+        {
+          "eventId": "b4ff133f3ef1a0e5613effc13e9099663154ec999462d0fac1ae768ab0b46c6e",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:06.678Z",
+          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2020r-t-gdi-140-automat-salon-pl-kamera-aso-tylko-71-tys-km-7600-2296-WW",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND autoplac.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:7600-2296-WW"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "f0f2fed49e09a43a2dd723ea22b9403f0effa1c03c8181b746babd2313b697c9",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:08.094Z",
+          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2020r-t-gdi-140-automat-salon-pl-kamera-aso-tylko-71-tys-km-7600-2296-WW",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 8 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:7600-2296-WW"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -267,12 +297,12 @@
         {
           "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-kombi-l-business-line-2019r-140-km-automat-7dct-winter-5272-7704-QL",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:47.867Z",
-          "lastCheckedAt": "2026-11-11T02:03:47.867Z",
-          "lastVerifiedAt": "2026-11-11T02:03:47.867Z",
+          "lastAttemptAt": "2026-11-12T15:48:08.096Z",
+          "lastCheckedAt": "2026-11-12T15:48:08.096Z",
+          "lastVerifiedAt": "2026-11-12T15:48:08.096Z",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-kombi-l-business-line-2019r-140-km-automat-7dct-winter-5272-7704-QL",
-            "checkedAt": "2026-11-11T02:03:47.867Z",
+            "checkedAt": "2026-11-12T15:48:08.096Z",
             "availability": "available",
             "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
             "httpStatus": 200,
@@ -285,9 +315,9 @@
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T02:03:47.867Z",
-      "lastVerifiedAt": "2026-11-11T02:03:47.867Z",
-      "lastAttemptAt": "2026-11-11T02:03:47.867Z",
+      "lastCheckedAt": "2026-11-12T15:48:08.096Z",
+      "lastVerifiedAt": "2026-11-12T15:48:08.096Z",
+      "lastAttemptAt": "2026-11-12T15:48:08.096Z",
       "history": [
         {
           "eventId": "4addd9ccd97a29a1db2267624dbf08d01252cb5081e0055ef2d413d09b579a93",
@@ -410,6 +440,36 @@
             "id": "listing:autoplac:5272-7704-QL"
           },
           "changes": {}
+        },
+        {
+          "eventId": "83e64f3363c4aa4bc4d1df3342d45318c9754496936d9dfa6d891100d6aa1c1a",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:06.678Z",
+          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-kombi-l-business-line-2019r-140-km-automat-7dct-winter-5272-7704-QL",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND autoplac.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:5272-7704-QL"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "a708ee8985eaf09041777ccaa022d147aef88a5fa3ca7f1058e7d99797ded285",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:08.096Z",
+          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-kombi-l-business-line-2019r-140-km-automat-7dct-winter-5272-7704-QL",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:5272-7704-QL"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -478,12 +538,12 @@
         {
           "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-cedd-2019r-turbo-benzyna-kombi-7248-2032-PJ",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:47.868Z",
-          "lastCheckedAt": "2026-11-11T02:03:47.868Z",
-          "lastVerifiedAt": "2026-11-11T02:03:47.868Z",
+          "lastAttemptAt": "2026-11-12T15:48:08.099Z",
+          "lastCheckedAt": "2026-11-12T15:48:08.099Z",
+          "lastVerifiedAt": "2026-11-12T15:48:08.099Z",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-cedd-2019r-turbo-benzyna-kombi-7248-2032-PJ",
-            "checkedAt": "2026-11-11T02:03:47.868Z",
+            "checkedAt": "2026-11-12T15:48:08.099Z",
             "availability": "available",
             "note": "Karta zawiera dopasowanie 9 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
             "httpStatus": 200,
@@ -496,9 +556,9 @@
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T02:03:47.868Z",
-      "lastVerifiedAt": "2026-11-11T02:03:47.868Z",
-      "lastAttemptAt": "2026-11-11T02:03:47.868Z",
+      "lastCheckedAt": "2026-11-12T15:48:08.099Z",
+      "lastVerifiedAt": "2026-11-12T15:48:08.099Z",
+      "lastAttemptAt": "2026-11-12T15:48:08.099Z",
       "history": [
         {
           "eventId": "5c5fa6701debbd8ab4d7d8416c557d9120c2f3eee060d80bfe80541ff420064c",
@@ -768,6 +828,36 @@
             "id": "listing:autoplac:7248-2032-PJ"
           },
           "changes": {}
+        },
+        {
+          "eventId": "094feea1a94a3dd00bf10e942ed3080806cd03659fd1345c4aaae95224a03ccc",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:06.678Z",
+          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-cedd-2019r-turbo-benzyna-kombi-7248-2032-PJ",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND autoplac.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:7248-2032-PJ"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "cce13d5e9378636c935b4cdc427797bea74ecf5ab6a1095afcfec5a8c80f3fa9",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:08.099Z",
+          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-cedd-2019r-turbo-benzyna-kombi-7248-2032-PJ",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 9 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:7248-2032-PJ"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -832,12 +922,12 @@
         {
           "url": "https://automarket.pl/oferta/kia/cee%27d/T88922/zakup",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:52.078Z",
-          "lastCheckedAt": "2026-11-11T02:03:52.078Z",
-          "lastVerifiedAt": "2026-11-11T02:03:52.078Z",
+          "lastAttemptAt": "2026-11-12T15:48:13.199Z",
+          "lastCheckedAt": "2026-11-12T15:48:13.199Z",
+          "lastVerifiedAt": "2026-11-12T15:48:13.199Z",
           "lastObservation": {
             "url": "https://automarket.pl/oferta/kia/cee%27d/T88922/zakup",
-            "checkedAt": "2026-11-11T02:03:52.078Z",
+            "checkedAt": "2026-11-12T15:48:13.199Z",
             "availability": "available",
             "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
             "httpStatus": 200,
@@ -850,9 +940,9 @@
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T02:03:52.078Z",
-      "lastVerifiedAt": "2026-11-11T02:03:52.078Z",
-      "lastAttemptAt": "2026-11-11T02:03:52.078Z",
+      "lastCheckedAt": "2026-11-12T15:48:13.199Z",
+      "lastVerifiedAt": "2026-11-12T15:48:13.199Z",
+      "lastAttemptAt": "2026-11-12T15:48:13.199Z",
       "history": [
         {
           "eventId": "3dd9c3c4d9574679f262ddcde5aa031280cf761aee81b2949148fb90fd25119e",
@@ -1150,6 +1240,36 @@
             "id": "listing:automarket:T88922"
           },
           "changes": {}
+        },
+        {
+          "eventId": "b27bdf34d43fc80f0c49636d4864ae7e2c1cbddb6f99fbc9a7ecb22dd65278d5",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:10.126Z",
+          "url": "https://automarket.pl/oferta/kia/cee%27d/T88922/zakup",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND automarket.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:automarket:T88922"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "2508fe352c59bb88ebeb18cff8392705903ab9079828c4538de6d8d2ed57a2c5",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:13.199Z",
+          "url": "https://automarket.pl/oferta/kia/cee%27d/T88922/zakup",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:automarket:T88922"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -1220,12 +1340,12 @@
         {
           "url": "https://automarket.pl/oferta/kia/cee%27d/T179898/zakup",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:52.079Z",
-          "lastCheckedAt": "2026-11-11T02:03:52.079Z",
-          "lastVerifiedAt": "2026-11-11T02:03:52.079Z",
+          "lastAttemptAt": "2026-11-12T15:48:13.200Z",
+          "lastCheckedAt": "2026-11-12T15:48:13.200Z",
+          "lastVerifiedAt": "2026-11-12T15:48:13.200Z",
           "lastObservation": {
             "url": "https://automarket.pl/oferta/kia/cee%27d/T179898/zakup",
-            "checkedAt": "2026-11-11T02:03:52.079Z",
+            "checkedAt": "2026-11-12T15:48:13.200Z",
             "availability": "available",
             "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
             "httpStatus": 200,
@@ -1238,9 +1358,9 @@
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T02:03:52.079Z",
-      "lastVerifiedAt": "2026-11-11T02:03:52.079Z",
-      "lastAttemptAt": "2026-11-11T02:03:52.079Z",
+      "lastCheckedAt": "2026-11-12T15:48:13.200Z",
+      "lastVerifiedAt": "2026-11-12T15:48:13.200Z",
+      "lastAttemptAt": "2026-11-12T15:48:13.200Z",
       "history": [
         {
           "eventId": "ee7a89af9774446312ac0dfd4f099689f1121eec7620be832341c33020ffef99",
@@ -1545,6 +1665,36 @@
             "id": "listing:automarket:T179898"
           },
           "changes": {}
+        },
+        {
+          "eventId": "52ea1a50e209006ac2cdaaf584e8b38dd5c84e3ccb17475bc472718976204093",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:10.127Z",
+          "url": "https://automarket.pl/oferta/kia/cee%27d/T179898/zakup",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND automarket.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:automarket:T179898"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "f09075b0ff943137ade64426b1ac907754cf490a1b1b843c62f31f27e1f6a103",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:13.200Z",
+          "url": "https://automarket.pl/oferta/kia/cee%27d/T179898/zakup",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:automarket:T179898"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -1615,12 +1765,12 @@
         {
           "url": "https://automarket.pl/oferta/kia/cee%27d/T180234/zakup",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T02:03:52.079Z",
-          "lastCheckedAt": "2026-11-11T02:03:52.079Z",
-          "lastVerifiedAt": "2026-11-11T02:03:52.079Z",
+          "lastAttemptAt": "2026-11-12T15:48:13.200Z",
+          "lastCheckedAt": "2026-11-12T15:48:13.200Z",
+          "lastVerifiedAt": "2026-11-12T15:48:13.200Z",
           "lastObservation": {
             "url": "https://automarket.pl/oferta/kia/cee%27d/T180234/zakup",
-            "checkedAt": "2026-11-11T02:03:52.079Z",
+            "checkedAt": "2026-11-12T15:48:13.200Z",
             "availability": "available",
             "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
             "httpStatus": 200,
@@ -1633,9 +1783,9 @@
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T02:03:52.079Z",
-      "lastVerifiedAt": "2026-11-11T02:03:52.079Z",
-      "lastAttemptAt": "2026-11-11T02:03:52.079Z",
+      "lastCheckedAt": "2026-11-12T15:48:13.200Z",
+      "lastVerifiedAt": "2026-11-12T15:48:13.200Z",
+      "lastAttemptAt": "2026-11-12T15:48:13.200Z",
       "history": [
         {
           "eventId": "4b8ec1b957932d576f8267b74a09d82758b8b803c1bf434b60b90c4342a3de48",
@@ -1940,6 +2090,36 @@
             "id": "listing:automarket:T180234"
           },
           "changes": {}
+        },
+        {
+          "eventId": "8ba4c00d0ce0bc9316ff4a2f2f3ed892a7211de5831144b3d42600b38d277642",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:10.127Z",
+          "url": "https://automarket.pl/oferta/kia/cee%27d/T180234/zakup",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND automarket.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:automarket:T180234"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "78ba14b8f706ee29976a1e042d20bd260359cada90d40ceeaaaf58e69dea7c70",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:13.200Z",
+          "url": "https://automarket.pl/oferta/kia/cee%27d/T180234/zakup",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:automarket:T180234"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -2010,12 +2190,12 @@
         {
           "url": "https://automarket.pl/oferta/kia/cee%27d/T180544/zakup",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:37:23.129Z",
-          "lastCheckedAt": "2026-11-11T16:37:23.129Z",
-          "lastVerifiedAt": "2026-11-11T16:37:23.129Z",
+          "lastAttemptAt": "2026-11-12T15:48:13.201Z",
+          "lastCheckedAt": "2026-11-12T15:48:13.201Z",
+          "lastVerifiedAt": "2026-11-12T15:48:13.201Z",
           "lastObservation": {
             "url": "https://automarket.pl/oferta/kia/cee%27d/T180544/zakup",
-            "checkedAt": "2026-11-11T16:37:23.129Z",
+            "checkedAt": "2026-11-12T15:48:13.201Z",
             "availability": "available",
             "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
             "httpStatus": 200,
@@ -2028,9 +2208,9 @@
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T16:37:23.129Z",
-      "lastVerifiedAt": "2026-11-11T16:37:23.129Z",
-      "lastAttemptAt": "2026-11-11T16:37:23.129Z",
+      "lastCheckedAt": "2026-11-12T15:48:13.201Z",
+      "lastVerifiedAt": "2026-11-12T15:48:13.201Z",
+      "lastAttemptAt": "2026-11-12T15:48:13.201Z",
       "history": [
         {
           "eventId": "c8f9a0807c6bd4b4a72064bcdf63f9e742d659c034ec512f735d479795f8ae49",
@@ -2274,6 +2454,36 @@
             "id": "listing:automarket:T180544"
           },
           "changes": {}
+        },
+        {
+          "eventId": "4caf5a0e5a4b2ddd341d5d913219363a7d771aba1656c5392e567797677cdf77",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:10.127Z",
+          "url": "https://automarket.pl/oferta/kia/cee%27d/T180544/zakup",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND automarket.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:automarket:T180544"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "a651ece60829ba68b22065f0c5c7f2002961509d1a7b6aebf254d722e360b79b",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:13.201Z",
+          "url": "https://automarket.pl/oferta/kia/cee%27d/T180544/zakup",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:automarket:T180544"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -2347,12 +2557,12 @@
         {
           "url": "https://sprzedajemy.pl/kia-ceed-1-4-t-gdi-salon-polska-wzorowy-stan-warszawa-4-6bea9f-nr73545565",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:40:47.974Z",
-          "lastCheckedAt": "2026-11-11T16:40:47.974Z",
-          "lastVerifiedAt": "2026-11-11T16:40:47.974Z",
+          "lastAttemptAt": "2026-11-12T15:50:26.247Z",
+          "lastCheckedAt": "2026-11-12T15:50:26.247Z",
+          "lastVerifiedAt": "2026-11-12T15:50:26.247Z",
           "lastObservation": {
             "url": "https://sprzedajemy.pl/kia-ceed-1-4-t-gdi-salon-polska-wzorowy-stan-warszawa-4-6bea9f-nr73545565",
-            "checkedAt": "2026-11-11T16:40:47.974Z",
+            "checkedAt": "2026-11-12T15:50:26.247Z",
             "availability": "available",
             "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
             "httpStatus": 200,
@@ -2365,9 +2575,9 @@
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T16:40:47.974Z",
-      "lastVerifiedAt": "2026-11-11T16:40:47.974Z",
-      "lastAttemptAt": "2026-11-11T16:40:47.974Z",
+      "lastCheckedAt": "2026-11-12T15:50:26.247Z",
+      "lastVerifiedAt": "2026-11-12T15:50:26.247Z",
+      "lastAttemptAt": "2026-11-12T15:50:26.247Z",
       "history": [
         {
           "eventId": "e42c4006665bfd416e953050682787604ac62b70408af4569d551ed62c8571a8",
@@ -2600,6 +2810,36 @@
             "id": "listing:sprzedajemy:73545565"
           },
           "changes": {}
+        },
+        {
+          "eventId": "71fe75c06be21f12d0a788be93e8a9fd6789033472c56750ad3f3d921ebc6f76",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:39:19.565Z",
+          "url": "https://sprzedajemy.pl/kia-ceed-1-4-t-gdi-salon-polska-wzorowy-stan-warszawa-4-6bea9f-nr73545565",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND sprzedajemy.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:sprzedajemy:73545565"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "814b9f85fbcfa3215b5bc9984db150237fcad323e7e70fefaf2bd8a843a07d01",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:50:26.247Z",
+          "url": "https://sprzedajemy.pl/kia-ceed-1-4-t-gdi-salon-polska-wzorowy-stan-warszawa-4-6bea9f-nr73545565",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:sprzedajemy:73545565"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -2665,12 +2905,12 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Ihu7p.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:36:49.303Z",
+          "lastAttemptAt": "2026-11-12T15:48:19.560Z",
           "lastCheckedAt": "2026-11-10T23:08:21Z",
           "lastVerifiedAt": "2026-11-10T23:08:21Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Ihu7p.html",
-            "checkedAt": "2026-11-11T16:36:49.303Z",
+            "checkedAt": "2026-11-12T15:48:19.560Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -2679,7 +2919,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:08:21Z",
       "lastVerifiedAt": "2026-11-10T23:08:21Z",
-      "lastAttemptAt": "2026-11-11T16:36:49.303Z",
+      "lastAttemptAt": "2026-11-12T15:48:19.560Z",
       "history": [
         {
           "eventId": "8fd53b2c5fe62cbc2b7ed343da88724277f58037f275aaa35735822c83c012c2",
@@ -2845,6 +3085,36 @@
             "id": "listing:otomoto:ID6Ihu7p"
           },
           "changes": {}
+        },
+        {
+          "eventId": "bf2108f33cdb52342b35e371b508f1ecebbef1f4a28a73e8dc6373e24d90a13b",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:13.755Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Ihu7p.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6Ihu7p"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "47dc9ee62508086212c3fbf9550dce85d0dcebdcf18a7301c8be988fa7e483c0",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:19.560Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Ihu7p.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6Ihu7p"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -2914,12 +3184,12 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IitBU.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:36:49.303Z",
+          "lastAttemptAt": "2026-11-12T15:48:19.561Z",
           "lastCheckedAt": "2026-11-10T23:08:21Z",
           "lastVerifiedAt": "2026-11-10T23:08:21Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IitBU.html",
-            "checkedAt": "2026-11-11T16:36:49.303Z",
+            "checkedAt": "2026-11-12T15:48:19.561Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -2928,7 +3198,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:08:21Z",
       "lastVerifiedAt": "2026-11-10T23:08:21Z",
-      "lastAttemptAt": "2026-11-11T16:36:49.303Z",
+      "lastAttemptAt": "2026-11-12T15:48:19.561Z",
       "history": [
         {
           "eventId": "54ee84128f2971c42e782fbb2d0b06d5c481e80f9100907cc305f5cba6faef7c",
@@ -3094,6 +3364,36 @@
             "id": "listing:otomoto:ID6IitBU"
           },
           "changes": {}
+        },
+        {
+          "eventId": "48435f5fceac844d1a9c6b725468b753241b73e27d8ad1e43cf76d1e8d1bf8d4",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:13.756Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IitBU.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IitBU"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "bb6dcd7c289483d01d3b781b9cc3237f277942aa0d19297611eca422f7267c74",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:19.561Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IitBU.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IitBU"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -3166,12 +3466,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/kia-ceed-kia-ceed-1-4-t-gdi-140-km-automat-kombi-2020-114-600km-benzyna-CID5-ID19Nq8n.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:37:22.649Z",
+          "lastAttemptAt": "2026-11-12T15:48:22.051Z",
           "lastCheckedAt": "2026-11-10T23:11:34Z",
           "lastVerifiedAt": "2026-11-10T23:11:34Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/kia-ceed-kia-ceed-1-4-t-gdi-140-km-automat-kombi-2020-114-600km-benzyna-CID5-ID19Nq8n.html",
-            "checkedAt": "2026-11-11T16:37:22.649Z",
+            "checkedAt": "2026-11-12T15:48:22.051Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -3180,7 +3480,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:11:34Z",
       "lastVerifiedAt": "2026-11-10T23:11:34Z",
-      "lastAttemptAt": "2026-11-11T16:37:22.649Z",
+      "lastAttemptAt": "2026-11-12T15:48:22.051Z",
       "history": [
         {
           "eventId": "1c3d6666235b06ce4a035856bff79e1f41184ed44c4b66e4f6ada05058af3d0d",
@@ -3420,6 +3720,36 @@
             "id": "vin:U5YH5814GLL068044"
           },
           "changes": {}
+        },
+        {
+          "eventId": "849f1eb2e7116d750a8bbb6e7af2d3119ac7c461b903e1855ff09613d16b407d",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:17.214Z",
+          "url": "https://www.olx.pl/d/oferta/kia-ceed-kia-ceed-1-4-t-gdi-140-km-automat-kombi-2020-114-600km-benzyna-CID5-ID19Nq8n.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:U5YH5814GLL068044"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "33a4b5e31ac4bd3b4e9b719886b8c30cd4545287aeb065c5acc885439b684716",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:22.051Z",
+          "url": "https://www.olx.pl/d/oferta/kia-ceed-kia-ceed-1-4-t-gdi-140-km-automat-kombi-2020-114-600km-benzyna-CID5-ID19Nq8n.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "vin:U5YH5814GLL068044"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -3492,12 +3822,12 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Ii6CO.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:36:49.303Z",
+          "lastAttemptAt": "2026-11-12T15:48:19.561Z",
           "lastCheckedAt": "2026-11-10T23:08:21Z",
           "lastVerifiedAt": "2026-11-10T23:08:21Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Ii6CO.html",
-            "checkedAt": "2026-11-11T16:36:49.303Z",
+            "checkedAt": "2026-11-12T15:48:19.561Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -3506,7 +3836,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:08:21Z",
       "lastVerifiedAt": "2026-11-10T23:08:21Z",
-      "lastAttemptAt": "2026-11-11T16:36:49.303Z",
+      "lastAttemptAt": "2026-11-12T15:48:19.561Z",
       "history": [
         {
           "eventId": "cb047c5aa05921a35129ca81e4e971b0c4b7f635f4c0771bb02ca21d5cfc9c11",
@@ -3676,6 +4006,36 @@
             "id": "listing:otomoto:ID6Ii6CO"
           },
           "changes": {}
+        },
+        {
+          "eventId": "436552d7e882c8a999a10bcbabfa6d85a2f319e649f033fdda247b18820c69a7",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:13.756Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Ii6CO.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6Ii6CO"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "26da1cf7ad52f32db1d24a4038429dc5bd20551696f2abe1f958d5a0170e7d44",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:19.561Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Ii6CO.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6Ii6CO"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -3744,12 +4104,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/kia-ceed-kia-cee-039d-kombi-2019-wersja-l-83-tys-km-salon-polska-bezwypad-CID5-ID1cZz5o.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:37:22.650Z",
+          "lastAttemptAt": "2026-11-12T15:48:22.051Z",
           "lastCheckedAt": "2026-11-10T23:11:34Z",
           "lastVerifiedAt": "2026-11-10T23:11:34Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/kia-ceed-kia-cee-039d-kombi-2019-wersja-l-83-tys-km-salon-polska-bezwypad-CID5-ID1cZz5o.html",
-            "checkedAt": "2026-11-11T16:37:22.650Z",
+            "checkedAt": "2026-11-12T15:48:22.051Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -3758,7 +4118,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:11:34Z",
       "lastVerifiedAt": "2026-11-10T23:11:34Z",
-      "lastAttemptAt": "2026-11-11T16:37:22.650Z",
+      "lastAttemptAt": "2026-11-12T15:48:22.051Z",
       "history": [
         {
           "eventId": "a9b04b624f2adc0c0a181b4c3b361115b9b3e1eabef4d3756fc6beb827d1d96a",
@@ -4100,6 +4460,36 @@
             "id": "listing:olx:1108121746"
           },
           "changes": {}
+        },
+        {
+          "eventId": "03d1bc77da8475186e553e7cdacde06e45b84af21f22cdc215979dd783fd6431",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:17.215Z",
+          "url": "https://www.olx.pl/d/oferta/kia-ceed-kia-cee-039d-kombi-2019-wersja-l-83-tys-km-salon-polska-bezwypad-CID5-ID1cZz5o.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1108121746"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "9c6cceabc49e7f9930eb54c265363e69aeb3ec80a0b3210563f72e2b86aeafd1",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:22.051Z",
+          "url": "https://www.olx.pl/d/oferta/kia-ceed-kia-cee-039d-kombi-2019-wersja-l-83-tys-km-salon-polska-bezwypad-CID5-ID1cZz5o.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1108121746"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -4176,12 +4566,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/kia-ceed-kia-ceed-kombi-quotl-quot-business-line-2019r-1-4-140-km-automat-7dct-winter-CID5-ID1d0gUa.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:37:22.650Z",
+          "lastAttemptAt": "2026-11-12T15:48:22.052Z",
           "lastCheckedAt": "2026-11-10T23:11:34Z",
           "lastVerifiedAt": "2026-11-10T23:11:34Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/kia-ceed-kia-ceed-kombi-quotl-quot-business-line-2019r-1-4-140-km-automat-7dct-winter-CID5-ID1d0gUa.html",
-            "checkedAt": "2026-11-11T16:37:22.650Z",
+            "checkedAt": "2026-11-12T15:48:22.052Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -4190,7 +4580,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:11:34Z",
       "lastVerifiedAt": "2026-11-10T23:11:34Z",
-      "lastAttemptAt": "2026-11-11T16:37:22.650Z",
+      "lastAttemptAt": "2026-11-12T15:48:22.052Z",
       "history": [
         {
           "eventId": "0fca918d9bee6307058355c60df9409d8d1e1369ed49452aa569fe7a7ed0a8e4",
@@ -4532,6 +4922,36 @@
             "id": "listing:olx:1108290186"
           },
           "changes": {}
+        },
+        {
+          "eventId": "32e2021e462192b116c706fff7af0ad4a17b9585ec67bdf6e29bbaa40aefd086",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:17.215Z",
+          "url": "https://www.olx.pl/d/oferta/kia-ceed-kia-ceed-kombi-quotl-quot-business-line-2019r-1-4-140-km-automat-7dct-winter-CID5-ID1d0gUa.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1108290186"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "7054b25a097d11b8c81e92bd7c524b4d3a38d049117d6a14cccbb95da8a4d63c",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:22.052Z",
+          "url": "https://www.olx.pl/d/oferta/kia-ceed-kia-ceed-kombi-quotl-quot-business-line-2019r-1-4-140-km-automat-7dct-winter-CID5-ID1d0gUa.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1108290186"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -4603,12 +5023,12 @@
         {
           "url": "https://automarket.pl/oferta/kia/cee%27d/T180708/pozyczka",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:37:23.130Z",
+          "lastAttemptAt": "2026-11-12T15:48:15.490Z",
           "lastCheckedAt": "2026-11-10T23:11:44Z",
           "lastVerifiedAt": "2026-11-10T23:11:44Z",
           "lastObservation": {
             "url": "https://automarket.pl/oferta/kia/cee%27d/T180708/pozyczka",
-            "checkedAt": "2026-11-11T16:37:23.130Z",
+            "checkedAt": "2026-11-12T15:48:15.490Z",
             "availability": "access_error",
             "note": "Brak potwierdzenia aktywnej karty: tytuł=true, cena=true, kontakt=false (HTTP 200).",
             "httpStatus": 200,
@@ -4623,7 +5043,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:11:44Z",
       "lastVerifiedAt": "2026-11-10T23:11:44Z",
-      "lastAttemptAt": "2026-11-11T16:37:23.130Z",
+      "lastAttemptAt": "2026-11-12T15:48:15.490Z",
       "history": [
         {
           "eventId": "87fe8f93dac1fc07c5ff94c1cc0c06f5940067379be7e6fccf2f7007ea946a9e",
@@ -4943,6 +5363,36 @@
             "id": "listing:automarket:T180708"
           },
           "changes": {}
+        },
+        {
+          "eventId": "092ca633557c24f20cea92b19eceb84c717a99f34194a5e5fdfd62dd1cd8c1bb",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:10.127Z",
+          "url": "https://automarket.pl/oferta/kia/cee%27d/T180708/pozyczka",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND automarket.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:automarket:T180708"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "ea9a477829caaf7eabfab3d7998441b9c72ab36236e0326b6a2ca43e08812eb4",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:15.490Z",
+          "url": "https://automarket.pl/oferta/kia/cee%27d/T180708/pozyczka",
+          "availability": "access_error",
+          "note": "Brak potwierdzenia aktywnej karty: tytuł=true, cena=true, kontakt=false (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:automarket:T180708"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -5008,12 +5458,12 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IiAW6.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:36:50.424Z",
+          "lastAttemptAt": "2026-11-12T15:48:19.562Z",
           "lastCheckedAt": "2026-11-10T23:08:21Z",
           "lastVerifiedAt": "2026-11-10T23:08:21Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IiAW6.html",
-            "checkedAt": "2026-11-11T16:36:50.424Z",
+            "checkedAt": "2026-11-12T15:48:19.562Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -5022,7 +5472,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:08:21Z",
       "lastVerifiedAt": "2026-11-10T23:08:21Z",
-      "lastAttemptAt": "2026-11-11T16:36:50.424Z",
+      "lastAttemptAt": "2026-11-12T15:48:19.562Z",
       "history": [
         {
           "eventId": "467f34b568884b75b5bce0ca8df1ce882a75288cee709955f7742660874d18bc",
@@ -5219,6 +5669,36 @@
             "id": "listing:otomoto:6151387604"
           },
           "changes": {}
+        },
+        {
+          "eventId": "bc049c9977d4485bacb20646abbb4f494d74434c666472a0fe453151c8c1f612",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:13.756Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IiAW6.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:6151387604"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "ef8a8b565e70015da2f6f020d959bc7047de4b06c1359f7c3f1f8cf1ddd9eb9f",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:19.562Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IiAW6.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:6151387604"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -5292,12 +5772,12 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IjcD1.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:36:50.425Z",
+          "lastAttemptAt": "2026-11-12T15:48:19.562Z",
           "lastCheckedAt": "2026-11-10T23:08:21Z",
           "lastVerifiedAt": "2026-11-10T23:08:21Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IjcD1.html",
-            "checkedAt": "2026-11-11T16:36:50.425Z",
+            "checkedAt": "2026-11-12T15:48:19.562Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -5306,7 +5786,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:08:21Z",
       "lastVerifiedAt": "2026-11-10T23:08:21Z",
-      "lastAttemptAt": "2026-11-11T16:36:50.425Z",
+      "lastAttemptAt": "2026-11-12T15:48:19.562Z",
       "history": [
         {
           "eventId": "540152c1bdd221aabde9aa2234dbf76d9d052072900a3632895db7f3ca42f9f5",
@@ -5560,6 +6040,36 @@
             "id": "listing:otomoto:ID6IjcD1"
           },
           "changes": {}
+        },
+        {
+          "eventId": "c6816a913739948daba7e19b9bad5b041813bd3c12816563477ece92aeb644e8",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:13.757Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IjcD1.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IjcD1"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "7b4f5ebaa5ab1183ff59b6c3e495aa62a1a51a6acbc8e940abbcfddfa193375a",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:19.562Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IjcD1.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IjcD1"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -5633,12 +6143,12 @@
         {
           "url": "https://www.olx.pl/d/oferta/kia-ceed-sw-1-4-t-gdi-140-km-automat-l-polski-salon-aso-pakiet-zimowy-CID5-ID1cPpgl.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T16:37:22.650Z",
+          "lastAttemptAt": "2026-11-12T15:48:22.052Z",
           "lastCheckedAt": "2026-11-10T23:11:34Z",
           "lastVerifiedAt": "2026-11-10T23:11:34Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/kia-ceed-sw-1-4-t-gdi-140-km-automat-l-polski-salon-aso-pakiet-zimowy-CID5-ID1cPpgl.html",
-            "checkedAt": "2026-11-11T16:37:22.650Z",
+            "checkedAt": "2026-11-12T15:48:22.052Z",
             "availability": "access_error",
             "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
             "httpStatus": null
@@ -5647,7 +6157,7 @@
       ],
       "lastCheckedAt": "2026-11-10T23:11:34Z",
       "lastVerifiedAt": "2026-11-10T23:11:34Z",
-      "lastAttemptAt": "2026-11-11T16:37:22.650Z",
+      "lastAttemptAt": "2026-11-12T15:48:22.052Z",
       "history": [
         {
           "eventId": "654fce2d43e622cce4b2bbe737aa8c1ee5b84679788c29d2bdfc711344e64e6b",
@@ -5908,6 +6418,36 @@
             "id": "listing:olx:ID1cPpgl"
           },
           "changes": {}
+        },
+        {
+          "eventId": "8357877b26fed49f1fa5ef5be7fab6d292ef6b59de3233d7f59e4c00bb824a47",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:17.215Z",
+          "url": "https://www.olx.pl/d/oferta/kia-ceed-sw-1-4-t-gdi-140-km-automat-l-polski-salon-aso-pakiet-zimowy-CID5-ID1cPpgl.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:ID1cPpgl"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "6a984d5482e7d03d3fcadf65eef5668879d969055f044ac19df950b0f7fc7f8b",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:22.052Z",
+          "url": "https://www.olx.pl/d/oferta/kia-ceed-sw-1-4-t-gdi-140-km-automat-l-polski-salon-aso-pakiet-zimowy-CID5-ID1cPpgl.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:ID1cPpgl"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -5964,49 +6504,21 @@
         {
           "url": "https://www.olx.pl/d/oferta/kia-ceed-1-4-100-km-super-stan-bogata-wersja-opony-wielosezonowe-niezawodna-CID5-ID1cO1jn.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T17:05:23Z",
+          "lastAttemptAt": "2026-11-12T15:48:22.052Z",
           "lastCheckedAt": "2026-11-11T17:05:23Z",
           "lastVerifiedAt": "2026-11-11T17:05:23Z",
           "lastObservation": {
             "url": "https://www.olx.pl/d/oferta/kia-ceed-1-4-100-km-super-stan-bogata-wersja-opony-wielosezonowe-niezawodna-CID5-ID1cO1jn.html",
-            "checkedAt": "2026-11-11T17:05:23Z",
-            "availability": "available",
-            "httpStatus": null,
-            "availabilityProof": {
-              "identity": true,
-              "contact": true,
-              "price": true,
-              "titleTokensMatched": 7
-            },
-            "evidence": [
-              {
-                "kind": "seller",
-                "fields": [
-                  "year",
-                  "engine",
-                  "body",
-                  "transmission",
-                  "price",
-                  "mileage",
-                  "location",
-                  "offerType",
-                  "saleType",
-                  "lpgInstalled",
-                  "cameraStatus",
-                  "structuralDamageStatus"
-                ],
-                "url": "https://www.olx.pl/d/oferta/kia-ceed-1-4-100-km-super-stan-bogata-wersja-opony-wielosezonowe-niezawodna-CID5-ID1cO1jn.html",
-                "checkedAt": "2026-11-11T17:05:23Z",
-                "note": "Karta OLX podaje Kię Ceed kombi z produkcji 2019, benzynowy 1.4 100 KM, manualną skrzynię, 169 000 km i cenę 42 700 zł do negocjacji; kontakt przez OLX jest dostępny. Lokalizacja wynika z nagłówka ogłoszenia: Łódź Bałuty. Sprzedawca firmowy deklaruje stan nieuszkodzony; jest to deklaracja sprzedawcy, nie niezależna kontrola. Kamera i LPG nie są wymienione. Próba otwarcia zdjęcia CDN zakończyła się błędem cache miss, dlatego zdjęć nie zapisano."
-              }
-            ],
-            "note": "Odczytana karta OLX zawiera aktualną ofertę Kia Ceed kombi 1.4 MPI 100 KM z 2019 r., 169 000 km i ceną 42 700 zł; widoczna jest kontrolka kontaktu „Skontaktuj się”. Sprzedawca firmowy deklaruje stan nieuszkodzony i możliwość sprawdzenia auta. Kamera i LPG nie są potwierdzone. Lokalizacja w nagłówku: Łódź Bałuty. Bezpośredni adres zdjęć nie został pobrany po błędzie cache miss CDN."
+            "checkedAt": "2026-11-12T15:48:22.052Z",
+            "availability": "access_error",
+            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+            "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-11T17:05:23Z",
       "lastVerifiedAt": "2026-11-11T17:05:23Z",
-      "lastAttemptAt": "2026-11-11T17:05:23Z",
+      "lastAttemptAt": "2026-11-12T15:48:22.052Z",
       "history": [
         {
           "eventId": "632c2d63bcffac72d0b3df8ea9df9c03348aca362c621298c9b951f5d2f3906b",
@@ -6167,6 +6679,36 @@
               }
             }
           }
+        },
+        {
+          "eventId": "275893f8624cdedeb561c94bed124a2360d7e927a294f0fca503197d192cccd4",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:17.215Z",
+          "url": "https://www.olx.pl/d/oferta/kia-ceed-1-4-100-km-super-stan-bogata-wersja-opony-wielosezonowe-niezawodna-CID5-ID1cO1jn.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1105370309"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "2444d63d8a516d6dce09cdca296b9eb715f0035b912eba6a50dac9af20a0cb11",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:22.052Z",
+          "url": "https://www.olx.pl/d/oferta/kia-ceed-1-4-100-km-super-stan-bogata-wersja-opony-wielosezonowe-niezawodna-CID5-ID1cO1jn.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:olx:1105370309"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -6234,38 +6776,27 @@
         {
           "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2020r-raty-zamiana-gwarancja-automat-salon-pl-faktura-vat23-biala-perla-4608-7792-GG",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T17:23:27Z",
-          "lastCheckedAt": "2026-11-11T17:23:27Z",
-          "lastVerifiedAt": "2026-11-11T17:23:27Z",
+          "lastAttemptAt": "2026-11-12T15:48:08.099Z",
+          "lastCheckedAt": "2026-11-12T15:48:08.099Z",
+          "lastVerifiedAt": "2026-11-12T15:48:08.099Z",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2020r-raty-zamiana-gwarancja-automat-salon-pl-faktura-vat23-biala-perla-4608-7792-GG",
-            "checkedAt": "2026-11-11T17:23:27Z",
+            "checkedAt": "2026-11-12T15:48:08.099Z",
             "availability": "available",
-            "note": "Karta Autoplac podaje Kia Ceed Kombi z 2020 r., 1.4 T-GDI 140 KM, automat, 140 000 km i 49 900 zł brutto (faktura VAT 23%). Ogłoszenie zaktualizowano dziś; przyciski kontaktu są widoczne. Lokalizacja Gdów, Małopolskie, 32-420. Kamera cofania nie jest wymieniona; LPG nieustalone. Formularz wskazuje uszkodzony: Nie, ale bezwypadkowość: brak danych; brak niezależnej kontroli stanu.",
-            "evidence": [
-              {
-                "kind": "seller",
-                "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2020r-raty-zamiana-gwarancja-automat-salon-pl-faktura-vat23-biala-perla-4608-7792-GG",
-                "checkedAt": "2026-11-11T17:23:27Z",
-                "fields": [
-                  "year",
-                  "price",
-                  "mileage",
-                  "engineVariant",
-                  "bodyCode",
-                  "transmissionCode",
-                  "saleType",
-                  "location"
-                ],
-                "note": "Karta zawiera wymagane dane techniczne i cenę brutto; kamera cofania nie jest podana."
-              }
-            ]
+            "note": "Karta zawiera dopasowanie 6 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+            "httpStatus": 200,
+            "availabilityProof": {
+              "identity": true,
+              "contact": true,
+              "price": true,
+              "titleTokensMatched": 6
+            }
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T17:23:27Z",
-      "lastVerifiedAt": "2026-11-11T17:23:27Z",
-      "lastAttemptAt": "2026-11-11T17:23:27Z",
+      "lastCheckedAt": "2026-11-12T15:48:08.099Z",
+      "lastVerifiedAt": "2026-11-12T15:48:08.099Z",
+      "lastAttemptAt": "2026-11-12T15:48:08.099Z",
       "history": [
         {
           "eventId": "2ccd7dd6884158d28132710bb75abd7352573d474e132a7175441327cc75d008",
@@ -6450,6 +6981,36 @@
               ]
             }
           }
+        },
+        {
+          "eventId": "baadb8e3a6064c3ea35086d86af7dded8c7f02e640c83b17941c9f7c440b890b",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:06.679Z",
+          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2020r-raty-zamiana-gwarancja-automat-salon-pl-faktura-vat23-biala-perla-4608-7792-GG",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND autoplac.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:4608-7792-GG"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "95978695dbb8a19821c7f86c1843aa406c5e8ca446339325669a7e3eff545344",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:08.099Z",
+          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2020r-raty-zamiana-gwarancja-automat-salon-pl-faktura-vat23-biala-perla-4608-7792-GG",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 6 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:4608-7792-GG"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -6517,41 +7078,27 @@
         {
           "url": "https://www.aaaauto.pl/detail/kia/ceed/27992427?campaign=online-sale",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T19:47:00Z",
+          "lastAttemptAt": "2026-11-12T15:50:29.927Z",
           "lastCheckedAt": "2026-11-11T19:47:00Z",
           "lastVerifiedAt": "2026-11-11T19:47:00Z",
           "lastObservation": {
             "url": "https://www.aaaauto.pl/detail/kia/ceed/27992427?campaign=online-sale",
-            "checkedAt": "2026-11-11T19:47:00Z",
-            "availability": "available",
-            "note": "Karta bieżąca (sprawdzona 11.11.2026) pokazuje Kia Ceed SW, rok produkcji 2020, przebieg 136 850 km, silnik 1.4 T-GDi benzyna 103 kW/140 KM, automat 7-biegowy i cenę po obniżce 51 000 zł. Kwota 48 000 zł jest ceną promocyjną powiązaną z finansowaniem, więc nie została użyta jako cena zakupu; kwota gotówkowa po obniżce mieści się w limicie. Karta zawiera aktywne „Kup auto online” i kontrolki kontaktu. Promocja jest oznaczona na 11–30.11.2026; strona zaznacza, że umówienie spotkania nie rezerwuje auta ani nie gwarantuje dostępności. W wyposażeniu wymieniono kamerę cofania. Lokalizacji tego egzemplarza nie podano. LPG i historia uszkodzeń nieopisane; brak niezależnej kontroli uszkodzeń.",
-            "evidence": [
-              {
-                "kind": "seller",
-                "fields": [
-                  "year",
-                  "mileage",
-                  "engine",
-                  "body",
-                  "price",
-                  "transmission",
-                  "cameraStatus",
-                  "saleType",
-                  "offerType",
-                  "lpgInstalled",
-                  "structuralDamageStatus"
-                ],
-                "url": "https://www.aaaauto.pl/detail/kia/ceed/27992427?campaign=online-sale",
-                "checkedAt": "2026-11-11T19:47:00Z",
-                "note": "Dane i wyposażenie podane na karcie sprzedawcy. Cena 51 000 zł to karta cenowa po obniżce; warunkowa cena finansowania 48 000 zł pominięta. Dostępność oparta na aktualnej karcie zakupowej i aktywnych kontrolkach; spotkanie samo w sobie nie gwarantuje dostępności."
-              }
-            ]
+            "checkedAt": "2026-11-12T15:50:29.927Z",
+            "availability": "access_error",
+            "note": "Portal wyświetlił blokadę lub limit dostępu (HTTP 200).",
+            "httpStatus": 200,
+            "availabilityProof": {
+              "identity": false,
+              "contact": false,
+              "price": false,
+              "titleTokensMatched": 0
+            }
           }
         }
       ],
       "lastCheckedAt": "2026-11-11T19:47:00Z",
       "lastVerifiedAt": "2026-11-11T19:47:00Z",
-      "lastAttemptAt": "2026-11-11T19:47:00Z",
+      "lastAttemptAt": "2026-11-12T15:50:29.927Z",
       "history": [
         {
           "eventId": "7cf09cfd56193608fd6c891f6c52817ae2d282690eb8ec38c939c05303b0cc9d",
@@ -6736,6 +7283,36 @@
               }
             }
           }
+        },
+        {
+          "eventId": "fb801aa3ac58774a89a009cecacf322a3f77112f076268926de31c7ec7ff57a1",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:39:23.034Z",
+          "url": "https://www.aaaauto.pl/detail/kia/ceed/27992427?campaign=online-sale",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.aaaauto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:aaaauto:27992427"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "70a035d9c81ae053bb13e3594d3110941208baa5562f4064e454868565a905bc",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:50:29.927Z",
+          "url": "https://www.aaaauto.pl/detail/kia/ceed/27992427?campaign=online-sale",
+          "availability": "access_error",
+          "note": "Portal wyświetlił blokadę lub limit dostępu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:aaaauto:27992427"
+          },
+          "changes": {}
         }
       ],
       "assessment": {

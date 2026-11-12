@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-12",
   "model": {
     "key": "toyota-avensis-iii-wagon",
     "name": "Toyota Avensis III Kombi",
@@ -47,49 +47,21 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6I2zmU.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T17:02:51Z",
+          "lastAttemptAt": "2026-11-12T15:49:57.687Z",
           "lastCheckedAt": "2026-11-11T17:02:51Z",
           "lastVerifiedAt": "2026-11-11T17:02:51Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6I2zmU.html",
-            "checkedAt": "2026-11-11T17:02:51Z",
-            "availability": "available",
-            "httpStatus": null,
-            "availabilityProof": {
-              "identity": true,
-              "contact": true,
-              "price": true,
-              "titleTokensMatched": 7
-            },
-            "evidence": [
-              {
-                "kind": "seller",
-                "fields": [
-                  "year",
-                  "engine",
-                  "body",
-                  "transmission",
-                  "price",
-                  "mileage",
-                  "location",
-                  "offerType",
-                  "saleType",
-                  "lpgInstalled",
-                  "cameraStatus",
-                  "structuralDamageStatus"
-                ],
-                "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6I2zmU.html",
-                "checkedAt": "2026-11-11T17:02:51Z",
-                "note": "Karta Otomoto podaje Avensis III 1.8 Active MS, produkcję 2017, benzynę 1 798 cm³ 147 KM, kombi, automat, 159 648 km, cenę 48 000 zł oraz Oleśnicę (Dolnośląskie); wyświetla aktywne kontrolki kontaktu „Napisz” i „Wyświetl numer”. Sprzedawca prywatny. Wymienione wyposażenie nie obejmuje kamery. LPG i stan konstrukcji nieustalone; sprzedawca nie podaje niezależnego potwierdzenia. Bezpośredni adres zdjęcia nie został pobrany: próba otwarcia CDN zakończyła się błędem cache miss."
-              }
-            ],
-            "note": "Odczytana dziś karta Otomoto zawiera ofertę Toyota Avensis 1.8 Active MS, cenę 48 000 zł, dane auta oraz aktywne kontrolki kontaktu „Napisz” i „Wyświetl numer”. Karta podaje rok produkcji 2017, benzynę 1.8 Valvematic 147 KM, kombi, automat, 159 648 km, lokalizację Oleśnica (Dolnośląskie) i sprzedawcę prywatnego. Kamera nie jest wymieniona w wyposażeniu, LPG nie jest opisane, a stan konstrukcji pozostaje nieznany."
+            "checkedAt": "2026-11-12T15:49:57.687Z",
+            "availability": "access_error",
+            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+            "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-11T17:02:51Z",
       "lastVerifiedAt": "2026-11-11T17:02:51Z",
-      "lastAttemptAt": "2026-11-11T17:02:51Z",
+      "lastAttemptAt": "2026-11-12T15:49:57.687Z",
       "history": [
         {
           "eventId": "3896628b7bb503647278fc229508ffed7e4b03b46269f417f8efa8504afa9d03",
@@ -252,6 +224,36 @@
               }
             }
           }
+        },
+        {
+          "eventId": "a96aeab48c4cec53249c8e4a32da1ac7ebad80bd8822dc2a5eb29b6a1b18d0a8",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:38:51.605Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6I2zmU.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:6147568392"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "92a052385dc2336cc30b28b213b924b655f282d8daef54daca92a7aaf3fad3c3",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:49:57.687Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6I2zmU.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:6147568392"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
@@ -312,42 +314,27 @@
         {
           "url": "https://autoplac.pl/oferta/toyota/avensis/iii-1-8-2017r-18i-147km-automat-zarejestrowany-skory-kamera-4793-2321-NK",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T17:30:34Z",
-          "lastCheckedAt": "2026-11-11T17:30:34Z",
-          "lastVerifiedAt": "2026-11-11T17:30:34Z",
+          "lastAttemptAt": "2026-11-12T15:50:00.275Z",
+          "lastCheckedAt": "2026-11-12T15:50:00.275Z",
+          "lastVerifiedAt": "2026-11-12T15:50:00.275Z",
           "lastObservation": {
             "url": "https://autoplac.pl/oferta/toyota/avensis/iii-1-8-2017r-18i-147km-automat-zarejestrowany-skory-kamera-4793-2321-NK",
-            "checkedAt": "2026-11-11T17:30:34Z",
+            "checkedAt": "2026-11-12T15:50:00.275Z",
             "availability": "available",
-            "note": "Karta Autoplac w crawl z ostatniego miesiąca, indeks wyniku z crawl sprzed tygodnia oraz wynik kategorii crawlowany 2 dni temu wskazują ogłoszenie. Karta podaje „Ostatnia aktualizacja: 2 tygodnie temu”, aktywne kontrolki „Napisz” i „Pokaż numer”, cenę 53 900 zł brutto, rok produkcji 2017, 163 000 km, benzynę 1 798 cm³/147 KM, automat oraz nadwozie kombi. Opis podaje kamerę cofania. Sprzedawca firmowy; portal wskazuje „Uszkodzony: Nie”, ale brak niezależnej kontroli, więc structuralDamageStatus pozostaje unknown; brak potwierdzonego LPG. VIN nie jest udostępniony (opis mówi, że sprzedawca poda go telefonicznie). Bezpośredni URL zdjęcia HTTPS zwrócił cache miss, więc pominięto photos. Nie uzyskano bieżącego HTTP; dostępność opiera się na aktualizowanej niedawno karcie/crawl z CTA, bez deklarowania kodu HTTP.",
-            "evidence": [
-              {
-                "kind": "seller",
-                "fields": [
-                  "year",
-                  "engine",
-                  "body",
-                  "transmission",
-                  "price",
-                  "mileage",
-                  "location",
-                  "offerType",
-                  "saleType",
-                  "cameraStatus",
-                  "lpgInstalled",
-                  "structuralDamageStatus"
-                ],
-                "url": "https://autoplac.pl/oferta/toyota/avensis/iii-1-8-2017r-18i-147km-automat-zarejestrowany-skory-kamera-4793-2321-NK",
-                "checkedAt": "2026-11-11T17:30:34Z",
-                "note": "Karta wymienia wszystkie podstawowe dane, kontrolkę kontaktu, kamerę cofania oraz cenę brutto. Sprzedawca oznaczony jako firma. Pole stanu wskazuje „Uszkodzony: Nie”, ale to deklaracja portalu/sprzedawcy; brak niezależnego potwierdzenia. Instalacja LPG nieopisana."
-              }
-            ]
+            "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+            "httpStatus": 200,
+            "availabilityProof": {
+              "identity": true,
+              "contact": true,
+              "price": true,
+              "titleTokensMatched": 7
+            }
           }
         }
       ],
-      "lastCheckedAt": "2026-11-11T17:30:34Z",
-      "lastVerifiedAt": "2026-11-11T17:30:34Z",
-      "lastAttemptAt": "2026-11-11T17:30:34Z",
+      "lastCheckedAt": "2026-11-12T15:50:00.275Z",
+      "lastVerifiedAt": "2026-11-12T15:50:00.275Z",
+      "lastAttemptAt": "2026-11-12T15:50:00.275Z",
       "history": [
         {
           "eventId": "5c7f8578694333e086681c775f1917640340e9dedaf6b9c006d28c6762538690",
@@ -516,6 +503,36 @@
               }
             }
           }
+        },
+        {
+          "eventId": "d8c7e29ffa86c4c9e4f4415776e4ac044b6619cbd36517aba61b04761c2a8ec2",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:38:54.958Z",
+          "url": "https://autoplac.pl/oferta/toyota/avensis/iii-1-8-2017r-18i-147km-automat-zarejestrowany-skory-kamera-4793-2321-NK",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND autoplac.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:4793-2321-NK"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "20e7a31f24bb0292130ddea2ccf7c6a92f56b925e6570217a54cb90b9f375987",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:50:00.275Z",
+          "url": "https://autoplac.pl/oferta/toyota/avensis/iii-1-8-2017r-18i-147km-automat-zarejestrowany-skory-kamera-4793-2321-NK",
+          "availability": "available",
+          "note": "Karta zawiera dopasowanie 7 cech tytułu, cenę i aktywną opcję kontaktu (HTTP 200).",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:autoplac:4793-2321-NK"
+          },
+          "changes": {}
         }
       ],
       "assessment": {

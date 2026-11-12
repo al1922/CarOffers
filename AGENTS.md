@@ -12,6 +12,14 @@ otwórz tylko ten, który dotyczy bieżącego zadania.
 - Nie commituj, nie pushuj ani nie publikuj bez wyraźnej zgody użytkownika.
 - Przy kontroli UI preferuj lokalny, izolowany Playwright headless. Nie proś o dostęp
   do osobistej przeglądarki, jeśli zadanie da się sprawdzić lokalnie.
+- Flow wymagające live HTTP do portali (wyszukiwanie, dostępność, archiwum,
+  odświeżanie) uruchamiaj w środowisku z działającym dostępem sieciowym. Jeśli
+  wiele niezależnych domen kończy się `ENOTFOUND`, `ERR_NAME_NOT_RESOLVED` lub
+  `EAI_AGAIN` bez odpowiedzi HTTP, potraktuj to najpierw jako ograniczenie sieci
+  sandboxa, nie status portali. Ponów dozwolony checker poza sandboxem, jeśli
+  platforma udostępnia zatwierdzony tryb sieciowy; bez takiego dostępu przerwij
+  część online i nie importuj tych błędów jako rozstrzygnięcia dostępności.
+  Nie obchodź CAPTCHA, `robots.txt`, blokad ani polityk sieciowych.
 - Strona jest statyczna: ponowne wczytanie plików JSON nie sprawdza portali.
 - Nie przeglądaj historycznych czatów rutynowo: to zwiększa niepotrzebny kontekst.
   Sięgaj do nich tylko, gdy bieżące zadanie odwołuje się do wcześniejszych ustaleń

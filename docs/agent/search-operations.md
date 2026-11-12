@@ -22,6 +22,25 @@ auta osadzone w ogłoszeniu, maksymalnie 12, bez pobierania plików. Nie wyciąg
 ze zdjęć faktów o stanie, wyposażeniu ani uszkodzeniach. Jeśli portal nie ujawnia
 bezpośrednich adresów, zdjęcie jest niedostępne albo link nie jest HTTPS, pomiń je.
 
+## Dostęp sieciowy dla wszystkich flow
+
+Wyszukiwanie, `availability-plan`, `archive-availability-plan` i `refresh-plan`
+odczytują portale na żywo. Uruchamiaj ich czytniki Playwright w środowisku z
+dostępem do sieci zewnętrznej. Jeśli wiele niezależnych domen kończy się
+`getaddrinfo ENOTFOUND`, `ERR_NAME_NOT_RESOLVED` lub `EAI_AGAIN` i nie ma kodu
+HTTP, najpierw sprawdź ograniczenie DNS środowiska uruchomieniowego. Nie
+interpretuj takiego wyniku jako blokady poszczególnych portali ani jako braku,
+zamknięcia lub niedostępności ofert.
+
+Jeśli platforma udostępnia zatwierdzone uruchomienie poza sandboxem, ponów w nim
+ten sam dozwolony checker (`search:portal`, `availability-check.mjs` lub
+czytnik refresh), zachowując zwykłe reguły źródła, `robots.txt` i dowodów. Jeśli
+nie ma takiej możliwości, zatrzymaj część online, zachowaj diagnostykę i nie
+importuj serii błędów DNS jako wyników flow. Pojedynczy błąd dla jednej domeny
+może być jej własną awarią; traktuj go jako problem środowiska dopiero wtedy,
+gdy obejmuje kilka niezależnych domen. Nie zmieniaj DNS, nie używaj proxy i nie
+omijaj blokad ani CAPTCHA.
+
 ## Praca równoległa
 
 Gdy użytkownik prosi o szukanie nowych ofert, uruchom oddzielny przebieg `plan`

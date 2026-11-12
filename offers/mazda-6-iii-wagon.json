@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-11",
+  "updatedAt": "2026-11-12",
   "model": {
     "key": "mazda-6-iii-wagon",
     "name": "Mazda 6 III Wagon",
@@ -50,42 +50,21 @@
         {
           "url": "https://www.otomoto.pl/osobowe/oferta/mazda-6-ID6IiHi1.html",
           "status": "available",
-          "lastAttemptAt": "2026-11-11T17:04:41Z",
+          "lastAttemptAt": "2026-11-12T15:48:24.356Z",
           "lastCheckedAt": "2026-11-11T17:04:41Z",
           "lastVerifiedAt": "2026-11-11T17:04:41Z",
           "lastObservation": {
             "url": "https://www.otomoto.pl/osobowe/oferta/mazda-6-ID6IiHi1.html",
-            "checkedAt": "2026-11-11T17:04:41Z",
-            "availability": "available",
-            "note": "Przeczytana karta Otomoto pokazuje Mazda 6 Kombi 2.0 SKYACTIV-G 145 KM, 2017, 165 713 km, 53 900 zł oraz kontrolki kontaktu „Napisz” i „Wyświetl numer”. Karta została udostępniona w warstwie web jako crawl z ostatniego tygodnia, a indeks wyników Otomoto z dzisiejszym crawl nadal zawiera ogłoszenie. Nie uzyskano bieżącego HTTP przez Playwright z powodu net::ERR_NAME_NOT_RESOLVED, dlatego dostępność opiera się na widocznej karcie i aktualnym indeksie, bez deklarowania kodu HTTP. Lokalizacja Jeżów Sudecki, Dolnośląskie, 58-521 jest widoczna przy sprzedającym. Sprzedawca klasyfikowany przez portal jako firma i deklaruje bezwypadkowość; nie ma niezależnej kontroli konstrukcji. Kamera cofania i LPG nie są potwierdzone. Bezpośrednie zdjęcia CDN zwróciły cache miss, więc pominięto photos.",
-            "evidence": [
-              {
-                "kind": "seller",
-                "fields": [
-                  "year",
-                  "engine",
-                  "body",
-                  "transmission",
-                  "price",
-                  "mileage",
-                  "location",
-                  "offerType",
-                  "saleType",
-                  "lpgInstalled",
-                  "cameraStatus",
-                  "structuralDamageStatus"
-                ],
-                "url": "https://www.otomoto.pl/osobowe/oferta/mazda-6-ID6IiHi1.html",
-                "checkedAt": "2026-11-11T17:04:41Z",
-                "note": "Karta ogłoszenia podaje 2017, silnik benzynowy 1 998 cm³/145 KM, kombi, manual, 165 713 km, 53 900 zł, wyposażenie parkowania i lokalizację Jeżów Sudecki 58-521. Portal pokazuje sprzedawcę firmowego oraz aktywne kontrolki kontaktu. Kamera nie jest wymieniona. Bezwypadkowość pochodzi wyłącznie z deklaracji sprzedawcy, bez niezależnej kontroli; LPG niepotwierdzone."
-              }
-            ]
+            "checkedAt": "2026-11-12T15:48:24.356Z",
+            "availability": "access_error",
+            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+            "httpStatus": null
           }
         }
       ],
       "lastCheckedAt": "2026-11-11T17:04:41Z",
       "lastVerifiedAt": "2026-11-11T17:04:41Z",
-      "lastAttemptAt": "2026-11-11T17:04:41Z",
+      "lastAttemptAt": "2026-11-12T15:48:24.356Z",
       "history": [
         {
           "eventId": "6b973dad07f5303a0339ecf7c45a35f7c3740fac393812fd253689eda1e5f22f",
@@ -254,6 +233,36 @@
               }
             }
           }
+        },
+        {
+          "eventId": "f19e0e33b0bd5c4d1218a6ad2db4de47f3a0a2904d0455b17356d7591ad92057",
+          "runId": "dostepnosc-2026-11-12b",
+          "checkedAt": "2026-11-12T14:37:20.605Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/mazda-6-ID6IiHi1.html",
+          "availability": "access_error",
+          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.otomoto.pl",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IiHi1"
+          },
+          "changes": {}
+        },
+        {
+          "eventId": "612edde89ae3d77fc39e9826b2b01f6f49ea316eaef3e32866e282c6c74ea3fa",
+          "runId": "dostepnosc-2026-11-12c",
+          "checkedAt": "2026-11-12T15:48:24.356Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/mazda-6-ID6IiHi1.html",
+          "availability": "access_error",
+          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:otomoto:ID6IiHi1"
+          },
+          "changes": {}
         }
       ],
       "assessment": {
