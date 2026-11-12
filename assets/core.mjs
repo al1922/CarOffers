@@ -25,10 +25,12 @@ export function identityKeys(o){return [...new Set([
  ...(o.id?['id:'+o.id.toLowerCase()]:[]),...(/^[A-HJ-NPR-Z0-9]{17}$/i.test(o.vin||'')?['vin:'+o.vin.toUpperCase()]:[]),
  ...(o.listingIds||[]).map(x=>'listing:'+x.toLowerCase()),...(o.urls||[]).flatMap(x=>[x.url,x.normalized].map(canonicalURL).filter(Boolean).map(u=>'url:'+u))
  ])];}
+const validVin=/^[A-HJ-NPR-Z0-9]{17}$/i;
+function reviewSignals(o){const signals=[];if(o.vin&&!validVin.test(o.vin))signals.push('VIN ma nieprawidłowy format — sprawdź go na dokumencie lub pojeździe.');const year=Number(o.year),mileage=Number(o.mileage);if(Number.isFinite(year)&&year>1900&&year<=new Date().getFullYear()&&Number.isFinite(mileage)&&mileage>=0){const annual=mileage/Math.max(1,new Date().getFullYear()-year+1);if(annual>40000)signals.push('Przebieg przekracza 40 000 km na rok wieku auta — zweryfikuj odczyt i sposób użytkowania.');else if(annual<1000)signals.push('Przebieg jest niższy niż 1 000 km na rok wieku auta — potwierdź historię odczytów.');}const history=[...(o.history||[])].sort((a,b)=>(Date.parse(a.checkedAt)||0)-(Date.parse(b.checkedAt)||0));let previousMileage=null;const vins=new Set(o.vin?[o.vin.toUpperCase()]:[]);for(const event of history){const mileageChange=event.changes?.mileage;if(mileageChange){if(Number.isFinite(mileageChange.before))previousMileage=mileageChange.before;if(Number.isFinite(mileageChange.after)){if(previousMileage!==null&&mileageChange.after<previousMileage)signals.push('Historia zawiera spadek przebiegu — porównaj daty i źródła odczytów.');previousMileage=mileageChange.after;}}const vinChange=event.changes?.vin;if(vinChange){for(const value of [vinChange.before,vinChange.after])if(typeof value==='string'&&value.trim())vins.add(value.trim().toUpperCase());}}if(vins.size>1)signals.push('VIN zmienił się między zapisanymi danymi — ręcznie potwierdź tożsamość auta.');return signals;}
 export function normalize(o,model){
  const transmission=o.transmissionCode || (/automat|dsg|dct|cvt|edc/i.test(o.transmission||'')?'automatic':/manual/i.test(o.transmission||'')?'manual':'unknown');
  const body=o.bodyCode || (/kombi|wagon|variant|grandtour|sportswagon|touring sports/i.test(o.body||'')?'wagon':/sedan/i.test(o.body||'')?'sedan':/crossover/i.test(o.body||'')?'crossover':/suv/i.test(o.body||'')?'suv':/minivan|mpv/i.test(o.body||'')?'minivan':/hatchback/i.test(o.body||'')?'hatchback':'unknown');
- return {...o,modelKey:model.key,modelName:model.name,displayTransmission:transmission,displayBody:body,
+ return {...o,modelKey:model.key,modelName:model.name,displayTransmission:transmission,displayBody:body,reviewSignals:reviewSignals(o),
   // These display codes never become evidence or feed the assessment engine.
   storageKeys:identityKeys(o),key:model.key+'|'+o.id};
 }
@@ -40,15 +42,16 @@ export function dedupe(list){
  return [...groups.values()].flatMap(group=>{
   const vins=new Set(group.map(o=>o.vin?.toUpperCase()).filter(Boolean));
   const models=new Set(group.map(o=>o.modelKey));
+  const discrepancies=[];for(const [field,label] of [['vin','VIN'],['year','rocznik'],['engineVariant','wariant silnika'],['bodyCode','nadwozie']]){const values=new Set(group.map(o=>field==='vin'?o[field]?.toUpperCase():o[field]).filter(value=>value!==null&&value!==undefined&&value!==''));if(values.size>1)discrepancies.push(`Powiązane ogłoszenia podają różne wartości pola ${label} — sprawdź źródła.`);}const mileages=group.map(o=>o.mileage).filter(Number.isFinite);if(mileages.length>1&&Math.max(...mileages)-Math.min(...mileages)>5000)discrepancies.push('Powiązane ogłoszenia różnią się przebiegiem o ponad 5 000 km — sprawdź daty odczytów.');const prices=group.map(o=>o.price).filter(value=>Number.isFinite(value)&&value>0);if(prices.length>1&&Math.max(...prices)/Math.min(...prices)>1.2)discrepancies.push('Powiązane ogłoszenia różnią się ceną o ponad 20% — sprawdź, czy dotyczą tego samego auta i czasu.');const signals=[...new Set([...group.flatMap(o=>o.reviewSignals||[]),...discrepancies])];
   const contradictory=['year','engineVariant','bodyCode'].some(field=>new Set(group.map(o=>o[field]).filter(value=>value!==null&&value!==undefined)).size>1);
-  if(vins.size>1||models.size>1||contradictory)return group.map(o=>({...o,identityConflict:true,storageKeys:['conflict:'+o.key+'|'+[o.vin,o.year,o.engineVariant,o.bodyCode].map(v=>v??'').join('|')],members:[o]}));
+  if(vins.size>1||models.size>1||contradictory)return group.map(o=>({...o,identityConflict:true,reviewSignals:signals,storageKeys:['conflict:'+o.key+'|'+[o.vin,o.year,o.engineVariant,o.bodyCode].map(v=>v??'').join('|')],members:[o]}));
   const sorted=[...group].sort((a,b)=>(Date.parse(b.lastCheckedAt)||0)-(Date.parse(a.lastCheckedAt)||0));
   const winner=sorted[0];
   return [{...winner,members:group,storageKeys:[...new Set(group.flatMap(o=>o.storageKeys))],
    urls:[...new Map(group.flatMap(o=>o.urls||[]).map(x=>[canonicalURL(x.url),x])).values()],
    listingStates:[...new Map(group.flatMap(o=>o.listingStates||[]).map(x=>[canonicalURL(x.url),x])).values()],
    history:[...new Map(group.flatMap(o=>o.history||[]).map(x=>[x.eventId||JSON.stringify(x),x])).values()],
-   isNew:group.some(o=>o.isNew)}];
+   reviewSignals:signals,isNew:group.some(o=>o.isNew)}];
  });
 }
 export function locationLabel(o){return o.location?.status==='available'&&o.location.city?o.location.city:'';}
@@ -92,7 +95,7 @@ export function sanitizeFilters(input={},validModels=[]){
  output.models=Array.isArray(input.models)?[...new Set(input.models.filter(k=>validModels.includes(k)))]:[];
  for(const key of ['maxPrice','maxMileage','minYear','maxYear','radius'])if(output[key]!==''&&(!Number.isFinite(+output[key])||+output[key]<0))output[key]='';
  if(!['offers','archive','saved','compare','knowledge','updates'].includes(output.section))output.section='offers';
- if(!['cards','table'].includes(output.view))output.view='cards';
+ if(!['cards','compact','table'].includes(output.view))output.view='cards';
  if(!['priority','priceAsc','priceDesc','mileageAsc','yearDesc','newest','checked','distance'].includes(output.sort))output.sort='priority';
  return output;
 }
