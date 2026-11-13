@@ -153,6 +153,14 @@ def validate_worker_result(result, task, model, root=ROOT, require_search_cache=
         raise ValueError("Unknown task kind")
     if task["kind"] == "search":
         coverage = result["coverage"]
+        if result.get("outcome") in ("complete", "no_matches") and "searchQueries" in coverage:
+            queries = coverage["searchQueries"]
+            if (not isinstance(queries, list) or not queries or
+                    any(not isinstance(query, dict) or not isinstance(query.get("queryId"), str) or
+                        not query["queryId"].strip() or query.get("complete") is not True or
+                        type(query.get("pagesChecked")) is not int or query["pagesChecked"] < 1
+                        for query in queries)):
+                raise ValueError("Full search requires complete coverage for every query")
         if require_search_cache:
             for field in ("searchResults", "listingUrlsChecked"):
                 if field not in coverage:

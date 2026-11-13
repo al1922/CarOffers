@@ -285,9 +285,17 @@ function identityKey(url) {
   return id ? "sprzedajemy:" + id : parsed.origin + parsed.pathname.replace(/\/$/, "") + parsed.search;
 }
 
-async function activeIdentities(root) {
-  const folder = path.join(root, "offers");
+async function activeIdentities(root, task) {
   const ids = new Set();
+  if (Array.isArray(task?.activeOfferUrls)) {
+    for (const url of task.activeOfferUrls) {
+      try { ids.add(identityKey(url)); } catch { /* Ignore invalid snapshot URLs; local finish remains authoritative. */ }
+    }
+    for (const id of task.activeListingIds ?? []) if (typeof id === "string") ids.add(id.toLowerCase());
+    for (const vin of task.activeVins ?? []) if (typeof vin === "string") ids.add("vin:" + vin.toUpperCase());
+    return ids;
+  }
+  const folder = path.join(root, "offers");
   for (const file of await readdir(folder)) {
     if (!file.endsWith(".json")) continue;
     const records = JSON.parse(await readFile(path.join(folder, file), "utf8")).offers ?? [];
@@ -307,7 +315,7 @@ export async function verifyListings({ root, task, snapshot, navigate, page, max
   const errors = [...(snapshot.errors ?? [])];
   const offers = [];
   const checks = [];
-  const ids = await activeIdentities(root);
+  const ids = await activeIdentities(root, task);
   const cachedReads = new Map((task.sharedResultsCache?.cardReads ?? []).map((entry) => [entry.url, entry]));
   const cardReads = [];
   let openedCards = 0;

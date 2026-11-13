@@ -2799,6 +2799,232 @@
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
       "verdictNote": "body; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
+    },
+    {
+      "id": "vin:SB1ZS3JE10E373343",
+      "modelKey": "toyota-auris-touring-sports",
+      "title": "Toyota Auris II 1.8 hybryda kombi na lata polski salon",
+      "urls": [
+        {
+          "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-8-2017r-hybryda-kombi-na-lata-polski-salon-4384-9162-DY"
+        }
+      ],
+      "price": 54449,
+      "priceBasis": "unknown",
+      "mileage": 165500,
+      "bodyCode": "wagon",
+      "transmissionCode": "automatic",
+      "vin": "SB1ZS3JE10E373343",
+      "offerType": "unknown",
+      "photos": [
+        "https://autoplac.pl/assets/icon/arrows/strzalka.svg",
+        "https://euw2-cdn.autoplac.pl/v1/p/f9cc9373-aff8-4fcc-adcd-bc3f3fe62b68?f=1920:webp",
+        "https://autoplac.pl/assets/img/footer-logos/yanosik-gray-v2.avif",
+        "https://autoplac.pl/assets/img/footer-logos/akol-gray.avif",
+        "https://autoplac.pl/assets/img/footer-logos/aztec-gray.avif",
+        "https://autoplac.pl/assets/img/footer-logos/arthur-gray.avif",
+        "https://autoplac.pl/assets/img/footer-logos/web-wizard-gray.avif",
+        "https://autoplac.pl/assets/img/footer-logos/moto-app-gray.avif",
+        "https://autoplac.pl/assets/img/footer-logos/comperia-gray.avif",
+        "https://autoplac.pl/assets/img/footer-logos/autotesto-gray.avif",
+        "https://autoplac.pl/assets/img/footer-logos/audiance-gray.avif",
+        "https://autoplac.pl/assets/img/footer-logos/kiosk-polis-gray.avif"
+      ],
+      "location": {
+        "status": "not_provided"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-13T16:03:01.296Z",
+      "listingStates": [
+        {
+          "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-8-2017r-hybryda-kombi-na-lata-polski-salon-4384-9162-DY",
+          "status": "available",
+          "lastAttemptAt": "2026-11-13T16:03:01.296Z",
+          "lastCheckedAt": "2026-11-13T16:03:01.296Z",
+          "lastVerifiedAt": "2026-11-13T16:03:01.296Z",
+          "lastObservation": {
+            "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-8-2017r-hybryda-kombi-na-lata-polski-salon-4384-9162-DY",
+            "checkedAt": "2026-11-13T16:03:01.296Z",
+            "availability": "available",
+            "note": "Dane pojazdu na karcie zawierają status InStock.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-8-2017r-hybryda-kombi-na-lata-polski-salon-4384-9162-DY",
+                "checkedAt": "2026-11-13T16:03:01.296Z",
+                "fields": [
+                  "title",
+                  "mileage",
+                  "price",
+                  "vin",
+                  "bodyCode",
+                  "transmissionCode"
+                ],
+                "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-13T16:03:01.296Z",
+      "lastVerifiedAt": "2026-11-13T16:03:01.296Z",
+      "lastAttemptAt": "2026-11-13T16:03:01.296Z",
+      "history": [
+        {
+          "eventId": "371c653261ce4bd02df3bd363e7456a863e8e617e5d371efb32826013aeed6c7",
+          "runId": "search20261113b",
+          "checkedAt": "2026-11-13T16:03:01.296Z",
+          "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-8-2017r-hybryda-kombi-na-lata-polski-salon-4384-9162-DY",
+          "availability": "available",
+          "note": "Dane pojazdu na karcie zawierają status InStock.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-8-2017r-hybryda-kombi-na-lata-polski-salon-4384-9162-DY",
+              "checkedAt": "2026-11-13T16:03:01.296Z",
+              "fields": [
+                "title",
+                "mileage",
+                "price",
+                "vin",
+                "bodyCode",
+                "transmissionCode"
+              ],
+              "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+            }
+          ],
+          "reportedFields": {
+            "id": "vin:SB1ZS3JE10E373343",
+            "modelKey": "toyota-auris-touring-sports",
+            "title": "Toyota Auris II 1.8 hybryda kombi na lata polski salon",
+            "urls": [
+              {
+                "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-8-2017r-hybryda-kombi-na-lata-polski-salon-4384-9162-DY"
+              }
+            ],
+            "price": 54449,
+            "priceBasis": "unknown",
+            "mileage": 165500,
+            "bodyCode": "wagon",
+            "transmissionCode": "automatic",
+            "vin": "SB1ZS3JE10E373343",
+            "offerType": "unknown",
+            "saleType": null,
+            "lpgInstalled": null,
+            "photos": [
+              "https://autoplac.pl/assets/icon/arrows/strzalka.svg",
+              "https://euw2-cdn.autoplac.pl/v1/p/f9cc9373-aff8-4fcc-adcd-bc3f3fe62b68?f=1920:webp",
+              "https://autoplac.pl/assets/img/footer-logos/yanosik-gray-v2.avif",
+              "https://autoplac.pl/assets/img/footer-logos/akol-gray.avif",
+              "https://autoplac.pl/assets/img/footer-logos/aztec-gray.avif",
+              "https://autoplac.pl/assets/img/footer-logos/arthur-gray.avif",
+              "https://autoplac.pl/assets/img/footer-logos/web-wizard-gray.avif",
+              "https://autoplac.pl/assets/img/footer-logos/moto-app-gray.avif",
+              "https://autoplac.pl/assets/img/footer-logos/comperia-gray.avif",
+              "https://autoplac.pl/assets/img/footer-logos/autotesto-gray.avif",
+              "https://autoplac.pl/assets/img/footer-logos/audiance-gray.avif",
+              "https://autoplac.pl/assets/img/footer-logos/kiosk-polis-gray.avif"
+            ],
+            "location": {
+              "status": "not_provided"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "vin:SB1ZS3JE10E373343"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "toyota-auris-touring-sports"
+            },
+            "title": {
+              "before": null,
+              "after": "Toyota Auris II 1.8 hybryda kombi na lata polski salon"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://autoplac.pl/oferta/toyota/auris/ii-1-8-2017r-hybryda-kombi-na-lata-polski-salon-4384-9162-DY"
+                }
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 54449
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "unknown"
+            },
+            "mileage": {
+              "before": null,
+              "after": 165500
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "automatic"
+            },
+            "vin": {
+              "before": null,
+              "after": "SB1ZS3JE10E373343"
+            },
+            "offerType": {
+              "before": null,
+              "after": "unknown"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://autoplac.pl/assets/icon/arrows/strzalka.svg",
+                "https://euw2-cdn.autoplac.pl/v1/p/f9cc9373-aff8-4fcc-adcd-bc3f3fe62b68?f=1920:webp",
+                "https://autoplac.pl/assets/img/footer-logos/yanosik-gray-v2.avif",
+                "https://autoplac.pl/assets/img/footer-logos/akol-gray.avif",
+                "https://autoplac.pl/assets/img/footer-logos/aztec-gray.avif",
+                "https://autoplac.pl/assets/img/footer-logos/arthur-gray.avif",
+                "https://autoplac.pl/assets/img/footer-logos/web-wizard-gray.avif",
+                "https://autoplac.pl/assets/img/footer-logos/moto-app-gray.avif",
+                "https://autoplac.pl/assets/img/footer-logos/comperia-gray.avif",
+                "https://autoplac.pl/assets/img/footer-logos/autotesto-gray.avif",
+                "https://autoplac.pl/assets/img/footer-logos/audiance-gray.avif",
+                "https://autoplac.pl/assets/img/footer-logos/kiosk-polis-gray.avif"
+              ]
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "vin:SB1ZS3JE10E373343",
+        "modelKey": "toyota-auris-touring-sports",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_purchase_price",
+          "production_year",
+          "exact_engine_variant",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit",
+          "purchase_not_auction"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_purchase_price; production_year; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction"
     }
   ],
   "archivedOffers": [

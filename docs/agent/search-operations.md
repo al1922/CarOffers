@@ -41,16 +41,140 @@ może być jej własną awarią; traktuj go jako problem środowiska dopiero wte
 gdy obejmuje kilka niezależnych domen. Nie zmieniaj DNS, nie używaj proxy i nie
 omijaj blokad ani CAPTCHA.
 
+Przed dużym przebiegiem wykonaj tani preflight DNS: `npm run search:preflight
+-- --run <run-id>`. Polecenie rozwiązuje hosty źródeł z kolejki i nie wysyła
+żądań HTTP do portali. Przy `environment_dns_failure` przenieś ten sam dozwolony
+checker do zatwierdzonego środowiska sieciowego; nie zaczynaj masowego `claim` i
+nie zapisuj błędów DNS jako wyniku portalu. Poprawny DNS jest tylko warunkiem
+wstępnym, nie dowodem dostępu HTTP ani dostępności ofert.
+
+Plan, przydział, `finish` i import pozostają lokalne. Gdy zatwierdzone środowisko
+sieciowe współdzieli ten sam checkout, można przekazać claim przez
+`npm run search:network-worker -- --claim-stdin`. Gdy checkout nie jest
+współdzielony, użyj przenośnego pakietu worker. Pakiet przenosi claim, cache
+odczytów kart, listę aktywnych URL-i ogłoszeń oraz — przy kontynuacji — wynik
+źródłowej próby. Nie przenosi `tasks.json` ani plików `offers/*.json`.
+
+Przykładowy przepływ pakietowy w PowerShell:
+
+```powershell
+$runId = "<run-id>"
+$worker = "network-1"
+$claimJson = python -B scripts/car-search.py claim --run $runId --worker $worker
+$claim = $claimJson | ConvertFrom-Json
+$taskId = $claim.id
+python -B scripts/car-search.py export-worker --run $runId --task $taskId
+# Skopiuj katalog runs/$runId/worker-bundles/$taskId do zgodnego checkoutu
+# w zatwierdzonym środowisku sieciowym, zachowując tę samą ścieżkę względną.
+# W tym checkout, z zainstalowanymi zależnościami i przeglądarką Playwright:
+npm run search:network-worker -- --bundle "runs/$runId/worker-bundles/$taskId"
+# Skopiuj cały katalog pakietu z powrotem do lokalnego checkoutu.
+python -B scripts/car-search.py collect-worker --run $runId --task $taskId
+$resultPath = "runs/$runId/results/$($claim.id).json"
+$result = Get-Content -LiteralPath $resultPath -Raw | ConvertFrom-Json
+python -B scripts/car-search.py finish --run $runId --task $taskId --result $result.outcome
+```
+
+Pakiet zawiera manifest z SHA-256 plików wejściowych i używanego kodu,
+konfiguracji, wiedzy modeli oraz definicji zależności. Worker odmawia pracy, gdy
+checkout się różni. Środowisko sieciowe musi mieć zgodne pliki projektu,
+zależności npm i przeglądarkę Playwright. Odbiór sprawdza manifest, wynik,
+tożsamość zadania i aktualny lokalny przydział; dopiero potem zapisuje wynik
+lokalnie. Następnie koordynator wykonuje lokalne `finish`, a później
+`import-preview` i dalsze kroki według reguł importu. Worker ma domyślne limity
+2 stron i 20 nowych odczytów kart na zadanie. Można je jawnie zmienić flagami
+`--max-pages` (1–20) i `--max-cards` (1–200), np. gdy przegląd przebiegu pokaże
+powtarzalne ucięcie wyników. Jeśli nie ma
+zatwierdzonego uruchomienia poza sandboxem, użyj
+widocznej, odizolowanej przeglądarki Codexa jako ograniczonej próby ręcznej:
+wykonaj jedno zapytanie w publicznym interfejsie, otwórz pasujące karty i
+zapisz wyłącznie potwierdzone dane. Niepełna paginacja lub brak dowodu z karty
+pozostawia `partial`; CAPTCHA, odmowa dostępu i ograniczenie `robots.txt`
+kończą tę próbę bez obchodzenia zabezpieczeń. Nie przypisuj ofert znalezionych
+przez portal pośredniczący do niewłaściwego źródła — zapisuj rzeczywistą domenę
+karty.
+
+## Ulepszanie jakości wyszukiwania
+
+Po przebiegu wygeneruj lokalny, tylko-odczytowy przegląd:
+`npm run search:review -- --run <run-id>`. Raport `search-review.md` i
+`search-review.json` zapisują się w katalogu przebiegu. Grupują wyniki według
+portalu i rozdzielają sygnały DNS, odmów dostępu, błędów czytnika, błędów
+adaptera oraz limitów pokrycia. Pokazują również medianę i p95 czasu czytnika,
+czas od `claim` do `finish` oraz czas czytnika przypadający na zapisaną ofertę.
+Czas `claim`–`finish` obejmuje przekazanie i oczekiwanie koordynatora; używaj
+czasu czytnika do porównań wydajności portali. Raport wskazuje też zadania
+`pending`/`running` i źródła pominięte, bo ich adapter jest oznaczony jako
+`blocked`. Porównuj te pomiary przed podnoszeniem limitów stron/kart lub
+równoległości.
+
+Użyj zaleceń do wybrania małego, mierzalnego następnego kroku: uruchomienia
+dozwolonego czytnika w zatwierdzonej sieci przy błędach DNS, pilota adaptera przy
+powtarzalnych problemach selektorów albo kontynuacji od udokumentowanego
+dozwolonego `nextUrl` przy osiągniętym limicie. Raport niczego nie ponawia, nie zmienia
+`tasks.json`, konfiguracji ani ofert. `403`, CAPTCHA i odmowa `robots.txt`
+oznaczają zatrzymanie prób dla danego zakresu, nie sugestię obejścia.
+
+Po wyniku `partial` z dozwolonym, zapisanym `nextUrl` można uruchomić dokładnie
+jedną kontynuację:
+
+```powershell
+$runId = "<run-id>"
+$taskId = "<partial-task-id>"
+$claimJson = python -B scripts/car-search.py continue-search --run $runId --task $taskId --worker network-1
+$claim = $claimJson | ConvertFrom-Json
+$taskId = $claim.id
+python -B scripts/car-search.py export-worker --run $runId --task $taskId
+# Przenieś katalog pakietu do zgodnego checkoutu sieciowego i uruchom tam:
+npm run search:network-worker -- --bundle "runs/$runId/worker-bundles/$taskId"
+# Przenieś pakiet z powrotem, następnie lokalnie:
+python -B scripts/car-search.py collect-worker --run $runId --task $taskId
+$resultPath = "runs/$runId/results/$($claim.id).json"
+$result = Get-Content -LiteralPath $resultPath -Raw | ConvertFrom-Json
+python -B scripts/car-search.py finish --run $runId --task $taskId --result $result.outcome
+```
+
+`continue-search` tworzy osobne zadanie kontynuacyjne z tym samym zamrożonym
+profilem, wybiera zapisaną następną stronę i dołącza identyfikator źródłowego
+wyniku. Czytnik przed nawigacją ponownie sprawdza `robots.txt`, HTTPS i tę samą
+domenę. Wynik kontynuacji zachowuje wcześniejsze strony i odczyty kart; do
+importu przekazuje tylko nowe oferty. Jeśli URL nie jest dozwolony, dostał już
+odmowę albo nie ma wiarygodnego `nextUrl`, polecenie odmawia kontynuacji. Dalsze
+strony pozostawiają `partial`, dopóki kolejna kontynuacja nie wyczerpie
+paginacji i nie zostaną rozstrzygnięci kandydaci.
+
 ## Praca równoległa
 
 Gdy użytkownik prosi o szukanie nowych ofert, uruchom oddzielny przebieg `plan`
 bez ograniczeń `--model` i `--source`: obejmuje wszystkie aktywne modele oraz
-wszystkie aktywne, nieaukcyjne portale, które mają zgodny zakres marki. Nie
-zmieniaj ograniczeń modelu/portalu ani zakazu aukcji. Koordynator wybiera kolejność
-i grupowanie zadań według obciążenia; używa `claim` bez `--source`, aby przydział
-pozostał elastyczny, chyba że specjalizacja portalowa faktycznie poprawi pracę.
-Zadania nadal mają osobną odpowiedzialność portal × model i są przydzielane
-szeregowo przez koordynatora.
+wszystkie aktywne, nieaukcyjne portale, które mają zgodny zakres marki. Portale,
+których adapter ma jawny tryb `blocked`, są zapisywane w `excludedSources` i nie
+otrzymują zadań, dopóki konfiguracja adaptera nie zostanie zmieniona. Nie zmieniaj
+ograniczeń modelu/portalu ani zakazu aukcji.
+
+`plan --agents N` ustawia limit aktywnych workerów wyszukiwania. Koordynator
+wykonuje `claim` i `finish` lokalnie, jeden po drugim; `claim` odmawia przydziału
+ponad limit i pomija zadania z hosta, na którym już działa wyszukiwanie. W ten
+sposób można równolegle uruchamiać różne portale, utrzymując najwyżej jedno
+zadanie wyszukiwania na host. Worker nie może sam zmieniać `tasks.json` ani
+wywoływać `claim`/`finish`. Jeden worker obsługuje najwyżej jedno aktywne zadanie.
+Nie uruchamiaj kilku koordynatorów zapisujących tę samą kolejkę; plik kolejki nie
+ma blokady między procesami.
+
+Przykładowo `plan --agents 3` dopuszcza do trzech aktywnych zadań. Koordynator
+wykonuje do trzech lokalnych `claim` dla odrębnych workerów, eksportuje osobne
+pakiety i przekazuje je zatwierdzonym workerom sieciowym. Po powrocie zbiera
+każdy wynik przez `collect-worker`, a następnie wykonuje lokalne `finish`.
+Claimy wybiera kolejno; aktywny host jest pomijany, więc równoległe zadania
+dotyczą różnych hostów. `--agents` ogranicza liczbę przydzielonych zadań, ale
+nie uruchamia workerów automatycznie.
+
+Tryb `--claim-stdin` wymaga współdzielonego checkout i kolejki z bieżącym
+przydziałem. Tryb `--bundle` nie potrzebuje lokalnego `tasks.json` ani wyników
+przebiegu; wymaga zgodnego checkoutu projektu i zainstalowanych zależności.
+W obu trybach worker sieciowy zapisuje wyłącznie wynik swojej pracy, nie zmienia
+lokalnego `tasks.json` ani ofert. Nie uruchamiaj kilku koordynatorów zapisujących
+do tej samej lokalnej kolejki.
 
 Przed otwieraniem kart wykonawca stosuje `searchProfile.candidateScreening` do
 widocznych wyników: pomija tylko auta, których widoczne dane jednoznacznie łamią
@@ -132,7 +256,7 @@ poniżej; koordynator importuje je razem z pozostałymi polami oferty.
   "taskId": "source--model (or refresh--source--model for refresh)",
   "outcome": "partial",
   "checkedAt": "data i czas faktycznego sprawdzenia",
-  "coverage": {"searchUrls": [], "pagesChecked": 0, "remaining": "opis nieprzeszukanego zakresu", "searchResults": [], "listingUrlsChecked": []},
+  "coverage": {"searchUrls": [], "pagesChecked": 0, "remaining": "opis nieprzeszukanego zakresu", "searchQueries": [], "searchResults": [], "listingUrlsChecked": []},
   "offers": [],
   "errors": []
 }
@@ -167,11 +291,21 @@ odczytanych. Cache i snippets służą do wskazania kandydatów, nie potwierdzaj
 dostępności ani faktów z karty i nie przenoszą kwalifikacji między modelami.
 Po `claim` wspólny czytnik Playwright można uruchomić przez
 `npm run search:portal -- --claim-stdin`; przy źródle Sprzedajemy użyj jego
-dedykowanego adaptera kategorii. Wspólny czytnik zapisuje tylko migawkę
-widocznych wyników i pozostawia `offers` puste, więc wykonawca nadal musi
-otworzyć kandydatów, sprawdzić karty oraz przygotować standardowy wynik.
+dedykowanego adaptera kategorii. Bez `--verify-cards` wspólny czytnik zapisuje
+migawkę wyników i nie potwierdza kart ani dostępności. Pełny wynik wymaga
+`--verify-cards`, zakończenia wszystkich zapytań i paginacji oraz odczytu każdej
+karty, która przeszła screening. Limit stron/kart, nieudane zapytanie, błąd karty,
+niejednoznaczna karta lub nieukończona paginacja muszą pozostawić `partial` (albo
+`blocked` przy jawnej blokadzie). `no_matches` wolno zwrócić dopiero po pełnym
+pokryciu i rozstrzygnięciu wszystkich kwalifikujących się kandydatów.
 Nie uznawaj wyniku `partial` za pełne pokrycie. Blokady i błędy TLS kończ jako
-`blocked` lub `partial`; nie omijaj ich i nie zwracaj `no_matches`.
+`blocked` lub `partial`; nie omijaj ich i nie zwracaj `no_matches`. Jeśli
+wystąpi `ENOTFOUND`, `ERR_NAME_NOT_RESOLVED` lub `EAI_AGAIN`, wynik wspólnego
+czytnika jest `partial` z diagnostyką DNS, nie `blocked` ani `no_matches`.
+`attemptElapsedMs` w kolejce mierzy czas zegarowy od `claim` do `finish` (wraz
+z pracą wykonawcy i ewentualnym oczekiwaniem koordynatora), a
+`diagnostics.elapsedMs` w wyniku czytnika mierzy lokalny czas procesu czytnika,
+włącznie z uruchomieniem przeglądarki i kontrolą kart.
 Każdy bezpośredni URL karty, której otwarcie próbowano (także z błędem), wpisz
 do `coverage.listingUrlsChecked`.
 

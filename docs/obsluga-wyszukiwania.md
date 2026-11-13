@@ -485,7 +485,7 @@ ani danych z cache jako dowodu dostępności lub ceny.
 
 ```powershell
 python -B -m unittest discover -s tests -v
-node --test tests/test_app.cjs
+npm test
 ```
 
 Nowe schematy są sprawdzane tym samym ograniczonym silnikiem JSON Schema co

@@ -77,8 +77,8 @@ async function check(source, index) {
 
   const blockedText = /access denied|robot check|captcha|verify you are human|too many requests|dostęp został zablokowany|oh noes/i
     .test(`${title}\n${text}`);
-  const blocked = [401, 403, 429].includes(navigationStatus) ||
-    /ERR_CERT_|ERR_BLOCKED_BY_CLIENT|ERR_NAME_NOT_RESOLVED/.test(navigationError ?? "") || blockedText;
+  const dnsFailure = /ERR_NAME_NOT_RESOLVED|ENOTFOUND|EAI_AGAIN/i.test(navigationError ?? "");
+  const blocked = [401, 403, 429].includes(navigationStatus) || blockedText;
   const searchSurface = /szukaj|wyszukiw|filtr|ofert|wynik|samochod|używan/i.test(`${title}\n${text}`);
 
   results[index] = {
@@ -86,7 +86,8 @@ async function check(source, index) {
     requestedUrl: source.searchUrl,
     finalUrl,
     httpStatus: navigationStatus,
-    status: blocked ? "blocked" : navigationError ? "error" :
+    host: safeHost(source.searchUrl),
+    status: blocked ? "blocked" : dnsFailure ? "dns_error" : navigationError ? "error" :
       text.length === 0 ? "no_visible_content" : searchSurface ? "page_visible" : "page_visible_no_search_surface",
     title,
     visibleTextChars: text.length,
@@ -118,7 +119,12 @@ try {
     }
   });
   await Promise.all(workers);
-  process.stdout.write(`${JSON.stringify({ checkedAt: new Date().toISOString(), results }, null, 2)}\n`);
+  const dnsFailedHosts = [...new Set(results.filter((result) => result.status === "dns_error").map((result) => result.host))];
+  const attemptedHosts = [...new Set(results.map((result) => result.host))];
+  const environmentLikely = dnsFailedHosts.length >= 3 && dnsFailedHosts.length / Math.max(1, attemptedHosts.length) >= 0.5;
+  process.stdout.write(`${JSON.stringify({ checkedAt: new Date().toISOString(),
+    networkDiagnostics: { dnsFailedHosts: dnsFailedHosts.length, attemptedHosts: attemptedHosts.length,
+      environmentLikely, interpretation: environmentLikely ? "runtime_network_likely" : "review_sources_individually" }, results }, null, 2)}\n`);
 } finally {
   await browser.close();
 }

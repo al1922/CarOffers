@@ -31,7 +31,7 @@ otwórz tylko ten, który dotyczy bieżącego zadania.
 Jeśli użytkownik wyśle samo `/flow` albo poprosi o dostępne flow, pokaż menu i
 poczekaj na wybór. Nie uruchamiaj przebiegu przed wyborem:
 
-1. **Szukaj nowych ofert** — wszystkie aktywne modele i portale.
+1. **Szukaj nowych ofert** — wszystkie aktywne modele i zgodne portale nieaukcyjne; źródła z adapterem `blocked` są pomijane i raportowane.
 2. **Sprawdź dostępność** — aktywne ogłoszenia.
 3. **Sprawdź archiwum** — archiwalne ogłoszenia.
 4. **Odśwież dane ofert** — ponowny odczyt zapisanych kart i potwierdzonych danych.

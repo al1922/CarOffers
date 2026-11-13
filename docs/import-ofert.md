@@ -95,9 +95,11 @@ Każdy element `errors` jest obiektem z niepustym `note` albo `error`; opcjonaln
 każdą obserwację przed zapisaniem stanu zadania.
 
 Dla zadań `search` `finish` wymaga `searchResults` i `listingUrlsChecked`.
-Migawki listingów dokumentują sprawdzone strony i pomagają ograniczyć powtórną
-pracę w jednym przebiegu; nie potwierdzają dostępności ani danych oferty. URL
-obserwacji każdego kandydata w `offers` musi być ujęty w `listingUrlsChecked`.
+Dla pełnego wyniku wspólnego adaptera wymaga też `searchQueries` z ukończonym
+statusem każdego zapytania oraz `cardReads`, także gdy lista jest pusta. Migawki
+listingów dokumentują sprawdzone strony i pomagają ograniczyć powtórną pracę w
+jednym przebiegu; nie potwierdzają dostępności ani danych oferty. URL obserwacji
+każdego kandydata w `offers` musi być ujęty w `listingUrlsChecked`.
 
 Nowa oferta wymaga `id`, `title`, niepustego `urls`, `location`, `saleType` i
 `lpgInstalled`. Nieznane LPG zapisujemy jako `null`. Nieznany rodzaj sprzedaży

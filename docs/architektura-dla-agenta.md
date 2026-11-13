@@ -28,7 +28,7 @@ korzystają z `requirements` przypisanych do danego modelu w `search-models.json
 |---|---|---|
 | Strona statyczna | `index.html`, `app.js`, `assets/*.mjs`, `assets/styles.css` | Widoki, filtry, URL, lokalne preferencje i odczyt statycznych JSON-ów. |
 | Konfiguracja i kontrakty | `config/*.json`, `schemas/*.json` | Zakres wyszukiwania, źródła, adaptery i walidacja struktury danych. |
-| Wyszukiwanie i koordynacja | `scripts/car-search.py` | CLI koordynatora: planowanie, przydziały, zakończenia, ocena i import. Nie otwiera stron portali. |
+| Wyszukiwanie i koordynacja | `scripts/car-search.py`, `scripts/search-review.py` | CLI koordynatora: planowanie, przydziały, zakończenia, ocena/import oraz tylko-odczytowa analiza skuteczności przebiegów. Nie otwiera stron portali. |
 | Reguły wspólne | `scripts/search_core.py` | Odczyt konfiguracji, walidacja ustawień, wymagania i ocena oferty. |
 | Import | `scripts/offer_import.py` | Walidacja wyników agentów, podgląd scalenia i lokalne zastosowanie zmian. |
 | Odczyt portali | `scripts/portal-search.mjs`, `scripts/portal-candidates.mjs`, `scripts/sprzedajemy-search.mjs` | Punkty wejścia czytników stron i widocznych wyników. |

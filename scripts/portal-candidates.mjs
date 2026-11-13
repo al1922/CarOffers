@@ -51,6 +51,42 @@ async function readStdinJson() {
   return JSON.parse(input);
 }
 
+async function loadContinuationResult(task) {
+  const continuation = task.continuation;
+  const runId = task.runId ?? "";
+  const sourceTaskId = continuation?.sourceTaskId ?? "";
+  if (!/^[a-zA-Z0-9][a-zA-Z0-9_-]*$/.test(runId) || !/^[a-zA-Z0-9][a-zA-Z0-9_-]*$/.test(sourceTaskId)) {
+    throw new Error("Continuation is missing a valid runId or sourceTaskId");
+  }
+  const sourceUrl = task.searchProfile?.searchUrl;
+  const nextUrl = continuation?.nextUrl;
+  let base;
+  let target;
+  try { base = new URL(sourceUrl); target = new URL(nextUrl); }
+  catch { throw new Error("Continuation URL is not a valid absolute URL"); }
+  if (target.protocol !== "https:" || target.origin !== base.origin) {
+    throw new Error("Continuation URL must use HTTPS on the configured portal origin");
+  }
+  const resultPath = path.resolve(ROOT, "runs", runId, "results", `${sourceTaskId}.json`);
+  if (path.dirname(resultPath) !== path.resolve(ROOT, "runs", runId, "results")) {
+    throw new Error("Continuation result path escaped the run results directory");
+  }
+  const previous = task.workerContinuationSourceResult ?? JSON.parse(await readFile(resultPath, "utf8"));
+  const previousPages = previous.coverage?.searchResults ?? [];
+  const savedPage = previousPages.find((page) => page &&
+    (page.queryId ?? "unfiltered") === continuation.queryId && page.nextUrl === nextUrl);
+  if (previous.taskId !== sourceTaskId || previous.outcome !== "partial" || !savedPage ||
+      savedPage.nextUrlAllowed === false || savedPage.paginationComplete === true) {
+    throw new Error("Saved partial result does not contain this resumable nextUrl");
+  }
+  const denied = (previous.errors ?? []).some((entry) => entry?.url === nextUrl &&
+    /403|429|captcha|robots?\.txt|access denied|forbidden|challenge|niedozwol/i.test(entry.error ?? ""));
+  if (denied) {
+    throw new Error("Saved nextUrl was explicitly denied; it will not be retried");
+  }
+  return previous;
+}
+
 function listingOriginAllowed(value, searchUrl) {
   try {
     const url = new URL(value);
@@ -356,7 +392,7 @@ async function nextPage(page, currentUrl, adapter) {
   } catch { return null; }
 }
 
-async function captureQuery(page, task, query, maxPages, state, adapter) {
+async function captureQuery(page, task, query, maxPages, state, adapter, startUrl = null) {
   const queryStarted = Date.now();
   const fieldsOnly = adapter && adapter.mode !== "text_query";
   if (fieldsOnly && state.nativeQueryAttempted) {
@@ -377,17 +413,26 @@ async function captureQuery(page, task, query, maxPages, state, adapter) {
   if (adapter) await page.route("**/*", guard);
   let submitted;
   try {
-    submitted = await maybeSearch(page, task, query.text, adapter);
+    if (startUrl) {
+      if (!state.allowed(startUrl)) {
+        state.errors.push({ url: startUrl, error: "Adres kontynuacji niedozwolony przez robots.txt lub spoza portalu." });
+        state.blocked = true;
+        return;
+      }
+      submitted = { submitted: true, reason: "Kontynuacja od zapisanego nextUrl." };
+    } else {
+      submitted = await maybeSearch(page, task, query.text, adapter);
+    }
   } finally {
     if (adapter) await page.unroute("**/*", guard);
   }
-  if (denied || !state.allowed(page.url())) {
+  if (denied || (!startUrl && !state.allowed(page.url()))) {
     state.errors.push({ url: denied ?? page.url(), error: "Formularz wskazał adres niedozwolony przez robots.txt lub spoza portalu." });
     state.blocked = true;
     return;
   }
   state.metrics.queryActionMs += Date.now() - queryStarted;
-  if (!submitted.submitted) state.notes.push(`${query.id}: ${submitted.reason}`);
+  if (!submitted.submitted && !startUrl) state.notes.push(`${query.id}: ${submitted.reason}`);
   const queryStatus = state.lastDocumentStatus ?? state.baseStatus;
   if ([401, 403, 429].includes(queryStatus)) {
     state.blocked = true;
@@ -395,8 +440,10 @@ async function captureQuery(page, task, query, maxPages, state, adapter) {
     return;
   }
   if (!submitted.submitted && state.pages.length) return;
-  let url = page.url();
-  const visited = new Set();
+  let url = startUrl ?? page.url();
+  const visited = startUrl
+    ? new Set(state.pages.filter((item) => (item.queryId ?? "unfiltered") === query.id).map((item) => item.url))
+    : new Set();
   for (let pageNo = 1; pageNo <= maxPages; pageNo += 1) {
     if (visited.has(url)) break;
     if (!state.allowed(url)) {
@@ -405,7 +452,7 @@ async function captureQuery(page, task, query, maxPages, state, adapter) {
       return;
     }
     visited.add(url);
-    const response = pageNo === 1 ? null : await page.goto(url, { waitUntil: "domcontentloaded", timeout: 25000 });
+    const response = pageNo === 1 && !startUrl ? null : await page.goto(url, { waitUntil: "domcontentloaded", timeout: 25000 });
     const status = response?.status() ?? state.lastDocumentStatus ?? state.baseStatus;
     if ([401, 403, 429].includes(status)) {
       state.blocked = true;
@@ -452,7 +499,11 @@ async function captureQuery(page, task, query, maxPages, state, adapter) {
     state.metrics.extractionMs += Date.now() - extractionStarted;
     state.metrics.candidates += listings.length;
     const nextUrl = await nextPage(page, page.url(), adapter);
-    state.pages.push({ url: page.url(), checkedAt, queryId: submitted.submitted ? (fieldsOnly ? "make-model" : query.id) : "unfiltered", listings, nextUrl,
+    const nextUrlAllowed = nextUrl ? state.allowed(nextUrl) : null;
+    if (nextUrl && !nextUrlAllowed) state.notes.push(`${query.id}: adres następnej strony jest niedozwolony przez robots.txt lub prowadzi poza portal.`);
+    state.pages.push({ url: page.url(), checkedAt,
+      queryId: startUrl ? query.id : submitted.submitted ? (fieldsOnly ? "make-model" : query.id) : "unfiltered", listings, nextUrl,
+      ...(nextUrl ? { nextUrlAllowed } : {}),
       querySubmitted: submitted.submitted, queryNote: submitted.reason ?? null });
     for (const listing of listings) {
       const duplicate = state.listingUrls.has(listing.url);
@@ -551,7 +602,12 @@ function listingIdentity(value, sourceId) {
   return url.href;
 }
 
-async function activeListingIdentities(sourceId) {
+async function activeListingIdentities(sourceId, task) {
+  if (Array.isArray(task?.activeOfferUrls)) {
+    return new Set(task.activeOfferUrls.flatMap((url) => {
+      try { return [listingIdentity(url, sourceId)]; } catch { return []; }
+    }));
+  }
   const folder = path.join(ROOT, "offers");
   const names = (await readdir(folder)).filter((name) => name.endsWith(".json"));
   const records = await Promise.all(names.map((name) => readFile(path.join(folder, name), "utf8").then(JSON.parse)));
@@ -563,7 +619,7 @@ async function inspectCandidateCards(context, task, listings, state, maxCards, k
   const checks = [];
   const offers = [];
   const cachedReads = new Map((task.sharedResultsCache?.cardReads ?? []).map((entry) => [entry.url, entry]));
-  const active = await activeListingIdentities(task.sourceId);
+  const active = await activeListingIdentities(task.sourceId, task);
   const seen = new Set();
   let page;
   let freshReads = 0;
@@ -683,7 +739,8 @@ async function inspectCandidateCards(context, task, listings, state, maxCards, k
       if (finding.offer) offers.push(finding.offer);
     } catch (error) {
       checks.push({ url: listing.url, checkedAt, error: String(error?.message ?? error).split("\n")[0].slice(0, 240) });
-      if (/ERR_CERT_|CERT_|ERR_NAME_NOT_RESOLVED|ENOTFOUND|EAI_AGAIN/i.test(String(error?.message ?? error))) { state.blocked = true; break; }
+      if (/ERR_NAME_NOT_RESOLVED|ENOTFOUND|EAI_AGAIN/i.test(String(error?.message ?? error))) { state.dnsFailures += 1; state.dnsFailuresWithoutHttp += 1; break; }
+      if (/ERR_CERT_|CERT_/i.test(String(error?.message ?? error))) { state.blocked = true; break; }
     } finally { await page.unroute("**/*", guard).catch(() => {}); }
   }
   await page?.close();
@@ -776,7 +833,8 @@ async function main() {
     return;
   }
   const adapter = sourceAdapter.mode === "dedicated" ? null : sourceAdapter;
-  const cachedPages = !adapter || (adapter.mode === "existing_results" && !adapter.loadMoreButton)
+  const continuationResult = task.continuation ? await loadContinuationResult(task) : null;
+  const cachedPages = !continuationResult && (!adapter || (adapter.mode === "existing_results" && !adapter.loadMoreButton))
     ? cachedCompletePages(task, options.maxPages) : [];
   const useCachedPages = cachedPages.length > 0 && options.verifyCards;
   if (cachedPages.length && !options.verifyCards) {
@@ -784,8 +842,14 @@ async function main() {
     return;
   }
 
-  const state = { pages: useCachedPages ? [...cachedPages] : [], listingUrls: new Set(), openedListingUrls: new Set(), errors: [], notes: [], blocked: false, baseStatus: null, lastDocumentStatus: null,
+  const previousCoverage = continuationResult?.coverage ?? {};
+  const previousPages = previousCoverage.searchResults ?? [];
+  const state = { pages: continuationResult ? [...previousPages] : useCachedPages ? [...cachedPages] : [],
+    listingUrls: new Set(previousPages.flatMap((item) => (item.listings ?? []).map((listing) => listing.url))),
+    openedListingUrls: new Set(previousCoverage.listingUrlsChecked ?? []),
+    errors: continuationResult ? [...(continuationResult.errors ?? [])] : [], notes: [], blocked: false, dnsFailures: 0, dnsFailuresWithoutHttp: 0, baseStatus: null, lastDocumentStatus: null,
     metrics: { navigationMs: 0, renderWaitMs: 0, queryActionMs: 0, extractionMs: 0, candidates: 0 }, cardPilot: null };
+  const taskStartedAt = Date.now();
   const browser = await chromium.launch({ headless: true });
   try {
     const context = await browser.newContext();
@@ -809,10 +873,13 @@ async function main() {
           await route.abort();
         } else await route.continue();
       });
-      if (!state.allowed(task.searchProfile.searchUrl)) {
-        throw Object.assign(new Error("Adres wyszukiwania niedozwolony przez robots.txt."), { blocked: true });
+      const initialUrl = continuationResult ? task.continuation.nextUrl : task.searchProfile.searchUrl;
+      if (!state.allowed(initialUrl)) {
+        throw Object.assign(new Error("Adres wyszukiwania lub kontynuacji niedozwolony przez robots.txt."), { blocked: true, url: initialUrl });
       }
-      if (useCachedPages) {
+      if (continuationResult) {
+        state.notes.push(`Kontynuacja ${task.continuation.queryId} od zapisanego nextUrl bez ponownego otwierania wcześniejszych stron wyników.`);
+      } else if (useCachedPages) {
         state.baseStatus = 200;
         for (const cachedPage of cachedPages) if (!state.allowed(cachedPage.url)) {
           state.blocked = true;
@@ -821,34 +888,48 @@ async function main() {
         state.notes.push(`Ponownie użyto ${cachedPages.length} stron wyników kompletnych z sharedResultsCache; nie odczytywano ich ponownie.`);
       } else {
         const navigationStarted = Date.now();
-        const response = await page.goto(task.searchProfile.searchUrl, { waitUntil: "domcontentloaded", timeout: 30000 });
-        state.metrics.navigationMs = Date.now() - navigationStarted;
-        const renderStarted = Date.now();
-        state.baseStatus = response?.status() ?? null;
-        await waitForVisibleListings(page);
-        await dismissOptionalCookiePrompt(page);
-        state.metrics.renderWaitMs = Date.now() - renderStarted;
-        const initialText = `${await page.title().catch(() => "")}\n${await page.locator("body").innerText().catch(() => "")}`;
-        if (/access denied|robot check|captcha|verify you are human|too many requests|dostęp został zablokowany|oh noes/i.test(initialText)) {
-          state.blocked = true;
-          state.errors.push({ url: page.url(), error: "Portal rendered an access challenge; no retry or bypass attempted." });
+        if (!continuationResult) {
+          const response = await page.goto(task.searchProfile.searchUrl, { waitUntil: "domcontentloaded", timeout: 30000 });
+          state.metrics.navigationMs = Date.now() - navigationStarted;
+          const renderStarted = Date.now();
+          state.baseStatus = response?.status() ?? null;
+          await waitForVisibleListings(page);
+          await dismissOptionalCookiePrompt(page);
+          state.metrics.renderWaitMs = Date.now() - renderStarted;
+          const initialText = `${await page.title().catch(() => "")}\n${await page.locator("body").innerText().catch(() => "")}`;
+          if (/access denied|robot check|captcha|verify you are human|too many requests|dostęp został zablokowany|oh noes/i.test(initialText)) {
+            state.blocked = true;
+            state.errors.push({ url: page.url(), error: "Portal rendered an access challenge; no retry or bypass attempted." });
+          }
         }
       }
     } catch (error) {
-      state.errors.push({ url: task.searchProfile.searchUrl, error: String(error?.message ?? error).split("\n")[0].slice(0, 300) });
-      state.blocked = Boolean(error.blocked) || /403|429|ERR_CERT_|ERR_BLOCKED|ERR_NAME_NOT_RESOLVED/i.test(String(error?.message ?? error));
+      state.errors.push({ url: error.url ?? task.searchProfile.searchUrl, error: String(error?.message ?? error).split("\n")[0].slice(0, 300) });
+      const message = String(error?.message ?? error);
+      if (/ERR_NAME_NOT_RESOLVED|ENOTFOUND|EAI_AGAIN/i.test(message)) { state.dnsFailures += 1; state.dnsFailuresWithoutHttp += 1; }
+      state.blocked = Boolean(error.blocked) || /403|429|ERR_CERT_|ERR_BLOCKED/i.test(message);
     }
     if ([401, 403, 429].includes(state.baseStatus)) {
       state.blocked = true;
       state.errors.push({ url: task.searchProfile.searchUrl, error: `Portal returned HTTP ${state.baseStatus}; no retry or bypass attempted.` });
-    } else if (!useCachedPages && state.baseStatus !== null && !state.blocked) {
-      for (const query of queries) {
+    } else if (!useCachedPages && (state.baseStatus !== null || continuationResult) && !state.blocked) {
+      const queriesToRun = continuationResult
+        ? [queries.find((query) => query.id === task.continuation.queryId) ?? { id: task.continuation.queryId, text: "" }]
+        : queries;
+      for (const query of queriesToRun) {
         try {
-          await captureQuery(page, task, query, options.maxPages, state, adapter);
+          await captureQuery(page, task, query, options.maxPages, state, adapter,
+            continuationResult ? task.continuation.nextUrl : null);
           if (state.blocked) break;
         } catch (error) {
           state.errors.push({ url: page.url(), error: String(error?.message ?? error).split("\n")[0].slice(0, 300) });
-          if (/ERR_CERT_|ERR_BLOCKED|ERR_NAME_NOT_RESOLVED/i.test(String(error?.message ?? error))) {
+          const message = String(error?.message ?? error);
+          if (/ERR_NAME_NOT_RESOLVED|ENOTFOUND|EAI_AGAIN/i.test(message)) {
+            state.dnsFailures += 1;
+            state.dnsFailuresWithoutHttp += 1;
+            break;
+          }
+          if (/ERR_CERT_|ERR_BLOCKED/i.test(message)) {
             state.blocked = true;
             break;
           }
@@ -869,31 +950,77 @@ async function main() {
       for (const entry of result.checks.filter((item) => item.error)) state.errors.push({ url: entry.url, error: entry.error });
     }
 
-    const remaining = [
-      "Kandydaci pochodzą wyłącznie z widocznych kart wyników.",
-      options.verifyCards
-        ? `Odczytano ${state.cardReads?.length ?? 0} kart; ${state.offers?.length ?? 0} miało sygnał aktywnej sprzedaży i zgodny model. Karty bez pełnych filtrów lub rozstrzygniętych warunków pozostają do sprawdzenia.`
-        : "Karty ogłoszeń nie były otwierane; dostępność, cena brutto i wyposażenie nie są potwierdzone.",
-      "Jeśli struktura portalu nie ujawniła kart, zakres pozostaje nieprzeszukany.",
+    const pagesByQuery = new Map();
+    for (const page of state.pages) {
+      const queryId = page.queryId ?? "unfiltered";
+      const pages = pagesByQuery.get(queryId) ?? [];
+      pages.push(page);
+      pagesByQuery.set(queryId, pages);
+    }
+    const effectiveQueryIds = adapter?.mode === "text_query"
+      ? queries.map((query) => query.id)
+      : [adapter && adapter.mode !== "existing_results" ? "make-model" : "unfiltered"];
+    const queryCoverage = effectiveQueryIds.map((queryId) => {
+      const pages = pagesByQuery.get(queryId) ?? [];
+      const lastPage = pages.at(-1);
+      const incompleteNote = state.notes.some((note) => note.startsWith(`${queryId}:`));
+      const complete = pages.length > 0 && !lastPage.nextUrl && !incompleteNote && !state.blocked;
+      return { queryId, pagesChecked: pages.length, complete,
+        endReason: complete ? "no_next_page" : incompleteNote ? "reader_limit_or_pagination_issue" : state.blocked ? "blocked" : "query_or_page_missing" };
+    });
+    const eligibleListingIdentities = new Set();
+    const activeIdentities = await activeListingIdentities(task.sourceId, task);
+    for (const listing of state.pages.flatMap((item) => item.listings ?? [])) {
+      const identity = listingIdentity(listing.url, task.sourceId);
+      if (activeIdentities.has(identity) || screeningFailure(listing, task) || explicitModelMismatch(listing, task, knownModels) ||
+          !listingOriginAllowed(listing.url, task.searchProfile.searchUrl) || !state.allowed(listing.url)) continue;
+      eligibleListingIdentities.add(identity);
+    }
+    const checkedIdentities = new Set([...state.openedListingUrls].map((url) => listingIdentity(url, task.sourceId)));
+    const conclusiveStatuses = new Set(["available", "closed", "rejected"]);
+    const conclusiveIdentities = new Set((state.cardReads ?? [])
+      .filter((entry) => conclusiveStatuses.has(entry.status))
+      .map((entry) => listingIdentity(entry.url, task.sourceId)));
+    const cardsComplete = options.verifyCards && [...eligibleListingIdentities].every((identity) => checkedIdentities.has(identity)) &&
+      [...eligibleListingIdentities].every((identity) => conclusiveIdentities.has(identity)) &&
+      !(state.cardReads ?? []).some((entry) => entry.error);
+    const searchComplete = queryCoverage.length > 0 && queryCoverage.every((item) => item.complete) && !state.blocked;
+    const complete = searchComplete && cardsComplete && !state.errors.length;
+    const outcome = state.blocked && !(state.offers?.length) ? "blocked" : complete
+      ? (state.offers?.length ? "complete" : "no_matches") : "partial";
+    const remaining = complete ? "" : [
+      !searchComplete ? "Nie ukończono wszystkich wymaganych zapytań lub paginacji." : "",
+      !options.verifyCards ? "Karty ogłoszeń nie były otwierane; nie można rozstrzygnąć dostępności ani zwrócić no_matches." : "",
+      options.verifyCards && !cardsComplete ? `Nie rozstrzygnięto wszystkich ${eligibleListingIdentities.size} kandydatów; błąd dostępu lub niejednoznaczna karta pozostaje do sprawdzenia.` : "",
       ...state.notes,
-    ].join(" ");
+      ...state.errors.map((entry) => entry.error),
+    ].filter(Boolean).join(" ");
+    const previousOfferUrls = new Set([...(task.continuation?.priorOfferUrls ?? []),
+      ...(continuationResult?.offers ?? []).map((offer) => offer?.observation?.url)].filter(Boolean));
+    const previousOfferIds = new Set([...(task.continuation?.priorOfferIds ?? []),
+      ...(continuationResult?.offers ?? []).map((offer) => offer?.id)].filter(Boolean));
+    const outputOffers = (state.offers ?? []).filter((offer) =>
+      !previousOfferUrls.has(offer?.observation?.url) && !previousOfferIds.has(offer?.id));
     const result = {
       taskId: task.id,
-      outcome: state.blocked && !(state.offers?.length) ? "blocked" : "partial",
+      outcome,
       checkedAt: new Date().toISOString(),
       coverage: {
         searchUrls: [...new Set(state.pages.map((item) => item.url))],
         pagesChecked: state.pages.length,
         remaining,
+        searchQueries: queryCoverage,
         searchResults: state.pages,
         listingUrlsChecked: [...state.openedListingUrls],
         ...(state.cardReads ? { cardReads: state.cardReads } : {}),
       },
-      offers: state.offers ?? [],
-      errors: state.errors,
-      diagnostics: { ...state.metrics, elapsedMs: state.metrics.navigationMs + state.metrics.renderWaitMs + state.metrics.queryActionMs + state.metrics.extractionMs,
+      offers: outputOffers,
+      errors: [...new Map(state.errors.map((entry) => [`${entry?.url ?? ""}\u0000${entry?.error ?? String(entry)}`, entry])).values()],
+      networkDiagnostics: { dnsFailures: state.dnsFailures, dnsFailuresWithoutHttp: state.dnsFailuresWithoutHttp },
+      diagnostics: { ...state.metrics, elapsedMs: Date.now() - taskStartedAt,
         assetBlocking: "disabled_unless_measured_for_source" },
       ...(state.cardPilot ? { cardPilot: state.cardPilot } : {}),
+      ...(task.continuation ? { continuation: task.continuation } : {}),
     };
     process.stdout.write(`${JSON.stringify(result, null, 2)}\n`);
     await context.close();

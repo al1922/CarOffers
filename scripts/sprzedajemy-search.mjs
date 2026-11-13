@@ -8,11 +8,12 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 process.env.PLAYWRIGHT_BROWSERS_PATH ??= path.join(ROOT, "node_modules", ".cache", "ms-playwright");
 const { chromium } = await import("playwright");
 const HELP = `Usage:
-  npm run search:sprzedajemy -- --model-key <active-model-key> [--model-key <key> ...]
+  node scripts/sprzedajemy-search.mjs --model-key <active-model-key> [--model-key <key> ...]
        [--max-pages <n>]
-  python -B scripts/car-search.py claim ... | npm run search:sprzedajemy -- --claim-stdin
+  python -B scripts/car-search.py claim ... | node scripts/sprzedajemy-search.mjs --claim-stdin
        [--verify] [--max-pages <n>] [--max-cards <n>] [--card-reader html|browser]
 
+For routine portal searches, use the shared entry point: npm run search:portal -- --claim-stdin.
 Builds make/model result URLs only from visible category links on Sprzedajemy,
 then captures visible result cards and follows the visible "Następna" link.
 With --claim-stdin it uses the claimed task's frozen search profile. By default
@@ -72,6 +73,33 @@ async function readClaimFromStdin() {
   let input = "";
   for await (const chunk of process.stdin) input += chunk;
   return JSON.parse(input);
+}
+
+async function readContinuationResult(task) {
+  const runId = task.runId ?? "";
+  const continuation = task.continuation ?? {};
+  const sourceTaskId = continuation.sourceTaskId ?? "";
+  if (!/^[a-zA-Z0-9][a-zA-Z0-9_-]*$/.test(runId) || !/^[a-zA-Z0-9][a-zA-Z0-9_-]*$/.test(sourceTaskId)) {
+    throw new Error("Continuation is missing a valid runId or sourceTaskId");
+  }
+  const base = new URL(task.searchProfile?.searchUrl ?? "");
+  const next = new URL(continuation.nextUrl ?? "");
+  if (next.protocol !== "https:" || next.origin !== base.origin) {
+    throw new Error("Continuation URL must use HTTPS on the configured portal origin");
+  }
+  const previous = task.workerContinuationSourceResult ?? await readJson(`runs/${runId}/results/${sourceTaskId}.json`);
+  const saved = (previous.coverage?.searchResults ?? []).find((page) => page &&
+    (page.queryId ?? "unfiltered") === continuation.queryId && page.nextUrl === continuation.nextUrl);
+  if (previous.taskId !== sourceTaskId || previous.outcome !== "partial" || !saved ||
+      saved.nextUrlAllowed === false || saved.paginationComplete === true) {
+    throw new Error("Saved partial result does not contain this resumable nextUrl");
+  }
+  const denied = (previous.errors ?? []).some((entry) => entry?.url === continuation.nextUrl &&
+    /403|429|captcha|robots?\.txt|access denied|forbidden|challenge|niedozwol/i.test(entry.error ?? ""));
+  if (denied) {
+    throw new Error("Saved nextUrl was explicitly denied; it will not be retried");
+  }
+  return previous;
 }
 
 async function visibleCategoryLinks(page, baseUrl) {
@@ -155,9 +183,9 @@ function paginationUrlIsValid(candidate, currentUrl) {
   } catch { return false; }
 }
 
-async function searchModel(page, model, searchUrl, maxPages, sharedCache, navigate, profile, queryId) {
+async function searchModel(page, model, searchUrl, maxPages, sharedCache, navigate, profile, queryId, priorPages = []) {
   const pages = [];
-  const seenPageUrls = new Set();
+  const seenPageUrls = new Set(priorPages.filter((item) => item?.queryId === queryId).map((item) => item.url));
   const seenListingUrls = new Set();
   const cachedPageMap = new Map((sharedCache.checkedSearchPages ?? [])
     .filter((entry) => entry?.url)
@@ -176,6 +204,14 @@ async function searchModel(page, model, searchUrl, maxPages, sharedCache, naviga
       remaining = "Paginacja wskazuje ponownie odwiedzoną stronę.";
       break;
     }
+    if (profile && !navigate.isAllowed(currentUrl)) {
+      return { modelKey: model.key, modelName: model.name, searchUrl,
+        outcome: pages.length ? "partial" : "blocked",
+        coverage: makeCoverage(pages, "Adres strony niedozwolony przez robots.txt; dalsza nawigacja zatrzymana."),
+        error: "Adres strony niedozwolony przez robots.txt; dalsza nawigacja zatrzymana.",
+        errorUrl: currentUrl, stopCards: true,
+        remaining: "Adres strony niedozwolony przez robots.txt; dalsza nawigacja zatrzymana." };
+    }
     seenPageUrls.add(currentUrl);
     const cacheCandidate = cachedPageMap.get(currentUrl);
     const cachedPage = cacheCandidate?.listingsComplete === true ? cacheCandidate : null;
@@ -193,6 +229,8 @@ async function searchModel(page, model, searchUrl, maxPages, sharedCache, naviga
           reusedFromTaskId: listing.taskId ?? cachedPage.taskId ?? null,
         };
       });
+      const cachedNextAllowed = paginationUrlIsValid(cachedPage.nextUrl, currentUrl) &&
+        cachedPage.nextUrlAllowed !== false && (!profile || navigate.isAllowed(cachedPage.nextUrl));
       pages.push({
         url: currentUrl,
         checkedAt: cachedPage.checkedAt ?? null,
@@ -203,10 +241,13 @@ async function searchModel(page, model, searchUrl, maxPages, sharedCache, naviga
         queryId,
         paginationComplete: cachedPage.paginationComplete === true,
         nextUrl: paginationUrlIsValid(cachedPage.nextUrl, currentUrl) ? cachedPage.nextUrl : null,
+        ...(cachedPage.nextUrl ? { nextUrlAllowed: cachedNextAllowed } : {}),
       });
-      if (!paginationUrlIsValid(cachedPage.nextUrl, currentUrl)) {
+      if (!cachedNextAllowed) {
         if (!cachedPage.paginationComplete) {
-          remaining = "Wykorzystano migawkę bez potwierdzenia końca paginacji.";
+          remaining = cachedPage.nextUrl
+            ? "Następny URL z cache jest niedozwolony lub niezgodny z paginacją; dalsza nawigacja zatrzymana."
+            : "Wykorzystano migawkę bez potwierdzenia końca paginacji.";
         }
         break;
       }
@@ -245,6 +286,7 @@ async function searchModel(page, model, searchUrl, maxPages, sharedCache, naviga
         outcome: "blocked",
         coverage: makeCoverage(pages, "Dostęp zablokowany; brak danych nie oznacza braku ofert."),
         error: `Portal returned HTTP ${status}; no retry or bypass attempted.`,
+        errorUrl: currentUrl,
         remaining: "Dostęp zablokowany; brak danych nie oznacza braku ofert.",
       };
     }
@@ -255,12 +297,17 @@ async function searchModel(page, model, searchUrl, maxPages, sharedCache, naviga
       return { ...listing, duplicateOfEarlierPage, ...(profile ? screenListing(listing, profile) : {}) };
     });
     let nextUrl;
+    let nextUrlAllowed = null;
     try {
       nextUrl = await nextResultsPageUrl(page, page.url());
-      if (nextUrl && profile && !navigate.isAllowed(nextUrl)) {
-        remaining = "Adres następnej strony jest niedozwolony przez robots.txt lub prowadzi poza portal.";
-      } else if (nextUrl && !paginationUrlIsValid(nextUrl, page.url())) {
+      if (nextUrl && !paginationUrlIsValid(nextUrl, page.url())) {
+        nextUrlAllowed = false;
         remaining = "Nie rozpoznano ścieżki następnej strony.";
+      } else if (nextUrl && profile && !navigate.isAllowed(nextUrl)) {
+        nextUrlAllowed = false;
+        remaining = "Adres następnej strony jest niedozwolony przez robots.txt lub prowadzi poza portal.";
+      } else if (nextUrl) {
+        nextUrlAllowed = true;
       }
     } catch (error) {
       remaining = error.message;
@@ -278,6 +325,7 @@ async function searchModel(page, model, searchUrl, maxPages, sharedCache, naviga
       fromSharedCache: false,
       listings: pageListings,
       nextUrl,
+      ...(nextUrl ? { nextUrlAllowed } : {}),
       queryId,
       paginationComplete: !remaining && !nextUrl && Boolean(pageListings.length || empty),
     });
@@ -309,15 +357,46 @@ function makeCoverage(pages, remaining) {
     searchUrls: [...new Set(pages.map((page) => page.url))],
     pagesChecked: pages.length,
     remaining,
-    searchResults: pages.map(({ url, checkedAt, listings, nextUrl, fromSharedCache, queryId, paginationComplete }) => ({
-      url, checkedAt, listings, ...(nextUrl ? { nextUrl } : {}), ...(fromSharedCache ? { fromSharedCache } : {}),
+    searchResults: pages.map(({ url, checkedAt, listings, nextUrl, nextUrlAllowed, fromSharedCache, queryId, paginationComplete }) => ({
+      url, checkedAt, listings, ...(nextUrl ? { nextUrl } : {}), ...(nextUrl ? { nextUrlAllowed } : {}), ...(fromSharedCache ? { fromSharedCache } : {}),
       ...(queryId ? { queryId, paginationComplete } : {}),
     })),
     listingUrlsChecked: [],
   };
 }
 
-async function searchPlan(page, model, searchUrl, maxPages, cache, navigate, profile) {
+async function searchPlan(page, model, searchUrl, maxPages, cache, navigate, profile, task, continuationResult) {
+  if (task?.continuation && continuationResult) {
+    const continuation = task.continuation;
+    const previousPages = continuationResult.coverage?.searchResults ?? [];
+    const current = navigate.isAllowed(continuation.nextUrl)
+      ? await searchModel(page, model, continuation.nextUrl, maxPages, cache, navigate, profile, continuation.queryId, previousPages)
+      : { outcome: "blocked", remaining: "Zapisany adres kontynuacji jest niedozwolony przez robots.txt.",
+          error: "Adres kontynuacji niedozwolony przez robots.txt.", errorUrl: continuation.nextUrl,
+          coverage: makeCoverage([], "Adres kontynuacji niedozwolony przez robots.txt.") };
+    const newPages = current.coverage?.searchResults ?? [];
+    const pages = [...previousPages, ...newPages];
+    const queryIds = [...new Set(["category", ...(profile.queryPlan?.textQueries ?? []).map((query) => query.id),
+      ...pages.map((item) => item.queryId).filter(Boolean)])];
+    const queryChecks = queryIds.map((queryId) => {
+      const queryPages = pages.filter((item) => (item.queryId ?? "category") === queryId);
+      const last = queryPages.at(-1);
+      const complete = Boolean(last?.paginationComplete === true);
+      const remaining = complete ? "" : last?.nextUrlAllowed === false
+        ? "Następny adres jest niedozwolony przez robots.txt."
+        : last?.nextUrl ? `Pozostał kolejny URL: ${last.nextUrl}`
+          : "Nie ma dowodu pełnego zakończenia zapytania.";
+      return { queryId, outcome: complete ? "complete" : queryId === continuation.queryId ? current.outcome : "partial",
+        remaining, pages: queryPages.length, complete };
+    });
+    const remaining = queryChecks.filter((item) => !item.complete)
+      .map((item) => `${item.queryId}: ${item.remaining}`).join(" ");
+    const errors = [...(continuationResult.errors ?? []), ...(current.error
+      ? [{ url: current.errorUrl ?? continuation.nextUrl, error: current.error }] : [])];
+    return { searchUrl, coverage: makeCoverage(pages, remaining), queryChecks,
+      outcome: current.outcome === "blocked" ? "blocked" : remaining ? "partial" : "complete",
+      stopCards: Boolean(current.stopCards), errors };
+  }
   const results = [await searchModel(page, model, searchUrl, maxPages, cache, navigate, profile, "category")];
   const queries = profile.queryPlan.textQueries;
   for (const query of queries) {
@@ -413,11 +492,17 @@ async function main() {
       const started = performance.now();
       let navigate;
       let resolvedUrls;
+      let continuationResult = null;
       try {
         navigate = options.verify
           ? await navigationForVerification(context, page, source.searchUrl)
           : (url) => page.goto(url, { waitUntil: "domcontentloaded", timeout: 30000 });
-        resolvedUrls = await resolveModelUrls(page, source, models, navigate);
+        if (options.verify && task?.continuation) {
+          continuationResult = await readContinuationResult(task);
+          resolvedUrls = new Map([[models[0].key, task.continuation.nextUrl]]);
+        } else {
+          resolvedUrls = await resolveModelUrls(page, source, models, navigate);
+        }
       } catch (error) {
         if (!options.verify) throw error;
         process.stdout.write(JSON.stringify({
@@ -430,7 +515,7 @@ async function main() {
       if (options.verify) {
         const model = models[0];
         const snapshot = await searchPlan(page, model, resolvedUrls.get(model.key), options.maxPages,
-          sharedResultsCache, navigate, task.searchProfile);
+          sharedResultsCache, navigate, task.searchProfile, task, continuationResult);
         let htmlReader;
         const readHtml = options.cardReader === "html" ? async (url) => {
           htmlReader ??= createHtmlCardReader(context, await context.newPage(), navigate.isAllowed);
@@ -439,6 +524,16 @@ async function main() {
         const readCard = createCardReader(navigate, page, readHtml);
         const result = await verifyListings({ root: ROOT, task, snapshot, readCard,
           maxCards: options.maxCards, listMs: Math.round(performance.now() - started) });
+        if (continuationResult) {
+          const priorUrls = new Set([...(task.continuation?.priorOfferUrls ?? []),
+            ...(continuationResult.offers ?? []).map((offer) => offer?.observation?.url)].filter(Boolean));
+          const priorIds = new Set([...(task.continuation?.priorOfferIds ?? []),
+            ...(continuationResult.offers ?? []).map((offer) => offer?.id)].filter(Boolean));
+          result.offers = result.offers.filter((offer) => !priorUrls.has(offer?.observation?.url) && !priorIds.has(offer?.id));
+          result.continuation = task.continuation;
+        }
+        result.errors = [...new Map(result.errors.map((entry) =>
+          [`${entry?.url ?? ""}\u0000${entry?.error ?? String(entry)}`, entry])).values()];
         process.stdout.write(JSON.stringify(result, null, 2) + "\n");
         return;
       }

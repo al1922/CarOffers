@@ -4,8 +4,11 @@ import argparse
 from datetime import datetime, timedelta, timezone
 import hashlib
 import json
+import os
 from pathlib import Path
 import re
+import shutil
+import tempfile
 import unicodedata
 from urllib.parse import urlsplit
 from search_core import ASSESSMENT_FIELDS, ROOT, assess, audit, audit_model_index, brand_key, contained, description, read, write, requirements_for_model
@@ -19,6 +22,188 @@ BODY_TERMS = {
 
 def compact_text(value):
     return re.sub(r"[^a-z0-9]", "", str(value).casefold())
+
+
+def search_task_host(task):
+    profile = task.get("searchProfile") if isinstance(task, dict) else None
+    search_url = profile.get("searchUrl") if isinstance(profile, dict) else None
+    if not isinstance(search_url, str):
+        return None
+    try:
+        host = urlsplit(search_url).hostname
+    except ValueError:
+        return None
+    if not host:
+        return None
+    host = host.casefold()
+    return host[4:] if host.startswith("www.") else host
+
+
+def worker_project_hashes(root):
+    paths = []
+    for folder, suffixes in ((root / "scripts", {".mjs", ".py"}),
+                             (root / "config", {".json"})):
+        paths.extend(path for path in folder.glob("*") if path.is_file() and path.suffix in suffixes)
+    paths.extend(path for path in (root / "knowledge" / "models").glob("*.json") if path.is_file())
+    paths.extend(path for path in (root / "package.json", root / "package-lock.json") if path.is_file())
+    return {path.relative_to(root).as_posix(): hashlib.sha256(path.read_bytes()).hexdigest()
+            for path in sorted(paths)}
+
+
+def active_offer_snapshot(root):
+    urls = set()
+    for offer_file in (root / "offers").glob("*.json"):
+        document = read(offer_file)
+        for offer in document.get("offers", []):
+            if not isinstance(offer, dict):
+                continue
+            for item in offer.get("urls", []):
+                url = item.get("url") if isinstance(item, dict) else None
+                if isinstance(url, str):
+                    urls.add(url)
+    return {"activeOfferUrls": sorted(urls)}
+
+
+def export_worker_bundle(root, run, queue, task):
+    task_id = task.get("id", "")
+    if task.get("kind") != "search" or task.get("state") != "running" or not task.get("worker"):
+        raise ValueError("export-worker requires a running search task with an assigned worker")
+    if not re.fullmatch(r"[a-zA-Z0-9][a-zA-Z0-9_-]*", task_id):
+        raise ValueError("Task has an invalid ID")
+    result_path = run / "results" / f"{task_id}.json"
+    if result_path.exists():
+        raise ValueError("A result already exists for this task; preserving it")
+    bundle_root = run / "worker-bundles"
+    bundle_path = bundle_root / task_id
+    if bundle_path.exists():
+        raise ValueError(f"Worker bundle already exists; preserving it: {bundle_path.relative_to(root).as_posix()}")
+
+    claim = dict(task)
+    claim["runId"] = run.name
+    claim["sharedResultsCache"] = build_shared_search_cache(root, run, queue, task["sourceId"], task)
+    claim.update(active_offer_snapshot(root))
+    bundle_root.mkdir(parents=True, exist_ok=True)
+    temp_path = Path(tempfile.mkdtemp(prefix=f".{task_id}-", dir=bundle_root))
+    try:
+        write(temp_path / "claim.json", claim)
+        input_files = {"claim.json": hashlib.sha256((temp_path / "claim.json").read_bytes()).hexdigest()}
+        continuation = task.get("continuation")
+        if continuation:
+            source_task_id = continuation.get("sourceTaskId", "")
+            if not isinstance(source_task_id, str) or not re.fullmatch(r"[a-zA-Z0-9][a-zA-Z0-9_-]*", source_task_id):
+                raise ValueError("Continuation has an invalid source task ID")
+            source_path = run / "results" / f"{source_task_id}.json"
+            source_result = read(source_path)
+            if source_result.get("taskId") != source_task_id or source_result.get("outcome") != "partial":
+                raise ValueError("Continuation source result is missing or no longer partial")
+            source_coverage = source_result.get("coverage", {})
+            saved_pages = source_coverage.get("searchResults", []) if isinstance(source_coverage, dict) else []
+            if not any(isinstance(page, dict) and (page.get("queryId") or "unfiltered") == continuation.get("queryId") and
+                       page.get("nextUrl") == continuation.get("nextUrl") and
+                       page.get("nextUrlAllowed") is not False and page.get("paginationComplete") is not True
+                       for page in (saved_pages if isinstance(saved_pages, list) else [])):
+                raise ValueError("Continuation URL is not present as an allowed nextUrl in its source result")
+            target_path = temp_path / "continuation-source-result.json"
+            shutil.copyfile(source_path, target_path)
+            input_files[target_path.name] = hashlib.sha256(target_path.read_bytes()).hexdigest()
+
+        manifest = {
+            "formatVersion": 1,
+            "createdAt": datetime.now(timezone.utc).isoformat(),
+            "runId": run.name,
+            "taskId": task_id,
+            "worker": task["worker"],
+            "sourceId": task["sourceId"],
+            "modelKey": task.get("modelKey"),
+            "task": {key: task.get(key) for key in ("id", "kind", "state", "worker", "sourceId", "modelKey", "searchProfile", "continuation")},
+            "inputFiles": input_files,
+            "projectFiles": worker_project_hashes(root),
+            "requiresMatchingCheckout": True,
+        }
+        write(temp_path / "manifest.json", manifest)
+        os.replace(temp_path, bundle_path)
+    except Exception:
+        shutil.rmtree(temp_path, ignore_errors=True)
+        raise
+    return bundle_path
+
+
+def collect_worker_bundle(root, run, queue, task):
+    task_id = task.get("id", "")
+    bundle_path = run / "worker-bundles" / task_id
+    manifest_path = bundle_path / "manifest.json"
+    if not manifest_path.is_file():
+        raise ValueError(f"Worker bundle manifest is missing: {manifest_path.relative_to(root).as_posix()}")
+    manifest = read(manifest_path)
+    if manifest.get("formatVersion") != 1 or manifest.get("runId") != run.name or manifest.get("taskId") != task_id:
+        raise ValueError("Worker bundle manifest does not match this run/task")
+    if manifest.get("worker") != task.get("worker") or task.get("kind") != "search" or task.get("state") != "running":
+        raise ValueError("Task must still be running for the worker assigned in the bundle")
+    if manifest.get("projectFiles") != worker_project_hashes(root):
+        raise ValueError("CarOffers code/config differs from the exported bundle; use the matching checkout")
+
+    claim_path = bundle_path / "claim.json"
+    claim = read(claim_path)
+    expected_inputs = manifest.get("inputFiles")
+    if not isinstance(expected_inputs, dict) or "claim.json" not in expected_inputs:
+        raise ValueError("Worker bundle input manifest is invalid")
+    for filename, expected_hash in expected_inputs.items():
+        if filename not in {"claim.json", "continuation-source-result.json"}:
+            raise ValueError("Worker bundle contains an unexpected input file")
+        input_path = bundle_path / filename
+        if not input_path.is_file() or hashlib.sha256(input_path.read_bytes()).hexdigest() != expected_hash:
+            raise ValueError(f"Worker bundle input changed or is missing: {filename}")
+
+    task_fields = ("id", "kind", "state", "worker", "sourceId", "modelKey", "searchProfile", "continuation")
+    if any(claim.get(key) != task.get(key) for key in task_fields):
+        raise ValueError("Exported claim no longer matches the running task in tasks.json")
+    if manifest.get("task") != {key: task.get(key) for key in task_fields}:
+        raise ValueError("Bundle task metadata does not match the current task")
+    if claim.get("runId") != run.name or manifest.get("sourceId") != task.get("sourceId") or manifest.get("modelKey") != task.get("modelKey"):
+        raise ValueError("Worker bundle identity mismatch")
+    if task.get("continuation"):
+        source_task_id = task["continuation"].get("sourceTaskId")
+        source_path = run / "results" / f"{source_task_id}.json"
+        bundle_source = bundle_path / "continuation-source-result.json"
+        if not bundle_source.is_file() or not source_path.is_file() or bundle_source.read_bytes() != source_path.read_bytes():
+            raise ValueError("Continuation source result differs from the local run; export a fresh bundle")
+    elif "continuation-source-result.json" in expected_inputs:
+        raise ValueError("Unexpected continuation source result in a normal search bundle")
+
+    result_path = bundle_path / "result.json"
+    receipt_path = bundle_path / "result.sha256"
+    if not result_path.is_file() or not receipt_path.is_file():
+        raise ValueError("Network worker has not returned a complete result bundle")
+    result_bytes = result_path.read_bytes()
+    if receipt_path.read_text(encoding="ascii").strip() != hashlib.sha256(result_bytes).hexdigest():
+        raise ValueError("Returned result checksum does not match")
+    result = read(result_path)
+    if not isinstance(result, dict) or result.get("taskId") != task_id or result.get("outcome") not in ("complete", "partial", "blocked", "no_matches"):
+        raise ValueError("Returned result taskId/outcome is invalid")
+    if task.get("continuation") and result.get("continuation") != task.get("continuation"):
+        raise ValueError("Returned continuation metadata does not match the local task")
+
+    local_result = run / "results" / f"{task_id}.json"
+    if local_result.exists():
+        raise ValueError(f"A local result already exists; preserving it: {local_result.relative_to(root).as_posix()}")
+    fd, temp_name = tempfile.mkstemp(prefix=f".{task_id}.collect-", suffix=".tmp", dir=local_result.parent)
+    try:
+        with os.fdopen(fd, "wb") as handle:
+            handle.write(result_bytes)
+            handle.flush()
+            os.fsync(handle.fileno())
+        if os.name == "nt":
+            # Windows rename is atomic within a directory and refuses to replace
+            # an existing destination, unlike os.replace.
+            os.rename(temp_name, local_result)
+        else:
+            os.link(temp_name, local_result)
+    finally:
+        try:
+            os.unlink(temp_name)
+        except FileNotFoundError:
+            pass
+    return local_result
 
 
 def engine_search_aliases(variant, knowledge):
@@ -167,6 +352,7 @@ def build_shared_search_cache(root, run, queue, source_id, task=None):
             listing_count = len(page_listings) if isinstance(page_listings, list) else None
             page_entry = {"url": page_key, "checkedAt": page.get("checkedAt"),
                           "queryId": page.get("queryId"), "nextUrl": page.get("nextUrl"),
+                          "nextUrlAllowed": page.get("nextUrlAllowed"),
                           "paginationComplete": page.get("paginationComplete") is True,
                           "listingCount": listing_count, "taskId": prior["id"],
                           "modelKey": prior.get("modelKey")}
@@ -224,14 +410,15 @@ def build_shared_search_cache(root, run, queue, source_id, task=None):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("command", choices=["validate", "sync", "plan", "refresh-plan", "availability-plan", "archive-availability-plan", "claim", "finish", "assess", "import-preview", "import-apply"])
+    p.add_argument("command", choices=["validate", "sync", "plan", "refresh-plan", "availability-plan", "archive-availability-plan", "claim", "continue-search", "export-worker", "collect-worker", "finish", "assess", "import-preview", "import-apply"])
     p.add_argument("--root", type=Path, default=ROOT)
     p.add_argument("--run")
     p.add_argument("--worker")
     p.add_argument("--task")
     p.add_argument("--result", choices=["complete", "partial", "blocked", "no_matches"])
     p.add_argument("--note", default="")
-    p.add_argument("--agents", type=int, default=3)
+    p.add_argument("--agents", type=int, default=3,
+                   help="maximum concurrent workers recorded for a run; search claims enforce this limit")
     p.add_argument("--model", action="append", dest="models")
     p.add_argument("--source", action="append", dest="sources")
     p.add_argument("--older-than-days", type=int, help="For refresh-plan, include listings not successfully checked within this many days")
@@ -266,7 +453,7 @@ def main():
         except (OSError, ValueError, KeyError, TypeError) as exc:
             p.error(str(exc))
         return 0
-    if args.command in ("claim", "finish"):
+    if args.command in ("claim", "continue-search", "export-worker", "collect-worker", "finish"):
         if not args.run or not re.fullmatch(r"[a-zA-Z0-9][a-zA-Z0-9_-]*", args.run):
             p.error("--run requires a simple alphanumeric ID")
         snapshot = read(root / "runs" / args.run / "snapshot.json")
@@ -368,13 +555,23 @@ def main():
             if args.agents < 1:
                 p.error("--agents must be positive")
             selected_m = [m for m in models if m["active"] and (not args.models or m["key"] in args.models)]
-            selected_s = [s for s in sources if s["enabled"] and s["category"] != "auction"
-                          and s["purchaseConditions"].get("auction") is not True
-                          and (not args.sources or s["id"] in args.sources)]
+            candidate_s = [s for s in sources if s["enabled"] and s["category"] != "auction"
+                           and s["purchaseConditions"].get("auction") is not True
+                           and (not args.sources or s["id"] in args.sources)]
             if args.models and set(args.models) - {m["key"] for m in selected_m}:
                 p.error("Unknown or inactive model")
-            if args.sources and set(args.sources) - {s["id"] for s in selected_s}:
+            if args.sources and set(args.sources) - {s["id"] for s in candidate_s}:
                 p.error("Unknown or disabled source")
+            adapter_config = read(root / "config" / "portal-adapters.json")
+            adapters = adapter_config.get("adapters", {})
+            excluded_sources = []
+            for source in candidate_s:
+                adapter = adapters.get(source["id"])
+                if isinstance(adapter, dict) and adapter.get("mode") == "blocked":
+                    excluded_sources.append({"sourceId": source["id"],
+                                             "reason": adapter.get("note") or "Adapter is marked blocked"})
+            excluded_ids = {item["sourceId"] for item in excluded_sources}
+            selected_s = [source for source in candidate_s if source["id"] not in excluded_ids]
             cards = {m["key"]: read(contained(root, m["knowledgeFile"])) for m in selected_m}
             tasks = []
             for s in sorted(selected_s, key=lambda s: s["priority"]):
@@ -441,18 +638,23 @@ def main():
                                   },
                                   "state": "pending", "worker": None, "attempts": 0, "note": ""})
             if not tasks:
-                p.error("No eligible tasks")
+                blocked_note = "; sources marked blocked: " + ", ".join(item["sourceId"] for item in excluded_sources) if excluded_sources else ""
+                p.error("No eligible tasks" + blocked_note)
             run.mkdir(parents=True, exist_ok=False)
             (run / "results").mkdir()
             snapshot = {"config": config, "knowledge": cards}
             digest = hashlib.sha256(json.dumps(snapshot, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
             write(run / "snapshot.json", {"createdAt": datetime.now(timezone.utc).isoformat(), "sha256": digest, **snapshot})
-            write(run / "tasks.json", {"version": 1, "agents": args.agents, "workerAssignments": {}, "tasks": tasks})
+            write(run / "tasks.json", {"version": 1, "agents": args.agents, "workerAssignments": {},
+                  "excludedSources": excluded_sources, "tasks": tasks})
             by_source = {}
             for task in tasks:
                 by_source[task["sourceId"]] = by_source.get(task["sourceId"], 0) + 1
             skipped = [s["id"] for s in selected_s if not any(t["sourceId"] == s["id"] for t in tasks)]
-            print(f"Prepared {len(tasks)} tasks across {len(by_source)} compatible sources; no websites searched")
+            print(f"Prepared {len(tasks)} tasks across {len(by_source)} compatible sources; "
+                  f"at most {args.agents} search workers may run concurrently; no websites searched")
+            if excluded_sources:
+                print("Skipped blocked adapters: " + ", ".join(item["sourceId"] for item in excluded_sources))
             if skipped:
                 print("No compatible selected model: " + ", ".join(skipped))
         elif args.command in ("refresh-plan", "availability-plan", "archive-availability-plan"):
@@ -605,7 +807,153 @@ def main():
                   f"{len(unmapped_targets)} URL(s) need manual source mapping; no websites checked")
         else:
             queue = read(run / "tasks.json")
-            if args.command == "claim":
+            if args.command == "export-worker":
+                task = next((item for item in queue["tasks"] if item.get("id") == args.task), None)
+                if not task:
+                    p.error("export-worker requires an existing --task")
+                try:
+                    bundle_path = export_worker_bundle(root, run, queue, task)
+                except (OSError, ValueError, KeyError, TypeError) as exc:
+                    p.error(str(exc))
+                print(f"Worker bundle ready: {bundle_path.relative_to(root).as_posix()}")
+            elif args.command == "collect-worker":
+                task = next((item for item in queue["tasks"] if item.get("id") == args.task), None)
+                if not task:
+                    p.error("collect-worker requires an existing --task")
+                try:
+                    local_result = collect_worker_bundle(root, run, queue, task)
+                except (OSError, ValueError, KeyError, TypeError) as exc:
+                    p.error(str(exc))
+                print(f"Worker result collected: {local_result.relative_to(root).as_posix()}; run finish locally")
+            elif args.command == "continue-search":
+                if not args.worker or not args.task:
+                    p.error("continue-search requires --worker and --task")
+                if not re.fullmatch(r"[a-zA-Z0-9][a-zA-Z0-9_-]*", args.task):
+                    p.error("--task must be a simple task ID")
+                if any(t.get("state") == "running" and t.get("worker") == args.worker for t in queue["tasks"]):
+                    p.error(f"Worker {args.worker} already has a running task")
+                assignments = queue.setdefault("workerAssignments", {})
+                assigned_sources = assignments.get(args.worker, [])
+                if isinstance(assigned_sources, str):
+                    assigned_sources = [assigned_sources]
+                parent = next((t for t in queue["tasks"] if t.get("id") == args.task), None)
+                if not parent or parent.get("kind") != "search" or parent.get("state") != "partial":
+                    p.error("continue-search requires an existing partial search task")
+                if assigned_sources and parent.get("sourceId") not in assigned_sources:
+                    p.error(f"Worker {args.worker} is not assigned to source {parent.get('sourceId')}")
+                prior_path = run / "results" / (parent["id"] + ".json")
+                if not prior_path.is_file():
+                    p.error("The partial task has no saved result to continue")
+                prior_result = read(prior_path)
+                if not isinstance(prior_result, dict) or prior_result.get("taskId") != parent["id"] or prior_result.get("outcome") != "partial":
+                    p.error("Saved result does not match the partial task")
+                coverage = prior_result.get("coverage", {})
+                pages = coverage.get("searchResults", []) if isinstance(coverage, dict) else []
+                pages_by_query = {}
+                for page in pages if isinstance(pages, list) else []:
+                    if not isinstance(page, dict) or not isinstance(page.get("url"), str):
+                        continue
+                    query_id = page.get("queryId") or "unfiltered"
+                    pages_by_query.setdefault(query_id, []).append(page)
+                query_ids = list(dict.fromkeys([
+                    item.get("queryId") for item in coverage.get("searchQueries", [])
+                    if isinstance(item, dict) and item.get("queryId") and item.get("complete") is not True
+                ] + list(pages_by_query))) if isinstance(coverage, dict) else list(pages_by_query)
+                search_profile = parent.get("searchProfile")
+                profile_url = search_profile.get("searchUrl") if isinstance(search_profile, dict) else None
+                if not isinstance(profile_url, str):
+                    p.error("Task has no frozen search URL")
+                base = urlsplit(profile_url)
+                if base.scheme != "https" or not base.netloc:
+                    p.error("Task search URL must use HTTPS")
+                running_search_workers = {t.get("worker") for t in queue["tasks"]
+                                          if t.get("kind") == "search" and t.get("state") == "running" and t.get("worker")}
+                max_search_workers = queue.get("agents", 1)
+                if type(max_search_workers) is not int or max_search_workers < 1:
+                    p.error("Search worker limit in tasks.json must be a positive integer")
+                if len(running_search_workers) >= max_search_workers:
+                    p.error(f"Search worker limit reached ({max_search_workers}); finish an active task before continuing")
+                parent_host = search_task_host(parent)
+                active_search_hosts = {search_task_host(t) for t in queue["tasks"]
+                                       if t.get("kind") == "search" and t.get("state") == "running"}
+                active_search_hosts.discard(None)
+                if parent_host and parent_host in active_search_hosts:
+                    p.error("Another search task for this portal host is running; wait before continuing")
+                errors = prior_result.get("errors", [])
+                blocked_next = re.compile(r"403|429|captcha|robots?\.txt|access denied|forbidden|challenge|niedozwol", re.I)
+                continuation = None
+                for query_id in query_ids:
+                    query_pages = pages_by_query.get(query_id, [])
+                    if not query_pages:
+                        continue
+                    last_page = query_pages[-1]
+                    next_url = last_page.get("nextUrl")
+                    if (not isinstance(next_url, str) or not next_url or
+                            last_page.get("nextUrlAllowed") is False or last_page.get("paginationComplete") is True or
+                            last_page.get("fromSharedCache") or next_url in {page.get("url") for page in query_pages}):
+                        continue
+                    target = urlsplit(next_url)
+                    if (target.scheme != "https" or target.netloc.casefold() != base.netloc.casefold() or
+                            target.username or target.password):
+                        continue
+                    if any(isinstance(error, dict) and error.get("url") == next_url and
+                           blocked_next.search(str(error.get("error", ""))) for error in errors):
+                        continue
+                    continuation = {"sourceTaskId": parent["id"], "queryId": query_id, "nextUrl": next_url}
+                    break
+                if not continuation:
+                    p.error("No resumable, same-origin nextUrl was found. Keep this task partial; blocked or robots-denied pages are not retried.")
+                task_by_id = {task.get("id"): task for task in queue["tasks"] if isinstance(task, dict)}
+                prior_offer_ids, prior_offer_urls, ancestors = set(), set(), set()
+                ancestor_id = parent["id"]
+                while ancestor_id and ancestor_id not in ancestors:
+                    if not re.fullmatch(r"[a-zA-Z0-9][a-zA-Z0-9_-]*", ancestor_id):
+                        break
+                    ancestors.add(ancestor_id)
+                    ancestor_path = run / "results" / (ancestor_id + ".json")
+                    try:
+                        ancestor_result = prior_result if ancestor_id == parent["id"] else read(ancestor_path)
+                    except (OSError, ValueError, TypeError):
+                        ancestor_result = {}
+                    ancestor_offers = ancestor_result.get("offers", []) if isinstance(ancestor_result, dict) else []
+                    for offer in (ancestor_offers if isinstance(ancestor_offers, list) else []):
+                        if not isinstance(offer, dict):
+                            continue
+                        if isinstance(offer.get("id"), str):
+                            prior_offer_ids.add(offer["id"])
+                        observation = offer.get("observation", {})
+                        if isinstance(observation, dict) and isinstance(observation.get("url"), str):
+                            prior_offer_urls.add(observation["url"])
+                    ancestor = task_by_id.get(ancestor_id, {})
+                    ancestor_id = (ancestor.get("continuation") or {}).get("sourceTaskId")
+                continuation["priorOfferIds"] = sorted(prior_offer_ids)
+                continuation["priorOfferUrls"] = sorted(prior_offer_urls)
+                if any(t.get("state") in ("pending", "running") and
+                       t.get("continuation", {}).get("sourceTaskId") == parent["id"] and
+                       t.get("continuation", {}).get("nextUrl") == continuation["nextUrl"]
+                       for t in queue["tasks"]):
+                    p.error("A continuation for this nextUrl is already pending or running")
+                query_slug = re.sub(r"[^a-zA-Z0-9_-]+", "-", continuation["queryId"]).strip("-_") or "page"
+                sequence = 1
+                while True:
+                    task_id = f"continue--{parent['id']}--{query_slug}--{sequence}"
+                    if all(t.get("id") != task_id for t in queue["tasks"]):
+                        break
+                    sequence += 1
+                continuation_task = {key: value for key, value in parent.items()
+                                     if key not in {"state", "worker", "attemptStartedAt", "attempts", "note", "continuation", "sharedResultsCache"}}
+                continuation_task.update({"id": task_id, "kind": "search", "state": "running", "worker": args.worker,
+                    "attempts": 1, "attemptStartedAt": datetime.now(timezone.utc).isoformat(),
+                    "note": f"Kontynuacja {parent['id']} / {continuation['queryId']} od zapisanego nextUrl",
+                    "continuation": continuation})
+                queue["tasks"].append(continuation_task)
+                write(run / "tasks.json", queue)
+                claimed_task = dict(continuation_task)
+                claimed_task["runId"] = args.run
+                claimed_task["sharedResultsCache"] = build_shared_search_cache(
+                    root, run, queue, continuation_task["sourceId"], continuation_task)
+                print(json.dumps(claimed_task, ensure_ascii=False))
+            elif args.command == "claim":
                 if not args.worker:
                     p.error("--worker required")
                 claim_sources = args.sources or []
@@ -622,12 +970,28 @@ def main():
                 source_filter = set(assigned_sources or claim_sources) or None
                 if any(t["state"] == "running" and t["worker"] == args.worker for t in queue["tasks"]):
                     p.error("Worker already has a running task")
-                task = next((t for t in queue["tasks"] if t["state"] == "pending" and
-                             (source_filter is None or t["sourceId"] in source_filter)), None)
+                running_search_workers = {t.get("worker") for t in queue["tasks"]
+                                          if t.get("kind") == "search" and t.get("state") == "running" and t.get("worker")}
+                max_search_workers = queue.get("agents", 1)
+                if type(max_search_workers) is not int or max_search_workers < 1:
+                    p.error("Search worker limit in tasks.json must be a positive integer")
+                if args.worker not in running_search_workers and len(running_search_workers) >= max_search_workers:
+                    p.error(f"Search worker limit reached ({max_search_workers}); finish an active task before claiming another")
+                active_search_hosts = {search_task_host(t) for t in queue["tasks"]
+                                       if t.get("kind") == "search" and t.get("state") == "running"}
+                active_search_hosts.discard(None)
+                pending_tasks = [t for t in queue["tasks"] if t["state"] == "pending" and
+                                 (source_filter is None or t["sourceId"] in source_filter)]
+                task = next((t for t in pending_tasks
+                             if t.get("kind") != "search" or search_task_host(t) not in active_search_hosts), None)
                 if not task:
-                    print("No pending tasks" + (" for sources " + ", ".join(sorted(source_filter)) if source_filter else ""))
+                    if pending_tasks:
+                        print("No claimable search tasks; pending tasks share a portal host with an active search worker")
+                    else:
+                        print("No pending tasks" + (" for sources " + ", ".join(sorted(source_filter)) if source_filter else ""))
                     return 0
-                task.update(state="running", worker=args.worker, attempts=task["attempts"] + 1)
+                task.update(state="running", worker=args.worker, attempts=task["attempts"] + 1,
+                            attemptStartedAt=datetime.now(timezone.utc).isoformat())
                 if source_filter:
                     assignments.setdefault(args.worker, sorted(source_filter))
                 write(run / "tasks.json", queue)
@@ -659,6 +1023,15 @@ def main():
                 if args.result in ("complete", "no_matches") and (not coverage.get("searchUrls") or
                         type(coverage.get("pagesChecked")) is not int or coverage["pagesChecked"] < 1 or coverage.get("remaining") != ""):
                     reject_result("Complete coverage requires searchUrls, pagesChecked >= 1 and empty remaining")
+                if task.get("kind") == "search" and args.result in ("complete", "no_matches") and task.get("sourceId") != "sprzedajemy":
+                    queries = coverage.get("searchQueries")
+                    if (not isinstance(queries, list) or not queries or
+                            any(not isinstance(query, dict) or not query.get("queryId") or
+                                query.get("complete") is not True or type(query.get("pagesChecked")) is not int or
+                                query["pagesChecked"] < 1 for query in queries)):
+                        reject_result("Complete search requires explicit completion for every executed query")
+                    if not isinstance(coverage.get("cardReads"), list):
+                        reject_result("Complete search requires verified cardReads, including an empty array when there were no candidates")
                 if args.result == "no_matches" and result["offers"]:
                     reject_result("no_matches cannot contain offers")
                 if args.result == "blocked" and task.get("kind") not in ("refresh", "availability", "archive-availability") and result["offers"]:
@@ -724,7 +1097,15 @@ def main():
                                             require_search_cache=(task.get("kind") == "search"))
                 except (ValueError, KeyError, TypeError) as exc:
                     reject_result(exc)
-                task.update(state=args.result, note=args.note)
+                finished_at = datetime.now(timezone.utc)
+                task.update(state=args.result, note=args.note, attemptFinishedAt=finished_at.isoformat())
+                started_at = task.get("attemptStartedAt")
+                if isinstance(started_at, str):
+                    try:
+                        started = datetime.fromisoformat(started_at.replace("Z", "+00:00"))
+                        task["attemptElapsedMs"] = max(0, int((finished_at - started).total_seconds() * 1000))
+                    except ValueError:
+                        pass
                 write(run / "tasks.json", queue)
                 print("Task recorded; published offers unchanged")
     return 0

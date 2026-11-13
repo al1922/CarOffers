@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T13:21:44.303669+00:00",
+  "generatedAt": "2026-11-13T17:05:30.182717+00:00",
   "configuration": {
     "requirements": {
       "version": 1,
@@ -3204,7 +3204,7 @@
           "brands": [
             "Seat"
           ],
-          "enabled": true,
+          "enabled": false,
           "priority": 2,
           "effort": 3,
           "filters": [],
@@ -3228,7 +3228,8 @@
           },
           "notes": [
             "Nie uznawaj niepełnego dostępu za brak ofert.",
-            "Warunki programu i certyfikat dotyczą konkretnego egzemplarza, nie każdego auta dealera."
+            "Warunki programu i certyfikat dotyczą konkretnego egzemplarza, nie każdego auta dealera.",
+            "Wyłączono z bieżącego planu 2026-11-13: na aktualnej liście modeli nie ma marki SEAT."
           ]
         },
         {
@@ -4419,6 +4420,34 @@
       }
     },
     {
+      "id": "listing:sprzedajemy:72545014",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "body",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 30900,
+        "priceBasis": "gross_total",
+        "year": 2018,
+        "bodyCode": null,
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 130000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
       "id": "listing:otomoto:ID6IiHi1",
       "modelKey": "mazda-6-iii-wagon",
       "verdict": "check",
@@ -4725,6 +4754,33 @@
         "cameraStatus": null,
         "structuralDamageStatus": null,
         "mileage": 149980,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:sprzedajemy:71939465",
+      "modelKey": "skoda-octavia-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "body",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 51000,
+        "priceBasis": "gross_total",
+        "year": 2019,
+        "bodyCode": null,
+        "engineVariant": "1.5-tsi-150",
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 107000,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null
@@ -5277,6 +5333,36 @@
       }
     },
     {
+      "id": "vin:SB1ZS3JE10E373343",
+      "modelKey": "toyota-auris-touring-sports",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "production_year",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 54449,
+        "priceBasis": "unknown",
+        "year": null,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 165500,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
       "id": "listing:otomoto:6147568392",
       "modelKey": "toyota-avensis-iii-wagon",
       "verdict": "check",
@@ -5461,6 +5547,61 @@
         "cameraStatus": null,
         "structuralDamageStatus": null,
         "mileage": 450,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:sprzedajemy:74102184",
+      "modelKey": "mitsubishi-asx-i",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "body",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 48700,
+        "priceBasis": "gross_total",
+        "year": 2020,
+        "bodyCode": null,
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 151000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:sprzedajemy:71768394",
+      "modelKey": "skoda-scala",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "body",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 55000,
+        "priceBasis": "gross_total",
+        "year": 2021,
+        "bodyCode": null,
+        "engineVariant": "1.5-tsi-150",
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 85000,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null

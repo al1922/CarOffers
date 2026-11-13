@@ -1,12 +1,235 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-12",
+  "updatedAt": "2026-11-13",
   "model": {
     "key": "skoda-scala",
     "name": "Škoda Scala",
     "description": "Crossover",
     "requirements": "Škoda Scala; 1.5 TSI 150 KM; rodzina: 2 dorosłych i 1 dziecko; wymagane miejsce na wózek i bagaż; rocznik od 2019; maks. 55 000 zł brutto według ceny podanej w ogłoszeniu; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 170 000 km preferowany; kamera wymagana  obecna lub z potwierdzoną możliwością montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji."
   },
-  "offers": [],
+  "offers": [
+    {
+      "id": "listing:sprzedajemy:71768394",
+      "title": "Sprzedam Skoda Scala 1.5TSI 150KM r. 2020",
+      "urls": [
+        {
+          "url": "https://sprzedajemy.pl/sprzedam-skoda-scala-1-5tsi-150km-r-2020-rzeszow-4-6bea9f-nr71768394"
+        }
+      ],
+      "listingIds": [
+        "sprzedajemy:71768394"
+      ],
+      "price": 55000,
+      "year": 2021,
+      "priceBasis": "gross_total",
+      "mileage": 85000,
+      "engineVariant": "1.5-tsi-150",
+      "transmissionCode": "manual",
+      "saleType": "fixed_price",
+      "photos": [
+        "https://thumbs.img-sprzedajemy.pl/1000x901c/fc/5c/c5/sprzedam-skoda-scala-15tsi-150-r-2020-150km-podkarpackie-rzeszow-591397599.jpg",
+        "https://thumbs.img-sprzedajemy.pl/1000x901c/57/26/5e/sprzedam-skoda-scala-15tsi-150-r-2020-rzeszow-591397600.jpg",
+        "https://thumbs.img-sprzedajemy.pl/1000x901c/f2/9c/ed/sprzedam-skoda-scala-15tsi-150-r-2020-rzeszow-sprzedam-591397601.jpg",
+        "https://thumbs.img-sprzedajemy.pl/1000x901c/24/bf/24/sprzedam-skoda-scala-15tsi-150-r-2020-rzeszow-591397602.jpg"
+      ],
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "city": "Rzeszów",
+        "voivodeship": "podkarpackie"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-13T16:17:11.272Z",
+      "modelKey": "skoda-scala",
+      "listingStates": [
+        {
+          "url": "https://sprzedajemy.pl/sprzedam-skoda-scala-1-5tsi-150km-r-2020-rzeszow-4-6bea9f-nr71768394",
+          "status": "available",
+          "lastAttemptAt": "2026-11-13T16:17:11.272Z",
+          "lastCheckedAt": "2026-11-13T16:17:11.272Z",
+          "lastVerifiedAt": "2026-11-13T16:17:11.272Z",
+          "lastObservation": {
+            "url": "https://sprzedajemy.pl/sprzedam-skoda-scala-1-5tsi-150km-r-2020-rzeszow-4-6bea9f-nr71768394",
+            "checkedAt": "2026-11-13T16:17:11.272Z",
+            "availability": "available",
+            "note": "Odczytano kartę z aktywnym kontaktem i pasującym numerem. Warunki ceny i tryb sprzedaży wymagają potwierdzenia.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://sprzedajemy.pl/sprzedam-skoda-scala-1-5tsi-150km-r-2020-rzeszow-4-6bea9f-nr71768394",
+                "checkedAt": "2026-11-13T16:17:11.272Z",
+                "fields": [
+                  "price",
+                  "priceBasis",
+                  "year",
+                  "mileage",
+                  "engineVariant",
+                  "transmissionCode",
+                  "saleType",
+                  "location"
+                ],
+                "note": "Dane z karty sprzedawcy."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-13T16:17:11.272Z",
+      "lastVerifiedAt": "2026-11-13T16:17:11.272Z",
+      "lastAttemptAt": "2026-11-13T16:17:11.272Z",
+      "history": [
+        {
+          "eventId": "8c011bc84a2e6df71186a575a2ad90e479aa055d695ff7500a540e24623c0af4",
+          "runId": "search20261113b",
+          "checkedAt": "2026-11-13T16:17:11.272Z",
+          "url": "https://sprzedajemy.pl/sprzedam-skoda-scala-1-5tsi-150km-r-2020-rzeszow-4-6bea9f-nr71768394",
+          "availability": "available",
+          "note": "Odczytano kartę z aktywnym kontaktem i pasującym numerem. Warunki ceny i tryb sprzedaży wymagają potwierdzenia.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://sprzedajemy.pl/sprzedam-skoda-scala-1-5tsi-150km-r-2020-rzeszow-4-6bea9f-nr71768394",
+              "checkedAt": "2026-11-13T16:17:11.272Z",
+              "fields": [
+                "price",
+                "priceBasis",
+                "year",
+                "mileage",
+                "engineVariant",
+                "transmissionCode",
+                "saleType",
+                "location"
+              ],
+              "note": "Dane z karty sprzedawcy."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:sprzedajemy:71768394",
+            "title": "Sprzedam Skoda Scala 1.5TSI 150KM r. 2020",
+            "urls": [
+              {
+                "url": "https://sprzedajemy.pl/sprzedam-skoda-scala-1-5tsi-150km-r-2020-rzeszow-4-6bea9f-nr71768394"
+              }
+            ],
+            "listingIds": [
+              "sprzedajemy:71768394"
+            ],
+            "price": 55000,
+            "year": 2021,
+            "priceBasis": "gross_total",
+            "mileage": 85000,
+            "engineVariant": "1.5-tsi-150",
+            "transmissionCode": "manual",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "photos": [
+              "https://thumbs.img-sprzedajemy.pl/1000x901c/fc/5c/c5/sprzedam-skoda-scala-15tsi-150-r-2020-150km-podkarpackie-rzeszow-591397599.jpg",
+              "https://thumbs.img-sprzedajemy.pl/1000x901c/57/26/5e/sprzedam-skoda-scala-15tsi-150-r-2020-rzeszow-591397600.jpg",
+              "https://thumbs.img-sprzedajemy.pl/1000x901c/f2/9c/ed/sprzedam-skoda-scala-15tsi-150-r-2020-rzeszow-sprzedam-591397601.jpg",
+              "https://thumbs.img-sprzedajemy.pl/1000x901c/24/bf/24/sprzedam-skoda-scala-15tsi-150-r-2020-rzeszow-591397602.jpg"
+            ],
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "city": "Rzeszów",
+              "voivodeship": "podkarpackie"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:sprzedajemy:71768394"
+            },
+            "title": {
+              "before": null,
+              "after": "Sprzedam Skoda Scala 1.5TSI 150KM r. 2020"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://sprzedajemy.pl/sprzedam-skoda-scala-1-5tsi-150km-r-2020-rzeszow-4-6bea9f-nr71768394"
+                }
+              ]
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "sprzedajemy:71768394"
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 55000
+            },
+            "year": {
+              "before": null,
+              "after": 2021
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "gross_total"
+            },
+            "mileage": {
+              "before": null,
+              "after": 85000
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.5-tsi-150"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://thumbs.img-sprzedajemy.pl/1000x901c/fc/5c/c5/sprzedam-skoda-scala-15tsi-150-r-2020-150km-podkarpackie-rzeszow-591397599.jpg",
+                "https://thumbs.img-sprzedajemy.pl/1000x901c/57/26/5e/sprzedam-skoda-scala-15tsi-150-r-2020-rzeszow-591397600.jpg",
+                "https://thumbs.img-sprzedajemy.pl/1000x901c/f2/9c/ed/sprzedam-skoda-scala-15tsi-150-r-2020-rzeszow-sprzedam-591397601.jpg",
+                "https://thumbs.img-sprzedajemy.pl/1000x901c/24/bf/24/sprzedam-skoda-scala-15tsi-150-r-2020-rzeszow-591397602.jpg"
+              ]
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "city": "Rzeszów",
+                "voivodeship": "podkarpackie"
+              }
+            },
+            "modelKey": {
+              "before": null,
+              "after": "skoda-scala"
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "listing:sprzedajemy:71768394",
+        "modelKey": "skoda-scala",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "body",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "body; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
+    }
+  ],
   "archivedOffers": []
 }

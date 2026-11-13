@@ -1,7 +1,7 @@
-import {defaultFilters,sanitizeFilters,encodeFilters,decodeFilters,dedupe,filterOffers,sortOffers,bodyNames,statuses,fmt,dateLabel,distance,verdictNames} from './assets/core.mjs?v=16';
+import {defaultFilters,sanitizeFilters,encodeFilters,decodeFilters,dedupe,filterOffers,sortOffers,bodyNames,statuses,fmt,dateLabel,distance,verdictNames} from './assets/core.mjs?v=18';
 import {createStore} from './assets/storage.mjs?v=11';
 import {loadData,loadKnowledge} from './assets/data.mjs?v=15';
-import {el,button,badge,empty,link,offerCard,archivedOfferCard,offerTable,offerDetails,comparison,knowledgeCard,knowledgeDetails,updates} from './assets/views.mjs?v=18';
+import {el,button,badge,empty,link,offerCard,archivedOfferCard,offerTable,offerDetails,comparison,knowledgeCard,knowledgeDetails,updates} from './assets/views.mjs?v=19';
 
 const $=selector=>document.querySelector(selector);
 let data=null,filters=defaultFilters(),comparisonKeys=new Set(),grouped=[],archivedGrouped=[],loadToken=0;
@@ -79,17 +79,17 @@ function render(){
  const withPoints=data.offers.filter(o=>distance(o,store.origin)!==null).length;
  $('#distance-summary').textContent=store.origin?`Punkt: ${store.origin.name||'własne współrzędne'} · odległości dla ${withPoints} ofert. Linia prosta, do punktu miejscowości — nie trasa do sprzedawcy.`:'Wybierz miasto. Odległości liczymy lokalnie; Twój punkt nie jest wysyłany do serwisów mapowych.';
  renderModels();activeFilters();renderTray();
- $('#viewCompact').setAttribute('aria-pressed',String(filters.view==='compact'));$('#viewCards').setAttribute('aria-pressed',String(filters.view==='cards'));$('#viewTable').setAttribute('aria-pressed',String(filters.view==='table'));
+ $('#viewCards').setAttribute('aria-pressed',String(filters.view==='cards'));$('#viewTable').setAttribute('aria-pressed',String(filters.view==='table'));
  if(browsing){
   const base=filters.hideDuplicates?grouped:data.offers.map(o=>{const conflict=grouped.find(g=>g.identityConflict&&g.key===o.key);return conflict||o;});
   const scoped=filters.section==='saved'?base.filter(o=>store.meta(o).favorite):base;
   const list=sortOffers(filterOffers(scoped,filters,{meta:store.meta,origin:store.origin}),filters.sort,store.origin);
   $('#result-title').textContent=filters.section==='saved'?'Twoja krótka lista':'Oferty do przejrzenia';
   $('#result-count').textContent=`${list.length} z ${scoped.length} ${filters.hideDuplicates?'samochodów':'ogłoszeń'}${data.warnings.length?' · część plików niedostępna':''}`;
-  const hint=$('#sort-hint');hint.hidden=!['newest','checked','distance'].includes(filters.sort);hint.textContent=filters.sort==='newest'?'Sortowanie według daty pierwszego znalezienia. Oferty bez daty są na końcu.':filters.sort==='checked'?'Sortowanie według ostatniego udanego odczytu. Brak daty nie oznacza świeżej oferty.':store.origin?'Dostępne odległości pokazano przy lokalizacji auta. Brak danych pomijamy.':'Ustaw punkt startowy w „Kopia danych i ustawienia”. Bez niego odległość jest nieznana.';
-  const results=$('#results');results.className=filters.view==='table'?'':'offer-grid'+(filters.view==='compact'?' compact-grid':'');results.replaceChildren();
+  const hint=$('#sort-hint');hint.hidden=!['newest','publicationDate','checked','distance'].includes(filters.sort);hint.textContent=filters.sort==='newest'?'Sortowanie według daty pierwszego znalezienia. Oferty bez daty są na końcu.':filters.sort==='publicationDate'?`Data wystawienia: najnowsze najpierw; bez daty na końcu. Datę ma ${list.filter(o=>[o.publicationDate,...(o.members||[]).map(member=>member.publicationDate)].some(value=>typeof value==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(value))).length} z ${list.length} widocznych samochodów.`:filters.sort==='checked'?'Sortowanie według ostatniego udanego odczytu. Brak daty nie oznacza świeżej oferty.':store.origin?'Dostępne odległości pokazano przy lokalizacji auta. Brak danych pomijamy.':'Ustaw punkt startowy w „Kopia danych i ustawienia”. Bez niego odległość jest nieznana.';
+  const results=$('#results');results.className=filters.view==='table'?'':'offer-grid';results.replaceChildren();
   if(!list.length){const message=filters.section==='saved'?'Zapisz auta przyciskiem serca. Jeżeli masz zapisane auta, sprawdź aktywne filtry.':'Zmień filtry. Pusta lista nie dowodzi braku ofert na rynku — pokrycie portali sprawdzisz w Aktualizacjach.';results.append(empty('Nie ma tu jeszcze wyników',message));}
-  else if(filters.view==='table')results.append(offerTable(list,context()));else results.append(...list.map(o=>offerCard(o,context(),filters.view==='compact')));
+  else if(filters.view==='table')results.append(offerTable(list,context()));else results.append(...list.map(o=>offerCard(o,context())));
  }
  if(filters.section==='compare')$('#compare-section').replaceChildren(comparison(selectedComparison(),context()));
  if(filters.section==='archive')renderArchive();
@@ -109,7 +109,7 @@ $('#archive-search').addEventListener('input',()=>data&&renderArchive());$('#arc
 $('#model-search').addEventListener('input',()=>data&&renderModels());$('#clear-models').addEventListener('click',()=>{if(!data)return;updateFilter('models',filters.models.length?[]:keys());});
 $('#filter-toggle').addEventListener('click',()=>{const panel=$('#filters');panel.hidden=!panel.hidden;$('#filter-toggle').setAttribute('aria-expanded',String(!panel.hidden));});
 $('#reset-filters').addEventListener('click',()=>{if(!data)return;filters={...defaultFilters(),section:filters.section,view:filters.view};persist();render();});
-$('#viewCompact').addEventListener('click',()=>data&&updateFilter('view','compact'));$('#viewCards').addEventListener('click',()=>data&&updateFilter('view','cards'));$('#viewTable').addEventListener('click',()=>data&&updateFilter('view','table'));
+$('#viewCards').addEventListener('click',()=>data&&updateFilter('view','cards'));$('#viewTable').addEventListener('click',()=>data&&updateFilter('view','table'));
 $('#close-offer').addEventListener('click',()=>{$('#offer-dialog').close();knowledgeToken++;});$('#close-settings').addEventListener('click',()=>$('#settings-dialog').close());$('#close-search').addEventListener('click',()=>$('#search-dialog').close());
 $('#offer-dialog').addEventListener('click',event=>{const dialog=event.currentTarget,rect=dialog.getBoundingClientRect();if(event.target===dialog&&(event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom))dialog.close();});
 $('#settings-dialog').addEventListener('close',()=>{if(data)render();});

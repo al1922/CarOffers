@@ -107,12 +107,13 @@ Lokalizacje i ich odtwarzanie opisuje [dokumentacja lokalizacji](docs/lokalizacj
 ## Testy
 
 ```powershell
-node --test tests/test_app.cjs
+npm test
 python -B -m unittest discover -s tests -v
 ```
 
-`npm test` jest skrótem do testów JavaScript; instalacja pakietów nie jest potrzebna.
-Testy jednostkowe nie zastępują sprawdzenia rzeczywistego układu w przeglądarce.
+`npm test` uruchamia oba zestawy testów JavaScript zdefiniowane w `package.json`;
+instalacja pakietów nie jest do nich potrzebna. Testy jednostkowe nie zastępują
+sprawdzenia rzeczywistego układu w przeglądarce.
 
 ## GitHub Pages
 

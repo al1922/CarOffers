@@ -95,8 +95,8 @@ export function sanitizeFilters(input={},validModels=[]){
  output.models=Array.isArray(input.models)?[...new Set(input.models.filter(k=>validModels.includes(k)))]:[];
  for(const key of ['maxPrice','maxMileage','minYear','maxYear','radius'])if(output[key]!==''&&(!Number.isFinite(+output[key])||+output[key]<0))output[key]='';
  if(!['offers','archive','saved','compare','knowledge','updates'].includes(output.section))output.section='offers';
- if(!['cards','compact','table'].includes(output.view))output.view='cards';
- if(!['priority','priceAsc','priceDesc','mileageAsc','yearDesc','newest','checked','distance'].includes(output.sort))output.sort='priority';
+ if(!['cards','table'].includes(output.view))output.view='cards';
+ if(!['priority','priceAsc','priceDesc','mileageAsc','yearDesc','newest','publicationDate','checked','distance'].includes(output.sort))output.sort='priority';
  return output;
 }
 export function encodeFilters(filters){const params=new URLSearchParams();const defaults=defaultFilters();for(const k of filterKeys){const v=filters[k];if(JSON.stringify(v)===JSON.stringify(defaults[k]))continue;params.set(k,Array.isArray(v)?v.join(','):String(v));}return params.toString();}
@@ -132,6 +132,12 @@ export function filterOffers(offers,f,{meta=()=>({}),origin=null,now=Date.now()}
 export function sortOffers(list,sort,origin){
  const number=(v,fallback)=>Number.isFinite(v)?v:fallback;
  const stamp=v=>Date.parse(v)||0;
+ const publicationStamp=o=>Math.max(0,...(o.members?.length?o.members:[o]).map(member=>{
+  const value=member.publicationDate;
+  if(typeof value!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(value))return 0;
+  const parsed=Date.parse(value+'T00:00:00Z');
+  return Number.isFinite(parsed)?parsed:0;
+ }));
  return [...list].sort((a,b)=>{
   let result=0;
   if(sort==='priceAsc')result=number(a.price,Infinity)-number(b.price,Infinity);
@@ -139,6 +145,7 @@ export function sortOffers(list,sort,origin){
   else if(sort==='mileageAsc')result=number(a.mileage,Infinity)-number(b.mileage,Infinity);
   else if(sort==='yearDesc')result=number(b.year,0)-number(a.year,0);
   else if(sort==='newest')result=stamp(b.firstSeenAt)-stamp(a.firstSeenAt);
+  else if(sort==='publicationDate')result=publicationStamp(b)-publicationStamp(a);
   else if(sort==='checked')result=stamp(b.lastCheckedAt)-stamp(a.lastCheckedAt);
   else if(sort==='distance')result=number(distance(a,origin),Infinity)-number(distance(b,origin),Infinity);
   else result=({match:0,check:1,fail:2}[a.verdict]??1)-({match:0,check:1,fail:2}[b.verdict]??1)||number(a.price,Infinity)-number(b.price,Infinity);
