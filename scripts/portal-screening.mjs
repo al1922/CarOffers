@@ -7,7 +7,7 @@ export function extractVisibleFields(text, sourceId) {
   const value = String(text ?? "").replace(/\s+/g, " ").trim();
   const productionYear = value.match(/(?:rok produkcji|produkcja)\s*[:\-]?\s*((?:19|20)\d{2})/i)?.[1];
   const firstRegistration = value.match(/(?:pierwsza rejestracja|data pierwszej rejestracji|rok rejestracji)\s*[:\-]?\s*((?:19|20)\d{2})/i)?.[1];
-  const mileageMatch = value.match(/(?:przebieg\s*[:\-]?\s*)?(\d{1,3}(?:[\s\u00a0.,]\d{3})+|\d{4,6})\s*km\b/i);
+  const mileageMatch = value.match(/\b(?:przebieg\s*[:\-]?\s*)?(\d{1,3}(?:[\s\u00a0.,]\d{3})+|\d{4,6})\s*km\b/i);
   const pricePattern = /(?:\d{1,3}(?:[\s\u00a0.,]\d{3})+|\d{4,7})\s*(?:zł|PLN)/i;
   const priceMatch = sourceId === "automarket"
     ? value.split(/\bZakup:\s*/i)[1]?.match(new RegExp(`^${pricePattern.source}`, "i"))

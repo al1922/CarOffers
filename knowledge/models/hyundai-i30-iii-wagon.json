@@ -410,65 +410,221 @@
     {
       "id": "engine-14-mpi-spec",
       "topic": "engine",
-      "value": {"label": "1.4 MPI", "displacementCc": 1368, "powerKw": 73, "powerPS": 100, "torqueNm": 134, "fuelInjection": "multi-point", "turbo": false, "timingDrive": "chain", "transmission": "6MT", "zeroTo100KphSeconds": 12.7, "likelyEngineCode": "G4LC"},
-      "scope": {"market": "Europe", "period": "i30 III launch range", "body": "Wagon", "codeScope": "G4LC mapping corroborated by inspection registry; verify VIN"},
+      "value": {
+        "label": "1.4 MPI",
+        "displacementCc": 1368,
+        "powerKw": 73,
+        "powerPS": 100,
+        "torqueNm": 134,
+        "fuelInjection": "multi-point",
+        "turbo": false,
+        "timingDrive": "chain",
+        "transmission": "6MT",
+        "zeroTo100KphSeconds": 12.7,
+        "likelyEngineCode": "G4LC"
+      },
+      "scope": {
+        "market": "Europe",
+        "period": "i30 III launch range",
+        "body": "Wagon",
+        "codeScope": "G4LC mapping corroborated by inspection registry; verify VIN"
+      },
       "confidence": "high",
-      "sourceIds": ["i30-2017-technical", "i30-launch", "i30-stk-2026"],
-      "notes": ["Manufacturer data confirms the technical variant; engine code should still be checked on the vehicle documents/VIN."]
+      "sourceIds": [
+        "i30-2017-technical",
+        "i30-launch",
+        "i30-stk-2026"
+      ],
+      "notes": [
+        "Manufacturer data confirms the technical variant; engine code should still be checked on the vehicle documents/VIN."
+      ]
     },
     {
       "id": "engine-14-tgdi-code-and-spec",
       "topic": "engine",
-      "value": {"label": "1.4 T-GDi", "displacementCc": 1353, "powerKw": 103, "powerPS": 140, "torqueNm": 242, "fuelInjection": "direct", "turbo": true, "timingDrive": "chain", "transmissions": ["6MT", "7DCT"], "likelyEngineCode": "G4LD"},
-      "scope": {"market": "Europe", "period": "2017–2020 before facelift powertrain change", "body": "Wagon", "codeScope": "G4LD mapping corroborated by inspection registry; verify VIN"},
+      "value": {
+        "label": "1.4 T-GDi",
+        "displacementCc": 1353,
+        "powerKw": 103,
+        "powerPS": 140,
+        "torqueNm": 242,
+        "fuelInjection": "direct",
+        "turbo": true,
+        "timingDrive": "chain",
+        "transmissions": [
+          "6MT",
+          "7DCT"
+        ],
+        "likelyEngineCode": "G4LD"
+      },
+      "scope": {
+        "market": "Europe",
+        "period": "2017–2020 before facelift powertrain change",
+        "body": "Wagon",
+        "codeScope": "G4LD mapping corroborated by inspection registry; verify VIN"
+      },
       "confidence": "high",
-      "sourceIds": ["i30-2017-technical", "i30-launch", "i30-stk-2026"],
-      "notes": ["7DCT is a separate transmission decision; do not transfer its wear risk to the engine rating."]
+      "sourceIds": [
+        "i30-2017-technical",
+        "i30-launch",
+        "i30-stk-2026"
+      ],
+      "notes": [
+        "7DCT is a separate transmission decision; do not transfer its wear risk to the engine rating."
+      ]
     },
     {
       "id": "engine-15-dpi-code-and-spec",
       "topic": "engine",
-      "value": {"label": "1.5 DPi", "displacementCc": 1498, "powerKw": 80.9, "powerPS": 110, "torqueNm": 144.2, "fuelInjection": "DPi, naturally aspirated", "turbo": false, "transmission": "6MT", "likelyEngineCode": "G4LG"},
-      "scope": {"market": "Europe; Polish Wagon cennik corroborates 2021 presence", "period": "from 2020 facelift", "body": "Wagon", "codeScope": "G4LG mapping corroborated by inspection registry and Polish LPG technical source; verify VIN"},
+      "value": {
+        "label": "1.5 DPi",
+        "displacementCc": 1498,
+        "powerKw": 80.9,
+        "powerPS": 110,
+        "torqueNm": 144.2,
+        "fuelInjection": "DPi, naturally aspirated",
+        "turbo": false,
+        "transmission": "6MT",
+        "likelyEngineCode": "G4LG"
+      },
+      "scope": {
+        "market": "Europe; Polish Wagon cennik corroborates 2021 presence",
+        "period": "from 2020 facelift",
+        "body": "Wagon",
+        "codeScope": "G4LG mapping corroborated by inspection registry and Polish LPG technical source; verify VIN"
+      },
       "confidence": "high",
-      "sourceIds": ["i30-2020-preliminary", "i30-pl-wagon-py2021", "i30-stk-2026"],
-      "notes": ["February 2020 European data were preliminary; confirm the exact vehicle using VIN and its Polish documents."]
+      "sourceIds": [
+        "i30-2020-preliminary",
+        "i30-pl-wagon-py2021",
+        "i30-stk-2026"
+      ],
+      "notes": [
+        "February 2020 European data were preliminary; confirm the exact vehicle using VIN and its Polish documents."
+      ]
     },
     {
       "id": "engine-stk-comparison-2026",
       "topic": "reliability-evidence",
-      "value": {"source": "Czech periodic technical inspections, i30 III by engine code", "checkedAt": "2026-11-08", "observations": [{"engineCode": "G4LG", "powerKw": 81, "inspections": 3443, "partiallyRoadworthyPct": 1.8, "differenceVsSameAgePercentagePoints": -0.9, "unroadworthyPct": 0.06, "meanMileageKm": 58925}, {"engineCode": "G4LD", "powerKw": 103, "inspections": 2930, "partiallyRoadworthyPct": 3.8, "differenceVsSameAgePercentagePoints": 0.1, "unroadworthyPct": 0.07, "meanMileageKm": 97311}, {"engineCode": "G4LC", "powerKw": 73, "inspections": 707, "partiallyRoadworthyPct": 4.2, "differenceVsSameAgePercentagePoints": 0.8, "unroadworthyPct": 0.14, "meanMileageKm": 78239}]},
-      "scope": {"market": "Czech Republic", "inspectionYear": 2026, "body": "i30 III, not isolated to Wagon", "outcome": "whole-vehicle inspection outcome, not engine-failure rate"},
+      "value": {
+        "source": "Czech periodic technical inspections, i30 III by engine code",
+        "checkedAt": "2026-11-08",
+        "observations": [
+          {
+            "engineCode": "G4LG",
+            "powerKw": 81,
+            "inspections": 3443,
+            "partiallyRoadworthyPct": 1.8,
+            "differenceVsSameAgePercentagePoints": -0.9,
+            "unroadworthyPct": 0.06,
+            "meanMileageKm": 58925
+          },
+          {
+            "engineCode": "G4LD",
+            "powerKw": 103,
+            "inspections": 2930,
+            "partiallyRoadworthyPct": 3.8,
+            "differenceVsSameAgePercentagePoints": 0.1,
+            "unroadworthyPct": 0.07,
+            "meanMileageKm": 97311
+          },
+          {
+            "engineCode": "G4LC",
+            "powerKw": 73,
+            "inspections": 707,
+            "partiallyRoadworthyPct": 4.2,
+            "differenceVsSameAgePercentagePoints": 0.8,
+            "unroadworthyPct": 0.14,
+            "meanMileageKm": 78239
+          }
+        ]
+      },
+      "scope": {
+        "market": "Czech Republic",
+        "inspectionYear": 2026,
+        "body": "i30 III, not isolated to Wagon",
+        "outcome": "whole-vehicle inspection outcome, not engine-failure rate"
+      },
       "confidence": "medium",
-      "sourceIds": ["i30-stk-2026"],
-      "notes": ["Different mileage and sample sizes prevent a direct reliability ranking. STK outcomes include chassis, brakes, lights and other vehicle components.", "Do not count Poruchovost.cz as independent confirmation: it uses the same Czech official STK data stream."]
+      "sourceIds": [
+        "i30-stk-2026"
+      ],
+      "notes": [
+        "Different mileage and sample sizes prevent a direct reliability ranking. STK outcomes include chassis, brakes, lights and other vehicle components.",
+        "Do not count Poruchovost.cz as independent confirmation: it uses the same Czech official STK data stream."
+      ]
     },
     {
       "id": "i30-engine-recommendation-status",
       "topic": "selection_review",
-      "value": {"recommendationStatus": "conditional_only", "engineStatus": {"1.5-dpi-110": "conditional_recommendation_profile_fit; long_term_engine_failure_and_repair_cost_data_incomplete", "1.4-tgdi-140": "conditional_recommendation; positive_inspection_signal_but_turbo_direct_injection_and_cost_data_incomplete; assess_7dct_separately", "1.4-mpi-100": "hold_as_default; not_rejected; modest_loaded_wagon_performance_and_smaller_exact_code_sample"}, "fullRecommendationThresholdMet": false},
-      "scope": {"profile": "12–15k km/year, mixed city/road, family wagon, LPG allowed", "decisionDate": "2026-11-08"},
+      "value": {
+        "recommendationStatus": "conditional_only",
+        "engineStatus": {
+          "1.4-tgdi-140": "conditional_recommendation; positive_inspection_signal_but_turbo_direct_injection_and_cost_data_incomplete; assess_7dct_separately"
+        },
+        "fullRecommendationThresholdMet": false
+      },
+      "scope": {
+        "profile": "12–15k km/year, mixed city/road, family wagon, LPG allowed",
+        "decisionDate": "2026-11-08"
+      },
       "confidence": "medium",
-      "sourceIds": ["i30-2017-technical", "i30-2020-preliminary", "i30-stk-2026", "i30-gazeo-lpg"],
-      "notes": ["Preliminary selection assessment, not a guarantee. None meets the full Recommended evidence threshold in docs/metoda-oceny-silnikow.md."]
+      "sourceIds": [
+        "i30-2017-technical",
+        "i30-2020-preliminary",
+        "i30-stk-2026",
+        "i30-gazeo-lpg"
+      ],
+      "notes": [
+        "Preliminary selection assessment, not a guarantee. None meets the full Recommended evidence threshold in docs/metoda-oceny-silnikow.md.",
+        "1.5 T-GDI 160 KM jest na aktualnej liście wyszukiwania, ale nie ma jeszcze oceny trwałości."
+      ]
     },
     {
       "id": "i30-uokik-engine-scope",
       "topic": "recall",
-      "value": {"productionPeriod": {"from": "2018-10-25", "to": "2020-07-15"}, "issue": "possible blockage of vacuum pump oil-channel mesh filter; increased brake-pedal effort", "engineVariantScope": "not specified in this UOKiK notice", "requiredAction": "verify campaign completion by VIN"},
-      "scope": {"market": "Poland", "body": "Hyundai i30 produced in Czech Republic"},
+      "value": {
+        "productionPeriod": {
+          "from": "2018-10-25",
+          "to": "2020-07-15"
+        },
+        "issue": "possible blockage of vacuum pump oil-channel mesh filter; increased brake-pedal effort",
+        "engineVariantScope": "not specified in this UOKiK notice",
+        "requiredAction": "verify campaign completion by VIN"
+      },
+      "scope": {
+        "market": "Poland",
+        "body": "Hyundai i30 produced in Czech Republic"
+      },
       "confidence": "high",
-      "sourceIds": ["i30-uokik-2023"],
-      "notes": ["Do not attribute this campaign to every selected petrol engine without VIN-level applicability. It is a safety action and must be checked for affected production dates."]
+      "sourceIds": [
+        "i30-uokik-2023"
+      ],
+      "notes": [
+        "Do not attribute this campaign to every selected petrol engine without VIN-level applicability. It is a safety action and must be checked for affected production dates."
+      ]
     },
     {
       "id": "i30-g4lg-lpg",
       "topic": "lpg",
-      "value": {"engineCode": "G4LG", "vehicleExample": "i30 2022, 1.5 DPi 110 KM", "conversionDocumented": true, "systemExample": "Landirenzo Omegas3", "perVehicleCompatibilityStillRequired": true},
-      "scope": {"market": "Poland", "body": "i30; the source's worked example does not establish every trim/VIN"},
+      "value": {
+        "engineCode": "G4LG",
+        "vehicleExample": "i30 2022, 1.5 DPi 110 KM",
+        "conversionDocumented": true,
+        "systemExample": "Landirenzo Omegas3",
+        "perVehicleCompatibilityStillRequired": true
+      },
+      "scope": {
+        "market": "Poland",
+        "body": "i30; the source's worked example does not establish every trim/VIN"
+      },
       "confidence": "medium",
-      "sourceIds": ["i30-gazeo-lpg"],
-      "notes": ["An aftermarket conversion example is not manufacturer approval or proof that a particular installed system is compliant; inspect its installation and tank documents."]
+      "sourceIds": [
+        "i30-gazeo-lpg"
+      ],
+      "notes": [
+        "An aftermarket conversion example is not manufacturer approval or proof that a particular installed system is compliant; inspect its installation and tank documents."
+      ]
     }
   ],
   "sources": [

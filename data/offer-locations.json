@@ -1,356 +1,16 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-08T13:10:11.792219+00:00",
+  "generatedAt": "2026-11-13T13:14:46.220777+00:00",
   "provenance": {
     "provider": "GeoNames",
     "url": "https://download.geonames.org/export/dump/PL.zip",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-    "checkedAt": "2026-11-08T13:10:11.792219+00:00",
+    "checkedAt": "2026-11-13T13:14:46.220777+00:00",
     "archiveSha256": "2b54f582cc0af89503f38e990cb22b23b8eac3dcc97d7fffc4bdd1a5acef53da",
     "note": "Subset of the Poland dump. Administrative names translated into Polish. City-level points, not seller addresses."
   },
   "locations": {
-    "vin:TMAH281CANJ118698": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Iwkowa",
-        "voivodeship": "małopolskie",
-        "precision": "city",
-        "source": "listing",
-        "checkedAt": "2026-11-08",
-        "latitude": 49.81716,
-        "longitude": 20.59018,
-        "geoSource": "https://www.geonames.org/770762/"
-      },
-      "evidence": {
-        "basis": "listing_read",
-        "sourceUrl": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiMLq.html",
-        "checkedAt": "2026-11-08T13:05:59Z",
-        "historicalTitle": "1.5 DPi · 110 KM Kombi — Iwkowa (Małopolskie) · 63 000 km",
-        "sourceFile": "offers/hyundai-i30-iii-wagon.json",
-        "sourceFileSha256": "95969419ae7efce52ab6d8f050bcf9f699c57212010205ae2c8b556be5a78875",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Iwkowa 698 - 32-800 Iwkowa, brzeski, Małopolskie (Polska)",
-        "geocodedAt": "2026-11-08T13:10:11.792219+00:00",
-        "geocodingNote": "Punkt miejscowości GeoNames; nie adres auta."
-      }
-    },
-    "listing:otomoto:ID6IjeFS": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Nowy Sącz",
-        "voivodeship": "małopolskie",
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null,
-        "latitude": 49.62177,
-        "longitude": 20.69705,
-        "geoSource": "https://www.geonames.org/763534/"
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IjeFS.html",
-        "checkedAt": null,
-        "historicalTitle": "1.4 T-GDI · 140 KM Kombi — Nowy Sącz · 67 000 km",
-        "sourceFile": "offers/hyundai-i30-iii-wagon.json",
-        "sourceFileSha256": "95969419ae7efce52ab6d8f050bcf9f699c57212010205ae2c8b556be5a78875",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": "2026-11-08T13:10:11.792219+00:00",
-        "geocodingNote": "Punkt miejscowości GeoNames; nie adres auta."
-      }
-    },
-    "listing:otomoto:ID6Iiq7J": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Radom",
-        "voivodeship": null,
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6Iiq7J.html",
-        "checkedAt": null,
-        "historicalTitle": "1.4 T-GDI · 140 KM Kombi — Radom · 73 000 km",
-        "sourceFile": "offers/hyundai-i30-iii-wagon.json",
-        "sourceFileSha256": "95969419ae7efce52ab6d8f050bcf9f699c57212010205ae2c8b556be5a78875",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": null,
-        "geocodingNote": "Nazwa wieloznaczna lub brak zgodnego punktu — nie wybrano współrzędnych."
-      }
-    },
-    "listing:otomoto:ID6IiUPp": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Złotniki",
-        "voivodeship": null,
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiUPp.html",
-        "checkedAt": null,
-        "historicalTitle": "1.4 T-GDI · 140 KM Kombi — Złotniki (koło Poznania) · 87 837 km",
-        "sourceFile": "offers/hyundai-i30-iii-wagon.json",
-        "sourceFileSha256": "95969419ae7efce52ab6d8f050bcf9f699c57212010205ae2c8b556be5a78875",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": null,
-        "geocodingNote": "Nazwa wieloznaczna lub brak zgodnego punktu — nie wybrano współrzędnych."
-      }
-    },
-    "listing:otomoto:ID6IhpXr": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Pszów",
-        "voivodeship": "śląskie",
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null,
-        "latitude": 50.03994,
-        "longitude": 18.39472,
-        "geoSource": "https://www.geonames.org/3087701/"
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IhpXr.html",
-        "checkedAt": null,
-        "historicalTitle": "1.4 T-GDI · 140 KM Kombi — Pszów · 108 000 km",
-        "sourceFile": "offers/hyundai-i30-iii-wagon.json",
-        "sourceFileSha256": "95969419ae7efce52ab6d8f050bcf9f699c57212010205ae2c8b556be5a78875",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": "2026-11-08T13:10:11.792219+00:00",
-        "geocodingNote": "Punkt miejscowości GeoNames; nie adres auta."
-      }
-    },
-    "listing:autoplac:0240-6320-YN": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Kraków",
-        "voivodeship": "małopolskie",
-        "precision": "city",
-        "source": "listing",
-        "checkedAt": "2026-11-08",
-        "latitude": 50.06143,
-        "longitude": 19.93658,
-        "geoSource": "https://www.geonames.org/3094802/"
-      },
-      "evidence": {
-        "basis": "listing_read",
-        "sourceUrl": "https://autoplac.pl/oferta/hyundai/i30/iii-1-5-2021r-hyundai-i30-dpi-classic-0240-6320-YN",
-        "checkedAt": "2026-11-08T13:05:59Z",
-        "historicalTitle": "1.5 DPi 110 KM Kombi — Kraków  100 000 km",
-        "sourceFile": "offers/hyundai-i30-iii-wagon.json",
-        "sourceFileSha256": "95969419ae7efce52ab6d8f050bcf9f699c57212010205ae2c8b556be5a78875",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Snycerska 7 , Kraków, 30-817",
-        "geocodedAt": "2026-11-08T13:10:11.792219+00:00",
-        "geocodingNote": "Punkt miejscowości GeoNames; nie adres auta."
-      }
-    },
-    "vin:TMAH281CANJ114421": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Poznań",
-        "voivodeship": null,
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://www.olx.pl/d/oferta/hyundai-i30-1-5-dpi-classic-plus-salon-polska-1-wlasciciel-vat-23-klima-CID5-ID1bW3HH.html",
-        "checkedAt": null,
-        "historicalTitle": "1.5 DPi · 110 KM Kombi — Poznań · 112 009 km",
-        "sourceFile": "offers/hyundai-i30-iii-wagon.json",
-        "sourceFileSha256": "95969419ae7efce52ab6d8f050bcf9f699c57212010205ae2c8b556be5a78875",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": null,
-        "geocodingNote": "Nazwa wieloznaczna lub brak zgodnego punktu — nie wybrano współrzędnych."
-      }
-    },
-    "listing:otomoto:ID6IhGRc": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Rzeszów",
-        "voivodeship": "podkarpackie",
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null,
-        "latitude": 50.04132,
-        "longitude": 21.99901,
-        "geoSource": "https://www.geonames.org/759734/"
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IhGRc.html",
-        "checkedAt": null,
-        "historicalTitle": "1.5 DPi 110 KM Kombi — Rzeszów  156 000 km",
-        "sourceFile": "offers/hyundai-i30-iii-wagon.json",
-        "sourceFileSha256": "95969419ae7efce52ab6d8f050bcf9f699c57212010205ae2c8b556be5a78875",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": "2026-11-08T13:10:11.792219+00:00",
-        "geocodingNote": "Punkt miejscowości GeoNames; nie adres auta."
-      }
-    },
-    "listing:otomoto:ID6IegxD": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Niwy",
-        "voivodeship": "świętokrzyskie",
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IegxD.html",
-        "checkedAt": null,
-        "historicalTitle": "1.4 T-GDI · 140 KM Kombi — Niwy (Świętokrzyskie) · 99 000 km",
-        "sourceFile": "offers/hyundai-i30-iii-wagon.json",
-        "sourceFileSha256": "95969419ae7efce52ab6d8f050bcf9f699c57212010205ae2c8b556be5a78875",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": null,
-        "geocodingNote": "Nazwa wieloznaczna lub brak zgodnego punktu — nie wybrano współrzędnych."
-      }
-    },
-    "listing:otomoto:ID6IhRf0": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Kurów",
-        "voivodeship": "lubelskie",
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IhRf0.html",
-        "checkedAt": null,
-        "historicalTitle": "1.4 T-GDI · 140 KM Kombi — Kurów (Lubelskie) · 137 189 km",
-        "sourceFile": "offers/hyundai-i30-iii-wagon.json",
-        "sourceFileSha256": "95969419ae7efce52ab6d8f050bcf9f699c57212010205ae2c8b556be5a78875",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": null,
-        "geocodingNote": "Nazwa wieloznaczna lub brak zgodnego punktu — nie wybrano współrzędnych."
-      }
-    },
-    "listing:autoplac:1492-6499-YL": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Dąbrowa Górnicza",
-        "voivodeship": "śląskie",
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null,
-        "latitude": 50.33394,
-        "longitude": 19.20479,
-        "geoSource": "https://www.geonames.org/3100796/"
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://autoplac.pl/oferta/hyundai/i30/iii-1-5-2021r-dpi-nawigacja-1492-6499-YL",
-        "checkedAt": null,
-        "historicalTitle": "1.5 DPi 110 KM Kombi — Dąbrowa Górnicza  123 000 km",
-        "sourceFile": "offers/hyundai-i30-iii-wagon.json",
-        "sourceFileSha256": "95969419ae7efce52ab6d8f050bcf9f699c57212010205ae2c8b556be5a78875",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": "2026-11-08T13:10:11.792219+00:00",
-        "geocodingNote": "Punkt miejscowości GeoNames; nie adres auta."
-      }
-    },
-    "listing:autoplac:0060-7009-GM": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Łódź",
-        "voivodeship": null,
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://autoplac.pl/oferta/hyundai/i30/iii-1-5-2022r-15dpi-110km-modern-gwarancja-salon-polska-2022-vat23-0060-7009-GM",
-        "checkedAt": null,
-        "historicalTitle": "1.5 DPi · 110 KM Kombi — Łódź · 150 764 km",
-        "sourceFile": "offers/hyundai-i30-iii-wagon.json",
-        "sourceFileSha256": "95969419ae7efce52ab6d8f050bcf9f699c57212010205ae2c8b556be5a78875",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": null,
-        "geocodingNote": "Nazwa wieloznaczna lub brak zgodnego punktu — nie wybrano współrzędnych."
-      }
-    },
-    "vin:TMAH3813GLJ064598": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Ząbki",
-        "voivodeship": null,
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://www.olx.pl/d/oferta/hyundai-i30-kombi-1-4-t-gdi-140-km-automat-salon-polska-kamera-bezwypadkowy-CID5-ID1bPr3c.html",
-        "checkedAt": null,
-        "historicalTitle": "1.4 T-GDI · 140 KM Kombi — Ząbki · 112 100 km",
-        "sourceFile": "offers/hyundai-i30-iii-wagon.json",
-        "sourceFileSha256": "95969419ae7efce52ab6d8f050bcf9f699c57212010205ae2c8b556be5a78875",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": null,
-        "geocodingNote": "Nazwa wieloznaczna lub brak zgodnego punktu — nie wybrano współrzędnych."
-      }
-    },
-    "listing:otomoto:ID6IgIXq": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Jastrzębie-Zdrój",
-        "voivodeship": null,
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IgIXq.html",
-        "checkedAt": null,
-        "historicalTitle": "1.4 T-GDI · 140 KM Kombi — Jastrzębie-Zdrój · 160 000 km",
-        "sourceFile": "offers/hyundai-i30-iii-wagon.json",
-        "sourceFileSha256": "95969419ae7efce52ab6d8f050bcf9f699c57212010205ae2c8b556be5a78875",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": null,
-        "geocodingNote": "Nazwa wieloznaczna lub brak zgodnego punktu — nie wybrano współrzędnych."
-      }
-    },
     "listing:autoplac:7600-2296-WW": {
       "location": {
         "status": "available",
@@ -370,163 +30,10 @@
         "checkedAt": null,
         "historicalTitle": "1.4 T-GDI 140 KM Kombi — Kędzierzyn-Koźle  71 321 km",
         "sourceFile": "offers/kia-ceed-iii-sw.json",
-        "sourceFileSha256": "792b5568a3a1411d2f78712f749411001eb0f168c8b677f2cc9c63cb26b81453",
-        "historicalFileUpdatedAt": "2026-11-07",
+        "sourceFileSha256": "612cbf6e58188e1138d6c32d79772781ec075aa3969c4945a77fb4a19a3d1dd4",
+        "historicalFileUpdatedAt": "2026-11-13",
         "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": "2026-11-08T13:10:11.792219+00:00",
-        "geocodingNote": "Punkt miejscowości GeoNames; nie adres auta."
-      }
-    },
-    "vin:VF1RFB00062608355": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Łomża",
-        "voivodeship": "podlaskie",
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null,
-        "latitude": 53.17806,
-        "longitude": 22.05935,
-        "geoSource": "https://www.geonames.org/766027/"
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://autoplac.pl/oferta/renault/megane/iv-1-3-2019r-8984-4483-WZ",
-        "checkedAt": null,
-        "historicalTitle": "1.3 TCe 140 KM Kombi — Łomża  122 000 km",
-        "sourceFile": "offers/renault-megane-iv-grandtour.json",
-        "sourceFileSha256": "86c5ca76bdba3bc89955ea25d541b56825c87af92b718089e3a25462d4f68d04",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": "2026-11-08T13:10:11.792219+00:00",
-        "geocodingNote": "Punkt miejscowości GeoNames; nie adres auta."
-      }
-    },
-    "listing:autoplac:4925-9143-HT": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Gdynia",
-        "voivodeship": "pomorskie",
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null,
-        "latitude": 54.51889,
-        "longitude": 18.53188,
-        "geoSource": "https://www.geonames.org/3099424/"
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://autoplac.pl/oferta/renault/megane/iv-1-3-2019r-sprzedam-stan-bardzo-dobry-maly-przebieg-4925-9143-HT",
-        "checkedAt": null,
-        "historicalTitle": "1.3 TCe 140 KM Kombi — Gdynia  86 000 km",
-        "sourceFile": "offers/renault-megane-iv-grandtour.json",
-        "sourceFileSha256": "86c5ca76bdba3bc89955ea25d541b56825c87af92b718089e3a25462d4f68d04",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": "2026-11-08T13:10:11.792219+00:00",
-        "geocodingNote": "Punkt miejscowości GeoNames; nie adres auta."
-      }
-    },
-    "listing:autoplac:4226-2792-FT": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Borowa Wieś",
-        "voivodeship": "śląskie",
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null,
-        "latitude": 50.22777,
-        "longitude": 18.80979,
-        "geoSource": "https://www.geonames.org/3102848/"
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://autoplac.pl/oferta/renault/megane/iv-1-3-2020r-tce-140km-2020r-4226-2792-FT",
-        "checkedAt": null,
-        "historicalTitle": "1.3 TCe 140 KM Kombi — Borowa Wieś  43 000 km",
-        "sourceFile": "offers/renault-megane-iv-grandtour.json",
-        "sourceFileSha256": "86c5ca76bdba3bc89955ea25d541b56825c87af92b718089e3a25462d4f68d04",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": "2026-11-08T13:10:11.792219+00:00",
-        "geocodingNote": "Punkt miejscowości GeoNames; nie adres auta."
-      }
-    },
-    "listing:autoplac:7695-1162-PE": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Tarnowskie Góry",
-        "voivodeship": "śląskie",
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null,
-        "latitude": 50.44548,
-        "longitude": 18.86147,
-        "geoSource": "https://www.geonames.org/3083440/"
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://autoplac.pl/oferta/renault/megane/iv-1-3-2019r-renault-megane-tce-fap-limited-edc-7695-1162-PE",
-        "checkedAt": null,
-        "historicalTitle": "1.3 TCe 140 KM Kombi — Tarnowskie Góry  143 000 km",
-        "sourceFile": "offers/renault-megane-iv-grandtour.json",
-        "sourceFileSha256": "86c5ca76bdba3bc89955ea25d541b56825c87af92b718089e3a25462d4f68d04",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": "2026-11-08T13:10:11.792219+00:00",
-        "geocodingNote": "Punkt miejscowości GeoNames; nie adres auta."
-      }
-    },
-    "listing:autoplac:9003-4494-QE": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Olsztyn",
-        "voivodeship": null,
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://autoplac.pl/oferta/renault/megane/iv-1-3-2019r-tce-140-km-limited-kombi-9003-4494-QE",
-        "checkedAt": null,
-        "historicalTitle": "1.3 TCe 140 KM Kombi — Olsztyn  118 689 km",
-        "sourceFile": "offers/renault-megane-iv-grandtour.json",
-        "sourceFileSha256": "86c5ca76bdba3bc89955ea25d541b56825c87af92b718089e3a25462d4f68d04",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": null,
-        "geocodingNote": "Nazwa wieloznaczna lub brak zgodnego punktu — nie wybrano współrzędnych."
-      }
-    },
-    "listing:autoplac:7571-2264-CS": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Częstochowa",
-        "voivodeship": "śląskie",
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null,
-        "latitude": 50.79646,
-        "longitude": 19.12409,
-        "geoSource": "https://www.geonames.org/3100946/"
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://autoplac.pl/oferta/renault/megane/iv-1-3-2021r-tce-140km-zen-z-polskiego-salonu-7571-2264-CS",
-        "checkedAt": null,
-        "historicalTitle": "1.3 TCe 140 KM Kombi — Częstochowa  130 750 km",
-        "sourceFile": "offers/renault-megane-iv-grandtour.json",
-        "sourceFileSha256": "86c5ca76bdba3bc89955ea25d541b56825c87af92b718089e3a25462d4f68d04",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": "2026-11-08T13:10:11.792219+00:00",
+        "geocodedAt": "2026-11-13T13:14:46.220777+00:00",
         "geocodingNote": "Punkt miejscowości GeoNames; nie adres auta."
       }
     },
@@ -546,154 +53,36 @@
         "checkedAt": null,
         "historicalTitle": "1.4 TSI EA211 150 KM Kombi — Rokietnica  165 000 km",
         "sourceFile": "offers/skoda-octavia-iii-combi.json",
-        "sourceFileSha256": "b2664906555097ac2d0f1ed637297f7199db0fd9f505073ae27b29a54614f29e",
-        "historicalFileUpdatedAt": "2026-11-07",
+        "sourceFileSha256": "1d93d6bb9dc776b55760b0625a49d37d074c58e19a5b8a190c219c01964943d4",
+        "historicalFileUpdatedAt": "2026-11-12",
         "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
         "geocodedAt": null,
         "geocodingNote": "Nazwa wieloznaczna lub brak zgodnego punktu — nie wybrano współrzędnych."
       }
     },
-    "vin:TSMJYAA2S00585117": {
+    "listing:otomoto:6151062018": {
       "location": {
         "status": "available",
         "countryCode": "PL",
-        "city": "Wierzbie",
-        "voivodeship": "opolskie",
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://autoplac.pl/oferta/suzuki/sx4-s-cross/1-4-2018r-salon-pl-premiumplus-0059-7061-XY",
-        "checkedAt": null,
-        "historicalTitle": "1.4 BoosterJet 140 KM Crossover — Wierzbie  Opolskie  154 000 km",
-        "sourceFile": "offers/suzuki-sx4-s-cross.json",
-        "sourceFileSha256": "f8c816657ceca25113cdccdb2d0d9c2e295ab8e292503261b8c96629d094f9f8",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": null,
-        "geocodingNote": "Nazwa wieloznaczna lub brak zgodnego punktu — nie wybrano współrzędnych."
-      }
-    },
-    "vin:TSMJYBA2S00591656": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Luboń",
-        "voivodeship": null,
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://autoplac.pl/oferta/suzuki/sx4-s-cross/1-4-2018r-boosterjet-allgrip-comfort-bogata-wersja-4006-3607-VB",
-        "checkedAt": null,
-        "historicalTitle": "1.4 BoosterJet 140 KM Crossover — Luboń  98 000 km",
-        "sourceFile": "offers/suzuki-sx4-s-cross.json",
-        "sourceFileSha256": "f8c816657ceca25113cdccdb2d0d9c2e295ab8e292503261b8c96629d094f9f8",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": null,
-        "geocodingNote": "Nazwa wieloznaczna lub brak zgodnego punktu — nie wybrano współrzędnych."
-      }
-    },
-    "listing:autoplac:8822-4153-ST": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Przasnysz",
-        "voivodeship": "mazowieckie",
+        "city": "Podkonice Duże",
+        "voivodeship": "łódzkie",
         "precision": "city",
         "source": "unknown",
         "checkedAt": null,
-        "latitude": 53.01907,
-        "longitude": 20.88029,
-        "geoSource": "https://www.geonames.org/761218/"
+        "latitude": 51.70798,
+        "longitude": 20.22312,
+        "geoSource": "https://www.geonames.org/761882/"
       },
       "evidence": {
         "basis": "historical_listing_title",
-        "sourceUrl": "https://autoplac.pl/oferta/suzuki/vitara/ii-1-6-2018r-pierwszy-wlasciciel-w-polsce-100oryginal-8822-4153-ST",
+        "sourceUrl": "https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6IhedI.html",
         "checkedAt": null,
-        "historicalTitle": "1.6 VVT 120 KM SUV — Przasnysz  119 000 km",
-        "sourceFile": "offers/suzuki-vitara-ii.json",
-        "sourceFileSha256": "0b618f3e5c5216f57045ae9cbef511a4ba5a1d34b26bdaa86b37a0f0c8476d50",
-        "historicalFileUpdatedAt": "2026-11-07",
+        "historicalTitle": "Toyota Auris 1.8 Hybrid Kombi — Podkonice Duże",
+        "sourceFile": "offers/toyota-auris-touring-sports.json",
+        "sourceFileSha256": "242d628112078dcbfd9c437cca08197219a711635af138d6a4732d3dcfc1b56d",
+        "historicalFileUpdatedAt": "2026-11-13",
         "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": "2026-11-08T13:10:11.792219+00:00",
-        "geocodingNote": "Punkt miejscowości GeoNames; nie adres auta."
-      }
-    },
-    "listing:autoplac:0082-6911-ZL": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Łódź",
-        "voivodeship": null,
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://autoplac.pl/oferta/suzuki/vitara/ii-1-6-2018r-16-salon-pl-bezwypadkowy-0082-6911-ZL",
-        "checkedAt": null,
-        "historicalTitle": "1.6 VVT 120 KM SUV — Łódź  168 304 km",
-        "sourceFile": "offers/suzuki-vitara-ii.json",
-        "sourceFileSha256": "0b618f3e5c5216f57045ae9cbef511a4ba5a1d34b26bdaa86b37a0f0c8476d50",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": null,
-        "geocodingNote": "Nazwa wieloznaczna lub brak zgodnego punktu — nie wybrano współrzędnych."
-      }
-    },
-    "vin:TSMLYD21S00488412": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Łódź",
-        "voivodeship": null,
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://autoplac.pl/oferta/suzuki/vitara/ii-1-6-2018r-salonpl-premium-zamiana-fvmarza-6400-2908-NN",
-        "checkedAt": null,
-        "historicalTitle": "1.6 VVT 120 KM SUV — Łódź  160 000 km",
-        "sourceFile": "offers/suzuki-vitara-ii.json",
-        "sourceFileSha256": "0b618f3e5c5216f57045ae9cbef511a4ba5a1d34b26bdaa86b37a0f0c8476d50",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": null,
-        "geocodingNote": "Nazwa wieloznaczna lub brak zgodnego punktu — nie wybrano współrzędnych."
-      }
-    },
-    "vin:TSMLYDA1S00442946": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Milonki",
-        "voivodeship": "małopolskie",
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null,
-        "latitude": 50.28045,
-        "longitude": 19.80025,
-        "geoSource": "https://www.geonames.org/3091761/"
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://autoplac.pl/oferta/suzuki/vitara/ii-0-0-2018r-s-6482-3327-TU",
-        "checkedAt": null,
-        "historicalTitle": "1.4 BoosterJet 140 KM SUV — Milonki  103 250 km",
-        "sourceFile": "offers/suzuki-vitara-ii.json",
-        "sourceFileSha256": "0b618f3e5c5216f57045ae9cbef511a4ba5a1d34b26bdaa86b37a0f0c8476d50",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": "2026-11-08T13:10:11.792219+00:00",
+        "geocodedAt": "2026-11-13T13:14:46.220777+00:00",
         "geocodingNote": "Punkt miejscowości GeoNames; nie adres auta."
       }
     },
@@ -716,138 +105,45 @@
         "checkedAt": null,
         "historicalTitle": "1.6 Valvematic Sedan — Warszawa",
         "sourceFile": "offers/toyota-corolla-e210.json",
-        "sourceFileSha256": "13c06812fade93f00c8b5fa05696a42fe81bdf2a6182476bd58c7e15a8164b39",
-        "historicalFileUpdatedAt": "2026-11-07",
+        "sourceFileSha256": "3993aa9f020f5ad13e03dd08435e61b0c7aa354a79949d5c77d14d6475080794",
+        "historicalFileUpdatedAt": "2026-11-13",
         "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": "2026-11-08T13:10:11.792219+00:00",
+        "geocodedAt": "2026-11-13T13:14:46.220777+00:00",
         "geocodingNote": "Punkt miejscowości GeoNames; nie adres auta."
-      }
-    },
-    "vin:NMTBE3BE00R023715": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Katowice",
-        "voivodeship": "śląskie",
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null,
-        "latitude": 50.2597,
-        "longitude": 19.02173,
-        "geoSource": "https://www.geonames.org/3096472/"
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://www.olx.pl/d/oferta/toyota-corolla-toyota-corolla-CID5-ID1cT3Ob.html",
-        "checkedAt": null,
-        "historicalTitle": "1.6 Valvematic Sedan — Katowice, 139 200 km",
-        "sourceFile": "offers/toyota-corolla-e210.json",
-        "sourceFileSha256": "13c06812fade93f00c8b5fa05696a42fe81bdf2a6182476bd58c7e15a8164b39",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": "2026-11-08T13:10:11.792219+00:00",
-        "geocodingNote": "Punkt miejscowości GeoNames; nie adres auta."
-      }
-    },
-    "vin:NMTBE3BE40R088485": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Zawiercie",
-        "voivodeship": "śląskie",
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null,
-        "latitude": 50.48766,
-        "longitude": 19.41679,
-        "geoSource": "https://www.geonames.org/3080526/"
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://autoplac.pl/oferta/toyota/corolla/1-6-2020r-132kmlpgalufelgiradaroryginalny-lakier-9172-7816-WR",
-        "checkedAt": null,
-        "historicalTitle": "1.6 Valvematic Sedan LPG — Zawiercie, 152 000 km",
-        "sourceFile": "offers/toyota-corolla-e210.json",
-        "sourceFileSha256": "13c06812fade93f00c8b5fa05696a42fe81bdf2a6182476bd58c7e15a8164b39",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": "2026-11-08T13:10:11.792219+00:00",
-        "geocodingNote": "Punkt miejscowości GeoNames; nie adres auta."
-      }
-    },
-    "listing:autoplac:0752-6350-VS": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Czeladź",
-        "voivodeship": "śląskie",
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null,
-        "latitude": 50.31542,
-        "longitude": 19.07824,
-        "geoSource": "https://www.geonames.org/3101057/"
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://autoplac.pl/oferta/volkswagen/golf/vii-1-4-2018r-tsi-0752-6350-VS",
-        "checkedAt": null,
-        "historicalTitle": "1.4 TSI EA211 125 KM Kombi — Czeladź  116 888 km",
-        "sourceFile": "offers/volkswagen-golf-vii-variant.json",
-        "sourceFileSha256": "7a655e5fac6c7fa3ba85fd45b7e72909dc2fd4c1946a1c765a6f4673ec446827",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": "2026-11-08T13:10:11.792219+00:00",
-        "geocodingNote": "Punkt miejscowości GeoNames; nie adres auta."
-      }
-    },
-    "listing:autoplac:4339-8672-AJ": {
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Piekary",
-        "voivodeship": "śląskie",
-        "precision": "city",
-        "source": "unknown",
-        "checkedAt": null
-      },
-      "evidence": {
-        "basis": "historical_listing_title",
-        "sourceUrl": "https://autoplac.pl/oferta/volkswagen/golf/vii-1-4-2018r-vw-golf7-tsi-125kmhak-salon-pl-4339-8672-AJ",
-        "checkedAt": null,
-        "historicalTitle": "1.4 TSI EA211 125 KM Kombi — Piekary Śląskie  144 000 km",
-        "sourceFile": "offers/volkswagen-golf-vii-variant.json",
-        "sourceFileSha256": "7a655e5fac6c7fa3ba85fd45b7e72909dc2fd4c1946a1c765a6f4673ec446827",
-        "historicalFileUpdatedAt": "2026-11-07",
-        "note": "Miejscowość zapisana jawnie w historycznym tytule. Nie sprawdzono ponownie na portalu.",
-        "geocodedAt": null,
-        "geocodingNote": "Nazwa wieloznaczna lub brak zgodnego punktu — nie wybrano współrzędnych."
       }
     }
   },
   "skipped": [
     {
-      "offerId": "listing:aaaauto:34935780",
+      "offerId": "listing:autoplac:1047-6014-UA",
       "reason": "No unambiguous explicit location in historical title"
     },
     {
-      "offerId": "vin:TMAH251CANJ114334",
+      "offerId": "listing:automarket:T147419",
       "reason": "No unambiguous explicit location in historical title"
     },
     {
-      "offerId": "listing:autoplac:8403-6811-DV",
+      "offerId": "listing:allegro-lokalnie:a55e49a8-b9a0-412f-830e-8d5d076aaaa0",
       "reason": "No unambiguous explicit location in historical title"
     },
     {
-      "offerId": "listing:autoplac:7145-2764-EG",
+      "offerId": "vin:TMAH3813GLJ064598",
       "reason": "No unambiguous explicit location in historical title"
     },
     {
-      "offerId": "listing:otomoto:ID6IiF0O",
+      "offerId": "listing:otomoto:ID6IjeFS",
       "reason": "No unambiguous explicit location in historical title"
     },
     {
-      "offerId": "listing:otomoto:ID6IiExw",
+      "offerId": "listing:otomoto:ID6Iiq7J",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:otomoto:ID6IiUPp",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:otomoto:ID6IegxD",
       "reason": "No unambiguous explicit location in historical title"
     },
     {
@@ -859,15 +155,19 @@
       "reason": "No unambiguous explicit location in historical title"
     },
     {
-      "offerId": "listing:otomoto:ID6Ihu7p",
+      "offerId": "listing:otomoto:ID6IgIXq",
       "reason": "No unambiguous explicit location in historical title"
     },
     {
-      "offerId": "listing:otomoto:ID6IiHsy",
+      "offerId": "listing:olx:1031643304",
       "reason": "No unambiguous explicit location in historical title"
     },
     {
-      "offerId": "listing:otomoto:ID6IitBU",
+      "offerId": "listing:olx:1108714676",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:sprzedajemy:74082767",
       "reason": "No unambiguous explicit location in historical title"
     },
     {
@@ -875,7 +175,35 @@
       "reason": "No unambiguous explicit location in historical title"
     },
     {
-      "offerId": "listing:autoplac:8631-7171-SC",
+      "offerId": "listing:autoplac:7248-2032-PJ",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:automarket:T88922",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:automarket:T179898",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:automarket:T180234",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:automarket:T180544",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:sprzedajemy:73545565",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:otomoto:ID6Ihu7p",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:otomoto:ID6IitBU",
       "reason": "No unambiguous explicit location in historical title"
     },
     {
@@ -883,35 +211,75 @@
       "reason": "No unambiguous explicit location in historical title"
     },
     {
-      "offerId": "listing:otomoto:ID6Iej1t",
-      "reason": "No unambiguous explicit location in historical title"
-    },
-    {
       "offerId": "listing:otomoto:ID6Ii6CO",
       "reason": "No unambiguous explicit location in historical title"
     },
     {
-      "offerId": "listing:olx:1108175378",
+      "offerId": "listing:olx:1108121746",
       "reason": "No unambiguous explicit location in historical title"
     },
     {
-      "offerId": "listing:autoplac:4518-8970-JD",
+      "offerId": "listing:olx:1108290186",
       "reason": "No unambiguous explicit location in historical title"
     },
     {
-      "offerId": "vin:VF1RFB00564540803",
+      "offerId": "listing:automarket:T180708",
       "reason": "No unambiguous explicit location in historical title"
     },
     {
-      "offerId": "listing:otomoto:ID6I2BPK",
+      "offerId": "listing:otomoto:6151387604",
       "reason": "No unambiguous explicit location in historical title"
     },
     {
-      "offerId": "listing:autoplac:5074-2505-XZ",
+      "offerId": "listing:otomoto:ID6IjcD1",
       "reason": "No unambiguous explicit location in historical title"
     },
     {
-      "offerId": "vin:VSSZZZ5FZJR038225",
+      "offerId": "listing:olx:ID1cPpgl",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:autoplac:4608-7792-GG",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:aaaauto:27992427",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:sprzedajemy:73093821",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:sprzedajemy:73279125",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:otomoto:ID6IiHi1",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:autoplac:3926-9546-XU",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:autoplac:3721-9203-YU",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:autoplac:7052-2823-ZX",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:otomoto:ID6I9d1t",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:olx:1100952300",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:olx:ID1c50yG",
       "reason": "No unambiguous explicit location in historical title"
     },
     {
@@ -919,7 +287,35 @@
       "reason": "No unambiguous explicit location in historical title"
     },
     {
-      "offerId": "listing:otomoto:ID6IhQge",
+      "offerId": "listing:olx:ID1cQiTC",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:otomoto:6146967813",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:olx:1104658131",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:autoplac:5914-3435-CE",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:automarket:T237054",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:olx:1096226049",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:olx:1098944979",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:otomoto:ID6IdNp7",
       "reason": "No unambiguous explicit location in historical title"
     },
     {
@@ -931,35 +327,71 @@
       "reason": "No unambiguous explicit location in historical title"
     },
     {
-      "offerId": "listing:otomoto:ID6IcJxG",
+      "offerId": "listing:olx:1108987997",
       "reason": "No unambiguous explicit location in historical title"
     },
     {
-      "offerId": "vin:NMTBA3BE40R021431",
+      "offerId": "listing:otomoto:6151333908",
       "reason": "No unambiguous explicit location in historical title"
     },
     {
-      "offerId": "listing:allegro:19026311057",
+      "offerId": "url:https://autoplac.pl/oferta/suzuki/vitara/ii-1-6-2017r-suzuki-vitara-4x2-comfort-5110-2513-JB",
       "reason": "No unambiguous explicit location in historical title"
     },
     {
-      "offerId": "listing:id6iilq1",
+      "offerId": "listing:autoplac:7718-1651-TH",
       "reason": "No unambiguous explicit location in historical title"
     },
     {
-      "offerId": "url:https://aaaauto.pl/detail/toyota/corolla/34884013",
+      "offerId": "listing:olx:1109826377",
       "reason": "No unambiguous explicit location in historical title"
     },
     {
-      "offerId": "url:https://aaaauto.pl/detail/toyota/corolla/29008484",
+      "offerId": "listing:olx:ID1cHB64",
       "reason": "No unambiguous explicit location in historical title"
     },
     {
-      "offerId": "url:https://autoplac.pl/oferta/toyota/corolla/xii-1-5-2022r-5365-7638-JB",
+      "offerId": "listing:otomoto:6151111263",
       "reason": "No unambiguous explicit location in historical title"
     },
     {
-      "offerId": "listing:autoplac:3823-9193-RQ",
+      "offerId": "listing:olx:ID1d6Ixr",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:toyota-pewne-auto:434239",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "vin:SB1ZE3JE50E120663",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:sprzedajemy:72662136",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:otomoto:6147568392",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:autoplac:4793-2321-NK",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:olx:1094330256",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "vin:NMTBE3BE00R023715",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:sprzedajemy:74142114",
+      "reason": "No unambiguous explicit location in historical title"
+    },
+    {
+      "offerId": "listing:sprzedajemy:72902184",
       "reason": "No unambiguous explicit location in historical title"
     }
   ]

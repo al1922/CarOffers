@@ -9,25 +9,63 @@
       "topic": "engine_assessment",
       "value": {
         "variants": {
-          "1.6-vvt-120": {"status": "conditional_recommendation", "code": "M16A", "reason": "Duża próba STK dla kodu i wynik lepszy od aut w tym samym wieku; badanie obejmuje cały pojazd, nie awarie silnika."},
-          "1.4-boosterjet-140": {"status": "conditional_recommendation", "code": "K14C", "reason": "Korzystny sygnał dokładnego kodu w STK i danych ADAC dla modelu; brak niezależnych danych awarii silnika i polskich kosztów napraw turbo/wtrysku bezpośredniego."}
+          "1.4-boosterjet-140": {
+            "status": "conditional_recommendation",
+            "code": "K14C",
+            "reason": "Korzystny sygnał dokładnego kodu w STK i danych ADAC dla modelu; brak niezależnych danych awarii silnika i polskich kosztów napraw turbo/wtrysku bezpośredniego."
+          }
         },
         "fullRecommendedThresholdMet": false,
         "lpg": "Kompatybilność dla dokładnego kodu i VIN niepotwierdzona; wymagać zgody instalatora i dokumentów."
       },
-      "scope": {"market": "Europe", "period": "2017–2020; odróżnić K14C od K14D", "body": "Vitara LY"},
+      "scope": {
+        "market": "Europe",
+        "period": "2017–2020; odróżnić K14C od K14D",
+        "body": "Vitara LY"
+      },
       "confidence": "medium",
-      "sourceIds": ["vitara-stk-2026", "vitara-adac", "vitara-spec-2019"],
-      "notes": ["Wyniki STK dotyczą całego samochodu; ADAC publikuje dane modelowe."]
+      "sourceIds": [
+        "vitara-stk-2026",
+        "vitara-adac",
+        "vitara-spec-2019"
+      ],
+      "notes": [
+        "Wyniki STK dotyczą całego samochodu; ADAC publikuje dane modelowe.",
+        "Ocena dotyczy wyłącznie 1.4 BoosterJet, który pozostał na aktualnej liście."
+      ]
     },
     {
       "id": "engine-review-stk",
       "topic": "reliability_data",
-      "value": {"M16A": {"tests": 2515, "partiallyRoadworthyPct": 3.0, "differenceVsSameAgePp": -1.6, "unroadworthyPct": 0.08, "meanMileageKm": 99981}, "K14C": {"tests": 1431, "partiallyRoadworthyPct": 2.2, "differenceVsSameAgePp": -1.8, "unroadworthyPct": 0.07, "meanMileageKm": 89792}, "dataThrough": "2026-10-11"},
-      "scope": {"market": "Czechia", "generation": "Vitara LY", "limitation": "whole-car inspection failures, not engine reliability"},
+      "value": {
+        "M16A": {
+          "tests": 2515,
+          "partiallyRoadworthyPct": 3.0,
+          "differenceVsSameAgePp": -1.6,
+          "unroadworthyPct": 0.08,
+          "meanMileageKm": 99981
+        },
+        "K14C": {
+          "tests": 1431,
+          "partiallyRoadworthyPct": 2.2,
+          "differenceVsSameAgePp": -1.8,
+          "unroadworthyPct": 0.07,
+          "meanMileageKm": 89792
+        },
+        "dataThrough": "2026-10-11"
+      },
+      "scope": {
+        "market": "Czechia",
+        "generation": "Vitara LY",
+        "limitation": "whole-car inspection failures, not engine reliability"
+      },
       "confidence": "medium",
-      "sourceIds": ["vitara-stk-2026"],
-      "notes": ["Przebiegi i struktura wieku prób są różne."]
+      "sourceIds": [
+        "vitara-stk-2026"
+      ],
+      "notes": [
+        "Przebiegi i struktura wieku prób są różne."
+      ]
     },
     {
       "id": "engine-16",
@@ -94,9 +132,30 @@
     }
   ],
   "sources": [
-    {"id": "vitara-spec-2019", "title": "Suzuki Slovenia — Vitara catalogue, October 2019", "url": "https://www.suzuki.si/f/docs/Katalog-PDF_vitara_suzuki/vitara_katalog_A4_landscape_2019_oktober_WEB.pdf", "publishedAt": "2019-10", "checkedAt": "2026-11-08", "accessNote": "Regionalna specyfikacja producenta; polską wersję i VIN trzeba sprawdzić osobno."},
-    {"id": "vitara-stk-2026", "title": "Karambol.cz — Vitara inspections by engine code", "url": "https://www.karambol.cz/auta/suzuki/vitara/", "publishedAt": "2026", "checkedAt": "2026-11-08", "accessNote": "Dane do 11.10.2026: M16A 2 515 badań; K14C 1 431. Wyniki sprawności całego auta, nie awaryjność silnika."},
-    {"id": "vitara-adac", "title": "ADAC — Vitara 1.4 Boosterjet S automatic: data, breakdowns, recalls", "url": "https://www.adac.de/rund-ums-fahrzeug/autokatalog/marken-modelle/suzuki/vitara/2generation/261911/", "publishedAt": "2026", "checkedAt": "2026-11-08", "accessNote": "Dane modelowe o awariach dotyczą głównie akumulatora 12V; kampanię ECU dla dat produkcji do 25.09.2016 potwierdzać po VIN."},
+    {
+      "id": "vitara-spec-2019",
+      "title": "Suzuki Slovenia — Vitara catalogue, October 2019",
+      "url": "https://www.suzuki.si/f/docs/Katalog-PDF_vitara_suzuki/vitara_katalog_A4_landscape_2019_oktober_WEB.pdf",
+      "publishedAt": "2019-10",
+      "checkedAt": "2026-11-08",
+      "accessNote": "Regionalna specyfikacja producenta; polską wersję i VIN trzeba sprawdzić osobno."
+    },
+    {
+      "id": "vitara-stk-2026",
+      "title": "Karambol.cz — Vitara inspections by engine code",
+      "url": "https://www.karambol.cz/auta/suzuki/vitara/",
+      "publishedAt": "2026",
+      "checkedAt": "2026-11-08",
+      "accessNote": "Dane do 11.10.2026: M16A 2 515 badań; K14C 1 431. Wyniki sprawności całego auta, nie awaryjność silnika."
+    },
+    {
+      "id": "vitara-adac",
+      "title": "ADAC — Vitara 1.4 Boosterjet S automatic: data, breakdowns, recalls",
+      "url": "https://www.adac.de/rund-ums-fahrzeug/autokatalog/marken-modelle/suzuki/vitara/2generation/261911/",
+      "publishedAt": "2026",
+      "checkedAt": "2026-11-08",
+      "accessNote": "Dane modelowe o awariach dotyczą głównie akumulatora 12V; kampanię ECU dla dat produkcji do 25.09.2016 potwierdzać po VIN."
+    },
     {
       "id": "vitara-hr-2017",
       "title": "Suzuki Croatia — Vitara i Vitara S, cennik i wyposażenie 2 stycznia 2017",
@@ -121,4 +180,3 @@
     "Przymierzyć wózek i fotelik; sprawdzić mocowania oraz zakres regulacji przednich foteli."
   ]
 }
-

@@ -13,11 +13,6 @@
             "status": "conditional_recommendation",
             "code": "2ZR-FXE",
             "reason": "Producent potwierdza układ 4. generacji w sedanie i kombi; pasuje do jazdy mieszanej, ale brak niezależnych danych trwałości wariantu i polskich kosztów napraw."
-          },
-          "1.8-hybrid-140": {
-            "status": "hold_pending_long_term_evidence",
-            "code": "2ZR-FXE, układ hybrydowy 5. generacji",
-            "reason": "Toyota potwierdza odświeżenie i 140 KM od 2023 r.; krótka historia floty wymaga ostrożności i potwierdzenia VIN/roku modelowego."
           }
         },
         "fullRecommendedThresholdMet": false,
@@ -35,7 +30,8 @@
         "corolla-adac"
       ],
       "notes": [
-        "Dane ADAC są dla modelu, nie dla konkretnego silnika."
+        "Dane ADAC są dla modelu, nie dla konkretnego silnika.",
+        "Ocena dotyczy wyłącznie 1.8 Hybrid 122 KM z aktualnej listy; 1.6 Valvematic wymaga osobnego przeglądu."
       ]
     },
     {

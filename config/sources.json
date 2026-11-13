@@ -848,7 +848,7 @@
       "brands": [
         "Seat"
       ],
-      "enabled": true,
+      "enabled": false,
       "priority": 2,
       "effort": 3,
       "filters": [],
@@ -872,7 +872,8 @@
       },
       "notes": [
         "Nie uznawaj niepełnego dostępu za brak ofert.",
-        "Warunki programu i certyfikat dotyczą konkretnego egzemplarza, nie każdego auta dealera."
+        "Warunki programu i certyfikat dotyczą konkretnego egzemplarza, nie każdego auta dealera.",
+        "Wyłączono z bieżącego planu 2026-11-13: na aktualnej liście modeli nie ma marki SEAT."
       ]
     },
     {

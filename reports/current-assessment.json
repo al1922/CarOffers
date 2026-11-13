@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T20:04:45.849031+00:00",
+  "generatedAt": "2026-11-13T13:21:44.303669+00:00",
   "configuration": {
     "requirements": {
       "version": 1,
@@ -137,7 +137,7 @@
         {
           "key": "hyundai-i30-iii-wagon",
           "name": "Hyundai i30 III Wagon",
-          "description": "Kombi (Wagon)",
+          "description": "Kombi",
           "brand": "Hyundai",
           "model": "i30",
           "generation": "III",
@@ -145,46 +145,24 @@
             "wagon"
           ],
           "searchYears": {
-            "min": 2018,
-            "max": 2023
+            "min": 2017,
+            "max": null
           },
           "allowedEngineVariants": [
-            "1.4-mpi-100",
             "1.4-tgdi-140",
-            "1.5-dpi-110"
+            "1.5-tgdi-160"
           ],
           "active": true,
-          "priority": 2,
+          "priority": 1,
           "offersFile": "offers/hyundai-i30-iii-wagon.json",
           "knowledgeFile": "knowledge/models/hyundai-i30-iii-wagon.json",
-          "legacyEngineSelection": "1.4 MPI 100 KM; 1.4 T-GDI 140 KM; 1.5 DPi 110 KM",
-          "selectionStatus": "i30_engine_pilot_reviewed_conditional",
+          "legacyEngineSelection": "1.4 T-GDI 140 KM; 1.5 T-GDI 160 KM",
+          "selectionStatus": "user_selected_current_list",
           "productionYears": null,
           "notes": [
-            "Zakres lat dotyczy wyszukiwania modelu; dostępność silnika i nadwozia trzeba sprawdzić w karcie wiedzy.",
-            "Warianty ocenione pilotażowo; żaden nie osiąga pełnego progu statusu polecanego. Szczegóły i warunki w engineReview.",
-            "Lista aktywnych silników pozostaje bez zmian; ocena trwałości nie usuwa wariantu automatycznie."
+            "Rocznik produkcji od 2017; bez górnej granicy rocznika w wyszukiwaniu.",
+            "Silniki zgodnie z aktualną listą użytkownika; wariant dokładny należy potwierdzić po VIN/kodzie silnika."
           ],
-          "engineReview": {
-            "method": "docs/metoda-oceny-silnikow.md",
-            "report": "reports/analiza-hyundai-i30-silnikow-2026-11-08.md",
-            "reviewedAt": "2026-11-08",
-            "variants": {
-              "1.5-dpi-110": {
-                "status": "conditional_recommendation",
-                "reason": "Dopasowanie do profilu i korzystny sygnał STK; młodsza flota, brak niezależnych danych awaryjności silnika i kosztów napraw."
-              },
-              "1.4-tgdi-140": {
-                "status": "conditional_recommendation",
-                "reason": "Dobry zapas mocy i korzystny sygnał STK; dane kosztowe dla turbo i wtrysku bezpośredniego niepełne; 7DCT oceniać osobno."
-              },
-              "1.4-mpi-100": {
-                "status": "hold_as_default_not_rejected",
-                "reason": "Prostszy silnik wolnossący, lecz mniejsza próba G4LC i skromniejsza dynamika obciążonego kombi; wymaga jazdy próbnej i dalszych danych."
-              }
-            },
-            "fullRecommendedThresholdMet": false
-          },
           "variantConstraints": [],
           "requirements": {
             "version": 1,
@@ -229,7 +207,7 @@
             "familyEquipment": {
               "isofix": "important; if not stated, verify whether standard for exact model/year/market/trim; otherwise mark unknown"
             },
-            "yearMin": 2018,
+            "yearMin": 2017,
             "mileage": {
               "preferredMaxKm": 170000,
               "hardMaxKm": 170000,
@@ -314,12 +292,24 @@
               "mustBeMarked": true,
               "installationDocumentsMustBeChecked": true
             }
+          },
+          "engineReview": {
+            "method": "docs/metoda-oceny-silnikow.md",
+            "report": "reports/analiza-hyundai-i30-silnikow-2026-11-08.md",
+            "reviewedAt": "2026-11-08",
+            "variants": {
+              "1.4-tgdi-140": {
+                "status": "conditional_recommendation",
+                "reason": "Dobry zapas mocy i korzystny sygnał STK; dane kosztowe dla turbo i wtrysku bezpośredniego niepełne; 7DCT oceniać osobno."
+              }
+            },
+            "fullRecommendedThresholdMet": false
           }
         },
         {
           "key": "kia-ceed-iii-sw",
           "name": "Kia Ceed III Sportswagon",
-          "description": "Kombi (SW)",
+          "description": "Kombi",
           "brand": "Kia",
           "model": "Ceed",
           "generation": "III",
@@ -327,217 +317,197 @@
             "wagon"
           ],
           "searchYears": {
-            "min": 2019,
-            "max": 2021
+            "min": 2018,
+            "max": null
           },
           "allowedEngineVariants": [
-            "1.4-mpi-100",
-            "1.4-tgdi-140"
+            "1.4-tgdi-140",
+            "1.5-tgdi-160"
           ],
           "active": true,
           "priority": 2,
           "offersFile": "offers/kia-ceed-iii-sw.json",
           "knowledgeFile": "knowledge/models/kia-ceed-iii-sw.json",
-          "legacyEngineSelection": "1.4 MPI 100 KM; 1.4 T-GDI 140 KM",
-          "selectionStatus": "engine_reviewed_with_conditions",
+          "legacyEngineSelection": "1.4 T-GDI 140 KM; 1.5 T-GDI 160 KM",
+          "selectionStatus": "user_selected_current_list",
           "productionYears": null,
           "notes": [
-            "Zakres lat dotyczy wyszukiwania modelu; dostępność silnika i nadwozia trzeba sprawdzić w karcie wiedzy.",
-            "Lista silników i roczniki odzwierciedlają aktualne założenia użytkownika; nie oznaczają rekomendacji trwałości."
+            "Rocznik produkcji od 2018; bez górnej granicy rocznika w wyszukiwaniu.",
+            "Silniki zgodnie z aktualną listą użytkownika; wariant dokładny należy potwierdzić po VIN/kodzie silnika."
           ],
           "variantConstraints": [],
+          "requirements": {
+            "version": 1,
+            "purchase": {
+              "maxPriceGrossPln": 55000,
+              "scope": "purchase_only",
+              "priceExceptions": [
+                {
+                  "rule": "slightly_above_limit_only_for_exceptional_offer",
+                  "amountPln": null,
+                  "userMustConfirm": true
+                }
+              ],
+              "auctionsAllowed": false
+            },
+            "listingEvidence": {
+              "requiredFields": [],
+              "preferredFields": [
+                "vin",
+                "firstRegistrationDate"
+              ],
+              "missingPreferredFieldHandling": "mark_missing_and_consider_as_information_gap; do_not_automatically_exclude",
+              "registrationNumber": "record_presence_only; may be visible in listing photos; do not spend effort extracting from images or use as a strong ranking factor",
+              "independentInspectionRefusal": "exclude_only_if_listing_explicitly_states_inspection_is_not_allowed"
+            },
+            "sellerTypes": "any_non_auction_seller_if_price_conditions_fit",
+            "sellerClassification": {
+              "field": "offerType",
+              "values": [
+                "private",
+                "company",
+                "leasing_return",
+                "unknown"
+              ],
+              "unknownHandling": "mark_unknown; do_not_infer_from_platform_or_ad_style"
+            },
+            "priceAssessment": {
+              "baseLimitGrossPln": 55000,
+              "slightExceptionalOverageAllowed": true,
+              "import": "include material mandatory import costs; minor costs may be noted but ignored in initial screening"
+            },
+            "familyEquipment": {
+              "isofix": "important; if not stated, verify whether standard for exact model/year/market/trim; otherwise mark unknown"
+            },
+            "yearMin": 2018,
+            "mileage": {
+              "preferredMaxKm": 170000,
+              "hardMaxKm": 170000,
+              "assessment": "hard_maximum; exclude offers above 170000 km"
+            },
+            "transmissions": [
+              "manual",
+              "automatic"
+            ],
+            "camera": {
+              "required": true,
+              "preferred": true,
+              "requiredAtDelivery": false,
+              "mustMarkIfAbsent": true,
+              "retrofitAllowed": true,
+              "retrofitCompatibilityMustBeConfirmed": true
+            },
+            "frontParkingSensors": "preferred",
+            "structuralDamageAllowed": false,
+            "cosmeticRepairsAllowed": true,
+            "location": "PL",
+            "origins": [
+              "domestic",
+              "import"
+            ],
+            "bodyScope": [
+              "wagon",
+              "sedan",
+              "suv",
+              "crossover",
+              "hatchback",
+              "minivan"
+            ],
+            "modelScope": "active_models_in_search-models.json_only",
+            "engineScope": "listed_variants_only",
+            "fuelScope": "all_fuels; LPG allowed and must be marked with installation documents checked",
+            "transmissionPreference": "none; manual and automatic are equally acceptable",
+            "use": {
+              "adults": 2,
+              "children": 1,
+              "cityShare": 0.5,
+              "strollerAndLuggageRequired": true,
+              "annualMileageKm": {
+                "min": 12000,
+                "max": 15000
+              },
+              "typicalCityTripMinutes": 30
+            },
+            "rankingPriorities": [
+              "technical_condition",
+              "documented_service",
+              "engine_durability",
+              "equipment",
+              "value"
+            ],
+            "unknownHardRequirement": "check",
+            "openQuestions": {
+              "typicalCityTripKm": null,
+              "strollerDimensionsCm": null,
+              "cameraRequiredAtDelivery": null,
+              "fuelScopeBeyondSelectedEngines": "all fuels confirmed; engine variants remain restricted to configured list"
+            },
+            "confirmedByUser": [
+              "engineScope",
+              "lpg",
+              "modelScope",
+              "purchase.auctionsAllowed",
+              "purchase.maxPriceGrossPln",
+              "purchase.scope",
+              "transmissionPreference",
+              "use.annualMileageKm",
+              "use.typicalCityTripMinutes"
+            ],
+            "notes": [
+              "Wybrane silniki przeniesiono z dotychczasowych danych; nie oznacza to zakazu innych paliw ustalonego przez użytkownika.",
+              "Użytkownik podał czas jazdy miejskiej około 30 minut, nie odległość. Nie przeliczać automatycznie na kilometry.",
+              "Skrzynia manualna i automatyczna są równie akceptowalne; przed zakupem skrzynię ocenić dla konkretnego wariantu.",
+              "Katalog modeli i silników obejmuje wyłącznie aktualną listę użytkownika. Status wyboru nie jest rekomendacją niezawodności."
+            ],
+            "lpg": {
+              "allowed": true,
+              "mustBeMarked": true,
+              "installationDocumentsMustBeChecked": true
+            }
+          },
           "engineReview": {
             "method": "docs/metoda-oceny-silnikow.md",
             "report": "reports/analiza-silnikow-batch-a-2026-11-08.md",
             "reviewedAt": "2026-11-08",
             "variants": {
-              "1.4-mpi-100": {
-                "status": "conditional_recommendation",
-                "reason": "Prosty, wolnossący wariant; kod G4LC potwierdzać po VIN, osiągi i LPG wymagają oceny konkretnego auta."
-              },
               "1.4-tgdi-140": {
                 "status": "conditional_recommendation",
                 "reason": "Lepszy zapas mocy; turbo, DI i skrzynię 7DCT oceniać osobno; kampanię sprawdzić po VIN."
               }
             },
             "fullRecommendedThresholdMet": false
-          },
-          "requirements": {
-            "version": 1,
-            "purchase": {
-              "maxPriceGrossPln": 55000,
-              "scope": "purchase_only",
-              "priceExceptions": [
-                {
-                  "rule": "slightly_above_limit_only_for_exceptional_offer",
-                  "amountPln": null,
-                  "userMustConfirm": true
-                }
-              ],
-              "auctionsAllowed": false
-            },
-            "listingEvidence": {
-              "requiredFields": [],
-              "preferredFields": [
-                "vin",
-                "firstRegistrationDate"
-              ],
-              "missingPreferredFieldHandling": "mark_missing_and_consider_as_information_gap; do_not_automatically_exclude",
-              "registrationNumber": "record_presence_only; may be visible in listing photos; do not spend effort extracting from images or use as a strong ranking factor",
-              "independentInspectionRefusal": "exclude_only_if_listing_explicitly_states_inspection_is_not_allowed"
-            },
-            "sellerTypes": "any_non_auction_seller_if_price_conditions_fit",
-            "sellerClassification": {
-              "field": "offerType",
-              "values": [
-                "private",
-                "company",
-                "leasing_return",
-                "unknown"
-              ],
-              "unknownHandling": "mark_unknown; do_not_infer_from_platform_or_ad_style"
-            },
-            "priceAssessment": {
-              "baseLimitGrossPln": 55000,
-              "slightExceptionalOverageAllowed": true,
-              "import": "include material mandatory import costs; minor costs may be noted but ignored in initial screening"
-            },
-            "familyEquipment": {
-              "isofix": "important; if not stated, verify whether standard for exact model/year/market/trim; otherwise mark unknown"
-            },
-            "yearMin": 2018,
-            "mileage": {
-              "preferredMaxKm": 170000,
-              "hardMaxKm": 170000,
-              "assessment": "hard_maximum; exclude offers above 170000 km"
-            },
-            "transmissions": [
-              "manual",
-              "automatic"
-            ],
-            "camera": {
-              "required": true,
-              "preferred": true,
-              "requiredAtDelivery": false,
-              "mustMarkIfAbsent": true,
-              "retrofitAllowed": true,
-              "retrofitCompatibilityMustBeConfirmed": true
-            },
-            "frontParkingSensors": "preferred",
-            "structuralDamageAllowed": false,
-            "cosmeticRepairsAllowed": true,
-            "location": "PL",
-            "origins": [
-              "domestic",
-              "import"
-            ],
-            "bodyScope": [
-              "wagon",
-              "sedan",
-              "suv",
-              "crossover",
-              "hatchback",
-              "minivan"
-            ],
-            "modelScope": "active_models_in_search-models.json_only",
-            "engineScope": "listed_variants_only",
-            "fuelScope": "all_fuels; LPG allowed and must be marked with installation documents checked",
-            "transmissionPreference": "none; manual and automatic are equally acceptable",
-            "use": {
-              "adults": 2,
-              "children": 1,
-              "cityShare": 0.5,
-              "strollerAndLuggageRequired": true,
-              "annualMileageKm": {
-                "min": 12000,
-                "max": 15000
-              },
-              "typicalCityTripMinutes": 30
-            },
-            "rankingPriorities": [
-              "technical_condition",
-              "documented_service",
-              "engine_durability",
-              "equipment",
-              "value"
-            ],
-            "unknownHardRequirement": "check",
-            "openQuestions": {
-              "typicalCityTripKm": null,
-              "strollerDimensionsCm": null,
-              "cameraRequiredAtDelivery": null,
-              "fuelScopeBeyondSelectedEngines": "all fuels confirmed; engine variants remain restricted to configured list"
-            },
-            "confirmedByUser": [
-              "engineScope",
-              "lpg",
-              "modelScope",
-              "purchase.auctionsAllowed",
-              "purchase.maxPriceGrossPln",
-              "purchase.scope",
-              "transmissionPreference",
-              "use.annualMileageKm",
-              "use.typicalCityTripMinutes"
-            ],
-            "notes": [
-              "Wybrane silniki przeniesiono z dotychczasowych danych; nie oznacza to zakazu innych paliw ustalonego przez użytkownika.",
-              "Użytkownik podał czas jazdy miejskiej około 30 minut, nie odległość. Nie przeliczać automatycznie na kilometry.",
-              "Skrzynia manualna i automatyczna są równie akceptowalne; przed zakupem skrzynię ocenić dla konkretnego wariantu.",
-              "Katalog modeli i silników obejmuje wyłącznie aktualną listę użytkownika. Status wyboru nie jest rekomendacją niezawodności."
-            ],
-            "lpg": {
-              "allowed": true,
-              "mustBeMarked": true,
-              "installationDocumentsMustBeChecked": true
-            }
           }
         },
         {
-          "key": "seat-leon-iii-st",
-          "name": "SEAT Leon III ST",
-          "description": "Kombi (ST)",
-          "brand": "SEAT",
-          "model": "Leon",
+          "key": "mazda-6-iii-wagon",
+          "name": "Mazda 6 III Wagon",
+          "description": "Kombi",
+          "brand": "Mazda",
+          "model": "6",
           "generation": "III",
           "bodies": [
             "wagon"
           ],
           "searchYears": {
             "min": 2017,
-            "max": 2018
+            "max": null
           },
           "allowedEngineVariants": [
-            "1.4-tsi-ea211-125",
-            "1.4-tsi-ea211-150"
+            "2.0-skyactiv-g-145",
+            "2.0-skyactiv-g-165"
           ],
           "active": true,
-          "priority": 2,
-          "offersFile": "offers/seat-leon-iii-st.json",
-          "knowledgeFile": "knowledge/models/seat-leon-iii-st.json",
-          "legacyEngineSelection": "1.4 TSI EA211 125 KM; 1.4 TSI EA211 150 KM",
-          "selectionStatus": "engine_reviewed_with_conditions",
+          "priority": 3,
+          "offersFile": "offers/mazda-6-iii-wagon.json",
+          "knowledgeFile": "knowledge/models/mazda-6-iii-wagon.json",
+          "legacyEngineSelection": "2.0 Skyactiv-G 145 KM; 2.0 Skyactiv-G 165 KM",
+          "selectionStatus": "user_selected_current_list",
           "productionYears": null,
           "notes": [
-            "Zakres lat dotyczy wyszukiwania modelu; dostępność silnika i nadwozia trzeba sprawdzić w karcie wiedzy.",
-            "Lista silników i roczniki odzwierciedlają aktualne założenia użytkownika; nie oznaczają rekomendacji trwałości."
+            "Rocznik produkcji od 2017; bez górnej granicy rocznika w wyszukiwaniu.",
+            "Silniki zgodnie z aktualną listą użytkownika; wariant dokładny należy potwierdzić po VIN/kodzie silnika."
           ],
           "variantConstraints": [],
-          "engineReview": {
-            "method": "docs/metoda-oceny-silnikow.md",
-            "report": "reports/analiza-silnikow-batch-a-2026-11-08.md",
-            "reviewedAt": "2026-11-08",
-            "variants": {
-              "1.4-tsi-ea211-125": {
-                "status": "conditional_recommendation",
-                "reason": "EA211 125 KM; kod i serwis rozrządu/chłodzenia potwierdzić po VIN; wykonać próbę pod obciążeniem."
-              },
-              "1.4-tsi-ea211-150": {
-                "status": "conditional_recommendation",
-                "reason": "Większy zapas mocy dla ST; kod/ACT i DSG potwierdzić osobno; dane awaryjności nie izolują silnika."
-              }
-            },
-            "fullRecommendedThresholdMet": false
-          },
           "requirements": {
             "version": 1,
             "purchase": {
@@ -581,7 +551,7 @@
             "familyEquipment": {
               "isofix": "important; if not stated, verify whether standard for exact model/year/market/trim; otherwise mark unknown"
             },
-            "yearMin": 2018,
+            "yearMin": 2017,
             "mileage": {
               "preferredMaxKm": 170000,
               "hardMaxKm": 170000,
@@ -666,13 +636,29 @@
               "mustBeMarked": true,
               "installationDocumentsMustBeChecked": true
             }
+          },
+          "engineReview": {
+            "method": "docs/metoda-oceny-silnikow.md",
+            "report": "reports/analiza-silnikow-batch-c-2026-11-08.md",
+            "reviewedAt": "2026-11-08",
+            "variants": {
+              "2.0-skyactiv-g-145": {
+                "status": "conditional_recommendation",
+                "reason": "Wolnossący wariant z ograniczonym zapasem mocy w obciążonym kombi; brak danych awarii dokładnego kodu i kosztów."
+              },
+              "2.0-skyactiv-g-165": {
+                "status": "conditional_recommendation",
+                "reason": "Większy zapas mocy, bez dowodu na wyższą trwałość; potwierdzić rynek, kod i skrzynię po VIN."
+              }
+            },
+            "fullRecommendedThresholdMet": false
           }
         },
         {
           "key": "skoda-octavia-iii-combi",
           "name": "Škoda Octavia III Combi",
           "description": "Kombi",
-          "brand": "Skoda",
+          "brand": "Škoda",
           "model": "Octavia",
           "generation": "III",
           "bodies": [
@@ -680,23 +666,153 @@
           ],
           "searchYears": {
             "min": 2017,
-            "max": 2018
+            "max": null
           },
           "allowedEngineVariants": [
-            "1.4-tsi-ea211-150"
+            "1.4-tsi-ea211-150",
+            "1.5-tsi-150"
           ],
           "active": true,
-          "priority": 2,
+          "priority": 4,
           "offersFile": "offers/skoda-octavia-iii-combi.json",
           "knowledgeFile": "knowledge/models/skoda-octavia-iii-combi.json",
-          "legacyEngineSelection": "1.4 TSI EA211 150 KM",
-          "selectionStatus": "engine_reviewed_with_conditions",
+          "legacyEngineSelection": "1.4 TSI EA211 150 KM; 1.5 TSI 150 KM",
+          "selectionStatus": "user_selected_current_list",
           "productionYears": null,
           "notes": [
-            "Zakres lat dotyczy wyszukiwania modelu; dostępność silnika i nadwozia trzeba sprawdzić w karcie wiedzy.",
-            "Lista silników i roczniki odzwierciedlają aktualne założenia użytkownika; nie oznaczają rekomendacji trwałości."
+            "Rocznik produkcji od 2017; bez górnej granicy rocznika w wyszukiwaniu.",
+            "Silniki zgodnie z aktualną listą użytkownika; wariant dokładny należy potwierdzić po VIN/kodzie silnika."
           ],
           "variantConstraints": [],
+          "requirements": {
+            "version": 1,
+            "purchase": {
+              "maxPriceGrossPln": 55000,
+              "scope": "purchase_only",
+              "priceExceptions": [
+                {
+                  "rule": "slightly_above_limit_only_for_exceptional_offer",
+                  "amountPln": null,
+                  "userMustConfirm": true
+                }
+              ],
+              "auctionsAllowed": false
+            },
+            "listingEvidence": {
+              "requiredFields": [],
+              "preferredFields": [
+                "vin",
+                "firstRegistrationDate"
+              ],
+              "missingPreferredFieldHandling": "mark_missing_and_consider_as_information_gap; do_not_automatically_exclude",
+              "registrationNumber": "record_presence_only; may be visible in listing photos; do not spend effort extracting from images or use as a strong ranking factor",
+              "independentInspectionRefusal": "exclude_only_if_listing_explicitly_states_inspection_is_not_allowed"
+            },
+            "sellerTypes": "any_non_auction_seller_if_price_conditions_fit",
+            "sellerClassification": {
+              "field": "offerType",
+              "values": [
+                "private",
+                "company",
+                "leasing_return",
+                "unknown"
+              ],
+              "unknownHandling": "mark_unknown; do_not_infer_from_platform_or_ad_style"
+            },
+            "priceAssessment": {
+              "baseLimitGrossPln": 55000,
+              "slightExceptionalOverageAllowed": true,
+              "import": "include material mandatory import costs; minor costs may be noted but ignored in initial screening"
+            },
+            "familyEquipment": {
+              "isofix": "important; if not stated, verify whether standard for exact model/year/market/trim; otherwise mark unknown"
+            },
+            "yearMin": 2017,
+            "mileage": {
+              "preferredMaxKm": 170000,
+              "hardMaxKm": 170000,
+              "assessment": "hard_maximum; exclude offers above 170000 km"
+            },
+            "transmissions": [
+              "manual",
+              "automatic"
+            ],
+            "camera": {
+              "required": true,
+              "preferred": true,
+              "requiredAtDelivery": false,
+              "mustMarkIfAbsent": true,
+              "retrofitAllowed": true,
+              "retrofitCompatibilityMustBeConfirmed": true
+            },
+            "frontParkingSensors": "preferred",
+            "structuralDamageAllowed": false,
+            "cosmeticRepairsAllowed": true,
+            "location": "PL",
+            "origins": [
+              "domestic",
+              "import"
+            ],
+            "bodyScope": [
+              "wagon",
+              "sedan",
+              "suv",
+              "crossover",
+              "hatchback",
+              "minivan"
+            ],
+            "modelScope": "active_models_in_search-models.json_only",
+            "engineScope": "listed_variants_only",
+            "fuelScope": "all_fuels; LPG allowed and must be marked with installation documents checked",
+            "transmissionPreference": "none; manual and automatic are equally acceptable",
+            "use": {
+              "adults": 2,
+              "children": 1,
+              "cityShare": 0.5,
+              "strollerAndLuggageRequired": true,
+              "annualMileageKm": {
+                "min": 12000,
+                "max": 15000
+              },
+              "typicalCityTripMinutes": 30
+            },
+            "rankingPriorities": [
+              "technical_condition",
+              "documented_service",
+              "engine_durability",
+              "equipment",
+              "value"
+            ],
+            "unknownHardRequirement": "check",
+            "openQuestions": {
+              "typicalCityTripKm": null,
+              "strollerDimensionsCm": null,
+              "cameraRequiredAtDelivery": null,
+              "fuelScopeBeyondSelectedEngines": "all fuels confirmed; engine variants remain restricted to configured list"
+            },
+            "confirmedByUser": [
+              "engineScope",
+              "lpg",
+              "modelScope",
+              "purchase.auctionsAllowed",
+              "purchase.maxPriceGrossPln",
+              "purchase.scope",
+              "transmissionPreference",
+              "use.annualMileageKm",
+              "use.typicalCityTripMinutes"
+            ],
+            "notes": [
+              "Wybrane silniki przeniesiono z dotychczasowych danych; nie oznacza to zakazu innych paliw ustalonego przez użytkownika.",
+              "Użytkownik podał czas jazdy miejskiej około 30 minut, nie odległość. Nie przeliczać automatycznie na kilometry.",
+              "Skrzynia manualna i automatyczna są równie akceptowalne; przed zakupem skrzynię ocenić dla konkretnego wariantu.",
+              "Katalog modeli i silników obejmuje wyłącznie aktualną listę użytkownika. Status wyboru nie jest rekomendacją niezawodności."
+            ],
+            "lpg": {
+              "allowed": true,
+              "mustBeMarked": true,
+              "installationDocumentsMustBeChecked": true
+            }
+          },
           "engineReview": {
             "method": "docs/metoda-oceny-silnikow.md",
             "report": "reports/analiza-silnikow-batch-a-2026-11-08.md",
@@ -708,178 +824,38 @@
               }
             },
             "fullRecommendedThresholdMet": false
-          },
-          "requirements": {
-            "version": 1,
-            "purchase": {
-              "maxPriceGrossPln": 55000,
-              "scope": "purchase_only",
-              "priceExceptions": [
-                {
-                  "rule": "slightly_above_limit_only_for_exceptional_offer",
-                  "amountPln": null,
-                  "userMustConfirm": true
-                }
-              ],
-              "auctionsAllowed": false
-            },
-            "listingEvidence": {
-              "requiredFields": [],
-              "preferredFields": [
-                "vin",
-                "firstRegistrationDate"
-              ],
-              "missingPreferredFieldHandling": "mark_missing_and_consider_as_information_gap; do_not_automatically_exclude",
-              "registrationNumber": "record_presence_only; may be visible in listing photos; do not spend effort extracting from images or use as a strong ranking factor",
-              "independentInspectionRefusal": "exclude_only_if_listing_explicitly_states_inspection_is_not_allowed"
-            },
-            "sellerTypes": "any_non_auction_seller_if_price_conditions_fit",
-            "sellerClassification": {
-              "field": "offerType",
-              "values": [
-                "private",
-                "company",
-                "leasing_return",
-                "unknown"
-              ],
-              "unknownHandling": "mark_unknown; do_not_infer_from_platform_or_ad_style"
-            },
-            "priceAssessment": {
-              "baseLimitGrossPln": 55000,
-              "slightExceptionalOverageAllowed": true,
-              "import": "include material mandatory import costs; minor costs may be noted but ignored in initial screening"
-            },
-            "familyEquipment": {
-              "isofix": "important; if not stated, verify whether standard for exact model/year/market/trim; otherwise mark unknown"
-            },
-            "yearMin": 2018,
-            "mileage": {
-              "preferredMaxKm": 170000,
-              "hardMaxKm": 170000,
-              "assessment": "hard_maximum; exclude offers above 170000 km"
-            },
-            "transmissions": [
-              "manual",
-              "automatic"
-            ],
-            "camera": {
-              "required": true,
-              "preferred": true,
-              "requiredAtDelivery": false,
-              "mustMarkIfAbsent": true,
-              "retrofitAllowed": true,
-              "retrofitCompatibilityMustBeConfirmed": true
-            },
-            "frontParkingSensors": "preferred",
-            "structuralDamageAllowed": false,
-            "cosmeticRepairsAllowed": true,
-            "location": "PL",
-            "origins": [
-              "domestic",
-              "import"
-            ],
-            "bodyScope": [
-              "wagon",
-              "sedan",
-              "suv",
-              "crossover",
-              "hatchback",
-              "minivan"
-            ],
-            "modelScope": "active_models_in_search-models.json_only",
-            "engineScope": "listed_variants_only",
-            "fuelScope": "all_fuels; LPG allowed and must be marked with installation documents checked",
-            "transmissionPreference": "none; manual and automatic are equally acceptable",
-            "use": {
-              "adults": 2,
-              "children": 1,
-              "cityShare": 0.5,
-              "strollerAndLuggageRequired": true,
-              "annualMileageKm": {
-                "min": 12000,
-                "max": 15000
-              },
-              "typicalCityTripMinutes": 30
-            },
-            "rankingPriorities": [
-              "technical_condition",
-              "documented_service",
-              "engine_durability",
-              "equipment",
-              "value"
-            ],
-            "unknownHardRequirement": "check",
-            "openQuestions": {
-              "typicalCityTripKm": null,
-              "strollerDimensionsCm": null,
-              "cameraRequiredAtDelivery": null,
-              "fuelScopeBeyondSelectedEngines": "all fuels confirmed; engine variants remain restricted to configured list"
-            },
-            "confirmedByUser": [
-              "engineScope",
-              "lpg",
-              "modelScope",
-              "purchase.auctionsAllowed",
-              "purchase.maxPriceGrossPln",
-              "purchase.scope",
-              "transmissionPreference",
-              "use.annualMileageKm",
-              "use.typicalCityTripMinutes"
-            ],
-            "notes": [
-              "Wybrane silniki przeniesiono z dotychczasowych danych; nie oznacza to zakazu innych paliw ustalonego przez użytkownika.",
-              "Użytkownik podał czas jazdy miejskiej około 30 minut, nie odległość. Nie przeliczać automatycznie na kilometry.",
-              "Skrzynia manualna i automatyczna są równie akceptowalne; przed zakupem skrzynię ocenić dla konkretnego wariantu.",
-              "Katalog modeli i silników obejmuje wyłącznie aktualną listę użytkownika. Status wyboru nie jest rekomendacją niezawodności."
-            ],
-            "lpg": {
-              "allowed": true,
-              "mustBeMarked": true,
-              "installationDocumentsMustBeChecked": true
-            }
           }
         },
         {
-          "key": "suzuki-sx4-s-cross",
-          "name": "Suzuki SX4 S-Cross",
-          "description": "Crossover",
-          "brand": "Suzuki",
-          "model": "SX4 S-Cross",
-          "generation": null,
+          "key": "skoda-superb-iii-combi",
+          "name": "Škoda Superb III Combi",
+          "description": "Kombi",
+          "brand": "Škoda",
+          "model": "Superb",
+          "generation": "III",
           "bodies": [
-            "crossover"
+            "wagon"
           ],
           "searchYears": {
             "min": 2017,
-            "max": 2020
+            "max": null
           },
           "allowedEngineVariants": [
-            "1.4-boosterjet-140"
+            "1.4-tsi-ea211-150",
+            "1.5-tsi-150"
           ],
           "active": true,
-          "priority": 2,
-          "offersFile": "offers/suzuki-sx4-s-cross.json",
-          "knowledgeFile": "knowledge/models/suzuki-sx4-s-cross.json",
-          "legacyEngineSelection": "1.4 BoosterJet 140 KM",
-          "selectionStatus": "engine_reviewed_with_conditions",
+          "priority": 5,
+          "offersFile": "offers/skoda-superb-iii-combi.json",
+          "knowledgeFile": "knowledge/models/skoda-superb-iii-combi.json",
+          "legacyEngineSelection": "1.4 TSI EA211 150 KM; 1.5 TSI 150 KM",
+          "selectionStatus": "user_selected_current_list",
           "productionYears": null,
           "notes": [
-            "Zakres lat dotyczy wyszukiwania modelu; dostępność silnika i nadwozia trzeba sprawdzić w karcie wiedzy.",
-            "Lista silników i roczniki odzwierciedlają aktualne założenia użytkownika; nie oznaczają rekomendacji trwałości."
+            "Rocznik produkcji od 2017; bez górnej granicy rocznika w wyszukiwaniu.",
+            "Silniki zgodnie z aktualną listą użytkownika; wariant dokładny należy potwierdzić po VIN/kodzie silnika."
           ],
           "variantConstraints": [],
-          "engineReview": {
-            "method": "docs/metoda-oceny-silnikow.md",
-            "report": "reports/analiza-silnikow-batch-b-2026-11-08.md",
-            "reviewedAt": "2026-11-08",
-            "variants": {
-              "1.4-boosterjet-140": {
-                "status": "conditional_recommendation",
-                "reason": "K14C dobrze potwierdzony; producent w przejrzanym katalogu odradza LPG dla S-Cross. Brak niezależnych danych awarii silnika i polskich kosztów."
-              }
-            },
-            "fullRecommendedThresholdMet": false
-          },
           "requirements": {
             "version": 1,
             "purchase": {
@@ -923,7 +899,7 @@
             "familyEquipment": {
               "isofix": "important; if not stated, verify whether standard for exact model/year/market/trim; otherwise mark unknown"
             },
-            "yearMin": 2018,
+            "yearMin": 2017,
             "mileage": {
               "preferredMaxKm": 170000,
               "hardMaxKm": 170000,
@@ -1008,6 +984,18 @@
               "mustBeMarked": true,
               "installationDocumentsMustBeChecked": true
             }
+          },
+          "engineReview": {
+            "method": "docs/metoda-oceny-silnikow.md",
+            "report": "reports/analiza-silnikow-batch-c-2026-11-08.md",
+            "reviewedAt": "2026-11-08",
+            "variants": {
+              "1.4-tsi-ea211-150": {
+                "status": "conditional_recommendation",
+                "reason": "Dobry zapas mocy; czeskie STK dla całego auta nie dowodzi awaryjności silnika; kod CZEA potwierdzić po VIN."
+              }
+            },
+            "fullRecommendedThresholdMet": false
           }
         },
         {
@@ -1022,40 +1010,23 @@
           ],
           "searchYears": {
             "min": 2017,
-            "max": 2020
+            "max": null
           },
           "allowedEngineVariants": [
-            "1.6-vvt-120",
             "1.4-boosterjet-140"
           ],
           "active": true,
-          "priority": 2,
+          "priority": 6,
           "offersFile": "offers/suzuki-vitara-ii.json",
           "knowledgeFile": "knowledge/models/suzuki-vitara-ii.json",
-          "legacyEngineSelection": "1.6 VVT 120 KM; 1.4 BoosterJet 140 KM",
-          "selectionStatus": "engine_reviewed_with_conditions",
+          "legacyEngineSelection": "1.4 BoosterJet 140 KM",
+          "selectionStatus": "user_selected_current_list",
           "productionYears": null,
           "notes": [
-            "Zakres lat dotyczy wyszukiwania modelu; dostępność silnika i nadwozia trzeba sprawdzić w karcie wiedzy.",
-            "Lista silników i roczniki odzwierciedlają aktualne założenia użytkownika; nie oznaczają rekomendacji trwałości."
+            "Rocznik produkcji od 2017; bez górnej granicy rocznika w wyszukiwaniu.",
+            "Silniki zgodnie z aktualną listą użytkownika; wariant dokładny należy potwierdzić po VIN/kodzie silnika."
           ],
           "variantConstraints": [],
-          "engineReview": {
-            "method": "docs/metoda-oceny-silnikow.md",
-            "report": "reports/analiza-silnikow-batch-b-2026-11-08.md",
-            "reviewedAt": "2026-11-08",
-            "variants": {
-              "1.6-vvt-120": {
-                "status": "conditional_recommendation",
-                "reason": "M16A prosty wolnossący silnik; korzystny sygnał STK dotyczy całych aut, osiągi sprawdzić pod obciążeniem."
-              },
-              "1.4-boosterjet-140": {
-                "status": "conditional_recommendation",
-                "reason": "K14C ma większy moment i korzystny sygnał STK dla całego auta; turbo/DI i LPG wymagają kontroli konkretnej wersji."
-              }
-            },
-            "fullRecommendedThresholdMet": false
-          },
           "requirements": {
             "version": 1,
             "purchase": {
@@ -1099,7 +1070,7 @@
             "familyEquipment": {
               "isofix": "important; if not stated, verify whether standard for exact model/year/market/trim; otherwise mark unknown"
             },
-            "yearMin": 2018,
+            "yearMin": 2017,
             "mileage": {
               "preferredMaxKm": 170000,
               "hardMaxKm": 170000,
@@ -1184,12 +1155,24 @@
               "mustBeMarked": true,
               "installationDocumentsMustBeChecked": true
             }
+          },
+          "engineReview": {
+            "method": "docs/metoda-oceny-silnikow.md",
+            "report": "reports/analiza-silnikow-batch-b-2026-11-08.md",
+            "reviewedAt": "2026-11-08",
+            "variants": {
+              "1.4-boosterjet-140": {
+                "status": "conditional_recommendation",
+                "reason": "K14C ma większy moment i korzystny sygnał STK dla całego auta; turbo/DI i LPG wymagają kontroli konkretnej wersji."
+              }
+            },
+            "fullRecommendedThresholdMet": false
           }
         },
         {
           "key": "toyota-auris-touring-sports",
           "name": "Toyota Auris II Touring Sports",
-          "description": "Kombi (Touring Sports)",
+          "description": "Kombi",
           "brand": "Toyota",
           "model": "Auris",
           "generation": "II",
@@ -1198,24 +1181,153 @@
           ],
           "searchYears": {
             "min": 2017,
-            "max": 2018
+            "max": null
           },
           "allowedEngineVariants": [
             "1.8-hybrid-136",
             "1.6-valvematic-132"
           ],
           "active": true,
-          "priority": 2,
+          "priority": 7,
           "offersFile": "offers/toyota-auris-touring-sports.json",
           "knowledgeFile": "knowledge/models/toyota-auris-touring-sports.json",
           "legacyEngineSelection": "1.8 Hybrid 136 KM; 1.6 Valvematic 132 KM",
-          "selectionStatus": "engine_reviewed_with_conditions",
+          "selectionStatus": "user_selected_current_list",
           "productionYears": null,
           "notes": [
-            "Zakres lat dotyczy wyszukiwania modelu; dostępność silnika i nadwozia trzeba sprawdzić w karcie wiedzy.",
-            "Lista silników i roczniki odzwierciedlają aktualne założenia użytkownika; nie oznaczają rekomendacji trwałości."
+            "Rocznik produkcji od 2017; bez górnej granicy rocznika w wyszukiwaniu.",
+            "Silniki zgodnie z aktualną listą użytkownika; wariant dokładny należy potwierdzić po VIN/kodzie silnika."
           ],
           "variantConstraints": [],
+          "requirements": {
+            "version": 1,
+            "purchase": {
+              "maxPriceGrossPln": 55000,
+              "scope": "purchase_only",
+              "priceExceptions": [
+                {
+                  "rule": "slightly_above_limit_only_for_exceptional_offer",
+                  "amountPln": null,
+                  "userMustConfirm": true
+                }
+              ],
+              "auctionsAllowed": false
+            },
+            "listingEvidence": {
+              "requiredFields": [],
+              "preferredFields": [
+                "vin",
+                "firstRegistrationDate"
+              ],
+              "missingPreferredFieldHandling": "mark_missing_and_consider_as_information_gap; do_not_automatically_exclude",
+              "registrationNumber": "record_presence_only; may be visible in listing photos; do not spend effort extracting from images or use as a strong ranking factor",
+              "independentInspectionRefusal": "exclude_only_if_listing_explicitly_states_inspection_is_not_allowed"
+            },
+            "sellerTypes": "any_non_auction_seller_if_price_conditions_fit",
+            "sellerClassification": {
+              "field": "offerType",
+              "values": [
+                "private",
+                "company",
+                "leasing_return",
+                "unknown"
+              ],
+              "unknownHandling": "mark_unknown; do_not_infer_from_platform_or_ad_style"
+            },
+            "priceAssessment": {
+              "baseLimitGrossPln": 55000,
+              "slightExceptionalOverageAllowed": true,
+              "import": "include material mandatory import costs; minor costs may be noted but ignored in initial screening"
+            },
+            "familyEquipment": {
+              "isofix": "important; if not stated, verify whether standard for exact model/year/market/trim; otherwise mark unknown"
+            },
+            "yearMin": 2017,
+            "mileage": {
+              "preferredMaxKm": 170000,
+              "hardMaxKm": 170000,
+              "assessment": "hard_maximum; exclude offers above 170000 km"
+            },
+            "transmissions": [
+              "manual",
+              "automatic"
+            ],
+            "camera": {
+              "required": true,
+              "preferred": true,
+              "requiredAtDelivery": false,
+              "mustMarkIfAbsent": true,
+              "retrofitAllowed": true,
+              "retrofitCompatibilityMustBeConfirmed": true
+            },
+            "frontParkingSensors": "preferred",
+            "structuralDamageAllowed": false,
+            "cosmeticRepairsAllowed": true,
+            "location": "PL",
+            "origins": [
+              "domestic",
+              "import"
+            ],
+            "bodyScope": [
+              "wagon",
+              "sedan",
+              "suv",
+              "crossover",
+              "hatchback",
+              "minivan"
+            ],
+            "modelScope": "active_models_in_search-models.json_only",
+            "engineScope": "listed_variants_only",
+            "fuelScope": "all_fuels; LPG allowed and must be marked with installation documents checked",
+            "transmissionPreference": "none; manual and automatic are equally acceptable",
+            "use": {
+              "adults": 2,
+              "children": 1,
+              "cityShare": 0.5,
+              "strollerAndLuggageRequired": true,
+              "annualMileageKm": {
+                "min": 12000,
+                "max": 15000
+              },
+              "typicalCityTripMinutes": 30
+            },
+            "rankingPriorities": [
+              "technical_condition",
+              "documented_service",
+              "engine_durability",
+              "equipment",
+              "value"
+            ],
+            "unknownHardRequirement": "check",
+            "openQuestions": {
+              "typicalCityTripKm": null,
+              "strollerDimensionsCm": null,
+              "cameraRequiredAtDelivery": null,
+              "fuelScopeBeyondSelectedEngines": "all fuels confirmed; engine variants remain restricted to configured list"
+            },
+            "confirmedByUser": [
+              "engineScope",
+              "lpg",
+              "modelScope",
+              "purchase.auctionsAllowed",
+              "purchase.maxPriceGrossPln",
+              "purchase.scope",
+              "transmissionPreference",
+              "use.annualMileageKm",
+              "use.typicalCityTripMinutes"
+            ],
+            "notes": [
+              "Wybrane silniki przeniesiono z dotychczasowych danych; nie oznacza to zakazu innych paliw ustalonego przez użytkownika.",
+              "Użytkownik podał czas jazdy miejskiej około 30 minut, nie odległość. Nie przeliczać automatycznie na kilometry.",
+              "Skrzynia manualna i automatyczna są równie akceptowalne; przed zakupem skrzynię ocenić dla konkretnego wariantu.",
+              "Katalog modeli i silników obejmuje wyłącznie aktualną listę użytkownika. Status wyboru nie jest rekomendacją niezawodności."
+            ],
+            "lpg": {
+              "allowed": true,
+              "mustBeMarked": true,
+              "installationDocumentsMustBeChecked": true
+            }
+          },
           "engineReview": {
             "method": "docs/metoda-oceny-silnikow.md",
             "report": "reports/analiza-silnikow-batch-b-2026-11-08.md",
@@ -1231,7 +1343,37 @@
               }
             },
             "fullRecommendedThresholdMet": false
+          }
+        },
+        {
+          "key": "toyota-avensis-iii-wagon",
+          "name": "Toyota Avensis III Kombi",
+          "description": "Kombi",
+          "brand": "Toyota",
+          "model": "Avensis",
+          "generation": "III",
+          "bodies": [
+            "wagon"
+          ],
+          "searchYears": {
+            "min": 2017,
+            "max": null
           },
+          "allowedEngineVariants": [
+            "1.8-valvematic-147"
+          ],
+          "active": true,
+          "priority": 8,
+          "offersFile": "offers/toyota-avensis-iii-wagon.json",
+          "knowledgeFile": "knowledge/models/toyota-avensis-iii-wagon.json",
+          "legacyEngineSelection": "1.8 Valvematic 147 KM",
+          "selectionStatus": "user_selected_current_list",
+          "productionYears": null,
+          "notes": [
+            "Rocznik produkcji od 2017; bez górnej granicy rocznika w wyszukiwaniu.",
+            "Silniki zgodnie z aktualną listą użytkownika; wariant dokładny należy potwierdzić po VIN/kodzie silnika."
+          ],
+          "variantConstraints": [],
           "requirements": {
             "version": 1,
             "purchase": {
@@ -1275,7 +1417,7 @@
             "familyEquipment": {
               "isofix": "important; if not stated, verify whether standard for exact model/year/market/trim; otherwise mark unknown"
             },
-            "yearMin": 2018,
+            "yearMin": 2017,
             "mileage": {
               "preferredMaxKm": 170000,
               "hardMaxKm": 170000,
@@ -1360,40 +1502,49 @@
               "mustBeMarked": true,
               "installationDocumentsMustBeChecked": true
             }
+          },
+          "engineReview": {
+            "method": "docs/metoda-oceny-silnikow.md",
+            "report": "reports/analiza-silnikow-batch-b-2026-11-08.md",
+            "reviewedAt": "2026-11-08",
+            "variants": {
+              "1.8-valvematic-147": {
+                "status": "conditional_recommendation",
+                "reason": "2ZR-FAE potwierdzać po VIN; sprawdzić Valvematic i serwis CVT, jeśli występuje. Brak dokładnej kohorty awarii silnika."
+              }
+            },
+            "fullRecommendedThresholdMet": false
           }
         },
         {
           "key": "toyota-corolla-e210",
           "name": "Toyota Corolla XII (E210)",
-          "description": "Sedan i kombi (Touring Sports)",
+          "description": "Kombi",
           "brand": "Toyota",
           "model": "Corolla",
-          "generation": "E210",
+          "generation": "XII",
           "bodies": [
             "sedan",
             "wagon"
           ],
           "searchYears": {
             "min": 2019,
-            "max": 2023
+            "max": null
           },
           "allowedEngineVariants": [
             "1.6-valvematic-132",
-            "1.8-hybrid-122",
-            "1.8-hybrid-140"
+            "1.8-hybrid-122"
           ],
           "active": true,
-          "priority": 2,
+          "priority": 9,
           "offersFile": "offers/toyota-corolla-e210.json",
           "knowledgeFile": "knowledge/models/toyota-corolla-e210.json",
-          "legacyEngineSelection": "1.6 Valvematic 132 KM Sedan (potwierdzić rocznik/VIN); 1.8 Hybrid 122 KM; 1.8 Hybrid 140 KM",
-          "selectionStatus": "engine_reviewed_with_conditions",
+          "legacyEngineSelection": "1.6 Valvematic 132 KM; 1.8 Hybrid 122 KM",
+          "selectionStatus": "user_selected_current_list",
           "productionYears": null,
           "notes": [
-            "Zakres lat dotyczy wyszukiwania modelu; dostępność silnika i nadwozia trzeba sprawdzić w karcie wiedzy.",
-            "Lista silników i roczniki odzwierciedlają aktualne założenia użytkownika; nie oznaczają rekomendacji trwałości.",
-            "1.8 Hybrid 140 KM od 2023 r.: potwierdzić dokładny rynek i moc systemową dla konkretnego egzemplarza.",
-            "Dodano 1.6 Valvematic 132 KM jako wariant wyłącznie sedanowy: oficjalne dane Toyoty dla Europy oraz polski cennik 2019 go potwierdzają. Dostępność w Polsce potwierdzona dla MY2019; poza latami 2019–2020 i dla rejestracji 2021 sprawdzić datę produkcji oraz VIN."
+            "Rocznik produkcji od 2019; bez górnej granicy rocznika w wyszukiwaniu.",
+            "Silniki zgodnie z aktualną listą użytkownika; wariant dokładny należy potwierdzić po VIN/kodzie silnika."
           ],
           "variantConstraints": [
             {
@@ -1416,6 +1567,135 @@
               ]
             }
           ],
+          "requirements": {
+            "version": 1,
+            "purchase": {
+              "maxPriceGrossPln": 55000,
+              "scope": "purchase_only",
+              "priceExceptions": [
+                {
+                  "rule": "slightly_above_limit_only_for_exceptional_offer",
+                  "amountPln": null,
+                  "userMustConfirm": true
+                }
+              ],
+              "auctionsAllowed": false
+            },
+            "listingEvidence": {
+              "requiredFields": [],
+              "preferredFields": [
+                "vin",
+                "firstRegistrationDate"
+              ],
+              "missingPreferredFieldHandling": "mark_missing_and_consider_as_information_gap; do_not_automatically_exclude",
+              "registrationNumber": "record_presence_only; may be visible in listing photos; do not spend effort extracting from images or use as a strong ranking factor",
+              "independentInspectionRefusal": "exclude_only_if_listing_explicitly_states_inspection_is_not_allowed"
+            },
+            "sellerTypes": "any_non_auction_seller_if_price_conditions_fit",
+            "sellerClassification": {
+              "field": "offerType",
+              "values": [
+                "private",
+                "company",
+                "leasing_return",
+                "unknown"
+              ],
+              "unknownHandling": "mark_unknown; do_not_infer_from_platform_or_ad_style"
+            },
+            "priceAssessment": {
+              "baseLimitGrossPln": 55000,
+              "slightExceptionalOverageAllowed": true,
+              "import": "include material mandatory import costs; minor costs may be noted but ignored in initial screening"
+            },
+            "familyEquipment": {
+              "isofix": "important; if not stated, verify whether standard for exact model/year/market/trim; otherwise mark unknown"
+            },
+            "yearMin": 2019,
+            "mileage": {
+              "preferredMaxKm": 170000,
+              "hardMaxKm": 170000,
+              "assessment": "hard_maximum; exclude offers above 170000 km"
+            },
+            "transmissions": [
+              "manual",
+              "automatic"
+            ],
+            "camera": {
+              "required": true,
+              "preferred": true,
+              "requiredAtDelivery": false,
+              "mustMarkIfAbsent": true,
+              "retrofitAllowed": true,
+              "retrofitCompatibilityMustBeConfirmed": true
+            },
+            "frontParkingSensors": "preferred",
+            "structuralDamageAllowed": false,
+            "cosmeticRepairsAllowed": true,
+            "location": "PL",
+            "origins": [
+              "domestic",
+              "import"
+            ],
+            "bodyScope": [
+              "wagon",
+              "sedan",
+              "suv",
+              "crossover",
+              "hatchback",
+              "minivan"
+            ],
+            "modelScope": "active_models_in_search-models.json_only",
+            "engineScope": "listed_variants_only",
+            "fuelScope": "all_fuels; LPG allowed and must be marked with installation documents checked",
+            "transmissionPreference": "none; manual and automatic are equally acceptable",
+            "use": {
+              "adults": 2,
+              "children": 1,
+              "cityShare": 0.5,
+              "strollerAndLuggageRequired": true,
+              "annualMileageKm": {
+                "min": 12000,
+                "max": 15000
+              },
+              "typicalCityTripMinutes": 30
+            },
+            "rankingPriorities": [
+              "technical_condition",
+              "documented_service",
+              "engine_durability",
+              "equipment",
+              "value"
+            ],
+            "unknownHardRequirement": "check",
+            "openQuestions": {
+              "typicalCityTripKm": null,
+              "strollerDimensionsCm": null,
+              "cameraRequiredAtDelivery": null,
+              "fuelScopeBeyondSelectedEngines": "all fuels confirmed; engine variants remain restricted to configured list"
+            },
+            "confirmedByUser": [
+              "engineScope",
+              "lpg",
+              "modelScope",
+              "purchase.auctionsAllowed",
+              "purchase.maxPriceGrossPln",
+              "purchase.scope",
+              "transmissionPreference",
+              "use.annualMileageKm",
+              "use.typicalCityTripMinutes"
+            ],
+            "notes": [
+              "Wybrane silniki przeniesiono z dotychczasowych danych; nie oznacza to zakazu innych paliw ustalonego przez użytkownika.",
+              "Użytkownik podał czas jazdy miejskiej około 30 minut, nie odległość. Nie przeliczać automatycznie na kilometry.",
+              "Skrzynia manualna i automatyczna są równie akceptowalne; przed zakupem skrzynię ocenić dla konkretnego wariantu.",
+              "Katalog modeli i silników obejmuje wyłącznie aktualną listę użytkownika. Status wyboru nie jest rekomendacją niezawodności."
+            ],
+            "lpg": {
+              "allowed": true,
+              "mustBeMarked": true,
+              "installationDocumentsMustBeChecked": true
+            }
+          },
           "engineReview": {
             "method": "docs/metoda-oceny-silnikow.md",
             "report": "reports/analiza-silnikow-batch-b-2026-11-08.md",
@@ -1425,17 +1705,43 @@
                 "status": "conditional_recommendation",
                 "reason": "Wariant 4. generacji potwierdzony; dobra zgodność z profilem, nadal brak niezależnych danych awaryjności napędu."
               },
-              "1.8-hybrid-140": {
-                "status": "hold_for_long_term_data",
-                "reason": "Nowa generacja z 2023 r.; krótka historia flotowa. Rynek, model year i moc ustalać po VIN."
-              },
               "1.6-valvematic-132": {
                 "status": "hold_pending_engine_specific_reliability_evidence",
                 "reason": "1ZR-FAE 132 KM i sedan są potwierdzone; przydatność mocy jest dobra, ale brakuje niezależnych długoterminowych danych awaryjności dokładnego silnika oraz polskich kosztów napraw. Weryfikować Valvematic, skrzynię i rok produkcji po VIN. Dopuszczalność LPG wymaga osobnego potwierdzenia dla zestawu, kodu i VIN."
               }
             },
             "fullRecommendedThresholdMet": false
+          }
+        },
+        {
+          "key": "mitsubishi-asx-i",
+          "name": "Mitsubishi ASX I",
+          "description": "SUV",
+          "brand": "Mitsubishi",
+          "model": "ASX",
+          "generation": "I",
+          "bodies": [
+            "suv",
+            "crossover"
+          ],
+          "searchYears": {
+            "min": 2019,
+            "max": null
           },
+          "allowedEngineVariants": [
+            "2.0-mivec-150"
+          ],
+          "active": true,
+          "priority": 10,
+          "offersFile": "offers/mitsubishi-asx-i.json",
+          "knowledgeFile": "knowledge/models/mitsubishi-asx-i.json",
+          "legacyEngineSelection": "2.0 MIVEC 150 KM",
+          "productionYears": null,
+          "notes": [
+            "Rocznik produkcji od 2019; bez górnej granicy rocznika w wyszukiwaniu.",
+            "Silniki zgodnie z aktualną listą użytkownika; wariant dokładny należy potwierdzić po VIN/kodzie silnika."
+          ],
+          "variantConstraints": [],
           "requirements": {
             "version": 1,
             "purchase": {
@@ -1479,7 +1785,7 @@
             "familyEquipment": {
               "isofix": "important; if not stated, verify whether standard for exact model/year/market/trim; otherwise mark unknown"
             },
-            "yearMin": 2018,
+            "yearMin": 2019,
             "mileage": {
               "preferredMaxKm": 170000,
               "hardMaxKm": 170000,
@@ -1564,54 +1870,198 @@
               "mustBeMarked": true,
               "installationDocumentsMustBeChecked": true
             }
-          }
+          },
+          "selectionStatus": "user_selected_current_list"
+        },
+        {
+          "key": "mitsubishi-outlander-iii",
+          "name": "Mitsubishi Outlander III",
+          "description": "SUV",
+          "brand": "Mitsubishi",
+          "model": "Outlander",
+          "generation": "III",
+          "bodies": [
+            "suv"
+          ],
+          "searchYears": {
+            "min": 2017,
+            "max": null
+          },
+          "allowedEngineVariants": [
+            "2.0-mivec-150"
+          ],
+          "active": true,
+          "priority": 11,
+          "offersFile": "offers/mitsubishi-outlander-iii.json",
+          "knowledgeFile": "knowledge/models/mitsubishi-outlander-iii.json",
+          "legacyEngineSelection": "2.0 MIVEC 150 KM",
+          "productionYears": null,
+          "notes": [
+            "Rocznik produkcji od 2017; bez górnej granicy rocznika w wyszukiwaniu.",
+            "Silniki zgodnie z aktualną listą użytkownika; wariant dokładny należy potwierdzić po VIN/kodzie silnika."
+          ],
+          "variantConstraints": [],
+          "requirements": {
+            "version": 1,
+            "purchase": {
+              "maxPriceGrossPln": 55000,
+              "scope": "purchase_only",
+              "priceExceptions": [
+                {
+                  "rule": "slightly_above_limit_only_for_exceptional_offer",
+                  "amountPln": null,
+                  "userMustConfirm": true
+                }
+              ],
+              "auctionsAllowed": false
+            },
+            "listingEvidence": {
+              "requiredFields": [],
+              "preferredFields": [
+                "vin",
+                "firstRegistrationDate"
+              ],
+              "missingPreferredFieldHandling": "mark_missing_and_consider_as_information_gap; do_not_automatically_exclude",
+              "registrationNumber": "record_presence_only; may be visible in listing photos; do not spend effort extracting from images or use as a strong ranking factor",
+              "independentInspectionRefusal": "exclude_only_if_listing_explicitly_states_inspection_is_not_allowed"
+            },
+            "sellerTypes": "any_non_auction_seller_if_price_conditions_fit",
+            "sellerClassification": {
+              "field": "offerType",
+              "values": [
+                "private",
+                "company",
+                "leasing_return",
+                "unknown"
+              ],
+              "unknownHandling": "mark_unknown; do_not_infer_from_platform_or_ad_style"
+            },
+            "priceAssessment": {
+              "baseLimitGrossPln": 55000,
+              "slightExceptionalOverageAllowed": true,
+              "import": "include material mandatory import costs; minor costs may be noted but ignored in initial screening"
+            },
+            "familyEquipment": {
+              "isofix": "important; if not stated, verify whether standard for exact model/year/market/trim; otherwise mark unknown"
+            },
+            "yearMin": 2017,
+            "mileage": {
+              "preferredMaxKm": 170000,
+              "hardMaxKm": 170000,
+              "assessment": "hard_maximum; exclude offers above 170000 km"
+            },
+            "transmissions": [
+              "manual",
+              "automatic"
+            ],
+            "camera": {
+              "required": true,
+              "preferred": true,
+              "requiredAtDelivery": false,
+              "mustMarkIfAbsent": true,
+              "retrofitAllowed": true,
+              "retrofitCompatibilityMustBeConfirmed": true
+            },
+            "frontParkingSensors": "preferred",
+            "structuralDamageAllowed": false,
+            "cosmeticRepairsAllowed": true,
+            "location": "PL",
+            "origins": [
+              "domestic",
+              "import"
+            ],
+            "bodyScope": [
+              "wagon",
+              "sedan",
+              "suv",
+              "crossover",
+              "hatchback",
+              "minivan"
+            ],
+            "modelScope": "active_models_in_search-models.json_only",
+            "engineScope": "listed_variants_only",
+            "fuelScope": "all_fuels; LPG allowed and must be marked with installation documents checked",
+            "transmissionPreference": "none; manual and automatic are equally acceptable",
+            "use": {
+              "adults": 2,
+              "children": 1,
+              "cityShare": 0.5,
+              "strollerAndLuggageRequired": true,
+              "annualMileageKm": {
+                "min": 12000,
+                "max": 15000
+              },
+              "typicalCityTripMinutes": 30
+            },
+            "rankingPriorities": [
+              "technical_condition",
+              "documented_service",
+              "engine_durability",
+              "equipment",
+              "value"
+            ],
+            "unknownHardRequirement": "check",
+            "openQuestions": {
+              "typicalCityTripKm": null,
+              "strollerDimensionsCm": null,
+              "cameraRequiredAtDelivery": null,
+              "fuelScopeBeyondSelectedEngines": "all fuels confirmed; engine variants remain restricted to configured list"
+            },
+            "confirmedByUser": [
+              "engineScope",
+              "lpg",
+              "modelScope",
+              "purchase.auctionsAllowed",
+              "purchase.maxPriceGrossPln",
+              "purchase.scope",
+              "transmissionPreference",
+              "use.annualMileageKm",
+              "use.typicalCityTripMinutes"
+            ],
+            "notes": [
+              "Wybrane silniki przeniesiono z dotychczasowych danych; nie oznacza to zakazu innych paliw ustalonego przez użytkownika.",
+              "Użytkownik podał czas jazdy miejskiej około 30 minut, nie odległość. Nie przeliczać automatycznie na kilometry.",
+              "Skrzynia manualna i automatyczna są równie akceptowalne; przed zakupem skrzynię ocenić dla konkretnego wariantu.",
+              "Katalog modeli i silników obejmuje wyłącznie aktualną listę użytkownika. Status wyboru nie jest rekomendacją niezawodności."
+            ],
+            "lpg": {
+              "allowed": true,
+              "mustBeMarked": true,
+              "installationDocumentsMustBeChecked": true
+            }
+          },
+          "selectionStatus": "user_selected_current_list"
         },
         {
           "key": "skoda-scala",
           "name": "Škoda Scala",
-          "description": "Hatchback / minivan",
-          "brand": "Skoda",
+          "description": "Crossover",
+          "brand": "Škoda",
           "model": "Scala",
-          "generation": "III",
+          "generation": "",
           "bodies": [
-            "hatchback"
+            "hatchback",
+            "minivan"
           ],
           "searchYears": {
-            "min": 2020,
-            "max": 2023
+            "min": 2019,
+            "max": null
           },
           "allowedEngineVariants": [
-            "1.0-tsi-115",
-            "1.0-tsi-110"
+            "1.5-tsi-150"
           ],
           "active": true,
-          "priority": 2,
+          "priority": 12,
           "offersFile": "offers/skoda-scala.json",
           "knowledgeFile": "knowledge/models/skoda-scala.json",
-          "legacyEngineSelection": "1.0 TSI 115 KM; 1.0 TSI 110 KM",
-          "selectionStatus": "engine_reviewed_with_conditions",
+          "legacyEngineSelection": "1.5 TSI 150 KM",
+          "selectionStatus": "user_selected_current_list",
           "productionYears": null,
           "notes": [
-            "Lista silników i roczniki odzwierciedlają aktualne założenia użytkownika; nie oznaczają rekomendacji trwałości.",
-            "Wariant 1.0 TSI 110 KM (81 kW) jest potwierdzony w danych producenta i odrębny od 115 KM (85 kW); pozostaje wstrzymany z powodu sygnału STK dotyczącego całego auta. Szczegóły w karcie wiedzy."
+            "Rocznik produkcji od 2019; bez górnej granicy rocznika w wyszukiwaniu.",
+            "Silniki zgodnie z aktualną listą użytkownika; wariant dokładny należy potwierdzić po VIN/kodzie silnika."
           ],
           "variantConstraints": [],
-          "engineReview": {
-            "method": "docs/metoda-oceny-silnikow.md",
-            "report": "reports/analiza-silnikow-batch-a-2026-11-08.md",
-            "reviewedAt": "2026-11-08",
-            "variants": {
-              "1.0-tsi-115": {
-                "status": "conditional_recommendation",
-                "reason": "Wariant potwierdzony; umiarkowany zapas mocy pod pełnym obciążeniem, brak dokładnych danych awaryjności silnika i kosztów."
-              },
-              "1.0-tsi-110": {
-                "status": "hold_for_inspection_signal",
-                "reason": "Wariant 81 kW potwierdza producent; czeskie STK wykazuje podwyższony wskaźnik usterek całych aut, nie silnika. Nie odrzucać bez wyjaśnienia źródła sygnału."
-              }
-            },
-            "fullRecommendedThresholdMet": false
-          },
           "requirements": {
             "version": 1,
             "purchase": {
@@ -1655,7 +2105,7 @@
             "familyEquipment": {
               "isofix": "important; if not stated, verify whether standard for exact model/year/market/trim; otherwise mark unknown"
             },
-            "yearMin": 2018,
+            "yearMin": 2019,
             "mileage": {
               "preferredMaxKm": 170000,
               "hardMaxKm": 170000,
@@ -1743,45 +2193,34 @@
           }
         },
         {
-          "key": "skoda-superb-iii-combi",
-          "name": "Škoda Superb III Combi",
-          "description": "Kombi",
-          "brand": "Skoda",
-          "model": "Superb",
-          "generation": "III",
+          "key": "kia-xceed",
+          "name": "Kia XCeed",
+          "description": "Crossover",
+          "brand": "Kia",
+          "model": "XCeed",
+          "generation": "",
           "bodies": [
-            "wagon"
+            "crossover"
           ],
           "searchYears": {
-            "min": 2017,
-            "max": 2018
+            "min": 2019,
+            "max": null
           },
           "allowedEngineVariants": [
-            "1.4-tsi-ea211-150"
+            "1.4-tgdi-140",
+            "1.5-tgdi-160"
           ],
           "active": true,
-          "priority": 2,
-          "offersFile": "offers/skoda-superb-iii-combi.json",
-          "knowledgeFile": "knowledge/models/skoda-superb-iii-combi.json",
-          "legacyEngineSelection": "1.4 TSI EA211 150 KM",
-          "selectionStatus": "engine_reviewed_with_conditions",
+          "priority": 13,
+          "offersFile": "offers/kia-xceed.json",
+          "knowledgeFile": "knowledge/models/kia-xceed.json",
+          "legacyEngineSelection": "1.4 T-GDI 140 KM; 1.5 T-GDI 160 KM",
           "productionYears": null,
           "notes": [
-            "Lista silników i roczniki odzwierciedlają aktualne założenia użytkownika; nie oznaczają rekomendacji trwałości."
+            "Rocznik produkcji od 2019; bez górnej granicy rocznika w wyszukiwaniu.",
+            "Silniki zgodnie z aktualną listą użytkownika; wariant dokładny należy potwierdzić po VIN/kodzie silnika."
           ],
           "variantConstraints": [],
-          "engineReview": {
-            "method": "docs/metoda-oceny-silnikow.md",
-            "report": "reports/analiza-silnikow-batch-c-2026-11-08.md",
-            "reviewedAt": "2026-11-08",
-            "variants": {
-              "1.4-tsi-ea211-150": {
-                "status": "conditional_recommendation",
-                "reason": "Dobry zapas mocy; czeskie STK dla całego auta nie dowodzi awaryjności silnika; kod CZEA potwierdzić po VIN."
-              }
-            },
-            "fullRecommendedThresholdMet": false
-          },
           "requirements": {
             "version": 1,
             "purchase": {
@@ -1825,7 +2264,7 @@
             "familyEquipment": {
               "isofix": "important; if not stated, verify whether standard for exact model/year/market/trim; otherwise mark unknown"
             },
-            "yearMin": 2017,
+            "yearMin": 2019,
             "mileage": {
               "preferredMaxKm": 170000,
               "hardMaxKm": 170000,
@@ -1910,358 +2349,8 @@
               "mustBeMarked": true,
               "installationDocumentsMustBeChecked": true
             }
-          }
-        },
-        {
-          "key": "toyota-avensis-iii-wagon",
-          "name": "Toyota Avensis III Kombi",
-          "description": "Kombi",
-          "brand": "Toyota",
-          "model": "Avensis",
-          "generation": "III",
-          "bodies": [
-            "wagon"
-          ],
-          "searchYears": {
-            "min": 2017,
-            "max": 2018
           },
-          "allowedEngineVariants": [
-            "1.8-valvematic-147"
-          ],
-          "active": true,
-          "priority": 2,
-          "offersFile": "offers/toyota-avensis-iii-wagon.json",
-          "knowledgeFile": "knowledge/models/toyota-avensis-iii-wagon.json",
-          "legacyEngineSelection": "1.8 Valvematic 147 KM",
-          "selectionStatus": "engine_reviewed_with_conditions",
-          "productionYears": null,
-          "notes": [
-            "Lista silników i roczniki odzwierciedlają aktualne założenia użytkownika; nie oznaczają rekomendacji trwałości.",
-            "2.0 Valvematic 152 KM usunięto z aktywnego filtra: źródła nie potwierdzają jego zastosowania w docelowym polskim kombi z lat 2017–2018. Nie przywracać bez dowodu dla rynku, nadwozia i daty produkcji."
-          ],
-          "variantConstraints": [],
-          "engineReview": {
-            "method": "docs/metoda-oceny-silnikow.md",
-            "report": "reports/analiza-silnikow-batch-b-2026-11-08.md",
-            "reviewedAt": "2026-11-08",
-            "variants": {
-              "1.8-valvematic-147": {
-                "status": "conditional_recommendation",
-                "reason": "2ZR-FAE potwierdzać po VIN; sprawdzić Valvematic i serwis CVT, jeśli występuje. Brak dokładnej kohorty awarii silnika."
-              },
-              "2.0-valvematic-152": {
-                "status": "excluded_from_active_filter_fitment_unconfirmed",
-                "reason": "Źródła potwierdzają rodzinę silnika, ale nie docelowy rynek, nadwozie i lata 2017–2018. Usunięto z aktywnego filtra; wymaga nowego dowodu przed przywróceniem."
-              }
-            },
-            "fullRecommendedThresholdMet": false
-          },
-          "requirements": {
-            "version": 1,
-            "purchase": {
-              "maxPriceGrossPln": 55000,
-              "scope": "purchase_only",
-              "priceExceptions": [
-                {
-                  "rule": "slightly_above_limit_only_for_exceptional_offer",
-                  "amountPln": null,
-                  "userMustConfirm": true
-                }
-              ],
-              "auctionsAllowed": false
-            },
-            "listingEvidence": {
-              "requiredFields": [],
-              "preferredFields": [
-                "vin",
-                "firstRegistrationDate"
-              ],
-              "missingPreferredFieldHandling": "mark_missing_and_consider_as_information_gap; do_not_automatically_exclude",
-              "registrationNumber": "record_presence_only; may be visible in listing photos; do not spend effort extracting from images or use as a strong ranking factor",
-              "independentInspectionRefusal": "exclude_only_if_listing_explicitly_states_inspection_is_not_allowed"
-            },
-            "sellerTypes": "any_non_auction_seller_if_price_conditions_fit",
-            "sellerClassification": {
-              "field": "offerType",
-              "values": [
-                "private",
-                "company",
-                "leasing_return",
-                "unknown"
-              ],
-              "unknownHandling": "mark_unknown; do_not_infer_from_platform_or_ad_style"
-            },
-            "priceAssessment": {
-              "baseLimitGrossPln": 55000,
-              "slightExceptionalOverageAllowed": true,
-              "import": "include material mandatory import costs; minor costs may be noted but ignored in initial screening"
-            },
-            "familyEquipment": {
-              "isofix": "important; if not stated, verify whether standard for exact model/year/market/trim; otherwise mark unknown"
-            },
-            "yearMin": 2017,
-            "mileage": {
-              "preferredMaxKm": 170000,
-              "hardMaxKm": 170000,
-              "assessment": "hard_maximum; exclude offers above 170000 km"
-            },
-            "transmissions": [
-              "manual",
-              "automatic"
-            ],
-            "camera": {
-              "required": true,
-              "preferred": true,
-              "requiredAtDelivery": false,
-              "mustMarkIfAbsent": true,
-              "retrofitAllowed": true,
-              "retrofitCompatibilityMustBeConfirmed": true
-            },
-            "frontParkingSensors": "preferred",
-            "structuralDamageAllowed": false,
-            "cosmeticRepairsAllowed": true,
-            "location": "PL",
-            "origins": [
-              "domestic",
-              "import"
-            ],
-            "bodyScope": [
-              "wagon",
-              "sedan",
-              "suv",
-              "crossover",
-              "hatchback",
-              "minivan"
-            ],
-            "modelScope": "active_models_in_search-models.json_only",
-            "engineScope": "listed_variants_only",
-            "fuelScope": "all_fuels; LPG allowed and must be marked with installation documents checked",
-            "transmissionPreference": "none; manual and automatic are equally acceptable",
-            "use": {
-              "adults": 2,
-              "children": 1,
-              "cityShare": 0.5,
-              "strollerAndLuggageRequired": true,
-              "annualMileageKm": {
-                "min": 12000,
-                "max": 15000
-              },
-              "typicalCityTripMinutes": 30
-            },
-            "rankingPriorities": [
-              "technical_condition",
-              "documented_service",
-              "engine_durability",
-              "equipment",
-              "value"
-            ],
-            "unknownHardRequirement": "check",
-            "openQuestions": {
-              "typicalCityTripKm": null,
-              "strollerDimensionsCm": null,
-              "cameraRequiredAtDelivery": null,
-              "fuelScopeBeyondSelectedEngines": "all fuels confirmed; engine variants remain restricted to configured list"
-            },
-            "confirmedByUser": [
-              "engineScope",
-              "lpg",
-              "modelScope",
-              "purchase.auctionsAllowed",
-              "purchase.maxPriceGrossPln",
-              "purchase.scope",
-              "transmissionPreference",
-              "use.annualMileageKm",
-              "use.typicalCityTripMinutes"
-            ],
-            "notes": [
-              "Wybrane silniki przeniesiono z dotychczasowych danych; nie oznacza to zakazu innych paliw ustalonego przez użytkownika.",
-              "Użytkownik podał czas jazdy miejskiej około 30 minut, nie odległość. Nie przeliczać automatycznie na kilometry.",
-              "Skrzynia manualna i automatyczna są równie akceptowalne; przed zakupem skrzynię ocenić dla konkretnego wariantu.",
-              "Katalog modeli i silników obejmuje wyłącznie aktualną listę użytkownika. Status wyboru nie jest rekomendacją niezawodności."
-            ],
-            "lpg": {
-              "allowed": true,
-              "mustBeMarked": true,
-              "installationDocumentsMustBeChecked": true
-            }
-          }
-        },
-        {
-          "key": "mazda-6-iii-wagon",
-          "name": "Mazda 6 III Wagon",
-          "description": "Kombi (Wagon)",
-          "brand": "Mazda",
-          "model": "6",
-          "generation": "III",
-          "bodies": [
-            "wagon"
-          ],
-          "searchYears": {
-            "min": 2017,
-            "max": 2020
-          },
-          "allowedEngineVariants": [
-            "2.0-skyactiv-g-145",
-            "2.0-skyactiv-g-165"
-          ],
-          "active": true,
-          "priority": 2,
-          "offersFile": "offers/mazda-6-iii-wagon.json",
-          "knowledgeFile": "knowledge/models/mazda-6-iii-wagon.json",
-          "legacyEngineSelection": "2.0 Skyactiv-G 145 KM; 2.0 Skyactiv-G 165 KM",
-          "selectionStatus": "engine_reviewed_with_conditions",
-          "productionYears": null,
-          "notes": [
-            "Roczniki 2017–2020; preferowane 2017–2018. Warianty są wyborem użytkownika, nie werdyktem o trwałości.",
-            "Lista silników i roczniki odzwierciedlają aktualne założenia użytkownika; nie oznaczają rekomendacji trwałości."
-          ],
-          "variantConstraints": [],
-          "engineReview": {
-            "method": "docs/metoda-oceny-silnikow.md",
-            "report": "reports/analiza-silnikow-batch-c-2026-11-08.md",
-            "reviewedAt": "2026-11-08",
-            "variants": {
-              "2.0-skyactiv-g-145": {
-                "status": "conditional_recommendation",
-                "reason": "Wolnossący wariant z ograniczonym zapasem mocy w obciążonym kombi; brak danych awarii dokładnego kodu i kosztów."
-              },
-              "2.0-skyactiv-g-165": {
-                "status": "conditional_recommendation",
-                "reason": "Większy zapas mocy, bez dowodu na wyższą trwałość; potwierdzić rynek, kod i skrzynię po VIN."
-              }
-            },
-            "fullRecommendedThresholdMet": false
-          },
-          "requirements": {
-            "version": 1,
-            "purchase": {
-              "maxPriceGrossPln": 55000,
-              "scope": "purchase_only",
-              "priceExceptions": [
-                {
-                  "rule": "slightly_above_limit_only_for_exceptional_offer",
-                  "amountPln": null,
-                  "userMustConfirm": true
-                }
-              ],
-              "auctionsAllowed": false
-            },
-            "listingEvidence": {
-              "requiredFields": [],
-              "preferredFields": [
-                "vin",
-                "firstRegistrationDate"
-              ],
-              "missingPreferredFieldHandling": "mark_missing_and_consider_as_information_gap; do_not_automatically_exclude",
-              "registrationNumber": "record_presence_only; may be visible in listing photos; do not spend effort extracting from images or use as a strong ranking factor",
-              "independentInspectionRefusal": "exclude_only_if_listing_explicitly_states_inspection_is_not_allowed"
-            },
-            "sellerTypes": "any_non_auction_seller_if_price_conditions_fit",
-            "sellerClassification": {
-              "field": "offerType",
-              "values": [
-                "private",
-                "company",
-                "leasing_return",
-                "unknown"
-              ],
-              "unknownHandling": "mark_unknown; do_not_infer_from_platform_or_ad_style"
-            },
-            "priceAssessment": {
-              "baseLimitGrossPln": 55000,
-              "slightExceptionalOverageAllowed": true,
-              "import": "include material mandatory import costs; minor costs may be noted but ignored in initial screening"
-            },
-            "familyEquipment": {
-              "isofix": "important; if not stated, verify whether standard for exact model/year/market/trim; otherwise mark unknown"
-            },
-            "yearMin": 2017,
-            "mileage": {
-              "preferredMaxKm": 170000,
-              "hardMaxKm": 170000,
-              "assessment": "hard_maximum; exclude offers above 170000 km"
-            },
-            "transmissions": [
-              "manual",
-              "automatic"
-            ],
-            "camera": {
-              "required": true,
-              "preferred": true,
-              "requiredAtDelivery": false,
-              "mustMarkIfAbsent": true,
-              "retrofitAllowed": true,
-              "retrofitCompatibilityMustBeConfirmed": true
-            },
-            "frontParkingSensors": "preferred",
-            "structuralDamageAllowed": false,
-            "cosmeticRepairsAllowed": true,
-            "location": "PL",
-            "origins": [
-              "domestic",
-              "import"
-            ],
-            "bodyScope": [
-              "wagon",
-              "sedan",
-              "suv",
-              "crossover",
-              "hatchback",
-              "minivan"
-            ],
-            "modelScope": "active_models_in_search-models.json_only",
-            "engineScope": "listed_variants_only",
-            "fuelScope": "all_fuels; LPG allowed and must be marked with installation documents checked",
-            "transmissionPreference": "none; manual and automatic are equally acceptable",
-            "use": {
-              "adults": 2,
-              "children": 1,
-              "cityShare": 0.5,
-              "strollerAndLuggageRequired": true,
-              "annualMileageKm": {
-                "min": 12000,
-                "max": 15000
-              },
-              "typicalCityTripMinutes": 30
-            },
-            "rankingPriorities": [
-              "technical_condition",
-              "documented_service",
-              "engine_durability",
-              "equipment",
-              "value"
-            ],
-            "unknownHardRequirement": "check",
-            "openQuestions": {
-              "typicalCityTripKm": null,
-              "strollerDimensionsCm": null,
-              "cameraRequiredAtDelivery": null,
-              "fuelScopeBeyondSelectedEngines": "all fuels confirmed; engine variants remain restricted to configured list"
-            },
-            "confirmedByUser": [
-              "engineScope",
-              "lpg",
-              "modelScope",
-              "purchase.auctionsAllowed",
-              "purchase.maxPriceGrossPln",
-              "purchase.scope",
-              "transmissionPreference",
-              "use.annualMileageKm",
-              "use.typicalCityTripMinutes"
-            ],
-            "notes": [
-              "Wybrane silniki przeniesiono z dotychczasowych danych; nie oznacza to zakazu innych paliw ustalonego przez użytkownika.",
-              "Użytkownik podał czas jazdy miejskiej około 30 minut, nie odległość. Nie przeliczać automatycznie na kilometry.",
-              "Skrzynia manualna i automatyczna są równie akceptowalne; przed zakupem skrzynię ocenić dla konkretnego wariantu.",
-              "Katalog modeli i silników obejmuje wyłącznie aktualną listę użytkownika. Status wyboru nie jest rekomendacją niezawodności."
-            ],
-            "lpg": {
-              "allowed": true,
-              "mustBeMarked": true,
-              "installationDocumentsMustBeChecked": true
-            }
-          }
+          "selectionStatus": "user_selected_current_list"
         }
       ]
     },
@@ -3359,123 +3448,6 @@
   },
   "assessments": [
     {
-      "id": "vin:TMAH251CANJ114334",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 50700,
-        "priceBasis": null,
-        "year": 2022,
-        "bodyCode": "wagon",
-        "engineVariant": "1.5-dpi-110",
-        "transmissionCode": "manual",
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 121245,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:autoplac:7145-2764-EG",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 48700,
-        "priceBasis": null,
-        "year": 2022,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 129383,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:autoplac:1492-6499-YL",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 45900,
-        "priceBasis": null,
-        "year": 2021,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 123000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:autoplac:0060-7009-GM",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 47900,
-        "priceBasis": null,
-        "year": 2022,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 150764,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
       "id": "listing:autoplac:1047-6014-UA",
       "modelKey": "hyundai-i30-iii-wagon",
       "verdict": "check",
@@ -3554,144 +3526,6 @@
       }
     },
     {
-      "id": "listing:autoplac:9862-7198-CV",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "engine_review_requires_verification",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 46500,
-        "priceBasis": "gross_total",
-        "year": 2018,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-mpi-100",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 103750,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:autoplac:9572-3905-EU",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "engine_review_requires_verification",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 38900,
-        "priceBasis": "gross_total",
-        "year": 2019,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-mpi-100",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 162700,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:sprzedajemy:70513445",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "engine_review_requires_verification",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 38900,
-        "priceBasis": "gross_total",
-        "year": 2018,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-mpi-100",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 88769,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:aaaauto:34935780",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 47500,
-        "priceBasis": null,
-        "year": 2022,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 108068,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "vin:TMAH281CANJ114421",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 46000,
-        "priceBasis": null,
-        "year": 2022,
-        "bodyCode": "wagon",
-        "engineVariant": "1.5-dpi-110",
-        "transmissionCode": "manual",
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 112009,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
       "id": "vin:TMAH3813GLJ064598",
       "modelKey": "hyundai-i30-iii-wagon",
       "verdict": "check",
@@ -3713,168 +3547,6 @@
         "cameraStatus": null,
         "structuralDamageStatus": null,
         "mileage": 112100,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:olx:1101349711",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 53500,
-        "priceBasis": "unknown",
-        "year": 2020,
-        "bodyCode": "wagon",
-        "engineVariant": "1.5-dpi-110",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 43000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:automarket:308024",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 53849.4,
-        "priceBasis": "gross_total",
-        "year": 2022,
-        "bodyCode": "wagon",
-        "engineVariant": "1.5-dpi-110",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 119871,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:olx:1101065415",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "engine_review_requires_verification",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 22999,
-        "priceBasis": "unknown",
-        "year": 2018,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-mpi-100",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 162000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:olx:1094170529",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 42998,
-        "priceBasis": "unknown",
-        "year": 2022,
-        "bodyCode": "wagon",
-        "engineVariant": "1.5-dpi-110",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 160199,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:olx:1109370005",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "engine_review_requires_verification",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 41900,
-        "priceBasis": "gross_total",
-        "year": 2019,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-mpi-100",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 121223,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "vin:TMAH281CANJ118698",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 47999,
-        "priceBasis": null,
-        "year": 2022,
-        "bodyCode": "wagon",
-        "engineVariant": "1.5-dpi-110",
-        "transmissionCode": "manual",
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 63000,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null
@@ -3959,66 +3631,6 @@
       }
     },
     {
-      "id": "listing:otomoto:ID6IiF0O",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 49900,
-        "priceBasis": null,
-        "year": 2022,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 151456,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:otomoto:ID6IhGRc",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 42900,
-        "priceBasis": null,
-        "year": 2021,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 156000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
       "id": "listing:otomoto:ID6IegxD",
       "modelKey": "hyundai-i30-iii-wagon",
       "verdict": "check",
@@ -4039,36 +3651,6 @@
         "cameraStatus": null,
         "structuralDamageStatus": null,
         "mileage": 99000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:otomoto:ID6IiExw",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 43000,
-        "priceBasis": null,
-        "year": 2021,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 165119,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null
@@ -4180,115 +3762,6 @@
       }
     },
     {
-      "id": "listing:olx:1093397917",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "engine_review_requires_verification",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 43900,
-        "priceBasis": "unknown",
-        "year": 2018,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-mpi-100",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 114000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:autopunkt:AAU05643IE",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 49900,
-        "priceBasis": "gross_total",
-        "year": 2022,
-        "bodyCode": "wagon",
-        "engineVariant": "1.5-dpi-110",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 146312,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:otomoto:ID6Iifp5",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "engine_review_requires_verification",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [
-        "LPG: potwierdzić dokumenty instalacji, homologację zbiornika i serwis"
-      ],
-      "input": {
-        "price": 39200,
-        "priceBasis": "gross_total",
-        "year": 2018,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-mpi-100",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 138000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": true
-      }
-    },
-    {
-      "id": "listing:olx:ID1cYUz2",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 46900,
-        "priceBasis": "gross_total",
-        "year": 2021,
-        "bodyCode": "wagon",
-        "engineVariant": "1.5-dpi-110",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 128436,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
       "id": "listing:olx:1108714676",
       "modelKey": "hyundai-i30-iii-wagon",
       "verdict": "check",
@@ -4314,85 +3787,7 @@
       }
     },
     {
-      "id": "listing:olx:1110669737",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 48900,
-        "priceBasis": "gross_total",
-        "year": 2021,
-        "bodyCode": "wagon",
-        "engineVariant": "1.5-dpi-110",
-        "transmissionCode": "manual",
-        "cameraStatus": "installed_confirmed",
-        "structuralDamageStatus": "unknown",
-        "mileage": 156574,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:olx:1106021585",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "engine_review_requires_verification",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 35000,
-        "priceBasis": "gross_total",
-        "year": 2018,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-mpi-100",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 142125,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:hyundai-korea-motors:KAU0197IE",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 53900,
-        "priceBasis": "gross_total",
-        "year": 2022,
-        "bodyCode": "wagon",
-        "engineVariant": "1.5-dpi-110",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 128390,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:aaaauto:34920519",
+      "id": "listing:sprzedajemy:74082767",
       "modelKey": "hyundai-i30-iii-wagon",
       "verdict": "check",
       "failures": [],
@@ -4404,120 +3799,15 @@
       ],
       "preferenceNotes": [],
       "input": {
-        "price": 45000,
+        "price": 44999,
         "priceBasis": "gross_total",
         "year": 2018,
         "bodyCode": "wagon",
         "engineVariant": null,
         "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
         "mileage": 96102,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:olx:1093230472",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "engine_review_requires_verification",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 43500,
-        "priceBasis": "gross_total",
-        "year": 2018,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-mpi-100",
-        "transmissionCode": "manual",
-        "cameraStatus": "installed_confirmed",
-        "structuralDamageStatus": "unknown",
-        "mileage": 78140,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:autoplac:1416-7933-KJ",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "engine_review_requires_verification",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 42890,
-        "priceBasis": "gross_total",
-        "year": 2019,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-mpi-100",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 142329,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:autoplac:0154-6914-CJ",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "engine_review_requires_verification",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 46100,
-        "priceBasis": "gross_total",
-        "year": 2019,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-mpi-100",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 109000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:sprzedajemy:73931017",
-      "modelKey": "hyundai-i30-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 46900,
-        "priceBasis": "gross_total",
-        "year": 2022,
-        "bodyCode": "wagon",
-        "engineVariant": "1.5-dpi-110",
-        "transmissionCode": "manual",
-        "cameraStatus": "installed_confirmed",
-        "structuralDamageStatus": "unknown",
-        "mileage": 150764,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null
@@ -5022,32 +4312,6 @@
       }
     },
     {
-      "id": "listing:olx:1105370309",
-      "modelKey": "kia-ceed-iii-sw",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 42700,
-        "priceBasis": "gross_total",
-        "year": 2019,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-mpi-100",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 169000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
       "id": "listing:autoplac:4608-7792-GG",
       "modelKey": "kia-ceed-iii-sw",
       "verdict": "check",
@@ -5099,223 +4363,64 @@
       }
     },
     {
-      "id": "listing:autoplac:0658-6373-GX",
-      "modelKey": "seat-leon-iii-st",
-      "verdict": "fail",
-      "failures": [
-        "year_outside_selection"
-      ],
-      "unknowns": [
-        "gross_purchase_price",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 53900,
-        "priceBasis": null,
-        "year": 2017,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-tsi-ea211-125",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 106000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:autoplac:4152-2962-XH",
-      "modelKey": "seat-leon-iii-st",
-      "verdict": "fail",
-      "failures": [
-        "year_outside_selection"
-      ],
-      "unknowns": [
-        "gross_purchase_price",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 53900,
-        "priceBasis": null,
-        "year": 2017,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-tsi-ea211-125",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 127186,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:autoplac:7840-5141-TW",
-      "modelKey": "seat-leon-iii-st",
+      "id": "listing:sprzedajemy:73093821",
+      "modelKey": "kia-ceed-iii-sw",
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "body",
+        "exact_engine_variant",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
       ],
       "preferenceNotes": [],
       "input": {
-        "price": 45488,
+        "price": 47000,
         "priceBasis": "gross_total",
-        "year": 2018,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-tsi-ea211-125",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 107460,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:automarket:T133658",
-      "modelKey": "seat-leon-iii-st",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 49999,
-        "priceBasis": "gross_total",
-        "year": 2018,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-tsi-ea211-125",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 128560,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:otomoto:ID6IaKVJ",
-      "modelKey": "seat-leon-iii-st",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 46900,
-        "priceBasis": null,
-        "year": 2018,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-tsi-ea211-125",
+        "year": 2019,
+        "bodyCode": null,
+        "engineVariant": null,
         "transmissionCode": "manual",
         "cameraStatus": null,
         "structuralDamageStatus": null,
-        "mileage": 140000,
+        "mileage": 60000,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null
       }
     },
     {
-      "id": "listing:olx:1110426795",
-      "modelKey": "seat-leon-iii-st",
+      "id": "listing:sprzedajemy:73279125",
+      "modelKey": "kia-ceed-iii-sw",
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_purchase_price",
+        "body",
+        "exact_engine_variant",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
       ],
       "preferenceNotes": [],
       "input": {
-        "price": 50900,
-        "priceBasis": null,
-        "year": 2018,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-tsi-ea211-125",
-        "transmissionCode": "manual",
+        "price": 53000,
+        "priceBasis": "gross_total",
+        "year": 2020,
+        "bodyCode": null,
+        "engineVariant": null,
+        "transmissionCode": "automatic",
         "cameraStatus": null,
         "structuralDamageStatus": null,
-        "mileage": 114700,
+        "mileage": 95000,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null
       }
     },
     {
-      "id": "listing:otomoto:ID6IjmTL",
-      "modelKey": "seat-leon-iii-st",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 50900,
-        "priceBasis": "gross_total",
-        "year": 2018,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-tsi-ea211-125",
-        "transmissionCode": "manual",
-        "cameraStatus": "installed_confirmed",
-        "structuralDamageStatus": "unknown",
-        "mileage": 114700,
-        "familyFitConfirmed": false,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:otomoto:ID6IiMlg",
-      "modelKey": "seat-leon-iii-st",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 49999,
-        "priceBasis": "unknown",
-        "year": 2018,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-tsi-ea211-125",
-        "transmissionCode": "manual",
-        "cameraStatus": "installed_confirmed",
-        "structuralDamageStatus": "unknown",
-        "mileage": 130000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:otomoto:ID6HTzMA",
-      "modelKey": "seat-leon-iii-st",
+      "id": "listing:otomoto:ID6IiHi1",
+      "modelKey": "mazda-6-iii-wagon",
       "verdict": "check",
       "failures": [],
       "unknowns": [
@@ -5327,63 +4432,13 @@
       "input": {
         "price": 53900,
         "priceBasis": "gross_total",
-        "year": 2018,
+        "year": 2017,
         "bodyCode": "wagon",
-        "engineVariant": "1.4-tsi-ea211-125",
+        "engineVariant": "2.0-skyactiv-g-145",
         "transmissionCode": "manual",
         "cameraStatus": "unknown",
         "structuralDamageStatus": "unknown",
-        "mileage": 89287,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:autoplac:7910-1456-SB",
-      "modelKey": "seat-leon-iii-st",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 46999,
-        "priceBasis": "gross_total",
-        "year": 2018,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-tsi-ea211-125",
-        "transmissionCode": "manual",
-        "cameraStatus": "installed_confirmed",
-        "structuralDamageStatus": "unknown",
-        "mileage": 88000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "vin:VSSZZZ5FZJR038225",
-      "modelKey": "seat-leon-iii-st",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 44999,
-        "priceBasis": "gross_total",
-        "year": 2018,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-tsi-ea211-125",
-        "transmissionCode": "manual",
-        "cameraStatus": "installed_confirmed",
-        "structuralDamageStatus": "unknown",
-        "mileage": 88000,
+        "mileage": 165713,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null
@@ -5422,10 +4477,8 @@
     {
       "id": "listing:autoplac:3926-9546-XU",
       "modelKey": "skoda-octavia-iii-combi",
-      "verdict": "fail",
-      "failures": [
-        "year_outside_selection"
-      ],
+      "verdict": "check",
+      "failures": [],
       "unknowns": [
         "gross_purchase_price",
         "engine_review_requires_verification",
@@ -5452,10 +4505,8 @@
     {
       "id": "listing:autoplac:3721-9203-YU",
       "modelKey": "skoda-octavia-iii-combi",
-      "verdict": "fail",
-      "failures": [
-        "year_outside_selection"
-      ],
+      "verdict": "check",
+      "failures": [],
       "unknowns": [
         "gross_purchase_price",
         "engine_review_requires_verification",
@@ -5680,209 +4731,11 @@
       }
     },
     {
-      "id": "vin:TSMJYAA2S00585117",
-      "modelKey": "suzuki-sx4-s-cross",
+      "id": "listing:olx:1104658131",
+      "modelKey": "skoda-superb-iii-combi",
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_purchase_price",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 52700,
-        "priceBasis": null,
-        "year": 2018,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 154000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "vin:TSMJYBA2S00591656",
-      "modelKey": "suzuki-sx4-s-cross",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 52900,
-        "priceBasis": null,
-        "year": 2018,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 98000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:otomoto:6151440653",
-      "modelKey": "suzuki-sx4-s-cross",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 50000,
-        "priceBasis": "unknown",
-        "year": 2019,
-        "bodyCode": "crossover",
-        "engineVariant": "1.4-boosterjet-140",
-        "transmissionCode": "manual",
-        "cameraStatus": "installed_confirmed",
-        "structuralDamageStatus": "unknown",
-        "mileage": 145245,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:olx:1109641355",
-      "modelKey": "suzuki-sx4-s-cross",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 42500,
-        "priceBasis": null,
-        "year": 2018,
-        "bodyCode": "crossover",
-        "engineVariant": "1.4-boosterjet-140",
-        "transmissionCode": "automatic",
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 88700,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:otomoto:6151074992",
-      "modelKey": "suzuki-sx4-s-cross",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 52900,
-        "priceBasis": "gross_total",
-        "year": 2018,
-        "bodyCode": "crossover",
-        "engineVariant": "1.4-boosterjet-140",
-        "transmissionCode": "manual",
-        "cameraStatus": "installed_confirmed",
-        "structuralDamageStatus": "unknown",
-        "mileage": 97058,
-        "familyFitConfirmed": false,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:olx:ID1d2dwf",
-      "modelKey": "suzuki-sx4-s-cross",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 50000,
-        "priceBasis": "unknown",
-        "year": 2019,
-        "bodyCode": "crossover",
-        "engineVariant": "1.4-boosterjet-140",
-        "transmissionCode": "manual",
-        "cameraStatus": "installed_confirmed",
-        "structuralDamageStatus": "unknown",
-        "mileage": 145245,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:autoplac:0082-6911-ZL",
-      "modelKey": "suzuki-vitara-ii",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 49900,
-        "priceBasis": null,
-        "year": 2018,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 168304,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "vin:TSMLYD21S00488412",
-      "modelKey": "suzuki-vitara-ii",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "body",
-        "exact_engine_variant",
-        "transmission",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
@@ -5890,41 +4743,40 @@
       "preferenceNotes": [],
       "input": {
         "price": 49999,
-        "priceBasis": null,
-        "year": 2018,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 160000,
+        "priceBasis": "gross_total",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-tsi-ea211-150",
+        "transmissionCode": "manual",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 163692,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null
       }
     },
     {
-      "id": "listing:autoplac:4983-2601-FU",
-      "modelKey": "suzuki-vitara-ii",
+      "id": "listing:autoplac:5914-3435-CE",
+      "modelKey": "skoda-superb-iii-combi",
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_purchase_price",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
       ],
       "preferenceNotes": [],
       "input": {
-        "price": 38900,
-        "priceBasis": null,
-        "year": 2018,
-        "bodyCode": "suv",
-        "engineVariant": "1.6-vvt-120",
+        "price": 52900,
+        "priceBasis": "gross_total",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-tsi-ea211-150",
         "transmissionCode": "manual",
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 150000,
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 156000,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null
@@ -5953,37 +4805,6 @@
         "mileage": 162000,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:autoplac:8822-4153-ST",
-      "modelKey": "suzuki-vitara-ii",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "body",
-        "exact_engine_variant",
-        "transmission",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit",
-        "purchase_not_auction"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 49800,
-        "priceBasis": null,
-        "year": 2018,
-        "bodyCode": null,
-        "engineVariant": null,
-        "transmissionCode": null,
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 119000,
-        "familyFitConfirmed": null,
-        "saleType": null,
         "lpgInstalled": null
       }
     },
@@ -6065,31 +4886,6 @@
       }
     },
     {
-      "id": "listing:olx:1097096349",
-      "modelKey": "suzuki-vitara-ii",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 53999,
-        "priceBasis": "gross_total",
-        "year": 2018,
-        "bodyCode": "suv",
-        "engineVariant": "1.6-vvt-120",
-        "transmissionCode": "manual",
-        "cameraStatus": "installed_confirmed",
-        "structuralDamageStatus": "unknown",
-        "mileage": 163013,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
       "id": "listing:otomoto:ID6IgRmX",
       "modelKey": "suzuki-vitara-ii",
       "verdict": "check",
@@ -6150,32 +4946,6 @@
       }
     },
     {
-      "id": "listing:otomoto:ID6Ii4lC",
-      "modelKey": "suzuki-vitara-ii",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 45000,
-        "priceBasis": "gross_total",
-        "year": 2018,
-        "bodyCode": "suv",
-        "engineVariant": "1.6-vvt-120",
-        "transmissionCode": "automatic",
-        "cameraStatus": null,
-        "structuralDamageStatus": null,
-        "mileage": 133000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
       "id": "listing:olx:1108987997",
       "modelKey": "suzuki-vitara-ii",
       "verdict": "check",
@@ -6196,58 +4966,6 @@
         "cameraStatus": "installed_confirmed",
         "structuralDamageStatus": "unknown",
         "mileage": 141275,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:olx:1106454798",
-      "modelKey": "suzuki-vitara-ii",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 47000,
-        "priceBasis": "unknown",
-        "year": 2018,
-        "bodyCode": "suv",
-        "engineVariant": "1.6-vvt-120",
-        "transmissionCode": "automatic",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 124000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:otomoto:6151248873",
-      "modelKey": "suzuki-vitara-ii",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 53900,
-        "priceBasis": "gross_total",
-        "year": 2018,
-        "bodyCode": "suv",
-        "engineVariant": "1.6-vvt-120",
-        "transmissionCode": "manual",
-        "cameraStatus": "installed_confirmed",
-        "structuralDamageStatus": "unknown",
-        "mileage": 106000,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null
@@ -6281,27 +4999,32 @@
       }
     },
     {
-      "id": "listing:sprzedajemy:74036683",
+      "id": "url:https://autoplac.pl/oferta/suzuki/vitara/ii-1-6-2017r-suzuki-vitara-4x2-comfort-5110-2513-JB",
       "modelKey": "suzuki-vitara-ii",
       "verdict": "check",
       "failures": [],
       "unknowns": [
+        "gross_purchase_price",
+        "production_year",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
         "structural_history",
-        "stroller_and_family_fit"
+        "stroller_and_family_fit",
+        "purchase_not_auction"
       ],
       "preferenceNotes": [],
       "input": {
-        "price": 54900,
-        "priceBasis": "gross_total",
-        "year": 2018,
+        "price": 51900,
+        "priceBasis": "unknown",
+        "year": null,
         "bodyCode": "suv",
-        "engineVariant": "1.6-vvt-120",
+        "engineVariant": null,
         "transmissionCode": "manual",
-        "cameraStatus": "installed_confirmed",
-        "structuralDamageStatus": "unknown",
-        "mileage": 126599,
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 158181,
         "familyFitConfirmed": null,
-        "saleType": "fixed_price",
+        "saleType": null,
         "lpgInstalled": null
       }
     },
@@ -6497,6 +5220,114 @@
       }
     },
     {
+      "id": "vin:SB1ZE3JE50E120663",
+      "modelKey": "toyota-auris-touring-sports",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "production_year",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 48900,
+        "priceBasis": "unknown",
+        "year": null,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 62839,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:sprzedajemy:72662136",
+      "modelKey": "toyota-auris-touring-sports",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "body",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 53900,
+        "priceBasis": "gross_total",
+        "year": 2018,
+        "bodyCode": null,
+        "engineVariant": "1.8-hybrid-136",
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 135000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:otomoto:6147568392",
+      "modelKey": "toyota-avensis-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 48000,
+        "priceBasis": "gross_total",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": "1.8-valvematic-147",
+        "transmissionCode": "automatic",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 159648,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "listing:autoplac:4793-2321-NK",
+      "modelKey": "toyota-avensis-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 53900,
+        "priceBasis": "gross_total",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": "1.8-valvematic-147",
+        "transmissionCode": "automatic",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 163000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
       "id": "listing:olx:1094330256",
       "modelKey": "toyota-corolla-e210",
       "verdict": "check",
@@ -6582,672 +5413,54 @@
       }
     },
     {
-      "id": "vin:TMBER6NW1N3065943",
-      "modelKey": "skoda-scala",
+      "id": "listing:sprzedajemy:74142114",
+      "modelKey": "toyota-corolla-e210",
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_purchase_price",
-        "engine_review_requires_verification",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
       ],
       "preferenceNotes": [],
       "input": {
-        "price": 48000,
-        "priceBasis": null,
-        "year": 2022,
-        "bodyCode": "hatchback",
-        "engineVariant": "1.0-tsi-110",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 142412,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:autoplac:3607-8813-VK",
-      "modelKey": "skoda-scala",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "engine_review_requires_verification",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 45900,
-        "priceBasis": null,
-        "year": 2021,
-        "bodyCode": "hatchback",
-        "engineVariant": "1.0-tsi-110",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 118000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:autoplac:9465-3557-JC",
-      "modelKey": "skoda-scala",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "engine_review_requires_verification",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 53700,
+        "price": 53658,
         "priceBasis": "gross_total",
         "year": 2021,
-        "bodyCode": "hatchback",
-        "engineVariant": "1.0-tsi-110",
+        "bodyCode": "wagon",
+        "engineVariant": "1.8-hybrid-122",
         "transmissionCode": "automatic",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 80000,
-        "familyFitConfirmed": false,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:autoplac:5233-7770-QF",
-      "modelKey": "skoda-scala",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "engine_review_requires_verification",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 53900,
-        "priceBasis": "gross_total",
-        "year": 2022,
-        "bodyCode": "hatchback",
-        "engineVariant": "1.0-tsi-110",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 55300,
-        "familyFitConfirmed": false,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "vin:TMBER6NW5N3041760",
-      "modelKey": "skoda-scala",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "engine_review_requires_verification",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 42500,
-        "priceBasis": null,
-        "year": 2021,
-        "bodyCode": "hatchback",
-        "engineVariant": "1.0-tsi-110",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 166876,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:automarket:T144062",
-      "modelKey": "skoda-scala",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "engine_review_requires_verification",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 52900,
-        "priceBasis": "gross_total",
-        "year": 2022,
-        "bodyCode": "hatchback",
-        "engineVariant": "1.0-tsi-110",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 112410,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:olx:1095446746",
-      "modelKey": "skoda-scala",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "engine_review_requires_verification",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 44998,
-        "priceBasis": null,
-        "year": 2021,
-        "bodyCode": "hatchback",
-        "engineVariant": "1.0-tsi-110",
-        "transmissionCode": "manual",
         "cameraStatus": null,
         "structuralDamageStatus": null,
-        "mileage": 149327,
+        "mileage": 159000,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null
       }
     },
     {
-      "id": "vin:TMBER6NW9M3160605",
-      "modelKey": "skoda-scala",
+      "id": "listing:sprzedajemy:72902184",
+      "modelKey": "toyota-corolla-e210",
       "verdict": "check",
       "failures": [],
       "unknowns": [
-        "gross_purchase_price",
-        "engine_review_requires_verification",
+        "body",
+        "exact_engine_variant",
         "camera_or_compatible_retrofit",
         "structural_history",
         "stroller_and_family_fit"
       ],
       "preferenceNotes": [],
       "input": {
-        "price": 47900,
-        "priceBasis": null,
-        "year": 2021,
-        "bodyCode": "hatchback",
-        "engineVariant": "1.0-tsi-110",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 109243,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:olx:ID1cVId5",
-      "modelKey": "skoda-scala",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 47500,
+        "price": 36900,
         "priceBasis": "gross_total",
         "year": 2020,
-        "bodyCode": "hatchback",
-        "engineVariant": "1.0-tsi-115",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 94000,
-        "familyFitConfirmed": false,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:olx:ID1bRO4I",
-      "modelKey": "skoda-scala",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 54200,
-        "priceBasis": "gross_total",
-        "year": 2020,
-        "bodyCode": "hatchback",
-        "engineVariant": "1.0-tsi-115",
+        "bodyCode": null,
+        "engineVariant": null,
         "transmissionCode": "automatic",
-        "cameraStatus": "installed_confirmed",
-        "structuralDamageStatus": "unknown",
-        "mileage": 94500,
-        "familyFitConfirmed": false,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:olx:ID1c2g9b",
-      "modelKey": "skoda-scala",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "engine_review_requires_verification",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 51900,
-        "priceBasis": "unknown",
-        "year": 2022,
-        "bodyCode": "hatchback",
-        "engineVariant": "1.0-tsi-110",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 98600,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:otomoto:6151517602",
-      "modelKey": "skoda-scala",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 37999,
-        "priceBasis": "unknown",
-        "year": 2020,
-        "bodyCode": "hatchback",
-        "engineVariant": "1.0-tsi-115",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 115556,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:olx:1087332559",
-      "modelKey": "skoda-scala",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "engine_review_requires_verification",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 55000,
-        "priceBasis": null,
-        "year": 2023,
-        "bodyCode": "hatchback",
-        "engineVariant": "1.0-tsi-110",
-        "transmissionCode": "manual",
         "cameraStatus": null,
         "structuralDamageStatus": null,
-        "mileage": 116248,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:autopunkt:AAU06403IE",
-      "modelKey": "skoda-scala",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "gross_purchase_price",
-        "engine_review_requires_verification",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 54900,
-        "priceBasis": null,
-        "year": 2022,
-        "bodyCode": "hatchback",
-        "engineVariant": "1.0-tsi-110",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 103050,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:otomoto:ID6Ii5Ca",
-      "modelKey": "skoda-scala",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 54900,
-        "priceBasis": "gross_total",
-        "year": 2020,
-        "bodyCode": "hatchback",
-        "engineVariant": "1.0-tsi-115",
-        "transmissionCode": "automatic",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 122750,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:otomoto:6151477180",
-      "modelKey": "skoda-scala",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "engine_review_requires_verification",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 54300,
-        "priceBasis": "gross_total",
-        "year": 2022,
-        "bodyCode": "hatchback",
-        "engineVariant": "1.0-tsi-110",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 100600,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:aaaauto:34835133",
-      "modelKey": "skoda-scala",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "engine_review_requires_verification",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 54000,
-        "priceBasis": "gross_total",
-        "year": 2021,
-        "bodyCode": "hatchback",
-        "engineVariant": "1.0-tsi-110",
-        "transmissionCode": "manual",
-        "cameraStatus": "installed_confirmed",
-        "structuralDamageStatus": "unknown",
-        "mileage": 82704,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:aaaauto:34850164",
-      "modelKey": "skoda-scala",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "engine_review_requires_verification",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 50000,
-        "priceBasis": "gross_total",
-        "year": 2023,
-        "bodyCode": "hatchback",
-        "engineVariant": "1.0-tsi-110",
-        "transmissionCode": "automatic",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 138632,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:autoplac:7356-2035-YD",
-      "modelKey": "skoda-scala",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "engine_review_requires_verification",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 53900,
-        "priceBasis": "gross_total",
-        "year": 2022,
-        "bodyCode": "hatchback",
-        "engineVariant": "1.0-tsi-110",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 123440,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:automarket:T165779",
-      "modelKey": "skoda-scala",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "engine_review_requires_verification",
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 54000,
-        "priceBasis": "gross_total",
-        "year": 2021,
-        "bodyCode": "hatchback",
-        "engineVariant": "1.0-tsi-110",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 82704,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": false
-      }
-    },
-    {
-      "id": "listing:olx:1104658131",
-      "modelKey": "skoda-superb-iii-combi",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 49999,
-        "priceBasis": "gross_total",
-        "year": 2017,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-tsi-ea211-150",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 163692,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:autoplac:5914-3435-CE",
-      "modelKey": "skoda-superb-iii-combi",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 52900,
-        "priceBasis": "gross_total",
-        "year": 2017,
-        "bodyCode": "wagon",
-        "engineVariant": "1.4-tsi-ea211-150",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 156000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:otomoto:6147568392",
-      "modelKey": "toyota-avensis-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 48000,
-        "priceBasis": "gross_total",
-        "year": 2017,
-        "bodyCode": "wagon",
-        "engineVariant": "1.8-valvematic-147",
-        "transmissionCode": "automatic",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 159648,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:autoplac:4793-2321-NK",
-      "modelKey": "toyota-avensis-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 53900,
-        "priceBasis": "gross_total",
-        "year": 2017,
-        "bodyCode": "wagon",
-        "engineVariant": "1.8-valvematic-147",
-        "transmissionCode": "automatic",
-        "cameraStatus": "installed_confirmed",
-        "structuralDamageStatus": "unknown",
-        "mileage": 163000,
-        "familyFitConfirmed": null,
-        "saleType": "fixed_price",
-        "lpgInstalled": null
-      }
-    },
-    {
-      "id": "listing:otomoto:ID6IiHi1",
-      "modelKey": "mazda-6-iii-wagon",
-      "verdict": "check",
-      "failures": [],
-      "unknowns": [
-        "camera_or_compatible_retrofit",
-        "structural_history",
-        "stroller_and_family_fit"
-      ],
-      "preferenceNotes": [],
-      "input": {
-        "price": 53900,
-        "priceBasis": "gross_total",
-        "year": 2017,
-        "bodyCode": "wagon",
-        "engineVariant": "2.0-skyactiv-g-145",
-        "transmissionCode": "manual",
-        "cameraStatus": "unknown",
-        "structuralDamageStatus": "unknown",
-        "mileage": 165713,
+        "mileage": 450,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null

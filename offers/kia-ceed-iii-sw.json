@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-12",
+  "updatedAt": "2026-11-13",
   "model": {
     "key": "kia-ceed-iii-sw",
     "name": "Kia Ceed III Sportswagon",
-    "description": "Kombi (SW)",
-    "requirements": "Kia Ceed III Sportswagon; 1.4 MPI 100 KM; 1.4 T-GDI 140 KM; rodzina: 2 dorosłych i 1 dziecko; wymagane miejsce na wózek i bagaż; rocznik od 2019 do 2021; maks. 55 000 zł brutto według ceny podanej w ogłoszeniu; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 170 000 km preferowany; kamera wymagana  obecna lub z potwierdzoną możliwością montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji."
+    "description": "Kombi",
+    "requirements": "Kia Ceed III Sportswagon; 1.4 T-GDI 140 KM; 1.5 T-GDI 160 KM; rodzina: 2 dorosłych i 1 dziecko; wymagane miejsce na wózek i bagaż; rocznik od 2018; maks. 55 000 zł brutto według ceny podanej w ogłoszeniu; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 170 000 km preferowany; kamera wymagana  obecna lub z potwierdzoną możliwością montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji."
   },
   "offers": [
     {
@@ -6467,267 +6467,6 @@
       "verdictNote": "gross_unconditional_purchase_price; structural_history; stroller_and_family_fit"
     },
     {
-      "id": "listing:olx:1105370309",
-      "modelKey": "kia-ceed-iii-sw",
-      "title": "Kia Ceed III SW 1.4 MPI 100 KM — 2019, manual",
-      "urls": [
-        {
-          "url": "https://www.olx.pl/d/oferta/kia-ceed-1-4-100-km-super-stan-bogata-wersja-opony-wielosezonowe-niezawodna-CID5-ID1cO1jn.html"
-        }
-      ],
-      "listingIds": [
-        "olx:1105370309"
-      ],
-      "year": 2019,
-      "price": 42700,
-      "priceBasis": "gross_total",
-      "mileage": 169000,
-      "engine": "1.4 MPI, benzyna, 100 KM",
-      "engineVariant": "1.4-mpi-100",
-      "body": "Kombi / SW",
-      "bodyCode": "wagon",
-      "transmission": "Manualna",
-      "transmissionCode": "manual",
-      "saleType": "fixed_price",
-      "offerType": "company",
-      "cameraStatus": "unknown",
-      "structuralDamageStatus": "unknown",
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Łódź",
-        "voivodeship": "Łódzkie"
-      },
-      "lpgInstalled": null,
-      "firstSeenAt": "2026-11-11T17:05:23Z",
-      "listingStates": [
-        {
-          "url": "https://www.olx.pl/d/oferta/kia-ceed-1-4-100-km-super-stan-bogata-wersja-opony-wielosezonowe-niezawodna-CID5-ID1cO1jn.html",
-          "status": "available",
-          "lastAttemptAt": "2026-11-12T15:48:22.052Z",
-          "lastCheckedAt": "2026-11-11T17:05:23Z",
-          "lastVerifiedAt": "2026-11-11T17:05:23Z",
-          "lastObservation": {
-            "url": "https://www.olx.pl/d/oferta/kia-ceed-1-4-100-km-super-stan-bogata-wersja-opony-wielosezonowe-niezawodna-CID5-ID1cO1jn.html",
-            "checkedAt": "2026-11-12T15:48:22.052Z",
-            "availability": "access_error",
-            "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
-            "httpStatus": null
-          }
-        }
-      ],
-      "lastCheckedAt": "2026-11-11T17:05:23Z",
-      "lastVerifiedAt": "2026-11-11T17:05:23Z",
-      "lastAttemptAt": "2026-11-12T15:48:22.052Z",
-      "history": [
-        {
-          "eventId": "632c2d63bcffac72d0b3df8ea9df9c03348aca362c621298c9b951f5d2f3906b",
-          "runId": "20261111-search",
-          "checkedAt": "2026-11-11T17:05:23Z",
-          "url": "https://www.olx.pl/d/oferta/kia-ceed-1-4-100-km-super-stan-bogata-wersja-opony-wielosezonowe-niezawodna-CID5-ID1cO1jn.html",
-          "availability": "available",
-          "note": "Odczytana karta OLX zawiera aktualną ofertę Kia Ceed kombi 1.4 MPI 100 KM z 2019 r., 169 000 km i ceną 42 700 zł; widoczna jest kontrolka kontaktu „Skontaktuj się”. Sprzedawca firmowy deklaruje stan nieuszkodzony i możliwość sprawdzenia auta. Kamera i LPG nie są potwierdzone. Lokalizacja w nagłówku: Łódź Bałuty. Bezpośredni adres zdjęć nie został pobrany po błędzie cache miss CDN.",
-          "httpStatus": null,
-          "photoCheck": null,
-          "evidence": [
-            {
-              "kind": "seller",
-              "fields": [
-                "year",
-                "engine",
-                "body",
-                "transmission",
-                "price",
-                "mileage",
-                "location",
-                "offerType",
-                "saleType",
-                "lpgInstalled",
-                "cameraStatus",
-                "structuralDamageStatus"
-              ],
-              "url": "https://www.olx.pl/d/oferta/kia-ceed-1-4-100-km-super-stan-bogata-wersja-opony-wielosezonowe-niezawodna-CID5-ID1cO1jn.html",
-              "checkedAt": "2026-11-11T17:05:23Z",
-              "note": "Karta OLX podaje Kię Ceed kombi z produkcji 2019, benzynowy 1.4 100 KM, manualną skrzynię, 169 000 km i cenę 42 700 zł do negocjacji; kontakt przez OLX jest dostępny. Lokalizacja wynika z nagłówka ogłoszenia: Łódź Bałuty. Sprzedawca firmowy deklaruje stan nieuszkodzony; jest to deklaracja sprzedawcy, nie niezależna kontrola. Kamera i LPG nie są wymienione. Próba otwarcia zdjęcia CDN zakończyła się błędem cache miss, dlatego zdjęć nie zapisano."
-            }
-          ],
-          "reportedFields": {
-            "id": "listing:olx:1105370309",
-            "modelKey": "kia-ceed-iii-sw",
-            "title": "Kia Ceed III SW 1.4 MPI 100 KM — 2019, manual",
-            "urls": [
-              {
-                "url": "https://www.olx.pl/d/oferta/kia-ceed-1-4-100-km-super-stan-bogata-wersja-opony-wielosezonowe-niezawodna-CID5-ID1cO1jn.html"
-              }
-            ],
-            "listingIds": [
-              "olx:1105370309"
-            ],
-            "year": 2019,
-            "price": 42700,
-            "priceBasis": "gross_total",
-            "mileage": 169000,
-            "engine": "1.4 MPI, benzyna, 100 KM",
-            "engineVariant": "1.4-mpi-100",
-            "body": "Kombi / SW",
-            "bodyCode": "wagon",
-            "transmission": "Manualna",
-            "transmissionCode": "manual",
-            "saleType": "fixed_price",
-            "offerType": "company",
-            "cameraStatus": "unknown",
-            "structuralDamageStatus": "unknown",
-            "familyFitConfirmed": null,
-            "lpgInstalled": null,
-            "location": {
-              "status": "available",
-              "countryCode": "PL",
-              "city": "Łódź",
-              "voivodeship": "Łódzkie"
-            }
-          },
-          "changes": {
-            "id": {
-              "before": null,
-              "after": "listing:olx:1105370309"
-            },
-            "modelKey": {
-              "before": null,
-              "after": "kia-ceed-iii-sw"
-            },
-            "title": {
-              "before": null,
-              "after": "Kia Ceed III SW 1.4 MPI 100 KM — 2019, manual"
-            },
-            "urls": {
-              "before": null,
-              "after": [
-                {
-                  "url": "https://www.olx.pl/d/oferta/kia-ceed-1-4-100-km-super-stan-bogata-wersja-opony-wielosezonowe-niezawodna-CID5-ID1cO1jn.html"
-                }
-              ]
-            },
-            "listingIds": {
-              "before": null,
-              "after": [
-                "olx:1105370309"
-              ]
-            },
-            "year": {
-              "before": null,
-              "after": 2019
-            },
-            "price": {
-              "before": null,
-              "after": 42700
-            },
-            "priceBasis": {
-              "before": null,
-              "after": "gross_total"
-            },
-            "mileage": {
-              "before": null,
-              "after": 169000
-            },
-            "engine": {
-              "before": null,
-              "after": "1.4 MPI, benzyna, 100 KM"
-            },
-            "engineVariant": {
-              "before": null,
-              "after": "1.4-mpi-100"
-            },
-            "body": {
-              "before": null,
-              "after": "Kombi / SW"
-            },
-            "bodyCode": {
-              "before": null,
-              "after": "wagon"
-            },
-            "transmission": {
-              "before": null,
-              "after": "Manualna"
-            },
-            "transmissionCode": {
-              "before": null,
-              "after": "manual"
-            },
-            "saleType": {
-              "before": null,
-              "after": "fixed_price"
-            },
-            "offerType": {
-              "before": null,
-              "after": "company"
-            },
-            "cameraStatus": {
-              "before": null,
-              "after": "unknown"
-            },
-            "structuralDamageStatus": {
-              "before": null,
-              "after": "unknown"
-            },
-            "location": {
-              "before": null,
-              "after": {
-                "status": "available",
-                "countryCode": "PL",
-                "city": "Łódź",
-                "voivodeship": "Łódzkie"
-              }
-            }
-          }
-        },
-        {
-          "eventId": "275893f8624cdedeb561c94bed124a2360d7e927a294f0fca503197d192cccd4",
-          "runId": "dostepnosc-2026-11-12b",
-          "checkedAt": "2026-11-12T14:37:17.215Z",
-          "url": "https://www.olx.pl/d/oferta/kia-ceed-1-4-100-km-super-stan-bogata-wersja-opony-wielosezonowe-niezawodna-CID5-ID1cO1jn.html",
-          "availability": "access_error",
-          "note": "apiRequestContext.get: getaddrinfo ENOTFOUND www.olx.pl",
-          "httpStatus": null,
-          "photoCheck": null,
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:olx:1105370309"
-          },
-          "changes": {}
-        },
-        {
-          "eventId": "2444d63d8a516d6dce09cdca296b9eb715f0035b912eba6a50dac9af20a0cb11",
-          "runId": "dostepnosc-2026-11-12c",
-          "checkedAt": "2026-11-12T15:48:22.052Z",
-          "url": "https://www.olx.pl/d/oferta/kia-ceed-1-4-100-km-super-stan-bogata-wersja-opony-wielosezonowe-niezawodna-CID5-ID1cO1jn.html",
-          "availability": "access_error",
-          "note": "Nie udało się sprawdzić robots.txt (HTTP 403).",
-          "httpStatus": null,
-          "photoCheck": null,
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:olx:1105370309"
-          },
-          "changes": {}
-        }
-      ],
-      "assessment": {
-        "id": "listing:olx:1105370309",
-        "modelKey": "kia-ceed-iii-sw",
-        "verdict": "check",
-        "failures": [],
-        "unknowns": [
-          "camera_or_compatible_retrofit",
-          "structural_history",
-          "stroller_and_family_fit"
-        ],
-        "preferenceNotes": []
-      },
-      "verdict": "check",
-      "verdictTitle": "Do weryfikacji",
-      "verdictNote": "camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
-    },
-    {
       "id": "listing:autoplac:4608-7792-GG",
       "modelKey": "kia-ceed-iii-sw",
       "listingIds": [
@@ -7329,6 +7068,457 @@
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
       "verdictNote": "structural_history; stroller_and_family_fit"
+    },
+    {
+      "id": "listing:sprzedajemy:73093821",
+      "title": "Kia Ceed 2019 | Salon Polska | 1. Właściciel | Gwarancja Bogate Wyposażenie",
+      "urls": [
+        {
+          "url": "https://sprzedajemy.pl/kia-ceed-2019-salon-polska-1-wlasciciel-gwarancja-bogate-wyposazenie-raclawice-4-6bea9f-nr73093821"
+        }
+      ],
+      "listingIds": [
+        "sprzedajemy:73093821"
+      ],
+      "price": 47000,
+      "year": 2019,
+      "priceBasis": "gross_total",
+      "mileage": 60000,
+      "transmissionCode": "manual",
+      "saleType": "fixed_price",
+      "photos": [
+        "https://thumbs.img-sprzedajemy.pl/1000x901c/bd/4e/77/kia-ceed-2019-salon-polska-1-wlasciciel-malopolskie-raclawice-600473647.jpg",
+        "https://thumbs.img-sprzedajemy.pl/1000x901c/3c/9d/7f/kia-ceed-2019-salon-polska-1-wlasciciel-sprzedam-600473648.jpg",
+        "https://thumbs.img-sprzedajemy.pl/1000x901c/d4/f0/a6/kia-ceed-2019-salon-polska-1-wlasciciel-ceed-malopolskie-600728213.jpg"
+      ],
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "city": "Racławice",
+        "voivodeship": "małopolskie"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-13T12:22:49.943Z",
+      "modelKey": "kia-ceed-iii-sw",
+      "listingStates": [
+        {
+          "url": "https://sprzedajemy.pl/kia-ceed-2019-salon-polska-1-wlasciciel-gwarancja-bogate-wyposazenie-raclawice-4-6bea9f-nr73093821",
+          "status": "available",
+          "lastAttemptAt": "2026-11-13T12:22:49.943Z",
+          "lastCheckedAt": "2026-11-13T12:22:49.943Z",
+          "lastVerifiedAt": "2026-11-13T12:22:49.943Z",
+          "lastObservation": {
+            "url": "https://sprzedajemy.pl/kia-ceed-2019-salon-polska-1-wlasciciel-gwarancja-bogate-wyposazenie-raclawice-4-6bea9f-nr73093821",
+            "checkedAt": "2026-11-13T12:22:49.943Z",
+            "availability": "available",
+            "note": "Odczytano kartę z aktywnym kontaktem i pasującym numerem. Warunki ceny i tryb sprzedaży wymagają potwierdzenia.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://sprzedajemy.pl/kia-ceed-2019-salon-polska-1-wlasciciel-gwarancja-bogate-wyposazenie-raclawice-4-6bea9f-nr73093821",
+                "checkedAt": "2026-11-13T12:22:49.943Z",
+                "fields": [
+                  "price",
+                  "priceBasis",
+                  "year",
+                  "mileage",
+                  "transmissionCode",
+                  "saleType",
+                  "location"
+                ],
+                "note": "Dane z karty sprzedawcy."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-13T12:22:49.943Z",
+      "lastVerifiedAt": "2026-11-13T12:22:49.943Z",
+      "lastAttemptAt": "2026-11-13T12:22:49.943Z",
+      "history": [
+        {
+          "eventId": "36e49fed0790de49a61293034373a9da6df8d556f6d639be4d5e0eca747758d7",
+          "runId": "search20261113",
+          "checkedAt": "2026-11-13T12:22:49.943Z",
+          "url": "https://sprzedajemy.pl/kia-ceed-2019-salon-polska-1-wlasciciel-gwarancja-bogate-wyposazenie-raclawice-4-6bea9f-nr73093821",
+          "availability": "available",
+          "note": "Odczytano kartę z aktywnym kontaktem i pasującym numerem. Warunki ceny i tryb sprzedaży wymagają potwierdzenia.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://sprzedajemy.pl/kia-ceed-2019-salon-polska-1-wlasciciel-gwarancja-bogate-wyposazenie-raclawice-4-6bea9f-nr73093821",
+              "checkedAt": "2026-11-13T12:22:49.943Z",
+              "fields": [
+                "price",
+                "priceBasis",
+                "year",
+                "mileage",
+                "transmissionCode",
+                "saleType",
+                "location"
+              ],
+              "note": "Dane z karty sprzedawcy."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:sprzedajemy:73093821",
+            "title": "Kia Ceed 2019 | Salon Polska | 1. Właściciel | Gwarancja Bogate Wyposażenie",
+            "urls": [
+              {
+                "url": "https://sprzedajemy.pl/kia-ceed-2019-salon-polska-1-wlasciciel-gwarancja-bogate-wyposazenie-raclawice-4-6bea9f-nr73093821"
+              }
+            ],
+            "listingIds": [
+              "sprzedajemy:73093821"
+            ],
+            "price": 47000,
+            "year": 2019,
+            "priceBasis": "gross_total",
+            "mileage": 60000,
+            "transmissionCode": "manual",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "photos": [
+              "https://thumbs.img-sprzedajemy.pl/1000x901c/bd/4e/77/kia-ceed-2019-salon-polska-1-wlasciciel-malopolskie-raclawice-600473647.jpg",
+              "https://thumbs.img-sprzedajemy.pl/1000x901c/3c/9d/7f/kia-ceed-2019-salon-polska-1-wlasciciel-sprzedam-600473648.jpg",
+              "https://thumbs.img-sprzedajemy.pl/1000x901c/d4/f0/a6/kia-ceed-2019-salon-polska-1-wlasciciel-ceed-malopolskie-600728213.jpg"
+            ],
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "city": "Racławice",
+              "voivodeship": "małopolskie"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:sprzedajemy:73093821"
+            },
+            "title": {
+              "before": null,
+              "after": "Kia Ceed 2019 | Salon Polska | 1. Właściciel | Gwarancja Bogate Wyposażenie"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://sprzedajemy.pl/kia-ceed-2019-salon-polska-1-wlasciciel-gwarancja-bogate-wyposazenie-raclawice-4-6bea9f-nr73093821"
+                }
+              ]
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "sprzedajemy:73093821"
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 47000
+            },
+            "year": {
+              "before": null,
+              "after": 2019
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "gross_total"
+            },
+            "mileage": {
+              "before": null,
+              "after": 60000
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://thumbs.img-sprzedajemy.pl/1000x901c/bd/4e/77/kia-ceed-2019-salon-polska-1-wlasciciel-malopolskie-raclawice-600473647.jpg",
+                "https://thumbs.img-sprzedajemy.pl/1000x901c/3c/9d/7f/kia-ceed-2019-salon-polska-1-wlasciciel-sprzedam-600473648.jpg",
+                "https://thumbs.img-sprzedajemy.pl/1000x901c/d4/f0/a6/kia-ceed-2019-salon-polska-1-wlasciciel-ceed-malopolskie-600728213.jpg"
+              ]
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "city": "Racławice",
+                "voivodeship": "małopolskie"
+              }
+            },
+            "modelKey": {
+              "before": null,
+              "after": "kia-ceed-iii-sw"
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "listing:sprzedajemy:73093821",
+        "modelKey": "kia-ceed-iii-sw",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "body",
+          "exact_engine_variant",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "body; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
+    },
+    {
+      "id": "listing:sprzedajemy:73279125",
+      "title": "Kia cee'd 1,4 benzyna turbo. Polski salon.",
+      "urls": [
+        {
+          "url": "https://sprzedajemy.pl/kia-ceed-1-4-benzyna-turbo-polski-salon-radomsko-4-6bea9f-nr73279125"
+        }
+      ],
+      "listingIds": [
+        "sprzedajemy:73279125"
+      ],
+      "price": 53000,
+      "year": 2020,
+      "priceBasis": "gross_total",
+      "mileage": 95000,
+      "transmissionCode": "automatic",
+      "saleType": "fixed_price",
+      "photos": [
+        "https://thumbs.img-sprzedajemy.pl/1000x901c/c4/a5/70/kia-ceed-14-benzyna-turbo-polski-salon-radomsko-601696580.jpg",
+        "https://thumbs.img-sprzedajemy.pl/1000x901c/cd/ab/16/kia-ceed-14-benzyna-turbo-polski-salon-radomsko-601696583.jpg",
+        "https://thumbs.img-sprzedajemy.pl/1000x901c/a8/1d/67/kia-ceed-14-benzyna-turbo-polski-salon-lodzkie-radomsko-601696584.jpg",
+        "https://thumbs.img-sprzedajemy.pl/1000x901c/5b/d2/fc/kia-ceed-14-benzyna-turbo-polski-salon-automatyczna-radomsko-601696587.jpg",
+        "https://thumbs.img-sprzedajemy.pl/1000x901c/04/38/a1/kia-ceed-14-benzyna-turbo-polski-salon-kia-lodzkie-radomsko-601696588.jpg",
+        "https://thumbs.img-sprzedajemy.pl/1000x901c/fa/f7/0f/kia-ceed-14-benzyna-turbo-polski-salon-radomsko-sprzedam-601696589.jpg",
+        "https://thumbs.img-sprzedajemy.pl/1000x901c/99/8e/bb/kia-ceed-14-benzyna-turbo-polski-salon-nieuszkodzony-radomsko-601696590.jpg",
+        "https://thumbs.img-sprzedajemy.pl/1000x901c/bb/63/e2/kia-ceed-14-benzyna-turbo-polski-salon-radomsko-601696591.jpg",
+        "https://thumbs.img-sprzedajemy.pl/1000x901c/9a/de/03/kia-ceed-14-benzyna-turbo-polski-salon-radomsko-601696595.jpg",
+        "https://thumbs.img-sprzedajemy.pl/1000x901c/b0/94/65/kia-ceed-14-benzyna-turbo-polski-salon-ceed-radomsko-601696592.jpg",
+        "https://thumbs.img-sprzedajemy.pl/1000x901c/19/5e/ec/kia-ceed-14-benzyna-turbo-polski-salon-rok-produkcji-2020-601696593.jpg",
+        "https://thumbs.img-sprzedajemy.pl/1000x901c/c7/00/57/kia-ceed-14-benzyna-turbo-polski-salon-lodzkie-radomsko-601696594.jpg"
+      ],
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "city": "Radomsko",
+        "voivodeship": "łódzkie"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-13T12:22:50.381Z",
+      "modelKey": "kia-ceed-iii-sw",
+      "listingStates": [
+        {
+          "url": "https://sprzedajemy.pl/kia-ceed-1-4-benzyna-turbo-polski-salon-radomsko-4-6bea9f-nr73279125",
+          "status": "available",
+          "lastAttemptAt": "2026-11-13T12:22:50.381Z",
+          "lastCheckedAt": "2026-11-13T12:22:50.381Z",
+          "lastVerifiedAt": "2026-11-13T12:22:50.381Z",
+          "lastObservation": {
+            "url": "https://sprzedajemy.pl/kia-ceed-1-4-benzyna-turbo-polski-salon-radomsko-4-6bea9f-nr73279125",
+            "checkedAt": "2026-11-13T12:22:50.381Z",
+            "availability": "available",
+            "note": "Odczytano kartę z aktywnym kontaktem i pasującym numerem. Warunki ceny i tryb sprzedaży wymagają potwierdzenia.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://sprzedajemy.pl/kia-ceed-1-4-benzyna-turbo-polski-salon-radomsko-4-6bea9f-nr73279125",
+                "checkedAt": "2026-11-13T12:22:50.381Z",
+                "fields": [
+                  "price",
+                  "priceBasis",
+                  "year",
+                  "mileage",
+                  "transmissionCode",
+                  "saleType",
+                  "location"
+                ],
+                "note": "Dane z karty sprzedawcy."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-13T12:22:50.381Z",
+      "lastVerifiedAt": "2026-11-13T12:22:50.381Z",
+      "lastAttemptAt": "2026-11-13T12:22:50.381Z",
+      "history": [
+        {
+          "eventId": "18b9f65e6b425f8a33d38138690727697888a0629c716ade45e33b4ae504505c",
+          "runId": "search20261113",
+          "checkedAt": "2026-11-13T12:22:50.381Z",
+          "url": "https://sprzedajemy.pl/kia-ceed-1-4-benzyna-turbo-polski-salon-radomsko-4-6bea9f-nr73279125",
+          "availability": "available",
+          "note": "Odczytano kartę z aktywnym kontaktem i pasującym numerem. Warunki ceny i tryb sprzedaży wymagają potwierdzenia.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://sprzedajemy.pl/kia-ceed-1-4-benzyna-turbo-polski-salon-radomsko-4-6bea9f-nr73279125",
+              "checkedAt": "2026-11-13T12:22:50.381Z",
+              "fields": [
+                "price",
+                "priceBasis",
+                "year",
+                "mileage",
+                "transmissionCode",
+                "saleType",
+                "location"
+              ],
+              "note": "Dane z karty sprzedawcy."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:sprzedajemy:73279125",
+            "title": "Kia cee'd 1,4 benzyna turbo. Polski salon.",
+            "urls": [
+              {
+                "url": "https://sprzedajemy.pl/kia-ceed-1-4-benzyna-turbo-polski-salon-radomsko-4-6bea9f-nr73279125"
+              }
+            ],
+            "listingIds": [
+              "sprzedajemy:73279125"
+            ],
+            "price": 53000,
+            "year": 2020,
+            "priceBasis": "gross_total",
+            "mileage": 95000,
+            "transmissionCode": "automatic",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "photos": [
+              "https://thumbs.img-sprzedajemy.pl/1000x901c/c4/a5/70/kia-ceed-14-benzyna-turbo-polski-salon-radomsko-601696580.jpg",
+              "https://thumbs.img-sprzedajemy.pl/1000x901c/cd/ab/16/kia-ceed-14-benzyna-turbo-polski-salon-radomsko-601696583.jpg",
+              "https://thumbs.img-sprzedajemy.pl/1000x901c/a8/1d/67/kia-ceed-14-benzyna-turbo-polski-salon-lodzkie-radomsko-601696584.jpg",
+              "https://thumbs.img-sprzedajemy.pl/1000x901c/5b/d2/fc/kia-ceed-14-benzyna-turbo-polski-salon-automatyczna-radomsko-601696587.jpg",
+              "https://thumbs.img-sprzedajemy.pl/1000x901c/04/38/a1/kia-ceed-14-benzyna-turbo-polski-salon-kia-lodzkie-radomsko-601696588.jpg",
+              "https://thumbs.img-sprzedajemy.pl/1000x901c/fa/f7/0f/kia-ceed-14-benzyna-turbo-polski-salon-radomsko-sprzedam-601696589.jpg",
+              "https://thumbs.img-sprzedajemy.pl/1000x901c/99/8e/bb/kia-ceed-14-benzyna-turbo-polski-salon-nieuszkodzony-radomsko-601696590.jpg",
+              "https://thumbs.img-sprzedajemy.pl/1000x901c/bb/63/e2/kia-ceed-14-benzyna-turbo-polski-salon-radomsko-601696591.jpg",
+              "https://thumbs.img-sprzedajemy.pl/1000x901c/9a/de/03/kia-ceed-14-benzyna-turbo-polski-salon-radomsko-601696595.jpg",
+              "https://thumbs.img-sprzedajemy.pl/1000x901c/b0/94/65/kia-ceed-14-benzyna-turbo-polski-salon-ceed-radomsko-601696592.jpg",
+              "https://thumbs.img-sprzedajemy.pl/1000x901c/19/5e/ec/kia-ceed-14-benzyna-turbo-polski-salon-rok-produkcji-2020-601696593.jpg",
+              "https://thumbs.img-sprzedajemy.pl/1000x901c/c7/00/57/kia-ceed-14-benzyna-turbo-polski-salon-lodzkie-radomsko-601696594.jpg"
+            ],
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "city": "Radomsko",
+              "voivodeship": "łódzkie"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:sprzedajemy:73279125"
+            },
+            "title": {
+              "before": null,
+              "after": "Kia cee'd 1,4 benzyna turbo. Polski salon."
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://sprzedajemy.pl/kia-ceed-1-4-benzyna-turbo-polski-salon-radomsko-4-6bea9f-nr73279125"
+                }
+              ]
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "sprzedajemy:73279125"
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 53000
+            },
+            "year": {
+              "before": null,
+              "after": 2020
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "gross_total"
+            },
+            "mileage": {
+              "before": null,
+              "after": 95000
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "automatic"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://thumbs.img-sprzedajemy.pl/1000x901c/c4/a5/70/kia-ceed-14-benzyna-turbo-polski-salon-radomsko-601696580.jpg",
+                "https://thumbs.img-sprzedajemy.pl/1000x901c/cd/ab/16/kia-ceed-14-benzyna-turbo-polski-salon-radomsko-601696583.jpg",
+                "https://thumbs.img-sprzedajemy.pl/1000x901c/a8/1d/67/kia-ceed-14-benzyna-turbo-polski-salon-lodzkie-radomsko-601696584.jpg",
+                "https://thumbs.img-sprzedajemy.pl/1000x901c/5b/d2/fc/kia-ceed-14-benzyna-turbo-polski-salon-automatyczna-radomsko-601696587.jpg",
+                "https://thumbs.img-sprzedajemy.pl/1000x901c/04/38/a1/kia-ceed-14-benzyna-turbo-polski-salon-kia-lodzkie-radomsko-601696588.jpg",
+                "https://thumbs.img-sprzedajemy.pl/1000x901c/fa/f7/0f/kia-ceed-14-benzyna-turbo-polski-salon-radomsko-sprzedam-601696589.jpg",
+                "https://thumbs.img-sprzedajemy.pl/1000x901c/99/8e/bb/kia-ceed-14-benzyna-turbo-polski-salon-nieuszkodzony-radomsko-601696590.jpg",
+                "https://thumbs.img-sprzedajemy.pl/1000x901c/bb/63/e2/kia-ceed-14-benzyna-turbo-polski-salon-radomsko-601696591.jpg",
+                "https://thumbs.img-sprzedajemy.pl/1000x901c/9a/de/03/kia-ceed-14-benzyna-turbo-polski-salon-radomsko-601696595.jpg",
+                "https://thumbs.img-sprzedajemy.pl/1000x901c/b0/94/65/kia-ceed-14-benzyna-turbo-polski-salon-ceed-radomsko-601696592.jpg",
+                "https://thumbs.img-sprzedajemy.pl/1000x901c/19/5e/ec/kia-ceed-14-benzyna-turbo-polski-salon-rok-produkcji-2020-601696593.jpg",
+                "https://thumbs.img-sprzedajemy.pl/1000x901c/c7/00/57/kia-ceed-14-benzyna-turbo-polski-salon-lodzkie-radomsko-601696594.jpg"
+              ]
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "city": "Radomsko",
+                "voivodeship": "łódzkie"
+              }
+            },
+            "modelKey": {
+              "before": null,
+              "after": "kia-ceed-iii-sw"
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "listing:sprzedajemy:73279125",
+        "modelKey": "kia-ceed-iii-sw",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "body",
+          "exact_engine_variant",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "body; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
     }
   ],
   "archivedOffers": [
@@ -7838,363 +8028,6 @@
         "status": "closed",
         "reason": "all_listings_confirmed_closed",
         "archivedAt": "2026-11-09T12:59:53+00:00"
-      }
-    },
-    {
-      "id": "listing:autoplac:7814-5113-VB",
-      "modelKey": "kia-ceed-iii-sw",
-      "title": "Kia Ceed III Kombi 1.4 MPI 100 KM, 2019, 87 000 km",
-      "urls": [
-        {
-          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
-          "label": "Autoplac"
-        }
-      ],
-      "listingIds": [
-        "autoplac:7814-5113-VB"
-      ],
-      "year": 2019,
-      "price": 45800,
-      "mileage": 87000,
-      "engine": "1.4 MPI, benzyna",
-      "body": "Kombi",
-      "transmission": "manualna",
-      "offerType": "company",
-      "saleType": "fixed_price",
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "voivodeship": "Mazowieckie",
-        "city": "Strzyżew",
-        "precision": "city",
-        "source": "listing",
-        "checkedAt": "2026-11-08"
-      },
-      "details": {
-        "Pierwsza rejestracja": "17.06.2019 według karty.",
-        "VIN": "Karta pokazuje częściowo zamaskowany numer; pełnego VIN nie zapisano.",
-        "Kamera": "Opis sprzedawcy wymienia kamerę cofania oraz tylne czujniki parkowania.",
-        "ISOFIX": "Nie potwierdzono w odczytanej części karty.",
-        "LPG": "Karta podaje benzynę, ale nie rozstrzyga, czy jest zamontowana instalacja LPG; w razie jej obecności sprawdzić dokumenty i zbiornik.",
-        "Stan i historia": "Sprzedawca deklaruje polski salon, serwis ASO i bezwypadkowość; brak niezależnej weryfikacji.",
-        "Cena i dostępność": "Karta wyświetla stałą cenę 45 800 zł brutto i aktywne opcje kontaktu. Sprzedawca oferuje finansowanie, lecz nie wskazuje, że jest ono obowiązkowe; warunki gotówkowe należy potwierdzić."
-      },
-      "lpgInstalled": null,
-      "firstSeenAt": "2026-11-08T19:37:26+01:00",
-      "listingStates": [
-        {
-          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
-          "status": "removed",
-          "lastAttemptAt": "2026-11-11T16:36:50.311Z",
-          "lastCheckedAt": "2026-11-11T16:36:50.311Z",
-          "lastVerifiedAt": "2026-11-11T16:36:50.311Z",
-          "lastObservation": {
-            "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
-            "checkedAt": "2026-11-11T16:36:50.311Z",
-            "availability": "removed",
-            "note": "Portal zwrócił HTTP 404 i jawny komunikat zamknięcia: „Nie znaleźliśmy tej oferty”.",
-            "httpStatus": 404,
-            "closedMessage": "Nie znaleźliśmy tej oferty"
-          }
-        }
-      ],
-      "lastCheckedAt": "2026-11-11T16:36:50.311Z",
-      "lastVerifiedAt": "2026-11-11T16:36:50.311Z",
-      "lastAttemptAt": "2026-11-11T16:36:50.311Z",
-      "history": [
-        {
-          "eventId": "8151db7e0383f52bc7e41e8a139114173482547a225f61782b212fedf4057db3",
-          "runId": "search-20261108",
-          "checkedAt": "2026-11-08T19:37:26+01:00",
-          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
-          "availability": "available",
-          "note": "Bezpośrednio odczytana aktywna karta Autoplac: Kia Ceed III 1.4 MPI 100 KM, kombi, produkcja 2019, 87 000 km, manualna skrzynia, 45 800 zł brutto. Opis wymienia kamerę cofania i tylne czujniki. Karta podaje lokalizację Strzyżew (Mazowieckie) i aktywne opcje kontaktu; sprzedawca to salon samochodów używanych. Pełny VIN nie jest widoczny. Sprzedawcy nie kontaktowano.",
-          "evidence": [
-            {
-              "fields": [
-                "year",
-                "price",
-                "mileage",
-                "engine",
-                "body",
-                "transmission",
-                "offerType",
-                "saleType",
-                "location",
-                "cameraStatus"
-              ],
-              "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
-              "checkedAt": "2026-11-08T19:37:26+01:00",
-              "kind": "seller",
-              "note": "Dane z pól i opisu oferty; salon samochodów używanych wskazany w karcie. Pełnego VIN nie ujawniono."
-            }
-          ],
-          "reportedFields": {
-            "id": "listing:autoplac:7814-5113-VB",
-            "modelKey": "kia-ceed-iii-sw",
-            "title": "Kia Ceed III Kombi 1.4 MPI 100 KM, 2019, 87 000 km",
-            "urls": [
-              {
-                "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
-                "label": "Autoplac"
-              }
-            ],
-            "listingIds": [
-              "autoplac:7814-5113-VB"
-            ],
-            "vin": null,
-            "year": 2019,
-            "price": 45800,
-            "priceLabel": "45 800 zł brutto",
-            "mileage": 87000,
-            "mileageLabel": "87 000 km",
-            "engine": "1.4 MPI, 100 KM, benzyna",
-            "body": "Kombi",
-            "transmission": "manualna",
-            "offerType": "company",
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "location": {
-              "status": "available",
-              "countryCode": "PL",
-              "voivodeship": "Mazowieckie",
-              "city": "Strzyżew",
-              "precision": "city",
-              "source": "listing",
-              "checkedAt": "2026-11-08"
-            },
-            "details": {
-              "Pierwsza rejestracja": "17.06.2019 według karty.",
-              "VIN": "Karta pokazuje częściowo zamaskowany numer; pełnego VIN nie zapisano.",
-              "Kamera": "Opis sprzedawcy wymienia kamerę cofania oraz tylne czujniki parkowania.",
-              "ISOFIX": "Nie potwierdzono w odczytanej części karty.",
-              "LPG": "Karta podaje benzynę, ale nie rozstrzyga, czy jest zamontowana instalacja LPG; w razie jej obecności sprawdzić dokumenty i zbiornik.",
-              "Stan i historia": "Sprzedawca deklaruje polski salon, serwis ASO i bezwypadkowość; brak niezależnej weryfikacji.",
-              "Cena i dostępność": "Karta wyświetla stałą cenę 45 800 zł brutto i aktywne opcje kontaktu. Sprzedawca oferuje finansowanie, lecz nie wskazuje, że jest ono obowiązkowe; warunki gotówkowe należy potwierdzić."
-            }
-          },
-          "changes": {
-            "id": {
-              "before": null,
-              "after": "listing:autoplac:7814-5113-VB"
-            },
-            "modelKey": {
-              "before": null,
-              "after": "kia-ceed-iii-sw"
-            },
-            "title": {
-              "before": null,
-              "after": "Kia Ceed III Kombi 1.4 MPI 100 KM, 2019, 87 000 km"
-            },
-            "urls": {
-              "before": null,
-              "after": [
-                {
-                  "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
-                  "label": "Autoplac"
-                }
-              ]
-            },
-            "listingIds": {
-              "before": null,
-              "after": [
-                "autoplac:7814-5113-VB"
-              ]
-            },
-            "year": {
-              "before": null,
-              "after": 2019
-            },
-            "price": {
-              "before": null,
-              "after": 45800
-            },
-            "priceLabel": {
-              "before": null,
-              "after": "45 800 zł brutto"
-            },
-            "mileage": {
-              "before": null,
-              "after": 87000
-            },
-            "mileageLabel": {
-              "before": null,
-              "after": "87 000 km"
-            },
-            "engine": {
-              "before": null,
-              "after": "1.4 MPI, 100 KM, benzyna"
-            },
-            "body": {
-              "before": null,
-              "after": "Kombi"
-            },
-            "transmission": {
-              "before": null,
-              "after": "manualna"
-            },
-            "offerType": {
-              "before": null,
-              "after": "company"
-            },
-            "saleType": {
-              "before": null,
-              "after": "fixed_price"
-            },
-            "location": {
-              "before": null,
-              "after": {
-                "status": "available",
-                "countryCode": "PL",
-                "voivodeship": "Mazowieckie",
-                "city": "Strzyżew",
-                "precision": "city",
-                "source": "listing",
-                "checkedAt": "2026-11-08"
-              }
-            },
-            "details": {
-              "before": null,
-              "after": {
-                "Pierwsza rejestracja": "17.06.2019 według karty.",
-                "VIN": "Karta pokazuje częściowo zamaskowany numer; pełnego VIN nie zapisano.",
-                "Kamera": "Opis sprzedawcy wymienia kamerę cofania oraz tylne czujniki parkowania.",
-                "ISOFIX": "Nie potwierdzono w odczytanej części karty.",
-                "LPG": "Karta podaje benzynę, ale nie rozstrzyga, czy jest zamontowana instalacja LPG; w razie jej obecności sprawdzić dokumenty i zbiornik.",
-                "Stan i historia": "Sprzedawca deklaruje polski salon, serwis ASO i bezwypadkowość; brak niezależnej weryfikacji.",
-                "Cena i dostępność": "Karta wyświetla stałą cenę 45 800 zł brutto i aktywne opcje kontaktu. Sprzedawca oferuje finansowanie, lecz nie wskazuje, że jest ono obowiązkowe; warunki gotówkowe należy potwierdzić."
-              }
-            }
-          }
-        },
-        {
-          "eventId": "4cacf62f4b67506a28fe83c5f44c09ca8248ad94e53af61838aba6be0975e390",
-          "runId": "refresh-20261108-03",
-          "checkedAt": "2026-11-08T21:57:50+00:00",
-          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
-          "availability": "available",
-          "note": "Karta nadal dostępna, ostatnia aktualizacja tydzień temu. Cena 45 800 zł; benzyna, manual, 1 368 cm³. Tytuł/opis wskazuje 100 KM, pole techniczne 101 KM — zachować rozbieżność do weryfikacji dokumentami. Pierwsza rejestracja 06.2019. Opis deklaruje salon PL, serwis ASO i bezwypadkowość; kamera cofania i czujniki wymienione. VIN udostępniany na życzenie, więc brak w odczycie. LPG nieustalone.",
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:autoplac:7814-5113-VB",
-            "saleType": "fixed_price",
-            "lpgInstalled": null
-          },
-          "changes": {}
-        },
-        {
-          "eventId": "2892b6b57081d34d3375b9387f155bac67a07952e36882868497ede06cff22fe",
-          "runId": "photos-20261108-01",
-          "checkedAt": "2026-11-08T22:31:52+00:00",
-          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
-          "availability": "available",
-          "note": "Karta dostępna, pokazuje galerię 1/26. Ujawniony link obrazu prowadzi bezpośrednio do HTTPS CDN Autoplac; zapisano zdjęcie główne. Cena 45 800 zł; finansowanie jest opcjonalne. LPG nieustalone.",
-          "photoCheck": {
-            "status": "found",
-            "note": "Znaleziono 1 bezpośredni HTTPS URL zdjęcia. Pozostałych adresów galerii nie ujawniono w odczytanym widoku."
-          },
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:autoplac:7814-5113-VB",
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "photos": [
-              "https://euw2-cdn.autoplac.pl/v1/p/ec036c1c-025d-472a-9dc7-bfd4e69eebdb?f=1920%3Awebp"
-            ]
-          },
-          "changes": {
-            "photos": {
-              "before": null,
-              "after": [
-                "https://euw2-cdn.autoplac.pl/v1/p/ec036c1c-025d-472a-9dc7-bfd4e69eebdb?f=1920%3Awebp"
-              ]
-            }
-          }
-        },
-        {
-          "eventId": "09ff16a51cb06310a2891f4fb785d564c98d79aa300059918921c877c27cd37b",
-          "runId": "refresh20261109a",
-          "checkedAt": "2026-11-09T13:00:00+00:00",
-          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
-          "availability": "available",
-          "note": "Karta zaktualizowana tydzień temu: Kia Ceed III M, 1.4 MPI/DOHC 100 KM (karta pokazuje 101 KM), manual, 2019, 87000 km, 45800 zł. Opis sprzedawcy deklaruje polski salon, serwis ASO, kamerę cofania, tylne czujniki parkowania i pisemną gwarancję. Pierwsza rejestracja 06.2019. Sprzedawca prosi o telefoniczne potwierdzenie dostępności przed przyjazdem. LPG nieustalone.",
-          "photoCheck": null,
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:autoplac:7814-5113-VB",
-            "price": 45800,
-            "year": 2019,
-            "mileage": 87000,
-            "engine": "1.4 MPI, benzyna",
-            "saleType": "fixed_price",
-            "lpgInstalled": null,
-            "photos": [
-              "https://euw2-cdn.autoplac.pl/v1/p/ec036c1c-025d-472a-9dc7-bfd4e69eebdb?f=1920%3Awebp"
-            ]
-          },
-          "changes": {
-            "engine": {
-              "before": "1.4 MPI, 100 KM, benzyna",
-              "after": "1.4 MPI, benzyna"
-            }
-          }
-        },
-        {
-          "eventId": "d5eadbab805fdd03282cb9d83aada9cc562ce1a2cf9ae216a65987e779cd7702",
-          "runId": "dostepnosc-2026-11-10",
-          "checkedAt": "2026-11-10T23:08:10Z",
-          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
-          "availability": "removed",
-          "note": "Autoplac page displays “Nie znaleźliśmy tej oferty” and “Oferta trafiła do archiwum”.",
-          "httpStatus": null,
-          "photoCheck": null,
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:autoplac:7814-5113-VB"
-          },
-          "changes": {}
-        },
-        {
-          "eventId": "706b9cbb466a1df55a9a6d5d5640ae786932c982f78542074304fe035d7c5de2",
-          "runId": "archive-check-2026-11-11",
-          "checkedAt": "2026-11-11T16:36:50.311Z",
-          "url": "https://autoplac.pl/oferta/kia/ceed/iii-1-4-2019r-m-14mpi-100km-2019r-polski-salon-87tkm-led-climatronic-kamera-tempom-7814-5113-VB",
-          "availability": "removed",
-          "note": "Portal zwrócił HTTP 404 i jawny komunikat zamknięcia: „Nie znaleźliśmy tej oferty”.",
-          "httpStatus": 404,
-          "photoCheck": null,
-          "evidence": [],
-          "reportedFields": {
-            "id": "listing:autoplac:7814-5113-VB"
-          },
-          "changes": {}
-        }
-      ],
-      "assessment": {
-        "id": "listing:autoplac:7814-5113-VB",
-        "modelKey": "kia-ceed-iii-sw",
-        "verdict": "check",
-        "failures": [],
-        "unknowns": [
-          "body",
-          "exact_engine_variant",
-          "transmission",
-          "camera_or_compatible_retrofit",
-          "structural_history",
-          "stroller_and_family_fit"
-        ],
-        "preferenceNotes": []
-      },
-      "verdict": "check",
-      "verdictTitle": "Do weryfikacji",
-      "verdictNote": "body; exact_engine_variant; transmission; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
-      "photos": [
-        "https://euw2-cdn.autoplac.pl/v1/p/ec036c1c-025d-472a-9dc7-bfd4e69eebdb?f=1920%3Awebp"
-      ],
-      "archive": {
-        "status": "closed",
-        "reason": "all_listings_confirmed_closed",
-        "archivedAt": "2026-11-10T23:08:10+00:00"
       }
     },
     {

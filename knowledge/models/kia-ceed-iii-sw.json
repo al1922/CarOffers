@@ -9,25 +9,55 @@
       "topic": "engine-assessment",
       "value": {
         "reviewedVariants": [
-          {"variant": "1.4-mpi-100", "likelyCode": "G4LC", "status": "conditional_recommendation", "caveat": "Skromniejsza dynamika obciążonego kombi; LPG dla dokładnej konfiguracji wymaga potwierdzenia."},
-          {"variant": "1.4-tgdi-140", "likelyCode": "G4LD", "status": "conditional_recommendation", "caveat": "Lepsza dynamika, ale turbo i wtrysk bezpośredni zwiększają złożoność; 7DCT oceniana osobno."}
+          {
+            "variant": "1.4-tgdi-140",
+            "likelyCode": "G4LD",
+            "status": "conditional_recommendation",
+            "caveat": "Lepsza dynamika, ale turbo i wtrysk bezpośredni zwiększają złożoność; 7DCT oceniana osobno."
+          }
         ],
         "fullRecommendedThresholdMet": false,
         "reliabilityEvidence": "No independent engine-specific long-term failure and Polish repair-cost cohort found"
       },
-      "scope": {"market": "Europe/Poland", "period": "Ceed CD Sportswagon, selected variants", "reviewDate": "2026-11-08"},
+      "scope": {
+        "market": "Europe/Poland",
+        "period": "Ceed CD Sportswagon, selected variants",
+        "reviewDate": "2026-11-08"
+      },
       "confidence": "medium",
-      "sourceIds": ["ceed-pl-2018", "ceed-engine-data-2018", "ceed-uokik-vacuum-pump", "ceed-adac-14tgdi", "ceed-g4lc-mapping"],
-      "notes": ["Czeskie agregatory STK i TÜV oraz ADAC dotyczą głównie całego pojazdu, nie są niezależnym pomiarem trwałości tych dwóch silników.", "Ocena nie pozwala nazwać żadnego wariantu w pełni polecanym; koszt typowych napraw oraz zgodność LPG dla konkretnego kodu pozostają nieustalone."]
+      "sourceIds": [
+        "ceed-pl-2018",
+        "ceed-engine-data-2018",
+        "ceed-uokik-vacuum-pump",
+        "ceed-adac-14tgdi",
+        "ceed-g4lc-mapping"
+      ],
+      "notes": [
+        "Czeskie agregatory STK i TÜV oraz ADAC dotyczą głównie całego pojazdu, nie są niezależnym pomiarem trwałości tych dwóch silników.",
+        "Ocena nie pozwala nazwać żadnego wariantu w pełni polecanym; koszt typowych napraw oraz zgodność LPG dla konkretnego kodu pozostają nieustalone.",
+        "1.5 T-GDI 160 KM jest na aktualnej liście wyszukiwania, ale nie ma jeszcze oceny trwałości."
+      ]
     },
     {
       "id": "vacuum-pump-campaign",
       "topic": "recall",
-      "value": {"productionFrom": "2018-10-29", "productionThrough": "2020-09-28", "risk": "vacuum pump mesh filter may block oil supply, reducing brake assist", "engineCodesSpecified": false},
-      "scope": {"market": "Poland", "body": "Ceed SW / Sportswagon CD"},
+      "value": {
+        "productionFrom": "2018-10-29",
+        "productionThrough": "2020-09-28",
+        "risk": "vacuum pump mesh filter may block oil supply, reducing brake assist",
+        "engineCodesSpecified": false
+      },
+      "scope": {
+        "market": "Poland",
+        "body": "Ceed SW / Sportswagon CD"
+      },
       "confidence": "high",
-      "sourceIds": ["ceed-uokik-vacuum-pump"],
-      "notes": ["Dotyczy wybranych egzemplarzy; sprawdzać wykonanie kampanii po VIN, nie przypisywać usterki wszystkim silnikom."]
+      "sourceIds": [
+        "ceed-uokik-vacuum-pump"
+      ],
+      "notes": [
+        "Dotyczy wybranych egzemplarzy; sprawdzać wykonanie kampanii po VIN, nie przypisywać usterki wszystkim silnikom."
+      ]
     },
     {
       "id": "launch",
@@ -152,4 +182,3 @@
     "Przymierzyć wózek i fotelik; sprawdzić mocowania oraz zakres regulacji przednich foteli."
   ]
 }
-

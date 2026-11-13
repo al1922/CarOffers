@@ -3,6 +3,7 @@ import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { portalNavigationPolicy } from "./portal-robots.mjs";
+import { classifyGenericCard } from "./portal-card-classifier.mjs";
 import { explicitModelMismatch, extractVisibleFields, modelNameMatches, normalizeText, screeningFailure } from "./portal-screening.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");

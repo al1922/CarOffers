@@ -116,7 +116,10 @@ class SearchTests(unittest.TestCase):
         self.assertEqual(model_with_different_year["requirements"]["yearMin"], 2017)
 
     def test_held_variant_is_not_automatically_approved(self):
-        self.offer["engineVariant"] = "1.4-mpi-100"
+        self.offer["engineVariant"] = "1.5-tgdi-160"
+        self.model["engineReview"] = {"variants": {
+            "1.5-tgdi-160": {"status": "hold_pending_evidence"}
+        }}
         result = self.evaluate()
         self.assertEqual(result["verdict"], "check")
         self.assertIn("engine_review_requires_verification", result["unknowns"])
