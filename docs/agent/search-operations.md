@@ -203,13 +203,16 @@ do tej samej lokalnej kolejki.
 Przed otwieraniem kart wykonawca stosuje `searchProfile.candidateScreening` do
 widocznych wyników: pomija tylko auta, których widoczne dane jednoznacznie łamią
 twardy warunek (np. rocznik produkcji, maksymalny przebieg, nadwozie, wariant
-silnika, cena brutto, aukcyjny typ sprzedaży lub jawna informacja o uszkodzeniu,
-gdy `structuralDamageAllowed` jest `false`). Odrzuca też jednoznaczne tytuły
+silnika, widoczna cena poniżej `minimumAdvertisedPricePln`, cena brutto ponad
+limit, aukcyjny typ sprzedaży lub jawna informacja o uszkodzeniu, gdy
+`structuralDamageAllowed` jest `false`). Odrzuca też jednoznaczne tytuły
 części i akcesoriów przed otwarciem karty; ten sam filtr działa ponownie na
 tytule karty przed utworzeniem oferty. Nieznane albo niejednoznaczne
 pola nie są powodem do odrzucenia, jeśli pozostałe dane pasują — wtedy otwórz
 kartę i sprawdź brakujące fakty. Snippet wyszukiwarki nie potwierdza dostępności,
-ceny całkowitej ani wyposażenia egzemplarza. Warunki finansowania nie wpływają na
+ceny całkowitej ani wyposażenia egzemplarza. Dolny próg widocznej kwoty jest
+automatycznym filtrem anomalii także wtedy, gdy podstawa ceny jest nieznana;
+nie potwierdza on pełnej ceny zakupu. Warunki finansowania nie wpływają na
 kwalifikację ceny brutto. Nie utożsamiaj roku
 pierwszej rejestracji z rokiem produkcji. Filtry portalu zawężają wyniki, ale
 nie zastępują kontroli karty i nie zmieniają zakresu wymagań. Dla ceny stosuj

@@ -1,4 +1,4 @@
-const DEFAULT_FIELDS = /^(?:id|uuid|slug|url|href|link|title|name|headline|subject|label|key|value|text|brand|make|model|generation|price|pricecurrency|currency|productiondate|productionyear|year|mileagefromodometer|mileage|odometer|mileageunit|vin|availability|fueltype|vehicletransmission|bodytype|addresslocality|addressregion|seller|sellername|offerid|itemid|advertid|listingid|(?:offer|advert|listing|item)(?:url|href|link)|(?:url|href|link)(?:offer|advert|listing|item))$/i;
+const DEFAULT_FIELDS = /^(?:id|uuid|slug|url|href|link|title|name|headline|subject|label|key|value|text|unit|unittext|unitcode|unitcodevalue|amount|brand|make|model|modelgeneration|generation|price|pricegross|grossprice|pricebasis|pricetype|pricecurrency|currency|productiondate|productionyear|year|mileagefromodometer|mileage|odometer|mileageunit|firstregistrationdate|datefirstregistered|publicationdate|datepublished|dateposted|publishedat|publisheddate|vin|availability|status|issold|sold|lpginstalled|fuel[_-]?type|fueltype|vehicle[_-]?transmission|vehicletransmission|body[_-]?type|bodytype|bodycode|engine|vehicleengine|enginedisplacement|enginesize|enginecapacity|enginepower|enginepowerhp|enginepowerkw|horsepower|power|transmission|gearbox|addresslocality|addressregion|city|region|voivodeship|postalcode|postcode|latitude|longitude|lat|lng|lon|address|addresscountry|countrycode|countryregion|location|seller|sellername|sellertype|offertype|sellerlink|saletype|transactiontype|photos|photo|image|thumbnail|offerid|itemid|advertid|listingid|(?:offer|advert|listing|item)(?:url|href|link)|(?:url|href|link)(?:offer|advert|listing|item))$/i;
 
 function projectJson(value, depth = 0, budget = { entries: 0 }) {
   if (value === null || typeof value === "boolean" || typeof value === "number") return value;
@@ -16,7 +16,9 @@ function projectJson(value, depth = 0, budget = { entries: 0 }) {
   const result = {};
   for (const [key, item] of Object.entries(value)) {
     budget.entries += 1;
-    if (!DEFAULT_FIELDS.test(key) && !Array.isArray(item) && (item === null || typeof item !== "object")) continue;
+    const normalizedKey = key.replace(/[^a-z0-9]/gi, "");
+    if (!DEFAULT_FIELDS.test(key) && !DEFAULT_FIELDS.test(normalizedKey) && !Array.isArray(item) &&
+        (item === null || typeof item !== "object")) continue;
     const projected = projectJson(item, depth + 1, budget);
     if (projected !== undefined) result[key.slice(0, 100)] = projected;
     if (budget.entries >= 5000) break;

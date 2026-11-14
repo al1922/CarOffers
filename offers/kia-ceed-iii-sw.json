@@ -5,7 +5,7 @@
     "key": "kia-ceed-iii-sw",
     "name": "Kia Ceed III Sportswagon",
     "description": "Kombi",
-    "requirements": "Kia Ceed III Sportswagon; 1.4 T-GDI 140 KM; 1.5 T-GDI 160 KM; rodzina: 2 dorosłych i 1 dziecko; wymagane miejsce na wózek i bagaż; rocznik od 2018; maks. 55 000 zł brutto według ceny podanej w ogłoszeniu; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 170 000 km preferowany; kamera wymagana  obecna lub z potwierdzoną możliwością montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji."
+    "requirements": "Kia Ceed III Sportswagon; 1.4 T-GDI 140 KM; 1.5 T-GDI 160 KM; rodzina: 2 dorosłych i 1 dziecko; wymagane miejsce na wózek i bagaż; rocznik od 2018; widoczna cena oferty min. 30 000 zł; cena zakupu brutto maks. 55 000 zł; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 170 000 km preferowany; kamera wymagana  obecna lub z potwierdzoną możliwością montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji."
   },
   "offers": [
     {
@@ -11973,6 +11973,243 @@
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
       "verdictNote": "gross_purchase_price; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction"
+    },
+    {
+      "id": "url:https://www.aaaauto.pl/detail/kia/ceed/34822369",
+      "modelKey": "kia-ceed-iii-sw",
+      "title": "Kia Ceed SW, 2021",
+      "urls": [
+        {
+          "url": "https://www.aaaauto.pl/detail/kia/ceed/34822369"
+        }
+      ],
+      "price": 50800,
+      "priceBasis": "gross_total",
+      "year": 2021,
+      "mileage": 81053,
+      "engineVariant": "1.5-tgdi-160",
+      "transmissionCode": "manual",
+      "offerType": "unknown",
+      "saleType": "fixed_price",
+      "photos": [
+        "https://aaaautoeuimg.vshcdn.net/thumb/300197435_1024x768x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300197435_9_1024x768x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300197435_15_1024x768x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300197435_4_1024x768x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300197435_6_1024x768x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300197435_1_1024x768x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300197435_2_1024x768x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300197435_3_1024x768x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300197435_5_1024x768x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300197435_7_1024x768x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300197435_11_1024x768x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300197435_12_1024x768x95.jpg"
+      ],
+      "location": {
+        "status": "not_provided"
+      },
+      "bodyCode": "wagon",
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-14T16:41:42.211Z",
+      "listingStates": [
+        {
+          "url": "https://www.aaaauto.pl/detail/kia/ceed/34822369",
+          "status": "available",
+          "lastAttemptAt": "2026-11-14T16:41:42.211Z",
+          "lastCheckedAt": "2026-11-14T16:41:42.211Z",
+          "lastVerifiedAt": "2026-11-14T16:41:42.211Z",
+          "lastObservation": {
+            "url": "https://www.aaaauto.pl/detail/kia/ceed/34822369",
+            "checkedAt": "2026-11-14T16:41:42.211Z",
+            "availability": "available",
+            "note": "Dane pojazdu na karcie zawierają status InStock.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.aaaauto.pl/detail/kia/ceed/34822369",
+                "checkedAt": "2026-11-14T16:41:42.211Z",
+                "fields": [
+                  "title",
+                  "saleType",
+                  "year",
+                  "mileage",
+                  "price",
+                  "priceBasis",
+                  "engineVariant",
+                  "transmissionCode"
+                ],
+                "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-14T16:41:42.211Z",
+      "lastVerifiedAt": "2026-11-14T16:41:42.211Z",
+      "lastAttemptAt": "2026-11-14T16:41:42.211Z",
+      "history": [
+        {
+          "eventId": "d8e2a4f34040f550461c05bced302fc2b4f281e8fbeb706a94d8613e470c6a75",
+          "runId": "direct-import-20261114-164121622-e74adbb3",
+          "checkedAt": "2026-11-14T16:41:42.211Z",
+          "url": "https://www.aaaauto.pl/detail/kia/ceed/34822369",
+          "availability": "available",
+          "note": "Dane pojazdu na karcie zawierają status InStock.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.aaaauto.pl/detail/kia/ceed/34822369",
+              "checkedAt": "2026-11-14T16:41:42.211Z",
+              "fields": [
+                "title",
+                "saleType",
+                "year",
+                "mileage",
+                "price",
+                "priceBasis",
+                "engineVariant",
+                "transmissionCode"
+              ],
+              "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+            }
+          ],
+          "reportedFields": {
+            "id": "url:https://www.aaaauto.pl/detail/kia/ceed/34822369",
+            "modelKey": "kia-ceed-iii-sw",
+            "title": "Kia Ceed SW, 2021",
+            "urls": [
+              {
+                "url": "https://www.aaaauto.pl/detail/kia/ceed/34822369"
+              }
+            ],
+            "price": 50800,
+            "priceBasis": "gross_total",
+            "year": 2021,
+            "mileage": 81053,
+            "engineVariant": "1.5-tgdi-160",
+            "transmissionCode": "manual",
+            "offerType": "unknown",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "photos": [
+              "https://aaaautoeuimg.vshcdn.net/thumb/300197435_1024x768x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300197435_9_1024x768x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300197435_15_1024x768x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300197435_4_1024x768x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300197435_6_1024x768x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300197435_1_1024x768x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300197435_2_1024x768x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300197435_3_1024x768x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300197435_5_1024x768x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300197435_7_1024x768x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300197435_11_1024x768x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300197435_12_1024x768x95.jpg"
+            ],
+            "location": {
+              "status": "not_provided"
+            },
+            "bodyCode": "wagon"
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "url:https://www.aaaauto.pl/detail/kia/ceed/34822369"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "kia-ceed-iii-sw"
+            },
+            "title": {
+              "before": null,
+              "after": "Kia Ceed SW, 2021"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.aaaauto.pl/detail/kia/ceed/34822369"
+                }
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 50800
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "gross_total"
+            },
+            "year": {
+              "before": null,
+              "after": 2021
+            },
+            "mileage": {
+              "before": null,
+              "after": 81053
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.5-tgdi-160"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "offerType": {
+              "before": null,
+              "after": "unknown"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://aaaautoeuimg.vshcdn.net/thumb/300197435_1024x768x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300197435_9_1024x768x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300197435_15_1024x768x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300197435_4_1024x768x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300197435_6_1024x768x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300197435_1_1024x768x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300197435_2_1024x768x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300197435_3_1024x768x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300197435_5_1024x768x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300197435_7_1024x768x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300197435_11_1024x768x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300197435_12_1024x768x95.jpg"
+              ]
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "url:https://www.aaaauto.pl/detail/kia/ceed/34822369",
+        "modelKey": "kia-ceed-iii-sw",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
     }
   ],
   "archivedOffers": [

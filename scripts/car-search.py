@@ -134,6 +134,7 @@ def build_search_profile(source, model, model_req, knowledge):
                   "max": model["searchYears"]["max"]},
         "engineVariants": model["allowedEngineVariants"],
         "requirements": model_req,
+        "minimumAdvertisedPricePln": model_req["purchase"]["minimumAdvertisedPricePln"],
         "maxGrossPurchasePln": model_req["purchase"]["maxPriceGrossPln"],
         "priceOverLimitRequiresUserApproval": bool(model_req["purchase"]["priceExceptions"]),
         "preferredMileageKm": model_req["mileage"]["preferredMaxKm"],
@@ -143,6 +144,7 @@ def build_search_profile(source, model, model_req, knowledge):
             "screeningLimits": {
                 "productionYearMin": max(model_req["yearMin"], model["searchYears"]["min"]),
                 "productionYearMax": model["searchYears"]["max"],
+                "minimumAdvertisedPricePln": model_req["purchase"]["minimumAdvertisedPricePln"],
                 "basePurchaseGrossPlnMax": model_req["purchase"]["maxPriceGrossPln"],
                 "hardMileageKmMax": model_req["mileage"].get("hardMaxKm"),
                 "bodyCodes": model["bodies"], "engineVariants": model["allowedEngineVariants"],

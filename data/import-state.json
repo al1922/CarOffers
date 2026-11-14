@@ -1604,8 +1604,22 @@
     "runs/direct-import-20261114-113244597-9b71c764/results/otomoto--toyota-corolla-e210.json": "7b25268b8e04b7c19fce3f8c22020ed917ac1d7ea2ef7a2c3ea1f11da450d1ce",
     "runs/direct-import-20261114-113244597-9b71c764/results/otomoto--mitsubishi-asx-i.json": "464c6acd4e70393a730358afd0aa10e51702b26cdd432b57f942138552c36514",
     "runs/direct-import-20261114-113244597-9b71c764/results/otomoto--mitsubishi-outlander-iii.json": "206d4bcb628f33431a50cc56a0c8ad54408caf9ffa1498c751747bf6d2a2437e",
+    "runs/aaaauto-hyundai-pilot-20261114/results/manual--aaaauto--hyundai-i30-iii-wagon.json": "79dd595019eb37675abb70484a54ebea0215a4d92d07e7ce1c303371695e0cfc",
     "runs/codex-engine-refresh-20261114/results/refresh--sprzedajemy--mitsubishi-asx-i.json": "5ccf7887c6008c22d07f1740d9c5295c630482a553eb0f8f3dfd7c0fc8e74bb4",
-    "runs/codex-engine-refresh-20261114/results/refresh--sprzedajemy--toyota-corolla-e210.json": "a2844f6469ed40bb9fbf0002a0958ee58f83c195bca04377a2e97ff932b595c9"
+    "runs/codex-engine-refresh-20261114/results/refresh--sprzedajemy--toyota-corolla-e210.json": "a2844f6469ed40bb9fbf0002a0958ee58f83c195bca04377a2e97ff932b595c9",
+    "runs/direct-import-20261114-164121622-e74adbb3/results/aaaauto--hyundai-i30-iii-wagon.json": "456a476cdb0113e6915df4fb9fa4b9a4ae7c3d29b0132434c2b60185bc009522",
+    "runs/direct-import-20261114-164121622-e74adbb3/results/aaaauto--kia-ceed-iii-sw.json": "775606624eac5afd47c41d6673487e620c52dc363e2517ca06ed8b2c8d56fcd5",
+    "runs/direct-import-20261114-164121622-e74adbb3/results/aaaauto--kia-xceed.json": "074e197e6a1658ab2bb3b118000e6d72a47239dffd08d912b6dc26e3944c1fa1",
+    "runs/direct-import-20261114-164121622-e74adbb3/results/aaaauto--mazda-6-iii-wagon.json": "1f9bc58a2c873d2f3f15c6dc55c148502cb30a728a83086cb26631e55e1b49db",
+    "runs/direct-import-20261114-164121622-e74adbb3/results/aaaauto--skoda-octavia-iii-combi.json": "4ef256239a911999d19bcdbe5a06435c97b96a220c8f539f7a87060db57c1508",
+    "runs/direct-import-20261114-164121622-e74adbb3/results/aaaauto--skoda-superb-iii-combi.json": "5f7406ac1732aab13e1c15a9a86574def0d05f96a6589ab5ca598e9600402517",
+    "runs/direct-import-20261114-164121622-e74adbb3/results/aaaauto--skoda-scala.json": "1bff080706869c91fad4bc65d6eb6ebb78710f7eff9e66de4d2f94977622bb6a",
+    "runs/direct-import-20261114-164121622-e74adbb3/results/aaaauto--suzuki-vitara-ii.json": "07ce1c820513834de99ed5cc95ca902802540a6ddeb085df2196ead4fd19bf45",
+    "runs/direct-import-20261114-164121622-e74adbb3/results/aaaauto--toyota-auris-touring-sports.json": "39a603419ac152a24be78501b3be0ea5004e6beebc2f19a3d1a080de1064a02e",
+    "runs/direct-import-20261114-164121622-e74adbb3/results/aaaauto--toyota-avensis-iii-wagon.json": "ceffbf7688c82be26ce87e5ea2b4111fc06d459ac899f3e0aab8b971aabbecb9",
+    "runs/direct-import-20261114-164121622-e74adbb3/results/aaaauto--toyota-corolla-e210.json": "2bb9beb5a4f72304ee59a0ee1e2b2202fa215bd3075ea2b58c2ae912412743e8",
+    "runs/direct-import-20261114-164121622-e74adbb3/results/aaaauto--mitsubishi-asx-i.json": "06b75ed71af46643d24260d769c5ade9fd420c3cb430c8d1760a08165e5b5d4e",
+    "runs/direct-import-20261114-164121622-e74adbb3/results/aaaauto--mitsubishi-outlander-iii.json": "3519218ccb137cbce0ff0985bf9206dd240d39244e568bf13e42fd59de872859"
   },
   "events": [
     "6faa416271cb8590a8a25b2509bcc04a962485bc981dcd8caeb7680cf9652350",
@@ -3090,7 +3104,10 @@
     "c6bc7b9c74bb1398971a81e85b360b18c531e41ce1027f44061a777863aab55e",
     "13af7ba387895b5e973265975971fc742b5431b230347714d853187383c5237b",
     "097dfec012ace0651ddb1dac26a3908d745ed614b2859630b63c40207f830ed3",
+    "b44e5644e59b379e2e5c0f658ee6adcb31fc38a4835e50b4f14435afa984d95f",
     "c1c68027136b86ae5d814cf8c4919e83d0e254fb4b8d94b3a70755732136f017",
-    "f1904c61e33ae773a74686e422009c1e57247c8142cd2529e930edd157e3b06b"
+    "f1904c61e33ae773a74686e422009c1e57247c8142cd2529e930edd157e3b06b",
+    "75be56cb850c9897ac3e4823bfb805d7f7db96cb0b48a3c100a0ef2eb6c5b4b4",
+    "d8e2a4f34040f550461c05bced302fc2b4f281e8fbeb706a94d8613e470c6a75"
   ]
 }

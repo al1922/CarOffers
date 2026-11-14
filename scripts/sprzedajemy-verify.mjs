@@ -238,6 +238,9 @@ export function classifyCard(card, url, profile, checkedAt) {
   if (!card.contact) {
     return { status: "unverified", note: "Karta nie potwierdza aktywnej sprzedaży." };
   }
+  if (price !== null && Number.isFinite(limits.minimumAdvertisedPricePln) && price < limits.minimumAdvertisedPricePln) {
+    return { status: "rejected", note: `Widoczna cena ogłoszenia jest poniżej minimum ${limits.minimumAdvertisedPricePln} zł.` };
+  }
   if (price !== null && price > limits.basePurchaseGrossPlnMax) {
     return { status: "price_review", note: "Cena z karty przekracza limit. Wymaga sprawdzenia warunków i ewentualnej zgody.",
       price, ...(quote ? { quote } : {}) };

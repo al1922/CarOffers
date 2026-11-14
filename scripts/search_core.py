@@ -85,6 +85,13 @@ def audit(root=ROOT):
             continue
         validation.validate_schema(model_requirements, requirements_schema, requirements_schema, issues,
                                    model["key"] + ".requirements")
+        purchase = model_requirements.get("purchase", {})
+        minimum_price = purchase.get("minimumAdvertisedPricePln")
+        maximum_price = purchase.get("maxPriceGrossPln")
+        if (type(minimum_price) is int and type(maximum_price) is int and
+                minimum_price >= maximum_price):
+            validation.issue(issues, "error", "PRICE_RANGE", model["key"], "requirements.purchase",
+                             "Minimum advertised price must be below the maximum gross purchase price")
         for exception in model_requirements.get("purchase", {}).get("priceExceptions", []):
             if (exception.get("rule") != "slightly_above_limit_only_for_exceptional_offer" or
                     exception.get("amountPln") is not None or exception.get("userMustConfirm") is not True):
@@ -175,7 +182,8 @@ def description(requirements, model):
     lpg = ("LPG dopuszczone" + (" i oznaczane" if requirements["lpg"]["mustBeMarked"] else "")
            if requirements["lpg"]["allowed"] else "LPG wykluczone")
     auction = "bez aukcji" if not p["auctionsAllowed"] else "aukcje dopuszczone"
-    price_text = f"maks. {p['maxPriceGrossPln']:,} zł brutto według ceny podanej w ogłoszeniu"
+    price_text = (f"widoczna cena oferty min. {p['minimumAdvertisedPricePln']:,} zł; "
+                  f"cena zakupu brutto maks. {p['maxPriceGrossPln']:,} zł")
     if p["priceExceptions"]:
         price_text += "; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika"
     family = requirements.get("use", {})
@@ -279,6 +287,8 @@ def assess(offer, requirements, model):
         unknown.append("gross_purchase_price")
     if type(price) not in (int, float) or price <= 0:
         unknown.append("purchase_price")
+    elif price < requirements["purchase"].get("minimumAdvertisedPricePln", 0):
+        fail.append("advertised_price_below_minimum")
     elif gross_price and price > requirements["purchase"]["maxPriceGrossPln"]:
         if requirements["purchase"]["priceExceptions"]:
             unknown.append("price_exception_requires_user_confirmation")

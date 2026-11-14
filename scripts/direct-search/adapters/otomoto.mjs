@@ -400,6 +400,122 @@ function auditListingRequest(responses, models, applied, pageNumber, pageUrl = "
       filters: item.request.filters.map(({ name, value }) => ({ name, value })) })) } : {}) };
 }
 
+function sourceScalar(value) {
+  if (typeof value === "string" || typeof value === "number") return String(value).trim();
+  if (!value || typeof value !== "object") return "";
+  for (const key of ["value", "displayValue", "text", "name", "title", "label", "code", "url", "src"]) {
+    const result = sourceScalar(value[key]);
+    if (result) return result;
+  }
+  return "";
+}
+
+function sourceNumber(value) {
+  if (typeof value === "number") return Number.isFinite(value) ? value : null;
+  const digits = sourceScalar(value).replace(/[^\d]/g, "");
+  return digits ? Number(digits) : null;
+}
+
+function firstSourceProperty(record, names) {
+  for (const name of names) {
+    if (record?.[name] !== undefined && record[name] !== null && record[name] !== "") return record[name];
+  }
+  return null;
+}
+
+function sourceParameter(parameters, names) {
+  const aliases = new Set(names.map((name) => normalizeOptionText(name).replace(/[^a-z0-9]/g, "")));
+  const item = (Array.isArray(parameters) ? parameters : []).find((parameter) =>
+    aliases.has(normalizeOptionText(parameter?.key ?? parameter?.label).replace(/[^a-z0-9]/g, "")));
+  return item?.value ?? null;
+}
+
+function sourceImageUrls(value) {
+  const found = [];
+  const visit = (item, depth = 0) => {
+    if (depth > 3 || item == null) return;
+    if (typeof item === "string") {
+      if (/^https:\/\//i.test(item)) found.push(item);
+      return;
+    }
+    if (Array.isArray(item)) { for (const entry of item.slice(0, 12)) visit(entry, depth + 1); return; }
+    if (typeof item === "object") {
+      for (const key of ["url", "src", "href", "contentUrl", "imageUrl"]) if (item[key]) visit(item[key], depth + 1);
+    }
+  };
+  visit(value);
+  return [...new Set(found)].slice(0, 12);
+}
+
+function sourceDate(record, names) {
+  return sourceScalar(firstSourceProperty(record, names)) || null;
+}
+
+function otomotoSourceData(node, fallbackUrl) {
+  const parameters = Array.isArray(node.parameters) ? node.parameters : [];
+  const location = node.location ?? {};
+  const price = node.price ?? {};
+  const priceAmount = sourceNumber(price.amount?.value);
+  const priceLabel = [sourceScalar(price.label), sourceScalar(price.amount?.label),
+    ...(Array.isArray(price.badges) ? price.badges.map(sourceScalar) : [])].filter(Boolean).join(" ");
+  const locationData = {
+    city: sourceScalar(location.city),
+    region: sourceScalar(location.region),
+    countryCode: sourceScalar(location.countryCode ?? location.addressCountry),
+    postalCode: sourceScalar(location.postalCode),
+    latitude: sourceScalar(location.latitude ?? location.geo?.latitude),
+    longitude: sourceScalar(location.longitude ?? location.geo?.longitude),
+  };
+  const listingId = sourceScalar(node.id ?? node.advertId ?? node.listingId) ||
+    String(fallbackUrl ?? "").match(/-ID([A-Za-z0-9]+)\./i)?.[1] || null;
+  const explicitSaleType = sourceScalar(firstSourceProperty(node, ["saleType", "sale_type", "transactionType", "transaction_type"]) ??
+    firstSourceProperty(price, ["saleType", "sale_type", "transactionType"]));
+  const publicationDate = sourceDate(node, ["publicationDate", "datePublished", "datePosted", "publishedAt", "publishedDate"]) ||
+    sourceScalar(sourceParameter(parameters, ["publicationDate", "datePublished", "datePosted", "publishedAt", "publishedDate"])) || null;
+  const firstRegistrationDate = sourceDate(node, ["firstRegistrationDate", "first_registration_date", "dateFirstRegistered"]) ||
+    sourceScalar(sourceParameter(parameters, ["firstRegistrationDate", "first_registration_date", "dateFirstRegistered"])) || null;
+  const priceBasis = sourceScalar(firstSourceProperty(price, ["priceBasis", "price_basis", "basis", "type"])) ||
+    (/\bbrutto\b/i.test(priceLabel) ? "gross_total" : /\bnetto\b/i.test(priceLabel) ? "net" : null);
+  const sellerType = sourceScalar(node.seller?.type ?? node.sellerLink?.type ?? node.sellerType) || null;
+  const sellerName = sourceScalar(node.seller?.name ?? node.sellerLink?.name ?? node.sellerLink?.label ?? node.sellerName) || null;
+  const isSold = typeof node.isSold === "boolean" ? node.isSold : null;
+  const availability = sourceScalar(firstSourceProperty(node, ["availability", "status", "listingStatus"])) ||
+    (isSold === true ? "OutOfStock" : isSold === false ? "InStock" : null);
+  return {
+    listingId,
+    recordId: listingId,
+    brand: sourceScalar(sourceParameter(parameters, ["make", "brand"])) || sourceScalar(node.make?.name ?? node.make?.title),
+    model: sourceScalar(sourceParameter(parameters, ["model"])) || sourceScalar(node.model?.name ?? node.model?.title),
+    modelGeneration: sourceScalar(sourceParameter(parameters, ["generation", "modelGeneration", "model_generation"]) ??
+      node.model?.generation ?? node.generation) || null,
+    productionYear: sourceNumber(sourceParameter(parameters, ["year", "productionYear", "productionDate"]) ?? node.productionYear),
+    mileage: sourceNumber(sourceParameter(parameters, ["mileage", "odometer"]) ?? node.mileage),
+    mileageUnit: sourceScalar(node.mileageUnit) || "km",
+    bodyType: sourceScalar(sourceParameter(parameters, ["body_type", "bodyType", "body"])),
+    fuelType: sourceScalar(sourceParameter(parameters, ["fuel_type", "fuelType", "fuel"])),
+    transmission: sourceScalar(sourceParameter(parameters, ["gearbox", "transmission"])),
+    engine: sourceScalar(sourceParameter(parameters, ["version", "engine", "engine_type"])),
+    engineCapacity: sourceScalar(sourceParameter(parameters, ["engine_capacity", "engineCapacity", "capacity"])),
+    enginePower: sourceScalar(sourceParameter(parameters, ["engine_power", "enginePower", "power"])),
+    vin: sourceScalar(firstSourceProperty(node, ["vin", "vehicleIdentificationNumber"])) || null,
+    price: Number.isFinite(priceAmount) ? priceAmount : null,
+    priceCurrency: sourceScalar(price.currency ?? price.amount?.currency) || null,
+    priceLabel: priceLabel || null,
+    priceBasis: priceBasis || null,
+    saleType: explicitSaleType || null,
+    offerType: sellerType,
+    sellerType,
+    sellerName,
+    lpgInstalled: typeof node.lpgInstalled === "boolean" ? node.lpgInstalled : null,
+    isSold,
+    availability,
+    location: Object.values(locationData).some(Boolean) ? locationData : null,
+    publicationDate,
+    firstRegistrationDate,
+    photos: sourceImageUrls([node.thumbnail, node.photos, node.images]),
+  };
+}
+
 export const otomotoAdapter = {
   id: "otomoto",
   sourceName: "Otomoto",
@@ -417,6 +533,10 @@ export const otomotoAdapter = {
       try { operation = JSON.parse(request.postData() ?? "{}").operationName ?? ""; } catch { /* Unknown GraphQL operations remain eligible. */ }
     }
     return !/loan.?simulation|financing|categories|taxonomy|representative/i.test(operation);
+  },
+
+  isRequiredDataResponse(response, { phase, pageNumber = 1 } = {}) {
+    return phase === "listing" && listingRequestInfo(response)?.page === pageNumber;
   },
 
   async chooseNecessaryCookies(page, { waitForPrompt = true } = {}) {
@@ -632,8 +752,10 @@ export const otomotoAdapter = {
         const priceText = typeof rawPrice === "string" ? rawPrice.trim().replace(/\s/g, "") : "";
         const apiPriceAmount = typeof rawPrice === "number" ? rawPrice
           : /^\d+(?:[.,]\d{1,2})?$/.test(priceText) ? Number(priceText.replace(",", ".")) : null;
+        const sourceData = otomotoSourceData(value, target.href);
         if (title || visibleText) found.set(target.href, { url: target.href, title: title || visibleText.slice(0, 180), visibleText,
           ...(Number.isFinite(apiPriceAmount) && apiPriceAmount > 0 ? { apiPriceAmount } : {}),
+          sourceData,
           apiEvidence: { captured: true, ...(Number.isFinite(apiPriceAmount) && apiPriceAmount > 0 ? { pricePath: "price.amount.value" } : {}) } });
       }
       for (const [, item] of entries) if (item && typeof item === "object") visit(item, depth + 1);

@@ -38,6 +38,40 @@
         "urlYearQueryModels": ["kia-xceed"],
         "omitGenerationModels": ["toyota-corolla-e210"]
       }
+    },
+    "aaaauto": {
+      "enabled": true,
+      "searchUrl": "https://www.aaaauto.pl/",
+      "limits": {
+        "maxPages": 20,
+        "maxCards": 200,
+        "detailConcurrency": 3
+      },
+      "filterProfile": {
+        "bodySlugs": {
+          "wagon": "kombi",
+          "combi": "kombi"
+        },
+        "bodyOmitModels": ["kia-xceed"],
+        "bodyAliases": {
+          "kia-xceed": {
+            "hatchback": "crossover"
+          }
+        },
+        "note": "Filtry są zapisane w URL. Listę i karty ofert czytaj z JSON #ng-state renderowanego na stronie; nie odpytywać zgadywanych endpointów API."
+      }
+    },
+    "spoticar": {
+      "enabled": true,
+      "searchUrl": "https://www.spoticar.pl/znajdz-uzywany-samochod",
+      "limits": {
+        "maxPages": 20,
+        "maxCards": 200,
+        "detailConcurrency": 3
+      },
+      "filterProfile": {
+        "note": "URL filtruje markę i model przez filters[0][brand] i filters[1][model]. Pozostałe wymagania są sprawdzane na karcie; nie dokładaj niepotwierdzonych parametrów URL. Lista jest w osadzonym JSON-LD, szczegóły w renderowanym HTML."
+      }
     }
   }
 }

@@ -1,6 +1,6 @@
-import {defaultFilters,sanitizeFilters,encodeFilters,decodeFilters,dedupe,filterOffers,sortOffers,bodyNames,statuses,fmt,dateLabel,distance,verdictNames} from './assets/core.mjs?v=19';
+import {defaultFilters,sanitizeFilters,encodeFilters,decodeFilters,dedupe,filterOffers,sortOffers,bodyNames,statuses,fmt,dateLabel,distance,verdictNames} from './assets/core.mjs?v=20';
 import {createStore} from './assets/storage.mjs?v=11';
-import {loadData,loadKnowledge} from './assets/data.mjs?v=15';
+import {loadData,loadKnowledge} from './assets/data.mjs?v=16';
 import {el,button,badge,empty,link,offerCard,archivedOfferCard,offerTable,offerDetails,comparison,knowledgeCard,knowledgeDetails,updates} from './assets/views.mjs?v=19';
 
 const $=selector=>document.querySelector(selector);

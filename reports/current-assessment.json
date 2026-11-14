@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-11-14T15:42:48.471678+00:00",
+  "generatedAt": "2026-11-14T18:09:22.911191+00:00",
   "configuration": {
     "requirements": {
       "version": 1,
       "purchase": {
+        "minimumAdvertisedPricePln": 30000,
         "maxPriceGrossPln": 55000,
         "scope": "purchase_only",
         "priceExceptions": [
@@ -167,6 +168,7 @@
           "requirements": {
             "version": 1,
             "purchase": {
+              "minimumAdvertisedPricePln": 30000,
               "maxPriceGrossPln": 55000,
               "scope": "purchase_only",
               "priceExceptions": [
@@ -339,6 +341,7 @@
           "requirements": {
             "version": 1,
             "purchase": {
+              "minimumAdvertisedPricePln": 30000,
               "maxPriceGrossPln": 55000,
               "scope": "purchase_only",
               "priceExceptions": [
@@ -511,6 +514,7 @@
           "requirements": {
             "version": 1,
             "purchase": {
+              "minimumAdvertisedPricePln": 30000,
               "maxPriceGrossPln": 55000,
               "scope": "purchase_only",
               "priceExceptions": [
@@ -687,6 +691,7 @@
           "requirements": {
             "version": 1,
             "purchase": {
+              "minimumAdvertisedPricePln": 30000,
               "maxPriceGrossPln": 55000,
               "scope": "purchase_only",
               "priceExceptions": [
@@ -859,6 +864,7 @@
           "requirements": {
             "version": 1,
             "purchase": {
+              "minimumAdvertisedPricePln": 30000,
               "maxPriceGrossPln": 55000,
               "scope": "purchase_only",
               "priceExceptions": [
@@ -1030,6 +1036,7 @@
           "requirements": {
             "version": 1,
             "purchase": {
+              "minimumAdvertisedPricePln": 30000,
               "maxPriceGrossPln": 55000,
               "scope": "purchase_only",
               "priceExceptions": [
@@ -1202,6 +1209,7 @@
           "requirements": {
             "version": 1,
             "purchase": {
+              "minimumAdvertisedPricePln": 30000,
               "maxPriceGrossPln": 55000,
               "scope": "purchase_only",
               "priceExceptions": [
@@ -1377,6 +1385,7 @@
           "requirements": {
             "version": 1,
             "purchase": {
+              "minimumAdvertisedPricePln": 30000,
               "maxPriceGrossPln": 55000,
               "scope": "purchase_only",
               "priceExceptions": [
@@ -1570,6 +1579,7 @@
           "requirements": {
             "version": 1,
             "purchase": {
+              "minimumAdvertisedPricePln": 30000,
               "maxPriceGrossPln": 55000,
               "scope": "purchase_only",
               "priceExceptions": [
@@ -1745,6 +1755,7 @@
           "requirements": {
             "version": 1,
             "purchase": {
+              "minimumAdvertisedPricePln": 30000,
               "maxPriceGrossPln": 55000,
               "scope": "purchase_only",
               "priceExceptions": [
@@ -1904,6 +1915,7 @@
           "requirements": {
             "version": 1,
             "purchase": {
+              "minimumAdvertisedPricePln": 30000,
               "maxPriceGrossPln": 55000,
               "scope": "purchase_only",
               "priceExceptions": [
@@ -2065,6 +2077,7 @@
           "requirements": {
             "version": 1,
             "purchase": {
+              "minimumAdvertisedPricePln": 30000,
               "maxPriceGrossPln": 55000,
               "scope": "purchase_only",
               "priceExceptions": [
@@ -2224,6 +2237,7 @@
           "requirements": {
             "version": 1,
             "purchase": {
+              "minimumAdvertisedPricePln": 30000,
               "maxPriceGrossPln": 55000,
               "scope": "purchase_only",
               "priceExceptions": [
@@ -4270,6 +4284,62 @@
       }
     },
     {
+      "id": "listing:aaaauto:25607254",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "engine_title_conflict",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "title": "Hyundai i30 III Wagon 1.5 T-GDI MHEV 158 KM — 2023, manualna",
+        "price": 52000,
+        "priceBasis": null,
+        "year": 2023,
+        "bodyCode": "wagon",
+        "engineVariant": "1.5-tgdi-160",
+        "transmissionCode": "manual",
+        "cameraStatus": "unknown",
+        "structuralDamageStatus": "unknown",
+        "mileage": 133386,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.aaaauto.pl/detail/hyundai/i30/30569801",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "title": "Hyundai i30 Combi, 2019",
+        "price": 53000,
+        "priceBasis": "gross_total",
+        "year": 2019,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-tgdi-140",
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 76800,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
       "id": "listing:autoplac:7600-2296-WW",
       "modelKey": "kia-ceed-iii-sw",
       "verdict": "check",
@@ -5446,6 +5516,33 @@
       }
     },
     {
+      "id": "url:https://www.aaaauto.pl/detail/kia/ceed/34822369",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "title": "Kia Ceed SW, 2021",
+        "price": 50800,
+        "priceBasis": "gross_total",
+        "year": 2021,
+        "bodyCode": "wagon",
+        "engineVariant": "1.5-tgdi-160",
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 81053,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
       "id": "listing:otomoto:ID6IiHi1",
       "modelKey": "mazda-6-iii-wagon",
       "verdict": "check",
@@ -6099,8 +6196,10 @@
     {
       "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6IilTJ.html",
       "modelKey": "skoda-octavia-iii-combi",
-      "verdict": "check",
-      "failures": [],
+      "verdict": "fail",
+      "failures": [
+        "advertised_price_below_minimum"
+      ],
       "unknowns": [
         "gross_purchase_price",
         "exact_engine_variant",
@@ -6959,8 +7058,10 @@
     {
       "id": "url:https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6HuSh5.html",
       "modelKey": "suzuki-vitara-ii",
-      "verdict": "check",
-      "failures": [],
+      "verdict": "fail",
+      "failures": [
+        "advertised_price_below_minimum"
+      ],
       "unknowns": [
         "gross_purchase_price",
         "exact_engine_variant",
@@ -8159,8 +8260,10 @@
     {
       "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IhzgO.html",
       "modelKey": "toyota-corolla-e210",
-      "verdict": "check",
-      "failures": [],
+      "verdict": "fail",
+      "failures": [
+        "advertised_price_below_minimum"
+      ],
       "unknowns": [
         "gross_purchase_price",
         "exact_engine_variant",
@@ -8219,8 +8322,10 @@
     {
       "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IiJbQ.html",
       "modelKey": "toyota-corolla-e210",
-      "verdict": "check",
-      "failures": [],
+      "verdict": "fail",
+      "failures": [
+        "advertised_price_below_minimum"
+      ],
       "unknowns": [
         "gross_purchase_price",
         "engine_title_partial_match",
@@ -8403,8 +8508,10 @@
     {
       "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-OLX_ID6IjdS5.html",
       "modelKey": "toyota-corolla-e210",
-      "verdict": "check",
-      "failures": [],
+      "verdict": "fail",
+      "failures": [
+        "advertised_price_below_minimum"
+      ],
       "unknowns": [
         "gross_purchase_price",
         "exact_engine_variant",
@@ -8493,8 +8600,10 @@
     {
       "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjGU1.html",
       "modelKey": "toyota-corolla-e210",
-      "verdict": "check",
-      "failures": [],
+      "verdict": "fail",
+      "failures": [
+        "advertised_price_below_minimum"
+      ],
       "unknowns": [
         "gross_purchase_price",
         "exact_engine_variant",

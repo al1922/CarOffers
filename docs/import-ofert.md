@@ -27,6 +27,11 @@ tych samych wyników. Każdy etap wymaga osobnego podglądu, kontroli konfliktó
 `import-apply`, `assess` i walidacji ofert. Nie uruchamiaj checkpointu, gdy
 wykonawca właśnie zapisuje wynik.
 
+Wyniki wyszukiwania z widoczną ceną poniżej skonfigurowanego
+`minimumAdvertisedPricePln` są automatycznie pomijane przy imporcie. Zapisane
+aktywne oferty poniżej tego progu nie są pokazywane w aktywnej liście; pozostają
+w plikach źródłowych, a ocena oznacza je jako poza wymaganiami.
+
 Po przejrzeniu podglądu koordynator stosuje zmiany lokalnie:
 
 ```powershell

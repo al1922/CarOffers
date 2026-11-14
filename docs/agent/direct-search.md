@@ -98,9 +98,12 @@ upper bounds. A failed first-page filter audit allows one measured retry.
 XHR/Fetch payloads are parsed in the active Playwright session; raw response
 bodies are not saved. A bounded projection of listing-relevant JSON keys is
 recorded alongside request URL, status, type, byte count, and network duration.
-The browser does not replay captured requests. HTTP 401/403/429, CAPTCHA, or
-other access challenges stop the current source run; they are never bypassed.
-A separate run may be started on a new explicit user request. Cookie
+The browser does not replay captured requests. HTTP 401/403/429 on a main
+document navigation or on a response the source adapter marks as required stops
+the current source run. Denials from unrelated same-origin XHR/Fetch requests
+are saved as network warnings and do not discard usable page data. CAPTCHA or
+another visible access challenge still stops the run; none are bypassed. A
+separate run may be started on a new explicit user request. Cookie
 consent waits for a prompt only on the first make group; later groups check
 immediately and handle any still-visible prompt or overlay.
 
@@ -111,3 +114,48 @@ model configuration. It reads
 `robots.txt` through a same-origin browser navigation so the preflight uses
 the same browser transport as the search flow. If the policy cannot be read,
 the source is marked unavailable and model navigation does not begin.
+
+AAA AUTO uses one filtered URL per configured model. It reads the page's
+server-rendered `script#ng-state` for the list and each detail card; it does not
+replay or guess API requests. The adapter audits the requested model, year,
+price, mileage, body, and the returned model/body values before opening cards.
+When a model permits more than one body style, or AAA AUTO has no confirmed URL
+segment for a configured body, the URL omits that body filter and each returned
+card is checked against the configured body set. Source-specific body aliases
+can reconcile the portal's category label with the model configuration.
+Configured generation and allowed engine variants are checked against the
+detail JSON. Engine aliases are derived from that model's knowledge file; a
+card without one uniquely confirmed allowed engine stays unverified and cannot
+be imported. The source limits are configured independently under
+`sources.aaaauto.limits`; hitting the card cap or a pagination control that
+cannot be followed marks coverage partial. The current AAA AUTO bounds are 20
+pages, 200 opened cards per model, and three concurrent detail pages. CLI limit
+options can override them for an individual run.
+
+SPOTICAR uses one URL per configured model with the site's observed query form:
+`page=1&filters[0][brand]=...&filters[1][model]=...`. Each result page exposes
+an embedded JSON-LD `ItemList`, which the adapter reads directly; it does not
+replay or guess an API request. Later result pages use the same filters with an
+increased `page` value. The detail card is server-rendered HTML, so the adapter
+reads its visible vehicle rows, contact controls, price and direct HTTPS photos
+from that page. It does not treat the page's Drupal settings JSON as vehicle
+data. Only the brand/model URL fields are currently confirmed; the result
+records omitted portal filters in `filterPlan.omittedFilters` and checks price,
+year, mileage, body and allowed engine variants against each card. Generation
+is not marked as confirmed when the card does not expose it. SPOTICAR's page
+and card bounds are configured independently in `config/direct-search.json`.
+
+All three direct-search adapters normalize the JSON fields they expose into one
+shared offer shape. When present, the run result and imported offer retain the
+year, mileage, price and price basis, body, fuel, engine and its capacity/power,
+transmission, VIN, listing ID, seller name/type, seller location, sale type,
+explicit LPG flag, first-registration/publication dates, and direct HTTPS photos.
+Fields missing from JSON and the rendered card stay unknown. Publication dates
+are taken only from explicit publication keys; they are never inferred from
+first-seen time or first registration. Photos are capped at 12, and the shared
+classifier merges list and detail JSON without letting an empty detail value
+erase a value present on the result card.
+
+This adapter is limited to the direct-search flow. The existing source registry
+and regular portal adapter remain unchanged, so their current SPOTICAR blocked
+status is not used to disable this separate, reviewed flow.

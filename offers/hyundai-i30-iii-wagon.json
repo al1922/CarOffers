@@ -5,7 +5,7 @@
     "key": "hyundai-i30-iii-wagon",
     "name": "Hyundai i30 III Wagon",
     "description": "Kombi",
-    "requirements": "Hyundai i30 III Wagon; 1.4 T-GDI 140 KM; 1.5 T-GDI 160 KM; rodzina: 2 dorosłych i 1 dziecko; wymagane miejsce na wózek i bagaż; rocznik od 2017; maks. 55 000 zł brutto według ceny podanej w ogłoszeniu; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 170 000 km preferowany; kamera wymagana  obecna lub z potwierdzoną możliwością montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji."
+    "requirements": "Hyundai i30 III Wagon; 1.4 T-GDI 140 KM; 1.5 T-GDI 160 KM; rodzina: 2 dorosłych i 1 dziecko; wymagane miejsce na wózek i bagaż; rocznik od 2017; widoczna cena oferty min. 30 000 zł; cena zakupu brutto maks. 55 000 zł; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 170 000 km preferowany; kamera wymagana  obecna lub z potwierdzoną możliwością montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji."
   },
   "offers": [
     {
@@ -8900,6 +8900,484 @@
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
       "verdictNote": "gross_purchase_price; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction"
+    },
+    {
+      "id": "listing:aaaauto:25607254",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "title": "Hyundai i30 III Wagon 1.5 T-GDI MHEV 158 KM — 2023, manualna",
+      "urls": [
+        {
+          "url": "https://www.aaaauto.pl/detail/hyundai/i30/25607254"
+        }
+      ],
+      "listingIds": [
+        "aaaauto:25607254"
+      ],
+      "year": 2023,
+      "price": 52000,
+      "mileage": 133386,
+      "engine": "1.5 T-GDI MHEV, benzyna + mild-hybrid, 117 kW (158 KM)",
+      "engineVariant": "1.5-tgdi-160",
+      "body": "Kombi / Wagon",
+      "bodyCode": "wagon",
+      "transmission": "Manualna, 6-biegowa",
+      "transmissionCode": "manual",
+      "saleType": "fixed_price",
+      "offerType": "unknown",
+      "cameraStatus": "unknown",
+      "structuralDamageStatus": "unknown",
+      "location": {
+        "status": "not_provided"
+      },
+      "photos": [
+        "https://aaaautoeuimg.vshcdn.net/thumb/300189706_828x622x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300189706_9_828x621x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300189706_15_828x621x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300189706_4_828x621x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300189706_6_828x621x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300189706_1_828x621x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300189706_2_828x621x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300189706_3_828x621x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300189706_5_828x621x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300189706_7_828x621x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300189706_11_828x621x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300189706_12_828x621x95.jpg"
+      ],
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-14T16:27:28+01:00",
+      "listingStates": [
+        {
+          "url": "https://www.aaaauto.pl/detail/hyundai/i30/25607254",
+          "status": "available",
+          "lastAttemptAt": "2026-11-14T16:27:28+01:00",
+          "lastCheckedAt": "2026-11-14T16:27:28+01:00",
+          "lastVerifiedAt": "2026-11-14T16:27:28+01:00",
+          "lastObservation": {
+            "url": "https://www.aaaauto.pl/detail/hyundai/i30/25607254",
+            "checkedAt": "2026-11-14T16:27:28+01:00",
+            "availability": "available",
+            "note": "Otwarta publiczna karta AAA AUTO. Potwierdza i30 Combi z 2023 r., przebieg 133 386 km, silnik 1.5 T-GDI MHEV 117 kW (158 KM), skrzynię manualną 6-biegową i cenę po obniżce 52 000 zł. Widoczne 49 000 zł jest ceną promocyjną na kredyt, więc nie użyto jej jako ceny zakupu. Karta nie podaje VIN, lokalizacji pojazdu ani kamery cofania; kamera i historia szkód pozostają niepotwierdzone. Lista wyposażenia wymienia tylne czujniki parkowania. LPG nieustalone.",
+            "evidence": []
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-14T16:27:28+01:00",
+      "lastVerifiedAt": "2026-11-14T16:27:28+01:00",
+      "lastAttemptAt": "2026-11-14T16:27:28+01:00",
+      "history": [
+        {
+          "eventId": "b44e5644e59b379e2e5c0f658ee6adcb31fc38a4835e50b4f14435afa984d95f",
+          "runId": "aaaauto-hyundai-pilot-20261114",
+          "checkedAt": "2026-11-14T16:27:28+01:00",
+          "url": "https://www.aaaauto.pl/detail/hyundai/i30/25607254",
+          "availability": "available",
+          "note": "Otwarta publiczna karta AAA AUTO. Potwierdza i30 Combi z 2023 r., przebieg 133 386 km, silnik 1.5 T-GDI MHEV 117 kW (158 KM), skrzynię manualną 6-biegową i cenę po obniżce 52 000 zł. Widoczne 49 000 zł jest ceną promocyjną na kredyt, więc nie użyto jej jako ceny zakupu. Karta nie podaje VIN, lokalizacji pojazdu ani kamery cofania; kamera i historia szkód pozostają niepotwierdzone. Lista wyposażenia wymienia tylne czujniki parkowania. LPG nieustalone.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [],
+          "reportedFields": {
+            "id": "listing:aaaauto:25607254",
+            "modelKey": "hyundai-i30-iii-wagon",
+            "title": "Hyundai i30 III Wagon 1.5 T-GDI MHEV 158 KM — 2023, manualna",
+            "urls": [
+              {
+                "url": "https://www.aaaauto.pl/detail/hyundai/i30/25607254"
+              }
+            ],
+            "listingIds": [
+              "aaaauto:25607254"
+            ],
+            "year": 2023,
+            "price": 52000,
+            "mileage": 133386,
+            "engine": "1.5 T-GDI MHEV, benzyna + mild-hybrid, 117 kW (158 KM)",
+            "engineVariant": "1.5-tgdi-160",
+            "body": "Kombi / Wagon",
+            "bodyCode": "wagon",
+            "transmission": "Manualna, 6-biegowa",
+            "transmissionCode": "manual",
+            "saleType": "fixed_price",
+            "offerType": "unknown",
+            "cameraStatus": "unknown",
+            "structuralDamageStatus": "unknown",
+            "location": {
+              "status": "not_provided"
+            },
+            "lpgInstalled": null,
+            "photos": [
+              "https://aaaautoeuimg.vshcdn.net/thumb/300189706_828x622x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300189706_9_828x621x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300189706_15_828x621x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300189706_4_828x621x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300189706_6_828x621x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300189706_1_828x621x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300189706_2_828x621x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300189706_3_828x621x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300189706_5_828x621x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300189706_7_828x621x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300189706_11_828x621x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300189706_12_828x621x95.jpg"
+            ]
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "listing:aaaauto:25607254"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "hyundai-i30-iii-wagon"
+            },
+            "title": {
+              "before": null,
+              "after": "Hyundai i30 III Wagon 1.5 T-GDI MHEV 158 KM — 2023, manualna"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.aaaauto.pl/detail/hyundai/i30/25607254"
+                }
+              ]
+            },
+            "listingIds": {
+              "before": null,
+              "after": [
+                "aaaauto:25607254"
+              ]
+            },
+            "year": {
+              "before": null,
+              "after": 2023
+            },
+            "price": {
+              "before": null,
+              "after": 52000
+            },
+            "mileage": {
+              "before": null,
+              "after": 133386
+            },
+            "engine": {
+              "before": null,
+              "after": "1.5 T-GDI MHEV, benzyna + mild-hybrid, 117 kW (158 KM)"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.5-tgdi-160"
+            },
+            "body": {
+              "before": null,
+              "after": "Kombi / Wagon"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmission": {
+              "before": null,
+              "after": "Manualna, 6-biegowa"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "offerType": {
+              "before": null,
+              "after": "unknown"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://aaaautoeuimg.vshcdn.net/thumb/300189706_828x622x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300189706_9_828x621x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300189706_15_828x621x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300189706_4_828x621x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300189706_6_828x621x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300189706_1_828x621x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300189706_2_828x621x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300189706_3_828x621x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300189706_5_828x621x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300189706_7_828x621x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300189706_11_828x621x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300189706_12_828x621x95.jpg"
+              ]
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "listing:aaaauto:25607254",
+        "modelKey": "hyundai-i30-iii-wagon",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_purchase_price",
+          "engine_title_conflict",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_purchase_price; engine_title_conflict; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
+    },
+    {
+      "id": "url:https://www.aaaauto.pl/detail/hyundai/i30/30569801",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "title": "Hyundai i30 Combi, 2019",
+      "urls": [
+        {
+          "url": "https://www.aaaauto.pl/detail/hyundai/i30/30569801"
+        }
+      ],
+      "price": 53000,
+      "priceBasis": "gross_total",
+      "year": 2019,
+      "mileage": 76800,
+      "engineVariant": "1.4-tgdi-140",
+      "transmissionCode": "automatic",
+      "offerType": "unknown",
+      "saleType": "fixed_price",
+      "photos": [
+        "https://aaaautoeuimg.vshcdn.net/thumb/300192380_1024x768x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300192380_9_1024x768x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300192380_15_1024x768x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300192380_4_1024x768x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300192380_6_1024x768x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300192380_1_1024x768x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300192380_2_1024x768x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300192380_3_1024x768x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300192380_5_1024x768x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300192380_7_1024x768x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300192380_11_1024x768x95.jpg",
+        "https://aaaautoeuimg.vshcdn.net/thumb/300192380_12_1024x768x95.jpg"
+      ],
+      "location": {
+        "status": "not_provided"
+      },
+      "bodyCode": "wagon",
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-14T16:41:34.936Z",
+      "listingStates": [
+        {
+          "url": "https://www.aaaauto.pl/detail/hyundai/i30/30569801",
+          "status": "available",
+          "lastAttemptAt": "2026-11-14T16:41:34.936Z",
+          "lastCheckedAt": "2026-11-14T16:41:34.936Z",
+          "lastVerifiedAt": "2026-11-14T16:41:34.936Z",
+          "lastObservation": {
+            "url": "https://www.aaaauto.pl/detail/hyundai/i30/30569801",
+            "checkedAt": "2026-11-14T16:41:34.936Z",
+            "availability": "available",
+            "note": "Dane pojazdu na karcie zawierają status InStock.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.aaaauto.pl/detail/hyundai/i30/30569801",
+                "checkedAt": "2026-11-14T16:41:34.936Z",
+                "fields": [
+                  "title",
+                  "saleType",
+                  "year",
+                  "mileage",
+                  "price",
+                  "priceBasis",
+                  "engineVariant",
+                  "transmissionCode"
+                ],
+                "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-14T16:41:34.936Z",
+      "lastVerifiedAt": "2026-11-14T16:41:34.936Z",
+      "lastAttemptAt": "2026-11-14T16:41:34.936Z",
+      "history": [
+        {
+          "eventId": "75be56cb850c9897ac3e4823bfb805d7f7db96cb0b48a3c100a0ef2eb6c5b4b4",
+          "runId": "direct-import-20261114-164121622-e74adbb3",
+          "checkedAt": "2026-11-14T16:41:34.936Z",
+          "url": "https://www.aaaauto.pl/detail/hyundai/i30/30569801",
+          "availability": "available",
+          "note": "Dane pojazdu na karcie zawierają status InStock.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.aaaauto.pl/detail/hyundai/i30/30569801",
+              "checkedAt": "2026-11-14T16:41:34.936Z",
+              "fields": [
+                "title",
+                "saleType",
+                "year",
+                "mileage",
+                "price",
+                "priceBasis",
+                "engineVariant",
+                "transmissionCode"
+              ],
+              "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+            }
+          ],
+          "reportedFields": {
+            "id": "url:https://www.aaaauto.pl/detail/hyundai/i30/30569801",
+            "modelKey": "hyundai-i30-iii-wagon",
+            "title": "Hyundai i30 Combi, 2019",
+            "urls": [
+              {
+                "url": "https://www.aaaauto.pl/detail/hyundai/i30/30569801"
+              }
+            ],
+            "price": 53000,
+            "priceBasis": "gross_total",
+            "year": 2019,
+            "mileage": 76800,
+            "engineVariant": "1.4-tgdi-140",
+            "transmissionCode": "automatic",
+            "offerType": "unknown",
+            "saleType": "fixed_price",
+            "lpgInstalled": null,
+            "photos": [
+              "https://aaaautoeuimg.vshcdn.net/thumb/300192380_1024x768x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300192380_9_1024x768x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300192380_15_1024x768x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300192380_4_1024x768x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300192380_6_1024x768x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300192380_1_1024x768x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300192380_2_1024x768x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300192380_3_1024x768x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300192380_5_1024x768x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300192380_7_1024x768x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300192380_11_1024x768x95.jpg",
+              "https://aaaautoeuimg.vshcdn.net/thumb/300192380_12_1024x768x95.jpg"
+            ],
+            "location": {
+              "status": "not_provided"
+            },
+            "bodyCode": "wagon"
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "url:https://www.aaaauto.pl/detail/hyundai/i30/30569801"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "hyundai-i30-iii-wagon"
+            },
+            "title": {
+              "before": null,
+              "after": "Hyundai i30 Combi, 2019"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.aaaauto.pl/detail/hyundai/i30/30569801"
+                }
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 53000
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "gross_total"
+            },
+            "year": {
+              "before": null,
+              "after": 2019
+            },
+            "mileage": {
+              "before": null,
+              "after": 76800
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.4-tgdi-140"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "automatic"
+            },
+            "offerType": {
+              "before": null,
+              "after": "unknown"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://aaaautoeuimg.vshcdn.net/thumb/300192380_1024x768x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300192380_9_1024x768x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300192380_15_1024x768x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300192380_4_1024x768x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300192380_6_1024x768x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300192380_1_1024x768x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300192380_2_1024x768x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300192380_3_1024x768x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300192380_5_1024x768x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300192380_7_1024x768x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300192380_11_1024x768x95.jpg",
+                "https://aaaautoeuimg.vshcdn.net/thumb/300192380_12_1024x768x95.jpg"
+              ]
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "url:https://www.aaaauto.pl/detail/hyundai/i30/30569801",
+        "modelKey": "hyundai-i30-iii-wagon",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
     }
   ],
   "archivedOffers": [

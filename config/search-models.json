@@ -34,6 +34,7 @@
       "requirements": {
         "version": 1,
         "purchase": {
+          "minimumAdvertisedPricePln": 30000,
           "maxPriceGrossPln": 55000,
           "scope": "purchase_only",
           "priceExceptions": [
@@ -206,6 +207,7 @@
       "requirements": {
         "version": 1,
         "purchase": {
+          "minimumAdvertisedPricePln": 30000,
           "maxPriceGrossPln": 55000,
           "scope": "purchase_only",
           "priceExceptions": [
@@ -378,6 +380,7 @@
       "requirements": {
         "version": 1,
         "purchase": {
+          "minimumAdvertisedPricePln": 30000,
           "maxPriceGrossPln": 55000,
           "scope": "purchase_only",
           "priceExceptions": [
@@ -554,6 +557,7 @@
       "requirements": {
         "version": 1,
         "purchase": {
+          "minimumAdvertisedPricePln": 30000,
           "maxPriceGrossPln": 55000,
           "scope": "purchase_only",
           "priceExceptions": [
@@ -726,6 +730,7 @@
       "requirements": {
         "version": 1,
         "purchase": {
+          "minimumAdvertisedPricePln": 30000,
           "maxPriceGrossPln": 55000,
           "scope": "purchase_only",
           "priceExceptions": [
@@ -897,6 +902,7 @@
       "requirements": {
         "version": 1,
         "purchase": {
+          "minimumAdvertisedPricePln": 30000,
           "maxPriceGrossPln": 55000,
           "scope": "purchase_only",
           "priceExceptions": [
@@ -1069,6 +1075,7 @@
       "requirements": {
         "version": 1,
         "purchase": {
+          "minimumAdvertisedPricePln": 30000,
           "maxPriceGrossPln": 55000,
           "scope": "purchase_only",
           "priceExceptions": [
@@ -1244,6 +1251,7 @@
       "requirements": {
         "version": 1,
         "purchase": {
+          "minimumAdvertisedPricePln": 30000,
           "maxPriceGrossPln": 55000,
           "scope": "purchase_only",
           "priceExceptions": [
@@ -1437,6 +1445,7 @@
       "requirements": {
         "version": 1,
         "purchase": {
+          "minimumAdvertisedPricePln": 30000,
           "maxPriceGrossPln": 55000,
           "scope": "purchase_only",
           "priceExceptions": [
@@ -1612,6 +1621,7 @@
       "requirements": {
         "version": 1,
         "purchase": {
+          "minimumAdvertisedPricePln": 30000,
           "maxPriceGrossPln": 55000,
           "scope": "purchase_only",
           "priceExceptions": [
@@ -1771,6 +1781,7 @@
       "requirements": {
         "version": 1,
         "purchase": {
+          "minimumAdvertisedPricePln": 30000,
           "maxPriceGrossPln": 55000,
           "scope": "purchase_only",
           "priceExceptions": [
@@ -1932,6 +1943,7 @@
       "requirements": {
         "version": 1,
         "purchase": {
+          "minimumAdvertisedPricePln": 30000,
           "maxPriceGrossPln": 55000,
           "scope": "purchase_only",
           "priceExceptions": [
@@ -2091,6 +2103,7 @@
       "requirements": {
         "version": 1,
         "purchase": {
+          "minimumAdvertisedPricePln": 30000,
           "maxPriceGrossPln": 55000,
           "scope": "purchase_only",
           "priceExceptions": [

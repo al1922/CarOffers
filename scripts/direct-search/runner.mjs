@@ -4,8 +4,10 @@ import { randomUUID } from "node:crypto";
 import { fileURLToPath } from "node:url";
 import { browserNavigationPolicy } from "./robots-policy.mjs";
 import { classifyGenericCard } from "../portal-card-classifier.mjs";
-import { extractVisibleFields } from "../portal-screening.mjs";
+import { extractVisibleFields, normalizeText } from "../portal-screening.mjs";
 import { otomotoAdapter } from "./adapters/otomoto.mjs";
+import { aaaautoAdapter } from "./adapters/aaaauto.mjs";
+import { spoticarAdapter } from "./adapters/spoticar.mjs";
 import { attachResponseCapture } from "./response-capture.mjs";
 import { normalizeRunResult } from "./result-normalizer.mjs";
 import { groupModelsByMake, listingMatchesModel } from "./model-groups.mjs";
@@ -13,7 +15,8 @@ import { mapWithConcurrency } from "./parallel.mjs";
 import { StageTimings } from "./timings.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "..");
-const ADAPTERS = new Map([[otomotoAdapter.id, otomotoAdapter]]);
+const ADAPTERS = new Map([[otomotoAdapter.id, otomotoAdapter], [aaaautoAdapter.id, aaaautoAdapter],
+  [spoticarAdapter.id, spoticarAdapter]]);
 const CHALLENGE = /access denied|robot check|captcha|verify you are human|too many requests|dostęp został zablokowany|oh noes/i;
 process.env.PLAYWRIGHT_BROWSERS_PATH ??= path.join(ROOT, "node_modules", ".cache", "ms-playwright");
 
@@ -21,13 +24,98 @@ function isAccessDenied(status) {
   return [401, 403, 429].includes(status);
 }
 
-function profileForModel(model, sourceId) {
+function isRequiredDataDenial(adapter, response, context) {
+  return adapter.isRequiredDataResponse?.(response, context) === true;
+}
+
+function compactEngineText(value) {
+  return normalizeText(value).replace(/[^a-z0-9]/g, "");
+}
+
+function engineTokens(value) {
+  return normalizeText(value).toLowerCase().match(/[a-z]+|\d+(?:\.\d+)?/g) ?? [];
+}
+
+function engineLabelFitsVariant(label, variant) {
+  const variantPrefix = String(variant).replace(/-\d+$/, "");
+  const labelKey = compactEngineText(label);
+  const prefixKey = compactEngineText(variantPrefix);
+  if (!labelKey) return false;
+  if (prefixKey.startsWith(labelKey) || labelKey.startsWith(prefixKey)) return true;
+  const labelTokens = engineTokens(label);
+  const variantTokens = engineTokens(variantPrefix);
+  const displacement = variantTokens.find((token) => /^\d+\.\d+$/.test(token));
+  return Boolean(displacement && labelTokens.includes(displacement) &&
+    labelTokens.some((token) => /[a-z]/.test(token) && variantTokens.includes(token)));
+}
+
+function engineAliasesForModel(model, knowledge) {
+  const variants = model.allowedEngineVariants ?? [];
+  const claimsByVariant = new Map(variants.map((variant) => [variant, []]));
+  const visit = (variant, value, targetPower) => {
+    if (Array.isArray(value)) {
+      for (const item of value) visit(variant, item, targetPower);
+      return;
+    }
+    if (!value || typeof value !== "object") return;
+    const label = value.label ?? value.name ?? value.variant;
+    const reportedPower = Number(value.powerPS ?? value.systemPowerPS);
+    if (typeof label === "string" && Number.isFinite(targetPower) && reportedPower === targetPower &&
+        engineLabelFitsVariant(label, variant)) {
+      claimsByVariant.get(variant)?.push({ label, powerKw: Number(value.powerKw ?? value.systemPowerKw) });
+    }
+    for (const nested of Object.values(value)) visit(variant, nested, targetPower);
+  };
+  for (const claim of knowledge?.claims ?? []) {
+    if (claim.topic !== "engine") continue;
+    for (const variant of variants) {
+      const match = String(variant).match(/-(\d+)$/);
+      visit(variant, claim.value, match ? Number(match[1]) : Number.NaN);
+    }
+  }
+
+  const aliasOwners = new Map();
+  const addOwner = (alias, variant) => {
+    const key = compactEngineText(alias);
+    if (!key) return;
+    const owners = aliasOwners.get(key) ?? new Set();
+    owners.add(variant);
+    aliasOwners.set(key, owners);
+  };
+  for (const variant of variants) {
+    for (const { label } of claimsByVariant.get(variant) ?? []) addOwner(label, variant);
+    const prefix = String(variant).replace(/-\d+$/, "").replace(/-(?:ea)?\d+$/i, "").replace(/-/g, " ");
+    addOwner(prefix, variant);
+  }
+
+  return variants.map((variant) => {
+    const match = String(variant).match(/-(\d+)$/);
+    const power = match ? Number(match[1]) : null;
+    const aliases = [];
+    const add = (alias) => {
+      if (alias && !aliases.some((existing) => compactEngineText(existing) === compactEngineText(alias))) aliases.push(alias);
+    };
+    for (const { label, powerKw } of claimsByVariant.get(variant) ?? []) {
+      add(`${label} ${power} KM`);
+      const kw = Number.isFinite(powerKw) ? powerKw : power === null ? null : Math.round(power * 0.73549875);
+      if (kw !== null) add(`${label} ${kw} kW`);
+      if (aliasOwners.get(compactEngineText(label))?.size === 1) add(label);
+    }
+    const prefix = String(variant).replace(/-\d+$/, "").replace(/-(?:ea)?\d+$/i, "").replace(/-/g, " ");
+    if (aliasOwners.get(compactEngineText(prefix))?.size === 1) add(prefix);
+    if (power !== null) add(`${prefix} ${power} KM`);
+    return { engineVariant: variant, aliases };
+  });
+}
+
+function profileForModel(model, sourceId, engineAliases = []) {
   const requirements = model.requirements ?? {};
   const purchase = requirements.purchase ?? {};
   const mileage = requirements.mileage ?? {};
   const bodyCodes = (model.bodies ?? []).map((body) => ({ wagon: "wagon", combi: "wagon", sedan: "sedan",
     hatchback: "hatchback", suv: "suv", crossover: "crossover", minivan: "minivan" })[String(body).toLowerCase()] ?? body);
   const screeningLimits = {
+    minimumAdvertisedPricePln: purchase.minimumAdvertisedPricePln ?? 0,
     basePurchaseGrossPlnMax: purchase.maxPriceGrossPln ?? Number.MAX_SAFE_INTEGER,
     productionYearMin: requirements.yearMin ?? model.searchYears?.min ?? 1900,
     productionYearMax: requirements.yearMax ?? model.searchYears?.max ?? 2100,
@@ -40,18 +128,31 @@ function profileForModel(model, sourceId) {
     modelKey: model.key,
     searchProfile: {
       searchUrl: "",
-      queryPlan: { nativeFilters: { make: model.brand, model: model.model }, manualFilters: { make: model.brand, model: model.model } },
+      queryPlan: { nativeFilters: { make: model.brand, model: model.model }, manualFilters: { make: model.brand, model: model.model },
+        engineAliases },
       candidateScreening: { screeningLimits },
     },
   };
 }
 
-function validateModelBody(classification, model, appliedFilters) {
+function normalizedBodyCode(value) {
+  const body = normalizeText(value);
+  if (body.includes("kombi") || body.includes("wagon")) return "wagon";
+  if (body.includes("sedan")) return "sedan";
+  if (body.includes("hatchback")) return "hatchback";
+  if (body.includes("suv")) return "suv";
+  if (body.includes("crossover")) return "crossover";
+  if (body.includes("minivan") || body.includes("minibus")) return "minivan";
+  return null;
+}
+
+function validateModelBody(classification, model, appliedFilters, bodyAliases = {}, observedBody = "") {
   if (classification.status !== "available") return classification;
   const expected = (model.bodies ?? []).map((body) => ({ wagon: "wagon", combi: "wagon", sedan: "sedan", hatchback: "hatchback",
     suv: "suv", crossover: "crossover", minivan: "minivan" })[String(body).toLowerCase()] ?? String(body).toLowerCase());
   if (!expected.length) return classification;
-  const actual = classification.offer?.bodyCode;
+  const sourceBody = classification.offer?.bodyCode ?? normalizedBodyCode(observedBody);
+  const actual = bodyAliases[model.key]?.[sourceBody] ?? sourceBody;
   if (actual && !expected.includes(actual)) {
     return { status: "rejected", note: `Nadwozie z karty (${actual}) nie odpowiada wymaganiu modelu (${expected.join(", ")}).` };
   }
@@ -60,21 +161,75 @@ function validateModelBody(classification, model, appliedFilters) {
   if (!actual && !expected.includes(appliedBody)) {
     return { status: "unverified", note: "Nie udało się potwierdzić wymaganego typu nadwozia na karcie ani w zastosowanym filtrze wyszukiwania." };
   }
+  if (actual && classification.offer?.bodyCode !== actual) {
+    classification = { ...classification, offer: { ...classification.offer, bodyCode: actual } };
+  }
+  return classification;
+}
+
+function validateAaaAutoGenerationAndEngine(classification, model, detail, listing) {
+  if (classification.status !== "available") return classification;
+  const expectedGeneration = String(model.generation ?? "").trim();
+  if (expectedGeneration) {
+    const actualGeneration = String(detail.fields?.["Generacja"] ?? listing.sourceData?.modelGeneration ?? "").trim();
+    if (!actualGeneration) return { status: "unverified", note: "Karta AAA AUTO nie ujawniła generacji wymaganej dla modelu." };
+    const actualTokens = engineTokens(actualGeneration);
+    if (!actualTokens.includes(expectedGeneration.toLowerCase())) {
+      return { status: "rejected", note: `Generacja z karty (${actualGeneration}) nie odpowiada wymaganej generacji (${expectedGeneration}).` };
+    }
+  }
+  const allowedVariants = model.allowedEngineVariants ?? [];
+  if (!allowedVariants.length) return { status: "unverified", note: "Model nie ma skonfigurowanej listy dozwolonych wariantów silnika." };
+  const actualVariant = classification.offer?.engineVariant;
+  if (!actualVariant) return { status: "unverified", note: "Nie potwierdzono dozwolonego wariantu silnika w danych karty AAA AUTO." };
+  if (!allowedVariants.includes(actualVariant)) {
+    return { status: "rejected", note: `Wariant silnika (${actualVariant}) nie znajduje się na skonfigurowanej liście.` };
+  }
+  return classification;
+}
+
+function validateSpoticarGenerationAndEngine(classification, model, detail, listing) {
+  if (classification.status !== "available") return classification;
+  const expectedGeneration = String(model.generation ?? "").trim();
+  if (expectedGeneration) {
+    const actualGeneration = String(detail.fields?.["Generacja"] ?? listing.sourceData?.modelGeneration ?? "").trim();
+    if (!actualGeneration) return { status: "unverified", note: "Karta SPOTICAR nie ujawniła generacji wymaganej dla modelu." };
+    const actualTokens = engineTokens(actualGeneration);
+    if (!actualTokens.includes(expectedGeneration.toLowerCase())) {
+      return { status: "rejected", note: `Generacja z karty (${actualGeneration}) nie odpowiada wymaganej generacji (${expectedGeneration}).` };
+    }
+  }
+  const allowedVariants = model.allowedEngineVariants ?? [];
+  if (!allowedVariants.length) return { status: "unverified", note: "Model nie ma skonfigurowanej listy dozwolonych wariantów silnika." };
+  const actualVariant = classification.offer?.engineVariant;
+  if (!actualVariant) return { status: "unverified", note: "Nie potwierdzono dozwolonego wariantu silnika w danych karty SPOTICAR." };
+  if (!allowedVariants.includes(actualVariant)) {
+    return { status: "rejected", note: `Wariant silnika (${actualVariant}) nie znajduje się na skonfigurowanej liście.` };
+  }
   return classification;
 }
 
 function apiFields(responses) {
   const fields = {};
-  const wanted = /^(?:productiondate|productionyear|year|mileagefromodometer|mileage|odometer|price|pricegross|grossprice|pricecurrency|currency|vin|fueltype|vehicletransmission|bodytype|addresslocality|addressregion|sellername|availability)$/i;
+  const wanted = /^(?:publicationdate|datepublished|dateposted|publishedat|publisheddate|firstregistrationdate|datefirstregistered|productiondate|productionyear|year|modelgeneration|generation|mileagefromodometer|mileage|mileageunit|odometer|price|pricegross|grossprice|pricebasis|pricetype|pricecurrency|currency|vin|fuel|fueltitle|alternativefueltitle|fuel[_-]?type|fueltype|vehicle[_-]?transmission|vehicletransmission|transmission|gearbox|body[_-]?type|bodytype|bodycode|engine|vehicleengine|enginedisplacement|enginesize|enginecapacity|enginepower|enginepowerhp|enginepowerkw|horsepower|power|address|addresslocality|addressregion|addresscountry|countrycode|postalcode|postcode|latitude|longitude|lat|lng|lon|location|city|region|voivodeship|seller|sellername|sellertype|saletype|transactiontype|offertype|availability|status|issold|sold|lpginstalled)$/i;
+  const fieldText = (value, depth = 0) => {
+    if (typeof value === "string" || typeof value === "number" || typeof value === "boolean") return String(value);
+    if (!value || typeof value !== "object" || Array.isArray(value) || depth > 3) return "";
+    const raw = value.value ?? value.displayValue ?? value.text ?? value.amount?.value ?? value.amount ??
+      value.name ?? value.title ?? value.label ?? value.code;
+    const text = fieldText(raw, depth + 1);
+    const unit = value.unitText ?? value.unitCode ?? value.unit ?? value.currency ?? value.priceCurrency;
+    return [text, fieldText(unit, depth + 1)].filter(Boolean).join(" ");
+  };
   const visit = (value, depth = 0) => {
     if (depth > 7 || value == null || typeof value !== "object") return;
     if (Array.isArray(value)) { for (const item of value.slice(0, 100)) visit(item, depth + 1); return; }
     const label = value.label ?? value.key ?? value.name;
     const fieldValue = value.value ?? value.displayValue ?? value.text;
-    if (typeof label === "string" && ["string", "number"].includes(typeof fieldValue)) fields[label] ??= String(fieldValue);
+    if (typeof label === "string" && fieldText(fieldValue)) fields[label] ??= fieldText(fieldValue);
     for (const [key, item] of Object.entries(value)) {
-      if (wanted.test(key) && (typeof item === "string" || typeof item === "number")) fields[key] ??= String(item);
-      else visit(item, depth + 1);
+      if (wanted.test(key.replace(/[^a-z0-9]/gi, "")) && fieldText(item)) fields[key] ??= fieldText(item);
+      else if (item && typeof item === "object") visit(item, depth + 1);
     }
   };
   for (const response of responses) if (response.jsonSummary) visit(response.jsonSummary);
@@ -98,11 +253,19 @@ function applyListingApiPrice(classification, listing) {
         evidence: evidence.map((item, index) => index === 0 ? {
           ...item,
           fields: [...new Set([...(item.fields ?? []), "price"])],
-          note: "Cenę odczytano z JSON listy OTOMOTO (price.amount.value); podstawa ceny pozostaje niepotwierdzona.",
+          note: listing.apiEvidence?.priceEvidenceNote ?? "Cenę odczytano z JSON listy OTOMOTO (price.amount.value); podstawa ceny pozostaje niepotwierdzona.",
         } : item),
       },
     },
   };
+}
+
+function rejectBelowMinimumAdvertisedPrice(classification, model) {
+  if (classification.status !== "available" || !classification.offer) return classification;
+  const minimum = model.requirements?.purchase?.minimumAdvertisedPricePln;
+  const price = classification.offer.price;
+  if (!Number.isFinite(minimum) || !Number.isFinite(price) || price >= minimum) return classification;
+  return { status: "rejected", note: `Widoczna cena ogłoszenia jest poniżej minimum ${minimum} zł.` };
 }
 
 function extractDetailEvidence(text, sourceId) {
@@ -139,7 +302,42 @@ function mergeListing(target, item) {
     visibleText: [...new Set([apiText, itemText].filter(Boolean))].join("\n").slice(0, 10000),
     apiVisibleText: [...new Set([apiText, itemText].filter((_, index) => index === 0 || item?.apiEvidence))].join("\n").slice(0, 10000) || null,
     apiEvidence: target?.apiEvidence ?? item?.apiEvidence ?? null,
+    ...((target?.sourceData || item?.sourceData) ? { sourceData: mergeSourceData(target?.sourceData, item?.sourceData) } : {}),
   };
+}
+
+function hasSourceFact(value) {
+  if (value === null || value === undefined || value === "") return false;
+  if (typeof value === "string") return Boolean(value.trim());
+  if (Array.isArray(value)) return value.length > 0;
+  if (typeof value === "object") return Object.keys(value).length > 0;
+  return true;
+}
+
+function mergeSourceData(...sources) {
+  const result = {};
+  const photos = [];
+  for (const source of sources) {
+    if (!source || typeof source !== "object" || Array.isArray(source)) continue;
+    for (const [key, value] of Object.entries(source)) {
+      if (key === "photos") {
+        if (Array.isArray(value)) photos.push(...value);
+      } else if (key === "location") {
+        const location = result.location && typeof result.location === "object" && !Array.isArray(result.location)
+          ? { ...result.location } : {};
+        if (typeof value === "string" && value.trim()) location.label = value.trim();
+        else if (value && typeof value === "object" && !Array.isArray(value)) {
+          for (const [locationKey, locationValue] of Object.entries(value)) {
+            if (hasSourceFact(locationValue)) location[locationKey] = locationValue;
+          }
+        }
+        if (Object.keys(location).length) result.location = location;
+      } else if (hasSourceFact(value)) result[key] = value;
+    }
+  }
+  const directPhotos = [...new Set(photos.filter((url) => typeof url === "string" && /^https:\/\//i.test(url)))].slice(0, 12);
+  if (directPhotos.length) result.photos = directPhotos;
+  return result;
 }
 
 function mergeListingSources(apiListings, visibleListings) {
@@ -183,6 +381,15 @@ export async function runDirectSearch(options) {
   if (!sourceConfig?.enabled || !adapter) throw new Error(`Brak aktywnego adaptera direct-search dla źródła ${options.sourceId}.`);
 
   const models = selectedModels(modelsConfig.models, options);
+  const engineAliasesByModel = new Map();
+  for (const model of models) {
+    let knowledge = null;
+    if (model.knowledgeFile) {
+      try { knowledge = JSON.parse(await readFile(path.join(ROOT, model.knowledgeFile), "utf8")); }
+      catch { knowledge = null; }
+    }
+    engineAliasesByModel.set(model.key, engineAliasesForModel(model, knowledge));
+  }
   const groups = splitOversizedModelGroups(groupModelsByMake(models));
   const runId = `${new Date().toISOString().replace(/[-:.]/g, "").replace("T", "-").replace("Z", "")}-${randomUUID().slice(0, 8)}`;
   const runDir = path.join(ROOT, "runs", "direct-search", runId);
@@ -191,16 +398,17 @@ export async function runDirectSearch(options) {
   const timings = new StageTimings();
   const runStartedAt = new Date().toISOString();
   const defaults = config.defaults ?? {};
-  const maxPages = options.maxPages ?? defaults.maxPages ?? 2;
-  const maxCardsPerModel = options.maxCards ?? defaults.maxCards ?? 20;
-  const detailConcurrency = options.detailConcurrency ?? defaults.detailConcurrency ?? 3;
+  const sourceLimits = sourceConfig.limits ?? {};
+  const maxPages = options.maxPages ?? sourceLimits.maxPages ?? defaults.maxPages ?? 2;
+  const maxCardsPerModel = options.maxCards ?? sourceLimits.maxCards ?? defaults.maxCards ?? 20;
+  const detailConcurrency = options.detailConcurrency ?? sourceLimits.detailConcurrency ?? defaults.detailConcurrency ?? 3;
   const filterOnly = Boolean(options.filterOnly);
   const urlFilters = Boolean(options.urlFilters);
   const origin = new URL(sourceConfig.searchUrl).origin;
   const runSummary = { schemaVersion: 1, runId, sourceId: options.sourceId, sourceName: adapter.sourceName,
     startedAt: runStartedAt, headless: options.headless, modelKeys: models.map((model) => model.key),
     filterOnly, filterMode: urlFilters ? "url" : "ui",
-    searchGroups: [], sourceStatus: "pending", results: [], errors: [] };
+    searchGroups: [], sourceStatus: "pending", results: [], errors: [], networkWarnings: [] };
   let browser;
   let context;
   let sourceBlocked = false;
@@ -234,6 +442,8 @@ export async function runDirectSearch(options) {
     let blocked = false;
     let currentPageStatus = null;
     let pageCaptureMark = 0;
+    let currentListingPageNumber = 1;
+    const recordedDenialKeys = new Set();
     const groupTaskMetadata = { sourceId: options.sourceId, groupId: group.id, modelKeys };
     const runContext = { searchSubmitted: false, filterAudits: [], filterRetryAttempted: false,
       filterReadyTimeoutMs: defaults.filterReadyTimeoutMs ?? 3000,
@@ -264,14 +474,30 @@ export async function runDirectSearch(options) {
         runContext.queryUrl = searchUrl;
         if (!allowed(searchUrl)) throw Object.assign(new Error("Adres wyszukiwania z filtrami jest poza zakresem dozwolonym przez robots.txt."), { blocked: true });
       }
+      const recordNonCriticalDenials = (responses, context) => {
+        for (const item of responses) {
+          if (!isAccessDenied(item.status) || isRequiredDataDenial(adapter, item, context)) continue;
+          const key = [context.phase, context.pageNumber ?? "", context.modelKeys?.join(",") ?? "",
+            item.status, item.method ?? "", item.resourceType ?? "", item.url].join("|");
+          if (recordedDenialKeys.has(key)) continue;
+          recordedDenialKeys.add(key);
+          runSummary.networkWarnings.push({ sourceId: options.sourceId, ...context, status: item.status,
+            method: item.method ?? null, resourceType: item.resourceType ?? null,
+            contentType: item.contentType ?? null, url: item.url });
+        }
+      };
       const checkAccess = async () => {
         await responseCapture.flush();
         if (isAccessDenied(lastNavigationStatus)) {
-          throw Object.assign(new Error(`Portal zwrócił HTTP ${lastNavigationStatus}; dalsze odczyty zatrzymano.`), { blocked: true });
+          throw Object.assign(new Error(`Nawigacja strony zwróciła HTTP ${lastNavigationStatus} pod adresem ${page.url()}; dalsze odczyty zatrzymano.`), { blocked: true });
         }
-        const deniedResponse = responseCapture.all().find((item) => isAccessDenied(item.status));
+        const responseContext = { phase: "listing", pageNumber: currentListingPageNumber, modelKeys };
+        const responses = responseCapture.since(pageCaptureMark);
+        recordNonCriticalDenials(responses, responseContext);
+        const deniedResponse = responses.find((item) => isAccessDenied(item.status) &&
+          isRequiredDataDenial(adapter, item, responseContext));
         if (deniedResponse) {
-          throw Object.assign(new Error(`Żądanie danych zwróciło HTTP ${deniedResponse.status}; dalsze odczyty zatrzymano.`), { blocked: true });
+          throw Object.assign(new Error(`Wymagane żądanie danych zwróciło HTTP ${deniedResponse.status}: ${deniedResponse.url}; dalsze odczyty zatrzymano.`), { blocked: true });
         }
         if (await pageHasChallenge(page)) {
           throw Object.assign(new Error("Strona wyświetliła zabezpieczenie lub challenge; dalsze odczyty zatrzymano."), { blocked: true });
@@ -355,14 +581,15 @@ export async function runDirectSearch(options) {
       try {
         if (urlFilters) {
           runContext.queryUrl = page.url();
-          const initialListingLoaded = await timings.measure("url_filter_initial_listing_wait", groupTaskMetadata,
-            () => runContext.waitForAnyListingPage(1500));
+          const initialListingLoaded = await timings.measure("url_filter_initial_listing_wait", groupTaskMetadata, () =>
+            adapter.waitForListingPage ? adapter.waitForListingPage(page, 1, 1500) : runContext.waitForAnyListingPage(1500));
           if (!initialListingLoaded) {
             await timings.measure("url_filter_submit", groupTaskMetadata,
               () => adapter.submitUrlFilters(page, runContext));
           }
-          await timings.measure("url_filter_results_wait", groupTaskMetadata,
-            () => runContext.waitForAppliedFilters(runContext.resultReadyTimeoutMs));
+          await timings.measure("url_filter_results_wait", groupTaskMetadata, () => adapter.waitForAppliedFiltersOnPage
+            ? adapter.waitForAppliedFiltersOnPage(page, group.models, runContext.filtersApplied ?? {}, runContext.resultReadyTimeoutMs)
+            : runContext.waitForAppliedFilters(runContext.resultReadyTimeoutMs));
         } else {
           await adapter.applyFilters(page, group, timings, runContext);
         }
@@ -375,10 +602,15 @@ export async function runDirectSearch(options) {
       await checkAccess();
 
       for (let pageIndex = 0; pageIndex < maxPages; pageIndex += 1) {
+        currentListingPageNumber = pageIndex + 1;
         if (pageIndex > 0) {
           const previous = pages.at(-1);
           const action = previous?.nextAction;
           if (!action) break;
+          if (action.kind === "unsupported") {
+            errors.push({ url: page.url(), error: action.reason ?? "Nie można bezpiecznie ustalić adresu następnej strony." });
+            break;
+          }
           if (!allowed(action.url)) {
             errors.push({ url: action.url, error: "Następna strona jest poza zakresem dozwolonym przez robots.txt." });
             break;
@@ -409,7 +641,9 @@ export async function runDirectSearch(options) {
             resultsReady = Boolean(await runContext.firstListingResponsePromise);
           } else {
             resultsReady = Boolean(adapter.findListingResponse?.(responseCapture.since(pageCaptureMark), pageIndex + 1));
-            if (!resultsReady && adapter.waitForListingResponse) {
+            if (!resultsReady && adapter.waitForListingPage) {
+              resultsReady = Boolean(await adapter.waitForListingPage(page, pageIndex + 1, runContext.resultReadyTimeoutMs));
+            } else if (!resultsReady && adapter.waitForListingResponse) {
               resultsReady = Boolean(await adapter.waitForListingResponse(page, pageIndex + 1, runContext.resultReadyTimeoutMs));
             } else if (!resultsReady && !adapter.waitForListingResponse) {
               await page.waitForSelector(adapter.listingSelector, { state: "attached", timeout: runContext.resultReadyTimeoutMs });
@@ -428,7 +662,9 @@ export async function runDirectSearch(options) {
         let filterAudit = null;
         const pageData = await timings.measure("result_list_extract", { ...groupTaskMetadata, page: pageIndex + 1 }, async () => {
           const apiResponses = responseCapture.since(pageCaptureMark);
-          filterAudit = adapter.auditListingRequest?.(apiResponses, group.models, runContext.filtersApplied ?? {}, pageIndex + 1, page.url()) ?? null;
+          filterAudit = adapter.auditListingPage
+            ? await adapter.auditListingPage(page, group.models, runContext.filtersApplied ?? {}, pageIndex + 1, page.url())
+            : adapter.auditListingRequest?.(apiResponses, group.models, runContext.filtersApplied ?? {}, pageIndex + 1, page.url()) ?? null;
           if (filterAudit) {
             runContext.filterAudits.push(filterAudit);
           }
@@ -472,8 +708,10 @@ export async function runDirectSearch(options) {
       for (const listing of resultPage.listings) uniqueListings.set(listing.url, mergeListing(uniqueListings.get(listing.url), listing));
     }
     const listingsByModel = new Map();
+    const cappedModels = new Set();
     for (const model of group.models) {
       const matches = [...uniqueListings.values()].filter((listing) => listingMatchesModel(listing, model));
+      if (["aaaauto", "spoticar"].includes(options.sourceId) && matches.length > maxCardsPerModel) cappedModels.add(model.key);
       listingsByModel.set(model.key, matches.slice(0, maxCardsPerModel));
     }
     const listingModels = new Map();
@@ -493,6 +731,10 @@ export async function runDirectSearch(options) {
     }
     const candidatesByModel = new Map(group.models.map((model) => [model.key, []]));
     const errorsByModel = new Map(group.models.map((model) => [model.key, []]));
+    for (const modelKey of cappedModels) {
+      errorsByModel.get(modelKey).push({ url: runContext.queryUrl ?? sourceConfig.searchUrl,
+        error: `Limit kart (${maxCardsPerModel}) osiągnięty; lista zawiera więcej pasujących ofert, więc pokrycie modelu jest częściowe.` });
+    }
     const detailStartedAt = Date.now();
     const detailResults = await mapWithConcurrency(inspectionTasks, detailConcurrency, async ({ listing, models: matchedModels }) => {
       if (sourceBlocked || blocked) return null;
@@ -541,10 +783,14 @@ export async function runDirectSearch(options) {
           throw error;
         }
         await detailCapture.flush();
-        const deniedResponse = detailCapture.all().find((item) => isAccessDenied(item.status));
+        const detailResponseContext = { phase: "detail", modelKeys: matchedKeys };
+        const detailResponsesCaptured = detailCapture.all();
+        recordNonCriticalDenials(detailResponsesCaptured, detailResponseContext);
+        const deniedResponse = detailResponsesCaptured.find((item) => isAccessDenied(item.status) &&
+          isRequiredDataDenial(adapter, item, detailResponseContext));
         if (deniedResponse) {
           sourceBlocked = true;
-          throw Object.assign(new Error(`Żądanie karty zwróciło HTTP ${deniedResponse.status}; dalsze karty zatrzymano bez ponawiania.`), { blocked: true });
+          throw Object.assign(new Error(`Wymagane żądanie danych karty zwróciło HTTP ${deniedResponse.status}: ${deniedResponse.url}; dalsze karty zatrzymano bez ponawiania.`), { blocked: true });
         }
         if (await pageHasChallenge(detailPage)) {
           sourceBlocked = true;
@@ -553,25 +799,37 @@ export async function runDirectSearch(options) {
         const detail = await timings.measure("listing_detail_extract", metadata, () => adapter.extractDetail(detailPage));
         const detailResponses = detailCapture.since(responseMark);
         const detailEvidence = extractDetailEvidence(detail.bodyText, options.sourceId);
-        const card = { ...detail, salePanel: detailEvidence.salePanel,
+        const card = { ...detail, salePanel: detail.salePanel ?? detailEvidence.salePanel,
           fields: { ...detailEvidence.fields, ...apiFields(detailResponses), ...detail.fields } };
         const classificationCard = { ...card,
           bodyText: card.bodyText.replace(/odwiedź nasze pozostałe aukcje/gi, "pozostałe oferty sprzedawcy") };
         const inspected = [];
         for (const model of matchedModels) {
-          const task = profileForModel(model, options.sourceId);
+          const task = profileForModel(model, options.sourceId, engineAliasesByModel.get(model.key) ?? []);
           let classification = await timings.measure("listing_classification", { ...metadata, modelKey: model.key },
             async () => classifyGenericCard(listing, classificationCard, task, new Date().toISOString()));
           classification = applyListingApiPrice(classification, listing);
+          classification = rejectBelowMinimumAdvertisedPrice(classification, model);
           if (classification.status === "available" && listing.searchFilterAudit && !listing.searchFilterAudit.ok) {
             classification = { status: "unverified", note: `Nie potwierdzono filtrów portalu: ${listing.searchFilterAudit.missing.join(", ")}.` };
           }
-          classification = validateModelBody(classification, model, runContext.filtersApplied);
+          classification = validateModelBody(classification, model, runContext.filtersApplied,
+            ["aaaauto", "spoticar"].includes(options.sourceId) ? runContext.filterProfile.bodyAliases ?? {} : {},
+            ["aaaauto", "spoticar"].includes(options.sourceId)
+              ? detail.fields?.["Nadwozie"] ?? detail.structuredData?.[0]?.bodyType ?? "" : "");
+          if (options.sourceId === "aaaauto") {
+            classification = validateAaaAutoGenerationAndEngine(classification, model, detail, listing);
+          } else if (options.sourceId === "spoticar") {
+            classification = validateSpoticarGenerationAndEngine(classification, model, detail, listing);
+          }
           const candidate = { url: listing.url, title: listing.title, detailStatus, detail,
             listingEvidence: { ...extractVisibleFields(`${listing.visibleText ?? ""}\n${detail.bodyText}`, options.sourceId),
-              displayedPriceText: detailEvidence.visibleFields.displayedPriceText,
+              displayedPriceText: card.salePanel?.price ?? detailEvidence.visibleFields.displayedPriceText,
               ...(Number.isFinite(listing.apiPriceAmount) ? { apiPriceAmount: listing.apiPriceAmount } : {}) },
             listingMatch: { modelKey: model.key, matchedBy: "exact_model_token_in_listing" },
+            sourceData: {
+              ...mergeSourceData(listing.sourceData, detail.sourceData),
+            },
             apiResponses: detailResponses, classification };
           candidatesByModel.get(model.key).push(candidate);
           inspected.push({ modelKey: model.key, status: classification.status });
@@ -590,13 +848,15 @@ export async function runDirectSearch(options) {
     timings.record("parallel_detail_batch", Date.now() - detailStartedAt, sourceBlocked || blocked ? "partial" : "ok",
       { ...groupTaskMetadata, listingsScheduled: inspectionTasks.length, detailConcurrency });
 
-    const groupCoverageComplete = pages.length > 0 && pages.at(-1)?.nextUrl == null && errors.length === 0 && !blocked && !sourceBlocked;
+    const groupCoverageComplete = pages.length > 0 && pages.at(-1)?.nextUrl == null &&
+      pages.at(-1)?.nextAction?.kind !== "unsupported" && errors.length === 0 && cappedModels.size === 0 && !blocked && !sourceBlocked;
     const filtersPassed = Boolean(pages.at(-1)?.filterAudit?.ok);
     const groupResult = { groupId: group.id, brand: group.brand, modelKeys,
       outcome: blocked || sourceBlocked ? "blocked" : filterOnly ? filtersPassed ? "filters_passed" : "filters_failed" : groupCoverageComplete ? "completed" : "partial",
       ...(filterOnly ? { filterStatus: filtersPassed ? "passed" : "failed", filterAudit: pages.at(-1)?.filterAudit ?? null } : {}),
       pagesChecked: pages.length, listingsSeen: pages.reduce((sum, item) => sum + item.listings.length, 0),
       uniqueListings: uniqueListings.size, detailListingsScheduled: inspectionTasks.length, detailConcurrency,
+      cappedModelKeys: [...cappedModels],
       detailsCompleted: (detailResults ?? []).filter((item) => item?.status === "ok").length };
     runSummary.searchGroups.push(groupResult);
     sourceBlocked ||= blocked;

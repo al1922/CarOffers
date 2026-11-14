@@ -12,8 +12,10 @@ export async function loadData(){
  const reportValid=Boolean(report?.generatedAt&&stableJSON(report.configuration?.requirements)===stableJSON(requirements)&&stableJSON(report.configuration?.models)===stableJSON(catalog));
  const warnings=[],offers=[],archivedOffers=[];
  results.forEach((result,i)=>{const model=models[i];if(result.status==='rejected'||!Array.isArray(result.value?.offers)){model.loadError=true;warnings.push('Nie udało się wczytać ofert: '+model.name);return;}
-  model.count=result.value.offers.length;model.updatedAt=result.value.updatedAt;
-  offers.push(...result.value.offers.map(o=>applyAssessment(normalize(attachLocation(o,locations?.locations?.[o.id]),model),report,reportValid)));
+  const minimumAdvertisedPrice=model.searchRequirements?.purchase?.minimumAdvertisedPricePln??0;
+  const visibleOffers=result.value.offers.filter(offer=>!Number.isFinite(offer.price)||offer.price>=minimumAdvertisedPrice);
+  model.count=visibleOffers.length;model.updatedAt=result.value.updatedAt;
+  offers.push(...visibleOffers.map(o=>applyAssessment(normalize(attachLocation(o,locations?.locations?.[o.id]),model),report,reportValid)));
   archivedOffers.push(...(Array.isArray(result.value.archivedOffers)?result.value.archivedOffers:[]).map(o=>applyAssessment(normalize(attachLocation(o,locations?.locations?.[o.id]),model),report,reportValid)));
  });
  if(!cityCatalog)warnings.push('Lista miast jest niedostępna. Możesz podać własny punkt w ustawieniach.');

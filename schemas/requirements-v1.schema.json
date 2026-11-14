@@ -21,12 +21,17 @@
     "purchase": {
       "type": "object",
       "required": [
+        "minimumAdvertisedPricePln",
         "maxPriceGrossPln",
         "scope",
         "priceExceptions",
         "auctionsAllowed"
       ],
       "properties": {
+        "minimumAdvertisedPricePln": {
+          "type": "integer",
+          "minimum": 1
+        },
         "maxPriceGrossPln": {
           "type": "integer",
           "minimum": 1

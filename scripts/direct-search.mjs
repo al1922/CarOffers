@@ -7,14 +7,15 @@ import { runDirectSearch } from "./direct-search/runner.mjs";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 
 const HELP = `Usage:
-  npm run search:direct -- --source otomoto [--model <model-key> ...]
+  npm run search:direct -- --source <otomoto|aaaauto|spoticar> [--model <model-key> ...]
        [--models <key1,key2,...>] [--max-pages <n>] [--max-cards <n>]
        [--detail-concurrency <n>] [--headless] [--no-import] [--filters-only] [--ui-filters]
 
-Runs a separate visible-browser search flow for one portal. For OTOMOTO it
-opens per-model URLs with filters encoded; --ui-filters selects the older form
-interaction. It records same-session XHR/Fetch JSON responses, opens
-result cards and classifies them. Qualified offers are imported locally through
+Runs a separate visible-browser search flow for one portal. OTOMOTO uses
+per-model filtered URLs and same-session XHR/Fetch JSON. AAA AUTO uses filtered
+URLs and the server-rendered #ng-state JSON found on result and detail pages.
+SPOTICAR uses make/model-filtered URLs, embedded JSON-LD result pages and rendered detail pages.
+It opens result cards and classifies them. Qualified offers are imported locally through
 the existing preview, conflict check, deduplication and transaction workflow.
 Pass --no-import to keep the run as a review-only result.
 Pass --filters-only to set and audit the first results request without opening offer cards or importing data.

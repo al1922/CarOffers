@@ -623,6 +623,16 @@ def prepare(root, run_id, config):
                 conflicts.append({"taskId": task["id"], "offerId": incoming.get("id"),
                                   "url": observation["url"], "reason": reason})
                 continue
+            if task.get("kind") == "search":
+                minimum_price = requirements_for_model(model, config["requirements"])["purchase"].get(
+                    "minimumAdvertisedPricePln", 0)
+                advertised_price = incoming.get("price")
+                if (type(advertised_price) in (int, float) and advertised_price > 0 and
+                        advertised_price < minimum_price):
+                    skipped.append({"taskId": task["id"], "offerId": incoming.get("id"),
+                                    "url": observation["url"], "reason": "advertised_price_below_minimum",
+                                    "price": advertised_price, "minimumAdvertisedPricePln": minimum_price})
+                    continue
             if task.get("kind") == "archive-availability":
                 if not matches:
                     skipped.append({"taskId": task["id"], "offerId": incoming.get("id"),
