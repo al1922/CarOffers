@@ -122,6 +122,10 @@ def summarize(run_id, run_dir, queue):
     for task in search_tasks:
         result = task_result(run_dir, task)
         outcome = result.get("outcome") or task.get("state") or "pending"
+        if not result and task.get("state") == "pending_manual":
+            outcome = "needs_manual_review"
+        elif not result and task.get("state") == "running" and task.get("manualOnly"):
+            outcome = "manual_in_progress"
         source_id = task.get("sourceId") or "unknown"
         coverage = result.get("coverage") or {}
         pages = coverage.get("searchResults") or []
@@ -172,6 +176,33 @@ def summarize(run_id, run_dir, queue):
                             "readerMsPerRecordedOffer": round(sum(group["readerTimesMs"]) / group["offersRecorded"])
                             if group["offersRecorded"] and group["readerTimesMs"] else None})
 
+    manual_review_sources = queue.get("manualReviewSources", [])
+    if not isinstance(manual_review_sources, list):
+        manual_review_sources = []
+    task_by_id = {task.get("id"): task for task in queue.get("tasks", []) if isinstance(task, dict)}
+    raw_source_blocks = queue.get("sourceAccessBlocks", [])
+    if not isinstance(raw_source_blocks, list):
+        raw_source_blocks = []
+    blocked_source_ids = {item.get("sourceId") for item in raw_source_blocks if isinstance(item, dict)}
+    resolved_manual_sources = []
+    for source in manual_review_sources:
+        if not isinstance(source, dict):
+            continue
+        entry = dict(source)
+        model_tasks = [task_by_id.get(model.get("taskId")) for model in entry.get("models", [])
+                       if isinstance(model, dict) and model.get("taskId")]
+        states = [task.get("state") for task in model_tasks if isinstance(task, dict)]
+        if entry.get("sourceId") in blocked_source_ids:
+            entry["status"] = "access_blocked"
+        elif states and any(state == "running" for state in states):
+            entry["status"] = "manual_in_progress"
+        elif states and any(state == "pending_manual" for state in states):
+            entry["status"] = "needs_manual_review"
+        elif states and all(state in ("complete", "partial", "blocked", "no_matches", "skipped") for state in states):
+            entry["status"] = "access_blocked" if any(state in ("blocked", "skipped") for state in states) else "reviewed"
+        resolved_manual_sources.append(entry)
+    manual_review_sources = resolved_manual_sources
+
     recommendations = []
     dns_tasks = [task for task in task_summaries if "dns" in task["issues"]]
     dns_sources = sorted({task["sourceId"] for task in dns_tasks})
@@ -190,6 +221,15 @@ def summarize(run_id, run_dir, queue):
         recommendations.append({"priority": "high", "code": "access_block", "title": "Zatrzymaj próbę po odmowie dostępu",
                                 "evidence": f"{len(access_tasks)} zadań wskazuje 403/429, CAPTCHA, challenge lub status blocked; źródła: {', '.join(names)}.",
                                 "action": "Nie ponawiaj tej próby automatycznie i nie obchodź zabezpieczeń. Sprawdzaj inne dozwolone źródła; do tego zakresu wróć dopiero, gdy portal udostępnia go normalnie."})
+
+    pending_manual_review = [item for item in manual_review_sources
+                             if item.get("status") in ("needs_manual_review", "manual_in_progress")]
+    if pending_manual_review:
+        names = ", ".join(item.get("sourceId", "unknown") for item in pending_manual_review)
+        recommendations.append({"priority": "high", "code": "manual_review",
+                                "title": "Sprawdź ręcznie pominięte portale",
+                                "evidence": f"{len(pending_manual_review)} źródeł pominięto w automatycznym odczycie: {names}.",
+                                "action": "Użyj `python -B scripts/car-search.py claim --manual --run RUN --worker manual-1 --source SOURCE`, wykonaj publiczne wyszukiwanie widoczną przeglądarką i uzupełnij przygotowany wynik. Zakończ przy CAPTCHA, 401/403/429, challenge lub odmowie robots.txt. Nie ponawiaj ani nie obchodź blokady."})
 
     robots_tasks = [task for task in task_summaries if "robots_denial" in task["issues"]]
     if robots_tasks:
@@ -222,7 +262,8 @@ def summarize(run_id, run_dir, queue):
                                 "evidence": f"{len(reader_tasks)} zadań zawiera Cache miss lub błąd czytnika; źródła: {', '.join(names)}.",
                                 "action": "Kandydatów z migawki weryfikuj w normalnym, zatwierdzonym czytniku Playwright. Gdy karta nadal nie jest dostępna, zostaw wynik partial i nie importuj jej jako dostępnej."})
 
-    pending = sum(count for state, count in outcome_counts.items() if state in ("pending", "running"))
+    pending = sum(task.get("state") in ("pending", "running") and not task.get("manualOnly")
+                  for task in search_tasks)
     if pending:
         recommendations.append({"priority": "medium", "code": "unfinished", "title": "Wznów istniejącą kolejkę przed tworzeniem kolejnej",
                                 "evidence": f"{pending} zadań wyszukiwania nadal ma stan pending/running.",
@@ -237,6 +278,10 @@ def summarize(run_id, run_dir, queue):
     excluded_sources = queue.get("excludedSources", [])
     if not isinstance(excluded_sources, list):
         excluded_sources = []
+    source_access_blocks = queue.get("sourceAccessBlocks", [])
+    if not isinstance(source_access_blocks, list):
+        source_access_blocks = []
+    skipped_tasks = sum(task.get("state") == "skipped" for task in search_tasks)
     all_reader_times = [task["readerElapsedMs"] for task in task_summaries if task["readerElapsedMs"] is not None]
     all_attempt_times = [task["attemptElapsedMs"] for task in task_summaries if task["attemptElapsedMs"] is not None]
     return {"version": 1, "generatedAt": datetime.now(timezone.utc).isoformat(), "runId": run_id,
@@ -247,8 +292,12 @@ def summarize(run_id, run_dir, queue):
                         "offersRecorded": offers_total, "issues": dict(sorted(issue_counts.items())),
                         "readerTiming": timing_summary(all_reader_times),
                         "attemptTiming": timing_summary(all_attempt_times),
-                        "excludedSourceCount": len(excluded_sources)},
+                        "excludedSourceCount": len(excluded_sources),
+                        "manualReviewSourceCount": sum(item.get("status") in ("needs_manual_review", "manual_in_progress")
+                                                        for item in manual_review_sources),
+                        "skippedTasks": skipped_tasks},
             "sources": source_rows, "excludedSources": excluded_sources,
+            "manualReviewSources": manual_review_sources, "sourceAccessBlocks": source_access_blocks,
             "recommendations": recommendations, "tasks": task_summaries}
 
 
@@ -259,6 +308,7 @@ def render_markdown(report):
              "## Podsumowanie", "",
              f"- Zadania search: {summary['searchTasks']}; wyniki: {summary['resultsFound']}",
              f"- Statusy: {', '.join(f'{key}: {value}' for key, value in summary['outcomes'].items()) or 'brak'}",
+             f"- Zadania pominięte po odmowie źródła: {summary.get('skippedTasks', 0)}; portale oczekujące na ręczną próbę: {summary.get('manualReviewSourceCount', 0)}",
              f"- Strony: {summary['pagesChecked']}; widoczne wpisy: {summary['visibleListings']}; próby otwarcia kart: {summary['cardUrlsTried']}; zapisane oferty: {summary['offersRecorded']}",
              f"- Suma czasu czytników (czas pracy, nie czas ścienny): {summary['readerTiming']['totalMs'] / 1000:.1f} s; mediana zadania: {summary['readerTiming']['medianMs'] / 1000:.1f} s; p95: {summary['readerTiming']['p95Ms'] / 1000:.1f} s" if summary["readerTiming"] else "- Czas czytników: brak pomiarów",
              f"- Czas prób claim–finish: mediana {summary['attemptTiming']['medianMs'] / 1000:.1f} s; p95: {summary['attemptTiming']['p95Ms'] / 1000:.1f} s" if summary["attemptTiming"] else "- Czas claim–finish: brak pomiarów",
@@ -268,6 +318,21 @@ def render_markdown(report):
         lines.extend(["## Źródła pominięte jako zablokowane", ""])
         lines.extend(f"- {item.get('sourceId', 'unknown')}: {item.get('reason', 'adapter blocked')}"
                      for item in report["excludedSources"] if isinstance(item, dict))
+        lines.append("")
+    if report.get("manualReviewSources"):
+        lines.extend(["## Ręczna kontrola w widocznej przeglądarce", ""])
+        for item in report["manualReviewSources"]:
+            models = ", ".join(model.get("modelName", model.get("modelKey", ""))
+                                for model in item.get("models", []) if isinstance(model, dict)) or "brak zgodnych modeli"
+            lines.append(f"- {item.get('sourceName', item.get('sourceId', 'unknown'))} (`{item.get('status', 'unknown')}`; modele: {models}): {item.get('reason', '')}")
+        if any(item.get("status") in ("needs_manual_review", "manual_in_progress") for item in report["manualReviewSources"]):
+            lines.append("Dla oczekujących pozycji użyj `claim --manual` i widocznej przeglądarki. CAPTCHA, odmowa dostępu lub `robots.txt` kończą próbę; nie obchodź ani nie ponawiaj blokady.")
+        lines.append("")
+    if report.get("sourceAccessBlocks"):
+        lines.extend(["## Zatrzymania po odmowie dostępu", ""])
+        for item in report["sourceAccessBlocks"]:
+            if isinstance(item, dict):
+                lines.append(f"- {item.get('sourceId', 'unknown')} — {item.get('url', '')}: {item.get('reason', '')}")
         lines.append("")
     if not report["recommendations"]:
         lines.append("Brak rozpoznanych problemów w zapisanych wynikach. To nie oznacza, że portale zostały sprawdzone poza zakresem tego przebiegu.")

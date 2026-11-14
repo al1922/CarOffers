@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "defaults": {
+    "maxPages": 2,
+    "maxCards": 20,
+    "filterReadyTimeoutMs": 10000,
+    "resultReadyTimeoutMs": 8000,
+    "detailReadyTimeoutMs": 2500,
+    "maxResponseBytes": 2097152,
+    "maxRunResponseBytes": 20971520
+  },
+  "sources": {
+    "otomoto": {
+      "enabled": true,
+      "searchUrl": "https://www.otomoto.pl/osobowe",
+      "filterProfile": {
+        "optionReadyTimeoutMs": 6000,
+        "fieldReadyTimeoutMs": 15000,
+        "brandAliases": {
+          "skoda": ["Skoda", "Škoda"]
+        },
+        "generationOptions": {
+          "suzuki-vitara-ii": "II (2015-2019)"
+        },
+        "urlGenerationValues": {
+          "hyundai-i30-iii-wagon": "gen-iii-2017",
+          "kia-ceed-iii-sw": "gen-iii-2018",
+          "mazda-6-iii-wagon": "gen-iii-2012-6",
+          "skoda-octavia-iii-combi": "gen-iii-2013",
+          "skoda-superb-iii-combi": "gen-iii-2015",
+          "suzuki-vitara-ii": "gen-ii-2015-vitara",
+          "toyota-auris-touring-sports": "gen-ii-2012",
+          "toyota-avensis-iii-wagon": "gen-iii-2009",
+          "mitsubishi-outlander-iii": "gen-iii-2012-outlander"
+        },
+        "urlOmitGenerationModels": ["mitsubishi-asx-i", "toyota-corolla-e210"],
+        "urlOmitBodyModels": ["kia-xceed"],
+        "urlYearQueryModels": ["kia-xceed"],
+        "omitGenerationModels": ["toyota-corolla-e210"]
+      }
+    }
+  }
+}

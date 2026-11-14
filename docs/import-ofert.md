@@ -40,6 +40,17 @@ Zmiana wejściowych danych, konfiguracji, kart wiedzy lub schematu wymaga nowego
 podglądu. Ocena podczas importu używa bieżącej konfiguracji; ustawienia użyte
 do wyszukiwania pozostają w snapshotcie. Obie wersje są oznaczone w podglądzie.
 
+`npm run search:direct` przekazuje zakończone wyniki nowego flow bezpośrednio
+do tego samego importera. `--no-import` pomija zapis. Dla ręcznego wznowienia lub
+testu istniejącego przebiegu użyj:
+
+```powershell
+python -B scripts/car-search.py direct-import --run IDENTYFIKATOR
+```
+
+Importer tworzy standardowy przebieg `direct-import-*`, sprawdza duplikaty i
+konflikty, a następnie stosuje zmiany tylko przy bezkonfliktowym podglądzie.
+
 Importer nie zmienia katalogu modeli, więc nie wymaga regeneracji indeksu.
 Po zmianach konfiguracji uruchom `sync`, następnie `validate` i `assess`.
 Żadne z tych poleceń nie publikuje zmian. Publikacja wymaga zgody użytkownika.

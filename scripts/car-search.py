@@ -39,6 +39,146 @@ def search_task_host(task):
     return host[4:] if host.startswith("www.") else host
 
 
+def safe_portal_url(value):
+    """Encode raw characters rejected by the offer URL contract before navigation/storage."""
+    return str(value).replace("|", "%7C")
+
+
+SOURCE_ACCESS_DENIAL = re.compile(
+    r"\b(?:HTTP\s*)?(?:401|403|429)\b|captcha|challenge|access denied|forbidden|"
+    r"robots?\.txt|odm[oó]w[a-z]* dost[eę]pu|zablokowan\w* przez portal|niedozwolon\w* przez robots",
+    re.I,
+)
+
+
+def source_wide_access_block(task, result):
+    """Return a block record only for denial at the source search endpoint or root robots.txt."""
+    if task.get("kind") != "search" or not isinstance(result, dict) or result.get("outcome") not in ("blocked", "partial"):
+        return None
+    profile = task.get("searchProfile") or {}
+    source_url = profile.get("searchUrl")
+    try:
+        base = urlsplit(source_url)
+        if base.scheme != "https" or not base.hostname:
+            return None
+        base_host = base.hostname.casefold().removeprefix("www.")
+        base_path = base.path.rstrip("/") or "/"
+    except (TypeError, ValueError):
+        return None
+    for error in result.get("errors", []):
+        if not isinstance(error, dict) or not SOURCE_ACCESS_DENIAL.search(str(error.get("error", ""))):
+            continue
+        try:
+            denied = urlsplit(error.get("url", ""))
+            if (denied.scheme != "https" or not denied.hostname or
+                    denied.hostname.casefold().removeprefix("www.") != base_host or
+                    denied.port != base.port):
+                continue
+        except (TypeError, ValueError):
+            continue
+        denied_path = denied.path.rstrip("/") or "/"
+        is_root_robots = denied_path.casefold() == "/robots.txt"
+        is_search_endpoint = denied_path == base_path
+        if is_root_robots or is_search_endpoint:
+            return {"sourceId": task.get("sourceId"), "taskId": task.get("id"),
+                    "url": error.get("url"), "reason": str(error.get("error", "Access denied"))[:500],
+                    "checkedAt": result.get("checkedAt")}
+    return None
+
+
+def apply_source_access_blocks(queue, run):
+    """Skip unstarted model tasks after a confirmed source-wide access denial."""
+    blocks = queue.setdefault("sourceAccessBlocks", [])
+    if not isinstance(blocks, list):
+        blocks = queue["sourceAccessBlocks"] = []
+    known = {(entry.get("sourceId"), entry.get("taskId")) for entry in blocks if isinstance(entry, dict)}
+    changed = False
+    for task in queue.get("tasks", []):
+        if task.get("kind") != "search" or task.get("state") not in ("blocked", "partial"):
+            continue
+        result_path = run / "results" / (str(task.get("id", "")) + ".json")
+        if not result_path.is_file():
+            continue
+        try:
+            result = read(result_path)
+        except (OSError, ValueError, TypeError):
+            continue
+        block = source_wide_access_block(task, result)
+        if block and (block["sourceId"], block["taskId"]) not in known:
+            blocks.append(block)
+            known.add((block["sourceId"], block["taskId"]))
+            changed = True
+    for block in blocks:
+        if not isinstance(block, dict) or not block.get("sourceId"):
+            continue
+        for task in queue.get("tasks", []):
+            if (task.get("kind") != "search" or task.get("sourceId") != block["sourceId"] or
+                    task.get("state") not in ("pending", "pending_manual")):
+                continue
+            task.update(state="skipped", worker=None, skippedAt=datetime.now(timezone.utc).isoformat(),
+                        skipReason="source_access_block", skippedAfterTask=block.get("taskId"),
+                        note=f"Pominięto bez ponawiania po odmowie dostępu na źródle: {block.get('url', '')}")
+            changed = True
+    return changed
+
+
+def build_search_profile(source, model, model_req, knowledge):
+    profile_source = {**source, "searchUrl": safe_portal_url(source["searchUrl"])}
+    return {
+        "searchUrl": profile_source["searchUrl"],
+        "filtersAvailable": source["filters"],
+        "filtersToVerifyManually": sorted({"make", "model", "body", "price", "year",
+                                            "mileage", "fuel", "transmission", "seller_type"} - set(source["filters"])),
+        "brands": [model["brand"]], "bodies": model["bodies"],
+        "years": {"min": max(model_req["yearMin"], model["searchYears"]["min"]),
+                  "max": model["searchYears"]["max"]},
+        "engineVariants": model["allowedEngineVariants"],
+        "requirements": model_req,
+        "maxGrossPurchasePln": model_req["purchase"]["maxPriceGrossPln"],
+        "priceOverLimitRequiresUserApproval": bool(model_req["purchase"]["priceExceptions"]),
+        "preferredMileageKm": model_req["mileage"]["preferredMaxKm"],
+        "candidateScreening": {
+            "stage": "results_list_before_opening_candidate_cards",
+            "visibleFields": ["production_year", "price_and_terms", "mileage", "body", "engine_variant", "sale_type"],
+            "screeningLimits": {
+                "productionYearMin": max(model_req["yearMin"], model["searchYears"]["min"]),
+                "productionYearMax": model["searchYears"]["max"],
+                "basePurchaseGrossPlnMax": model_req["purchase"]["maxPriceGrossPln"],
+                "hardMileageKmMax": model_req["mileage"].get("hardMaxKm"),
+                "bodyCodes": model["bodies"], "engineVariants": model["allowedEngineVariants"],
+                "auctionsAllowed": model_req["purchase"]["auctionsAllowed"]
+            },
+            "priceExceptions": model_req["purchase"]["priceExceptions"],
+            "priceOverLimitRequiresUserApproval": bool(model_req["purchase"]["priceExceptions"]),
+            "rejectOnlyOnVisibleConfirmedFailure": True,
+            "unknownHandling": "open_card_if_other_visible_fields_are_plausible",
+            "reminders": [
+                "production year is not first registration or model year",
+                "a displayed price is not unconditional gross purchase price unless its terms say so",
+                "apply configured price exceptions only with explicit user approval",
+                "search result snippets do not confirm listing availability"
+            ]
+        },
+        "transmissions": model_req["transmissions"],
+        "cameraRequired": model_req["camera"]["required"],
+        "cameraRetrofitAllowed": model_req["camera"]["retrofitAllowed"],
+        "lpgAllowedAndMustBeMarked": model_req["lpg"]["allowed"],
+        "familyProfile": model_req["use"],
+        "structuralDamageAllowed": model_req["structuralDamageAllowed"],
+        "country": model_req["location"], "excludeAuctions": not model_req["purchase"]["auctionsAllowed"],
+        "sourceAccessStatus": source["accessStatus"],
+        "queryPlan": build_query_plan(profile_source, model, model_req, knowledge),
+        "captureOfferLocation": {
+            "required": True,
+            "whenMissing": "set location.status=not_provided and show that distance cannot be calculated",
+            "fields": ["countryCode", "voivodeship", "city", "postalCode"],
+            "coordinates": "record only when provided or geocoded with a recorded source",
+            "doNotGuess": True
+        },
+        "sourceMethod": source["method"]
+    }
+
+
 def worker_project_hashes(root):
     paths = []
     for folder, suffixes in ((root / "scripts", {".mjs", ".py"}),
@@ -410,11 +550,13 @@ def build_shared_search_cache(root, run, queue, source_id, task=None):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("command", choices=["validate", "sync", "plan", "refresh-plan", "availability-plan", "archive-availability-plan", "claim", "continue-search", "export-worker", "collect-worker", "finish", "assess", "import-preview", "import-apply"])
+    p.add_argument("command", choices=["validate", "sync", "plan", "refresh-plan", "availability-plan", "archive-availability-plan", "claim", "continue-search", "export-worker", "collect-worker", "finish", "assess", "import-preview", "import-apply", "direct-import"])
     p.add_argument("--root", type=Path, default=ROOT)
     p.add_argument("--run")
     p.add_argument("--worker")
     p.add_argument("--task")
+    p.add_argument("--manual", action="store_true",
+                   help="claim a manual-only search task for visible public-browser review")
     p.add_argument("--result", choices=["complete", "partial", "blocked", "no_matches"])
     p.add_argument("--note", default="")
     p.add_argument("--agents", type=int, default=3,
@@ -426,9 +568,49 @@ def main():
     p.add_argument("--photo-audit", action="store_true",
                    help="For refresh-plan, require a per-card audit of direct photo URLs")
     args = p.parse_args()
+    if args.manual and args.command != "claim":
+        p.error("--manual is only valid with claim")
     if args.photo_audit and args.command != "refresh-plan":
         p.error("--photo-audit is only valid with refresh-plan")
     root = args.root.resolve()
+    if args.command == "direct-import":
+        if not args.run or not re.fullmatch(r"[a-zA-Z0-9][a-zA-Z0-9_-]*", args.run):
+            p.error("--run requires a simple alphanumeric direct-search ID")
+        config, issues = audit(root)
+        if any(item["severity"] == "error" for item in issues):
+            p.error(json.dumps(issues, ensure_ascii=False))
+        from offer_import import apply, prepare, prepare_direct_import_run
+        try:
+            import_run_id = prepare_direct_import_run(root, args.run, config)
+            if import_run_id is None:
+                print(json.dumps({"status": "no_offers", "directRunId": args.run}, ensure_ascii=False))
+                return 0
+            plan = prepare(root, import_run_id, config)
+            counts = {}
+            for change in plan["changes"]:
+                counts[change["kind"]] = counts.get(change["kind"], 0) + 1
+            skipped = {}
+            for item in plan["skipped"]:
+                skipped[item["reason"]] = skipped.get(item["reason"], 0) + 1
+            if plan["conflicts"]:
+                print(json.dumps({"status": "conflicts", "directRunId": args.run, "importRunId": import_run_id,
+                                  "changes": counts, "conflicts": plan["conflicts"], "skipped": skipped}, ensure_ascii=False))
+                return 2
+            apply_status = apply(root, import_run_id)
+            if apply_status in ("applied", "already_applied"):
+                report = []
+                for model in config["models"]["models"]:
+                    model_req = requirements_for_model(model, config["requirements"])
+                    for offer in read(contained(root, model["offersFile"]))["offers"]:
+                        report.append({**assess(offer, model_req, model),
+                                       "input": {key: offer.get(key) for key in ASSESSMENT_FIELDS}})
+                write(root / "reports/current-assessment.json", {"generatedAt": datetime.now(timezone.utc).isoformat(),
+                      "configuration": config, "assessments": report})
+            print(json.dumps({"status": apply_status, "directRunId": args.run, "importRunId": import_run_id,
+                              "changes": counts, "conflicts": 0, "skipped": skipped}, ensure_ascii=False))
+        except (OSError, ValueError, KeyError, TypeError) as exc:
+            p.error(str(exc))
+        return 0
     if args.command in ("import-preview", "import-apply"):
         if not args.run or not re.fullmatch(r"[a-zA-Z0-9][a-zA-Z0-9_-]*", args.run):
             p.error("--run requires a simple alphanumeric ID")
@@ -565,14 +747,52 @@ def main():
             adapter_config = read(root / "config" / "portal-adapters.json")
             adapters = adapter_config.get("adapters", {})
             excluded_sources = []
+            blocked_source_records = []
             for source in candidate_s:
                 adapter = adapters.get(source["id"])
                 if isinstance(adapter, dict) and adapter.get("mode") == "blocked":
-                    excluded_sources.append({"sourceId": source["id"],
-                                             "reason": adapter.get("note") or "Adapter is marked blocked"})
+                    record = {"sourceId": source["id"], "sourceName": source.get("name", source["id"]),
+                              "reason": adapter.get("note") or "Adapter is marked blocked"}
+                    excluded_sources.append(record)
+                    blocked_source_records.append((source, record))
             excluded_ids = {item["sourceId"] for item in excluded_sources}
             selected_s = [source for source in candidate_s if source["id"] not in excluded_ids]
             cards = {m["key"]: read(contained(root, m["knowledgeFile"])) for m in selected_m}
+            manual_review_sources = []
+            manual_tasks = []
+            for source, blocked_record in blocked_source_records:
+                compatible_models = [m for m in selected_m if not source["brands"] or
+                                     brand_key(m["brand"]) in [brand_key(b) for b in source["brands"]]]
+                if not compatible_models:
+                    continue
+                review_entry = {
+                    "sourceId": source["id"], "sourceName": source.get("name", source["id"]),
+                    "searchUrl": safe_portal_url(source["searchUrl"]), "reason": blocked_record["reason"],
+                    "status": "needs_manual_review", "method": "visible_public_browser_only",
+                    "stopConditions": ["HTTP 401/403/429", "CAPTCHA or access challenge", "robots.txt denial"],
+                    "models": [],
+                    "instruction": "Try the public interface once in the visible browser. Record only vehicle cards that open normally; stop on any listed access condition. Never bypass or retry a denial."
+                }
+                for model in compatible_models:
+                    model_req = requirements_for_model(model, req)
+                    task_id = f"manual--{source['id']}--{model['key']}"
+                    profile = build_search_profile(source, model, model_req, cards[model["key"]])
+                    profile["manualOnly"] = True
+                    manual_tasks.append({"id": task_id, "kind": "search", "sourceId": source["id"],
+                                         "modelKey": model["key"], "manualOnly": True,
+                                         "searchProfile": profile, "state": "pending_manual",
+                                         "worker": None, "attempts": 0,
+                                         "note": "Ręczna próba w widocznym publicznym interfejsie; bez automatycznego czytnika."})
+                    review_entry["models"].append({
+                        "modelKey": model["key"], "modelName": model["name"], "taskId": task_id,
+                        "bodies": model["bodies"],
+                        "years": {"min": max(model_req["yearMin"], model["searchYears"]["min"]),
+                                  "max": model["searchYears"]["max"]},
+                        "engineVariants": model["allowedEngineVariants"],
+                        "maxGrossPurchasePln": model_req["purchase"]["maxPriceGrossPln"],
+                        "queryPlan": profile["queryPlan"]
+                    })
+                manual_review_sources.append(review_entry)
             tasks = []
             for s in sorted(selected_s, key=lambda s: s["priority"]):
                 for m in sorted(selected_m, key=lambda m: m["priority"]):
@@ -581,63 +801,10 @@ def main():
                     model_req = requirements_for_model(m, req)
                     tasks.append({"id": f"{s['id']}--{m['key']}", "kind": "search",
                                   "sourceId": s["id"], "modelKey": m["key"],
-                                  "searchProfile": {
-                                      "searchUrl": s["searchUrl"],
-                                      "filtersAvailable": s["filters"],
-                                      "filtersToVerifyManually": sorted({"make", "model", "body", "price", "year",
-                                          "mileage", "fuel", "transmission", "seller_type"} - set(s["filters"])),
-                                      "brands": [m["brand"]], "bodies": m["bodies"],
-                                      "years": {"min": max(model_req["yearMin"], m["searchYears"]["min"]),
-                                                "max": m["searchYears"]["max"]},
-                                      "engineVariants": m["allowedEngineVariants"],
-                                      "requirements": model_req,
-                                      "maxGrossPurchasePln": model_req["purchase"]["maxPriceGrossPln"],
-                                      "priceOverLimitRequiresUserApproval": bool(model_req["purchase"]["priceExceptions"]),
-                                      "preferredMileageKm": model_req["mileage"]["preferredMaxKm"],
-                                      "candidateScreening": {
-                                          "stage": "results_list_before_opening_candidate_cards",
-                                          "visibleFields": ["production_year", "price_and_terms", "mileage",
-                                                            "body", "engine_variant", "sale_type"],
-                                          "screeningLimits": {
-                                              "productionYearMin": max(model_req["yearMin"], m["searchYears"]["min"]),
-                                              "productionYearMax": m["searchYears"]["max"],
-                                              "basePurchaseGrossPlnMax": model_req["purchase"]["maxPriceGrossPln"],
-                                              "hardMileageKmMax": model_req["mileage"].get("hardMaxKm"),
-                                              "bodyCodes": m["bodies"],
-                                              "engineVariants": m["allowedEngineVariants"],
-                                              "auctionsAllowed": model_req["purchase"]["auctionsAllowed"]
-                                          },
-                                          "priceExceptions": model_req["purchase"]["priceExceptions"],
-                                          "priceOverLimitRequiresUserApproval": bool(model_req["purchase"]["priceExceptions"]),
-                                          "rejectOnlyOnVisibleConfirmedFailure": True,
-                                          "unknownHandling": "open_card_if_other_visible_fields_are_plausible",
-                                          "reminders": [
-                                              "production year is not first registration or model year",
-                                              "a displayed price is not unconditional gross purchase price unless its terms say so",
-                                              "apply configured price exceptions only with explicit user approval",
-                                              "search result snippets do not confirm listing availability"
-                                          ]
-                                      },
-                                      "transmissions": model_req["transmissions"],
-                                      "cameraRequired": model_req["camera"]["required"],
-                                      "cameraRetrofitAllowed": model_req["camera"]["retrofitAllowed"],
-                                      "lpgAllowedAndMustBeMarked": model_req["lpg"]["allowed"],
-                                      "familyProfile": model_req["use"],
-                                      "structuralDamageAllowed": model_req["structuralDamageAllowed"],
-                                      "country": model_req["location"], "excludeAuctions": not model_req["purchase"]["auctionsAllowed"],
-                                      "sourceAccessStatus": s["accessStatus"],
-                                      "queryPlan": build_query_plan(s, m, model_req, cards[m["key"]]),
-                                      "captureOfferLocation": {
-                                          "required": True,
-                                          "whenMissing": "set location.status=not_provided and show that distance cannot be calculated",
-                                          "fields": ["countryCode", "voivodeship", "city", "postalCode"],
-                                          "coordinates": "record only when provided or geocoded with a recorded source",
-                                          "doNotGuess": True
-                                      },
-                                      "sourceMethod": s["method"]
-                                  },
+                                  "searchProfile": build_search_profile(s, m, model_req, cards[m["key"]]),
                                   "state": "pending", "worker": None, "attempts": 0, "note": ""})
-            if not tasks:
+            tasks.extend(manual_tasks)
+            if not tasks and not manual_review_sources:
                 blocked_note = "; sources marked blocked: " + ", ".join(item["sourceId"] for item in excluded_sources) if excluded_sources else ""
                 p.error("No eligible tasks" + blocked_note)
             run.mkdir(parents=True, exist_ok=False)
@@ -646,15 +813,20 @@ def main():
             digest = hashlib.sha256(json.dumps(snapshot, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
             write(run / "snapshot.json", {"createdAt": datetime.now(timezone.utc).isoformat(), "sha256": digest, **snapshot})
             write(run / "tasks.json", {"version": 1, "agents": args.agents, "workerAssignments": {},
-                  "excludedSources": excluded_sources, "tasks": tasks})
+                  "excludedSources": excluded_sources, "manualReviewSources": manual_review_sources,
+                  "sourceAccessBlocks": [], "tasks": tasks})
             by_source = {}
-            for task in tasks:
+            automated_tasks = [task for task in tasks if not task.get("manualOnly")]
+            for task in automated_tasks:
                 by_source[task["sourceId"]] = by_source.get(task["sourceId"], 0) + 1
             skipped = [s["id"] for s in selected_s if not any(t["sourceId"] == s["id"] for t in tasks)]
-            print(f"Prepared {len(tasks)} tasks across {len(by_source)} compatible sources; "
+            print(f"Prepared {len(automated_tasks)} automated tasks across {len(by_source)} compatible sources; "
                   f"at most {args.agents} search workers may run concurrently; no websites searched")
             if excluded_sources:
                 print("Skipped blocked adapters: " + ", ".join(item["sourceId"] for item in excluded_sources))
+            if manual_review_sources:
+                print(f"Manual browser review required: {len(manual_tasks)} model tasks across " +
+                      ", ".join(item["sourceId"] for item in manual_review_sources))
             if skipped:
                 print("No compatible selected model: " + ", ".join(skipped))
         elif args.command in ("refresh-plan", "availability-plan", "archive-availability-plan"):
@@ -811,6 +983,8 @@ def main():
                 task = next((item for item in queue["tasks"] if item.get("id") == args.task), None)
                 if not task:
                     p.error("export-worker requires an existing --task")
+                if task.get("manualOnly"):
+                    p.error("Manual-only tasks must be completed in the visible browser, not exported to a network worker")
                 try:
                     bundle_path = export_worker_bundle(root, run, queue, task)
                 except (OSError, ValueError, KeyError, TypeError) as exc:
@@ -839,6 +1013,11 @@ def main():
                 parent = next((t for t in queue["tasks"] if t.get("id") == args.task), None)
                 if not parent or parent.get("kind") != "search" or parent.get("state") != "partial":
                     p.error("continue-search requires an existing partial search task")
+                if parent.get("manualOnly"):
+                    p.error("Manual-only tasks cannot be continued by an automated search worker")
+                if any(isinstance(block, dict) and block.get("sourceId") == parent.get("sourceId")
+                       for block in queue.get("sourceAccessBlocks", [])):
+                    p.error("This source was stopped after a source-wide access denial; continuation is not allowed")
                 if assigned_sources and parent.get("sourceId") not in assigned_sources:
                     p.error(f"Worker {args.worker} is not assigned to source {parent.get('sourceId')}")
                 prior_path = run / "results" / (parent["id"] + ".json")
@@ -954,6 +1133,8 @@ def main():
                     root, run, queue, continuation_task["sourceId"], continuation_task)
                 print(json.dumps(claimed_task, ensure_ascii=False))
             elif args.command == "claim":
+                if apply_source_access_blocks(queue, run):
+                    write(run / "tasks.json", queue)
                 if not args.worker:
                     p.error("--worker required")
                 claim_sources = args.sources or []
@@ -980,7 +1161,9 @@ def main():
                 active_search_hosts = {search_task_host(t) for t in queue["tasks"]
                                        if t.get("kind") == "search" and t.get("state") == "running"}
                 active_search_hosts.discard(None)
-                pending_tasks = [t for t in queue["tasks"] if t["state"] == "pending" and
+                expected_state = "pending_manual" if args.manual else "pending"
+                pending_tasks = [t for t in queue["tasks"] if t["state"] == expected_state and
+                                 bool(t.get("manualOnly")) == args.manual and
                                  (source_filter is None or t["sourceId"] in source_filter)]
                 task = next((t for t in pending_tasks
                              if t.get("kind") != "search" or search_task_host(t) not in active_search_hosts), None)
@@ -988,12 +1171,26 @@ def main():
                     if pending_tasks:
                         print("No claimable search tasks; pending tasks share a portal host with an active search worker")
                     else:
-                        print("No pending tasks" + (" for sources " + ", ".join(sorted(source_filter)) if source_filter else ""))
+                        label = "manual review tasks" if args.manual else "automated search tasks"
+                        print("No pending " + label + (" for sources " + ", ".join(sorted(source_filter)) if source_filter else ""))
                     return 0
                 task.update(state="running", worker=args.worker, attempts=task["attempts"] + 1,
                             attemptStartedAt=datetime.now(timezone.utc).isoformat())
                 if source_filter:
                     assignments.setdefault(args.worker, sorted(source_filter))
+                if task.get("manualOnly"):
+                    result_path = run / "results" / f"{task['id']}.json"
+                    template_path = run / "manual-templates" / f"{task['id']}.json"
+                    if result_path.exists() or template_path.exists():
+                        p.error("A manual result or template already exists for this task; preserve it and resolve it before claiming")
+                    now = datetime.now(timezone.utc).isoformat()
+                    write(template_path, {"taskId": task["id"], "outcome": "partial", "checkedAt": now,
+                                          "coverage": {"searchUrls": [], "pagesChecked": 0,
+                                                       "remaining": "Ręczna próba oczekuje na zapis faktycznie sprawdzonych stron i kart.",
+                                                       "searchResults": [], "listingUrlsChecked": [], "cardReads": []},
+                                          "offers": [], "errors": [],
+                                          "notes": ["Manual-only task; use only the visible public interface. Update checkedAt to the actual inspection time before finish."]})
+                    task["manualResultTemplate"] = template_path.relative_to(root).as_posix()
                 write(run / "tasks.json", queue)
                 claimed_task = dict(task)
                 claimed_task["runId"] = args.run
@@ -1010,7 +1207,8 @@ def main():
                     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
                     rejected = run / "results" / "rejected" / f"{task['id']}-attempt-{task['attempts']}-{stamp}.json"
                     write(rejected, result)
-                    p.error("Result validation failed; task remains running. Rejected copy saved to " +
+                    p.error("Result validation failed; task remains running so its saved result can be corrected and finish retried. "
+                            "Resolve this task before claiming another one. Rejected copy saved to " +
                             rejected.relative_to(root).as_posix() + ": " + str(reason))
 
                 if not isinstance(result, dict):
@@ -1106,6 +1304,7 @@ def main():
                         task["attemptElapsedMs"] = max(0, int((finished_at - started).total_seconds() * 1000))
                     except ValueError:
                         pass
+                apply_source_access_blocks(queue, run)
                 write(run / "tasks.json", queue)
                 print("Task recorded; published offers unchanged")
     return 0

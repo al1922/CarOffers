@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-12",
+  "updatedAt": "2026-11-14",
   "model": {
     "key": "skoda-superb-iii-combi",
     "name": "Škoda Superb III Combi",
@@ -625,6 +625,2705 @@
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
       "verdictNote": "camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjsIH.html",
+      "modelKey": "skoda-superb-iii-combi",
+      "title": "Skoda Superb 1.4 TSI ACT Style DSG",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjsIH.html"
+        }
+      ],
+      "price": 42900,
+      "priceBasis": "gross_total",
+      "year": 2018,
+      "mileage": 129303,
+      "engine": "1.4 TSI ACT, 150 KM (dane techniczne Otomoto); opis sprzedawcy dodatkowo twierdzi 1.5 TSI",
+      "engineVariant": "1.4-tsi-ea211-150",
+      "body": "Kombi / Wagon",
+      "bodyCode": "wagon",
+      "transmission": "Automatyczna DSG",
+      "transmissionCode": "automatic",
+      "seller": "Osoba prywatna",
+      "offerType": "private",
+      "saleType": "fixed_price",
+      "cameraStatus": "installed_confirmed",
+      "structuralDamageStatus": "unknown",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "city": "Poznań",
+        "voivodeship": "Wielkopolskie"
+      },
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InE4a3o4NzJzdzlmcDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.ZsRvDAeRf9GHKI__yW9b2Ge1N0WkQWsoa1IY8-H968k/image;s=768x0;q=80",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imd3d2doMzhhb2ZtbzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.2pOrRriXwW6CjVT1FYvVRoPudzLk6h_XJ1BzXVK4Klg/image;s=768x0;q=100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjFodzhiZG5sNzZkajEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.WUW6r52laBvK6eilX0NCQCTPqVQFlAybtzgskas4IG0/image;s=768x0;q=100"
+      ],
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-13T21:33:55+00:00",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjsIH.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-13T21:33:55+00:00",
+          "lastCheckedAt": "2026-11-13T21:33:55+00:00",
+          "lastVerifiedAt": "2026-11-13T21:33:55+00:00",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjsIH.html",
+            "checkedAt": "2026-11-13T21:33:55+00:00",
+            "availability": "available",
+            "note": "Cena 42 900 zł, 2018 r., 129 303 km, nadwozie kombi, 1395 cm3/150 KM oraz automat DSG w danych szczegółowych Otomoto. Sprzedawca wymienia kamerę cofania i czujniki 360°. Jego opis sprzecznie nazywa auto 1.5 TSI i Laurin & Klement, więc wariant i wyposażenie wymagają potwierdzenia. Historia szkód nie została niezależnie sprawdzona.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjsIH.html",
+                "checkedAt": "2026-11-13T21:33:55+00:00",
+                "fields": [
+                  "title",
+                  "price",
+                  "year",
+                  "mileage",
+                  "engine",
+                  "body",
+                  "transmission",
+                  "location",
+                  "seller"
+                ],
+                "note": "Dane z karty i szczegółów Otomoto; szczegóły wersji silnika różnią się od tekstu opisu sprzedawcy."
+              },
+              {
+                "kind": "seller",
+                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjsIH.html",
+                "checkedAt": "2026-11-13T21:33:55+00:00",
+                "fields": [
+                  "cameraStatus",
+                  "frontParkingSensors",
+                  "rearParkingSensors"
+                ],
+                "note": "Opis sprzedawcy deklaruje kamerę cofania i czujniki parkowania 360°."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-13T21:33:55+00:00",
+      "lastVerifiedAt": "2026-11-13T21:33:55+00:00",
+      "lastAttemptAt": "2026-11-13T21:33:55+00:00",
+      "history": [
+        {
+          "eventId": "677119ea0e7e19ac775fbf039ec9e7258aaaeb10443f7073e273b663ba0b5380",
+          "runId": "search-20261113-current2",
+          "checkedAt": "2026-11-13T21:33:55+00:00",
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjsIH.html",
+          "availability": "available",
+          "note": "Cena 42 900 zł, 2018 r., 129 303 km, nadwozie kombi, 1395 cm3/150 KM oraz automat DSG w danych szczegółowych Otomoto. Sprzedawca wymienia kamerę cofania i czujniki 360°. Jego opis sprzecznie nazywa auto 1.5 TSI i Laurin & Klement, więc wariant i wyposażenie wymagają potwierdzenia. Historia szkód nie została niezależnie sprawdzona.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjsIH.html",
+              "checkedAt": "2026-11-13T21:33:55+00:00",
+              "fields": [
+                "title",
+                "price",
+                "year",
+                "mileage",
+                "engine",
+                "body",
+                "transmission",
+                "location",
+                "seller"
+              ],
+              "note": "Dane z karty i szczegółów Otomoto; szczegóły wersji silnika różnią się od tekstu opisu sprzedawcy."
+            },
+            {
+              "kind": "seller",
+              "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjsIH.html",
+              "checkedAt": "2026-11-13T21:33:55+00:00",
+              "fields": [
+                "cameraStatus",
+                "frontParkingSensors",
+                "rearParkingSensors"
+              ],
+              "note": "Opis sprzedawcy deklaruje kamerę cofania i czujniki parkowania 360°."
+            }
+          ],
+          "reportedFields": {
+            "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjsIH.html",
+            "modelKey": "skoda-superb-iii-combi",
+            "title": "Skoda Superb 1.4 TSI ACT Style DSG",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjsIH.html"
+              }
+            ],
+            "price": 42900,
+            "priceBasis": "gross_total",
+            "year": 2018,
+            "mileage": 129303,
+            "engine": "1.4 TSI ACT, 150 KM (dane techniczne Otomoto); opis sprzedawcy dodatkowo twierdzi 1.5 TSI",
+            "engineVariant": "1.4-tsi-ea211-150",
+            "body": "Kombi / Wagon",
+            "bodyCode": "wagon",
+            "transmission": "Automatyczna DSG",
+            "transmissionCode": "automatic",
+            "seller": "Osoba prywatna",
+            "offerType": "private",
+            "saleType": "fixed_price",
+            "cameraStatus": "installed_confirmed",
+            "structuralDamageStatus": "unknown",
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "city": "Poznań",
+              "voivodeship": "Wielkopolskie"
+            },
+            "lpgInstalled": null,
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InE4a3o4NzJzdzlmcDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.ZsRvDAeRf9GHKI__yW9b2Ge1N0WkQWsoa1IY8-H968k/image;s=768x0;q=80",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imd3d2doMzhhb2ZtbzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.2pOrRriXwW6CjVT1FYvVRoPudzLk6h_XJ1BzXVK4Klg/image;s=768x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjFodzhiZG5sNzZkajEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.WUW6r52laBvK6eilX0NCQCTPqVQFlAybtzgskas4IG0/image;s=768x0;q=100"
+            ]
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjsIH.html"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "skoda-superb-iii-combi"
+            },
+            "title": {
+              "before": null,
+              "after": "Skoda Superb 1.4 TSI ACT Style DSG"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjsIH.html"
+                }
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 42900
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "gross_total"
+            },
+            "year": {
+              "before": null,
+              "after": 2018
+            },
+            "mileage": {
+              "before": null,
+              "after": 129303
+            },
+            "engine": {
+              "before": null,
+              "after": "1.4 TSI ACT, 150 KM (dane techniczne Otomoto); opis sprzedawcy dodatkowo twierdzi 1.5 TSI"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.4-tsi-ea211-150"
+            },
+            "body": {
+              "before": null,
+              "after": "Kombi / Wagon"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmission": {
+              "before": null,
+              "after": "Automatyczna DSG"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "automatic"
+            },
+            "seller": {
+              "before": null,
+              "after": "Osoba prywatna"
+            },
+            "offerType": {
+              "before": null,
+              "after": "private"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "installed_confirmed"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "city": "Poznań",
+                "voivodeship": "Wielkopolskie"
+              }
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InE4a3o4NzJzdzlmcDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.ZsRvDAeRf9GHKI__yW9b2Ge1N0WkQWsoa1IY8-H968k/image;s=768x0;q=80",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imd3d2doMzhhb2ZtbzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.2pOrRriXwW6CjVT1FYvVRoPudzLk6h_XJ1BzXVK4Klg/image;s=768x0;q=100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjFodzhiZG5sNzZkajEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.WUW6r52laBvK6eilX0NCQCTPqVQFlAybtzgskas4IG0/image;s=768x0;q=100"
+              ]
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjsIH.html",
+        "modelKey": "skoda-superb-iii-combi",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "structural_history; stroller_and_family_fit"
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IhLQq.html",
+      "modelKey": "skoda-superb-iii-combi",
+      "title": "Skoda Superb",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IhLQq.html"
+        }
+      ],
+      "price": 33900,
+      "priceBasis": "unknown",
+      "year": 2017,
+      "mileage": 103000,
+      "bodyCode": "wagon",
+      "transmissionCode": "manual",
+      "offerType": "unknown",
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InR3MnFqbnQwZHduMjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.gMhfRulWeL0uwsbYy6rXAguvN6lwfOc1jIGCt6YLFkw/image;s=1024x0;q=80",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImNjcXh4a2k1ODI4NTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.-2JwgpfrlW_tIEE3j-zdRBFOPeO4XaZjTCVJFYUPUYc/image;s=1024x0;q=100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InR3MnFqbnQwZHduMjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.gMhfRulWeL0uwsbYy6rXAguvN6lwfOc1jIGCt6YLFkw/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImNjcXh4a2k1ODI4NTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.-2JwgpfrlW_tIEE3j-zdRBFOPeO4XaZjTCVJFYUPUYc/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InZiYnN6Mm5kM2FiNTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.QAEBMo1dzRQ3aU1J4RU8a_EPt6kbW4S794kkcL2ZIsc/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InlnOXNqOXBmYmc4ZS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.jZjC3cfpoJZV8C3IvbK5mt511e_8JAERX5pbUQozK84/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im5oc3NpMnF3ZGNvdDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.IkVHhl8aUgX0JW8ofO9hU1Js8CrzDq2Y7qSEYalcVqw/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imk5dGZqaDlsN3JpdS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.MKl89XD9-GejutUjOKm5gqAr96-9IsTSOemfdpLh5pg/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNuaDh4ZHpmdGE5NzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.5JIRSwwoXkoBSqsAkanvxua5hoiHHXaQB1CuhUyQs2g/image;s=148x110"
+      ],
+      "location": {
+        "status": "not_provided"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-14T02:51:43.326Z",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IhLQq.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-14T02:51:43.326Z",
+          "lastCheckedAt": "2026-11-14T02:51:43.326Z",
+          "lastVerifiedAt": "2026-11-14T02:51:43.326Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IhLQq.html",
+            "checkedAt": "2026-11-14T02:51:43.326Z",
+            "availability": "available",
+            "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IhLQq.html",
+                "checkedAt": "2026-11-14T02:51:43.326Z",
+                "fields": [
+                  "title",
+                  "year",
+                  "mileage",
+                  "price",
+                  "bodyCode",
+                  "transmissionCode"
+                ],
+                "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-14T02:51:43.326Z",
+      "lastVerifiedAt": "2026-11-14T02:51:43.326Z",
+      "lastAttemptAt": "2026-11-14T02:51:43.326Z",
+      "history": [
+        {
+          "eventId": "4ddece0f8c6ff9a2b1fa52d393f5bedca81e9b95b2540a2ba9807e48100f58c9",
+          "runId": "direct-import-20261114-024644745-9140b1ce",
+          "checkedAt": "2026-11-14T02:51:43.326Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IhLQq.html",
+          "availability": "available",
+          "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IhLQq.html",
+              "checkedAt": "2026-11-14T02:51:43.326Z",
+              "fields": [
+                "title",
+                "year",
+                "mileage",
+                "price",
+                "bodyCode",
+                "transmissionCode"
+              ],
+              "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+            }
+          ],
+          "reportedFields": {
+            "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IhLQq.html",
+            "modelKey": "skoda-superb-iii-combi",
+            "title": "Skoda Superb",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IhLQq.html"
+              }
+            ],
+            "price": 33900,
+            "priceBasis": "unknown",
+            "year": 2017,
+            "mileage": 103000,
+            "bodyCode": "wagon",
+            "transmissionCode": "manual",
+            "offerType": "unknown",
+            "saleType": null,
+            "lpgInstalled": null,
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InR3MnFqbnQwZHduMjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.gMhfRulWeL0uwsbYy6rXAguvN6lwfOc1jIGCt6YLFkw/image;s=1024x0;q=80",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImNjcXh4a2k1ODI4NTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.-2JwgpfrlW_tIEE3j-zdRBFOPeO4XaZjTCVJFYUPUYc/image;s=1024x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InR3MnFqbnQwZHduMjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.gMhfRulWeL0uwsbYy6rXAguvN6lwfOc1jIGCt6YLFkw/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImNjcXh4a2k1ODI4NTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.-2JwgpfrlW_tIEE3j-zdRBFOPeO4XaZjTCVJFYUPUYc/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InZiYnN6Mm5kM2FiNTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.QAEBMo1dzRQ3aU1J4RU8a_EPt6kbW4S794kkcL2ZIsc/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InlnOXNqOXBmYmc4ZS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.jZjC3cfpoJZV8C3IvbK5mt511e_8JAERX5pbUQozK84/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im5oc3NpMnF3ZGNvdDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.IkVHhl8aUgX0JW8ofO9hU1Js8CrzDq2Y7qSEYalcVqw/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imk5dGZqaDlsN3JpdS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.MKl89XD9-GejutUjOKm5gqAr96-9IsTSOemfdpLh5pg/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNuaDh4ZHpmdGE5NzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.5JIRSwwoXkoBSqsAkanvxua5hoiHHXaQB1CuhUyQs2g/image;s=148x110"
+            ],
+            "location": {
+              "status": "not_provided"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IhLQq.html"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "skoda-superb-iii-combi"
+            },
+            "title": {
+              "before": null,
+              "after": "Skoda Superb"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IhLQq.html"
+                }
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 33900
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "unknown"
+            },
+            "year": {
+              "before": null,
+              "after": 2017
+            },
+            "mileage": {
+              "before": null,
+              "after": 103000
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "offerType": {
+              "before": null,
+              "after": "unknown"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InR3MnFqbnQwZHduMjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.gMhfRulWeL0uwsbYy6rXAguvN6lwfOc1jIGCt6YLFkw/image;s=1024x0;q=80",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImNjcXh4a2k1ODI4NTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.-2JwgpfrlW_tIEE3j-zdRBFOPeO4XaZjTCVJFYUPUYc/image;s=1024x0;q=100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InR3MnFqbnQwZHduMjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.gMhfRulWeL0uwsbYy6rXAguvN6lwfOc1jIGCt6YLFkw/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImNjcXh4a2k1ODI4NTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.-2JwgpfrlW_tIEE3j-zdRBFOPeO4XaZjTCVJFYUPUYc/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InZiYnN6Mm5kM2FiNTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.QAEBMo1dzRQ3aU1J4RU8a_EPt6kbW4S794kkcL2ZIsc/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InlnOXNqOXBmYmc4ZS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.jZjC3cfpoJZV8C3IvbK5mt511e_8JAERX5pbUQozK84/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im5oc3NpMnF3ZGNvdDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.IkVHhl8aUgX0JW8ofO9hU1Js8CrzDq2Y7qSEYalcVqw/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imk5dGZqaDlsN3JpdS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.MKl89XD9-GejutUjOKm5gqAr96-9IsTSOemfdpLh5pg/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNuaDh4ZHpmdGE5NzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.5JIRSwwoXkoBSqsAkanvxua5hoiHHXaQB1CuhUyQs2g/image;s=148x110"
+              ]
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IhLQq.html",
+        "modelKey": "skoda-superb-iii-combi",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_purchase_price",
+          "exact_engine_variant",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit",
+          "purchase_not_auction"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_purchase_price; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction"
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Ijqo1.html",
+      "modelKey": "skoda-superb-iii-combi",
+      "title": "Skoda Superb 2.0 TDI Active",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Ijqo1.html"
+        }
+      ],
+      "price": 35800,
+      "priceBasis": "unknown",
+      "year": 2019,
+      "mileage": 124213,
+      "bodyCode": "wagon",
+      "transmissionCode": "manual",
+      "offerType": "unknown",
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InMxeGNwNDNieW94YTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.SST7UD1KmyyZCPrVOEamzDSd83iZLXSZ3BLX4gZWy80/image;s=1024x0;q=80",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Img4d3R3aXkxcndkaTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.jlKwGu93pqAJu7g7_jhgoSSL_QEegkl_yrY3QJ4Rhw4/image;s=1024x0;q=100"
+      ],
+      "location": {
+        "status": "not_provided"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-14T02:51:44.422Z",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Ijqo1.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-14T02:51:44.422Z",
+          "lastCheckedAt": "2026-11-14T02:51:44.422Z",
+          "lastVerifiedAt": "2026-11-14T02:51:44.422Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Ijqo1.html",
+            "checkedAt": "2026-11-14T02:51:44.422Z",
+            "availability": "available",
+            "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Ijqo1.html",
+                "checkedAt": "2026-11-14T02:51:44.422Z",
+                "fields": [
+                  "title",
+                  "year",
+                  "mileage",
+                  "price",
+                  "bodyCode",
+                  "transmissionCode"
+                ],
+                "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-14T02:51:44.422Z",
+      "lastVerifiedAt": "2026-11-14T02:51:44.422Z",
+      "lastAttemptAt": "2026-11-14T02:51:44.422Z",
+      "history": [
+        {
+          "eventId": "de9f5fd7078232172228229e2f02c721f0c34743c6d13bf1713b736f8c345cb4",
+          "runId": "direct-import-20261114-024644745-9140b1ce",
+          "checkedAt": "2026-11-14T02:51:44.422Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Ijqo1.html",
+          "availability": "available",
+          "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Ijqo1.html",
+              "checkedAt": "2026-11-14T02:51:44.422Z",
+              "fields": [
+                "title",
+                "year",
+                "mileage",
+                "price",
+                "bodyCode",
+                "transmissionCode"
+              ],
+              "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+            }
+          ],
+          "reportedFields": {
+            "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Ijqo1.html",
+            "modelKey": "skoda-superb-iii-combi",
+            "title": "Skoda Superb 2.0 TDI Active",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Ijqo1.html"
+              }
+            ],
+            "price": 35800,
+            "priceBasis": "unknown",
+            "year": 2019,
+            "mileage": 124213,
+            "bodyCode": "wagon",
+            "transmissionCode": "manual",
+            "offerType": "unknown",
+            "saleType": null,
+            "lpgInstalled": null,
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InMxeGNwNDNieW94YTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.SST7UD1KmyyZCPrVOEamzDSd83iZLXSZ3BLX4gZWy80/image;s=1024x0;q=80",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Img4d3R3aXkxcndkaTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.jlKwGu93pqAJu7g7_jhgoSSL_QEegkl_yrY3QJ4Rhw4/image;s=1024x0;q=100"
+            ],
+            "location": {
+              "status": "not_provided"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Ijqo1.html"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "skoda-superb-iii-combi"
+            },
+            "title": {
+              "before": null,
+              "after": "Skoda Superb 2.0 TDI Active"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Ijqo1.html"
+                }
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 35800
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "unknown"
+            },
+            "year": {
+              "before": null,
+              "after": 2019
+            },
+            "mileage": {
+              "before": null,
+              "after": 124213
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "offerType": {
+              "before": null,
+              "after": "unknown"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InMxeGNwNDNieW94YTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.SST7UD1KmyyZCPrVOEamzDSd83iZLXSZ3BLX4gZWy80/image;s=1024x0;q=80",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Img4d3R3aXkxcndkaTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.jlKwGu93pqAJu7g7_jhgoSSL_QEegkl_yrY3QJ4Rhw4/image;s=1024x0;q=100"
+              ]
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Ijqo1.html",
+        "modelKey": "skoda-superb-iii-combi",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_purchase_price",
+          "exact_engine_variant",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit",
+          "purchase_not_auction"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_purchase_price; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction"
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6FEvAp.html",
+      "modelKey": "skoda-superb-iii-combi",
+      "title": "Skoda Superb",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6FEvAp.html"
+        }
+      ],
+      "price": 49900,
+      "priceBasis": "unknown",
+      "year": 2018,
+      "mileage": 159876,
+      "bodyCode": "wagon",
+      "transmissionCode": "automatic",
+      "offerType": "unknown",
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhrOGltdjUxampyMTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.CrXQMDZ-CnvYVLuHaAWanvb_T9hLAsBAKRLQRNciezQ/image;s=1024x0;q=100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhrOGltdjUxampyMTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.CrXQMDZ-CnvYVLuHaAWanvb_T9hLAsBAKRLQRNciezQ/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im1qY2pyc2l2aDF4YzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.m3B0khxKcHzNydIFrMi7oT4lNhbOyinIeaX7Q6coDik/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im85YmgwMXl6MDk3MjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.UXKENSh8zQp9UZIJUm4KOvufuRZ9NH7WKMq8aTllPRo/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImxvemszdHo2bTlvaTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.cNvNKm7J7qI7pLKZ_9dNSG2a6VUJNXPmfIk81PwjcEg/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpocHM0YjExbzR3ai1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.K98_dyAxREgtO8PdUcAns-dqqrdIc21Zz4MTl8Z93fA/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inc5NWttMm05YTFpNDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.NnJBaTcNKwKpTTEzo826H1g-Rl69odWkDkhGZ0sRIDg/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inlhamh5cWFmYXg3NzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.oYKZiUFulEz59st7yGMnXgbO31c__bnEUeKVJT1-c2w/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImIya3ppMDZidTdsdzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19._AnmQQ9eEK-liFVFGZ3O3sS_NAathWurqlcwbtGd458/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Img5dzVrYjJmZ2RtbzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.8LKNCEQ_VY0vn-8Z1MhoWzl3sqBtbPGMuqwBESbDXoQ/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InF1ZXV3Z2Y0c2JqYS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.x8fe7hGm6dUuKiPsiOwwShpCPNyMSGg52pTQZ1x2Vv0/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImUyODBrdXQwMGI4MDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.92IGGGNj3gmxdcdKZyqNH2_8-3ueCO1FzXDAuty2UVo/image;s=148x110"
+      ],
+      "location": {
+        "status": "not_provided"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-14T02:51:44.601Z",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6FEvAp.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-14T02:51:44.601Z",
+          "lastCheckedAt": "2026-11-14T02:51:44.601Z",
+          "lastVerifiedAt": "2026-11-14T02:51:44.601Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6FEvAp.html",
+            "checkedAt": "2026-11-14T02:51:44.601Z",
+            "availability": "available",
+            "note": "W treści karty widoczny przycisk kontaktu: Skontaktuj się ze sprzedawcą, Zobacz więcej ofert (52) tego sprzedawcy, Zobacz więcej ofert (52) tego sprzedawcy, Kontakt.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6FEvAp.html",
+                "checkedAt": "2026-11-14T02:51:44.601Z",
+                "fields": [
+                  "title",
+                  "year",
+                  "mileage",
+                  "price",
+                  "bodyCode",
+                  "transmissionCode"
+                ],
+                "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-14T02:51:44.601Z",
+      "lastVerifiedAt": "2026-11-14T02:51:44.601Z",
+      "lastAttemptAt": "2026-11-14T02:51:44.601Z",
+      "history": [
+        {
+          "eventId": "9c8326cca041cb1a45d14b9204f056c264d5c54cae662cb2056584de6934bc9b",
+          "runId": "direct-import-20261114-024644745-9140b1ce",
+          "checkedAt": "2026-11-14T02:51:44.601Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6FEvAp.html",
+          "availability": "available",
+          "note": "W treści karty widoczny przycisk kontaktu: Skontaktuj się ze sprzedawcą, Zobacz więcej ofert (52) tego sprzedawcy, Zobacz więcej ofert (52) tego sprzedawcy, Kontakt.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6FEvAp.html",
+              "checkedAt": "2026-11-14T02:51:44.601Z",
+              "fields": [
+                "title",
+                "year",
+                "mileage",
+                "price",
+                "bodyCode",
+                "transmissionCode"
+              ],
+              "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+            }
+          ],
+          "reportedFields": {
+            "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6FEvAp.html",
+            "modelKey": "skoda-superb-iii-combi",
+            "title": "Skoda Superb",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6FEvAp.html"
+              }
+            ],
+            "price": 49900,
+            "priceBasis": "unknown",
+            "year": 2018,
+            "mileage": 159876,
+            "bodyCode": "wagon",
+            "transmissionCode": "automatic",
+            "offerType": "unknown",
+            "saleType": null,
+            "lpgInstalled": null,
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhrOGltdjUxampyMTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.CrXQMDZ-CnvYVLuHaAWanvb_T9hLAsBAKRLQRNciezQ/image;s=1024x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhrOGltdjUxampyMTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.CrXQMDZ-CnvYVLuHaAWanvb_T9hLAsBAKRLQRNciezQ/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im1qY2pyc2l2aDF4YzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.m3B0khxKcHzNydIFrMi7oT4lNhbOyinIeaX7Q6coDik/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im85YmgwMXl6MDk3MjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.UXKENSh8zQp9UZIJUm4KOvufuRZ9NH7WKMq8aTllPRo/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImxvemszdHo2bTlvaTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.cNvNKm7J7qI7pLKZ_9dNSG2a6VUJNXPmfIk81PwjcEg/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpocHM0YjExbzR3ai1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.K98_dyAxREgtO8PdUcAns-dqqrdIc21Zz4MTl8Z93fA/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inc5NWttMm05YTFpNDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.NnJBaTcNKwKpTTEzo826H1g-Rl69odWkDkhGZ0sRIDg/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inlhamh5cWFmYXg3NzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.oYKZiUFulEz59st7yGMnXgbO31c__bnEUeKVJT1-c2w/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImIya3ppMDZidTdsdzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19._AnmQQ9eEK-liFVFGZ3O3sS_NAathWurqlcwbtGd458/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Img5dzVrYjJmZ2RtbzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.8LKNCEQ_VY0vn-8Z1MhoWzl3sqBtbPGMuqwBESbDXoQ/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InF1ZXV3Z2Y0c2JqYS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.x8fe7hGm6dUuKiPsiOwwShpCPNyMSGg52pTQZ1x2Vv0/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImUyODBrdXQwMGI4MDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.92IGGGNj3gmxdcdKZyqNH2_8-3ueCO1FzXDAuty2UVo/image;s=148x110"
+            ],
+            "location": {
+              "status": "not_provided"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6FEvAp.html"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "skoda-superb-iii-combi"
+            },
+            "title": {
+              "before": null,
+              "after": "Skoda Superb"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6FEvAp.html"
+                }
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 49900
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "unknown"
+            },
+            "year": {
+              "before": null,
+              "after": 2018
+            },
+            "mileage": {
+              "before": null,
+              "after": 159876
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "automatic"
+            },
+            "offerType": {
+              "before": null,
+              "after": "unknown"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhrOGltdjUxampyMTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.CrXQMDZ-CnvYVLuHaAWanvb_T9hLAsBAKRLQRNciezQ/image;s=1024x0;q=100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhrOGltdjUxampyMTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.CrXQMDZ-CnvYVLuHaAWanvb_T9hLAsBAKRLQRNciezQ/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im1qY2pyc2l2aDF4YzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.m3B0khxKcHzNydIFrMi7oT4lNhbOyinIeaX7Q6coDik/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im85YmgwMXl6MDk3MjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.UXKENSh8zQp9UZIJUm4KOvufuRZ9NH7WKMq8aTllPRo/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImxvemszdHo2bTlvaTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.cNvNKm7J7qI7pLKZ_9dNSG2a6VUJNXPmfIk81PwjcEg/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpocHM0YjExbzR3ai1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.K98_dyAxREgtO8PdUcAns-dqqrdIc21Zz4MTl8Z93fA/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inc5NWttMm05YTFpNDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.NnJBaTcNKwKpTTEzo826H1g-Rl69odWkDkhGZ0sRIDg/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inlhamh5cWFmYXg3NzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.oYKZiUFulEz59st7yGMnXgbO31c__bnEUeKVJT1-c2w/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImIya3ppMDZidTdsdzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19._AnmQQ9eEK-liFVFGZ3O3sS_NAathWurqlcwbtGd458/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Img5dzVrYjJmZ2RtbzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.8LKNCEQ_VY0vn-8Z1MhoWzl3sqBtbPGMuqwBESbDXoQ/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InF1ZXV3Z2Y0c2JqYS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.x8fe7hGm6dUuKiPsiOwwShpCPNyMSGg52pTQZ1x2Vv0/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImUyODBrdXQwMGI4MDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.92IGGGNj3gmxdcdKZyqNH2_8-3ueCO1FzXDAuty2UVo/image;s=148x110"
+              ]
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6FEvAp.html",
+        "modelKey": "skoda-superb-iii-combi",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_purchase_price",
+          "exact_engine_variant",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit",
+          "purchase_not_auction"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_purchase_price; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction"
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjRyA.html",
+      "modelKey": "skoda-superb-iii-combi",
+      "title": "Skoda Superb 2.0 TDI SCR 4x4 Scout DSG",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjRyA.html"
+        }
+      ],
+      "price": 47700,
+      "priceBasis": "unknown",
+      "year": 2022,
+      "mileage": 120000,
+      "bodyCode": "wagon",
+      "transmissionCode": "automatic",
+      "offerType": "unknown",
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imt5dWVjZXV1MXBpcS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.4HOST64Buw5bDUy-cz58vyDSowJlbePnzaXJ9vLul04/image;s=1024x0;q=80",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjM5cTM4N2dzdXhjZTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.QkI0wKJ9pmdrf7zyNkEvYOlG7jQLCM-EvchdiUcgssQ/image;s=1024x0;q=100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imt5dWVjZXV1MXBpcS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.4HOST64Buw5bDUy-cz58vyDSowJlbePnzaXJ9vLul04/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjM5cTM4N2dzdXhjZTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.QkI0wKJ9pmdrf7zyNkEvYOlG7jQLCM-EvchdiUcgssQ/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjVvaTFkYW44cGIzczEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.bGqmdC2ZKbnfCnHc3uUtoh4-Q6AJ3QQPdX6XcwdKH20/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjBobzZneWplOWIwOS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.WYtzuYknaOn4L-D6hfVftPE0_PYpzyP7hYz8GJKBCbU/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imc4aDdhZXVrMWpwNTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.z6ZPd_wZsfMVJOXOetPVGx-KMBzIDLSx_R7OL9tRd5s/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImZ3MW1pM3dvN28xZDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.XiV9imHFalebSmnS8lIAzDSRL5ASpFyh346WjHNcpGE/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9paHluZWo3MWthbzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.uNm4sbACpcgxqdCkmj4AIMkGrFQh0CIHXvcLxDhO8yQ/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRtMDJtbjcyNWZzbS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.DHR-zfVab-Z_1qs3Cb3wAq3ITm9eEXdrrRbpZH3Ixuo/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im95ZG92azl2aHgxejItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.X_GDI-qUIUbHeaZoTY4PP0q2OXcaLfq7Xqd-uflsnFk/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ind0aGQwZ3ltOGNoODMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.zIhj18MFeMpMHJdkU2PjRtQX6phSftxBwefpZ2Wgmzo/image;s=148x110"
+      ],
+      "location": {
+        "status": "not_provided"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-14T02:51:46.277Z",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjRyA.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-14T02:51:46.277Z",
+          "lastCheckedAt": "2026-11-14T02:51:46.277Z",
+          "lastVerifiedAt": "2026-11-14T02:51:46.277Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjRyA.html",
+            "checkedAt": "2026-11-14T02:51:46.277Z",
+            "availability": "available",
+            "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjRyA.html",
+                "checkedAt": "2026-11-14T02:51:46.277Z",
+                "fields": [
+                  "title",
+                  "year",
+                  "mileage",
+                  "price",
+                  "bodyCode",
+                  "transmissionCode"
+                ],
+                "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-14T02:51:46.277Z",
+      "lastVerifiedAt": "2026-11-14T02:51:46.277Z",
+      "lastAttemptAt": "2026-11-14T02:51:46.277Z",
+      "history": [
+        {
+          "eventId": "7138343b7ec1611751e285030b7608a40b53d78112e4d51fbf26a652f5f9cfe0",
+          "runId": "direct-import-20261114-024644745-9140b1ce",
+          "checkedAt": "2026-11-14T02:51:46.277Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjRyA.html",
+          "availability": "available",
+          "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjRyA.html",
+              "checkedAt": "2026-11-14T02:51:46.277Z",
+              "fields": [
+                "title",
+                "year",
+                "mileage",
+                "price",
+                "bodyCode",
+                "transmissionCode"
+              ],
+              "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+            }
+          ],
+          "reportedFields": {
+            "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjRyA.html",
+            "modelKey": "skoda-superb-iii-combi",
+            "title": "Skoda Superb 2.0 TDI SCR 4x4 Scout DSG",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjRyA.html"
+              }
+            ],
+            "price": 47700,
+            "priceBasis": "unknown",
+            "year": 2022,
+            "mileage": 120000,
+            "bodyCode": "wagon",
+            "transmissionCode": "automatic",
+            "offerType": "unknown",
+            "saleType": null,
+            "lpgInstalled": null,
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imt5dWVjZXV1MXBpcS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.4HOST64Buw5bDUy-cz58vyDSowJlbePnzaXJ9vLul04/image;s=1024x0;q=80",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjM5cTM4N2dzdXhjZTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.QkI0wKJ9pmdrf7zyNkEvYOlG7jQLCM-EvchdiUcgssQ/image;s=1024x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imt5dWVjZXV1MXBpcS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.4HOST64Buw5bDUy-cz58vyDSowJlbePnzaXJ9vLul04/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjM5cTM4N2dzdXhjZTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.QkI0wKJ9pmdrf7zyNkEvYOlG7jQLCM-EvchdiUcgssQ/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjVvaTFkYW44cGIzczEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.bGqmdC2ZKbnfCnHc3uUtoh4-Q6AJ3QQPdX6XcwdKH20/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjBobzZneWplOWIwOS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.WYtzuYknaOn4L-D6hfVftPE0_PYpzyP7hYz8GJKBCbU/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imc4aDdhZXVrMWpwNTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.z6ZPd_wZsfMVJOXOetPVGx-KMBzIDLSx_R7OL9tRd5s/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImZ3MW1pM3dvN28xZDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.XiV9imHFalebSmnS8lIAzDSRL5ASpFyh346WjHNcpGE/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9paHluZWo3MWthbzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.uNm4sbACpcgxqdCkmj4AIMkGrFQh0CIHXvcLxDhO8yQ/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRtMDJtbjcyNWZzbS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.DHR-zfVab-Z_1qs3Cb3wAq3ITm9eEXdrrRbpZH3Ixuo/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im95ZG92azl2aHgxejItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.X_GDI-qUIUbHeaZoTY4PP0q2OXcaLfq7Xqd-uflsnFk/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ind0aGQwZ3ltOGNoODMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.zIhj18MFeMpMHJdkU2PjRtQX6phSftxBwefpZ2Wgmzo/image;s=148x110"
+            ],
+            "location": {
+              "status": "not_provided"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjRyA.html"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "skoda-superb-iii-combi"
+            },
+            "title": {
+              "before": null,
+              "after": "Skoda Superb 2.0 TDI SCR 4x4 Scout DSG"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjRyA.html"
+                }
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 47700
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "unknown"
+            },
+            "year": {
+              "before": null,
+              "after": 2022
+            },
+            "mileage": {
+              "before": null,
+              "after": 120000
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "automatic"
+            },
+            "offerType": {
+              "before": null,
+              "after": "unknown"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imt5dWVjZXV1MXBpcS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.4HOST64Buw5bDUy-cz58vyDSowJlbePnzaXJ9vLul04/image;s=1024x0;q=80",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjM5cTM4N2dzdXhjZTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.QkI0wKJ9pmdrf7zyNkEvYOlG7jQLCM-EvchdiUcgssQ/image;s=1024x0;q=100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imt5dWVjZXV1MXBpcS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.4HOST64Buw5bDUy-cz58vyDSowJlbePnzaXJ9vLul04/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjM5cTM4N2dzdXhjZTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.QkI0wKJ9pmdrf7zyNkEvYOlG7jQLCM-EvchdiUcgssQ/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjVvaTFkYW44cGIzczEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.bGqmdC2ZKbnfCnHc3uUtoh4-Q6AJ3QQPdX6XcwdKH20/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjBobzZneWplOWIwOS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.WYtzuYknaOn4L-D6hfVftPE0_PYpzyP7hYz8GJKBCbU/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imc4aDdhZXVrMWpwNTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.z6ZPd_wZsfMVJOXOetPVGx-KMBzIDLSx_R7OL9tRd5s/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImZ3MW1pM3dvN28xZDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.XiV9imHFalebSmnS8lIAzDSRL5ASpFyh346WjHNcpGE/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9paHluZWo3MWthbzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.uNm4sbACpcgxqdCkmj4AIMkGrFQh0CIHXvcLxDhO8yQ/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRtMDJtbjcyNWZzbS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.DHR-zfVab-Z_1qs3Cb3wAq3ITm9eEXdrrRbpZH3Ixuo/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im95ZG92azl2aHgxejItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.X_GDI-qUIUbHeaZoTY4PP0q2OXcaLfq7Xqd-uflsnFk/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ind0aGQwZ3ltOGNoODMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.zIhj18MFeMpMHJdkU2PjRtQX6phSftxBwefpZ2Wgmzo/image;s=148x110"
+              ]
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjRyA.html",
+        "modelKey": "skoda-superb-iii-combi",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_purchase_price",
+          "exact_engine_variant",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit",
+          "purchase_not_auction"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_purchase_price; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction"
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Ij4zH.html",
+      "modelKey": "skoda-superb-iii-combi",
+      "title": "Skoda Superb 1.8 TSI Sportline DSG",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Ij4zH.html"
+        }
+      ],
+      "price": 49900,
+      "priceBasis": "unknown",
+      "year": 2017,
+      "mileage": 159000,
+      "bodyCode": "wagon",
+      "transmissionCode": "automatic",
+      "offerType": "unknown",
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImN1MzdwamZ6aHNmbTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.h1gQso0F59wttJJQM9hf-Pekbado493Ehr1XLnHf0_I/image;s=1024x0;q=80",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InAwcGZ5NDR2c3QyeTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.xDg7DBvo3KcszryOhYriJv9LcAOsimNj3Ir6YoPICtM/image;s=1024x0;q=100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImN1MzdwamZ6aHNmbTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.h1gQso0F59wttJJQM9hf-Pekbado493Ehr1XLnHf0_I/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InAwcGZ5NDR2c3QyeTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.xDg7DBvo3KcszryOhYriJv9LcAOsimNj3Ir6YoPICtM/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjlodzU3OWF0bHoyZjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.NYjjVUEzmvfk7K_y3yC7UG-KWij__aCROrVom3OuHPI/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijk5dWhha2pqcWhqdTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.t8Lg8ItgdJZr919c8TrYzTA5deNFLVftCGvJCGLRjSA/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImhyNWZtYXFmeTRsbS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.zkoPzvG3uJl6ZAFBRGQhvv43AxOQgQYvCeLXXDey7zo/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InFrZW94cDVqdDQxbTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.NhpmyXHt3QTUej_KjKvBKUJRR1upen872crD69Tk_WE/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjUwbXNzdDY2cjBycDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.B6oHioVQpwh30RW75CDMRhadrAv4Pl9e8UtaY4C92Gg/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImU1Y2pkbG12YmRhNDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.S7xA3Q3rDmGaloDnarouGB3_bE9f0WlGfR_iY6cGRVY/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImU4cDN4d3V0bnBzdjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.cd9Lv5J8NH6fkSl2DfuT1p9DdTJ_vHkNXE3CGXVUSXE/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRmZ3k2cmZ3OTZvZzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.dY4mgX2C9t3Xw7oGIplL7BgD8Jr7I585pjJ1esGO5y8/image;s=148x110"
+      ],
+      "location": {
+        "status": "not_provided"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-14T02:51:46.401Z",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Ij4zH.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-14T02:51:46.401Z",
+          "lastCheckedAt": "2026-11-14T02:51:46.401Z",
+          "lastVerifiedAt": "2026-11-14T02:51:46.401Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Ij4zH.html",
+            "checkedAt": "2026-11-14T02:51:46.401Z",
+            "availability": "available",
+            "note": "W treści karty widoczny przycisk kontaktu: Zobacz więcej ofert (33) tego sprzedawcy, Zobacz więcej ofert (33) tego sprzedawcy, Kontakt.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Ij4zH.html",
+                "checkedAt": "2026-11-14T02:51:46.401Z",
+                "fields": [
+                  "title",
+                  "year",
+                  "mileage",
+                  "price",
+                  "bodyCode",
+                  "transmissionCode"
+                ],
+                "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-14T02:51:46.401Z",
+      "lastVerifiedAt": "2026-11-14T02:51:46.401Z",
+      "lastAttemptAt": "2026-11-14T02:51:46.401Z",
+      "history": [
+        {
+          "eventId": "6b767309b104f5d4a88ac2bc516081a9fead9c67906c6a92c0c7b04c3c90b0be",
+          "runId": "direct-import-20261114-024644745-9140b1ce",
+          "checkedAt": "2026-11-14T02:51:46.401Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Ij4zH.html",
+          "availability": "available",
+          "note": "W treści karty widoczny przycisk kontaktu: Zobacz więcej ofert (33) tego sprzedawcy, Zobacz więcej ofert (33) tego sprzedawcy, Kontakt.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Ij4zH.html",
+              "checkedAt": "2026-11-14T02:51:46.401Z",
+              "fields": [
+                "title",
+                "year",
+                "mileage",
+                "price",
+                "bodyCode",
+                "transmissionCode"
+              ],
+              "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+            }
+          ],
+          "reportedFields": {
+            "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Ij4zH.html",
+            "modelKey": "skoda-superb-iii-combi",
+            "title": "Skoda Superb 1.8 TSI Sportline DSG",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Ij4zH.html"
+              }
+            ],
+            "price": 49900,
+            "priceBasis": "unknown",
+            "year": 2017,
+            "mileage": 159000,
+            "bodyCode": "wagon",
+            "transmissionCode": "automatic",
+            "offerType": "unknown",
+            "saleType": null,
+            "lpgInstalled": null,
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImN1MzdwamZ6aHNmbTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.h1gQso0F59wttJJQM9hf-Pekbado493Ehr1XLnHf0_I/image;s=1024x0;q=80",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InAwcGZ5NDR2c3QyeTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.xDg7DBvo3KcszryOhYriJv9LcAOsimNj3Ir6YoPICtM/image;s=1024x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImN1MzdwamZ6aHNmbTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.h1gQso0F59wttJJQM9hf-Pekbado493Ehr1XLnHf0_I/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InAwcGZ5NDR2c3QyeTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.xDg7DBvo3KcszryOhYriJv9LcAOsimNj3Ir6YoPICtM/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjlodzU3OWF0bHoyZjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.NYjjVUEzmvfk7K_y3yC7UG-KWij__aCROrVom3OuHPI/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijk5dWhha2pqcWhqdTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.t8Lg8ItgdJZr919c8TrYzTA5deNFLVftCGvJCGLRjSA/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImhyNWZtYXFmeTRsbS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.zkoPzvG3uJl6ZAFBRGQhvv43AxOQgQYvCeLXXDey7zo/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InFrZW94cDVqdDQxbTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.NhpmyXHt3QTUej_KjKvBKUJRR1upen872crD69Tk_WE/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjUwbXNzdDY2cjBycDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.B6oHioVQpwh30RW75CDMRhadrAv4Pl9e8UtaY4C92Gg/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImU1Y2pkbG12YmRhNDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.S7xA3Q3rDmGaloDnarouGB3_bE9f0WlGfR_iY6cGRVY/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImU4cDN4d3V0bnBzdjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.cd9Lv5J8NH6fkSl2DfuT1p9DdTJ_vHkNXE3CGXVUSXE/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRmZ3k2cmZ3OTZvZzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.dY4mgX2C9t3Xw7oGIplL7BgD8Jr7I585pjJ1esGO5y8/image;s=148x110"
+            ],
+            "location": {
+              "status": "not_provided"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Ij4zH.html"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "skoda-superb-iii-combi"
+            },
+            "title": {
+              "before": null,
+              "after": "Skoda Superb 1.8 TSI Sportline DSG"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Ij4zH.html"
+                }
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 49900
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "unknown"
+            },
+            "year": {
+              "before": null,
+              "after": 2017
+            },
+            "mileage": {
+              "before": null,
+              "after": 159000
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "automatic"
+            },
+            "offerType": {
+              "before": null,
+              "after": "unknown"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImN1MzdwamZ6aHNmbTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.h1gQso0F59wttJJQM9hf-Pekbado493Ehr1XLnHf0_I/image;s=1024x0;q=80",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InAwcGZ5NDR2c3QyeTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.xDg7DBvo3KcszryOhYriJv9LcAOsimNj3Ir6YoPICtM/image;s=1024x0;q=100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImN1MzdwamZ6aHNmbTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.h1gQso0F59wttJJQM9hf-Pekbado493Ehr1XLnHf0_I/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InAwcGZ5NDR2c3QyeTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.xDg7DBvo3KcszryOhYriJv9LcAOsimNj3Ir6YoPICtM/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjlodzU3OWF0bHoyZjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.NYjjVUEzmvfk7K_y3yC7UG-KWij__aCROrVom3OuHPI/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijk5dWhha2pqcWhqdTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.t8Lg8ItgdJZr919c8TrYzTA5deNFLVftCGvJCGLRjSA/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImhyNWZtYXFmeTRsbS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.zkoPzvG3uJl6ZAFBRGQhvv43AxOQgQYvCeLXXDey7zo/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InFrZW94cDVqdDQxbTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.NhpmyXHt3QTUej_KjKvBKUJRR1upen872crD69Tk_WE/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjUwbXNzdDY2cjBycDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.B6oHioVQpwh30RW75CDMRhadrAv4Pl9e8UtaY4C92Gg/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImU1Y2pkbG12YmRhNDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.S7xA3Q3rDmGaloDnarouGB3_bE9f0WlGfR_iY6cGRVY/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImU4cDN4d3V0bnBzdjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.cd9Lv5J8NH6fkSl2DfuT1p9DdTJ_vHkNXE3CGXVUSXE/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRmZ3k2cmZ3OTZvZzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.dY4mgX2C9t3Xw7oGIplL7BgD8Jr7I585pjJ1esGO5y8/image;s=148x110"
+              ]
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Ij4zH.html",
+        "modelKey": "skoda-superb-iii-combi",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_purchase_price",
+          "exact_engine_variant",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit",
+          "purchase_not_auction"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_purchase_price; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction"
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Iixe4.html",
+      "modelKey": "skoda-superb-iii-combi",
+      "title": "Skoda Superb 1.4 TSI Plug-In Hybrid Style DSG",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Iixe4.html"
+        }
+      ],
+      "price": 45500,
+      "priceBasis": "unknown",
+      "year": 2020,
+      "mileage": 166000,
+      "bodyCode": "wagon",
+      "transmissionCode": "automatic",
+      "offerType": "unknown",
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InFtaTBuOXR6ODd3ZC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.wXCmcROsRjhxUjNClTU284efUSZpqHWRDXrN_c20e-Y/image;s=1024x0;q=80",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjVheXQ5NG5yNTI3bi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.yaHzg1kS1GQrzsbS0opRT9eaXhJQn11cM623e2kJC2k/image;s=1024x0;q=100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InFtaTBuOXR6ODd3ZC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.wXCmcROsRjhxUjNClTU284efUSZpqHWRDXrN_c20e-Y/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjVheXQ5NG5yNTI3bi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.yaHzg1kS1GQrzsbS0opRT9eaXhJQn11cM623e2kJC2k/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im96OTJxY2R4Y29ueTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.ESv_3R87KNFa6wF2LJEqRzcGxorf9RHM96KLMXSaeDE/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InNla2NmZXdxeTFlei1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.HSJVlmIUnmQl-Y5NSgS2yDykzWCR0y9KZV6bSeXKAQw/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImhvdmF2MjVjdXg1ODMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.BQXO7MBbNl_tuIcegS2fCydntp4Kz3ypUjVqHmLF664/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjB1anhrbDhsNHluOTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.t37J7cdo2zlvm-y8N_c5e-z0rneiBERWd8LoQpcBXCg/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjhzMTB5a3l1MTlhdDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.wEpvxuaJVXVXlwyKEa8Fdx2BMWTaDfAnO2JjQcg8zDs/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImY3MHkwb251ZTBmbC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.fTtQDeg2kTT92WrR8hIgy9xcTZJj-DH5KcIcnprqAuo/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJid3pmZTk4aHNqazItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.ozCzL2GyuuKSkCbCxWQ4zjOM9TjujKhQwFOKIkoWfa8/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IndrODd0Zmo0MzZwMi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.iAXY1C0MNLzRDQMqg0mvakilg7HXk4-9vEGY6pRvrkk/image;s=148x110"
+      ],
+      "location": {
+        "status": "not_provided"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-14T02:51:46.495Z",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Iixe4.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-14T02:51:46.495Z",
+          "lastCheckedAt": "2026-11-14T02:51:46.495Z",
+          "lastVerifiedAt": "2026-11-14T02:51:46.495Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Iixe4.html",
+            "checkedAt": "2026-11-14T02:51:46.495Z",
+            "availability": "available",
+            "note": "W treści karty widoczny przycisk kontaktu: Zobacz więcej ofert (145) tego sprzedawcy, Zobacz więcej ofert (145) tego sprzedawcy, Kontakt.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Iixe4.html",
+                "checkedAt": "2026-11-14T02:51:46.495Z",
+                "fields": [
+                  "title",
+                  "year",
+                  "mileage",
+                  "price",
+                  "bodyCode",
+                  "transmissionCode"
+                ],
+                "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-14T02:51:46.495Z",
+      "lastVerifiedAt": "2026-11-14T02:51:46.495Z",
+      "lastAttemptAt": "2026-11-14T02:51:46.495Z",
+      "history": [
+        {
+          "eventId": "25471d00692afef8f10566f31a5a4255bf4658731e95833c822d6f08752c4d42",
+          "runId": "direct-import-20261114-024644745-9140b1ce",
+          "checkedAt": "2026-11-14T02:51:46.495Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Iixe4.html",
+          "availability": "available",
+          "note": "W treści karty widoczny przycisk kontaktu: Zobacz więcej ofert (145) tego sprzedawcy, Zobacz więcej ofert (145) tego sprzedawcy, Kontakt.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Iixe4.html",
+              "checkedAt": "2026-11-14T02:51:46.495Z",
+              "fields": [
+                "title",
+                "year",
+                "mileage",
+                "price",
+                "bodyCode",
+                "transmissionCode"
+              ],
+              "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+            }
+          ],
+          "reportedFields": {
+            "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Iixe4.html",
+            "modelKey": "skoda-superb-iii-combi",
+            "title": "Skoda Superb 1.4 TSI Plug-In Hybrid Style DSG",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Iixe4.html"
+              }
+            ],
+            "price": 45500,
+            "priceBasis": "unknown",
+            "year": 2020,
+            "mileage": 166000,
+            "bodyCode": "wagon",
+            "transmissionCode": "automatic",
+            "offerType": "unknown",
+            "saleType": null,
+            "lpgInstalled": null,
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InFtaTBuOXR6ODd3ZC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.wXCmcROsRjhxUjNClTU284efUSZpqHWRDXrN_c20e-Y/image;s=1024x0;q=80",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjVheXQ5NG5yNTI3bi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.yaHzg1kS1GQrzsbS0opRT9eaXhJQn11cM623e2kJC2k/image;s=1024x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InFtaTBuOXR6ODd3ZC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.wXCmcROsRjhxUjNClTU284efUSZpqHWRDXrN_c20e-Y/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjVheXQ5NG5yNTI3bi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.yaHzg1kS1GQrzsbS0opRT9eaXhJQn11cM623e2kJC2k/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im96OTJxY2R4Y29ueTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.ESv_3R87KNFa6wF2LJEqRzcGxorf9RHM96KLMXSaeDE/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InNla2NmZXdxeTFlei1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.HSJVlmIUnmQl-Y5NSgS2yDykzWCR0y9KZV6bSeXKAQw/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImhvdmF2MjVjdXg1ODMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.BQXO7MBbNl_tuIcegS2fCydntp4Kz3ypUjVqHmLF664/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjB1anhrbDhsNHluOTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.t37J7cdo2zlvm-y8N_c5e-z0rneiBERWd8LoQpcBXCg/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjhzMTB5a3l1MTlhdDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.wEpvxuaJVXVXlwyKEa8Fdx2BMWTaDfAnO2JjQcg8zDs/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImY3MHkwb251ZTBmbC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.fTtQDeg2kTT92WrR8hIgy9xcTZJj-DH5KcIcnprqAuo/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJid3pmZTk4aHNqazItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.ozCzL2GyuuKSkCbCxWQ4zjOM9TjujKhQwFOKIkoWfa8/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IndrODd0Zmo0MzZwMi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.iAXY1C0MNLzRDQMqg0mvakilg7HXk4-9vEGY6pRvrkk/image;s=148x110"
+            ],
+            "location": {
+              "status": "not_provided"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Iixe4.html"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "skoda-superb-iii-combi"
+            },
+            "title": {
+              "before": null,
+              "after": "Skoda Superb 1.4 TSI Plug-In Hybrid Style DSG"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Iixe4.html"
+                }
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 45500
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "unknown"
+            },
+            "year": {
+              "before": null,
+              "after": 2020
+            },
+            "mileage": {
+              "before": null,
+              "after": 166000
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "automatic"
+            },
+            "offerType": {
+              "before": null,
+              "after": "unknown"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InFtaTBuOXR6ODd3ZC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.wXCmcROsRjhxUjNClTU284efUSZpqHWRDXrN_c20e-Y/image;s=1024x0;q=80",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjVheXQ5NG5yNTI3bi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.yaHzg1kS1GQrzsbS0opRT9eaXhJQn11cM623e2kJC2k/image;s=1024x0;q=100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InFtaTBuOXR6ODd3ZC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.wXCmcROsRjhxUjNClTU284efUSZpqHWRDXrN_c20e-Y/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjVheXQ5NG5yNTI3bi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.yaHzg1kS1GQrzsbS0opRT9eaXhJQn11cM623e2kJC2k/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im96OTJxY2R4Y29ueTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.ESv_3R87KNFa6wF2LJEqRzcGxorf9RHM96KLMXSaeDE/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InNla2NmZXdxeTFlei1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.HSJVlmIUnmQl-Y5NSgS2yDykzWCR0y9KZV6bSeXKAQw/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImhvdmF2MjVjdXg1ODMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.BQXO7MBbNl_tuIcegS2fCydntp4Kz3ypUjVqHmLF664/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjB1anhrbDhsNHluOTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.t37J7cdo2zlvm-y8N_c5e-z0rneiBERWd8LoQpcBXCg/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjhzMTB5a3l1MTlhdDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.wEpvxuaJVXVXlwyKEa8Fdx2BMWTaDfAnO2JjQcg8zDs/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImY3MHkwb251ZTBmbC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.fTtQDeg2kTT92WrR8hIgy9xcTZJj-DH5KcIcnprqAuo/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJid3pmZTk4aHNqazItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.ozCzL2GyuuKSkCbCxWQ4zjOM9TjujKhQwFOKIkoWfa8/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IndrODd0Zmo0MzZwMi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.iAXY1C0MNLzRDQMqg0mvakilg7HXk4-9vEGY6pRvrkk/image;s=148x110"
+              ]
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Iixe4.html",
+        "modelKey": "skoda-superb-iii-combi",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_purchase_price",
+          "exact_engine_variant",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit",
+          "purchase_not_auction"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_purchase_price; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction"
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IiScP.html",
+      "modelKey": "skoda-superb-iii-combi",
+      "title": "Skoda Superb",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IiScP.html"
+        }
+      ],
+      "price": 54900,
+      "priceBasis": "unknown",
+      "year": 2018,
+      "mileage": 155977,
+      "bodyCode": "wagon",
+      "transmissionCode": "manual",
+      "offerType": "unknown",
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InQzdzRlY3NvMmhoNjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.NffXzvXteS-FJ2Xvze2DUurHmuvYuh1RyBgRajm6KGs/image;s=1024x0;q=80",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imh2cGV0aDBjYzByMzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.rpxXV7KTfJV7XwglubGWMndm3qIbiaJOvG1CfuaowGQ/image;s=1024x0;q=100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InQzdzRlY3NvMmhoNjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.NffXzvXteS-FJ2Xvze2DUurHmuvYuh1RyBgRajm6KGs/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imh2cGV0aDBjYzByMzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.rpxXV7KTfJV7XwglubGWMndm3qIbiaJOvG1CfuaowGQ/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InMzbXM4cDFjb2IzYi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.U7Zh3gjHAfdHG0DUnO8w4NounxkIcCO9kw03PRO5WJA/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjFxa3FmcnpodDJkbDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.c0INun6a2KtgejuC38_dxbXfKjA8cvwEUYkkKvRbF4s/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im53aDNoYmN6NWZzdDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.UiurKaxuHfrHpRPhp_ExEkf36-Pscm4fa1qq0GlxNMw/image;s=148x110"
+      ],
+      "location": {
+        "status": "not_provided"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-14T02:51:48.128Z",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IiScP.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-14T02:51:48.128Z",
+          "lastCheckedAt": "2026-11-14T02:51:48.128Z",
+          "lastVerifiedAt": "2026-11-14T02:51:48.128Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IiScP.html",
+            "checkedAt": "2026-11-14T02:51:48.128Z",
+            "availability": "available",
+            "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IiScP.html",
+                "checkedAt": "2026-11-14T02:51:48.128Z",
+                "fields": [
+                  "title",
+                  "year",
+                  "mileage",
+                  "price",
+                  "bodyCode",
+                  "transmissionCode"
+                ],
+                "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-14T02:51:48.128Z",
+      "lastVerifiedAt": "2026-11-14T02:51:48.128Z",
+      "lastAttemptAt": "2026-11-14T02:51:48.128Z",
+      "history": [
+        {
+          "eventId": "c8c759a5d270118b4b563d43153c07ce8c932cc2be880fbd0518ead7880a968e",
+          "runId": "direct-import-20261114-024644745-9140b1ce",
+          "checkedAt": "2026-11-14T02:51:48.128Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IiScP.html",
+          "availability": "available",
+          "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IiScP.html",
+              "checkedAt": "2026-11-14T02:51:48.128Z",
+              "fields": [
+                "title",
+                "year",
+                "mileage",
+                "price",
+                "bodyCode",
+                "transmissionCode"
+              ],
+              "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+            }
+          ],
+          "reportedFields": {
+            "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IiScP.html",
+            "modelKey": "skoda-superb-iii-combi",
+            "title": "Skoda Superb",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IiScP.html"
+              }
+            ],
+            "price": 54900,
+            "priceBasis": "unknown",
+            "year": 2018,
+            "mileage": 155977,
+            "bodyCode": "wagon",
+            "transmissionCode": "manual",
+            "offerType": "unknown",
+            "saleType": null,
+            "lpgInstalled": null,
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InQzdzRlY3NvMmhoNjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.NffXzvXteS-FJ2Xvze2DUurHmuvYuh1RyBgRajm6KGs/image;s=1024x0;q=80",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imh2cGV0aDBjYzByMzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.rpxXV7KTfJV7XwglubGWMndm3qIbiaJOvG1CfuaowGQ/image;s=1024x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InQzdzRlY3NvMmhoNjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.NffXzvXteS-FJ2Xvze2DUurHmuvYuh1RyBgRajm6KGs/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imh2cGV0aDBjYzByMzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.rpxXV7KTfJV7XwglubGWMndm3qIbiaJOvG1CfuaowGQ/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InMzbXM4cDFjb2IzYi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.U7Zh3gjHAfdHG0DUnO8w4NounxkIcCO9kw03PRO5WJA/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjFxa3FmcnpodDJkbDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.c0INun6a2KtgejuC38_dxbXfKjA8cvwEUYkkKvRbF4s/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im53aDNoYmN6NWZzdDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.UiurKaxuHfrHpRPhp_ExEkf36-Pscm4fa1qq0GlxNMw/image;s=148x110"
+            ],
+            "location": {
+              "status": "not_provided"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IiScP.html"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "skoda-superb-iii-combi"
+            },
+            "title": {
+              "before": null,
+              "after": "Skoda Superb"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IiScP.html"
+                }
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 54900
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "unknown"
+            },
+            "year": {
+              "before": null,
+              "after": 2018
+            },
+            "mileage": {
+              "before": null,
+              "after": 155977
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "offerType": {
+              "before": null,
+              "after": "unknown"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InQzdzRlY3NvMmhoNjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.NffXzvXteS-FJ2Xvze2DUurHmuvYuh1RyBgRajm6KGs/image;s=1024x0;q=80",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imh2cGV0aDBjYzByMzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.rpxXV7KTfJV7XwglubGWMndm3qIbiaJOvG1CfuaowGQ/image;s=1024x0;q=100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InQzdzRlY3NvMmhoNjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.NffXzvXteS-FJ2Xvze2DUurHmuvYuh1RyBgRajm6KGs/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imh2cGV0aDBjYzByMzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.rpxXV7KTfJV7XwglubGWMndm3qIbiaJOvG1CfuaowGQ/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InMzbXM4cDFjb2IzYi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.U7Zh3gjHAfdHG0DUnO8w4NounxkIcCO9kw03PRO5WJA/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjFxa3FmcnpodDJkbDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.c0INun6a2KtgejuC38_dxbXfKjA8cvwEUYkkKvRbF4s/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im53aDNoYmN6NWZzdDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.UiurKaxuHfrHpRPhp_ExEkf36-Pscm4fa1qq0GlxNMw/image;s=148x110"
+              ]
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IiScP.html",
+        "modelKey": "skoda-superb-iii-combi",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_purchase_price",
+          "exact_engine_variant",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit",
+          "purchase_not_auction"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_purchase_price; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction"
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IhME8.html",
+      "modelKey": "skoda-superb-iii-combi",
+      "title": "Skoda Superb 1.6 TDI Ambition DSG",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IhME8.html"
+        }
+      ],
+      "price": 49900,
+      "priceBasis": "unknown",
+      "year": 2019,
+      "mileage": 156000,
+      "bodyCode": "wagon",
+      "transmissionCode": "automatic",
+      "offerType": "unknown",
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjF3aGo0MzY0dmExOTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.N7Z8m-q3M1h-aSjc5rmSSEnePK9ufHQRIERfILU8xaU/image;s=1024x0;q=80",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijcwc2x5bjNtOHE4by1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.O5uqSclSSIas8qzt35SCOUbKgEbmZJN-XOlLUqknefY/image;s=1024x0;q=100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjF3aGo0MzY0dmExOTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.N7Z8m-q3M1h-aSjc5rmSSEnePK9ufHQRIERfILU8xaU/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijcwc2x5bjNtOHE4by1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.O5uqSclSSIas8qzt35SCOUbKgEbmZJN-XOlLUqknefY/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjU5OGs0NDZyNGIzejEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Di5aYizT63Nf-Z88ybARJbHjfqB_ruDfcc0KTio72nU/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjdxenNiNTM1cWRlZzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.DXHsXJSLFjJVyEftZrxFUnUguZ3MeFTclRqTyzLk0B0/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InZyY25mMW9rengxNS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.0mLxPv6fZwkCXq78KWDNH1-3QYI7a-yR-bQs_yYM_ac/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imh4czM5ZHFma3Q5MjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.IrMbs6QzyQeMD-2_4atZYbYpy0OMD3Xejz1mu7FG1BQ/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImlqY3p3cG1oYnQwMi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.pJRkcyJg6u7_O2bm3Y2agiaoPZWDdHa7XV1cQOsOiKI/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImM4bzB3NnN6NGlqazEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.n95Lz88FNfz7_rE_JaM1Ji69gS2seyo3N0iKan1Qv-4/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im42YjljMWpyOWkzNDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.8qh8XtpA-LuC-u3TVv-xLguJwsMUxlj2JbqxZ-6ViFE/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJ2YmJxcXI0c2pkLU9UT01PVE9QTCIsInciOlt7ImZuIjoid2c0Z25xcDZ5MWYtT1RPTU9UT1BMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.ub8FxZ7lC4wTEh8O1Ma_xGtxMefzKpM-dFIq-XjKcBs/image;s=148x110"
+      ],
+      "location": {
+        "status": "not_provided"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-14T02:51:48.161Z",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IhME8.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-14T02:51:48.161Z",
+          "lastCheckedAt": "2026-11-14T02:51:48.161Z",
+          "lastVerifiedAt": "2026-11-14T02:51:48.161Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IhME8.html",
+            "checkedAt": "2026-11-14T02:51:48.161Z",
+            "availability": "available",
+            "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IhME8.html",
+                "checkedAt": "2026-11-14T02:51:48.161Z",
+                "fields": [
+                  "title",
+                  "year",
+                  "mileage",
+                  "price",
+                  "bodyCode",
+                  "transmissionCode"
+                ],
+                "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-14T02:51:48.161Z",
+      "lastVerifiedAt": "2026-11-14T02:51:48.161Z",
+      "lastAttemptAt": "2026-11-14T02:51:48.161Z",
+      "history": [
+        {
+          "eventId": "b7ef121f833f788df2f6cba0c2ad70b59d7a5e63a1560a8656dc842e9c5392d1",
+          "runId": "direct-import-20261114-024644745-9140b1ce",
+          "checkedAt": "2026-11-14T02:51:48.161Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IhME8.html",
+          "availability": "available",
+          "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IhME8.html",
+              "checkedAt": "2026-11-14T02:51:48.161Z",
+              "fields": [
+                "title",
+                "year",
+                "mileage",
+                "price",
+                "bodyCode",
+                "transmissionCode"
+              ],
+              "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+            }
+          ],
+          "reportedFields": {
+            "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IhME8.html",
+            "modelKey": "skoda-superb-iii-combi",
+            "title": "Skoda Superb 1.6 TDI Ambition DSG",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IhME8.html"
+              }
+            ],
+            "price": 49900,
+            "priceBasis": "unknown",
+            "year": 2019,
+            "mileage": 156000,
+            "bodyCode": "wagon",
+            "transmissionCode": "automatic",
+            "offerType": "unknown",
+            "saleType": null,
+            "lpgInstalled": null,
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjF3aGo0MzY0dmExOTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.N7Z8m-q3M1h-aSjc5rmSSEnePK9ufHQRIERfILU8xaU/image;s=1024x0;q=80",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijcwc2x5bjNtOHE4by1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.O5uqSclSSIas8qzt35SCOUbKgEbmZJN-XOlLUqknefY/image;s=1024x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjF3aGo0MzY0dmExOTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.N7Z8m-q3M1h-aSjc5rmSSEnePK9ufHQRIERfILU8xaU/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijcwc2x5bjNtOHE4by1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.O5uqSclSSIas8qzt35SCOUbKgEbmZJN-XOlLUqknefY/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjU5OGs0NDZyNGIzejEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Di5aYizT63Nf-Z88ybARJbHjfqB_ruDfcc0KTio72nU/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjdxenNiNTM1cWRlZzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.DXHsXJSLFjJVyEftZrxFUnUguZ3MeFTclRqTyzLk0B0/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InZyY25mMW9rengxNS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.0mLxPv6fZwkCXq78KWDNH1-3QYI7a-yR-bQs_yYM_ac/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imh4czM5ZHFma3Q5MjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.IrMbs6QzyQeMD-2_4atZYbYpy0OMD3Xejz1mu7FG1BQ/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImlqY3p3cG1oYnQwMi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.pJRkcyJg6u7_O2bm3Y2agiaoPZWDdHa7XV1cQOsOiKI/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImM4bzB3NnN6NGlqazEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.n95Lz88FNfz7_rE_JaM1Ji69gS2seyo3N0iKan1Qv-4/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im42YjljMWpyOWkzNDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.8qh8XtpA-LuC-u3TVv-xLguJwsMUxlj2JbqxZ-6ViFE/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJ2YmJxcXI0c2pkLU9UT01PVE9QTCIsInciOlt7ImZuIjoid2c0Z25xcDZ5MWYtT1RPTU9UT1BMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.ub8FxZ7lC4wTEh8O1Ma_xGtxMefzKpM-dFIq-XjKcBs/image;s=148x110"
+            ],
+            "location": {
+              "status": "not_provided"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IhME8.html"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "skoda-superb-iii-combi"
+            },
+            "title": {
+              "before": null,
+              "after": "Skoda Superb 1.6 TDI Ambition DSG"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IhME8.html"
+                }
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 49900
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "unknown"
+            },
+            "year": {
+              "before": null,
+              "after": 2019
+            },
+            "mileage": {
+              "before": null,
+              "after": 156000
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "automatic"
+            },
+            "offerType": {
+              "before": null,
+              "after": "unknown"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjF3aGo0MzY0dmExOTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.N7Z8m-q3M1h-aSjc5rmSSEnePK9ufHQRIERfILU8xaU/image;s=1024x0;q=80",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijcwc2x5bjNtOHE4by1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.O5uqSclSSIas8qzt35SCOUbKgEbmZJN-XOlLUqknefY/image;s=1024x0;q=100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjF3aGo0MzY0dmExOTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.N7Z8m-q3M1h-aSjc5rmSSEnePK9ufHQRIERfILU8xaU/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijcwc2x5bjNtOHE4by1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.O5uqSclSSIas8qzt35SCOUbKgEbmZJN-XOlLUqknefY/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjU5OGs0NDZyNGIzejEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Di5aYizT63Nf-Z88ybARJbHjfqB_ruDfcc0KTio72nU/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjdxenNiNTM1cWRlZzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.DXHsXJSLFjJVyEftZrxFUnUguZ3MeFTclRqTyzLk0B0/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InZyY25mMW9rengxNS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.0mLxPv6fZwkCXq78KWDNH1-3QYI7a-yR-bQs_yYM_ac/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imh4czM5ZHFma3Q5MjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.IrMbs6QzyQeMD-2_4atZYbYpy0OMD3Xejz1mu7FG1BQ/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImlqY3p3cG1oYnQwMi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.pJRkcyJg6u7_O2bm3Y2agiaoPZWDdHa7XV1cQOsOiKI/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImM4bzB3NnN6NGlqazEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.n95Lz88FNfz7_rE_JaM1Ji69gS2seyo3N0iKan1Qv-4/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im42YjljMWpyOWkzNDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.8qh8XtpA-LuC-u3TVv-xLguJwsMUxlj2JbqxZ-6ViFE/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJ2YmJxcXI0c2pkLU9UT01PVE9QTCIsInciOlt7ImZuIjoid2c0Z25xcDZ5MWYtT1RPTU9UT1BMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.ub8FxZ7lC4wTEh8O1Ma_xGtxMefzKpM-dFIq-XjKcBs/image;s=148x110"
+              ]
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IhME8.html",
+        "modelKey": "skoda-superb-iii-combi",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_purchase_price",
+          "exact_engine_variant",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit",
+          "purchase_not_auction"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_purchase_price; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction"
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IfXeO.html",
+      "modelKey": "skoda-superb-iii-combi",
+      "title": "Skoda Superb 2.0 TDI DSG Ambition",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IfXeO.html"
+        }
+      ],
+      "price": 54999,
+      "priceBasis": "unknown",
+      "year": 2018,
+      "mileage": 156000,
+      "bodyCode": "wagon",
+      "transmissionCode": "automatic",
+      "offerType": "unknown",
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InM3aGc1cWFpbGd4ZS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.1UJgW_0_xTSw6RQh-bcH1xIT3ZK2SmwmMIBn7uRsPI4/image;s=1024x0;q=80",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNzeml2NmhwcGRoMzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.RhE8rMqLlxe8W3askEh9ba2RCQuY9LWMpZ5jp4VFy9w/image;s=1024x0;q=100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InM3aGc1cWFpbGd4ZS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.1UJgW_0_xTSw6RQh-bcH1xIT3ZK2SmwmMIBn7uRsPI4/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNzeml2NmhwcGRoMzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.RhE8rMqLlxe8W3askEh9ba2RCQuY9LWMpZ5jp4VFy9w/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InFrZDE3YXB2YXF5ZDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.edjOh4tbe-wvQFvb6zSxux9-TYFTTmcwNB8kqTne3Dg/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ink3ejdjYjY1Y2NwaDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.0LlfcthHmPsnRoFX3MaX-LoxSet0RbLvJW8kbvAl0Bk/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhvcHlzZ21rcTMyMTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.nO44mm9kQqX5zhIyfbp80GwFQAFZXIwgWVybhTSJvZM/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImN1M2V0N3pycGR3bjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.qgvs3khNcKDtDwRbYpnNtcj_WTMpbsgVy0XL9eXgTXU/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjZleWt6cGk1dHRjbC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.-UOafSoJ523czXOqDHps52grEgkwqIP118-TIDSbZhU/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InNzbjF4MWl0ZWhiMS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.KruiuMeXeJqdFGV-0FWD6qqI8AAgQx4ulCAILPpsdC4/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imo5cndlNTM2azd5OC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.MvfDx-1BnzQ-cwCUQQl5Z70dnJwhJN_wkR-gOInaMBg/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im1seGhhNnlieXozby1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.aCLJ5RiHliV52YiZzbFf2afXXOD5JuXN63A8Ty_uQjc/image;s=148x110"
+      ],
+      "location": {
+        "status": "not_provided"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-14T02:51:48.209Z",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IfXeO.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-14T02:51:48.209Z",
+          "lastCheckedAt": "2026-11-14T02:51:48.209Z",
+          "lastVerifiedAt": "2026-11-14T02:51:48.209Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IfXeO.html",
+            "checkedAt": "2026-11-14T02:51:48.209Z",
+            "availability": "available",
+            "note": "W treści karty widoczny przycisk kontaktu: Zobacz więcej ofert (25) tego sprzedawcy, Zobacz więcej ofert (25) tego sprzedawcy, Kontakt.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IfXeO.html",
+                "checkedAt": "2026-11-14T02:51:48.209Z",
+                "fields": [
+                  "title",
+                  "year",
+                  "mileage",
+                  "price",
+                  "bodyCode",
+                  "transmissionCode"
+                ],
+                "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-14T02:51:48.209Z",
+      "lastVerifiedAt": "2026-11-14T02:51:48.209Z",
+      "lastAttemptAt": "2026-11-14T02:51:48.209Z",
+      "history": [
+        {
+          "eventId": "50af360196a74dd41baf877117d2fc2f36ae76e9c59c397ecfa51246c744b917",
+          "runId": "direct-import-20261114-024644745-9140b1ce",
+          "checkedAt": "2026-11-14T02:51:48.209Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IfXeO.html",
+          "availability": "available",
+          "note": "W treści karty widoczny przycisk kontaktu: Zobacz więcej ofert (25) tego sprzedawcy, Zobacz więcej ofert (25) tego sprzedawcy, Kontakt.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IfXeO.html",
+              "checkedAt": "2026-11-14T02:51:48.209Z",
+              "fields": [
+                "title",
+                "year",
+                "mileage",
+                "price",
+                "bodyCode",
+                "transmissionCode"
+              ],
+              "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+            }
+          ],
+          "reportedFields": {
+            "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IfXeO.html",
+            "modelKey": "skoda-superb-iii-combi",
+            "title": "Skoda Superb 2.0 TDI DSG Ambition",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IfXeO.html"
+              }
+            ],
+            "price": 54999,
+            "priceBasis": "unknown",
+            "year": 2018,
+            "mileage": 156000,
+            "bodyCode": "wagon",
+            "transmissionCode": "automatic",
+            "offerType": "unknown",
+            "saleType": null,
+            "lpgInstalled": null,
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InM3aGc1cWFpbGd4ZS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.1UJgW_0_xTSw6RQh-bcH1xIT3ZK2SmwmMIBn7uRsPI4/image;s=1024x0;q=80",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNzeml2NmhwcGRoMzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.RhE8rMqLlxe8W3askEh9ba2RCQuY9LWMpZ5jp4VFy9w/image;s=1024x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InM3aGc1cWFpbGd4ZS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.1UJgW_0_xTSw6RQh-bcH1xIT3ZK2SmwmMIBn7uRsPI4/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNzeml2NmhwcGRoMzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.RhE8rMqLlxe8W3askEh9ba2RCQuY9LWMpZ5jp4VFy9w/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InFrZDE3YXB2YXF5ZDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.edjOh4tbe-wvQFvb6zSxux9-TYFTTmcwNB8kqTne3Dg/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ink3ejdjYjY1Y2NwaDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.0LlfcthHmPsnRoFX3MaX-LoxSet0RbLvJW8kbvAl0Bk/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhvcHlzZ21rcTMyMTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.nO44mm9kQqX5zhIyfbp80GwFQAFZXIwgWVybhTSJvZM/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImN1M2V0N3pycGR3bjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.qgvs3khNcKDtDwRbYpnNtcj_WTMpbsgVy0XL9eXgTXU/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjZleWt6cGk1dHRjbC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.-UOafSoJ523czXOqDHps52grEgkwqIP118-TIDSbZhU/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InNzbjF4MWl0ZWhiMS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.KruiuMeXeJqdFGV-0FWD6qqI8AAgQx4ulCAILPpsdC4/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imo5cndlNTM2azd5OC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.MvfDx-1BnzQ-cwCUQQl5Z70dnJwhJN_wkR-gOInaMBg/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im1seGhhNnlieXozby1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.aCLJ5RiHliV52YiZzbFf2afXXOD5JuXN63A8Ty_uQjc/image;s=148x110"
+            ],
+            "location": {
+              "status": "not_provided"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IfXeO.html"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "skoda-superb-iii-combi"
+            },
+            "title": {
+              "before": null,
+              "after": "Skoda Superb 2.0 TDI DSG Ambition"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IfXeO.html"
+                }
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 54999
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "unknown"
+            },
+            "year": {
+              "before": null,
+              "after": 2018
+            },
+            "mileage": {
+              "before": null,
+              "after": 156000
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "automatic"
+            },
+            "offerType": {
+              "before": null,
+              "after": "unknown"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InM3aGc1cWFpbGd4ZS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.1UJgW_0_xTSw6RQh-bcH1xIT3ZK2SmwmMIBn7uRsPI4/image;s=1024x0;q=80",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNzeml2NmhwcGRoMzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.RhE8rMqLlxe8W3askEh9ba2RCQuY9LWMpZ5jp4VFy9w/image;s=1024x0;q=100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InM3aGc1cWFpbGd4ZS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.1UJgW_0_xTSw6RQh-bcH1xIT3ZK2SmwmMIBn7uRsPI4/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNzeml2NmhwcGRoMzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.RhE8rMqLlxe8W3askEh9ba2RCQuY9LWMpZ5jp4VFy9w/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InFrZDE3YXB2YXF5ZDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.edjOh4tbe-wvQFvb6zSxux9-TYFTTmcwNB8kqTne3Dg/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ink3ejdjYjY1Y2NwaDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.0LlfcthHmPsnRoFX3MaX-LoxSet0RbLvJW8kbvAl0Bk/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhvcHlzZ21rcTMyMTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.nO44mm9kQqX5zhIyfbp80GwFQAFZXIwgWVybhTSJvZM/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImN1M2V0N3pycGR3bjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.qgvs3khNcKDtDwRbYpnNtcj_WTMpbsgVy0XL9eXgTXU/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjZleWt6cGk1dHRjbC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.-UOafSoJ523czXOqDHps52grEgkwqIP118-TIDSbZhU/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InNzbjF4MWl0ZWhiMS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.KruiuMeXeJqdFGV-0FWD6qqI8AAgQx4ulCAILPpsdC4/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imo5cndlNTM2azd5OC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.MvfDx-1BnzQ-cwCUQQl5Z70dnJwhJN_wkR-gOInaMBg/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im1seGhhNnlieXozby1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.aCLJ5RiHliV52YiZzbFf2afXXOD5JuXN63A8Ty_uQjc/image;s=148x110"
+              ]
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IfXeO.html",
+        "modelKey": "skoda-superb-iii-combi",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_purchase_price",
+          "exact_engine_variant",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit",
+          "purchase_not_auction"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_purchase_price; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction"
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjAVT.html",
+      "modelKey": "skoda-superb-iii-combi",
+      "title": "Skoda Superb 2.0 TDI 4x4 Sportline",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjAVT.html"
+        }
+      ],
+      "price": 46900,
+      "priceBasis": "unknown",
+      "year": 2018,
+      "mileage": 141085,
+      "bodyCode": "wagon",
+      "transmissionCode": "manual",
+      "offerType": "unknown",
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im5pZ2VsZWZwejFuNzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.TVjHe8WsvoHxLTe8b2jQxB08Dshx_JtO2HhY0Mtxn94/image;s=1024x0;q=80",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ind2ZG92d2s5YjhodC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.5fKtnLB87xtrEFUkng1zuCdXDhL6yTOpRrM6kS-kM_E/image;s=1024x0;q=100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im5pZ2VsZWZwejFuNzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.TVjHe8WsvoHxLTe8b2jQxB08Dshx_JtO2HhY0Mtxn94/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ind2ZG92d2s5YjhodC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.5fKtnLB87xtrEFUkng1zuCdXDhL6yTOpRrM6kS-kM_E/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImplaHNzN3pqM3VvMzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.M8aGZzl6kAVhDEPkoRPIaTwEY-u5g-0DtY1E4-5zwv8/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imp5NHl4ZG9zM3hpaDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.v7joouqFzWoGvDkhau9qbObmUyQUSRUKYHNxzzJdPRw/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InBhbGRyazg2Nmd2czEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.UF2HbrXAJX041_Wr3nDodbZ-nbGgiC8bizDJtGQVRDE/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImFnNW9xbnNnNzlvMzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.2Nelz7EVUDl70BwpfvUyTtJaC-PNaMDvclPcEXlxI8g/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjlkMGozZG82ZXY1ZTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.GX-IHMm83UBwDX8zzKor4JTQJxbu4E57IsVlH-U3Sj0/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNuMnRrbTdtaHBpdzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.ciHZRjmZR_J4wQ9s17xdErqEr-lqUaLTFpsvpkcmX0A/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjBsNzQ2bjEyenI3aTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.KNYk7lwf4rtPnLKCIJGvMlSCYyjb4Cxz8GxLZJirGs0/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImUwbHoyendnZDJrbDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.5Es6oZJIJxfv8LoH6YkjFUIVsoX8sgQkegSdE6pZNfE/image;s=148x110"
+      ],
+      "location": {
+        "status": "not_provided"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-14T02:51:49.681Z",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjAVT.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-14T02:51:49.681Z",
+          "lastCheckedAt": "2026-11-14T02:51:49.681Z",
+          "lastVerifiedAt": "2026-11-14T02:51:49.681Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjAVT.html",
+            "checkedAt": "2026-11-14T02:51:49.681Z",
+            "availability": "available",
+            "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjAVT.html",
+                "checkedAt": "2026-11-14T02:51:49.681Z",
+                "fields": [
+                  "title",
+                  "year",
+                  "mileage",
+                  "price",
+                  "bodyCode",
+                  "transmissionCode"
+                ],
+                "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-14T02:51:49.681Z",
+      "lastVerifiedAt": "2026-11-14T02:51:49.681Z",
+      "lastAttemptAt": "2026-11-14T02:51:49.681Z",
+      "history": [
+        {
+          "eventId": "d8e2a495905e444b05b680aa71f14d981366d3fbcdd3e1c5ab387b864bc0307c",
+          "runId": "direct-import-20261114-024644745-9140b1ce",
+          "checkedAt": "2026-11-14T02:51:49.681Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjAVT.html",
+          "availability": "available",
+          "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjAVT.html",
+              "checkedAt": "2026-11-14T02:51:49.681Z",
+              "fields": [
+                "title",
+                "year",
+                "mileage",
+                "price",
+                "bodyCode",
+                "transmissionCode"
+              ],
+              "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+            }
+          ],
+          "reportedFields": {
+            "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjAVT.html",
+            "modelKey": "skoda-superb-iii-combi",
+            "title": "Skoda Superb 2.0 TDI 4x4 Sportline",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjAVT.html"
+              }
+            ],
+            "price": 46900,
+            "priceBasis": "unknown",
+            "year": 2018,
+            "mileage": 141085,
+            "bodyCode": "wagon",
+            "transmissionCode": "manual",
+            "offerType": "unknown",
+            "saleType": null,
+            "lpgInstalled": null,
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im5pZ2VsZWZwejFuNzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.TVjHe8WsvoHxLTe8b2jQxB08Dshx_JtO2HhY0Mtxn94/image;s=1024x0;q=80",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ind2ZG92d2s5YjhodC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.5fKtnLB87xtrEFUkng1zuCdXDhL6yTOpRrM6kS-kM_E/image;s=1024x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im5pZ2VsZWZwejFuNzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.TVjHe8WsvoHxLTe8b2jQxB08Dshx_JtO2HhY0Mtxn94/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ind2ZG92d2s5YjhodC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.5fKtnLB87xtrEFUkng1zuCdXDhL6yTOpRrM6kS-kM_E/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImplaHNzN3pqM3VvMzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.M8aGZzl6kAVhDEPkoRPIaTwEY-u5g-0DtY1E4-5zwv8/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imp5NHl4ZG9zM3hpaDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.v7joouqFzWoGvDkhau9qbObmUyQUSRUKYHNxzzJdPRw/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InBhbGRyazg2Nmd2czEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.UF2HbrXAJX041_Wr3nDodbZ-nbGgiC8bizDJtGQVRDE/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImFnNW9xbnNnNzlvMzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.2Nelz7EVUDl70BwpfvUyTtJaC-PNaMDvclPcEXlxI8g/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjlkMGozZG82ZXY1ZTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.GX-IHMm83UBwDX8zzKor4JTQJxbu4E57IsVlH-U3Sj0/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNuMnRrbTdtaHBpdzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.ciHZRjmZR_J4wQ9s17xdErqEr-lqUaLTFpsvpkcmX0A/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjBsNzQ2bjEyenI3aTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.KNYk7lwf4rtPnLKCIJGvMlSCYyjb4Cxz8GxLZJirGs0/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImUwbHoyendnZDJrbDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.5Es6oZJIJxfv8LoH6YkjFUIVsoX8sgQkegSdE6pZNfE/image;s=148x110"
+            ],
+            "location": {
+              "status": "not_provided"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjAVT.html"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "skoda-superb-iii-combi"
+            },
+            "title": {
+              "before": null,
+              "after": "Skoda Superb 2.0 TDI 4x4 Sportline"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjAVT.html"
+                }
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 46900
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "unknown"
+            },
+            "year": {
+              "before": null,
+              "after": 2018
+            },
+            "mileage": {
+              "before": null,
+              "after": 141085
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "offerType": {
+              "before": null,
+              "after": "unknown"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im5pZ2VsZWZwejFuNzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.TVjHe8WsvoHxLTe8b2jQxB08Dshx_JtO2HhY0Mtxn94/image;s=1024x0;q=80",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ind2ZG92d2s5YjhodC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.5fKtnLB87xtrEFUkng1zuCdXDhL6yTOpRrM6kS-kM_E/image;s=1024x0;q=100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im5pZ2VsZWZwejFuNzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.TVjHe8WsvoHxLTe8b2jQxB08Dshx_JtO2HhY0Mtxn94/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ind2ZG92d2s5YjhodC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.5fKtnLB87xtrEFUkng1zuCdXDhL6yTOpRrM6kS-kM_E/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImplaHNzN3pqM3VvMzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.M8aGZzl6kAVhDEPkoRPIaTwEY-u5g-0DtY1E4-5zwv8/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imp5NHl4ZG9zM3hpaDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.v7joouqFzWoGvDkhau9qbObmUyQUSRUKYHNxzzJdPRw/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InBhbGRyazg2Nmd2czEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.UF2HbrXAJX041_Wr3nDodbZ-nbGgiC8bizDJtGQVRDE/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImFnNW9xbnNnNzlvMzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.2Nelz7EVUDl70BwpfvUyTtJaC-PNaMDvclPcEXlxI8g/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjlkMGozZG82ZXY1ZTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.GX-IHMm83UBwDX8zzKor4JTQJxbu4E57IsVlH-U3Sj0/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNuMnRrbTdtaHBpdzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.ciHZRjmZR_J4wQ9s17xdErqEr-lqUaLTFpsvpkcmX0A/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjBsNzQ2bjEyenI3aTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.KNYk7lwf4rtPnLKCIJGvMlSCYyjb4Cxz8GxLZJirGs0/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImUwbHoyendnZDJrbDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.5Es6oZJIJxfv8LoH6YkjFUIVsoX8sgQkegSdE6pZNfE/image;s=148x110"
+              ]
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjAVT.html",
+        "modelKey": "skoda-superb-iii-combi",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_purchase_price",
+          "exact_engine_variant",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit",
+          "purchase_not_auction"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_purchase_price; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction"
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IiVld.html",
+      "modelKey": "skoda-superb-iii-combi",
+      "title": "Skoda Superb 2.0 TSI Ambition DSG",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IiVld.html"
+        }
+      ],
+      "year": 2022,
+      "mileage": 148000,
+      "bodyCode": "wagon",
+      "transmissionCode": "automatic",
+      "offerType": "unknown",
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImVndDNudjYyN2EzOTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.v7Grdn5HSHmqv7DVnl8qrCosn5Ds7VFI3auapqpYMAg/image;s=1024x0;q=80",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImV0NGpzejRvdXhuODMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.PDNa1EIxWmoUXR6iVuG6MEwNDeML-Lj_iDUiJCJhiBo/image;s=1024x0;q=100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImVndDNudjYyN2EzOTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.v7Grdn5HSHmqv7DVnl8qrCosn5Ds7VFI3auapqpYMAg/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImV0NGpzejRvdXhuODMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.PDNa1EIxWmoUXR6iVuG6MEwNDeML-Lj_iDUiJCJhiBo/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InNsaWVrYTY1ZmhsZjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.3BC6VJlncy66IX3es0A6L6lb7QDQ5mQ5wQsAIxNphOQ/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9iMnlobWNxYXFtazEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.3ffjYN719lKKKIS3yYNBX9MfgEvcyluBxqRKQkm5lOE/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9xNnI1bnZwaWpsYy1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.Tr2mSjTOEI9HAFVGLXdgU3tp4gwDCoYEWDxLd3Djxjg/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjJxMHZ3ajJwM2FlbS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.Ra5kzyaqeg-4P1Mhv8YDzRSqk5Otyas_xQdnOwTuCy4/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjFjZWJ2ZWZvNjBweC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.DcjV55k3QnDKO8idLuVEkdA82e-omB8pmGrhlOlzLOE/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpxYTQ2OHAxb2wzbTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.pSZgYxBxh33AJEoeQ-srWYwOazcBDa1FQ_TqukEDChw/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9jMW13Mjdxajc2bC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.xblhSIkKXcdbisZKrICuq9szDf1LCkKG04d_xt8p_3A/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im1lMzgwcjljaGJ4OTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.AemscXUcCy4kQLy36UITwj6J6qYPIag2i5metVeMMj0/image;s=148x110"
+      ],
+      "location": {
+        "status": "not_provided"
+      },
+      "price": 38800,
+      "priceBasis": "unknown",
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-14T02:51:49.796Z",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IiVld.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-14T02:51:49.796Z",
+          "lastCheckedAt": "2026-11-14T02:51:49.796Z",
+          "lastVerifiedAt": "2026-11-14T02:51:49.796Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IiVld.html",
+            "checkedAt": "2026-11-14T02:51:49.796Z",
+            "availability": "available",
+            "note": "W treści karty widoczny przycisk kontaktu: Zobacz więcej ofert (60) tego sprzedawcy, Zobacz więcej ofert (60) tego sprzedawcy, Kontakt.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IiVld.html",
+                "checkedAt": "2026-11-14T02:51:49.796Z",
+                "fields": [
+                  "title",
+                  "year",
+                  "mileage",
+                  "bodyCode",
+                  "transmissionCode",
+                  "price"
+                ],
+                "note": "Cenę odczytano z JSON listy OTOMOTO (price.amount.value); podstawa ceny pozostaje niepotwierdzona."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-14T02:51:49.796Z",
+      "lastVerifiedAt": "2026-11-14T02:51:49.796Z",
+      "lastAttemptAt": "2026-11-14T02:51:49.796Z",
+      "history": [
+        {
+          "eventId": "49296bccf59bbf896a4fc6c4ca08b79af051696c6d14aa466e6a42b12c48f9f1",
+          "runId": "direct-import-20261114-024644745-9140b1ce",
+          "checkedAt": "2026-11-14T02:51:49.796Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IiVld.html",
+          "availability": "available",
+          "note": "W treści karty widoczny przycisk kontaktu: Zobacz więcej ofert (60) tego sprzedawcy, Zobacz więcej ofert (60) tego sprzedawcy, Kontakt.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IiVld.html",
+              "checkedAt": "2026-11-14T02:51:49.796Z",
+              "fields": [
+                "title",
+                "year",
+                "mileage",
+                "bodyCode",
+                "transmissionCode",
+                "price"
+              ],
+              "note": "Cenę odczytano z JSON listy OTOMOTO (price.amount.value); podstawa ceny pozostaje niepotwierdzona."
+            }
+          ],
+          "reportedFields": {
+            "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IiVld.html",
+            "modelKey": "skoda-superb-iii-combi",
+            "title": "Skoda Superb 2.0 TSI Ambition DSG",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IiVld.html"
+              }
+            ],
+            "year": 2022,
+            "mileage": 148000,
+            "bodyCode": "wagon",
+            "transmissionCode": "automatic",
+            "offerType": "unknown",
+            "saleType": null,
+            "lpgInstalled": null,
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImVndDNudjYyN2EzOTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.v7Grdn5HSHmqv7DVnl8qrCosn5Ds7VFI3auapqpYMAg/image;s=1024x0;q=80",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImV0NGpzejRvdXhuODMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.PDNa1EIxWmoUXR6iVuG6MEwNDeML-Lj_iDUiJCJhiBo/image;s=1024x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImVndDNudjYyN2EzOTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.v7Grdn5HSHmqv7DVnl8qrCosn5Ds7VFI3auapqpYMAg/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImV0NGpzejRvdXhuODMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.PDNa1EIxWmoUXR6iVuG6MEwNDeML-Lj_iDUiJCJhiBo/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InNsaWVrYTY1ZmhsZjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.3BC6VJlncy66IX3es0A6L6lb7QDQ5mQ5wQsAIxNphOQ/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9iMnlobWNxYXFtazEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.3ffjYN719lKKKIS3yYNBX9MfgEvcyluBxqRKQkm5lOE/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9xNnI1bnZwaWpsYy1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.Tr2mSjTOEI9HAFVGLXdgU3tp4gwDCoYEWDxLd3Djxjg/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjJxMHZ3ajJwM2FlbS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.Ra5kzyaqeg-4P1Mhv8YDzRSqk5Otyas_xQdnOwTuCy4/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjFjZWJ2ZWZvNjBweC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.DcjV55k3QnDKO8idLuVEkdA82e-omB8pmGrhlOlzLOE/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpxYTQ2OHAxb2wzbTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.pSZgYxBxh33AJEoeQ-srWYwOazcBDa1FQ_TqukEDChw/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9jMW13Mjdxajc2bC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.xblhSIkKXcdbisZKrICuq9szDf1LCkKG04d_xt8p_3A/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im1lMzgwcjljaGJ4OTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.AemscXUcCy4kQLy36UITwj6J6qYPIag2i5metVeMMj0/image;s=148x110"
+            ],
+            "location": {
+              "status": "not_provided"
+            },
+            "price": 38800,
+            "priceBasis": "unknown"
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IiVld.html"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "skoda-superb-iii-combi"
+            },
+            "title": {
+              "before": null,
+              "after": "Skoda Superb 2.0 TSI Ambition DSG"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IiVld.html"
+                }
+              ]
+            },
+            "year": {
+              "before": null,
+              "after": 2022
+            },
+            "mileage": {
+              "before": null,
+              "after": 148000
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "automatic"
+            },
+            "offerType": {
+              "before": null,
+              "after": "unknown"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImVndDNudjYyN2EzOTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.v7Grdn5HSHmqv7DVnl8qrCosn5Ds7VFI3auapqpYMAg/image;s=1024x0;q=80",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImV0NGpzejRvdXhuODMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.PDNa1EIxWmoUXR6iVuG6MEwNDeML-Lj_iDUiJCJhiBo/image;s=1024x0;q=100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImVndDNudjYyN2EzOTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.v7Grdn5HSHmqv7DVnl8qrCosn5Ds7VFI3auapqpYMAg/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImV0NGpzejRvdXhuODMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.PDNa1EIxWmoUXR6iVuG6MEwNDeML-Lj_iDUiJCJhiBo/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InNsaWVrYTY1ZmhsZjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.3BC6VJlncy66IX3es0A6L6lb7QDQ5mQ5wQsAIxNphOQ/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9iMnlobWNxYXFtazEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.3ffjYN719lKKKIS3yYNBX9MfgEvcyluBxqRKQkm5lOE/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9xNnI1bnZwaWpsYy1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.Tr2mSjTOEI9HAFVGLXdgU3tp4gwDCoYEWDxLd3Djxjg/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjJxMHZ3ajJwM2FlbS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.Ra5kzyaqeg-4P1Mhv8YDzRSqk5Otyas_xQdnOwTuCy4/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjFjZWJ2ZWZvNjBweC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.DcjV55k3QnDKO8idLuVEkdA82e-omB8pmGrhlOlzLOE/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpxYTQ2OHAxb2wzbTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.pSZgYxBxh33AJEoeQ-srWYwOazcBDa1FQ_TqukEDChw/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9jMW13Mjdxajc2bC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.xblhSIkKXcdbisZKrICuq9szDf1LCkKG04d_xt8p_3A/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im1lMzgwcjljaGJ4OTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.AemscXUcCy4kQLy36UITwj6J6qYPIag2i5metVeMMj0/image;s=148x110"
+              ]
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            },
+            "price": {
+              "before": null,
+              "after": 38800
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "unknown"
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IiVld.html",
+        "modelKey": "skoda-superb-iii-combi",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_purchase_price",
+          "exact_engine_variant",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit",
+          "purchase_not_auction"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_purchase_price; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction"
     }
   ],
   "archivedOffers": []

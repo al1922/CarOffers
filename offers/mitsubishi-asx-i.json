@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-13",
+  "updatedAt": "2026-11-14",
   "model": {
     "key": "mitsubishi-asx-i",
     "name": "Mitsubishi ASX I",
@@ -246,6 +246,900 @@
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
       "verdictNote": "body; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IiEMe.html",
+      "modelKey": "mitsubishi-asx-i",
+      "title": "Mitsubishi ASX",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IiEMe.html"
+        }
+      ],
+      "price": 49800,
+      "priceBasis": "unknown",
+      "year": 2019,
+      "mileage": 136000,
+      "bodyCode": "suv",
+      "transmissionCode": "manual",
+      "offerType": "unknown",
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhsZmV1amQyNTZnZzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.6S7va9xzWOBxn_bh8C7Jb9BhRPztOO75DpmNcxbQB2c/image;s=1024x0;q=80",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inl4dmhyenFmMWNtNC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.JXHI9Y-wfkj9xtuixL-DxIC5rSpNgX8ufXh323TqQiI/image;s=1024x0;q=100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhsZmV1amQyNTZnZzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.6S7va9xzWOBxn_bh8C7Jb9BhRPztOO75DpmNcxbQB2c/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inl4dmhyenFmMWNtNC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.JXHI9Y-wfkj9xtuixL-DxIC5rSpNgX8ufXh323TqQiI/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImIyMnYzdXE1ZzdpNS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.twWRkYUahRqb-BHZmUd3n3aQf_p9Mp_n9piAm4ZJ5Ng/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjA0Mjlrcjdwam1pOTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.GuvbLQqMYokoN04Ea0aWO5iz6IDpvveKjMvXXvdr4m0/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inczejc3ZzgybXU3bDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.L2r0CrPSMPfn48etORROZHOM_8oePUMV4g1F7pgPVKM/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRyZW1icDZlMWYzczItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.y23CCRLMM2gSK-0TG49pimsUeuG5IOnaPRFSrMttAsY/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjBveWMwMnd0aHdxbjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.getiCE_fjHH7mGYadffW4Ym0FWdCMeBBC7A3etIFMMI/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImJkMTh5cHAyY252ZDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.w0ThQF065vrVFyv8IV_d1VdNbp_IceLz_HulCZz-rVc/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJ6Z25yYzl5dGo2ODMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.qY02DOml1RRIhDs53MLSNhboemnpYGomZTlNJUbjpPU/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjExMXk5cWpwN3Bidy1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.RcmGxJXCPkIQLHbBScOCk9YcXjn8eMj9msyPDE8aH88/image;s=148x110"
+      ],
+      "location": {
+        "status": "not_provided"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-14T01:41:14.795Z",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IiEMe.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-14T01:41:14.795Z",
+          "lastCheckedAt": "2026-11-14T01:41:14.795Z",
+          "lastVerifiedAt": "2026-11-14T01:41:14.795Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IiEMe.html",
+            "checkedAt": "2026-11-14T01:41:14.795Z",
+            "availability": "available",
+            "note": "W treści karty widoczny przycisk kontaktu: Zobacz więcej ofert (14) tego sprzedawcy, Zobacz więcej ofert (14) tego sprzedawcy, Kontakt.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IiEMe.html",
+                "checkedAt": "2026-11-14T01:41:14.795Z",
+                "fields": [
+                  "title",
+                  "year",
+                  "mileage",
+                  "price",
+                  "bodyCode",
+                  "transmissionCode"
+                ],
+                "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-14T01:41:14.795Z",
+      "lastVerifiedAt": "2026-11-14T01:41:14.795Z",
+      "lastAttemptAt": "2026-11-14T01:41:14.795Z",
+      "history": [
+        {
+          "eventId": "b1ab8f16518132cd6fb4a91ea8b6edfc8ae1c034be88bf0354c0d1014bc9729c",
+          "runId": "direct-import-20261114-013608989-7303b0ac",
+          "checkedAt": "2026-11-14T01:41:14.795Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IiEMe.html",
+          "availability": "available",
+          "note": "W treści karty widoczny przycisk kontaktu: Zobacz więcej ofert (14) tego sprzedawcy, Zobacz więcej ofert (14) tego sprzedawcy, Kontakt.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IiEMe.html",
+              "checkedAt": "2026-11-14T01:41:14.795Z",
+              "fields": [
+                "title",
+                "year",
+                "mileage",
+                "price",
+                "bodyCode",
+                "transmissionCode"
+              ],
+              "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+            }
+          ],
+          "reportedFields": {
+            "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IiEMe.html",
+            "modelKey": "mitsubishi-asx-i",
+            "title": "Mitsubishi ASX",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IiEMe.html"
+              }
+            ],
+            "price": 49800,
+            "priceBasis": "unknown",
+            "year": 2019,
+            "mileage": 136000,
+            "bodyCode": "suv",
+            "transmissionCode": "manual",
+            "offerType": "unknown",
+            "saleType": null,
+            "lpgInstalled": null,
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhsZmV1amQyNTZnZzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.6S7va9xzWOBxn_bh8C7Jb9BhRPztOO75DpmNcxbQB2c/image;s=1024x0;q=80",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inl4dmhyenFmMWNtNC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.JXHI9Y-wfkj9xtuixL-DxIC5rSpNgX8ufXh323TqQiI/image;s=1024x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhsZmV1amQyNTZnZzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.6S7va9xzWOBxn_bh8C7Jb9BhRPztOO75DpmNcxbQB2c/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inl4dmhyenFmMWNtNC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.JXHI9Y-wfkj9xtuixL-DxIC5rSpNgX8ufXh323TqQiI/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImIyMnYzdXE1ZzdpNS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.twWRkYUahRqb-BHZmUd3n3aQf_p9Mp_n9piAm4ZJ5Ng/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjA0Mjlrcjdwam1pOTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.GuvbLQqMYokoN04Ea0aWO5iz6IDpvveKjMvXXvdr4m0/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inczejc3ZzgybXU3bDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.L2r0CrPSMPfn48etORROZHOM_8oePUMV4g1F7pgPVKM/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRyZW1icDZlMWYzczItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.y23CCRLMM2gSK-0TG49pimsUeuG5IOnaPRFSrMttAsY/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjBveWMwMnd0aHdxbjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.getiCE_fjHH7mGYadffW4Ym0FWdCMeBBC7A3etIFMMI/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImJkMTh5cHAyY252ZDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.w0ThQF065vrVFyv8IV_d1VdNbp_IceLz_HulCZz-rVc/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJ6Z25yYzl5dGo2ODMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.qY02DOml1RRIhDs53MLSNhboemnpYGomZTlNJUbjpPU/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjExMXk5cWpwN3Bidy1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.RcmGxJXCPkIQLHbBScOCk9YcXjn8eMj9msyPDE8aH88/image;s=148x110"
+            ],
+            "location": {
+              "status": "not_provided"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IiEMe.html"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "mitsubishi-asx-i"
+            },
+            "title": {
+              "before": null,
+              "after": "Mitsubishi ASX"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IiEMe.html"
+                }
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 49800
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "unknown"
+            },
+            "year": {
+              "before": null,
+              "after": 2019
+            },
+            "mileage": {
+              "before": null,
+              "after": 136000
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "suv"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "offerType": {
+              "before": null,
+              "after": "unknown"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhsZmV1amQyNTZnZzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.6S7va9xzWOBxn_bh8C7Jb9BhRPztOO75DpmNcxbQB2c/image;s=1024x0;q=80",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inl4dmhyenFmMWNtNC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.JXHI9Y-wfkj9xtuixL-DxIC5rSpNgX8ufXh323TqQiI/image;s=1024x0;q=100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhsZmV1amQyNTZnZzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.6S7va9xzWOBxn_bh8C7Jb9BhRPztOO75DpmNcxbQB2c/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inl4dmhyenFmMWNtNC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.JXHI9Y-wfkj9xtuixL-DxIC5rSpNgX8ufXh323TqQiI/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImIyMnYzdXE1ZzdpNS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.twWRkYUahRqb-BHZmUd3n3aQf_p9Mp_n9piAm4ZJ5Ng/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjA0Mjlrcjdwam1pOTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.GuvbLQqMYokoN04Ea0aWO5iz6IDpvveKjMvXXvdr4m0/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inczejc3ZzgybXU3bDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.L2r0CrPSMPfn48etORROZHOM_8oePUMV4g1F7pgPVKM/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRyZW1icDZlMWYzczItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.y23CCRLMM2gSK-0TG49pimsUeuG5IOnaPRFSrMttAsY/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjBveWMwMnd0aHdxbjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.getiCE_fjHH7mGYadffW4Ym0FWdCMeBBC7A3etIFMMI/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImJkMTh5cHAyY252ZDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.w0ThQF065vrVFyv8IV_d1VdNbp_IceLz_HulCZz-rVc/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJ6Z25yYzl5dGo2ODMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.qY02DOml1RRIhDs53MLSNhboemnpYGomZTlNJUbjpPU/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjExMXk5cWpwN3Bidy1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.RcmGxJXCPkIQLHbBScOCk9YcXjn8eMj9msyPDE8aH88/image;s=148x110"
+              ]
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IiEMe.html",
+        "modelKey": "mitsubishi-asx-i",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_purchase_price",
+          "exact_engine_variant",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit",
+          "purchase_not_auction"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_purchase_price; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction"
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IjJQi.html",
+      "modelKey": "mitsubishi-asx-i",
+      "title": "Mitsubishi ASX 1.6 2WD Instyle",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IjJQi.html"
+        }
+      ],
+      "price": 49999,
+      "priceBasis": "unknown",
+      "year": 2019,
+      "mileage": 120000,
+      "bodyCode": "suv",
+      "transmissionCode": "manual",
+      "offerType": "unknown",
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjZlanhpNTJsZnJueC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.yi5kvcx_lcBNo5ssiGTunLKm_f6WopQmH77JEs8mRZo/image;s=1024x0;q=100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjZlanhpNTJsZnJueC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.yi5kvcx_lcBNo5ssiGTunLKm_f6WopQmH77JEs8mRZo/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InY1N2k5YzRzYWdsdjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.4JdoL8cpcHKA37Zwo6GlpQbtDbW8KQcTAiMZ_04cU98/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImxvOHN1OTIxbm5vaTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.fiNsEkgqwn-YCg7vTx0oR0bmxyDsxGSJxBPowerGEfk/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjBsYmhmeWtvbnA0aTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.0nhsY9VzYbc_8LP71trx4bTnTSsdfrXdYFlweDVscuQ/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNiM2ZhbDA2NnNwdC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.m2bI4uIE3JF9DQ1cOLxvPIw4O5xCUO5kkwGB_BUqZ5g/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Img1NnF3ZzlwenoxdjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.pWdEk5-d91v3wi8dq8RcS7TU3f7XISp41KerRYfizuc/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inphd2xleWRxeTgzLU9UT01PVE9QTCIsInciOlt7ImZuIjoid2c0Z25xcDZ5MWYtT1RPTU9UT1BMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.VX5hts3TMk3m-G_Dy4QdENu_FzcXAHUBzofl1r1W268/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjExd2M5bDc4dzBrMS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.unLAZrAwhd-VHrVn7fuUpdX9VvmZ6EnVn35IGUeaX1U/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImVlZTh1cGMwb3VwczMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.uugbRJ2UMg7KBpCVS4CE4HFoSeO9SLKzgNHq0m3LOtw/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imp3Zzloem9xd2JzZy1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.pHQscZBMGpjOSwRPdN5dfXd0353CHVlDdCXFW8pfBX4/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InY4aXllOXI2aTZxbzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.8GIohPTcBCXK4tBTTOLCPY63S1G-Vc_AenDN0ZFS0kA/image;s=148x110"
+      ],
+      "location": {
+        "status": "not_provided"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-14T01:41:27.803Z",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IjJQi.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-14T01:41:27.803Z",
+          "lastCheckedAt": "2026-11-14T01:41:27.803Z",
+          "lastVerifiedAt": "2026-11-14T01:41:27.803Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IjJQi.html",
+            "checkedAt": "2026-11-14T01:41:27.803Z",
+            "availability": "available",
+            "note": "W treści karty widoczny przycisk kontaktu: Zobacz więcej ofert (4) tego sprzedawcy, Zobacz więcej ofert (4) tego sprzedawcy, Kontakt.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IjJQi.html",
+                "checkedAt": "2026-11-14T01:41:27.803Z",
+                "fields": [
+                  "title",
+                  "year",
+                  "mileage",
+                  "price",
+                  "bodyCode",
+                  "transmissionCode"
+                ],
+                "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-14T01:41:27.803Z",
+      "lastVerifiedAt": "2026-11-14T01:41:27.803Z",
+      "lastAttemptAt": "2026-11-14T01:41:27.803Z",
+      "history": [
+        {
+          "eventId": "fb550294d6f4496e8d64c509c3f38a5c488aca97ab2e677192382d64fba8e4ea",
+          "runId": "direct-import-20261114-013608989-7303b0ac",
+          "checkedAt": "2026-11-14T01:41:27.803Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IjJQi.html",
+          "availability": "available",
+          "note": "W treści karty widoczny przycisk kontaktu: Zobacz więcej ofert (4) tego sprzedawcy, Zobacz więcej ofert (4) tego sprzedawcy, Kontakt.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IjJQi.html",
+              "checkedAt": "2026-11-14T01:41:27.803Z",
+              "fields": [
+                "title",
+                "year",
+                "mileage",
+                "price",
+                "bodyCode",
+                "transmissionCode"
+              ],
+              "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+            }
+          ],
+          "reportedFields": {
+            "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IjJQi.html",
+            "modelKey": "mitsubishi-asx-i",
+            "title": "Mitsubishi ASX 1.6 2WD Instyle",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IjJQi.html"
+              }
+            ],
+            "price": 49999,
+            "priceBasis": "unknown",
+            "year": 2019,
+            "mileage": 120000,
+            "bodyCode": "suv",
+            "transmissionCode": "manual",
+            "offerType": "unknown",
+            "saleType": null,
+            "lpgInstalled": null,
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjZlanhpNTJsZnJueC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.yi5kvcx_lcBNo5ssiGTunLKm_f6WopQmH77JEs8mRZo/image;s=1024x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjZlanhpNTJsZnJueC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.yi5kvcx_lcBNo5ssiGTunLKm_f6WopQmH77JEs8mRZo/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InY1N2k5YzRzYWdsdjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.4JdoL8cpcHKA37Zwo6GlpQbtDbW8KQcTAiMZ_04cU98/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImxvOHN1OTIxbm5vaTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.fiNsEkgqwn-YCg7vTx0oR0bmxyDsxGSJxBPowerGEfk/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjBsYmhmeWtvbnA0aTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.0nhsY9VzYbc_8LP71trx4bTnTSsdfrXdYFlweDVscuQ/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNiM2ZhbDA2NnNwdC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.m2bI4uIE3JF9DQ1cOLxvPIw4O5xCUO5kkwGB_BUqZ5g/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Img1NnF3ZzlwenoxdjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.pWdEk5-d91v3wi8dq8RcS7TU3f7XISp41KerRYfizuc/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inphd2xleWRxeTgzLU9UT01PVE9QTCIsInciOlt7ImZuIjoid2c0Z25xcDZ5MWYtT1RPTU9UT1BMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.VX5hts3TMk3m-G_Dy4QdENu_FzcXAHUBzofl1r1W268/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjExd2M5bDc4dzBrMS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.unLAZrAwhd-VHrVn7fuUpdX9VvmZ6EnVn35IGUeaX1U/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImVlZTh1cGMwb3VwczMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.uugbRJ2UMg7KBpCVS4CE4HFoSeO9SLKzgNHq0m3LOtw/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imp3Zzloem9xd2JzZy1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.pHQscZBMGpjOSwRPdN5dfXd0353CHVlDdCXFW8pfBX4/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InY4aXllOXI2aTZxbzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.8GIohPTcBCXK4tBTTOLCPY63S1G-Vc_AenDN0ZFS0kA/image;s=148x110"
+            ],
+            "location": {
+              "status": "not_provided"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IjJQi.html"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "mitsubishi-asx-i"
+            },
+            "title": {
+              "before": null,
+              "after": "Mitsubishi ASX 1.6 2WD Instyle"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IjJQi.html"
+                }
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 49999
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "unknown"
+            },
+            "year": {
+              "before": null,
+              "after": 2019
+            },
+            "mileage": {
+              "before": null,
+              "after": 120000
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "suv"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "offerType": {
+              "before": null,
+              "after": "unknown"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjZlanhpNTJsZnJueC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.yi5kvcx_lcBNo5ssiGTunLKm_f6WopQmH77JEs8mRZo/image;s=1024x0;q=100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjZlanhpNTJsZnJueC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.yi5kvcx_lcBNo5ssiGTunLKm_f6WopQmH77JEs8mRZo/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InY1N2k5YzRzYWdsdjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.4JdoL8cpcHKA37Zwo6GlpQbtDbW8KQcTAiMZ_04cU98/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImxvOHN1OTIxbm5vaTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.fiNsEkgqwn-YCg7vTx0oR0bmxyDsxGSJxBPowerGEfk/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjBsYmhmeWtvbnA0aTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.0nhsY9VzYbc_8LP71trx4bTnTSsdfrXdYFlweDVscuQ/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNiM2ZhbDA2NnNwdC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.m2bI4uIE3JF9DQ1cOLxvPIw4O5xCUO5kkwGB_BUqZ5g/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Img1NnF3ZzlwenoxdjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.pWdEk5-d91v3wi8dq8RcS7TU3f7XISp41KerRYfizuc/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inphd2xleWRxeTgzLU9UT01PVE9QTCIsInciOlt7ImZuIjoid2c0Z25xcDZ5MWYtT1RPTU9UT1BMIiwicyI6IjE2IiwiYSI6IjAiLCJwIjoiMTAsLTEwIn1dfQ.VX5hts3TMk3m-G_Dy4QdENu_FzcXAHUBzofl1r1W268/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjExd2M5bDc4dzBrMS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.unLAZrAwhd-VHrVn7fuUpdX9VvmZ6EnVn35IGUeaX1U/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImVlZTh1cGMwb3VwczMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.uugbRJ2UMg7KBpCVS4CE4HFoSeO9SLKzgNHq0m3LOtw/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imp3Zzloem9xd2JzZy1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.pHQscZBMGpjOSwRPdN5dfXd0353CHVlDdCXFW8pfBX4/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InY4aXllOXI2aTZxbzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.8GIohPTcBCXK4tBTTOLCPY63S1G-Vc_AenDN0ZFS0kA/image;s=148x110"
+              ]
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IjJQi.html",
+        "modelKey": "mitsubishi-asx-i",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_purchase_price",
+          "exact_engine_variant",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit",
+          "purchase_not_auction"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_purchase_price; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction"
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IfhtE.html",
+      "modelKey": "mitsubishi-asx-i",
+      "title": "Mitsubishi ASX",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IfhtE.html"
+        }
+      ],
+      "price": 55000,
+      "priceBasis": "unknown",
+      "year": 2019,
+      "mileage": 98500,
+      "bodyCode": "suv",
+      "transmissionCode": "manual",
+      "offerType": "unknown",
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ino2N2FlMTVrbWlyZTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.byo9inJDkEyMKk1VC5VeKXa34uNye486qAsE245yzao/image;s=1024x0;q=80",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImR4ZHFpdmtheXk3NC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.Zob_u7ZBZGijxhfqgZMqIfpUR_AXQN2hUi_0B-u-SCg/image;s=1024x0;q=100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ino2N2FlMTVrbWlyZTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.byo9inJDkEyMKk1VC5VeKXa34uNye486qAsE245yzao/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImR4ZHFpdmtheXk3NC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.Zob_u7ZBZGijxhfqgZMqIfpUR_AXQN2hUi_0B-u-SCg/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImhxNTljaHlsY2FyZzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.K7_SY8H6zogkxD4EFgQQqXtwkdwyIosFbB9Ha9fDtp4/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImtrMGd4aW1lejRsbTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Nx33MTq0DLV1rq4uj8Ala48e48cgretleyUIDF9QlJI/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InkzZ3ZmZW9zcnppbjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.3eyp1d-0oy11LScjn000-dQvDkoNe_dRVywFpoeWEdw/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImVwN2hveTFrdG9qczItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.k3kXWRnv0ZS8G4AWeexhF35pvLE5u-4G8_hG74g-pGI/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inc4YmV0cno5aWxhbzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.UefzZfuIR8R_Ak6CtqaXyLxxPMe6mH5RJbF6N21WK6I/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im5wZGVubmlndnd1YjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.gGsVpag7dyu4lHtf84pojlDH4u1xQuQHW14tOBaQVlc/image;s=148x110"
+      ],
+      "location": {
+        "status": "not_provided"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-14T11:26:59.264Z",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IfhtE.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-14T11:26:59.264Z",
+          "lastCheckedAt": "2026-11-14T11:26:59.264Z",
+          "lastVerifiedAt": "2026-11-14T11:26:59.264Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IfhtE.html",
+            "checkedAt": "2026-11-14T11:26:59.264Z",
+            "availability": "available",
+            "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IfhtE.html",
+                "checkedAt": "2026-11-14T11:26:59.264Z",
+                "fields": [
+                  "title",
+                  "year",
+                  "mileage",
+                  "price",
+                  "bodyCode",
+                  "transmissionCode"
+                ],
+                "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-14T11:26:59.264Z",
+      "lastVerifiedAt": "2026-11-14T11:26:59.264Z",
+      "lastAttemptAt": "2026-11-14T11:26:59.264Z",
+      "history": [
+        {
+          "eventId": "02c14e007dfefd494fde54a2a36319f0a5b2ca85988e653dc01e5c0b9f9cc10a",
+          "runId": "direct-import-20261114-112120380-a439d1a0",
+          "checkedAt": "2026-11-14T11:26:59.264Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IfhtE.html",
+          "availability": "available",
+          "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IfhtE.html",
+              "checkedAt": "2026-11-14T11:26:59.264Z",
+              "fields": [
+                "title",
+                "year",
+                "mileage",
+                "price",
+                "bodyCode",
+                "transmissionCode"
+              ],
+              "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+            }
+          ],
+          "reportedFields": {
+            "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IfhtE.html",
+            "modelKey": "mitsubishi-asx-i",
+            "title": "Mitsubishi ASX",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IfhtE.html"
+              }
+            ],
+            "price": 55000,
+            "priceBasis": "unknown",
+            "year": 2019,
+            "mileage": 98500,
+            "bodyCode": "suv",
+            "transmissionCode": "manual",
+            "offerType": "unknown",
+            "saleType": null,
+            "lpgInstalled": null,
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ino2N2FlMTVrbWlyZTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.byo9inJDkEyMKk1VC5VeKXa34uNye486qAsE245yzao/image;s=1024x0;q=80",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImR4ZHFpdmtheXk3NC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.Zob_u7ZBZGijxhfqgZMqIfpUR_AXQN2hUi_0B-u-SCg/image;s=1024x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ino2N2FlMTVrbWlyZTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.byo9inJDkEyMKk1VC5VeKXa34uNye486qAsE245yzao/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImR4ZHFpdmtheXk3NC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.Zob_u7ZBZGijxhfqgZMqIfpUR_AXQN2hUi_0B-u-SCg/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImhxNTljaHlsY2FyZzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.K7_SY8H6zogkxD4EFgQQqXtwkdwyIosFbB9Ha9fDtp4/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImtrMGd4aW1lejRsbTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Nx33MTq0DLV1rq4uj8Ala48e48cgretleyUIDF9QlJI/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InkzZ3ZmZW9zcnppbjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.3eyp1d-0oy11LScjn000-dQvDkoNe_dRVywFpoeWEdw/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImVwN2hveTFrdG9qczItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.k3kXWRnv0ZS8G4AWeexhF35pvLE5u-4G8_hG74g-pGI/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inc4YmV0cno5aWxhbzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.UefzZfuIR8R_Ak6CtqaXyLxxPMe6mH5RJbF6N21WK6I/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im5wZGVubmlndnd1YjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.gGsVpag7dyu4lHtf84pojlDH4u1xQuQHW14tOBaQVlc/image;s=148x110"
+            ],
+            "location": {
+              "status": "not_provided"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IfhtE.html"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "mitsubishi-asx-i"
+            },
+            "title": {
+              "before": null,
+              "after": "Mitsubishi ASX"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IfhtE.html"
+                }
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 55000
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "unknown"
+            },
+            "year": {
+              "before": null,
+              "after": 2019
+            },
+            "mileage": {
+              "before": null,
+              "after": 98500
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "suv"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "offerType": {
+              "before": null,
+              "after": "unknown"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ino2N2FlMTVrbWlyZTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.byo9inJDkEyMKk1VC5VeKXa34uNye486qAsE245yzao/image;s=1024x0;q=80",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImR4ZHFpdmtheXk3NC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.Zob_u7ZBZGijxhfqgZMqIfpUR_AXQN2hUi_0B-u-SCg/image;s=1024x0;q=100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ino2N2FlMTVrbWlyZTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.byo9inJDkEyMKk1VC5VeKXa34uNye486qAsE245yzao/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImR4ZHFpdmtheXk3NC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.Zob_u7ZBZGijxhfqgZMqIfpUR_AXQN2hUi_0B-u-SCg/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImhxNTljaHlsY2FyZzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.K7_SY8H6zogkxD4EFgQQqXtwkdwyIosFbB9Ha9fDtp4/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImtrMGd4aW1lejRsbTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Nx33MTq0DLV1rq4uj8Ala48e48cgretleyUIDF9QlJI/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InkzZ3ZmZW9zcnppbjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.3eyp1d-0oy11LScjn000-dQvDkoNe_dRVywFpoeWEdw/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImVwN2hveTFrdG9qczItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.k3kXWRnv0ZS8G4AWeexhF35pvLE5u-4G8_hG74g-pGI/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inc4YmV0cno5aWxhbzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.UefzZfuIR8R_Ak6CtqaXyLxxPMe6mH5RJbF6N21WK6I/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im5wZGVubmlndnd1YjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.gGsVpag7dyu4lHtf84pojlDH4u1xQuQHW14tOBaQVlc/image;s=148x110"
+              ]
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IfhtE.html",
+        "modelKey": "mitsubishi-asx-i",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_purchase_price",
+          "exact_engine_variant",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit",
+          "purchase_not_auction"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_purchase_price; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction"
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IizcX.html",
+      "modelKey": "mitsubishi-asx-i",
+      "title": "Mitsubishi ASX 2.0 2WD CVT Intro Edition+",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IizcX.html"
+        }
+      ],
+      "price": 44900,
+      "priceBasis": "unknown",
+      "year": 2021,
+      "mileage": 25000,
+      "bodyCode": "suv",
+      "transmissionCode": "automatic",
+      "offerType": "unknown",
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InByaHd5bW5kbzNmZS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.CtVHCqtchaI_0P5rKRXExMQZ41uXrIrezF-FvhlXuvk/image;s=1024x0;q=80",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InFhdjY4cHBjZXhiNzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.FoZ15D9ng2tjHy8djSE3AhZXsywPs7ernmcDBfvddW0/image;s=1024x0;q=100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InByaHd5bW5kbzNmZS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.CtVHCqtchaI_0P5rKRXExMQZ41uXrIrezF-FvhlXuvk/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InFhdjY4cHBjZXhiNzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.FoZ15D9ng2tjHy8djSE3AhZXsywPs7ernmcDBfvddW0/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjQ0Z2hiOW9kcjJrOTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.vDbScKJqy77z1JFcbw4-u8EwHh7-xfbUTmJzRYJRiZc/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImJwN2wwOGU4bXZxajMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.5zWNF-TltYkGal8VRfGzNn-R4EmcTLsT733w5WEVN3k/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjZkeHJ1ejI0aDY4bzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.vKsE7JeIz-OWXcg1FR8wmm_iMmmT4KvCnz7qfSzmRFM/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InB1OTFmaXI5Y3BobDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.NAnXo0tFGS1Bq_fL9YDjLpsbFLFCwvldEQUeqoYrL_0/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImQ0aDcxMXZ1ZmszYzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.KC_PlVr8UeROsJlXKwJOuR_EexyEhmF5pl7BxJVaZ6M/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImR1bTJ2d3JuZzJjMS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.5Gpp0jgpvhBgA7Hbuo4thMB2FsGF3aEuPnNdApRHIUg/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjE1dXZqMnFvYWQ5MS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.39CHxXRlDQ_jhRtKthz-a4LZsSO9lB_lJ2sL4JJte8c/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InIyZXE0YW02d3I1bDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.V4OfqLOAPwpud5voGo_IIQCIUX2-t7YIrXcl-dTAnME/image;s=148x110"
+      ],
+      "location": {
+        "status": "not_provided"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-14T11:26:59.453Z",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IizcX.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-14T11:26:59.453Z",
+          "lastCheckedAt": "2026-11-14T11:26:59.453Z",
+          "lastVerifiedAt": "2026-11-14T11:26:59.453Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IizcX.html",
+            "checkedAt": "2026-11-14T11:26:59.453Z",
+            "availability": "available",
+            "note": "W treści karty widoczny przycisk kontaktu: Zobacz więcej ofert (7) tego sprzedawcy, Zobacz więcej ofert (7) tego sprzedawcy, Kontakt.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IizcX.html",
+                "checkedAt": "2026-11-14T11:26:59.453Z",
+                "fields": [
+                  "title",
+                  "year",
+                  "mileage",
+                  "price",
+                  "bodyCode",
+                  "transmissionCode"
+                ],
+                "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-14T11:26:59.453Z",
+      "lastVerifiedAt": "2026-11-14T11:26:59.453Z",
+      "lastAttemptAt": "2026-11-14T11:26:59.453Z",
+      "history": [
+        {
+          "eventId": "4893a7988b522aa08642e3f8dada5a798a196cd193bf6a9a9b875a068ad47b4b",
+          "runId": "direct-import-20261114-112120380-a439d1a0",
+          "checkedAt": "2026-11-14T11:26:59.453Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IizcX.html",
+          "availability": "available",
+          "note": "W treści karty widoczny przycisk kontaktu: Zobacz więcej ofert (7) tego sprzedawcy, Zobacz więcej ofert (7) tego sprzedawcy, Kontakt.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IizcX.html",
+              "checkedAt": "2026-11-14T11:26:59.453Z",
+              "fields": [
+                "title",
+                "year",
+                "mileage",
+                "price",
+                "bodyCode",
+                "transmissionCode"
+              ],
+              "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+            }
+          ],
+          "reportedFields": {
+            "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IizcX.html",
+            "modelKey": "mitsubishi-asx-i",
+            "title": "Mitsubishi ASX 2.0 2WD CVT Intro Edition+",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IizcX.html"
+              }
+            ],
+            "price": 44900,
+            "priceBasis": "unknown",
+            "year": 2021,
+            "mileage": 25000,
+            "bodyCode": "suv",
+            "transmissionCode": "automatic",
+            "offerType": "unknown",
+            "saleType": null,
+            "lpgInstalled": null,
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InByaHd5bW5kbzNmZS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.CtVHCqtchaI_0P5rKRXExMQZ41uXrIrezF-FvhlXuvk/image;s=1024x0;q=80",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InFhdjY4cHBjZXhiNzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.FoZ15D9ng2tjHy8djSE3AhZXsywPs7ernmcDBfvddW0/image;s=1024x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InByaHd5bW5kbzNmZS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.CtVHCqtchaI_0P5rKRXExMQZ41uXrIrezF-FvhlXuvk/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InFhdjY4cHBjZXhiNzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.FoZ15D9ng2tjHy8djSE3AhZXsywPs7ernmcDBfvddW0/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjQ0Z2hiOW9kcjJrOTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.vDbScKJqy77z1JFcbw4-u8EwHh7-xfbUTmJzRYJRiZc/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImJwN2wwOGU4bXZxajMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.5zWNF-TltYkGal8VRfGzNn-R4EmcTLsT733w5WEVN3k/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjZkeHJ1ejI0aDY4bzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.vKsE7JeIz-OWXcg1FR8wmm_iMmmT4KvCnz7qfSzmRFM/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InB1OTFmaXI5Y3BobDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.NAnXo0tFGS1Bq_fL9YDjLpsbFLFCwvldEQUeqoYrL_0/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImQ0aDcxMXZ1ZmszYzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.KC_PlVr8UeROsJlXKwJOuR_EexyEhmF5pl7BxJVaZ6M/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImR1bTJ2d3JuZzJjMS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.5Gpp0jgpvhBgA7Hbuo4thMB2FsGF3aEuPnNdApRHIUg/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjE1dXZqMnFvYWQ5MS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.39CHxXRlDQ_jhRtKthz-a4LZsSO9lB_lJ2sL4JJte8c/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InIyZXE0YW02d3I1bDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.V4OfqLOAPwpud5voGo_IIQCIUX2-t7YIrXcl-dTAnME/image;s=148x110"
+            ],
+            "location": {
+              "status": "not_provided"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IizcX.html"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "mitsubishi-asx-i"
+            },
+            "title": {
+              "before": null,
+              "after": "Mitsubishi ASX 2.0 2WD CVT Intro Edition+"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IizcX.html"
+                }
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 44900
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "unknown"
+            },
+            "year": {
+              "before": null,
+              "after": 2021
+            },
+            "mileage": {
+              "before": null,
+              "after": 25000
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "suv"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "automatic"
+            },
+            "offerType": {
+              "before": null,
+              "after": "unknown"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InByaHd5bW5kbzNmZS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.CtVHCqtchaI_0P5rKRXExMQZ41uXrIrezF-FvhlXuvk/image;s=1024x0;q=80",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InFhdjY4cHBjZXhiNzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.FoZ15D9ng2tjHy8djSE3AhZXsywPs7ernmcDBfvddW0/image;s=1024x0;q=100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InByaHd5bW5kbzNmZS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.CtVHCqtchaI_0P5rKRXExMQZ41uXrIrezF-FvhlXuvk/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InFhdjY4cHBjZXhiNzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.FoZ15D9ng2tjHy8djSE3AhZXsywPs7ernmcDBfvddW0/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjQ0Z2hiOW9kcjJrOTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.vDbScKJqy77z1JFcbw4-u8EwHh7-xfbUTmJzRYJRiZc/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImJwN2wwOGU4bXZxajMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.5zWNF-TltYkGal8VRfGzNn-R4EmcTLsT733w5WEVN3k/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjZkeHJ1ejI0aDY4bzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.vKsE7JeIz-OWXcg1FR8wmm_iMmmT4KvCnz7qfSzmRFM/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InB1OTFmaXI5Y3BobDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.NAnXo0tFGS1Bq_fL9YDjLpsbFLFCwvldEQUeqoYrL_0/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImQ0aDcxMXZ1ZmszYzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.KC_PlVr8UeROsJlXKwJOuR_EexyEhmF5pl7BxJVaZ6M/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImR1bTJ2d3JuZzJjMS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.5Gpp0jgpvhBgA7Hbuo4thMB2FsGF3aEuPnNdApRHIUg/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjE1dXZqMnFvYWQ5MS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.39CHxXRlDQ_jhRtKthz-a4LZsSO9lB_lJ2sL4JJte8c/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InIyZXE0YW02d3I1bDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.V4OfqLOAPwpud5voGo_IIQCIUX2-t7YIrXcl-dTAnME/image;s=148x110"
+              ]
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IizcX.html",
+        "modelKey": "mitsubishi-asx-i",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_purchase_price",
+          "exact_engine_variant",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit",
+          "purchase_not_auction"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_purchase_price; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction"
     }
   ],
   "archivedOffers": []

@@ -20,6 +20,12 @@ otwórz tylko ten, który dotyczy bieżącego zadania.
   platforma udostępnia zatwierdzony tryb sieciowy; bez takiego dostępu przerwij
   część online i nie importuj tych błędów jako rozstrzygnięcia dostępności.
   Nie obchodź CAPTCHA, `robots.txt`, blokad ani polityk sieciowych.
+- Dla OTOMOTO nie testuj adresów filtrowania osobnym, surowym skryptem
+  `page.goto`: takie próby wcześniej zwracały HTTP 403. Zweryfikowany projektowy
+  flow `search:direct` otwiera per-model URL filtrów w widocznym Chromium,
+  sprawdza `robots.txt` i audytuje faktyczny request listy; używaj tego flow.
+  Jeśli zwróci HTTP 403 lub challenge, zatrzymaj próbę. Nie zmieniaj proxy,
+  fingerprintu ani nagłówków w celu obejścia blokady.
 - Strona jest statyczna: ponowne wczytanie plików JSON nie sprawdza portali.
 - Nie przeglądaj historycznych czatów rutynowo: to zwiększa niepotrzebny kontekst.
   Sięgaj do nich tylko, gdy bieżące zadanie odwołuje się do wcześniejszych ustaleń

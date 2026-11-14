@@ -303,7 +303,7 @@ async function captureVisibleListings(page, searchUrl, adapter) {
     const collected = [];
     const seen = new Set();
     for (const anchor of anchors) {
-      const url = anchor.href;
+      const url = anchor.href.replaceAll("|", "%7C");
       if (!anchor.getClientRects().length || !url.startsWith("https://") || seen.has(url)) continue;
       let card = anchor.closest(listingContainer ?? "article, [data-testid*=offer], [data-testid*=listing], [class*=offer-card], [class*=listing-card], [class*=result-card], [class*=vehicle-card]");
       if (!card) {

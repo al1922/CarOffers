@@ -229,6 +229,511 @@
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
       "verdictNote": "body; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
+    },
+    {
+      "id": "url:https://www.aaaauto.pl/detail/skoda/scala/34926023",
+      "modelKey": "skoda-scala",
+      "title": "Škoda Scala 1.5 TSI",
+      "urls": [
+        {
+          "url": "https://www.aaaauto.pl/detail/skoda/scala/34926023"
+        }
+      ],
+      "price": 52000,
+      "priceBasis": "gross_total",
+      "year": 2019,
+      "mileage": 144823,
+      "engine": "1.5 TSI, 1498 cm3, 150 KM",
+      "engineVariant": "1.5-tsi-150",
+      "body": "Hatchback",
+      "bodyCode": "hatchback",
+      "transmission": "Automatyczna 7-biegowa",
+      "transmissionCode": "automatic",
+      "seller": "AAA AUTO",
+      "offerType": "company",
+      "saleType": "fixed_price",
+      "cameraStatus": "installed_confirmed",
+      "structuralDamageStatus": "unknown",
+      "location": {
+        "status": "not_provided"
+      },
+      "photos": [],
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-13T22:25:30+00:00",
+      "listingStates": [
+        {
+          "url": "https://www.aaaauto.pl/detail/skoda/scala/34926023",
+          "status": "available",
+          "lastAttemptAt": "2026-11-13T22:25:30+00:00",
+          "lastCheckedAt": "2026-11-13T22:25:30+00:00",
+          "lastVerifiedAt": "2026-11-13T22:25:30+00:00",
+          "lastObservation": {
+            "url": "https://www.aaaauto.pl/detail/skoda/scala/34926023",
+            "checkedAt": "2026-11-13T22:25:30+00:00",
+            "availability": "available",
+            "note": "Cena zakupu 52 000 zł. AAA AUTO podaje 2019 r., 144 823 km, silnik 1.5 TSI 150 KM, automat 7-biegowy, kamerę cofania i ISOFIX. Karta wymienia książkę serwisową i serwis ASO; ostatni serwis wskazano 6.05.2025 przy 13 070 km, co jest niespójne z obecnym przebiegiem i wymaga sprawdzenia. Historia szkód nie została niezależnie zweryfikowana. Lokalizacja oddziału nie była podana.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.aaaauto.pl/detail/skoda/scala/34926023",
+                "checkedAt": "2026-11-13T22:25:30+00:00",
+                "fields": [
+                  "year",
+                  "mileage",
+                  "price",
+                  "engine",
+                  "body",
+                  "transmission",
+                  "cameraStatus"
+                ],
+                "note": "Dane z karty szczegółów AAA AUTO; wpis o przebiegu przy ostatnim serwisie wymaga wyjaśnienia."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-13T22:25:30+00:00",
+      "lastVerifiedAt": "2026-11-13T22:25:30+00:00",
+      "lastAttemptAt": "2026-11-13T22:25:30+00:00",
+      "history": [
+        {
+          "eventId": "928f745d74c1fae1fb53c6db01283905f45674b7ddc11a1fecfdb163742988e7",
+          "runId": "search-20261113-current2",
+          "checkedAt": "2026-11-13T22:25:30+00:00",
+          "url": "https://www.aaaauto.pl/detail/skoda/scala/34926023",
+          "availability": "available",
+          "note": "Cena zakupu 52 000 zł. AAA AUTO podaje 2019 r., 144 823 km, silnik 1.5 TSI 150 KM, automat 7-biegowy, kamerę cofania i ISOFIX. Karta wymienia książkę serwisową i serwis ASO; ostatni serwis wskazano 6.05.2025 przy 13 070 km, co jest niespójne z obecnym przebiegiem i wymaga sprawdzenia. Historia szkód nie została niezależnie zweryfikowana. Lokalizacja oddziału nie była podana.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.aaaauto.pl/detail/skoda/scala/34926023",
+              "checkedAt": "2026-11-13T22:25:30+00:00",
+              "fields": [
+                "year",
+                "mileage",
+                "price",
+                "engine",
+                "body",
+                "transmission",
+                "cameraStatus"
+              ],
+              "note": "Dane z karty szczegółów AAA AUTO; wpis o przebiegu przy ostatnim serwisie wymaga wyjaśnienia."
+            }
+          ],
+          "reportedFields": {
+            "id": "url:https://www.aaaauto.pl/detail/skoda/scala/34926023",
+            "modelKey": "skoda-scala",
+            "title": "Škoda Scala 1.5 TSI",
+            "urls": [
+              {
+                "url": "https://www.aaaauto.pl/detail/skoda/scala/34926023"
+              }
+            ],
+            "price": 52000,
+            "priceBasis": "gross_total",
+            "year": 2019,
+            "mileage": 144823,
+            "engine": "1.5 TSI, 1498 cm3, 150 KM",
+            "engineVariant": "1.5-tsi-150",
+            "body": "Hatchback",
+            "bodyCode": "hatchback",
+            "transmission": "Automatyczna 7-biegowa",
+            "transmissionCode": "automatic",
+            "seller": "AAA AUTO",
+            "offerType": "company",
+            "saleType": "fixed_price",
+            "cameraStatus": "installed_confirmed",
+            "structuralDamageStatus": "unknown",
+            "location": {
+              "status": "not_provided"
+            },
+            "lpgInstalled": null,
+            "photos": []
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "url:https://www.aaaauto.pl/detail/skoda/scala/34926023"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "skoda-scala"
+            },
+            "title": {
+              "before": null,
+              "after": "Škoda Scala 1.5 TSI"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.aaaauto.pl/detail/skoda/scala/34926023"
+                }
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 52000
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "gross_total"
+            },
+            "year": {
+              "before": null,
+              "after": 2019
+            },
+            "mileage": {
+              "before": null,
+              "after": 144823
+            },
+            "engine": {
+              "before": null,
+              "after": "1.5 TSI, 1498 cm3, 150 KM"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.5-tsi-150"
+            },
+            "body": {
+              "before": null,
+              "after": "Hatchback"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "hatchback"
+            },
+            "transmission": {
+              "before": null,
+              "after": "Automatyczna 7-biegowa"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "automatic"
+            },
+            "seller": {
+              "before": null,
+              "after": "AAA AUTO"
+            },
+            "offerType": {
+              "before": null,
+              "after": "company"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "installed_confirmed"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            },
+            "photos": {
+              "before": null,
+              "after": []
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "url:https://www.aaaauto.pl/detail/skoda/scala/34926023",
+        "modelKey": "skoda-scala",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "structural_history; stroller_and_family_fit"
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6IeTqA.html",
+      "modelKey": "skoda-scala",
+      "title": "Skoda Scala 1.5 TSI Ambition",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6IeTqA.html"
+        }
+      ],
+      "price": 52500,
+      "priceBasis": "gross_total",
+      "year": 2021,
+      "firstRegistrationDate": "2021-07-22",
+      "mileage": 146000,
+      "engine": "1.5 TSI, 150 KM, 1498 cm3",
+      "engineVariant": "1.5-tsi-150",
+      "body": "Hatchback",
+      "bodyCode": "hatchback",
+      "transmission": "Manualna",
+      "transmissionCode": "manual",
+      "seller": "PIOTR",
+      "offerType": "company",
+      "saleType": "fixed_price",
+      "cameraStatus": "installed_confirmed",
+      "structuralDamageStatus": "unknown",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "city": "Rogozino",
+        "voivodeship": "Mazowieckie"
+      },
+      "photos": [],
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-13T22:42:38+00:00",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6IeTqA.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-13T22:42:38+00:00",
+          "lastCheckedAt": "2026-11-13T22:42:38+00:00",
+          "lastVerifiedAt": "2026-11-13T22:42:38+00:00",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6IeTqA.html",
+            "checkedAt": "2026-11-13T22:42:38+00:00",
+            "availability": "available",
+            "note": "Cena brutto 52 500 PLN, faktura VAT 23%. Skoda Scala 1.5 TSI Ambition, 2021 r., 146 000 km, benzyna 1498 cm3/150 KM, skrzynia manualna, hatchback. Kamera parkowania tył wymieniona w rozwiniętym wyposażeniu. 14/14 pól zweryfikowanych w Otomoto. Sprzedawca deklaruje jednego użytkownika, dokumentowany serwis i bardzo dobry stan; historia szkód niezweryfikowana niezależnie.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6IeTqA.html",
+                "checkedAt": "2026-11-13T22:42:38+00:00",
+                "fields": [
+                  "title",
+                  "price",
+                  "year",
+                  "firstRegistrationDate",
+                  "mileage",
+                  "engine",
+                  "body",
+                  "transmission",
+                  "seller",
+                  "location"
+                ],
+                "note": "Dane z widocznej karty i szczegółów Otomoto."
+              },
+              {
+                "kind": "seller",
+                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6IeTqA.html",
+                "checkedAt": "2026-11-13T22:42:38+00:00",
+                "fields": [
+                  "cameraStatus",
+                  "structuralDamageStatus",
+                  "saleTerms"
+                ],
+                "note": "Kamera wymieniona w wyposażeniu. Cena brutto i VAT 23% podane w opisie; historia szkód bez niezależnego potwierdzenia."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-13T22:42:38+00:00",
+      "lastVerifiedAt": "2026-11-13T22:42:38+00:00",
+      "lastAttemptAt": "2026-11-13T22:42:38+00:00",
+      "history": [
+        {
+          "eventId": "4bf93675d9a8eadc1ba74c060ba8f1fd6ffe3759fc3d279c040600f59342db9b",
+          "runId": "search-20261113-current2",
+          "checkedAt": "2026-11-13T22:42:38+00:00",
+          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6IeTqA.html",
+          "availability": "available",
+          "note": "Cena brutto 52 500 PLN, faktura VAT 23%. Skoda Scala 1.5 TSI Ambition, 2021 r., 146 000 km, benzyna 1498 cm3/150 KM, skrzynia manualna, hatchback. Kamera parkowania tył wymieniona w rozwiniętym wyposażeniu. 14/14 pól zweryfikowanych w Otomoto. Sprzedawca deklaruje jednego użytkownika, dokumentowany serwis i bardzo dobry stan; historia szkód niezweryfikowana niezależnie.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6IeTqA.html",
+              "checkedAt": "2026-11-13T22:42:38+00:00",
+              "fields": [
+                "title",
+                "price",
+                "year",
+                "firstRegistrationDate",
+                "mileage",
+                "engine",
+                "body",
+                "transmission",
+                "seller",
+                "location"
+              ],
+              "note": "Dane z widocznej karty i szczegółów Otomoto."
+            },
+            {
+              "kind": "seller",
+              "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6IeTqA.html",
+              "checkedAt": "2026-11-13T22:42:38+00:00",
+              "fields": [
+                "cameraStatus",
+                "structuralDamageStatus",
+                "saleTerms"
+              ],
+              "note": "Kamera wymieniona w wyposażeniu. Cena brutto i VAT 23% podane w opisie; historia szkód bez niezależnego potwierdzenia."
+            }
+          ],
+          "reportedFields": {
+            "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6IeTqA.html",
+            "modelKey": "skoda-scala",
+            "title": "Skoda Scala 1.5 TSI Ambition",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6IeTqA.html"
+              }
+            ],
+            "price": 52500,
+            "priceBasis": "gross_total",
+            "year": 2021,
+            "firstRegistrationDate": "2021-07-22",
+            "mileage": 146000,
+            "engine": "1.5 TSI, 150 KM, 1498 cm3",
+            "engineVariant": "1.5-tsi-150",
+            "body": "Hatchback",
+            "bodyCode": "hatchback",
+            "transmission": "Manualna",
+            "transmissionCode": "manual",
+            "seller": "PIOTR",
+            "offerType": "company",
+            "saleType": "fixed_price",
+            "cameraStatus": "installed_confirmed",
+            "structuralDamageStatus": "unknown",
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "city": "Rogozino",
+              "voivodeship": "Mazowieckie"
+            },
+            "lpgInstalled": null,
+            "photos": []
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "url:https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6IeTqA.html"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "skoda-scala"
+            },
+            "title": {
+              "before": null,
+              "after": "Skoda Scala 1.5 TSI Ambition"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6IeTqA.html"
+                }
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 52500
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "gross_total"
+            },
+            "year": {
+              "before": null,
+              "after": 2021
+            },
+            "firstRegistrationDate": {
+              "before": null,
+              "after": "2021-07-22"
+            },
+            "mileage": {
+              "before": null,
+              "after": 146000
+            },
+            "engine": {
+              "before": null,
+              "after": "1.5 TSI, 150 KM, 1498 cm3"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.5-tsi-150"
+            },
+            "body": {
+              "before": null,
+              "after": "Hatchback"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "hatchback"
+            },
+            "transmission": {
+              "before": null,
+              "after": "Manualna"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "seller": {
+              "before": null,
+              "after": "PIOTR"
+            },
+            "offerType": {
+              "before": null,
+              "after": "company"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "installed_confirmed"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "city": "Rogozino",
+                "voivodeship": "Mazowieckie"
+              }
+            },
+            "photos": {
+              "before": null,
+              "after": []
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6IeTqA.html",
+        "modelKey": "skoda-scala",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "structural_history; stroller_and_family_fit"
     }
   ],
   "archivedOffers": []

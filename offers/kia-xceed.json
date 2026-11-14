@@ -7,6 +7,507 @@
     "description": "Crossover",
     "requirements": "Kia XCeed; 1.4 T-GDI 140 KM; 1.5 T-GDI 160 KM; rodzina: 2 dorosłych i 1 dziecko; wymagane miejsce na wózek i bagaż; rocznik od 2019; maks. 55 000 zł brutto według ceny podanej w ogłoszeniu; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 170 000 km preferowany; kamera wymagana  obecna lub z potwierdzoną możliwością montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji."
   },
-  "offers": [],
+  "offers": [
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-xceed-ID6IisPC.html",
+      "modelKey": "kia-xceed",
+      "title": "Kia XCeed 1.4 T-GDI",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-xceed-ID6IisPC.html"
+        }
+      ],
+      "price": 55000,
+      "priceBasis": "gross_total",
+      "year": 2020,
+      "mileage": 80730,
+      "engine": "1.4 T-GDI, 140 KM, 1353 cm3",
+      "engineVariant": "1.4-tgdi-140",
+      "body": "Crossover",
+      "bodyCode": "crossover",
+      "transmission": "Manualna",
+      "transmissionCode": "manual",
+      "seller": "Katarzyna",
+      "offerType": "unknown",
+      "saleType": "fixed_price",
+      "cameraStatus": "installed_confirmed",
+      "structuralDamageStatus": "unknown",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "city": "Piaseczno",
+        "voivodeship": "Mazowieckie"
+      },
+      "photos": [],
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-13T22:45:42+00:00",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-xceed-ID6IisPC.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-13T22:45:42+00:00",
+          "lastCheckedAt": "2026-11-13T22:45:42+00:00",
+          "lastVerifiedAt": "2026-11-13T22:45:42+00:00",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/kia-xceed-ID6IisPC.html",
+            "checkedAt": "2026-11-13T22:45:42+00:00",
+            "availability": "available",
+            "note": "Cena brutto 55 000 PLN, faktura VAT. 2020 r. wg karty i zweryfikowanych danych, 80 730 km, 1.4 T-GDI 140 KM, manualna, 5 miejsc. Kamera cofania jawnie wymieniona w opisie. Drobne zarysowania na przednich drzwiach (naprawy kosmetyczne). Sprzedawca w opisie podaje 2021 r. i własność spółki, podczas gdy szczegóły Otomoto wskazują 2020 r., a panel sprzedawcy oznacza osobę prywatną; wyjaśnić przed zakupem.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.otomoto.pl/osobowe/oferta/kia-xceed-ID6IisPC.html",
+                "checkedAt": "2026-11-13T22:45:42+00:00",
+                "fields": [
+                  "title",
+                  "price",
+                  "year",
+                  "mileage",
+                  "engine",
+                  "body",
+                  "transmission",
+                  "seller",
+                  "location",
+                  "cameraStatus"
+                ],
+                "note": "Odczyt z widocznej karty, opisu i sekcji szczegółów Otomoto; wykryto rozbieżność roku i statusu własności."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-13T22:45:42+00:00",
+      "lastVerifiedAt": "2026-11-13T22:45:42+00:00",
+      "lastAttemptAt": "2026-11-13T22:45:42+00:00",
+      "history": [
+        {
+          "eventId": "e15edf39a0aa8a64cb191e1264e048fbe5176108387b3667d77ca8af1a87a9f3",
+          "runId": "search-20261113-current2",
+          "checkedAt": "2026-11-13T22:45:42+00:00",
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-xceed-ID6IisPC.html",
+          "availability": "available",
+          "note": "Cena brutto 55 000 PLN, faktura VAT. 2020 r. wg karty i zweryfikowanych danych, 80 730 km, 1.4 T-GDI 140 KM, manualna, 5 miejsc. Kamera cofania jawnie wymieniona w opisie. Drobne zarysowania na przednich drzwiach (naprawy kosmetyczne). Sprzedawca w opisie podaje 2021 r. i własność spółki, podczas gdy szczegóły Otomoto wskazują 2020 r., a panel sprzedawcy oznacza osobę prywatną; wyjaśnić przed zakupem.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.otomoto.pl/osobowe/oferta/kia-xceed-ID6IisPC.html",
+              "checkedAt": "2026-11-13T22:45:42+00:00",
+              "fields": [
+                "title",
+                "price",
+                "year",
+                "mileage",
+                "engine",
+                "body",
+                "transmission",
+                "seller",
+                "location",
+                "cameraStatus"
+              ],
+              "note": "Odczyt z widocznej karty, opisu i sekcji szczegółów Otomoto; wykryto rozbieżność roku i statusu własności."
+            }
+          ],
+          "reportedFields": {
+            "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-xceed-ID6IisPC.html",
+            "modelKey": "kia-xceed",
+            "title": "Kia XCeed 1.4 T-GDI",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/kia-xceed-ID6IisPC.html"
+              }
+            ],
+            "price": 55000,
+            "priceBasis": "gross_total",
+            "year": 2020,
+            "mileage": 80730,
+            "engine": "1.4 T-GDI, 140 KM, 1353 cm3",
+            "engineVariant": "1.4-tgdi-140",
+            "body": "Crossover",
+            "bodyCode": "crossover",
+            "transmission": "Manualna",
+            "transmissionCode": "manual",
+            "seller": "Katarzyna",
+            "offerType": "unknown",
+            "saleType": "fixed_price",
+            "cameraStatus": "installed_confirmed",
+            "structuralDamageStatus": "unknown",
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "city": "Piaseczno",
+              "voivodeship": "Mazowieckie"
+            },
+            "lpgInstalled": null,
+            "photos": []
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "url:https://www.otomoto.pl/osobowe/oferta/kia-xceed-ID6IisPC.html"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "kia-xceed"
+            },
+            "title": {
+              "before": null,
+              "after": "Kia XCeed 1.4 T-GDI"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/kia-xceed-ID6IisPC.html"
+                }
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 55000
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "gross_total"
+            },
+            "year": {
+              "before": null,
+              "after": 2020
+            },
+            "mileage": {
+              "before": null,
+              "after": 80730
+            },
+            "engine": {
+              "before": null,
+              "after": "1.4 T-GDI, 140 KM, 1353 cm3"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.4-tgdi-140"
+            },
+            "body": {
+              "before": null,
+              "after": "Crossover"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "crossover"
+            },
+            "transmission": {
+              "before": null,
+              "after": "Manualna"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "seller": {
+              "before": null,
+              "after": "Katarzyna"
+            },
+            "offerType": {
+              "before": null,
+              "after": "unknown"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "installed_confirmed"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "city": "Piaseczno",
+                "voivodeship": "Mazowieckie"
+              }
+            },
+            "photos": {
+              "before": null,
+              "after": []
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-xceed-ID6IisPC.html",
+        "modelKey": "kia-xceed",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "structural_history; stroller_and_family_fit"
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-xceed-ID6Hvsaz.html",
+      "modelKey": "kia-xceed",
+      "title": "Kia XCeed 1.4 T-GDI M DCT",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-xceed-ID6Hvsaz.html"
+        }
+      ],
+      "price": 51200,
+      "priceBasis": "gross_total",
+      "year": 2019,
+      "firstRegistrationDate": "2019-10-31",
+      "mileage": 101870,
+      "engine": "1.4 T-GDI, 140 KM, 1353 cm3",
+      "engineVariant": "1.4-tgdi-140",
+      "body": "Crossover",
+      "bodyCode": "crossover",
+      "transmission": "Automatyczna DCT",
+      "transmissionCode": "automatic",
+      "seller": "Grzegorz",
+      "offerType": "private",
+      "saleType": "fixed_price",
+      "cameraStatus": "installed_confirmed",
+      "structuralDamageStatus": "unknown",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "city": "Kościan",
+        "voivodeship": "Wielkopolskie"
+      },
+      "photos": [],
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-13T22:45:42+00:00",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-xceed-ID6Hvsaz.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-13T22:45:42+00:00",
+          "lastCheckedAt": "2026-11-13T22:45:42+00:00",
+          "lastVerifiedAt": "2026-11-13T22:45:42+00:00",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/kia-xceed-ID6Hvsaz.html",
+            "checkedAt": "2026-11-13T22:45:42+00:00",
+            "availability": "available",
+            "note": "Kia XCeed 2019, 101 870 km, 1.4 T-GDI 140 KM, DCT, 5 miejsc. Cena ofertowa 51 200 PLN. Kamera parkowania tył potwierdzona w rozwiniętym wyposażeniu. Sprzedawca deklaruje sprawność, dobry stan wnętrza, książki, dwa kluczyki, aktualny przegląd i OC do 15.11.2027; brak niezależnej weryfikacji historii szkód.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.otomoto.pl/osobowe/oferta/kia-xceed-ID6Hvsaz.html",
+                "checkedAt": "2026-11-13T22:45:42+00:00",
+                "fields": [
+                  "title",
+                  "price",
+                  "year",
+                  "firstRegistrationDate",
+                  "mileage",
+                  "engine",
+                  "body",
+                  "transmission",
+                  "seller",
+                  "location",
+                  "cameraStatus"
+                ],
+                "note": "Odczyt z widocznej karty i szczegółów; kamera wymieniona w wyposażeniu systemów wspomagania."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-13T22:45:42+00:00",
+      "lastVerifiedAt": "2026-11-13T22:45:42+00:00",
+      "lastAttemptAt": "2026-11-13T22:45:42+00:00",
+      "history": [
+        {
+          "eventId": "98fc9c9cd919183d5d972334cd1322458826051be86e38fe9f42aeaf37ef40ec",
+          "runId": "search-20261113-current2",
+          "checkedAt": "2026-11-13T22:45:42+00:00",
+          "url": "https://www.otomoto.pl/osobowe/oferta/kia-xceed-ID6Hvsaz.html",
+          "availability": "available",
+          "note": "Kia XCeed 2019, 101 870 km, 1.4 T-GDI 140 KM, DCT, 5 miejsc. Cena ofertowa 51 200 PLN. Kamera parkowania tył potwierdzona w rozwiniętym wyposażeniu. Sprzedawca deklaruje sprawność, dobry stan wnętrza, książki, dwa kluczyki, aktualny przegląd i OC do 15.11.2027; brak niezależnej weryfikacji historii szkód.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.otomoto.pl/osobowe/oferta/kia-xceed-ID6Hvsaz.html",
+              "checkedAt": "2026-11-13T22:45:42+00:00",
+              "fields": [
+                "title",
+                "price",
+                "year",
+                "firstRegistrationDate",
+                "mileage",
+                "engine",
+                "body",
+                "transmission",
+                "seller",
+                "location",
+                "cameraStatus"
+              ],
+              "note": "Odczyt z widocznej karty i szczegółów; kamera wymieniona w wyposażeniu systemów wspomagania."
+            }
+          ],
+          "reportedFields": {
+            "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-xceed-ID6Hvsaz.html",
+            "modelKey": "kia-xceed",
+            "title": "Kia XCeed 1.4 T-GDI M DCT",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/kia-xceed-ID6Hvsaz.html"
+              }
+            ],
+            "price": 51200,
+            "priceBasis": "gross_total",
+            "year": 2019,
+            "firstRegistrationDate": "2019-10-31",
+            "mileage": 101870,
+            "engine": "1.4 T-GDI, 140 KM, 1353 cm3",
+            "engineVariant": "1.4-tgdi-140",
+            "body": "Crossover",
+            "bodyCode": "crossover",
+            "transmission": "Automatyczna DCT",
+            "transmissionCode": "automatic",
+            "seller": "Grzegorz",
+            "offerType": "private",
+            "saleType": "fixed_price",
+            "cameraStatus": "installed_confirmed",
+            "structuralDamageStatus": "unknown",
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "city": "Kościan",
+              "voivodeship": "Wielkopolskie"
+            },
+            "lpgInstalled": null,
+            "photos": []
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "url:https://www.otomoto.pl/osobowe/oferta/kia-xceed-ID6Hvsaz.html"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "kia-xceed"
+            },
+            "title": {
+              "before": null,
+              "after": "Kia XCeed 1.4 T-GDI M DCT"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/kia-xceed-ID6Hvsaz.html"
+                }
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 51200
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "gross_total"
+            },
+            "year": {
+              "before": null,
+              "after": 2019
+            },
+            "firstRegistrationDate": {
+              "before": null,
+              "after": "2019-10-31"
+            },
+            "mileage": {
+              "before": null,
+              "after": 101870
+            },
+            "engine": {
+              "before": null,
+              "after": "1.4 T-GDI, 140 KM, 1353 cm3"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.4-tgdi-140"
+            },
+            "body": {
+              "before": null,
+              "after": "Crossover"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "crossover"
+            },
+            "transmission": {
+              "before": null,
+              "after": "Automatyczna DCT"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "automatic"
+            },
+            "seller": {
+              "before": null,
+              "after": "Grzegorz"
+            },
+            "offerType": {
+              "before": null,
+              "after": "private"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "installed_confirmed"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "city": "Kościan",
+                "voivodeship": "Wielkopolskie"
+              }
+            },
+            "photos": {
+              "before": null,
+              "after": []
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-xceed-ID6Hvsaz.html",
+        "modelKey": "kia-xceed",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "structural_history; stroller_and_family_fit"
+    }
+  ],
   "archivedOffers": []
 }

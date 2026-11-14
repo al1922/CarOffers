@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T17:05:30.182717+00:00",
+  "generatedAt": "2026-11-14T11:39:37.944512+00:00",
   "configuration": {
     "requirements": {
       "version": 1,
@@ -3815,6 +3815,865 @@
       }
     },
     {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6Ih3ry.html",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 53997,
+        "priceBasis": "gross_total",
+        "year": 2021,
+        "bodyCode": "wagon",
+        "engineVariant": "1.5-tgdi-160",
+        "transmissionCode": "manual",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 123367,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IjN45.html",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 52500,
+        "priceBasis": "gross_total",
+        "year": 2022,
+        "bodyCode": "wagon",
+        "engineVariant": "1.5-tgdi-160",
+        "transmissionCode": "manual",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 116000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IhN5G.html",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 35900,
+        "priceBasis": "gross_total",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-tgdi-140",
+        "transmissionCode": "manual",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 104921,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6Ih6AL.html",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 54999,
+        "priceBasis": "unknown",
+        "year": 2023,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 66000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IjHUm.html",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 35800,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 127046,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IhnP2.html",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 46900,
+        "priceBasis": "unknown",
+        "year": 2022,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 158000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IgSTg.html",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 33750,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 168000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IjBGC.html",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 45700,
+        "priceBasis": "unknown",
+        "year": 2019,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 169000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IjOyW.html",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 47700,
+        "priceBasis": "unknown",
+        "year": 2022,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 161500,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IeYip.html",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 47900,
+        "priceBasis": "unknown",
+        "year": 2023,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 108038,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiMLq.html",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 42999,
+        "priceBasis": "unknown",
+        "year": 2022,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 130000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6HZtfx.html",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 49900,
+        "priceBasis": "unknown",
+        "year": 2023,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 113657,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6Ijtd7.html",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 54900,
+        "priceBasis": "unknown",
+        "year": 2023,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 127214,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6Ig8vH.html",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 49999,
+        "priceBasis": "unknown",
+        "year": 2021,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 166132,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiEfc.html",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 45000,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 96102,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6HS07N.html",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 53900,
+        "priceBasis": "unknown",
+        "year": 2021,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 95000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiX0k.html",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 47900,
+        "priceBasis": "unknown",
+        "year": 2021,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 122555,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiVrr.html",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 50900,
+        "priceBasis": "unknown",
+        "year": 2021,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 82050,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiBLq.html",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 44900,
+        "priceBasis": "unknown",
+        "year": 2022,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 154900,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6Ibtty.html",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 39800,
+        "priceBasis": "unknown",
+        "year": 2021,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 142000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IisSw.html",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 42890,
+        "priceBasis": "unknown",
+        "year": 2019,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 142329,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6Iii2B.html",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 46900,
+        "priceBasis": "unknown",
+        "year": 2023,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 60800,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiPq1.html",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 52999,
+        "priceBasis": "unknown",
+        "year": 2023,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 40147,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IjSOL.html",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 48990,
+        "priceBasis": "unknown",
+        "year": 2023,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 96196,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6Ij9tY.html",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 47900,
+        "priceBasis": "unknown",
+        "year": 2021,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 157000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6Ii33U.html",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 55000,
+        "priceBasis": "unknown",
+        "year": 2023,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 62345,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6Iixvg.html",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 52900,
+        "priceBasis": "unknown",
+        "year": 2023,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 70000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6IiV3u.html",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 39900,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 112541,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6Ii2c5.html",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 35900,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 150000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/hyundai-i30-ID6Ija0L.html",
+      "modelKey": "hyundai-i30-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 40222,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 121560,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
       "id": "listing:autoplac:7600-2296-WW",
       "modelKey": "kia-ceed-iii-sw",
       "verdict": "check",
@@ -4448,6 +5307,906 @@
       }
     },
     {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Iijyk.html",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 53900,
+        "priceBasis": "gross_total",
+        "year": 2020,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-tgdi-140",
+        "transmissionCode": "manual",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 117300,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IiJfQ.html",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 52840,
+        "priceBasis": "gross_total",
+        "year": 2022,
+        "bodyCode": "wagon",
+        "engineVariant": "1.5-tgdi-160",
+        "transmissionCode": "manual",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 163944,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Iesk9.html",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 51900,
+        "priceBasis": "gross_total",
+        "year": 2019,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-tgdi-140",
+        "transmissionCode": "automatic",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 129000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.aaaauto.pl/detail/kia/ceed/34872330",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 47000,
+        "priceBasis": "gross_total",
+        "year": 2020,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-tgdi-140",
+        "transmissionCode": "automatic",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 164406,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.aaaauto.pl/detail/kia/ceed/26347198",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 50000,
+        "priceBasis": "gross_total",
+        "year": 2020,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-tgdi-140",
+        "transmissionCode": "automatic",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 136850,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.aaaauto.pl/detail/kia/ceed/34951114",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 54000,
+        "priceBasis": "gross_total",
+        "year": 2022,
+        "bodyCode": "wagon",
+        "engineVariant": "1.5-tgdi-160",
+        "transmissionCode": "manual",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 151419,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.aaaauto.pl/detail/kia/ceed/34951115",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 54000,
+        "priceBasis": "gross_total",
+        "year": 2022,
+        "bodyCode": "wagon",
+        "engineVariant": "1.5-tgdi-160",
+        "transmissionCode": "manual",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 151393,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IjPc0.html",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 37599,
+        "priceBasis": "unknown",
+        "year": 2019,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 142283,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IjvCQ.html",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 49900,
+        "priceBasis": "unknown",
+        "year": 2020,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 80500,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IhHh8.html",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 54900,
+        "priceBasis": "unknown",
+        "year": 2022,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 106000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IgdjD.html",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 49900,
+        "priceBasis": "unknown",
+        "year": 2020,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 94331,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IhlU2.html",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 54999,
+        "priceBasis": "unknown",
+        "year": 2022,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 122579,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Ifz6M.html",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 47900,
+        "priceBasis": "unknown",
+        "year": 2021,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 169968,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IjMDC.html",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 33500,
+        "priceBasis": "unknown",
+        "year": 2021,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 162000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Ijq2W.html",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 51900,
+        "priceBasis": "unknown",
+        "year": 2022,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 153400,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IiQ9N.html",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 52900,
+        "priceBasis": "unknown",
+        "year": 2022,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 70000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IjoL4.html",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 45500,
+        "priceBasis": "unknown",
+        "year": 2024,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 137000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IiuyT.html",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 50800,
+        "priceBasis": "unknown",
+        "year": 2021,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 81053,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6I4Nw1.html",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 33900,
+        "priceBasis": "unknown",
+        "year": 2021,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 155654,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IjkCg.html",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 42999,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 156000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IhX9i.html",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 48000,
+        "priceBasis": "unknown",
+        "year": 2020,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 83100,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Iju0E.html",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 54999,
+        "priceBasis": "unknown",
+        "year": 2021,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 90000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IhMHa.html",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 44800,
+        "priceBasis": "unknown",
+        "year": 2019,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 76000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IjASb.html",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 42900,
+        "priceBasis": "unknown",
+        "year": 2021,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 99767,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IiWkx.html",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 44000,
+        "priceBasis": "unknown",
+        "year": 2022,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 121492,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Ii9bo.html",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 47950,
+        "priceBasis": "unknown",
+        "year": 2022,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 151000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IibUu.html",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 39000,
+        "priceBasis": "unknown",
+        "year": 2019,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 95000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IiVXK.html",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 54900,
+        "priceBasis": "unknown",
+        "year": 2023,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 147565,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IhE2j.html",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 49900,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 83826,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IjBVD.html",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 44990,
+        "priceBasis": "unknown",
+        "year": 2021,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 120128,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6IiWEf.html",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 49899,
+        "priceBasis": "unknown",
+        "year": 2020,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 84422,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-ceed-ID6Ij5I7.html",
+      "modelKey": "kia-ceed-iii-sw",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 52900,
+        "priceBasis": "unknown",
+        "year": 2019,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 68600,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
       "id": "listing:otomoto:ID6IiHi1",
       "modelKey": "mazda-6-iii-wagon",
       "verdict": "check",
@@ -4470,6 +6229,267 @@
         "mileage": 165713,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mazda-6-ID6Ijq8V.html",
+      "modelKey": "mazda-6-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 54900,
+        "priceBasis": "unknown",
+        "year": 2019,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 115500,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mazda-6-ID6Igjqf.html",
+      "modelKey": "mazda-6-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 48700,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 104000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mazda-6-ID6HFMPM.html",
+      "modelKey": "mazda-6-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 9900,
+        "priceBasis": "unknown",
+        "year": 2021,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 30000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mazda-6-ID6FVIWa.html",
+      "modelKey": "mazda-6-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 54900,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 113000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mazda-6-ID6IibLQ.html",
+      "modelKey": "mazda-6-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 50900,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 149500,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mazda-6-ID6IeBpC.html",
+      "modelKey": "mazda-6-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 47000,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 153000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mazda-6-ID6IjL1l.html",
+      "modelKey": "mazda-6-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 49500,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 151853,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mazda-6-ID6I7s6q.html",
+      "modelKey": "mazda-6-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 39900,
+        "priceBasis": "unknown",
+        "year": 2022,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 79524,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mazda-6-ID6IjkBq.html",
+      "modelKey": "mazda-6-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 39500,
+        "priceBasis": "unknown",
+        "year": 2022,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 125000,
+        "familyFitConfirmed": null,
+        "saleType": null,
         "lpgInstalled": null
       }
     },
@@ -4787,6 +6807,727 @@
       }
     },
     {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6IiUha.html",
+      "modelKey": "skoda-octavia-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 48430,
+        "priceBasis": "gross_total",
+        "year": 2020,
+        "bodyCode": "wagon",
+        "engineVariant": "1.5-tsi-150",
+        "transmissionCode": "manual",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 149200,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6IjORS.html",
+      "modelKey": "skoda-octavia-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 47900,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 159252,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6If29V.html",
+      "modelKey": "skoda-octavia-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 49999,
+        "priceBasis": "unknown",
+        "year": 2020,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 102116,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6IiT6A.html",
+      "modelKey": "skoda-octavia-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 40999,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 154066,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6IikxM.html",
+      "modelKey": "skoda-octavia-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 55000,
+        "priceBasis": "unknown",
+        "year": 2019,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 164480,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6Igu0r.html",
+      "modelKey": "skoda-octavia-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 44400,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 169455,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6Ijims.html",
+      "modelKey": "skoda-octavia-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 43800,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 143867,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6IiI52.html",
+      "modelKey": "skoda-octavia-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 48900,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 89940,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6IimeN.html",
+      "modelKey": "skoda-octavia-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 35547,
+        "priceBasis": "unknown",
+        "year": 2019,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 136000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6IilTJ.html",
+      "modelKey": "skoda-octavia-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 24890,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 90000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6IhGCR.html",
+      "modelKey": "skoda-octavia-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 46900,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 119040,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6IiTLA.html",
+      "modelKey": "skoda-octavia-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 49900,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 133000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6IjA58.html",
+      "modelKey": "skoda-octavia-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 49900,
+        "priceBasis": "unknown",
+        "year": 2019,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 154180,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6IhpCX.html",
+      "modelKey": "skoda-octavia-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 45900,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 122424,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6HZjZM.html",
+      "modelKey": "skoda-octavia-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 51900,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 70000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6IhUeo.html",
+      "modelKey": "skoda-octavia-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 51900,
+        "priceBasis": "unknown",
+        "year": 2019,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 149987,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6Ijzzn.html",
+      "modelKey": "skoda-octavia-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 52000,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 123000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6IjjL3.html",
+      "modelKey": "skoda-octavia-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 50000,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 145231,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6IjK8L.html",
+      "modelKey": "skoda-octavia-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 46900,
+        "priceBasis": "unknown",
+        "year": 2019,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 107500,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6Ij4Cg.html",
+      "modelKey": "skoda-octavia-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 44000,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 159357,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6IefdX.html",
+      "modelKey": "skoda-octavia-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 40900,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 121760,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6IixTI.html",
+      "modelKey": "skoda-octavia-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 49990,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 146860,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6Iih0t.html",
+      "modelKey": "skoda-octavia-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 53000,
+        "priceBasis": "unknown",
+        "year": 2019,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 91000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6IiGwL.html",
+      "modelKey": "skoda-octavia-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 49000,
+        "priceBasis": "unknown",
+        "year": 2019,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 71000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-octavia-ID6IjSHO.html",
+      "modelKey": "skoda-octavia-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 49900,
+        "priceBasis": "unknown",
+        "year": 2020,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 48000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
       "id": "listing:olx:1104658131",
       "modelKey": "skoda-superb-iii-combi",
       "verdict": "check",
@@ -4835,6 +7576,350 @@
         "mileage": 156000,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjsIH.html",
+      "modelKey": "skoda-superb-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 42900,
+        "priceBasis": "gross_total",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": "1.4-tsi-ea211-150",
+        "transmissionCode": "automatic",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 129303,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IhLQq.html",
+      "modelKey": "skoda-superb-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 33900,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 103000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Ijqo1.html",
+      "modelKey": "skoda-superb-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 35800,
+        "priceBasis": "unknown",
+        "year": 2019,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 124213,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6FEvAp.html",
+      "modelKey": "skoda-superb-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 49900,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 159876,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjRyA.html",
+      "modelKey": "skoda-superb-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 47700,
+        "priceBasis": "unknown",
+        "year": 2022,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 120000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Ij4zH.html",
+      "modelKey": "skoda-superb-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 49900,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 159000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6Iixe4.html",
+      "modelKey": "skoda-superb-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 45500,
+        "priceBasis": "unknown",
+        "year": 2020,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 166000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IiScP.html",
+      "modelKey": "skoda-superb-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 54900,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 155977,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IhME8.html",
+      "modelKey": "skoda-superb-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 49900,
+        "priceBasis": "unknown",
+        "year": 2019,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 156000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IfXeO.html",
+      "modelKey": "skoda-superb-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 54999,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 156000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IjAVT.html",
+      "modelKey": "skoda-superb-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 46900,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 141085,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-superb-ID6IiVld.html",
+      "modelKey": "skoda-superb-iii-combi",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 38800,
+        "priceBasis": "unknown",
+        "year": 2022,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 148000,
+        "familyFitConfirmed": null,
+        "saleType": null,
         "lpgInstalled": null
       }
     },
@@ -5079,6 +8164,628 @@
         "cameraStatus": null,
         "structuralDamageStatus": null,
         "mileage": 158181,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IjKu9.html",
+      "modelKey": "suzuki-vitara-ii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 54900,
+        "priceBasis": "gross_total",
+        "year": 2019,
+        "bodyCode": "suv",
+        "engineVariant": "1.4-boosterjet-140",
+        "transmissionCode": "manual",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 120000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6Iglk1.html",
+      "modelKey": "suzuki-vitara-ii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 52900,
+        "priceBasis": "gross_total",
+        "year": 2018,
+        "bodyCode": "suv",
+        "engineVariant": "1.4-boosterjet-140",
+        "transmissionCode": "manual",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 137055,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IiSBW.html",
+      "modelKey": "suzuki-vitara-ii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 52999,
+        "priceBasis": "gross_total",
+        "year": 2018,
+        "bodyCode": "suv",
+        "engineVariant": "1.4-boosterjet-140",
+        "transmissionCode": "manual",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 141275,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IiQyo.html",
+      "modelKey": "suzuki-vitara-ii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 51900,
+        "priceBasis": "gross_total",
+        "year": 2019,
+        "bodyCode": "suv",
+        "engineVariant": "1.4-boosterjet-140",
+        "transmissionCode": "automatic",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 162000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IjquY.html",
+      "modelKey": "suzuki-vitara-ii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 51900,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 149000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6Ij6pQ.html",
+      "modelKey": "suzuki-vitara-ii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 42900,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 131392,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6Ii52F.html",
+      "modelKey": "suzuki-vitara-ii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 53500,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 45156,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6Iffu6.html",
+      "modelKey": "suzuki-vitara-ii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 50900,
+        "priceBasis": "unknown",
+        "year": 2019,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 112985,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IidDY.html",
+      "modelKey": "suzuki-vitara-ii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 47500,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 111000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6Ii4lC.html",
+      "modelKey": "suzuki-vitara-ii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 45000,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 133000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IfbgA.html",
+      "modelKey": "suzuki-vitara-ii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 23000,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 139100,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6Ii0Pw.html",
+      "modelKey": "suzuki-vitara-ii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 54900,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 106000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6HuSh5.html",
+      "modelKey": "suzuki-vitara-ii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 16800,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 162000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IjNtw.html",
+      "modelKey": "suzuki-vitara-ii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 54500,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 118597,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IhP98.html",
+      "modelKey": "suzuki-vitara-ii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 52000,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 84190,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IiRuR.html",
+      "modelKey": "suzuki-vitara-ii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 53999,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 168500,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6Iin4e.html",
+      "modelKey": "suzuki-vitara-ii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 43900,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 121000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IjFv1.html",
+      "modelKey": "suzuki-vitara-ii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 49900,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 131024,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6Iib3E.html",
+      "modelKey": "suzuki-vitara-ii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 49700,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 139000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IiHTu.html",
+      "modelKey": "suzuki-vitara-ii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 53500,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 158200,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IjBaT.html",
+      "modelKey": "suzuki-vitara-ii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 51999,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 144000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IiZYX.html",
+      "modelKey": "suzuki-vitara-ii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 54900,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 93000,
         "familyFitConfirmed": null,
         "saleType": null,
         "lpgInstalled": null
@@ -5363,6 +9070,500 @@
       }
     },
     {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6IiyoW.html",
+      "modelKey": "toyota-auris-touring-sports",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "engine_review_requires_verification",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 39600,
+        "priceBasis": "gross_total",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": "1.6-valvematic-132",
+        "transmissionCode": "manual",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 167000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6HZhNI.html",
+      "modelKey": "toyota-auris-touring-sports",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 47000,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 108905,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6IjvE5.html",
+      "modelKey": "toyota-auris-touring-sports",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 49700,
+        "priceBasis": "unknown",
+        "year": 2019,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 137000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6Ie3Jk.html",
+      "modelKey": "toyota-auris-touring-sports",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 39800,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 146175,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6Iiwbv.html",
+      "modelKey": "toyota-auris-touring-sports",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 49900,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 132177,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6Ijc80.html",
+      "modelKey": "toyota-auris-touring-sports",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 38900,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 135842,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6IiJTW.html",
+      "modelKey": "toyota-auris-touring-sports",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 38900,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 77800,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6IjAvj.html",
+      "modelKey": "toyota-auris-touring-sports",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 34700,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 147650,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6Ii6OK.html",
+      "modelKey": "toyota-auris-touring-sports",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 30899,
+        "priceBasis": "unknown",
+        "year": 2019,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 133000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6IiS4q.html",
+      "modelKey": "toyota-auris-touring-sports",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [
+        "LPG: potwierdzić dokumenty instalacji, homologację zbiornika i serwis"
+      ],
+      "input": {
+        "price": 48000,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 130000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": true
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6Ii4ry.html",
+      "modelKey": "toyota-auris-touring-sports",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 45999,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 40000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6IjFzp.html",
+      "modelKey": "toyota-auris-touring-sports",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 52500,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 130000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6IjG2G.html",
+      "modelKey": "toyota-auris-touring-sports",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [
+        "LPG: potwierdzić dokumenty instalacji, homologację zbiornika i serwis"
+      ],
+      "input": {
+        "price": 53000,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 96432,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": true
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6IiWC0.html",
+      "modelKey": "toyota-auris-touring-sports",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 44900,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 91919,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6IjgSR.html",
+      "modelKey": "toyota-auris-touring-sports",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 17900,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 170000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6IimOz.html",
+      "modelKey": "toyota-auris-touring-sports",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 49500,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 101500,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-auris-ID6IilKN.html",
+      "modelKey": "toyota-auris-touring-sports",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 43900,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 163361,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
       "id": "listing:otomoto:6147568392",
       "modelKey": "toyota-avensis-iii-wagon",
       "verdict": "check",
@@ -5410,6 +9611,321 @@
         "mileage": 163000,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Ig8o1.html",
+      "modelKey": "toyota-avensis-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 53950,
+        "priceBasis": "gross_total",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": "1.8-valvematic-147",
+        "transmissionCode": "automatic",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 163700,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Igulx.html",
+      "modelKey": "toyota-avensis-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 44900,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 114171,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Iimtv.html",
+      "modelKey": "toyota-avensis-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 44900,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 119852,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IiJWQ.html",
+      "modelKey": "toyota-avensis-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 36900,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 170000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IhT2Z.html",
+      "modelKey": "toyota-avensis-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 35700,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 160000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IgKPF.html",
+      "modelKey": "toyota-avensis-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 55000,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 147000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6I3sUk.html",
+      "modelKey": "toyota-avensis-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 45000,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 120000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IisqC.html",
+      "modelKey": "toyota-avensis-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 51500,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 135000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6I9M8C.html",
+      "modelKey": "toyota-avensis-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 40000,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 169200,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Ijr8T.html",
+      "modelKey": "toyota-avensis-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 43000,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 154895,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IhH4p.html",
+      "modelKey": "toyota-avensis-iii-wagon",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 39500,
+        "priceBasis": "unknown",
+        "year": 2019,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 124862,
+        "familyFitConfirmed": null,
+        "saleType": null,
         "lpgInstalled": null
       }
     },
@@ -5553,6 +10069,616 @@
       }
     },
     {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjitH.html",
+      "modelKey": "toyota-corolla-e210",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "engine_review_requires_verification",
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 54900,
+        "priceBasis": "gross_total",
+        "year": 2020,
+        "bodyCode": "sedan",
+        "engineVariant": "1.6-valvematic-132",
+        "transmissionCode": "manual",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 130000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjKsR.html",
+      "modelKey": "toyota-corolla-e210",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 50000,
+        "priceBasis": "unknown",
+        "year": 2022,
+        "bodyCode": "sedan",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 161000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6Ih7Mr.html",
+      "modelKey": "toyota-corolla-e210",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 39900,
+        "priceBasis": "unknown",
+        "year": 2024,
+        "bodyCode": "sedan",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 28000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IhzgO.html",
+      "modelKey": "toyota-corolla-e210",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 1784,
+        "priceBasis": "unknown",
+        "year": 2022,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 84000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6I2VMK.html",
+      "modelKey": "toyota-corolla-e210",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 36797,
+        "priceBasis": "unknown",
+        "year": 2024,
+        "bodyCode": "sedan",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 50200,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IiJbQ.html",
+      "modelKey": "toyota-corolla-e210",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [
+        "LPG: potwierdzić dokumenty instalacji, homologację zbiornika i serwis"
+      ],
+      "input": {
+        "price": 9600,
+        "priceBasis": "unknown",
+        "year": 2025,
+        "bodyCode": "sedan",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 60000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": true
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjsJL.html",
+      "modelKey": "toyota-corolla-e210",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 51600,
+        "priceBasis": "unknown",
+        "year": 2021,
+        "bodyCode": "sedan",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 76650,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6Ij7kl.html",
+      "modelKey": "toyota-corolla-e210",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [
+        "LPG: potwierdzić dokumenty instalacji, homologację zbiornika i serwis"
+      ],
+      "input": {
+        "price": 49500,
+        "priceBasis": "unknown",
+        "year": 2021,
+        "bodyCode": "sedan",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 72801,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": true
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IijSY.html",
+      "modelKey": "toyota-corolla-e210",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 52000,
+        "priceBasis": "unknown",
+        "year": 2023,
+        "bodyCode": "sedan",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 68000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6Iia1q.html",
+      "modelKey": "toyota-corolla-e210",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 54900,
+        "priceBasis": "unknown",
+        "year": 2022,
+        "bodyCode": "sedan",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 96449,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjIRt.html",
+      "modelKey": "toyota-corolla-e210",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 51999,
+        "priceBasis": "unknown",
+        "year": 2022,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 58980,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IiEqk.html",
+      "modelKey": "toyota-corolla-e210",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 54999,
+        "priceBasis": "unknown",
+        "year": 2022,
+        "bodyCode": "sedan",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 111518,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-OLX_ID6IjdS5.html",
+      "modelKey": "toyota-corolla-e210",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 15000,
+        "priceBasis": "unknown",
+        "year": 2022,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 94500,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6Ii4jv.html",
+      "modelKey": "toyota-corolla-e210",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 44800,
+        "priceBasis": "unknown",
+        "year": 2020,
+        "bodyCode": "sedan",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 122000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6Ij8V4.html",
+      "modelKey": "toyota-corolla-e210",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 49900,
+        "priceBasis": "unknown",
+        "year": 2020,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 164761,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjGU1.html",
+      "modelKey": "toyota-corolla-e210",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 29700,
+        "priceBasis": "unknown",
+        "year": 2019,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 62000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6Igzty.html",
+      "modelKey": "toyota-corolla-e210",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 47900,
+        "priceBasis": "unknown",
+        "year": 2019,
+        "bodyCode": "sedan",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 109890,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjiRi.html",
+      "modelKey": "toyota-corolla-e210",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 54900,
+        "priceBasis": "unknown",
+        "year": 2020,
+        "bodyCode": "sedan",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 93200,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjNe0.html",
+      "modelKey": "toyota-corolla-e210",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 54990,
+        "priceBasis": "unknown",
+        "year": 2020,
+        "bodyCode": "wagon",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 170000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjPRP.html",
+      "modelKey": "toyota-corolla-e210",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 52700,
+        "priceBasis": "unknown",
+        "year": 2019,
+        "bodyCode": "sedan",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 98000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IhEM7.html",
+      "modelKey": "toyota-corolla-e210",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 52800,
+        "priceBasis": "unknown",
+        "year": 2019,
+        "bodyCode": "sedan",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 84535,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
       "id": "listing:sprzedajemy:74102184",
       "modelKey": "mitsubishi-asx-i",
       "verdict": "check",
@@ -5581,6 +10707,645 @@
       }
     },
     {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IiEMe.html",
+      "modelKey": "mitsubishi-asx-i",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 49800,
+        "priceBasis": "unknown",
+        "year": 2019,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 136000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IjJQi.html",
+      "modelKey": "mitsubishi-asx-i",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 49999,
+        "priceBasis": "unknown",
+        "year": 2019,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 120000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IfhtE.html",
+      "modelKey": "mitsubishi-asx-i",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 55000,
+        "priceBasis": "unknown",
+        "year": 2019,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 98500,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-asx-ID6IizcX.html",
+      "modelKey": "mitsubishi-asx-i",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 44900,
+        "priceBasis": "unknown",
+        "year": 2021,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 25000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-outlander-ID6IjRt5.html",
+      "modelKey": "mitsubishi-outlander-iii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 48900,
+        "priceBasis": "gross_total",
+        "year": 2017,
+        "bodyCode": "suv",
+        "engineVariant": "2.0-mivec-150",
+        "transmissionCode": "automatic",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 127000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-outlander-ID6IhKAi.html",
+      "modelKey": "mitsubishi-outlander-iii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 54900,
+        "priceBasis": "gross_total",
+        "year": 2017,
+        "bodyCode": "suv",
+        "engineVariant": "2.0-mivec-150",
+        "transmissionCode": "manual",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 113000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-outlander-ID6IjIS5.html",
+      "modelKey": "mitsubishi-outlander-iii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 52900,
+        "priceBasis": "gross_total",
+        "year": 2017,
+        "bodyCode": "suv",
+        "engineVariant": "2.0-mivec-150",
+        "transmissionCode": "manual",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 146000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-outlander-ID6Ijpt0.html",
+      "modelKey": "mitsubishi-outlander-iii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 54800,
+        "priceBasis": "gross_total",
+        "year": 2017,
+        "bodyCode": "suv",
+        "engineVariant": "2.0-mivec-150",
+        "transmissionCode": "automatic",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 149000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-outlander-ID6Igs3u.html",
+      "modelKey": "mitsubishi-outlander-iii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 33500,
+        "priceBasis": "gross_total",
+        "year": 2017,
+        "bodyCode": "suv",
+        "engineVariant": "2.0-mivec-150",
+        "transmissionCode": "manual",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 118000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-outlander-ID6I5efw.html",
+      "modelKey": "mitsubishi-outlander-iii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 54999,
+        "priceBasis": "gross_total",
+        "year": 2017,
+        "bodyCode": "suv",
+        "engineVariant": "2.0-mivec-150",
+        "transmissionCode": "manual",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 152800,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-outlander-ID6I6UvH.html",
+      "modelKey": "mitsubishi-outlander-iii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 53800,
+        "priceBasis": "gross_total",
+        "year": 2017,
+        "bodyCode": "suv",
+        "engineVariant": "2.0-mivec-150",
+        "transmissionCode": "automatic",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 155000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-outlander-ID6IjANz.html",
+      "modelKey": "mitsubishi-outlander-iii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 55000,
+        "priceBasis": "unknown",
+        "year": 2024,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 59612,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-outlander-ID6Ig36q.html",
+      "modelKey": "mitsubishi-outlander-iii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 53900,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 117000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-outlander-ID6IiaYN.html",
+      "modelKey": "mitsubishi-outlander-iii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 54900,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 107000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-outlander-ID6Ijts0.html",
+      "modelKey": "mitsubishi-outlander-iii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 45900,
+        "priceBasis": "unknown",
+        "year": 2020,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 124000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-outlander-ID6IiWG2.html",
+      "modelKey": "mitsubishi-outlander-iii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 52999,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 117000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-outlander-ID6IiOKp.html",
+      "modelKey": "mitsubishi-outlander-iii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 38900,
+        "priceBasis": "unknown",
+        "year": 2018,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 164000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-outlander-ID6I7zLZ.html",
+      "modelKey": "mitsubishi-outlander-iii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 48900,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 130050,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-outlander-ID6IjC0U.html",
+      "modelKey": "mitsubishi-outlander-iii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 49900,
+        "priceBasis": "unknown",
+        "year": 2019,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 166806,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-outlander-ID6IjASH.html",
+      "modelKey": "mitsubishi-outlander-iii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 41900,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 159555,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-outlander-ID6IhLZH.html",
+      "modelKey": "mitsubishi-outlander-iii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 47900,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "automatic",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 159000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-outlander-ID6IjPWb.html",
+      "modelKey": "mitsubishi-outlander-iii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 36900,
+        "priceBasis": "unknown",
+        "year": 2021,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 112390,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/mitsubishi-outlander-ID6IjmPK.html",
+      "modelKey": "mitsubishi-outlander-iii",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "gross_purchase_price",
+        "exact_engine_variant",
+        "camera_or_compatible_retrofit",
+        "structural_history",
+        "stroller_and_family_fit",
+        "purchase_not_auction"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 32900,
+        "priceBasis": "unknown",
+        "year": 2017,
+        "bodyCode": "suv",
+        "engineVariant": null,
+        "transmissionCode": "manual",
+        "cameraStatus": null,
+        "structuralDamageStatus": null,
+        "mileage": 155000,
+        "familyFitConfirmed": null,
+        "saleType": null,
+        "lpgInstalled": null
+      }
+    },
+    {
       "id": "listing:sprzedajemy:71768394",
       "modelKey": "skoda-scala",
       "verdict": "check",
@@ -5602,6 +11367,106 @@
         "cameraStatus": null,
         "structuralDamageStatus": null,
         "mileage": 85000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.aaaauto.pl/detail/skoda/scala/34926023",
+      "modelKey": "skoda-scala",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 52000,
+        "priceBasis": "gross_total",
+        "year": 2019,
+        "bodyCode": "hatchback",
+        "engineVariant": "1.5-tsi-150",
+        "transmissionCode": "automatic",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 144823,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6IeTqA.html",
+      "modelKey": "skoda-scala",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 52500,
+        "priceBasis": "gross_total",
+        "year": 2021,
+        "bodyCode": "hatchback",
+        "engineVariant": "1.5-tsi-150",
+        "transmissionCode": "manual",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 146000,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-xceed-ID6IisPC.html",
+      "modelKey": "kia-xceed",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 55000,
+        "priceBasis": "gross_total",
+        "year": 2020,
+        "bodyCode": "crossover",
+        "engineVariant": "1.4-tgdi-140",
+        "transmissionCode": "manual",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 80730,
+        "familyFitConfirmed": null,
+        "saleType": "fixed_price",
+        "lpgInstalled": null
+      }
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/kia-xceed-ID6Hvsaz.html",
+      "modelKey": "kia-xceed",
+      "verdict": "check",
+      "failures": [],
+      "unknowns": [
+        "structural_history",
+        "stroller_and_family_fit"
+      ],
+      "preferenceNotes": [],
+      "input": {
+        "price": 51200,
+        "priceBasis": "gross_total",
+        "year": 2019,
+        "bodyCode": "crossover",
+        "engineVariant": "1.4-tgdi-140",
+        "transmissionCode": "automatic",
+        "cameraStatus": "installed_confirmed",
+        "structuralDamageStatus": "unknown",
+        "mileage": 101870,
         "familyFitConfirmed": null,
         "saleType": "fixed_price",
         "lpgInstalled": null

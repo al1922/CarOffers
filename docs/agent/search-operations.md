@@ -84,10 +84,11 @@ lokalnie. Następnie koordynator wykonuje lokalne `finish`, a później
 `import-preview` i dalsze kroki według reguł importu. Worker ma domyślne limity
 2 stron i 20 nowych odczytów kart na zadanie. Można je jawnie zmienić flagami
 `--max-pages` (1–20) i `--max-cards` (1–200), np. gdy przegląd przebiegu pokaże
-powtarzalne ucięcie wyników. Jeśli nie ma
-zatwierdzonego uruchomienia poza sandboxem, użyj
-widocznej, odizolowanej przeglądarki Codexa jako ograniczonej próby ręcznej:
-wykonaj jedno zapytanie w publicznym interfejsie, otwórz pasujące karty i
+powtarzalne ucięcie wyników. Jeśli nie ma zatwierdzonego uruchomienia poza
+sandboxem, użyj widocznej, odizolowanej przeglądarki Codexa jako ograniczonej
+próby ręcznej. Użyj jej także dla źródeł z `tasks.json.manualReviewSources`,
+nawet gdy pozostałe portale działały automatycznie: wykonaj jedno zapytanie
+publicznym interfejsem dla każdego wskazanego modelu, otwórz pasujące karty i
 zapisz wyłącznie potwierdzone dane. Niepełna paginacja lub brak dowodu z karty
 pozostawia `partial`; CAPTCHA, odmowa dostępu i ograniczenie `robots.txt`
 kończą tę próbę bez obchodzenia zabezpieczeń. Nie przypisuj ofert znalezionych
@@ -113,7 +114,8 @@ dozwolonego czytnika w zatwierdzonej sieci przy błędach DNS, pilota adaptera p
 powtarzalnych problemach selektorów albo kontynuacji od udokumentowanego
 dozwolonego `nextUrl` przy osiągniętym limicie. Raport niczego nie ponawia, nie zmienia
 `tasks.json`, konfiguracji ani ofert. `403`, CAPTCHA i odmowa `robots.txt`
-oznaczają zatrzymanie prób dla danego zakresu, nie sugestię obejścia.
+kończą bieżącą próbę. Nie obchodź odmowy; nowy, osobno zlecony przebieg może
+spróbować ponownie.
 
 Po wyniku `partial` z dozwolonym, zapisanym `nextUrl` można uruchomić dokładnie
 jedną kontynuację:
@@ -148,9 +150,24 @@ paginacji i nie zostaną rozstrzygnięci kandydaci.
 Gdy użytkownik prosi o szukanie nowych ofert, uruchom oddzielny przebieg `plan`
 bez ograniczeń `--model` i `--source`: obejmuje wszystkie aktywne modele oraz
 wszystkie aktywne, nieaukcyjne portale, które mają zgodny zakres marki. Portale,
-których adapter ma jawny tryb `blocked`, są zapisywane w `excludedSources` i nie
-otrzymują zadań, dopóki konfiguracja adaptera nie zostanie zmieniona. Nie zmieniaj
-ograniczeń modelu/portalu ani zakazu aukcji.
+których adapter ma jawny tryb `blocked`, pozostają wykluczone z automatycznych
+zadań i są zapisywane w `excludedSources`. `plan` dodaje dla zgodnych modeli
+pozycje do `manualReviewSources`; sprawdź je w widocznej przeglądarce, jeśli
+publiczny interfejs otwiera się normalnie. Nie zmieniaj trybu adaptera, aby
+ponowić blokadę, ani ograniczeń modelu/portalu lub zakazu aukcji.
+
+`plan` tworzy dla tych pozycji oddzielne zadania `manualOnly` w stanie
+`pending_manual`. Zwykłe `claim` ich nie przydziela. Po rozpoczęciu ręcznej
+kontroli użyj `python -B scripts/car-search.py claim --manual --run RUN --worker
+manual-1 --source SOURCE`; polecenie tworzy pusty szablon w
+`runs/RUN/manual-templates/`. Skopiuj go do `runs/RUN/results/` po uzupełnieniu
+wyłącznie danymi faktycznie sprawdzonymi w widocznej przeglądarce. Zapisuj
+odwiedzone strony, odczytane karty i dowody oferty w standardowym formacie
+wyniku; zaktualizuj `checkedAt` z szablonu na czas faktycznej kontroli oraz
+wypełnij `coverage.searchUrls` i `coverage.pagesChecked`. Potem lokalnie wykonaj
+`finish`. Dopiero ten sam
+`import-preview`/`import-apply` może dodać potwierdzone rekordy. Nie eksportuj
+zadań `manualOnly` do workera sieciowego.
 
 `plan --agents N` ustawia limit aktywnych workerów wyszukiwania. Koordynator
 wykonuje `claim` i `finish` lokalnie, jeden po drugim; `claim` odmawia przydziału
@@ -160,6 +177,13 @@ zadanie wyszukiwania na host. Worker nie może sam zmieniać `tasks.json` ani
 wywoływać `claim`/`finish`. Jeden worker obsługuje najwyżej jedno aktywne zadanie.
 Nie uruchamiaj kilku koordynatorów zapisujących tę samą kolejkę; plik kolejki nie
 ma blokady między procesami.
+
+Po odmowie dostępu na głównym adresie wyszukiwania albo na głównym
+`robots.txt` źródła `finish` zapisuje blokadę źródła i oznacza jego pozostałe
+nieuruchomione zadania jako `skipped`. Odmowa na pojedynczej karcie lub stronie
+paginacji zatrzymuje tylko ten zakres, ale sama nie blokuje innych modeli na
+portalu. Nie ponawiaj automatycznie w bieżącym przebiegu ani nie obchodź odmowy.
+Osobny przebieg uruchom na nową, wyraźną prośbę użytkownika.
 
 Przykładowo `plan --agents 3` dopuszcza do trzech aktywnych zadań. Koordynator
 wykonuje do trzech lokalnych `claim` dla odrębnych workerów, eksportuje osobne
@@ -180,7 +204,9 @@ Przed otwieraniem kart wykonawca stosuje `searchProfile.candidateScreening` do
 widocznych wyników: pomija tylko auta, których widoczne dane jednoznacznie łamią
 twardy warunek (np. rocznik produkcji, maksymalny przebieg, nadwozie, wariant
 silnika, cena brutto, aukcyjny typ sprzedaży lub jawna informacja o uszkodzeniu,
-gdy `structuralDamageAllowed` jest `false`). Nieznane albo niejednoznaczne
+gdy `structuralDamageAllowed` jest `false`). Odrzuca też jednoznaczne tytuły
+części i akcesoriów przed otwarciem karty; ten sam filtr działa ponownie na
+tytule karty przed utworzeniem oferty. Nieznane albo niejednoznaczne
 pola nie są powodem do odrzucenia, jeśli pozostałe dane pasują — wtedy otwórz
 kartę i sprawdź brakujące fakty. Snippet wyszukiwarki nie potwierdza dostępności,
 ceny całkowitej ani wyposażenia egzemplarza. Warunki finansowania nie wpływają na
@@ -347,11 +373,14 @@ faktycznego przeszukania zakresu; blokada dostępu nie oznacza braku ofert.
 Przed `finish` koordynator uruchamia walidację całego wyniku: kontraktu JSON,
 obserwacji, dowodów, lokalizacji i wymaganych pól nowej oferty. Przy błędzie
 zadanie pozostaje `running`, a odrzucony plik wynikowy zostaje zachowany w
-`results/rejected/`; popraw wynik i ponów `finish`. Nie nadpisuj dowodów bez
-zachowania kopii.
+`results/rejected/`; popraw wynik i ponów `finish`. Rozwiąż to zadanie przed
+przydzieleniem kolejnego — nie zostawiaj go zawieszonego ani nie uruchamiaj
+równoległego koordynatora. Nie nadpisuj dowodów bez zachowania kopii.
 Koordynator kontroluje wynik i zapisuje zakończenie poleceniem `finish`.
 Po awarii koordynator może jawnie przywrócić zadanie do `pending`, zachowując
-historię próby i odrębny plik poprzedniego wyniku. Nie nadpisuj dowodów bez śladu.
+historię próby i odrębny plik poprzedniego wyniku. Zadania `skipped` po blokadzie
+źródła nie mają pliku wyniku; importer pomija je bez traktowania jako
+nieukończone. Nie nadpisuj dowodów bez śladu.
 
 Przy dłuższym wyszukiwaniu koordynator zapisuje wyniki partiami, po zakończeniu
 wybranej grupy zadań i przed kolejnymi przydziałami: `import-preview`, kontrola

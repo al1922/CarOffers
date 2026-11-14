@@ -1,6 +1,7 @@
 import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 import { portalNavigationPolicy, readError } from "./portal-robots.mjs";
+import { isClearlyNonVehicleTitle } from "./portal-screening.mjs";
 
 const fold = (value) => String(value ?? "").replace(/\s+/g, " ").trim().toLowerCase();
 const compact = (value) => fold(value).replace(/[^a-z0-9]/g, "");
@@ -56,10 +57,8 @@ export function screenListing(listing, profile) {
   const visibleFields = { ...(year ? { year: Number(year) } : {}),
     ...(mileage ? { mileage: numeric(mileage) } : {}), ...(engine ? { engine } : {}), ...(body ? { body } : {}) };
   const failures = [];
-  // A portal's broad make/model search can include spare parts. Reject only
-  // explicit product nouns in the listing title; missing/ambiguous fields stay
-  // eligible for card verification.
-  if (/\b(?:cz[eę]ści|lampa|lampy|reflektor|zderzak|błotnik|blotnik|klapa bagażnika|maska silnika|szyba czołowa|listwa|nakładka|nakladka|prowadnica|sprężyna|sprezyna|wahacz|amortyzator|alternator|rozrusznik|skrzynia biegów|silnik na części|felga|dywanik|radio samochodowe|hak holowniczy|lusterko|chłodnica|chlodnica|część|czesc)\b/i.test(title)) {
+  // Broad make/model queries can surface products whose titles repeat the car model.
+  if (isClearlyNonVehicleTitle(title, Number.isFinite(visibleFields.year) && Number.isFinite(visibleFields.mileage))) {
     failures.push("not_a_complete_vehicle_listing");
   }
   if (year && outsideYear(Number(year), limits)) failures.push("year_outside_selection");

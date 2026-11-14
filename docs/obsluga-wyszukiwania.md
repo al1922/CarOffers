@@ -58,7 +58,9 @@ albo niejasność pola oznacza sprawdzenie karty, jeśli pozostałe dane pasują
 źródła nie trafiają do kolejki. Nie przeszukuje
 sieci ani nie uruchamia agentów. Kolejny przebieg
 wymaga nowego ID, co chroni poprzednie wyniki. Wybór marek źródła ogranicza kolejkę.
-Pole `--agents` oznacza planowaną liczbę subagentów; koordynator nie jest wliczany.
+`--agents` ustawia wyłącznie limit równoległych zadań workerów w kolejce. Nie
+tworzy subagentów; bez osobnego uruchomienia workerów przez koordynatora zadania
+wykonuje się kolejno.
 
 Domyślny przebieg obejmuje wszystkie aktywne modele oraz wszystkie aktywne,
 nieaukcyjne portale, których zakres marki pasuje do modelu. Zadania pozostają

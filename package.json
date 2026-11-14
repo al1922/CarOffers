@@ -5,6 +5,7 @@
   "scripts": {
     "test": "node --test tests/test_app.cjs tests/test_sprzedajemy.mjs",
     "browse:pages": "node scripts/playwright-pages.mjs",
+    "search:direct": "node scripts/direct-search.mjs",
     "availability:check": "node scripts/availability-check.mjs",
     "search:portal": "node scripts/portal-search.mjs",
     "search:network-worker": "node scripts/search-network-worker.mjs",

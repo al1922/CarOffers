@@ -9,6 +9,9 @@ import hashlib
 import json
 import os
 from pathlib import Path
+import re
+import shutil
+import tempfile
 from urllib.parse import urlsplit, urlunsplit
 
 from search_core import ROOT, assess, contained, read, validation, requirements_for_model
@@ -405,6 +408,119 @@ def merge_offer(old, incoming, observation, model, requirements, event_id, run_i
     return updated, changes
 
 
+def prepare_direct_import_run(root, direct_run_id, config):
+    """Create a standard import run from immutable direct-search artifacts."""
+    if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_-]*", direct_run_id or ""):
+        raise ValueError("Invalid direct-search run ID")
+    direct_relative = f"runs/direct-search/{direct_run_id}"
+    direct_dir = contained(root, direct_relative)
+    summary_path = contained(root, f"{direct_relative}/run.json")
+    summary = read(summary_path)
+    if summary.get("runId") != direct_run_id:
+        raise ValueError("Direct-search run ID does not match run.json")
+    if summary.get("sourceStatus") != "ready" or summary.get("outcome") not in ("completed", "partial"):
+        raise ValueError("Only ready, completed or partial direct-search runs can be imported")
+
+    source_id = summary.get("sourceId")
+    configured_sources = config.get("sources", {}).get("sources", [])
+    if not any(source.get("id") == source_id and source.get("enabled") for source in configured_sources):
+        raise ValueError("Direct-search source is not currently enabled")
+    models = {model["key"]: model for model in config["models"]["models"]}
+    tasks, results, source_result_hashes = [], {}, {}
+    for model_summary in summary.get("results", []):
+        model_key = model_summary.get("modelKey")
+        if model_key not in models:
+            raise ValueError("Direct-search result model is not in current configuration")
+        source_result_relative = f"{direct_relative}/results/{source_id}--{model_key}.json"
+        source_result_path = contained(root, source_result_relative)
+        direct_result = read(source_result_path)
+        if direct_result.get("runId") != direct_run_id or direct_result.get("sourceId") != source_id or direct_result.get("modelKey") != model_key:
+            raise ValueError("Direct-search model result identity mismatch: " + source_result_relative)
+        direct_outcome = direct_result.get("outcome")
+        if direct_outcome == "blocked":
+            if direct_result.get("offers"):
+                raise ValueError("Blocked direct-search result cannot contain offers")
+            continue
+        if direct_outcome not in ("completed", "partial"):
+            raise ValueError("Unsupported direct-search model outcome: " + str(direct_outcome))
+
+        coverage = direct_result.get("coverage") or {}
+        pages = coverage.get("pages") or []
+        search_urls = list(dict.fromkeys(page.get("url") for page in pages if isinstance(page, dict) and page.get("url")))
+        if direct_outcome == "completed" and (
+                coverage.get("coverageComplete") is not True or not pages or pages[-1].get("nextUrl") is not None):
+            raise ValueError("Completed direct-search result has incomplete pagination")
+        if not search_urls and (direct_outcome != "partial" or direct_result.get("offers")):
+            raise ValueError("A result with offers or complete coverage requires a checked search page")
+        checked_at = direct_result.get("generatedAt")
+        timestamp(checked_at)
+        candidate_urls = [candidate.get("url") for candidate in direct_result.get("candidates", [])
+                          if isinstance(candidate, dict) and candidate.get("url")]
+        offer_urls = [offer.get("observation", {}).get("url") for offer in direct_result.get("offers", [])
+                      if isinstance(offer, dict) and isinstance(offer.get("observation"), dict)]
+        listing_urls_checked = list(dict.fromkeys([*candidate_urls, *offer_urls]))
+        task_id = f"{source_id}--{model_key}"
+        state = "complete" if direct_outcome == "completed" else "partial"
+        converted = {
+            "taskId": task_id,
+            "outcome": state,
+            "checkedAt": checked_at,
+            "coverage": {
+                "searchUrls": search_urls,
+                "pagesChecked": int(coverage.get("pagesChecked", len(pages))),
+                "remaining": "" if state == "complete" else "Direct search reported incomplete coverage.",
+                "listingUrlsChecked": listing_urls_checked,
+            },
+            "offers": copy.deepcopy(direct_result.get("offers", [])),
+            "errors": copy.deepcopy(direct_result.get("errors", [])),
+        }
+        task = {"id": task_id, "kind": "search", "sourceId": source_id, "modelKey": model_key,
+                "state": state, "worker": "direct-search", "attempts": 1, "note": "Imported from direct-search run."}
+        tasks.append(task)
+        results[task_id] = converted
+        source_result_hashes[source_result_relative] = file_hash(source_result_path)
+
+    if not tasks:
+        return None
+    bridge_id = f"direct-import-{direct_run_id}"
+    bridge_path = contained(root, f"runs/{bridge_id}")
+    knowledge = {model["key"]: read(contained(root, model["knowledgeFile"])) for model in config["models"]["models"]}
+    snapshot_content = {"config": config, "knowledge": knowledge}
+    manifest = {
+        "directRunId": direct_run_id,
+        "sourceRunSha256": file_hash(summary_path),
+        "sourceResults": source_result_hashes,
+        "bridgeResults": {task_id: digest(result) for task_id, result in results.items()},
+    }
+    if bridge_path.exists():
+        saved_manifest = read(contained(root, f"runs/{bridge_id}/direct-source.json"))
+        if saved_manifest != manifest:
+            raise ValueError("Direct-search input changed; preserve it and create a new search run")
+        for task_id, checksum in manifest["bridgeResults"].items():
+            saved_result = read(contained(root, f"runs/{bridge_id}/results/{task_id}.json"))
+            if digest(saved_result) != checksum:
+                raise ValueError("Direct import bridge result changed; preserve it and create a new search run")
+        return bridge_id
+
+    runs_dir = contained(root, "runs")
+    runs_dir.mkdir(parents=True, exist_ok=True)
+    staging = Path(tempfile.mkdtemp(prefix=f".{bridge_id}.", dir=runs_dir))
+    try:
+        snapshot = {"createdAt": datetime.now(timezone.utc).isoformat(),
+                    "sha256": digest(snapshot_content), **snapshot_content}
+        atomic_write(staging / "snapshot.json", snapshot)
+        atomic_write(staging / "tasks.json", {"version": 1, "kind": "search", "tasks": tasks})
+        atomic_write(staging / "direct-source.json", manifest)
+        (staging / "results").mkdir()
+        for task_id, result in results.items():
+            atomic_write(staging / "results" / f"{task_id}.json", result)
+        os.replace(staging, bridge_path)
+    except Exception:
+        shutil.rmtree(staging, ignore_errors=True)
+        raise
+    return bridge_id
+
+
 def prepare(root, run_id, config):
     run = contained(root, "runs/" + run_id)
     for journal in (root / "runs").glob("*/imports/*/transaction.json"):
@@ -437,6 +553,13 @@ def prepare(root, run_id, config):
     imported_results = {}
     archive_reactivated_ids = set()
     for task in queue["tasks"]:
+        if task.get("state") == "skipped":
+            skipped.append({"taskId": task["id"], "reason": task.get("skipReason", "task_skipped"),
+                            "note": task.get("note", "")})
+            continue
+        if task.get("state") == "pending_manual":
+            skipped.append({"taskId": task["id"], "reason": "manual_review_pending"})
+            continue
         if task["state"] not in terminal:
             skipped.append({"taskId": task["id"], "reason": "task_not_finished"})
             continue

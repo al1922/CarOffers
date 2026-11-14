@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-12",
+  "updatedAt": "2026-11-14",
   "model": {
     "key": "toyota-avensis-iii-wagon",
     "name": "Toyota Avensis III Kombi",
@@ -549,6 +549,2346 @@
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
       "verdictNote": "structural_history; stroller_and_family_fit"
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Ig8o1.html",
+      "modelKey": "toyota-avensis-iii-wagon",
+      "title": "Toyota Avensis Touring Sports 1.8 Multidrive S Comfort",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Ig8o1.html"
+        }
+      ],
+      "price": 53950,
+      "priceBasis": "gross_total",
+      "year": 2017,
+      "mileage": 163700,
+      "engine": "1.8 Valvematic, 147 KM, 1798 cm3",
+      "engineVariant": "1.8-valvematic-147",
+      "body": "Kombi / Wagon",
+      "bodyCode": "wagon",
+      "transmission": "Automatyczna",
+      "transmissionCode": "automatic",
+      "seller": "Firma AUTO KOMIS BEST",
+      "offerType": "company",
+      "saleType": "fixed_price",
+      "cameraStatus": "installed_confirmed",
+      "structuralDamageStatus": "unknown",
+      "location": {
+        "status": "available",
+        "countryCode": "PL",
+        "city": "Baranowo",
+        "voivodeship": "Wielkopolskie"
+      },
+      "photos": [],
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-13T21:51:18+00:00",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Ig8o1.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-13T21:51:18+00:00",
+          "lastCheckedAt": "2026-11-13T21:51:18+00:00",
+          "lastVerifiedAt": "2026-11-13T21:51:18+00:00",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Ig8o1.html",
+            "checkedAt": "2026-11-13T21:51:18+00:00",
+            "availability": "available",
+            "note": "Otomoto pokazuje 2017 r., 163 700 km, 1.8 Valvematic 147 KM, automat i cenę 53 950 zł. Opis firmy AUTO KOMIS BEST deklaruje kamerę cofania, książkę serwisową i serwis po 161 tys. km; wystawiana jest faktura VAT-marża. Brak niezależnej weryfikacji szkód i historii serwisowej.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Ig8o1.html",
+                "checkedAt": "2026-11-13T21:51:18+00:00",
+                "fields": [
+                  "title",
+                  "price",
+                  "year",
+                  "mileage",
+                  "engine",
+                  "body",
+                  "transmission",
+                  "location",
+                  "seller"
+                ],
+                "note": "Dane techniczne, cena, typ skrzyni i lokalizacja z karty ogłoszenia Otomoto."
+              },
+              {
+                "kind": "seller",
+                "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Ig8o1.html",
+                "checkedAt": "2026-11-13T21:51:18+00:00",
+                "fields": [
+                  "cameraStatus",
+                  "serviceHistory"
+                ],
+                "note": "Opis sprzedawcy wymienia kamerę cofania, książkę serwisową i serwis przy 161 tys. km; deklaracje nie zostały niezależnie potwierdzone."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-13T21:51:18+00:00",
+      "lastVerifiedAt": "2026-11-13T21:51:18+00:00",
+      "lastAttemptAt": "2026-11-13T21:51:18+00:00",
+      "history": [
+        {
+          "eventId": "e7a16d1dbbe3c52a794bc8ff899eb4460e6b721a07533c2e2aefc2e5513f42fe",
+          "runId": "search-20261113-current2",
+          "checkedAt": "2026-11-13T21:51:18+00:00",
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Ig8o1.html",
+          "availability": "available",
+          "note": "Otomoto pokazuje 2017 r., 163 700 km, 1.8 Valvematic 147 KM, automat i cenę 53 950 zł. Opis firmy AUTO KOMIS BEST deklaruje kamerę cofania, książkę serwisową i serwis po 161 tys. km; wystawiana jest faktura VAT-marża. Brak niezależnej weryfikacji szkód i historii serwisowej.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Ig8o1.html",
+              "checkedAt": "2026-11-13T21:51:18+00:00",
+              "fields": [
+                "title",
+                "price",
+                "year",
+                "mileage",
+                "engine",
+                "body",
+                "transmission",
+                "location",
+                "seller"
+              ],
+              "note": "Dane techniczne, cena, typ skrzyni i lokalizacja z karty ogłoszenia Otomoto."
+            },
+            {
+              "kind": "seller",
+              "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Ig8o1.html",
+              "checkedAt": "2026-11-13T21:51:18+00:00",
+              "fields": [
+                "cameraStatus",
+                "serviceHistory"
+              ],
+              "note": "Opis sprzedawcy wymienia kamerę cofania, książkę serwisową i serwis przy 161 tys. km; deklaracje nie zostały niezależnie potwierdzone."
+            }
+          ],
+          "reportedFields": {
+            "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Ig8o1.html",
+            "modelKey": "toyota-avensis-iii-wagon",
+            "title": "Toyota Avensis Touring Sports 1.8 Multidrive S Comfort",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Ig8o1.html"
+              }
+            ],
+            "price": 53950,
+            "priceBasis": "gross_total",
+            "year": 2017,
+            "mileage": 163700,
+            "engine": "1.8 Valvematic, 147 KM, 1798 cm3",
+            "engineVariant": "1.8-valvematic-147",
+            "body": "Kombi / Wagon",
+            "bodyCode": "wagon",
+            "transmission": "Automatyczna",
+            "transmissionCode": "automatic",
+            "seller": "Firma AUTO KOMIS BEST",
+            "offerType": "company",
+            "saleType": "fixed_price",
+            "cameraStatus": "installed_confirmed",
+            "structuralDamageStatus": "unknown",
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "city": "Baranowo",
+              "voivodeship": "Wielkopolskie"
+            },
+            "lpgInstalled": null,
+            "photos": []
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Ig8o1.html"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "toyota-avensis-iii-wagon"
+            },
+            "title": {
+              "before": null,
+              "after": "Toyota Avensis Touring Sports 1.8 Multidrive S Comfort"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Ig8o1.html"
+                }
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 53950
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "gross_total"
+            },
+            "year": {
+              "before": null,
+              "after": 2017
+            },
+            "mileage": {
+              "before": null,
+              "after": 163700
+            },
+            "engine": {
+              "before": null,
+              "after": "1.8 Valvematic, 147 KM, 1798 cm3"
+            },
+            "engineVariant": {
+              "before": null,
+              "after": "1.8-valvematic-147"
+            },
+            "body": {
+              "before": null,
+              "after": "Kombi / Wagon"
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmission": {
+              "before": null,
+              "after": "Automatyczna"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "automatic"
+            },
+            "seller": {
+              "before": null,
+              "after": "Firma AUTO KOMIS BEST"
+            },
+            "offerType": {
+              "before": null,
+              "after": "company"
+            },
+            "saleType": {
+              "before": null,
+              "after": "fixed_price"
+            },
+            "cameraStatus": {
+              "before": null,
+              "after": "installed_confirmed"
+            },
+            "structuralDamageStatus": {
+              "before": null,
+              "after": "unknown"
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "available",
+                "countryCode": "PL",
+                "city": "Baranowo",
+                "voivodeship": "Wielkopolskie"
+              }
+            },
+            "photos": {
+              "before": null,
+              "after": []
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Ig8o1.html",
+        "modelKey": "toyota-avensis-iii-wagon",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "structural_history",
+          "stroller_and_family_fit"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "structural_history; stroller_and_family_fit"
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Igulx.html",
+      "modelKey": "toyota-avensis-iii-wagon",
+      "title": "Toyota Avensis",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Igulx.html"
+        }
+      ],
+      "price": 44900,
+      "priceBasis": "unknown",
+      "year": 2018,
+      "mileage": 114171,
+      "bodyCode": "wagon",
+      "transmissionCode": "manual",
+      "offerType": "unknown",
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im1scTNpeTU2amh5MjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.COe8cYdj27RCT9Jo3r1-1bV_P4BN5V8j0vw2_Iqepjw/image;s=1024x0;q=80",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im0yc3dpZW9mNnRmaDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.6u8OMHhixyPtww0l367TZ5qVCXnwmNREpMjH0LaM7K4/image;s=1024x0;q=100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im1scTNpeTU2amh5MjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.COe8cYdj27RCT9Jo3r1-1bV_P4BN5V8j0vw2_Iqepjw/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im0yc3dpZW9mNnRmaDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.6u8OMHhixyPtww0l367TZ5qVCXnwmNREpMjH0LaM7K4/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImNvdzRzZnhlNXV6ODItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.4TtssLIQBvXjnbjS1RriPp13Jmiosv10ZsnLTdXBZhs/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjE2dm8zbnA5MTNycC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.gtycLsCLgRUcDIGedN8_FZLJwUq1_1NOoPbjx9otq00/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImRxNDR0MjBzcDhjbC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.gAbv-66YlCfdJ9VEY0pCBW2v661JzWI2shZpQ-MEMyo/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpqNDRxeGU3Nmt1My1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.t2eKEst7cpxlbPp_CPe4g2K158l2twaMXUBHyvDWGm4/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InV2bGd4cnlhOXhrcDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.kOK97-iBhOdAObK4RAlGM60TZyNWAkXwXQNy55p_Uuc/image;s=148x110"
+      ],
+      "location": {
+        "status": "not_provided"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-14T02:54:52.957Z",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Igulx.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-14T02:54:52.957Z",
+          "lastCheckedAt": "2026-11-14T02:54:52.957Z",
+          "lastVerifiedAt": "2026-11-14T02:54:52.957Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Igulx.html",
+            "checkedAt": "2026-11-14T02:54:52.957Z",
+            "availability": "available",
+            "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Igulx.html",
+                "checkedAt": "2026-11-14T02:54:52.957Z",
+                "fields": [
+                  "title",
+                  "year",
+                  "mileage",
+                  "price",
+                  "bodyCode",
+                  "transmissionCode"
+                ],
+                "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-14T02:54:52.957Z",
+      "lastVerifiedAt": "2026-11-14T02:54:52.957Z",
+      "lastAttemptAt": "2026-11-14T02:54:52.957Z",
+      "history": [
+        {
+          "eventId": "f4a6b11ac75c80da3f477ca1c10032bace52a5836b5273e0afeba2de81847536",
+          "runId": "direct-import-20261114-024644745-9140b1ce",
+          "checkedAt": "2026-11-14T02:54:52.957Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Igulx.html",
+          "availability": "available",
+          "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Igulx.html",
+              "checkedAt": "2026-11-14T02:54:52.957Z",
+              "fields": [
+                "title",
+                "year",
+                "mileage",
+                "price",
+                "bodyCode",
+                "transmissionCode"
+              ],
+              "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+            }
+          ],
+          "reportedFields": {
+            "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Igulx.html",
+            "modelKey": "toyota-avensis-iii-wagon",
+            "title": "Toyota Avensis",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Igulx.html"
+              }
+            ],
+            "price": 44900,
+            "priceBasis": "unknown",
+            "year": 2018,
+            "mileage": 114171,
+            "bodyCode": "wagon",
+            "transmissionCode": "manual",
+            "offerType": "unknown",
+            "saleType": null,
+            "lpgInstalled": null,
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im1scTNpeTU2amh5MjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.COe8cYdj27RCT9Jo3r1-1bV_P4BN5V8j0vw2_Iqepjw/image;s=1024x0;q=80",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im0yc3dpZW9mNnRmaDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.6u8OMHhixyPtww0l367TZ5qVCXnwmNREpMjH0LaM7K4/image;s=1024x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im1scTNpeTU2amh5MjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.COe8cYdj27RCT9Jo3r1-1bV_P4BN5V8j0vw2_Iqepjw/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im0yc3dpZW9mNnRmaDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.6u8OMHhixyPtww0l367TZ5qVCXnwmNREpMjH0LaM7K4/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImNvdzRzZnhlNXV6ODItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.4TtssLIQBvXjnbjS1RriPp13Jmiosv10ZsnLTdXBZhs/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjE2dm8zbnA5MTNycC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.gtycLsCLgRUcDIGedN8_FZLJwUq1_1NOoPbjx9otq00/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImRxNDR0MjBzcDhjbC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.gAbv-66YlCfdJ9VEY0pCBW2v661JzWI2shZpQ-MEMyo/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpqNDRxeGU3Nmt1My1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.t2eKEst7cpxlbPp_CPe4g2K158l2twaMXUBHyvDWGm4/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InV2bGd4cnlhOXhrcDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.kOK97-iBhOdAObK4RAlGM60TZyNWAkXwXQNy55p_Uuc/image;s=148x110"
+            ],
+            "location": {
+              "status": "not_provided"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Igulx.html"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "toyota-avensis-iii-wagon"
+            },
+            "title": {
+              "before": null,
+              "after": "Toyota Avensis"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Igulx.html"
+                }
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 44900
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "unknown"
+            },
+            "year": {
+              "before": null,
+              "after": 2018
+            },
+            "mileage": {
+              "before": null,
+              "after": 114171
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "offerType": {
+              "before": null,
+              "after": "unknown"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im1scTNpeTU2amh5MjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.COe8cYdj27RCT9Jo3r1-1bV_P4BN5V8j0vw2_Iqepjw/image;s=1024x0;q=80",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im0yc3dpZW9mNnRmaDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.6u8OMHhixyPtww0l367TZ5qVCXnwmNREpMjH0LaM7K4/image;s=1024x0;q=100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im1scTNpeTU2amh5MjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.COe8cYdj27RCT9Jo3r1-1bV_P4BN5V8j0vw2_Iqepjw/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im0yc3dpZW9mNnRmaDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.6u8OMHhixyPtww0l367TZ5qVCXnwmNREpMjH0LaM7K4/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImNvdzRzZnhlNXV6ODItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.4TtssLIQBvXjnbjS1RriPp13Jmiosv10ZsnLTdXBZhs/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjE2dm8zbnA5MTNycC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.gtycLsCLgRUcDIGedN8_FZLJwUq1_1NOoPbjx9otq00/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImRxNDR0MjBzcDhjbC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.gAbv-66YlCfdJ9VEY0pCBW2v661JzWI2shZpQ-MEMyo/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpqNDRxeGU3Nmt1My1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.t2eKEst7cpxlbPp_CPe4g2K158l2twaMXUBHyvDWGm4/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InV2bGd4cnlhOXhrcDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.kOK97-iBhOdAObK4RAlGM60TZyNWAkXwXQNy55p_Uuc/image;s=148x110"
+              ]
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Igulx.html",
+        "modelKey": "toyota-avensis-iii-wagon",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_purchase_price",
+          "exact_engine_variant",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit",
+          "purchase_not_auction"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_purchase_price; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction"
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Iimtv.html",
+      "modelKey": "toyota-avensis-iii-wagon",
+      "title": "Toyota Avensis 2.0 D-4D Prestige",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Iimtv.html"
+        }
+      ],
+      "price": 44900,
+      "priceBasis": "unknown",
+      "year": 2018,
+      "mileage": 119852,
+      "bodyCode": "wagon",
+      "transmissionCode": "manual",
+      "offerType": "unknown",
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9semg4cHUzcTIzNjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.S4G3ExmJ63hEFUeAbHGXyUsEPHMCwhjG726vcvE9lQw/image;s=1024x0;q=80",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ino0cHQ0ZXd6Nm14cS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.4DbVca8VdPctMqWNQgV_7gNYDh-LJaSl2pxOlODYVjY/image;s=1024x0;q=100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9semg4cHUzcTIzNjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.S4G3ExmJ63hEFUeAbHGXyUsEPHMCwhjG726vcvE9lQw/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ino0cHQ0ZXd6Nm14cS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.4DbVca8VdPctMqWNQgV_7gNYDh-LJaSl2pxOlODYVjY/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImJmdnZxN3J0dG1nMDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.KTfKh74XvMFaIA7Zi9r8EasohdOuCK0ODA1WuHsCCPQ/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InY1Z2s2ZnAzMzVhMy1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.wva1xyoM7sTMiKtvM_bY7fZuMMFfQErsJtHSo1I2XGA/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imo4dTBueHpyenl1bTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.QZY0ix0rwfLVLd5gE_1MAd4ApDeFTipVGHrWiGsHuxw/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImNhOGhraGkzY2FlNDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.CwZ8MFfHNQHJs415rW9libSZrEpf-LBkEdD8DzDuIvw/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImdkbW1hYmEyZ3F2My1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.z1YI_r9kR9uU2IsWtvH_UUr96v4QQGUhDG8xDGSqZJA/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJkOG1jOXd0aXMycjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Mks22_k26zS_B9BEu1NTIALt0xgeBLC79GlQWFKg8tI/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNjMDZ5eTl2dXB4ZTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.RHSZcM99dN1Mn7mLKdjust79mCDDvO1VsaYLny_tN_w/image;s=148x110"
+      ],
+      "location": {
+        "status": "not_provided"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-14T02:54:53.040Z",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Iimtv.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-14T02:54:53.040Z",
+          "lastCheckedAt": "2026-11-14T02:54:53.040Z",
+          "lastVerifiedAt": "2026-11-14T02:54:53.040Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Iimtv.html",
+            "checkedAt": "2026-11-14T02:54:53.040Z",
+            "availability": "available",
+            "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Iimtv.html",
+                "checkedAt": "2026-11-14T02:54:53.040Z",
+                "fields": [
+                  "title",
+                  "year",
+                  "mileage",
+                  "price",
+                  "bodyCode",
+                  "transmissionCode"
+                ],
+                "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-14T02:54:53.040Z",
+      "lastVerifiedAt": "2026-11-14T02:54:53.040Z",
+      "lastAttemptAt": "2026-11-14T02:54:53.040Z",
+      "history": [
+        {
+          "eventId": "a57d5aa9e4a055cf5613cd2446ffc68968c81a21ed4e25c0e3d1baee6773dc9e",
+          "runId": "direct-import-20261114-024644745-9140b1ce",
+          "checkedAt": "2026-11-14T02:54:53.040Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Iimtv.html",
+          "availability": "available",
+          "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Iimtv.html",
+              "checkedAt": "2026-11-14T02:54:53.040Z",
+              "fields": [
+                "title",
+                "year",
+                "mileage",
+                "price",
+                "bodyCode",
+                "transmissionCode"
+              ],
+              "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+            }
+          ],
+          "reportedFields": {
+            "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Iimtv.html",
+            "modelKey": "toyota-avensis-iii-wagon",
+            "title": "Toyota Avensis 2.0 D-4D Prestige",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Iimtv.html"
+              }
+            ],
+            "price": 44900,
+            "priceBasis": "unknown",
+            "year": 2018,
+            "mileage": 119852,
+            "bodyCode": "wagon",
+            "transmissionCode": "manual",
+            "offerType": "unknown",
+            "saleType": null,
+            "lpgInstalled": null,
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9semg4cHUzcTIzNjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.S4G3ExmJ63hEFUeAbHGXyUsEPHMCwhjG726vcvE9lQw/image;s=1024x0;q=80",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ino0cHQ0ZXd6Nm14cS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.4DbVca8VdPctMqWNQgV_7gNYDh-LJaSl2pxOlODYVjY/image;s=1024x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9semg4cHUzcTIzNjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.S4G3ExmJ63hEFUeAbHGXyUsEPHMCwhjG726vcvE9lQw/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ino0cHQ0ZXd6Nm14cS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.4DbVca8VdPctMqWNQgV_7gNYDh-LJaSl2pxOlODYVjY/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImJmdnZxN3J0dG1nMDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.KTfKh74XvMFaIA7Zi9r8EasohdOuCK0ODA1WuHsCCPQ/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InY1Z2s2ZnAzMzVhMy1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.wva1xyoM7sTMiKtvM_bY7fZuMMFfQErsJtHSo1I2XGA/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imo4dTBueHpyenl1bTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.QZY0ix0rwfLVLd5gE_1MAd4ApDeFTipVGHrWiGsHuxw/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImNhOGhraGkzY2FlNDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.CwZ8MFfHNQHJs415rW9libSZrEpf-LBkEdD8DzDuIvw/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImdkbW1hYmEyZ3F2My1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.z1YI_r9kR9uU2IsWtvH_UUr96v4QQGUhDG8xDGSqZJA/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJkOG1jOXd0aXMycjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Mks22_k26zS_B9BEu1NTIALt0xgeBLC79GlQWFKg8tI/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNjMDZ5eTl2dXB4ZTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.RHSZcM99dN1Mn7mLKdjust79mCDDvO1VsaYLny_tN_w/image;s=148x110"
+            ],
+            "location": {
+              "status": "not_provided"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Iimtv.html"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "toyota-avensis-iii-wagon"
+            },
+            "title": {
+              "before": null,
+              "after": "Toyota Avensis 2.0 D-4D Prestige"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Iimtv.html"
+                }
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 44900
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "unknown"
+            },
+            "year": {
+              "before": null,
+              "after": 2018
+            },
+            "mileage": {
+              "before": null,
+              "after": 119852
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "offerType": {
+              "before": null,
+              "after": "unknown"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9semg4cHUzcTIzNjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.S4G3ExmJ63hEFUeAbHGXyUsEPHMCwhjG726vcvE9lQw/image;s=1024x0;q=80",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ino0cHQ0ZXd6Nm14cS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.4DbVca8VdPctMqWNQgV_7gNYDh-LJaSl2pxOlODYVjY/image;s=1024x0;q=100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9semg4cHUzcTIzNjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.S4G3ExmJ63hEFUeAbHGXyUsEPHMCwhjG726vcvE9lQw/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ino0cHQ0ZXd6Nm14cS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.4DbVca8VdPctMqWNQgV_7gNYDh-LJaSl2pxOlODYVjY/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImJmdnZxN3J0dG1nMDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.KTfKh74XvMFaIA7Zi9r8EasohdOuCK0ODA1WuHsCCPQ/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InY1Z2s2ZnAzMzVhMy1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.wva1xyoM7sTMiKtvM_bY7fZuMMFfQErsJtHSo1I2XGA/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imo4dTBueHpyenl1bTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.QZY0ix0rwfLVLd5gE_1MAd4ApDeFTipVGHrWiGsHuxw/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImNhOGhraGkzY2FlNDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.CwZ8MFfHNQHJs415rW9libSZrEpf-LBkEdD8DzDuIvw/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImdkbW1hYmEyZ3F2My1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.z1YI_r9kR9uU2IsWtvH_UUr96v4QQGUhDG8xDGSqZJA/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJkOG1jOXd0aXMycjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Mks22_k26zS_B9BEu1NTIALt0xgeBLC79GlQWFKg8tI/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNjMDZ5eTl2dXB4ZTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.RHSZcM99dN1Mn7mLKdjust79mCDDvO1VsaYLny_tN_w/image;s=148x110"
+              ]
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Iimtv.html",
+        "modelKey": "toyota-avensis-iii-wagon",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_purchase_price",
+          "exact_engine_variant",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit",
+          "purchase_not_auction"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_purchase_price; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction"
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IiJWQ.html",
+      "modelKey": "toyota-avensis-iii-wagon",
+      "title": "Toyota Avensis 2.0 D-4D Prestige",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IiJWQ.html"
+        }
+      ],
+      "price": 36900,
+      "priceBasis": "unknown",
+      "year": 2017,
+      "mileage": 170000,
+      "bodyCode": "wagon",
+      "transmissionCode": "manual",
+      "offerType": "unknown",
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRqdjVuYTJ3cmtmbjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Gx9kSmyavJoLMsWjdBMmBuViNnXQKJBaL-9grtMB-LA/image;s=1024x0;q=80",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InZtOWRkcmMybWUyaTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.GuY7WyNsUEK3DS8qtROAtMKR_-ujZxbF3VkJDw2PrOg/image;s=1024x0;q=100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRqdjVuYTJ3cmtmbjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Gx9kSmyavJoLMsWjdBMmBuViNnXQKJBaL-9grtMB-LA/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InZtOWRkcmMybWUyaTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.GuY7WyNsUEK3DS8qtROAtMKR_-ujZxbF3VkJDw2PrOg/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InVxbWFoaXVjamVsdzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.QTPSSb39BuPxhqDFnp2CSAr3RU0hNBDj2WzzdYTJPtk/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imo3aWU2NmJlenF4ajItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.4Os8J67rseEi4R3z96eGQb-v0Ma9EbyOL8PGS9RBzaA/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImE5MnAyMnQwODZsNTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.W912JgiiPiv5XnelJ8tovJIihLQn7KM2XQGGSdiSLNk/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InZ4YTg4bnN4ZTh1eTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.vilqIrlTe0zu4P9c-oKiEZbUXGherSr-HmbMec5GhR8/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJnN2Z6bjAyc3B4MTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.IGEjUZcPZJ_tCygRtisSNIfd-L_62WuOtCUTWtjZ_nE/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9heHI5eTE1MXNoczItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.g_Og9nVY9v1O08_vCMnfbqgFn_46eO8ZhhSOKVkqURM/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjgwMzl5cmh2NHRvNDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.6Ee6Atqm5uf-oZOREqhPKIJDFWqJNcQOAzmqMEcyWBk/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imp2anQ3cHp4b3RobjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.iEqbAV7LjeCVLqAuOQxc7uZ5-rmmxOq54NVJO9ZW4Do/image;s=148x110"
+      ],
+      "location": {
+        "status": "not_provided"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-14T02:54:53.442Z",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IiJWQ.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-14T02:54:53.442Z",
+          "lastCheckedAt": "2026-11-14T02:54:53.442Z",
+          "lastVerifiedAt": "2026-11-14T02:54:53.442Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IiJWQ.html",
+            "checkedAt": "2026-11-14T02:54:53.442Z",
+            "availability": "available",
+            "note": "W treści karty widoczny przycisk kontaktu: Zobacz więcej ofert (15) tego sprzedawcy, Zobacz więcej ofert (15) tego sprzedawcy, Kontakt.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IiJWQ.html",
+                "checkedAt": "2026-11-14T02:54:53.442Z",
+                "fields": [
+                  "title",
+                  "year",
+                  "mileage",
+                  "price",
+                  "bodyCode",
+                  "transmissionCode"
+                ],
+                "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-14T02:54:53.442Z",
+      "lastVerifiedAt": "2026-11-14T02:54:53.442Z",
+      "lastAttemptAt": "2026-11-14T02:54:53.442Z",
+      "history": [
+        {
+          "eventId": "38c906f70e26b85a1969bb46d2f5f07395cdf73ab7e19785c349f408f9d57a8c",
+          "runId": "direct-import-20261114-024644745-9140b1ce",
+          "checkedAt": "2026-11-14T02:54:53.442Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IiJWQ.html",
+          "availability": "available",
+          "note": "W treści karty widoczny przycisk kontaktu: Zobacz więcej ofert (15) tego sprzedawcy, Zobacz więcej ofert (15) tego sprzedawcy, Kontakt.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IiJWQ.html",
+              "checkedAt": "2026-11-14T02:54:53.442Z",
+              "fields": [
+                "title",
+                "year",
+                "mileage",
+                "price",
+                "bodyCode",
+                "transmissionCode"
+              ],
+              "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+            }
+          ],
+          "reportedFields": {
+            "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IiJWQ.html",
+            "modelKey": "toyota-avensis-iii-wagon",
+            "title": "Toyota Avensis 2.0 D-4D Prestige",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IiJWQ.html"
+              }
+            ],
+            "price": 36900,
+            "priceBasis": "unknown",
+            "year": 2017,
+            "mileage": 170000,
+            "bodyCode": "wagon",
+            "transmissionCode": "manual",
+            "offerType": "unknown",
+            "saleType": null,
+            "lpgInstalled": null,
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRqdjVuYTJ3cmtmbjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Gx9kSmyavJoLMsWjdBMmBuViNnXQKJBaL-9grtMB-LA/image;s=1024x0;q=80",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InZtOWRkcmMybWUyaTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.GuY7WyNsUEK3DS8qtROAtMKR_-ujZxbF3VkJDw2PrOg/image;s=1024x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRqdjVuYTJ3cmtmbjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Gx9kSmyavJoLMsWjdBMmBuViNnXQKJBaL-9grtMB-LA/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InZtOWRkcmMybWUyaTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.GuY7WyNsUEK3DS8qtROAtMKR_-ujZxbF3VkJDw2PrOg/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InVxbWFoaXVjamVsdzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.QTPSSb39BuPxhqDFnp2CSAr3RU0hNBDj2WzzdYTJPtk/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imo3aWU2NmJlenF4ajItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.4Os8J67rseEi4R3z96eGQb-v0Ma9EbyOL8PGS9RBzaA/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImE5MnAyMnQwODZsNTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.W912JgiiPiv5XnelJ8tovJIihLQn7KM2XQGGSdiSLNk/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InZ4YTg4bnN4ZTh1eTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.vilqIrlTe0zu4P9c-oKiEZbUXGherSr-HmbMec5GhR8/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJnN2Z6bjAyc3B4MTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.IGEjUZcPZJ_tCygRtisSNIfd-L_62WuOtCUTWtjZ_nE/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9heHI5eTE1MXNoczItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.g_Og9nVY9v1O08_vCMnfbqgFn_46eO8ZhhSOKVkqURM/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjgwMzl5cmh2NHRvNDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.6Ee6Atqm5uf-oZOREqhPKIJDFWqJNcQOAzmqMEcyWBk/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imp2anQ3cHp4b3RobjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.iEqbAV7LjeCVLqAuOQxc7uZ5-rmmxOq54NVJO9ZW4Do/image;s=148x110"
+            ],
+            "location": {
+              "status": "not_provided"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IiJWQ.html"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "toyota-avensis-iii-wagon"
+            },
+            "title": {
+              "before": null,
+              "after": "Toyota Avensis 2.0 D-4D Prestige"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IiJWQ.html"
+                }
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 36900
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "unknown"
+            },
+            "year": {
+              "before": null,
+              "after": 2017
+            },
+            "mileage": {
+              "before": null,
+              "after": 170000
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "offerType": {
+              "before": null,
+              "after": "unknown"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRqdjVuYTJ3cmtmbjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Gx9kSmyavJoLMsWjdBMmBuViNnXQKJBaL-9grtMB-LA/image;s=1024x0;q=80",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InZtOWRkcmMybWUyaTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.GuY7WyNsUEK3DS8qtROAtMKR_-ujZxbF3VkJDw2PrOg/image;s=1024x0;q=100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRqdjVuYTJ3cmtmbjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Gx9kSmyavJoLMsWjdBMmBuViNnXQKJBaL-9grtMB-LA/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InZtOWRkcmMybWUyaTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.GuY7WyNsUEK3DS8qtROAtMKR_-ujZxbF3VkJDw2PrOg/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InVxbWFoaXVjamVsdzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.QTPSSb39BuPxhqDFnp2CSAr3RU0hNBDj2WzzdYTJPtk/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imo3aWU2NmJlenF4ajItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.4Os8J67rseEi4R3z96eGQb-v0Ma9EbyOL8PGS9RBzaA/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImE5MnAyMnQwODZsNTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.W912JgiiPiv5XnelJ8tovJIihLQn7KM2XQGGSdiSLNk/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InZ4YTg4bnN4ZTh1eTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.vilqIrlTe0zu4P9c-oKiEZbUXGherSr-HmbMec5GhR8/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJnN2Z6bjAyc3B4MTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.IGEjUZcPZJ_tCygRtisSNIfd-L_62WuOtCUTWtjZ_nE/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9heHI5eTE1MXNoczItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.g_Og9nVY9v1O08_vCMnfbqgFn_46eO8ZhhSOKVkqURM/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjgwMzl5cmh2NHRvNDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.6Ee6Atqm5uf-oZOREqhPKIJDFWqJNcQOAzmqMEcyWBk/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imp2anQ3cHp4b3RobjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.iEqbAV7LjeCVLqAuOQxc7uZ5-rmmxOq54NVJO9ZW4Do/image;s=148x110"
+              ]
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IiJWQ.html",
+        "modelKey": "toyota-avensis-iii-wagon",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_purchase_price",
+          "exact_engine_variant",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit",
+          "purchase_not_auction"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_purchase_price; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction"
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IhT2Z.html",
+      "modelKey": "toyota-avensis-iii-wagon",
+      "title": "Toyota Avensis",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IhT2Z.html"
+        }
+      ],
+      "price": 35700,
+      "priceBasis": "unknown",
+      "year": 2017,
+      "mileage": 160000,
+      "bodyCode": "wagon",
+      "transmissionCode": "manual",
+      "offerType": "unknown",
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InowdTE3eXVmc2pxajItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.4PA3eNsDvevzc_7CNwnTVSQ6EXCEdrsvW13aLkMd6cI/image;s=1024x0;q=80",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRweTY2Zjl5dWJqNDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.A1ysX4HGKhH5pUrNO7174Dw0NuqoNnDrVgCjd0cyAYc/image;s=1024x0;q=100"
+      ],
+      "location": {
+        "status": "not_provided"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-14T02:54:54.769Z",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IhT2Z.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-14T02:54:54.769Z",
+          "lastCheckedAt": "2026-11-14T02:54:54.769Z",
+          "lastVerifiedAt": "2026-11-14T02:54:54.769Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IhT2Z.html",
+            "checkedAt": "2026-11-14T02:54:54.769Z",
+            "availability": "available",
+            "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IhT2Z.html",
+                "checkedAt": "2026-11-14T02:54:54.769Z",
+                "fields": [
+                  "title",
+                  "year",
+                  "mileage",
+                  "price",
+                  "bodyCode",
+                  "transmissionCode"
+                ],
+                "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-14T02:54:54.769Z",
+      "lastVerifiedAt": "2026-11-14T02:54:54.769Z",
+      "lastAttemptAt": "2026-11-14T02:54:54.769Z",
+      "history": [
+        {
+          "eventId": "4821489e51b5ab1321038e6160616945f9ed8842087e718f4540a4b57bbe486c",
+          "runId": "direct-import-20261114-024644745-9140b1ce",
+          "checkedAt": "2026-11-14T02:54:54.769Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IhT2Z.html",
+          "availability": "available",
+          "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IhT2Z.html",
+              "checkedAt": "2026-11-14T02:54:54.769Z",
+              "fields": [
+                "title",
+                "year",
+                "mileage",
+                "price",
+                "bodyCode",
+                "transmissionCode"
+              ],
+              "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+            }
+          ],
+          "reportedFields": {
+            "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IhT2Z.html",
+            "modelKey": "toyota-avensis-iii-wagon",
+            "title": "Toyota Avensis",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IhT2Z.html"
+              }
+            ],
+            "price": 35700,
+            "priceBasis": "unknown",
+            "year": 2017,
+            "mileage": 160000,
+            "bodyCode": "wagon",
+            "transmissionCode": "manual",
+            "offerType": "unknown",
+            "saleType": null,
+            "lpgInstalled": null,
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InowdTE3eXVmc2pxajItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.4PA3eNsDvevzc_7CNwnTVSQ6EXCEdrsvW13aLkMd6cI/image;s=1024x0;q=80",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRweTY2Zjl5dWJqNDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.A1ysX4HGKhH5pUrNO7174Dw0NuqoNnDrVgCjd0cyAYc/image;s=1024x0;q=100"
+            ],
+            "location": {
+              "status": "not_provided"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IhT2Z.html"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "toyota-avensis-iii-wagon"
+            },
+            "title": {
+              "before": null,
+              "after": "Toyota Avensis"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IhT2Z.html"
+                }
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 35700
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "unknown"
+            },
+            "year": {
+              "before": null,
+              "after": 2017
+            },
+            "mileage": {
+              "before": null,
+              "after": 160000
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "offerType": {
+              "before": null,
+              "after": "unknown"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InowdTE3eXVmc2pxajItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.4PA3eNsDvevzc_7CNwnTVSQ6EXCEdrsvW13aLkMd6cI/image;s=1024x0;q=80",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRweTY2Zjl5dWJqNDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.A1ysX4HGKhH5pUrNO7174Dw0NuqoNnDrVgCjd0cyAYc/image;s=1024x0;q=100"
+              ]
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IhT2Z.html",
+        "modelKey": "toyota-avensis-iii-wagon",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_purchase_price",
+          "exact_engine_variant",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit",
+          "purchase_not_auction"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_purchase_price; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction"
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IgKPF.html",
+      "modelKey": "toyota-avensis-iii-wagon",
+      "title": "Toyota Avensis",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IgKPF.html"
+        }
+      ],
+      "price": 55000,
+      "priceBasis": "unknown",
+      "year": 2018,
+      "mileage": 147000,
+      "bodyCode": "wagon",
+      "transmissionCode": "automatic",
+      "offerType": "unknown",
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImkzdmR2ZHVjZDZzeS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.BmkUkFl1cSQPXh-Sv4jOSHnSr4iUVyA6cwPAR5FJBiY/image;s=1024x0;q=80",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijc4eDUzN3JheHQ5cDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19._yIrHJPsupfjg8zje6mjrCIsDdel1pgIEowJjmJNyHs/image;s=1024x0;q=100"
+      ],
+      "location": {
+        "status": "not_provided"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-14T02:54:54.994Z",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IgKPF.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-14T02:54:54.994Z",
+          "lastCheckedAt": "2026-11-14T02:54:54.994Z",
+          "lastVerifiedAt": "2026-11-14T02:54:54.994Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IgKPF.html",
+            "checkedAt": "2026-11-14T02:54:54.994Z",
+            "availability": "available",
+            "note": "W treści karty widoczny przycisk kontaktu: Zobacz więcej ofert (16) tego sprzedawcy, Zobacz więcej ofert (16) tego sprzedawcy, Kontakt.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IgKPF.html",
+                "checkedAt": "2026-11-14T02:54:54.994Z",
+                "fields": [
+                  "title",
+                  "year",
+                  "mileage",
+                  "price",
+                  "bodyCode",
+                  "transmissionCode"
+                ],
+                "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-14T02:54:54.994Z",
+      "lastVerifiedAt": "2026-11-14T02:54:54.994Z",
+      "lastAttemptAt": "2026-11-14T02:54:54.994Z",
+      "history": [
+        {
+          "eventId": "268deed1273dedca443355d58a40a198665d3d5a02f9ed7881fad0665ed33a02",
+          "runId": "direct-import-20261114-024644745-9140b1ce",
+          "checkedAt": "2026-11-14T02:54:54.994Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IgKPF.html",
+          "availability": "available",
+          "note": "W treści karty widoczny przycisk kontaktu: Zobacz więcej ofert (16) tego sprzedawcy, Zobacz więcej ofert (16) tego sprzedawcy, Kontakt.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IgKPF.html",
+              "checkedAt": "2026-11-14T02:54:54.994Z",
+              "fields": [
+                "title",
+                "year",
+                "mileage",
+                "price",
+                "bodyCode",
+                "transmissionCode"
+              ],
+              "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+            }
+          ],
+          "reportedFields": {
+            "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IgKPF.html",
+            "modelKey": "toyota-avensis-iii-wagon",
+            "title": "Toyota Avensis",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IgKPF.html"
+              }
+            ],
+            "price": 55000,
+            "priceBasis": "unknown",
+            "year": 2018,
+            "mileage": 147000,
+            "bodyCode": "wagon",
+            "transmissionCode": "automatic",
+            "offerType": "unknown",
+            "saleType": null,
+            "lpgInstalled": null,
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImkzdmR2ZHVjZDZzeS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.BmkUkFl1cSQPXh-Sv4jOSHnSr4iUVyA6cwPAR5FJBiY/image;s=1024x0;q=80",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijc4eDUzN3JheHQ5cDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19._yIrHJPsupfjg8zje6mjrCIsDdel1pgIEowJjmJNyHs/image;s=1024x0;q=100"
+            ],
+            "location": {
+              "status": "not_provided"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IgKPF.html"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "toyota-avensis-iii-wagon"
+            },
+            "title": {
+              "before": null,
+              "after": "Toyota Avensis"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IgKPF.html"
+                }
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 55000
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "unknown"
+            },
+            "year": {
+              "before": null,
+              "after": 2018
+            },
+            "mileage": {
+              "before": null,
+              "after": 147000
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "automatic"
+            },
+            "offerType": {
+              "before": null,
+              "after": "unknown"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImkzdmR2ZHVjZDZzeS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.BmkUkFl1cSQPXh-Sv4jOSHnSr4iUVyA6cwPAR5FJBiY/image;s=1024x0;q=80",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijc4eDUzN3JheHQ5cDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19._yIrHJPsupfjg8zje6mjrCIsDdel1pgIEowJjmJNyHs/image;s=1024x0;q=100"
+              ]
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IgKPF.html",
+        "modelKey": "toyota-avensis-iii-wagon",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_purchase_price",
+          "exact_engine_variant",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit",
+          "purchase_not_auction"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_purchase_price; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction"
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6I3sUk.html",
+      "modelKey": "toyota-avensis-iii-wagon",
+      "title": "Toyota Avensis 2.0 D-4D Premium",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6I3sUk.html"
+        }
+      ],
+      "price": 45000,
+      "priceBasis": "unknown",
+      "year": 2017,
+      "mileage": 120000,
+      "bodyCode": "wagon",
+      "transmissionCode": "manual",
+      "offerType": "unknown",
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InVxYmVqcHMyODZqZDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Kqo3Xy3O1sTQsn6EAWDkRE7mySF6kpwHrTUET6MEAAI/image;s=1024x0;q=80",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im8zcm81YzhkcHFodzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.tL7HIQ4VYwBejh9HTISCVaWuxEjeHvb1I5hDn_9zGPU/image;s=1024x0;q=100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InVxYmVqcHMyODZqZDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Kqo3Xy3O1sTQsn6EAWDkRE7mySF6kpwHrTUET6MEAAI/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InM1MXlxcWZoeXdxdC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.2Ti4FeU1PTp81hhbn4mw1KnfI-j8OBKxdsnKoyG2RWQ/image;s=148x110"
+      ],
+      "location": {
+        "status": "not_provided"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-14T02:54:55.853Z",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6I3sUk.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-14T02:54:55.853Z",
+          "lastCheckedAt": "2026-11-14T02:54:55.853Z",
+          "lastVerifiedAt": "2026-11-14T02:54:55.853Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6I3sUk.html",
+            "checkedAt": "2026-11-14T02:54:55.853Z",
+            "availability": "available",
+            "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6I3sUk.html",
+                "checkedAt": "2026-11-14T02:54:55.853Z",
+                "fields": [
+                  "title",
+                  "year",
+                  "mileage",
+                  "price",
+                  "bodyCode",
+                  "transmissionCode"
+                ],
+                "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-14T02:54:55.853Z",
+      "lastVerifiedAt": "2026-11-14T02:54:55.853Z",
+      "lastAttemptAt": "2026-11-14T02:54:55.853Z",
+      "history": [
+        {
+          "eventId": "5ac099bc1462a6ba27fe8dd5c15faba0ac9d8166494d5408d74e783af58b8fb2",
+          "runId": "direct-import-20261114-024644745-9140b1ce",
+          "checkedAt": "2026-11-14T02:54:55.853Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6I3sUk.html",
+          "availability": "available",
+          "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6I3sUk.html",
+              "checkedAt": "2026-11-14T02:54:55.853Z",
+              "fields": [
+                "title",
+                "year",
+                "mileage",
+                "price",
+                "bodyCode",
+                "transmissionCode"
+              ],
+              "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+            }
+          ],
+          "reportedFields": {
+            "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6I3sUk.html",
+            "modelKey": "toyota-avensis-iii-wagon",
+            "title": "Toyota Avensis 2.0 D-4D Premium",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6I3sUk.html"
+              }
+            ],
+            "price": 45000,
+            "priceBasis": "unknown",
+            "year": 2017,
+            "mileage": 120000,
+            "bodyCode": "wagon",
+            "transmissionCode": "manual",
+            "offerType": "unknown",
+            "saleType": null,
+            "lpgInstalled": null,
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InVxYmVqcHMyODZqZDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Kqo3Xy3O1sTQsn6EAWDkRE7mySF6kpwHrTUET6MEAAI/image;s=1024x0;q=80",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im8zcm81YzhkcHFodzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.tL7HIQ4VYwBejh9HTISCVaWuxEjeHvb1I5hDn_9zGPU/image;s=1024x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InVxYmVqcHMyODZqZDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Kqo3Xy3O1sTQsn6EAWDkRE7mySF6kpwHrTUET6MEAAI/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InM1MXlxcWZoeXdxdC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.2Ti4FeU1PTp81hhbn4mw1KnfI-j8OBKxdsnKoyG2RWQ/image;s=148x110"
+            ],
+            "location": {
+              "status": "not_provided"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6I3sUk.html"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "toyota-avensis-iii-wagon"
+            },
+            "title": {
+              "before": null,
+              "after": "Toyota Avensis 2.0 D-4D Premium"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6I3sUk.html"
+                }
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 45000
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "unknown"
+            },
+            "year": {
+              "before": null,
+              "after": 2017
+            },
+            "mileage": {
+              "before": null,
+              "after": 120000
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "offerType": {
+              "before": null,
+              "after": "unknown"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InVxYmVqcHMyODZqZDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Kqo3Xy3O1sTQsn6EAWDkRE7mySF6kpwHrTUET6MEAAI/image;s=1024x0;q=80",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im8zcm81YzhkcHFodzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.tL7HIQ4VYwBejh9HTISCVaWuxEjeHvb1I5hDn_9zGPU/image;s=1024x0;q=100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InVxYmVqcHMyODZqZDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Kqo3Xy3O1sTQsn6EAWDkRE7mySF6kpwHrTUET6MEAAI/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InM1MXlxcWZoeXdxdC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.2Ti4FeU1PTp81hhbn4mw1KnfI-j8OBKxdsnKoyG2RWQ/image;s=148x110"
+              ]
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6I3sUk.html",
+        "modelKey": "toyota-avensis-iii-wagon",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_purchase_price",
+          "exact_engine_variant",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit",
+          "purchase_not_auction"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_purchase_price; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction"
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IisqC.html",
+      "modelKey": "toyota-avensis-iii-wagon",
+      "title": "Toyota Avensis Touring Sports 1.8 Multidrive S Edition-S",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IisqC.html"
+        }
+      ],
+      "price": 51500,
+      "priceBasis": "unknown",
+      "year": 2017,
+      "mileage": 135000,
+      "bodyCode": "wagon",
+      "transmissionCode": "automatic",
+      "offerType": "unknown",
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InlqdDhoYXF1eHJmNi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.oYBcDwvm5bjI92O1nqqh6TsuX2G_OZyr4HS78C13BZ8/image;s=1024x0;q=80",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IndqN2MwcGVxMXc2cDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.-V2LUvNN-GA73FRkUvUF3DchOtZZyvJu77JGjxqKM5U/image;s=1024x0;q=100"
+      ],
+      "location": {
+        "status": "not_provided"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-14T02:54:56.597Z",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IisqC.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-14T02:54:56.597Z",
+          "lastCheckedAt": "2026-11-14T02:54:56.597Z",
+          "lastVerifiedAt": "2026-11-14T02:54:56.597Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IisqC.html",
+            "checkedAt": "2026-11-14T02:54:56.597Z",
+            "availability": "available",
+            "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IisqC.html",
+                "checkedAt": "2026-11-14T02:54:56.597Z",
+                "fields": [
+                  "title",
+                  "year",
+                  "mileage",
+                  "price",
+                  "bodyCode",
+                  "transmissionCode"
+                ],
+                "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-14T02:54:56.597Z",
+      "lastVerifiedAt": "2026-11-14T02:54:56.597Z",
+      "lastAttemptAt": "2026-11-14T02:54:56.597Z",
+      "history": [
+        {
+          "eventId": "a830bd274abb7ec490d9a193058371dd83c3ff564e0b72c95b2e999858feacce",
+          "runId": "direct-import-20261114-024644745-9140b1ce",
+          "checkedAt": "2026-11-14T02:54:56.597Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IisqC.html",
+          "availability": "available",
+          "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IisqC.html",
+              "checkedAt": "2026-11-14T02:54:56.597Z",
+              "fields": [
+                "title",
+                "year",
+                "mileage",
+                "price",
+                "bodyCode",
+                "transmissionCode"
+              ],
+              "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+            }
+          ],
+          "reportedFields": {
+            "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IisqC.html",
+            "modelKey": "toyota-avensis-iii-wagon",
+            "title": "Toyota Avensis Touring Sports 1.8 Multidrive S Edition-S",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IisqC.html"
+              }
+            ],
+            "price": 51500,
+            "priceBasis": "unknown",
+            "year": 2017,
+            "mileage": 135000,
+            "bodyCode": "wagon",
+            "transmissionCode": "automatic",
+            "offerType": "unknown",
+            "saleType": null,
+            "lpgInstalled": null,
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InlqdDhoYXF1eHJmNi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.oYBcDwvm5bjI92O1nqqh6TsuX2G_OZyr4HS78C13BZ8/image;s=1024x0;q=80",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IndqN2MwcGVxMXc2cDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.-V2LUvNN-GA73FRkUvUF3DchOtZZyvJu77JGjxqKM5U/image;s=1024x0;q=100"
+            ],
+            "location": {
+              "status": "not_provided"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IisqC.html"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "toyota-avensis-iii-wagon"
+            },
+            "title": {
+              "before": null,
+              "after": "Toyota Avensis Touring Sports 1.8 Multidrive S Edition-S"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IisqC.html"
+                }
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 51500
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "unknown"
+            },
+            "year": {
+              "before": null,
+              "after": 2017
+            },
+            "mileage": {
+              "before": null,
+              "after": 135000
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "automatic"
+            },
+            "offerType": {
+              "before": null,
+              "after": "unknown"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InlqdDhoYXF1eHJmNi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.oYBcDwvm5bjI92O1nqqh6TsuX2G_OZyr4HS78C13BZ8/image;s=1024x0;q=80",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IndqN2MwcGVxMXc2cDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.-V2LUvNN-GA73FRkUvUF3DchOtZZyvJu77JGjxqKM5U/image;s=1024x0;q=100"
+              ]
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IisqC.html",
+        "modelKey": "toyota-avensis-iii-wagon",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_purchase_price",
+          "exact_engine_variant",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit",
+          "purchase_not_auction"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_purchase_price; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction"
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6I9M8C.html",
+      "modelKey": "toyota-avensis-iii-wagon",
+      "title": "Toyota Avensis 2.0 D-4D Prestige",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6I9M8C.html"
+        }
+      ],
+      "price": 40000,
+      "priceBasis": "unknown",
+      "year": 2017,
+      "mileage": 169200,
+      "bodyCode": "wagon",
+      "transmissionCode": "manual",
+      "offerType": "unknown",
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imt1amQ3dTR1aXB6bjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.b4WCb3q4vjwagy_Ifz4m5-K7_pXgNAG1jm90bw79iMc/image;s=1024x0;q=80",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InV1MXlqbGk1Z2VpbDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.VU8E7HZkVbqNse757NhFtUWb7EeWqqzuK1o0meiKdbA/image;s=1024x0;q=100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InV1MXlqbGk1Z2VpbDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.VU8E7HZkVbqNse757NhFtUWb7EeWqqzuK1o0meiKdbA/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im0yMzI0YWR6ZDdibzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Z1LjL9LfRO3XkQ5qu4PljcuyPFdAanJrbkpcJMWzpWk/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhhOWh4dWZ0eGVzcjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.k37vOToTDGJoh_arMIQdlfi17qc9ADPIub7aF-5DGek/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImRhb3F4dDF4Y2cyYTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.pJC6auvJgBqV5TALzuPSnMQZXS_uxD52ULHEhbUdH7s/image;s=148x110"
+      ],
+      "location": {
+        "status": "not_provided"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-14T02:54:56.814Z",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6I9M8C.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-14T02:54:56.814Z",
+          "lastCheckedAt": "2026-11-14T02:54:56.814Z",
+          "lastVerifiedAt": "2026-11-14T02:54:56.814Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6I9M8C.html",
+            "checkedAt": "2026-11-14T02:54:56.814Z",
+            "availability": "available",
+            "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6I9M8C.html",
+                "checkedAt": "2026-11-14T02:54:56.814Z",
+                "fields": [
+                  "title",
+                  "year",
+                  "mileage",
+                  "price",
+                  "bodyCode",
+                  "transmissionCode"
+                ],
+                "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-14T02:54:56.814Z",
+      "lastVerifiedAt": "2026-11-14T02:54:56.814Z",
+      "lastAttemptAt": "2026-11-14T02:54:56.814Z",
+      "history": [
+        {
+          "eventId": "d9a94b2200180f7112c7e460bcbe6699a05d028bda3742ef4e586eba7532d5c1",
+          "runId": "direct-import-20261114-024644745-9140b1ce",
+          "checkedAt": "2026-11-14T02:54:56.814Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6I9M8C.html",
+          "availability": "available",
+          "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6I9M8C.html",
+              "checkedAt": "2026-11-14T02:54:56.814Z",
+              "fields": [
+                "title",
+                "year",
+                "mileage",
+                "price",
+                "bodyCode",
+                "transmissionCode"
+              ],
+              "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+            }
+          ],
+          "reportedFields": {
+            "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6I9M8C.html",
+            "modelKey": "toyota-avensis-iii-wagon",
+            "title": "Toyota Avensis 2.0 D-4D Prestige",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6I9M8C.html"
+              }
+            ],
+            "price": 40000,
+            "priceBasis": "unknown",
+            "year": 2017,
+            "mileage": 169200,
+            "bodyCode": "wagon",
+            "transmissionCode": "manual",
+            "offerType": "unknown",
+            "saleType": null,
+            "lpgInstalled": null,
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imt1amQ3dTR1aXB6bjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.b4WCb3q4vjwagy_Ifz4m5-K7_pXgNAG1jm90bw79iMc/image;s=1024x0;q=80",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InV1MXlqbGk1Z2VpbDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.VU8E7HZkVbqNse757NhFtUWb7EeWqqzuK1o0meiKdbA/image;s=1024x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InV1MXlqbGk1Z2VpbDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.VU8E7HZkVbqNse757NhFtUWb7EeWqqzuK1o0meiKdbA/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im0yMzI0YWR6ZDdibzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Z1LjL9LfRO3XkQ5qu4PljcuyPFdAanJrbkpcJMWzpWk/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhhOWh4dWZ0eGVzcjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.k37vOToTDGJoh_arMIQdlfi17qc9ADPIub7aF-5DGek/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImRhb3F4dDF4Y2cyYTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.pJC6auvJgBqV5TALzuPSnMQZXS_uxD52ULHEhbUdH7s/image;s=148x110"
+            ],
+            "location": {
+              "status": "not_provided"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6I9M8C.html"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "toyota-avensis-iii-wagon"
+            },
+            "title": {
+              "before": null,
+              "after": "Toyota Avensis 2.0 D-4D Prestige"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6I9M8C.html"
+                }
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 40000
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "unknown"
+            },
+            "year": {
+              "before": null,
+              "after": 2017
+            },
+            "mileage": {
+              "before": null,
+              "after": 169200
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "offerType": {
+              "before": null,
+              "after": "unknown"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imt1amQ3dTR1aXB6bjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.b4WCb3q4vjwagy_Ifz4m5-K7_pXgNAG1jm90bw79iMc/image;s=1024x0;q=80",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InV1MXlqbGk1Z2VpbDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.VU8E7HZkVbqNse757NhFtUWb7EeWqqzuK1o0meiKdbA/image;s=1024x0;q=100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InV1MXlqbGk1Z2VpbDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.VU8E7HZkVbqNse757NhFtUWb7EeWqqzuK1o0meiKdbA/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im0yMzI0YWR6ZDdibzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Z1LjL9LfRO3XkQ5qu4PljcuyPFdAanJrbkpcJMWzpWk/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhhOWh4dWZ0eGVzcjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.k37vOToTDGJoh_arMIQdlfi17qc9ADPIub7aF-5DGek/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImRhb3F4dDF4Y2cyYTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.pJC6auvJgBqV5TALzuPSnMQZXS_uxD52ULHEhbUdH7s/image;s=148x110"
+              ]
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6I9M8C.html",
+        "modelKey": "toyota-avensis-iii-wagon",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_purchase_price",
+          "exact_engine_variant",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit",
+          "purchase_not_auction"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_purchase_price; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction"
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Ijr8T.html",
+      "modelKey": "toyota-avensis-iii-wagon",
+      "title": "Toyota Avensis 2.0 D-4D Premium",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Ijr8T.html"
+        }
+      ],
+      "price": 43000,
+      "priceBasis": "unknown",
+      "year": 2017,
+      "mileage": 154895,
+      "bodyCode": "wagon",
+      "transmissionCode": "manual",
+      "offerType": "unknown",
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im01bmRoa2xjdDN3eDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.hZe80tJZcF4AuWnBb0Nko-VAT2vysa3Af3mTm_zEfpc/image;s=1024x0;q=80",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImlhMDFtNWdkY3U1MDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.NpDv6O4uRj6Tve-9981nj6_EuxCwV05Te4wwBrKA9gA/image;s=1024x0;q=100"
+      ],
+      "location": {
+        "status": "not_provided"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-14T02:54:58.368Z",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Ijr8T.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-14T02:54:58.368Z",
+          "lastCheckedAt": "2026-11-14T02:54:58.368Z",
+          "lastVerifiedAt": "2026-11-14T02:54:58.368Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Ijr8T.html",
+            "checkedAt": "2026-11-14T02:54:58.368Z",
+            "availability": "available",
+            "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Ijr8T.html",
+                "checkedAt": "2026-11-14T02:54:58.368Z",
+                "fields": [
+                  "title",
+                  "year",
+                  "mileage",
+                  "price",
+                  "bodyCode",
+                  "transmissionCode"
+                ],
+                "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-14T02:54:58.368Z",
+      "lastVerifiedAt": "2026-11-14T02:54:58.368Z",
+      "lastAttemptAt": "2026-11-14T02:54:58.368Z",
+      "history": [
+        {
+          "eventId": "9202144914eab8dbb17c96898ca65c5e634fbca6de10f41b000900dcd272f74b",
+          "runId": "direct-import-20261114-024644745-9140b1ce",
+          "checkedAt": "2026-11-14T02:54:58.368Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Ijr8T.html",
+          "availability": "available",
+          "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Ijr8T.html",
+              "checkedAt": "2026-11-14T02:54:58.368Z",
+              "fields": [
+                "title",
+                "year",
+                "mileage",
+                "price",
+                "bodyCode",
+                "transmissionCode"
+              ],
+              "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+            }
+          ],
+          "reportedFields": {
+            "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Ijr8T.html",
+            "modelKey": "toyota-avensis-iii-wagon",
+            "title": "Toyota Avensis 2.0 D-4D Premium",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Ijr8T.html"
+              }
+            ],
+            "price": 43000,
+            "priceBasis": "unknown",
+            "year": 2017,
+            "mileage": 154895,
+            "bodyCode": "wagon",
+            "transmissionCode": "manual",
+            "offerType": "unknown",
+            "saleType": null,
+            "lpgInstalled": null,
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im01bmRoa2xjdDN3eDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.hZe80tJZcF4AuWnBb0Nko-VAT2vysa3Af3mTm_zEfpc/image;s=1024x0;q=80",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImlhMDFtNWdkY3U1MDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.NpDv6O4uRj6Tve-9981nj6_EuxCwV05Te4wwBrKA9gA/image;s=1024x0;q=100"
+            ],
+            "location": {
+              "status": "not_provided"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Ijr8T.html"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "toyota-avensis-iii-wagon"
+            },
+            "title": {
+              "before": null,
+              "after": "Toyota Avensis 2.0 D-4D Premium"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Ijr8T.html"
+                }
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 43000
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "unknown"
+            },
+            "year": {
+              "before": null,
+              "after": 2017
+            },
+            "mileage": {
+              "before": null,
+              "after": 154895
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "offerType": {
+              "before": null,
+              "after": "unknown"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im01bmRoa2xjdDN3eDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.hZe80tJZcF4AuWnBb0Nko-VAT2vysa3Af3mTm_zEfpc/image;s=1024x0;q=80",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImlhMDFtNWdkY3U1MDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.NpDv6O4uRj6Tve-9981nj6_EuxCwV05Te4wwBrKA9gA/image;s=1024x0;q=100"
+              ]
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6Ijr8T.html",
+        "modelKey": "toyota-avensis-iii-wagon",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_purchase_price",
+          "exact_engine_variant",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit",
+          "purchase_not_auction"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_purchase_price; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction"
+    },
+    {
+      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IhH4p.html",
+      "modelKey": "toyota-avensis-iii-wagon",
+      "title": "Toyota Avensis",
+      "urls": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IhH4p.html"
+        }
+      ],
+      "price": 39500,
+      "priceBasis": "unknown",
+      "year": 2019,
+      "mileage": 124862,
+      "bodyCode": "wagon",
+      "transmissionCode": "manual",
+      "offerType": "unknown",
+      "photos": [
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImtyaW13c2tnN25vNTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.QMDc4LKCENkj-TiuD5lBlGQBI-69qedxrbs1L5F-M18/image;s=1024x0;q=80",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imk0MGVsdXc5endqcjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.rtvLm1RmvcMievOe-MPDGRPv6xlJw5ZvtVhbOxEh-Ys/image;s=1024x0;q=100",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImtyaW13c2tnN25vNTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.QMDc4LKCENkj-TiuD5lBlGQBI-69qedxrbs1L5F-M18/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imk0MGVsdXc5endqcjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.rtvLm1RmvcMievOe-MPDGRPv6xlJw5ZvtVhbOxEh-Ys/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijh1b2sxYzVxNzB5Ni1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.42OAYc-k1S2HxUljogtgC9Tweh-gz0k8qA_IMHxBJsI/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImNrbm00ZWJsOW9tcDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.qLiQbLLmU4B8MRqnpGL57Fv_CappD1c5_gICg3gxZWk/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjhhMTczcmo5eXE1czItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.5Zk5PHS1-5UH9hWN5JFRei7z72OaKiUu5O6jyQz_tUI/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImozdW94Y2xwaXRjeTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.7O0Wq9T_dcRjCmlETZ0A7uGt0yjSG4KwDlXGuWe0Dcg/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjlpdGFoMHBpeHVmNTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.JsBE_dv7P6ZLc7ErCS4LTCs7R_28VO-ZNgJLCXevO70/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjYzdWNvMnkyazVodzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.l-K7m7w6BvmStpV8JSggCMr0AF3U7zTYBptpLnZjP2g/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InNscmtxMTRzNnV6cTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.LzUy-Lc54zwU8Oui6V8JTQ272lNRWvcYyR4gMBpj6-s/image;s=148x110",
+        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjAyamh0amhvdHQ3azItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.E9sm-ZLbdXvVpdrqY-i0CJuzDxgjiho2JYSrZutO1hM/image;s=148x110"
+      ],
+      "location": {
+        "status": "not_provided"
+      },
+      "lpgInstalled": null,
+      "firstSeenAt": "2026-11-14T02:54:59.415Z",
+      "listingStates": [
+        {
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IhH4p.html",
+          "status": "available",
+          "lastAttemptAt": "2026-11-14T02:54:59.415Z",
+          "lastCheckedAt": "2026-11-14T02:54:59.415Z",
+          "lastVerifiedAt": "2026-11-14T02:54:59.415Z",
+          "lastObservation": {
+            "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IhH4p.html",
+            "checkedAt": "2026-11-14T02:54:59.415Z",
+            "availability": "available",
+            "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
+            "evidence": [
+              {
+                "kind": "seller",
+                "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IhH4p.html",
+                "checkedAt": "2026-11-14T02:54:59.415Z",
+                "fields": [
+                  "title",
+                  "year",
+                  "mileage",
+                  "price",
+                  "bodyCode",
+                  "transmissionCode"
+                ],
+                "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+              }
+            ]
+          }
+        }
+      ],
+      "lastCheckedAt": "2026-11-14T02:54:59.415Z",
+      "lastVerifiedAt": "2026-11-14T02:54:59.415Z",
+      "lastAttemptAt": "2026-11-14T02:54:59.415Z",
+      "history": [
+        {
+          "eventId": "b642f9e624921d037e481432b5e0333967af084e7fc5383a904c717ffdea2be7",
+          "runId": "direct-import-20261114-024644745-9140b1ce",
+          "checkedAt": "2026-11-14T02:54:59.415Z",
+          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IhH4p.html",
+          "availability": "available",
+          "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
+          "httpStatus": null,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "kind": "seller",
+              "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IhH4p.html",
+              "checkedAt": "2026-11-14T02:54:59.415Z",
+              "fields": [
+                "title",
+                "year",
+                "mileage",
+                "price",
+                "bodyCode",
+                "transmissionCode"
+              ],
+              "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
+            }
+          ],
+          "reportedFields": {
+            "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IhH4p.html",
+            "modelKey": "toyota-avensis-iii-wagon",
+            "title": "Toyota Avensis",
+            "urls": [
+              {
+                "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IhH4p.html"
+              }
+            ],
+            "price": 39500,
+            "priceBasis": "unknown",
+            "year": 2019,
+            "mileage": 124862,
+            "bodyCode": "wagon",
+            "transmissionCode": "manual",
+            "offerType": "unknown",
+            "saleType": null,
+            "lpgInstalled": null,
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImtyaW13c2tnN25vNTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.QMDc4LKCENkj-TiuD5lBlGQBI-69qedxrbs1L5F-M18/image;s=1024x0;q=80",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imk0MGVsdXc5endqcjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.rtvLm1RmvcMievOe-MPDGRPv6xlJw5ZvtVhbOxEh-Ys/image;s=1024x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImtyaW13c2tnN25vNTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.QMDc4LKCENkj-TiuD5lBlGQBI-69qedxrbs1L5F-M18/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imk0MGVsdXc5endqcjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.rtvLm1RmvcMievOe-MPDGRPv6xlJw5ZvtVhbOxEh-Ys/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijh1b2sxYzVxNzB5Ni1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.42OAYc-k1S2HxUljogtgC9Tweh-gz0k8qA_IMHxBJsI/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImNrbm00ZWJsOW9tcDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.qLiQbLLmU4B8MRqnpGL57Fv_CappD1c5_gICg3gxZWk/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjhhMTczcmo5eXE1czItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.5Zk5PHS1-5UH9hWN5JFRei7z72OaKiUu5O6jyQz_tUI/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImozdW94Y2xwaXRjeTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.7O0Wq9T_dcRjCmlETZ0A7uGt0yjSG4KwDlXGuWe0Dcg/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjlpdGFoMHBpeHVmNTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.JsBE_dv7P6ZLc7ErCS4LTCs7R_28VO-ZNgJLCXevO70/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjYzdWNvMnkyazVodzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.l-K7m7w6BvmStpV8JSggCMr0AF3U7zTYBptpLnZjP2g/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InNscmtxMTRzNnV6cTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.LzUy-Lc54zwU8Oui6V8JTQ272lNRWvcYyR4gMBpj6-s/image;s=148x110",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjAyamh0amhvdHQ3azItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.E9sm-ZLbdXvVpdrqY-i0CJuzDxgjiho2JYSrZutO1hM/image;s=148x110"
+            ],
+            "location": {
+              "status": "not_provided"
+            }
+          },
+          "changes": {
+            "id": {
+              "before": null,
+              "after": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IhH4p.html"
+            },
+            "modelKey": {
+              "before": null,
+              "after": "toyota-avensis-iii-wagon"
+            },
+            "title": {
+              "before": null,
+              "after": "Toyota Avensis"
+            },
+            "urls": {
+              "before": null,
+              "after": [
+                {
+                  "url": "https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IhH4p.html"
+                }
+              ]
+            },
+            "price": {
+              "before": null,
+              "after": 39500
+            },
+            "priceBasis": {
+              "before": null,
+              "after": "unknown"
+            },
+            "year": {
+              "before": null,
+              "after": 2019
+            },
+            "mileage": {
+              "before": null,
+              "after": 124862
+            },
+            "bodyCode": {
+              "before": null,
+              "after": "wagon"
+            },
+            "transmissionCode": {
+              "before": null,
+              "after": "manual"
+            },
+            "offerType": {
+              "before": null,
+              "after": "unknown"
+            },
+            "photos": {
+              "before": null,
+              "after": [
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImtyaW13c2tnN25vNTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.QMDc4LKCENkj-TiuD5lBlGQBI-69qedxrbs1L5F-M18/image;s=1024x0;q=80",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imk0MGVsdXc5endqcjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.rtvLm1RmvcMievOe-MPDGRPv6xlJw5ZvtVhbOxEh-Ys/image;s=1024x0;q=100",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImtyaW13c2tnN25vNTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.QMDc4LKCENkj-TiuD5lBlGQBI-69qedxrbs1L5F-M18/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imk0MGVsdXc5endqcjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.rtvLm1RmvcMievOe-MPDGRPv6xlJw5ZvtVhbOxEh-Ys/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijh1b2sxYzVxNzB5Ni1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.42OAYc-k1S2HxUljogtgC9Tweh-gz0k8qA_IMHxBJsI/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImNrbm00ZWJsOW9tcDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.qLiQbLLmU4B8MRqnpGL57Fv_CappD1c5_gICg3gxZWk/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjhhMTczcmo5eXE1czItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.5Zk5PHS1-5UH9hWN5JFRei7z72OaKiUu5O6jyQz_tUI/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImozdW94Y2xwaXRjeTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.7O0Wq9T_dcRjCmlETZ0A7uGt0yjSG4KwDlXGuWe0Dcg/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjlpdGFoMHBpeHVmNTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.JsBE_dv7P6ZLc7ErCS4LTCs7R_28VO-ZNgJLCXevO70/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjYzdWNvMnkyazVodzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.l-K7m7w6BvmStpV8JSggCMr0AF3U7zTYBptpLnZjP2g/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InNscmtxMTRzNnV6cTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.LzUy-Lc54zwU8Oui6V8JTQ272lNRWvcYyR4gMBpj6-s/image;s=148x110",
+                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjAyamh0amhvdHQ3azItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.E9sm-ZLbdXvVpdrqY-i0CJuzDxgjiho2JYSrZutO1hM/image;s=148x110"
+              ]
+            },
+            "location": {
+              "before": null,
+              "after": {
+                "status": "not_provided"
+              }
+            }
+          }
+        }
+      ],
+      "assessment": {
+        "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-avensis-ID6IhH4p.html",
+        "modelKey": "toyota-avensis-iii-wagon",
+        "verdict": "check",
+        "failures": [],
+        "unknowns": [
+          "gross_purchase_price",
+          "exact_engine_variant",
+          "camera_or_compatible_retrofit",
+          "structural_history",
+          "stroller_and_family_fit",
+          "purchase_not_auction"
+        ],
+        "preferenceNotes": []
+      },
+      "verdict": "check",
+      "verdictTitle": "Do weryfikacji",
+      "verdictNote": "gross_purchase_price; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction"
     }
   ],
   "archivedOffers": []

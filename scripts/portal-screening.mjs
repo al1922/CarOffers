@@ -3,6 +3,24 @@ export function normalizeText(value) {
   return String(value ?? "").normalize("NFD").replace(/\p{Diacritic}/gu, "").toLocaleLowerCase("pl-PL");
 }
 
+const NON_VEHICLE_TITLE_PATTERNS = [
+  /\b(?:czesci samochodowe|czesci do samochodu|czesci zamienne|na czesci|sprzedam czesci|spare parts)\b/,
+  /\b(?:kanapa tyl(?:na)?|fotel samochodowy|siedzenie samochodowe|zaglowek samochodowy)\b/,
+  /\b(?:zaslonki? magnetyczne|zaslonki do samochodu|styropian|wypelnienie schowka|wypelnienie (?:do )?bagaznika)\b/,
+  /\b(?:mata bagaznika|wykladzina bagaznika|dywaniki samochodowe|pokrowiec samochodowy|antena samochodowa|antena)\b/,
+  /\b(?:lampa|lampy)\b.{0,35}\b(?:tyl(?:na|ny|ne)?|przed(?:nia|ni|nie)?|lewa|prawa|klape|led)\b/,
+  /\b(?:tyl(?:na)?(?: lewa| prawa)?|przednia(?: lewa| prawa)?)\s+lampa(?:y)?\b/,
+  /\b(?:reflektor|zderzak|blotnik|klapa bagaznika|maska silnika)\b/,
+  /\b(?:szyba czolowa|listwa|nakladka|prowadnica|sprezyna|wahacz|amortyzator|alternator|rozrusznik)\b/,
+  /\b(?:skrzynia biegow|silnik na czesci|felga|dywanik|radio samochodowe|hak holowniczy|lusterko|chlodnica)\b/,
+  /\b(?:opony|opona|kolo do|kolpak|spojler|wycieraczka|sprzeglo|tarcza hamulcowa|akumulator samochodowy|czujnik parkowania)\b/,
+];
+
+export function isClearlyNonVehicleTitle(value, hasVehicleEvidence = false) {
+  const title = normalizeText(value).replace(/\s+/g, " ").trim();
+  return Boolean(title) && !hasVehicleEvidence && NON_VEHICLE_TITLE_PATTERNS.some((pattern) => pattern.test(title));
+}
+
 export function extractVisibleFields(text, sourceId) {
   const value = String(text ?? "").replace(/\s+/g, " ").trim();
   const productionYear = value.match(/(?:rok produkcji|produkcja)\s*[:\-]?\s*((?:19|20)\d{2})/i)?.[1];
@@ -26,6 +44,8 @@ export function extractVisibleFields(text, sourceId) {
 export function screeningFailure(listing, task) {
   const screen = task.searchProfile.candidateScreening ?? {};
   const fields = listing.visibleFields ?? {};
+  if (isClearlyNonVehicleTitle(listing.title,
+    Number.isFinite(fields.productionYear) && Number.isFinite(fields.mileageKm))) return "not_a_complete_vehicle_listing";
   if (Number.isFinite(fields.productionYear) &&
       (fields.productionYear < screen.screeningLimits?.productionYearMin || fields.productionYear > screen.screeningLimits?.productionYearMax)) return "production_year";
   if (Number.isFinite(fields.mileageKm) && fields.mileageKm > (screen.screeningLimits?.hardMileageKmMax ?? Number.POSITIVE_INFINITY)) return "mileage";

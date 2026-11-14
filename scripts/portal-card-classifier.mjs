@@ -1,4 +1,4 @@
-import { modelNameMatches, normalizeText } from "./portal-screening.mjs";
+import { isClearlyNonVehicleTitle, modelNameMatches, normalizeText } from "./portal-screening.mjs";
 
 function normalizedField(fields, patterns) {
   const entry = Object.entries(fields ?? {}).find(([key]) => patterns.some((pattern) =>
@@ -18,6 +18,14 @@ export function classifyGenericCard(listing, card, task, checkedAt) {
   const structured = card.structuredData ?? [];
   const structuredVehicle = structured.find((item) => item.name && normalizeText(card.title).includes(normalizeText(item.name))) ??
     (structured.length === 1 ? structured[0] : null);
+  const yearEvidence = normalizedField(card.fields, [/rokprodukcji/, /^productiondate$/, /^productionyear$/])?.value ??
+    structuredVehicle?.productionDate;
+  const mileageEvidence = normalizedField(card.fields, [/przebieg/, /^mileagefromodometer$/, /^mileage$/])?.value ??
+    (structuredVehicle?.mileageFromOdometer != null ? String(structuredVehicle.mileageFromOdometer) : "");
+  if (isClearlyNonVehicleTitle(card.title || listing.title,
+    /\b(?:19|20)\d{2}\b/.test(String(yearEvidence ?? "")) && numericValue(mileageEvidence) !== null)) {
+    return { status: "rejected", note: "Tytuł wskazuje część lub akcesorium, nie kompletny samochód." };
+  }
   const inStock = (structuredVehicle?.offers ?? []).some((offer) => /(?:^|\/)InStock$/i.test(String(offer.availability ?? "")));
   const activeContact = (card.ctas ?? []).length > 0;
   if (!inStock && !activeContact) return { status: "unverified", note: "Karta nie ujawnia jednoznacznego sygnału aktywnej sprzedaży." };
