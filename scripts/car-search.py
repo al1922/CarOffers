@@ -550,7 +550,7 @@ def build_shared_search_cache(root, run, queue, source_id, task=None):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("command", choices=["validate", "sync", "plan", "refresh-plan", "availability-plan", "archive-availability-plan", "claim", "continue-search", "export-worker", "collect-worker", "finish", "assess", "import-preview", "import-apply", "direct-import"])
+    p.add_argument("command", choices=["validate", "sync", "plan", "refresh-plan", "availability-plan", "archive-availability-plan", "claim", "continue-search", "export-worker", "collect-worker", "finish", "assess", "import-preview", "import-apply", "purge-engine-preview", "direct-import"])
     p.add_argument("--root", type=Path, default=ROOT)
     p.add_argument("--run")
     p.add_argument("--worker")
@@ -632,6 +632,24 @@ def main():
                 changes_text = ", ".join(f"{count} {kind}" for kind, count in sorted(change_counts.items())) or "0 changes"
                 skipped_text = ", ".join(f"{count} {reason}" for reason, count in sorted(skipped_counts.items())) or "none skipped"
                 print(f"Preview: {changes_text}; {len(plan['conflicts'])} conflicts; skipped: {skipped_text}; offers unchanged")
+        except (OSError, ValueError, KeyError, TypeError) as exc:
+            p.error(str(exc))
+        return 0
+    if args.command == "purge-engine-preview":
+        if not args.run or not re.fullmatch(r"[a-zA-Z0-9][a-zA-Z0-9_-]*", args.run):
+            p.error("--run requires a simple alphanumeric ID")
+        config, issues = audit(root)
+        if any(item["severity"] == "error" for item in issues):
+            p.error(json.dumps(issues, ensure_ascii=False))
+        from offer_import import prepare_engine_purge
+        try:
+            plan = prepare_engine_purge(root, args.run, config)
+            by_model = {}
+            for change in plan["changes"]:
+                by_model[change["modelKey"]] = by_model.get(change["modelKey"], 0) + 1
+            summary = ", ".join(f"{count} {model}" for model, count in sorted(by_model.items()))
+            print(f"Preview: {len(plan['changes'])} active offers to remove ({summary}); "
+                  f"{len(plan['conflicts'])} conflicts; no offers changed")
         except (OSError, ValueError, KeyError, TypeError) as exc:
             p.error(str(exc))
         return 0

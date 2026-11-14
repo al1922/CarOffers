@@ -172,6 +172,24 @@ przed importem. Kod pocztowy i współrzędne wymagają URL-a w `geoSource`.
 Samą miejscowość można pokazać bez współrzędnych; obliczanie odległości nie jest
 jeszcze wdrożone.
 
+Na wyraźną prośbę użytkownika można trwale usunąć aktywne oferty, których
+silnik jest poza wybraną listą. Podgląd wyznacza rekordy według bieżącej oceny
+i nie zmienia plików ofert. Może też uwzględnić wpisy `action: "remove"` z
+`runs/IDENTYFIKATOR/engine-audit.json`: `engine_outside_selection` wymaga
+zakończonego odczytu HTTP 2xx i tekstu silnika zgodnego z kartą, a
+`engine_info_missing` wymaga zakończonego odczytu karty bez danych silnika.
+`listing_inactive` wymaga HTTP 410 albo jawnego komunikatu o zamknięciu.
+Wpis musi wskazywać URL zapisany przy ofercie oraz plik dowodu `browse:pages`;
+podgląd sprawdza kartę i wiąże jej sumę z przygotowaną transakcją. Błąd dostępu,
+403, CAPTCHA lub niejednoznaczne 404 nie potwierdzają braku silnika ani
+nieaktualności. Uruchom:
+
+python -B scripts/car-search.py purge-engine-preview --run IDENTYFIKATOR
+
+Po ręcznej kontroli podglądu wykonaj import-apply, assess i
+validate-offers.py. Usunięte rekordy nie trafiają do archiwum; transakcja
+importu zachowuje kopię plików sprzed zmiany w runs/IDENTYFIKATOR/imports/.
+
 ## Tożsamość, historia i odtwarzanie
 
 - Dopasowanie odbywa się przez VIN, ID oferty, ID ogłoszenia i URL. Parametry
@@ -222,6 +240,12 @@ aktualnym plikom oraz pola konkretnej oferty nadal pasują. W innym przypadku
 pokazuje `check`, a ocenę z importu albo ocenę historyczną opisuje jako poprzednią.
 Warianty silników o statusie `hold...` wymagają wyjaśnienia, nawet jeśli ich
 identyfikator pozostaje na liście dopuszczonej do wyszukiwania.
+Ocena sprawdza też jawne oznaczenia silnika w tytule: pełny zapis zgodny z
+wariantem z listy może być oceniony jako zgodny silnikowo, zapis częściowy
+pozostaje do potwierdzenia, a rozpoznany wariant spoza listy daje status fail.
+Rodziny są rozróżniane, np. SKYACTIV-D nie jest traktowany jak SKYACTIV-G.
+Sprzeczność między tytułem i zapisanym engineVariant wymaga ręcznego
+wyjaśnienia. Rozpoznanie tytułu wpływa na ocenę, ale nie zmienia rekordu oferty.
 
 Szczegóły pokazują historię cen, źródła obserwacji i dowodów, lokalizację,
 LPG oraz statusy poszczególnych ogłoszeń. Historia może być długa; osobny,

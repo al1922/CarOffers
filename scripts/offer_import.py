@@ -810,6 +810,201 @@ def prepare(root, run_id, config):
     return plan
 
 
+def prepare_engine_purge(root, run_id, config):
+    """Prepare a reviewable transaction removing active offers with excluded or missing engines.
+
+    Optional runs/<run-id>/engine-audit.json entries may add only removals backed by a
+    successfully read listing page. Evidence files are hashed into the prepared plan.
+    """
+    if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_-]*", run_id or ""):
+        raise ValueError("Invalid engine-purge run ID")
+    root = Path(root).resolve()
+    run = contained(root, "runs/" + run_id)
+    if ((run / "import-preview.json").exists() or (run / "import-preview.md").exists() or
+            (run / "imports").exists()):
+        raise ValueError("Preserve the existing import run and use a new run ID")
+    for journal in (root / "runs").glob("*/imports/*/transaction.json"):
+        if not journal.with_name("applied.json").exists():
+            raise ValueError("Resume unfinished import-apply before preparing another preview: " + str(journal))
+
+    inputs = {}
+    def capture(path):
+        relative = path.relative_to(root).as_posix()
+        inputs[relative] = file_hash(path)
+        return read(path)
+
+    for path in sorted((root / "config").glob("*.json")):
+        capture(path)
+    for path in sorted((root / "knowledge/models").glob("*.json")):
+        capture(path)
+
+    documents = {}
+    target_ids = {}
+    changes = []
+    for model in config["models"]["models"]:
+        relative = model["offersFile"]
+        document = capture(contained(root, relative))
+        documents[model["key"]] = document
+        requirements = requirements_for_model(model, config["requirements"])
+        for offer in document.get("offers", []):
+            if not isinstance(offer, dict):
+                continue
+            assessment = assess(offer, requirements, model)
+            if "engine_outside_selection" not in assessment["failures"]:
+                continue
+            offer_id = offer.get("id")
+            if not isinstance(offer_id, str) or not offer_id:
+                raise ValueError(f"Engine-excluded offer in {relative} has no stable ID")
+            if offer_id in target_ids:
+                raise ValueError(f"Duplicate engine-excluded offer ID: {offer_id}")
+            target_ids[offer_id] = model["key"]
+            changes.append({
+                "kind": "removed",
+                "modelKey": model["key"],
+                "offerId": offer_id,
+                "title": offer.get("title", ""),
+                "engineVariant": offer.get("engineVariant"),
+                "reason": "engine_outside_selection",
+            })
+
+    audit_relative = f"runs/{run_id}/engine-audit.json"
+    audit_path = contained(root, audit_relative)
+    if audit_path.exists():
+        audit = capture(audit_path)
+        if audit.get("version") != 1 or not isinstance(audit.get("items"), list):
+            raise ValueError("Engine audit requires version 1 and an items array")
+        model_by_key = {model["key"]: model for model in config["models"]["models"]}
+        for item_index, item in enumerate(audit["items"]):
+            if not isinstance(item, dict):
+                raise ValueError(f"Engine audit item {item_index} must be an object")
+            if item.get("action") != "remove":
+                continue
+            offer_id = item.get("offerId")
+            model_key = item.get("modelKey")
+            model = model_by_key.get(model_key)
+            if not isinstance(offer_id, str) or not offer_id or model is None:
+                raise ValueError(f"Engine audit item {item_index} requires a known offerId and modelKey")
+            if offer_id in target_ids:
+                raise ValueError(f"Duplicate engine-purge target: {offer_id}")
+            matching_offers = [offer for offer in documents[model_key].get("offers", [])
+                               if offer.get("id") == offer_id]
+            if len(matching_offers) != 1:
+                raise ValueError(f"Engine audit offer must match exactly one active record: {offer_id}")
+            offer = matching_offers[0]
+            url = item.get("url")
+            if not isinstance(url, str) or normalized_url(url) not in {
+                    normalized_url(link["url"]) for link in offer.get("urls", []) if isinstance(link, dict)}:
+                raise ValueError(f"Engine audit URL does not belong to offer: {offer_id}")
+            evidence_file = item.get("evidenceFile")
+            if not isinstance(evidence_file, str) or not evidence_file:
+                raise ValueError(f"Engine audit item {item_index} requires an evidenceFile")
+            evidence_path = contained(root, evidence_file)
+            evidence_document = capture(evidence_path)
+            pages = [page for page in evidence_document.get("pages", [])
+                     if isinstance(page, dict) and page.get("requestedUrl") and
+                     normalized_url(page["requestedUrl"]) == normalized_url(url)]
+            if len(pages) != 1:
+                raise ValueError(f"Engine audit evidence must contain exactly one read of {url}")
+            page = pages[0]
+            status = item.get("httpStatus")
+            reason = item.get("reason")
+            successful_page = type(status) is int and 200 <= status < 300
+            allowed_inactive_response = reason == "listing_inactive" and status in (404, 410)
+            if (item.get("readComplete") is not True or not (successful_page or allowed_inactive_response) or
+                    page.get("navigationError") or
+                    page.get("navigationStatus") != status or
+                    (not page.get("title") and status != 410) or not isinstance(page.get("text"), str) or
+                    page.get("finalUrl") is None or
+                    normalized_url(page["finalUrl"]) != normalized_url(url) or
+                    (item.get("title") and page.get("title") != item["title"])):
+                raise ValueError(f"Engine audit requires a complete successful read of {url}")
+            engine_info_found = item.get("engineInfoFound")
+            if reason == "engine_outside_selection":
+                engine_evidence = item.get("engineEvidence")
+                match_text = item.get("engineMatchText")
+                if (engine_info_found is not True or not isinstance(engine_evidence, list) or not engine_evidence or
+                        any(not isinstance(value, str) or not value or value not in page["text"]
+                            for value in engine_evidence) or not isinstance(match_text, str) or not match_text.strip()):
+                    raise ValueError(f"Out-of-selection engine audit requires matching card text: {offer_id}")
+                probe = {**offer, "title": match_text, "engineVariant": None}
+                if "engine_outside_selection" not in assess(
+                        probe, requirements_for_model(model, config["requirements"]), model)["failures"]:
+                    raise ValueError(f"Audited engine is not outside the current selection: {offer_id}")
+            elif reason == "engine_info_missing":
+                if engine_info_found is not False:
+                    raise ValueError(f"Missing-engine removal requires a completed card read with no engine facts: {offer_id}")
+            elif reason == "listing_inactive":
+                closed_message = item.get("closedMessage")
+                text = page["text"]
+                closed_pattern = re.compile(
+                    r"(?:ogłoszenie|oferta)\s+(?:nie\s+jest\s+(?:już\s+)?(?:dostępne|dostępna)|"
+                    r"(?:jest\s+)?(?:już\s+)?(?:niedostępne|niedostępna|nieaktualne|nieaktualna|"
+                    r"zakończone|zakończona|usunięte|usunięta|sprzedane|sprzedana))|"
+                    r"(?:pojazd|samochód|auto)\s+(?:został[oa]?\s+)?sprzedan[ey]", re.IGNORECASE)
+                if not (status == 410 or (isinstance(closed_message, str) and closed_message and
+                                          closed_message in text and closed_pattern.search(closed_message))):
+                    raise ValueError(f"Inactive-listing removal requires HTTP 410 or an explicit closure message: {offer_id}")
+            else:
+                raise ValueError(f"Unsupported engine audit removal reason: {reason}")
+            target_ids[offer_id] = model_key
+            changes.append({
+                "kind": "removed",
+                "modelKey": model_key,
+                "offerId": offer_id,
+                "title": offer.get("title", ""),
+                "engineVariant": offer.get("engineVariant"),
+                "reason": reason,
+                "url": url,
+                "httpStatus": status,
+                "engineEvidence": item.get("engineEvidence", []),
+            })
+
+    if not changes:
+        raise ValueError("No active offers matched engine-purge criteria")
+
+    outputs = {}
+    for model in config["models"]["models"]:
+        document = documents[model["key"]]
+        ids_for_model = {offer_id for offer_id, model_key in target_ids.items() if model_key == model["key"]}
+        if not ids_for_model:
+            continue
+        kept = [offer for offer in document["offers"] if offer.get("id") not in ids_for_model]
+        if len(document["offers"]) - len(kept) != len(ids_for_model):
+            raise ValueError(f"Offer set changed while preparing engine purge: {model['key']}")
+        document["offers"] = kept
+        document["updatedAt"] = datetime.now(timezone.utc).date().isoformat()
+        outputs[model["offersFile"]] = document
+
+    plan = {
+        "version": 1,
+        "runId": run_id,
+        "snapshotSha256": digest({"configuration": config, "removedOfferIds": sorted(target_ids)}),
+        "schemaSha256": file_hash(ROOT / "schemas/offers-v2.schema.json"),
+        "assessmentConfigurationSha256": digest(config),
+        "inputs": inputs,
+        "changes": changes,
+        "conflicts": [],
+        "skipped": [],
+        "outputs": outputs,
+    }
+    plan["sha256"] = digest(plan)
+    atomic_write(run / "import-preview.json", plan)
+    lines = [
+        f"# Podgląd usunięcia ofert po audycie silnika: {run_id}",
+        "",
+        f"Oferty do trwałego usunięcia z aktywnej bazy: {len(changes)}.",
+        "Kopie przed zmianą zostaną zachowane przez transakcję importu.",
+        "",
+    ]
+    for change in changes:
+        engine = change.get("engineVariant") or ", ".join(change.get("engineEvidence", [])) or "wariant rozpoznany z tytułu"
+        evidence = "; ".join(change.get("engineEvidence", []))
+        suffix = f"; źródło: {change['url']} HTTP {change['httpStatus']}" if change.get("url") else ""
+        lines.append(f"- {change['modelKey']}: {change['offerId']} — {change['title']} ({engine}; {change['reason']}{suffix})")
+    (run / "import-preview.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    return plan
+
+
 def apply(root, run_id):
     run = contained(root, "runs/" + run_id)
     plan = read(run / "import-preview.json")

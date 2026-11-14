@@ -1,4 +1,4 @@
-import {defaultFilters,sanitizeFilters,encodeFilters,decodeFilters,dedupe,filterOffers,sortOffers,bodyNames,statuses,fmt,dateLabel,distance,verdictNames} from './assets/core.mjs?v=18';
+import {defaultFilters,sanitizeFilters,encodeFilters,decodeFilters,dedupe,filterOffers,sortOffers,bodyNames,statuses,fmt,dateLabel,distance,verdictNames} from './assets/core.mjs?v=19';
 import {createStore} from './assets/storage.mjs?v=11';
 import {loadData,loadKnowledge} from './assets/data.mjs?v=15';
 import {el,button,badge,empty,link,offerCard,archivedOfferCard,offerTable,offerDetails,comparison,knowledgeCard,knowledgeDetails,updates} from './assets/views.mjs?v=19';

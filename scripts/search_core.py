@@ -1,12 +1,21 @@
 """Shared local configuration, validation and assessment. Standard library only."""
 import importlib.util
 import json
+import re
 import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-ASSESSMENT_FIELDS = ("price", "priceBasis", "year", "bodyCode", "engineVariant", "transmissionCode",
+ASSESSMENT_FIELDS = ("title", "price", "priceBasis", "year", "bodyCode", "engineVariant", "transmissionCode",
                      "cameraStatus", "structuralDamageStatus", "mileage", "familyFitConfirmed", "saleType", "lpgInstalled")
+ENGINE_FAMILY_ALIASES = (
+    "skyactivd", "skyactivg", "boosterjet", "valvematic", "ecoboost", "multijet", "twinair",
+    "tgdi", "crdi", "cdti", "hdi", "dci", "tdi", "tce", "dpi", "cvvt", "mivec",
+    "tfsi", "tsi", "tgi", "gtec", "fsi", "mpi", "vvti", "vvt", "vti", "ea211", "ea888", "d4d", "d4s",
+    "hybrid", "gdi",
+)
+ENGINE_FAMILY_ALIASES = tuple(sorted(ENGINE_FAMILY_ALIASES, key=len, reverse=True))
+ENGINE_FAMILY_MODIFIERS = {"hybrid"}
 spec = importlib.util.spec_from_file_location("offer_validation", ROOT / "scripts/validate-offers.py")
 validation = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(validation)
@@ -183,8 +192,86 @@ def description(requirements, model):
             ).replace(",", " ")
 
 
+def _engine_families(value):
+    text = unicodedata.normalize("NFKD", str(value or "").casefold())
+    text = "".join(char for char in text if not unicodedata.combining(char))
+    tokens = re.findall(r"[a-z0-9]+", text)
+    token_sequences = set(tokens)
+    token_sequences.update(left + right for left, right in zip(tokens, tokens[1:]))
+    found = set()
+    for family in ENGINE_FAMILY_ALIASES:
+        if family in token_sequences:
+            found.add(family)
+    if "tgdi" in found:
+        found.discard("gdi")
+    if "tfsi" in found:
+        found.discard("fsi")
+    return found
+
+
+def _engine_profile(variant):
+    displacement = re.match(r"^(\d{1,2}[.,]\d)", str(variant))
+    power = re.search(r"-(\d{2,3})$", str(variant))
+    return {
+        "variant": variant,
+        "displacement": float(displacement.group(1).replace(",", ".")) if displacement else None,
+        "power": int(power.group(1)) if power else None,
+        "families": _engine_families(variant),
+    }
+
+
+def _title_engine_assessment(title, model):
+    """Compare explicit engine details in a listing title with this model's selection."""
+    if not isinstance(title, str) or not title.strip():
+        return {"status": "missing", "variant": None, "candidates": []}
+    displacement_matches = re.findall(r"(?<!\d)(\d{1,2}[.,]\d)(?!\d)", title)
+    displacements = {float(value.replace(",", ".")) for value in displacement_matches}
+    powers = {int(value) for value in re.findall(
+        r"(?<!\d)(?<!\d\s)(\d{2,3})\s*(?:km|ps|hp)\b", title, flags=re.IGNORECASE)}
+    families = _engine_families(title)
+    if len(displacements) > 1 or len(powers) > 1:
+        return {"status": "ambiguous", "variant": None, "candidates": []}
+    displacement = next(iter(displacements), None)
+    power = next(iter(powers), None)
+    if displacement is None and power is None and not families:
+        return {"status": "missing", "variant": None, "candidates": []}
+
+    profiles = [_engine_profile(variant) for variant in model.get("allowedEngineVariants", [])]
+    candidates = []
+    title_core_families = families - ENGINE_FAMILY_MODIFIERS
+    for profile in profiles:
+        if displacement is not None and profile["displacement"] != displacement:
+            continue
+        if power is not None and profile["power"] != power:
+            continue
+        profile_core_families = profile["families"] - ENGINE_FAMILY_MODIFIERS
+        if title_core_families and not title_core_families.intersection(profile_core_families):
+            continue
+        candidates.append(profile)
+
+    # "Hybrid" can describe an added 48 V system alongside a T-GDI engine.
+    # Use it to narrow a title only when the model has a matching hybrid variant.
+    if not title_core_families and "hybrid" in families:
+        hybrid_candidates = [profile for profile in candidates if "hybrid" in profile["families"]]
+        if hybrid_candidates:
+            candidates = hybrid_candidates
+
+    if not candidates:
+        return {"status": "outside", "variant": None, "candidates": []}
+    if len(candidates) != 1:
+        return {"status": "partial", "variant": None,
+                "candidates": [profile["variant"] for profile in candidates]}
+
+    candidate = candidates[0]
+    family_match = bool(families.intersection(candidate["families"]))
+    complete = (displacement is not None and family_match and
+                (candidate["power"] is None or power == candidate["power"]))
+    return {"status": "match" if complete else "partial", "variant": candidate["variant"],
+            "candidates": [candidate["variant"]]}
+
+
 def assess(offer, requirements, model):
-    """Assess structured evidence; never infer facts from arbitrary seller prose."""
+    """Assess saved fields and explicit engine details in the listing title."""
     fail, unknown, preferences = [], [], []
     price = offer.get("price")
     gross_price = offer.get("priceBasis") == "gross_total"
@@ -207,15 +294,30 @@ def assess(offer, requirements, model):
         unknown.append("body")
     elif offer["bodyCode"] not in model["bodies"]:
         fail.append("body_outside_selection")
-    if offer.get("engineVariant") is None:
-        unknown.append("exact_engine_variant")
-    elif offer["engineVariant"] not in model["allowedEngineVariants"]:
+    title_engine = _title_engine_assessment(offer.get("title"), model)
+    engine_variant = offer.get("engineVariant")
+    if engine_variant is None:
+        if title_engine["status"] == "outside":
+            fail.append("engine_outside_selection")
+        elif title_engine["status"] == "match":
+            engine_variant = title_engine["variant"]
+            preferences.append("engine_title_matches_selection")
+        elif title_engine["status"] == "partial":
+            unknown.append("engine_title_partial_match")
+        elif title_engine["status"] == "ambiguous":
+            unknown.append("engine_title_ambiguous")
+        else:
+            unknown.append("exact_engine_variant")
+    elif engine_variant not in model["allowedEngineVariants"]:
         fail.append("engine_outside_selection")
-    review = model.get("engineReview", {}).get("variants", {}).get(offer.get("engineVariant"), {})
+    elif (title_engine["status"] == "outside" or
+          (title_engine["candidates"] and engine_variant not in title_engine["candidates"])):
+        unknown.append("engine_title_conflict")
+    review = model.get("engineReview", {}).get("variants", {}).get(engine_variant, {})
     if review.get("status", "").startswith("hold"):
         unknown.append("engine_review_requires_verification")
     for rule in model.get("variantConstraints", []):
-        if offer.get("engineVariant") not in rule["engines"]:
+        if engine_variant not in rule["engines"]:
             continue
         year_conflict = type(year) is int and ((rule.get("yearMin") is not None and year < rule["yearMin"]) or
                                               (rule.get("yearMax") is not None and year > rule["yearMax"]))

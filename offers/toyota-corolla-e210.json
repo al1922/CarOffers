@@ -1433,37 +1433,32 @@
         {
           "url": "https://sprzedajemy.pl/toyota-corolla-warszawa-4-6bea9f-nr72902184",
           "status": "available",
-          "lastAttemptAt": "2026-11-13T12:25:41.930Z",
-          "lastCheckedAt": "2026-11-13T12:25:41.930Z",
-          "lastVerifiedAt": "2026-11-13T12:25:41.930Z",
+          "lastAttemptAt": "2026-11-14T15:38:54.866186+00:00",
+          "lastCheckedAt": "2026-11-14T15:38:54.866186+00:00",
+          "lastVerifiedAt": "2026-11-14T15:38:54.866186+00:00",
           "lastObservation": {
             "url": "https://sprzedajemy.pl/toyota-corolla-warszawa-4-6bea9f-nr72902184",
-            "checkedAt": "2026-11-13T12:25:41.930Z",
+            "checkedAt": "2026-11-14T15:38:54.866186+00:00",
             "availability": "available",
-            "note": "Odczytano kartę z aktywnym kontaktem i pasującym numerem. Warunki ceny i tryb sprzedaży wymagają potwierdzenia.",
+            "httpStatus": 200,
+            "note": "Sprzedajemy: karta zwróciła HTTP 200, zawiera szczegóły pojazdu, widoczną cenę i kontrolkę kontaktu; Pojemność silnika 1800 cm³; Moc 122 KM Paliwo hybryda. Nie znaleziono komunikatu o zamknięciu ogłoszenia.",
             "evidence": [
               {
-                "kind": "seller",
-                "url": "https://sprzedajemy.pl/toyota-corolla-warszawa-4-6bea9f-nr72902184",
-                "checkedAt": "2026-11-13T12:25:41.930Z",
                 "fields": [
-                  "price",
-                  "priceBasis",
-                  "year",
-                  "mileage",
-                  "transmissionCode",
-                  "saleType",
-                  "location"
+                  "engineVariant"
                 ],
-                "note": "Dane z karty sprzedawcy."
+                "url": "https://sprzedajemy.pl/toyota-corolla-warszawa-4-6bea9f-nr72902184",
+                "checkedAt": "2026-11-14T15:38:54.866186+00:00",
+                "kind": "seller",
+                "note": "Karta podaje 1,8 l, 122 KM oraz paliwo hybrydowe — zgodne z wariantem 1.8 Hybrid 122. Tekst karty: Pojemność silnika 1800 cm³; Moc 122 KM Paliwo hybryda."
               }
             ]
           }
         }
       ],
-      "lastCheckedAt": "2026-11-13T12:25:41.930Z",
-      "lastVerifiedAt": "2026-11-13T12:25:41.930Z",
-      "lastAttemptAt": "2026-11-13T12:25:41.930Z",
+      "lastCheckedAt": "2026-11-14T15:38:54.866186+00:00",
+      "lastVerifiedAt": "2026-11-14T15:38:54.866186+00:00",
+      "lastAttemptAt": "2026-11-14T15:38:54.866186+00:00",
       "history": [
         {
           "eventId": "b08bd57cd634406984e35f2ed555e6a896fccc0498777166857924c176460d87",
@@ -1604,6 +1599,39 @@
               "after": "toyota-corolla-e210"
             }
           }
+        },
+        {
+          "eventId": "f1904c61e33ae773a74686e422009c1e57247c8142cd2529e930edd157e3b06b",
+          "runId": "codex-engine-refresh-20261114",
+          "checkedAt": "2026-11-14T15:38:54.866186+00:00",
+          "url": "https://sprzedajemy.pl/toyota-corolla-warszawa-4-6bea9f-nr72902184",
+          "availability": "available",
+          "note": "Sprzedajemy: karta zwróciła HTTP 200, zawiera szczegóły pojazdu, widoczną cenę i kontrolkę kontaktu; Pojemność silnika 1800 cm³; Moc 122 KM Paliwo hybryda. Nie znaleziono komunikatu o zamknięciu ogłoszenia.",
+          "httpStatus": 200,
+          "photoCheck": null,
+          "evidence": [
+            {
+              "fields": [
+                "engineVariant"
+              ],
+              "url": "https://sprzedajemy.pl/toyota-corolla-warszawa-4-6bea9f-nr72902184",
+              "checkedAt": "2026-11-14T15:38:54.866186+00:00",
+              "kind": "seller",
+              "note": "Karta podaje 1,8 l, 122 KM oraz paliwo hybrydowe — zgodne z wariantem 1.8 Hybrid 122. Tekst karty: Pojemność silnika 1800 cm³; Moc 122 KM Paliwo hybryda."
+            }
+          ],
+          "reportedFields": {
+            "id": "listing:sprzedajemy:72902184",
+            "engineVariant": "1.8-hybrid-122",
+            "saleType": "fixed_price",
+            "lpgInstalled": null
+          },
+          "changes": {
+            "engineVariant": {
+              "before": null,
+              "after": "1.8-hybrid-122"
+            }
+          }
         }
       ],
       "assessment": {
@@ -1613,7 +1641,6 @@
         "failures": [],
         "unknowns": [
           "body",
-          "exact_engine_variant",
           "camera_or_compatible_retrofit",
           "structural_history",
           "stroller_and_family_fit"
@@ -1622,7 +1649,8 @@
       },
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
-      "verdictNote": "body; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
+      "verdictNote": "body; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit",
+      "engineVariant": "1.8-hybrid-122"
     },
     {
       "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjitH.html",
@@ -1898,456 +1926,6 @@
       "verdict": "check",
       "verdictTitle": "Do weryfikacji",
       "verdictNote": "engine_review_requires_verification; structural_history; stroller_and_family_fit"
-    },
-    {
-      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjKsR.html",
-      "modelKey": "toyota-corolla-e210",
-      "title": "Toyota Corolla 1.5 Comfort",
-      "urls": [
-        {
-          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjKsR.html"
-        }
-      ],
-      "price": 50000,
-      "priceBasis": "unknown",
-      "year": 2022,
-      "mileage": 161000,
-      "bodyCode": "sedan",
-      "transmissionCode": "manual",
-      "offerType": "unknown",
-      "photos": [
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InFzamhqb25scnJydDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.MY3JZ1ID0XVkI3M7zZtWNcNsmGyfFXD7DNbQ3iQ_QPo/image;s=1024x0;q=80",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNsOWFlMGgwb3pjajItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.0ngFI_agJJdLBYckIj7o6uVBe_UV9uWznwcxeZrzYaE/image;s=1024x0;q=100",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InFzamhqb25scnJydDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.MY3JZ1ID0XVkI3M7zZtWNcNsmGyfFXD7DNbQ3iQ_QPo/image;s=148x110",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNsOWFlMGgwb3pjajItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.0ngFI_agJJdLBYckIj7o6uVBe_UV9uWznwcxeZrzYaE/image;s=148x110",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im85eHpxeDVhanNndDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.KtMQAIUvwaQFtr87k-cdg_S5ypaEamnYGTGzp35j4Og/image;s=148x110",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImR4YWJkMzRjbXExNzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.chuPQGQONajj0C2lMrw7RnlaYkI-gVCuWJcJflLLeHg/image;s=148x110",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im96d21hOXU5aTczODEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.XZ1p1pj7cIPgNHhc2TOATFPhf-OWi7SM4XOasMtHtpU/image;s=148x110",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InY0a3djeXN0dW8xNTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.RKvgjuJ8MaOCOwdfOvDKCWuQlf1UE_cNkyaOQk71kMU/image;s=148x110",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjV2MWxpdzB6dGoyMTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.bprgSdp-DxyL1_XLtTKTq2sAwlLABREvSZGj-NiYZkw/image;s=148x110",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InQ4dXFpcTN6bWZ4ajItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Ng7ujV1c3DakprMLALhJtW0rbRCTPVaJOSVysUt4bYE/image;s=148x110",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im02dDNiaXRxNnl2bi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.9uxmNGY4tDTYAFfFSJ3C51iIL5yZS9SxPf93PlGZoTY/image;s=148x110",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRyN3JnenRteTM0czItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.azt31qEY0t9i7X2B8am2pdcSDeJlqoCUAv3x1YxatII/image;s=148x110"
-      ],
-      "location": {
-        "status": "not_provided"
-      },
-      "lpgInstalled": null,
-      "firstSeenAt": "2026-11-14T02:55:39.210Z",
-      "listingStates": [
-        {
-          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjKsR.html",
-          "status": "available",
-          "lastAttemptAt": "2026-11-14T02:55:39.210Z",
-          "lastCheckedAt": "2026-11-14T02:55:39.210Z",
-          "lastVerifiedAt": "2026-11-14T02:55:39.210Z",
-          "lastObservation": {
-            "url": "https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjKsR.html",
-            "checkedAt": "2026-11-14T02:55:39.210Z",
-            "availability": "available",
-            "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
-            "evidence": [
-              {
-                "kind": "seller",
-                "url": "https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjKsR.html",
-                "checkedAt": "2026-11-14T02:55:39.210Z",
-                "fields": [
-                  "title",
-                  "year",
-                  "mileage",
-                  "price",
-                  "bodyCode",
-                  "transmissionCode"
-                ],
-                "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
-              }
-            ]
-          }
-        }
-      ],
-      "lastCheckedAt": "2026-11-14T02:55:39.210Z",
-      "lastVerifiedAt": "2026-11-14T02:55:39.210Z",
-      "lastAttemptAt": "2026-11-14T02:55:39.210Z",
-      "history": [
-        {
-          "eventId": "5158b6dd2741a35a1aa6fa6d02d1c4631f6d66431a9ec229c5c19d9b1f2e2504",
-          "runId": "direct-import-20261114-024644745-9140b1ce",
-          "checkedAt": "2026-11-14T02:55:39.210Z",
-          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjKsR.html",
-          "availability": "available",
-          "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
-          "httpStatus": null,
-          "photoCheck": null,
-          "evidence": [
-            {
-              "kind": "seller",
-              "url": "https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjKsR.html",
-              "checkedAt": "2026-11-14T02:55:39.210Z",
-              "fields": [
-                "title",
-                "year",
-                "mileage",
-                "price",
-                "bodyCode",
-                "transmissionCode"
-              ],
-              "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
-            }
-          ],
-          "reportedFields": {
-            "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjKsR.html",
-            "modelKey": "toyota-corolla-e210",
-            "title": "Toyota Corolla 1.5 Comfort",
-            "urls": [
-              {
-                "url": "https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjKsR.html"
-              }
-            ],
-            "price": 50000,
-            "priceBasis": "unknown",
-            "year": 2022,
-            "mileage": 161000,
-            "bodyCode": "sedan",
-            "transmissionCode": "manual",
-            "offerType": "unknown",
-            "saleType": null,
-            "lpgInstalled": null,
-            "photos": [
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InFzamhqb25scnJydDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.MY3JZ1ID0XVkI3M7zZtWNcNsmGyfFXD7DNbQ3iQ_QPo/image;s=1024x0;q=80",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNsOWFlMGgwb3pjajItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.0ngFI_agJJdLBYckIj7o6uVBe_UV9uWznwcxeZrzYaE/image;s=1024x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InFzamhqb25scnJydDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.MY3JZ1ID0XVkI3M7zZtWNcNsmGyfFXD7DNbQ3iQ_QPo/image;s=148x110",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNsOWFlMGgwb3pjajItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.0ngFI_agJJdLBYckIj7o6uVBe_UV9uWznwcxeZrzYaE/image;s=148x110",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im85eHpxeDVhanNndDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.KtMQAIUvwaQFtr87k-cdg_S5ypaEamnYGTGzp35j4Og/image;s=148x110",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImR4YWJkMzRjbXExNzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.chuPQGQONajj0C2lMrw7RnlaYkI-gVCuWJcJflLLeHg/image;s=148x110",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im96d21hOXU5aTczODEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.XZ1p1pj7cIPgNHhc2TOATFPhf-OWi7SM4XOasMtHtpU/image;s=148x110",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InY0a3djeXN0dW8xNTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.RKvgjuJ8MaOCOwdfOvDKCWuQlf1UE_cNkyaOQk71kMU/image;s=148x110",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjV2MWxpdzB6dGoyMTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.bprgSdp-DxyL1_XLtTKTq2sAwlLABREvSZGj-NiYZkw/image;s=148x110",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InQ4dXFpcTN6bWZ4ajItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Ng7ujV1c3DakprMLALhJtW0rbRCTPVaJOSVysUt4bYE/image;s=148x110",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im02dDNiaXRxNnl2bi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.9uxmNGY4tDTYAFfFSJ3C51iIL5yZS9SxPf93PlGZoTY/image;s=148x110",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRyN3JnenRteTM0czItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.azt31qEY0t9i7X2B8am2pdcSDeJlqoCUAv3x1YxatII/image;s=148x110"
-            ],
-            "location": {
-              "status": "not_provided"
-            }
-          },
-          "changes": {
-            "id": {
-              "before": null,
-              "after": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjKsR.html"
-            },
-            "modelKey": {
-              "before": null,
-              "after": "toyota-corolla-e210"
-            },
-            "title": {
-              "before": null,
-              "after": "Toyota Corolla 1.5 Comfort"
-            },
-            "urls": {
-              "before": null,
-              "after": [
-                {
-                  "url": "https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjKsR.html"
-                }
-              ]
-            },
-            "price": {
-              "before": null,
-              "after": 50000
-            },
-            "priceBasis": {
-              "before": null,
-              "after": "unknown"
-            },
-            "year": {
-              "before": null,
-              "after": 2022
-            },
-            "mileage": {
-              "before": null,
-              "after": 161000
-            },
-            "bodyCode": {
-              "before": null,
-              "after": "sedan"
-            },
-            "transmissionCode": {
-              "before": null,
-              "after": "manual"
-            },
-            "offerType": {
-              "before": null,
-              "after": "unknown"
-            },
-            "photos": {
-              "before": null,
-              "after": [
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InFzamhqb25scnJydDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.MY3JZ1ID0XVkI3M7zZtWNcNsmGyfFXD7DNbQ3iQ_QPo/image;s=1024x0;q=80",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNsOWFlMGgwb3pjajItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.0ngFI_agJJdLBYckIj7o6uVBe_UV9uWznwcxeZrzYaE/image;s=1024x0;q=100",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InFzamhqb25scnJydDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.MY3JZ1ID0XVkI3M7zZtWNcNsmGyfFXD7DNbQ3iQ_QPo/image;s=148x110",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNsOWFlMGgwb3pjajItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.0ngFI_agJJdLBYckIj7o6uVBe_UV9uWznwcxeZrzYaE/image;s=148x110",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im85eHpxeDVhanNndDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.KtMQAIUvwaQFtr87k-cdg_S5ypaEamnYGTGzp35j4Og/image;s=148x110",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImR4YWJkMzRjbXExNzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.chuPQGQONajj0C2lMrw7RnlaYkI-gVCuWJcJflLLeHg/image;s=148x110",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im96d21hOXU5aTczODEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.XZ1p1pj7cIPgNHhc2TOATFPhf-OWi7SM4XOasMtHtpU/image;s=148x110",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InY0a3djeXN0dW8xNTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.RKvgjuJ8MaOCOwdfOvDKCWuQlf1UE_cNkyaOQk71kMU/image;s=148x110",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjV2MWxpdzB6dGoyMTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.bprgSdp-DxyL1_XLtTKTq2sAwlLABREvSZGj-NiYZkw/image;s=148x110",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InQ4dXFpcTN6bWZ4ajItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Ng7ujV1c3DakprMLALhJtW0rbRCTPVaJOSVysUt4bYE/image;s=148x110",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im02dDNiaXRxNnl2bi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.9uxmNGY4tDTYAFfFSJ3C51iIL5yZS9SxPf93PlGZoTY/image;s=148x110",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRyN3JnenRteTM0czItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.azt31qEY0t9i7X2B8am2pdcSDeJlqoCUAv3x1YxatII/image;s=148x110"
-              ]
-            },
-            "location": {
-              "before": null,
-              "after": {
-                "status": "not_provided"
-              }
-            }
-          }
-        }
-      ],
-      "assessment": {
-        "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjKsR.html",
-        "modelKey": "toyota-corolla-e210",
-        "verdict": "check",
-        "failures": [],
-        "unknowns": [
-          "gross_purchase_price",
-          "exact_engine_variant",
-          "camera_or_compatible_retrofit",
-          "structural_history",
-          "stroller_and_family_fit",
-          "purchase_not_auction"
-        ],
-        "preferenceNotes": []
-      },
-      "verdict": "check",
-      "verdictTitle": "Do weryfikacji",
-      "verdictNote": "gross_purchase_price; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction"
-    },
-    {
-      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6Ih7Mr.html",
-      "modelKey": "toyota-corolla-e210",
-      "title": "Toyota Corolla 1.5 Style MS",
-      "urls": [
-        {
-          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6Ih7Mr.html"
-        }
-      ],
-      "price": 39900,
-      "priceBasis": "unknown",
-      "year": 2024,
-      "mileage": 28000,
-      "bodyCode": "sedan",
-      "transmissionCode": "automatic",
-      "offerType": "unknown",
-      "photos": [
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InltYXA5bjg2bjVwMzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.75wrRbwWwRldWTX2SiBxirn_VafE_fLpezABUDSzPNQ/image;s=1024x0;q=80",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNxa3BlZmJ0Zm53YTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.vRkaZwTA-MVS1mgKxZJognF2LdKASVhmI581C_VYNlM/image;s=1024x0;q=100",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InltYXA5bjg2bjVwMzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.75wrRbwWwRldWTX2SiBxirn_VafE_fLpezABUDSzPNQ/image;s=148x110",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNxa3BlZmJ0Zm53YTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.vRkaZwTA-MVS1mgKxZJognF2LdKASVhmI581C_VYNlM/image;s=148x110",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imh4ZDc2djl3b202dTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.RL5d8vA5qKqMx-tWKLox1KLrWE7uTQR0huzCe2e8p2I/image;s=148x110",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImR3MXcwcmw0Mm1rOC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.CG8H8TzDryPRSkQKClrvfr8TvJumrBCElIU4X1WwG3Y/image;s=148x110",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InlwMGlrY21pZndsZzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19._mwc2Lmf-mOQEvVIMf4lfGTq2f2_u9N3W2KQbaqTRdc/image;s=148x110",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Iml3dTIxZ3h2bnhzNDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.qp0fXkbi4iy2M7hFa5Otun2ImGlk0P6dF6aaLU-GVUU/image;s=148x110",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImozNm1mb2JhcXV2bS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.kD91zyD-71wyw5mj7ac46C-DNgrbpslWzTlYJTypB7g/image;s=148x110",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjUydGhiY25rd3p0bzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.UAkMkr0_K1i1__sVQe9qwl5qlySg1gIAC41YawQ8aCI/image;s=148x110",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImNqbmU2bGw3YWlodTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.bTP0DGMup8HIZaldcgMsZuAmL5CyTqefm7iQPso0h1k/image;s=148x110",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjAyZDAxeWcydW4wdy1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.DqTSgnN-GI09qZNXRvV3kJjrnFURO-WRH2Mw_fj_5IE/image;s=148x110"
-      ],
-      "location": {
-        "status": "not_provided"
-      },
-      "lpgInstalled": null,
-      "firstSeenAt": "2026-11-14T02:55:39.516Z",
-      "listingStates": [
-        {
-          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6Ih7Mr.html",
-          "status": "available",
-          "lastAttemptAt": "2026-11-14T02:55:39.516Z",
-          "lastCheckedAt": "2026-11-14T02:55:39.516Z",
-          "lastVerifiedAt": "2026-11-14T02:55:39.516Z",
-          "lastObservation": {
-            "url": "https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6Ih7Mr.html",
-            "checkedAt": "2026-11-14T02:55:39.516Z",
-            "availability": "available",
-            "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
-            "evidence": [
-              {
-                "kind": "seller",
-                "url": "https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6Ih7Mr.html",
-                "checkedAt": "2026-11-14T02:55:39.516Z",
-                "fields": [
-                  "title",
-                  "year",
-                  "mileage",
-                  "price",
-                  "bodyCode",
-                  "transmissionCode"
-                ],
-                "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
-              }
-            ]
-          }
-        }
-      ],
-      "lastCheckedAt": "2026-11-14T02:55:39.516Z",
-      "lastVerifiedAt": "2026-11-14T02:55:39.516Z",
-      "lastAttemptAt": "2026-11-14T02:55:39.516Z",
-      "history": [
-        {
-          "eventId": "491cc08fa54432920e1c7aae696396f18ce5fcc5bb889f048463561423af1bd5",
-          "runId": "direct-import-20261114-024644745-9140b1ce",
-          "checkedAt": "2026-11-14T02:55:39.516Z",
-          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6Ih7Mr.html",
-          "availability": "available",
-          "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
-          "httpStatus": null,
-          "photoCheck": null,
-          "evidence": [
-            {
-              "kind": "seller",
-              "url": "https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6Ih7Mr.html",
-              "checkedAt": "2026-11-14T02:55:39.516Z",
-              "fields": [
-                "title",
-                "year",
-                "mileage",
-                "price",
-                "bodyCode",
-                "transmissionCode"
-              ],
-              "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
-            }
-          ],
-          "reportedFields": {
-            "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6Ih7Mr.html",
-            "modelKey": "toyota-corolla-e210",
-            "title": "Toyota Corolla 1.5 Style MS",
-            "urls": [
-              {
-                "url": "https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6Ih7Mr.html"
-              }
-            ],
-            "price": 39900,
-            "priceBasis": "unknown",
-            "year": 2024,
-            "mileage": 28000,
-            "bodyCode": "sedan",
-            "transmissionCode": "automatic",
-            "offerType": "unknown",
-            "saleType": null,
-            "lpgInstalled": null,
-            "photos": [
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InltYXA5bjg2bjVwMzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.75wrRbwWwRldWTX2SiBxirn_VafE_fLpezABUDSzPNQ/image;s=1024x0;q=80",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNxa3BlZmJ0Zm53YTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.vRkaZwTA-MVS1mgKxZJognF2LdKASVhmI581C_VYNlM/image;s=1024x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InltYXA5bjg2bjVwMzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.75wrRbwWwRldWTX2SiBxirn_VafE_fLpezABUDSzPNQ/image;s=148x110",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNxa3BlZmJ0Zm53YTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.vRkaZwTA-MVS1mgKxZJognF2LdKASVhmI581C_VYNlM/image;s=148x110",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imh4ZDc2djl3b202dTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.RL5d8vA5qKqMx-tWKLox1KLrWE7uTQR0huzCe2e8p2I/image;s=148x110",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImR3MXcwcmw0Mm1rOC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.CG8H8TzDryPRSkQKClrvfr8TvJumrBCElIU4X1WwG3Y/image;s=148x110",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InlwMGlrY21pZndsZzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19._mwc2Lmf-mOQEvVIMf4lfGTq2f2_u9N3W2KQbaqTRdc/image;s=148x110",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Iml3dTIxZ3h2bnhzNDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.qp0fXkbi4iy2M7hFa5Otun2ImGlk0P6dF6aaLU-GVUU/image;s=148x110",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImozNm1mb2JhcXV2bS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.kD91zyD-71wyw5mj7ac46C-DNgrbpslWzTlYJTypB7g/image;s=148x110",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjUydGhiY25rd3p0bzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.UAkMkr0_K1i1__sVQe9qwl5qlySg1gIAC41YawQ8aCI/image;s=148x110",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImNqbmU2bGw3YWlodTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.bTP0DGMup8HIZaldcgMsZuAmL5CyTqefm7iQPso0h1k/image;s=148x110",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjAyZDAxeWcydW4wdy1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.DqTSgnN-GI09qZNXRvV3kJjrnFURO-WRH2Mw_fj_5IE/image;s=148x110"
-            ],
-            "location": {
-              "status": "not_provided"
-            }
-          },
-          "changes": {
-            "id": {
-              "before": null,
-              "after": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6Ih7Mr.html"
-            },
-            "modelKey": {
-              "before": null,
-              "after": "toyota-corolla-e210"
-            },
-            "title": {
-              "before": null,
-              "after": "Toyota Corolla 1.5 Style MS"
-            },
-            "urls": {
-              "before": null,
-              "after": [
-                {
-                  "url": "https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6Ih7Mr.html"
-                }
-              ]
-            },
-            "price": {
-              "before": null,
-              "after": 39900
-            },
-            "priceBasis": {
-              "before": null,
-              "after": "unknown"
-            },
-            "year": {
-              "before": null,
-              "after": 2024
-            },
-            "mileage": {
-              "before": null,
-              "after": 28000
-            },
-            "bodyCode": {
-              "before": null,
-              "after": "sedan"
-            },
-            "transmissionCode": {
-              "before": null,
-              "after": "automatic"
-            },
-            "offerType": {
-              "before": null,
-              "after": "unknown"
-            },
-            "photos": {
-              "before": null,
-              "after": [
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InltYXA5bjg2bjVwMzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.75wrRbwWwRldWTX2SiBxirn_VafE_fLpezABUDSzPNQ/image;s=1024x0;q=80",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNxa3BlZmJ0Zm53YTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.vRkaZwTA-MVS1mgKxZJognF2LdKASVhmI581C_VYNlM/image;s=1024x0;q=100",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InltYXA5bjg2bjVwMzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.75wrRbwWwRldWTX2SiBxirn_VafE_fLpezABUDSzPNQ/image;s=148x110",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNxa3BlZmJ0Zm53YTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.vRkaZwTA-MVS1mgKxZJognF2LdKASVhmI581C_VYNlM/image;s=148x110",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imh4ZDc2djl3b202dTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.RL5d8vA5qKqMx-tWKLox1KLrWE7uTQR0huzCe2e8p2I/image;s=148x110",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImR3MXcwcmw0Mm1rOC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.CG8H8TzDryPRSkQKClrvfr8TvJumrBCElIU4X1WwG3Y/image;s=148x110",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InlwMGlrY21pZndsZzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19._mwc2Lmf-mOQEvVIMf4lfGTq2f2_u9N3W2KQbaqTRdc/image;s=148x110",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Iml3dTIxZ3h2bnhzNDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.qp0fXkbi4iy2M7hFa5Otun2ImGlk0P6dF6aaLU-GVUU/image;s=148x110",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImozNm1mb2JhcXV2bS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.kD91zyD-71wyw5mj7ac46C-DNgrbpslWzTlYJTypB7g/image;s=148x110",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjUydGhiY25rd3p0bzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.UAkMkr0_K1i1__sVQe9qwl5qlySg1gIAC41YawQ8aCI/image;s=148x110",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImNqbmU2bGw3YWlodTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.bTP0DGMup8HIZaldcgMsZuAmL5CyTqefm7iQPso0h1k/image;s=148x110",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjAyZDAxeWcydW4wdy1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.DqTSgnN-GI09qZNXRvV3kJjrnFURO-WRH2Mw_fj_5IE/image;s=148x110"
-              ]
-            },
-            "location": {
-              "before": null,
-              "after": {
-                "status": "not_provided"
-              }
-            }
-          }
-        }
-      ],
-      "assessment": {
-        "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6Ih7Mr.html",
-        "modelKey": "toyota-corolla-e210",
-        "verdict": "check",
-        "failures": [],
-        "unknowns": [
-          "gross_purchase_price",
-          "exact_engine_variant",
-          "camera_or_compatible_retrofit",
-          "structural_history",
-          "stroller_and_family_fit",
-          "purchase_not_auction"
-        ],
-        "preferenceNotes": []
-      },
-      "verdict": "check",
-      "verdictTitle": "Do weryfikacji",
-      "verdictNote": "gross_purchase_price; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction"
     },
     {
       "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IhzgO.html",
@@ -3860,231 +3438,6 @@
       ],
       "assessment": {
         "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6Iia1q.html",
-        "modelKey": "toyota-corolla-e210",
-        "verdict": "check",
-        "failures": [],
-        "unknowns": [
-          "gross_purchase_price",
-          "exact_engine_variant",
-          "camera_or_compatible_retrofit",
-          "structural_history",
-          "stroller_and_family_fit",
-          "purchase_not_auction"
-        ],
-        "preferenceNotes": []
-      },
-      "verdict": "check",
-      "verdictTitle": "Do weryfikacji",
-      "verdictNote": "gross_purchase_price; exact_engine_variant; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit; purchase_not_auction"
-    },
-    {
-      "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjIRt.html",
-      "modelKey": "toyota-corolla-e210",
-      "title": "Toyota Corolla 2.0 Hybrid Executive",
-      "urls": [
-        {
-          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjIRt.html"
-        }
-      ],
-      "price": 51999,
-      "priceBasis": "unknown",
-      "year": 2022,
-      "mileage": 58980,
-      "bodyCode": "wagon",
-      "transmissionCode": "automatic",
-      "offerType": "unknown",
-      "photos": [
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjdpYzRmdXQ5NDN0NjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.zmcy2S2kumFySnjicnFfKsU8Q5UDGR6jsQyIn0PRilI/image;s=1024x0;q=80",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImJvdzhjOHlua2h0MDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.F1aU1fhkXYXvlnHiXeI2rFF9keRKe8Lg_6P1e6cn2Sk/image;s=1024x0;q=100",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjdpYzRmdXQ5NDN0NjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.zmcy2S2kumFySnjicnFfKsU8Q5UDGR6jsQyIn0PRilI/image;s=148x110",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImJvdzhjOHlua2h0MDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.F1aU1fhkXYXvlnHiXeI2rFF9keRKe8Lg_6P1e6cn2Sk/image;s=148x110",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjE5bmpkMTl4bDJsNy1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.H9Z9mTQyVnQtd9tnp19RwCacC1ISRSPtHRgTB9kQ-f4/image;s=148x110",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjVncmRlcG85NDBjODMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.S9naMgtwi3kda4iP9TCnG4uk80MGzRgjSuhup3l_yIg/image;s=148x110",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjcxM29iMGw5cnV6cTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.EcgQN65lZVToUakVEXpnwkqRmAmrX2h8iEuVFS-BLFM/image;s=148x110",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InNkNjNqeWZwczlwMTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.utKo6All0AL7r73UbU12C94VTCsOTyUFVUs4k7WySUc/image;s=148x110",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InZhN3liN2dtMHYxZjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.negS0aSpg7iEGwGrLmPR-KOKRM6PRSeHlfs9-kmNNwU/image;s=148x110",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inp1eDhjeHYwaDB0YS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.laGsDRrKRyfo4kceo2jI_ILd2RrLDkocm7Sjmk_fldQ/image;s=148x110",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRmYXFkbmFmNzBxejEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.H9yK_bk5IMG8SkgWOg8oQ8uSxXJv05fQm-zr3TvmV3A/image;s=148x110",
-        "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9zOGZvMjY3cXZlZC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.NDy8LUYvBFC5sKXl6xAXHzRjUClYK03tsWBRwwDLTJY/image;s=148x110"
-      ],
-      "location": {
-        "status": "not_provided"
-      },
-      "lpgInstalled": null,
-      "firstSeenAt": "2026-11-14T02:55:48.208Z",
-      "listingStates": [
-        {
-          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjIRt.html",
-          "status": "available",
-          "lastAttemptAt": "2026-11-14T02:55:48.208Z",
-          "lastCheckedAt": "2026-11-14T02:55:48.208Z",
-          "lastVerifiedAt": "2026-11-14T02:55:48.208Z",
-          "lastObservation": {
-            "url": "https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjIRt.html",
-            "checkedAt": "2026-11-14T02:55:48.208Z",
-            "availability": "available",
-            "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
-            "evidence": [
-              {
-                "kind": "seller",
-                "url": "https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjIRt.html",
-                "checkedAt": "2026-11-14T02:55:48.208Z",
-                "fields": [
-                  "title",
-                  "year",
-                  "mileage",
-                  "price",
-                  "bodyCode",
-                  "transmissionCode"
-                ],
-                "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
-              }
-            ]
-          }
-        }
-      ],
-      "lastCheckedAt": "2026-11-14T02:55:48.208Z",
-      "lastVerifiedAt": "2026-11-14T02:55:48.208Z",
-      "lastAttemptAt": "2026-11-14T02:55:48.208Z",
-      "history": [
-        {
-          "eventId": "5632cdb397bb9b9870dd8428f22ee3dcf285b8a01e04379f8b16ff01989a9fa1",
-          "runId": "direct-import-20261114-024644745-9140b1ce",
-          "checkedAt": "2026-11-14T02:55:48.208Z",
-          "url": "https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjIRt.html",
-          "availability": "available",
-          "note": "W treści karty widoczny przycisk kontaktu: Kontakt.",
-          "httpStatus": null,
-          "photoCheck": null,
-          "evidence": [
-            {
-              "kind": "seller",
-              "url": "https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjIRt.html",
-              "checkedAt": "2026-11-14T02:55:48.208Z",
-              "fields": [
-                "title",
-                "year",
-                "mileage",
-                "price",
-                "bodyCode",
-                "transmissionCode"
-              ],
-              "note": "Odczytano wartości z renderowanej karty portalu; brakujące pola pozostają nieznane."
-            }
-          ],
-          "reportedFields": {
-            "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjIRt.html",
-            "modelKey": "toyota-corolla-e210",
-            "title": "Toyota Corolla 2.0 Hybrid Executive",
-            "urls": [
-              {
-                "url": "https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjIRt.html"
-              }
-            ],
-            "price": 51999,
-            "priceBasis": "unknown",
-            "year": 2022,
-            "mileage": 58980,
-            "bodyCode": "wagon",
-            "transmissionCode": "automatic",
-            "offerType": "unknown",
-            "saleType": null,
-            "lpgInstalled": null,
-            "photos": [
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjdpYzRmdXQ5NDN0NjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.zmcy2S2kumFySnjicnFfKsU8Q5UDGR6jsQyIn0PRilI/image;s=1024x0;q=80",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImJvdzhjOHlua2h0MDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.F1aU1fhkXYXvlnHiXeI2rFF9keRKe8Lg_6P1e6cn2Sk/image;s=1024x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjdpYzRmdXQ5NDN0NjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.zmcy2S2kumFySnjicnFfKsU8Q5UDGR6jsQyIn0PRilI/image;s=148x110",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImJvdzhjOHlua2h0MDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.F1aU1fhkXYXvlnHiXeI2rFF9keRKe8Lg_6P1e6cn2Sk/image;s=148x110",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjE5bmpkMTl4bDJsNy1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.H9Z9mTQyVnQtd9tnp19RwCacC1ISRSPtHRgTB9kQ-f4/image;s=148x110",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjVncmRlcG85NDBjODMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.S9naMgtwi3kda4iP9TCnG4uk80MGzRgjSuhup3l_yIg/image;s=148x110",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjcxM29iMGw5cnV6cTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.EcgQN65lZVToUakVEXpnwkqRmAmrX2h8iEuVFS-BLFM/image;s=148x110",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InNkNjNqeWZwczlwMTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.utKo6All0AL7r73UbU12C94VTCsOTyUFVUs4k7WySUc/image;s=148x110",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InZhN3liN2dtMHYxZjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.negS0aSpg7iEGwGrLmPR-KOKRM6PRSeHlfs9-kmNNwU/image;s=148x110",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inp1eDhjeHYwaDB0YS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.laGsDRrKRyfo4kceo2jI_ILd2RrLDkocm7Sjmk_fldQ/image;s=148x110",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRmYXFkbmFmNzBxejEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.H9yK_bk5IMG8SkgWOg8oQ8uSxXJv05fQm-zr3TvmV3A/image;s=148x110",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9zOGZvMjY3cXZlZC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.NDy8LUYvBFC5sKXl6xAXHzRjUClYK03tsWBRwwDLTJY/image;s=148x110"
-            ],
-            "location": {
-              "status": "not_provided"
-            }
-          },
-          "changes": {
-            "id": {
-              "before": null,
-              "after": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjIRt.html"
-            },
-            "modelKey": {
-              "before": null,
-              "after": "toyota-corolla-e210"
-            },
-            "title": {
-              "before": null,
-              "after": "Toyota Corolla 2.0 Hybrid Executive"
-            },
-            "urls": {
-              "before": null,
-              "after": [
-                {
-                  "url": "https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjIRt.html"
-                }
-              ]
-            },
-            "price": {
-              "before": null,
-              "after": 51999
-            },
-            "priceBasis": {
-              "before": null,
-              "after": "unknown"
-            },
-            "year": {
-              "before": null,
-              "after": 2022
-            },
-            "mileage": {
-              "before": null,
-              "after": 58980
-            },
-            "bodyCode": {
-              "before": null,
-              "after": "wagon"
-            },
-            "transmissionCode": {
-              "before": null,
-              "after": "automatic"
-            },
-            "offerType": {
-              "before": null,
-              "after": "unknown"
-            },
-            "photos": {
-              "before": null,
-              "after": [
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjdpYzRmdXQ5NDN0NjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.zmcy2S2kumFySnjicnFfKsU8Q5UDGR6jsQyIn0PRilI/image;s=1024x0;q=80",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImJvdzhjOHlua2h0MDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.F1aU1fhkXYXvlnHiXeI2rFF9keRKe8Lg_6P1e6cn2Sk/image;s=1024x0;q=100",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjdpYzRmdXQ5NDN0NjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.zmcy2S2kumFySnjicnFfKsU8Q5UDGR6jsQyIn0PRilI/image;s=148x110",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImJvdzhjOHlua2h0MDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.F1aU1fhkXYXvlnHiXeI2rFF9keRKe8Lg_6P1e6cn2Sk/image;s=148x110",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjE5bmpkMTl4bDJsNy1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.H9Z9mTQyVnQtd9tnp19RwCacC1ISRSPtHRgTB9kQ-f4/image;s=148x110",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjVncmRlcG85NDBjODMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.S9naMgtwi3kda4iP9TCnG4uk80MGzRgjSuhup3l_yIg/image;s=148x110",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjcxM29iMGw5cnV6cTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.EcgQN65lZVToUakVEXpnwkqRmAmrX2h8iEuVFS-BLFM/image;s=148x110",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InNkNjNqeWZwczlwMTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.utKo6All0AL7r73UbU12C94VTCsOTyUFVUs4k7WySUc/image;s=148x110",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InZhN3liN2dtMHYxZjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.negS0aSpg7iEGwGrLmPR-KOKRM6PRSeHlfs9-kmNNwU/image;s=148x110",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inp1eDhjeHYwaDB0YS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.laGsDRrKRyfo4kceo2jI_ILd2RrLDkocm7Sjmk_fldQ/image;s=148x110",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRmYXFkbmFmNzBxejEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.H9yK_bk5IMG8SkgWOg8oQ8uSxXJv05fQm-zr3TvmV3A/image;s=148x110",
-                "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9zOGZvMjY3cXZlZC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.NDy8LUYvBFC5sKXl6xAXHzRjUClYK03tsWBRwwDLTJY/image;s=148x110"
-              ]
-            },
-            "location": {
-              "before": null,
-              "after": {
-                "status": "not_provided"
-              }
-            }
-          }
-        }
-      ],
-      "assessment": {
-        "id": "url:https://www.otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjIRt.html",
         "modelKey": "toyota-corolla-e210",
         "verdict": "check",
         "failures": [],
