@@ -1,5 +1,5 @@
 import { loadData } from "./assets/data.mjs?v=41";
-import { offerCard } from "./assets/views.mjs?v=45";
+import { offerCard } from "./assets/views.mjs?v=46";
 
 const $ = (selector) => document.querySelector(selector);
 const state = {

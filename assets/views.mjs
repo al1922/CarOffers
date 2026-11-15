@@ -220,9 +220,18 @@ function photoGallery(offer) {
   image.decoding = "async";
   image.referrerPolicy = "no-referrer";
   image.addEventListener("error", () => {
-    gallery.remove();
-    gallery.closest(".offer-card")?.classList.add("offer-card-no-image");
-  }, { once: true });
+    const failedIndex = urls.indexOf(image.currentSrc || image.src);
+    if (failedIndex < 0) return;
+    urls.splice(failedIndex, 1);
+    if (!urls.length) {
+      gallery.remove();
+      gallery.closest(".offer-card")?.classList.add("offer-card-no-image");
+      return;
+    }
+    if (failedIndex < current) current -= 1;
+    current = Math.min(current, urls.length - 1);
+    showPhoto(current);
+  });
 
   let current = 0;
   const counter = node("span", "gallery-counter");
@@ -234,6 +243,8 @@ function photoGallery(offer) {
     image.src = urls[current];
     image.alt = `Zdjęcie ${current + 1} z ${urls.length}: ${title}`;
     counter.textContent = `${current + 1} / ${urls.length}`;
+    previous.hidden = urls.length < 2;
+    next.hidden = urls.length < 2;
     previous.disabled = current === 0;
     next.disabled = current === urls.length - 1;
     previous.setAttribute("aria-label", `Poprzednie zdjęcie, ${current + 1} z ${urls.length}`);
