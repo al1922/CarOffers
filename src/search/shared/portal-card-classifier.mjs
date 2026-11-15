@@ -1,4 +1,5 @@
 import { isClearlyNonVehicleTitle, modelNameMatches, normalizeText } from "./portal-screening.mjs";
+import { parseFullDate } from "./date-parsing.mjs";
 
 const FACT_DATE_KEYS = ["publicationDate", "datePublished", "datePosted", "publishedAt", "publishedDate"];
 
@@ -51,20 +52,7 @@ function moneyValue(value) {
 }
 
 function dateValue(value) {
-  const text = scalarText(value);
-  let match = text.match(/\b(\d{4})-(\d{2})-(\d{2})\b/);
-  if (match) {
-    const [, year, month, day] = match;
-    const date = new Date(Date.UTC(Number(year), Number(month) - 1, Number(day)));
-    return date.getUTCFullYear() === Number(year) && date.getUTCMonth() === Number(month) - 1 &&
-      date.getUTCDate() === Number(day) ? `${year}-${month}-${day}` : null;
-  }
-  match = text.match(/\b(\d{1,2})[./-](\d{1,2})[./-](\d{4})\b/);
-  if (!match) return null;
-  const [, dayText, monthText, yearText] = match;
-  const date = new Date(Date.UTC(Number(yearText), Number(monthText) - 1, Number(dayText)));
-  return date.getUTCFullYear() === Number(yearText) && date.getUTCMonth() === Number(monthText) - 1 &&
-    date.getUTCDate() === Number(dayText) ? `${yearText}-${monthText.padStart(2, "0")}-${dayText.padStart(2, "0")}` : null;
+  return parseFullDate(scalarText(value));
 }
 
 function plainObject(value) {

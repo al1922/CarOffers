@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-11-15T18:41:11.866Z",
+  "updatedAt": "2026-11-15T20:40:30.037Z",
   "model": {
     "key": "toyota-auris-touring-sports",
     "name": "Toyota Auris II Touring Sports"
@@ -11,8 +11,8 @@
       "identityKey": "otomoto:https://otomoto.pl/osobowe/oferta/toyota-auris-ID6IhedI.html",
       "modelKey": "toyota-auris-touring-sports",
       "primaryListingKey": "otomoto:https://otomoto.pl/osobowe/oferta/toyota-auris-ID6IhedI.html",
-      "firstSeenAt": "2026-11-15T16:46:17.646Z",
-      "lastUpdatedAt": "2026-11-15T18:40:08.561Z",
+      "firstSeenAt": "2026-11-15T20:38:22.575Z",
+      "lastUpdatedAt": "2026-11-15T20:38:22.575Z",
       "listings": [
         {
           "key": "otomoto:https://otomoto.pl/osobowe/oferta/toyota-auris-ID6IhedI.html",
@@ -20,7 +20,7 @@
           "sourceName": "OTOMOTO",
           "sourceListingId": "6151062018",
           "url": "https://otomoto.pl/osobowe/oferta/toyota-auris-ID6IhedI.html",
-          "lastCheckedAt": "2026-11-15T18:40:08.561Z",
+          "lastCheckedAt": "2026-11-15T20:38:22.575Z",
           "facts": {
             "title": "Toyota Auris",
             "price": 48000,
@@ -35,6 +35,7 @@
             "bodyCode": "wagon",
             "transmission": "automatic",
             "transmissionCode": "automatic",
+            "firstRegistrationDate": "2018-10-16",
             "lpgInstalled": null,
             "location": {
               "status": "not_provided",
@@ -51,8 +52,7 @@
             ],
             "fuel": "hybrid",
             "vin": null,
-            "firstRegistrationDate": null,
-            "lastReadAt": "2026-11-15T18:40:08.561Z"
+            "lastReadAt": "2026-11-15T20:38:22.575Z"
           },
           "sourceExtensions": {
             "otomoto": {
@@ -157,6 +157,14 @@
                 "excerpt": "1.8 Hybrid"
               }
             ],
+            "firstRegistrationDate": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "kcji 2018 Generacja II (2012-) Data pierwszej rejestracji w historii pojazdu 16 października 2018 VIN Wyświetl VIN Kup ten pojazd na raty Oblicz Specyfikacja Stan i historia 14/14 zweryfikowanych pól Szczegółowe dane pojazdu zostały zweryfi"
+              }
+            ],
             "transmission": [
               {
                 "source": "otomoto",
@@ -208,8 +216,8 @@
       "identityKey": "otomoto:https://otomoto.pl/osobowe/oferta/toyota-auris-ID6IjFzp.html",
       "modelKey": "toyota-auris-touring-sports",
       "primaryListingKey": "otomoto:https://otomoto.pl/osobowe/oferta/toyota-auris-ID6IjFzp.html",
-      "firstSeenAt": "2026-11-15T16:46:17.646Z",
-      "lastUpdatedAt": "2026-11-15T18:40:08.561Z",
+      "firstSeenAt": "2026-11-15T20:38:22.575Z",
+      "lastUpdatedAt": "2026-11-15T20:38:22.575Z",
       "listings": [
         {
           "key": "otomoto:https://otomoto.pl/osobowe/oferta/toyota-auris-ID6IjFzp.html",
@@ -217,7 +225,7 @@
           "sourceName": "OTOMOTO",
           "sourceListingId": "6151643807",
           "url": "https://otomoto.pl/osobowe/oferta/toyota-auris-ID6IjFzp.html",
-          "lastCheckedAt": "2026-11-15T18:40:08.561Z",
+          "lastCheckedAt": "2026-11-15T20:38:22.575Z",
           "facts": {
             "title": "Toyota Auris 1.6 Prestige",
             "price": 52500,
@@ -232,6 +240,7 @@
             "bodyCode": "wagon",
             "transmission": "manual",
             "transmissionCode": "manual",
+            "firstRegistrationDate": "2019-08-21",
             "lpgInstalled": null,
             "location": {
               "status": "available",
@@ -251,8 +260,7 @@
             ],
             "fuel": "petrol",
             "vin": null,
-            "firstRegistrationDate": null,
-            "lastReadAt": "2026-11-15T18:40:08.561Z"
+            "lastReadAt": "2026-11-15T20:38:22.575Z"
           },
           "sourceExtensions": {
             "otomoto": {
@@ -355,6 +363,14 @@
                 "sourcePath": "detail.bodyText",
                 "method": "text_rule",
                 "excerpt": "1.6 Valvematic"
+              }
+            ],
+            "firstRegistrationDate": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "rejestracji w historii pojazdu 21 sierpnia 2019 VIN Wyświetl VIN Kup ten pojazd na raty Oblicz Specyfikacja Stan i historia Finansowanie REKLAMA Zamów teraz, pierwsza rata w 2027 roku Potrzebujesz finansowania? Ustaw warunki kredytu jaki C"
               }
             ],
             "transmission": [

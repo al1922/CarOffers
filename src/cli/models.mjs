@@ -32,7 +32,7 @@ export async function addModel(argv) {
     fields: {
       required: ["price", "year", "mileage", "engineVariant"],
       semiRequired: ["vin", "firstRegistrationDate", "transmission", "body"],
-      optional: ["location", "photos", "cameraStatus", "fuel"],
+      optional: ["location", "photos", "cameraStatus", "fuel", "engineCapacity", "enginePower"],
     },
     knowledgeFile: `knowledge/models/${key}.json`,
   };

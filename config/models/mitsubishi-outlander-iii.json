@@ -36,7 +36,9 @@
       "location",
       "photos",
       "cameraStatus",
-      "fuel"
+      "fuel",
+      "engineCapacity",
+      "enginePower"
     ]
   },
   "knowledgeFile": "knowledge/models/mitsubishi-outlander-iii.json"

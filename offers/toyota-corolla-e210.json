@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-11-15T18:41:11.866Z",
+  "updatedAt": "2026-11-15T20:40:30.037Z",
   "model": {
     "key": "toyota-corolla-e210",
     "name": "Toyota Corolla XII (E210)"
@@ -11,8 +11,8 @@
       "identityKey": "otomoto:https://otomoto.pl/osobowe/oferta/toyota-corolla-ID6I2VMK.html",
       "modelKey": "toyota-corolla-e210",
       "primaryListingKey": "otomoto:https://otomoto.pl/osobowe/oferta/toyota-corolla-ID6I2VMK.html",
-      "firstSeenAt": "2026-11-15T16:47:21.106Z",
-      "lastUpdatedAt": "2026-11-15T18:41:11.530Z",
+      "firstSeenAt": "2026-11-15T20:40:29.700Z",
+      "lastUpdatedAt": "2026-11-15T20:40:29.700Z",
       "listings": [
         {
           "key": "otomoto:https://otomoto.pl/osobowe/oferta/toyota-corolla-ID6I2VMK.html",
@@ -20,7 +20,7 @@
           "sourceName": "OTOMOTO",
           "sourceListingId": "6147658406",
           "url": "https://otomoto.pl/osobowe/oferta/toyota-corolla-ID6I2VMK.html",
-          "lastCheckedAt": "2026-11-15T18:41:11.530Z",
+          "lastCheckedAt": "2026-11-15T20:40:29.700Z",
           "facts": {
             "title": "Toyota Corolla",
             "price": 36797,
@@ -35,6 +35,7 @@
             "bodyCode": "sedan",
             "transmission": "automatic",
             "transmissionCode": "automatic",
+            "firstRegistrationDate": "2024-04-20",
             "lpgInstalled": null,
             "location": {
               "status": "available",
@@ -57,8 +58,7 @@
             ],
             "fuel": "hybrid",
             "vin": null,
-            "firstRegistrationDate": null,
-            "lastReadAt": "2026-11-15T18:41:11.530Z"
+            "lastReadAt": "2026-11-15T20:40:29.700Z"
           },
           "sourceExtensions": {
             "otomoto": {
@@ -152,6 +152,14 @@
                 "excerpt": "1.8 Hybrid"
               }
             ],
+            "firstRegistrationDate": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "racja Seria E12 (2018-present) Data pierwszej rejestracji w historii pojazdu 20 kwietnia 2024 VIN Wyświetl VIN Kup ten pojazd na raty Oblicz Specyfikacja Stan i historia Finansowanie REKLAMA Zamów teraz, pierwsza rata w 2027 roku Potrzebuje"
+              }
+            ],
             "transmission": [
               {
                 "source": "otomoto",
@@ -193,27 +201,27 @@
       ]
     },
     {
-      "id": "otomoto:https://otomoto.pl/osobowe/oferta/toyota-corolla-ID6IgtkH.html",
-      "identityKey": "otomoto:https://otomoto.pl/osobowe/oferta/toyota-corolla-ID6IgtkH.html",
+      "id": "otomoto:https://otomoto.pl/osobowe/oferta/toyota-corolla-ID6Ijk4O.html",
+      "identityKey": "otomoto:https://otomoto.pl/osobowe/oferta/toyota-corolla-ID6Ijk4O.html",
       "modelKey": "toyota-corolla-e210",
-      "primaryListingKey": "otomoto:https://otomoto.pl/osobowe/oferta/toyota-corolla-ID6IgtkH.html",
-      "firstSeenAt": "2026-11-15T16:47:21.106Z",
-      "lastUpdatedAt": "2026-11-15T18:41:11.530Z",
+      "primaryListingKey": "otomoto:https://otomoto.pl/osobowe/oferta/toyota-corolla-ID6Ijk4O.html",
+      "firstSeenAt": "2026-11-15T20:40:29.700Z",
+      "lastUpdatedAt": "2026-11-15T20:40:29.700Z",
       "listings": [
         {
-          "key": "otomoto:https://otomoto.pl/osobowe/oferta/toyota-corolla-ID6IgtkH.html",
+          "key": "otomoto:https://otomoto.pl/osobowe/oferta/toyota-corolla-ID6Ijk4O.html",
           "sourceId": "otomoto",
           "sourceName": "OTOMOTO",
-          "sourceListingId": "6150881783",
-          "url": "https://otomoto.pl/osobowe/oferta/toyota-corolla-ID6IgtkH.html",
-          "lastCheckedAt": "2026-11-15T18:41:11.530Z",
+          "sourceListingId": "6151561186",
+          "url": "https://otomoto.pl/osobowe/oferta/toyota-corolla-ID6Ijk4O.html",
+          "lastCheckedAt": "2026-11-15T20:40:29.700Z",
           "facts": {
-            "title": "Toyota Corolla 1.8 Hybrid GPF Comfort",
-            "price": 45800,
+            "title": "Toyota Corolla 1.8 Hybrid Active",
+            "price": 43000,
             "priceBasis": "gross_total",
-            "year": 2023,
-            "mileage": 73000,
-            "engine": "ver-1-8-hybrid-gpf-comfort",
+            "year": 2020,
+            "mileage": 25067,
+            "engine": "1.8 Hybrid",
             "engineVariant": "1.8-hybrid-122",
             "engineCapacity": "1798",
             "enginePower": "122",
@@ -221,35 +229,36 @@
             "bodyCode": "sedan",
             "transmission": "automatic",
             "transmissionCode": "automatic",
+            "firstRegistrationDate": "2020-02-15",
             "lpgInstalled": null,
             "location": {
               "status": "not_provided",
-              "city": "Skierniewice"
+              "city": "Novy Jicin"
             },
             "photos": [
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InVveXg3YWMzd3N5Mi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.M1VsIwP3fwiXl8d8XJSrLSCPWI0ZWAIvlGh23MQg23k/image;s=5120x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InQ2azNyM3FldmZrMDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.cGMbv3d42-d__UnoDFiG-om7INYQ24-kSjRuFerySAU/image;s=5120x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImMwZm5oYmVxb2QyZDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.1Y8xTRHN3zNELN_o2SXuLVu4vzSFnrN4p_UU2H_9OTE/image;s=5120x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImdzZDRoZnp0enk1ZjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.tSUF8tz9xi0zuibaYaBuYxQmcBeg01wFnGpkZ6HzNhY/image;s=5120x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InI3eDRrNjBsaDFrcDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.cqUBkwO5T9Bj6q9WzaRSz9_R6b631PbzDkwOGFWKXDM/image;s=5120x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRvZnZncWIzcm44ZTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.R3o56Xcn2-7_A8Nu3UkZBlGAl1DmQqhHOwGUJkhv3ns/image;s=5120x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjdtOG16aWx2aGV3cjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.YJmP3KY0RB_wZYan18JoF44RaJBLAmIAViI2MMMKPsc/image;s=5120x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InZxamk0eGRmNm9kZzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.zkI7NYQKae2mZaSY_WgPqICNrE8izQw4DDsg-bOziQs/image;s=5120x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJyMDUxaGszdWNmYi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.yN5RDV3oC7k2y5oRS8eWdFmmTbq0rq0C9R7dkyqmSpA/image;s=5120x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im4zNXl0and1YzVpcDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.4F7RtijdtVZZMRPwXN_OBrOAC8UV_5KLzK6DuL7263g/image;s=5120x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im5xejI1azhsN2ZvMzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.di8HBNiTz1BpagCaC_srXvkMShSfG0rDot6QIwmiuNU/image;s=5120x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJ1bnFkaGd3OWh0dTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.rO4QpYzk0r3SEXUhKR-bUDw40wM-PrIbVrmON8pETTo/image;s=148x110"
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InQ0c2M0aWM3ejl4ei1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.hgnPq63Q_CBCG-m2hBshQxUvpVTupxwZ7ku65zr3-kM/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhsMGF2NjcyaXpqdTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.1CyJuVHilzgvQ_DYNwhxy2n1dQFCBW7YFprzFWMZXZI/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ing3ZG9vbHFsZW5ncTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.es_Pm4inDLphncTTwSVyS0QujTiTw74Z1k_HRHTn1ss/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjludHlua2I0eWk5NDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Dq2JkPyT3NE1aoabvlWffx8GjGkgPEqLzKsHClwRk18/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhrdHY3aXY1ZnJucDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.O3iPnlZ6-XViKrbV3Kn7Gyxlppera9hmljCrp36996E/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjUxNmQxbzg3cmZyajItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.kmgeg238V8ngKdB_ZaSDzxLcjoQ0Vq5JPppgF6-_lic/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InBldWMxaWxqN2IxMzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.4iLqthNFVJp0JesJ2b0GJOd99av6vW2PohLdSAoADDI/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjVrbHhzcjJzNmw3bzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.qah3CWJjpv7-hlCK2R6rwp8XL_m7FHySjTuAlsWdh-0/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InRmcHl4NTJjM3VvNDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.2Wk2KyVOwx9Glh7USBZFAQa_Hb8tOiLvgSLk54_3tog/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImZzc3IybHRzZzZzajMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.P96Ctcq-LXt8CzFRrRAO_IfhwrvvMG6nRnetLOm8uM4/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9veDcwY2Z3YnRwZTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.80vuwfv8azcnAjAVTCsbpNHN1zukMYOIKaRWCTb87tk/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjM0ZW1tbzN4ZDNlZDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.CCF-Ch4kjyKjpC3Vy4L-hMQES5kASS4CMmd9LGH4aII/image;s=5120x0;q=100"
             ],
             "fuel": "hybrid",
             "vin": null,
-            "firstRegistrationDate": null,
-            "lastReadAt": "2026-11-15T18:41:11.530Z"
+            "lastReadAt": "2026-11-15T20:40:29.700Z"
           },
           "sourceExtensions": {
             "otomoto": {
               "listing": {
                 "brand": "toyota",
-                "model": "corolla"
+                "model": "corolla",
+                "sellerName": "Petr Starecek"
               }
             }
           },
@@ -259,19 +268,19 @@
                 "source": "otomoto",
                 "sourcePath": "detail.salePanel.price",
                 "method": "label_value",
-                "excerpt": "45 800 PLN"
+                "excerpt": "43 000 PLN"
               },
               {
                 "source": "otomoto",
                 "sourcePath": "price.amount.value",
                 "method": "structured_field",
-                "excerpt": "45800"
+                "excerpt": "43000"
               },
               {
                 "source": "otomoto",
                 "sourcePath": "sourcePayload.otomoto.listingFields.price",
                 "method": "structured_field",
-                "excerpt": "price: 45800"
+                "excerpt": "price: 43000"
               }
             ],
             "year": [
@@ -279,25 +288,25 @@
                 "source": "otomoto",
                 "sourcePath": "detail.fields[\"Rok produkcji\"]",
                 "method": "structured_field",
-                "excerpt": "Rok produkcji: 2023"
+                "excerpt": "Rok produkcji: 2020"
               },
               {
                 "source": "otomoto",
                 "sourcePath": "sourcePayload.otomoto.listingFields.productionYear",
                 "method": "structured_field",
-                "excerpt": "productionYear: 2023"
+                "excerpt": "productionYear: 2020"
               },
               {
                 "source": "otomoto",
                 "sourcePath": "detail.bodyText",
                 "method": "text_rule",
-                "excerpt": "Rok produkcji 2023 Generacja Seria E12 (2018-present) Data pierwszej rejestracji w historii pojazdu 9 lutego 2024 VIN Wyświetl VIN Kup ten pojazd na raty Oblicz Specyfikacja Stan i historia Finansowanie REKLAMA Zamów teraz, pierwsza rata w"
+                "excerpt": "zba drzwi 4 Liczba miejsc 5 Rok produkcji 2020 Generacja Seria E12 (2018-present) Data pierwszej rejestracji w historii pojazdu 15 lutego 2020 VIN Wyświetl VIN Kup ten pojazd na raty Oblicz Specyfikacja Stan i historia Specyfikacja EV Finan"
               },
               {
                 "source": "otomoto",
                 "sourcePath": "listing/detail text (label parser)",
                 "method": "text_rule",
-                "excerpt": "2023"
+                "excerpt": "2020"
               }
             ],
             "mileage": [
@@ -305,33 +314,39 @@
                 "source": "otomoto",
                 "sourcePath": "detail.fields[\"Przebieg\"]",
                 "method": "structured_field",
-                "excerpt": "Przebieg: 73000 km"
+                "excerpt": "Przebieg: 25067 km"
               },
               {
                 "source": "otomoto",
                 "sourcePath": "sourcePayload.otomoto.listingFields.mileage",
                 "method": "structured_field",
-                "excerpt": "mileage: 73000 km"
+                "excerpt": "mileage: 25067 km"
               },
               {
                 "source": "otomoto",
                 "sourcePath": "detail.bodyText",
                 "method": "text_rule",
-                "excerpt": ") rok prod. 2023 Data I rej. 09.02.2024 Przebieg: 73 000 km (bardzo niski) Uszkodzenia zewnętrzne Samochód palący i jeżdżący! pod maską - ok, próg - ok, słupek - ok, poduszka - ok Po Taxi na Taxi :-) Cena BRUTTO! Pokaż pełny opis 15 listopa"
+                "excerpt": "cyjne. Mówię po polsku. Sedan, biały, rok 2019, przebieg 25 067 km, 4-drzwiowy, automatyczna skrzynia biegów, hybrida. 6 listopada 2026 15:08 ID: 6151561186 Szczegóły Podstawowe Marka pojazdu Toyota Model pojazdu Corolla Wersja 1.8 Hybrid A"
               },
               {
                 "source": "otomoto",
                 "sourcePath": "listing/detail text (km parser)",
                 "method": "text_rule",
-                "excerpt": "73000 km"
+                "excerpt": "25067 km"
               }
             ],
             "engine": [
               {
                 "source": "otomoto",
                 "sourcePath": "sourcePayload.otomoto.listingFields.engine",
+                "method": "text_rule",
+                "excerpt": "engine: ver-1-8-hybrid-active"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
                 "method": "structured_field",
-                "excerpt": "engine: ver-1-8-hybrid-gpf-comfort"
+                "excerpt": "engine: ver-1-8-hybrid-active"
               },
               {
                 "source": "otomoto",
@@ -363,7 +378,7 @@
                 "source": "otomoto",
                 "sourcePath": "sourcePayload.otomoto.listingFields.engine",
                 "method": "structured_field",
-                "excerpt": "engine: ver-1-8-hybrid-gpf-comfort"
+                "excerpt": "engine: ver-1-8-hybrid-active"
               },
               {
                 "source": "otomoto",
@@ -388,6 +403,14 @@
                 "sourcePath": "detail.bodyText",
                 "method": "text_rule",
                 "excerpt": "1.8 Hybrid"
+              }
+            ],
+            "firstRegistrationDate": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "eria E12 (2018-present) Data pierwszej rejestracji w historii pojazdu 15 lutego 2020 VIN Wyświetl VIN Kup ten pojazd na raty Oblicz Specyfikacja Stan i historia Specyfikacja EV Finansowanie REKLAMA Zamów teraz, pierwsza rata w 2027 roku Pot"
               }
             ],
             "transmission": [
@@ -435,8 +458,8 @@
       "identityKey": "otomoto:https://otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjNe0.html",
       "modelKey": "toyota-corolla-e210",
       "primaryListingKey": "otomoto:https://otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjNe0.html",
-      "firstSeenAt": "2026-11-15T18:41:11.530Z",
-      "lastUpdatedAt": "2026-11-15T18:41:11.530Z",
+      "firstSeenAt": "2026-11-15T20:40:29.700Z",
+      "lastUpdatedAt": "2026-11-15T20:40:29.700Z",
       "listings": [
         {
           "key": "otomoto:https://otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjNe0.html",
@@ -444,14 +467,14 @@
           "sourceName": "OTOMOTO",
           "sourceListingId": "6151673232",
           "url": "https://otomoto.pl/osobowe/oferta/toyota-corolla-ID6IjNe0.html",
-          "lastCheckedAt": "2026-11-15T18:41:11.530Z",
+          "lastCheckedAt": "2026-11-15T20:40:29.700Z",
           "facts": {
             "title": "Toyota Corolla 1.8 Hybrid Comfort",
             "price": 54990,
             "priceBasis": "gross_total",
             "year": 2020,
             "mileage": 170000,
-            "engine": "ver-1-8-hybrid-comfort",
+            "engine": "1.8 Hybrid",
             "engineVariant": "1.8-hybrid-122",
             "engineCapacity": "1798",
             "enginePower": "122",
@@ -459,6 +482,7 @@
             "bodyCode": "wagon",
             "transmission": "automatic",
             "transmissionCode": "automatic",
+            "firstRegistrationDate": "2020-08-08",
             "lpgInstalled": null,
             "location": {
               "status": "available",
@@ -485,8 +509,7 @@
             ],
             "fuel": "hybrid",
             "vin": null,
-            "firstRegistrationDate": null,
-            "lastReadAt": "2026-11-15T18:41:11.530Z"
+            "lastReadAt": "2026-11-15T20:40:29.700Z"
           },
           "sourceExtensions": {
             "otomoto": {
@@ -567,6 +590,12 @@
               {
                 "source": "otomoto",
                 "sourcePath": "sourcePayload.otomoto.listingFields.engine",
+                "method": "text_rule",
+                "excerpt": "engine: ver-1-8-hybrid-comfort"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
                 "method": "structured_field",
                 "excerpt": "engine: ver-1-8-hybrid-comfort"
               },
@@ -627,6 +656,14 @@
                 "excerpt": "1.8 Hybrid"
               }
             ],
+            "firstRegistrationDate": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "present) Data pierwszej rejestracji w historii pojazdu 8 sierpnia 2020 VIN Wyświetl VIN Kup ten pojazd na raty Oblicz Specyfikacja Stan i historia Specyfikacja EV Finansowanie REKLAMA Zamów teraz, pierwsza rata w 2027 roku Potrzebujesz fina"
+              }
+            ],
             "transmission": [
               {
                 "source": "otomoto",
@@ -672,8 +709,8 @@
       "identityKey": "otomoto:https://otomoto.pl/osobowe/oferta/toyota-corolla-ID6IimWg.html",
       "modelKey": "toyota-corolla-e210",
       "primaryListingKey": "otomoto:https://otomoto.pl/osobowe/oferta/toyota-corolla-ID6IimWg.html",
-      "firstSeenAt": "2026-11-15T18:41:11.530Z",
-      "lastUpdatedAt": "2026-11-15T18:41:11.530Z",
+      "firstSeenAt": "2026-11-15T20:40:29.700Z",
+      "lastUpdatedAt": "2026-11-15T20:40:29.700Z",
       "listings": [
         {
           "key": "otomoto:https://otomoto.pl/osobowe/oferta/toyota-corolla-ID6IimWg.html",
@@ -681,7 +718,7 @@
           "sourceName": "OTOMOTO",
           "sourceListingId": "6151333798",
           "url": "https://otomoto.pl/osobowe/oferta/toyota-corolla-ID6IimWg.html",
-          "lastCheckedAt": "2026-11-15T18:41:11.530Z",
+          "lastCheckedAt": "2026-11-15T20:40:29.700Z",
           "facts": {
             "title": "Toyota Corolla",
             "price": 55000,
@@ -696,6 +733,7 @@
             "bodyCode": "sedan",
             "transmission": "manual",
             "transmissionCode": "manual",
+            "firstRegistrationDate": "2020-03-25",
             "lpgInstalled": true,
             "location": {
               "status": "available",
@@ -722,8 +760,7 @@
             ],
             "fuel": "lpg",
             "vin": null,
-            "firstRegistrationDate": null,
-            "lastReadAt": "2026-11-15T18:41:11.530Z"
+            "lastReadAt": "2026-11-15T20:40:29.700Z"
           },
           "sourceExtensions": {
             "otomoto": {
@@ -816,6 +853,14 @@
                 "excerpt": "1.6 valvematic"
               }
             ],
+            "firstRegistrationDate": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "nt) Data pierwszej rejestracji w historii pojazdu 25 marca 2020 VIN Wyświetl VIN Kup ten pojazd na raty Oblicz Specyfikacja Stan i historia 14/14 zweryfikowanych pól Szczegółowe dane pojazdu zostały zweryfikowane poprzez porównanie ich z rz"
+              }
+            ],
             "transmission": [
               {
                 "source": "otomoto",
@@ -850,245 +895,6 @@
                 "sourcePath": "sourcePayload.otomoto.listingFields.fuelType",
                 "method": "structured_field",
                 "excerpt": "fuelType: petrol-lpg"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "otomoto:https://otomoto.pl/osobowe/oferta/toyota-corolla-ID6Ijk4O.html",
-      "identityKey": "otomoto:https://otomoto.pl/osobowe/oferta/toyota-corolla-ID6Ijk4O.html",
-      "modelKey": "toyota-corolla-e210",
-      "primaryListingKey": "otomoto:https://otomoto.pl/osobowe/oferta/toyota-corolla-ID6Ijk4O.html",
-      "firstSeenAt": "2026-11-15T18:41:11.530Z",
-      "lastUpdatedAt": "2026-11-15T18:41:11.530Z",
-      "listings": [
-        {
-          "key": "otomoto:https://otomoto.pl/osobowe/oferta/toyota-corolla-ID6Ijk4O.html",
-          "sourceId": "otomoto",
-          "sourceName": "OTOMOTO",
-          "sourceListingId": "6151561186",
-          "url": "https://otomoto.pl/osobowe/oferta/toyota-corolla-ID6Ijk4O.html",
-          "lastCheckedAt": "2026-11-15T18:41:11.530Z",
-          "facts": {
-            "title": "Toyota Corolla 1.8 Hybrid Active",
-            "price": 43000,
-            "priceBasis": "gross_total",
-            "year": 2020,
-            "mileage": 25067,
-            "engine": "ver-1-8-hybrid-active",
-            "engineVariant": "1.8-hybrid-122",
-            "engineCapacity": "1798",
-            "enginePower": "122",
-            "body": "sedan",
-            "bodyCode": "sedan",
-            "transmission": "automatic",
-            "transmissionCode": "automatic",
-            "lpgInstalled": null,
-            "location": {
-              "status": "not_provided",
-              "city": "Novy Jicin"
-            },
-            "photos": [
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InQ0c2M0aWM3ejl4ei1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.hgnPq63Q_CBCG-m2hBshQxUvpVTupxwZ7ku65zr3-kM/image;s=5120x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhsMGF2NjcyaXpqdTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.1CyJuVHilzgvQ_DYNwhxy2n1dQFCBW7YFprzFWMZXZI/image;s=5120x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ing3ZG9vbHFsZW5ncTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.es_Pm4inDLphncTTwSVyS0QujTiTw74Z1k_HRHTn1ss/image;s=5120x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjludHlua2I0eWk5NDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Dq2JkPyT3NE1aoabvlWffx8GjGkgPEqLzKsHClwRk18/image;s=5120x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhrdHY3aXY1ZnJucDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.O3iPnlZ6-XViKrbV3Kn7Gyxlppera9hmljCrp36996E/image;s=5120x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjUxNmQxbzg3cmZyajItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.kmgeg238V8ngKdB_ZaSDzxLcjoQ0Vq5JPppgF6-_lic/image;s=5120x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InBldWMxaWxqN2IxMzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.4iLqthNFVJp0JesJ2b0GJOd99av6vW2PohLdSAoADDI/image;s=5120x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjVrbHhzcjJzNmw3bzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.qah3CWJjpv7-hlCK2R6rwp8XL_m7FHySjTuAlsWdh-0/image;s=5120x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InRmcHl4NTJjM3VvNDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.2Wk2KyVOwx9Glh7USBZFAQa_Hb8tOiLvgSLk54_3tog/image;s=5120x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImZzc3IybHRzZzZzajMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.P96Ctcq-LXt8CzFRrRAO_IfhwrvvMG6nRnetLOm8uM4/image;s=5120x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9veDcwY2Z3YnRwZTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.80vuwfv8azcnAjAVTCsbpNHN1zukMYOIKaRWCTb87tk/image;s=5120x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjM0ZW1tbzN4ZDNlZDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.CCF-Ch4kjyKjpC3Vy4L-hMQES5kASS4CMmd9LGH4aII/image;s=5120x0;q=100"
-            ],
-            "fuel": "hybrid",
-            "vin": null,
-            "firstRegistrationDate": null,
-            "lastReadAt": "2026-11-15T18:41:11.530Z"
-          },
-          "sourceExtensions": {
-            "otomoto": {
-              "listing": {
-                "brand": "toyota",
-                "model": "corolla",
-                "sellerName": "Petr Starecek"
-              }
-            }
-          },
-          "fieldEvidence": {
-            "price": [
-              {
-                "source": "otomoto",
-                "sourcePath": "detail.salePanel.price",
-                "method": "label_value",
-                "excerpt": "43 000 PLN"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "price.amount.value",
-                "method": "structured_field",
-                "excerpt": "43000"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "sourcePayload.otomoto.listingFields.price",
-                "method": "structured_field",
-                "excerpt": "price: 43000"
-              }
-            ],
-            "year": [
-              {
-                "source": "otomoto",
-                "sourcePath": "detail.fields[\"Rok produkcji\"]",
-                "method": "structured_field",
-                "excerpt": "Rok produkcji: 2020"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "sourcePayload.otomoto.listingFields.productionYear",
-                "method": "structured_field",
-                "excerpt": "productionYear: 2020"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "detail.bodyText",
-                "method": "text_rule",
-                "excerpt": "zba drzwi 4 Liczba miejsc 5 Rok produkcji 2020 Generacja Seria E12 (2018-present) Data pierwszej rejestracji w historii pojazdu 15 lutego 2020 VIN Wyświetl VIN Kup ten pojazd na raty Oblicz Specyfikacja Stan i historia Specyfikacja EV Finan"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "listing/detail text (label parser)",
-                "method": "text_rule",
-                "excerpt": "2020"
-              }
-            ],
-            "mileage": [
-              {
-                "source": "otomoto",
-                "sourcePath": "detail.fields[\"Przebieg\"]",
-                "method": "structured_field",
-                "excerpt": "Przebieg: 25067 km"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "sourcePayload.otomoto.listingFields.mileage",
-                "method": "structured_field",
-                "excerpt": "mileage: 25067 km"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "detail.bodyText",
-                "method": "text_rule",
-                "excerpt": "cyjne. Mówię po polsku. Sedan, biały, rok 2019, przebieg 25 067 km, 4-drzwiowy, automatyczna skrzynia biegów, hybrida. 6 listopada 2026 15:08 ID: 6151561186 Szczegóły Podstawowe Marka pojazdu Toyota Model pojazdu Corolla Wersja 1.8 Hybrid A"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "listing/detail text (km parser)",
-                "method": "text_rule",
-                "excerpt": "25067 km"
-              }
-            ],
-            "engine": [
-              {
-                "source": "otomoto",
-                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
-                "method": "structured_field",
-                "excerpt": "engine: ver-1-8-hybrid-active"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "listing.title",
-                "method": "text_rule",
-                "excerpt": "1.8 Hybrid"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "listing.visibleText",
-                "method": "text_rule",
-                "excerpt": "1.8 Hybrid"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "detail.title",
-                "method": "text_rule",
-                "excerpt": "1.8 Hybrid"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "detail.bodyText",
-                "method": "text_rule",
-                "excerpt": "1.8 Hybrid"
-              }
-            ],
-            "engineVariant": [
-              {
-                "source": "otomoto",
-                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
-                "method": "structured_field",
-                "excerpt": "engine: ver-1-8-hybrid-active"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "listing.title",
-                "method": "text_rule",
-                "excerpt": "1.8 Hybrid"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "listing.visibleText",
-                "method": "text_rule",
-                "excerpt": "1.8 Hybrid"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "detail.title",
-                "method": "text_rule",
-                "excerpt": "1.8 Hybrid"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "detail.bodyText",
-                "method": "text_rule",
-                "excerpt": "1.8 Hybrid"
-              }
-            ],
-            "transmission": [
-              {
-                "source": "otomoto",
-                "sourcePath": "detail.fields[\"Skrzynia biegów\"]",
-                "method": "structured_field",
-                "excerpt": "Skrzynia biegów: Automatyczna"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "sourcePayload.otomoto.listingFields.transmission",
-                "method": "structured_field",
-                "excerpt": "transmission: automatic"
-              }
-            ],
-            "body": [
-              {
-                "source": "otomoto",
-                "sourcePath": "detail.fields[\"Nadwozie\"]",
-                "method": "structured_field",
-                "excerpt": "Nadwozie: Sedan"
-              }
-            ],
-            "fuel": [
-              {
-                "source": "otomoto",
-                "sourcePath": "detail.fields[\"Rodzaj paliwa\"]",
-                "method": "structured_field",
-                "excerpt": "Rodzaj paliwa: Hybryda"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "sourcePayload.otomoto.listingFields.fuelType",
-                "method": "structured_field",
-                "excerpt": "fuelType: hybrid"
               }
             ]
           }

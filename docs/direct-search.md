@@ -13,17 +13,17 @@ Identyfikator źródła jest obowiązkowy. Brak `--model` wybiera wszystkie akty
 
 Domyślny przebieg uruchamia widoczne Chromium, respektuje `robots.txt`, zatrzymuje się przy 401/403/429 lub challenge, otwiera znalezione karty, kwalifikuje dane i importuje spełniające kryteria rekordy. `--headless` ukrywa okno. `--no-import` zachowuje wynik do ręcznego wglądu; `--filters-only` audytuje filtry bez importu.
 
-OTOMOTO domyślnie sprawdza szczegóły wszystkich kart z pobranych stron; nie ma limitu `maxCards`. `--max-cards` nadal pozwala ustawić ręczny limit, a inne źródła mogą mieć własny limit w konfiguracji. `maxPages` osobno ogranicza liczbę pobieranych stron. OTOMOTO używa czterech równoległych kart szczegółów; limity pozostałych źródeł są niezależne. Po imporcie skrócone pomiary są dopisywane do lokalnego pliku `runs/direct-search-history.jsonl`.
+OTOMOTO domyślnie sprawdza szczegóły wszystkich kart z pobranych stron; nie ma limitu `maxCards`. `--max-cards` nadal pozwala ustawić ręczny limit, a inne źródła mogą mieć własny limit w konfiguracji. `maxPages` osobno ogranicza liczbę pobieranych stron. OTOMOTO używa trzech równoległych kart szczegółów i robi globalną pauzę 5 sekund po każdych 100 sprawdzonych kartach; limity pozostałych źródeł są niezależne. Po imporcie skrócone pomiary są dopisywane do lokalnego pliku `runs/direct-search-history.jsonl`.
 
 Po pobraniu listy dla kolejnego modelu rozpoczyna się ono równolegle z analizą szczegółów poprzedniego modelu; pule kart szczegółów nie nakładają się między modelami. Na kartach OTOMOTO pomijane są pobrania obrazów, fontów i multimediów oraz znane żądania API niezwiązane z danymi auta. Skrypty, style, wymagane dane oferty i odczyt adresów zdjęć pozostają dostępne.
 
 Import udanego częściowego przebiegu może zapisać już odczytane zgodne karty. Błąd źródła, brak dostępu i challenge nie zmieniają zapisanych ofert. Po udanym imporcie tymczasowe artefakty przebiegu są usuwane.
 
-Adapter OTOMOTO sprawdza `robots.txt`, otwiera skonfigurowany URL filtrowania i audytuje faktyczne żądanie listy. Adapter AAA Auto odczytuje dane listy i karty z JSON osadzonego na renderowanej stronie (`#ng-state`); nie buduje niepotwierdzonych endpointów API.
+Adapter OTOMOTO sprawdza `robots.txt`, otwiera skonfigurowany URL filtrowania i audytuje faktyczne żądanie listy, w tym filtr stanu „Nieuszkodzony”. Adapter AAA Auto odczytuje dane listy i karty z JSON osadzonego na renderowanej stronie (`#ng-state`); nie buduje niepotwierdzonych endpointów API.
 
 Każde źródło ma osobny adapter odczytu. Runner wymaga wspólnego minimum kandydata listy i karty, sprawdza je w `src/search/direct/adapter-contract.mjs`, a wybrane pola portalu zachowuje w wyniku pod `sourcePayload.<sourceId>`. Szczegóły kontraktu: [source-adapter-contract.md](source-adapter-contract.md).
 
-Przed klasyfikacją `src/search/shared/candidate-field-extractor.mjs` sprawdza pola adaptera, etykiety i wartości z karty, dane JSON-LD, tytuł oraz pełny widoczny tekst ogłoszenia. Szuka między innymi ceny, rocznika, przebiegu, VIN-u, daty pierwszej rejestracji i wariantu silnika z aliasów danego modelu. Wynik kandydata zawiera `extraction.facts`, dowody `extraction.fieldEvidence`, konflikty wartości, `missingRequired` i `unresolvedRequired` (brakujące lub sprzeczne pola wymagane) oraz listę sprawdzonych źródeł. Ekstrakcja tekstowa jest regułowa; nie jest podłączony zewnętrzny dostawca AI.
+Przed klasyfikacją `src/search/shared/candidate-field-extractor.mjs` sprawdza pola adaptera, etykiety i wartości z karty, dane JSON-LD, tytuł oraz pełny widoczny tekst ogłoszenia. Szuka między innymi ceny, rocznika, przebiegu, VIN-u, daty pierwszej rejestracji i wariantu silnika z aliasów danego modelu. Daty rejestracji zapisuje w formacie ISO; rozpoznaje daty numeryczne i polskie nazwy miesięcy, a gdy dostępny jest tylko rok, zachowuje sam rok. Portalowy slug wersji może zawierać również nazwę edycji wyposażenia; jeśli rozpoznany zostanie w nim jeden dozwolony wariant, do wspólnej oferty trafia czytelna nazwa dopasowanego silnika zamiast całego sluga. Wynik kandydata zawiera `extraction.facts`, dowody `extraction.fieldEvidence`, konflikty wartości, `missingRequired` i `unresolvedRequired` (brakujące lub sprzeczne pola wymagane) oraz listę sprawdzonych źródeł. Ekstrakcja tekstowa jest regułowa; nie jest podłączony zewnętrzny dostawca AI.
 
 Po ekstrakcji `requireConfiguredCriteria()` odrzuca kandydata, gdy wymagane pole nie zostało znalezione albo ma sprzeczne odczyty. Następnie sprawdza wymagane kryteria modelu, w tym dozwolone warianty silnika i limity ceny, rocznika oraz przebiegu. Cena jest porównywana z kwotą ogłoszenia niezależnie od podstawy VAT. Niepewne pola półwymagane i opcjonalne nie blokują kwalifikacji.
 
@@ -66,7 +66,7 @@ Podstawowe wartości profilu można zmienić z CLI, np.:
 
 ```powershell
 npm run cars -- model criteria --model kia-xceed --set maximumAdvertisedPricePln=60000 --set yearMin=2020
-npm run cars -- model fields --model kia-xceed --set optional='["location","photos","fuel"]'
+npm run cars -- model fields --model kia-xceed --set optional='["location","photos","fuel","engineCapacity","enginePower"]'
 npm run cars -- sync
 npm run cars -- validate
 ```

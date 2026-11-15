@@ -5,7 +5,7 @@
   "adapter": "otomoto",
   "searchUrl": "https://www.otomoto.pl/osobowe",
   "limits": {
-    "detailConcurrency": 4
+    "detailConcurrency": 3
   },
   "adapterConfig": {
     "optionReadyTimeoutMs": 6000,

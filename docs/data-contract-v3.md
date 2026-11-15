@@ -80,7 +80,7 @@ Przykład pojedynczego wpisu źródłowego (wartości ilustracyjne):
 - **Wymagane do kwalifikacji nowej oferty:** pola z `fields.required`; obecnie `price`, `year`, `mileage`, `engineVariant`.
 - `price` oznacza kwotę podaną w ogłoszeniu. Limity modelu porównujemy z tą kwotą niezależnie od tego, czy portal oznacza ją jako netto lub brutto. `priceBasis` jest informacją pomocniczą i nie blokuje kwalifikacji.
 - **Półwymagane:** pola z `fields.semiRequired`; obecnie `vin`, `firstRegistrationDate`, `transmission`, `body`. UI pokazuje ich brak jako `-` z wyróżnieniem.
-- **Opcjonalne:** pola z `fields.optional`; obecnie `location`, `photos`, `cameraStatus`, `fuel`. UI pokazuje je tylko, jeśli odczytano wartość.
+- **Opcjonalne:** pola z `fields.optional`; obecnie `location`, `photos`, `cameraStatus`, `fuel`, `engineCapacity`, `enginePower`. UI pokazuje je tylko, jeśli odczytano wartość.
 
 Brak wymaganego pola w odpowiedzi strukturalnej źródła nie powoduje natychmiastowego odrzucenia. Najpierw źródłowy adapter i ekstraktory sprawdzają pola szczegółów, tytuł, opis oraz pozostały tekst ogłoszenia. Dopiero gdy wymagana wartość nadal nie ma potwierdzenia, kandydat jest odrzucany z przyczyną. Wartości odczytane skryptem lub AI powinny zachować dowód w `fieldEvidence`.
 

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-11-15T11:12:03.898Z",
+  "generatedAt": "2026-11-15T19:23:35.385Z",
   "models": [
     {
       "key": "hyundai-i30-iii-wagon",
@@ -39,7 +39,9 @@
           "location",
           "photos",
           "cameraStatus",
-          "fuel"
+          "fuel",
+          "engineCapacity",
+          "enginePower"
         ]
       },
       "file": "offers/hyundai-i30-iii-wagon.json",
@@ -82,7 +84,9 @@
           "location",
           "photos",
           "cameraStatus",
-          "fuel"
+          "fuel",
+          "engineCapacity",
+          "enginePower"
         ]
       },
       "file": "offers/kia-ceed-iii-sw.json",
@@ -125,7 +129,9 @@
           "location",
           "photos",
           "cameraStatus",
-          "fuel"
+          "fuel",
+          "engineCapacity",
+          "enginePower"
         ]
       },
       "file": "offers/kia-xceed.json",
@@ -168,7 +174,9 @@
           "location",
           "photos",
           "cameraStatus",
-          "fuel"
+          "fuel",
+          "engineCapacity",
+          "enginePower"
         ]
       },
       "file": "offers/mazda-6-iii-wagon.json",
@@ -211,7 +219,9 @@
           "location",
           "photos",
           "cameraStatus",
-          "fuel"
+          "fuel",
+          "engineCapacity",
+          "enginePower"
         ]
       },
       "file": "offers/mitsubishi-asx-i.json",
@@ -253,7 +263,9 @@
           "location",
           "photos",
           "cameraStatus",
-          "fuel"
+          "fuel",
+          "engineCapacity",
+          "enginePower"
         ]
       },
       "file": "offers/mitsubishi-outlander-iii.json",
@@ -296,7 +308,9 @@
           "location",
           "photos",
           "cameraStatus",
-          "fuel"
+          "fuel",
+          "engineCapacity",
+          "enginePower"
         ]
       },
       "file": "offers/skoda-octavia-iii-combi.json",
@@ -339,7 +353,9 @@
           "location",
           "photos",
           "cameraStatus",
-          "fuel"
+          "fuel",
+          "engineCapacity",
+          "enginePower"
         ]
       },
       "file": "offers/skoda-scala.json",
@@ -382,7 +398,9 @@
           "location",
           "photos",
           "cameraStatus",
-          "fuel"
+          "fuel",
+          "engineCapacity",
+          "enginePower"
         ]
       },
       "file": "offers/skoda-superb-iii-combi.json",
@@ -424,7 +442,9 @@
           "location",
           "photos",
           "cameraStatus",
-          "fuel"
+          "fuel",
+          "engineCapacity",
+          "enginePower"
         ]
       },
       "file": "offers/suzuki-vitara-ii.json",
@@ -467,7 +487,9 @@
           "location",
           "photos",
           "cameraStatus",
-          "fuel"
+          "fuel",
+          "engineCapacity",
+          "enginePower"
         ]
       },
       "file": "offers/toyota-auris-touring-sports.json",
@@ -509,7 +531,9 @@
           "location",
           "photos",
           "cameraStatus",
-          "fuel"
+          "fuel",
+          "engineCapacity",
+          "enginePower"
         ]
       },
       "file": "offers/toyota-avensis-iii-wagon.json",
@@ -553,7 +577,9 @@
           "location",
           "photos",
           "cameraStatus",
-          "fuel"
+          "fuel",
+          "engineCapacity",
+          "enginePower"
         ]
       },
       "file": "offers/toyota-corolla-e210.json",

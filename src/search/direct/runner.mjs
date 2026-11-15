@@ -20,6 +20,32 @@ import { isAccessDenied, isRequiredDataDenial, pageHasChallenge, persistTimings,
 
 process.env.PLAYWRIGHT_BROWSERS_PATH ??= path.join(ROOT, "node_modules", ".cache", "ms-playwright");
 
+function createDetailBatchPause(timings, sourceId) {
+  let completedCards = 0;
+  let activePause = null;
+
+  return async function pauseAfterDetailCard() {
+    if (sourceId !== "otomoto") return;
+    completedCards += 1;
+    if (activePause) {
+      await activePause;
+      return;
+    }
+    if (completedCards % 100 !== 0) return;
+
+    const cardsCompleted = completedCards;
+    const pause = timings.measure("detail_batch_pause", {
+      sourceId, cardsCompleted, pauseMs: 5000,
+    }, () => new Promise((resolve) => setTimeout(resolve, 5000)));
+    activePause = pause;
+    try {
+      await pause;
+    } finally {
+      if (activePause === pause) activePause = null;
+    }
+  };
+}
+
 export async function runDirectSearch(options) {
   const requestedModelKeys = options.modelKeys ?? (options.modelKey ? [options.modelKey] : []);
   const loaded = await loadSearchConfiguration(options.sourceId, requestedModelKeys);
@@ -47,6 +73,7 @@ export async function runDirectSearch(options) {
   const resultsDir = path.join(runDir, "results");
   await mkdir(resultsDir, { recursive: true });
   const timings = new StageTimings();
+  const pauseAfterDetailCard = createDetailBatchPause(timings, options.sourceId);
   const runStartedAt = new Date().toISOString();
   const defaults = config.defaults ?? {};
   const sourceLimits = sourceConfig.limits ?? {};
@@ -563,6 +590,7 @@ export async function runDirectSearch(options) {
       } finally {
         await detailCapture?.flush();
         await detailPage?.close().catch(() => {});
+        await pauseAfterDetailCard();
       }
     }, () => sourceBlocked || blocked);
     pendingGroupWork = { group, modelKeys, groupStartedAt, groupTaskMetadata, pages, errors, blocked,

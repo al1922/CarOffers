@@ -38,7 +38,9 @@
       "location",
       "photos",
       "cameraStatus",
-      "fuel"
+      "fuel",
+      "engineCapacity",
+      "enginePower"
     ]
   },
   "knowledgeFile": "knowledge/models/toyota-corolla-e210.json"

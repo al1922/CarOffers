@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-11-15T18:41:11.866Z",
+  "updatedAt": "2026-11-15T20:40:30.037Z",
   "model": {
     "key": "suzuki-vitara-ii",
     "name": "Suzuki Vitara II"
@@ -11,8 +11,8 @@
       "identityKey": "otomoto:https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IjKu9.html",
       "modelKey": "suzuki-vitara-ii",
       "primaryListingKey": "otomoto:https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IjKu9.html",
-      "firstSeenAt": "2026-11-15T16:45:44.869Z",
-      "lastUpdatedAt": "2026-11-15T18:39:50.252Z",
+      "firstSeenAt": "2026-11-15T20:38:02.668Z",
+      "lastUpdatedAt": "2026-11-15T20:38:02.668Z",
       "listings": [
         {
           "key": "otomoto:https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IjKu9.html",
@@ -20,14 +20,14 @@
           "sourceName": "OTOMOTO",
           "sourceListingId": "6151662701",
           "url": "https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IjKu9.html",
-          "lastCheckedAt": "2026-11-15T18:39:50.252Z",
+          "lastCheckedAt": "2026-11-15T20:38:02.668Z",
           "facts": {
             "title": "Suzuki Vitara 1.4 Boosterjet Premium 4WD",
             "price": 54900,
             "priceBasis": "gross_total",
             "year": 2019,
             "mileage": 120000,
-            "engine": "ver-1-4-boosterjet-premium-4wd",
+            "engine": "1.4 Boosterjet",
             "engineVariant": "1.4-boosterjet-140",
             "engineCapacity": "1373",
             "enginePower": "140",
@@ -62,7 +62,7 @@
             "fuel": "petrol",
             "vin": null,
             "firstRegistrationDate": null,
-            "lastReadAt": "2026-11-15T18:39:50.252Z"
+            "lastReadAt": "2026-11-15T20:38:02.668Z"
           },
           "sourceExtensions": {
             "otomoto": {
@@ -146,6 +146,12 @@
               }
             ],
             "engine": [
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
+                "method": "text_rule",
+                "excerpt": "engine: ver-1-4-boosterjet-premium-4wd"
+              },
               {
                 "source": "otomoto",
                 "sourcePath": "sourcePayload.otomoto.listingFields.engine",
@@ -266,8 +272,8 @@
       "identityKey": "otomoto:https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6Iglk1.html",
       "modelKey": "suzuki-vitara-ii",
       "primaryListingKey": "otomoto:https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6Iglk1.html",
-      "firstSeenAt": "2026-11-15T16:45:44.869Z",
-      "lastUpdatedAt": "2026-11-15T18:39:50.252Z",
+      "firstSeenAt": "2026-11-15T20:38:02.668Z",
+      "lastUpdatedAt": "2026-11-15T20:38:02.668Z",
       "listings": [
         {
           "key": "otomoto:https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6Iglk1.html",
@@ -275,13 +281,13 @@
           "sourceName": "OTOMOTO",
           "sourceListingId": "6150850989",
           "url": "https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6Iglk1.html",
-          "lastCheckedAt": "2026-11-15T18:39:50.252Z",
+          "lastCheckedAt": "2026-11-15T20:38:02.668Z",
           "facts": {
             "title": "Suzuki Vitara 1.4 Boosterjet Comfort",
             "price": 52900,
             "year": 2018,
             "mileage": 137055,
-            "engine": "ver-1-4-boosterjet-comfort",
+            "engine": "1.4 Boosterjet",
             "engineVariant": "1.4-boosterjet-140",
             "engineCapacity": "1373",
             "enginePower": "140",
@@ -289,6 +295,7 @@
             "bodyCode": "suv",
             "transmission": "manual",
             "transmissionCode": "manual",
+            "firstRegistrationDate": "2018-04-27",
             "lpgInstalled": null,
             "location": {
               "status": "available",
@@ -315,8 +322,7 @@
             ],
             "fuel": "petrol",
             "vin": null,
-            "firstRegistrationDate": null,
-            "lastReadAt": "2026-11-15T18:39:50.252Z"
+            "lastReadAt": "2026-11-15T20:38:02.668Z"
           },
           "sourceExtensions": {
             "otomoto": {
@@ -398,6 +404,12 @@
               {
                 "source": "otomoto",
                 "sourcePath": "sourcePayload.otomoto.listingFields.engine",
+                "method": "text_rule",
+                "excerpt": "engine: ver-1-4-boosterjet-comfort"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
                 "method": "structured_field",
                 "excerpt": "engine: ver-1-4-boosterjet-comfort"
               },
@@ -458,6 +470,14 @@
                 "excerpt": "1.4 Boosterjet"
               }
             ],
+            "firstRegistrationDate": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "ównanie ich z rządową bazą danych Finansowanie REKLAMA Zamów teraz, pierwsza rata w 2027 roku Potrzebujesz finansowania? Ustaw warunki kredytu jaki Cię interesuje - na tej podstawie wybierzemy ofertę dostosowaną do Twoich potrzeb. Kwota fin"
+              }
+            ],
             "transmission": [
               {
                 "source": "otomoto",
@@ -503,8 +523,8 @@
       "identityKey": "otomoto:https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IiSBW.html",
       "modelKey": "suzuki-vitara-ii",
       "primaryListingKey": "otomoto:https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IiSBW.html",
-      "firstSeenAt": "2026-11-15T16:45:44.869Z",
-      "lastUpdatedAt": "2026-11-15T18:39:50.252Z",
+      "firstSeenAt": "2026-11-15T20:38:02.668Z",
+      "lastUpdatedAt": "2026-11-15T20:38:02.668Z",
       "listings": [
         {
           "key": "otomoto:https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IiSBW.html",
@@ -512,7 +532,7 @@
           "sourceName": "OTOMOTO",
           "sourceListingId": "6151455607",
           "url": "https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IiSBW.html",
-          "lastCheckedAt": "2026-11-15T18:39:50.252Z",
+          "lastCheckedAt": "2026-11-15T20:38:02.668Z",
           "facts": {
             "title": "Suzuki Vitara 1.4 T Boosterjet S 2WD",
             "price": 52999,
@@ -526,6 +546,7 @@
             "bodyCode": "suv",
             "transmission": "manual",
             "transmissionCode": "manual",
+            "firstRegistrationDate": "2018-06-28",
             "lpgInstalled": null,
             "location": {
               "status": "available",
@@ -552,8 +573,7 @@
             ],
             "fuel": "petrol",
             "vin": null,
-            "firstRegistrationDate": null,
-            "lastReadAt": "2026-11-15T18:39:50.252Z"
+            "lastReadAt": "2026-11-15T20:38:02.668Z"
           },
           "sourceExtensions": {
             "otomoto": {
@@ -582,7 +602,7 @@
                 "source": "otomoto",
                 "sourcePath": "detail.bodyText",
                 "method": "text_rule",
-                "excerpt": "rawdź ofertę Top-Cars Firma Bardzo sprawnie odpowiada Sprzedający na OTOMOTO od 2019 Napisz Wyświetl numer Czestochowska 130 - 32-085 Kraków, Małopolskie, Kraków (Polska) Zobacz więcej ofert (16) tego sprzedawcy Prawa konsumentów na OTOMOTO"
+                "excerpt": "rawdź ofertę Top-Cars Firma Bardzo sprawnie odpowiada Sprzedający na OTOMOTO od 2019 Napisz Wyświetl numery Czestochowska 130 - 32-085 Kraków, Małopolskie, Kraków (Polska) Zobacz więcej ofert (16) tego sprzedawcy Prawa konsumentów na OTOMOT"
               }
             ],
             "year": [
@@ -653,6 +673,14 @@
                 "excerpt": "1.4 Boosterjet"
               }
             ],
+            "firstRegistrationDate": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "neracja II (2015-2019) Data pierwszej rejestracji w historii pojazdu 28 czerwca 2018 VIN Wyświetl VIN Kup ten pojazd na raty Oblicz Specyfikacja Stan i historia Finansowanie REKLAMA Zamów teraz, pierwsza rata w 2027 roku Potrzebujesz finans"
+              }
+            ],
             "transmission": [
               {
                 "source": "otomoto",
@@ -698,8 +726,8 @@
       "identityKey": "otomoto:https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IjWbH.html",
       "modelKey": "suzuki-vitara-ii",
       "primaryListingKey": "otomoto:https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IjWbH.html",
-      "firstSeenAt": "2026-11-15T16:45:44.869Z",
-      "lastUpdatedAt": "2026-11-15T18:39:50.252Z",
+      "firstSeenAt": "2026-11-15T20:38:02.668Z",
+      "lastUpdatedAt": "2026-11-15T20:38:02.668Z",
       "listings": [
         {
           "key": "otomoto:https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IjWbH.html",
@@ -707,14 +735,14 @@
           "sourceName": "OTOMOTO",
           "sourceListingId": "6151703841",
           "url": "https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IjWbH.html",
-          "lastCheckedAt": "2026-11-15T18:39:50.252Z",
+          "lastCheckedAt": "2026-11-15T20:38:02.668Z",
           "facts": {
             "title": "Suzuki Vitara 1.4 Boosterjet Elegance Sun 4WD",
             "price": 55000,
             "priceBasis": "gross_total",
             "year": 2018,
             "mileage": 140000,
-            "engine": "ver-1-4-boosterjet-elegance-sun-4wd",
+            "engine": "1.4 Boosterjet",
             "engineVariant": "1.4-boosterjet-140",
             "engineCapacity": "1373",
             "enginePower": "140",
@@ -722,6 +750,7 @@
             "bodyCode": "suv",
             "transmission": "automatic",
             "transmissionCode": "automatic",
+            "firstRegistrationDate": "2018-11-28",
             "lpgInstalled": null,
             "location": {
               "status": "available",
@@ -748,8 +777,7 @@
             ],
             "fuel": "petrol",
             "vin": null,
-            "firstRegistrationDate": null,
-            "lastReadAt": "2026-11-15T18:39:50.252Z"
+            "lastReadAt": "2026-11-15T20:38:02.668Z"
           },
           "sourceExtensions": {
             "otomoto": {
@@ -830,6 +858,12 @@
               {
                 "source": "otomoto",
                 "sourcePath": "sourcePayload.otomoto.listingFields.engine",
+                "method": "text_rule",
+                "excerpt": "engine: ver-1-4-boosterjet-elegance-sun-4wd"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
                 "method": "structured_field",
                 "excerpt": "engine: ver-1-4-boosterjet-elegance-sun-4wd"
               },
@@ -890,242 +924,12 @@
                 "excerpt": "1.4 Boosterjet"
               }
             ],
-            "transmission": [
-              {
-                "source": "otomoto",
-                "sourcePath": "detail.fields[\"Skrzynia biegów\"]",
-                "method": "structured_field",
-                "excerpt": "Skrzynia biegów: Automatyczna"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "sourcePayload.otomoto.listingFields.transmission",
-                "method": "structured_field",
-                "excerpt": "transmission: automatic"
-              }
-            ],
-            "body": [
-              {
-                "source": "otomoto",
-                "sourcePath": "detail.fields[\"Nadwozie\"]",
-                "method": "structured_field",
-                "excerpt": "Nadwozie: SUV"
-              }
-            ],
-            "fuel": [
-              {
-                "source": "otomoto",
-                "sourcePath": "detail.fields[\"Rodzaj paliwa\"]",
-                "method": "structured_field",
-                "excerpt": "Rodzaj paliwa: Benzyna"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "sourcePayload.otomoto.listingFields.fuelType",
-                "method": "structured_field",
-                "excerpt": "fuelType: petrol"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "otomoto:https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IiQyo.html",
-      "identityKey": "otomoto:https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IiQyo.html",
-      "modelKey": "suzuki-vitara-ii",
-      "primaryListingKey": "otomoto:https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IiQyo.html",
-      "firstSeenAt": "2026-11-15T16:45:44.869Z",
-      "lastUpdatedAt": "2026-11-15T18:39:50.252Z",
-      "listings": [
-        {
-          "key": "otomoto:https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IiQyo.html",
-          "sourceId": "otomoto",
-          "sourceName": "OTOMOTO",
-          "sourceListingId": "6151447700",
-          "url": "https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IiQyo.html",
-          "lastCheckedAt": "2026-11-15T18:39:50.252Z",
-          "facts": {
-            "title": "Suzuki Vitara 1.4 Boosterjet Automatik S",
-            "price": 51900,
-            "priceBasis": "gross_total",
-            "year": 2019,
-            "mileage": 162000,
-            "engine": "ver-1-4-boosterjet-automatik-s",
-            "engineVariant": "1.4-boosterjet-140",
-            "engineCapacity": "1373",
-            "enginePower": "140",
-            "body": "suv",
-            "bodyCode": "suv",
-            "transmission": "automatic",
-            "transmissionCode": "automatic",
-            "lpgInstalled": null,
-            "location": {
-              "status": "available",
-              "countryCode": "PL",
-              "city": "Mierzyn",
-              "voivodeship": "Pomorskie",
-              "precision": "city",
-              "source": "listing",
-              "checkedAt": "2026-11-15"
-            },
-            "photos": [
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InBnNjFpMnloOHJ4ZTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.T8ebjv6JjBz3-GR1yzqWlYPK9xAHPP5sQLQRH9jtroU/image;s=5120x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InR6Ym9iOTJ1cm42MDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.VCTLBAmqEq_i5O20RRmrJ1zkb9KDAhbZfpJbxJPWpIM/image;s=5120x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjY5dW5qODZiODk5OTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.eego5mRmqjiU-psj5HRZSBe3i_EDeOMWdKIhaIrPVd8/image;s=5120x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImRiNWtpNHBzM251cS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.xl27SYV6cGX_qoNNb_CjLTviXCF2HB1YxBiFGBlZOK0/image;s=5120x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImJ0NTU1ZHN4eXFvdC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.uUbt3UFEcClTlFpZxgkeBTgUqHFlak7QtHmzCRwV9zE/image;s=5120x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImoyamlycXBoa3UwYjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.IpiI7IwJTa17-KZGkyzxpc3LSW5PIvjD9M3miN08x8o/image;s=5120x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImpwbXNjd251N2FoOC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.GCo_BuxufLoT4i5vvPEms1_HLNgr7yw1z9xtpCvfRDM/image;s=5120x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjVkNGhlYWd4MmVxbjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.eVEUc8GDLbKdXtTUVqi-C2yrjc7twThUtFaBRTZWZFg/image;s=5120x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InUyaTlpdDN2dmRiNS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.u-ryW7ExJ9l7UMQvSmW9L5SlTIwS2tCnON2GOFOWvU0/image;s=5120x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjhmeHd1em5kd3Zhbi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.2IVAAd7Z5oMZL__2EKCt378ELk6Ld-f_pM82nT6C_98/image;s=5120x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImJrdHljZDdpanJ3ajEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.ONjpfNkNkZpGYTMda8flIyI3tQWp6O6TBw2S7zLfnfE/image;s=5120x0;q=100",
-              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImI0dXNnazNqMnhuYzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.CNNaloPa6pStGHXZjKUQ9C4IsJSdkL5MeGZOwdfkL6U/image;s=5120x0;q=100"
-            ],
-            "fuel": "petrol",
-            "vin": null,
-            "firstRegistrationDate": null,
-            "lastReadAt": "2026-11-15T18:39:50.252Z"
-          },
-          "sourceExtensions": {
-            "otomoto": {
-              "listing": {
-                "brand": "suzuki",
-                "model": "vitara",
-                "sellerName": "BEZPOSREDNI IMPORTER ZELAND CARS BEZWYPADKOWE,SERWISOWANE AUTA Z GWARANCJA,Z PRAWDZIWYM PRZEBIEGIEM"
-              }
-            }
-          },
-          "fieldEvidence": {
-            "price": [
-              {
-                "source": "otomoto",
-                "sourcePath": "detail.salePanel.price",
-                "method": "label_value",
-                "excerpt": "51 900 PLN"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "price.amount.value",
-                "method": "structured_field",
-                "excerpt": "51900"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "sourcePayload.otomoto.listingFields.price",
-                "method": "structured_field",
-                "excerpt": "price: 51900"
-              }
-            ],
-            "year": [
-              {
-                "source": "otomoto",
-                "sourcePath": "detail.fields[\"Rok produkcji\"]",
-                "method": "structured_field",
-                "excerpt": "Rok produkcji: 2019"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "sourcePayload.otomoto.listingFields.productionYear",
-                "method": "structured_field",
-                "excerpt": "productionYear: 2019"
-              },
+            "firstRegistrationDate": [
               {
                 "source": "otomoto",
                 "sourcePath": "detail.bodyText",
                 "method": "text_rule",
-                "excerpt": "st to pomocne? 2 źródła Opis Zgłoś SUZUKI VITARA II Rok Produkcji : 2019 Z Benzynowym silnikiem 1.4 O mocy 140 KM Jednostka napędowa bezawaryjna a za razem bardzo oszczędna i dynamiczna Z automatyczną skrzynią biegów ! 100% Bezwypadkowy! Se"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "listing/detail text (label parser)",
-                "method": "text_rule",
-                "excerpt": "2019"
-              }
-            ],
-            "mileage": [
-              {
-                "source": "otomoto",
-                "sourcePath": "detail.fields[\"Przebieg\"]",
-                "method": "structured_field",
-                "excerpt": "Przebieg: 162000 km"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "sourcePayload.otomoto.listingFields.mileage",
-                "method": "structured_field",
-                "excerpt": "mileage: 162000 km"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "listing/detail text (km parser)",
-                "method": "text_rule",
-                "excerpt": "162000 km"
-              }
-            ],
-            "engine": [
-              {
-                "source": "otomoto",
-                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
-                "method": "structured_field",
-                "excerpt": "engine: ver-1-4-boosterjet-automatik-s"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "listing.title",
-                "method": "text_rule",
-                "excerpt": "1.4 Boosterjet"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "listing.visibleText",
-                "method": "text_rule",
-                "excerpt": "1.4 Boosterjet"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "detail.title",
-                "method": "text_rule",
-                "excerpt": "1.4 Boosterjet"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "detail.bodyText",
-                "method": "text_rule",
-                "excerpt": "1.4 Boosterjet"
-              }
-            ],
-            "engineVariant": [
-              {
-                "source": "otomoto",
-                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
-                "method": "structured_field",
-                "excerpt": "engine: ver-1-4-boosterjet-automatik-s"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "listing.title",
-                "method": "text_rule",
-                "excerpt": "1.4 Boosterjet"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "listing.visibleText",
-                "method": "text_rule",
-                "excerpt": "1.4 Boosterjet"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "detail.title",
-                "method": "text_rule",
-                "excerpt": "1.4 Boosterjet"
-              },
-              {
-                "source": "otomoto",
-                "sourcePath": "detail.bodyText",
-                "method": "text_rule",
-                "excerpt": "1.4 Boosterjet"
+                "excerpt": "8 Generacja II (2015-2019) Data pierwszej rejestracji w historii pojazdu 28 listopada 2018 VIN Wyświetl VIN Kup ten pojazd na raty Oblicz Specyfikacja Stan i historia Finansowanie REKLAMA Zamów teraz, pierwsza rata w 2027 roku Potrzebujesz"
               }
             ],
             "transmission": [
@@ -1173,8 +977,8 @@
       "identityKey": "otomoto:https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IhZfq.html",
       "modelKey": "suzuki-vitara-ii",
       "primaryListingKey": "otomoto:https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IhZfq.html",
-      "firstSeenAt": "2026-11-15T16:45:44.869Z",
-      "lastUpdatedAt": "2026-11-15T18:39:50.252Z",
+      "firstSeenAt": "2026-11-15T20:38:02.668Z",
+      "lastUpdatedAt": "2026-11-15T20:38:02.668Z",
       "listings": [
         {
           "key": "otomoto:https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IhZfq.html",
@@ -1182,14 +986,14 @@
           "sourceName": "OTOMOTO",
           "sourceListingId": "6151242792",
           "url": "https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IhZfq.html",
-          "lastCheckedAt": "2026-11-15T18:39:50.252Z",
+          "lastCheckedAt": "2026-11-15T20:38:02.668Z",
           "facts": {
             "title": "Suzuki Vitara 1.4 Boosterjet Allgrip Automatik Comfort+",
             "price": 54900,
             "priceBasis": "gross_total",
             "year": 2017,
             "mileage": 128000,
-            "engine": "ver-1-4-boosterjet-allgrip-automatik-comfortplus",
+            "engine": "1.4 Boosterjet",
             "engineVariant": "1.4-boosterjet-140",
             "engineCapacity": "1373",
             "enginePower": "140",
@@ -1197,6 +1001,7 @@
             "bodyCode": "suv",
             "transmission": "automatic",
             "transmissionCode": "automatic",
+            "firstRegistrationDate": "2017-09-04",
             "lpgInstalled": null,
             "location": {
               "status": "available",
@@ -1223,8 +1028,7 @@
             ],
             "fuel": "petrol",
             "vin": null,
-            "firstRegistrationDate": null,
-            "lastReadAt": "2026-11-15T18:39:50.252Z"
+            "lastReadAt": "2026-11-15T20:38:02.668Z"
           },
           "sourceExtensions": {
             "otomoto": {
@@ -1317,6 +1121,12 @@
               {
                 "source": "otomoto",
                 "sourcePath": "sourcePayload.otomoto.listingFields.engine",
+                "method": "text_rule",
+                "excerpt": "engine: ver-1-4-boosterjet-allgrip-automatik-comfortplus"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
                 "method": "structured_field",
                 "excerpt": "engine: ver-1-4-boosterjet-allgrip-automatik-comfortplus"
               },
@@ -1377,6 +1187,14 @@
                 "excerpt": "1.4 Boosterjet"
               }
             ],
+            "firstRegistrationDate": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "toria Finansowanie REKLAMA Zamów teraz, pierwsza rata w 2027 roku Potrzebujesz finansowania? Ustaw warunki kredytu jaki Cię interesuje - na tej podstawie wybierzemy ofertę dostosowaną do Twoich potrzeb. Kwota finansowania (PLN) PLN Min. 6 0"
+              }
+            ],
             "transmission": [
               {
                 "source": "otomoto",
@@ -1424,12 +1242,264 @@
       ]
     },
     {
+      "id": "otomoto:https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IiQyo.html",
+      "identityKey": "otomoto:https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IiQyo.html",
+      "modelKey": "suzuki-vitara-ii",
+      "primaryListingKey": "otomoto:https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IiQyo.html",
+      "firstSeenAt": "2026-11-15T20:38:02.668Z",
+      "lastUpdatedAt": "2026-11-15T20:38:02.668Z",
+      "listings": [
+        {
+          "key": "otomoto:https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IiQyo.html",
+          "sourceId": "otomoto",
+          "sourceName": "OTOMOTO",
+          "sourceListingId": "6151447700",
+          "url": "https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IiQyo.html",
+          "lastCheckedAt": "2026-11-15T20:38:02.668Z",
+          "facts": {
+            "title": "Suzuki Vitara 1.4 Boosterjet Automatik S",
+            "price": 51900,
+            "priceBasis": "gross_total",
+            "year": 2019,
+            "mileage": 162000,
+            "engine": "1.4 Boosterjet",
+            "engineVariant": "1.4-boosterjet-140",
+            "engineCapacity": "1373",
+            "enginePower": "140",
+            "body": "suv",
+            "bodyCode": "suv",
+            "transmission": "automatic",
+            "transmissionCode": "automatic",
+            "firstRegistrationDate": "2019-06-21",
+            "lpgInstalled": null,
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "city": "Mierzyn",
+              "voivodeship": "Pomorskie",
+              "precision": "city",
+              "source": "listing",
+              "checkedAt": "2026-11-15"
+            },
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InBnNjFpMnloOHJ4ZTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.T8ebjv6JjBz3-GR1yzqWlYPK9xAHPP5sQLQRH9jtroU/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InR6Ym9iOTJ1cm42MDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.VCTLBAmqEq_i5O20RRmrJ1zkb9KDAhbZfpJbxJPWpIM/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjY5dW5qODZiODk5OTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.eego5mRmqjiU-psj5HRZSBe3i_EDeOMWdKIhaIrPVd8/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImRiNWtpNHBzM251cS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.xl27SYV6cGX_qoNNb_CjLTviXCF2HB1YxBiFGBlZOK0/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImJ0NTU1ZHN4eXFvdC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.uUbt3UFEcClTlFpZxgkeBTgUqHFlak7QtHmzCRwV9zE/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImoyamlycXBoa3UwYjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.IpiI7IwJTa17-KZGkyzxpc3LSW5PIvjD9M3miN08x8o/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImpwbXNjd251N2FoOC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.GCo_BuxufLoT4i5vvPEms1_HLNgr7yw1z9xtpCvfRDM/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjVkNGhlYWd4MmVxbjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.eVEUc8GDLbKdXtTUVqi-C2yrjc7twThUtFaBRTZWZFg/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InUyaTlpdDN2dmRiNS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.u-ryW7ExJ9l7UMQvSmW9L5SlTIwS2tCnON2GOFOWvU0/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjhmeHd1em5kd3Zhbi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.2IVAAd7Z5oMZL__2EKCt378ELk6Ld-f_pM82nT6C_98/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImJrdHljZDdpanJ3ajEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.ONjpfNkNkZpGYTMda8flIyI3tQWp6O6TBw2S7zLfnfE/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImI0dXNnazNqMnhuYzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.CNNaloPa6pStGHXZjKUQ9C4IsJSdkL5MeGZOwdfkL6U/image;s=5120x0;q=100"
+            ],
+            "fuel": "petrol",
+            "vin": null,
+            "lastReadAt": "2026-11-15T20:38:02.668Z"
+          },
+          "sourceExtensions": {
+            "otomoto": {
+              "listing": {
+                "brand": "suzuki",
+                "model": "vitara",
+                "sellerName": "BEZPOSREDNI IMPORTER ZELAND CARS BEZWYPADKOWE,SERWISOWANE AUTA Z GWARANCJA,Z PRAWDZIWYM PRZEBIEGIEM"
+              }
+            }
+          },
+          "fieldEvidence": {
+            "price": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.salePanel.price",
+                "method": "label_value",
+                "excerpt": "51 900 PLN"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "price.amount.value",
+                "method": "structured_field",
+                "excerpt": "51900"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.price",
+                "method": "structured_field",
+                "excerpt": "price: 51900"
+              }
+            ],
+            "year": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Rok produkcji\"]",
+                "method": "structured_field",
+                "excerpt": "Rok produkcji: 2019"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.productionYear",
+                "method": "structured_field",
+                "excerpt": "productionYear: 2019"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "st to pomocne? 2 źródła Opis Zgłoś SUZUKI VITARA II Rok Produkcji : 2019 Z Benzynowym silnikiem 1.4 O mocy 140 KM Jednostka napędowa bezawaryjna a za razem bardzo oszczędna i dynamiczna Z automatyczną skrzynią biegów ! 100% Bezwypadkowy! Se"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing/detail text (label parser)",
+                "method": "text_rule",
+                "excerpt": "2019"
+              }
+            ],
+            "mileage": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Przebieg\"]",
+                "method": "structured_field",
+                "excerpt": "Przebieg: 162000 km"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.mileage",
+                "method": "structured_field",
+                "excerpt": "mileage: 162000 km"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing/detail text (km parser)",
+                "method": "text_rule",
+                "excerpt": "162000 km"
+              }
+            ],
+            "engine": [
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
+                "method": "text_rule",
+                "excerpt": "engine: ver-1-4-boosterjet-automatik-s"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
+                "method": "structured_field",
+                "excerpt": "engine: ver-1-4-boosterjet-automatik-s"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.title",
+                "method": "text_rule",
+                "excerpt": "1.4 Boosterjet"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.visibleText",
+                "method": "text_rule",
+                "excerpt": "1.4 Boosterjet"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.title",
+                "method": "text_rule",
+                "excerpt": "1.4 Boosterjet"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "1.4 Boosterjet"
+              }
+            ],
+            "engineVariant": [
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
+                "method": "structured_field",
+                "excerpt": "engine: ver-1-4-boosterjet-automatik-s"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.title",
+                "method": "text_rule",
+                "excerpt": "1.4 Boosterjet"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.visibleText",
+                "method": "text_rule",
+                "excerpt": "1.4 Boosterjet"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.title",
+                "method": "text_rule",
+                "excerpt": "1.4 Boosterjet"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "1.4 Boosterjet"
+              }
+            ],
+            "firstRegistrationDate": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "a II (2015-2019) Data pierwszej rejestracji w historii pojazdu 21 czerwca 2019 VIN Wyświetl VIN Kup ten pojazd na raty Oblicz Specyfikacja Stan i historia Finansowanie i koszty Specyfikacja EV Finansowanie REKLAMA Zamów teraz, pierwsza rata"
+              }
+            ],
+            "transmission": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Skrzynia biegów\"]",
+                "method": "structured_field",
+                "excerpt": "Skrzynia biegów: Automatyczna"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.transmission",
+                "method": "structured_field",
+                "excerpt": "transmission: automatic"
+              }
+            ],
+            "body": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Nadwozie\"]",
+                "method": "structured_field",
+                "excerpt": "Nadwozie: SUV"
+              }
+            ],
+            "fuel": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Rodzaj paliwa\"]",
+                "method": "structured_field",
+                "excerpt": "Rodzaj paliwa: Benzyna"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.fuelType",
+                "method": "structured_field",
+                "excerpt": "fuelType: petrol"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
       "id": "otomoto:https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IiHTu.html",
       "identityKey": "otomoto:https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IiHTu.html",
       "modelKey": "suzuki-vitara-ii",
       "primaryListingKey": "otomoto:https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IiHTu.html",
-      "firstSeenAt": "2026-11-15T18:39:50.252Z",
-      "lastUpdatedAt": "2026-11-15T18:39:50.252Z",
+      "firstSeenAt": "2026-11-15T20:38:02.668Z",
+      "lastUpdatedAt": "2026-11-15T20:38:02.668Z",
       "listings": [
         {
           "key": "otomoto:https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IiHTu.html",
@@ -1437,7 +1507,7 @@
           "sourceName": "OTOMOTO",
           "sourceListingId": "6151414412",
           "url": "https://otomoto.pl/osobowe/oferta/suzuki-vitara-ID6IiHTu.html",
-          "lastCheckedAt": "2026-11-15T18:39:50.252Z",
+          "lastCheckedAt": "2026-11-15T20:38:02.668Z",
           "facts": {
             "title": "Suzuki Vitara",
             "price": 53500,
@@ -1452,6 +1522,7 @@
             "bodyCode": "suv",
             "transmission": "automatic",
             "transmissionCode": "automatic",
+            "firstRegistrationDate": "2018-12-22",
             "lpgInstalled": null,
             "location": {
               "status": "not_provided",
@@ -1473,8 +1544,7 @@
             ],
             "fuel": "petrol",
             "vin": null,
-            "firstRegistrationDate": null,
-            "lastReadAt": "2026-11-15T18:39:50.252Z"
+            "lastReadAt": "2026-11-15T20:38:02.668Z"
           },
           "sourceExtensions": {
             "otomoto": {
@@ -1565,6 +1635,14 @@
                 "sourcePath": "detail.bodyText",
                 "method": "text_rule",
                 "excerpt": "1.4 Boosterjet"
+              }
+            ],
+            "firstRegistrationDate": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "jazdu 22 grudnia 2018 VIN Wyświetl VIN Kup ten pojazd na raty Oblicz Specyfikacja Stan i historia 13/14 zweryfikowanych pól Szczegółowe dane pojazdu zostały zweryfikowane poprzez porównanie ich z rządową bazą danych Finansowanie REKLAMA Zam"
               }
             ],
             "transmission": [

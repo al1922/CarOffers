@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-11-15T18:41:11.866Z",
+  "updatedAt": "2026-11-15T20:40:30.037Z",
   "model": {
     "key": "kia-xceed",
     "name": "Kia XCeed"
@@ -11,8 +11,8 @@
       "identityKey": "otomoto:https://otomoto.pl/osobowe/oferta/kia-xceed-ID6IgTuc.html",
       "modelKey": "kia-xceed",
       "primaryListingKey": "otomoto:https://otomoto.pl/osobowe/oferta/kia-xceed-ID6IgTuc.html",
-      "firstSeenAt": "2026-11-15T18:36:55.958Z",
-      "lastUpdatedAt": "2026-11-15T18:36:55.958Z",
+      "firstSeenAt": "2026-11-15T20:32:38.166Z",
+      "lastUpdatedAt": "2026-11-15T20:32:38.166Z",
       "listings": [
         {
           "key": "otomoto:https://otomoto.pl/osobowe/oferta/kia-xceed-ID6IgTuc.html",
@@ -20,13 +20,13 @@
           "sourceName": "OTOMOTO",
           "sourceListingId": "6150982316",
           "url": "https://otomoto.pl/osobowe/oferta/kia-xceed-ID6IgTuc.html",
-          "lastCheckedAt": "2026-11-15T18:36:55.958Z",
+          "lastCheckedAt": "2026-11-15T20:32:38.166Z",
           "facts": {
             "title": "Kia XCeed 1.5 T-GDI M",
             "price": 44900,
             "year": 2021,
             "mileage": 58356,
-            "engine": "ver-1-5-t--gdi-m",
+            "engine": "1.5 tgdi",
             "engineVariant": "1.5-tgdi-160",
             "engineCapacity": "1482",
             "enginePower": "160",
@@ -34,6 +34,7 @@
             "bodyCode": "wagon",
             "transmission": "manual",
             "transmissionCode": "manual",
+            "firstRegistrationDate": "2021-09-13",
             "lpgInstalled": null,
             "location": {
               "status": "available",
@@ -60,8 +61,7 @@
             ],
             "fuel": "petrol",
             "vin": null,
-            "firstRegistrationDate": null,
-            "lastReadAt": "2026-11-15T18:36:55.958Z"
+            "lastReadAt": "2026-11-15T20:32:38.166Z"
           },
           "sourceExtensions": {
             "otomoto": {
@@ -144,6 +144,12 @@
               {
                 "source": "otomoto",
                 "sourcePath": "sourcePayload.otomoto.listingFields.engine",
+                "method": "text_rule",
+                "excerpt": "engine: ver-1-5-t--gdi-m"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
                 "method": "structured_field",
                 "excerpt": "engine: ver-1-5-t--gdi-m"
               },
@@ -202,6 +208,14 @@
                 "sourcePath": "detail.bodyText",
                 "method": "text_rule",
                 "excerpt": "1.5 tgdi"
+              }
+            ],
+            "firstRegistrationDate": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "i w historii pojazdu 13 września 2021 VIN Wyświetl VIN Kup ten pojazd na raty Oblicz Specyfikacja Stan i historia Finansowanie REKLAMA Zamów teraz, pierwsza rata w 2027 roku Potrzebujesz finansowania? Ustaw warunki kredytu jaki Cię interesu"
               }
             ],
             "transmission": [

@@ -302,6 +302,9 @@ function buildFilteredSearchUrl(group, plan, baseUrl) {
   const generationOmitted = mapping.omitGenerationInUrl === true || mapping.omitGenerationFilter === true;
   const filtersApplied = { make: model.brand, models: [model.model] };
   const omittedFilters = [...(plan.omittedFilters ?? [])];
+  const damageCondition = "notdamaged";
+  url.searchParams.set("search[filter_enum_condition]", damageCondition);
+  filtersApplied.damageCondition = damageCondition;
   if (generationValue && !generationOmitted) {
     url.searchParams.set("search[filter_enum_generation]", generationValue);
     filtersApplied.generation = generationValue;
@@ -385,6 +388,7 @@ function auditListingRequest(responses, models, applied, pageNumber, pageUrl = "
     }
     if (applied.generation && !modelFilters.some((value) => value.includes("|gen-"))) missing.push("generation");
     if (bodyValue && !hasFilter("filter_enum_body_type", bodyValue)) missing.push("body");
+    if (applied.damageCondition && !hasFilter("filter_enum_condition", applied.damageCondition)) missing.push("damageCondition");
     for (const [key, name] of numericFilters) if (Number.isFinite(applied[key]) && !hasFilter(name, applied[key])) missing.push(key);
     return missing;
   };

@@ -1,5 +1,5 @@
 export const SEMI_REQUIRED_FIELDS = ["vin", "firstRegistrationDate", "transmission", "body"];
-export const OPTIONAL_FIELDS = ["location", "photos", "cameraStatus", "fuel"];
+export const OPTIONAL_FIELDS = ["location", "photos", "cameraStatus", "fuel", "engineCapacity", "enginePower"];
 export const FACT_FIELDS = [
   "title", "price", "priceBasis", "year", "mileage", "engine", "engineVariant",
   "engineCapacity", "enginePower", "body", "bodyCode", "transmission", "transmissionCode", "vin",

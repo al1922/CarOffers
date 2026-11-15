@@ -1,4 +1,4 @@
-import { bodyNames, kilometers, money, safeURL } from "./core.mjs";
+import { bodyNames, kilometers, money, numberFormat, safeURL } from "./core.mjs";
 
 function node(tag, className = "", text = "") {
   const element = document.createElement(tag);
@@ -15,7 +15,7 @@ function isPresent(value) {
 const DEFAULT_FIELD_POLICY = {
   required: ["price", "year", "mileage", "engineVariant"],
   semiRequired: ["vin", "firstRegistrationDate", "transmission", "body"],
-  optional: ["location", "photos", "cameraStatus", "fuel"],
+  optional: ["location", "photos", "cameraStatus", "fuel", "engineCapacity", "enginePower"],
 };
 const FIELD_LABELS = {
   price: "Cena",
@@ -30,7 +30,30 @@ const FIELD_LABELS = {
   photos: "Zdjęcia",
   cameraStatus: "Kamera",
   fuel: "Paliwo",
+  engineCapacity: "Pojemność skokowa",
+  enginePower: "Moc",
   lpgInstalled: "Instalacja LPG",
+};
+const FUEL_LABELS = {
+  petrol: "Benzyna",
+  benzyna: "Benzyna",
+  gasoline: "Benzyna",
+  diesel: "Diesel",
+  hybrid: "Hybryda",
+  "plug in hybrid": "Hybryda plug-in",
+  "plugin hybrid": "Hybryda plug-in",
+  "mild hybrid": "Miękka hybryda",
+  electric: "Elektryczny",
+  electricity: "Elektryczny",
+  lpg: "LPG",
+  "petrol + lpg": "Benzyna + LPG",
+  "benzyna + lpg": "Benzyna + LPG",
+  "petrol lpg": "Benzyna + LPG",
+  cng: "CNG",
+  "petrol + cng": "Benzyna + CNG",
+  "benzyna + cng": "Benzyna + CNG",
+  hydrogen: "Wodór",
+  ethanol: "Etanol",
 };
 
 function fieldPolicy(offer) {
@@ -56,6 +79,9 @@ function formatFieldValue(key, value) {
   if (key === "price") return money(value);
   if (key === "mileage") return kilometers(value);
   if (key === "cameraStatus") return cameraText(value);
+  if (key === "fuel") return fuelText(value);
+  if (key === "engineCapacity") return engineCapacityText(value);
+  if (key === "enginePower") return enginePowerText(value);
   if (key === "lpgInstalled" && typeof value === "boolean") return value ? "Obecna" : "Brak";
   if (key === "photos" && Array.isArray(value)) return `${value.length} zdjęć`;
   if (Array.isArray(value)) return value.join(", ");
@@ -79,6 +105,43 @@ function locationText(location) {
 
 function cameraText(value) {
   return ({ installed_confirmed: "Zainstalowana", retrofit_confirmed: "Możliwy montaż", not_installable: "Brak możliwości montażu" })[value] ?? value;
+}
+
+function fuelText(value) {
+  if (Array.isArray(value)) return value.map(fuelText).join(", ");
+  const raw = String(value ?? "").trim();
+  if (!raw) return raw;
+  const key = raw.toLocaleLowerCase("pl-PL").replace(/[_-]+/g, " ").replace(/\s+/g, " ");
+  return FUEL_LABELS[key] ?? raw;
+}
+
+function measurementNumber(value) {
+  let text = String(value ?? "").replace(/[\s\u00a0]/g, "").replace(/[^\d,.-]/g, "");
+  if (!text) return null;
+  const comma = text.lastIndexOf(",");
+  const dot = text.lastIndexOf(".");
+  if (comma >= 0 && dot >= 0) text = comma > dot ? text.replace(/\./g, "").replace(",", ".") : text.replace(/,/g, "");
+  else if (comma >= 0) text = /,\d{1,2}$/.test(text) ? text.replace(",", ".") : text.replace(/,/g, "");
+  else if (dot >= 0 && !/\.\d{1,2}$/.test(text)) text = text.replace(/\./g, "");
+  const number = Number(text);
+  return Number.isFinite(number) ? number : null;
+}
+
+function engineCapacityText(value) {
+  const raw = String(value ?? "").trim();
+  const number = measurementNumber(raw);
+  if (number === null) return raw;
+  const unit = /\b(?:l|litre|liter)\b/i.test(raw) || (number < 30 && /[.,]/.test(raw)) ? "l" : "cm³";
+  return `${numberFormat.format(number)} ${unit}`;
+}
+
+function enginePowerText(value) {
+  const raw = String(value ?? "").trim();
+  const number = measurementNumber(raw);
+  if (number === null) return raw;
+  if (/\bkW\b/i.test(raw) && /\b(?:KM|PS|hp)\b/i.test(raw)) return raw;
+  const unit = /\bkW\b/i.test(raw) ? "kW" : "KM";
+  return `${numberFormat.format(number)} ${unit}`;
 }
 
 function openLink(listing) {

@@ -37,7 +37,9 @@
       "location",
       "photos",
       "cameraStatus",
-      "fuel"
+      "fuel",
+      "engineCapacity",
+      "enginePower"
     ]
   },
   "knowledgeFile": "knowledge/models/skoda-superb-iii-combi.json"

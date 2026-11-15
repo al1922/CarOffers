@@ -12,7 +12,7 @@ const CONDITION_KEYS = new Set([
 
 const DAMAGE_VALUE = /\b(?:damaged|damage(?:d)?|uszkodzon\w*|powypadkow\w*|after accident|after collision|po wypadku|po kolizji|do naprawy|wymaga napraw\w*|needs? repair|for repair|szkoda calkowita|total loss)\b/;
 const CLEAN_VALUE = /\b(?:undamaged|not damaged|non[- ]damaged|nieuszkodzon\w*|bezwypadkow\w*|bezkolizyjn\w*|without damage|damage[- ]free|no (?:known |reported |visible )?damage|accident[- ]free|bez uszkod\w*|brak (?:jakichkolwiek )?uszkod\w*|bez wypadk\w*|brak (?:historii )?wypadk\w*)\b/;
-const DAMAGE_MENTION = /\b(?:damaged|uszkodzon\w*|powypadkow\w*|szkoda calkowita|total loss)\b/g;
+const DAMAGE_MENTION = /\b(?:damaged|uszkodzon\w*|uszkodzen\w*\s+zewnetrzn\w*|powypadkow\w*|szkoda calkowita|total loss)\b/g;
 const REPAIR_CONTEXT_MENTION = /\b(?:auto|samochod\w*|pojazd\w*|silnik\w*|skrzyn\w*|karoseri\w*)\s+(?:jest\s+)?(?:do naprawy|wymaga napraw\w*|needs? repair|for repair)\b/g;
 const MINOR_COSMETIC_MENTION = /\b(?:rys(?:a|y|e|ami|ach|om|em)?|rysk\w*|otar\w*|przetar\w*|zarysowan\w*|porysowan\w*|odprysk\w*)\b/;
 const MINOR_PARKING_DAMAGE = /\b(?:drobna|niewielka|mala)\s+szkod\w*.{0,45}\bparking\w*\b|\bparking\w*.{0,45}\b(?:drobna|niewielka|mala)\s+szkod\w*\b/;

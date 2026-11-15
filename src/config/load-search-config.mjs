@@ -18,7 +18,7 @@ function runtimeModel(profile, modelKey, sourceId, mapping) {
   const fields = profile.fields ?? {
     required: ["price", "year", "mileage", "engineVariant"],
     semiRequired: ["vin", "firstRegistrationDate", "transmission", "body"],
-    optional: ["location", "photos", "cameraStatus", "fuel"],
+    optional: ["location", "photos", "cameraStatus", "fuel", "engineCapacity", "enginePower"],
   };
   const model = {
     ...profile,

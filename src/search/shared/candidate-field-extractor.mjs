@@ -1,4 +1,5 @@
 import { extractVisibleFields, normalizeText } from "./portal-screening.mjs";
+import { FIRST_REGISTRATION_DATE_PATTERN, parseDateOrYear } from "./date-parsing.mjs";
 
 const FIELD_ALIASES = {
   price: ["price", "priceamount", "pricecash", "pricegross", "grossprice", "advertisedprice", "cenabrutto", "cena", "cenazakupu", "cenacalkowita"],
@@ -111,14 +112,7 @@ function normalizeFact(name, raw) {
     if (/\blpg\b|gaz/.test(normalized)) return "lpg";
     return text;
   }
-  if (name === "firstRegistrationDate") {
-    const iso = text.match(/\b(\d{4})-(\d{2})-(\d{2})\b/);
-    if (iso) return iso[0];
-    const fullDate = text.match(/\b(\d{1,2})[./-](\d{1,2})[./-](\d{4})\b/);
-    if (fullDate) return `${fullDate[3]}-${fullDate[2].padStart(2, "0")}-${fullDate[1].padStart(2, "0")}`;
-    const year = text.match(/\b(?:19|20)\d{2}\b/);
-    return year ? year[0] : null;
-  }
+  if (name === "firstRegistrationDate") return parseDateOrYear(text);
   return text;
 }
 
@@ -151,7 +145,15 @@ export function extractCandidateFields({ sourceId, listing, detail, engineAliase
     const value = normalizeFact(name, raw);
     if (value === null || value === "") return;
     if (name === "engineVariant" && engineAliases.length &&
-        !engineAliases.some((item) => item.engineVariant === value)) return;
+        !engineAliases.some((item) => item.engineVariant === value)) {
+      const matches = [...new Map(engineMatches(value, engineAliases)
+        .map((match) => [match.engineVariant, match])).values()];
+      if (matches.length !== 1) return;
+      const match = matches[0];
+      add("engineVariant", match.engineVariant, sourcePath, "text_rule", text || String(raw), priority);
+      add("engine", match.engine, sourcePath, "text_rule", text || String(raw), Math.max(0, priority - 1));
+      return;
+    }
     const dedupe = `${String(value)}|${sourcePath}`;
     if (candidates[name].some((candidate) => candidate.dedupe === dedupe)) return;
     candidates[name].push({ value, priority, dedupe, evidence: {
@@ -236,7 +238,7 @@ export function extractCandidateFields({ sourceId, listing, detail, engineAliase
     ["year", /(?:rok produkcji|produkcja|rocznik)\s*[:\-]?\s*((?:18|19|20|21)\d{2})/i],
     ["mileage", /(?:przebieg|mileage)\s*[:\-]?\s*([\d\s\u00a0.,]+\s*(?:km|mi|miles?))/i],
     ["price", /(?:cena|price)\s*[:\-]?\s*([\d\s\u00a0.,]+\s*(?:zł|PLN))/i],
-    ["firstRegistrationDate", /(?:pierwsza rejestracja|data pierwszej rejestracji|rok rejestracji)\s*[:\-]?\s*((?:\d{1,2}[./-]){2}\d{4}|(?:19|20)\d{2})/i],
+    ["firstRegistrationDate", FIRST_REGISTRATION_DATE_PATTERN],
     ["vin", /\b[A-HJ-NPR-Z0-9]{17}\b/i],
     ["body", /(?:typ nadwozia|nadwozie)\s*[:\-]?\s*(kombi|combi|wagon|sedan|hatchback|suv|crossover|minivan)/i],
     ["transmission", /(?:skrzynia biegów|skrzynia|transmission)\s*[:\-]?\s*(manualna|manual|automatyczna|automatic|dsg|cvt|tiptronic|xtronic)/i],
@@ -257,6 +259,11 @@ export function extractCandidateFields({ sourceId, listing, detail, engineAliase
     for (const match of engineMatches(engine.value, engineAliases)) {
       add("engineVariant", match.engineVariant, engine.evidence.sourcePath, engine.evidence.method,
         engine.evidence.excerpt ?? String(engine.value), engine.priority);
+      // Portal version slugs often append the trim (for example, "Intro Edition")
+      // to the engine name. Keep the matched model-specific engine alias as the
+      // canonical display value instead of letting that raw slug win by priority.
+      add("engine", match.engine, engine.evidence.sourcePath, "text_rule",
+        engine.evidence.excerpt ?? String(engine.value), Math.max(0, engine.priority - 1));
     }
   }
 
