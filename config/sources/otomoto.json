@@ -1,0 +1,21 @@
+{
+  "id": "otomoto",
+  "name": "OTOMOTO",
+  "enabled": true,
+  "adapter": "otomoto",
+  "searchUrl": "https://www.otomoto.pl/osobowe",
+  "limits": {
+    "detailConcurrency": 4
+  },
+  "adapterConfig": {
+    "optionReadyTimeoutMs": 6000,
+    "fieldReadyTimeoutMs": 15000,
+    "brandAliases": {
+      "skoda": [
+        "Skoda",
+        "Škoda"
+      ]
+    }
+  },
+  "filterMode": "url"
+}

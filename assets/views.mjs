@@ -1,121 +1,273 @@
-import {fmt,money,dateLabel,safeURL,bodyNames,verdictNames,statuses,reason,locationLabel,cameraLabel,lpgLabel,availability,availabilityNames,distance} from './core.mjs?v=15';
-export function el(tag,className='',text){const node=document.createElement(tag);if(className)node.className=className;if(text!==undefined)node.textContent=String(text??'');return node;}
-export function button(text,action,className='button secondary'){const b=el('button',className,text);b.type='button';b.addEventListener('click',action);return b;}
-export function link(text,url,className='button secondary'){const safe=safeURL(url);if(!safe)return el('span','muted','Źródło niedostępne');const a=el('a',className,text);a.href=safe;a.target='_blank';a.rel='noopener noreferrer';return a;}
-export function badge(text,type=''){return el('span','badge '+type,text);}
-export function empty(title,message){const wrap=el('div','empty-state');wrap.append(el('strong','',title),el('p','',message));return wrap;}
-function priceBlock(o,budget){const wrap=el('div');const price=el('div','price'+(o.price>budget?' over-budget':''),Number.isFinite(o.price)?fmt(o.price):'Brak ceny');if(Number.isFinite(o.price))price.append(el('small','','zł'));wrap.append(price);
- return wrap;
-}
-export function favoriteButton(o,ctx){const saved=ctx.meta(o).favorite,b=button(saved?'♥':'♡',()=>ctx.favorite(o),'icon-button'+(saved?' selected':''));b.dataset.favoriteKey=o.key;b.setAttribute('aria-label',(saved?'Usuń z zapisanych: ':'Zapisz ofertę: ')+o.title);b.setAttribute('aria-pressed',String(saved));return b;}
-function compareCheck(o,ctx){const label=el('label','compare-check'),input=el('input');input.type='checkbox';input.dataset.compareKey=o.key;input.checked=ctx.compared(o);input.addEventListener('change',()=>ctx.compare(o,input.checked));label.append(input,el('span','','Porównaj'));return label;}
-function photoPlaceholder(className='offer-photo'){const mark=el('span',className+' photo-placeholder');mark.setAttribute('role','img');mark.setAttribute('aria-label','Brak zdjęcia');return mark;}
-function photoView(url,className,alt='Zdjęcie oferty'){const safe=safeURL(url);if(!safe)return photoPlaceholder(className);const frame=el('span',className+' offer-photo-frame'),img=el('img','offer-photo-image');img.src=safe;img.alt=alt;img.loading='lazy';img.decoding='async';img.referrerPolicy='no-referrer';img.addEventListener('error',()=>{frame.classList.add('photo-placeholder');img.remove();frame.setAttribute('role','img');frame.setAttribute('aria-label','Zdjęcie niedostępne');},{once:true});frame.append(img);return frame;}
-const routineSellerChecks=new Set(['production_year','body','exact_engine_variant','transmission','camera_or_compatible_retrofit','camera_unavailable','camera_retrofit_not_allowed','structural_history','stroller_and_family_fit','purchase_not_auction']);
-function locationLine(o,ctx,className='card-location',includeEquipment=true){const place=locationLabel(o),km=distance(o,ctx.origin),row=el('p',className+' location-line');row.append(el('span','equipment-chip '+(place?'location-chip':'missing-location-chip'),place||'Nie odnaleziono miejscowości'));if(km!==null)row.append(el('span','equipment-chip distance-chip',fmt(Math.round(km))+' km'));if(includeEquipment)for(const [label,kind] of [[cameraLabel(o),'camera'],[lpgLabel(o),'lpg']])if(label)row.append(el('span','equipment-chip '+kind+'-chip',label));return row;}
-function locationEvidenceLabel(o){return o.locationEvidence?.basis==='listing_read'?'Miejsce odczytane z karty: '+dateLabel(o.locationEvidence.checkedAt):'';}
-function shortReason(o){if(o.identityConflict)return 'Konflikt tożsamości — ogłoszenia nie zostały połączone.';if(!o.assessmentCurrent)return 'Brak aktualnej oceny zgodności.';const failures=(o.assessment?.failures||[]).filter(item=>!routineSellerChecks.has(item)),unknowns=(o.assessment?.unknowns||[]).filter(item=>!routineSellerChecks.has(item));if(failures.length)return reason(failures[0]);if(unknowns.length)return reason(unknowns[0]);return '';}
-function latestDate(...values){const dates=values.flat().filter(value=>value&&Number.isFinite(Date.parse(value)));return dates.sort((a,b)=>Date.parse(b)-Date.parse(a))[0]||null;}
-const historyFieldNames={price:'Cena',mileage:'Przebieg',year:'Rok produkcji',engine:'Silnik',transmission:'Skrzynia biegów',body:'Nadwozie',title:'Tytuł ogłoszenia',seller:'Sprzedawca / opis',cameraStatus:'Kamera',lpgInstalled:'Instalacja LPG',location:'Lokalizacja',photos:'Zdjęcia',specs:'Wyposażenie',details:'Opis ogłoszenia',vin:'VIN',offerType:'Typ sprzedawcy',saleType:'Rodzaj sprzedaży'};
-function historyValue(field,value){if(value===null||value===undefined||value==='')return 'Nieustalone';if(field==='price')return money(value);if(field==='mileage')return Number.isFinite(value)?fmt(value)+' km':String(value);if(field==='lpgInstalled'&&typeof value==='boolean')return value?'Obecna':'Nieobecna';if(field==='location'&&typeof value==='object')return [value.city,value.voivodeship,value.countryCode].filter(Boolean).join(', ')||'Nieustalona';if(Array.isArray(value))return value.length?value.map(item=>typeof item==='string'?item:JSON.stringify(item)).join(', '):'Brak';if(typeof value==='object')return Object.entries(value).map(([key,item])=>`${key}: ${typeof item==='string'||typeof item==='number'||typeof item==='boolean'?item:JSON.stringify(item)}`).join('; ')||'Brak';return String(value);}
-function historyChangeLines(event){const changes=event.changes||{},lines=[];for(const [field,change] of Object.entries(changes)){const label=historyFieldNames[field];if(!label||!change||typeof change!=='object'||!('before'in change||'after'in change))continue;lines.push(`${label}: ${historyValue(field,change.before)} → ${historyValue(field,change.after)}`);}return lines;}
-export function offerCard(o,ctx){
- const card=el('article','offer-card'),photo=photoView(o.photos?.[0],'offer-photo',o.title);const content=el('div','offer-card-content');
- const top=el('div','card-top'),heading=el('div');heading.append(el('p','model-caption',o.modelName),el('h3','',o.engine||o.title));
- const badges=el('div','card-badges');badges.append(badge(verdictNames[o.verdict]||verdictNames.check,o.verdict));if(o.isNew)badges.append(badge('Nowa','match'));if(o.identityConflict)badges.append(badge('Konflikt tożsamości','conflict'));if(o.reviewSignals?.length)badges.append(badge('Do ręcznej weryfikacji','check'));if(o.members?.length>1)badges.append(badge(o.members.length+' ogłoszenia'));if(ctx.meta(o).status!=='considering')badges.append(badge(statuses[ctx.meta(o).status]));heading.append(badges);top.append(heading,favoriteButton(o,ctx));content.append(top);
- const price=el('div','price-row');price.append(priceBlock(o,ctx.budgetFor?.(o)??ctx.budget));content.append(price);
- const specs=el('div','specs');for(const [label,value] of [['Rok produkcji',o.year||'Nie ustalono'],['Przebieg',Number.isFinite(o.mileage)?fmt(o.mileage)+' km':'Nie ustalono'],['Nadwozie',bodyNames[o.displayBody]||o.body||'Nie ustalono'],['Skrzynia',o.displayTransmission==='manual'?'Manualna':o.displayTransmission==='automatic'?'Automatyczna':'Nie ustalono'],['Silnik',o.engine||'-']]){const cell=el('div');cell.append(el('span','',label),el('b','',value));specs.append(cell);}content.append(specs);
- const place=locationLine(o,ctx);if(place)content.append(place);const reasonText=shortReason(o);if(reasonText)content.append(el('p','card-reason',reasonText));
- const checkedAt=latestDate(o.lastVerifiedAt,(o.listingStates||[]).map(state=>state.lastVerifiedAt),o.lastCheckedAt);const extra=[['Ostatni udany odczyt',checkedAt?dateLabel(checkedAt):'Brak daty'],['Sprzedawca',({private:'Prywatny',company:'Firma',leasing_return:'Zwrot leasingowy',unknown:'Nieustalony'})[o.offerType]||'Nieustalony'],['Podstawa ceny',({gross_total:'Cena brutto',net:'Cena netto',unknown:'Nieustalona'})[o.priceBasis]||'Nieustalona']];const info=el('div','expanded-card-info');for(const [label,value] of extra){const item=el('span');item.append(el('b','',label+': '),el('span','',value));info.append(item);}content.append(info);
- const actions=el('div','card-bottom');actions.append(compareCheck(o,ctx),button('Szczegóły',()=>ctx.open(o),'button details-button'));const url=(o.urls||[]).find(x=>safeURL(x.url));if(url)actions.append(link('Otwórz ofertę ↗',url.url,'button primary direct-offer'));content.append(actions);
- content.append(el('p','card-date',availabilityNames[availability(o)]));card.append(photo,content);return card;
-}
-export function archivedOfferCard(o,ctx){
- const card=offerCard(o,ctx),content=card.querySelector('.offer-card-content'),archive=o.archive||{};
- card.classList.add('archived-offer-card');
- card.querySelector('[data-favorite-key]')?.remove();card.querySelector('.compare-check')?.remove();
- const labels={closed:'Zamknięta',unverified:'Niezweryfikowana',excluded:'Wykluczona ręcznie'};
- const notes={closed:'Ogłoszenie zostało potwierdzone jako zamknięte.',unverified:'Nie udało się potwierdzić dostępnej karty. To nie jest potwierdzenie sprzedaży.',excluded:'Rekord wykluczono z aktywnej listy.'};
- const banner=el('div','archive-card-state');banner.append(badge(labels[archive.status]||'Archiwalna',archive.status==='closed'?'fail':'check'));
- if(archive.archivedAt)banner.append(el('span','',`W archiwum od ${dateLabel(archive.archivedAt)}`));
- content.prepend(banner);content.append(el('p','archive-reason',archive.reportNote||notes[archive.status]||archive.reason||'Oferta została przeniesiona do archiwum.'));
- return card;
-}
-export function offerTable(list,ctx){
- const wrap=el('div','table-wrap offer-list-table'),table=el('table'),head=el('thead'),row=el('tr');
- wrap.tabIndex=0;wrap.setAttribute('role','region');wrap.setAttribute('aria-label','Tabela ofert. Przewiń poziomo, aby zobaczyć wszystkie kolumny.');
- for(const title of ['Auto / lokalizacja','Rok / przebieg / nadwozie','Cena','Ocena / aktualność','Działania']){const th=el('th','',title);th.scope='col';row.append(th);}
- head.append(row);table.append(head);const body=el('tbody');
- for(const o of list){
-  const tr=el('tr'),name=el('td'),url=(o.urls||[]).find(x=>safeURL(x.url));
-  const photo=photoView(o.photos?.[0],'table-photo',o.title),summary=el('div','table-offer-summary'),heading=el('strong');heading.append(url?link(o.modelName+' ↗',url.url,'table-title-link'):el('span','',o.modelName));
-  summary.append(heading,el('small','',o.engine||o.title));const place=locationLine(o,ctx,'table-location');if(place)summary.append(place);const overview=el('div','table-offer-overview');overview.append(photo,summary);name.append(overview);
-  const specs=el('td');specs.append(el('strong','',o.year||'Brak rocznika'),el('small','',Number.isFinite(o.mileage)?fmt(o.mileage)+' km':'Brak przebiegu'),el('small','',bodyNames[o.displayBody]||o.body||'Nie ustalono nadwozia'));
-  const price=el('td');price.append(el('strong',o.price>(ctx.budgetFor?.(o)??ctx.budget)?'over-budget':'',money(o.price)));
-  const status=el('td');status.append(badge(verdictNames[o.verdict],o.verdict),el('small','',availabilityNames[availability(o)]));if(o.identityConflict)status.append(badge('Konflikt tożsamości','conflict'));if(o.reviewSignals?.length)status.append(badge('Do ręcznej weryfikacji','check'));
-  const actions=el('td'),buttons=el('div','table-actions');buttons.append(favoriteButton(o,ctx),button('Szczegóły',()=>ctx.open(o),'button details-button'));
-  if(url){const direct=link('↗',url.url,'button primary direct-offer');direct.setAttribute('aria-label','Otwórz ofertę');direct.title='Otwórz ofertę';buttons.append(direct);}
-  actions.append(buttons,compareCheck(o,ctx));tr.append(name,specs,price,status,actions);body.append(tr);
- }
- table.append(body);wrap.append(table);return wrap;
-}
-function section(title){const wrap=el('section','detail-section');wrap.append(el('h3','',title));return wrap;}
-function disclosure(title){const wrap=el('details','detail-section'),summary=el('summary','',title);wrap.append(summary);return wrap;}
-const factLabels={label:'Wariant',name:'Nazwa',code:'Kod',engineCode:'Kod silnika',displacementCc:'Pojemność (cm³)',powerPS:'Moc (KM)',powerKw:'Moc (kW)',systemPowerPS:'Moc systemowa (KM)',fuel:'Paliwo',cylinders:'Cylindry',turbo:'Turbodoładowanie',market:'Rynek',body:'Nadwozie',period:'Okres',modelYear:'Rok modelowy',productionYears:'Lata produkcji',transmissions:'Skrzynie',bootLitresSeatsUp:'Bagażnik przy rozłożonych siedzeniach (l)',bootLitresSeatsDown:'Bagażnik przy złożonych siedzeniach (l)',status:'Status źródłowy',reason:'Uzasadnienie',notes:'Uwagi',variants:'Warianty',camera:'Kamera',standard:'Standard',optional:'Opcja',unknown:'Nie ustalono',source:'Źródło',scope:'Zakres',inspection:'Co sprawdzić',limitation:'Ograniczenie',assessment:'Ocena źródłowa',lpg:'LPG',fullRecommendedThresholdMet:'Pełny próg rekomendacji osiągnięty'};
-function humanLabel(key){return factLabels[key]||key.replace(/([a-z])([A-Z])/g,'$1 $2').replace(/[-_]/g,' ');}
-function facts(value){
- const wrap=el('div');
- if(Array.isArray(value)){const list=el('ul');for(const item of value){const li=el('li');li.append(facts(item));list.append(li);}wrap.append(list);}
- else if(value&&typeof value==='object'){for(const [key,item] of Object.entries(value)){const block=el('div','fact');block.append(el('p','detail-label',humanLabel(key)),facts(item));wrap.append(block);}}
- else wrap.append(el('p','',value===true?'Tak':value===false?'Nie':value===null?'Nie ustalono':value));
- return wrap;
-}
-export function offerDetails(o,ctx){
- const wrap=el('div'),header=el('div','detail-header');header.append(el('p','model-caption',o.modelName),el('h2','',o.title),priceBlock(o,ctx.budgetFor?.(o)??ctx.budget),badge(verdictNames[o.verdict],o.verdict));if(o.identityConflict)header.append(badge('Konflikt tożsamości — wymaga ręcznej kontroli','conflict'));wrap.append(header);if(o.reviewSignals?.length){const review=section('Sygnały do ręcznej weryfikacji');review.append(el('p','hint','To automatyczne sygnały kontrolne. Nie potwierdzają nieprawidłowości i nie zmieniają oceny zgodności.'));const list=el('ul');for(const signal of o.reviewSignals)list.append(el('li','',signal));review.append(list);wrap.append(review);}
- if(o.photos?.length){const gallery=section('Zdjęcia ogłoszenia'),grid=el('div','offer-photo-gallery');for(const [index,url] of o.photos.entries()){const safe=safeURL(url);if(!safe)continue;const frame=photoView(safe,'gallery-photo',o.title+' — zdjęcie '+(index+1));const anchor=document.createElement('a');anchor.href=safe;anchor.target='_blank';anchor.rel='noopener noreferrer';anchor.append(frame);grid.append(anchor);}if(grid.childElementCount){gallery.append(grid);wrap.append(gallery);}}
- const saleLabel=o.saleType==='fixed_price'?'Cena stała':o.saleType==='auction'?(ctx.requirementsFor?.(o)?.purchase?.auctionsAllowed?'Aukcja':'Aukcja — wykluczona'):'';
- const grid=el('div','detail-grid');for(const [label,value] of [['Rok produkcji',o.year||'Nie ustalono'],['Przebieg',Number.isFinite(o.mileage)?fmt(o.mileage)+' km':'Nie ustalono'],['Silnik',o.engine||'Nie ustalono'],['Skrzynia — opis źródłowy',o.transmission||'Nie ustalono'],['Typ nadwozia',bodyNames[o.displayBody]||o.body||'Nie ustalono'],['Sprzedaż',saleLabel],['Kamera',cameraLabel(o)],['LPG',lpgLabel(o)],['VIN',o.vin||'']]){if(!value)continue;const cell=el('div');cell.append(el('p','detail-label',label),el('p','',value));grid.append(cell);}const place=locationLine(o,ctx,'detail-location',false);if(place){const cell=el('div');cell.append(el('p','detail-label','Lokalizacja'),place);grid.prepend(cell);}const params=section('Najważniejsze informacje');params.append(grid);wrap.append(params);
- if(o.locationEvidence){const proof=disclosure('Źródło i dokładność lokalizacji');if(locationEvidenceLabel(o))proof.append(el('p','',locationEvidenceLabel(o)));if(o.locationEvidence.note)proof.append(el('p','',o.locationEvidence.note));if(o.locationEvidence.sourceUrl)proof.append(link('Źródłowa karta ogłoszenia ↗',o.locationEvidence.sourceUrl));if(o.locationEvidence.geocodingNote)proof.append(el('p','hint',o.locationEvidence.geocodingNote));if(o.location?.geoSource)proof.append(link('Punkt miejscowości — GeoNames ↗',o.location.geoSource));wrap.append(proof);}
- const assessment=section('Zgodność z Twoimi wymaganiami');assessment.append(el('p','hint',o.assessmentCurrent?'Ocena dotyczy zapisanych danych i wymagań. Nie potwierdza stanu technicznego.':'Brak aktualnego raportu oceny. Dawny werdykt nie jest używany do kwalifikacji.'));
- for(const [label,sourceItems,type,filterRoutine] of [['Niezgodności',o.assessment?.failures,'fail',true],['Do wyjaśnienia',o.assessment?.unknowns,'check',true],['Uwagi i preferencje',o.assessment?.preferenceNotes,'',false]]){const items=filterRoutine?sourceItems?.filter(item=>!routineSellerChecks.has(item)):sourceItems;if(!items?.length)continue;assessment.append(badge(label,type));const ul=el('ul');items.forEach(item=>ul.append(el('li','',reason(item))));assessment.append(ul);}wrap.append(assessment);
- const own=section('Twoja decyzja'),meta=ctx.meta(o),statusLabel=el('label','','Mój status'),status=el('select');for(const [key,label] of Object.entries(statuses)){const opt=el('option','',label);opt.value=key;status.append(opt);}status.value=meta.status;statusLabel.append(status);const noteLabel=el('label','','Prywatna notatka'),note=el('textarea');note.value=meta.note;note.maxLength=20000;note.rows=4;note.placeholder='Pytania do sprzedawcy, termin oględzin, własne uwagi…';noteLabel.append(note);const saved=el('p','hint','Zapis wyłącznie w tej przeglądarce. Nie zmienia oceny zgodności.');saved.setAttribute('role','status');own.append(statusLabel,el('br'),noteLabel,button('Zapisz notatkę i status',()=>{const success=ctx.save(o,{status:status.value,note:note.value});saved.textContent=success?'Zapisano w tej przeglądarce.':'Zmiana pozostaje w pamięci — wykonaj eksport kopii.';},'button primary'),saved);wrap.append(own);
- const sources=disclosure('Ogłoszenia i aktualność');
- const dates=section('Daty zapisane dla oferty');
- const verifiedAt=latestDate(o.lastVerifiedAt,(o.listingStates||[]).map(state=>state.lastVerifiedAt),o.lastCheckedAt,(o.listingStates||[]).map(state=>state.lastCheckedAt));
- const attemptedAt=latestDate(o.lastAttemptAt,(o.listingStates||[]).map(state=>state.lastAttemptAt));
- const publishedAt=o.publicationDate;
- const dateRows=[['Data publikacji ogłoszenia',publishedAt?dateLabel(publishedAt):'Nie zapisana — nie ustalono'],['Dodano do bazy',o.firstSeenAt?dateLabel(o.firstSeenAt):'Brak zapisanej daty'],['Ostatni udany odczyt',verifiedAt?dateLabel(verifiedAt):'Brak udanego odczytu'],['Ostatnia próba odczytu',attemptedAt?dateLabel(attemptedAt):'Brak zapisanej próby'],['Ostatnie przeliczenie oceny',o.assessmentCurrent&&o.assessmentDate?dateLabel(o.assessmentDate):'Brak aktualnej oceny']];
- const dateGrid=el('div','detail-grid');for(const [label,value] of dateRows){const cell=el('div');cell.append(el('p','detail-label',label),el('p','',value));dateGrid.append(cell);}dates.append(dateGrid);sources.append(dates);
- for(const listing of o.listingStates||[]){const block=el('div','listing-status-row');block.append(el('p','',({available:'Dostępne przy ostatnim udanym odczycie',sold:'Źródło potwierdziło sprzedaż',removed:'Źródło potwierdziło usunięcie',unknown:'Status nieustalony'})[listing.status]||'Status nieustalony'));if(listing.lastVerifiedAt)block.append(el('p','hint','Ostatni udany odczyt: '+dateLabel(listing.lastVerifiedAt)));if(listing.lastAttemptAt)block.append(el('p','hint','Ostatnia próba: '+dateLabel(listing.lastAttemptAt)));if(listing.lastObservation?.availability==='access_error')block.append(el('p','hint','Ostatnia próba zakończyła się błędem dostępu. Nie ustalono aktualnej dostępności.'));block.append(link('Źródło statusu ↗',listing.url));sources.append(block);}
- for(const entry of o.urls||[])sources.append(link(entry.label||'Otwórz ogłoszenie ↗',entry.url));wrap.append(sources);
- const history=disclosure('Historia ceny, danych i odczytów');if(!o.history?.length)history.append(el('p','muted','Brak zapisanych obserwacji. Nie oznacza to stałej ceny ani aktualnej dostępności.'));
- for(const event of [...o.history||[]].sort((a,b)=>(Date.parse(b.checkedAt)||0)-(Date.parse(a.checkedAt)||0))){const block=el('div','task-row');block.append(el('h4','',dateLabel(event.checkedAt)));const availabilityLabel=({available:'Dostępne przy odczycie',sold:'Źródło potwierdziło sprzedaż',removed:'Źródło potwierdziło usunięcie',unknown:'Status nieustalony',access_error:'Błąd dostępu — dostępność nieustalona'})[event.availability];if(availabilityLabel)block.append(badge(availabilityLabel,event.availability==='available'?'match':event.availability==='access_error'?'check':''));if(event.note)block.append(el('p','',event.note));const changes=historyChangeLines(event);if(changes.length){const list=el('ul');for(const change of changes)list.append(el('li','',change));block.append(list);}else block.append(el('p','muted','Ten odczyt nie zawiera zapisanych zmian ceny ani danych pojazdu.'));block.append(link('Źródło obserwacji ↗',event.url));for(const evidence of event.evidence||[]){block.append(badge(({seller:'Deklaracja sprzedawcy',technical:'Dokument techniczny',independent:'Niezależny dowód'})[evidence.kind]||'Dowód'),el('p','',evidence.note),link('Dokument ↗',evidence.url));}history.append(block);}wrap.append(history);
- const trust=section('Wiarygodność informacji');trust.append(el('p','hint','Dane zapisane z karty opisują to, co podaje ogłoszenie. Nie są niezależnym potwierdzeniem auta ani jego stanu.'));
- const recorded=[['Cena',money(o.price)],['Rok produkcji',o.year||'Nie ustalono'],['Przebieg',Number.isFinite(o.mileage)?fmt(o.mileage)+' km':'Nie ustalono'],['Silnik',o.engine||'Nie ustalono'],['Skrzynia',o.transmission||'Nie ustalono'],['Nadwozie',o.body||'Nie ustalono'],['Kamera',cameraLabel(o)||'Nie ustalono'],['Instalacja LPG',o.lpgInstalled===true?'Obecna':o.lpgInstalled===false?'Nieobecna':'Nie ustalono'],['Lokalizacja',locationLabel(o)||'Nie podano']];
- const recordedList=el('ul','');for(const [label,value] of recorded)recordedList.append(el('li','',label+': '+value));trust.append(el('h4','','Zapisane w danych oferty'),recordedList);
- const unknowns=o.assessment?.unknowns||[];trust.append(el('h4','','Nieustalone lub wymagające sprawdzenia'));if(unknowns.length){const list=el('ul');for(const item of unknowns)list.append(el('li','',reason(item)));trust.append(list);}else trust.append(el('p','muted','Bieżąca ocena nie wskazuje dodatkowych braków danych. To nadal nie zastępuje oględzin.'));
- const independent=(o.history||[]).flatMap(event=>(event.evidence||[]).filter(evidence=>['technical','independent'].includes(evidence.kind)).map(evidence=>({event,evidence})));trust.append(el('h4','','Niezależne dowody lub dokumenty'));if(independent.length){for(const {event,evidence} of independent){const block=el('div','task-row');block.append(badge(evidence.kind==='technical'?'Dokument techniczny':'Niezależny dowód'),el('p','',evidence.note||'Zapisano źródło dowodu.'),el('p','hint','Odczytano: '+dateLabel(event.checkedAt)),link('Otwórz dowód ↗',evidence.url));trust.append(block);}}else trust.append(el('p','muted','Brak zapisanych niezależnych dowodów lub dokumentów.'));
- wrap.append(trust);
- const legacy=disclosure('Deklaracje sprzedawcy i treści historyczne');legacy.append(el('p','hint','Tekst sprzedawcy pozostaje deklaracją. Starsze sformułowania, w tym „potwierdzone”, nie zastępują dowodu opisanego wyżej.'));if(o.seller)legacy.append(el('p','','Sprzedawca / opis: '+o.seller));for(const [title,text] of Object.entries(o.details||{})){if(text)legacy.append(el('h4','',title),el('p','',text));}for(const member of o.members||[]){if(member.id!==o.id)legacy.append(el('p','hint','Połączone ogłoszenie: '+member.id));}wrap.append(legacy);return wrap;
-}
-export function comparison(list,ctx){
- const wrap=el('div');wrap.append(el('h2','','Obok siebie łatwiej wybrać'),el('p','section-intro','Porównaj do czterech aut. Brak danych pozostaje brakiem danych; własny status nie jest oceną techniczną.'));
- if(!list.length){wrap.append(empty('Porównanie jest puste','Zaznacz „Porównaj” przy wybranych ofertach. Możesz łączyć różne modele.'));return wrap;}
- const scroll=el('div','table-wrap'),table=el('table','comparison'),body=el('tbody');scroll.tabIndex=0;scroll.setAttribute('role','region');scroll.setAttribute('aria-label','Porównanie aut. Przewiń poziomo, aby zobaczyć wszystkie kolumny.');
- const rows=[['Samochód',o=>o.modelName+' · '+(o.engine||o.title)],['Cena',o=>money(o.price)],['Rok produkcji',o=>o.year||'Nie ustalono'],['Przebieg',o=>Number.isFinite(o.mileage)?fmt(o.mileage)+' km':'Nie ustalono'],['Skrzynia',o=>o.transmission||'Nie ustalono'],['Nadwozie',o=>bodyNames[o.displayBody]||o.body||'Nie ustalono'],['Lokalizacja',o=>[locationLabel(o),distance(o,ctx.origin)===null?'':fmt(Math.round(distance(o,ctx.origin)))+' km',cameraLabel(o),lpgLabel(o)].filter(Boolean).join(' · ')],['Zgodność',o=>verdictNames[o.verdict]],['Do sprawdzenia',shortReason],['Aktualność',o=>availabilityNames[availability(o)]],['Mój status',o=>statuses[ctx.meta(o).status]]];
- for(const [label,value] of rows){const row=el('tr');const th=el('th','',label);th.scope='row';row.append(th);for(const o of list)row.append(el('td','',value(o)));body.append(row);}const row=el('tr');row.append(el('th','','Działania'));for(const o of list){const cell=el('td');cell.append(button('Szczegóły',()=>ctx.open(o),'button primary'),button('Usuń z porównania',()=>ctx.compare(o,false),'text-button'));row.append(cell);}body.append(row);table.append(body);scroll.append(table);wrap.append(scroll);return wrap;
-}
-export function knowledgeCard(model,entry,onOpen){const card=el('article','info-card');card.append(badge('Wiedza z jawnymi lukami','check'),el('h3','',model.name),el('p','',model.legacyEngineSelection),el('p','',`Wybrany rocznik: ${model.searchYears.min}–${model.searchYears.max||'bez górnej granicy'}. Zapisane oferty: ${entry?.count??'—'}.`));const reviews=Object.values(model.engineReview?.variants||{}),holds=reviews.filter(r=>r.status.startsWith('hold')).length;if(holds)card.append(el('p','',`Warianty do dodatkowej weryfikacji: ${holds}.`));card.append(button('Warianty i źródła ↗',()=>onOpen(model),'button secondary'));return card;}
-export function knowledgeDetails(model,card){
- const wrap=el('div');wrap.append(el('p','model-caption','KARTA WIEDZY · '+dateLabel(card.reviewedAt)),el('h2','',model.name),badge(card.status==='partial'?'Karta częściowa — luki pozostają':'Karta wiedzy',card.status==='partial'?'check':''),el('p','section-intro','Dostępność wyposażenia w wersji nie potwierdza go w konkretnym egzemplarzu. Wariant na liście wyszukiwania nie oznacza pełnej rekomendacji trwałości.'));
- const variants=section('Wybrane warianty silników');for(const variant of model.allowedEngineVariants){const review=model.engineReview?.variants?.[variant],label=el('div','task-row');label.append(el('h4','',variant),badge(review?.status?.startsWith('hold')?'Wymaga dodatkowej weryfikacji':'Warunkowo w katalogu','check'),el('p','',review?.reason||'Brak pełnej oceny wariantu.'));variants.append(label);}wrap.append(variants);
- if(card.openQuestions?.length){const gaps=section('Otwarte pytania');for(const q of card.openQuestions)gaps.append(facts(q));wrap.append(gaps);}
- const labels={years:'Roczniki',engine:'Napęd',practical:'Praktyczność',equipment:'Wyposażenie',camera:'Kamera',engine_assessment:'Ocena silników',reliability:'Trwałość',body:'Nadwozie',service:'Serwis',safety:'Bezpieczeństwo','camera-retrofit':'Montaż kamery','reliability-evidence':'Dowody dotyczące trwałości',selection_review:'Przegląd wybranego zakresu',recall:'Akcja serwisowa',lpg:'LPG',identity:'Identyfikacja','engine-recommendation':'Ocena napędu',reliability_data:'Dane o trwałości'};
- for(const claim of card.claims||[]){const block=document.createElement('details');block.className='detail-section';block.append(el('summary','',labels[claim.topic]||humanLabel(claim.topic)),facts(claim.value),el('h4','','Zakres obowiązywania'),facts(claim.scope));for(const sourceId of claim.sourceIds||[]){const source=card.sources.find(s=>s.id===sourceId);if(source)block.append(link(source.title+' ↗',source.url));}for(const note of claim.notes||[])block.append(el('p','hint',note));wrap.append(block);}return wrap;
-}
-export function updates(data){
- const grid=el('div','source-list');
- for(const source of data.sources){const card=el('article','info-card');card.append(el('h3','',source.name),link('Otwórz źródło ↗',source.url));grid.append(card);}
- return grid;
+import { bodyNames, kilometers, money, safeURL } from "./core.mjs";
+
+function node(tag, className = "", text = "") {
+  const element = document.createElement(tag);
+  if (className) element.className = className;
+  if (text !== "") element.textContent = String(text);
+  return element;
 }
 
+function isPresent(value) {
+  if (value === null || value === undefined || value === "") return false;
+  return !Array.isArray(value) || value.length > 0;
+}
+
+const DEFAULT_FIELD_POLICY = {
+  required: ["price", "year", "mileage", "engineVariant"],
+  semiRequired: ["vin", "firstRegistrationDate", "transmission", "body"],
+  optional: ["location", "photos", "cameraStatus", "fuel"],
+};
+const FIELD_LABELS = {
+  price: "Cena",
+  year: "Rok produkcji",
+  mileage: "Przebieg",
+  engineVariant: "Silnik",
+  vin: "VIN",
+  firstRegistrationDate: "Pierwsza rejestracja",
+  transmission: "Skrzynia biegów",
+  body: "Nadwozie",
+  location: "Lokalizacja",
+  photos: "Zdjęcia",
+  cameraStatus: "Kamera",
+  fuel: "Paliwo",
+  lpgInstalled: "Instalacja LPG",
+};
+
+function fieldPolicy(offer) {
+  return offer.fieldPolicy ?? DEFAULT_FIELD_POLICY;
+}
+
+function fieldValue(offer, key) {
+  switch (key) {
+    case "engineVariant": return offer.engine || offer.engineVariant;
+    case "body": return offer.bodyCode ? bodyNames[offer.bodyCode] ?? offer.bodyCode : offer.body;
+    case "transmission": return offer.transmission ?? offer.transmissionCode;
+    case "location": return locationText(offer.location);
+    case "photos": return offer.photos;
+    default: return offer[key];
+  }
+}
+
+function fieldLabel(key) {
+  return FIELD_LABELS[key] ?? key.replace(/([a-z])([A-Z])/g, "$1 $2").replace(/^./, (letter) => letter.toUpperCase());
+}
+
+function formatFieldValue(key, value) {
+  if (key === "price") return money(value);
+  if (key === "mileage") return kilometers(value);
+  if (key === "cameraStatus") return cameraText(value);
+  if (key === "lpgInstalled" && typeof value === "boolean") return value ? "Obecna" : "Brak";
+  if (key === "photos" && Array.isArray(value)) return `${value.length} zdjęć`;
+  if (Array.isArray(value)) return value.join(", ");
+  return String(value);
+}
+
+function field(label, value, { semi = false, className = "", formatter = (item) => String(item) } = {}) {
+  const missing = !isPresent(value);
+  const classes = ["fact"];
+  if (semi && missing) classes.push("fact-missing");
+  if (className) classes.push(className);
+  const row = node("div", classes.join(" "));
+  row.append(node("span", "fact-label", label), node("strong", "fact-value", missing ? "-" : formatter(value)));
+  return row;
+}
+
+function locationText(location) {
+  if (typeof location === "string") return location;
+  return [location?.city, location?.voivodeship].filter(Boolean).join(", ");
+}
+
+function cameraText(value) {
+  return ({ installed_confirmed: "Zainstalowana", retrofit_confirmed: "Możliwy montaż", not_installable: "Brak możliwości montażu" })[value] ?? value;
+}
+
+function openLink(listing) {
+  const url = safeURL(listing?.url);
+  if (!url) return null;
+  const link = node("a", "button button-primary", "Otwórz ogłoszenie ↗");
+  link.href = url;
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  return link;
+}
+
+function listingPicker(offer) {
+  const listings = (offer.sourceListings ?? []).filter((listing) => safeURL(listing.url));
+  if (listings.length <= 1) return { element: null, getSelected: () => listings[0] ?? null };
+  const select = node("select", "listing-select");
+  select.setAttribute("aria-label", "Wybierz portal z ogłoszeniem");
+  for (const listing of listings) {
+    const option = node("option", "", listing.sourceName);
+    option.value = listing.key;
+    option.selected = listing.key === offer.primaryListingKey;
+    select.append(option);
+  }
+  const getSelected = () => listings.find((listing) => listing.key === select.value) ?? listings[0];
+  return { element: select, getSelected };
+}
+
+function factsGrid(offer, compact = false) {
+  const policy = fieldPolicy(offer);
+  const grid = node("div", compact ? "facts-grid facts-grid-compact" : "facts-grid");
+  for (const key of policy.required ?? []) {
+    grid.append(field(fieldLabel(key), fieldValue(offer, key), {
+      className: key === "price" ? "fact-required fact-price" : "fact-required",
+      formatter: (value) => formatFieldValue(key, value),
+    }));
+  }
+  const semiFields = node("div", "facts-grid facts-grid-semi");
+  for (const key of policy.semiRequired ?? []) {
+    semiFields.append(field(fieldLabel(key), fieldValue(offer, key), {
+      semi: true,
+      formatter: (value) => formatFieldValue(key, value),
+    }));
+  }
+  if (semiFields.childElementCount) grid.append(semiFields);
+  return grid;
+}
+
+function optionalFields(offer) {
+  const items = [];
+  for (const key of fieldPolicy(offer).optional ?? []) {
+    if (key === "photos") continue;
+    const value = fieldValue(offer, key);
+    if (!isPresent(value) || (key === "cameraStatus" && value === "unknown")) continue;
+    items.push([fieldLabel(key), formatFieldValue(key, value)]);
+  }
+  return items;
+}
+
+function photoGallery(offer) {
+  const photos = fieldPolicy(offer).optional?.includes("photos") && Array.isArray(offer.photos) ? offer.photos : [];
+  const urls = photos
+    .map((photo) => safeURL(photo))
+    .filter(Boolean);
+  if (!urls.length) return null;
+
+  const title = offer.title || offer.modelName;
+  const gallery = node("div", "offer-gallery");
+  gallery.setAttribute("role", "region");
+  gallery.setAttribute("aria-label", `Zdjęcia oferty ${title}`);
+
+  const viewport = node("div", "offer-gallery-viewport");
+  const image = node("img", "offer-image");
+  image.width = 800;
+  image.height = 500;
+  image.loading = "lazy";
+  image.decoding = "async";
+  image.referrerPolicy = "no-referrer";
+  image.addEventListener("error", () => {
+    gallery.remove();
+    gallery.closest(".offer-card")?.classList.add("offer-card-no-image");
+  }, { once: true });
+
+  let current = 0;
+  const counter = node("span", "gallery-counter");
+  counter.setAttribute("aria-live", "polite");
+  counter.setAttribute("aria-atomic", "true");
+
+  const showPhoto = (index) => {
+    current = Math.max(0, Math.min(urls.length - 1, index));
+    image.src = urls[current];
+    image.alt = `Zdjęcie ${current + 1} z ${urls.length}: ${title}`;
+    counter.textContent = `${current + 1} / ${urls.length}`;
+    previous.disabled = current === 0;
+    next.disabled = current === urls.length - 1;
+    previous.setAttribute("aria-label", `Poprzednie zdjęcie, ${current + 1} z ${urls.length}`);
+    next.setAttribute("aria-label", `Następne zdjęcie, ${current + 1} z ${urls.length}`);
+  };
+
+  const arrowButton = (direction, label) => {
+    const button = node("button", `gallery-arrow gallery-${direction}`);
+    const icon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    icon.setAttribute("viewBox", "0 0 24 24");
+    icon.setAttribute("width", "18");
+    icon.setAttribute("height", "18");
+    icon.setAttribute("aria-hidden", "true");
+    icon.setAttribute("focusable", "false");
+    path.setAttribute("d", direction === "previous" ? "M15 18 9 12l6-6" : "M9 18l6-6-6-6");
+    path.setAttribute("fill", "none");
+    path.setAttribute("stroke", "currentColor");
+    path.setAttribute("stroke-width", "2.5");
+    path.setAttribute("stroke-linecap", "round");
+    path.setAttribute("stroke-linejoin", "round");
+    icon.append(path);
+    button.append(icon);
+    button.type = "button";
+    button.setAttribute("aria-label", label);
+    button.hidden = urls.length < 2;
+    return button;
+  };
+
+  const previous = arrowButton("previous", "Poprzednie zdjęcie");
+  previous.addEventListener("click", () => showPhoto(current - 1));
+
+  const next = arrowButton("next", "Następne zdjęcie");
+  next.addEventListener("click", () => showPhoto(current + 1));
+
+  let swipeStart = null;
+  viewport.addEventListener("pointerdown", (event) => {
+    if (event.button !== undefined && event.button !== 0) return;
+    swipeStart = { x: event.clientX, y: event.clientY };
+  });
+  viewport.addEventListener("pointerup", (event) => {
+    if (!swipeStart) return;
+    const deltaX = event.clientX - swipeStart.x;
+    const deltaY = event.clientY - swipeStart.y;
+    swipeStart = null;
+    if (urls.length < 2 || Math.abs(deltaX) < 40 || Math.abs(deltaX) < Math.abs(deltaY) * 1.2) return;
+    showPhoto(current + (deltaX < 0 ? 1 : -1));
+  });
+  viewport.addEventListener("pointercancel", () => { swipeStart = null; });
+
+  showPhoto(0);
+  viewport.append(image);
+  gallery.append(viewport, previous, next);
+  if (urls.length > 1) gallery.append(counter);
+  return gallery;
+}
+
+export function offerCard(offer) {
+  const card = node("article", "offer-card");
+  const gallery = photoGallery(offer);
+  if (gallery) card.append(gallery);
+  else card.classList.add("offer-card-no-image");
+  const content = node("div", "offer-content");
+  const heading = node("div", "offer-heading");
+  const title = node("div");
+  title.append(node("p", "eyebrow", offer.modelName), node("h2", "offer-title", offer.title || offer.engine || offer.modelName));
+  heading.append(title);
+  if (offer.hasFieldDiscrepancy) heading.append(node("span", "badge badge-warning", "Rozbieżność pól"));
+  content.append(heading, factsGrid(offer, true));
+
+  const optional = optionalFields(offer);
+  if (optional.length) {
+    const list = node("ul", "optional-list");
+    for (const [label, value] of optional) {
+      const item = node("li", "optional-item");
+      item.append(node("span", "optional-label", label), node("strong", "optional-value", value));
+      list.append(item);
+    }
+    content.append(list);
+  }
+
+  const actions = node("div", "offer-actions");
+  const picker = listingPicker(offer);
+  const selected = picker.getSelected();
+  if (picker.element) {
+    actions.append(picker.element);
+  }
+  const directLink = openLink(selected);
+  if (directLink) {
+    if (picker.element) picker.element.addEventListener("change", () => {
+      const chosen = picker.getSelected();
+      const next = openLink(chosen);
+      if (next) { directLink.href = next.href; directLink.textContent = `Otwórz ${chosen.sourceName} ↗`; }
+    });
+    actions.append(directLink);
+  }
+  content.append(actions);
+  card.append(content);
+  return card;
+}

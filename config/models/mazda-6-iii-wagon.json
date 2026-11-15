@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "key": "mazda-6-iii-wagon",
+  "name": "Mazda 6 III Wagon",
+  "brand": "Mazda",
+  "model": "6",
+  "generation": "III",
+  "bodies": [
+    "wagon"
+  ],
+  "active": true,
+  "criteria": {
+    "minimumPricePln": 30000,
+    "maximumAdvertisedPricePln": 55000,
+    "yearMin": 2017,
+    "yearMax": null,
+    "maximumMileageKm": 170000,
+    "engineVariants": [
+      "2.0-skyactiv-g-145",
+      "2.0-skyactiv-g-165"
+    ]
+  },
+  "fields": {
+    "required": [
+      "price",
+      "year",
+      "mileage",
+      "engineVariant"
+    ],
+    "semiRequired": [
+      "vin",
+      "firstRegistrationDate",
+      "transmission",
+      "body"
+    ],
+    "optional": [
+      "location",
+      "photos",
+      "cameraStatus",
+      "fuel"
+    ]
+  },
+  "knowledgeFile": "knowledge/models/mazda-6-iii-wagon.json"
+}

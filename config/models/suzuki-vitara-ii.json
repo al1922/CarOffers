@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "key": "suzuki-vitara-ii",
+  "name": "Suzuki Vitara II",
+  "brand": "Suzuki",
+  "model": "Vitara",
+  "generation": "II",
+  "bodies": [
+    "suv"
+  ],
+  "active": true,
+  "criteria": {
+    "minimumPricePln": 30000,
+    "maximumAdvertisedPricePln": 55000,
+    "yearMin": 2017,
+    "yearMax": null,
+    "maximumMileageKm": 170000,
+    "engineVariants": [
+      "1.4-boosterjet-140"
+    ]
+  },
+  "fields": {
+    "required": [
+      "price",
+      "year",
+      "mileage",
+      "engineVariant"
+    ],
+    "semiRequired": [
+      "vin",
+      "firstRegistrationDate",
+      "transmission",
+      "body"
+    ],
+    "optional": [
+      "location",
+      "photos",
+      "cameraStatus",
+      "fuel"
+    ]
+  },
+  "knowledgeFile": "knowledge/models/suzuki-vitara-ii.json"
+}

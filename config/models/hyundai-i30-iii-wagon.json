@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "key": "hyundai-i30-iii-wagon",
+  "name": "Hyundai i30 III Wagon",
+  "brand": "Hyundai",
+  "model": "i30",
+  "generation": "III",
+  "bodies": [
+    "wagon"
+  ],
+  "active": true,
+  "criteria": {
+    "minimumPricePln": 30000,
+    "maximumAdvertisedPricePln": 55000,
+    "yearMin": 2017,
+    "yearMax": null,
+    "maximumMileageKm": 170000,
+    "engineVariants": [
+      "1.4-tgdi-140",
+      "1.5-tgdi-160"
+    ]
+  },
+  "fields": {
+    "required": [
+      "price",
+      "year",
+      "mileage",
+      "engineVariant"
+    ],
+    "semiRequired": [
+      "vin",
+      "firstRegistrationDate",
+      "transmission",
+      "body"
+    ],
+    "optional": [
+      "location",
+      "photos",
+      "cameraStatus",
+      "fuel"
+    ]
+  },
+  "knowledgeFile": "knowledge/models/hyundai-i30-iii-wagon.json"
+}

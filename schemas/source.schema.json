@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://caroffers.local/schemas/source.schema.json",
+  "title": "CarOffers direct-search source",
+  "type": "object",
+  "required": ["id", "name", "enabled", "adapter", "searchUrl"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "name": { "type": "string", "minLength": 1 },
+    "enabled": { "type": "boolean" },
+    "adapter": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "searchUrl": { "type": "string", "format": "uri" },
+    "limits": { "type": "object" },
+    "adapterConfig": { "type": "object" },
+    "filterMode": { "enum": ["url", "ui"] }
+  },
+  "additionalProperties": false
+}

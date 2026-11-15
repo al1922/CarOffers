@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "defaults": {
+    "maxPages": 2,
+    "filterReadyTimeoutMs": 10000,
+    "resultReadyTimeoutMs": 8000,
+    "detailReadyTimeoutMs": 2500,
+    "maxResponseBytes": 2097152,
+    "maxRunResponseBytes": 20971520
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "key": "toyota-corolla-e210",
+  "name": "Toyota Corolla XII (E210)",
+  "brand": "Toyota",
+  "model": "Corolla",
+  "generation": "XII",
+  "bodies": [
+    "sedan",
+    "wagon"
+  ],
+  "active": true,
+  "criteria": {
+    "minimumPricePln": 30000,
+    "maximumAdvertisedPricePln": 55000,
+    "yearMin": 2019,
+    "yearMax": null,
+    "maximumMileageKm": 170000,
+    "engineVariants": [
+      "1.6-valvematic-132",
+      "1.8-hybrid-122"
+    ]
+  },
+  "fields": {
+    "required": [
+      "price",
+      "year",
+      "mileage",
+      "engineVariant"
+    ],
+    "semiRequired": [
+      "vin",
+      "firstRegistrationDate",
+      "transmission",
+      "body"
+    ],
+    "optional": [
+      "location",
+      "photos",
+      "cameraStatus",
+      "fuel"
+    ]
+  },
+  "knowledgeFile": "knowledge/models/toyota-corolla-e210.json"
+}

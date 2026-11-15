@@ -1,96 +1,563 @@
 {
-  "version": 1,
+  "version": 2,
+  "generatedAt": "2026-11-15T11:12:03.898Z",
   "models": [
     {
       "key": "hyundai-i30-iii-wagon",
       "name": "Hyundai i30 III Wagon",
-      "description": "Kombi",
-      "requirements": "Hyundai i30 III Wagon; 1.4 T-GDI 140 KM; 1.5 T-GDI 160 KM; rodzina: 2 dorosłych i 1 dziecko; wymagane miejsce na wózek i bagaż; rocznik od 2017; widoczna cena oferty min. 30 000 zł; cena zakupu brutto maks. 55 000 zł; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 170 000 km preferowany; kamera wymagana  obecna lub z potwierdzoną możliwością montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji.",
-      "file": "offers/hyundai-i30-iii-wagon.json"
+      "brand": "Hyundai",
+      "model": "i30",
+      "generation": "III",
+      "bodies": [
+        "wagon"
+      ],
+      "criteria": {
+        "minimumPricePln": 30000,
+        "maximumAdvertisedPricePln": 55000,
+        "yearMin": 2017,
+        "yearMax": null,
+        "maximumMileageKm": 170000,
+        "engineVariants": [
+          "1.4-tgdi-140",
+          "1.5-tgdi-160"
+        ]
+      },
+      "fields": {
+        "required": [
+          "price",
+          "year",
+          "mileage",
+          "engineVariant"
+        ],
+        "semiRequired": [
+          "vin",
+          "firstRegistrationDate",
+          "transmission",
+          "body"
+        ],
+        "optional": [
+          "location",
+          "photos",
+          "cameraStatus",
+          "fuel"
+        ]
+      },
+      "file": "offers/hyundai-i30-iii-wagon.json",
+      "knowledgeFile": "knowledge/models/hyundai-i30-iii-wagon.json"
     },
     {
       "key": "kia-ceed-iii-sw",
       "name": "Kia Ceed III Sportswagon",
-      "description": "Kombi",
-      "requirements": "Kia Ceed III Sportswagon; 1.4 T-GDI 140 KM; 1.5 T-GDI 160 KM; rodzina: 2 dorosłych i 1 dziecko; wymagane miejsce na wózek i bagaż; rocznik od 2018; widoczna cena oferty min. 30 000 zł; cena zakupu brutto maks. 55 000 zł; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 170 000 km preferowany; kamera wymagana  obecna lub z potwierdzoną możliwością montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji.",
-      "file": "offers/kia-ceed-iii-sw.json"
+      "brand": "Kia",
+      "model": "Ceed",
+      "generation": "III",
+      "bodies": [
+        "wagon"
+      ],
+      "criteria": {
+        "minimumPricePln": 30000,
+        "maximumAdvertisedPricePln": 55000,
+        "yearMin": 2018,
+        "yearMax": null,
+        "maximumMileageKm": 170000,
+        "engineVariants": [
+          "1.4-tgdi-140",
+          "1.5-tgdi-160"
+        ]
+      },
+      "fields": {
+        "required": [
+          "price",
+          "year",
+          "mileage",
+          "engineVariant"
+        ],
+        "semiRequired": [
+          "vin",
+          "firstRegistrationDate",
+          "transmission",
+          "body"
+        ],
+        "optional": [
+          "location",
+          "photos",
+          "cameraStatus",
+          "fuel"
+        ]
+      },
+      "file": "offers/kia-ceed-iii-sw.json",
+      "knowledgeFile": "knowledge/models/kia-ceed-iii-sw.json"
     },
     {
       "key": "kia-xceed",
       "name": "Kia XCeed",
-      "description": "Crossover",
-      "requirements": "Kia XCeed; 1.4 T-GDI 140 KM; 1.5 T-GDI 160 KM; rodzina: 2 dorosłych i 1 dziecko; wymagane miejsce na wózek i bagaż; rocznik od 2019; widoczna cena oferty min. 30 000 zł; cena zakupu brutto maks. 55 000 zł; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 170 000 km preferowany; kamera wymagana  obecna lub z potwierdzoną możliwością montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji.",
-      "file": "offers/kia-xceed.json"
+      "brand": "Kia",
+      "model": "XCeed",
+      "generation": "",
+      "bodies": [
+        "crossover"
+      ],
+      "criteria": {
+        "minimumPricePln": 30000,
+        "maximumAdvertisedPricePln": 55000,
+        "yearMin": 2019,
+        "yearMax": null,
+        "maximumMileageKm": 170000,
+        "engineVariants": [
+          "1.4-tgdi-140",
+          "1.5-tgdi-160"
+        ]
+      },
+      "fields": {
+        "required": [
+          "price",
+          "year",
+          "mileage",
+          "engineVariant"
+        ],
+        "semiRequired": [
+          "vin",
+          "firstRegistrationDate",
+          "transmission",
+          "body"
+        ],
+        "optional": [
+          "location",
+          "photos",
+          "cameraStatus",
+          "fuel"
+        ]
+      },
+      "file": "offers/kia-xceed.json",
+      "knowledgeFile": "knowledge/models/kia-xceed.json"
     },
     {
       "key": "mazda-6-iii-wagon",
       "name": "Mazda 6 III Wagon",
-      "description": "Kombi (Wagon)",
-      "requirements": "Mazda 6 III Wagon; 2.0 Skyactiv-G 145 KM; 2.0 Skyactiv-G 165 KM; rodzina: 2 dorosłych i 1 dziecko; wymagane miejsce na wózek i bagaż; rocznik od 2017; widoczna cena oferty min. 30 000 zł; cena zakupu brutto maks. 55 000 zł; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 170 000 km preferowany; kamera wymagana  obecna lub z potwierdzoną możliwością montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji.",
-      "file": "offers/mazda-6-iii-wagon.json"
+      "brand": "Mazda",
+      "model": "6",
+      "generation": "III",
+      "bodies": [
+        "wagon"
+      ],
+      "criteria": {
+        "minimumPricePln": 30000,
+        "maximumAdvertisedPricePln": 55000,
+        "yearMin": 2017,
+        "yearMax": null,
+        "maximumMileageKm": 170000,
+        "engineVariants": [
+          "2.0-skyactiv-g-145",
+          "2.0-skyactiv-g-165"
+        ]
+      },
+      "fields": {
+        "required": [
+          "price",
+          "year",
+          "mileage",
+          "engineVariant"
+        ],
+        "semiRequired": [
+          "vin",
+          "firstRegistrationDate",
+          "transmission",
+          "body"
+        ],
+        "optional": [
+          "location",
+          "photos",
+          "cameraStatus",
+          "fuel"
+        ]
+      },
+      "file": "offers/mazda-6-iii-wagon.json",
+      "knowledgeFile": "knowledge/models/mazda-6-iii-wagon.json"
     },
     {
       "key": "mitsubishi-asx-i",
       "name": "Mitsubishi ASX I",
-      "description": "SUV",
-      "requirements": "Mitsubishi ASX I; 2.0 MIVEC 150 KM; rodzina: 2 dorosłych i 1 dziecko; wymagane miejsce na wózek i bagaż; rocznik od 2019; widoczna cena oferty min. 30 000 zł; cena zakupu brutto maks. 55 000 zł; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 170 000 km preferowany; kamera wymagana  obecna lub z potwierdzoną możliwością montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji.",
-      "file": "offers/mitsubishi-asx-i.json"
+      "brand": "Mitsubishi",
+      "model": "ASX",
+      "generation": "I",
+      "bodies": [
+        "suv",
+        "crossover"
+      ],
+      "criteria": {
+        "minimumPricePln": 30000,
+        "maximumAdvertisedPricePln": 55000,
+        "yearMin": 2019,
+        "yearMax": null,
+        "maximumMileageKm": 170000,
+        "engineVariants": [
+          "2.0-mivec-150"
+        ]
+      },
+      "fields": {
+        "required": [
+          "price",
+          "year",
+          "mileage",
+          "engineVariant"
+        ],
+        "semiRequired": [
+          "vin",
+          "firstRegistrationDate",
+          "transmission",
+          "body"
+        ],
+        "optional": [
+          "location",
+          "photos",
+          "cameraStatus",
+          "fuel"
+        ]
+      },
+      "file": "offers/mitsubishi-asx-i.json",
+      "knowledgeFile": "knowledge/models/mitsubishi-asx-i.json"
     },
     {
       "key": "mitsubishi-outlander-iii",
       "name": "Mitsubishi Outlander III",
-      "description": "SUV",
-      "requirements": "Mitsubishi Outlander III; 2.0 MIVEC 150 KM; rodzina: 2 dorosłych i 1 dziecko; wymagane miejsce na wózek i bagaż; rocznik od 2017; widoczna cena oferty min. 30 000 zł; cena zakupu brutto maks. 55 000 zł; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 170 000 km preferowany; kamera wymagana  obecna lub z potwierdzoną możliwością montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji.",
-      "file": "offers/mitsubishi-outlander-iii.json"
+      "brand": "Mitsubishi",
+      "model": "Outlander",
+      "generation": "III",
+      "bodies": [
+        "suv"
+      ],
+      "criteria": {
+        "minimumPricePln": 30000,
+        "maximumAdvertisedPricePln": 55000,
+        "yearMin": 2017,
+        "yearMax": null,
+        "maximumMileageKm": 170000,
+        "engineVariants": [
+          "2.0-mivec-150"
+        ]
+      },
+      "fields": {
+        "required": [
+          "price",
+          "year",
+          "mileage",
+          "engineVariant"
+        ],
+        "semiRequired": [
+          "vin",
+          "firstRegistrationDate",
+          "transmission",
+          "body"
+        ],
+        "optional": [
+          "location",
+          "photos",
+          "cameraStatus",
+          "fuel"
+        ]
+      },
+      "file": "offers/mitsubishi-outlander-iii.json",
+      "knowledgeFile": "knowledge/models/mitsubishi-outlander-iii.json"
     },
     {
       "key": "skoda-octavia-iii-combi",
       "name": "Škoda Octavia III Combi",
-      "description": "Kombi",
-      "requirements": "Škoda Octavia III Combi; 1.4 TSI EA211 150 KM; 1.5 TSI 150 KM; rodzina: 2 dorosłych i 1 dziecko; wymagane miejsce na wózek i bagaż; rocznik od 2017; widoczna cena oferty min. 30 000 zł; cena zakupu brutto maks. 55 000 zł; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 170 000 km preferowany; kamera wymagana  obecna lub z potwierdzoną możliwością montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji.",
-      "file": "offers/skoda-octavia-iii-combi.json"
+      "brand": "Škoda",
+      "model": "Octavia",
+      "generation": "III",
+      "bodies": [
+        "wagon"
+      ],
+      "criteria": {
+        "minimumPricePln": 30000,
+        "maximumAdvertisedPricePln": 55000,
+        "yearMin": 2017,
+        "yearMax": null,
+        "maximumMileageKm": 170000,
+        "engineVariants": [
+          "1.4-tsi-ea211-150",
+          "1.5-tsi-150"
+        ]
+      },
+      "fields": {
+        "required": [
+          "price",
+          "year",
+          "mileage",
+          "engineVariant"
+        ],
+        "semiRequired": [
+          "vin",
+          "firstRegistrationDate",
+          "transmission",
+          "body"
+        ],
+        "optional": [
+          "location",
+          "photos",
+          "cameraStatus",
+          "fuel"
+        ]
+      },
+      "file": "offers/skoda-octavia-iii-combi.json",
+      "knowledgeFile": "knowledge/models/skoda-octavia-iii-combi.json"
     },
     {
       "key": "skoda-scala",
       "name": "Škoda Scala",
-      "description": "Crossover",
-      "requirements": "Škoda Scala; 1.5 TSI 150 KM; rodzina: 2 dorosłych i 1 dziecko; wymagane miejsce na wózek i bagaż; rocznik od 2019; widoczna cena oferty min. 30 000 zł; cena zakupu brutto maks. 55 000 zł; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 170 000 km preferowany; kamera wymagana  obecna lub z potwierdzoną możliwością montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji.",
-      "file": "offers/skoda-scala.json"
+      "brand": "Škoda",
+      "model": "Scala",
+      "generation": "",
+      "bodies": [
+        "hatchback",
+        "minivan"
+      ],
+      "criteria": {
+        "minimumPricePln": 30000,
+        "maximumAdvertisedPricePln": 55000,
+        "yearMin": 2019,
+        "yearMax": null,
+        "maximumMileageKm": 170000,
+        "engineVariants": [
+          "1.5-tsi-150"
+        ]
+      },
+      "fields": {
+        "required": [
+          "price",
+          "year",
+          "mileage",
+          "engineVariant"
+        ],
+        "semiRequired": [
+          "vin",
+          "firstRegistrationDate",
+          "transmission",
+          "body"
+        ],
+        "optional": [
+          "location",
+          "photos",
+          "cameraStatus",
+          "fuel"
+        ]
+      },
+      "file": "offers/skoda-scala.json",
+      "knowledgeFile": "knowledge/models/skoda-scala.json"
     },
     {
       "key": "skoda-superb-iii-combi",
       "name": "Škoda Superb III Combi",
-      "description": "Kombi",
-      "requirements": "Škoda Superb III Combi; 1.4 TSI EA211 150 KM; 1.5 TSI 150 KM; rodzina: 2 dorosłych i 1 dziecko; wymagane miejsce na wózek i bagaż; rocznik od 2017; widoczna cena oferty min. 30 000 zł; cena zakupu brutto maks. 55 000 zł; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 170 000 km preferowany; kamera wymagana  obecna lub z potwierdzoną możliwością montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji.",
-      "file": "offers/skoda-superb-iii-combi.json"
+      "brand": "Škoda",
+      "model": "Superb",
+      "generation": "III",
+      "bodies": [
+        "wagon"
+      ],
+      "criteria": {
+        "minimumPricePln": 30000,
+        "maximumAdvertisedPricePln": 55000,
+        "yearMin": 2017,
+        "yearMax": null,
+        "maximumMileageKm": 170000,
+        "engineVariants": [
+          "1.4-tsi-ea211-150",
+          "1.5-tsi-150"
+        ]
+      },
+      "fields": {
+        "required": [
+          "price",
+          "year",
+          "mileage",
+          "engineVariant"
+        ],
+        "semiRequired": [
+          "vin",
+          "firstRegistrationDate",
+          "transmission",
+          "body"
+        ],
+        "optional": [
+          "location",
+          "photos",
+          "cameraStatus",
+          "fuel"
+        ]
+      },
+      "file": "offers/skoda-superb-iii-combi.json",
+      "knowledgeFile": "knowledge/models/skoda-superb-iii-combi.json"
     },
     {
       "key": "suzuki-vitara-ii",
       "name": "Suzuki Vitara II",
-      "description": "SUV",
-      "requirements": "Suzuki Vitara II; 1.4 BoosterJet 140 KM; rodzina: 2 dorosłych i 1 dziecko; wymagane miejsce na wózek i bagaż; rocznik od 2017; widoczna cena oferty min. 30 000 zł; cena zakupu brutto maks. 55 000 zł; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 170 000 km preferowany; kamera wymagana  obecna lub z potwierdzoną możliwością montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji.",
-      "file": "offers/suzuki-vitara-ii.json"
+      "brand": "Suzuki",
+      "model": "Vitara",
+      "generation": "II",
+      "bodies": [
+        "suv"
+      ],
+      "criteria": {
+        "minimumPricePln": 30000,
+        "maximumAdvertisedPricePln": 55000,
+        "yearMin": 2017,
+        "yearMax": null,
+        "maximumMileageKm": 170000,
+        "engineVariants": [
+          "1.4-boosterjet-140"
+        ]
+      },
+      "fields": {
+        "required": [
+          "price",
+          "year",
+          "mileage",
+          "engineVariant"
+        ],
+        "semiRequired": [
+          "vin",
+          "firstRegistrationDate",
+          "transmission",
+          "body"
+        ],
+        "optional": [
+          "location",
+          "photos",
+          "cameraStatus",
+          "fuel"
+        ]
+      },
+      "file": "offers/suzuki-vitara-ii.json",
+      "knowledgeFile": "knowledge/models/suzuki-vitara-ii.json"
     },
     {
       "key": "toyota-auris-touring-sports",
       "name": "Toyota Auris II Touring Sports",
-      "description": "Kombi (Touring Sports)",
-      "requirements": "Toyota Auris II Touring Sports; 1.8 Hybrid 136 KM; 1.6 Valvematic 132 KM; rodzina: 2 dorosłych i 1 dziecko; wymagane miejsce na wózek i bagaż; rocznik od 2017; widoczna cena oferty min. 30 000 zł; cena zakupu brutto maks. 55 000 zł; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 170 000 km preferowany; kamera wymagana  obecna lub z potwierdzoną możliwością montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji.",
-      "file": "offers/toyota-auris-touring-sports.json"
+      "brand": "Toyota",
+      "model": "Auris",
+      "generation": "II",
+      "bodies": [
+        "wagon"
+      ],
+      "criteria": {
+        "minimumPricePln": 30000,
+        "maximumAdvertisedPricePln": 55000,
+        "yearMin": 2017,
+        "yearMax": null,
+        "maximumMileageKm": 170000,
+        "engineVariants": [
+          "1.8-hybrid-136",
+          "1.6-valvematic-132"
+        ]
+      },
+      "fields": {
+        "required": [
+          "price",
+          "year",
+          "mileage",
+          "engineVariant"
+        ],
+        "semiRequired": [
+          "vin",
+          "firstRegistrationDate",
+          "transmission",
+          "body"
+        ],
+        "optional": [
+          "location",
+          "photos",
+          "cameraStatus",
+          "fuel"
+        ]
+      },
+      "file": "offers/toyota-auris-touring-sports.json",
+      "knowledgeFile": "knowledge/models/toyota-auris-touring-sports.json"
     },
     {
       "key": "toyota-avensis-iii-wagon",
       "name": "Toyota Avensis III Kombi",
-      "description": "Kombi",
-      "requirements": "Toyota Avensis III Kombi; 1.8 Valvematic 147 KM; rodzina: 2 dorosłych i 1 dziecko; wymagane miejsce na wózek i bagaż; rocznik od 2017; widoczna cena oferty min. 30 000 zł; cena zakupu brutto maks. 55 000 zł; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 170 000 km preferowany; kamera wymagana  obecna lub z potwierdzoną możliwością montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji.",
-      "file": "offers/toyota-avensis-iii-wagon.json"
+      "brand": "Toyota",
+      "model": "Avensis",
+      "generation": "III",
+      "bodies": [
+        "wagon"
+      ],
+      "criteria": {
+        "minimumPricePln": 30000,
+        "maximumAdvertisedPricePln": 55000,
+        "yearMin": 2017,
+        "yearMax": null,
+        "maximumMileageKm": 170000,
+        "engineVariants": [
+          "1.8-valvematic-147"
+        ]
+      },
+      "fields": {
+        "required": [
+          "price",
+          "year",
+          "mileage",
+          "engineVariant"
+        ],
+        "semiRequired": [
+          "vin",
+          "firstRegistrationDate",
+          "transmission",
+          "body"
+        ],
+        "optional": [
+          "location",
+          "photos",
+          "cameraStatus",
+          "fuel"
+        ]
+      },
+      "file": "offers/toyota-avensis-iii-wagon.json",
+      "knowledgeFile": "knowledge/models/toyota-avensis-iii-wagon.json"
     },
     {
       "key": "toyota-corolla-e210",
       "name": "Toyota Corolla XII (E210)",
-      "description": "Sedan i kombi (Touring Sports)",
-      "requirements": "Toyota Corolla XII (E210); 1.6 Valvematic 132 KM; 1.8 Hybrid 122 KM; rodzina: 2 dorosłych i 1 dziecko; wymagane miejsce na wózek i bagaż; rocznik od 2019; widoczna cena oferty min. 30 000 zł; cena zakupu brutto maks. 55 000 zł; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 170 000 km preferowany; kamera wymagana  obecna lub z potwierdzoną możliwością montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji.",
-      "file": "offers/toyota-corolla-e210.json"
+      "brand": "Toyota",
+      "model": "Corolla",
+      "generation": "XII",
+      "bodies": [
+        "sedan",
+        "wagon"
+      ],
+      "criteria": {
+        "minimumPricePln": 30000,
+        "maximumAdvertisedPricePln": 55000,
+        "yearMin": 2019,
+        "yearMax": null,
+        "maximumMileageKm": 170000,
+        "engineVariants": [
+          "1.6-valvematic-132",
+          "1.8-hybrid-122"
+        ]
+      },
+      "fields": {
+        "required": [
+          "price",
+          "year",
+          "mileage",
+          "engineVariant"
+        ],
+        "semiRequired": [
+          "vin",
+          "firstRegistrationDate",
+          "transmission",
+          "body"
+        ],
+        "optional": [
+          "location",
+          "photos",
+          "cameraStatus",
+          "fuel"
+        ]
+      },
+      "file": "offers/toyota-corolla-e210.json",
+      "knowledgeFile": "knowledge/models/toyota-corolla-e210.json"
     }
   ]
 }

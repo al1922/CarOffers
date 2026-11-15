@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "key": "kia-xceed",
+  "name": "Kia XCeed",
+  "brand": "Kia",
+  "model": "XCeed",
+  "generation": "",
+  "bodies": [
+    "crossover"
+  ],
+  "active": true,
+  "criteria": {
+    "minimumPricePln": 30000,
+    "maximumAdvertisedPricePln": 55000,
+    "yearMin": 2019,
+    "yearMax": null,
+    "maximumMileageKm": 170000,
+    "engineVariants": [
+      "1.4-tgdi-140",
+      "1.5-tgdi-160"
+    ]
+  },
+  "fields": {
+    "required": [
+      "price",
+      "year",
+      "mileage",
+      "engineVariant"
+    ],
+    "semiRequired": [
+      "vin",
+      "firstRegistrationDate",
+      "transmission",
+      "body"
+    ],
+    "optional": [
+      "location",
+      "photos",
+      "cameraStatus",
+      "fuel"
+    ]
+  },
+  "knowledgeFile": "knowledge/models/kia-xceed.json"
+}

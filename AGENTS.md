@@ -1,58 +1,38 @@
 # CarOffers — wskazówki dla agenta
 
-Ten plik jest krótkim punktem wejścia. **Nie wczytuj wszystkich poradników naraz**;
-otwórz tylko ten, który dotyczy bieżącego zadania.
-
 ## Zasady stałe
 
-- Przed zmianą kodu sprawdź `git status --short` i `git diff --stat`. Zachowaj
-  istniejące zmiany użytkownika.
-- Konfiguracja jest nadrzędna wobec opisów historycznych. Nie dopowiadaj brakujących
-  danych i nie edytuj bezpośrednio `offers/*.json`; używaj przepływu importu.
+- Przed zmianami sprawdź `git status --short` i `git diff --stat`; zachowaj istniejące zmiany.
+- Konfiguracja i `offers/*.json` są źródłem bieżących danych. Nie edytuj plików ofert bezpośrednio — zmiany zapisuj przez importer.
 - Nie commituj, nie pushuj ani nie publikuj bez wyraźnej zgody użytkownika.
-- Przy kontroli UI preferuj lokalny, izolowany Playwright headless. Nie proś o dostęp
-  do osobistej przeglądarki, jeśli zadanie da się sprawdzić lokalnie.
-- Flow wymagające live HTTP do portali (wyszukiwanie, dostępność, archiwum,
-  odświeżanie) uruchamiaj w środowisku z działającym dostępem sieciowym. Jeśli
-  wiele niezależnych domen kończy się `ENOTFOUND`, `ERR_NAME_NOT_RESOLVED` lub
-  `EAI_AGAIN` bez odpowiedzi HTTP, potraktuj to najpierw jako ograniczenie sieci
-  sandboxa, nie status portali. Ponów dozwolony checker poza sandboxem, jeśli
-  platforma udostępnia zatwierdzony tryb sieciowy; bez takiego dostępu przerwij
-  część online i nie importuj tych błędów jako rozstrzygnięcia dostępności.
-  Nie obchodź CAPTCHA, `robots.txt`, blokad ani polityk sieciowych.
-- Dla OTOMOTO nie testuj adresów filtrowania osobnym, surowym skryptem
-  `page.goto`: takie próby wcześniej zwracały HTTP 403. Zweryfikowany projektowy
-  flow `search:direct` otwiera per-model URL filtrów w widocznym Chromium,
-  sprawdza `robots.txt` i audytuje faktyczny request listy; używaj tego flow.
-  Jeśli zwróci HTTP 403 lub challenge, zatrzymaj próbę. Nie zmieniaj proxy,
-  fingerprintu ani nagłówków w celu obejścia blokady.
-- Strona jest statyczna: ponowne wczytanie plików JSON nie sprawdza portali.
-- Nie przeglądaj historycznych czatów rutynowo: to zwiększa niepotrzebny kontekst.
-  Sięgaj do nich tylko, gdy bieżące zadanie odwołuje się do wcześniejszych ustaleń
-  albo brakuje ważnej preferencji; zacznij od podsumowania i czytaj tylko potrzebne
-  fragmenty. Trwałe zasady zapisuj tutaj lub w odpowiednim poradniku.
+- Nie uruchamiaj testów ani przeszukiwania live, jeśli użytkownik o to nie poprosił.
+- Błędy sieci, timeouty, blokady i CAPTCHA nie oznaczają nieaktywnej oferty. Nie obchodź zabezpieczeń portali ani `robots.txt`.
+- Wyszukiwanie OTOMOTO wykonuj przez `npm run cars -- search --source otomoto`; jego przepływ respektuje `robots.txt` i zatrzymuje się przy blokadzie.
+- Przeglądarka strony pokazuje pliki JSON; odświeżenie strony nie sprawdza portali.
+- Przed planowaniem opartym o konfigurację uruchom `npm run cars -- validate`. Po edycji profilu lub mapowania uruchom najpierw `npm run cars -- sync`, potem `npm run cars -- validate`.
 
-## Menu `/flow`
+## Uruchamianie
 
-Jeśli użytkownik wyśle samo `/flow` albo poprosi o dostępne flow, pokaż menu i
-poczekaj na wybór. Nie uruchamiaj przebiegu przed wyborem:
+- `npm run cars -- search --source <id> [--model <key>]` — bezpośredni odczyt. Źródło jest obowiązkowe; pominięty model oznacza wszystkie aktywne modele skonfigurowane dla źródła.
+- Gdy użytkownik prosi o live search OTOMOTO z widocznym Chromium, uruchamiaj tę samą komendę przez hostowy `pwsh.exe` poza sandboxem (`exec_command` z `sandbox_permissions: "require_escalated"`). Sprawdzony wzorzec:
+  ```powershell
+  & 'C:\Program Files\WindowsApps\OpenAI.CodexPrimaryRuntime.v26-1111-570-0_26.1111.570.0_x64__3k8sg7r9htsxt\dependencies\native\powershell\pwsh.exe' -Command 'npm run cars -- search --source otomoto'
+  ```
+  Nie dodawaj `--headless`; CLI domyślnie uruchamia widoczne Chromium. Zwykłe sandboxowe wywołanie w tym środowisku kończyło się `ERR_NAME_NOT_RESOLVED` i nie pokazywało okna, podczas gdy powyższa ścieżka otworzyła Chromium i połączyła się z portalem. Jeśli ścieżka `pwsh.exe` zmieni się po aktualizacji Codex, użyj aktualnego hostowego `pwsh.exe` z runtime Codex.
+- `npm run cars -- models [--source <id>]` — lista profili albo modeli dostępnych w portalu.
+- `npm run cars -- validate` — sprawdzenie profili, źródeł, mapowań i ofert v3.
+- `npm run cars -- sync` — wygenerowanie `models.json` ze źródłowych profili.
+- `npm test` — lokalne testy jednostkowe; nie wykonują połączeń z portalami.
 
-1. **Szukaj nowych ofert** — wszystkie aktywne modele i zgodne portale nieaukcyjne; źródła z adapterem `blocked` są pomijane i raportowane.
-2. **Sprawdź dostępność** — aktywne ogłoszenia.
-3. **Sprawdź archiwum** — archiwalne ogłoszenia.
-4. **Odśwież dane ofert** — ponowny odczyt zapisanych kart i potwierdzonych danych.
+## Granice modułów
 
-Zwykłe prośby wykonuj bez wymagania komendy `/flow`.
+- `config/models/` — osobne kryteria każdego modelu.
+- `config/sources/` — niezależne ustawienia portali.
+- `config/source-mappings/<source>/` — portalowe URL-e, nazwy i wyjątki dla modelu.
+- `src/search/direct/adapters/` — adapter jednego portalu.
+- `src/search/shared/` — współdzielony odczyt i kwalifikacja kart.
+- `src/offers/` — wspólny rekord, migracja oraz import ofert.
+- `knowledge/models/` — wiedza konkretnego modelu używana przy rozpoznawaniu wariantów silnika.
+- `assets/`, `app.js` — tylko statyczny interfejs kart.
 
-## Poradniki — otwieraj tylko w razie potrzeby
-
-- Wyszukiwanie, dostępność, odświeżanie, przydziały i import: [search-operations.md](docs/agent/search-operations.md).
-- Dowody, wiarygodność i ocena ofert: [data-evidence.md](docs/agent/data-evidence.md).
-- Lokalna kontrola klawiatury i układu UI: [ui-testing.md](docs/agent/ui-testing.md).
-- Status zmian, commity i push: [git-workflow.md](docs/agent/git-workflow.md).
-- Zmiany przekrojowe i zależne pliki: [change-impact.md](docs/agent/change-impact.md).
-- Granice modułów i kolejność źródeł danych: [architektura-dla-agenta.md](docs/architektura-dla-agenta.md).
-
-Przed planowaniem zależnym od konfiguracji sprawdź jej poprawność poleceniem
-`python -B scripts/car-search.py validate`. Po edycji konfiguracji najpierw
-uruchom `sync`, potem `validate`, zgodnie z [poradnikiem wyszukiwania](docs/agent/search-operations.md).
+Cykl ponownego sprawdzania aktywności ofert nie jest obecnie podłączony. Nie usuwaj ofert poza odczytem konkretnego ogłoszenia, który jednoznacznie potwierdza archiwizację lub brak danych auta.

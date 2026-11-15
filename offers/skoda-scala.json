@@ -1,740 +1,2558 @@
 {
-  "version": 2,
-  "updatedAt": "2026-11-13",
+  "schemaVersion": 3,
+  "updatedAt": "2026-11-15T18:41:11.866Z",
   "model": {
     "key": "skoda-scala",
-    "name": "Škoda Scala",
-    "description": "Crossover",
-    "requirements": "Škoda Scala; 1.5 TSI 150 KM; rodzina: 2 dorosłych i 1 dziecko; wymagane miejsce na wózek i bagaż; rocznik od 2019; widoczna cena oferty min. 30 000 zł; cena zakupu brutto maks. 55 000 zł; niewielkie przekroczenie tylko po ręcznej zgodzie użytkownika; przebieg do 170 000 km preferowany; kamera wymagana  obecna lub z potwierdzoną możliwością montażu; bez poważnych szkód konstrukcyjnych; LPG dopuszczone i oznaczane; bez aukcji."
+    "name": "Škoda Scala"
   },
   "offers": [
     {
-      "id": "listing:sprzedajemy:71768394",
-      "title": "Sprzedam Skoda Scala 1.5TSI 150KM r. 2020",
-      "urls": [
-        {
-          "url": "https://sprzedajemy.pl/sprzedam-skoda-scala-1-5tsi-150km-r-2020-rzeszow-4-6bea9f-nr71768394"
-        }
-      ],
-      "listingIds": [
-        "sprzedajemy:71768394"
-      ],
-      "price": 55000,
-      "year": 2021,
-      "priceBasis": "gross_total",
-      "mileage": 85000,
-      "engineVariant": "1.5-tsi-150",
-      "transmissionCode": "manual",
-      "saleType": "fixed_price",
-      "photos": [
-        "https://thumbs.img-sprzedajemy.pl/1000x901c/fc/5c/c5/sprzedam-skoda-scala-15tsi-150-r-2020-150km-podkarpackie-rzeszow-591397599.jpg",
-        "https://thumbs.img-sprzedajemy.pl/1000x901c/57/26/5e/sprzedam-skoda-scala-15tsi-150-r-2020-rzeszow-591397600.jpg",
-        "https://thumbs.img-sprzedajemy.pl/1000x901c/f2/9c/ed/sprzedam-skoda-scala-15tsi-150-r-2020-rzeszow-sprzedam-591397601.jpg",
-        "https://thumbs.img-sprzedajemy.pl/1000x901c/24/bf/24/sprzedam-skoda-scala-15tsi-150-r-2020-rzeszow-591397602.jpg"
-      ],
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Rzeszów",
-        "voivodeship": "podkarpackie"
-      },
-      "lpgInstalled": null,
-      "firstSeenAt": "2026-11-13T16:17:11.272Z",
+      "id": "vin:TMBEK6NW4L3057888",
+      "identityKey": "vin:TMBEK6NW4L3057888",
       "modelKey": "skoda-scala",
-      "listingStates": [
+      "primaryListingKey": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6IeYiq.html",
+      "firstSeenAt": "2026-11-15T16:44:47.767Z",
+      "lastUpdatedAt": "2026-11-15T18:39:11.280Z",
+      "listings": [
         {
-          "url": "https://sprzedajemy.pl/sprzedam-skoda-scala-1-5tsi-150km-r-2020-rzeszow-4-6bea9f-nr71768394",
-          "status": "available",
-          "lastAttemptAt": "2026-11-13T16:17:11.272Z",
-          "lastCheckedAt": "2026-11-13T16:17:11.272Z",
-          "lastVerifiedAt": "2026-11-13T16:17:11.272Z",
-          "lastObservation": {
-            "url": "https://sprzedajemy.pl/sprzedam-skoda-scala-1-5tsi-150km-r-2020-rzeszow-4-6bea9f-nr71768394",
-            "checkedAt": "2026-11-13T16:17:11.272Z",
-            "availability": "available",
-            "note": "Odczytano kartę z aktywnym kontaktem i pasującym numerem. Warunki ceny i tryb sprzedaży wymagają potwierdzenia.",
-            "evidence": [
+          "key": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6IeYiq.html",
+          "sourceId": "otomoto",
+          "sourceName": "OTOMOTO",
+          "sourceListingId": "6150524150",
+          "url": "https://otomoto.pl/osobowe/oferta/skoda-scala-ID6IeYiq.html",
+          "lastCheckedAt": "2026-11-15T18:39:11.280Z",
+          "facts": {
+            "title": "Skoda Scala 1.5 TSI Style DSG",
+            "price": 54900,
+            "year": 2019,
+            "mileage": 131000,
+            "engine": "ver-1-5-tsi-style-dsg",
+            "engineVariant": "1.5-tsi-150",
+            "engineCapacity": "1498",
+            "enginePower": "150",
+            "transmission": "automatic",
+            "transmissionCode": "automatic",
+            "vin": "TMBEK6NW4L3057888",
+            "lpgInstalled": null,
+            "location": {
+              "status": "not_provided",
+              "city": "Łódź"
+            },
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjY0aWZoMHR5MXlvdjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.NRMt0yX39N_SvlmY0wE75CGnA4QSJtc36EViWPULmEE/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inppd2FtZmR5ODg2di1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.uPKiu24Oz018ktYo8fMwZDCFsmWw-OkPTYe2-VFYomw/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImcybGZ4N3hvc2hwbzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.auev39h5lD6cHuOVZYh3deOfzfmckzFJFaI5_JjLciE/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImJwc2UwdmpycXg3MDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.HSqJws065RPkG318vG-aNgY1vBplirmUUvDFc2B_TJE/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InA2Nmw5c2xxbHJ4bjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.EjtMFyk98txLLSmMgQgzPz7W3vde5dLgm5FDgN0GC_E/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InZ6dGlpMXVhYTRwcjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.vx59ok2JDJc8BW4VqRgQPEzH8ttMIh_u61oUUQDPC4g/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im54aXZpaW04M3V1ZTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.r-azggaeXg-VYtlTADt1_BCL7gC8u3RVNjBkTBbUWJo/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InN4cTlmeWozYThlcTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.j_Oyqbt54PAHVmyumLJxR5MtQphWNNOa9s7mU763LW4/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InVkbTE1eXN6MXhrdC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.N1B2avXKXfxj7kVrtad93KvVcB45V54c1oGptea_7hk/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNnMTIwcjBtY3Q2NjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.0_HGRo8QkAcDWO1Pm9FLp203wQWQA1aHQ8f0rMkaHgE/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjEzN3c1dGdjOHVnNDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.hd4zXVV95gUHcBx65--EDAhKvjYu0SxIqIpp1woeJQw/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjBscXhtdmI2am93dTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.m-QxCTGwmPJenfrcjkFDyQWVgI4k-6Bh9Ds8nKKbsiQ/image;s=5120x0;q=100"
+            ],
+            "fuel": "petrol",
+            "firstRegistrationDate": null,
+            "body": null,
+            "lastReadAt": "2026-11-15T18:39:11.280Z"
+          },
+          "sourceExtensions": {
+            "otomoto": {
+              "listing": {
+                "brand": "skoda",
+                "model": "scala",
+                "priceLabel": "INVOICE_ISSUED",
+                "sellerName": "AUTA KRAJOWE - auta poleasingowe z polskich salonów"
+              }
+            }
+          },
+          "fieldEvidence": {
+            "price": [
               {
-                "kind": "seller",
-                "url": "https://sprzedajemy.pl/sprzedam-skoda-scala-1-5tsi-150km-r-2020-rzeszow-4-6bea9f-nr71768394",
-                "checkedAt": "2026-11-13T16:17:11.272Z",
-                "fields": [
-                  "price",
-                  "priceBasis",
-                  "year",
-                  "mileage",
-                  "engineVariant",
-                  "transmissionCode",
-                  "saleType",
-                  "location"
-                ],
-                "note": "Dane z karty sprzedawcy."
+                "source": "otomoto",
+                "sourcePath": "price.amount.value",
+                "method": "structured_field",
+                "excerpt": "54900"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.price",
+                "method": "structured_field",
+                "excerpt": "price: 54900"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "przedający na OTOMOTO od 2012 Napisz Wyświetl numery Brzezińska 260 - 92-703 Łódź, Łódzkie, Łódź (Polska) Przejdź do strony sprzedawcy Zobacz więcej ofert (88) tego sprzedawcy Prawa konsumentów na OTOMOTO Największa platforma motoryzacyjna"
+              }
+            ],
+            "year": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Rok produkcji\"]",
+                "method": "structured_field",
+                "excerpt": "Rok produkcji: 2019"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.productionYear",
+                "method": "structured_field",
+                "excerpt": "productionYear: 2019"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "M PRZY CENIE BEZ RABATU NA 6 MIESIĘCY !!! ✔︎ Rok produkcji: 2019 ✔︎ Data pierwszej rej: 20.11.2019 ✔︎ 1.5 benzyna 150 koni, rozrząd na pasku ✔︎ VIN: TMBEK6NW4L3057888 ✔︎ Pojazd bezwypadkowy ✔︎ Samochód z POLSKIEGO Salonu od 1 właściciela ✔︎"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing/detail text (label parser)",
+                "method": "text_rule",
+                "excerpt": "2019"
+              }
+            ],
+            "mileage": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Przebieg\"]",
+                "method": "structured_field",
+                "excerpt": "Przebieg: 131000 km"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.mileage",
+                "method": "structured_field",
+                "excerpt": "mileage: 131000 km"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing/detail text (km parser)",
+                "method": "text_rule",
+                "excerpt": "131000 km"
+              }
+            ],
+            "engine": [
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
+                "method": "structured_field",
+                "excerpt": "engine: ver-1-5-tsi-style-dsg"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.visibleText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              }
+            ],
+            "engineVariant": [
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
+                "method": "structured_field",
+                "excerpt": "engine: ver-1-5-tsi-style-dsg"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.visibleText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              }
+            ],
+            "vin": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "enzyna 150 koni, rozrząd na pasku ✔︎ VIN: TMBEK6NW4L3057888 ✔︎ Pojazd bezwypadkowy ✔︎ Samochód z POLSKIEGO Salonu od 1 właściciela ✔︎ Auto regularnie serwisowane, potwierdzone wydrukiem ! ✔︎ Pełna dokumentacja pochodzenia samochodu ✔︎ Stan"
+              }
+            ],
+            "transmission": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Skrzynia biegów\"]",
+                "method": "structured_field",
+                "excerpt": "Skrzynia biegów: Automatyczna"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.transmission",
+                "method": "structured_field",
+                "excerpt": "transmission: automatic"
+              }
+            ],
+            "fuel": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Rodzaj paliwa\"]",
+                "method": "structured_field",
+                "excerpt": "Rodzaj paliwa: Benzyna"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.fuelType",
+                "method": "structured_field",
+                "excerpt": "fuelType: petrol"
               }
             ]
           }
         }
-      ],
-      "lastCheckedAt": "2026-11-13T16:17:11.272Z",
-      "lastVerifiedAt": "2026-11-13T16:17:11.272Z",
-      "lastAttemptAt": "2026-11-13T16:17:11.272Z",
-      "history": [
+      ]
+    },
+    {
+      "id": "vin:TMBEK6NW4M3092671",
+      "identityKey": "vin:TMBEK6NW4M3092671",
+      "modelKey": "skoda-scala",
+      "primaryListingKey": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6IaS8T.html",
+      "firstSeenAt": "2026-11-15T16:44:47.767Z",
+      "lastUpdatedAt": "2026-11-15T18:39:11.280Z",
+      "listings": [
         {
-          "eventId": "8c011bc84a2e6df71186a575a2ad90e479aa055d695ff7500a540e24623c0af4",
-          "runId": "search20261113b",
-          "checkedAt": "2026-11-13T16:17:11.272Z",
-          "url": "https://sprzedajemy.pl/sprzedam-skoda-scala-1-5tsi-150km-r-2020-rzeszow-4-6bea9f-nr71768394",
-          "availability": "available",
-          "note": "Odczytano kartę z aktywnym kontaktem i pasującym numerem. Warunki ceny i tryb sprzedaży wymagają potwierdzenia.",
-          "httpStatus": null,
-          "photoCheck": null,
-          "evidence": [
-            {
-              "kind": "seller",
-              "url": "https://sprzedajemy.pl/sprzedam-skoda-scala-1-5tsi-150km-r-2020-rzeszow-4-6bea9f-nr71768394",
-              "checkedAt": "2026-11-13T16:17:11.272Z",
-              "fields": [
-                "price",
-                "priceBasis",
-                "year",
-                "mileage",
-                "engineVariant",
-                "transmissionCode",
-                "saleType",
-                "location"
-              ],
-              "note": "Dane z karty sprzedawcy."
-            }
-          ],
-          "reportedFields": {
-            "id": "listing:sprzedajemy:71768394",
-            "title": "Sprzedam Skoda Scala 1.5TSI 150KM r. 2020",
-            "urls": [
-              {
-                "url": "https://sprzedajemy.pl/sprzedam-skoda-scala-1-5tsi-150km-r-2020-rzeszow-4-6bea9f-nr71768394"
-              }
-            ],
-            "listingIds": [
-              "sprzedajemy:71768394"
-            ],
+          "key": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6IaS8T.html",
+          "sourceId": "otomoto",
+          "sourceName": "OTOMOTO",
+          "sourceListingId": "6149547183",
+          "url": "https://otomoto.pl/osobowe/oferta/skoda-scala-ID6IaS8T.html",
+          "lastCheckedAt": "2026-11-15T18:39:11.280Z",
+          "facts": {
+            "title": "Skoda Scala 1.5 TSI Style",
             "price": 55000,
-            "year": 2021,
             "priceBasis": "gross_total",
-            "mileage": 85000,
+            "year": 2021,
+            "mileage": 139000,
+            "engine": "ver-1-5-tsi-style",
             "engineVariant": "1.5-tsi-150",
+            "engineCapacity": "1498",
+            "enginePower": "150",
+            "transmission": "manual",
             "transmissionCode": "manual",
-            "saleType": "fixed_price",
+            "vin": "TMBEK6NW4M3092671",
             "lpgInstalled": null,
-            "photos": [
-              "https://thumbs.img-sprzedajemy.pl/1000x901c/fc/5c/c5/sprzedam-skoda-scala-15tsi-150-r-2020-150km-podkarpackie-rzeszow-591397599.jpg",
-              "https://thumbs.img-sprzedajemy.pl/1000x901c/57/26/5e/sprzedam-skoda-scala-15tsi-150-r-2020-rzeszow-591397600.jpg",
-              "https://thumbs.img-sprzedajemy.pl/1000x901c/f2/9c/ed/sprzedam-skoda-scala-15tsi-150-r-2020-rzeszow-sprzedam-591397601.jpg",
-              "https://thumbs.img-sprzedajemy.pl/1000x901c/24/bf/24/sprzedam-skoda-scala-15tsi-150-r-2020-rzeszow-591397602.jpg"
-            ],
             "location": {
               "status": "available",
               "countryCode": "PL",
-              "city": "Rzeszów",
-              "voivodeship": "podkarpackie"
+              "city": "Chełm",
+              "voivodeship": "Lubelskie",
+              "precision": "city",
+              "source": "listing",
+              "checkedAt": "2026-11-15"
+            },
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InVwejZjc2xvNGtwbzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.rLkhQBZN0rLN4H1Xcf8n8RO83m1JXG8Dh8LyZtTAO-I/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImFtN25veDEyZXRvYjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.YtxRDeFoytAGlZjyCyVBqk75UFqK67vZMt8c3UflUwY/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9keTBjZm5ueDMzZDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.nZEoBbdBkyH2ImI2i7LNNC9tpZqAdgpYXRvZZvBkrNs/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ino5d3NmOHBzeHB1czEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.nGxfUZPQFoxR0QEhyr6L3K2PCd2hPwEvnjHIYpZ-PrU/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InB6dmw3djF4Y2xtcjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.NXL_5VPSor4ISt3uLlPAdJHjenOcw9j-gFMXd8T5Rtw/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InMyMnlwZ2l5c2FzbzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.gIFypGa5Yn2bF0uk0NR1j1oj9NW9mPBvhhPGk0ECfgM/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inlkcm1kYXJoYzNqNzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.TTFstyqQ0t4dKDwYxxOLZEXuSvf1P6ksrQ2qTJm_4ys/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im5iNzBzdWt0b2s3bzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.81a8enQfEoZJHp1eXVNBSflK4Q8JFRi8Fyj8NPpqTZI/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImwzOXdxNmNwbnd5eDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.VhViyUutv2sTFCu4Oz_4kEnfif58A6m7JBDMl5llk8E/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InFyZndkcHdlejMyNDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.EFh6e4sQtiyaMrSyfF9rW2UDJRbjaLWH9UMz6JiG4fQ/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImM0NWFrZmR2Yzc2NTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.PX3MbdpmsoW3oNmc-xRmnhsDhBSdYT0biMvvYV52Yxk/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InZ4bmN5YTZ4ZnBsbDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.5LKMW9RpoBhC_YMb-pXoOrMF1HeRYCuUSYwh89nb-Aw/image;s=5120x0;q=100"
+            ],
+            "fuel": "petrol",
+            "firstRegistrationDate": null,
+            "body": null,
+            "lastReadAt": "2026-11-15T18:39:11.280Z"
+          },
+          "sourceExtensions": {
+            "otomoto": {
+              "listing": {
+                "brand": "skoda",
+                "model": "scala"
+              }
             }
           },
-          "changes": {
-            "id": {
-              "before": null,
-              "after": "listing:sprzedajemy:71768394"
-            },
-            "title": {
-              "before": null,
-              "after": "Sprzedam Skoda Scala 1.5TSI 150KM r. 2020"
-            },
-            "urls": {
-              "before": null,
-              "after": [
-                {
-                  "url": "https://sprzedajemy.pl/sprzedam-skoda-scala-1-5tsi-150km-r-2020-rzeszow-4-6bea9f-nr71768394"
-                }
-              ]
-            },
-            "listingIds": {
-              "before": null,
-              "after": [
-                "sprzedajemy:71768394"
-              ]
-            },
-            "price": {
-              "before": null,
-              "after": 55000
-            },
-            "year": {
-              "before": null,
-              "after": 2021
-            },
-            "priceBasis": {
-              "before": null,
-              "after": "gross_total"
-            },
-            "mileage": {
-              "before": null,
-              "after": 85000
-            },
-            "engineVariant": {
-              "before": null,
-              "after": "1.5-tsi-150"
-            },
-            "transmissionCode": {
-              "before": null,
-              "after": "manual"
-            },
-            "saleType": {
-              "before": null,
-              "after": "fixed_price"
-            },
-            "photos": {
-              "before": null,
-              "after": [
-                "https://thumbs.img-sprzedajemy.pl/1000x901c/fc/5c/c5/sprzedam-skoda-scala-15tsi-150-r-2020-150km-podkarpackie-rzeszow-591397599.jpg",
-                "https://thumbs.img-sprzedajemy.pl/1000x901c/57/26/5e/sprzedam-skoda-scala-15tsi-150-r-2020-rzeszow-591397600.jpg",
-                "https://thumbs.img-sprzedajemy.pl/1000x901c/f2/9c/ed/sprzedam-skoda-scala-15tsi-150-r-2020-rzeszow-sprzedam-591397601.jpg",
-                "https://thumbs.img-sprzedajemy.pl/1000x901c/24/bf/24/sprzedam-skoda-scala-15tsi-150-r-2020-rzeszow-591397602.jpg"
-              ]
-            },
-            "location": {
-              "before": null,
-              "after": {
-                "status": "available",
-                "countryCode": "PL",
-                "city": "Rzeszów",
-                "voivodeship": "podkarpackie"
-              }
-            },
-            "modelKey": {
-              "before": null,
-              "after": "skoda-scala"
-            }
-          }
-        }
-      ],
-      "assessment": {
-        "id": "listing:sprzedajemy:71768394",
-        "modelKey": "skoda-scala",
-        "verdict": "check",
-        "failures": [],
-        "unknowns": [
-          "body",
-          "camera_or_compatible_retrofit",
-          "structural_history",
-          "stroller_and_family_fit"
-        ],
-        "preferenceNotes": []
-      },
-      "verdict": "check",
-      "verdictTitle": "Do weryfikacji",
-      "verdictNote": "body; camera_or_compatible_retrofit; structural_history; stroller_and_family_fit"
-    },
-    {
-      "id": "url:https://www.aaaauto.pl/detail/skoda/scala/34926023",
-      "modelKey": "skoda-scala",
-      "title": "Škoda Scala 1.5 TSI",
-      "urls": [
-        {
-          "url": "https://www.aaaauto.pl/detail/skoda/scala/34926023"
-        }
-      ],
-      "price": 52000,
-      "priceBasis": "gross_total",
-      "year": 2019,
-      "mileage": 144823,
-      "engine": "1.5 TSI, 1498 cm3, 150 KM",
-      "engineVariant": "1.5-tsi-150",
-      "body": "Hatchback",
-      "bodyCode": "hatchback",
-      "transmission": "Automatyczna 7-biegowa",
-      "transmissionCode": "automatic",
-      "seller": "AAA AUTO",
-      "offerType": "company",
-      "saleType": "fixed_price",
-      "cameraStatus": "installed_confirmed",
-      "structuralDamageStatus": "unknown",
-      "location": {
-        "status": "not_provided"
-      },
-      "photos": [],
-      "lpgInstalled": null,
-      "firstSeenAt": "2026-11-13T22:25:30+00:00",
-      "listingStates": [
-        {
-          "url": "https://www.aaaauto.pl/detail/skoda/scala/34926023",
-          "status": "available",
-          "lastAttemptAt": "2026-11-13T22:25:30+00:00",
-          "lastCheckedAt": "2026-11-13T22:25:30+00:00",
-          "lastVerifiedAt": "2026-11-13T22:25:30+00:00",
-          "lastObservation": {
-            "url": "https://www.aaaauto.pl/detail/skoda/scala/34926023",
-            "checkedAt": "2026-11-13T22:25:30+00:00",
-            "availability": "available",
-            "note": "Cena zakupu 52 000 zł. AAA AUTO podaje 2019 r., 144 823 km, silnik 1.5 TSI 150 KM, automat 7-biegowy, kamerę cofania i ISOFIX. Karta wymienia książkę serwisową i serwis ASO; ostatni serwis wskazano 6.05.2025 przy 13 070 km, co jest niespójne z obecnym przebiegiem i wymaga sprawdzenia. Historia szkód nie została niezależnie zweryfikowana. Lokalizacja oddziału nie była podana.",
-            "evidence": [
+          "fieldEvidence": {
+            "price": [
               {
-                "kind": "seller",
-                "url": "https://www.aaaauto.pl/detail/skoda/scala/34926023",
-                "checkedAt": "2026-11-13T22:25:30+00:00",
-                "fields": [
-                  "year",
-                  "mileage",
-                  "price",
-                  "engine",
-                  "body",
-                  "transmission",
-                  "cameraStatus"
-                ],
-                "note": "Dane z karty szczegółów AAA AUTO; wpis o przebiegu przy ostatnim serwisie wymaga wyjaśnienia."
+                "source": "otomoto",
+                "sourcePath": "detail.salePanel.price",
+                "method": "label_value",
+                "excerpt": "55 000 PLN"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "price.amount.value",
+                "method": "structured_field",
+                "excerpt": "55000"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.price",
+                "method": "structured_field",
+                "excerpt": "price: 55000"
+              }
+            ],
+            "year": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Rok produkcji\"]",
+                "method": "structured_field",
+                "excerpt": "Rok produkcji: 2021"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.productionYear",
+                "method": "structured_field",
+                "excerpt": "productionYear: 2021"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "koda SCALA STYLE 1.5TSI 150KM Salon PL JAK NOWA rok produkcji 2021 - rok produkcji 2021 - przebieg 139 tyś km -Samochód bezwypadkowy - oryginalny lakier na całym nadwoziu - czujniki lakieru udostępniam Cena brutto 55000zł Cena brutto cena k"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing/detail text (label parser)",
+                "method": "text_rule",
+                "excerpt": "2021"
+              }
+            ],
+            "mileage": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Przebieg\"]",
+                "method": "structured_field",
+                "excerpt": "Przebieg: 139000 km"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.mileage",
+                "method": "structured_field",
+                "excerpt": "mileage: 139000 km"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing/detail text (km parser)",
+                "method": "text_rule",
+                "excerpt": "139000 km"
+              }
+            ],
+            "engine": [
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
+                "method": "structured_field",
+                "excerpt": "engine: ver-1-5-tsi-style"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.visibleText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              }
+            ],
+            "engineVariant": [
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
+                "method": "structured_field",
+                "excerpt": "engine: ver-1-5-tsi-style"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.visibleText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              }
+            ],
+            "vin": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "j: SK763UL numer VIN: TMBEK6NW4M3092671 Samochód świeżo po przeglądzie mamy spokój na następne 15 tyś - zrobiony serwis olejowo- filtrowy, klocki tarcze przód i tył, płyn hamulcowy, W razie pytań proszę dzwonić tel: Wyświetl numer: Wyświetl"
+              }
+            ],
+            "transmission": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Skrzynia biegów\"]",
+                "method": "structured_field",
+                "excerpt": "Skrzynia biegów: Manualna"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.transmission",
+                "method": "structured_field",
+                "excerpt": "transmission: manual"
+              }
+            ],
+            "fuel": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Rodzaj paliwa\"]",
+                "method": "structured_field",
+                "excerpt": "Rodzaj paliwa: Benzyna"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.fuelType",
+                "method": "structured_field",
+                "excerpt": "fuelType: petrol"
               }
             ]
           }
         }
-      ],
-      "lastCheckedAt": "2026-11-13T22:25:30+00:00",
-      "lastVerifiedAt": "2026-11-13T22:25:30+00:00",
-      "lastAttemptAt": "2026-11-13T22:25:30+00:00",
-      "history": [
+      ]
+    },
+    {
+      "id": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6IjeSu.html",
+      "identityKey": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6IjeSu.html",
+      "modelKey": "skoda-scala",
+      "primaryListingKey": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6IjeSu.html",
+      "firstSeenAt": "2026-11-15T16:44:47.767Z",
+      "lastUpdatedAt": "2026-11-15T18:39:11.280Z",
+      "listings": [
         {
-          "eventId": "928f745d74c1fae1fb53c6db01283905f45674b7ddc11a1fecfdb163742988e7",
-          "runId": "search-20261113-current2",
-          "checkedAt": "2026-11-13T22:25:30+00:00",
-          "url": "https://www.aaaauto.pl/detail/skoda/scala/34926023",
-          "availability": "available",
-          "note": "Cena zakupu 52 000 zł. AAA AUTO podaje 2019 r., 144 823 km, silnik 1.5 TSI 150 KM, automat 7-biegowy, kamerę cofania i ISOFIX. Karta wymienia książkę serwisową i serwis ASO; ostatni serwis wskazano 6.05.2025 przy 13 070 km, co jest niespójne z obecnym przebiegiem i wymaga sprawdzenia. Historia szkód nie została niezależnie zweryfikowana. Lokalizacja oddziału nie była podana.",
-          "httpStatus": null,
-          "photoCheck": null,
-          "evidence": [
-            {
-              "kind": "seller",
-              "url": "https://www.aaaauto.pl/detail/skoda/scala/34926023",
-              "checkedAt": "2026-11-13T22:25:30+00:00",
-              "fields": [
-                "year",
-                "mileage",
-                "price",
-                "engine",
-                "body",
-                "transmission",
-                "cameraStatus"
-              ],
-              "note": "Dane z karty szczegółów AAA AUTO; wpis o przebiegu przy ostatnim serwisie wymaga wyjaśnienia."
+          "key": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6IjeSu.html",
+          "sourceId": "otomoto",
+          "sourceName": "OTOMOTO",
+          "sourceListingId": "6151541202",
+          "url": "https://otomoto.pl/osobowe/oferta/skoda-scala-ID6IjeSu.html",
+          "lastCheckedAt": "2026-11-15T18:39:11.280Z",
+          "facts": {
+            "title": "Skoda Scala 1.5 TSI Style",
+            "price": 54900,
+            "priceBasis": "gross_total",
+            "year": 2022,
+            "mileage": 140472,
+            "engine": "ver-1-5-tsi-style",
+            "engineVariant": "1.5-tsi-150",
+            "engineCapacity": "1498",
+            "enginePower": "150",
+            "transmission": "manual",
+            "transmissionCode": "manual",
+            "lpgInstalled": null,
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "city": "Magnice",
+              "voivodeship": "Dolnośląskie",
+              "precision": "city",
+              "source": "listing",
+              "checkedAt": "2026-11-15"
+            },
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImYxOG5qN3NkZW4xZDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.1P8pxFpeI0lRqoaJRnliAzGvn2qMfWiWQ_tUN2SGiH4/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inc0d2h3bTExYWxlNC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.355BrvQkkGWr4FmwwRNfjAhUji16t_Q5e7l7FgThqoo/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImZnajk0dXBianFxMjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.f6UKvsNWJK-tPJOM7twWRqXK1MGWJkOByKskeaP1eac/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjBzOG41MnczM2g5ZDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.BG_KBPuFqQMsyRcPUzt-FE8zPOY7NwD3L1NAUVUEOdg/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imd2djl1amlrZ2t5dzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.qjQCmTIF6IIzXKOK45EVWNiQkxmw_zmfe3pwxYCw_zY/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InM1ajJqZGZ1cmZudjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.nmB8UWYvIz-hCIdxP0RKCctRcZdkPkLUBBd1kJ9Izkk/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImdqdWR6MGZlN3ppbDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.-lZd8O8o7EHuB2PTc0Y69Ye8lklT4o4cKVVmUOvHq4Q/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRyazFmbGFycmt0djItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.eiLHRx1hFOmiiwd2FoiuhpXajW8udI3qEgvVU3pPYXc/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Img4NXkxbnIyZzB6YS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.9V811HPU6nUolouHvZheV41wyfZnG4MWwIvAN_DrZ4o/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImdidzVwcjh6eGI3cDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.wRyA-Nja0uemUQlu8mZkVH-Qnp8He4irKT54FdURHW8/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImxjdDJyc3h4amV5aDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.2PvUvNvpdAFxQIM815CFnJU6epmVexzzOmgC7ntsd78/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjJhZXU3ZGs1emxvMTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19._nrsVF97sf2Jul-VzRw4tporJgwyseukkwM0j6JdilM/image;s=5120x0;q=100"
+            ],
+            "fuel": "petrol",
+            "vin": null,
+            "firstRegistrationDate": null,
+            "body": null,
+            "lastReadAt": "2026-11-15T18:39:11.280Z"
+          },
+          "sourceExtensions": {
+            "otomoto": {
+              "listing": {
+                "brand": "skoda",
+                "model": "scala",
+                "priceLabel": "INVOICE_ISSUED",
+                "sellerName": "Carefleet S.A."
+              }
             }
-          ],
-          "reportedFields": {
-            "id": "url:https://www.aaaauto.pl/detail/skoda/scala/34926023",
-            "modelKey": "skoda-scala",
-            "title": "Škoda Scala 1.5 TSI",
-            "urls": [
+          },
+          "fieldEvidence": {
+            "price": [
               {
-                "url": "https://www.aaaauto.pl/detail/skoda/scala/34926023"
+                "source": "otomoto",
+                "sourcePath": "detail.salePanel.price",
+                "method": "label_value",
+                "excerpt": "54 900 PLN"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "price.amount.value",
+                "method": "structured_field",
+                "excerpt": "54900"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.price",
+                "method": "structured_field",
+                "excerpt": "price: 54900"
               }
             ],
+            "year": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Rok produkcji\"]",
+                "method": "structured_field",
+                "excerpt": "Rok produkcji: 2022"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.productionYear",
+                "method": "structured_field",
+                "excerpt": "productionYear: 2022"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "pierwszej rejestracji w historii pojazdu 12 października 2022 VIN Wyświetl VIN Kup ten pojazd na raty Oblicz Specyfikacja Stan i historia Finansowanie i koszty Finansowanie REKLAMA Zamów teraz, pierwsza rata w 2027 roku Potrzebujesz finans"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing/detail text (label parser)",
+                "method": "text_rule",
+                "excerpt": "2022"
+              }
+            ],
+            "mileage": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Przebieg\"]",
+                "method": "structured_field",
+                "excerpt": "Przebieg: 140472 km"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.mileage",
+                "method": "structured_field",
+                "excerpt": "mileage: 140472 km"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing/detail text (km parser)",
+                "method": "text_rule",
+                "excerpt": "140472 km"
+              }
+            ],
+            "engine": [
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
+                "method": "structured_field",
+                "excerpt": "engine: ver-1-5-tsi-style"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.visibleText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              }
+            ],
+            "engineVariant": [
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
+                "method": "structured_field",
+                "excerpt": "engine: ver-1-5-tsi-style"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.visibleText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              }
+            ],
+            "transmission": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Skrzynia biegów\"]",
+                "method": "structured_field",
+                "excerpt": "Skrzynia biegów: Manualna"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.transmission",
+                "method": "structured_field",
+                "excerpt": "transmission: manual"
+              }
+            ],
+            "fuel": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Rodzaj paliwa\"]",
+                "method": "structured_field",
+                "excerpt": "Rodzaj paliwa: Benzyna"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.fuelType",
+                "method": "structured_field",
+                "excerpt": "fuelType: petrol"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6Ig3og.html",
+      "identityKey": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6Ig3og.html",
+      "modelKey": "skoda-scala",
+      "primaryListingKey": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6Ig3og.html",
+      "firstSeenAt": "2026-11-15T18:39:11.280Z",
+      "lastUpdatedAt": "2026-11-15T18:39:11.280Z",
+      "listings": [
+        {
+          "key": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6Ig3og.html",
+          "sourceId": "otomoto",
+          "sourceName": "OTOMOTO",
+          "sourceListingId": "6150782060",
+          "url": "https://otomoto.pl/osobowe/oferta/skoda-scala-ID6Ig3og.html",
+          "lastCheckedAt": "2026-11-15T18:39:11.280Z",
+          "facts": {
+            "title": "Skoda Scala 1.5 TSI Ambition DSG",
+            "price": 52900,
+            "year": 2023,
+            "mileage": 155599,
+            "engine": "ver-1-5-tsi-ambition-dsg",
+            "engineVariant": "1.5-tsi-150",
+            "engineCapacity": "1498",
+            "enginePower": "150",
+            "transmission": "automatic",
+            "transmissionCode": "automatic",
+            "lpgInstalled": null,
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "city": "Warszawa",
+              "voivodeship": "Mazowieckie",
+              "precision": "city",
+              "source": "listing",
+              "checkedAt": "2026-11-15"
+            },
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImVtMWxzaDVxbnlhajItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.00e_9xCT8RyPWd1FUHlDt1UJ9RHM5loLIMu1TGMi5RY/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjZmd216aHYwZXRlNTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.l6pD9VBwtW8FdS1MrqVJfXuGqK9JwkWcr2KeoK60GmU/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inh0NXUycmR4ZG41dy1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.qg-IzNWTdIjxuo0hf6kB5fhn1-iKnnHONcSjakLhFH0/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InFpY3BpcWhwOTdmZjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.pOKhKyy7_Es-Vg48SFUk-TU5xCWbALbRfryT_LbH1xQ/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Img0d2F2N3k0cW1uNzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.b8t6SZYrFk1pqqupg5isdfz_1MVIn4hZfkJvlQj5vrw/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InRuanM1OWg2eHhjczItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Mf-xQWY26XAD5CX1SZd4IDZxMf_BAB7hlO9EiQ5gSr8/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imh1MzJqZGJ5b29odzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.0j2oXu_2YJ9L2iUwpOIiQz4nXgCaFZ1CLaaRWxG6LY8/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImsyenBjNDJreXR2ODMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.KGhuBya0aUOxG1fU6GAMYF3mq434yOB_S72N_X0i_xY/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpsNDZtZGp6MXBzdTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.QxXJKY5pGT3xm7eFgeFsfmJCnBGOzHW_98SSFPeu4Vw/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InpzODNpdmpnYW4yZDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.on_omDIs5TkeR4wCqNus9iVb8BbN1fL1Om6AqH7Ihgo/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inh5ajBlNnduMnh0OTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.brUNqSV-arkzvgFyU-BFgI2y6ZFG5bHaICFq7qqqh3k/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InIxcXA5bDJiMTRmeC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.u0GCmx1XjqyiUQePl0wKQjyL7A8_knPjI076iiOxFkQ/image;s=5120x0;q=100"
+            ],
+            "fuel": "petrol",
+            "vin": null,
+            "firstRegistrationDate": null,
+            "body": null,
+            "lastReadAt": "2026-11-15T18:39:11.280Z"
+          },
+          "sourceExtensions": {
+            "otomoto": {
+              "listing": {
+                "brand": "skoda",
+                "model": "scala",
+                "priceLabel": "INVOICE_ISSUED",
+                "sellerName": "Cars&Care - Centrum Sprzedaży Samochodów Używanych"
+              }
+            }
+          },
+          "fieldEvidence": {
+            "price": [
+              {
+                "source": "otomoto",
+                "sourcePath": "price.amount.value",
+                "method": "structured_field",
+                "excerpt": "52900"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.price",
+                "method": "structured_field",
+                "excerpt": "price: 52900"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "ars&Care - Centrum Sprzedaży Samochodów Używanych Firma Bardzo sprawnie odpowiada Sprzedający na OTOMOTO od 2011 Napisz Wyświetl numery ŁOPUSZAŃSKA 24C - 02220 Warszawa, Mazowieckie, Warszawa (Polska) Zobacz więcej ofert (200) tego sprzedaw"
+              }
+            ],
+            "year": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Rok produkcji\"]",
+                "method": "structured_field",
+                "excerpt": "Rok produkcji: 2023"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.productionYear",
+                "method": "structured_field",
+                "excerpt": "productionYear: 2023"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "Liczba miejsc 5 Rok produkcji 2023 Data pierwszej rejestracji w historii pojazdu 7 grudnia 2023 VIN Wyświetl VIN Kup ten pojazd na raty Oblicz Specyfikacja Stan i historia Finansowanie i koszty Specyfikacja EV Finansowanie REKLAMA Zamów ter"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing/detail text (label parser)",
+                "method": "text_rule",
+                "excerpt": "2023"
+              }
+            ],
+            "mileage": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Przebieg\"]",
+                "method": "structured_field",
+                "excerpt": "Przebieg: 155599 km"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.mileage",
+                "method": "structured_field",
+                "excerpt": "mileage: 155599 km"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing/detail text (km parser)",
+                "method": "text_rule",
+                "excerpt": "155599 km"
+              }
+            ],
+            "engine": [
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
+                "method": "structured_field",
+                "excerpt": "engine: ver-1-5-tsi-ambition-dsg"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.visibleText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              }
+            ],
+            "engineVariant": [
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
+                "method": "structured_field",
+                "excerpt": "engine: ver-1-5-tsi-ambition-dsg"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.visibleText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              }
+            ],
+            "transmission": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Skrzynia biegów\"]",
+                "method": "structured_field",
+                "excerpt": "Skrzynia biegów: Automatyczna"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.transmission",
+                "method": "structured_field",
+                "excerpt": "transmission: automatic"
+              }
+            ],
+            "fuel": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Rodzaj paliwa\"]",
+                "method": "structured_field",
+                "excerpt": "Rodzaj paliwa: Benzyna"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.fuelType",
+                "method": "structured_field",
+                "excerpt": "fuelType: petrol"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6IgYli.html",
+      "identityKey": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6IgYli.html",
+      "modelKey": "skoda-scala",
+      "primaryListingKey": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6IgYli.html",
+      "firstSeenAt": "2026-11-15T18:39:11.280Z",
+      "lastUpdatedAt": "2026-11-15T18:39:11.280Z",
+      "listings": [
+        {
+          "key": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6IgYli.html",
+          "sourceId": "otomoto",
+          "sourceName": "OTOMOTO",
+          "sourceListingId": "6151000984",
+          "url": "https://otomoto.pl/osobowe/oferta/skoda-scala-ID6IgYli.html",
+          "lastCheckedAt": "2026-11-15T18:39:11.280Z",
+          "facts": {
+            "title": "Skoda Scala 1.5 TSI Ambition",
+            "price": 43900,
+            "year": 2021,
+            "mileage": 163500,
+            "engine": "ver-1-5-tsi-ambition",
+            "engineVariant": "1.5-tsi-150",
+            "engineCapacity": "1498",
+            "enginePower": "150",
+            "transmission": "manual",
+            "transmissionCode": "manual",
+            "lpgInstalled": null,
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "city": "Warszawa",
+              "voivodeship": "Mazowieckie",
+              "precision": "city",
+              "source": "listing",
+              "checkedAt": "2026-11-15"
+            },
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imp1ZmVpODRoYmhtMTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.ZjUQp3DROvRn4sQB-ObP-EGDCeqz0rS2vbSNLaIacSA/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im93Nm5ueHg3bWl4aDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.uq2Egp1jjBOoYloWT7KaqlxQtCNrMifkCSpuErEIhwk/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImU5bjEzeTNzcnNmMjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.1x1WDz4kocQ3YxdWMssW4W7G2My9gYcMNu5MfMLYohE/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ingwd3RpdGd0MDNiazEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.-nfAUYS-gxvjwYAKpXoSvC7EHTPrU0Fyxps1-Nc1amE/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjMyYWJ3ZDR3bHVsNy1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.DUVjMM9O6fdmNztfwiTs1Wwoz_Z_2qmgAY1aDD8WdaY/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjJ1cmVkaGt3Zm96cDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.qPqwkGgCSVR1uYTycZYKRB_KOLSraYJ-czLRlme97P8/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Imh0ZngzZmo5b2NzeS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.tvE-l-O6_Z7WyEESkIDxX7qmtY0rmUUqCxKU8P_kuSU/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjMxNHFxdHY1cXk4eDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.QjSMXDNfWqFZ1Gb6dzjfNm4GFMpL-QgPq9fMR-6RC20/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjQzdTFhNXg4d3NubjItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.rzeRaY4ciyM__iibYYp6l3sV9GnZkaLS7AgioWe2N6M/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImN4Zmh0bzE4OGxuYTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.QaTvfXZb-2gauslqS6L_eTp9oM5SEJV4MSYgDwuzh5Q/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjVpMWY0NHN2dWY0Mi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.7h2lMOQzkc0KH4JYZpBiCCOmNFzy_6FPLmhNCuHX7WA/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjJqMHo5YTY5dHJrdC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.--sOlYG-KDJW4a2sApH6cCegwDN6lCb5YAyzBwG7L5U/image;s=5120x0;q=100"
+            ],
+            "fuel": "petrol",
+            "vin": null,
+            "firstRegistrationDate": null,
+            "body": null,
+            "lastReadAt": "2026-11-15T18:39:11.280Z"
+          },
+          "sourceExtensions": {
+            "otomoto": {
+              "listing": {
+                "brand": "skoda",
+                "model": "scala",
+                "priceLabel": "INVOICE_ISSUED",
+                "sellerName": "CLICK AND RIDE"
+              }
+            }
+          },
+          "fieldEvidence": {
+            "price": [
+              {
+                "source": "otomoto",
+                "sourcePath": "price.amount.value",
+                "method": "structured_field",
+                "excerpt": "43900"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.price",
+                "method": "structured_field",
+                "excerpt": "price: 43900"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "7 Warszawa, Mazowieckie, Warszawa (Polska) Zobacz więcej ofert (7) tego sprzedawcy Prawa konsumentów na OTOMOTO Największa platforma motoryzacyjna w Polsce Centrum Pomocy Kontakt Reklama Cennik Kariera OLX Otomoto Lease Otodom App Store Goo"
+              }
+            ],
+            "year": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Rok produkcji\"]",
+                "method": "structured_field",
+                "excerpt": "Rok produkcji: 2021"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.productionYear",
+                "method": "structured_field",
+                "excerpt": "productionYear: 2021"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "ejsc: 5 Rok produkcji: 2021 Pojemność silnika: 1498 cm³ Przebieg: 163 500 km Wybrane wyposażenie i komfort: - Ekonomiczny silnik benzynowy o mocy 150 KM - Manualna skrzynia biegów - 5 drzwi, 5 miejsc - Klimatyzacja - Reflektory LED, światła"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing/detail text (label parser)",
+                "method": "text_rule",
+                "excerpt": "2021"
+              }
+            ],
+            "mileage": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Przebieg\"]",
+                "method": "structured_field",
+                "excerpt": "Przebieg: 163500 km"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.mileage",
+                "method": "structured_field",
+                "excerpt": "mileage: 163500 km"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "98 cm³ Przebieg: 163 500 km Wybrane wyposażenie i komfort: - Ekonomiczny silnik benzynowy o mocy 150 KM - Manualna skrzynia biegów - 5 drzwi, 5 miejsc - Klimatyzacja - Reflektory LED, światła do jazdy dziennej - System multimedialny, radio,"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing/detail text (km parser)",
+                "method": "text_rule",
+                "excerpt": "163500 km"
+              }
+            ],
+            "engine": [
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
+                "method": "structured_field",
+                "excerpt": "engine: ver-1-5-tsi-ambition"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.visibleText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              }
+            ],
+            "engineVariant": [
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
+                "method": "structured_field",
+                "excerpt": "engine: ver-1-5-tsi-ambition"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.visibleText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              }
+            ],
+            "transmission": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Skrzynia biegów\"]",
+                "method": "structured_field",
+                "excerpt": "Skrzynia biegów: Manualna"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.transmission",
+                "method": "structured_field",
+                "excerpt": "transmission: manual"
+              }
+            ],
+            "fuel": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Rodzaj paliwa\"]",
+                "method": "structured_field",
+                "excerpt": "Rodzaj paliwa: Benzyna"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.fuelType",
+                "method": "structured_field",
+                "excerpt": "fuelType: petrol"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6I5Zj1.html",
+      "identityKey": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6I5Zj1.html",
+      "modelKey": "skoda-scala",
+      "primaryListingKey": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6I5Zj1.html",
+      "firstSeenAt": "2026-11-15T18:39:11.280Z",
+      "lastUpdatedAt": "2026-11-15T18:39:11.280Z",
+      "listings": [
+        {
+          "key": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6I5Zj1.html",
+          "sourceId": "otomoto",
+          "sourceName": "OTOMOTO",
+          "sourceListingId": "6148383079",
+          "url": "https://otomoto.pl/osobowe/oferta/skoda-scala-ID6I5Zj1.html",
+          "lastCheckedAt": "2026-11-15T18:39:11.280Z",
+          "facts": {
+            "title": "Skoda Scala 1.5 TSI Style DSG",
+            "price": 54000,
+            "priceBasis": "gross_total",
+            "year": 2019,
+            "mileage": 115000,
+            "engine": "ver-1-5-tsi-style-dsg",
+            "engineVariant": "1.5-tsi-150",
+            "engineCapacity": "1498",
+            "enginePower": "150",
+            "transmission": "automatic",
+            "transmissionCode": "automatic",
+            "lpgInstalled": null,
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "city": "Poznań",
+              "voivodeship": "Opolskie",
+              "precision": "city",
+              "source": "listing",
+              "checkedAt": "2026-11-15"
+            },
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjY3M3Rnb3FscG5kcDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.OJpiSEyrMbfLgeD3-KyqPQXUmE5GifUQ4Th7OuV3jcU/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InB1bm03dnA3MWdzOTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.4LkOSJpgZ1CzZGitE8mzxsoRf8azqV-pnxRxHema_m0/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im52amRkZG9tanl6ODEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.4r7aPsKopgoyzdeIWyOutPZSeXGz5Gi3F1hoNhP7FxE/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijllb296YXJiZWJxNzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.ua9oJ8vQmS99SmkNAFvgKiCMvWYY5SwUSifhP-UJ0dA/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InZ6eXB6M3dkNDhmZDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.syqUUz0ljbiQjCEEpjuXryUZxFLp1h6FBCzJ5IWp6jE/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InBlOWt1dGk0c3R2bzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19._s3HpmgJ6v8iYl7ptE8VIQ8LCOhwdCd_Owyih7w28O0/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImIzMDg1bmxuaHFmOTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.XtGp6BGBhwBSrbYiM8m_ryLOB3-JRAOx66bIXOzEbkA/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJoeW02MTdpaGZ0ZzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.DVgnnQtrpxfSU8piEyPCBdNX1ki5UbVuiFyrahIN7fI/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRiM2RlZDJnMmFway1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.lRqAsch1MyxePX71b7cp9MBk0TBX5mr7ZkVZtcawFxw/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjRoaXpybm51eGExeDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.sOean8XPQCV7Gp5pdxEdEMIRtRoMNCiIjj2MQapcdjk/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImFwbWFncHNjd2FjNTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19._q4lICZK33gQUKQkSJbtqScbkjtxjdLIU9AKNVvaJio/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjEyM29jN3UyYjNtMzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.tv5eJA26I8BIVesMhhlgRhpTXaC1K92YPIZHuNNW_Uw/image;s=5120x0;q=100"
+            ],
+            "fuel": "petrol",
+            "vin": null,
+            "firstRegistrationDate": null,
+            "body": null,
+            "lastReadAt": "2026-11-15T18:39:11.280Z"
+          },
+          "sourceExtensions": {
+            "otomoto": {
+              "listing": {
+                "brand": "skoda",
+                "model": "scala"
+              }
+            }
+          },
+          "fieldEvidence": {
+            "price": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.salePanel.price",
+                "method": "label_value",
+                "excerpt": "54 000 PLN"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "price.amount.value",
+                "method": "structured_field",
+                "excerpt": "54000"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.price",
+                "method": "structured_field",
+                "excerpt": "price: 54000"
+              }
+            ],
+            "year": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Rok produkcji\"]",
+                "method": "structured_field",
+                "excerpt": "Rok produkcji: 2019"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.productionYear",
+                "method": "structured_field",
+                "excerpt": "productionYear: 2019"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "iejsc 5 Rok produkcji 2019 VIN Wyświetl VIN Kup ten pojazd na raty Oblicz Specyfikacja Stan i historia 13/14 zweryfikowanych pól Szczegółowe dane pojazdu zostały zweryfikowane poprzez porównanie ich z rządową bazą danych Finansowanie REKLAM"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing/detail text (label parser)",
+                "method": "text_rule",
+                "excerpt": "2019"
+              }
+            ],
+            "mileage": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Przebieg\"]",
+                "method": "structured_field",
+                "excerpt": "Przebieg: 115000 km"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.mileage",
+                "method": "structured_field",
+                "excerpt": "mileage: 115000 km"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing/detail text (km parser)",
+                "method": "text_rule",
+                "excerpt": "115000 km"
+              }
+            ],
+            "engine": [
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
+                "method": "structured_field",
+                "excerpt": "engine: ver-1-5-tsi-style-dsg"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.visibleText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              }
+            ],
+            "engineVariant": [
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
+                "method": "structured_field",
+                "excerpt": "engine: ver-1-5-tsi-style-dsg"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.visibleText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              }
+            ],
+            "transmission": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Skrzynia biegów\"]",
+                "method": "structured_field",
+                "excerpt": "Skrzynia biegów: Automatyczna"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.transmission",
+                "method": "structured_field",
+                "excerpt": "transmission: automatic"
+              }
+            ],
+            "fuel": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Rodzaj paliwa\"]",
+                "method": "structured_field",
+                "excerpt": "Rodzaj paliwa: Benzyna"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.fuelType",
+                "method": "structured_field",
+                "excerpt": "fuelType: petrol"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6Ijoto.html",
+      "identityKey": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6Ijoto.html",
+      "modelKey": "skoda-scala",
+      "primaryListingKey": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6Ijoto.html",
+      "firstSeenAt": "2026-11-15T18:39:11.280Z",
+      "lastUpdatedAt": "2026-11-15T18:39:11.280Z",
+      "listings": [
+        {
+          "key": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6Ijoto.html",
+          "sourceId": "otomoto",
+          "sourceName": "OTOMOTO",
+          "sourceListingId": "6151578086",
+          "url": "https://otomoto.pl/osobowe/oferta/skoda-scala-ID6Ijoto.html",
+          "lastCheckedAt": "2026-11-15T18:39:11.280Z",
+          "facts": {
+            "title": "Skoda Scala 1.5 TSI Ambition",
+            "price": 50900,
+            "priceBasis": "gross_total",
+            "year": 2021,
+            "mileage": 97785,
+            "engine": "ver-1-5-tsi-ambition",
+            "engineVariant": "1.5-tsi-150",
+            "engineCapacity": "1498",
+            "enginePower": "150",
+            "transmission": "manual",
+            "transmissionCode": "manual",
+            "lpgInstalled": null,
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "city": "Altanka",
+              "voivodeship": "Mazowieckie",
+              "precision": "city",
+              "source": "listing",
+              "checkedAt": "2026-11-15"
+            },
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImV0NmxtamZtenNxejItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.IJ0vSDBhC0k97-6us-ZljUWI6yYsCSuUvcSXWmJJMR8/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjBkcXZ1dWw0NWt5NC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.PZCnLcWqTHmbMLwGCLGUUnZS6fD5SPBlzfAs2jUwyHE/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjJ6MnlhcDBlZG51eDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.fLhB7btSo3NtzRmhGrZlDocc3Sy1KQ2SJvaUEj6cSQo/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImlpaWN4N3NjbWN5dC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.bLql6D8rHW88y4MKNHZc1UnSHWd5_pXxiD5HLKo-nzY/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9oODQybHZsdTg1eTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.FLfqd1nEbldJEkM7ipKcBh9fyWDAC8JCBgY9cujvBTE/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImcwMGJyZTZ2cTdiczItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.tlSGlt2CgyDdQ3774Qx2oBM1vWTdZxiKSm1wkWUUURo/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InNqMnVtZTVlZDF4ODItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.yQpMmKNl9AluCLacIVbQKnk2FiYZ9jqgxUExNQqFxpQ/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inl5bzFkdm4zY2VvdDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.v3JYnO2aQ0TMFRwYkCuKDhW5jP3_w6CK9R27j4LVSwE/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjgwdWtuNGd3NWV1YzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Rm_xmlx4TbqABgQRDIH3s4l0AF4W-k-g6K1fQ3RhHK0/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InhmZGozbGtwOGVjbjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.YuQOntWKvVNnGYcHlnql_Ll55eczkUYWp_g5h26t42I/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjZhcmdvbjVqc2NxZjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.58CldH4ty_bM6mQzz8A4kqZ6ZGH2h6Ddx7o7TFuQGFg/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImxjeDlraGtkNGo3ajEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.m6cHl4io1EH_LVsbXpXgSX35ezYhcNbRDe96nsyvaq4/image;s=5120x0;q=100"
+            ],
+            "fuel": "petrol",
+            "vin": null,
+            "firstRegistrationDate": null,
+            "body": null,
+            "lastReadAt": "2026-11-15T18:39:11.280Z"
+          },
+          "sourceExtensions": {
+            "otomoto": {
+              "listing": {
+                "brand": "skoda",
+                "model": "scala"
+              }
+            }
+          },
+          "fieldEvidence": {
+            "price": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.salePanel.price",
+                "method": "label_value",
+                "excerpt": "50 900 PLN"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "price.amount.value",
+                "method": "structured_field",
+                "excerpt": "50900"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.price",
+                "method": "structured_field",
+                "excerpt": "price: 50900"
+              }
+            ],
+            "year": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Rok produkcji\"]",
+                "method": "structured_field",
+                "excerpt": "Rok produkcji: 2021"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.productionYear",
+                "method": "structured_field",
+                "excerpt": "productionYear: 2021"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "ilnika: 1498 cm³ Moc: 150 KM Kolor: srebrny Rok produkcji: 2021 Zapraszam na jazdę próbną i do zakupu. Pokaż pełny opis 7 listopada 2026 14:58 ID: 6151578086 Szczegóły ZWERYFIKOWANE DANE Podstawowe Marka pojazdu Skoda Model pojazdu Scala We"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing/detail text (label parser)",
+                "method": "text_rule",
+                "excerpt": "2021"
+              }
+            ],
+            "mileage": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Przebieg\"]",
+                "method": "structured_field",
+                "excerpt": "Przebieg: 97785 km"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.mileage",
+                "method": "structured_field",
+                "excerpt": "mileage: 97785 km"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "Skoda Scala 1.5 TSI Ambition, 150KM, manual, 2021, przebieg 97785 km Wyposażenie: *) Klimatyzacja *) Elektrycznie regulowane lusterka *) Podgrzewane lusterka *) Elektryczne szyby przód i tył *) Komplet poduszek powietrznych (przednie, bocz"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing/detail text (km parser)",
+                "method": "text_rule",
+                "excerpt": "97785 km"
+              }
+            ],
+            "engine": [
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
+                "method": "structured_field",
+                "excerpt": "engine: ver-1-5-tsi-ambition"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.visibleText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              }
+            ],
+            "engineVariant": [
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
+                "method": "structured_field",
+                "excerpt": "engine: ver-1-5-tsi-ambition"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.visibleText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              }
+            ],
+            "transmission": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Skrzynia biegów\"]",
+                "method": "structured_field",
+                "excerpt": "Skrzynia biegów: Manualna"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.transmission",
+                "method": "structured_field",
+                "excerpt": "transmission: manual"
+              }
+            ],
+            "fuel": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Rodzaj paliwa\"]",
+                "method": "structured_field",
+                "excerpt": "Rodzaj paliwa: Benzyna"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.fuelType",
+                "method": "structured_field",
+                "excerpt": "fuelType: petrol"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "i: 5 Liczba miejsc: 5 Typ nadwozia: kompakt Paliwo: benzyna Pojemność silnika: 1498 cm³ Moc: 150 KM Kolor: srebrny Rok produkcji: 2021 Zapraszam na jazdę próbną i do zakupu. Pokaż pełny opis 7 listopada 2026 14:58 ID: 6151578086 Szczegóły Z"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6IiSlB.html",
+      "identityKey": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6IiSlB.html",
+      "modelKey": "skoda-scala",
+      "primaryListingKey": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6IiSlB.html",
+      "firstSeenAt": "2026-11-15T18:39:11.280Z",
+      "lastUpdatedAt": "2026-11-15T18:39:11.280Z",
+      "listings": [
+        {
+          "key": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6IiSlB.html",
+          "sourceId": "otomoto",
+          "sourceName": "OTOMOTO",
+          "sourceListingId": "6151454595",
+          "url": "https://otomoto.pl/osobowe/oferta/skoda-scala-ID6IiSlB.html",
+          "lastCheckedAt": "2026-11-15T18:39:11.280Z",
+          "facts": {
+            "title": "Skoda Scala",
             "price": 52000,
             "priceBasis": "gross_total",
             "year": 2019,
             "mileage": 144823,
-            "engine": "1.5 TSI, 1498 cm3, 150 KM",
+            "engine": "1.5 tsi",
             "engineVariant": "1.5-tsi-150",
-            "body": "Hatchback",
+            "engineCapacity": "1498",
+            "enginePower": "150",
+            "body": "hatchback",
             "bodyCode": "hatchback",
-            "transmission": "Automatyczna 7-biegowa",
+            "transmission": "automatic",
             "transmissionCode": "automatic",
-            "seller": "AAA AUTO",
-            "offerType": "company",
-            "saleType": "fixed_price",
-            "cameraStatus": "installed_confirmed",
-            "structuralDamageStatus": "unknown",
-            "location": {
-              "status": "not_provided"
-            },
             "lpgInstalled": null,
-            "photos": []
-          },
-          "changes": {
-            "id": {
-              "before": null,
-              "after": "url:https://www.aaaauto.pl/detail/skoda/scala/34926023"
-            },
-            "modelKey": {
-              "before": null,
-              "after": "skoda-scala"
-            },
-            "title": {
-              "before": null,
-              "after": "Škoda Scala 1.5 TSI"
-            },
-            "urls": {
-              "before": null,
-              "after": [
-                {
-                  "url": "https://www.aaaauto.pl/detail/skoda/scala/34926023"
-                }
-              ]
-            },
-            "price": {
-              "before": null,
-              "after": 52000
-            },
-            "priceBasis": {
-              "before": null,
-              "after": "gross_total"
-            },
-            "year": {
-              "before": null,
-              "after": 2019
-            },
-            "mileage": {
-              "before": null,
-              "after": 144823
-            },
-            "engine": {
-              "before": null,
-              "after": "1.5 TSI, 1498 cm3, 150 KM"
-            },
-            "engineVariant": {
-              "before": null,
-              "after": "1.5-tsi-150"
-            },
-            "body": {
-              "before": null,
-              "after": "Hatchback"
-            },
-            "bodyCode": {
-              "before": null,
-              "after": "hatchback"
-            },
-            "transmission": {
-              "before": null,
-              "after": "Automatyczna 7-biegowa"
-            },
-            "transmissionCode": {
-              "before": null,
-              "after": "automatic"
-            },
-            "seller": {
-              "before": null,
-              "after": "AAA AUTO"
-            },
-            "offerType": {
-              "before": null,
-              "after": "company"
-            },
-            "saleType": {
-              "before": null,
-              "after": "fixed_price"
-            },
-            "cameraStatus": {
-              "before": null,
-              "after": "installed_confirmed"
-            },
-            "structuralDamageStatus": {
-              "before": null,
-              "after": "unknown"
-            },
             "location": {
-              "before": null,
-              "after": {
-                "status": "not_provided"
-              }
+              "status": "available",
+              "countryCode": "PL",
+              "city": "Gdańsk",
+              "voivodeship": "Pomorskie",
+              "precision": "city",
+              "source": "listing",
+              "checkedAt": "2026-11-15"
             },
-            "photos": {
-              "before": null,
-              "after": []
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImZ5NTczbWI2NmhhaTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.pbMhxLKtEazwoxjRfi9sAGJgbo78-V33VgjZeW62_RI/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImplaHphOXd6YnZjNzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.KhYFaOVvhj_T3Drk-AzSXt6jbhsLslkoxH44_-nq218/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im0wNGFpc2Vyd2JuaTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.mzqPxDWrnIoWQR5sscU_uOj0PaaHtscRr3FmfOa1_Ms/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjFoMjFpdHk5dng0aDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Nv-3whlb7irBTGo4wTb89KpcwMY5P31PV0EsTg76Cgw/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjJiczVzcWN0cnpncDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.yP4HI3ryHDxTRZ3Pz0DUqlVcXgsvaDbVFXggVOLYKTo/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjlraDJtNng0a2dyMTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.WCEaozAKJDZvkftO4frTZaCB8pSz2o8tJ2Dao0PevwA/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im9ndWlyYng2cHI4aDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.djolFP8NNVGJgCUMezd7zyMrUIVJjpOQ5_TZyQKEwDM/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjZianAyMXVnMzI5ZjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.nczVkKJ6Lw_Ij9tdespgFTobwWwDcVVSYJgPag6tViw/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjR0bW45Ymp1YmVjYzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.S4vPZNOExYs3GJr1vGv63Dr6sNYCBUjkRvq7IizUKUY/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InFkd3htMHQ0cWhibi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.BPDyuQAwuYWdPja_PU3KyQq16ZEWJyuX13UyDCF0wSw/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjhqdmNwcmE4aWRuNzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.f6daX856R-qMaLuVd5AkelleW_3AIto1oaSm5c8I2xg/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjcwbzA4bjdjcDFjbDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.ZImMNY_CWVWQZDVpW91ASCb6Ps5BHTdi9oKoAqxd1Z0/image;s=5120x0;q=100"
+            ],
+            "fuel": "petrol",
+            "vin": null,
+            "firstRegistrationDate": null,
+            "lastReadAt": "2026-11-15T18:39:11.280Z"
+          },
+          "sourceExtensions": {
+            "otomoto": {
+              "listing": {
+                "brand": "skoda",
+                "model": "scala",
+                "sellerName": "AAA AUTO +19 000 sprawdzonych aut w ofercie! Kredyt i Leasing na miarę."
+              }
             }
-          }
-        }
-      ],
-      "assessment": {
-        "id": "url:https://www.aaaauto.pl/detail/skoda/scala/34926023",
-        "modelKey": "skoda-scala",
-        "verdict": "check",
-        "failures": [],
-        "unknowns": [
-          "structural_history",
-          "stroller_and_family_fit"
-        ],
-        "preferenceNotes": []
-      },
-      "verdict": "check",
-      "verdictTitle": "Do weryfikacji",
-      "verdictNote": "structural_history; stroller_and_family_fit"
-    },
-    {
-      "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6IeTqA.html",
-      "modelKey": "skoda-scala",
-      "title": "Skoda Scala 1.5 TSI Ambition",
-      "urls": [
-        {
-          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6IeTqA.html"
-        }
-      ],
-      "price": 52500,
-      "priceBasis": "gross_total",
-      "year": 2021,
-      "firstRegistrationDate": "2021-07-22",
-      "mileage": 146000,
-      "engine": "1.5 TSI, 150 KM, 1498 cm3",
-      "engineVariant": "1.5-tsi-150",
-      "body": "Hatchback",
-      "bodyCode": "hatchback",
-      "transmission": "Manualna",
-      "transmissionCode": "manual",
-      "seller": "PIOTR",
-      "offerType": "company",
-      "saleType": "fixed_price",
-      "cameraStatus": "installed_confirmed",
-      "structuralDamageStatus": "unknown",
-      "location": {
-        "status": "available",
-        "countryCode": "PL",
-        "city": "Rogozino",
-        "voivodeship": "Mazowieckie"
-      },
-      "photos": [],
-      "lpgInstalled": null,
-      "firstSeenAt": "2026-11-13T22:42:38+00:00",
-      "listingStates": [
-        {
-          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6IeTqA.html",
-          "status": "available",
-          "lastAttemptAt": "2026-11-13T22:42:38+00:00",
-          "lastCheckedAt": "2026-11-13T22:42:38+00:00",
-          "lastVerifiedAt": "2026-11-13T22:42:38+00:00",
-          "lastObservation": {
-            "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6IeTqA.html",
-            "checkedAt": "2026-11-13T22:42:38+00:00",
-            "availability": "available",
-            "note": "Cena brutto 52 500 PLN, faktura VAT 23%. Skoda Scala 1.5 TSI Ambition, 2021 r., 146 000 km, benzyna 1498 cm3/150 KM, skrzynia manualna, hatchback. Kamera parkowania tył wymieniona w rozwiniętym wyposażeniu. 14/14 pól zweryfikowanych w Otomoto. Sprzedawca deklaruje jednego użytkownika, dokumentowany serwis i bardzo dobry stan; historia szkód niezweryfikowana niezależnie.",
-            "evidence": [
+          },
+          "fieldEvidence": {
+            "price": [
               {
-                "kind": "seller",
-                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6IeTqA.html",
-                "checkedAt": "2026-11-13T22:42:38+00:00",
-                "fields": [
-                  "title",
-                  "price",
-                  "year",
-                  "firstRegistrationDate",
-                  "mileage",
-                  "engine",
-                  "body",
-                  "transmission",
-                  "seller",
-                  "location"
-                ],
-                "note": "Dane z widocznej karty i szczegółów Otomoto."
+                "source": "otomoto",
+                "sourcePath": "detail.salePanel.price",
+                "method": "label_value",
+                "excerpt": "52 000 PLN"
               },
               {
-                "kind": "seller",
-                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6IeTqA.html",
-                "checkedAt": "2026-11-13T22:42:38+00:00",
-                "fields": [
-                  "cameraStatus",
-                  "structuralDamageStatus",
-                  "saleTerms"
-                ],
-                "note": "Kamera wymieniona w wyposażeniu. Cena brutto i VAT 23% podane w opisie; historia szkód bez niezależnego potwierdzenia."
+                "source": "otomoto",
+                "sourcePath": "price.amount.value",
+                "method": "structured_field",
+                "excerpt": "52000"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.price",
+                "method": "structured_field",
+                "excerpt": "price: 52000"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "ka serwisowa ✔ Forma finansowania: kredyt Cena: 52 000 PLN Miesięczna rata już od 310 PLN* Zainteresowany? Zadzwoń, nawet w niedzielę i święta! OPIS POJAZDU: Ta Škoda Scala pochodzi z Polski i jest wyposażona w efektywny silnik benzynowy 1."
+              }
+            ],
+            "year": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Rok produkcji\"]",
+                "method": "structured_field",
+                "excerpt": "Rok produkcji: 2019"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.productionYear",
+                "method": "structured_field",
+                "excerpt": "productionYear: 2019"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "RAMETRY TECHNICZNE: • Rok produkcji: 2019 • Przebieg: 144 823 km • Paliwo: benzyna • Nadwozie: Hatchback • Miejsca siedzące: 5 • Przegląd techniczny: ważny do 08/2027 DODATKOWE WYPOSAŻENIE: poduszki powietrzne tempomat asystent hamowania pr"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing/detail text (label parser)",
+                "method": "text_rule",
+                "excerpt": "2019"
+              }
+            ],
+            "mileage": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Przebieg\"]",
+                "method": "structured_field",
+                "excerpt": "Przebieg: 144823 km"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.mileage",
+                "method": "structured_field",
+                "excerpt": "mileage: 144823 km"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "ok produkcji: 2019 • Przebieg: 144 823 km • Paliwo: benzyna • Nadwozie: Hatchback • Miejsca siedzące: 5 • Przegląd techniczny: ważny do 08/2027 DODATKOWE WYPOSAŻENIE: poduszki powietrzne tempomat asystent hamowania przed przeszkodą wspomaga"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing/detail text (km parser)",
+                "method": "text_rule",
+                "excerpt": "144823 km"
+              }
+            ],
+            "engine": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              }
+            ],
+            "engineVariant": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              }
+            ],
+            "transmission": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Skrzynia biegów\"]",
+                "method": "structured_field",
+                "excerpt": "Skrzynia biegów: Automatyczna"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.transmission",
+                "method": "structured_field",
+                "excerpt": "transmission: automatic"
+              }
+            ],
+            "body": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "Paliwo: benzyna • Nadwozie: Hatchback • Miejsca siedzące: 5 • Przegląd techniczny: ważny do 08/2027 DODATKOWE WYPOSAŻENIE: poduszki powietrzne tempomat asystent hamowania przed przeszkodą wspomaganie wjazdu pod górę mocowanie fotelików dzi"
+              }
+            ],
+            "fuel": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Rodzaj paliwa\"]",
+                "method": "structured_field",
+                "excerpt": "Rodzaj paliwa: Benzyna"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.fuelType",
+                "method": "structured_field",
+                "excerpt": "fuelType: petrol"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "ebieg: 144 823 km • Paliwo: benzyna • Nadwozie: Hatchback • Miejsca siedzące: 5 • Przegląd techniczny: ważny do 08/2027 DODATKOWE WYPOSAŻENIE: poduszki powietrzne tempomat asystent hamowania przed przeszkodą wspomaganie wjazdu pod górę moco"
               }
             ]
           }
         }
-      ],
-      "lastCheckedAt": "2026-11-13T22:42:38+00:00",
-      "lastVerifiedAt": "2026-11-13T22:42:38+00:00",
-      "lastAttemptAt": "2026-11-13T22:42:38+00:00",
-      "history": [
+      ]
+    },
+    {
+      "id": "vin:TMBEK6NW8M3047748",
+      "identityKey": "vin:TMBEK6NW8M3047748",
+      "modelKey": "skoda-scala",
+      "primaryListingKey": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6Idd8w.html",
+      "firstSeenAt": "2026-11-15T18:39:11.280Z",
+      "lastUpdatedAt": "2026-11-15T18:39:11.280Z",
+      "listings": [
         {
-          "eventId": "4bf93675d9a8eadc1ba74c060ba8f1fd6ffe3759fc3d279c040600f59342db9b",
-          "runId": "search-20261113-current2",
-          "checkedAt": "2026-11-13T22:42:38+00:00",
-          "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6IeTqA.html",
-          "availability": "available",
-          "note": "Cena brutto 52 500 PLN, faktura VAT 23%. Skoda Scala 1.5 TSI Ambition, 2021 r., 146 000 km, benzyna 1498 cm3/150 KM, skrzynia manualna, hatchback. Kamera parkowania tył wymieniona w rozwiniętym wyposażeniu. 14/14 pól zweryfikowanych w Otomoto. Sprzedawca deklaruje jednego użytkownika, dokumentowany serwis i bardzo dobry stan; historia szkód niezweryfikowana niezależnie.",
-          "httpStatus": null,
-          "photoCheck": null,
-          "evidence": [
-            {
-              "kind": "seller",
-              "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6IeTqA.html",
-              "checkedAt": "2026-11-13T22:42:38+00:00",
-              "fields": [
-                "title",
-                "price",
-                "year",
-                "firstRegistrationDate",
-                "mileage",
-                "engine",
-                "body",
-                "transmission",
-                "seller",
-                "location"
-              ],
-              "note": "Dane z widocznej karty i szczegółów Otomoto."
-            },
-            {
-              "kind": "seller",
-              "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6IeTqA.html",
-              "checkedAt": "2026-11-13T22:42:38+00:00",
-              "fields": [
-                "cameraStatus",
-                "structuralDamageStatus",
-                "saleTerms"
-              ],
-              "note": "Kamera wymieniona w wyposażeniu. Cena brutto i VAT 23% podane w opisie; historia szkód bez niezależnego potwierdzenia."
-            }
-          ],
-          "reportedFields": {
-            "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6IeTqA.html",
-            "modelKey": "skoda-scala",
+          "key": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6Idd8w.html",
+          "sourceId": "otomoto",
+          "sourceName": "OTOMOTO",
+          "sourceListingId": "6150104539",
+          "url": "https://otomoto.pl/osobowe/oferta/skoda-scala-ID6Idd8w.html",
+          "lastCheckedAt": "2026-11-15T18:39:11.280Z",
+          "facts": {
             "title": "Skoda Scala 1.5 TSI Ambition",
-            "urls": [
-              {
-                "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6IeTqA.html"
-              }
-            ],
-            "price": 52500,
+            "price": 48500,
             "priceBasis": "gross_total",
-            "year": 2021,
-            "firstRegistrationDate": "2021-07-22",
-            "mileage": 146000,
-            "engine": "1.5 TSI, 150 KM, 1498 cm3",
+            "year": 2020,
+            "mileage": 138800,
+            "engine": "ver-1-5-tsi-ambition",
             "engineVariant": "1.5-tsi-150",
-            "body": "Hatchback",
-            "bodyCode": "hatchback",
-            "transmission": "Manualna",
+            "engineCapacity": "1498",
+            "enginePower": "150",
+            "transmission": "manual",
             "transmissionCode": "manual",
-            "seller": "PIOTR",
-            "offerType": "company",
-            "saleType": "fixed_price",
-            "cameraStatus": "installed_confirmed",
-            "structuralDamageStatus": "unknown",
+            "vin": "TMBEK6NW8M3047748",
+            "lpgInstalled": null,
             "location": {
               "status": "available",
               "countryCode": "PL",
-              "city": "Rogozino",
-              "voivodeship": "Mazowieckie"
+              "city": "Nowy Dwór Mazowiecki",
+              "voivodeship": "Mazowieckie",
+              "precision": "city",
+              "source": "listing",
+              "checkedAt": "2026-11-15"
             },
-            "lpgInstalled": null,
-            "photos": []
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjVoYnZ3OHhmZWVlMjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.FMgPD9XG0u6vJEh-auf__wMTF8jA_MRrHXwzWwC2k70/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImVidGozMTFxdTR5OTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.o_Kj6XI81kImxeEjG3eGadSDBkjTMops9-F2u3FO-Os/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImZyZjlmcnlhZ254NDEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.6z8dJhsHyzmdCaII2bNG6PpmS_QFX7k9z_h4BEF_GaU/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijd6cTc5dGdpeXhqNzMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.1Ta0yEwpLAMfjvnjkUskoUl4N3MydUWGU_s6R79xpEs/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImJsZXdqZmc5dmNubTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.nfPrE-pAPkeghsv5r-sqwyS4rl35cbTE1G3hoooZ9VQ/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im4zbzliOXJkeWZpNDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.knIlTmzb6zW8P_WTWYcUu2xxk9FrJz0d_gwrSFIScmc/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InlybHBib214MHE0bTItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.bRFVMXxf96LNLFop_XjF3x1UBaE7vJVPQPH1ceNMelc/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IngwZTRlcXF0bWx0bjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.yvdw_vkMRVsg0UF-kVI32SGATXAG22ambUdK79F6tME/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im44ajd5dmdwYWI1YzEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.tfAsWe6vRO3Fl8JHmPRxFdHy6GMNISCiUG_5mL1DN84/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjI2YzlsNWZrZnoycy1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.cTMPDRhTcOFIsZ3AhWmcaGRhZSDDb4ophBrkuc-tzFQ/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjdsdzlsaXF3dmo0czEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.-eJFx-LqZpMbsAqHG3u9DIkODPlIx0i6RFHR3BKs06U/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjlmNmVrZWgxcWRlbjEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.d7RKZxzdftlxT9mAO0xsFZ886euO5Hw0hvo5-i_KFk0/image;s=5120x0;q=100"
+            ],
+            "fuel": "petrol",
+            "firstRegistrationDate": null,
+            "body": null,
+            "lastReadAt": "2026-11-15T18:39:11.280Z"
           },
-          "changes": {
-            "id": {
-              "before": null,
-              "after": "url:https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6IeTqA.html"
-            },
-            "modelKey": {
-              "before": null,
-              "after": "skoda-scala"
-            },
-            "title": {
-              "before": null,
-              "after": "Skoda Scala 1.5 TSI Ambition"
-            },
-            "urls": {
-              "before": null,
-              "after": [
-                {
-                  "url": "https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6IeTqA.html"
-                }
-              ]
-            },
-            "price": {
-              "before": null,
-              "after": 52500
-            },
-            "priceBasis": {
-              "before": null,
-              "after": "gross_total"
-            },
-            "year": {
-              "before": null,
-              "after": 2021
-            },
-            "firstRegistrationDate": {
-              "before": null,
-              "after": "2021-07-22"
-            },
-            "mileage": {
-              "before": null,
-              "after": 146000
-            },
-            "engine": {
-              "before": null,
-              "after": "1.5 TSI, 150 KM, 1498 cm3"
-            },
-            "engineVariant": {
-              "before": null,
-              "after": "1.5-tsi-150"
-            },
-            "body": {
-              "before": null,
-              "after": "Hatchback"
-            },
-            "bodyCode": {
-              "before": null,
-              "after": "hatchback"
-            },
-            "transmission": {
-              "before": null,
-              "after": "Manualna"
-            },
-            "transmissionCode": {
-              "before": null,
-              "after": "manual"
-            },
-            "seller": {
-              "before": null,
-              "after": "PIOTR"
-            },
-            "offerType": {
-              "before": null,
-              "after": "company"
-            },
-            "saleType": {
-              "before": null,
-              "after": "fixed_price"
-            },
-            "cameraStatus": {
-              "before": null,
-              "after": "installed_confirmed"
-            },
-            "structuralDamageStatus": {
-              "before": null,
-              "after": "unknown"
-            },
-            "location": {
-              "before": null,
-              "after": {
-                "status": "available",
-                "countryCode": "PL",
-                "city": "Rogozino",
-                "voivodeship": "Mazowieckie"
+          "sourceExtensions": {
+            "otomoto": {
+              "listing": {
+                "brand": "skoda",
+                "model": "scala"
               }
-            },
-            "photos": {
-              "before": null,
-              "after": []
             }
+          },
+          "fieldEvidence": {
+            "price": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.salePanel.price",
+                "method": "label_value",
+                "excerpt": "48 500 PLN"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "price.amount.value",
+                "method": "structured_field",
+                "excerpt": "48500"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.price",
+                "method": "structured_field",
+                "excerpt": "price: 48500"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "zaleceniami producenta. Cena: 48 500 PLN Przebieg: 138 800 km Numer VIN: TMBEK6NW8M3047748 Skrzynia biegów: Manualna, 6-biegowa Pochodzenie: Salon Polska Pierwsza rejestracja 11.2020 Przegląd techniczny wykonany 15.10.2026 ważny do: 14.10."
+              }
+            ],
+            "year": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Rok produkcji\"]",
+                "method": "structured_field",
+                "excerpt": "Rok produkcji: 2020"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.productionYear",
+                "method": "structured_field",
+                "excerpt": "productionYear: 2020"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "stracji w historii pojazdu 5 listopada 2020 VIN Wyświetl VIN Kup ten pojazd na raty Oblicz Specyfikacja Stan i historia 14/14 zweryfikowanych pól Szczegółowe dane pojazdu zostały zweryfikowane poprzez porównanie ich z rządową bazą danych Fi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing/detail text (label parser)",
+                "method": "text_rule",
+                "excerpt": "2020"
+              }
+            ],
+            "mileage": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Przebieg\"]",
+                "method": "structured_field",
+                "excerpt": "Przebieg: 138800 km"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.mileage",
+                "method": "structured_field",
+                "excerpt": "mileage: 138800 km"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "ta. Cena: 48 500 PLN Przebieg: 138 800 km Numer VIN: TMBEK6NW8M3047748 Skrzynia biegów: Manualna, 6-biegowa Pochodzenie: Salon Polska Pierwsza rejestracja 11.2020 Przegląd techniczny wykonany 15.10.2026 ważny do: 14.10.2027 . Ważne OC Wypos"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing/detail text (km parser)",
+                "method": "text_rule",
+                "excerpt": "138800 km"
+              }
+            ],
+            "engine": [
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
+                "method": "structured_field",
+                "excerpt": "engine: ver-1-5-tsi-ambition"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.visibleText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              }
+            ],
+            "engineVariant": [
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
+                "method": "structured_field",
+                "excerpt": "engine: ver-1-5-tsi-ambition"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.visibleText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              }
+            ],
+            "vin": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "8 800 km Numer VIN: TMBEK6NW8M3047748 Skrzynia biegów: Manualna, 6-biegowa Pochodzenie: Salon Polska Pierwsza rejestracja 11.2020 Przegląd techniczny wykonany 15.10.2026 ważny do: 14.10.2027 . Ważne OC Wyposażenie i atuty: Fabryczny HAK ELE"
+              }
+            ],
+            "transmission": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Skrzynia biegów\"]",
+                "method": "structured_field",
+                "excerpt": "Skrzynia biegów: Manualna"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.transmission",
+                "method": "structured_field",
+                "excerpt": "transmission: manual"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "TMBEK6NW8M3047748 Skrzynia biegów: Manualna, 6-biegowa Pochodzenie: Salon Polska Pierwsza rejestracja 11.2020 Przegląd techniczny wykonany 15.10.2026 ważny do: 14.10.2027 . Ważne OC Wyposażenie i atuty: Fabryczny HAK ELEKTRYCZNY Czujniki p"
+              }
+            ],
+            "fuel": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Rodzaj paliwa\"]",
+                "method": "structured_field",
+                "excerpt": "Rodzaj paliwa: Benzyna"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.fuelType",
+                "method": "structured_field",
+                "excerpt": "fuelType: petrol"
+              }
+            ]
           }
         }
-      ],
-      "assessment": {
-        "id": "url:https://www.otomoto.pl/osobowe/oferta/skoda-scala-ID6IeTqA.html",
-        "modelKey": "skoda-scala",
-        "verdict": "check",
-        "failures": [],
-        "unknowns": [
-          "structural_history",
-          "stroller_and_family_fit"
-        ],
-        "preferenceNotes": []
-      },
-      "verdict": "check",
-      "verdictTitle": "Do weryfikacji",
-      "verdictNote": "structural_history; stroller_and_family_fit"
+      ]
+    },
+    {
+      "id": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6Ii8ro.html",
+      "identityKey": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6Ii8ro.html",
+      "modelKey": "skoda-scala",
+      "primaryListingKey": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6Ii8ro.html",
+      "firstSeenAt": "2026-11-15T18:39:11.280Z",
+      "lastUpdatedAt": "2026-11-15T18:39:11.280Z",
+      "listings": [
+        {
+          "key": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6Ii8ro.html",
+          "sourceId": "otomoto",
+          "sourceName": "OTOMOTO",
+          "sourceListingId": "6151278130",
+          "url": "https://otomoto.pl/osobowe/oferta/skoda-scala-ID6Ii8ro.html",
+          "lastCheckedAt": "2026-11-15T18:39:11.280Z",
+          "facts": {
+            "title": "Skoda Scala 1.5 TSI Ambition",
+            "price": 49800,
+            "priceBasis": "gross_total",
+            "year": 2020,
+            "mileage": 121000,
+            "engine": "ver-1-5-tsi-ambition",
+            "engineVariant": "1.5-tsi-150",
+            "engineCapacity": "1498",
+            "enginePower": "150",
+            "transmission": "manual",
+            "transmissionCode": "manual",
+            "lpgInstalled": null,
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "city": "Dąbrowa Górnicza",
+              "voivodeship": "Śląskie",
+              "precision": "city",
+              "source": "listing",
+              "checkedAt": "2026-11-15"
+            },
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJuZHdoczFwNWNxei1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.guFD6OiuCG9NmUu5k8MyaIrMq7329fwzHaYV85Y_oHM/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InUxdmV4c2w2MTIwODMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.YIF2Wf7lxDvQ7tmIc3JWSxRjk5luBCiMVRrYQfj4JKw/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Iml2cWlwNjVnYnloNi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.7bY5JAN9KC_3V-2sa00fGOOAiA4AizaKKGsOicy-u5o/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImE0dnI3bm96ZmcwYjMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.7kRAXrnNgYMVbIrvXHPGKM_tqvIAS0UeNA7ZWVw6TTU/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjFsd3ZjMnlqMzdocDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.wx9C4DVMq1C1Csy8lyOHYut1AtVWNi-M6VBcBazYNIw/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InJ6NHl6eXp6NHZzdy1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.J4XzwSBq4dqmiaeGtnmLox4C_U80J88VhN7Z37fh584/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImdoNDV6MDJkcTFtajMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.djVos9MxRRTCXkokZXsnfAhR93lYgZlvEV77Oh5LLrM/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InQ0c2JoY21pOHZqaTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.u-74yxsnYPDvJ_6pIuzmg65EaIOR2srB4-SZAxRXOzo/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Impxenp6MnM5a2p0MzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.wfW9kxRPR-iK8-DDgJ6no3VAGoAlHA97tAOqYl8in4Q/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjJxNjhqb3puYmducTMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.EhqjYwR9_vdl4omycMrbNB_IibVxAUnZbuAOB5xM71g/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijl6eGZoeWQwd2lsajMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.2RuPtV8dbrx7TGRn2z8IvqPeejnscNyGn-ebQfaVZCY/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImF4NTV1NThrYzhtbS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.aw1QdEN4Jkh9vT6axgrjt9eeg5bM7HlcRNP64a4Qel0/image;s=5120x0;q=100"
+            ],
+            "fuel": "petrol",
+            "vin": null,
+            "firstRegistrationDate": null,
+            "body": null,
+            "lastReadAt": "2026-11-15T18:39:11.280Z"
+          },
+          "sourceExtensions": {
+            "otomoto": {
+              "listing": {
+                "brand": "skoda",
+                "model": "scala",
+                "sellerName": "DAN - CARS samochody z gwarancją"
+              }
+            }
+          },
+          "fieldEvidence": {
+            "price": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.salePanel.price",
+                "method": "label_value",
+                "excerpt": "49 800 PLN"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "price.amount.value",
+                "method": "structured_field",
+                "excerpt": "49800"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.price",
+                "method": "structured_field",
+                "excerpt": "price: 49800"
+              }
+            ],
+            "year": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Rok produkcji\"]",
+                "method": "structured_field",
+                "excerpt": "Rok produkcji: 2020"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.productionYear",
+                "method": "structured_field",
+                "excerpt": "productionYear: 2020"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "- 13:00 niedziela: nieczynne ✅ SZCZEGÓŁY OFERTY: ✅ Rok produkcji 2020 ✅ Historia serwisowa ✅ Udokumentowany przebieg ✅ Komplet dokumentów ✅ Przygotowany do rejestracji ✅ Możliwość wykonania jazdy próbnej ✅ Auto dostępne od ręki ⭐ NAJWAŻNIEJ"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing/detail text (label parser)",
+                "method": "text_rule",
+                "excerpt": "2020"
+              }
+            ],
+            "mileage": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Przebieg\"]",
+                "method": "structured_field",
+                "excerpt": "Przebieg: 121000 km"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.mileage",
+                "method": "structured_field",
+                "excerpt": "mileage: 121000 km"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing/detail text (km parser)",
+                "method": "text_rule",
+                "excerpt": "121000 km"
+              }
+            ],
+            "engine": [
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
+                "method": "structured_field",
+                "excerpt": "engine: ver-1-5-tsi-ambition"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.visibleText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              }
+            ],
+            "engineVariant": [
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
+                "method": "structured_field",
+                "excerpt": "engine: ver-1-5-tsi-ambition"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.visibleText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              }
+            ],
+            "transmission": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Skrzynia biegów\"]",
+                "method": "structured_field",
+                "excerpt": "Skrzynia biegów: Manualna"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.transmission",
+                "method": "structured_field",
+                "excerpt": "transmission: manual"
+              }
+            ],
+            "fuel": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Rodzaj paliwa\"]",
+                "method": "structured_field",
+                "excerpt": "Rodzaj paliwa: Benzyna"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.fuelType",
+                "method": "structured_field",
+                "excerpt": "fuelType: petrol"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6Ia2tn.html",
+      "identityKey": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6Ia2tn.html",
+      "modelKey": "skoda-scala",
+      "primaryListingKey": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6Ia2tn.html",
+      "firstSeenAt": "2026-11-15T18:39:11.280Z",
+      "lastUpdatedAt": "2026-11-15T18:39:11.280Z",
+      "listings": [
+        {
+          "key": "otomoto:https://otomoto.pl/osobowe/oferta/skoda-scala-ID6Ia2tn.html",
+          "sourceId": "otomoto",
+          "sourceName": "OTOMOTO",
+          "sourceListingId": "6149348565",
+          "url": "https://otomoto.pl/osobowe/oferta/skoda-scala-ID6Ia2tn.html",
+          "lastCheckedAt": "2026-11-15T18:39:11.280Z",
+          "facts": {
+            "title": "Skoda Scala 1.5 TSI Ambition",
+            "price": 55000,
+            "priceBasis": "gross_total",
+            "year": 2023,
+            "mileage": 132174,
+            "engine": "ver-1-5-tsi-ambition",
+            "engineVariant": "1.5-tsi-150",
+            "engineCapacity": "1498",
+            "enginePower": "150",
+            "transmission": "manual",
+            "transmissionCode": "manual",
+            "lpgInstalled": null,
+            "location": {
+              "status": "available",
+              "countryCode": "PL",
+              "city": "Grudziądz",
+              "voivodeship": "Kujawsko-Pomorskie",
+              "precision": "city",
+              "source": "listing",
+              "checkedAt": "2026-11-15"
+            },
+            "photos": [
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImM2Y2NyOTBzM2ZpNzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.jSEWVa44ZPzqWpnGSpT4bx9IiU93UdsYyP7Cz7bGYEc/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjBmNG5xbGhxenNxNDItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.Uw5OjO-8USdiYPVZaYE6Mcr4CKlVliyYOl5B4zoGlBU/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Im01OXh0NnczOWxxNy1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.hMA4zEhR_NSuCMPKH2Hto_3mRub0MPzPCzuJhCnX9g0/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Ijg0bjlvdDBxYWswYi1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.u74bFVhinN8i37_vvcIWwum7ULMmBe1615VxS0fTS0c/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjJ3MzFkcXdzdmltaDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.2oN5lYWGXWhTBHBuwLpAafjARPhiLQ6-NffmUhWJWEU/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6InBlZzc3eDZjcHRzaS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.ASwRumof_yd_xGZ-UGAQxZm8ai5-wptkL90LZTxAuok/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjBmYXpkdWtpa2l4aTEtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.c3E5JZxH48lLU13LrZXjeo27tPRxlsiyQ9gevWGk6SA/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImJ5cHY1ZnY1NXd4eC1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.fRUSnsx2per4WBYe6xXpJ3NRh1qd9iJq7xOujiX1EXM/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6IjNmcWxva243NG1tdS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.Gk3l3_LVzw0HugLwR5BRn1KqSXXEICwnr3Qxv3z3V4c/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6ImpiZ2s2d2Q2NGNjNDMtT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJhIjoiMCIsInAiOiIxMCwtMTAifV19.ZmTtbUtqBqYcRTXbQPgmQIN_BZpBpR_FDsUUU71Y7Qw/image;s=5120x0;q=100",
+              "https://ireland.apollo.olxcdn.com/v1/files/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmbiI6Inp0aHc3bzFrNzY3Zy1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsImEiOiIwIiwicCI6IjEwLC0xMCJ9XX0.CwW1S2B0e8WgsPWIKOQKUs8qUA1lFbJEiHM7QLLoDzo/image;s=5120x0;q=100"
+            ],
+            "fuel": "petrol",
+            "vin": null,
+            "firstRegistrationDate": null,
+            "body": null,
+            "lastReadAt": "2026-11-15T18:39:11.280Z"
+          },
+          "sourceExtensions": {
+            "otomoto": {
+              "listing": {
+                "brand": "skoda",
+                "model": "scala"
+              }
+            }
+          },
+          "fieldEvidence": {
+            "price": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.salePanel.price",
+                "method": "label_value",
+                "excerpt": "55 000 PLN"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "price.amount.value",
+                "method": "structured_field",
+                "excerpt": "55000"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.price",
+                "method": "structured_field",
+                "excerpt": "price: 55000"
+              }
+            ],
+            "year": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Rok produkcji\"]",
+                "method": "structured_field",
+                "excerpt": "Rok produkcji: 2023"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.productionYear",
+                "method": "structured_field",
+                "excerpt": "productionYear: 2023"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "wi 5 Liczba miejsc 5 Rok produkcji 2023 Data pierwszej rejestracji w historii pojazdu 26 lipca 2023 VIN Wyświetl VIN Kup ten pojazd na raty Oblicz Specyfikacja Stan i historia 12/14 zweryfikowanych pól Szczegółowe dane pojazdu zostały zwery"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing/detail text (label parser)",
+                "method": "text_rule",
+                "excerpt": "2023"
+              }
+            ],
+            "mileage": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Przebieg\"]",
+                "method": "structured_field",
+                "excerpt": "Przebieg: 132174 km"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.mileage",
+                "method": "structured_field",
+                "excerpt": "mileage: 132174 km"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing/detail text (km parser)",
+                "method": "text_rule",
+                "excerpt": "132174 km"
+              }
+            ],
+            "engine": [
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
+                "method": "structured_field",
+                "excerpt": "engine: ver-1-5-tsi-ambition"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.visibleText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              }
+            ],
+            "engineVariant": [
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.engine",
+                "method": "structured_field",
+                "excerpt": "engine: ver-1-5-tsi-ambition"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "listing.visibleText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.title",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.bodyText",
+                "method": "text_rule",
+                "excerpt": "1.5 tsi"
+              }
+            ],
+            "transmission": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Skrzynia biegów\"]",
+                "method": "structured_field",
+                "excerpt": "Skrzynia biegów: Manualna"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.transmission",
+                "method": "structured_field",
+                "excerpt": "transmission: manual"
+              }
+            ],
+            "fuel": [
+              {
+                "source": "otomoto",
+                "sourcePath": "detail.fields[\"Rodzaj paliwa\"]",
+                "method": "structured_field",
+                "excerpt": "Rodzaj paliwa: Benzyna"
+              },
+              {
+                "source": "otomoto",
+                "sourcePath": "sourcePayload.otomoto.listingFields.fuelType",
+                "method": "structured_field",
+                "excerpt": "fuelType: petrol"
+              }
+            ]
+          }
+        }
+      ]
     }
-  ],
-  "archivedOffers": []
+  ]
 }

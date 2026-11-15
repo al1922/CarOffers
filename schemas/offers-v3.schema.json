@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://caroffers.local/schemas/offers-v3.schema.json",
+  "title": "CarOffers offer records v3",
+  "type": "object",
+  "required": ["schemaVersion", "updatedAt", "model", "offers"],
+  "properties": {
+    "schemaVersion": { "const": 3 },
+    "updatedAt": { "type": "string" },
+    "model": {
+      "type": "object",
+      "required": ["key", "name"],
+      "properties": { "key": { "type": "string" }, "name": { "type": "string" } },
+      "additionalProperties": false
+    },
+    "offers": { "type": "array", "items": { "$ref": "#/$defs/offerGroup" } }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "offerGroup": {
+      "type": "object",
+      "required": ["id", "identityKey", "modelKey", "primaryListingKey", "listings"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "identityKey": { "type": "string", "minLength": 1 },
+        "modelKey": { "type": "string", "minLength": 1 },
+        "primaryListingKey": { "type": "string", "minLength": 1 },
+        "firstSeenAt": { "type": ["string", "null"] },
+        "lastUpdatedAt": { "type": ["string", "null"] },
+        "listings": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/listing" } }
+      },
+      "additionalProperties": false
+    },
+    "listing": {
+      "type": "object",
+      "required": ["key", "sourceId", "sourceName", "url", "lastCheckedAt", "facts"],
+      "properties": {
+        "key": { "type": "string", "minLength": 1 },
+        "sourceId": { "type": "string", "minLength": 1 },
+        "sourceName": { "type": "string", "minLength": 1 },
+        "sourceListingId": { "type": ["string", "null"] },
+        "url": { "type": "string", "format": "uri" },
+        "lastCheckedAt": { "type": ["string", "null"] },
+        "facts": {
+          "type": "object",
+          "required": ["vin", "firstRegistrationDate", "transmission", "body"],
+          "properties": {
+            "title": { "type": "string" },
+            "price": {
+              "type": ["number", "null"],
+              "description": "Advertised amount as shown in the source; compare model limits to this amount regardless of whether its VAT basis is known."
+            },
+            "priceBasis": {
+              "type": ["string", "null"],
+              "description": "Informational source evidence such as gross_total, net, or unknown; it does not change qualification or price comparison."
+            },
+            "year": { "type": ["integer", "null"] },
+            "mileage": { "type": ["number", "null"] },
+            "engine": { "type": ["string", "null"] },
+            "engineVariant": { "type": ["string", "null"] },
+            "vin": { "type": ["string", "null"] },
+            "firstRegistrationDate": { "type": ["string", "null"] },
+            "transmission": { "type": ["string", "null"] },
+            "body": { "type": ["string", "null"] },
+            "location": {},
+            "photos": { "type": "array", "items": { "type": "string", "format": "uri" } },
+            "cameraStatus": { "type": ["string", "null"] },
+            "fuel": { "type": ["string", "null"] }
+          },
+          "additionalProperties": true
+        },
+        "sourceExtensions": {
+          "type": "object",
+          "description": "Optional source-specific listing data that has no shared field or is useful for later source-specific processing. Keys are source IDs.",
+          "propertyNames": { "pattern": "^[a-z0-9-]+$" },
+          "additionalProperties": {
+            "type": "object",
+            "description": "A source-owned namespace; its fields are optional and do not affect shared qualification unless explicitly mapped."
+          }
+        },
+        "fieldEvidence": {
+          "type": "object",
+          "description": "Optional provenance for normalized facts, keyed by canonical field name.",
+          "propertyNames": { "minLength": 1 },
+          "additionalProperties": {
+            "type": "array",
+            "items": { "$ref": "#/$defs/fieldEvidenceItem" }
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "fieldEvidenceItem": {
+      "type": "object",
+      "required": ["source", "sourcePath", "method"],
+      "properties": {
+        "source": { "type": "string", "minLength": 1 },
+        "sourcePath": { "type": "string", "minLength": 1 },
+        "method": {
+          "type": "string",
+          "enum": ["structured_field", "label_value", "text_rule", "ai", "manual"]
+        },
+        "excerpt": {
+          "type": "string",
+          "maxLength": 2000,
+          "description": "Short source text supporting the extracted value; required for AI-derived values."
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "method": { "const": "ai" } }, "required": ["method"] },
+          "then": { "required": ["excerpt"] }
+        }
+      ],
+      "additionalProperties": false
+    }
+  }
+}

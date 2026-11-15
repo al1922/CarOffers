@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "key": "toyota-avensis-iii-wagon",
+  "name": "Toyota Avensis III Kombi",
+  "brand": "Toyota",
+  "model": "Avensis",
+  "generation": "III",
+  "bodies": [
+    "wagon"
+  ],
+  "active": true,
+  "criteria": {
+    "minimumPricePln": 30000,
+    "maximumAdvertisedPricePln": 55000,
+    "yearMin": 2017,
+    "yearMax": null,
+    "maximumMileageKm": 170000,
+    "engineVariants": [
+      "1.8-valvematic-147"
+    ]
+  },
+  "fields": {
+    "required": [
+      "price",
+      "year",
+      "mileage",
+      "engineVariant"
+    ],
+    "semiRequired": [
+      "vin",
+      "firstRegistrationDate",
+      "transmission",
+      "body"
+    ],
+    "optional": [
+      "location",
+      "photos",
+      "cameraStatus",
+      "fuel"
+    ]
+  },
+  "knowledgeFile": "knowledge/models/toyota-avensis-iii-wagon.json"
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://caroffers.local/schemas/source-model-mapping.schema.json",
+  "title": "Portal-specific model mapping",
+  "type": "object",
+  "required": ["modelKey", "supported"],
+  "properties": {
+    "modelKey": { "type": "string" },
+    "supported": { "type": "boolean" },
+    "makeSlug": { "type": "string" },
+    "modelSlug": { "type": "string" },
+    "makeId": { "type": ["string", "integer"] },
+    "modelId": { "type": ["string", "integer"] },
+    "generationFilterLabel": { "type": ["string", "null"] },
+    "generationUrlValue": { "type": ["string", "null"] },
+    "bodyUrlValue": { "type": ["string", "null"] },
+    "omitGenerationInUrl": { "type": "boolean" },
+    "omitGenerationFilter": { "type": "boolean" },
+    "omitBodyInUrl": { "type": "boolean" },
+    "yearInQuery": { "type": "boolean" },
+    "bodyAliases": { "type": "object" }
+  },
+  "additionalProperties": true
+}

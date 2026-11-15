@@ -1,0 +1,19 @@
+{
+  "id": "aaaauto",
+  "name": "AAA Auto",
+  "enabled": true,
+  "adapter": "aaaauto",
+  "searchUrl": "https://www.aaaauto.pl/",
+  "limits": {
+    "maxPages": 20,
+    "maxCards": 200,
+    "detailConcurrency": 3
+  },
+  "adapterConfig": {
+    "bodySlugs": {
+      "wagon": "kombi",
+      "combi": "kombi"
+    }
+  },
+  "filterMode": "url"
+}

@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "key": "toyota-auris-touring-sports",
+  "name": "Toyota Auris II Touring Sports",
+  "brand": "Toyota",
+  "model": "Auris",
+  "generation": "II",
+  "bodies": [
+    "wagon"
+  ],
+  "active": true,
+  "criteria": {
+    "minimumPricePln": 30000,
+    "maximumAdvertisedPricePln": 55000,
+    "yearMin": 2017,
+    "yearMax": null,
+    "maximumMileageKm": 170000,
+    "engineVariants": [
+      "1.8-hybrid-136",
+      "1.6-valvematic-132"
+    ]
+  },
+  "fields": {
+    "required": [
+      "price",
+      "year",
+      "mileage",
+      "engineVariant"
+    ],
+    "semiRequired": [
+      "vin",
+      "firstRegistrationDate",
+      "transmission",
+      "body"
+    ],
+    "optional": [
+      "location",
+      "photos",
+      "cameraStatus",
+      "fuel"
+    ]
+  },
+  "knowledgeFile": "knowledge/models/toyota-auris-touring-sports.json"
+}

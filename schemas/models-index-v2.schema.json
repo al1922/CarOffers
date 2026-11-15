@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://caroffers.local/schemas/models-index-v2.schema.json",
+  "title": "CarOffers generated model index v2",
+  "type": "object",
+  "required": ["version", "generatedAt", "models"],
+  "properties": {
+    "version": { "const": 2 },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "models": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["key", "name", "brand", "model", "generation", "bodies", "criteria", "fields", "file", "knowledgeFile"],
+        "properties": {
+          "key": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+          "name": { "type": "string", "minLength": 1 },
+          "brand": { "type": "string", "minLength": 1 },
+          "model": { "type": "string", "minLength": 1 },
+          "generation": { "type": "string" },
+          "bodies": { "type": "array", "items": { "type": "string" } },
+          "criteria": { "type": "object" },
+          "fields": { "type": "object" },
+          "file": { "type": "string", "pattern": "^offers/[a-z0-9-]+\\.json$" },
+          "knowledgeFile": { "type": "string", "pattern": "^knowledge/models/[a-z0-9-]+\\.json$" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

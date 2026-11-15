@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "key": "skoda-scala",
+  "name": "Škoda Scala",
+  "brand": "Škoda",
+  "model": "Scala",
+  "generation": "",
+  "bodies": [
+    "hatchback",
+    "minivan"
+  ],
+  "active": true,
+  "criteria": {
+    "minimumPricePln": 30000,
+    "maximumAdvertisedPricePln": 55000,
+    "yearMin": 2019,
+    "yearMax": null,
+    "maximumMileageKm": 170000,
+    "engineVariants": [
+      "1.5-tsi-150"
+    ]
+  },
+  "fields": {
+    "required": [
+      "price",
+      "year",
+      "mileage",
+      "engineVariant"
+    ],
+    "semiRequired": [
+      "vin",
+      "firstRegistrationDate",
+      "transmission",
+      "body"
+    ],
+    "optional": [
+      "location",
+      "photos",
+      "cameraStatus",
+      "fuel"
+    ]
+  },
+  "knowledgeFile": "knowledge/models/skoda-scala.json"
+}

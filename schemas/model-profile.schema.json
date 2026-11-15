@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://caroffers.local/schemas/model-profile.schema.json",
+  "title": "CarOffers model profile",
+  "type": "object",
+  "required": ["version", "key", "name", "brand", "model", "active", "criteria", "fields", "knowledgeFile"],
+  "properties": {
+    "version": { "const": 1 },
+    "key": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "name": { "type": "string", "minLength": 1 },
+    "brand": { "type": "string", "minLength": 1 },
+    "model": { "type": "string", "minLength": 1 },
+    "generation": { "type": "string" },
+    "bodies": { "type": "array", "items": { "type": "string" } },
+    "active": { "type": "boolean" },
+    "criteria": {
+      "type": "object",
+      "required": ["minimumPricePln", "maximumAdvertisedPricePln", "yearMin", "yearMax", "maximumMileageKm", "engineVariants"],
+      "properties": {
+        "minimumPricePln": { "type": "number", "minimum": 0, "description": "Minimum advertised price in PLN, regardless of whether the source labels it net or gross." },
+        "maximumAdvertisedPricePln": { "type": "number", "minimum": 0, "description": "Maximum advertised price in PLN, regardless of whether the source labels it net or gross." },
+        "yearMin": { "type": "integer", "minimum": 1886 },
+        "yearMax": { "type": ["integer", "null"] },
+        "maximumMileageKm": { "type": "number", "minimum": 0 },
+        "allowAuctions": { "type": "boolean", "default": false },
+        "engineVariants": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } }
+      },
+      "additionalProperties": false
+    },
+    "fields": {
+      "type": "object",
+      "required": ["required", "semiRequired", "optional"],
+      "properties": {
+        "required": { "type": "array", "items": { "type": "string" } },
+        "semiRequired": { "type": "array", "items": { "type": "string" } },
+        "optional": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "knowledgeFile": { "type": "string", "pattern": "^knowledge/models/[a-z0-9-]+\\.json$" }
+  },
+  "additionalProperties": false
+}
